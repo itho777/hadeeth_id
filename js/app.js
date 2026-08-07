@@ -50,8 +50,8 @@ const UI_I18N = {
     show_per_page: "Show per page:",
     prev: "Previous",
     next: "Next",
-    scholarly_commentary: "Scholarly Commentary & Sharh",
-    chain_of_narrators: "Chain of Narrators (Sanad)",
+    scholarly_commentary: "Scholarly Commentary (Sharh)",
+    chain_of_narrators: "Chain of Narration (Sanad)",
     full_sanad_graph: "View Full Interactive Sanad Graph →",
     role_sahabi: "Sahabi (Companion)",
     footer_text: "© 2024 HADEETH.ID - Digital Manuscript Preservation"
@@ -88,8 +88,8 @@ const UI_I18N = {
     show_per_page: "Tampilkan:",
     prev: "Sebelumnya",
     next: "Selanjutnya",
-    scholarly_commentary: "Syarah & Penjelasan Ulama",
-    chain_of_narrators: "Silsilah Perawi (Sanad)",
+    scholarly_commentary: "Syarah Hadits",
+    chain_of_narrators: "Rantai Perawi (Sanad)",
     full_sanad_graph: "Lihat Grafik Interaktif Sanad Lengkap →",
     role_sahabi: "Sahabat",
     footer_text: "© 2024 HADEETH.ID - Pelestarian Manuskrip Digital"
@@ -456,8 +456,7 @@ async function loadHadithDetail() {
 
   let chapterBreadcrumbText = `Hadith #${hadithId}`;
   if (chapterObj) {
-    const chTitle = isIdLang ? (chapterObj.title_id || chapterObj.title_en) : chapterObj.title_en;
-    chapterBreadcrumbText = isIdLang ? `Bab ${chapterObj.chapter_number || ''}: ${chTitle}` : `Chapter ${chapterObj.chapter_number || ''}: ${chTitle}`;
+    chapterBreadcrumbText = isIdLang ? (chapterObj.title_id || chapterObj.title_en) : chapterObj.title_en;
   }
 
   if (bcBook) {
@@ -468,7 +467,11 @@ async function loadHadithDetail() {
     bcCurrent.innerText = chapterBreadcrumbText;
     if (chapterObj) bcCurrent.href = `kitab.html?book=${bookId}&chapter=${chapterObj.chapter_number || 1}`;
   }
-  if (chapterMeta) chapterMeta.innerText = `${bookName} • Hadith #${hadithId}`;
+
+  const chNum = chapterObj ? (chapterObj.chapter_number || '') : '';
+  const chLabel = isIdLang ? (chNum ? `Bab ${chNum}` : bookName) : (chNum ? `Chapter ${chNum}` : bookName);
+  const hdLabel = isIdLang ? `Hadits #${hadithId}` : `Hadith #${hadithId}`;
+  if (chapterMeta) chapterMeta.innerText = `${chLabel} • ${hdLabel}`;
 
   if (prevBtn) {
     if (currentNum > 1) {
@@ -515,6 +518,23 @@ async function loadHadithDetail() {
         if (titleElem) titleElem.innerText = `${bookName} Hadith #${item.hadith_number}`;
 
         if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${item.hadith_number}`;
+
+        const langSelects = container.querySelectorAll('[data-lang-select]');
+        langSelects.forEach(selectElem => {
+          selectElem.addEventListener('change', () => {
+            const cardBox = selectElem.closest('.p-5');
+            const targetP = cardBox ? cardBox.querySelector('p') : null;
+            if (!targetP) return;
+            const val = selectElem.value;
+            if (val === 'en') {
+              targetP.innerHTML = item.text_en ? TafseerLinker.parse(item.text_en) : '—';
+            } else if (val === 'id') {
+              targetP.innerHTML = item.text_id ? TafseerLinker.parse(item.text_id) : '—';
+            } else if (val === 'ar') {
+              targetP.innerText = item.text_ar || '—';
+            }
+          });
+        });
 
         if (sanadPreview || rawiElem) {
           let previewNames = [];
