@@ -98,6 +98,7 @@ const UI_I18N = {
 
 const LangSystem = {
   SUPPORTED: ['en', 'id', 'both'],
+  get() { return localStorage.getItem('hadeeth_lang') || 'en'; },
   isIdMode() {
     const l = this.get();
     return l === 'id' || l === 'both';
@@ -570,6 +571,12 @@ async function loadHadithDetail() {
           }
         }
 
+        if (!window._hadithDetailLangListenerAttached) {
+          window._hadithDetailLangListenerAttached = true;
+          window.addEventListener('hadeeth_lang_change', () => {
+            loadHadithDetail();
+          });
+        }
         return;
       }
     }
