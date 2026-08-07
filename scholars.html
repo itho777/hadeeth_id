@@ -98,12 +98,25 @@
       <input type="text" id="scholar-search" placeholder="Search narrator by name, kunyah, city, or generation..." class="w-full bg-transparent border-none focus:ring-0 text-sm text-primary dark:text-white outline-none"/>
     </div>
 
-    <!-- Generation Filter Chips -->
-    <div class="flex items-center gap-2 overflow-x-auto pb-2" id="generation-chips">
-      <button class="gen-btn active px-4 py-1.5 rounded-full text-xs font-semibold bg-primary dark:bg-[#10b981] text-white dark:text-black" data-gen="all">All Generations</button>
-      <button class="gen-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-gen="sahabah">Sahabah (Companions)</button>
-      <button class="gen-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-gen="tabiun">Tabi'un (Successors)</button>
-      <button class="gen-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-gen="collectors">Great Collectors</button>
+    <!-- Filter Chips Container -->
+    <div class="flex flex-col gap-2">
+      <!-- Generation Filter Chips -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-1" id="generation-chips">
+        <span class="text-xs font-bold text-outline dark:text-gray-400 uppercase tracking-wider min-w-[90px]">Generation:</span>
+        <button class="gen-btn active px-3.5 py-1 rounded-full text-xs font-semibold bg-primary dark:bg-[#10b981] text-white dark:text-black" data-gen="all">All Generations</button>
+        <button class="gen-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-gen="sahabah">Sahabah (Companions)</button>
+        <button class="gen-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-gen="tabiun">Tabi'un (Successors)</button>
+        <button class="gen-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-gen="collectors">Great Collectors</button>
+      </div>
+
+      <!-- Position / Role Filter Chips -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-1" id="role-chips">
+        <span class="text-xs font-bold text-outline dark:text-gray-400 uppercase tracking-wider min-w-[90px]">Position:</span>
+        <button class="role-btn active px-3.5 py-1 rounded-full text-xs font-semibold bg-secondary dark:bg-[#10b981] text-white dark:text-black" data-role="all">All Positions</button>
+        <button class="role-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-role="writers">Book Writers / Authors</button>
+        <button class="role-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-role="rawi">Rawi / Transmitters</button>
+        <button class="role-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-role="scholars">Scholars / Evaluators</button>
+      </div>
     </div>
   </div>
 
@@ -240,7 +253,7 @@
   <div>© 2024 HADEETH.ID - Digital Manuscript Preservation</div>
 </footer>
 
-<script src="js/app.js"></script>
+<script src="js/app.js?v=20260807_5"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -318,7 +331,9 @@
     }
   }
 
-  // Generation filter handler
+  let activeGen = 'all';
+  let activeRole = 'all';
+
   document.querySelectorAll('#generation-chips button').forEach(btn => {
     btn.addEventListener('click', async () => {
       document.querySelectorAll('#generation-chips button').forEach(b => {
@@ -328,19 +343,32 @@
       btn.classList.remove('bg-surface-container-high', 'dark:bg-[#1e293b]', 'text-on-surface-variant', 'dark:text-gray-300');
       btn.classList.add('bg-primary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black');
 
-      const gen = btn.dataset.gen;
+      activeGen = btn.dataset.gen;
       const searchVal = document.getElementById('scholar-search')?.value || '';
-      await fetchAndRenderScholars(gen, searchVal);
+      await fetchAndRenderScholars(activeGen, activeRole, searchVal);
     });
   });
 
-  // Search filter handler with debounce
+  document.querySelectorAll('#role-chips button').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      document.querySelectorAll('#role-chips button').forEach(b => {
+        b.classList.remove('bg-secondary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black');
+        b.classList.add('bg-surface-container-high', 'dark:bg-[#1e293b]', 'text-on-surface-variant', 'dark:text-gray-300');
+      });
+      btn.classList.remove('bg-surface-container-high', 'dark:bg-[#1e293b]', 'text-on-surface-variant', 'dark:text-gray-300');
+      btn.classList.add('bg-secondary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black');
+
+      activeRole = btn.dataset.role;
+      const searchVal = document.getElementById('scholar-search')?.value || '';
+      await fetchAndRenderScholars(activeGen, activeRole, searchVal);
+    });
+  });
+
   let searchTimeout;
   document.getElementById('scholar-search')?.addEventListener('input', (e) => {
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(async () => {
-      const activeGen = document.querySelector('#generation-chips button.bg-primary')?.dataset.gen || 'all';
-      await fetchAndRenderScholars(activeGen, e.target.value.trim());
+      await fetchAndRenderScholars(activeGen, activeRole, e.target.value.trim());
     }, 300);
   });
 

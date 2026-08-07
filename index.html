@@ -111,14 +111,23 @@
           <input id="search-input" class="w-full bg-transparent border-none focus:ring-0 text-primary dark:text-white font-body-md text-body-md placeholder-outline-variant dark:placeholder-gray-500 p-0 outline-none"
                  placeholder="Scholarly Search (e.g., 'Intention', 'Sahih Bukhari 1')" type="text"/>
           <div class="h-6 w-px bg-outline-variant/30 mx-3 hidden md:block"></div>
-          <button class="hidden md:flex items-center gap-1 text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-white transition-colors text-label-sm font-label-sm uppercase tracking-wider px-2">
-            <span class="material-symbols-outlined text-[18px]">filter_list</span>Kitab
-          </button>
+          <select id="search-kitab-filter" class="hidden md:flex items-center text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-white bg-transparent border-none text-xs font-semibold uppercase tracking-wider cursor-pointer outline-none px-2">
+            <option value="all">All Books</option>
+            <option value="bukhari">Sahih Bukhari</option>
+            <option value="muslim">Sahih Muslim</option>
+            <option value="abudawud">Sunan Abu Dawood</option>
+            <option value="tirmidhi">Jami' Tirmidhi</option>
+            <option value="nasai">Sunan an-Nasa'i</option>
+            <option value="ibnmajah">Sunan Ibn Majah</option>
+            <option value="nawawi">Forty Nawawi</option>
+            <option value="malik">Muwatta Malik</option>
+            <option value="ahmad">Musnad Ahmad</option>
+          </select>
         </div>
         <div class="flex items-center justify-between px-4 py-2 border-t border-outline-variant/20 dark:border-[#334155] bg-surface-container-low dark:bg-[#0f172a] rounded-b-lg">
           <div class="flex items-center gap-4 text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">
-            <label class="flex items-center gap-1 cursor-pointer"><input checked type="radio" name="search_type" value="semantic" class="h-3 w-3 text-primary"/> Semantic</label>
-            <label class="flex items-center gap-1 cursor-pointer"><input type="radio" name="search_type" value="exact" class="h-3 w-3 text-primary"/> Exact Match</label>
+            <label class="flex items-center gap-1 cursor-pointer"><input checked type="radio" name="search_type" value="semantic" class="h-3 w-3 text-primary"/> Semantic (Cloudflare AI)</label>
+            <label class="flex items-center gap-1 cursor-pointer"><input type="radio" name="search_type" value="exact" class="h-3 w-3 text-primary"/> Keyword (Algolia)</label>
           </div>
           <button id="search-btn" type="button" class="bg-primary dark:bg-[#10b981] text-on-primary dark:text-black px-4 py-1.5 rounded-full font-label-sm text-label-sm hover:opacity-90 transition-opacity">Search</button>
         </div>
@@ -132,14 +141,14 @@
     <!-- Continue Reading -->
     <section class="w-full flex flex-col gap-stack-sm">
       <h2 class="font-label-sm text-label-sm uppercase text-outline dark:text-gray-500 tracking-wider">Continue Reading</h2>
-      <a href="hadith.html?book=bukhari&id=3" class="group block bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary/40 rounded-lg p-4 transition-all hover:shadow-sm flex items-center justify-between">
+      <a id="last-read-card" href="hadith.html?book=bukhari&id=1" class="group block bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary/40 rounded-lg p-4 transition-all hover:shadow-sm flex items-center justify-between">
         <div class="flex items-center gap-4">
           <div class="w-10 h-12 bg-surface-container-high dark:bg-[#334155] rounded flex items-center justify-center text-outline dark:text-gray-400 group-hover:text-secondary transition-colors">
             <span class="material-symbols-outlined">book_4</span>
           </div>
           <div class="flex flex-col">
-            <span class="font-body-md text-body-md font-semibold text-primary dark:text-white">Sahih al-Bukhari</span>
-            <span class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Book of Revelation • Hadith 3</span>
+            <span id="last-read-book" class="font-body-md text-body-md font-semibold text-primary dark:text-white">Sahih al-Bukhari</span>
+            <span id="last-read-title" class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Book of Revelation • Hadith 1</span>
           </div>
         </div>
         <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white transition-colors">arrow_forward</span>
@@ -255,6 +264,6 @@
 </footer>
 
 <script src="js/api.js"></script>
-<script src="js/app.js"></script>
+<script src="js/app.js?v=20260807_5"></script>
 </body>
 </html>
