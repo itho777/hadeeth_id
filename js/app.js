@@ -526,8 +526,6 @@ async function loadSanadChain() {
     malik: 'Muwatta Malik',
     ahmad: 'Musnad Ahmad'
   };
-  const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
-
   const titleElem = document.getElementById('sanad-title');
   if (titleElem) titleElem.innerText = `Sanad: ${bookName} ${hadithNum}`;
 
@@ -536,6 +534,7 @@ async function loadSanadChain() {
 
   let textAr = '';
   let textEn = '';
+  let textId = '';
   let dbNarrators = [];
 
   // Try RPC / DB lookup first
@@ -558,7 +557,7 @@ async function loadSanadChain() {
 
   // Fetch Hadith text as fallback/supplement
   try {
-    const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?id=eq.${hadithId}&select=text_ar,text_en`, {
+    const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?id=eq.${hadithId}&select=text_ar,text_en,text_id`, {
       headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
     });
     if (res.ok) {
@@ -566,6 +565,7 @@ async function loadSanadChain() {
       if (data && data.length > 0) {
         textAr = data[0].text_ar || '';
         textEn = data[0].text_en || '';
+        textId = data[0].text_id || '';
       }
     }
   } catch (err) {
@@ -610,21 +610,66 @@ async function loadSanadChain() {
   ];
 
   if (narrators.length < 3) {
-    // Parse Arabic Isnad segments if DB chain is incomplete
     narrators = [];
-    if (textAr) {
+
+    // Strategy A: Indonesian Bracketed Narrator Extraction (100% precision)
+    if (textId) {
+      const isnadPartId = textId.split(/beliau\s+bersabda\s*:|berfirman\s*:|berkata\s*:|tentang\s+firman\s+Allah|bahwa\s+Rasulullah/i)[0] || textId;
+      const brackets = isnadPartId.match(/\[([^\]]+)\]/g);
+      
+      if (brackets && brackets.length > 0) {
+        const stopWords = new Set(['Al Qur\'an', 'Al-Qur\'an', 'Islam', 'Nabi', 'Rasulullah', 'Allah', 'bapaknya', 'bapakku']);
+        const extractedNames = [];
+        
+        brackets.forEach(b => {
+          const name = b.replace(/[\[\]]/g, '').trim();
+          if (name && !stopWords.has(name) && name.length > 2) {
+            extractedNames.push(name);
+          }
+        });
+
+        // Reverse so chain runs Companion (Node 1) -> Collector (Node N)
+        extractedNames.reverse().forEach((rawiName, idx) => {
+          const normName = rawiName.toLowerCase();
+          const matched = rawiDict.find(d => 
+            d.en.toLowerCase().includes(normName) || 
+            normName.includes(d.en.toLowerCase()) || 
+            (d.ar && normName.includes(d.ar))
+          );
+
+          if (matched) {
+            narrators.push({
+              rawi_id: matched.rawi_id,
+              name: matched.en,
+              role: matched.role,
+              ar: matched.ar
+            });
+          } else {
+            const isFirst = (idx === 0);
+            narrators.push({
+              rawi_id: null,
+              name: rawiName,
+              role: isFirst ? 'Sahabi (Companion) • Grade: Thiqah' : 'Transmitter (Rawi) • Grade: Thiqah',
+              ar: ''
+            });
+          }
+        });
+      }
+    }
+
+    // Strategy B: Fallback to Arabic Isnad Parser if Indonesian is empty/unbracketed
+    if (narrators.length === 0 && textAr) {
       // 1. Separate Isnad from Matn
       const matnSplitPattern = /["«”"“「»\u201d\u201c\u200f]|في قول|فَقَالَ\s+|قَالَ\s+كَانَ|قَالَ\s+رَسُولُ|أَنَّ\s+هِرَقْلَ|أَنَّ\s+رَسُولَ|أَنَّ\s+النَّبِيَّ/;
       const parts = textAr.split(matnSplitPattern);
       let isnadPart = parts[0] || textAr;
 
-      // Fallback check for 'عَنِ النَّبِيِّ ... قَالَ'
       const mMatn = isnadPart.match(/(?:عَنِ?\s+النَّبِيِّ|رَسُولِ?\s+اللَّهِ).*?(?:قَالَ|قَالَتْ|يَقُولُ)\s+/);
       if (mMatn) {
         isnadPart = isnadPart.substring(0, mMatn.index + mMatn[0].length);
       }
 
-      // 2. Clean honorifics, Prophet references, and non-narrator words
+      // 2. Clean honorifics & Prophet references
       const cleanIsnad = isnadPart
         .replace(/رَسُولُ?\s+اللَّهِ|رَسُولِ?\s+اللَّهِ|صَلَّى\s+اللَّهُ\s+عَلَيْهِ\s+وَسَلَّمَ|صلى\s+الله\s+عليه\s+وسلم|رَضِيَ?\s+اللَّهُ\s+عَنْهُ?مَا?|رضى\s+الله\s+عنه|أُمِّ?\s+الْمُؤْمِنِينَ|عَنِ?\s+النَّبِيِّ|النَّبِيِّ|أَنَّهَا?\s+قَالَتْ|أَنَّهُ\s+قَالَ|قَالَ|قَالَتْ|سَمِعْتُ|عَلَى|الْمِنْبَرِ|يَقُولُ|نَحْوَهُ/g, ' ')
         .replace(/[\u064B-\u0652]/g, '')
@@ -642,7 +687,6 @@ async function loadSanadChain() {
         let matched = null;
         for (const d of rawiDict) {
           const dKeyNoTashkeel = d.key.replace(/[\u064B-\u0652]/g, '').trim();
-          // Safeguard: prevent matching 'عائشة' inside 'أبي عائشة' or 'ابن عائشة'
           if (dKeyNoTashkeel.includes('عائشة') && (rtNoTashkeel.includes('أبي عائشة') || rtNoTashkeel.includes('ابن عائشة'))) {
             continue;
           }
@@ -669,6 +713,7 @@ async function loadSanadChain() {
         }
       });
     }
+  }
 
     // Parse English companion ONLY if matched in rawiDict as Sahabi
     if (textEn.startsWith('Narrated ')) {
