@@ -497,6 +497,10 @@ async function loadHadithList() {
   let chapterTitleNameEn = `Chapter ${chapterId}`;
   let chapterTitleNameId = `Bab ${chapterId}`;
   let chapterTitleNameAr = `باب رقم ${chapterId}`;
+  let startHadithNum = null;
+  let endHadithNum = null;
+  let chapterHadithCount = null;
+
   try {
     const chapters = await window.HadeethAPI.getChapters(bookId);
     if (chapters && chapters.length > 0) {
@@ -508,6 +512,9 @@ async function loadHadithList() {
         chapterTitleNameEn = chInfo.title_en || chInfo.name_en || chInfo.title || `Chapter ${chapterId}`;
         chapterTitleNameId = chInfo.title_id || chInfo.name_id || chapterTitleNameEn;
         chapterTitleNameAr = chInfo.title_ar || chInfo.name_ar || chInfo.arabic || `باب رقم ${chapterId}`;
+        startHadithNum = chInfo.hadith_start != null ? chInfo.hadith_start : null;
+        endHadithNum = chInfo.hadith_end != null ? chInfo.hadith_end : null;
+        chapterHadithCount = chInfo.hadith_count || (endHadithNum && startHadithNum ? (endHadithNum - startHadithNum + 1) : null);
       }
     }
   } catch (err) {
@@ -534,12 +541,16 @@ async function loadHadithList() {
   let currentLang = langSelect ? langSelect.value : 'id';
   let searchScope = scopeSelect ? scopeSelect.value : 'chapter';
 
-  // Fetch Hadiths from Supabase
+  // Fetch Hadiths from Supabase filtered by chapter range if available
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
 
   try {
-    const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?book_id=eq.${bookId}&select=*&order=hadith_number.asc&limit=100`, {
+    let queryUrl = `${supabaseUrl}/rest/v1/hadiths?book_id=eq.${bookId}&select=*&order=hadith_number.asc&limit=500`;
+    if (startHadithNum != null && endHadithNum != null) {
+      queryUrl = `${supabaseUrl}/rest/v1/hadiths?book_id=eq.${bookId}&hadith_number=gte.${startHadithNum}&hadith_number=lte.${endHadithNum}&select=*&order=hadith_number.asc&limit=500`;
+    }
+    const res = await fetch(queryUrl, {
       headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
     });
 
@@ -566,7 +577,15 @@ async function loadHadithList() {
         if (engEd && engEd.hadiths) engEd.hadiths.forEach(h => engMap[h.hadithnumber] = h.text);
         if (indEd && indEd.hadiths) indEd.hadiths.forEach(h => indMap[h.hadithnumber] = h.text);
 
-        allHadiths = mainEd.hadiths.map(h => ({
+        let sourceHadiths = mainEd.hadiths;
+        if (startHadithNum != null && endHadithNum != null) {
+          sourceHadiths = sourceHadiths.filter(h => {
+            const num = parseInt(h.hadithnumber);
+            return num >= startHadithNum && num <= endHadithNum;
+          });
+        }
+
+        allHadiths = sourceHadiths.map(h => ({
           hadith_number: h.hadithnumber,
           text_en: engMap[h.hadithnumber] || h.text || '',
           text_ar: araMap[h.hadithnumber] || '',
@@ -581,7 +600,14 @@ async function loadHadithList() {
   }
 
   filteredHadiths = [...allHadiths];
-  if (countMeta) countMeta.innerText = `Total ${allHadiths.length} Ahadith in ${bookName} Chapter ${chapterId}`;
+  if (countMeta) {
+    if (startHadithNum != null && endHadithNum != null) {
+      const count = chapterHadithCount || (endHadithNum - startHadithNum + 1);
+      countMeta.innerText = `Hadith ${startHadithNum} – ${endHadithNum} • ${count} Hadiths in ${bookName} Kitab ${chapterId}`;
+    } else {
+      countMeta.innerText = `Total ${allHadiths.length} Hadiths in ${bookName} Kitab ${chapterId}`;
+    }
+  }
 
   // Render Function
   function renderList() {
