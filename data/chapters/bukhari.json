@@ -3,970 +3,1067 @@
     "id": "bukhari_c1",
     "book_id": "bukhari",
     "chapter_number": 1,
-    "title_ar": "Revelation",
     "title_en": "Revelation",
-    "title_id": "Revelation",
+    "title_ar": "كتاب بدء الوحى",
+    "title_id": "Wahyu",
     "hadith_start": 1,
-    "hadith_end": 7
+    "hadith_end": 7,
+    "hadith_count": 7
   },
   {
     "id": "bukhari_c2",
     "book_id": "bukhari",
     "chapter_number": 2,
-    "title_ar": "Belief",
     "title_en": "Belief",
-    "title_id": "Belief",
+    "title_ar": "كتاب الإيمان",
+    "title_id": "Iman",
     "hadith_start": 8,
-    "hadith_end": 58
+    "hadith_end": 58,
+    "hadith_count": 51
   },
   {
     "id": "bukhari_c3",
     "book_id": "bukhari",
     "chapter_number": 3,
-    "title_ar": "Knowledge",
     "title_en": "Knowledge",
-    "title_id": "Knowledge",
+    "title_ar": "كتاب العلم",
+    "title_id": "Ilmu",
     "hadith_start": 59,
-    "hadith_end": 134
+    "hadith_end": 134,
+    "hadith_count": 76
   },
   {
     "id": "bukhari_c4",
     "book_id": "bukhari",
     "chapter_number": 4,
-    "title_ar": "Ablutions (Wudu')",
     "title_en": "Ablutions (Wudu')",
-    "title_id": "Ablutions (Wudu')",
+    "title_ar": "كتاب الوضوء",
+    "title_id": "Wudhu",
     "hadith_start": 135,
-    "hadith_end": 247
+    "hadith_end": 247,
+    "hadith_count": 113
   },
   {
     "id": "bukhari_c5",
     "book_id": "bukhari",
     "chapter_number": 5,
-    "title_ar": "Bathing (Ghusl)",
     "title_en": "Bathing (Ghusl)",
-    "title_id": "Bathing (Ghusl)",
+    "title_ar": "كتاب الغسل",
+    "title_id": "Mandi",
     "hadith_start": 248,
-    "hadith_end": 293
+    "hadith_end": 293,
+    "hadith_count": 45
   },
   {
     "id": "bukhari_c6",
     "book_id": "bukhari",
     "chapter_number": 6,
-    "title_ar": "Menstrual Periods",
     "title_en": "Menstrual Periods",
-    "title_id": "Menstrual Periods",
+    "title_ar": "كتاب الحيض",
+    "title_id": "Haid",
     "hadith_start": 294,
-    "hadith_end": 333
+    "hadith_end": 333,
+    "hadith_count": 37
   },
   {
     "id": "bukhari_c7",
     "book_id": "bukhari",
     "chapter_number": 7,
-    "title_ar": "Rubbing hands and feet with dust (Tayammum)",
     "title_en": "Rubbing hands and feet with dust (Tayammum)",
-    "title_id": "Rubbing hands and feet with dust (Tayammum)",
+    "title_ar": "كتاب التيمم",
+    "title_id": "Tayammum",
     "hadith_start": 334,
-    "hadith_end": 348
+    "hadith_end": 348,
+    "hadith_count": 15
   },
   {
     "id": "bukhari_c8",
     "book_id": "bukhari",
     "chapter_number": 8,
-    "title_ar": "Prayers (Salat)",
     "title_en": "Prayers (Salat)",
-    "title_id": "Prayers (Salat)",
+    "title_ar": "كتاب الصلاة",
+    "title_id": "Shalat",
     "hadith_start": 349,
-    "hadith_end": 520
+    "hadith_end": 520,
+    "hadith_count": 167
   },
   {
     "id": "bukhari_c9",
     "book_id": "bukhari",
     "chapter_number": 9,
-    "title_ar": "Times of the Prayers",
     "title_en": "Times of the Prayers",
-    "title_id": "Times of the Prayers",
-    "hadith_start": 522,
-    "hadith_end": 602
+    "title_ar": "كتاب مواقيت الصلاة",
+    "title_id": "Waktu-waktu Shalat",
+    "hadith_start": 521,
+    "hadith_end": 602,
+    "hadith_count": 77
   },
   {
     "id": "bukhari_c10",
     "book_id": "bukhari",
     "chapter_number": 10,
-    "title_ar": "Call to Prayers (Adhaan)",
     "title_en": "Call to Prayers (Adhaan)",
-    "title_id": "Call to Prayers (Adhaan)",
+    "title_ar": "كتاب الأذان",
+    "title_id": "Adzan",
     "hadith_start": 603,
-    "hadith_end": 875
+    "hadith_end": 875,
+    "hadith_count": 266
   },
   {
     "id": "bukhari_c11",
     "book_id": "bukhari",
     "chapter_number": 11,
-    "title_ar": "Friday Prayer",
     "title_en": "Friday Prayer",
-    "title_id": "Friday Prayer",
+    "title_ar": "كتاب الجمعة",
+    "title_id": "Shalat Jumat",
     "hadith_start": 876,
-    "hadith_end": 941
+    "hadith_end": 941,
+    "hadith_count": 65
   },
   {
     "id": "bukhari_c12",
     "book_id": "bukhari",
     "chapter_number": 12,
-    "title_ar": "Fear Prayer",
     "title_en": "Fear Prayer",
-    "title_id": "Fear Prayer",
+    "title_ar": "كتاب صلاة الخوف",
+    "title_id": "Shalat Khauf",
     "hadith_start": 942,
-    "hadith_end": 947
+    "hadith_end": 947,
+    "hadith_count": 6
   },
   {
     "id": "bukhari_c13",
     "book_id": "bukhari",
     "chapter_number": 13,
-    "title_ar": "The Two Festivals (Eids)",
     "title_en": "The Two Festivals (Eids)",
-    "title_id": "The Two Festivals (Eids)",
+    "title_ar": "كتاب العيدين",
+    "title_id": "Dua Hari Raya (Id)",
     "hadith_start": 948,
-    "hadith_end": 989
+    "hadith_end": 989,
+    "hadith_count": 37
   },
   {
     "id": "bukhari_c14",
     "book_id": "bukhari",
     "chapter_number": 14,
-    "title_ar": "Witr Prayer",
     "title_en": "Witr Prayer",
-    "title_id": "Witr Prayer",
+    "title_ar": "كتاب الوتر",
+    "title_id": "Shalat Witir",
     "hadith_start": 990,
-    "hadith_end": 1004
+    "hadith_end": 1004,
+    "hadith_count": 15
   },
   {
     "id": "bukhari_c15",
     "book_id": "bukhari",
     "chapter_number": 15,
-    "title_ar": "Invoking Allah for Rain (Istisqaa)",
     "title_en": "Invoking Allah for Rain (Istisqaa)",
-    "title_id": "Invoking Allah for Rain (Istisqaa)",
+    "title_ar": "كتاب الاستسقاء",
+    "title_id": "Shalat Istisqa'",
     "hadith_start": 1005,
-    "hadith_end": 1039
+    "hadith_end": 1039,
+    "hadith_count": 34
   },
   {
     "id": "bukhari_c16",
     "book_id": "bukhari",
     "chapter_number": 16,
-    "title_ar": "Eclipses",
     "title_en": "Eclipses",
-    "title_id": "Eclipses",
+    "title_ar": "كتاب الكسوف",
+    "title_id": "Gerhana",
     "hadith_start": 1040,
-    "hadith_end": 1066
+    "hadith_end": 1065,
+    "hadith_count": 24
   },
   {
     "id": "bukhari_c17",
     "book_id": "bukhari",
     "chapter_number": 17,
-    "title_ar": "Prostration During Recital of Qur'an",
     "title_en": "Prostration During Recital of Qur'an",
+    "title_ar": "كتاب سجود القرآن",
     "title_id": "Prostration During Recital of Qur'an",
     "hadith_start": 1067,
-    "hadith_end": 1079
+    "hadith_end": 1079,
+    "hadith_count": 13
   },
   {
     "id": "bukhari_c18",
     "book_id": "bukhari",
     "chapter_number": 18,
-    "title_ar": "Shortening the Prayers (At-Taqseer)",
     "title_en": "Shortening the Prayers (At-Taqseer)",
-    "title_id": "Shortening the Prayers (At-Taqseer)",
+    "title_ar": "كتاب التقصير",
+    "title_id": "Shalat Qashar",
     "hadith_start": 1080,
-    "hadith_end": 1119
+    "hadith_end": 1119,
+    "hadith_count": 39
   },
   {
     "id": "bukhari_c19",
     "book_id": "bukhari",
     "chapter_number": 19,
-    "title_ar": "Prayer at Night (Tahajjud)",
     "title_en": "Prayer at Night (Tahajjud)",
-    "title_id": "Prayer at Night (Tahajjud)",
+    "title_ar": "كتاب التهجد",
+    "title_id": "Shalat Tahajjud",
     "hadith_start": 1120,
-    "hadith_end": 1187
+    "hadith_end": 1187,
+    "hadith_count": 63
   },
   {
     "id": "bukhari_c20",
     "book_id": "bukhari",
     "chapter_number": 20,
-    "title_ar": "Virtues of Prayer at Masjid Makkah and Madinah",
     "title_en": "Virtues of Prayer at Masjid Makkah and Madinah",
+    "title_ar": "كتاب فضل الصلاة فى مسجد مكة والمدينة",
     "title_id": "Virtues of Prayer at Masjid Makkah and Madinah",
     "hadith_start": 1188,
-    "hadith_end": 1197
+    "hadith_end": 1197,
+    "hadith_count": 9
   },
   {
     "id": "bukhari_c21",
     "book_id": "bukhari",
     "chapter_number": 21,
-    "title_ar": "Actions while Praying",
     "title_en": "Actions while Praying",
-    "title_id": "Actions while Praying",
+    "title_ar": "كتاب العمل فى الصلاة",
+    "title_id": "Gerakan dalam Shalat",
     "hadith_start": 1198,
-    "hadith_end": 1223
+    "hadith_end": 1223,
+    "hadith_count": 27
   },
   {
     "id": "bukhari_c22",
     "book_id": "bukhari",
     "chapter_number": 22,
-    "title_ar": "Forgetfulness in Prayer",
     "title_en": "Forgetfulness in Prayer",
+    "title_ar": "كتاب السهو",
     "title_id": "Forgetfulness in Prayer",
     "hadith_start": 1224,
-    "hadith_end": 1236
+    "hadith_end": 1236,
+    "hadith_count": 14
   },
   {
     "id": "bukhari_c23",
     "book_id": "bukhari",
     "chapter_number": 23,
-    "title_ar": "Funerals (Al-Janaa'iz)",
     "title_en": "Funerals (Al-Janaa'iz)",
-    "title_id": "Funerals (Al-Janaa'iz)",
+    "title_ar": "كتاب الجنائز",
+    "title_id": "Jenazah",
     "hadith_start": 1237,
-    "hadith_end": 1394
+    "hadith_end": 1394,
+    "hadith_count": 148
   },
   {
     "id": "bukhari_c24",
     "book_id": "bukhari",
     "chapter_number": 24,
-    "title_ar": "Obligatory Charity Tax (Zakat)",
     "title_en": "Obligatory Charity Tax (Zakat)",
-    "title_id": "Obligatory Charity Tax (Zakat)",
+    "title_ar": "كتاب الزكاة",
+    "title_id": "Zakat",
     "hadith_start": 1395,
-    "hadith_end": 1512
+    "hadith_end": 1512,
+    "hadith_count": 112
   },
   {
     "id": "bukhari_c25",
     "book_id": "bukhari",
     "chapter_number": 25,
-    "title_ar": "Hajj (Pilgrimage)",
     "title_en": "Hajj (Pilgrimage)",
+    "title_ar": "كتاب الحج",
     "title_id": "Hajj (Pilgrimage)",
     "hadith_start": 1513,
-    "hadith_end": 1772
+    "hadith_end": 1771,
+    "hadith_count": 247
   },
   {
     "id": "bukhari_c26",
     "book_id": "bukhari",
     "chapter_number": 26,
-    "title_ar": "`Umrah (Minor pilgrimage)",
     "title_en": "`Umrah (Minor pilgrimage)",
+    "title_ar": "كتاب العمرة",
     "title_id": "`Umrah (Minor pilgrimage)",
     "hadith_start": 1773,
-    "hadith_end": 1805
+    "hadith_end": 1805,
+    "hadith_count": 30
   },
   {
     "id": "bukhari_c27",
     "book_id": "bukhari",
     "chapter_number": 27,
-    "title_ar": "Pilgrims Prevented from Completing the Pilgrimage",
     "title_en": "Pilgrims Prevented from Completing the Pilgrimage",
+    "title_ar": "كتاب المحصر",
     "title_id": "Pilgrims Prevented from Completing the Pilgrimage",
     "hadith_start": 1806,
-    "hadith_end": 1820
+    "hadith_end": 1820,
+    "hadith_count": 15
   },
   {
     "id": "bukhari_c28",
     "book_id": "bukhari",
     "chapter_number": 28,
-    "title_ar": "Penalty of Hunting while on Pilgrimage",
     "title_en": "Penalty of Hunting while on Pilgrimage",
+    "title_ar": "كتاب جزاء الصيد",
     "title_id": "Penalty of Hunting while on Pilgrimage",
     "hadith_start": 1821,
-    "hadith_end": 1866
+    "hadith_end": 1866,
+    "hadith_count": 46
   },
   {
     "id": "bukhari_c29",
     "book_id": "bukhari",
     "chapter_number": 29,
-    "title_ar": "Virtues of Madinah",
     "title_en": "Virtues of Madinah",
-    "title_id": "Virtues of Madinah",
+    "title_ar": "كتاب فضائل المدينة",
+    "title_id": "Keutamaan Madinah",
     "hadith_start": 1867,
-    "hadith_end": 1890
+    "hadith_end": 1890,
+    "hadith_count": 24
   },
   {
     "id": "bukhari_c30",
     "book_id": "bukhari",
     "chapter_number": 30,
-    "title_ar": "Fasting",
     "title_en": "Fasting",
-    "title_id": "Fasting",
+    "title_ar": "كتاب الصوم",
+    "title_id": "Puasa",
     "hadith_start": 1891,
-    "hadith_end": 2007
+    "hadith_end": 2007,
+    "hadith_count": 112
   },
   {
     "id": "bukhari_c31",
     "book_id": "bukhari",
     "chapter_number": 31,
-    "title_ar": "Praying at Night in Ramadaan (Taraweeh)",
     "title_en": "Praying at Night in Ramadaan (Taraweeh)",
+    "title_ar": "كتاب صلاة التراويح",
     "title_id": "Praying at Night in Ramadaan (Taraweeh)",
     "hadith_start": 2008,
-    "hadith_end": 2013
+    "hadith_end": 2013,
+    "hadith_count": 6
   },
   {
     "id": "bukhari_c32",
     "book_id": "bukhari",
     "chapter_number": 32,
-    "title_ar": "Virtues of the Night of Qadr",
     "title_en": "Virtues of the Night of Qadr",
+    "title_ar": "كتاب فضل ليلة القدر",
     "title_id": "Virtues of the Night of Qadr",
     "hadith_start": 2014,
-    "hadith_end": 2024
+    "hadith_end": 2024,
+    "hadith_count": 11
   },
   {
     "id": "bukhari_c33",
     "book_id": "bukhari",
     "chapter_number": 33,
-    "title_ar": "Retiring to a Mosque for Remembrance of Allah (I'tikaf)",
     "title_en": "Retiring to a Mosque for Remembrance of Allah (I'tikaf)",
-    "title_id": "Retiring to a Mosque for Remembrance of Allah (I'tikaf)",
+    "title_ar": "كتاب الاعتكاف",
+    "title_id": "I'tikaf",
     "hadith_start": 2025,
-    "hadith_end": 2046
+    "hadith_end": 2046,
+    "hadith_count": 21
   },
   {
     "id": "bukhari_c34",
     "book_id": "bukhari",
     "chapter_number": 34,
-    "title_ar": "Sales and Trade",
     "title_en": "Sales and Trade",
-    "title_id": "Sales and Trade",
+    "title_ar": "كتاب البيوع",
+    "title_id": "Jual Beli",
     "hadith_start": 2047,
-    "hadith_end": 2238
+    "hadith_end": 2238,
+    "hadith_count": 184
   },
   {
     "id": "bukhari_c35",
     "book_id": "bukhari",
     "chapter_number": 35,
-    "title_ar": "Sales in which a Price is paid for Goods to be Delivered Later (As-Salam)",
     "title_en": "Sales in which a Price is paid for Goods to be Delivered Later (As-Salam)",
-    "title_id": "Sales in which a Price is paid for Goods to be Delivered Later (As-Salam)",
+    "title_ar": "كتاب السلم",
+    "title_id": "Jual Beli Salam",
     "hadith_start": 2239,
-    "hadith_end": 2256
+    "hadith_end": 2256,
+    "hadith_count": 16
   },
   {
     "id": "bukhari_c36",
     "book_id": "bukhari",
     "chapter_number": 36,
-    "title_ar": "Shuf'a",
     "title_en": "Shuf'a",
-    "title_id": "Shuf'a",
+    "title_ar": "كتاب الشفعة",
+    "title_id": "Hak Syuf'ah",
     "hadith_start": 2257,
-    "hadith_end": 2259
+    "hadith_end": 2259,
+    "hadith_count": 3
   },
   {
     "id": "bukhari_c37",
     "book_id": "bukhari",
     "chapter_number": 37,
-    "title_ar": "Hiring",
     "title_en": "Hiring",
-    "title_id": "Hiring",
+    "title_ar": "كتاب الإجارة",
+    "title_id": "Sewa-menyewa",
     "hadith_start": 2260,
-    "hadith_end": 2286
+    "hadith_end": 2285,
+    "hadith_count": 25
   },
   {
     "id": "bukhari_c38",
     "book_id": "bukhari",
     "chapter_number": 38,
-    "title_ar": "Transferance of a Debt from One Person to Another (Al-Hawaala)",
     "title_en": "Transferance of a Debt from One Person to Another (Al-Hawaala)",
-    "title_id": "Transferance of a Debt from One Person to Another (Al-Hawaala)",
+    "title_ar": "كتاب الحوالات",
+    "title_id": "Pengalihan Hutang",
     "hadith_start": 2287,
-    "hadith_end": 2289
+    "hadith_end": 2289,
+    "hadith_count": 3
   },
   {
     "id": "bukhari_c39",
     "book_id": "bukhari",
     "chapter_number": 39,
-    "title_ar": "Kafalah",
     "title_en": "Kafalah",
+    "title_ar": "كتاب الكفالة",
     "title_id": "Kafalah",
     "hadith_start": 2290,
-    "hadith_end": 2298
+    "hadith_end": 2298,
+    "hadith_count": 9
   },
   {
     "id": "bukhari_c40",
     "book_id": "bukhari",
     "chapter_number": 40,
-    "title_ar": "Representation, Authorization, Business by Proxy",
     "title_en": "Representation, Authorization, Business by Proxy",
-    "title_id": "Representation, Authorization, Business by Proxy",
+    "title_ar": "كتاب الوكالة",
+    "title_id": "Perwakilan",
     "hadith_start": 2299,
-    "hadith_end": 2319
+    "hadith_end": 2319,
+    "hadith_count": 18
   },
   {
     "id": "bukhari_c41",
     "book_id": "bukhari",
     "chapter_number": 41,
-    "title_ar": "Agriculture",
     "title_en": "Agriculture",
-    "title_id": "Agriculture",
+    "title_ar": "كتاب المزارعة",
+    "title_id": "Pertanian",
     "hadith_start": 2320,
-    "hadith_end": 2350
+    "hadith_end": 2350,
+    "hadith_count": 28
   },
   {
     "id": "bukhari_c42",
     "book_id": "bukhari",
     "chapter_number": 42,
-    "title_ar": "Distribution of Water",
     "title_en": "Distribution of Water",
-    "title_id": "Distribution of Water",
+    "title_ar": "كتاب المساقاة",
+    "title_id": "Pembagian Air",
     "hadith_start": 2351,
-    "hadith_end": 2383
+    "hadith_end": 2383,
+    "hadith_count": 31
   },
   {
     "id": "bukhari_c43",
     "book_id": "bukhari",
     "chapter_number": 43,
-    "title_ar": "Loans, Payment of Loans, Freezing of Property, Bankruptcy",
     "title_en": "Loans, Payment of Loans, Freezing of Property, Bankruptcy",
-    "title_id": "Loans, Payment of Loans, Freezing of Property, Bankruptcy",
+    "title_ar": "كتاب فى الاستقراض",
+    "title_id": "Hutang",
     "hadith_start": 2385,
-    "hadith_end": 2409
+    "hadith_end": 2409,
+    "hadith_count": 24
   },
   {
     "id": "bukhari_c44",
     "book_id": "bukhari",
     "chapter_number": 44,
-    "title_ar": "Khusoomaat",
     "title_en": "Khusoomaat",
+    "title_ar": "كتاب الخصومات",
     "title_id": "Khusoomaat",
     "hadith_start": 2410,
-    "hadith_end": 2425
+    "hadith_end": 2425,
+    "hadith_count": 15
   },
   {
     "id": "bukhari_c45",
     "book_id": "bukhari",
     "chapter_number": 45,
-    "title_ar": "Lost Things Picked up by Someone (Luqatah)",
     "title_en": "Lost Things Picked up by Someone (Luqatah)",
+    "title_ar": "كتاب فى اللقطة",
     "title_id": "Lost Things Picked up by Someone (Luqatah)",
     "hadith_start": 2426,
-    "hadith_end": 2439
+    "hadith_end": 2439,
+    "hadith_count": 15
   },
   {
     "id": "bukhari_c46",
     "book_id": "bukhari",
     "chapter_number": 46,
-    "title_ar": "Oppressions",
     "title_en": "Oppressions",
-    "title_id": "Oppressions",
+    "title_ar": "كتاب المظالم",
+    "title_id": "Kezaliman",
     "hadith_start": 2440,
-    "hadith_end": 2482
+    "hadith_end": 2482,
+    "hadith_count": 43
   },
   {
     "id": "bukhari_c47",
     "book_id": "bukhari",
     "chapter_number": 47,
-    "title_ar": "Partnership",
     "title_en": "Partnership",
-    "title_id": "Partnership",
+    "title_ar": "كتاب الشركة",
+    "title_id": "Kerjasama",
     "hadith_start": 2483,
-    "hadith_end": 2507
+    "hadith_end": 2507,
+    "hadith_count": 22
   },
   {
     "id": "bukhari_c48",
     "book_id": "bukhari",
     "chapter_number": 48,
-    "title_ar": "Mortgaging",
     "title_en": "Mortgaging",
-    "title_id": "Mortgaging",
+    "title_ar": "كتاب الرهن",
+    "title_id": "Gadai",
     "hadith_start": 2508,
-    "hadith_end": 2515
+    "hadith_end": 2515,
+    "hadith_count": 8
   },
   {
     "id": "bukhari_c49",
     "book_id": "bukhari",
     "chapter_number": 49,
-    "title_ar": "Manumission of Slaves",
     "title_en": "Manumission of Slaves",
-    "title_id": "Manumission of Slaves",
+    "title_ar": "كتاب العتق",
+    "title_id": "Pembebasan Budak",
     "hadith_start": 2517,
-    "hadith_end": 2559
+    "hadith_end": 2559,
+    "hadith_count": 41
   },
   {
     "id": "bukhari_c50",
     "book_id": "bukhari",
     "chapter_number": 50,
-    "title_ar": "Makaatib",
     "title_en": "Makaatib",
+    "title_ar": "كتاب المكاتب",
     "title_id": "Makaatib",
     "hadith_start": 2560,
-    "hadith_end": 2565
+    "hadith_end": 2565,
+    "hadith_count": 6
   },
   {
     "id": "bukhari_c51",
     "book_id": "bukhari",
     "chapter_number": 51,
-    "title_ar": "Gifts",
     "title_en": "Gifts",
-    "title_id": "Gifts",
+    "title_ar": "كتاب الهبة وفضلها والتحريض عليها",
+    "title_id": "Hadiah",
     "hadith_start": 2566,
-    "hadith_end": 2636
+    "hadith_end": 2636,
+    "hadith_count": 68
   },
   {
     "id": "bukhari_c52",
     "book_id": "bukhari",
     "chapter_number": 52,
-    "title_ar": "Witnesses",
     "title_en": "Witnesses",
-    "title_id": "Witnesses",
+    "title_ar": "كتاب الشهادات",
+    "title_id": "Persaksian",
     "hadith_start": 2637,
-    "hadith_end": 2689
+    "hadith_end": 2689,
+    "hadith_count": 50
   },
   {
     "id": "bukhari_c53",
     "book_id": "bukhari",
     "chapter_number": 53,
-    "title_ar": "Peacemaking",
     "title_en": "Peacemaking",
-    "title_id": "Peacemaking",
+    "title_ar": "كتاب الصلح",
+    "title_id": "Perdamaian",
     "hadith_start": 2690,
-    "hadith_end": 2710
+    "hadith_end": 2710,
+    "hadith_count": 20
   },
   {
     "id": "bukhari_c54",
     "book_id": "bukhari",
     "chapter_number": 54,
-    "title_ar": "Conditions",
     "title_en": "Conditions",
-    "title_id": "Conditions",
-    "hadith_start": 2712,
-    "hadith_end": 2737
+    "title_ar": "كتاب الشروط",
+    "title_id": "Syarat",
+    "hadith_start": 2711,
+    "hadith_end": 2737,
+    "hadith_count": 24
   },
   {
     "id": "bukhari_c55",
     "book_id": "bukhari",
     "chapter_number": 55,
-    "title_ar": "Wills and Testaments (Wasaayaa)",
     "title_en": "Wills and Testaments (Wasaayaa)",
-    "title_id": "Wills and Testaments (Wasaayaa)",
+    "title_ar": "كتاب الوصايا",
+    "title_id": "Wasiat",
     "hadith_start": 2738,
-    "hadith_end": 2781
+    "hadith_end": 2781,
+    "hadith_count": 44
   },
   {
     "id": "bukhari_c56",
     "book_id": "bukhari",
     "chapter_number": 56,
-    "title_ar": "Fighting for the Cause of Allah (Jihaad)",
     "title_en": "Fighting for the Cause of Allah (Jihaad)",
-    "title_id": "Fighting for the Cause of Allah (Jihaad)",
+    "title_ar": "كتاب الجهاد والسير",
+    "title_id": "Jihad",
     "hadith_start": 2782,
-    "hadith_end": 3090
+    "hadith_end": 3090,
+    "hadith_count": 294
   },
   {
     "id": "bukhari_c57",
     "book_id": "bukhari",
     "chapter_number": 57,
-    "title_ar": "One-fifth of Booty to the Cause of Allah (Khumus)",
     "title_en": "One-fifth of Booty to the Cause of Allah (Khumus)",
-    "title_id": "One-fifth of Booty to the Cause of Allah (Khumus)",
+    "title_ar": "كتاب فرض الخمس",
+    "title_id": "Khums",
     "hadith_start": 3091,
-    "hadith_end": 3155
+    "hadith_end": 3155,
+    "hadith_count": 63
   },
   {
     "id": "bukhari_c58",
     "book_id": "bukhari",
     "chapter_number": 58,
-    "title_ar": "Jizyah and Mawaada'ah",
     "title_en": "Jizyah and Mawaada'ah",
+    "title_ar": "كتاب الجزية والموادعة",
     "title_id": "Jizyah and Mawaada'ah",
-    "hadith_start": 3157,
-    "hadith_end": 3189
+    "hadith_start": 3156,
+    "hadith_end": 3189,
+    "hadith_count": 30
   },
   {
     "id": "bukhari_c59",
     "book_id": "bukhari",
     "chapter_number": 59,
-    "title_ar": "Beginning of Creation",
     "title_en": "Beginning of Creation",
-    "title_id": "Beginning of Creation",
+    "title_ar": "كتاب بدء الخلق",
+    "title_id": "Awal Penciptaan",
     "hadith_start": 3190,
-    "hadith_end": 3325
+    "hadith_end": 3325,
+    "hadith_count": 131
   },
   {
     "id": "bukhari_c60",
     "book_id": "bukhari",
     "chapter_number": 60,
-    "title_ar": "Prophets",
     "title_en": "Prophets",
-    "title_id": "Prophets",
+    "title_ar": "كتاب أحاديث الأنبياء",
+    "title_id": "Para Nabi",
     "hadith_start": 3326,
-    "hadith_end": 3488
+    "hadith_end": 3488,
+    "hadith_count": 154
   },
   {
     "id": "bukhari_c61",
     "book_id": "bukhari",
     "chapter_number": 61,
-    "title_ar": "Virtues and Merits of the Prophet (pbuh) and his Companions",
     "title_en": "Virtues and Merits of the Prophet (pbuh) and his Companions",
-    "title_id": "Virtues and Merits of the Prophet (pbuh) and his Companions",
+    "title_ar": "كتاب المناقب",
+    "title_id": "Keutamaan Nabi dan Sahabat",
     "hadith_start": 3489,
-    "hadith_end": 3648
+    "hadith_end": 3648,
+    "hadith_count": 151
   },
   {
     "id": "bukhari_c62",
     "book_id": "bukhari",
     "chapter_number": 62,
-    "title_ar": "Companions of the Prophet",
     "title_en": "Companions of the Prophet",
-    "title_id": "Companions of the Prophet",
+    "title_ar": "كتاب فضائل أصحاب النبى صلى الله عليه وسلم",
+    "title_id": "Sahabat Nabi",
     "hadith_start": 3649,
-    "hadith_end": 3775
+    "hadith_end": 3775,
+    "hadith_count": 120
   },
   {
     "id": "bukhari_c63",
     "book_id": "bukhari",
     "chapter_number": 63,
-    "title_ar": "Merits of the Helpers in Madinah (Ansaar)",
     "title_en": "Merits of the Helpers in Madinah (Ansaar)",
-    "title_id": "Merits of the Helpers in Madinah (Ansaar)",
+    "title_ar": "كتاب مناقب الأنصار",
+    "title_id": "Keutamaan Anshar",
     "hadith_start": 3776,
-    "hadith_end": 3948
+    "hadith_end": 3948,
+    "hadith_count": 172
   },
   {
     "id": "bukhari_c64",
     "book_id": "bukhari",
     "chapter_number": 64,
-    "title_ar": "Military Expeditions led by the Prophet (pbuh) (Al-Maghaazi)",
     "title_en": "Military Expeditions led by the Prophet (pbuh) (Al-Maghaazi)",
-    "title_id": "Military Expeditions led by the Prophet (pbuh) (Al-Maghaazi)",
+    "title_ar": "كتاب المغازى",
+    "title_id": "Peperangan",
     "hadith_start": 3949,
-    "hadith_end": 4473
+    "hadith_end": 4473,
+    "hadith_count": 488
   },
   {
     "id": "bukhari_c65",
     "book_id": "bukhari",
     "chapter_number": 65,
-    "title_ar": "Prophetic Commentary on the Qur'an (Tafseer of the Prophet (pbuh))",
     "title_en": "Prophetic Commentary on the Qur'an (Tafseer of the Prophet (pbuh))",
+    "title_ar": "كتاب التفسير",
     "title_id": "Prophetic Commentary on the Qur'an (Tafseer of the Prophet (pbuh))",
     "hadith_start": 4474,
-    "hadith_end": 4977
+    "hadith_end": 4977,
+    "hadith_count": 499
   },
   {
     "id": "bukhari_c66",
     "book_id": "bukhari",
     "chapter_number": 66,
-    "title_ar": "Virtues of the Qur'an",
     "title_en": "Virtues of the Qur'an",
+    "title_ar": "كتاب فضائل القرآن",
     "title_id": "Virtues of the Qur'an",
-    "hadith_start": 4979,
-    "hadith_end": 5062
+    "hadith_start": 4978,
+    "hadith_end": 5062,
+    "hadith_count": 87
   },
   {
     "id": "bukhari_c67",
     "book_id": "bukhari",
     "chapter_number": 67,
-    "title_ar": "Wedlock, Marriage (Nikaah)",
     "title_en": "Wedlock, Marriage (Nikaah)",
-    "title_id": "Wedlock, Marriage (Nikaah)",
+    "title_ar": "كتاب النكاح",
+    "title_id": "Pernikahan",
     "hadith_start": 5063,
-    "hadith_end": 5250
+    "hadith_end": 5250,
+    "hadith_count": 183
   },
   {
     "id": "bukhari_c68",
     "book_id": "bukhari",
     "chapter_number": 68,
-    "title_ar": "Divorce",
     "title_en": "Divorce",
-    "title_id": "Divorce",
+    "title_ar": "كتاب الطلاق",
+    "title_id": "Talak",
     "hadith_start": 5251,
-    "hadith_end": 5350
+    "hadith_end": 5350,
+    "hadith_count": 95
   },
   {
     "id": "bukhari_c69",
     "book_id": "bukhari",
     "chapter_number": 69,
-    "title_ar": "Supporting the Family",
     "title_en": "Supporting the Family",
-    "title_id": "Supporting the Family",
+    "title_ar": "كتاب النفقات",
+    "title_id": "Nafkah",
     "hadith_start": 5351,
-    "hadith_end": 5372
+    "hadith_end": 5372,
+    "hadith_count": 22
   },
   {
     "id": "bukhari_c70",
     "book_id": "bukhari",
     "chapter_number": 70,
-    "title_ar": "Food, Meals",
     "title_en": "Food, Meals",
-    "title_id": "Food, Meals",
+    "title_ar": "كتاب الأطعمة",
+    "title_id": "Makanan",
     "hadith_start": 5373,
-    "hadith_end": 5466
+    "hadith_end": 5466,
+    "hadith_count": 95
   },
   {
     "id": "bukhari_c71",
     "book_id": "bukhari",
     "chapter_number": 71,
-    "title_ar": "Sacrifice on Occasion of Birth (`Aqiqa)",
     "title_en": "Sacrifice on Occasion of Birth (`Aqiqa)",
-    "title_id": "Sacrifice on Occasion of Birth (`Aqiqa)",
+    "title_ar": "كتاب العقيقة",
+    "title_id": "Aqiqah",
     "hadith_start": 5467,
-    "hadith_end": 5474
+    "hadith_end": 5474,
+    "hadith_count": 9
   },
   {
     "id": "bukhari_c72",
     "book_id": "bukhari",
     "chapter_number": 72,
-    "title_ar": "Hunting, Slaughtering",
     "title_en": "Hunting, Slaughtering",
-    "title_id": "Hunting, Slaughtering",
+    "title_ar": "كتاب الذبائح والصيد",
+    "title_id": "Berburu dan Menyembelih",
     "hadith_start": 5475,
-    "hadith_end": 5544
+    "hadith_end": 5544,
+    "hadith_count": 69
   },
   {
     "id": "bukhari_c73",
     "book_id": "bukhari",
     "chapter_number": 73,
-    "title_ar": "Al-Adha Festival Sacrifice (Adaahi)",
     "title_en": "Al-Adha Festival Sacrifice (Adaahi)",
-    "title_id": "Al-Adha Festival Sacrifice (Adaahi)",
+    "title_ar": "كتاب الأضاحي",
+    "title_id": "Kurban",
     "hadith_start": 5545,
-    "hadith_end": 5574
+    "hadith_end": 5574,
+    "hadith_count": 30
   },
   {
     "id": "bukhari_c74",
     "book_id": "bukhari",
     "chapter_number": 74,
-    "title_ar": "Drinks",
     "title_en": "Drinks",
-    "title_id": "Drinks",
+    "title_ar": "كتاب الأشربة",
+    "title_id": "Minuman",
     "hadith_start": 5575,
-    "hadith_end": 5639
+    "hadith_end": 5639,
+    "hadith_count": 65
   },
   {
     "id": "bukhari_c75",
     "book_id": "bukhari",
     "chapter_number": 75,
-    "title_ar": "Patients",
     "title_en": "Patients",
-    "title_id": "Patients",
+    "title_ar": "كتاب المرضى",
+    "title_id": "Orang Sakit",
     "hadith_start": 5640,
-    "hadith_end": 5677
+    "hadith_end": 5677,
+    "hadith_count": 37
   },
   {
     "id": "bukhari_c76",
     "book_id": "bukhari",
     "chapter_number": 76,
-    "title_ar": "Medicine",
     "title_en": "Medicine",
-    "title_id": "Medicine",
+    "title_ar": "كتاب الطب",
+    "title_id": "Pengobatan",
     "hadith_start": 5678,
-    "hadith_end": 5782
+    "hadith_end": 5782,
+    "hadith_count": 93
   },
   {
     "id": "bukhari_c77",
     "book_id": "bukhari",
     "chapter_number": 77,
-    "title_ar": "Dress",
     "title_en": "Dress",
-    "title_id": "Dress",
+    "title_ar": "كتاب اللباس",
+    "title_id": "Pakaian",
     "hadith_start": 5783,
-    "hadith_end": 5969
+    "hadith_end": 5969,
+    "hadith_count": 185
   },
   {
     "id": "bukhari_c78",
     "book_id": "bukhari",
     "chapter_number": 78,
-    "title_ar": "Good Manners and Form (Al-Adab)",
     "title_en": "Good Manners and Form (Al-Adab)",
-    "title_id": "Good Manners and Form (Al-Adab)",
+    "title_ar": "كتاب الأدب",
+    "title_id": "Adab",
     "hadith_start": 5970,
-    "hadith_end": 6226
+    "hadith_end": 6226,
+    "hadith_count": 250
   },
   {
     "id": "bukhari_c79",
     "book_id": "bukhari",
     "chapter_number": 79,
-    "title_ar": "Asking Permission",
     "title_en": "Asking Permission",
-    "title_id": "Asking Permission",
+    "title_ar": "كتاب الاستئذان",
+    "title_id": "Meminta Izin",
     "hadith_start": 6227,
-    "hadith_end": 6303
+    "hadith_end": 6303,
+    "hadith_count": 75
   },
   {
     "id": "bukhari_c80",
     "book_id": "bukhari",
     "chapter_number": 80,
-    "title_ar": "Invocations",
     "title_en": "Invocations",
-    "title_id": "Invocations",
+    "title_ar": "كتاب الدعوات",
+    "title_id": "Doa",
     "hadith_start": 6304,
-    "hadith_end": 6411
+    "hadith_end": 6411,
+    "hadith_count": 106
   },
   {
     "id": "bukhari_c81",
     "book_id": "bukhari",
     "chapter_number": 81,
-    "title_ar": "To make the Heart Tender (Ar-Riqaq)",
     "title_en": "To make the Heart Tender (Ar-Riqaq)",
+    "title_ar": "كتاب الرقاق",
     "title_id": "To make the Heart Tender (Ar-Riqaq)",
     "hadith_start": 6412,
-    "hadith_end": 6593
+    "hadith_end": 6593,
+    "hadith_count": 181
   },
   {
     "id": "bukhari_c82",
     "book_id": "bukhari",
     "chapter_number": 82,
-    "title_ar": "Divine Will (Al-Qadar)",
     "title_en": "Divine Will (Al-Qadar)",
-    "title_id": "Divine Will (Al-Qadar)",
+    "title_ar": "كتاب القدر",
+    "title_id": "Takdir",
     "hadith_start": 6594,
-    "hadith_end": 6620
+    "hadith_end": 6620,
+    "hadith_count": 26
   },
   {
     "id": "bukhari_c83",
     "book_id": "bukhari",
     "chapter_number": 83,
-    "title_ar": "Oaths and Vows",
     "title_en": "Oaths and Vows",
-    "title_id": "Oaths and Vows",
+    "title_ar": "كتاب الأيمان والنذور",
+    "title_id": "Sumpah dan Nazar",
     "hadith_start": 6621,
-    "hadith_end": 6707
+    "hadith_end": 6707,
+    "hadith_count": 84
   },
   {
     "id": "bukhari_c84",
     "book_id": "bukhari",
     "chapter_number": 84,
-    "title_ar": "Expiation for Unfulfilled Oaths",
     "title_en": "Expiation for Unfulfilled Oaths",
-    "title_id": "Expiation for Unfulfilled Oaths",
+    "title_ar": "كتاب كفارات الأيمان",
+    "title_id": "Kafarat Sumpah",
     "hadith_start": 6708,
-    "hadith_end": 6722
+    "hadith_end": 6722,
+    "hadith_count": 15
   },
   {
     "id": "bukhari_c85",
     "book_id": "bukhari",
     "chapter_number": 85,
-    "title_ar": "Laws of Inheritance (Al-Faraa'id)",
     "title_en": "Laws of Inheritance (Al-Faraa'id)",
-    "title_id": "Laws of Inheritance (Al-Faraa'id)",
+    "title_ar": "كتاب الفرائض",
+    "title_id": "Waris",
     "hadith_start": 6723,
-    "hadith_end": 6771
+    "hadith_end": 6771,
+    "hadith_count": 47
   },
   {
     "id": "bukhari_c86",
     "book_id": "bukhari",
     "chapter_number": 86,
-    "title_ar": "Limits and Punishments set by Allah (Hudood)",
     "title_en": "Limits and Punishments set by Allah (Hudood)",
-    "title_id": "Limits and Punishments set by Allah (Hudood)",
+    "title_ar": "كتاب الحدود",
+    "title_id": "Hudud",
     "hadith_start": 6772,
-    "hadith_end": 6860
+    "hadith_end": 6859,
+    "hadith_count": 81
   },
   {
     "id": "bukhari_c87",
     "book_id": "bukhari",
     "chapter_number": 87,
-    "title_ar": "Blood Money (Ad-Diyat)",
     "title_en": "Blood Money (Ad-Diyat)",
-    "title_id": "Blood Money (Ad-Diyat)",
+    "title_ar": "كتاب الديات",
+    "title_id": "Diyat",
     "hadith_start": 6861,
-    "hadith_end": 6917
+    "hadith_end": 6917,
+    "hadith_count": 55
   },
   {
     "id": "bukhari_c88",
     "book_id": "bukhari",
     "chapter_number": 88,
-    "title_ar": "Apostates",
     "title_en": "Apostates",
+    "title_ar": "كتاب استتابة المرتدين والمعاندين وقتالهم",
     "title_id": "Apostates",
     "hadith_start": 6918,
-    "hadith_end": 6939
+    "hadith_end": 6939,
+    "hadith_count": 21
   },
   {
     "id": "bukhari_c89",
     "book_id": "bukhari",
     "chapter_number": 89,
-    "title_ar": "(Statements made under) Coercion",
     "title_en": "(Statements made under) Coercion",
+    "title_ar": "كتاب الإكراه",
     "title_id": "(Statements made under) Coercion",
     "hadith_start": 6940,
-    "hadith_end": 6952
+    "hadith_end": 6952,
+    "hadith_count": 13
   },
   {
     "id": "bukhari_c90",
     "book_id": "bukhari",
     "chapter_number": 90,
-    "title_ar": "Tricks",
     "title_en": "Tricks",
-    "title_id": "Tricks",
+    "title_ar": "كتاب الحيل",
+    "title_id": "Tipu Daya",
     "hadith_start": 6953,
-    "hadith_end": 6981
+    "hadith_end": 6981,
+    "hadith_count": 28
   },
   {
     "id": "bukhari_c91",
     "book_id": "bukhari",
     "chapter_number": 91,
-    "title_ar": "Interpretation of Dreams",
     "title_en": "Interpretation of Dreams",
-    "title_id": "Interpretation of Dreams",
+    "title_ar": "كتاب التعبير",
+    "title_id": "Tafsir Mimpi",
     "hadith_start": 6982,
-    "hadith_end": 7047
+    "hadith_end": 7047,
+    "hadith_count": 61
   },
   {
     "id": "bukhari_c92",
     "book_id": "bukhari",
     "chapter_number": 92,
-    "title_ar": "Afflictions and the End of the World",
     "title_en": "Afflictions and the End of the World",
-    "title_id": "Afflictions and the End of the World",
+    "title_ar": "كتاب الفتن",
+    "title_id": "Fitnah dan Akhir Zaman",
     "hadith_start": 7048,
-    "hadith_end": 7136
+    "hadith_end": 7136,
+    "hadith_count": 83
   },
   {
     "id": "bukhari_c93",
     "book_id": "bukhari",
     "chapter_number": 93,
-    "title_ar": "Judgments (Ahkaam)",
     "title_en": "Judgments (Ahkaam)",
-    "title_id": "Judgments (Ahkaam)",
+    "title_ar": "كتاب الأحكام",
+    "title_id": "Hukum-hukum",
     "hadith_start": 7137,
-    "hadith_end": 7225
+    "hadith_end": 7225,
+    "hadith_count": 84
   },
   {
     "id": "bukhari_c94",
     "book_id": "bukhari",
     "chapter_number": 94,
-    "title_ar": "Wishes",
     "title_en": "Wishes",
-    "title_id": "Wishes",
+    "title_ar": "كتاب التمنى",
+    "title_id": "Angan-angan",
     "hadith_start": 7226,
-    "hadith_end": 7245
+    "hadith_end": 7245,
+    "hadith_count": 20
   },
   {
     "id": "bukhari_c95",
     "book_id": "bukhari",
     "chapter_number": 95,
-    "title_ar": "Accepting Information Given by a Truthful Person",
     "title_en": "Accepting Information Given by a Truthful Person",
+    "title_ar": "كتاب أخبار الآحاد",
     "title_id": "Accepting Information Given by a Truthful Person",
     "hadith_start": 7246,
-    "hadith_end": 7267
+    "hadith_end": 7267,
+    "hadith_count": 21
   },
   {
     "id": "bukhari_c96",
     "book_id": "bukhari",
     "chapter_number": 96,
-    "title_ar": "Holding Fast to the Qur'an and Sunnah",
     "title_en": "Holding Fast to the Qur'an and Sunnah",
+    "title_ar": "كتاب الاعتصام بالكتاب والسنة",
     "title_id": "Holding Fast to the Qur'an and Sunnah",
     "hadith_start": 7268,
-    "hadith_end": 7370
+    "hadith_end": 7370,
+    "hadith_count": 97
   },
   {
     "id": "bukhari_c97",
     "book_id": "bukhari",
     "chapter_number": 97,
-    "title_ar": "Oneness, Uniqueness of Allah (Tawheed)",
     "title_en": "Oneness, Uniqueness of Allah (Tawheed)",
-    "title_id": "Oneness, Uniqueness of Allah (Tawheed)",
+    "title_ar": "كتاب التوحيد",
+    "title_id": "Tauhid",
     "hadith_start": 7371,
-    "hadith_end": 7563
+    "hadith_end": 7563,
+    "hadith_count": 188
   }
 ]

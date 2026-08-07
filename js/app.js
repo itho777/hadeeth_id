@@ -993,15 +993,28 @@ async function loadChaptersList() {
   // Re-apply language preference to newly injected elements
   LangSystem.apply(LangSystem.get());
 
-  // Chapter filter input listener
+  // Chapter filter input listener — live search
   const filterInput = document.getElementById('chapter-filter-input');
   if (filterInput) {
     filterInput.addEventListener('input', (e) => {
       const q = e.target.value.toLowerCase().trim();
       container.querySelectorAll('a').forEach(card => {
-        const text = card.innerText.toLowerCase();
-        card.style.display = text.includes(q) ? 'flex' : 'none';
+        const matches = !q || card.innerText.toLowerCase().includes(q);
+        card.style.display = matches ? '' : 'none';
       });
+      // Show "no results" if all hidden
+      let noResults = container.querySelector('.no-results-msg');
+      const visible = container.querySelectorAll('a:not([style*="none"])').length;
+      if (!visible && q) {
+        if (!noResults) {
+          noResults = document.createElement('div');
+          noResults.className = 'no-results-msg col-span-2 py-6 text-center text-outline dark:text-gray-400 text-sm';
+          container.appendChild(noResults);
+        }
+        noResults.textContent = `No kitab matching "${q}"`;
+      } else if (noResults) {
+        noResults.remove();
+      }
     });
   }
 }
