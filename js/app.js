@@ -482,6 +482,7 @@ async function loadHadithList() {
   const chMeta = document.querySelector('[data-list-chapter-meta]');
   const countMeta = document.querySelector('[data-list-count-meta]');
   const chTitleEn = document.querySelector('[data-list-chapter-title-en]');
+  const chTitleId = document.querySelector('[data-list-chapter-title-id]');
   const chTitleAr = document.querySelector('[data-list-chapter-title-ar]');
 
   const searchInput = document.getElementById('chapter-search-input');
@@ -494,13 +495,20 @@ async function loadHadithList() {
 
   // Fetch Chapter Metadata if available
   let chapterTitleNameEn = `Chapter ${chapterId}`;
+  let chapterTitleNameId = `Bab ${chapterId}`;
   let chapterTitleNameAr = `باب رقم ${chapterId}`;
   try {
     const chapters = await window.HadeethAPI.getChapters(bookId);
-    if (chapters && chapters.length >= parseInt(chapterId)) {
-      const chInfo = chapters[parseInt(chapterId) - 1];
-      if (chInfo.name_en) chapterTitleNameEn = chInfo.name_en;
-      if (chInfo.name_ar) chapterTitleNameAr = chInfo.name_ar;
+    if (chapters && chapters.length > 0) {
+      const targetNum = parseInt(chapterId);
+      const chInfo = chapters.find(c => c.chapter_number === targetNum)
+        || chapters[targetNum - 1]
+        || chapters[0];
+      if (chInfo) {
+        chapterTitleNameEn = chInfo.title_en || chInfo.name_en || chInfo.title || `Chapter ${chapterId}`;
+        chapterTitleNameId = chInfo.title_id || chInfo.name_id || chapterTitleNameEn;
+        chapterTitleNameAr = chInfo.title_ar || chInfo.name_ar || chInfo.arabic || `باب رقم ${chapterId}`;
+      }
     }
   } catch (err) {
     console.warn('Chapter meta load error:', err);
@@ -512,9 +520,11 @@ async function loadHadithList() {
   }
   if (bcCurrent) bcCurrent.innerText = `Kitab ${chapterId}: ${chapterTitleNameEn}`;
   if (bookBadge) bookBadge.innerText = bookName;
-  if (chMeta) chMeta.innerText = `Chapter ${chapterId}`;
+  if (chMeta) chMeta.innerText = `Kitab ${chapterId}`;
   if (chTitleEn) chTitleEn.innerText = chapterTitleNameEn;
+  if (chTitleId) chTitleId.innerText = chapterTitleNameId;
   if (chTitleAr) chTitleAr.innerText = chapterTitleNameAr;
+  LangSystem.apply(LangSystem.get());
 
   // Local state
   let allHadiths = [];
