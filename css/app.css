@@ -46,6 +46,18 @@
 .dark .logo-light { display: none; }
 .dark .logo-dark  { display: block; }
 
+/* --- Select Dropdown Option Styling & High Contrast --- */
+select option {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  padding: 8px;
+}
+.dark select option {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+  padding: 8px;
+}
+
 /* --- Active Nav Link --- */
 .nav-link-active {
   font-weight: 700;

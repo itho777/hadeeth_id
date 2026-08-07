@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/app.css?v=20260807_24"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -62,9 +62,8 @@
 <header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
   <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
     <a href="index.html" class="flex items-center gap-2">
-      <img src="assets/logo_light.jpg" alt="HADEETH.ID Logo" class="logo-light w-8 h-8 rounded-full object-cover"/>
-      <img src="assets/logo_dark.jpg"  alt="HADEETH.ID Logo" class="logo-dark  w-8 h-8 rounded-full object-cover"/>
-      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">HADEETH.ID</span>
+      <div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-[#0a1120] border border-outline-variant/30"><img src="assets/logo_light.jpg" alt="hadeeth.id logo" class="logo-light w-full h-full object-cover rounded-lg scale-125"/><img src="assets/logo_dark.jpg" alt="hadeeth.id logo" class="logo-dark w-full h-full object-cover rounded-lg scale-125"/></div>
+      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
     </a>
     <nav class="hidden md:flex items-center gap-stack-lg">
       <a href="books.html"   data-nav-page="books.html" data-i18n="nav_books" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors" data-i18n="nav_books">Books</a>
@@ -175,7 +174,7 @@
             <h3 class="font-body-md text-body-md font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">Sahih al-Bukhari</h3>
             <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Imam Muhammad al-Bukhari</p>
             <div class="mt-3 flex items-center justify-between text-label-sm font-label-sm text-outline dark:text-gray-500">
-              <span>7,563 Ahadith</span>
+              <span data-lang-en>7,563 Ahadith</span><span data-lang-id>7.563 Hadits</span>
               <span class="material-symbols-outlined text-[16px]">bookmark_border</span>
             </div>
           </div>
@@ -190,7 +189,7 @@
             <h3 class="font-body-md text-body-md font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">Sahih Muslim</h3>
             <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Imam Muslim ibn al-Hajjaj</p>
             <div class="mt-3 flex items-center justify-between text-label-sm font-label-sm text-outline dark:text-gray-500">
-              <span>3,033 Ahadith</span>
+              <span data-lang-en>3,033 Ahadith</span><span data-lang-id>3.033 Hadits</span>
               <span class="material-symbols-outlined text-[16px]">bookmark_border</span>
             </div>
           </div>
@@ -205,7 +204,7 @@
             <h3 class="font-body-md text-body-md font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">Sunan Abu Dawood</h3>
             <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Imam Abu Dawood</p>
             <div class="mt-3 flex items-center justify-between text-label-sm font-label-sm text-outline dark:text-gray-500">
-              <span>5,274 Ahadith</span>
+              <span data-lang-en>5,274 Ahadith</span><span data-lang-id>5.274 Hadits</span>
               <span class="material-symbols-outlined text-[16px]">bookmark_border</span>
             </div>
           </div>
@@ -266,7 +265,7 @@
   </div>
 </footer>
 
-<script src="js/api.js?v=20260807_23"></script>
-<script src="js/app.js?v=20260807_23"></script>
+<script src="js/api.js?v=20260807_24"></script>
+<script src="js/app.js?v=20260807_24"></script>
 </body>
 </html>

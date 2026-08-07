@@ -348,14 +348,16 @@ async function loadBooksGrid() {
   const books = await window.HadeethAPI.getBooks();
   if (!books || books.length === 0) return;
 
+  const isIdMode = (window.LangSystem && window.LangSystem.isIdMode());
   let html = '';
   books.forEach(b => {
+    const countUnit = isIdMode ? 'Hadits' : 'Ahadith';
     html += `
       <a href="kitab.html?book=${b.id}" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group">
         <div class="p-5 flex flex-col gap-2 flex-grow">
           <div class="flex justify-between items-start">
             <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] px-2 py-0.5 rounded font-bold text-xs uppercase">${b.grade || 'Sahih'}</span>
-            <span class="text-xs text-outline dark:text-gray-400 font-bold">${b.total_hadiths || '—'} Ahadith</span>
+            <span class="text-xs text-outline dark:text-gray-400 font-bold">${b.total_hadiths || '—'} ${countUnit}</span>
           </div>
           <h3 class="text-lg font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors mt-1">${escapeHtml(b.name_en)}</h3>
           <p class="font-arabic-body text-base text-secondary dark:text-[#10b981]" dir="rtl">${escapeHtml(b.name_ar || '')}</p>
