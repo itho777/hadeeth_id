@@ -53,6 +53,7 @@ const UI_I18N = {
     scholarly_commentary: "Scholarly Commentary & Sharh",
     chain_of_narrators: "Chain of Narrators (Sanad)",
     full_sanad_graph: "View Full Interactive Sanad Graph →",
+    role_sahabi: "Sahabi (Companion)",
     footer_text: "© 2024 HADEETH.ID - Digital Manuscript Preservation"
   },
   id: {
@@ -90,6 +91,7 @@ const UI_I18N = {
     scholarly_commentary: "Syarah & Penjelasan Ulama",
     chain_of_narrators: "Silsilah Perawi (Sanad)",
     full_sanad_graph: "Lihat Grafik Interaktif Sanad Lengkap →",
+    role_sahabi: "Sahabat",
     footer_text: "© 2024 HADEETH.ID - Pelestarian Manuskrip Digital"
   }
 };
@@ -1608,13 +1610,19 @@ async function loadSanadChain() {
     }
     const profileUrl = `profile-detail.html?id=${encodeURIComponent(rawiSlug || 'rawi_abu_hurairah')}`;
 
+    const isId = (LangSystem.get() === 'id');
+    let displayRole = nr.role || '';
+    if (isId) {
+      displayRole = displayRole.replace(/Sahabi\s*\(Companion\)/ig, 'Sahabat').replace(/Sahabi/ig, 'Sahabat');
+    }
+
     html += `
       <div class="sanad-node relative z-10 bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-5 shadow-sm hover:border-sunan-emerald/50 transition-colors flex flex-col gap-3">
         <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-secondary text-white border-2 border-white dark:border-ink-black flex items-center justify-center text-[10px]">${idx + 1}</div>
         
         <div class="flex justify-between items-start border-b border-outline-variant/20 dark:border-[#334155] pb-3">
           <div>
-            <span class="text-[10px] uppercase font-bold text-sunan-emerald dark:text-[#10b981]">${escapeHtml(nr.role)}</span>
+            <span class="text-[10px] uppercase font-bold text-sunan-emerald dark:text-[#10b981]">${escapeHtml(displayRole)}</span>
             <a href="${profileUrl}" class="font-bold text-base text-primary dark:text-white hover:text-sunan-emerald dark:hover:text-[#10b981] hover:underline flex items-center gap-1 mt-0.5">
               ${escapeHtml(nr.name)}
               <span class="material-symbols-outlined text-xs">open_in_new</span>

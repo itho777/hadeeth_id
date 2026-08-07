@@ -94,7 +94,7 @@
         </div>
         <div class="flex flex-col gap-1">
           <div class="flex items-center gap-2 flex-wrap">
-            <span id="profile-gen-badge" class="bg-sunan-emerald text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded">Sahabi (Companion)</span>
+            <span id="profile-gen-badge" class="bg-sunan-emerald text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded" data-i18n="role_sahabi">Sahabi (Companion)</span>
             <span id="profile-grade-badge" class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] uppercase font-bold px-2.5 py-0.5 rounded border border-sunan-emerald/20">Grade: Sahabi Adl (Utmost Reliability)</span>
           </div>
           <h1 id="profile-english-name" class="text-2xl md:text-3xl font-bold text-primary dark:text-white">'Umar bin Al-Khattab</h1>
@@ -102,7 +102,7 @@
         </div>
       </div>
       <div class="text-left md:text-right">
-        <span id="profile-arabic-name" class="font-arabic-display text-3xl md:text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl">عمر بن الخطاب (رضي الله عنه)</span>
+        <span id="profile-arabic-name" class="font-arabic-display text-3xl md:text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl">أبو هريرة (رضي الله عنه)</span>
       </div>
     </div>
 
@@ -309,8 +309,8 @@
   </div>
 </footer>
 
-<script src="js/api.js?v=20260807_15"></script>
-<script src="js/app.js?v=20260807_15"></script>
+<script src="js/api.js?v=20260807_16"></script>
+<script src="js/app.js?v=20260807_16"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -340,7 +340,26 @@
         if (res.ok) data = await res.json();
       }
 
-      if (!data || data.length === 0) return;
+      const isId = (window.LangSystem && window.LangSystem.get() === 'id');
+
+      if (!data || data.length === 0) {
+        if (id.toLowerCase().includes('abu_hurairah')) {
+          document.getElementById('breadcrumb-name').innerText = "Abu Hurairah (رضي الله عنه)";
+          document.getElementById('profile-avatar').innerText = "أ";
+          document.getElementById('profile-gen-badge').innerText = isId ? "Sahabat" : "Sahabi (Companion)";
+          document.getElementById('profile-grade-badge').innerText = isId ? "Tingkat: Sahabat Adil" : "Grade: Sahabi Adl (Utmost Reliability)";
+          document.getElementById('profile-english-name').innerText = "Abu Hurairah Radliallahu 'anhu";
+          document.getElementById('profile-nasab').innerText = "Nasab: 'Abd al-Rahman ibn Sakhr al-Dawsi al-Zahrani";
+          document.getElementById('profile-arabic-name').innerText = "أبو هريرة (رضي الله عنه)";
+          document.getElementById('profile-kunyah').innerText = "Abu Hurairah (أبو هريرة)";
+          document.getElementById('profile-settled').innerText = "Madinah al-Munawwarah / Bahrain";
+          document.getElementById('profile-dates').innerText = "21 BH – 57 AH / 678 CE";
+          document.getElementById('profile-parents').innerText = "Sakhr ibn Umayya / Umaymah bint Subayh";
+          document.getElementById('total-hadith-badge').innerText = "5,374 Narrations";
+          return;
+        }
+        return;
+      }
 
       const rawi = data[0];
 
@@ -348,14 +367,20 @@
       const demoBar = document.querySelector('.bg-surface-container-low.dark\\:bg-\\[\\#1e293b\\].p-3');
       if (demoBar) demoBar.style.display = 'none';
 
+      let genTitle = rawi.generation || (rawi.is_sahabi ? 'Sahabi (Companion)' : 'Transmitter');
+      if (isId && genTitle.toLowerCase().includes('sahabi')) genTitle = 'Sahabat';
+
       document.title = `Narrator Profile: ${rawi.name_en} — HADEETH.ID`;
       document.getElementById('breadcrumb-name').innerText = rawi.name_en;
       document.getElementById('profile-avatar').innerText = (rawi.name_ar || rawi.name_en).charAt(0);
-      document.getElementById('profile-gen-badge').innerText = rawi.generation || 'Transmitter';
-      document.getElementById('profile-grade-badge').innerText = `Grade: ${rawi.grade || (rawi.is_sahabi ? 'Sahabi Adl' : 'Thiqah')}`;
+      document.getElementById('profile-gen-badge').innerText = genTitle;
+      document.getElementById('profile-grade-badge').innerText = `Grade: ${rawi.grade || (rawi.is_sahabi ? (isId ? 'Sahabat Adil' : 'Sahabi Adl') : 'Thiqah')}`;
       document.getElementById('profile-english-name').innerText = rawi.name_en;
       document.getElementById('profile-nasab').innerText = rawi.nasab_en ? `Nasab: ${rawi.nasab_en}` : (rawi.nasab ? `Nasab: ${rawi.nasab}` : `ID: ${rawi.id}`);
-      document.getElementById('profile-arabic-name').innerText = rawi.name_ar ? `${rawi.name_ar} ${rawi.is_sahabi ? '(رضي الله عنه)' : ''}` : '';
+      
+      // Right side name: PURE ARABIC SCRIPT ONLY
+      const cleanArName = (rawi.name_ar || '').replace(/[a-zA-Z]/g, '').trim();
+      document.getElementById('profile-arabic-name').innerText = cleanArName ? `${cleanArName} ${rawi.is_sahabi ? '(رضي الله عنه)' : ''}` : (rawi.is_sahabi ? '(رضي الله عنه)' : '');
 
       document.getElementById('profile-kunyah').innerText = rawi.kunya_en ? `${rawi.kunya_en} (${rawi.kunya || ''})` : (rawi.kunya || 'N/A');
       document.getElementById('profile-settled').innerText = rawi.region || rawi.city_of_residence || rawi.city_of_death || 'Hijaz';
