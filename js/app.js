@@ -263,6 +263,9 @@ async function loadHadithDetail() {
   const sanadLink = container.querySelector('[data-sanad-link]');
   const sanadPreview = container.querySelector('[data-sanad-preview]');
 
+  if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${hadithId}`;
+  if (sanadPreview) sanadPreview.innerText = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
+
   try {
     const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?id=eq.${bookId}_${hadithId}&select=id,hadith_number,text_ar,text_en,text_id,grade,book_id`, {
       headers: {
@@ -339,6 +342,9 @@ async function loadHadithDetail() {
   if (englishElem) englishElem.innerText = hadithTextEn || '—';
   if (indonesianElem) indonesianElem.innerText = hadithTextId || '—';
   if (titleElem) titleElem.innerText = `${bookName} Hadith #${hadithId}`;
+  if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${hadithId}`;
+  if (sanadPreview) sanadPreview.innerText = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
+}
 }
 
 /**
