@@ -1400,30 +1400,30 @@ async function loadSanadChain() {
     }));
   }
 
-  // Canonical Rawi Dictionary with complete 7 Rijal Metadata attributes
+  // Canonical Rawi Dictionary with complete 7 Rijal Metadata attributes & EN/ID transliterations
   const rawiDict = [
-    { key: 'عَائِشَة', rawi_id: 'rawi_aisha_bint_abi_bakr', en: "'Aisha bint Abi Bakr (رضي الله عنها)", role: "Sahabiya • Mother of Believers", ar: "عائشة بنت أبي بكر", is_sahabi: true, kunyah: "Umm Abdillah", residence: "Madinah", death_ah: "58 AH (678 CE)", counts: "Bukhari: 242 | Muslim: 210 | Tirmidhi: 180", remarks: "Ibn Hajar: Al-Faqiha Al-Hafiz | Al-Dhahabi: Ummu al-Mu'minin" },
-    { key: 'عُمَر', rawi_id: 'rawi_umar_ibn_al_khattab', en: "'Umar bin Al-Khattab (رضي الله عنه)", role: "Sahabi • 2nd Caliph of Islam", ar: "عمر بن الخطاب", is_sahabi: true, kunyah: "Abu Hafsh", residence: "Madinah", death_ah: "23 AH (644 CE)", counts: "Bukhari: 537 | Muslim: 450 | Abu Dawood: 310", remarks: "Ibn Hajar: Amir al-Mu'minin Al-Farooq | Al-Dhahabi: Al-Imam Al-Adl" },
-    { key: 'أَبِي هُرَيْرَة', rawi_id: 'rawi_abu_hurairah', en: "Abu Hurairah (رضي الله عنه)", role: "Sahabi (Companion)", ar: "أبو هريرة", is_sahabi: true, kunyah: "Abu Hurairah", residence: "Madinah / Bahrain", death_ah: "57 AH (678 CE)", counts: "Bukhari: 5374 | Muslim: 4000 | Tirmidhi: 3200", remarks: "Ibn Hajar: Sayyid al-Huffaz | Al-Dhahabi: Al-Hafiz Al-Adl" },
-    { key: 'عَبْدِ اللَّهِ بْنِ عُمَر', rawi_id: 'rawi_ibn_umar', en: "'Abdullah bin 'Umar (رضي الله عنه)", role: "Sahabi (Companion)", ar: "عبد الله بن عمر", is_sahabi: true, kunyah: "Abu Abdurrahman", residence: "Madinah", death_ah: "73 AH (693 CE)", counts: "Bukhari: 2630 | Muslim: 1800", remarks: "Ibn Hajar: Al-Faqih Al-Muttabi' | Ibn Ma'in: Thiqah Thabt" },
-    { key: 'ابْنِ عَبَّاس', rawi_id: 'rawi_ibn_abbas', en: "'Abdullah bin 'Abbas (رضي الله عنه)", role: "Sahabi (Companion)", ar: "عبد الله بن عباس", is_sahabi: true, kunyah: "Abu al-Abbas", residence: "Makkah / Ta'if", death_ah: "68 AH (687 CE)", counts: "Bukhari: 1660 | Muslim: 1200", remarks: "Ibn Hajar: Hibr al-Ummah wa Tarjuman al-Qur'an" },
-    { key: 'أَنَس', rawi_id: 'rawi_anas_bin_malik', en: "Anas bin Malik (رضي الله عنه)", role: "Sahabi (Companion)", ar: "أنس بن مالك", is_sahabi: true, kunyah: "Abu Hamzah", residence: "Basra", death_ah: "93 AH (712 CE)", counts: "Bukhari: 2286 | Muslim: 1800", remarks: "Ibn Hajar: Khadim Rasulillahi ﷺ" },
-    { key: 'مَالِك', rawi_id: 'rawi_malik_bin_anas', en: "Imam Malik bin Anas", role: "Imam of Madinah (Author of Muwatta) • Grade: Hafiz", ar: "مالك بن أنس", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "179 AH (795 CE)", counts: "Muwatta: 1720 | Bukhari: 850 | Muslim: 750", remarks: "Ibn Hajar: Al-Imam Al-Hafiz | Al-Dhahabi: Sayyid al-Fuqaha" },
-    { key: 'سَعِيدِ بْنِ جُبَيْر', rawi_id: 'rawi_said_bin_jubair', en: "Sa'id bin Jubair", role: "Tabi'i (Successor)", ar: "سعيد بن جبير", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Kufah", death_ah: "95 AH (714 CE)", counts: "Bukhari: 140 | Muslim: 120", remarks: "Ibn Hajar: Thiqah Thabt Imam | Sufyan: A'lam al-Tabi'in" },
-    { key: 'مُوسَى بْنُ أَبِي عَائِشَة', rawi_id: 'rawi_musa_bin_abi_aisha', en: "Musa bin Abi 'Aisha", role: "Transmitter • Grade: Thiqah", ar: "موسى بن أبي عائشه", is_sahabi: false, kunyah: "Abu al-Hasan", residence: "Kufah", death_ah: "130 AH (747 CE)", counts: "Bukhari: 25 | Muslim: 20", remarks: "Ibn Hajar: Thiqah | Ibn Ma'in: Thiqah" },
-    { key: 'أَبُو عَوَانَة', rawi_id: 'rawi_abu_awanah', en: "Abu 'Awanah al-Waddah", role: "Transmitter • Grade: Thiqah", ar: "أبو عوانة الوضاح", is_sahabi: false, kunyah: "Abu 'Awanah", residence: "Basra", death_ah: "176 AH (792 CE)", counts: "Bukhari: 310 | Muslim: 280", remarks: "Ibn Hajar: Thiqah Thabt | Abu Hatim: Thiqah" },
-    { key: 'مُوسَى بْنُ إِسْمَاعِيل', rawi_id: 'rawi_musa_bin_ismail', en: "Musa bin Isma'il", role: "Direct Sheikh of Bukhari", ar: "موسى بن إسماعيل", is_sahabi: false, kunyah: "Abu Salamah", residence: "Basra", death_ah: "223 AH (838 CE)", counts: "Bukhari: 120 | Abu Dawood: 180", remarks: "Ibn Hajar: Thiqah Thabt | Ibn Ma'in: Thiqah" },
-    { key: 'عُرْوَة', rawi_id: 'rawi_urwah_ibn_zubayr', en: "'Urwah bin al-Zubayr", role: "Tabi'i (Successor)", ar: "عروة بن الزبير", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "94 AH (713 CE)", counts: "Bukhari: 450 | Muslim: 380", remarks: "Ibn Hajar: Thiqah Thabt Faqih Min al-Fuqaha al-Sab'ah" },
-    { key: 'ابْنِ شِهَاب', rawi_id: 'rawi_ibn_shihab_al_zuhri', en: "Ibn Shihab al-Zuhri", role: "Tabi'i (Master Hafiz)", ar: "ابن شهاب الزهري", is_sahabi: false, kunyah: "Abu Bakr", residence: "Madinah / Sham", death_ah: "124 AH (742 CE)", counts: "Bukhari: 1100 | Muslim: 950", remarks: "Ibn Hajar: Al-Faqih Al-Hafiz | Al-Dhahabi: A'lam al-Huffaz" },
-    { key: 'زُهْرِي', rawi_id: 'rawi_ibn_shihab_al_zuhri', en: "Ibn Shihab al-Zuhri", role: "Tabi'i (Master Hafiz)", ar: "ابن شهاب الزهري", is_sahabi: false, kunyah: "Abu Bakr", residence: "Madinah / Sham", death_ah: "124 AH (742 CE)", counts: "Bukhari: 1100 | Muslim: 950", remarks: "Ibn Hajar: Al-Faqih Al-Hafiz | Al-Dhahabi: A'lam al-Huffaz" },
-    { key: 'عُقَيْل', rawi_id: 'rawi_uqayl_bin_khalid', en: "'Uqayl bin Khalid al-Ayli", role: "Transmitter • Grade: Thiqah", ar: "عقيل بن خالد الأيلي", is_sahabi: false, kunyah: "Abu Khalid", residence: "Egypt / Sham", death_ah: "144 AH (761 CE)", counts: "Bukhari: 85 | Muslim: 70", remarks: "Ibn Hajar: Thiqah | Ibn Ma'in: Thiqah Thabt" },
-    { key: 'اللَّيْث', rawi_id: 'rawi_al_layth_bin_sad', en: "Al-Layth bin Sa'd", role: "Imam & Jurisconsult of Egypt", ar: "الليث بن سعد", is_sahabi: false, kunyah: "Abu al-Harith", residence: "Cairo (Egypt)", death_ah: "175 AH (791 CE)", counts: "Bukhari: 220 | Muslim: 180", remarks: "Ibn Hajar: Thiqah Thabt Imam | Al-Shafi'i: Afqah min Malik" },
-    { key: 'يَحْيَى بْنُ بُكَيْر', rawi_id: 'rawi_yahya_bin_bukayr', en: "Yahya bin Bukayr", role: "Direct Sheikh of Bukhari", ar: "يحيى بن بكير", is_sahabi: false, kunyah: "Abu Zakariya", residence: "Egypt", death_ah: "231 AH (845 CE)", counts: "Bukhari: 65 | Muslim: 40", remarks: "Ibn Hajar: Thiqah fi al-Zuhri | Ibn Ma'in: Saduq" },
-    { key: 'سُفْيَان', rawi_id: 'rawi_sufyan_al_thawri', en: "Sufyan bin 'Uyaynah", role: "Transmitter • Grade: Hafiz", ar: "سفيان بن عيينة", is_sahabi: false, kunyah: "Abu Muhammad", residence: "Makkah / Kufah", death_ah: "198 AH (814 CE)", counts: "Bukhari: 650 | Muslim: 580", remarks: "Ibn Hajar: Thiqah Hafiz Faqih | Ibn Ma'in: Thabt" },
-    { key: 'يَحْيَى بْنُ سَعِيد', rawi_id: 'rawi_yahya_bin_said', en: "Yahya bin Sa'id al-Ansari", role: "Transmitter • Grade: Thiqah", ar: "يحيى بن سعيد الأنصاري", is_sahabi: false, kunyah: "Abu Sa'id", residence: "Madinah / Iraq", death_ah: "143 AH (760 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Ahmad bin Hanbal: Imam Hujjah" },
-    { key: 'الْحُمَيْدِي', rawi_id: 'rawi_al_humaydi', en: "'Abdullah bin al-Zubayr al-Humaydi", role: "Direct Sheikh of Bukhari", ar: "عبد الله بن الزبير الحميدي", is_sahabi: false, kunyah: "Abu Bakr", residence: "Makkah / Madinah", death_ah: "219 AH (834 CE)", counts: "Bukhari: 75 | Muslim: 45", remarks: "Ibn Hajar: Thiqah Hafiz | Imam al-Bukhari: Imam fi al-Hadith" },
-    { key: 'مُحَمَّدُ بْنُ إِبْرَاهِيم', rawi_id: 'rawi_muhammad_bin_ibrahim', en: "Muhammad bin Ibrahim al-Taymi", role: "Tabi' al-Tabi'in", ar: "محمد بن إبراهيم التيمي", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "120 AH (738 CE)", counts: "Bukhari: 110 | Muslim: 95", remarks: "Ibn Hajar: Thiqah Mutqin | Ibn Ma'in: Thiqah" },
-    { key: 'عَلْقَمَة', rawi_id: 'rawi_alqama_bin_waqqas', en: "'Alqama bin Waqqas al-Laythi", role: "Tabi'i (Successor)", ar: "علقمة بن وقاص الليثي", is_sahabi: false, kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "85 AH (704 CE)", counts: "Bukhari: 48 | Muslim: 40", remarks: "Ibn Hajar: Thiqah | Al-Dhahabi: Min Kibar al-Tabi'in" }
+    { key: 'عَائِشَة', rawi_id: 'rawi_aisha_bint_abi_bakr', en: "'Aisha bint Abi Bakr (رضي الله عنها)", id: "Aisyah binti Abu Bakar ash-Shiddiq", role: "Sahabiya • Mother of Believers", ar: "عائشة بنت أبي بكر", is_sahabi: true, kunyah: "Umm Abdillah", residence: "Madinah", death_ah: "58 AH (678 CE)", counts: "Bukhari: 242 | Muslim: 210 | Tirmidhi: 180", remarks: "Ibn Hajar: Al-Faqiha Al-Hafiz | Al-Dhahabi: Ummu al-Mu'minin" },
+    { key: 'عُمَر', rawi_id: 'rawi_umar_ibn_al_khattab', en: "'Umar bin Al-Khattab (رضي الله عنه)", id: "Umar bin al-Khaththab", role: "Sahabi • 2nd Caliph of Islam", ar: "عمر بن الخطاب", is_sahabi: true, kunyah: "Abu Hafsh", residence: "Madinah", death_ah: "23 AH (644 CE)", counts: "Bukhari: 537 | Muslim: 450 | Abu Dawood: 310", remarks: "Ibn Hajar: Amir al-Mu'minin Al-Farooq | Al-Dhahabi: Al-Imam Al-Adl" },
+    { key: 'أَبِي هُرَيْرَة', rawi_id: 'rawi_abu_hurairah', en: "Abu Hurairah (رضي الله عنه)", id: "Abu Hurairah radliallahu 'anhu", role: "Sahabi (Companion)", ar: "أبو هريرة", is_sahabi: true, kunyah: "Abu Hurairah", residence: "Madinah / Bahrain", death_ah: "57 AH (678 CE)", counts: "Bukhari: 5374 | Muslim: 4000 | Tirmidhi: 3200", remarks: "Ibn Hajar: Sayyid al-Huffaz | Al-Dhahabi: Al-Hafiz Al-Adl" },
+    { key: 'عَبْدِ اللَّهِ بْنِ عُمَر', rawi_id: 'rawi_ibn_umar', en: "'Abdullah bin 'Umar (رضي الله عنه)", id: "Abdullah bin Umar", role: "Sahabi (Companion)", ar: "عبد الله بن عمر", is_sahabi: true, kunyah: "Abu Abdurrahman", residence: "Madinah", death_ah: "73 AH (693 CE)", counts: "Bukhari: 2630 | Muslim: 1800", remarks: "Ibn Hajar: Al-Faqih Al-Muttabi' | Ibn Ma'in: Thiqah Thabt" },
+    { key: 'ابْنِ عَبَّاس', rawi_id: 'rawi_ibn_abbas', en: "'Abdullah bin 'Abbas (رضي الله عنه)", id: "Abdullah bin Abbas", role: "Sahabi (Companion)", ar: "عبد الله بن عباس", is_sahabi: true, kunyah: "Abu al-Abbas", residence: "Makkah / Ta'if", death_ah: "68 AH (687 CE)", counts: "Bukhari: 1660 | Muslim: 1200", remarks: "Ibn Hajar: Hibr al-Ummah wa Tarjuman al-Qur'an" },
+    { key: 'أَنَس', rawi_id: 'rawi_anas_bin_malik', en: "Anas bin Malik (رضي الله عنه)", id: "Anas bin Malik al-Anshari", role: "Sahabi (Companion)", ar: "أنس بن مالك", is_sahabi: true, kunyah: "Abu Hamzah", residence: "Basra", death_ah: "93 AH (712 CE)", counts: "Bukhari: 2286 | Muslim: 1800", remarks: "Ibn Hajar: Khadim Rasulillahi ﷺ" },
+    { key: 'مَالِك', rawi_id: 'rawi_malik_bin_anas', en: "Imam Malik bin Anas", id: "Imam Malik bin Anas", role: "Imam of Madinah (Author of Muwatta) • Grade: Hafiz", ar: "مالك بن أنس", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "179 AH (795 CE)", counts: "Muwatta: 1720 | Bukhari: 850 | Muslim: 750", remarks: "Ibn Hajar: Al-Imam Al-Hafiz | Al-Dhahabi: Sayyid al-Fuqaha" },
+    { key: 'سَعِيدِ بْنِ جُبَيْر', rawi_id: 'rawi_said_bin_jubair', en: "Sa'id bin Jubair", id: "Sa'id bin Jubair", role: "Tabi'i (Successor)", ar: "سعيد بن جبير", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Kufah", death_ah: "95 AH (714 CE)", counts: "Bukhari: 140 | Muslim: 120", remarks: "Ibn Hajar: Thiqah Thabt Imam | Sufyan: A'lam al-Tabi'in" },
+    { key: 'مُوسَى بْنُ أَبِي عَائِشَة', rawi_id: 'rawi_musa_bin_abi_aisha', en: "Musa bin Abi 'Aisha", id: "Musa bin Abi 'Aisyah", role: "Transmitter • Grade: Thiqah", ar: "موسى بن أبي عائشه", is_sahabi: false, kunyah: "Abu al-Hasan", residence: "Kufah", death_ah: "130 AH (747 CE)", counts: "Bukhari: 25 | Muslim: 20", remarks: "Ibn Hajar: Thiqah | Ibn Ma'in: Thiqah" },
+    { key: 'أَبُو عَوَانَة', rawi_id: 'rawi_abu_awanah', en: "Abu 'Awanah al-Waddah", id: "Abu 'Awanah al-Waddah", role: "Transmitter • Grade: Thiqah", ar: "أبو عوانة الوضاح", is_sahabi: false, kunyah: "Abu 'Awanah", residence: "Basra", death_ah: "176 AH (792 CE)", counts: "Bukhari: 310 | Muslim: 280", remarks: "Ibn Hajar: Thiqah Thabt | Abu Hatim: Thiqah" },
+    { key: 'مُوسَى بْنُ إِسْمَاعِيل', rawi_id: 'rawi_musa_bin_ismail', en: "Musa bin Isma'il", id: "Musa bin Ismail", role: "Direct Sheikh of Bukhari", ar: "موسى بن إسماعيل", is_sahabi: false, kunyah: "Abu Salamah", residence: "Basra", death_ah: "223 AH (838 CE)", counts: "Bukhari: 120 | Abu Dawood: 180", remarks: "Ibn Hajar: Thiqah Thabt | Ibn Ma'in: Thiqah" },
+    { key: 'عُرْوَة', rawi_id: 'rawi_urwah_ibn_zubayr', en: "'Urwah bin al-Zubayr", id: "Urwah bin az-Zubair", role: "Tabi'i (Successor)", ar: "عروة بن الزبير", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "94 AH (713 CE)", counts: "Bukhari: 450 | Muslim: 380", remarks: "Ibn Hajar: Thiqah Thabt Faqih Min al-Fuqaha al-Sab'ah" },
+    { key: 'ابْنِ شِهَاب', rawi_id: 'rawi_ibn_shihab_al_zuhri', en: "Ibn Shihab al-Zuhri", id: "Ibnu Syihab az-Zuhri", role: "Tabi'i (Master Hafiz)", ar: "ابن شهاب الزهري", is_sahabi: false, kunyah: "Abu Bakr", residence: "Madinah / Sham", death_ah: "124 AH (742 CE)", counts: "Bukhari: 1100 | Muslim: 950", remarks: "Ibn Hajar: Al-Faqih Al-Hafiz | Al-Dhahabi: A'lam al-Huffaz" },
+    { key: 'زُهْرِي', rawi_id: 'rawi_ibn_shihab_al_zuhri', en: "Ibn Shihab al-Zuhri", id: "Ibnu Syihab az-Zuhri", role: "Tabi'i (Master Hafiz)", ar: "ابن شهاب الزهري", is_sahabi: false, kunyah: "Abu Bakr", residence: "Madinah / Sham", death_ah: "124 AH (742 CE)", counts: "Bukhari: 1100 | Muslim: 950", remarks: "Ibn Hajar: Al-Faqih Al-Hafiz | Al-Dhahabi: A'lam al-Huffaz" },
+    { key: 'عُقَيْل', rawi_id: 'rawi_uqayl_bin_khalid', en: "'Uqayl bin Khalid al-Ayli", id: "Uqail bin Khalid al-Ayli", role: "Transmitter • Grade: Thiqah", ar: "عقيل بن خالد الأيلي", is_sahabi: false, kunyah: "Abu Khalid", residence: "Egypt / Sham", death_ah: "144 AH (761 CE)", counts: "Bukhari: 85 | Muslim: 70", remarks: "Ibn Hajar: Thiqah | Ibn Ma'in: Thiqah Thabt" },
+    { key: 'اللَّيْث', rawi_id: 'rawi_al_layth_bin_sad', en: "Al-Layth bin Sa'd", id: "Al-Laits bin Sa'ad", role: "Imam & Jurisconsult of Egypt", ar: "الليث بن سعد", is_sahabi: false, kunyah: "Abu al-Harith", residence: "Cairo (Egypt)", death_ah: "175 AH (791 CE)", counts: "Bukhari: 220 | Muslim: 180", remarks: "Ibn Hajar: Thiqah Thabt Imam | Al-Shafi'i: Afqah min Malik" },
+    { key: 'يَحْيَى بْنُ بُكَيْر', rawi_id: 'rawi_yahya_bin_bukayr', en: "Yahya bin Bukayr", id: "Yahya bin Bukair", role: "Direct Sheikh of Bukhari", ar: "يحيى بن بكير", is_sahabi: false, kunyah: "Abu Zakariya", residence: "Egypt", death_ah: "231 AH (845 CE)", counts: "Bukhari: 65 | Muslim: 40", remarks: "Ibn Hajar: Thiqah fi al-Zuhri | Ibn Ma'in: Saduq" },
+    { key: 'سُفْيَان', rawi_id: 'rawi_sufyan_al_thawri', en: "Sufyan bin 'Uyaynah", id: "Sufyan bin Uyainah", role: "Transmitter • Grade: Hafiz", ar: "سفيان بن عيينة", is_sahabi: false, kunyah: "Abu Muhammad", residence: "Makkah / Kufah", death_ah: "198 AH (814 CE)", counts: "Bukhari: 650 | Muslim: 580", remarks: "Ibn Hajar: Thiqah Hafiz Faqih | Ibn Ma'in: Thabt" },
+    { key: 'يَحْيَى بْنُ سَعِيد', rawi_id: 'rawi_yahya_bin_said', en: "Yahya bin Sa'id al-Ansari", id: "Yahya bin Sa'id al-Anshari", role: "Transmitter • Grade: Thiqah", ar: "يحيى بن سعيد الأنصاري", is_sahabi: false, kunyah: "Abu Sa'id", residence: "Madinah / Iraq", death_ah: "143 AH (760 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Ahmad bin Hanbal: Imam Hujjah" },
+    { key: 'الْحُمَيْدِي', rawi_id: 'rawi_al_humaydi', en: "'Abdullah bin al-Zubayr al-Humaydi", id: "Abdullah bin az-Zubair al-Humaidi", role: "Direct Sheikh of Bukhari", ar: "عبد الله بن الزبير الحميدي", is_sahabi: false, kunyah: "Abu Bakr", residence: "Makkah / Madinah", death_ah: "219 AH (834 CE)", counts: "Bukhari: 75 | Muslim: 45", remarks: "Ibn Hajar: Thiqah Hafiz | Imam al-Bukhari: Imam fi al-Hadith" },
+    { key: 'مُحَمَّدُ بْنُ إِبْرَاهِيم', rawi_id: 'rawi_muhammad_bin_ibrahim', en: "Muhammad bin Ibrahim al-Taymi", id: "Muhammad bin Ibrahim at-Taimi", role: "Tabi' al-Tabi'in", ar: "محمد بن إبراهيم التيمي", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "120 AH (738 CE)", counts: "Bukhari: 110 | Muslim: 95", remarks: "Ibn Hajar: Thiqah Mutqin | Ibn Ma'in: Thiqah" },
+    { key: 'عَلْقَمَة', rawi_id: 'rawi_alqama_bin_waqqas', en: "'Alqama bin Waqqas al-Laythi", id: "Alqamah bin Waqqash al-Laitsi", role: "Tabi'i (Successor)", ar: "علقمة بن وقاص الليثي", is_sahabi: false, kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "85 AH (704 CE)", counts: "Bukhari: 48 | Muslim: 40", remarks: "Ibn Hajar: Thiqah | Al-Dhahabi: Min Kibar al-Tabi'in" }
   ];
 
   if (narrators.length < 3) {
@@ -1466,6 +1466,7 @@ async function loadSanadChain() {
             narrators.push({
               rawi_id: matched.rawi_id,
               name: matched.en,
+              name_id: matched.id || matched.en,
               role: matched.role,
               ar: matched.ar,
               kunyah: matched.kunyah,
@@ -1479,6 +1480,7 @@ async function loadSanadChain() {
             narrators.push({
               rawi_id: null,
               name: rawiName,
+              name_id: rawiName,
               role: isFirst ? 'Sahabi (Companion) • Grade: Thiqah' : 'Transmitter (Rawi) • Grade: Thiqah',
               ar: '',
               kunyah: isFirst ? 'Abu Abdillah' : 'Abu Abdullah',
@@ -1530,7 +1532,7 @@ async function loadSanadChain() {
         if (matched) {
           if (!narrators.some(n => n.name === matched.en)) {
             narrators.push({
-              rawi_id: matched.rawi_id, name: matched.en, role: matched.role, ar: matched.ar,
+              rawi_id: matched.rawi_id, name: matched.en, name_id: matched.id || matched.en, role: matched.role, ar: matched.ar,
               kunyah: matched.kunyah, residence: matched.residence, death_ah: matched.death_ah,
               counts: matched.counts, remarks: matched.remarks
             });
@@ -1541,6 +1543,7 @@ async function loadSanadChain() {
             narrators.push({
               rawi_id: null,
               name: `${transliterated} (${rtNoTashkeel})`,
+              name_id: `${transliterated} (${rtNoTashkeel})`,
               role: 'Transmitter (Rawi) • Grade: Thiqah',
               ar: rtNoTashkeel,
               kunyah: 'Abu Abdullah',
@@ -1558,12 +1561,12 @@ async function loadSanadChain() {
   // Fallback defaults if no narrators extracted
   if (narrators.length === 0) {
     narrators = [
-      { rawi_id: 'rawi_al_humaydi', name: "'Abdullah bin al-Zubayr al-Humaydi", role: "Direct Sheikh of Bukhari • Grade: Thiqah", ar: "عبد الله بن الزبير الحميدي", kunyah: "Abu Bakr", residence: "Makkah / Madinah", death_ah: "219 AH (834 CE)", counts: "Bukhari: 75 | Muslim: 45", remarks: "Ibn Hajar: Thiqah Hafiz | Imam al-Bukhari: Imam fi al-Hadith" },
-      { rawi_id: 'rawi_sufyan_al_thawri', name: "Sufyan bin 'Uyaynah", role: "Transmitter • Grade: Hafiz", ar: "سفيان بن عيينة", kunyah: "Abu Muhammad", residence: "Makkah / Kufah", death_ah: "198 AH (814 CE)", counts: "Bukhari: 650 | Muslim: 580", remarks: "Ibn Hajar: Thiqah Hafiz Faqih | Ibn Ma'in: Thabt" },
-      { rawi_id: 'rawi_yahya_bin_said', name: "Yahya bin Sa'id al-Ansari", role: "Transmitter • Grade: Thiqah", ar: "يحيى بن سعيد الأنصاري", kunyah: "Abu Sa'id", residence: "Madinah / Iraq", death_ah: "143 AH (760 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Ahmad bin Hanbal: Imam Hujjah" },
-      { rawi_id: 'rawi_muhammad_bin_ibrahim', name: "Muhammad bin Ibrahim al-Taymi", role: "Tabi' al-Tabi'in • Grade: Thiqah", ar: "محمد بن إبراهيم التيمي", kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "120 AH (738 CE)", counts: "Bukhari: 110 | Muslim: 95", remarks: "Ibn Hajar: Thiqah Mutqin | Ibn Ma'in: Thiqah" },
-      { rawi_id: 'rawi_alqama_bin_waqqas', name: "'Alqama bin Waqqas al-Laythi", role: "Tabi'i (Successor) • Grade: Thiqah", ar: "علقمة بن وقاص الليثي", kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "85 AH (704 CE)", counts: "Bukhari: 48 | Muslim: 40", remarks: "Ibn Hajar: Thiqah | Al-Dhahabi: Min Kibar al-Tabi'in" },
-      { rawi_id: 'rawi_umar_ibn_al_khattab', name: "'Umar bin Al-Khattab (رضي الله عنه)", role: "Sahabi (Companion) • Grade: Thiqah", ar: "عمر بن الخطاب", kunyah: "Abu Hafsh", residence: "Madinah", death_ah: "23 AH (644 CE)", counts: "Bukhari: 537 | Muslim: 450 | Abu Dawood: 310", remarks: "Ibn Hajar: Amir al-Mu'minin Al-Farooq | Al-Dhahabi: Al-Imam Al-Adl" }
+      { rawi_id: 'rawi_al_humaydi', name: "'Abdullah bin al-Zubayr al-Humaydi", name_id: "Abdullah bin az-Zubair al-Humaidi", role: "Direct Sheikh of Bukhari • Grade: Thiqah", ar: "عبد الله بن الزبير الحميدي", kunyah: "Abu Bakr", residence: "Makkah / Madinah", death_ah: "219 AH (834 CE)", counts: "Bukhari: 75 | Muslim: 45", remarks: "Ibn Hajar: Thiqah Hafiz | Imam al-Bukhari: Imam fi al-Hadith" },
+      { rawi_id: 'rawi_sufyan_al_thawri', name: "Sufyan bin 'Uyaynah", name_id: "Sufyan bin Uyainah", role: "Transmitter • Grade: Hafiz", ar: "سفيان بن عيينة", kunyah: "Abu Muhammad", residence: "Makkah / Kufah", death_ah: "198 AH (814 CE)", counts: "Bukhari: 650 | Muslim: 580", remarks: "Ibn Hajar: Thiqah Hafiz Faqih | Ibn Ma'in: Thabt" },
+      { rawi_id: 'rawi_yahya_bin_said', name: "Yahya bin Sa'id al-Ansari", name_id: "Yahya bin Sa'id al-Anshari", role: "Transmitter • Grade: Thiqah", ar: "يحيى بن سعيد الأنصاري", kunyah: "Abu Sa'id", residence: "Madinah / Iraq", death_ah: "143 AH (760 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Ahmad bin Hanbal: Imam Hujjah" },
+      { rawi_id: 'rawi_muhammad_bin_ibrahim', name: "Muhammad bin Ibrahim al-Taymi", name_id: "Muhammad bin Ibrahim at-Taimi", role: "Tabi' al-Tabi'in • Grade: Thiqah", ar: "محمد بن إبراهيم التيمي", kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "120 AH (738 CE)", counts: "Bukhari: 110 | Muslim: 95", remarks: "Ibn Hajar: Thiqah Mutqin | Ibn Ma'in: Thiqah" },
+      { rawi_id: 'rawi_alqama_bin_waqqas', name: "'Alqama bin Waqqas al-Laythi", name_id: "Alqamah bin Waqqash al-Laitsi", role: "Tabi'i (Successor) • Grade: Thiqah", ar: "علقمة بن وقاص الليثي", kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "85 AH (704 CE)", counts: "Bukhari: 48 | Muslim: 40", remarks: "Ibn Hajar: Thiqah | Al-Dhahabi: Min Kibar al-Tabi'in" },
+      { rawi_id: 'rawi_umar_ibn_al_khattab', name: "'Umar bin Al-Khattab (رضي الله عنه)", name_id: "Umar bin al-Khaththab", role: "Sahabi (Companion) • Grade: Thiqah", ar: "عمر بن الخطاب", kunyah: "Abu Hafsh", residence: "Madinah", death_ah: "23 AH (644 CE)", counts: "Bukhari: 537 | Muslim: 450 | Abu Dawood: 310", remarks: "Ibn Hajar: Amir al-Mu'minin Al-Farooq | Al-Dhahabi: Al-Imam Al-Adl" }
     ];
   }
 
@@ -1610,11 +1613,12 @@ async function loadSanadChain() {
     }
     const profileUrl = `profile-detail.html?id=${encodeURIComponent(rawiSlug || 'rawi_abu_hurairah')}`;
 
-    const isId = (LangSystem.get() === 'id');
+    const isId = (window.LangSystem && window.LangSystem.get() === 'id');
     let displayRole = nr.role || '';
     if (isId) {
       displayRole = displayRole.replace(/Sahabi\s*\(Companion\)/ig, 'Sahabat').replace(/Sahabi/ig, 'Sahabat');
     }
+    const displayName = isId ? (nr.name_id || nr.name) : nr.name;
 
     html += `
       <div class="sanad-node relative z-10 bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-5 shadow-sm hover:border-sunan-emerald/50 transition-colors flex flex-col gap-3">
@@ -1624,7 +1628,7 @@ async function loadSanadChain() {
           <div>
             <span class="text-[10px] uppercase font-bold text-sunan-emerald dark:text-[#10b981]">${escapeHtml(displayRole)}</span>
             <a href="${profileUrl}" class="font-bold text-base text-primary dark:text-white hover:text-sunan-emerald dark:hover:text-[#10b981] hover:underline flex items-center gap-1 mt-0.5">
-              ${escapeHtml(nr.name)}
+              ${escapeHtml(displayName)}
               <span class="material-symbols-outlined text-xs">open_in_new</span>
             </a>
           </div>
