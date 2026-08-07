@@ -97,7 +97,12 @@ export default {
       }
     }
 
-    // Health Check
+    // Serve Static Web App Assets for all non-API routes
+    if (env.ASSETS) {
+      return env.ASSETS.fetch(request);
+    }
+
+    // Health Check Fallback
     return new Response(JSON.stringify({
       name: 'HADEETH.ID Workers AI Search API',
       status: 'operational',
