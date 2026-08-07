@@ -60,16 +60,16 @@
 
   <!-- Breadcrumbs & Navigation Bar -->
   <div class="flex items-center justify-between text-xs text-outline dark:text-gray-400">
-    <div class="flex items-center gap-2">
+    <div class="flex items-center gap-2" id="hadith-breadcrumb">
       <a href="index.html" class="hover:underline">Home</a>
       <span>/</span>
-      <a href="kitab.html" class="hover:underline">Sahih al-Bukhari</a>
+      <a href="kitab.html" class="hover:underline" data-breadcrumb-book>Sahih al-Bukhari</a>
       <span>/</span>
-      <span class="text-primary dark:text-white font-semibold">Hadith 1</span>
+      <span class="text-primary dark:text-white font-semibold" data-breadcrumb-current>Hadith 1</span>
     </div>
     <div class="flex gap-2">
-      <button class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80">← Prev</button>
-      <button class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80">Next →</button>
+      <a id="prev-hadith-btn" href="#" class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80 flex items-center">← Prev</a>
+      <a id="next-hadith-btn" href="#" class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80 flex items-center">Next →</a>
     </div>
   </div>
 
@@ -79,7 +79,7 @@
     <!-- Meta Bar -->
     <div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-4">
       <div>
-        <span class="text-xs font-semibold text-secondary dark:text-[#10b981]">Book 1: Revelation</span>
+        <span class="text-xs font-semibold text-secondary dark:text-[#10b981]" data-hadith-chapter>Book 1: Revelation</span>
         <h1 class="text-xl font-bold text-primary dark:text-white" data-hadith-title>Sahih al-Bukhari 1</h1>
       </div>
       <div class="flex items-center gap-2">

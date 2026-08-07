@@ -209,6 +209,47 @@ async function loadHadithDetail() {
   const container = document.getElementById('hadith-detail-container');
   if (!container) return;
 
+  const bookNames = {
+    bukhari: 'Sahih al-Bukhari',
+    nawawi: 'Forty Nawawi',
+    muslim: 'Sahih Muslim',
+    abudawud: 'Sunan Abu Dawood',
+    tirmidhi: "Jami' al-Tirmidhi",
+    nasai: "Sunan an-Nasa'i",
+    ibnmajah: 'Sunan Ibn Majah',
+    malik: 'Muwatta Malik',
+    ahmad: 'Musnad Ahmad'
+  };
+  const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
+
+  // Update Breadcrumb & Meta Headers
+  const bcBook = document.querySelector('[data-breadcrumb-book]');
+  const bcCurrent = document.querySelector('[data-breadcrumb-current]');
+  const chapterMeta = document.querySelector('[data-hadith-chapter]');
+  const prevBtn = document.getElementById('prev-hadith-btn');
+  const nextBtn = document.getElementById('next-hadith-btn');
+
+  if (bcBook) {
+    bcBook.innerText = bookName;
+    bcBook.href = `kitab.html?book=${bookId}`;
+  }
+  if (bcCurrent) bcCurrent.innerText = `Hadith ${hadithId}`;
+  if (chapterMeta) chapterMeta.innerText = `${bookName} • Hadith #${hadithId}`;
+
+  const currentNum = parseInt(hadithId) || 1;
+  if (prevBtn) {
+    if (currentNum > 1) {
+      prevBtn.href = `hadith.html?book=${bookId}&id=${currentNum - 1}`;
+      prevBtn.classList.remove('opacity-50', 'pointer-events-none');
+    } else {
+      prevBtn.href = '#';
+      prevBtn.classList.add('opacity-50', 'pointer-events-none');
+    }
+  }
+  if (nextBtn) {
+    nextBtn.href = `hadith.html?book=${bookId}&id=${currentNum + 1}`;
+  }
+
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
 
@@ -232,7 +273,7 @@ async function loadHadithDetail() {
         if (arabicElem) arabicElem.innerText = item.text_ar || '—';
         if (englishElem) englishElem.innerText = item.text_en || '—';
         if (indonesianElem) indonesianElem.innerText = item.text_id || '—';
-        if (titleElem) titleElem.innerText = `${bookId.toUpperCase()} Hadith #${item.hadith_number}`;
+        if (titleElem) titleElem.innerText = `${bookName} Hadith #${item.hadith_number}`;
         return;
       }
     }
@@ -267,7 +308,7 @@ async function loadHadithDetail() {
   if (arabicElem) arabicElem.innerText = hadithTextAr || '—';
   if (englishElem) englishElem.innerText = hadithTextEn || '—';
   if (indonesianElem) indonesianElem.innerText = hadithTextId || '—';
-  if (titleElem) titleElem.innerText = `${bookId.toUpperCase()} Hadith #${hadithId}`;
+  if (titleElem) titleElem.innerText = `${bookName} Hadith #${hadithId}`;
 }
 
 /**
@@ -318,10 +359,45 @@ async function loadHadithCardsList() {
   const bookId = params.get('book') || 'bukhari';
   const chapterId = params.get('chapter') || '1';
 
+  const bookNames = {
+    bukhari: 'Sahih al-Bukhari',
+    nawawi: 'Forty Nawawi',
+    muslim: 'Sahih Muslim',
+    abudawud: 'Sunan Abu Dawood',
+    tirmidhi: "Jami' al-Tirmidhi",
+    nasai: "Sunan an-Nasa'i",
+    ibnmajah: 'Sunan Ibn Majah',
+    malik: 'Muwatta Malik',
+    ahmad: 'Musnad Ahmad'
+  };
+  const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
+
+  // Update Breadcrumbs & Chapter Titles
+  const listBcBook = document.querySelector('[data-list-breadcrumb-book]');
+  const listBcCurrent = document.querySelector('[data-list-breadcrumb-current]');
+  const chapterMeta = document.querySelector('[data-list-chapter-meta]');
+  const chapterTitleEn = document.querySelector('[data-list-chapter-title-en]');
+  const chapterTitleAr = document.querySelector('[data-list-chapter-title-ar]');
+
+  if (listBcBook) {
+    listBcBook.innerText = bookName;
+    listBcBook.href = `kitab.html?book=${bookId}`;
+  }
+  if (listBcCurrent) listBcCurrent.innerText = `Chapter ${chapterId}`;
+  if (chapterMeta) chapterMeta.innerText = `${bookName} • Chapter ${chapterId}`;
+
+  // Fetch chapter title info
+  const chapters = await window.HadeethAPI.getChapters(bookId);
+  if (chapters && chapters.length >= parseInt(chapterId)) {
+    const chInfo = chapters[parseInt(chapterId) - 1];
+    if (chapterTitleEn && chInfo.name_en) chapterTitleEn.innerText = chInfo.name_en;
+    if (chapterTitleAr && chInfo.name_ar) chapterTitleAr.innerText = chInfo.name_ar;
+  }
+
   container.innerHTML = `
     <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
       <span class="material-symbols-outlined animate-spin text-secondary dark:text-[#10b981] text-3xl">progress_activity</span>
-      <p class="mt-2 text-sm text-outline dark:text-gray-400">Loading authentic Hadith list for ${escapeHtml(bookId.toUpperCase())} Chapter ${chapterId}...</p>
+      <p class="mt-2 text-sm text-outline dark:text-gray-400">Loading authentic Hadith list for ${escapeHtml(bookName)} Chapter ${chapterId}...</p>
     </div>
   `;
 
