@@ -1406,6 +1406,7 @@ async function loadSanadChain() {
     { key: 'عَبْدِ اللَّهِ بْنِ عُمَر', rawi_id: 'rawi_ibn_umar', en: "'Abdullah bin 'Umar (رضي الله عنه)", role: "Sahabi (Companion)", ar: "عبد الله بن عمر", is_sahabi: true, kunyah: "Abu Abdurrahman", residence: "Madinah", death_ah: "73 AH (693 CE)", counts: "Bukhari: 2630 | Muslim: 1800", remarks: "Ibn Hajar: Al-Faqih Al-Muttabi' | Ibn Ma'in: Thiqah Thabt" },
     { key: 'ابْنِ عَبَّاس', rawi_id: 'rawi_ibn_abbas', en: "'Abdullah bin 'Abbas (رضي الله عنه)", role: "Sahabi (Companion)", ar: "عبد الله بن عباس", is_sahabi: true, kunyah: "Abu al-Abbas", residence: "Makkah / Ta'if", death_ah: "68 AH (687 CE)", counts: "Bukhari: 1660 | Muslim: 1200", remarks: "Ibn Hajar: Hibr al-Ummah wa Tarjuman al-Qur'an" },
     { key: 'أَنَس', rawi_id: 'rawi_anas_bin_malik', en: "Anas bin Malik (رضي الله عنه)", role: "Sahabi (Companion)", ar: "أنس بن مالك", is_sahabi: true, kunyah: "Abu Hamzah", residence: "Basra", death_ah: "93 AH (712 CE)", counts: "Bukhari: 2286 | Muslim: 1800", remarks: "Ibn Hajar: Khadim Rasulillahi ﷺ" },
+    { key: 'مَالِك', rawi_id: 'rawi_malik_bin_anas', en: "Imam Malik bin Anas", role: "Imam of Madinah (Author of Muwatta) • Grade: Hafiz", ar: "مالك بن أنس", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "179 AH (795 CE)", counts: "Muwatta: 1720 | Bukhari: 850 | Muslim: 750", remarks: "Ibn Hajar: Al-Imam Al-Hafiz | Al-Dhahabi: Sayyid al-Fuqaha" },
     { key: 'سَعِيدِ بْنِ جُبَيْر', rawi_id: 'rawi_said_bin_jubair', en: "Sa'id bin Jubair", role: "Tabi'i (Successor)", ar: "سعيد بن جبير", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Kufah", death_ah: "95 AH (714 CE)", counts: "Bukhari: 140 | Muslim: 120", remarks: "Ibn Hajar: Thiqah Thabt Imam | Sufyan: A'lam al-Tabi'in" },
     { key: 'مُوسَى بْنُ أَبِي عَائِشَة', rawi_id: 'rawi_musa_bin_abi_aisha', en: "Musa bin Abi 'Aisha", role: "Transmitter • Grade: Thiqah", ar: "موسى بن أبي عائشه", is_sahabi: false, kunyah: "Abu al-Hasan", residence: "Kufah", death_ah: "130 AH (747 CE)", counts: "Bukhari: 25 | Muslim: 20", remarks: "Ibn Hajar: Thiqah | Ibn Ma'in: Thiqah" },
     { key: 'أَبُو عَوَانَة', rawi_id: 'rawi_abu_awanah', en: "Abu 'Awanah al-Waddah", role: "Transmitter • Grade: Thiqah", ar: "أبو عوانة الوضاح", is_sahabi: false, kunyah: "Abu 'Awanah", residence: "Basra", death_ah: "176 AH (792 CE)", counts: "Bukhari: 310 | Muslim: 280", remarks: "Ibn Hajar: Thiqah Thabt | Abu Hatim: Thiqah" },
@@ -1444,12 +1445,20 @@ async function loadSanadChain() {
 
         // Reverse so chain runs Companion (Node 1) -> Collector (Node N)
         extractedNames.reverse().forEach((rawiName, idx) => {
-          const normName = rawiName.toLowerCase();
-          const matched = rawiDict.find(d => 
-            d.en.toLowerCase().includes(normName) || 
-            normName.includes(d.en.toLowerCase()) || 
-            (d.ar && normName.includes(d.ar))
-          );
+          const normName = rawiName.toLowerCase().trim();
+          let matched = null;
+
+          if (normName === 'malik' || normName === 'imam malik' || normName === 'malik bin anas') {
+            matched = rawiDict.find(d => d.rawi_id === 'rawi_malik_bin_anas');
+          } else if (normName.includes('anas bin malik') || normName === 'anas') {
+            matched = rawiDict.find(d => d.rawi_id === 'rawi_anas_bin_malik');
+          } else {
+            matched = rawiDict.find(d => 
+              d.en.toLowerCase() === normName ||
+              normName.includes(d.en.toLowerCase()) ||
+              (d.ar && normName.includes(d.ar))
+            );
+          }
 
           if (matched) {
             narrators.push({
@@ -1464,7 +1473,7 @@ async function loadSanadChain() {
               remarks: matched.remarks
             });
           } else {
-            const isFirst = (idx === 0);
+            const isFirst = (idx === 0) || normName.includes('radliallahu') || normName.includes('sahabi') || normName.includes('abu hurairah');
             narrators.push({
               rawi_id: null,
               name: rawiName,
@@ -1544,8 +1553,8 @@ async function loadSanadChain() {
     }
   }
 
-  // Fallback defaults for Hadith #1
-  if (narrators.length === 0 || (hadithNum == '1' && bookId == 'bukhari' && !dbNarrators.length)) {
+  // Fallback defaults if no narrators extracted
+  if (narrators.length === 0) {
     narrators = [
       { rawi_id: 'rawi_al_humaydi', name: "'Abdullah bin al-Zubayr al-Humaydi", role: "Direct Sheikh of Bukhari • Grade: Thiqah", ar: "عبد الله بن الزبير الحميدي", kunyah: "Abu Bakr", residence: "Makkah / Madinah", death_ah: "219 AH (834 CE)", counts: "Bukhari: 75 | Muslim: 45", remarks: "Ibn Hajar: Thiqah Hafiz | Imam al-Bukhari: Imam fi al-Hadith" },
       { rawi_id: 'rawi_sufyan_al_thawri', name: "Sufyan bin 'Uyaynah", role: "Transmitter • Grade: Hafiz", ar: "سفيان بن عيينة", kunyah: "Abu Muhammad", residence: "Makkah / Kufah", death_ah: "198 AH (814 CE)", counts: "Bukhari: 650 | Muslim: 580", remarks: "Ibn Hajar: Thiqah Hafiz Faqih | Ibn Ma'in: Thabt" },
