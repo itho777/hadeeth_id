@@ -483,7 +483,9 @@ function transliterateArabicName(ar) {
     'سعيد': 'Sa\'id', 'مسلم': 'Muslim', 'إبراهيم': 'Ibrahim', 'يحيى': 'Yahya',
     'شعيب': 'Shu\'ayb', 'مالك': 'Malik', 'حميد': 'Humayd', 'ثابت': 'Thabit',
     'قتادة': 'Qatadah', 'أيوب': 'Ayyub', 'نافع': 'Nafi\'', 'مسدد': 'Musaddad',
-    'يزيد': 'Yazid', 'عبيد الله': 'Ubaydullah', 'هشام': 'Hisham', 'موسى': 'Musa'
+    'يزيد': 'Yazid', 'عبيد الله': 'Ubaydullah', 'هشام': 'Hisham', 'موسى': 'Musa',
+    'جبير': 'Jubair', 'عوانة': 'Awanah', 'إسماعيل': 'Ismail', 'عباس': 'Abbas',
+    'عائشة': 'Aisha', 'عطاء': 'Ata\'', 'مجاهد': 'Mujahid', 'الزهري': 'al-Zuhri'
   };
 
   const words = clean.split(/\s+/);
@@ -582,24 +584,29 @@ async function loadSanadChain() {
     }));
   }
 
-  // Canonical Rawi Dictionary (Fallback for unlinked hadiths)
+  // Canonical Rawi Dictionary
   const rawiDict = [
-    { key: 'عَائِشَة', rawi_id: 'rawi_aisha_bint_abi_bakr', en: "'Aisha bint Abi Bakr (رضي الله عنها)", role: "Sahabiya • Mother of Believers", ar: "عائشة بنت أبي بكر" },
-    { key: 'عُمَر', rawi_id: 'rawi_umar_ibn_al_khattab', en: "'Umar bin Al-Khattab (رضي الله عنه)", role: "Sahabi • 2nd Caliph of Islam", ar: "عمر بن الخطاب" },
-    { key: 'أَبِي هُرَيْرَة', rawi_id: 'rawi_abu_hurairah', en: "Abu Hurairah (رضي الله عنه)", role: "Sahabi (Companion)", ar: "أبو هريرة" },
-    { key: 'عَبْدِ اللَّهِ بْنِ عُمَر', rawi_id: 'rawi_ibn_umar', en: "'Abdullah bin 'Umar (رضي الله عنه)", role: "Sahabi (Companion)", ar: "عبد الله بن عمر" },
-    { key: 'أَنَس', rawi_id: 'rawi_anas_bin_malik', en: "Anas bin Malik (رضي الله عنه)", role: "Sahabi (Companion)", ar: "أنس بن مالك" },
-    { key: 'عُرْوَة', rawi_id: 'rawi_urwah_ibn_zubayr', en: "'Urwah bin al-Zubayr", role: "Tabi'i (Successor)", ar: "عروة بن الزبير" },
-    { key: 'ابْنِ شِهَاب', rawi_id: 'rawi_ibn_shihab_al_zuhri', en: "Ibn Shihab al-Zuhri", role: "Tabi'i (Master Hafiz)", ar: "ابن شهاب الزهري" },
-    { key: 'زُهْرِي', rawi_id: 'rawi_ibn_shihab_al_zuhri', en: "Ibn Shihab al-Zuhri", role: "Tabi'i (Master Hafiz)", ar: "ابن شهاب الزهري" },
-    { key: 'عُقَيْل', rawi_id: 'rawi_uqayl_bin_khalid', en: "'Uqayl bin Khalid al-Ayli", role: "Transmitter • Grade: Thiqah", ar: "عقيل بن خالد الأيلي" },
-    { key: 'اللَّيْث', rawi_id: 'rawi_al_layth_bin_sad', en: "Al-Layth bin Sa'd", role: "Imam & Jurisconsult of Egypt", ar: "الليث بن سعد" },
-    { key: 'يَحْيَى بْنُ بُكَيْر', rawi_id: 'rawi_yahya_bin_bukayr', en: "Yahya bin Bukayr", role: "Direct Sheikh of Bukhari", ar: "يحيى بن بكير" },
-    { key: 'سُفْيَان', rawi_id: 'rawi_sufyan_al_thawri', en: "Sufyan bin 'Uyaynah", role: "Transmitter • Grade: Hafiz", ar: "سفيان بن عيينة" },
-    { key: 'يَحْيَى بْنُ سَعِيد', rawi_id: 'rawi_yahya_bin_said', en: "Yahya bin Sa'id al-Ansari", role: "Transmitter • Grade: Thiqah", ar: "يحيى بن سعيد الأنصاري" },
-    { key: 'الْحُمَيْدِي', rawi_id: 'rawi_al_humaydi', en: "'Abdullah bin al-Zubayr al-Humaydi", role: "Direct Sheikh of Bukhari", ar: "عبد الله بن الزبير الحميدي" },
-    { key: 'مُحَمَّدُ بْنُ إِبْرَاهِيم', rawi_id: 'rawi_muhammad_bin_ibrahim', en: "Muhammad bin Ibrahim al-Taymi", role: "Tabi' al-Tabi'in", ar: "محمد بن إبراهيم التيمي" },
-    { key: 'عَلْقَمَة', rawi_id: 'rawi_alqama_bin_waqqas', en: "'Alqama bin Waqqas al-Laythi", role: "Tabi'i (Successor)", ar: "علقمة بن وقاص الليثي" }
+    { key: 'عَائِشَة', rawi_id: 'rawi_aisha_bint_abi_bakr', en: "'Aisha bint Abi Bakr (رضي الله عنها)", role: "Sahabiya • Mother of Believers", ar: "عائشة بنت أبي بكر", is_sahabi: true },
+    { key: 'عُمَر', rawi_id: 'rawi_umar_ibn_al_khattab', en: "'Umar bin Al-Khattab (رضي الله عنه)", role: "Sahabi • 2nd Caliph of Islam", ar: "عمر بن الخطاب", is_sahabi: true },
+    { key: 'أَبِي هُرَيْرَة', rawi_id: 'rawi_abu_hurairah', en: "Abu Hurairah (رضي الله عنه)", role: "Sahabi (Companion)", ar: "أبو هريرة", is_sahabi: true },
+    { key: 'عَبْدِ اللَّهِ بْنِ عُمَر', rawi_id: 'rawi_ibn_umar', en: "'Abdullah bin 'Umar (رضي الله عنه)", role: "Sahabi (Companion)", ar: "عبد الله بن عمر", is_sahabi: true },
+    { key: 'ابْنِ عَبَّاس', rawi_id: 'rawi_ibn_abbas', en: "'Abdullah bin 'Abbas (رضي الله عنه)", role: "Sahabi (Companion)", ar: "عبد الله بن عباس", is_sahabi: true },
+    { key: 'أَنَس', rawi_id: 'rawi_anas_bin_malik', en: "Anas bin Malik (رضي الله عنه)", role: "Sahabi (Companion)", ar: "أنس بن مالك", is_sahabi: true },
+    { key: 'سَعِيدِ بْنِ جُبَيْر', rawi_id: 'rawi_said_bin_jubair', en: "Sa'id bin Jubair", role: "Tabi'i (Successor)", ar: "سعيد بن جبير", is_sahabi: false },
+    { key: 'مُوسَى بْنُ أَبِي عَائِشَة', rawi_id: 'rawi_musa_bin_abi_aisha', en: "Musa bin Abi 'Aisha", role: "Transmitter • Grade: Thiqah", ar: "موسى بن أبي عائشة", is_sahabi: false },
+    { key: 'أَبُو عَوَانَة', rawi_id: 'rawi_abu_awanah', en: "Abu 'Awanah al-Waddah", role: "Transmitter • Grade: Thiqah", ar: "أبو عوانة الوضاح", is_sahabi: false },
+    { key: 'مُوسَى بْنُ إِسْمَاعِيل', rawi_id: 'rawi_musa_bin_ismail', en: "Musa bin Isma'il", role: "Direct Sheikh of Bukhari", ar: "موسى بن إسماعيل", is_sahabi: false },
+    { key: 'عُرْوَة', rawi_id: 'rawi_urwah_ibn_zubayr', en: "'Urwah bin al-Zubayr", role: "Tabi'i (Successor)", ar: "عروة بن الزبير", is_sahabi: false },
+    { key: 'ابْنِ شِهَاب', rawi_id: 'rawi_ibn_shihab_al_zuhri', en: "Ibn Shihab al-Zuhri", role: "Tabi'i (Master Hafiz)", ar: "ابن شهاب الزهري", is_sahabi: false },
+    { key: 'زُهْرِي', rawi_id: 'rawi_ibn_shihab_al_zuhri', en: "Ibn Shihab al-Zuhri", role: "Tabi'i (Master Hafiz)", ar: "ابن شهاب الزهري", is_sahabi: false },
+    { key: 'عُقَيْل', rawi_id: 'rawi_uqayl_bin_khalid', en: "'Uqayl bin Khalid al-Ayli", role: "Transmitter • Grade: Thiqah", ar: "عقيل بن خالد الأيلي", is_sahabi: false },
+    { key: 'اللَّيْث', rawi_id: 'rawi_al_layth_bin_sad', en: "Al-Layth bin Sa'd", role: "Imam & Jurisconsult of Egypt", ar: "الليث بن سعد", is_sahabi: false },
+    { key: 'يَحْيَى بْنُ بُكَيْر', rawi_id: 'rawi_yahya_bin_bukayr', en: "Yahya bin Bukayr", role: "Direct Sheikh of Bukhari", ar: "يحيى بن بكير", is_sahabi: false },
+    { key: 'سُفْيَان', rawi_id: 'rawi_sufyan_al_thawri', en: "Sufyan bin 'Uyaynah", role: "Transmitter • Grade: Hafiz", ar: "سفيان بن عيينة", is_sahabi: false },
+    { key: 'يَحْيَى بْنُ سَعِيد', rawi_id: 'rawi_yahya_bin_said', en: "Yahya bin Sa'id al-Ansari", role: "Transmitter • Grade: Thiqah", ar: "يحيى بن سعيد الأنصاري", is_sahabi: false },
+    { key: 'الْحُمَيْدِي', rawi_id: 'rawi_al_humaydi', en: "'Abdullah bin al-Zubayr al-Humaydi", role: "Direct Sheikh of Bukhari", ar: "عبد الله بن الزبير الحميدي", is_sahabi: false },
+    { key: 'مُحَمَّدُ بْنُ إِبْرَاهِيم', rawi_id: 'rawi_muhammad_bin_ibrahim', en: "Muhammad bin Ibrahim al-Taymi", role: "Tabi' al-Tabi'in", ar: "محمد بن إبراهيم التيمي", is_sahabi: false },
+    { key: 'عَلْقَمَة', rawi_id: 'rawi_alqama_bin_waqqas', en: "'Alqama bin Waqqas al-Laythi", role: "Tabi'i (Successor)", ar: "علقمة بن وقاص الليثي", is_sahabi: false }
   ];
 
   if (narrators.length < 3) {
@@ -607,7 +614,7 @@ async function loadSanadChain() {
     narrators = [];
     if (textAr) {
       // 1. Separate Isnad from Matn
-      const matnSplitPattern = /["«”"“「»\u201d\u201c\u200f]|أَنَّ\s+هِرَقْلَ|أَنَّ\s+رَسُولَ|أَنَّ\s+النَّبِيَّ|فَقَالَ\s+|قَالَ\s+رَسُولُ|قَالَتْ\s+/;
+      const matnSplitPattern = /["«”"“「»\u201d\u201c\u200f]|في قول|فَقَالَ\s+|قَالَ\s+كَانَ|قَالَ\s+رَسُولُ|أَنَّ\s+هِرَقْلَ|أَنَّ\s+رَسُولَ|أَنَّ\s+النَّبِيَّ/;
       const parts = textAr.split(matnSplitPattern);
       let isnadPart = parts[0] || textAr;
 
@@ -630,37 +637,47 @@ async function loadSanadChain() {
         .filter(t => t.length > 3 && !t.includes('رسول الله') && !t.includes('صلى الله') && !t.includes('النبي') && !t.includes('الإيمان') && !t.includes('شعبة') && !t.includes('هرقل'));
 
       rawiTokens.forEach((rt) => {
-        const matched = rawiDict.find(d => rt.includes(d.key.replace(/[\u064B-\u0652]/g, '')) || d.key.replace(/[\u064B-\u0652]/g, '').includes(rt));
+        const rtNoTashkeel = rt.replace(/[\u064B-\u0652]/g, '').trim();
+
+        let matched = null;
+        for (const d of rawiDict) {
+          const dKeyNoTashkeel = d.key.replace(/[\u064B-\u0652]/g, '').trim();
+          // Safeguard: prevent matching 'عائشة' inside 'أبي عائشة' or 'ابن عائشة'
+          if (dKeyNoTashkeel.includes('عائشة') && (rtNoTashkeel.includes('أبي عائشة') || rtNoTashkeel.includes('ابن عائشة'))) {
+            continue;
+          }
+          if (rtNoTashkeel.includes(dKeyNoTashkeel) || dKeyNoTashkeel.includes(rtNoTashkeel)) {
+            matched = d;
+            break;
+          }
+        }
+
         if (matched) {
           if (!narrators.some(n => n.name === matched.en)) {
             narrators.push({ rawi_id: matched.rawi_id, name: matched.en, role: matched.role, ar: matched.ar });
           }
         } else {
-          if (rt.length > 3 && !narrators.some(n => n.ar === rt)) {
-            const transliterated = transliterateArabicName(rt);
+          if (rtNoTashkeel.length > 3 && !narrators.some(n => n.ar === rtNoTashkeel)) {
+            const transliterated = transliterateArabicName(rtNoTashkeel);
             narrators.push({
               rawi_id: null,
-              name: `${transliterated} (${rt})`,
+              name: `${transliterated} (${rtNoTashkeel})`,
               role: 'Transmitter (Rawi) • Grade: Thiqah',
-              ar: rt
+              ar: rtNoTashkeel
             });
           }
         }
       });
     }
 
-    // Parse English companion if not already matched
+    // Parse English companion ONLY if matched in rawiDict as Sahabi
     if (textEn.startsWith('Narrated ')) {
       const rawiMatch = textEn.match(/^Narrated\s+([^:]+):/);
       if (rawiMatch) {
         const companionName = rawiMatch[1].trim();
-        const matchedDict = rawiDict.find(d => d.en.toLowerCase().includes(companionName.toLowerCase()) || companionName.toLowerCase().includes(d.en.toLowerCase()));
-        if (matchedDict) {
-          if (!narrators.some(n => n.name === matchedDict.en)) {
-            narrators.push({ rawi_id: matchedDict.rawi_id, name: matchedDict.en, role: matchedDict.role, ar: matchedDict.ar });
-          }
-        } else if (!narrators.some(n => n.name.toLowerCase().includes(companionName.toLowerCase()))) {
-          narrators.push({ rawi_id: null, name: companionName, role: 'Sahabi (Companion) • Grade: Thiqah', ar: '' });
+        const matchedDict = rawiDict.find(d => d.is_sahabi && (d.en.toLowerCase().includes(companionName.toLowerCase()) || companionName.toLowerCase().includes(d.en.toLowerCase())));
+        if (matchedDict && !narrators.some(n => n.name === matchedDict.en)) {
+          narrators.push({ rawi_id: matchedDict.rawi_id, name: matchedDict.en, role: matchedDict.role, ar: matchedDict.ar });
         }
       }
     }
