@@ -1502,6 +1502,8 @@ async function loadSanadChain() {
           <p class="text-xs text-gray-300">Preserved in Authentic Canonical Corpus</p>
         </div>
       </div>
+    </div>
+  `;
   container.innerHTML = html;
 }
 
