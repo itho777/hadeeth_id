@@ -44,9 +44,9 @@
       <span class="font-bold text-xl text-primary dark:text-white tracking-tight">HADEETH.ID</span>
     </a>
     <nav class="hidden md:flex items-center gap-stack-lg">
-      <a href="books.html"   class="text-primary dark:text-white font-bold py-1">Books</a>
-      <a href="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Scholars</a>
-      <a href="admin.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Admin</a>
+      <a href="books.html"   class="text-primary dark:text-white font-bold py-1" data-i18n="nav_books">Books</a>
+      <a href="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1" data-i18n="nav_scholars">Scholars</a>
+      <a href="admin.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1" data-i18n="nav_admin">Admin</a>
     </nav>
         <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
       <!-- Language Switcher -->
@@ -68,7 +68,7 @@
   <div class="flex items-center gap-2 text-xs text-outline dark:text-gray-400">
     <a href="index.html" class="hover:underline">Home</a>
     <span>/</span>
-    <a href="books.html" class="hover:underline">Books</a>
+    <a href="books.html" class="hover:underline" data-i18n="nav_books">Books</a>
     <span>/</span>
     <span class="text-primary dark:text-white font-semibold" data-breadcrumb-book>Sahih al-Bukhari</span>
   </div>
@@ -98,7 +98,7 @@
   <!-- Search Filter within Book -->
   <div class="w-full bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-lg p-3 flex items-center gap-3">
     <span class="material-symbols-outlined text-outline dark:text-gray-400">search</span>
-    <input type="text" id="chapter-filter-input" placeholder="Filter Kitab by title or topic..." class="w-full bg-transparent border-none focus:ring-0 text-sm text-primary dark:text-white outline-none"/>
+    <input type="text" id="chapter-filter-input" placeholder="Filter Kitab by title or topic..." data-i18n="filter_kitab_placeholder" class="w-full bg-transparent border-none focus:ring-0 text-sm text-primary dark:text-white outline-none"/>
   </div>
 
   <!-- Kitabs Grid -->
@@ -111,10 +111,10 @@
 </main>
 
 <footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 text-xs w-full py-8 px-margin-main flex justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-16">
-  <div>© 2024 HADEETH.ID - Digital Manuscript Preservation</div>
+  <div><span data-i18n="footer_text">© 2024 HADEETH.ID - Digital Manuscript Preservation</span></div>
 </footer>
 
-<script src="js/api.js?v=20260807_11"></script>
-<script src="js/app.js?v=20260807_11"></script>
+<script src="js/api.js?v=20260807_12"></script>
+<script src="js/app.js?v=20260807_12"></script>
 </body>
 </html>

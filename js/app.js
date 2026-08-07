@@ -7,6 +7,83 @@
 // ============================================================
 // LANGUAGE SYSTEM
 // ============================================================
+const UI_I18N = {
+  en: {
+    nav_books: "Books",
+    nav_scholars: "Scholars",
+    nav_admin: "Admin",
+    hero_title: "Discover Authentic Sources",
+    hero_subtitle: "Search through thousands of authenticated Ahadith from the major collections, with detailed chains of narration and scholarly grading.",
+    search_placeholder: "Scholarly Search (e.g., 'Intention', 'Sahih Bukhari 1')",
+    search_scope_all: "All Books",
+    search_mode_semantic: "Semantic (Cloudflare AI)",
+    search_mode_keyword: "Keyword (Algolia)",
+    search_btn: "Search",
+    continue_reading: "CONTINUE READING",
+    kutub_tisah_title: "Kutubut Tis'ah",
+    view_all_collections: "View All Collections →",
+    hadith_of_day_title: "Hadith of the Day",
+    read_hadith: "Read Hadith →",
+    inspect_chain: "Inspect Chain →",
+    digital_library: "Digital Library",
+    major_collections_title: "Major Hadith Collections",
+    major_collections_sub: "Browse the nine canonical collections (Kutubut Tis'ah) of Hadith literature.",
+    filter_kitab_placeholder: "Filter Kitab by title or topic...",
+    loading_kitab: "Loading Kitab index...",
+    search_within_chapter: "Search within chapter or type keyword...",
+    scope_label: "Scope:",
+    scope_this_chapter: "This Chapter",
+    scope_global: "Global (All Books)",
+    translation_label: "Translation:",
+    trans_id: "Bahasa Indonesia",
+    trans_en: "English",
+    show_per_page: "Show per page:",
+    prev: "Previous",
+    next: "Next",
+    scholarly_commentary: "Scholarly Commentary & Sharh",
+    chain_of_narrators: "Chain of Narrators (Sanad)",
+    full_sanad_graph: "View Full Interactive Sanad Graph →",
+    footer_text: "© 2024 HADEETH.ID - Digital Manuscript Preservation"
+  },
+  id: {
+    nav_books: "Kitab",
+    nav_scholars: "Perawi & Ulama",
+    nav_admin: "Admin",
+    hero_title: "Telusuri Sumber-sumber Shahih",
+    hero_subtitle: "Cari ribuan hadits shahih dari kitab-kitab utama, lengkap dengan silsilah sanad dan derajat keabsahan ulama.",
+    search_placeholder: "Cari Hadits (contoh: 'Niat', 'Shahih Bukhari 1')",
+    search_scope_all: "Semua Kitab",
+    search_mode_semantic: "Semantik (Cloudflare AI)",
+    search_mode_keyword: "Kata Kunci (Algolia)",
+    search_btn: "Cari",
+    continue_reading: "LANJUTKAN MEMBACA",
+    kutub_tisah_title: "Kutubut Tis'ah (9 Kitab Utama)",
+    view_all_collections: "Lihat Semua Kitab →",
+    hadith_of_day_title: "Hadits Hari Ini",
+    read_hadith: "Baca Hadits →",
+    inspect_chain: "Lihat Sanad →",
+    digital_library: "Perpustakaan Digital",
+    major_collections_title: "Koleksi Kitab Hadits Utama",
+    major_collections_sub: "Jelajahi sembilan kitab utama (Kutubut Tis'ah) dalam literatur hadits.",
+    filter_kitab_placeholder: "Filter Kitab berdasarkan judul atau topik...",
+    loading_kitab: "Memuat indeks Kitab...",
+    search_within_chapter: "Cari dalam bab ini atau ketik kata kunci...",
+    scope_label: "Cakupan:",
+    scope_this_chapter: "Bab Ini",
+    scope_global: "Global (Semua Kitab)",
+    translation_label: "Terjemahan:",
+    trans_id: "Bahasa Indonesia",
+    trans_en: "Bahasa Inggris",
+    show_per_page: "Tampilkan:",
+    prev: "Sebelumnya",
+    next: "Selanjutnya",
+    scholarly_commentary: "Syarah & Penjelasan Ulama",
+    chain_of_narrators: "Silsilah Perawi (Sanad)",
+    full_sanad_graph: "Lihat Grafik Interaktif Sanad Lengkap →",
+    footer_text: "© 2024 HADEETH.ID - Pelestarian Manuskrip Digital"
+  }
+};
+
 const LangSystem = {
   SUPPORTED: ['en', 'id', 'both'],
   get() { return localStorage.getItem('hadeeth_lang') || 'en'; },
@@ -14,6 +91,21 @@ const LangSystem = {
     if (!this.SUPPORTED.includes(lang)) return;
     localStorage.setItem('hadeeth_lang', lang);
     this.apply(lang);
+  },
+  translateUI(lang) {
+    const targetLang = (lang === 'both' || lang === 'id') ? 'id' : 'en';
+    const dict = UI_I18N[targetLang] || UI_I18N.en;
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.dataset.i18n;
+      if (dict[key]) {
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+          if (el.hasAttribute('placeholder')) el.placeholder = dict[key];
+        } else {
+          el.innerText = dict[key];
+        }
+      }
+    });
   },
   apply(lang) {
     document.documentElement.setAttribute('data-lang', lang);
@@ -24,6 +116,8 @@ const LangSystem = {
     document.querySelectorAll('[data-lang-id]').forEach(el => {
       el.style.display = (lang === 'id' || lang === 'both') ? '' : 'none';
     });
+    // Translate static UI elements
+    this.translateUI(lang);
     // Update active button state
     document.querySelectorAll('[data-lang-btn]').forEach(btn => {
       btn.classList.toggle('lang-btn-active', btn.dataset.langBtn === lang);
