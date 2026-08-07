@@ -101,18 +101,22 @@ function initSearch() {
       return;
     }
 
+    const searchType = document.querySelector('input[name="search_type"]:checked')?.value || 'semantic';
+    const bookFilter = document.getElementById('search-kitab-filter')?.value || 'all';
+
     resultsDiv.classList.remove('hidden');
     resultsDiv.innerHTML = `
       <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
         <span class="material-symbols-outlined animate-spin text-secondary dark:text-[#10b981] text-3xl">progress_activity</span>
-        <p class="mt-2 text-sm text-outline dark:text-gray-400">Searching authentic sources for "${escapeHtml(query)}"...</p>
+        <p class="mt-2 text-sm font-semibold text-primary dark:text-white">Searching authentic corpus (${searchType === 'semantic' ? 'Cloudflare AI Semantic' : 'Algolia Keyword'} mode)...</p>
+        <p class="text-xs text-outline dark:text-gray-400 mt-1">Query: "${escapeHtml(query)}" • Filter: ${escapeHtml(bookFilter)}</p>
       </div>
     `;
 
     resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
     if (window.HadeethAPI) {
-      const results = await window.HadeethAPI.search(query, 15);
+      const results = await window.HadeethAPI.search(query, searchType, bookFilter, 20);
       renderSearchResults(results, query, resultsDiv);
     }
   };
