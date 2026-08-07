@@ -1,20 +1,11 @@
-/*
+/data/*
   Access-Control-Allow-Origin: *
-  Access-Control-Allow-Methods: GET, OPTIONS
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: DENY
-  X-XSS-Protection: 1; mode=block
-  Referrer-Policy: strict-origin-when-cross-origin
+  Cache-Control: public, max-age=86400
+
+/*.json
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=86400
 
 /*.html
-  Cache-Control: no-cache, no-store, must-revalidate
-
-/js/*
-  Cache-Control: no-cache, no-store, must-revalidate
-
-/data/*
-  Cache-Control: public, max-age=86400
-  Content-Type: application/json; charset=utf-8
-
-/assets/*
-  Cache-Control: public, max-age=31536000, immutable
+  Cache-Control: public, max-age=300
+  X-Content-Type-Options: nosniff

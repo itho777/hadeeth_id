@@ -5,9 +5,24 @@
  */
 
 const HadeethAPI = {
-  baseUrl: window.location.pathname.endsWith('/') 
-    ? window.location.pathname + 'data'
-    : window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + '/data',
+  // Resolve base URL robustly across GitHub Pages (sub-path) and Cloudflare Pages (root).
+  // Strategy: find the <script src="js/api.js"> tag and go up one level to get the site root.
+  get baseUrl() {
+    // Check for explicit override (useful for testing)
+    if (window.__HADEETH_BASE__) return window.__HADEETH_BASE__ + '/data';
+    // Walk up from the script's own src to find the repo root
+    const scriptEl = document.querySelector('script[src*="api.js"]');
+    if (scriptEl) {
+      const src = scriptEl.getAttribute('src'); // e.g. "js/api.js" or "/hadeeth_id/js/api.js"
+      const srcUrl = new URL(src, window.location.href);
+      // Go up two levels: api.js -> js/ -> root
+      srcUrl.pathname = srcUrl.pathname.replace(/\/js\/api\.js.*$/, '') + '/data';
+      return srcUrl.pathname;
+    }
+    // Fallback: strip current filename and go to /data relative to host
+    const base = window.location.pathname.replace(/\/[^/]*$/, '');
+    return base + '/data';
+  },
 
   /**
    * Fetch master list of books
