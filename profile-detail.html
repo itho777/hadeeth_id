@@ -304,11 +304,20 @@
 
   async function loadRawiProfile(id) {
     try {
-      const res = await fetch(`${supabaseUrl}/rest/v1/rijal?id=eq.${id}&select=*`, {
+      let res = await fetch(`${supabaseUrl}/rest/v1/rijal?id=eq.${id}&select=*`, {
         headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
       });
-      if (!res.ok) return;
-      const data = await res.json();
+      let data = res.ok ? await res.json() : [];
+
+      // Fallback: search by name if exact ID not found
+      if (!data || data.length === 0) {
+        const cleanName = id.replace(/^rawi_/, '').replace(/_/g, ' ');
+        res = await fetch(`${supabaseUrl}/rest/v1/rijal?or=(name_id.ilike.*${encodeURIComponent(cleanName)}*,name_en.ilike.*${encodeURIComponent(cleanName)}*)&select=*&limit=1`, {
+          headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
+        });
+        if (res.ok) data = await res.json();
+      }
+
       if (!data || data.length === 0) return;
 
       const rawi = data[0];

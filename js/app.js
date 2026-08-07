@@ -761,7 +761,12 @@ async function loadSanadChain() {
 
   // Render Narrators from Companion down to Collector
   narrators.reverse().forEach((nr, idx) => {
-    const profileUrl = nr.rawi_id ? `profile-detail.html?id=${encodeURIComponent(nr.rawi_id)}` : `scholars.html`;
+    let rawiSlug = nr.rawi_id;
+    if (!rawiSlug && nr.name) {
+      const cleanName = nr.name.replace(/\(.*?\)/g, '').replace(/[^a-zA-Z0-9\s]/g, '').trim().toLowerCase().replace(/\s+/g, '_');
+      rawiSlug = `rawi_${cleanName}`;
+    }
+    const profileUrl = `profile-detail.html?id=${encodeURIComponent(rawiSlug || 'rawi_abu_hurairah')}`;
     html += `
       <div class="sanad-node relative z-10 bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-5 shadow-sm hover:border-sunan-emerald/50 transition-colors">
         <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-secondary text-white border-2 border-white dark:border-ink-black flex items-center justify-center text-[10px]">${idx + 1}</div>
