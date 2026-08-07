@@ -259,7 +259,7 @@
   <div><span data-i18n="footer_text">© 2024 HADEETH.ID - Digital Manuscript Preservation</span></div>
 </footer>
 
-<script src="js/app.js?v=20260807_21"></script>
+<script src="js/app.js?v=20260807_22"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -298,7 +298,7 @@
 
       data.forEach(r => {
         const isSahabi = r.is_sahabi;
-        const isId = (window.LangSystem && window.LangSystem.get() === 'id');
+        const isId = (window.LangSystem && window.LangSystem.isIdMode());
         let genLabel = r.generation || (isSahabi ? (isId ? 'Sahabat' : 'Sahabi (Companion)') : 'Transmitter');
         if (isId && genLabel.toLowerCase().includes('sahabi')) genLabel = 'Sahabat';
         const profileUrl = `profile-detail.html?id=${encodeURIComponent(r.id)}`;

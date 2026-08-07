@@ -98,11 +98,15 @@ const UI_I18N = {
 
 const LangSystem = {
   SUPPORTED: ['en', 'id', 'both'],
-  get() { return localStorage.getItem('hadeeth_lang') || 'en'; },
+  isIdMode() {
+    const l = this.get();
+    return l === 'id' || l === 'both';
+  },
   set(lang) {
     if (!this.SUPPORTED.includes(lang)) return;
     localStorage.setItem('hadeeth_lang', lang);
     this.apply(lang);
+    window.dispatchEvent(new CustomEvent('hadeeth_lang_change', { detail: { lang } }));
   },
   translateUI(lang) {
     const targetLang = (lang === 'both' || lang === 'id') ? 'id' : 'en';
@@ -440,7 +444,7 @@ async function loadHadithDetail() {
   const prevBtn = document.getElementById('prev-hadith-btn');
   const nextBtn = document.getElementById('next-hadith-btn');
 
-  const isIdLang = (window.LangSystem && window.LangSystem.get() === 'id');
+  const isIdLang = (window.LangSystem && window.LangSystem.isIdMode());
   const currentNum = parseInt(hadithId) || 1;
 
   // Fetch Chapter info to show real Chapter Title in top breadcrumb
@@ -1650,7 +1654,7 @@ async function loadSanadChain() {
     }
     const profileUrl = `profile-detail.html?id=${encodeURIComponent(rawiSlug || 'rawi_abu_hurairah')}`;
 
-    const isId = (window.LangSystem && window.LangSystem.get() === 'id');
+    const isId = (window.LangSystem && window.LangSystem.isIdMode());
     let displayRole = nr.role || '';
     if (isId) {
       displayRole = displayRole.replace(/Sahabi\s*\(Companion\)/ig, 'Sahabat').replace(/Sahabi/ig, 'Sahabat');
