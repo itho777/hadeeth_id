@@ -209,11 +209,47 @@ async function loadHadithDetail() {
   const container = document.getElementById('hadith-detail-container');
   if (!container) return;
 
-  const edition = await window.HadeethAPI.getEdition('eng', bookId);
-  const arabicEdition = await window.HadeethAPI.getEdition('ara', bookId);
+  const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
+  const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
+
+  const arabicElem = container.querySelector('[data-arabic-text]');
+  const englishElem = container.querySelector('[data-english-text]');
+  const indonesianElem = container.querySelector('[data-indonesian-text]');
+  const titleElem = container.querySelector('[data-hadith-title]');
+
+  try {
+    const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?id=eq.${bookId}_${hadithId}&select=id,hadith_number,text_ar,text_en,text_id,grade,book_id`, {
+      headers: {
+        'apikey': anonKey,
+        'Authorization': `Bearer ${anonKey}`
+      }
+    });
+
+    if (res.ok) {
+      const data = await res.json();
+      if (data && data.length > 0) {
+        const item = data[0];
+        if (arabicElem) arabicElem.innerText = item.text_ar || '—';
+        if (englishElem) englishElem.innerText = item.text_en || '—';
+        if (indonesianElem) indonesianElem.innerText = item.text_id || '—';
+        if (titleElem) titleElem.innerText = `${bookId.toUpperCase()} Hadith #${item.hadith_number}`;
+        return;
+      }
+    }
+  } catch (err) {
+    console.warn('Supabase fetch detail error, fallback to edition files:', err);
+  }
+
+  // Fallback to CDN edition files if offline / REST fails
+  const [edition, arabicEdition, indEdition] = await Promise.all([
+    window.HadeethAPI.getEdition('eng', bookId),
+    window.HadeethAPI.getEdition('ara', bookId),
+    window.HadeethAPI.getEdition('ind', bookId)
+  ]);
 
   let hadithTextEn = '';
   let hadithTextAr = '';
+  let hadithTextId = '';
 
   if (edition && edition.hadiths) {
     const found = edition.hadiths.find(h => h.hadithnumber == hadithId);
@@ -223,16 +259,15 @@ async function loadHadithDetail() {
     const found = arabicEdition.hadiths.find(h => h.hadithnumber == hadithId);
     if (found) hadithTextAr = found.text;
   }
-
-  if (hadithTextEn || hadithTextAr) {
-    const arabicElem = container.querySelector('[data-arabic-text]');
-    const englishElem = container.querySelector('[data-english-text]');
-    const titleElem = container.querySelector('[data-hadith-title]');
-
-    if (arabicElem) arabicElem.innerText = hadithTextAr || '—';
-    if (englishElem) englishElem.innerText = hadithTextEn || '—';
-    if (titleElem) titleElem.innerText = `${bookId.toUpperCase()} Hadith #${hadithId}`;
+  if (indEdition && indEdition.hadiths) {
+    const found = indEdition.hadiths.find(h => h.hadithnumber == hadithId);
+    if (found) hadithTextId = found.text;
   }
+
+  if (arabicElem) arabicElem.innerText = hadithTextAr || '—';
+  if (englishElem) englishElem.innerText = hadithTextEn || '—';
+  if (indonesianElem) indonesianElem.innerText = hadithTextId || '—';
+  if (titleElem) titleElem.innerText = `${bookId.toUpperCase()} Hadith #${hadithId}`;
 }
 
 /**
