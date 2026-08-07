@@ -290,7 +290,89 @@
 
 <script src="js/app.js"></script>
 <script>
-  // Profile Switching Logic (Sahabi vs Author profile)
+  const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
+  const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
+
+  // Load dynamic rawi profile on DOM load
+  document.addEventListener('DOMContentLoaded', async () => {
+    const params = new URLSearchParams(window.location.search);
+    const rawiId = params.get('id');
+    if (rawiId) {
+      await loadRawiProfile(rawiId);
+    }
+  });
+
+  async function loadRawiProfile(id) {
+    try {
+      const res = await fetch(`${supabaseUrl}/rest/v1/rijal?id=eq.${id}&select=*`, {
+        headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
+      });
+      if (!res.ok) return;
+      const data = await res.json();
+      if (!data || data.length === 0) return;
+
+      const rawi = data[0];
+
+      // Hide demo switcher bar if loading a real DB profile
+      const demoBar = document.querySelector('.bg-surface-container-low.dark\\:bg-\\[\\#1e293b\\].p-3');
+      if (demoBar) demoBar.style.display = 'none';
+
+      document.title = `Narrator Profile: ${rawi.name_en} — HADEETH.ID`;
+      document.getElementById('breadcrumb-name').innerText = rawi.name_en;
+      document.getElementById('profile-avatar').innerText = (rawi.name_ar || rawi.name_en).charAt(0);
+      document.getElementById('profile-gen-badge').innerText = rawi.generation || 'Transmitter';
+      document.getElementById('profile-grade-badge').innerText = `Grade: ${rawi.grade || (rawi.is_sahabi ? 'Sahabi Adl' : 'Thiqah')}`;
+      document.getElementById('profile-english-name').innerText = rawi.name_en;
+      document.getElementById('profile-nasab').innerText = rawi.nasab_en ? `Nasab: ${rawi.nasab_en}` : (rawi.nasab ? `Nasab: ${rawi.nasab}` : `ID: ${rawi.id}`);
+      document.getElementById('profile-arabic-name').innerText = rawi.name_ar ? `${rawi.name_ar} ${rawi.is_sahabi ? '(رضي الله عنه)' : ''}` : '';
+
+      document.getElementById('profile-kunyah').innerText = rawi.kunya_en ? `${rawi.kunya_en} (${rawi.kunya || ''})` : (rawi.kunya || 'N/A');
+      document.getElementById('profile-settled').innerText = rawi.region || rawi.city_of_residence || rawi.city_of_death || 'Hijaz';
+
+      let dates = '';
+      if (rawi.died_ah) dates += `Died ${rawi.died_ah} AH`;
+      if (rawi.died_ce) dates += ` (${rawi.died_ce} CE)`;
+      if (!dates) dates = 'Early Era (1st Century AH)';
+      document.getElementById('profile-dates').innerText = dates;
+
+      document.getElementById('profile-parents').innerText = rawi.nasab_en || rawi.nisba_en || 'Famous Lineage';
+      document.getElementById('total-hadith-badge').innerText = `${rawi.hadith_count || 0} Total Hadith Links`;
+
+      // Book distribution counts
+      if (rawi.books && rawi.books.length > 0) {
+        document.getElementById('cnt-bukhari').innerText = rawi.books.includes('bukhari') ? 'Transmitted' : 'Referenced';
+        document.getElementById('cnt-muslim').innerText = rawi.books.includes('muslim') ? 'Transmitted' : 'Referenced';
+      }
+
+      // Remarks / Evaluations
+      if (rawi.grade_detail) {
+        document.getElementById('remark-quote-1').innerText = `"${rawi.grade_detail}"`;
+      }
+      if (rawi.grade_source) {
+        document.getElementById('remark-quote-2').innerText = `"Evaluation source: ${rawi.grade_source}"`;
+      }
+
+      // Bio text
+      let bioHtml = '';
+      if (rawi.bio_en) {
+        bioHtml += `<p><strong class="text-primary dark:text-white">Biography:</strong> ${rawi.bio_en}</p>`;
+      }
+      if (rawi.bio_ar) {
+        bioHtml += `<p dir="rtl" class="font-arabic-body text-sm leading-relaxed text-[#10b981]"><strong class="text-primary dark:text-white font-sans">الوصف العربي:</strong> ${rawi.bio_ar}</p>`;
+      }
+      if (rawi.bio_id) {
+        bioHtml += `<p><strong class="text-primary dark:text-white">Biografi Indonesia:</strong> ${rawi.bio_id}</p>`;
+      }
+      if (bioHtml) {
+        document.getElementById('bio-stories-content').innerHTML = bioHtml;
+      }
+
+    } catch (err) {
+      console.warn('Failed to load rawi profile from Supabase:', err);
+    }
+  }
+
+  // Profile Switching Logic (Demo Fallback)
   function switchProfile(type) {
     const btnUmar = document.getElementById('btn-umar');
     const btnBukhari = document.getElementById('btn-bukhari');
@@ -349,7 +431,7 @@
       document.getElementById('cnt-muslim').innerText = "Quotes & Parallels";
       document.getElementById('cnt-abudawood').innerText = "Referenced";
 
-      document.getElementById('remark-quote-1').innerText = '"Al-Bukhari is the peak of Hadith criticism. Earth has not seen anyone more knowledgeable in the hidden defects ('Ilal) of Hadith than him." — Imam Ahmad ibn Hanbal';
+      document.getElementById('remark-quote-1').innerText = '"Al-Bukhari is the peak of Hadith criticism. Earth has not seen anyone more knowledgeable in the hidden defects (\'Ilal) of Hadith than him." — Imam Ahmad ibn Hanbal';
       document.getElementById('remark-quote-2').innerText = '"I have not seen anyone like Muhammad ibn Isma\'il al-Bukhari. It is as if he was created solely for Hadith." — Imam al-Tirmidhi';
 
       document.getElementById('bio-stories-content').innerHTML = `
