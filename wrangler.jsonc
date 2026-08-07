@@ -1,6 +1,7 @@
 {
   "name": "hadeeth-id",
   "compatibility_date": "2026-08-07",
+  "main": "index.js",
   "assets": {
     "directory": "."
   }
