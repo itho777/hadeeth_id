@@ -62,14 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
  * Initialize Interactive Live Search
  */
 function initSearch() {
-  const searchInput = document.getElementById('search-input') || document.querySelector('input[placeholder*="Search"]');
-  const searchBtn = document.getElementById('search-btn') || document.querySelector('.search-ring button:last-child');
+  const searchInput = document.getElementById('search-input');
+  const searchBtn = document.getElementById('search-btn');
   const resultsContainer = document.getElementById('search-results-container');
 
   if (!searchInput) return;
-
-  // Ensure ID is attached
-  searchInput.id = 'search-input';
 
   // Create results container if missing
   let resultsDiv = resultsContainer;
@@ -432,34 +429,36 @@ async function loadHadithList() {
       allHadiths = await res.json();
     }
   } catch (err) {
-    console.warn('Fetch hadiths REST error:', err);
+    console.warn('Fetch hadiths REST error, fallback to edition file:', err);
   }
 
-  // Fallback to CDN edition if REST returns empty
+  // Fallback to local edition file if REST returns empty or offline
   if (!allHadiths || allHadiths.length === 0) {
     try {
-      const [engEd, araEd, indEd] = await Promise.all([
-        window.HadeethAPI.getEdition('eng', bookId),
-        window.HadeethAPI.getEdition('ara', bookId),
-        window.HadeethAPI.getEdition('ind', bookId)
-      ]);
-      if (engEd && engEd.hadiths) {
+      const indEd = await window.HadeethAPI.getEdition('ind', bookId);
+      const engEd = await window.HadeethAPI.getEdition('eng', bookId);
+      const araEd = await window.HadeethAPI.getEdition('ara', bookId);
+
+      const mainEd = indEd || engEd;
+      if (mainEd && mainEd.hadiths) {
         const araMap = {};
+        const engMap = {};
         const indMap = {};
         if (araEd && araEd.hadiths) araEd.hadiths.forEach(h => araMap[h.hadithnumber] = h.text);
+        if (engEd && engEd.hadiths) engEd.hadiths.forEach(h => engMap[h.hadithnumber] = h.text);
         if (indEd && indEd.hadiths) indEd.hadiths.forEach(h => indMap[h.hadithnumber] = h.text);
 
-        allHadiths = engEd.hadiths.map(h => ({
+        allHadiths = mainEd.hadiths.map(h => ({
           hadith_number: h.hadithnumber,
-          text_en: h.text,
+          text_en: engMap[h.hadithnumber] || h.text || '',
           text_ar: araMap[h.hadithnumber] || '',
-          text_id: indMap[h.hadithnumber] || '',
+          text_id: indMap[h.hadithnumber] || h.text || '',
           grade: 'Sahih',
           book_id: bookId
         }));
       }
     } catch (e) {
-      console.warn('Fallback CDN load error:', e);
+      console.warn('Fallback edition load error:', e);
     }
   }
 
