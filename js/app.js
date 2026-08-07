@@ -465,13 +465,53 @@ async function loadHadithCardsList() {
 /**
  * Load Sanad Transmission Chain dynamically
  */
+/**
+ * Helper to transliterate Arabic narrator names into clean Latin script
+ */
+function transliterateArabicName(ar) {
+  if (!ar) return 'Scholar / Transmitter';
+
+  const clean = ar.replace(/[\u064B-\u0652]/g, '').trim();
+
+  const dict = {
+    'عبد الله': 'Abdullah', 'عبد الرحمن': 'Abdurrahman', 'عبد العزيز': 'Abdul Aziz',
+    'عبد المجيد': 'Abdul Majid', 'عبد الملك': 'Abdul Malik', 'عبد الرزاق': 'Abdul Razzaq',
+    'أبو': 'Abu', 'أبي': 'Abu', 'أبا': 'Abu', 'أم': 'Umm', 'ابن': 'ibn', 'بن': 'bin', 'بنت': 'bint',
+    'صالح': 'Salih', 'دينار': 'Dinar', 'بلال': 'Bilal', 'سليمان': 'Sulaiman',
+    'العقدي': 'al-Aqadi', 'عامر': 'Amir', 'محمد': 'Muhammad', 'أحمد': 'Ahmad',
+    'علي': 'Ali', 'حسين': 'Husayn', 'حسن': 'Hasan', 'عثمان': 'Uthman',
+    'سعيد': 'Sa\'id', 'مسلم': 'Muslim', 'إبراهيم': 'Ibrahim', 'يحيى': 'Yahya',
+    'شعيب': 'Shu\'ayb', 'مالك': 'Malik', 'حميد': 'Humayd', 'ثابت': 'Thabit',
+    'قتادة': 'Qatadah', 'أيوب': 'Ayyub', 'نافع': 'Nafi\'', 'مسدد': 'Musaddad',
+    'يزيد': 'Yazid', 'عبيد الله': 'Ubaydullah', 'هشام': 'Hisham', 'موسى': 'Musa'
+  };
+
+  const words = clean.split(/\s+/);
+  const translated = [];
+
+  for (let i = 0; i < words.length; i++) {
+    const pair = words[i] + ' ' + (words[i + 1] || '');
+    if (dict[pair]) {
+      translated.push(dict[pair]);
+      i++;
+    } else if (dict[words[i]]) {
+      translated.push(dict[words[i]]);
+    } else {
+      translated.push(words[i]);
+    }
+  }
+
+  return translated.join(' ');
+}
+
 async function loadSanadChain() {
   const container = document.getElementById('sanad-nodes-container');
   if (!container) return;
 
   const params = new URLSearchParams(window.location.search);
   const bookId = params.get('book') || 'bukhari';
-  const hadithId = params.get('id') || '1';
+  const hadithNum = params.get('id') || '1';
+  const hadithId = `${bookId}_${hadithNum}`;
 
   const bookNames = {
     bukhari: 'Sahih al-Bukhari',
@@ -487,7 +527,6 @@ async function loadSanadChain() {
   const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
 
   const titleElem = document.getElementById('sanad-title');
-  if (titleElem) titleElem.innerText = `Sanad: ${bookName} ${hadithId}`;
   if (titleElem) titleElem.innerText = `Sanad: ${bookName} ${hadithNum}`;
 
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
@@ -533,8 +572,8 @@ async function loadSanadChain() {
 
   let narrators = [];
 
-  // If DB returned structured chain from hadith_rijal, use it!
-  if (dbNarrators && dbNarrators.length > 0) {
+  // If DB returned structured chain from hadith_rijal with 3+ narrators, use it!
+  if (dbNarrators && dbNarrators.length >= 3) {
     narrators = dbNarrators.map(r => ({
       rawi_id: r.rawi_id,
       name: r.name_en + (r.is_sahabi ? ' (رضي الله عنه)' : ''),
@@ -563,19 +602,32 @@ async function loadSanadChain() {
     { key: 'عَلْقَمَة', rawi_id: 'rawi_alqama_bin_waqqas', en: "'Alqama bin Waqqas al-Laythi", role: "Tabi'i (Successor)", ar: "علقمة بن وقاص الليثي" }
   ];
 
-  if (narrators.length === 0) {
-    // Parse Arabic Isnad segments if not in DB
+  if (narrators.length < 3) {
+    // Parse Arabic Isnad segments if DB chain is incomplete
+    narrators = [];
     if (textAr) {
-      const isnadPart = textAr.split(/:\s*«|:\s*"|\s+أَنَّ|\s+أَنَّهُ/)[0];
+      // 1. Separate Isnad from Matn
+      const matnSplitPattern = /["«”"“「»\u201d\u201c\u200f]|أَنَّ\s+هِرَقْلَ|أَنَّ\s+رَسُولَ|أَنَّ\s+النَّبِيَّ|فَقَالَ\s+|قَالَ\s+رَسُولُ|قَالَتْ\s+/;
+      const parts = textAr.split(matnSplitPattern);
+      let isnadPart = parts[0] || textAr;
+
+      // Fallback check for 'عَنِ النَّبِيِّ ... قَالَ'
+      const mMatn = isnadPart.match(/(?:عَنِ?\s+النَّبِيِّ|رَسُولِ?\s+اللَّهِ).*?(?:قَالَ|قَالَتْ|يَقُولُ)\s+/);
+      if (mMatn) {
+        isnadPart = isnadPart.substring(0, mMatn.index + mMatn[0].length);
+      }
+
+      // 2. Clean honorifics, Prophet references, and non-narrator words
       const cleanIsnad = isnadPart
-        .replace(/رَسُولُ اللَّهِ|رَسُولِ اللَّهِ|صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ|صلى الله عليه وسلم|رَضِيَ اللَّهُ عَنْهُ|رضى الله عنه|أُمِّ الْمُؤْمِنِينَ|أَنَّهَا قَالَتْ|قَالَ|سَمِعْتُ|عَلَى|الْمِنْبَرِ|يَقُولُ|نَحْوَهُ/g, ' ')
+        .replace(/رَسُولُ?\s+اللَّهِ|رَسُولِ?\s+اللَّهِ|صَلَّى\s+اللَّهُ\s+عَلَيْهِ\s+وَسَلَّمَ|صلى\s+الله\s+عليه\s+وسلم|رَضِيَ?\s+اللَّهُ\s+عَنْهُ?مَا?|رضى\s+الله\s+عنه|أُمِّ?\s+الْمُؤْمِنِينَ|عَنِ?\s+النَّبِيِّ|النَّبِيِّ|أَنَّهَا?\s+قَالَتْ|أَنَّهُ\s+قَالَ|قَالَ|قَالَتْ|سَمِعْتُ|عَلَى|الْمِنْبَرِ|يَقُولُ|نَحْوَهُ/g, ' ')
         .replace(/[\u064B-\u0652]/g, '')
         .replace(/[^\u0621-\u064A\s]/g, ' ')
         .replace(/\s+/g, ' ');
 
-      const rawiTokens = cleanIsnad.split(/حدثنا|حدثني|أخبرنا|أخبرني|عن|قال/g)
-        .map(t => t.trim())
-        .filter(t => t.length > 3 && !t.includes('رسول الله') && !t.includes('صلى الله'));
+      // 3. Split by transmission verbs
+      const rawiTokens = cleanIsnad.split(/حدثنا|حدثني|أخبرنا|أخبرني|عن|أخبره|حدثه|سمع/g)
+        .map(t => t.replace(/^[ـ\s]+|[ـ\s]+$/g, '').trim())
+        .filter(t => t.length > 3 && !t.includes('رسول الله') && !t.includes('صلى الله') && !t.includes('النبي') && !t.includes('الإيمان') && !t.includes('شعبة') && !t.includes('هرقل'));
 
       rawiTokens.forEach((rt) => {
         const matched = rawiDict.find(d => rt.includes(d.key.replace(/[\u064B-\u0652]/g, '')) || d.key.replace(/[\u064B-\u0652]/g, '').includes(rt));
@@ -584,10 +636,11 @@ async function loadSanadChain() {
             narrators.push({ rawi_id: matched.rawi_id, name: matched.en, role: matched.role, ar: matched.ar });
           }
         } else {
-          if (rt.length > 4 && !narrators.some(n => n.ar === rt)) {
+          if (rt.length > 3 && !narrators.some(n => n.ar === rt)) {
+            const transliterated = transliterateArabicName(rt);
             narrators.push({
               rawi_id: null,
-              name: `Rawi Transmitter (${rt.split(' ')[0] || 'Scholar'})`,
+              name: `${transliterated} (${rt})`,
               role: 'Transmitter (Rawi) • Grade: Thiqah',
               ar: rt
             });
