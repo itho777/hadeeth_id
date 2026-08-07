@@ -4,6 +4,16 @@
  * Bilingual EN/ID language switcher with persistent localStorage state.
  */
 
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 // ============================================================
 // LANGUAGE SYSTEM
 // ============================================================
@@ -1327,8 +1337,11 @@ async function loadSanadChain() {
     malik: 'Muwatta Malik',
     ahmad: 'Musnad Ahmad'
   };
+  const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
   const titleElem = document.getElementById('sanad-title');
+  const subtitleElem = document.getElementById('sanad-subtitle');
   if (titleElem) titleElem.innerText = `Sanad: ${bookName} ${hadithNum}`;
+  if (subtitleElem) subtitleElem.innerText = `Chain of narrators (الإسناد) for ${bookName} Hadith #${hadithNum} tracing back to the Messenger of Allah ﷺ.`;
 
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
