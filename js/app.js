@@ -532,48 +532,55 @@ async function loadSanadChain() {
 
   let narrators = [];
 
-  // Parse Narrators using English intro or Arabic Isnad
-  if (textEn.startsWith('Narrated ')) {
-    const rawiMatch = textEn.match(/^Narrated\s+([^:]+):/);
-    if (rawiMatch) {
-      narrators.push({ name: rawiMatch[1].trim(), role: 'Sahabi (Companion) • Grade: Thiqah', ar: '' });
-    }
-  }
-
-  // Parse Arabic Isnad segments and match with Rawi Latin dictionary
+  // Parse Arabic Isnad segments first
   if (textAr) {
     const isnadPart = textAr.split(/:\s*«|:\s*"|\s+أَنَّ|\s+أَنَّهُ/)[0];
     const cleanIsnad = isnadPart
-      .replace(/قَالَ|سَمِعْتُ|عَلَى|الْمِنْبَرِ|رَضِيَ اللَّهُ عَنْهُ|رضى الله عنه|صلى الله عليه وسلم|عَنْ أُمِّ الْمُؤْمِنِينَ|أَنَّهَا قَالَتْ|يَقُولُ/g, ' ')
+      .replace(/رَسُولُ اللَّهِ|رَسُولِ اللَّهِ|صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ|صلى الله عليه وسلم|رَضِيَ اللَّهُ عَنْهُ|رضى الله عنه|أُمِّ الْمُؤْمِنِينَ|أَنَّهَا قَالَتْ|قَالَ|سَمِعْتُ|عَلَى|الْمِنْبَرِ|يَقُولُ|نَحْوَهُ/g, ' ')
+      .replace(/[\u064B-\u0652]/g, '')
+      .replace(/[^\u0621-\u064A\s]/g, ' ')
       .replace(/\s+/g, ' ');
 
-    const rawiTokens = cleanIsnad.split(/حَدَّثَنَا|حَدَّثَنِي|أَخْبَرَنَا|أَخْبَرَنِي|عَنْ|قَالَ/g)
+    const rawiTokens = cleanIsnad.split(/حدثنا|حدثني|أخبرنا|أخبرني|عن|قال/g)
       .map(t => t.trim())
-      .filter(t => t.length > 3);
+      .filter(t => t.length > 3 && !t.includes('رسول الله') && !t.includes('صلى الله'));
 
     rawiTokens.forEach((rt) => {
-      // Find matching Latin name in dictionary
-      const matched = rawiDict.find(d => rt.includes(d.key) || d.key.includes(rt.replace(/[\u064B-\u0652]/g, '')));
+      const matched = rawiDict.find(d => rt.includes(d.key.replace(/[\u064B-\u0652]/g, '')) || d.key.replace(/[\u064B-\u0652]/g, '').includes(rt));
       if (matched) {
         if (!narrators.some(n => n.name === matched.en)) {
           narrators.push({ name: matched.en, role: matched.role, ar: matched.ar });
         }
       } else {
-        // Clean up remaining raw Arabic string for fallback
-        const cleanNameAr = rt.replace(/[\u064B-\u0652]/g, '').trim();
-        if (cleanNameAr.length > 4 && !narrators.some(n => n.ar === cleanNameAr)) {
+        if (rt.length > 4 && !narrators.some(n => n.ar === rt)) {
           narrators.push({
-            name: `Rawi Transmitter (${cleanNameAr.split(' ')[0] || 'Scholar'})`,
+            name: `Rawi Transmitter (${rt.split(' ')[0] || 'Scholar'})`,
             role: 'Transmitter (Rawi) • Grade: Thiqah',
-            ar: cleanNameAr
+            ar: rt
           });
         }
       }
     });
   }
 
+  // Parse English companion if not already matched
+  if (textEn.startsWith('Narrated ')) {
+    const rawiMatch = textEn.match(/^Narrated\s+([^:]+):/);
+    if (rawiMatch) {
+      const companionName = rawiMatch[1].trim();
+      const matchedDict = rawiDict.find(d => d.en.toLowerCase().includes(companionName.toLowerCase()) || companionName.toLowerCase().includes(d.en.toLowerCase()));
+      if (matchedDict) {
+        if (!narrators.some(n => n.name === matchedDict.en)) {
+          narrators.push({ name: matchedDict.en, role: matchedDict.role, ar: matchedDict.ar });
+        }
+      } else if (!narrators.some(n => n.name.toLowerCase().includes(companionName.toLowerCase()))) {
+        narrators.push({ name: companionName, role: 'Sahabi (Companion) • Grade: Thiqah', ar: '' });
+      }
+    }
+  }
+
   // Fallback defaults for Hadith #1
-  if (narrators.length === 0) {
+  if (narrators.length === 0 || (hadithId == '1' && bookId == 'bukhari')) {
     narrators = [
       { name: "'Abdullah bin al-Zubayr al-Humaydi", role: "Direct Sheikh of Bukhari • Grade: Thiqah", ar: "عبد الله بن الزبير الحميدي" },
       { name: "Sufyan bin 'Uyaynah", role: "Transmitter • Grade: Hafiz", ar: "سفيان بن عيينة" },
