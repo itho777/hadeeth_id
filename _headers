@@ -8,6 +8,9 @@
 
 /data/*
   Cache-Control: public, max-age=86400
+# HADEETH.ID — Cloudflare Pages Headers Configuration
+# Deployment build trigger: 2026-08-07
+
   Content-Type: application/json; charset=utf-8
 
 /assets/*
