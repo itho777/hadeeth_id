@@ -80,8 +80,8 @@ const HadeethAPI = {
           'Authorization': `Bearer ${anonKey}`
         },
         body: JSON.stringify({
-          p_query: query.trim(),
-          p_limit: limit
+          query_text: query.trim(),
+          match_limit: limit
         })
       });
 
@@ -89,8 +89,22 @@ const HadeethAPI = {
         throw new Error(`Search failed: HTTP ${response.status}`);
       }
 
-      const results = await response.json();
-      return results;
+      const rawResults = await response.json();
+      
+      // Map database column names to UI rendering properties
+      return rawResults.map(item => ({
+        id: item.id,
+        book_slug: item.book_id,
+        book_name: item.book_id === 'nawawi' ? 'Forty Nawawi' : 'Sahih al-Bukhari',
+        hadith_number: item.hadith_number,
+        reference: `#${item.hadith_number}`,
+        arabic_text: item.text_ar,
+        primary_translation: item.text_en || item.text_id,
+        english_text: item.text_en,
+        indonesian_text: item.text_id,
+        grade: item.grade || 'Sahih',
+        rank: item.rank
+      }));
     } catch (err) {
       console.error('Supabase Search Error:', err);
       // Fallback search using local JSON edition data if network/RPC fails
