@@ -1423,6 +1423,9 @@ async function loadSanadChain() {
     { key: 'يَحْيَى بْنُ سَعِيد', rawi_id: 'rawi_yahya_bin_said', en: "Yahya bin Sa'id al-Ansari", id: "Yahya bin Sa'id al-Anshari", role: "Transmitter • Grade: Thiqah", ar: "يحيى بن سعيد الأنصاري", is_sahabi: false, kunyah: "Abu Sa'id", residence: "Madinah / Iraq", death_ah: "143 AH (760 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Ahmad bin Hanbal: Imam Hujjah" },
     { key: 'الْحُمَيْدِي', rawi_id: 'rawi_al_humaydi', en: "'Abdullah bin al-Zubayr al-Humaydi", id: "Abdullah bin az-Zubair al-Humaidi", role: "Direct Sheikh of Bukhari", ar: "عبد الله بن الزبير الحميدي", is_sahabi: false, kunyah: "Abu Bakr", residence: "Makkah / Madinah", death_ah: "219 AH (834 CE)", counts: "Bukhari: 75 | Muslim: 45", remarks: "Ibn Hajar: Thiqah Hafiz | Imam al-Bukhari: Imam fi al-Hadith" },
     { key: 'مُحَمَّدُ بْنُ إِبْرَاهِيم', rawi_id: 'rawi_muhammad_bin_ibrahim', en: "Muhammad bin Ibrahim al-Taymi", id: "Muhammad bin Ibrahim at-Taimi", role: "Tabi' al-Tabi'in", ar: "محمد بن إبراهيم التيمي", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "120 AH (738 CE)", counts: "Bukhari: 110 | Muslim: 95", remarks: "Ibn Hajar: Thiqah Mutqin | Ibn Ma'in: Thiqah" },
+    { key: 'أَبِي الزِّنَادِ', rawi_id: 'rawi_abu_az_zanad', en: "Abu Az-Zanad", id: "Abu Az-Zanad", role: "Tabi' al-Tabi'in • Grade: Thiqah", ar: "أبو الزناد", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "130 AH (747 CE)", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah Thabt" },
+    { key: 'الأَعْرَجِ', rawi_id: 'rawi_al_araj', en: "Al-A'raj", id: "Al-A'raj", role: "Tabi'i (Successor) • Grade: Thiqah", ar: "الأعرج", is_sahabi: false, kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "117 AH (735 CE)", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah Thabt" },
+    { key: 'عَبْدُ اللَّهِ بْنُ يُوسُفَ', rawi_id: 'rawi_abdullah_bin_yusuf', en: "'Abdullah bin Yusuf", id: "Abdullah bin Yusuf", role: "Direct Sheikh of Bukhari • Grade: Thiqah", ar: "عبد الله بن يوسف", is_sahabi: false, kunyah: "Abu Muhammad", residence: "Tinnis / Damascus", death_ah: "218 AH (833 CE)", counts: "Bukhari: 120", remarks: "Ibn Hajar: Thiqah Mutqin" },
     { key: 'عَلْقَمَة', rawi_id: 'rawi_alqama_bin_waqqas', en: "'Alqama bin Waqqas al-Laythi", id: "Alqamah bin Waqqash al-Laitsi", role: "Tabi'i (Successor)", ar: "علقمة بن وقاص الليثي", is_sahabi: false, kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "85 AH (704 CE)", counts: "Bukhari: 48 | Muslim: 40", remarks: "Ibn Hajar: Thiqah | Al-Dhahabi: Min Kibar al-Tabi'in" }
   ];
 
@@ -1570,21 +1573,7 @@ async function loadSanadChain() {
     ];
   }
 
-  // Helper to extract numeric Hijri death year for chronological sorting
-  function getRawiDeathYear(d) {
-    const match = (d || '').match(/([0-9]+)\s*AH/i);
-    return match ? parseInt(match[1]) : 150;
-  }
-
-  // Sort narrators chronologically: Sahabi (Companion, 1st Century) -> Tabi'i -> Sheikh of Author (3rd Century)
-  narrators.sort((a, b) => {
-    const isSahabiA = (a.role && a.role.toLowerCase().includes('sahab')) || a.is_sahabi;
-    const isSahabiB = (b.role && b.role.toLowerCase().includes('sahab')) || b.is_sahabi;
-    if (isSahabiA && !isSahabiB) return -1;
-    if (!isSahabiA && isSahabiB) return 1;
-    return getRawiDeathYear(a.death_ah) - getRawiDeathYear(b.death_ah);
-  });
-
+  // Preserve strict Hadith text transmission sequence from Companion (Node 1) down to Direct Sheikh
   const countText = document.getElementById('sanad-count-text');
   if (countText) countText.innerText = `${narrators.length} Narrators`;
 
