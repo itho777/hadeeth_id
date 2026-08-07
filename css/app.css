@@ -1,0 +1,92 @@
+/* =============================================
+   HADEETH.ID — Shared Application Styles
+   ============================================= */
+
+/* --- Smooth Theme Transition --- */
+*, *::before, *::after {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.1s ease;
+  box-sizing: border-box;
+}
+
+/* --- Scrollbar Styling --- */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c3c6cf; border-radius: 4px; }
+.dark ::-webkit-scrollbar-thumb { background: #3c4a42; }
+
+/* --- Arabic Text Defaults --- */
+[dir="rtl"], .arabic-text { font-family: 'Amiri', serif; }
+
+/* --- Sanad Chain Line --- */
+.sanad-line {
+  position: absolute;
+  left: 24px;
+  top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #c3c6cf 0%, #c3c6cf 100%);
+  z-index: 0;
+}
+.dark .sanad-line { background: #3c4a42; }
+
+/* --- Card Hover Lift --- */
+.card-lift { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.card-lift:hover { transform: translateY(-2px); }
+
+/* --- Search Focus Ring --- */
+.search-ring:focus-within {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+.dark .search-ring:focus-within {
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* --- Logo Theme Swap --- */
+.logo-light { display: block; }
+.logo-dark  { display: none; }
+.dark .logo-light { display: none; }
+.dark .logo-dark  { display: block; }
+
+/* --- Active Nav Link --- */
+.nav-link-active {
+  font-weight: 700;
+  border-bottom: 2px solid;
+}
+
+/* --- Line Clamp Utility --- */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* --- Mobile Menu --- */
+#mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+#mobile-menu.open {
+  max-height: 200px;
+}
+
+/* --- Page fade-in --- */
+body { animation: pageFadeIn 0.3s ease; }
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Sanad Node Card --- */
+.sanad-node { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.sanad-node:hover { transform: translateY(-2px); box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+.dark .sanad-node:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+
+/* --- Hadith Gold Accent --- */
+.hadith-accent { border-left: 3px solid; }

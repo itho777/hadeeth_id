@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="HADEETH.ID — Search through thousands of authenticated Ahadith from the major collections, with detailed chains of narration and scholarly grading."/>
+  <title>HADEETH.ID - Digital Manuscript Preservation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/app.css"/>
+  <script src="js/theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "sunan-emerald":"#1B5E20","ink-black":"#0D0D10","secondary":"#7b5810",
+            "surface-container-highest":"#e5e2de","on-surface-variant":"#43474e",
+            "surface":"#fcf9f5","outline-variant":"#c3c6cf","on-secondary-container":"#78550d",
+            "surface-container":"#f0ede9","tertiary":"#001932","background":"#fcf9f5",
+            "secondary-fixed-dim":"#eebf6f","on-primary-fixed-variant":"#2c486a",
+            "on-primary-container":"#7a96bc","surface-container-high":"#eae8e4",
+            "secondary-fixed":"#ffdeaa","on-secondary":"#ffffff","primary-container":"#0d2e4e",
+            "primary-fixed":"#d2e4ff","surface-container-lowest":"#ffffff","outline":"#73777f",
+            "primary":"#001932","musnad-indigo":"#311B92","error":"#ba1a1a",
+            "manuscript-paper":"#FDFBF7","on-primary":"#ffffff","surface-variant":"#e5e2de",
+            "surface-container-low":"#f6f3ef","on-background":"#1c1c1a","on-surface":"#1c1c1a",
+            "on-tertiary":"#ffffff","tertiary-container":"#022e53","secondary-container":"#fdcd7b",
+            "primary-fixed-dim":"#acc9f0","inverse-primary":"#acc9f0",
+          },
+          fontFamily: { "body-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],
+            "headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],
+            "arabic-body":["Amiri"],"arabic-display":["Amiri"] },
+          fontSize: {
+            "body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}],
+            "label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],
+            "headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],
+            "headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],
+            "arabic-body":["28px",{"lineHeight":"1.8","fontWeight":"400"}],
+            "arabic-display":["40px",{"lineHeight":"1.6","fontWeight":"700"}]
+          },
+          spacing: { "stack-sm":"0.5rem","content-width-max":"800px","margin-main":"2rem",
+            "gutter-grid":"1.5rem","stack-md":"1rem","stack-lg":"2rem" },
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-family:'Material Symbols Outlined'; font-weight:normal;
+      font-style:normal; font-size:24px; line-height:1; letter-spacing:normal;
+      text-transform:none; display:inline-block; white-space:nowrap;
+      -webkit-font-feature-settings:'liga'; -webkit-font-smoothing:antialiased; }
+  </style>
+</head>
+<body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
+
+<!-- ===== TOP APP BAR ===== -->
+<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
+  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="assets/logo_light.jpg" alt="HADEETH.ID Logo" class="logo-light w-8 h-8 rounded-full object-cover"/>
+      <img src="assets/logo_dark.jpg"  alt="HADEETH.ID Logo" class="logo-dark  w-8 h-8 rounded-full object-cover"/>
+      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">HADEETH.ID</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-stack-lg">
+      <a href="books.html"   data-nav-page="books.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Books</a>
+      <a href="scholars.html" data-nav-page="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Scholars</a>
+      <a href="admin.html"   data-nav-page="admin.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Admin</a>
+    </nav>
+    <div class="flex items-center gap-stack-sm text-on-surface-variant dark:text-gray-400">
+      <button class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Language">
+        <span class="material-symbols-outlined">language</span>
+      </button>
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Toggle theme">
+        <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
+      </button>
+      <button id="mobile-menu-btn" class="p-2 md:hidden hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors">
+        <span class="material-symbols-outlined" data-menu-icon>menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-manuscript-paper dark:bg-[#10141a] border-t border-outline-variant dark:border-[#1e293b]">
+    <div class="flex flex-col px-margin-main py-2 gap-1">
+      <a href="books.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white">Books</a>
+      <a href="scholars.html" class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white">Scholars</a>
+      <a href="admin.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white">Admin</a>
+    </div>
+  </div>
+</header>
+
+<main class="w-full flex flex-col items-center">
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="w-full px-margin-main py-16 md:py-24 flex flex-col items-center justify-center text-center bg-surface-container-lowest dark:bg-[#0a0e14]">
+    <div class="max-w-2xl w-full flex flex-col items-center gap-stack-lg">
+      <img src="assets/logo_light.jpg" alt="Hadeeth.id Logo" class="logo-light w-32 md:w-40 h-auto rounded-2xl object-cover drop-shadow-md mb-2"/>
+      <img src="assets/logo_dark.jpg"  alt="Hadeeth.id Logo" class="logo-dark  w-32 md:w-40 h-auto rounded-2xl object-cover drop-shadow-md mb-2"/>
+      <h1 class="font-headline-lg text-headline-lg text-primary dark:text-white tracking-tight">Discover Authentic Sources</h1>
+      <p class="text-on-surface-variant dark:text-gray-400 font-body-md text-body-md max-w-lg">
+        Search through thousands of authenticated Ahadith from the major collections, with detailed chains of narration and scholarly grading.
+      </p>
+      <!-- Search Box -->
+      <div class="w-full mt-stack-md bg-surface dark:bg-[#1e293b] search-ring border border-outline-variant/30 dark:border-[#334155] rounded-xl p-2 flex flex-col gap-2 relative z-10 transition-all duration-300">
+        <div class="flex items-center w-full px-4 py-2">
+          <span class="material-symbols-outlined text-outline dark:text-gray-500 mr-3">search</span>
+          <input class="w-full bg-transparent border-none focus:ring-0 text-primary dark:text-white font-body-md text-body-md placeholder-outline-variant dark:placeholder-gray-500 p-0 outline-none"
+                 placeholder="Scholarly Search (e.g., 'Intention', 'Sahih Bukhari 1')" type="text"/>
+          <div class="h-6 w-px bg-outline-variant/30 mx-3 hidden md:block"></div>
+          <button class="hidden md:flex items-center gap-1 text-on-surface-variant hover:text-primary dark:text-gray-400 dark:hover:text-white transition-colors text-label-sm font-label-sm uppercase tracking-wider px-2">
+            <span class="material-symbols-outlined text-[18px]">filter_list</span>Kitab
+          </button>
+        </div>
+        <div class="flex items-center justify-between px-4 py-2 border-t border-outline-variant/20 dark:border-[#334155] bg-surface-container-low dark:bg-[#0f172a] rounded-b-lg">
+          <div class="flex items-center gap-4 text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">
+            <label class="flex items-center gap-1 cursor-pointer"><input checked type="radio" name="search_type" class="h-3 w-3 text-primary"/> Semantic</label>
+            <label class="flex items-center gap-1 cursor-pointer"><input type="radio" name="search_type" class="h-3 w-3 text-primary"/> Exact Match</label>
+          </div>
+          <button class="bg-primary dark:bg-[#10b981] text-on-primary dark:text-black px-4 py-1.5 rounded-full font-label-sm text-label-sm hover:opacity-90 transition-opacity">Search</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-12">
+
+    <!-- Continue Reading -->
+    <section class="w-full flex flex-col gap-stack-sm">
+      <h2 class="font-label-sm text-label-sm uppercase text-outline dark:text-gray-500 tracking-wider">Continue Reading</h2>
+      <a href="kitab.html" class="group block bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary/40 rounded-lg p-4 transition-all hover:shadow-sm flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-12 bg-surface-container-high dark:bg-[#334155] rounded flex items-center justify-center text-outline dark:text-gray-400 group-hover:text-secondary transition-colors">
+            <span class="material-symbols-outlined">book_4</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-body-md text-body-md font-semibold text-primary dark:text-white">Sahih al-Bukhari</span>
+            <span class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Book of Revelation • Hadith 3</span>
+          </div>
+        </div>
+        <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white transition-colors">arrow_forward</span>
+      </a>
+    </section>
+
+    <!-- Kutubut Tis'ah Grid -->
+    <section class="w-full flex flex-col gap-stack-md">
+      <div class="flex items-end justify-between border-b border-outline-variant/30 dark:border-[#334155] pb-2">
+        <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-white font-bold">Kutubut Tis'ah</h2>
+        <a href="books.html" class="text-label-sm font-label-sm text-secondary dark:text-[#10b981] hover:underline">View All Collections</a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-grid mt-4">
+        <!-- Book Card: Bukhari -->
+        <a href="kitab.html" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group card-lift">
+          <div class="h-32 w-full bg-cover bg-center border-b border-outline-variant/20 dark:border-[#334155] relative"
+               style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4blNbTej-dhDOjRqXG4F_JQ87PfAskctDe70zZEsAq-X4kf98HqBltjVrP8d4RW28NxJq9cYlEQ9U1ta9dyM9Z_58m7P63jR-TSwDcSi2GWEHU-B6YRGJS36QfXTIXSvCYFA7jxPLlBGUH4I4I432RUSSLScuNaVVCO6o6zBNiXqY6OWOcDNRYuY16iqTHd1y1meQBODiQ1eVe4tQ0yfLbf-ll2LkH5LES_LN1t17Y9-XYcqRt702fQ')">
+            <div class="absolute top-2 left-2 bg-sunan-emerald text-white px-2 py-0.5 rounded font-label-sm text-[10px] uppercase tracking-wider font-bold">Sahih</div>
+          </div>
+          <div class="p-4 flex flex-col gap-1 flex-grow">
+            <h3 class="font-body-md text-body-md font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">Sahih al-Bukhari</h3>
+            <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Imam Muhammad al-Bukhari</p>
+            <div class="mt-3 flex items-center justify-between text-label-sm font-label-sm text-outline dark:text-gray-500">
+              <span>7,563 Ahadith</span>
+              <span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+            </div>
+          </div>
+        </a>
+        <!-- Book Card: Muslim -->
+        <a href="kitab.html" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group card-lift">
+          <div class="h-32 w-full bg-cover bg-center border-b border-outline-variant/20 dark:border-[#334155] relative"
+               style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzqnq_A--Wp1V13r_f7R92bOejF-hct-hQfLCt4I-ftXrUjutMDxGksjJBngltuV29M_PS6AvdazjuLJlDmOd7Nc0ym-BdVhIEfg1h3CN3e8NDd2QVp_B8_BNT7AxfGGUpKlbIo9jptiJBClLqpzNbUikCMt5UMZV8IDKrIv4aNVNiQZzmN3Udc92x21MwHEjAngKlR9CIPHct5ipG9Yv4oAGsvvTUSVRu9IgTeTZEreNg2ilBcz2ztw')">
+            <div class="absolute top-2 left-2 bg-sunan-emerald text-white px-2 py-0.5 rounded font-label-sm text-[10px] uppercase tracking-wider font-bold">Sahih</div>
+          </div>
+          <div class="p-4 flex flex-col gap-1 flex-grow">
+            <h3 class="font-body-md text-body-md font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">Sahih Muslim</h3>
+            <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Imam Muslim ibn al-Hajjaj</p>
+            <div class="mt-3 flex items-center justify-between text-label-sm font-label-sm text-outline dark:text-gray-500">
+              <span>3,033 Ahadith</span>
+              <span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+            </div>
+          </div>
+        </a>
+        <!-- Book Card: Abu Dawud -->
+        <a href="kitab.html" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group card-lift">
+          <div class="h-32 w-full bg-cover bg-center border-b border-outline-variant/20 dark:border-[#334155] relative"
+               style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkMHAUzA2zf4EkJQtTSFYou9cmwKTPyE2ztXo30ukiOVxDgchm1LW9tIFIpzOzay_RMjoRQkF16RWQlljSvi18E6obGnThSoSOtIbugYML7zIoCCZzUdL_fRHCPelxOIZYlqFAB3SJRDexPfe6ab4qQuf7v5ENiIJE-qS_UaEsl8Bp3HSvhxzro-_DLaSOJmAwuL5iVbLK9afbwO_AomK-JzBLklORmsRW79Eie3uosSbCyQZ8jQvJUw')">
+            <div class="absolute top-2 left-2 bg-musnad-indigo text-white px-2 py-0.5 rounded font-label-sm text-[10px] uppercase tracking-wider font-bold">Sunan</div>
+          </div>
+          <div class="p-4 flex flex-col gap-1 flex-grow">
+            <h3 class="font-body-md text-body-md font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">Sunan Abu Dawood</h3>
+            <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Imam Abu Dawood</p>
+            <div class="mt-3 flex items-center justify-between text-label-sm font-label-sm text-outline dark:text-gray-500">
+              <span>5,274 Ahadith</span>
+              <span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Hadith of the Day -->
+    <section class="w-full flex flex-col gap-stack-md pt-8">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">auto_awesome</span>
+        <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-white font-bold">Hadith of the Day</h2>
+      </div>
+      <div class="bg-surface dark:bg-[#1e293b] border border-secondary/20 dark:border-[#10b981]/20 rounded-xl p-6 md:p-8 flex flex-col gap-6 shadow-sm relative overflow-hidden">
+        <div class="absolute -top-12 -right-12 text-surface-container-highest dark:text-[#1e293b] opacity-50 select-none pointer-events-none transform rotate-12 scale-150">
+          <span class="material-symbols-outlined text-[120px]" style="font-variation-settings:'FILL' 1">menu_book</span>
+        </div>
+        <div class="flex justify-between items-start z-10">
+          <div>
+            <span class="font-body-md text-body-md font-semibold text-secondary dark:text-[#10b981]">Sahih al-Bukhari 1</span>
+            <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Book of Revelation</p>
+          </div>
+          <div class="bg-sunan-emerald/10 dark:bg-[#10b981]/10 text-sunan-emerald dark:text-[#10b981] px-3 py-1 rounded-full font-label-sm text-label-sm font-bold border border-sunan-emerald/20 uppercase">Sahih</div>
+        </div>
+        <div class="w-full bg-surface-container-low/50 dark:bg-[#0f172a] p-6 rounded-lg text-right z-10 border border-outline-variant/10 dark:border-[#334155]">
+          <p class="font-arabic-display text-arabic-display text-primary dark:text-white leading-loose" dir="rtl" data-arabic-text>
+            إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى
+          </p>
+        </div>
+        <div class="z-10" data-english-text>
+          <p class="font-body-md text-body-md text-on-surface-variant dark:text-gray-300 leading-relaxed">
+            "The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended."
+          </p>
+          <p class="text-label-sm font-label-sm text-outline dark:text-gray-500 mt-2 italic">Narrated by 'Umar bin Al-Khattab.</p>
+        </div>
+        <div class="flex items-center gap-4 mt-2 z-10 border-t border-outline-variant/20 dark:border-[#334155] pt-4 flex-wrap">
+          <a href="hadith.html" class="bg-primary dark:bg-[#10b981] text-on-primary dark:text-black px-5 py-2 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-opacity flex items-center gap-2">
+            Read Full Context <span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
+          </a>
+          <button data-copy-hadith class="border border-secondary dark:border-[#10b981] text-secondary dark:text-[#10b981] px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-secondary/5 transition-colors flex items-center gap-2">
+            <span class="material-symbols-outlined text-[16px]">content_copy</span> Copy
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
+  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90">© 2024 HADEETH.ID - Digital Manuscript Preservation</div>
+  <div class="flex flex-wrap gap-4 items-center justify-center">
+    <a href="#" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
+    <a href="#" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Project Info</a>
+    <a href="#" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Documentation</a>
+    <a href="#" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

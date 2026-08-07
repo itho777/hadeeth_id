@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Sahih al-Bukhari 1 — Detailed view with Arabic, English, Indonesian translations and narration chain."/>
+  <title>Sahih al-Bukhari 1 - HADEETH.ID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/app.css"/>
+  <script src="js/theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "sunan-emerald":"#1B5E20","ink-black":"#0D0D10","secondary":"#7b5810",
+            "surface":"#fcf9f5","outline-variant":"#c3c6cf","primary":"#001932",
+            "manuscript-paper":"#FDFBF7","on-primary":"#ffffff","surface-container-low":"#f6f3ef",
+            "on-surface":"#1c1c1a"
+          },
+          fontFamily: { "body-md":["Plus Jakarta Sans"],"arabic-display":["Amiri"] },
+          spacing: { "stack-sm":"0.5rem","content-width-max":"800px","margin-main":"2rem","stack-lg":"2rem" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-family:'Material Symbols Outlined'; font-weight:normal; font-style:normal; font-size:24px; line-height:1; display:inline-block; }
+  </style>
+</head>
+<body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
+
+<!-- TOP APP BAR -->
+<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
+  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="assets/logo_light.jpg" alt="HADEETH.ID Logo" class="logo-light w-8 h-8 rounded-full object-cover"/>
+      <img src="assets/logo_dark.jpg"  alt="HADEETH.ID Logo" class="logo-dark  w-8 h-8 rounded-full object-cover"/>
+      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">HADEETH.ID</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-stack-lg">
+      <a href="books.html" class="text-primary dark:text-white font-bold py-1">Books</a>
+      <a href="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Scholars</a>
+      <a href="admin.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Admin</a>
+    </nav>
+    <div class="flex items-center gap-stack-sm text-on-surface-variant dark:text-gray-400">
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full">
+        <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8">
+
+  <!-- Breadcrumbs & Navigation Bar -->
+  <div class="flex items-center justify-between text-xs text-outline dark:text-gray-400">
+    <div class="flex items-center gap-2">
+      <a href="index.html" class="hover:underline">Home</a>
+      <span>/</span>
+      <a href="kitab.html" class="hover:underline">Sahih al-Bukhari</a>
+      <span>/</span>
+      <span class="text-primary dark:text-white font-semibold">Hadith 1</span>
+    </div>
+    <div class="flex gap-2">
+      <button class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80">← Prev</button>
+      <button class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80">Next →</button>
+    </div>
+  </div>
+
+  <!-- Hadith Core Card -->
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 md:p-8 flex flex-col gap-8 shadow-sm">
+    
+    <!-- Meta Bar -->
+    <div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-4">
+      <div>
+        <span class="text-xs font-semibold text-secondary dark:text-[#10b981]">Book 1: Revelation</span>
+        <h1 class="text-xl font-bold text-primary dark:text-white">Sahih al-Bukhari 1</h1>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="bg-sunan-emerald text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Sahih</span>
+        <button data-copy-hadith class="p-2 border border-outline-variant dark:border-[#334155] rounded-lg text-xs font-semibold flex items-center gap-1 hover:bg-surface-container-low dark:hover:bg-[#334155]">
+          <span class="material-symbols-outlined text-[16px]">content_copy</span> Copy
+        </button>
+      </div>
+    </div>
+
+    <!-- Full Arabic Text -->
+    <div class="w-full bg-surface-container-low/60 dark:bg-[#0f172a] p-6 md:p-8 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
+      <p class="font-arabic-display text-2xl md:text-3xl text-primary dark:text-white text-right leading-loose" dir="rtl" data-arabic-text>
+        حَدَّثَنَا الْحُمَيْدِيُّ عَبْدُ اللَّهِ بْنُ الزُّبَيْرِ، قَالَ حَدَّثَنَا سُفْيَانُ، قَالَ حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ الأَنْصَارِيُّ، قَالَ أَخْبَرَنِي مُحَمَّدُ بْنُ إِبْرَاهِيمَ التَّيْمِيُّ، أَنَّهُ سَمِعَ عَلْقَمَةَ بْنَ وَقَّاصٍ اللَّيْثِيَّ، يَقُولُ سَمِعْتُ عُمَرَ بْنَ الْخَطَّابِ رضى الله عنه عَلَى الْمِنْبَرِ قَالَ سَمِعْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم يَقُولُ: «إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ».
+      </p>
+    </div>
+
+    <!-- Narration Chain Button -->
+    <a href="sanad.html" class="flex items-center justify-between p-4 bg-secondary/5 dark:bg-[#10b981]/10 border border-secondary/20 dark:border-[#10b981]/20 rounded-lg hover:bg-secondary/10 transition-colors">
+      <div class="flex items-center gap-3">
+        <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">account_tree</span>
+        <div>
+          <span class="font-semibold text-sm text-primary dark:text-white block">Chain of Narration (Sanad)</span>
+          <span class="text-xs text-outline dark:text-gray-400">Al-Humaydi &rarr; Sufyan &rarr; Yahya &rarr; Muhammad al-Taymi &rarr; Alqama &rarr; 'Umar (RA) &rarr; Prophet ﷺ</span>
+        </div>
+      </div>
+      <span class="text-xs font-bold text-secondary dark:text-[#10b981]">Inspect Sanad &rarr;</span>
+    </a>
+
+    <!-- Translation Panels (Bilingual / CDN Fetcher ready) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- English Translation -->
+      <div class="flex flex-col gap-3 p-5 bg-surface-container-low/40 dark:bg-[#0a0e14] rounded-lg border border-outline-variant/10 dark:border-[#334155]">
+        <div class="flex justify-between items-center border-b border-outline-variant/10 dark:border-[#334155] pb-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">English Translation</span>
+          <select data-lang-select class="text-xs bg-transparent border border-outline-variant dark:border-[#334155] rounded px-2 py-0.5 text-primary dark:text-white">
+            <option value="en">English (USC-MSA)</option>
+            <option value="id">Indonesian (Kemenag)</option>
+            <option value="ur">Urdu (Tanzil)</option>
+            <option value="fr">French</option>
+          </select>
+        </div>
+        <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed" data-english-text>
+          Narrated 'Umar bin Al-Khattab: I heard Allah's Messenger (ﷺ) saying, "The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended. So whoever emigrated for worldly benefits or for a woman to marry, his emigration was for what he emigrated for."
+        </p>
+      </div>
+
+      <!-- Indonesian Translation -->
+      <div class="flex flex-col gap-3 p-5 bg-surface-container-low/40 dark:bg-[#0a0e14] rounded-lg border border-outline-variant/10 dark:border-[#334155]">
+        <div class="flex justify-between items-center border-b border-outline-variant/10 dark:border-[#334155] pb-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">Bahasa Indonesia</span>
+          <select data-lang-select class="text-xs bg-transparent border border-outline-variant dark:border-[#334155] rounded px-2 py-0.5 text-primary dark:text-white">
+            <option value="id">Indonesian (Kemenag)</option>
+            <option value="en">English (USC-MSA)</option>
+            <option value="ur">Urdu</option>
+          </select>
+        </div>
+        <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed">
+          Diriwayatkan dari 'Umar bin Al-Khattab radhiyallahu 'anhu: Aku mendengar Rasulullah ﷺ bersabda, "Bahwasanya setiap amalan tergantung pada niatnya, dan setiap orang akan mendapatkan balasan sesuai dengan apa yang ia niatkan. Barangsiapa yang berhijrah karena dunia yang ingin diraihnya atau karena wanita yang ingin dinikahinya, maka hijrahnya sesuai dengan niat hijrahnya."
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Sharh / Commentary Box -->
+    <div class="bg-surface-container-low dark:bg-[#0f172a] p-6 rounded-lg border border-outline-variant/20 dark:border-[#334155]">
+      <h3 class="font-bold text-sm text-primary dark:text-white mb-2">Scholarly Commentary (Sharh)</h3>
+      <p class="text-xs text-on-surface-variant dark:text-gray-400 leading-relaxed">
+        Imam al-Shafi'i stated: "This Hadith is one-third of all Islamic knowledge, and enters into 70 different chapters of Fiqh." Imam al-Bukhari deliberately placed this narration as the very first Hadith in his Sahih to remind every seeker of knowledge to purify their intentions solely for Allah.
+      </p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 text-xs w-full py-8 px-margin-main flex justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-16">
+  <div>© 2024 HADEETH.ID - Digital Manuscript Preservation</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

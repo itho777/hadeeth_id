@@ -1,0 +1,44 @@
+[
+  {
+    "id": "bukhari",
+    "title_ar": "صحيح البخاري",
+    "title_en": "Sahih al-Bukhari",
+    "title_id": "Shahih Bukhari",
+    "author_ar": "الإمام محمد بن إسماعيل البخاري",
+    "author_en": "Imam Muhammad al-Bukhari",
+    "author_id": "Imam Muhammad al-Bukhari",
+    "death_year_ah": 256,
+    "total_hadiths": 7589,
+    "total_chapters": 97,
+    "grade_summary": "صحيح متفق عليه (Sahih)",
+    "order_index": 1,
+    "editions": [
+      "ara-bukhari",
+      "eng-bukhari",
+      "ind-bukhari",
+      "urd-bukhari",
+      "fra-bukhari"
+    ]
+  },
+  {
+    "id": "nawawi",
+    "title_ar": "الأربعون النووية",
+    "title_en": "Forty Hadith of an-Nawawi",
+    "title_id": "Hadits Arba'in An-Nawawi",
+    "author_ar": "الإمام يحيى بن شرف النووي",
+    "author_en": "Imam Yahya ibn Sharaf al-Nawawi",
+    "author_id": "Imam Yahya ibn Sharaf al-Nawawi",
+    "death_year_ah": 676,
+    "total_hadiths": 42,
+    "total_chapters": 1,
+    "grade_summary": "صحيح ومقبول (Sahih & Hasan)",
+    "order_index": 2,
+    "editions": [
+      "ara-nawawi",
+      "eng-nawawi",
+      "fra-nawawi",
+      "tur-nawawi",
+      "ben-nawawi"
+    ]
+  }
+]

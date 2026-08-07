@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Sahih al-Bukhari — Browse all 97 books (Kitab) and chapters."/>
+  <title>Sahih al-Bukhari - HADEETH.ID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/app.css"/>
+  <script src="js/theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "sunan-emerald":"#1B5E20","ink-black":"#0D0D10","secondary":"#7b5810",
+            "surface":"#fcf9f5","outline-variant":"#c3c6cf","primary":"#001932",
+            "manuscript-paper":"#FDFBF7","on-primary":"#ffffff","surface-container-low":"#f6f3ef",
+            "on-surface":"#1c1c1a"
+          },
+          fontFamily: { "body-md":["Plus Jakarta Sans"],"arabic-body":["Amiri"],"arabic-display":["Amiri"] },
+          spacing: { "stack-sm":"0.5rem","content-width-max":"800px","margin-main":"2rem","stack-lg":"2rem" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-family:'Material Symbols Outlined'; font-weight:normal; font-style:normal; font-size:24px; line-height:1; display:inline-block; }
+  </style>
+</head>
+<body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
+
+<!-- TOP APP BAR -->
+<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
+  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="assets/logo_light.jpg" alt="HADEETH.ID Logo" class="logo-light w-8 h-8 rounded-full object-cover"/>
+      <img src="assets/logo_dark.jpg"  alt="HADEETH.ID Logo" class="logo-dark  w-8 h-8 rounded-full object-cover"/>
+      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">HADEETH.ID</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-stack-lg">
+      <a href="books.html"   class="text-primary dark:text-white font-bold py-1">Books</a>
+      <a href="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Scholars</a>
+      <a href="admin.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Admin</a>
+    </nav>
+    <div class="flex items-center gap-stack-sm text-on-surface-variant dark:text-gray-400">
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full">
+        <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8">
+
+  <!-- Breadcrumbs -->
+  <div class="flex items-center gap-2 text-xs text-outline dark:text-gray-400">
+    <a href="index.html" class="hover:underline">Home</a>
+    <span>/</span>
+    <a href="books.html" class="hover:underline">Books</a>
+    <span>/</span>
+    <span class="text-primary dark:text-white font-semibold">Sahih al-Bukhari</span>
+  </div>
+
+  <!-- Book Header -->
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start justify-between shadow-sm relative overflow-hidden">
+    <div class="flex flex-col gap-3 max-w-xl">
+      <div class="flex items-center gap-3">
+        <span class="bg-sunan-emerald text-white px-2.5 py-0.5 rounded text-xs font-bold uppercase tracking-wider">Sahih</span>
+        <a href="scholars.html" class="text-xs text-secondary dark:text-[#10b981] font-semibold hover:underline">By Imam al-Bukhari &rarr;</a>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-primary dark:text-white">Sahih al-Bukhari</h1>
+      <p class="text-sm text-on-surface-variant dark:text-gray-300">
+        The Al-Jami' al-Musnad al-Sahih al-Mukhtasar min Umuri Rasulillahi wa Sunanihi wa Ayyamihi. Recognized across Islamic scholarship as the most authentic collection of Hadith.
+      </p>
+      <div class="flex gap-6 mt-2 text-xs font-semibold text-outline dark:text-gray-400">
+        <span>📚 97 Books (Kitab)</span>
+        <span>📖 7,563 Total Hadith</span>
+        <span>⭐️ 100% Authentic</span>
+      </div>
+    </div>
+    <div class="text-right self-end md:self-center">
+      <span class="font-arabic-display text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl">الجامع الصحيح البخاري</span>
+    </div>
+  </div>
+
+  <!-- Search Filter within Book -->
+  <div class="w-full bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-lg p-3 flex items-center gap-3">
+    <span class="material-symbols-outlined text-outline dark:text-gray-400">search</span>
+    <input type="text" placeholder="Filter Kitab by title or topic..." class="w-full bg-transparent border-none focus:ring-0 text-sm text-primary dark:text-white outline-none"/>
+  </div>
+
+  <!-- Kitabs Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+    <!-- Kitab 1 -->
+    <a href="hadith-list.html" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
+      <div class="flex gap-4 items-center">
+        <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center">1</div>
+        <div class="flex flex-col">
+          <span class="text-xs text-outline dark:text-gray-400 font-semibold">Hadith 1 – 7</span>
+          <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">Revelation (Bad'ul Wahi)</h3>
+          <span class="text-xs text-on-surface-variant dark:text-gray-400">كيف كان بدء الوحي إلى رسول الله</span>
+        </div>
+      </div>
+      <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
+    </a>
+
+    <!-- Kitab 2 -->
+    <a href="hadith-list.html" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
+      <div class="flex gap-4 items-center">
+        <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center">2</div>
+        <div class="flex flex-col">
+          <span class="text-xs text-outline dark:text-gray-400 font-semibold">Hadith 8 – 58</span>
+          <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">Belief (Kitab al-Iman)</h3>
+          <span class="text-xs text-on-surface-variant dark:text-gray-400">كتاب الإيمان</span>
+        </div>
+      </div>
+      <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
+    </a>
+
+    <!-- Kitab 3 -->
+    <a href="hadith-list.html" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
+      <div class="flex gap-4 items-center">
+        <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center">3</div>
+        <div class="flex flex-col">
+          <span class="text-xs text-outline dark:text-gray-400 font-semibold">Hadith 59 – 134</span>
+          <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">Knowledge (Kitab al-'Ilm)</h3>
+          <span class="text-xs text-on-surface-variant dark:text-gray-400">كتاب العلم</span>
+        </div>
+      </div>
+      <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
+    </a>
+
+    <!-- Kitab 4 -->
+    <a href="hadith-list.html" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
+      <div class="flex gap-4 items-center">
+        <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center">4</div>
+        <div class="flex flex-col">
+          <span class="text-xs text-outline dark:text-gray-400 font-semibold">Hadith 135 – 247</span>
+          <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">Ablution (Kitab al-Wudu')</h3>
+          <span class="text-xs text-on-surface-variant dark:text-gray-400">كتاب الوضوء</span>
+        </div>
+      </div>
+      <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
+    </a>
+
+    <!-- Kitab 5 -->
+    <a href="hadith-list.html" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
+      <div class="flex gap-4 items-center">
+        <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center">5</div>
+        <div class="flex flex-col">
+          <span class="text-xs text-outline dark:text-gray-400 font-semibold">Hadith 248 – 293</span>
+          <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">Bathing (Kitab al-Ghusl)</h3>
+          <span class="text-xs text-on-surface-variant dark:text-gray-400">كتاب الغسل</span>
+        </div>
+      </div>
+      <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
+    </a>
+
+    <!-- Kitab 6 -->
+    <a href="hadith-list.html" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
+      <div class="flex gap-4 items-center">
+        <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center">6</div>
+        <div class="flex flex-col">
+          <span class="text-xs text-outline dark:text-gray-400 font-semibold">Hadith 349 – 520</span>
+          <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">Prayer (Kitab as-Salah)</h3>
+          <span class="text-xs text-on-surface-variant dark:text-gray-400">كتاب الصلاة</span>
+        </div>
+      </div>
+      <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
+    </a>
+
+  </div>
+</main>
+
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 text-xs w-full py-8 px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-16">
+  <div>© 2024 HADEETH.ID - Digital Manuscript Preservation</div>
+  <div class="flex gap-4 mt-2 md:mt-0">
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="books.html" class="hover:underline">Books</a>
+    <a href="scholars.html" class="hover:underline">Scholars</a>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

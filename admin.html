@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="HADEETH.ID — Administration Console & Sync Management."/>
+  <title>Admin Console - HADEETH.ID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/app.css"/>
+  <script src="js/theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "ink-black":"#0D0D10","secondary":"#7b5810","surface":"#fcf9f5","outline-variant":"#c3c6cf",
+            "primary":"#001932","manuscript-paper":"#FDFBF7","on-primary":"#ffffff","surface-container-low":"#f6f3ef",
+            "on-surface":"#1c1c1a"
+          },
+          fontFamily: { "body-md":["Plus Jakarta Sans"] },
+          spacing: { "stack-sm":"0.5rem","content-width-max":"800px","margin-main":"2rem","stack-lg":"2rem" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-family:'Material Symbols Outlined'; font-weight:normal; font-style:normal; font-size:24px; line-height:1; display:inline-block; }
+  </style>
+</head>
+<body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
+
+<!-- TOP APP BAR -->
+<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
+  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="assets/logo_light.jpg" alt="HADEETH.ID Logo" class="logo-light w-8 h-8 rounded-full object-cover"/>
+      <img src="assets/logo_dark.jpg"  alt="HADEETH.ID Logo" class="logo-dark  w-8 h-8 rounded-full object-cover"/>
+      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">HADEETH.ID</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-stack-lg">
+      <a href="books.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Books</a>
+      <a href="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Scholars</a>
+      <a href="admin.html"   class="text-primary dark:text-white font-bold border-b-2 border-primary dark:border-[#10b981] py-1">Admin</a>
+    </nav>
+    <div class="flex items-center gap-stack-sm text-on-surface-variant dark:text-gray-400">
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full">
+        <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8">
+
+  <!-- Header -->
+  <div class="flex flex-col gap-2 border-b border-outline-variant/30 dark:border-[#334155] pb-4">
+    <div class="flex items-center gap-2 text-secondary dark:text-[#10b981] font-semibold text-xs uppercase tracking-wider">
+      <span class="material-symbols-outlined text-[18px]">admin_panel_settings</span>
+      <span>System Portal</span>
+    </div>
+    <h1 class="text-2xl font-bold text-primary dark:text-white">HADEETH.ID Administration</h1>
+  </div>
+
+  <!-- Login Gate Card -->
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 md:p-8 max-w-md mx-auto w-full flex flex-col gap-6 shadow-md">
+    <div class="flex flex-col items-center text-center gap-2">
+      <div class="w-12 h-12 rounded-full bg-primary/10 dark:bg-[#10b981]/10 text-primary dark:text-[#10b981] flex items-center justify-center">
+        <span class="material-symbols-outlined text-2xl">lock</span>
+      </div>
+      <h2 class="font-bold text-lg text-primary dark:text-white">Admin Authentication</h2>
+      <p class="text-xs text-outline dark:text-gray-400">Sign in with Supabase Auth to manage search indexes and static content pipelines.</p>
+    </div>
+
+    <form class="flex flex-col gap-4" onsubmit="event.preventDefault(); alert('Demo mode: Supabase backend setup pending in next phase!');">
+      <div class="flex flex-col gap-1 text-xs">
+        <label class="font-semibold text-primary dark:text-white">Email Address</label>
+        <input type="email" placeholder="admin@hadeeth.id" class="w-full bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+      </div>
+      <div class="flex flex-col gap-1 text-xs">
+        <label class="font-semibold text-primary dark:text-white">Password</label>
+        <input type="password" placeholder="••••••••" class="w-full bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+      </div>
+      <button type="submit" class="w-full bg-primary dark:bg-[#10b981] text-white dark:text-black font-semibold py-2.5 rounded-lg text-sm hover:opacity-90 transition-opacity">
+        Sign In to Portal
+      </button>
+    </form>
+
+    <div class="flex items-center justify-center gap-2 text-[11px] text-outline dark:text-gray-400 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
+      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+      <span>Connected to Supabase (idokyspokenbmzoegahq)</span>
+    </div>
+  </div>
+
+  <!-- Locked Preview Dashboard -->
+  <div class="flex flex-col gap-6 opacity-40 select-none pointer-events-none mt-8">
+    <h3 class="font-bold text-sm text-primary dark:text-white uppercase tracking-wider">Pipeline Management (Requires Login)</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-surface dark:bg-[#1e293b] p-4 rounded-lg border border-outline-variant/20 dark:border-[#334155]">
+        <span class="text-xs text-outline dark:text-gray-400">Total Hadiths</span>
+        <span class="text-xl font-bold text-primary dark:text-white block mt-1">50,884</span>
+      </div>
+      <div class="bg-surface dark:bg-[#1e293b] p-4 rounded-lg border border-outline-variant/20 dark:border-[#334155]">
+        <span class="text-xs text-outline dark:text-gray-400">Indexed Books</span>
+        <span class="text-xl font-bold text-primary dark:text-white block mt-1">17 Collections</span>
+      </div>
+      <div class="bg-surface dark:bg-[#1e293b] p-4 rounded-lg border border-outline-variant/20 dark:border-[#334155]">
+        <span class="text-xs text-outline dark:text-gray-400">Languages</span>
+        <span class="text-xl font-bold text-primary dark:text-white block mt-1">60+ CDN JSONs</span>
+      </div>
+      <div class="bg-surface dark:bg-[#1e293b] p-4 rounded-lg border border-outline-variant/20 dark:border-[#334155]">
+        <span class="text-xs text-outline dark:text-gray-400">Pages Status</span>
+        <span class="text-xl font-bold text-emerald-500 block mt-1">Online</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 text-xs w-full py-8 px-margin-main flex justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-16">
+  <div>© 2024 HADEETH.ID - Digital Manuscript Preservation</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

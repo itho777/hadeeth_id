@@ -1,0 +1,29 @@
+# Per-Hadith individual JSON files (7,600+ files — served from CDN, not needed in repo)
+data/hadiths/
+
+# Large binary files (too large for GitHub)
+data/sqlite/
+supabase/seed.sql
+supabase/seeds/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp files
+*.tmp
+~$*
+
+# Node modules
+node_modules/
+
+# Environment secrets
+.env
+
+# Windows thumbnail cache
+Thumbs.db
+Desktop.ini
+
+# Scratch files
+scratch/
