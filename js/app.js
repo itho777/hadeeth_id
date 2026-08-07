@@ -1556,6 +1556,21 @@ async function loadSanadChain() {
     ];
   }
 
+  // Helper to extract numeric Hijri death year for chronological sorting
+  function getRawiDeathYear(d) {
+    const match = (d || '').match(/([0-9]+)\s*AH/i);
+    return match ? parseInt(match[1]) : 150;
+  }
+
+  // Sort narrators chronologically: Sahabi (Companion, 1st Century) -> Tabi'i -> Sheikh of Author (3rd Century)
+  narrators.sort((a, b) => {
+    const isSahabiA = (a.role && a.role.toLowerCase().includes('sahab')) || a.is_sahabi;
+    const isSahabiB = (b.role && b.role.toLowerCase().includes('sahab')) || b.is_sahabi;
+    if (isSahabiA && !isSahabiB) return -1;
+    if (!isSahabiA && isSahabiB) return 1;
+    return getRawiDeathYear(a.death_ah) - getRawiDeathYear(b.death_ah);
+  });
+
   const countText = document.getElementById('sanad-count-text');
   if (countText) countText.innerText = `${narrators.length} Narrators`;
 
@@ -1575,8 +1590,8 @@ async function loadSanadChain() {
     </div>
   `;
 
-  // Render Narrators from Companion down to Collector with all 7 Rawi card attributes
-  narrators.reverse().forEach((nr, idx) => {
+  // Render Narrators from Companion down to Direct Sheikh of Author
+  narrators.forEach((nr, idx) => {
     let rawiSlug = nr.rawi_id;
     if (!rawiSlug && nr.name) {
       const cleanName = nr.name.replace(/\(.*?\)/g, '').replace(/[^a-zA-Z0-9\s]/g, '').trim().toLowerCase().replace(/\s+/g, '_');
