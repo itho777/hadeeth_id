@@ -74,13 +74,13 @@
   </div>
 
   <!-- Hadith Core Card -->
-  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 md:p-8 flex flex-col gap-8 shadow-sm">
+  <div id="hadith-detail-container" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 md:p-8 flex flex-col gap-8 shadow-sm">
     
     <!-- Meta Bar -->
     <div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-4">
       <div>
         <span class="text-xs font-semibold text-secondary dark:text-[#10b981]">Book 1: Revelation</span>
-        <h1 class="text-xl font-bold text-primary dark:text-white">Sahih al-Bukhari 1</h1>
+        <h1 class="text-xl font-bold text-primary dark:text-white" data-hadith-title>Sahih al-Bukhari 1</h1>
       </div>
       <div class="flex items-center gap-2">
         <span class="bg-sunan-emerald text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Sahih</span>
@@ -160,6 +160,7 @@
   <div>© 2024 HADEETH.ID - Digital Manuscript Preservation</div>
 </footer>
 
+<script src="js/api.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>

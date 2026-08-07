@@ -64,6 +64,70 @@ const HadeethAPI = {
   },
 
   /**
+   * Perform real-time multilingual full-text search via Supabase RPC
+   */
+  async search(query, limit = 20) {
+    if (!query || !query.trim()) return [];
+    const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
+    const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
+
+    try {
+      const response = await fetch(`${supabaseUrl}/rest/v1/rpc/search_hadiths`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'apikey': anonKey,
+          'Authorization': `Bearer ${anonKey}`
+        },
+        body: JSON.stringify({
+          p_query: query.trim(),
+          p_limit: limit
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`Search failed: HTTP ${response.status}`);
+      }
+
+      const results = await response.json();
+      return results;
+    } catch (err) {
+      console.error('Supabase Search Error:', err);
+      // Fallback search using local JSON edition data if network/RPC fails
+      return this.fallbackLocalSearch(query);
+    }
+  },
+
+  /**
+   * Fallback client-side search using loaded JSON edition data
+   */
+  async fallbackLocalSearch(query) {
+    const q = query.toLowerCase().trim();
+    const bukhariEng = await this.getEdition('eng', 'bukhari');
+    if (!bukhariEng || !bukhariEng.hadiths) return [];
+
+    const matches = [];
+    for (const h of bukhariEng.hadiths) {
+      if ((h.text && h.text.toLowerCase().includes(q)) || 
+          (h.hadithnumber && h.hadithnumber.toString() === q)) {
+        matches.push({
+          id: h.hadithnumber,
+          book_slug: 'bukhari',
+          book_name: 'Sahih al-Bukhari',
+          hadith_number: h.hadithnumber,
+          reference: `#${h.hadithnumber}`,
+          arabic_text: '',
+          primary_translation: h.text,
+          grade: 'Sahih',
+          rank: 1.0
+        });
+        if (matches.length >= 20) break;
+      }
+    }
+    return matches;
+  },
+
+  /**
    * Fetch commentary & sharh explanation
    */
   async getCommentary(bookId, hadithNumber) {

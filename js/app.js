@@ -1,6 +1,6 @@
 /**
- * HADEETH.ID — App JS
- * Mobile menu toggle, active nav links, and general UI utilities.
+ * HADEETH.ID — Dynamic App Logic
+ * Real-time Supabase RPC search integration, dynamic CDN book/hadith loading, and interactive UI.
  */
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -36,12 +36,248 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- Translation Selector (Hadith Detail page) ---
-  document.querySelectorAll('[data-lang-select]').forEach(sel => {
-    sel.addEventListener('change', () => {
-      // In future: fetch from CDN JSON based on selected language
-      console.log('Language changed to:', sel.value, '— will fetch from CDN in production.');
-    });
-  });
+  // --- Real-time Search Handler ---
+  initSearch();
+
+  // --- Page-specific Dynamic Content ---
+  if (document.getElementById('books-grid')) {
+    loadBooksGrid();
+  }
+  if (document.getElementById('hadith-detail-container')) {
+    loadHadithDetail();
+  }
+  if (document.getElementById('chapters-list-container')) {
+    loadChaptersList();
+  }
 
 });
+
+/**
+ * Initialize Interactive Live Search
+ */
+function initSearch() {
+  const searchInput = document.getElementById('search-input') || document.querySelector('input[placeholder*="Search"]');
+  const searchBtn = document.getElementById('search-btn') || document.querySelector('button:has(.material-symbols-outlined) + button, button:contains("Search")');
+  const resultsContainer = document.getElementById('search-results-container');
+
+  if (!searchInput) return;
+
+  // Add IDs if missing
+  searchInput.id = searchInput.id || 'search-input';
+
+  // Create results container if it doesn't exist
+  let resultsDiv = resultsContainer;
+  if (!resultsDiv) {
+    resultsDiv = document.createElement('div');
+    resultsDiv.id = 'search-results-container';
+    resultsDiv.className = 'w-full max-w-2xl mt-6 hidden flex flex-col gap-4 text-left';
+    const parent = searchInput.closest('section') || searchInput.parentElement;
+    parent.appendChild(resultsDiv);
+  }
+
+  const performSearch = async () => {
+    const query = searchInput.value.trim();
+    if (!query) {
+      resultsDiv.classList.add('hidden');
+      return;
+    }
+
+    resultsDiv.classList.remove('hidden');
+    resultsDiv.innerHTML = `
+      <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
+        <span class="material-symbols-outlined animate-spin text-secondary dark:text-[#10b981] text-3xl">progress_activity</span>
+        <p class="mt-2 text-sm text-outline dark:text-gray-400">Searching authentic sources for "${escapeHtml(query)}"...</p>
+      </div>
+    `;
+
+    if (window.HadeethAPI) {
+      const results = await window.HadeethAPI.search(query, 15);
+      renderSearchResults(results, query, resultsDiv);
+    }
+  };
+
+  // Trigger on Enter key
+  searchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      performSearch();
+    }
+  });
+
+  // Trigger on button click
+  const btn = searchInput.closest('.search-ring')?.querySelector('button:last-child');
+  if (btn) {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      performSearch();
+    });
+  }
+}
+
+/**
+ * Render Search Results Cards
+ */
+function renderSearchResults(results, query, container) {
+  if (!results || results.length === 0) {
+    container.innerHTML = `
+      <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
+        <span class="material-symbols-outlined text-outline dark:text-gray-500 text-4xl">search_off</span>
+        <h3 class="mt-2 font-bold text-primary dark:text-white">No results found for "${escapeHtml(query)}"</h3>
+        <p class="text-xs text-outline dark:text-gray-400 mt-1">Try searching by keyword like 'niat', 'intention', 'revelation', or Hadith number like '1'</p>
+      </div>
+    `;
+    return;
+  }
+
+  let html = `
+    <div class="flex items-center justify-between px-2 mb-1">
+      <span class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">Found ${results.length} authentic matches</span>
+      <span class="text-xs text-outline dark:text-gray-500">Multilingual FTS</span>
+    </div>
+    <div class="flex flex-col gap-4">
+  `;
+
+  results.forEach(res => {
+    const arabicText = res.arabic_text || '';
+    const englishText = res.primary_translation || res.english_text || '';
+    const bookName = res.book_name || (res.book_slug === 'nawawi' ? 'Forty Nawawi' : 'Sahih al-Bukhari');
+    const hadithNum = res.hadith_number || res.id;
+    const grade = res.grade || 'Sahih';
+
+    html += `
+      <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 hover:border-secondary/50 dark:hover:border-[#10b981]/50 transition-all shadow-sm flex flex-col gap-3">
+        <div class="flex items-center justify-between border-b border-outline-variant/10 dark:border-[#334155] pb-2">
+          <div class="flex items-center gap-2">
+            <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2 py-0.5 rounded">${escapeHtml(bookName)} #${hadithNum}</span>
+            <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2 py-0.5 rounded">${escapeHtml(grade)}</span>
+          </div>
+          <a href="hadith.html?book=${res.book_slug || 'bukhari'}&id=${hadithNum}" class="text-xs text-secondary dark:text-[#10b981] font-semibold hover:underline flex items-center gap-1">
+            View Detail &rarr;
+          </a>
+        </div>
+        ${arabicText ? `<p class="font-arabic-body text-lg text-primary dark:text-white text-right leading-relaxed" dir="rtl">${escapeHtml(arabicText.substring(0, 300))}${arabicText.length > 300 ? '...' : ''}</p>` : ''}
+        <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed">${escapeHtml(englishText.substring(0, 250))}${englishText.length > 250 ? '...' : ''}</p>
+      </div>
+    `;
+  });
+
+  html += `</div>`;
+  container.innerHTML = html;
+}
+
+/**
+ * Load Books Grid Dynamically
+ */
+async function loadBooksGrid() {
+  const container = document.getElementById('books-grid');
+  if (!container) return;
+
+  const books = await window.HadeethAPI.getBooks();
+  if (!books || books.length === 0) return;
+
+  let html = '';
+  books.forEach(b => {
+    html += `
+      <a href="kitab.html?book=${b.id}" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group">
+        <div class="p-5 flex flex-col gap-2 flex-grow">
+          <div class="flex justify-between items-start">
+            <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] px-2 py-0.5 rounded font-bold text-xs uppercase">${b.grade || 'Sahih'}</span>
+            <span class="text-xs text-outline dark:text-gray-400 font-bold">${b.total_hadiths || '—'} Ahadith</span>
+          </div>
+          <h3 class="text-lg font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors mt-1">${escapeHtml(b.name_en)}</h3>
+          <p class="font-arabic-body text-base text-secondary dark:text-[#10b981]" dir="rtl">${escapeHtml(b.name_ar || '')}</p>
+          <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-1">${escapeHtml(b.author || '')}</p>
+        </div>
+      </a>
+    `;
+  });
+  container.innerHTML = html;
+}
+
+/**
+ * Load Hadith Detail View Dynamic from URL params
+ */
+async function loadHadithDetail() {
+  const params = new URLSearchParams(window.location.search);
+  const bookId = params.get('book') || 'bukhari';
+  const hadithId = params.get('id') || '1';
+
+  const container = document.getElementById('hadith-detail-container');
+  if (!container) return;
+
+  const edition = await window.HadeethAPI.getEdition('eng', bookId);
+  const arabicEdition = await window.HadeethAPI.getEdition('ara', bookId);
+
+  let hadithTextEn = '';
+  let hadithTextAr = '';
+
+  if (edition && edition.hadiths) {
+    const found = edition.hadiths.find(h => h.hadithnumber == hadithId);
+    if (found) hadithTextEn = found.text;
+  }
+  if (arabicEdition && arabicEdition.hadiths) {
+    const found = arabicEdition.hadiths.find(h => h.hadithnumber == hadithId);
+    if (found) hadithTextAr = found.text;
+  }
+
+  if (hadithTextEn || hadithTextAr) {
+    const arabicElem = container.querySelector('[data-arabic-text]');
+    const englishElem = container.querySelector('[data-english-text]');
+    const titleElem = container.querySelector('[data-hadith-title]');
+
+    if (arabicElem) arabicElem.innerText = hadithTextAr || '—';
+    if (englishElem) englishElem.innerText = hadithTextEn || '—';
+    if (titleElem) titleElem.innerText = `${bookId.toUpperCase()} Hadith #${hadithId}`;
+  }
+}
+
+/**
+ * Load Chapters List dynamically for Kitab view
+ */
+async function loadChaptersList() {
+  const container = document.getElementById('chapters-list-container');
+  if (!container) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const bookId = params.get('book') || 'bukhari';
+
+  const chapters = await window.HadeethAPI.getChapters(bookId);
+  if (!chapters || chapters.length === 0) return;
+
+  let html = '';
+  chapters.forEach((ch, idx) => {
+    const chNum = ch.chapter_number || (idx + 1);
+    const titleEn = ch.name_en || ch.title || `Chapter ${chNum}`;
+    const titleAr = ch.name_ar || ch.arabic || '';
+    const hadithRange = ch.hadith_range || (ch.first_hadith ? `Hadith ${ch.first_hadith} – ${ch.last_hadith}` : `Chapter ${chNum}`);
+
+    html += `
+      <a href="hadith-list.html?book=${bookId}&chapter=${chNum}" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
+        <div class="flex gap-4 items-center">
+          <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center">${chNum}</div>
+          <div class="flex flex-col">
+            <span class="text-xs text-outline dark:text-gray-400 font-semibold">${escapeHtml(hadithRange)}</span>
+            <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">${escapeHtml(titleEn)}</h3>
+            ${titleAr ? `<span class="text-xs text-on-surface-variant dark:text-gray-400 font-arabic-body" dir="rtl">${escapeHtml(titleAr)}</span>` : ''}
+          </div>
+        </div>
+        <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
+      </a>
+    `;
+  });
+  container.innerHTML = html;
+}
+
+/**
+ * Helper to sanitize HTML strings
+ */
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
