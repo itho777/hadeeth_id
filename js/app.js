@@ -1,8 +1,47 @@
 /**
- * HADEETH.ID — Dynamic App Logic
+ * HADEETH.ID — Dynamic App Logic v20260807_8
  * Real-time Supabase RPC search integration, dynamic CDN book/hadith loading, and interactive UI.
+ * Bilingual EN/ID language switcher with persistent localStorage state.
  */
+
+// ============================================================
+// LANGUAGE SYSTEM
+// ============================================================
+const LangSystem = {
+  SUPPORTED: ['en', 'id', 'both'],
+  get() { return localStorage.getItem('hadeeth_lang') || 'en'; },
+  set(lang) {
+    if (!this.SUPPORTED.includes(lang)) return;
+    localStorage.setItem('hadeeth_lang', lang);
+    this.apply(lang);
+  },
+  apply(lang) {
+    document.documentElement.setAttribute('data-lang', lang);
+    // Show/hide translation containers
+    document.querySelectorAll('[data-lang-en]').forEach(el => {
+      el.style.display = (lang === 'en' || lang === 'both') ? '' : 'none';
+    });
+    document.querySelectorAll('[data-lang-id]').forEach(el => {
+      el.style.display = (lang === 'id' || lang === 'both') ? '' : 'none';
+    });
+    // Update active button state
+    document.querySelectorAll('[data-lang-btn]').forEach(btn => {
+      btn.classList.toggle('lang-btn-active', btn.dataset.langBtn === lang);
+    });
+  },
+  init() {
+    const saved = this.get();
+    this.apply(saved);
+    document.querySelectorAll('[data-lang-btn]').forEach(btn => {
+      btn.addEventListener('click', () => this.set(btn.dataset.langBtn));
+    });
+  }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
+
+  // Init language system first
+  LangSystem.init();
 
   // --- Mobile Menu Toggle ---
   const menuBtn = document.getElementById('mobile-menu-btn');
@@ -704,48 +743,245 @@ async function loadHadithList() {
 /**
  * Load Chapters List dynamically for Kitab view
  */
+/**
+ * Load Chapters List dynamically for Kitab view across all 9 canonical books
+ */
 async function loadChaptersList() {
   const container = document.getElementById('chapters-list-container');
   if (!container) return;
 
   const params = new URLSearchParams(window.location.search);
-  const bookId = params.get('book') || 'bukhari';
+  const bookId = (params.get('book') || 'bukhari').toLowerCase();
 
-  const authorMap = {
-    bukhari: { id: 'rawi_bukhari', name: 'Imam al-Bukhari' },
-    muslim: { id: 'rawi_muslim', name: 'Imam Muslim' },
-    abudawud: { id: 'rawi_abu_dawud', name: 'Imam Abu Dawood' },
-    tirmidhi: { id: 'rawi_al_tirmidhi', name: 'Imam al-Tirmidhi' },
-    nasai: { id: 'rawi_al_nasai', name: 'Imam an-Nasa\'i' },
-    ibnmajah: { id: 'rawi_ibn_majah', name: 'Imam Ibn Majah' },
-    ahmad: { id: 'rawi_ahmad', name: 'Imam Ahmad' },
-    malik: { id: 'rawi_malik', name: 'Imam Malik' },
-    nawawi: { id: 'rawi_nawawi', name: 'Imam al-Nawawi' }
+  const bookMasterDict = {
+    bukhari: {
+      name: 'Sahih al-Bukhari',
+      ar: 'صحيح البخاري',
+      author: 'Imam al-Bukhari',
+      authorId: 'rawi_bukhari',
+      type: 'Sahih',
+      badgeClass: 'bg-sunan-emerald text-white',
+      desc: 'Recognized across Islamic scholarship as the most authentic collection of Hadith, compiled with rigorous criteria.',
+      kitabCount: '📚 97 Books (Kitab)',
+      hadithCount: '📖 7,563 Total Hadith',
+      authenticity: '⭐️ 100% Authentic'
+    },
+    muslim: {
+      name: 'Sahih Muslim',
+      ar: 'صحيح مسلم',
+      author: 'Imam Muslim ibn al-Hajjaj',
+      authorId: 'rawi_muslim',
+      type: 'Sahih',
+      badgeClass: 'bg-sunan-emerald text-white',
+      desc: 'Renowned for strict thematic organization and comprehensive compilation of parallel chains of narration (turuq).',
+      kitabCount: '📚 56 Books (Kitab)',
+      hadithCount: '📖 3,033 Total Hadith',
+      authenticity: '⭐️ 100% Authentic'
+    },
+    abudawud: {
+      name: 'Sunan Abu Dawood',
+      ar: 'سنن أبي داود',
+      author: 'Imam Abu Dawood al-Sijistani',
+      authorId: 'rawi_abu_dawud',
+      type: 'Sunan',
+      badgeClass: 'bg-musnad-indigo text-white',
+      desc: 'Primarily focuses on legal rulings (Ahkam) used as foundational evidence by jurists across Sunni Fiqh schools.',
+      kitabCount: '📚 43 Books (Kitab)',
+      hadithCount: '📖 5,274 Total Hadith',
+      authenticity: '⭐️ Sunan Corpus'
+    },
+    tirmidhi: {
+      name: "Jami' al-Tirmidhi",
+      ar: 'جامع الترمذي',
+      author: "Imam Abu 'Isa al-Tirmidhi",
+      authorId: 'rawi_al_tirmidhi',
+      type: 'Sunan',
+      badgeClass: 'bg-musnad-indigo text-white',
+      desc: 'Famous for explicit grading of narrations (Sahih, Hasan, Gharib) and detailing legal opinions of early scholars.',
+      kitabCount: '📚 49 Books (Kitab)',
+      hadithCount: '📖 3,956 Total Hadith',
+      authenticity: '⭐️ Graded Sunan'
+    },
+    nasai: {
+      name: "Sunan an-Nasa'i",
+      ar: 'سنن النسائي',
+      author: "Imam Ahmad an-Nasa'i",
+      authorId: 'rawi_al_nasai',
+      type: 'Sunan',
+      badgeClass: 'bg-musnad-indigo text-white',
+      desc: 'Possesses the strictest authentication criteria among the Sunan books, second only to the Sahihain.',
+      kitabCount: '📚 51 Books (Kitab)',
+      hadithCount: '📖 5,758 Total Hadith',
+      authenticity: '⭐️ High Authenticity'
+    },
+    ibnmajah: {
+      name: 'Sunan Ibn Majah',
+      ar: 'سنن ابن ماجه',
+      author: 'Imam Ibn Majah al-Qazwini',
+      authorId: 'rawi_ibn_majah',
+      type: 'Sunan',
+      badgeClass: 'bg-musnad-indigo text-white',
+      desc: 'Renowned for systematic arrangement and unique narrations (zawa\'id) expanding Islamic jurisprudence.',
+      kitabCount: '📚 37 Books (Kitab)',
+      hadithCount: '📖 4,341 Total Hadith',
+      authenticity: '⭐️ Sunan Corpus'
+    },
+    malik: {
+      name: 'Muwatta Malik',
+      ar: 'موطأ مالك',
+      author: 'Imam Malik ibn Anas',
+      authorId: 'rawi_malik',
+      type: 'Muwatta',
+      badgeClass: 'bg-amber-600 text-white',
+      desc: 'The earliest surviving legal text of Islam, combining prophetic Hadiths with judicial decisions of Madinah.',
+      kitabCount: '📚 61 Books (Kitab)',
+      hadithCount: '📖 1,720 Total Hadith',
+      authenticity: '⭐️ Imam of Hijaz'
+    },
+    ahmad: {
+      name: 'Musnad Ahmad',
+      ar: 'مسند أحمد بن حنبل',
+      author: 'Imam Ahmad ibn Hanbal',
+      authorId: 'rawi_ahmad',
+      type: 'Musnad',
+      badgeClass: 'bg-purple-700 text-white',
+      desc: 'The massive encyclopedic Musnad arranged narrator by narrator, containing over 27,000 narrations.',
+      kitabCount: '📚 Musnad System',
+      hadithCount: '📖 27,647 Total Hadith',
+      authenticity: '⭐️ Encyclopedic Corpus'
+    },
+    nawawi: {
+      name: 'Forty Nawawi',
+      ar: 'الأربعون النووية',
+      author: 'Imam Yahya ibn Sharaf al-Nawawi',
+      authorId: 'rawi_nawawi',
+      type: 'Forty Hadith',
+      badgeClass: 'bg-emerald-700 text-white',
+      desc: 'The essential collection of 42 foundational Hadiths encapsulating the core principles of Islamic belief and practice.',
+      kitabCount: '📚 1 Volume',
+      hadithCount: '📖 42 Total Hadith',
+      authenticity: '⭐️ Core Foundations'
+    }
   };
-  const authorInfo = authorMap[bookId.toLowerCase()] || { id: 'rawi_bukhari', name: 'Author Sheikh' };
-  const authorLink = document.querySelector('[data-author-profile-link]');
-  if (authorLink) {
-    authorLink.href = `profile-detail.html?id=${authorInfo.id}`;
-    authorLink.innerText = `By ${authorInfo.name} →`;
-  }
 
-  const chapters = await window.HadeethAPI.getChapters(bookId);
-  if (!chapters || chapters.length === 0) return;
+  const meta = bookMasterDict[bookId] || {
+    name: bookId.toUpperCase(),
+    ar: bookId,
+    author: 'Author Sheikh',
+    authorId: 'rawi_bukhari',
+    type: 'Hadith Book',
+    badgeClass: 'bg-primary text-white',
+    desc: 'Authentic Hadith collection preserved in canonical digital manuscripts.',
+    kitabCount: '📚 Index',
+    hadithCount: '📖 Canonical Corpus',
+    authenticity: '⭐️ Verified'
+  };
+
+  // Update DOM Elements
+  document.title = `${meta.name} - HADEETH.ID`;
+  const bcBook = document.querySelector('[data-breadcrumb-book]');
+  const badgeElem = document.querySelector('[data-book-badge]');
+  const authorLink = document.querySelector('[data-author-profile-link]');
+  const titleElem = document.querySelector('[data-book-title]');
+  const descElem = document.querySelector('[data-book-desc]');
+  const kitabCountElem = document.querySelector('[data-book-kitab-count]');
+  const hadithCountElem = document.querySelector('[data-book-hadith-count]');
+  const authElem = document.querySelector('[data-book-authenticity]');
+  const arTitleElem = document.querySelector('[data-book-arabic-title]');
+
+  if (bcBook) bcBook.innerText = meta.name;
+  if (badgeElem) {
+    badgeElem.innerText = meta.type;
+    badgeElem.className = `${meta.badgeClass} px-2.5 py-0.5 rounded text-xs font-bold uppercase tracking-wider`;
+  }
+  if (authorLink) {
+    authorLink.href = `profile-detail.html?id=${meta.authorId}`;
+    authorLink.innerText = `By ${meta.author} →`;
+  }
+  if (titleElem) titleElem.innerText = meta.name;
+  if (descElem) descElem.innerText = meta.desc;
+  if (kitabCountElem) kitabCountElem.innerText = meta.kitabCount;
+  if (hadithCountElem) hadithCountElem.innerText = meta.hadithCount;
+  if (authElem) authElem.innerText = meta.authenticity;
+  if (arTitleElem) arTitleElem.innerText = meta.ar;
+
+  // Fetch Chapters
+  let chapters = await window.HadeethAPI.getChapters(bookId);
+
+  // Default Chapter Skeletons for Books without pre-generated JSON files
+  if (!chapters || chapters.length === 0) {
+    if (bookId === 'muslim') {
+      chapters = [
+        { chapter_number: 1, name_en: 'Belief (Kitab al-Iman)', name_ar: 'كتاب الإيمان', hadith_range: 'Hadith 1 – 222' },
+        { chapter_number: 2, name_en: 'Purification (Kitab al-Taharah)', name_ar: 'كتاب الطهارة', hadith_range: 'Hadith 223 – 376' },
+        { chapter_number: 3, name_en: 'Menstruation (Kitab al-Hayd)', name_ar: 'كتاب الحيض', hadith_range: 'Hadith 377 – 511' },
+        { chapter_number: 4, name_en: 'Prayer (Kitab al-Salah)', name_ar: 'كتاب الصلاة', hadith_range: 'Hadith 512 – 1160' },
+        { chapter_number: 5, name_en: 'Zakat (Kitab al-Zakat)', name_ar: 'كتاب الزكاة', hadith_range: 'Hadith 1161 – 1438' },
+        { chapter_number: 6, name_en: 'Fasting (Kitab al-Siyam)', name_ar: 'كتاب الصيام', hadith_range: 'Hadith 1439 – 1660' },
+        { chapter_number: 7, name_en: 'Pilgrimage (Kitab al-Hajj)', name_ar: 'كتاب الحج', hadith_range: 'Hadith 1661 – 1912' },
+        { chapter_number: 8, name_en: 'Marriage (Kitab al-Nikah)', name_ar: 'كتاب النكاح', hadith_range: 'Hadith 1913 – 2120' }
+      ];
+    } else if (bookId === 'abudawud') {
+      chapters = [
+        { chapter_number: 1, name_en: 'Purification (Kitab al-Taharah)', name_ar: 'كتاب الطهارة', hadith_range: 'Hadith 1 – 390' },
+        { chapter_number: 2, name_en: 'Prayer (Kitab al-Salah)', name_ar: 'كتاب الصلاة', hadith_range: 'Hadith 391 – 1555' },
+        { chapter_number: 3, name_en: 'Zakat (Kitab al-Zakat)', name_ar: 'كتاب الزكاة', hadith_range: 'Hadith 1556 – 1700' },
+        { chapter_number: 4, name_en: 'Commercial Transactions (Kitab al-Buyu)', name_ar: 'كتاب البيوع', hadith_range: 'Hadith 3326 – 3415' }
+      ];
+    } else if (bookId === 'tirmidhi') {
+      chapters = [
+        { chapter_number: 1, name_en: 'Purification (Kitab al-Taharah)', name_ar: 'كتاب الطهارة', hadith_range: 'Hadith 1 – 148' },
+        { chapter_number: 2, name_en: 'Prayer (Kitab al-Salah)', name_ar: 'كتاب الصلاة', hadith_range: 'Hadith 149 – 451' },
+        { chapter_number: 3, name_en: 'Zakat (Kitab al-Zakat)', name_ar: 'كتاب الزكاة', hadith_range: 'Hadith 617 – 681' }
+      ];
+    } else if (bookId === 'nasai') {
+      chapters = [
+        { chapter_number: 1, name_en: 'Purification (Kitab al-Taharah)', name_ar: 'كتاب الطهارة', hadith_range: 'Hadith 1 – 324' },
+        { chapter_number: 2, name_en: 'Water (Kitab al-Miyaah)', name_ar: 'كتاب المياه', hadith_range: 'Hadith 325 – 347' },
+        { chapter_number: 3, name_en: 'Prayer (Kitab al-Salah)', name_ar: 'كتاب الصلاة', hadith_range: 'Hadith 494 – 1432' }
+      ];
+    } else if (bookId === 'ibnmajah') {
+      chapters = [
+        { chapter_number: 1, name_en: 'Sunnah & Creed (Kitab al-Muqaddimah)', name_ar: 'المقدمة', hadith_range: 'Hadith 1 – 266' },
+        { chapter_number: 2, name_en: 'Purification (Kitab al-Taharah)', name_ar: 'كتاب الطهارة', hadith_range: 'Hadith 267 – 666' }
+      ];
+    } else if (bookId === 'malik') {
+      chapters = [
+        { chapter_number: 1, name_en: 'Prayer Times (Kitab Wuqut al-Salah)', name_ar: 'وقوت الصلاة', hadith_range: 'Hadith 1 – 31' },
+        { chapter_number: 2, name_en: 'Purity (Kitab al-Taharah)', name_ar: 'كتاب الطهارة', hadith_range: 'Hadith 32 – 146' }
+      ];
+    } else if (bookId === 'ahmad') {
+      chapters = [
+        { chapter_number: 1, name_en: 'Musnad of 10 Promised Companions', name_ar: 'مسند العشرة المبشرين بالجنة', hadith_range: 'Hadith 1 – 1380' },
+        { chapter_number: 2, name_en: 'Musnad of Ahl al-Bayt', name_ar: 'مسند أهل البيت', hadith_range: 'Hadith 1381 – 3500' }
+      ];
+    } else {
+      chapters = [
+        { chapter_number: 1, name_en: `${meta.name} - Chapter 1`, name_ar: 'الفصل الأول', hadith_range: 'Chapter Index' }
+      ];
+    }
+  }
 
   let html = '';
   chapters.forEach((ch, idx) => {
     const chNum = ch.chapter_number || (idx + 1);
-    const titleEn = ch.name_en || ch.title || `Chapter ${chNum}`;
-    const titleAr = ch.name_ar || ch.arabic || '';
-    const hadithRange = ch.hadith_range || (ch.first_hadith ? `Hadith ${ch.first_hadith} – ${ch.last_hadith}` : `Chapter ${chNum}`);
+    // Support both field name conventions: title_en (JSON files) and name_en (skeleton fallbacks)
+    const titleEn = ch.title_en || ch.name_en || ch.title || `Chapter ${chNum}`;
+    const titleId = ch.title_id || ch.name_id || titleEn;
+    const titleAr = ch.title_ar || ch.name_ar || ch.arabic || '';
+    // Support both: pre-computed hadith_range string OR hadith_start/hadith_end numbers
+    const hadithRange = ch.hadith_range
+      || (ch.hadith_start != null ? `Hadith ${ch.hadith_start} – ${ch.hadith_end}` : `Chapter ${chNum}`);
+    const hadithCount = ch.hadith_end && ch.hadith_start ? (ch.hadith_end - ch.hadith_start + 1) : '';
 
     html += `
       <a href="hadith-list.html?book=${bookId}&chapter=${chNum}" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
         <div class="flex gap-4 items-center">
-          <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center">${chNum}</div>
-          <div class="flex flex-col">
-            <span class="text-xs text-outline dark:text-gray-400 font-semibold">${escapeHtml(hadithRange)}</span>
-            <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">${escapeHtml(titleEn)}</h3>
+          <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center flex-shrink-0">${chNum}</div>
+          <div class="flex flex-col gap-0.5">
+            <span class="text-xs text-outline dark:text-gray-400 font-semibold">${escapeHtml(hadithRange)}${hadithCount ? ` &bull; ${hadithCount} hadiths` : ''}</span>
+            <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]" data-lang-en>${escapeHtml(titleEn)}</h3>
+            <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]" data-lang-id style="display:none">${escapeHtml(titleId)}</h3>
             ${titleAr ? `<span class="text-xs text-on-surface-variant dark:text-gray-400 font-arabic-body" dir="rtl">${escapeHtml(titleAr)}</span>` : ''}
           </div>
         </div>
@@ -754,6 +990,20 @@ async function loadChaptersList() {
     `;
   });
   container.innerHTML = html;
+  // Re-apply language preference to newly injected elements
+  LangSystem.apply(LangSystem.get());
+
+  // Chapter filter input listener
+  const filterInput = document.getElementById('chapter-filter-input');
+  if (filterInput) {
+    filterInput.addEventListener('input', (e) => {
+      const q = e.target.value.toLowerCase().trim();
+      container.querySelectorAll('a').forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(q) ? 'flex' : 'none';
+      });
+    });
+  }
 }
 
 /**
@@ -798,8 +1048,11 @@ async function loadHadithCardsList() {
   const chapters = await window.HadeethAPI.getChapters(bookId);
   if (chapters && chapters.length >= parseInt(chapterId)) {
     const chInfo = chapters[parseInt(chapterId) - 1];
-    if (chapterTitleEn && chInfo.name_en) chapterTitleEn.innerText = chInfo.name_en;
-    if (chapterTitleAr && chInfo.name_ar) chapterTitleAr.innerText = chInfo.name_ar;
+    // Support both field name conventions
+    const enTitle = chInfo.title_en || chInfo.name_en || '';
+    const arTitle = chInfo.title_ar || chInfo.name_ar || '';
+    if (chapterTitleEn && enTitle) chapterTitleEn.innerText = enTitle;
+    if (chapterTitleAr && arTitle) chapterTitleAr.innerText = arTitle;
   }
 
   container.innerHTML = `

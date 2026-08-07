@@ -90,3 +90,29 @@ body { animation: pageFadeIn 0.3s ease; }
 
 /* --- Hadith Gold Accent --- */
 .hadith-accent { border-left: 3px solid; }
+
+/* --- Language Switcher Button --- */
+.lang-btn {
+  color: #64748b;
+  background: transparent;
+}
+.dark .lang-btn {
+  color: #94a3b8;
+}
+.lang-btn-active {
+  background: #1B5E20;
+  color: white !important;
+}
+.dark .lang-btn-active {
+  background: #10b981;
+  color: #0a0f14 !important;
+}
+.lang-btn:hover:not(.lang-btn-active) {
+  background: rgba(0,0,0,0.06);
+  color: #001932;
+}
+.dark .lang-btn:hover:not(.lang-btn-active) {
+  background: rgba(255,255,255,0.08);
+  color: white;
+}
+

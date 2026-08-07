@@ -48,7 +48,13 @@
       <a href="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Scholars</a>
       <a href="admin.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Admin</a>
     </nav>
-    <div class="flex items-center gap-stack-sm text-on-surface-variant dark:text-gray-400">
+        <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
+      <!-- Language Switcher -->
+      <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
+        <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
+        <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
+        <button data-lang-btn="both" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Bilingual">BI</button>
+      </div>
       <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full">
         <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
       </button>
@@ -64,125 +70,51 @@
     <span>/</span>
     <a href="books.html" class="hover:underline">Books</a>
     <span>/</span>
-    <span class="text-primary dark:text-white font-semibold">Sahih al-Bukhari</span>
+    <span class="text-primary dark:text-white font-semibold" data-breadcrumb-book>Sahih al-Bukhari</span>
   </div>
 
   <!-- Book Header -->
   <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start justify-between shadow-sm relative overflow-hidden">
     <div class="flex flex-col gap-3 max-w-xl">
       <div class="flex items-center gap-3">
-        <span class="bg-sunan-emerald text-white px-2.5 py-0.5 rounded text-xs font-bold uppercase tracking-wider">Sahih</span>
+        <span class="bg-sunan-emerald text-white px-2.5 py-0.5 rounded text-xs font-bold uppercase tracking-wider" data-book-badge>Sahih</span>
         <a href="profile-detail.html?id=rawi_bukhari" data-author-profile-link class="text-xs text-secondary dark:text-[#10b981] font-semibold hover:underline">By Imam al-Bukhari &rarr;</a>
       </div>
-      <h1 class="text-3xl md:text-4xl font-bold text-primary dark:text-white">Sahih al-Bukhari</h1>
-      <p class="text-sm text-on-surface-variant dark:text-gray-300">
+      <h1 class="text-3xl md:text-4xl font-bold text-primary dark:text-white" data-book-title>Sahih al-Bukhari</h1>
+      <p class="text-sm text-on-surface-variant dark:text-gray-300" data-book-desc>
         The Al-Jami' al-Musnad al-Sahih al-Mukhtasar min Umuri Rasulillahi wa Sunanihi wa Ayyamihi. Recognized across Islamic scholarship as the most authentic collection of Hadith.
       </p>
       <div class="flex gap-6 mt-2 text-xs font-semibold text-outline dark:text-gray-400">
-        <span>📚 97 Books (Kitab)</span>
-        <span>📖 7,563 Total Hadith</span>
-        <span>⭐️ 100% Authentic</span>
+        <span data-book-kitab-count>📚 97 Books (Kitab)</span>
+        <span data-book-hadith-count>📖 7,563 Total Hadith</span>
+        <span data-book-authenticity>⭐️ 100% Authentic</span>
       </div>
     </div>
     <div class="text-right self-end md:self-center">
-      <span class="font-arabic-display text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl">الجامع الصحيح البخاري</span>
+      <span class="font-arabic-display text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl" data-book-arabic-title>الجامع الصحيح البخاري</span>
     </div>
   </div>
 
   <!-- Search Filter within Book -->
   <div class="w-full bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-lg p-3 flex items-center gap-3">
     <span class="material-symbols-outlined text-outline dark:text-gray-400">search</span>
-    <input type="text" placeholder="Filter Kitab by title or topic..." class="w-full bg-transparent border-none focus:ring-0 text-sm text-primary dark:text-white outline-none"/>
+    <input type="text" id="chapter-filter-input" placeholder="Filter Kitab by title or topic..." class="w-full bg-transparent border-none focus:ring-0 text-sm text-primary dark:text-white outline-none"/>
   </div>
 
   <!-- Kitabs Grid -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="chapters-list-container">
-
-    <!-- Dynamic Kitabs Grid -->
-    <a href="hadith-list.html?book=bukhari&chapter=1&start=1&end=7" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
-      <div class="flex gap-4 items-center">
-        <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center">1</div>
-        <div class="flex flex-col">
-          <span class="text-xs text-outline dark:text-gray-400 font-semibold">Hadith 1 – 7</span>
-          <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">Revelation (Bad'ul Wahi)</h3>
-          <span class="text-xs text-on-surface-variant dark:text-gray-400">كيف كان بدء الوحي إلى رسول الله</span>
-        </div>
-      </div>
-      <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
-    </a>
-
-    <a href="hadith-list.html?book=bukhari&chapter=2&start=8&end=58" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
-      <div class="flex gap-4 items-center">
-        <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center">2</div>
-        <div class="flex flex-col">
-          <span class="text-xs text-outline dark:text-gray-400 font-semibold">Hadith 8 – 58</span>
-          <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">Belief (Kitab al-Iman)</h3>
-          <span class="text-xs text-on-surface-variant dark:text-gray-400">كتاب الإيمان</span>
-        </div>
-      </div>
-      <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
-    </a>
-
-    <a href="hadith-list.html?book=bukhari&chapter=3&start=59&end=134" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
-      <div class="flex gap-4 items-center">
-        <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center">3</div>
-        <div class="flex flex-col">
-          <span class="text-xs text-outline dark:text-gray-400 font-semibold">Hadith 59 – 134</span>
-          <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">Knowledge (Kitab al-'Ilm)</h3>
-          <span class="text-xs text-on-surface-variant dark:text-gray-400">كتاب العلم</span>
-        </div>
-      </div>
-      <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
-    </a>
+    <div class="col-span-2 p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
+      <span class="material-symbols-outlined animate-spin text-secondary dark:text-[#10b981] text-3xl">progress_activity</span>
+      <p class="mt-2 text-sm text-outline dark:text-gray-400">Loading Kitab index...</p>
+    </div>
   </div>
 </main>
 
-<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 text-xs w-full py-8 px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-16">
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 text-xs w-full py-8 px-margin-main flex justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-16">
   <div>© 2024 HADEETH.ID - Digital Manuscript Preservation</div>
-  <div class="flex gap-4 mt-2 md:mt-0">
-    <a href="index.html" class="hover:underline">Home</a>
-    <a href="books.html" class="hover:underline">Books</a>
-    <a href="scholars.html" class="hover:underline">Scholars</a>
-  </div>
 </footer>
 
 <script src="js/api.js"></script>
-<script src="js/app.js?v=20260807_5"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const book = params.get('book') || 'bukhari';
-    
-    // Update breadcrumb & headers
-    const bookNames = {
-      bukhari: 'Sahih al-Bukhari',
-      muslim: 'Sahih Muslim',
-      abudawud: 'Sunan Abu Dawood',
-      tirmidhi: 'Jami\' al-Tirmidhi',
-      nasai: 'Sunan an-Nasa\'i',
-      ibnmajah: 'Sunan Ibn Majah',
-      ahmad: 'Musnad Ahmad',
-      malik: 'Muwatta Malik',
-      nawawi: '40 Hadith Nawawi'
-    };
-
-    const name = bookNames[book] || 'Sahih al-Bukhari';
-    document.title = `${name} - HADEETH.ID`;
-    document.querySelectorAll('.font-semibold.text-primary, h1.text-3xl').forEach(el => {
-      if (el.tagName === 'H1' || el.classList.contains('text-primary')) {
-        el.innerText = name;
-      }
-    });
-
-    // Re-bind all chapter links in container to include ?book=bookId
-    const container = document.getElementById('chapters-list-container');
-    if (container) {
-      container.querySelectorAll('a').forEach((link, idx) => {
-        const chNum = idx + 1;
-        link.href = `hadith-list.html?book=${book}&chapter=${chNum}`;
-      });
-    }
-  });
-</script>
+<script src="js/app.js?v=20260807_8"></script>
 </body>
 </html>

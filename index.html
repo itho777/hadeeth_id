@@ -71,10 +71,13 @@
       <a href="scholars.html" data-nav-page="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Scholars</a>
       <a href="admin.html"   data-nav-page="admin.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Admin</a>
     </nav>
-    <div class="flex items-center gap-stack-sm text-on-surface-variant dark:text-gray-400">
-      <button class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Language">
-        <span class="material-symbols-outlined">language</span>
-      </button>
+    <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
+      <!-- Language Switcher -->
+      <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
+        <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
+        <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
+        <button data-lang-btn="both" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Bilingual">BI</button>
+      </div>
       <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Toggle theme">
         <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
       </button>
@@ -264,6 +267,6 @@
 </footer>
 
 <script src="js/api.js"></script>
-<script src="js/app.js?v=20260807_6"></script>
+<script src="js/app.js?v=20260807_8"></script>
 </body>
 </html>
