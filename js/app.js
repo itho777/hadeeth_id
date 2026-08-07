@@ -57,15 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 function initSearch() {
   const searchInput = document.getElementById('search-input') || document.querySelector('input[placeholder*="Search"]');
-  const searchBtn = document.getElementById('search-btn') || document.querySelector('button:has(.material-symbols-outlined) + button, button:contains("Search")');
+  const searchBtn = document.getElementById('search-btn') || document.querySelector('.search-ring button:last-child');
   const resultsContainer = document.getElementById('search-results-container');
 
   if (!searchInput) return;
 
-  // Add IDs if missing
-  searchInput.id = searchInput.id || 'search-input';
+  // Ensure ID is attached
+  searchInput.id = 'search-input';
 
-  // Create results container if it doesn't exist
+  // Create results container if missing
   let resultsDiv = resultsContainer;
   if (!resultsDiv) {
     resultsDiv = document.createElement('div');
@@ -90,24 +90,25 @@ function initSearch() {
       </div>
     `;
 
+    resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
     if (window.HadeethAPI) {
       const results = await window.HadeethAPI.search(query, 15);
       renderSearchResults(results, query, resultsDiv);
     }
   };
 
-  // Trigger on Enter key
-  searchInput.addEventListener('keydown', (e) => {
+  // Trigger on Enter key in input
+  searchInput.addEventListener('keyup', (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
       performSearch();
     }
   });
 
-  // Trigger on button click
-  const btn = searchInput.closest('.search-ring')?.querySelector('button:last-child');
-  if (btn) {
-    btn.addEventListener('click', (e) => {
+  // Trigger on search button click
+  if (searchBtn) {
+    searchBtn.addEventListener('click', (e) => {
       e.preventDefault();
       performSearch();
     });

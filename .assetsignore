@@ -1,0 +1,11 @@
+# Ignore large DB seeds and scripts from Cloudflare Worker assets deployment
+supabase/
+data/sqlite/
+scripts/
+scratch/
+*.sql
+*.docx
+*.py
+*.pyc
+node_modules/
+.git/
