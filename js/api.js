@@ -5,7 +5,9 @@
  */
 
 const HadeethAPI = {
-  baseUrl: '/data',
+  baseUrl: window.location.pathname.endsWith('/') 
+    ? window.location.pathname + 'data'
+    : window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/')) + '/data',
 
   /**
    * Fetch master list of books
