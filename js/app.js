@@ -49,6 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('chapters-list-container')) {
     loadChaptersList();
   }
+  if (document.getElementById('hadith-cards-container')) {
+    loadHadithCardsList();
+  }
 
 });
 
@@ -266,6 +269,82 @@ async function loadChaptersList() {
       </a>
     `;
   });
+  container.innerHTML = html;
+}
+
+/**
+ * Load list of Hadith cards dynamically for Hadith List view
+ */
+async function loadHadithCardsList() {
+  const container = document.getElementById('hadith-cards-container');
+  if (!container) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const bookId = params.get('book') || 'bukhari';
+  const chapterId = params.get('chapter') || '1';
+
+  container.innerHTML = `
+    <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
+      <span class="material-symbols-outlined animate-spin text-secondary dark:text-[#10b981] text-3xl">progress_activity</span>
+      <p class="mt-2 text-sm text-outline dark:text-gray-400">Loading authentic Hadith list for ${escapeHtml(bookId.toUpperCase())} Chapter ${chapterId}...</p>
+    </div>
+  `;
+
+  // Fetch both English and Arabic edition files for complete bilingual cards
+  const [engEdition, araEdition] = await Promise.all([
+    window.HadeethAPI.getEdition('eng', bookId),
+    window.HadeethAPI.getEdition('ara', bookId)
+  ]);
+
+  if (!engEdition || !engEdition.hadiths || engEdition.hadiths.length === 0) {
+    container.innerHTML = `
+      <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
+        <p class="text-sm text-outline dark:text-gray-400">No Hadiths found for ${escapeHtml(bookId)}.</p>
+      </div>
+    `;
+    return;
+  }
+
+  // Map Arabic hadith texts by hadithnumber
+  const arabicMap = {};
+  if (araEdition && araEdition.hadiths) {
+    araEdition.hadiths.forEach(h => {
+      arabicMap[h.hadithnumber] = h.text;
+    });
+  }
+
+  // Limit rendering or paginate to keep UI ultra responsive
+  const listHadiths = engEdition.hadiths.slice(0, 50);
+
+  let html = '';
+  listHadiths.forEach(h => {
+    const num = h.hadithnumber;
+    const engText = h.text || '';
+    const araText = arabicMap[num] || '';
+
+    html += `
+      <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4 shadow-sm hadith-accent border-l-primary dark:border-l-[#10b981]">
+        <div class="flex justify-between items-center border-b border-outline-variant/10 dark:border-[#334155] pb-3">
+          <div class="flex items-center gap-2">
+            <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded">Hadith ${num}</span>
+            <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2 py-0.5 rounded">Sahih</span>
+          </div>
+          <span class="text-xs text-outline dark:text-gray-400">${escapeHtml(bookId.toUpperCase())} #${num}</span>
+        </div>
+        ${araText ? `<p class="font-arabic-body text-xl text-primary dark:text-white text-right leading-loose" dir="rtl">${escapeHtml(araText)}</p>` : ''}
+        <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed">${escapeHtml(engText)}</p>
+        <div class="flex justify-between items-center pt-3 border-t border-outline-variant/10 dark:border-[#334155]">
+          <a href="hadith.html?book=${bookId}&id=${num}" class="text-xs font-bold text-primary dark:text-[#10b981] hover:underline flex items-center gap-1">
+            Read Full Hadith & Translation &rarr;
+          </a>
+          <a href="sanad.html?book=${bookId}&id=${num}" class="text-xs font-semibold text-secondary dark:text-gray-400 hover:underline flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px]">account_tree</span> View Sanad Chain
+          </a>
+        </div>
+      </div>
+    `;
+  });
+
   container.innerHTML = html;
 }
 
