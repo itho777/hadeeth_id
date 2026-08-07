@@ -260,6 +260,8 @@ async function loadHadithDetail() {
   const englishElem = container.querySelector('[data-english-text]');
   const indonesianElem = container.querySelector('[data-indonesian-text]');
   const titleElem = container.querySelector('[data-hadith-title]');
+  const sanadLink = container.querySelector('[data-sanad-link]');
+  const sanadPreview = container.querySelector('[data-sanad-preview]');
 
   try {
     const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?id=eq.${bookId}_${hadithId}&select=id,hadith_number,text_ar,text_en,text_id,grade,book_id`, {
@@ -277,6 +279,31 @@ async function loadHadithDetail() {
         if (englishElem) englishElem.innerText = item.text_en || '—';
         if (indonesianElem) indonesianElem.innerText = item.text_id || '—';
         if (titleElem) titleElem.innerText = `${bookName} Hadith #${item.hadith_number}`;
+
+        if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${item.hadith_number}`;
+
+        if (sanadPreview) {
+          let previewNames = [];
+          if (item.text_id) {
+            const isnadPartId = item.text_id.split(/beliau\s+bersabda\s*:|berfirman\s*:|berkata\s*:|tentang\s+firman\s+Allah|bahwa\s+Rasulullah/i)[0] || item.text_id;
+            const brackets = isnadPartId.match(/\[([^\]]+)\]/g);
+            if (brackets) {
+              const stopWords = new Set(['Al Qur\'an', 'Al-Qur\'an', 'Islam', 'Nabi', 'Rasulullah', 'Allah', 'bapaknya', 'bapakku']);
+              brackets.forEach(b => {
+                const name = b.replace(/[\[\]]/g, '').trim();
+                if (name && !stopWords.has(name) && name.length > 2) {
+                  previewNames.push(name);
+                }
+              });
+            }
+          }
+          if (previewNames.length > 0) {
+            sanadPreview.innerText = previewNames.join(' → ') + ' → Prophet ﷺ';
+          } else {
+            sanadPreview.innerText = `Inspect Chain for ${bookName} #${item.hadith_number} → Prophet ﷺ`;
+          }
+        }
+
         return;
       }
     }
