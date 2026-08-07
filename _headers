@@ -6,11 +6,14 @@
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
 
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/js/*
+  Cache-Control: no-cache, no-store, must-revalidate
+
 /data/*
   Cache-Control: public, max-age=86400
-# HADEETH.ID — Cloudflare Pages Headers Configuration
-# Deployment build trigger: 2026-08-07
-
   Content-Type: application/json; charset=utf-8
 
 /assets/*
