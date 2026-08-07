@@ -27,7 +27,7 @@
     "chapter_number": 3,
     "title_en": "The Book Of The Prayer For Rain (Kitab al-Istisqa')",
     "title_ar": "كتاب الاستسقاء",
-    "title_id": "The Book Of The Prayer For Rain (Kitab al-Istisqa')",
+    "title_id": "Shalat",
     "hadith_start": 1161,
     "hadith_end": 1197,
     "hadith_count": 37
@@ -38,7 +38,7 @@
     "chapter_number": 4,
     "title_en": "Prayer (Kitab Al-Salat): Detailed Rules of Law about the Prayer during Journey",
     "title_ar": "كتاب صلاة السفر",
-    "title_id": "Prayer (Kitab Al-Salat): Detailed Rules of Law about the Prayer during Journey",
+    "title_id": "Shalat",
     "hadith_start": 1198,
     "hadith_end": 1249,
     "hadith_count": 52
@@ -49,7 +49,7 @@
     "chapter_number": 5,
     "title_en": "Prayer (Kitab Al-Salat): Voluntary Prayers",
     "title_ar": "كتاب التطوع",
-    "title_id": "Prayer (Kitab Al-Salat): Voluntary Prayers",
+    "title_id": "Shalat",
     "hadith_start": 1250,
     "hadith_end": 1370,
     "hadith_count": 121
@@ -60,7 +60,7 @@
     "chapter_number": 6,
     "title_en": "Prayer (Kitab Al-Salat): Detailed Injunctions about Ramadan",
     "title_ar": "كتاب شهر رمضان",
-    "title_id": "Prayer (Kitab Al-Salat): Detailed Injunctions about Ramadan",
+    "title_id": "Shalat",
     "hadith_start": 1371,
     "hadith_end": 1400,
     "hadith_count": 30
@@ -71,7 +71,7 @@
     "chapter_number": 7,
     "title_en": "Prayer (Kitab Al-Salat): Prostration while reciting the Qur'an",
     "title_ar": "كتاب سجود القرآن",
-    "title_id": "Prayer (Kitab Al-Salat): Prostration while reciting the Qur'an",
+    "title_id": "Shalat",
     "hadith_start": 1401,
     "hadith_end": 1415,
     "hadith_count": 15
@@ -82,7 +82,7 @@
     "chapter_number": 8,
     "title_en": "Prayer (Kitab Al-Salat): Detailed Injunctions about Witr",
     "title_ar": "كتاب الوتر",
-    "title_id": "Prayer (Kitab Al-Salat): Detailed Injunctions about Witr",
+    "title_id": "Shalat",
     "hadith_start": 1416,
     "hadith_end": 1555,
     "hadith_count": 140
@@ -104,7 +104,7 @@
     "chapter_number": 10,
     "title_en": "The Book of Lost and Found Items",
     "title_ar": "كتاب اللقطة",
-    "title_id": "The Book of Lost and Found Items",
+    "title_id": "Barang Temuan",
     "hadith_start": 1701,
     "hadith_end": 1720,
     "hadith_count": 20
@@ -170,7 +170,7 @@
     "chapter_number": 16,
     "title_en": "Sacrifice (Kitab Al-Dahaya)",
     "title_ar": "كتاب الضحايا",
-    "title_id": "Sacrifice (Kitab Al-Dahaya)",
+    "title_id": "Kurban (Kitab al-Dhahaya)",
     "hadith_start": 2788,
     "hadith_end": 2843,
     "hadith_count": 56
@@ -214,7 +214,7 @@
     "chapter_number": 20,
     "title_en": "Tribute, Spoils, and Rulership (Kitab Al-Kharaj, Wal-Fai' Wal-Imarah)",
     "title_ar": "كتاب الخراج والإمارة والفىء",
-    "title_id": "Tribute, Spoils, and Rulership (Kitab Al-Kharaj, Wal-Fai' Wal-Imarah)",
+    "title_id": "Kharaj dan Pemerintahan",
     "hadith_start": 2928,
     "hadith_end": 3088,
     "hadith_count": 161
@@ -335,7 +335,7 @@
     "chapter_number": 31,
     "title_en": "The Book of Manumission of Slaves",
     "title_ar": "كتاب العتق",
-    "title_id": "The Book of Manumission of Slaves",
+    "title_id": "Kitab Pembebasan Budak",
     "hadith_start": 3926,
     "hadith_end": 3968,
     "hadith_count": 43
@@ -346,7 +346,7 @@
     "chapter_number": 32,
     "title_en": "Dialects and Readings of the Qur'an (Kitab Al-Huruf Wa Al-Qira'at)",
     "title_ar": "كتاب الحروف والقراءات",
-    "title_id": "Dialects and Readings of the Qur'an (Kitab Al-Huruf Wa Al-Qira'at)",
+    "title_id": "Dialek dan Bacaan Al-Qur'an",
     "hadith_start": 3969,
     "hadith_end": 4008,
     "hadith_count": 40
@@ -390,7 +390,7 @@
     "chapter_number": 36,
     "title_en": "Signet-Rings (Kitab Al-Khatam)",
     "title_ar": "كتاب الخاتم",
-    "title_id": "Signet-Rings (Kitab Al-Khatam)",
+    "title_id": "Cincin Stempel",
     "hadith_start": 4214,
     "hadith_end": 4239,
     "hadith_count": 26

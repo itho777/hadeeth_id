@@ -5,7 +5,7 @@
     "chapter_number": 1,
     "title_en": "Musnad Abu Bakr as-Siddiq (ra)",
     "title_ar": "مُسْنَدُ أَبِي بَكْرٍ الصِّدِّيقِ رَضِيَ اللَّهُ عَنْهُ",
-    "title_id": "Musnad Abu Bakr as-Siddiq (ra)",
+    "title_id": "Musnad Abu Bakr as-Shiddiq RA",
     "hadith_start": 1,
     "hadith_end": 81,
     "hadith_count": 77
@@ -16,7 +16,7 @@
     "chapter_number": 2,
     "title_en": "Musnad `Umar b. al-Khattab (ra)",
     "title_ar": "مُسْنَدِ عُمَرَ بْنِ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ",
-    "title_id": "Musnad `Umar b. al-Khattab (ra)",
+    "title_id": "Musnad Umar bin al-Khaththab RA",
     "hadith_start": 82,
     "hadith_end": 390,
     "hadith_count": 291
@@ -27,7 +27,7 @@
     "chapter_number": 3,
     "title_en": "The Hadeeth of Saqeefah",
     "title_ar": "حَدِيثُ السَّقِيفَةِ",
-    "title_id": "The Hadeeth of Saqeefah",
+    "title_id": "Hadits Saqifah",
     "hadith_start": 391,
     "hadith_end": 398,
     "hadith_count": 8
@@ -38,7 +38,7 @@
     "chapter_number": 4,
     "title_en": "Musnad Uthman ibn Affan",
     "title_ar": "مُسْنَدُ عُثْمَانَ بْنِ عَفَّانَ رَضِيَ اللَّهُ عَنْهُ",
-    "title_id": "Musnad Uthman ibn Affan",
+    "title_id": "Musnad Utsman bin Affan RA",
     "hadith_start": 399,
     "hadith_end": 561,
     "hadith_count": 152
@@ -49,7 +49,7 @@
     "chapter_number": 5,
     "title_en": "Musnad 'Ali Ibn Abi Talib",
     "title_ar": "وَمِنْ مُسْنَدِ عَلِيِّ بْنِ أَبِي طَالِبٍ رَضِيَ اللَّهُ عَنْهُ",
-    "title_id": "Musnad 'Ali Ibn Abi Talib",
+    "title_id": "Musnad Ali bin Abi Thalib RA",
     "hadith_start": 562,
     "hadith_end": 1380,
     "hadith_count": 778
@@ -60,7 +60,7 @@
     "chapter_number": 6,
     "title_en": "Musnad of Abu Muhammad Talhah bin 'Ubaidullah",
     "title_ar": "مُسْنَدُ أَبِي مُحَمَّدٍ طَلْحَةَ بْنِ عُبَيْدِ اللَّهِ رَضِيَ اللَّهُ تَعَالَى عَنْهُ",
-    "title_id": "Musnad of Abu Muhammad Talhah bin 'Ubaidullah",
+    "title_id": "Musnad Thalhah bin Ubaidillah RA",
     "hadith_start": 1381,
     "hadith_end": 1404,
     "hadith_count": 22
@@ -71,7 +71,7 @@
     "chapter_number": 7,
     "title_en": "The Musnad of az-Zubair bin al-'Awwam",
     "title_ar": "مُسْنَدُ الزُّبَيْرِ بْنِ الْعَوَّامِ رَضِيَ اللَّهُ عَنْهُ",
-    "title_id": "The Musnad of az-Zubair bin al-'Awwam",
+    "title_id": "Musnad az-Zubair bin al-Awwam RA",
     "hadith_start": 1405,
     "hadith_end": 1438,
     "hadith_count": 31

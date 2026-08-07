@@ -181,7 +181,7 @@
     "chapter_number": 17,
     "title_en": "Prostration During Recital of Qur'an",
     "title_ar": "كتاب سجود القرآن",
-    "title_id": "Prostration During Recital of Qur'an",
+    "title_id": "Sujud Tilawah",
     "hadith_start": 1067,
     "hadith_end": 1079,
     "hadith_count": 13
@@ -214,7 +214,7 @@
     "chapter_number": 20,
     "title_en": "Virtues of Prayer at Masjid Makkah and Madinah",
     "title_ar": "كتاب فضل الصلاة فى مسجد مكة والمدينة",
-    "title_id": "Virtues of Prayer at Masjid Makkah and Madinah",
+    "title_id": "Shalat",
     "hadith_start": 1188,
     "hadith_end": 1197,
     "hadith_count": 9
@@ -236,7 +236,7 @@
     "chapter_number": 22,
     "title_en": "Forgetfulness in Prayer",
     "title_ar": "كتاب السهو",
-    "title_id": "Forgetfulness in Prayer",
+    "title_id": "Lupa dalam Shalat",
     "hadith_start": 1224,
     "hadith_end": 1236,
     "hadith_count": 14
@@ -269,7 +269,7 @@
     "chapter_number": 25,
     "title_en": "Hajj (Pilgrimage)",
     "title_ar": "كتاب الحج",
-    "title_id": "Hajj (Pilgrimage)",
+    "title_id": "Haji",
     "hadith_start": 1513,
     "hadith_end": 1771,
     "hadith_count": 247
@@ -280,7 +280,7 @@
     "chapter_number": 26,
     "title_en": "`Umrah (Minor pilgrimage)",
     "title_ar": "كتاب العمرة",
-    "title_id": "`Umrah (Minor pilgrimage)",
+    "title_id": "Haji",
     "hadith_start": 1773,
     "hadith_end": 1805,
     "hadith_count": 30
@@ -291,7 +291,7 @@
     "chapter_number": 27,
     "title_en": "Pilgrims Prevented from Completing the Pilgrimage",
     "title_ar": "كتاب المحصر",
-    "title_id": "Pilgrims Prevented from Completing the Pilgrimage",
+    "title_id": "Haji",
     "hadith_start": 1806,
     "hadith_end": 1820,
     "hadith_count": 15
@@ -302,7 +302,7 @@
     "chapter_number": 28,
     "title_en": "Penalty of Hunting while on Pilgrimage",
     "title_ar": "كتاب جزاء الصيد",
-    "title_id": "Penalty of Hunting while on Pilgrimage",
+    "title_id": "Haji",
     "hadith_start": 1821,
     "hadith_end": 1866,
     "hadith_count": 46
@@ -335,7 +335,7 @@
     "chapter_number": 31,
     "title_en": "Praying at Night in Ramadaan (Taraweeh)",
     "title_ar": "كتاب صلاة التراويح",
-    "title_id": "Praying at Night in Ramadaan (Taraweeh)",
+    "title_id": "Shalat Malam di Ramadan (Tarawih)",
     "hadith_start": 2008,
     "hadith_end": 2013,
     "hadith_count": 6
@@ -346,7 +346,7 @@
     "chapter_number": 32,
     "title_en": "Virtues of the Night of Qadr",
     "title_ar": "كتاب فضل ليلة القدر",
-    "title_id": "Virtues of the Night of Qadr",
+    "title_id": "Keutamaan Malam Lailatul Qadar",
     "hadith_start": 2014,
     "hadith_end": 2024,
     "hadith_count": 11
@@ -423,7 +423,7 @@
     "chapter_number": 39,
     "title_en": "Kafalah",
     "title_ar": "كتاب الكفالة",
-    "title_id": "Kafalah",
+    "title_id": "Kafalah (Tanggungan)",
     "hadith_start": 2290,
     "hadith_end": 2298,
     "hadith_count": 9
@@ -478,7 +478,7 @@
     "chapter_number": 44,
     "title_en": "Khusoomaat",
     "title_ar": "كتاب الخصومات",
-    "title_id": "Khusoomaat",
+    "title_id": "Perselisihan",
     "hadith_start": 2410,
     "hadith_end": 2425,
     "hadith_count": 15
@@ -489,7 +489,7 @@
     "chapter_number": 45,
     "title_en": "Lost Things Picked up by Someone (Luqatah)",
     "title_ar": "كتاب فى اللقطة",
-    "title_id": "Lost Things Picked up by Someone (Luqatah)",
+    "title_id": "Barang Temuan",
     "hadith_start": 2426,
     "hadith_end": 2439,
     "hadith_count": 15
@@ -544,7 +544,7 @@
     "chapter_number": 50,
     "title_en": "Makaatib",
     "title_ar": "كتاب المكاتب",
-    "title_id": "Makaatib",
+    "title_id": "Mukatab (Kontrak Pembebasan Budak)",
     "hadith_start": 2560,
     "hadith_end": 2565,
     "hadith_count": 6
@@ -632,7 +632,7 @@
     "chapter_number": 58,
     "title_en": "Jizyah and Mawaada'ah",
     "title_ar": "كتاب الجزية والموادعة",
-    "title_id": "Jizyah and Mawaada'ah",
+    "title_id": "Jizyah",
     "hadith_start": 3156,
     "hadith_end": 3189,
     "hadith_count": 30
@@ -709,7 +709,7 @@
     "chapter_number": 65,
     "title_en": "Prophetic Commentary on the Qur'an (Tafseer of the Prophet (pbuh))",
     "title_ar": "كتاب التفسير",
-    "title_id": "Prophetic Commentary on the Qur'an (Tafseer of the Prophet (pbuh))",
+    "title_id": "Tafsir Al-Qur'an menurut Nabi SAW",
     "hadith_start": 4474,
     "hadith_end": 4977,
     "hadith_count": 499
@@ -720,7 +720,7 @@
     "chapter_number": 66,
     "title_en": "Virtues of the Qur'an",
     "title_ar": "كتاب فضائل القرآن",
-    "title_id": "Virtues of the Qur'an",
+    "title_id": "Keutamaan Al-Qur'an",
     "hadith_start": 4978,
     "hadith_end": 5062,
     "hadith_count": 87
@@ -885,7 +885,7 @@
     "chapter_number": 81,
     "title_en": "To make the Heart Tender (Ar-Riqaq)",
     "title_ar": "كتاب الرقاق",
-    "title_id": "To make the Heart Tender (Ar-Riqaq)",
+    "title_id": "Melembutkan Hati (Ar-Riqaq)",
     "hadith_start": 6412,
     "hadith_end": 6593,
     "hadith_count": 181
@@ -962,7 +962,7 @@
     "chapter_number": 88,
     "title_en": "Apostates",
     "title_ar": "كتاب استتابة المرتدين والمعاندين وقتالهم",
-    "title_id": "Apostates",
+    "title_id": "Orang-orang Murtad",
     "hadith_start": 6918,
     "hadith_end": 6939,
     "hadith_count": 21
@@ -973,7 +973,7 @@
     "chapter_number": 89,
     "title_en": "(Statements made under) Coercion",
     "title_ar": "كتاب الإكراه",
-    "title_id": "(Statements made under) Coercion",
+    "title_id": "Pernyataan di Bawah Paksaan",
     "hadith_start": 6940,
     "hadith_end": 6952,
     "hadith_count": 13
@@ -1039,7 +1039,7 @@
     "chapter_number": 95,
     "title_en": "Accepting Information Given by a Truthful Person",
     "title_ar": "كتاب أخبار الآحاد",
-    "title_id": "Accepting Information Given by a Truthful Person",
+    "title_id": "Menerima Kabar dari Orang Jujur",
     "hadith_start": 7246,
     "hadith_end": 7267,
     "hadith_count": 21
@@ -1050,7 +1050,7 @@
     "chapter_number": 96,
     "title_en": "Holding Fast to the Qur'an and Sunnah",
     "title_ar": "كتاب الاعتصام بالكتاب والسنة",
-    "title_id": "Holding Fast to the Qur'an and Sunnah",
+    "title_id": "Berpegang Teguh pada Al-Qur'an dan Sunnah",
     "hadith_start": 7268,
     "hadith_end": 7370,
     "hadith_count": 97

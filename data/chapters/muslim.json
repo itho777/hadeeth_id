@@ -16,7 +16,7 @@
     "chapter_number": 2,
     "title_en": "Introduction",
     "title_ar": "المقدمة",
-    "title_id": "Introduction",
+    "title_id": "Pengantar",
     "hadith_start": 1,
     "hadith_end": 7,
     "hadith_count": 91
@@ -71,7 +71,7 @@
     "chapter_number": 6,
     "title_en": "The Book of Prayer - Travellers",
     "title_ar": "كتاب صلاة المسافرين وقصرها",
-    "title_id": "The Book of Prayer - Travellers",
+    "title_id": "Shalat",
     "hadith_start": 685,
     "hadith_end": 843,
     "hadith_count": 378
@@ -126,7 +126,7 @@
     "chapter_number": 11,
     "title_en": "The Book of Prayer - Funerals",
     "title_ar": "كتاب الجنائز",
-    "title_id": "The Book of Prayer - Funerals",
+    "title_id": "Shalat",
     "hadith_start": 916,
     "hadith_end": 978,
     "hadith_count": 138
@@ -214,7 +214,7 @@
     "chapter_number": 19,
     "title_en": "The Book of Invoking Curses",
     "title_ar": "كتاب اللعان",
-    "title_id": "The Book of Invoking Curses",
+    "title_id": "Kitab Li'an",
     "hadith_start": 1492,
     "hadith_end": 1500,
     "hadith_count": 27
@@ -258,7 +258,7 @@
     "chapter_number": 23,
     "title_en": "The Book of the Rules of Inheritance",
     "title_ar": "كتاب الفرائض",
-    "title_id": "The Book of the Rules of Inheritance",
+    "title_id": "Kitab Warisan",
     "hadith_start": 1614,
     "hadith_end": 1619,
     "hadith_count": 23
@@ -291,7 +291,7 @@
     "chapter_number": 26,
     "title_en": "The Book of Vows",
     "title_ar": "كتاب النذر",
-    "title_id": "The Book of Vows",
+    "title_id": "Kitab Nazar",
     "hadith_start": 1638,
     "hadith_end": 1645,
     "hadith_count": 18
@@ -313,7 +313,7 @@
     "chapter_number": 28,
     "title_en": "The Book of Oaths, <i>Muharibin</i>, <i>Qasas</i> (Retaliation), and <i>Diyat</i> (Blood Money)",
     "title_ar": "كتاب القسامة والمحاربين والقصاص والديات",
-    "title_id": "The Book of Oaths, <i>Muharibin</i>, <i>Qasas</i> (Retaliation), and <i>Diyat</i> (Blood Money)",
+    "title_id": "Diyat",
     "hadith_start": 1669,
     "hadith_end": 1683,
     "hadith_count": 56
@@ -357,7 +357,7 @@
     "chapter_number": 32,
     "title_en": "The Book of <i>Jihad</i> and Expeditions",
     "title_ar": "كتاب الجهاد والسير",
-    "title_id": "The Book of <i>Jihad</i> and Expeditions",
+    "title_id": "Jihad",
     "hadith_start": 1730,
     "hadith_end": 1817,
     "hadith_count": 182
@@ -368,7 +368,7 @@
     "chapter_number": 33,
     "title_en": "The Book on Government",
     "title_ar": "كتاب الإمارة",
-    "title_id": "The Book on Government",
+    "title_id": "Kitab Pemerintahan",
     "hadith_start": 1818,
     "hadith_end": 1928,
     "hadith_count": 266
@@ -379,7 +379,7 @@
     "chapter_number": 34,
     "title_en": "The Book of Hunting, Slaughter, and what may be Eaten",
     "title_ar": "كتاب الصيد والذبائح وما يؤكل من الحيوان",
-    "title_id": "The Book of Hunting, Slaughter, and what may be Eaten",
+    "title_id": "Berburu",
     "hadith_start": 1929,
     "hadith_end": 1959,
     "hadith_count": 92
@@ -423,7 +423,7 @@
     "chapter_number": 38,
     "title_en": "The Book of Manners and Etiquette",
     "title_ar": "كتاب الآداب",
-    "title_id": "The Book of Manners and Etiquette",
+    "title_id": "Kitab Adab",
     "hadith_start": 2131,
     "hadith_end": 2159,
     "hadith_count": 60
@@ -445,7 +445,7 @@
     "chapter_number": 40,
     "title_en": "The Book Concerning the Use of Correct Words",
     "title_ar": "كتاب الألفاظ من الأدب وغيرها",
-    "title_id": "The Book Concerning the Use of Correct Words",
+    "title_id": "Kitab Penggunaan Kata yang Tepat",
     "hadith_start": 2246,
     "hadith_end": 2254,
     "hadith_count": 23
@@ -555,7 +555,7 @@
     "chapter_number": 50,
     "title_en": "The Book of Repentance",
     "title_ar": "كتاب التوبة",
-    "title_id": "The Book of Repentance",
+    "title_id": "Kitab Taubat",
     "hadith_start": 2744,
     "hadith_end": 2771,
     "hadith_count": 68
@@ -566,7 +566,7 @@
     "chapter_number": 51,
     "title_en": "Characteristics of The Hypocrites And Rulings Concerning Them",
     "title_ar": "كتاب صفات المنافقين وأحكامهم",
-    "title_id": "Characteristics of The Hypocrites And Rulings Concerning Them",
+    "title_id": "Sifat Orang Munafik dan Hukumnya",
     "hadith_start": 2772,
     "hadith_end": 2784,
     "hadith_count": 21
@@ -577,7 +577,7 @@
     "chapter_number": 52,
     "title_en": "Characteristics of the Day of Judgment, Paradise, and Hell",
     "title_ar": "كتاب صفة القيامة والجنة والنار",
-    "title_id": "Characteristics of the Day of Judgment, Paradise, and Hell",
+    "title_id": "Gambaran Kiamat, Surga dan Neraka",
     "hadith_start": 2785,
     "hadith_end": 2821,
     "hadith_count": 82
@@ -588,7 +588,7 @@
     "chapter_number": 53,
     "title_en": "The Book of Paradise, its Description, its Bounties and its Inhabitants",
     "title_ar": "كتاب الجنة وصفة نعيمها وأهلها",
-    "title_id": "The Book of Paradise, its Description, its Bounties and its Inhabitants",
+    "title_id": "Kitab Surga, Sifat dan Penghuninya",
     "hadith_start": 2822,
     "hadith_end": 2879,
     "hadith_count": 103
@@ -599,7 +599,7 @@
     "chapter_number": 54,
     "title_en": "The Book of Tribulations and Portents of the Last Hour",
     "title_ar": "كتاب الفتن وأشراط الساعة",
-    "title_id": "The Book of Tribulations and Portents of the Last Hour",
+    "title_id": "Kitab Fitnah dan Tanda-tanda Kiamat",
     "hadith_start": 2880,
     "hadith_end": 2955,
     "hadith_count": 177
@@ -621,7 +621,7 @@
     "chapter_number": 56,
     "title_en": "The Book of Commentary on the Qur'an",
     "title_ar": "كتاب التفسير",
-    "title_id": "The Book of Commentary on the Qur'an",
+    "title_id": "Kitab Tafsir Al-Qur'an",
     "hadith_start": 3015,
     "hadith_end": 3033,
     "hadith_count": 40

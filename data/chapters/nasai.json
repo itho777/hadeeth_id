@@ -49,7 +49,7 @@
     "chapter_number": 5,
     "title_en": "The Book of Salah",
     "title_ar": "كتاب الصلاة",
-    "title_id": "The Book of Salah",
+    "title_id": "Kitab Shalat",
     "hadith_start": 448,
     "hadith_end": 493,
     "hadith_count": 46
@@ -60,7 +60,7 @@
     "chapter_number": 6,
     "title_en": "The Book of the Times (of Prayer)",
     "title_ar": "كتاب المواقيت",
-    "title_id": "The Book of the Times (of Prayer)",
+    "title_id": "Shalat",
     "hadith_start": 494,
     "hadith_end": 625,
     "hadith_count": 132
@@ -71,7 +71,7 @@
     "chapter_number": 7,
     "title_en": "The Book of the Adhan (The Call to Prayer)",
     "title_ar": "كتاب الأذان",
-    "title_id": "The Book of the Adhan (The Call to Prayer)",
+    "title_id": "Shalat",
     "hadith_start": 626,
     "hadith_end": 687,
     "hadith_count": 62
@@ -126,7 +126,7 @@
     "chapter_number": 12,
     "title_en": "The Book of The At-Tatbiq (Clasping One's Hands Together)",
     "title_ar": "كتاب التطبيق",
-    "title_id": "The Book of The At-Tatbiq (Clasping One's Hands Together)",
+    "title_id": "Kitab Tatbiq (Meletakkan Tangan di Lutut)",
     "hadith_start": 1029,
     "hadith_end": 1178,
     "hadith_count": 150
@@ -137,7 +137,7 @@
     "chapter_number": 13,
     "title_en": "The Book of Forgetfulness (In Prayer)",
     "title_ar": "كتاب السهو",
-    "title_id": "The Book of Forgetfulness (In Prayer)",
+    "title_id": "Shalat",
     "hadith_start": 1179,
     "hadith_end": 1366,
     "hadith_count": 188
@@ -148,7 +148,7 @@
     "chapter_number": 14,
     "title_en": "The Book of Jumu'ah (Friday Prayer)",
     "title_ar": "كتاب الجمعة",
-    "title_id": "The Book of Jumu'ah (Friday Prayer)",
+    "title_id": "Shalat",
     "hadith_start": 1367,
     "hadith_end": 1432,
     "hadith_count": 69
@@ -170,7 +170,7 @@
     "chapter_number": 16,
     "title_en": "The Book of Eclipses",
     "title_ar": "كتاب الكسوف",
-    "title_id": "The Book of Eclipses",
+    "title_id": "Kitab Shalat Gerhana",
     "hadith_start": 1459,
     "hadith_end": 1503,
     "hadith_count": 45
@@ -181,7 +181,7 @@
     "chapter_number": 17,
     "title_en": "The Book of Praying for Rain (Al-Istisqa')",
     "title_ar": "كتاب الاستسقاء",
-    "title_id": "The Book of Praying for Rain (Al-Istisqa')",
+    "title_id": "Kitab Shalat Istisqa'",
     "hadith_start": 1504,
     "hadith_end": 1528,
     "hadith_count": 25
@@ -203,7 +203,7 @@
     "chapter_number": 19,
     "title_en": "The Book of the Prayer for the Two 'Eids",
     "title_ar": "كتاب صلاة العيدين",
-    "title_id": "The Book of the Prayer for the Two 'Eids",
+    "title_id": "Shalat",
     "hadith_start": 1556,
     "hadith_end": 1597,
     "hadith_count": 42
@@ -214,7 +214,7 @@
     "chapter_number": 20,
     "title_en": "The Book of Qiyam Al-Lail (The Night Prayer) and Voluntary Prayers During the Day",
     "title_ar": "كتاب قيام الليل وتطوع النهار",
-    "title_id": "The Book of Qiyam Al-Lail (The Night Prayer) and Voluntary Prayers During the Day",
+    "title_id": "Shalat",
     "hadith_start": 1598,
     "hadith_end": 1817,
     "hadith_count": 220
@@ -247,7 +247,7 @@
     "chapter_number": 23,
     "title_en": "The Book of Zakah",
     "title_ar": "كتاب الزكاة",
-    "title_id": "The Book of Zakah",
+    "title_id": "Kitab Zakat",
     "hadith_start": 2435,
     "hadith_end": 2618,
     "hadith_count": 184
@@ -302,7 +302,7 @@
     "chapter_number": 28,
     "title_en": "The Book of Horses, Races and Shooting",
     "title_ar": "كتاب الخيل",
-    "title_id": "The Book of Horses, Races and Shooting",
+    "title_id": "Kitab Kuda, Lomba, dan Memanah",
     "hadith_start": 3561,
     "hadith_end": 3593,
     "hadith_count": 33
@@ -335,7 +335,7 @@
     "chapter_number": 31,
     "title_en": "The Book of Presents",
     "title_ar": "كتاب النحل",
-    "title_id": "The Book of Presents",
+    "title_id": "Kitab Hadiah",
     "hadith_start": 3672,
     "hadith_end": 3687,
     "hadith_count": 16
@@ -357,7 +357,7 @@
     "chapter_number": 33,
     "title_en": "The Book of ar-Ruqba",
     "title_ar": "كتاب الرقبى",
-    "title_id": "The Book of ar-Ruqba",
+    "title_id": "Kitab ar-Ruqba (Hibah Bersyarat)",
     "hadith_start": 3706,
     "hadith_end": 3719,
     "hadith_count": 14
@@ -368,7 +368,7 @@
     "chapter_number": 34,
     "title_en": "The Book of 'Umra",
     "title_ar": "كتاب العمرى",
-    "title_id": "The Book of 'Umra",
+    "title_id": "Umrah",
     "hadith_start": 3720,
     "hadith_end": 3760,
     "hadith_count": 42
@@ -390,7 +390,7 @@
     "chapter_number": 35,
     "title_en": "The Book of Agriculture",
     "title_ar": "كتاب المزارعة",
-    "title_id": "The Book of Agriculture",
+    "title_id": "Kitab Pertanian",
     "hadith_start": 3857,
     "hadith_end": 3938,
     "hadith_count": 83
@@ -401,7 +401,7 @@
     "chapter_number": 36,
     "title_en": "The Book of the Kind Treatment of Women",
     "title_ar": "كتاب عشرة النساء",
-    "title_id": "The Book of the Kind Treatment of Women",
+    "title_id": "Kitab Perlakuan Baik kepada Wanita",
     "hadith_start": 3939,
     "hadith_end": 3965,
     "hadith_count": 27
@@ -412,7 +412,7 @@
     "chapter_number": 37,
     "title_en": "The Book of Fighting [The Prohibition of Bloodshed]",
     "title_ar": "كتاب تحريم الدم",
-    "title_id": "The Book of Fighting [The Prohibition of Bloodshed]",
+    "title_id": "Kitab Larangan Pertumpahan Darah",
     "hadith_start": 3966,
     "hadith_end": 4132,
     "hadith_count": 167
@@ -423,7 +423,7 @@
     "chapter_number": 38,
     "title_en": "The Book of Distribution of Al-Fay'",
     "title_ar": "كتاب قسم الفىء",
-    "title_id": "The Book of Distribution of Al-Fay'",
+    "title_id": "Kitab Pembagian Fai'",
     "hadith_start": 4133,
     "hadith_end": 4148,
     "hadith_count": 16
@@ -434,7 +434,7 @@
     "chapter_number": 39,
     "title_en": "The Book of al-Bay'ah",
     "title_ar": "كتاب البيعة",
-    "title_id": "The Book of al-Bay'ah",
+    "title_id": "Kitab Bai'at",
     "hadith_start": 4149,
     "hadith_end": 4211,
     "hadith_count": 63
@@ -445,7 +445,7 @@
     "chapter_number": 40,
     "title_en": "The Book of al-'Aqiqah",
     "title_ar": "كتاب العقيقة",
-    "title_id": "The Book of al-'Aqiqah",
+    "title_id": "Aqiqah",
     "hadith_start": 4212,
     "hadith_end": 4221,
     "hadith_count": 10
@@ -456,7 +456,7 @@
     "chapter_number": 41,
     "title_en": "The Book of al-Fara' and al-'Atirah",
     "title_ar": "كتاب الفرع والعتيرة",
-    "title_id": "The Book of al-Fara' and al-'Atirah",
+    "title_id": "Kitab al-Fara' dan al-'Atirah",
     "hadith_start": 4222,
     "hadith_end": 4262,
     "hadith_count": 41
@@ -478,7 +478,7 @@
     "chapter_number": 43,
     "title_en": "The Book of ad-Dahaya (Sacrifices)",
     "title_ar": "كتاب الضحايا",
-    "title_id": "The Book of ad-Dahaya (Sacrifices)",
+    "title_id": "Kitab Kurban (ad-Dhahaya)",
     "hadith_start": 4361,
     "hadith_end": 4448,
     "hadith_count": 88
@@ -500,7 +500,7 @@
     "chapter_number": 45,
     "title_en": "The Book of Oaths (qasamah), Retaliation and Blood Money",
     "title_ar": "كتاب القسامة",
-    "title_id": "The Book of Oaths (qasamah), Retaliation and Blood Money",
+    "title_id": "Diyat",
     "hadith_start": 4706,
     "hadith_end": 4869,
     "hadith_count": 164
@@ -511,7 +511,7 @@
     "chapter_number": 46,
     "title_en": "The Book of Cutting off the Hand of the Thief",
     "title_ar": "كتاب قطع السارق",
-    "title_id": "The Book of Cutting off the Hand of the Thief",
+    "title_id": "Kitab Had Pencurian",
     "hadith_start": 4870,
     "hadith_end": 4984,
     "hadith_count": 114
@@ -522,7 +522,7 @@
     "chapter_number": 47,
     "title_en": "The Book Of Faith and its Signs",
     "title_ar": "كتاب الإيمان وشرائعه",
-    "title_id": "The Book Of Faith and its Signs",
+    "title_id": "Kitab Iman dan Tanda-tandanya",
     "hadith_start": 4985,
     "hadith_end": 5039,
     "hadith_count": 55
@@ -544,7 +544,7 @@
     "chapter_number": 49,
     "title_en": "The Book of the Etiquette of Judges",
     "title_ar": "كتاب آداب القضاة",
-    "title_id": "The Book of the Etiquette of Judges",
+    "title_id": "Kitab Adab Hakim",
     "hadith_start": 5379,
     "hadith_end": 5427,
     "hadith_count": 49
