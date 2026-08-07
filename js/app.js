@@ -431,7 +431,7 @@ async function loadHadithDetail() {
   const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
 
   // Save Last Read
-  LastReadTracker.save(bookId, hadithId, bookName, `${bookName} Hadith #${hadithId}`);
+  if (window.LastReadTracker) window.LastReadTracker.save(bookId, hadithId, bookName, `${bookName} Hadith #${hadithId}`);
 
   // Update Breadcrumb & Meta Headers
   const bcBook = document.querySelector('[data-breadcrumb-book]');
@@ -440,14 +440,36 @@ async function loadHadithDetail() {
   const prevBtn = document.getElementById('prev-hadith-btn');
   const nextBtn = document.getElementById('next-hadith-btn');
 
+  const isIdLang = (window.LangSystem && window.LangSystem.get() === 'id');
+  const currentNum = parseInt(hadithId) || 1;
+
+  // Fetch Chapter info to show real Chapter Title in top breadcrumb
+  let chapterObj = null;
+  try {
+    const chapters = await window.HadeethAPI.getChapters(bookId);
+    if (chapters && chapters.length > 0) {
+      chapterObj = chapters.find(c => (c.hadith_start || 0) <= currentNum && currentNum <= (c.hadith_end || 99999));
+    }
+  } catch (e) {
+    console.warn('Failed to load chapter info for detail breadcrumb:', e);
+  }
+
+  let chapterBreadcrumbText = `Hadith #${hadithId}`;
+  if (chapterObj) {
+    const chTitle = isIdLang ? (chapterObj.title_id || chapterObj.title_en) : chapterObj.title_en;
+    chapterBreadcrumbText = isIdLang ? `Bab ${chapterObj.chapter_number || ''}: ${chTitle}` : `Chapter ${chapterObj.chapter_number || ''}: ${chTitle}`;
+  }
+
   if (bcBook) {
     bcBook.innerText = bookName;
     bcBook.href = `kitab.html?book=${bookId}`;
   }
-  if (bcCurrent) bcCurrent.innerText = `Hadith ${hadithId}`;
+  if (bcCurrent) {
+    bcCurrent.innerText = chapterBreadcrumbText;
+    if (chapterObj) bcCurrent.href = `kitab.html?book=${bookId}&chapter=${chapterObj.chapter_number || 1}`;
+  }
   if (chapterMeta) chapterMeta.innerText = `${bookName} • Hadith #${hadithId}`;
 
-  const currentNum = parseInt(hadithId) || 1;
   if (prevBtn) {
     if (currentNum > 1) {
       prevBtn.href = `hadith.html?book=${bookId}&id=${currentNum - 1}`;
@@ -509,12 +531,18 @@ async function loadHadithDetail() {
               });
             }
           }
+
+          const rawiPrefix = isIdLang ? 'Perawi:' : 'Narrator:';
+
           if (previewNames.length > 0) {
+            // Companion (Primary narrator who heard directly from Prophet PBUH) is the LAST item in text order
+            const companionRawi = previewNames[previewNames.length - 1];
             if (sanadPreview) sanadPreview.innerText = previewNames.join(' → ') + ' → Prophet ﷺ';
-            if (rawiElem) rawiElem.innerText = `Narrator: ${previewNames[0]}`;
+            if (rawiElem) rawiElem.innerText = `${rawiPrefix} ${companionRawi}`;
           } else {
+            const defaultCompanion = isIdLang ? 'Sahabat' : 'Sahabi (Companion)';
             if (sanadPreview) sanadPreview.innerText = `Inspect Chain for ${bookName} #${item.hadith_number} → Prophet ﷺ`;
-            if (rawiElem) rawiElem.innerText = `Narrator: Sahabi (Companion)`;
+            if (rawiElem) rawiElem.innerText = `${rawiPrefix} ${defaultCompanion}`;
           }
         }
 
