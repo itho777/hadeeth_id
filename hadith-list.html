@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Sahih al-Bukhari — Book of Revelation Hadith list."/>
-  <title>Book of Revelation - Sahih al-Bukhari - HADEETH.ID</title>
+  <meta name="description" content="Explore Hadiths by chapter with interactive translation switcher, Isnads, and search."/>
+  <title>Hadith List - HADEETH.ID</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 <body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
 
 <!-- TOP APP BAR -->
-<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
+<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#334155] sticky top-0 z-50">
   <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
     <a href="index.html" class="flex items-center gap-2">
       <img src="assets/logo_light.jpg" alt="HADEETH.ID Logo" class="logo-light w-8 h-8 rounded-full object-cover"/>
@@ -56,31 +56,93 @@
   </div>
 </header>
 
-<main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8">
+<main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-6">
 
-  <!-- Breadcrumb -->
+  <!-- Dynamic Breadcrumb -->
   <div class="flex items-center gap-2 text-xs text-outline dark:text-gray-400">
     <a href="index.html" class="hover:underline">Home</a>
     <span>/</span>
     <a href="books.html" class="hover:underline">Books</a>
     <span>/</span>
-    <a href="kitab.html" class="hover:underline" data-list-breadcrumb-book>Sahih al-Bukhari</a>
+    <a href="kitab.html?book=bukhari" class="hover:underline" data-list-breadcrumb-book>Sahih al-Bukhari</a>
     <span>/</span>
     <span class="text-primary dark:text-white font-semibold" data-list-breadcrumb-current>Book 1: Revelation</span>
   </div>
 
-  <!-- Header -->
-  <div class="border-b border-outline-variant/30 dark:border-[#334155] pb-4 flex justify-between items-end">
-    <div>
-      <span class="text-xs font-semibold text-secondary dark:text-[#10b981]" data-list-chapter-meta>Book 1 of 97</span>
-      <h1 class="text-2xl font-bold text-primary dark:text-white" data-list-chapter-title-en>How Divine Revelation Started</h1>
+  <!-- Dynamic Header Banner -->
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 flex flex-col md:flex-row justify-between md:items-center gap-4 shadow-sm">
+    <div class="flex flex-col gap-1">
+      <div class="flex items-center gap-2">
+        <span class="bg-sunan-emerald text-white text-[11px] font-bold px-2.5 py-0.5 rounded uppercase tracking-wider" data-list-book-badge>Sahih al-Bukhari</span>
+        <span class="text-xs text-secondary dark:text-[#10b981] font-semibold" data-list-chapter-meta>Chapter 1</span>
+      </div>
+      <h1 class="text-2xl md:text-3xl font-bold text-primary dark:text-white" data-list-chapter-title-en>How Divine Revelation Started</h1>
+      <p class="text-xs text-outline dark:text-gray-400 mt-1" data-list-count-meta>Loading Hadiths count...</p>
     </div>
-    <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl" data-list-chapter-title-ar>كيف كان بدء الوحي</span>
+    <div class="text-right">
+      <span class="font-arabic-body text-2xl md:text-3xl text-secondary dark:text-[#10b981]" dir="rtl" data-list-chapter-title-ar>كيف كان بدء الوحي</span>
+    </div>
   </div>
 
-  <!-- Hadith Cards List -->
+  <!-- Filter & Search Controls Bar -->
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-4 flex flex-col lg:flex-row items-center justify-between gap-4 shadow-sm">
+    
+    <!-- Search Input & Scope Switcher -->
+    <div class="flex flex-col sm:flex-row items-center gap-2 w-full lg:w-auto flex-1">
+      <div class="relative w-full sm:flex-1">
+        <span class="material-symbols-outlined absolute left-3 top-2.5 text-outline dark:text-gray-400 text-sm">search</span>
+        <input type="text" id="chapter-search-input" placeholder="Search within chapter or type keyword..." class="w-full pl-9 pr-4 py-2 text-xs bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white focus:outline-none focus:border-secondary dark:focus:border-[#10b981]"/>
+      </div>
+      <div class="flex items-center gap-1 w-full sm:w-auto">
+        <span class="text-xs text-outline dark:text-gray-400 whitespace-nowrap">Scope:</span>
+        <select id="search-scope-select" class="w-full sm:w-auto px-3 py-2 text-xs bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-semibold">
+          <option value="chapter">This Chapter</option>
+          <option value="global">Global (All Books)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Translation Switcher & Page Size Selector -->
+    <div class="flex flex-wrap items-center gap-4 w-full lg:w-auto justify-between lg:justify-end border-t lg:border-t-0 pt-3 lg:pt-0 border-outline-variant/20 dark:border-[#334155]">
+      <!-- Default Translation Language -->
+      <div class="flex items-center gap-1.5 text-xs text-outline dark:text-gray-400">
+        <span>Translation:</span>
+        <select id="default-lang-select" class="px-2.5 py-1.5 text-xs bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-semibold">
+          <option value="id" selected>Bahasa Indonesia</option>
+          <option value="en">English</option>
+          <option value="both">Bilingual (EN + ID)</option>
+        </select>
+      </div>
+
+      <!-- Page Size Selector -->
+      <div class="flex items-center gap-1.5 text-xs text-outline dark:text-gray-400">
+        <span>Show per page:</span>
+        <select id="page-size-select" class="px-2.5 py-1.5 text-xs bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-semibold">
+          <option value="10" selected>10</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dynamic Hadiths Container -->
   <div id="hadith-cards-container" class="flex flex-col gap-6">
-    <!-- Dynamic Hadiths will be rendered here -->
+    <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
+      <span class="material-symbols-outlined animate-spin text-secondary dark:text-[#10b981] text-3xl">progress_activity</span>
+      <p class="mt-2 text-sm text-outline dark:text-gray-400">Loading authentic Hadith list...</p>
+    </div>
+  </div>
+
+  <!-- Dynamic Pagination Controls -->
+  <div id="pagination-container" class="flex justify-between items-center bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-4 text-xs font-semibold shadow-sm">
+    <button id="prev-page-btn" class="px-4 py-2 bg-surface-container-high dark:bg-[#0f172a] rounded-lg text-primary dark:text-white hover:opacity-80 disabled:opacity-40 disabled:pointer-events-none flex items-center gap-1">
+      &larr; Previous
+    </button>
+    <span id="page-indicator" class="text-outline dark:text-gray-400">Page 1 of 1</span>
+    <button id="next-page-btn" class="px-4 py-2 bg-surface-container-high dark:bg-[#0f172a] rounded-lg text-primary dark:text-white hover:opacity-80 disabled:opacity-40 disabled:pointer-events-none flex items-center gap-1">
+      Next &rarr;
+    </button>
   </div>
 </main>
 
@@ -89,6 +151,6 @@
 </footer>
 
 <script src="js/api.js"></script>
-<script src="js/app.js"></script>
+<script src="js/app.js?v=20260807_3"></script>
 </body>
 </html>

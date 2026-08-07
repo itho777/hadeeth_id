@@ -345,10 +345,9 @@ async function loadHadithDetail() {
   if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${hadithId}`;
   if (sanadPreview) sanadPreview.innerText = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
 }
-}
 
 /**
- * Load Hadith List Page Dynamic from URL params (?book=bukhari&chapter=1)
+ * Load Hadith List Page Dynamic with Full Filtering, Pagination & Language Switcher
  */
 async function loadHadithList() {
   const container = document.getElementById('hadith-cards-container');
@@ -371,72 +370,267 @@ async function loadHadithList() {
   };
   const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
 
-  // Update Breadcrumb & Header Title
+  // Elements
   const bcBook = document.querySelector('[data-list-breadcrumb-book]');
   const bcCurrent = document.querySelector('[data-list-breadcrumb-current]');
+  const bookBadge = document.querySelector('[data-list-book-badge]');
   const chMeta = document.querySelector('[data-list-chapter-meta]');
+  const countMeta = document.querySelector('[data-list-count-meta]');
   const chTitleEn = document.querySelector('[data-list-chapter-title-en]');
   const chTitleAr = document.querySelector('[data-list-chapter-title-ar]');
+
+  const searchInput = document.getElementById('chapter-search-input');
+  const scopeSelect = document.getElementById('search-scope-select');
+  const langSelect = document.getElementById('default-lang-select');
+  const pageSizeSelect = document.getElementById('page-size-select');
+  const prevBtn = document.getElementById('prev-page-btn');
+  const nextBtn = document.getElementById('next-page-btn');
+  const pageIndicator = document.getElementById('page-indicator');
+
+  // Fetch Chapter Metadata if available
+  let chapterTitleNameEn = `Chapter ${chapterId}`;
+  let chapterTitleNameAr = `باب رقم ${chapterId}`;
+  try {
+    const chapters = await window.HadeethAPI.getChapters(bookId);
+    if (chapters && chapters.length >= parseInt(chapterId)) {
+      const chInfo = chapters[parseInt(chapterId) - 1];
+      if (chInfo.name_en) chapterTitleNameEn = chInfo.name_en;
+      if (chInfo.name_ar) chapterTitleNameAr = chInfo.name_ar;
+    }
+  } catch (err) {
+    console.warn('Chapter meta load error:', err);
+  }
 
   if (bcBook) {
     bcBook.innerText = bookName;
     bcBook.href = `kitab.html?book=${bookId}`;
   }
-  if (bcCurrent) bcCurrent.innerText = `Chapter ${chapterId}`;
-  if (chMeta) chMeta.innerText = `${bookName} • Chapter #${chapterId}`;
-  if (chTitleEn) chTitleEn.innerText = `${bookName} — Chapter ${chapterId}`;
-  if (chTitleAr) chTitleAr.innerText = `باب رقم ${chapterId}`;
+  if (bcCurrent) bcCurrent.innerText = `Kitab ${chapterId}: ${chapterTitleNameEn}`;
+  if (bookBadge) bookBadge.innerText = bookName;
+  if (chMeta) chMeta.innerText = `Chapter ${chapterId}`;
+  if (chTitleEn) chTitleEn.innerText = chapterTitleNameEn;
+  if (chTitleAr) chTitleAr.innerText = chapterTitleNameAr;
 
-  // Fetch Hadiths from Supabase for this book
+  // Local state
+  let allHadiths = [];
+  let filteredHadiths = [];
+  let currentPage = 1;
+  let pageSize = parseInt(pageSizeSelect ? pageSizeSelect.value : '10') || 10;
+  let currentLang = langSelect ? langSelect.value : 'id';
+  let searchScope = scopeSelect ? scopeSelect.value : 'chapter';
+
+  // Fetch Hadiths from Supabase
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
 
   try {
-    const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?book_id=eq.${bookId}&select=*&order=hadith_number.asc&limit=30`, {
+    const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?book_id=eq.${bookId}&select=*&order=hadith_number.asc&limit=100`, {
       headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
     });
 
     if (res.ok) {
-      const data = await res.json();
-      if (data && data.length > 0) {
-        let html = '';
-        data.forEach(item => {
-          const idText = item.text_id || item.text_en || '';
-          const snippetId = idText.length > 250 ? idText.substring(0, 250) + '...' : idText;
-          const isnadLink = `sanad.html?book=${bookId}&id=${item.hadith_number}`;
-          const detailLink = `hadith.html?book=${bookId}&id=${item.hadith_number}`;
-
-          html += `
-            <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4 shadow-sm">
-              <div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-3">
-                <div class="flex items-center gap-2">
-                  <span class="bg-sunan-emerald text-white text-xs font-bold px-2.5 py-0.5 rounded uppercase">${escapeHtml(bookName)} #${item.hadith_number}</span>
-                  <span class="text-xs font-semibold text-secondary dark:text-[#10b981]">${escapeHtml(item.grade || 'Sahih')}</span>
-                </div>
-                <a href="${detailLink}" class="text-xs font-bold text-sunan-emerald dark:text-[#10b981] hover:underline flex items-center gap-1">
-                  Full Hadith &rarr;
-                </a>
-              </div>
-              ${item.text_ar ? `<p class="font-arabic-body text-xl text-primary dark:text-white text-right leading-loose" dir="rtl">${escapeHtml(item.text_ar)}</p>` : ''}
-              <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed">${escapeHtml(snippetId)}</p>
-              <div class="flex justify-between items-center pt-3 border-t border-outline-variant/10 dark:border-[#334155] text-xs">
-                <a href="${isnadLink}" class="text-secondary dark:text-[#10b981] font-semibold hover:underline flex items-center gap-1">
-                  <span class="material-symbols-outlined text-sm">account_tree</span> Inspect Sanad Chain
-                </a>
-                <a href="${detailLink}" class="text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors">
-                  View Detail
-                </a>
-              </div>
-            </div>
-          `;
-        });
-        container.innerHTML = html;
-        return;
-      }
+      allHadiths = await res.json();
     }
   } catch (err) {
-    console.warn('Load hadith list error:', err);
+    console.warn('Fetch hadiths REST error:', err);
   }
+
+  // Fallback to CDN edition if REST returns empty
+  if (!allHadiths || allHadiths.length === 0) {
+    try {
+      const [engEd, araEd, indEd] = await Promise.all([
+        window.HadeethAPI.getEdition('eng', bookId),
+        window.HadeethAPI.getEdition('ara', bookId),
+        window.HadeethAPI.getEdition('ind', bookId)
+      ]);
+      if (engEd && engEd.hadiths) {
+        const araMap = {};
+        const indMap = {};
+        if (araEd && araEd.hadiths) araEd.hadiths.forEach(h => araMap[h.hadithnumber] = h.text);
+        if (indEd && indEd.hadiths) indEd.hadiths.forEach(h => indMap[h.hadithnumber] = h.text);
+
+        allHadiths = engEd.hadiths.map(h => ({
+          hadith_number: h.hadithnumber,
+          text_en: h.text,
+          text_ar: araMap[h.hadithnumber] || '',
+          text_id: indMap[h.hadithnumber] || '',
+          grade: 'Sahih',
+          book_id: bookId
+        }));
+      }
+    } catch (e) {
+      console.warn('Fallback CDN load error:', e);
+    }
+  }
+
+  filteredHadiths = [...allHadiths];
+  if (countMeta) countMeta.innerText = `Total ${allHadiths.length} Ahadith in ${bookName} Chapter ${chapterId}`;
+
+  // Render Function
+  function renderList() {
+    if (!filteredHadiths || filteredHadiths.length === 0) {
+      container.innerHTML = `
+        <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
+          <span class="material-symbols-outlined text-outline dark:text-gray-500 text-4xl">search_off</span>
+          <h3 class="mt-2 font-bold text-primary dark:text-white">No Hadiths found</h3>
+          <p class="text-xs text-outline dark:text-gray-400 mt-1">Try clearing your search query or changing search scope.</p>
+        </div>
+      `;
+      if (pageIndicator) pageIndicator.innerText = `0 of 0`;
+      if (prevBtn) prevBtn.disabled = true;
+      if (nextBtn) nextBtn.disabled = true;
+      return;
+    }
+
+    const totalPages = Math.ceil(filteredHadiths.length / pageSize);
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const startIdx = (currentPage - 1) * pageSize;
+    const endIdx = Math.min(startIdx + pageSize, filteredHadiths.length);
+    const pageItems = filteredHadiths.slice(startIdx, endIdx);
+
+    let html = '';
+    pageItems.forEach((item, idx) => {
+      const num = item.hadith_number || (startIdx + idx + 1);
+      const enText = item.text_en || '';
+      const arText = item.text_ar || '';
+      const idText = item.text_id || enText;
+      const grade = item.grade || 'Sahih';
+
+      const isnadLink = `sanad.html?book=${bookId}&id=${num}`;
+      const detailLink = `hadith.html?book=${bookId}&id=${num}`;
+
+      let displayText = '';
+      if (currentLang === 'id') {
+        displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${escapeHtml(idText)}</p>`;
+      } else if (currentLang === 'en') {
+        displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${escapeHtml(enText)}</p>`;
+      } else {
+        displayText = `
+          <div class="flex flex-col gap-3 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
+            <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${escapeHtml(idText)}</p>
+            <p class="text-xs text-outline dark:text-gray-400 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${escapeHtml(enText)}</p>
+          </div>
+        `;
+      }
+
+      html += `
+        <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4 shadow-sm hover:border-secondary/40 dark:hover:border-[#10b981]/40 transition-all">
+          <div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-3">
+            <div class="flex items-center gap-2">
+              <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded uppercase">${escapeHtml(bookName)} #${num}</span>
+              <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2.5 py-0.5 rounded">${escapeHtml(grade)}</span>
+            </div>
+            <a href="${detailLink}" class="text-xs font-bold text-sunan-emerald dark:text-[#10b981] hover:underline flex items-center gap-1">
+              Read Detail &rarr;
+            </a>
+          </div>
+
+          ${arText ? `<p class="font-arabic-body text-2xl text-primary dark:text-white text-right leading-loose" dir="rtl">${escapeHtml(arText)}</p>` : ''}
+          ${displayText}
+
+          <div class="flex justify-between items-center pt-3 border-t border-outline-variant/10 dark:border-[#334155] text-xs">
+            <a href="${isnadLink}" class="text-secondary dark:text-[#10b981] font-semibold hover:underline flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">account_tree</span> Inspect Sanad Chain
+            </a>
+            <div class="flex items-center gap-2">
+              <a href="${detailLink}" class="text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors">
+                Full Hadith & Commentary &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+    container.innerHTML = html;
+
+    // Update Pagination UI
+    if (pageIndicator) pageIndicator.innerText = `Showing ${startIdx + 1}–${endIdx} of ${filteredHadiths.length} Ahadith (Page ${currentPage} of ${totalPages})`;
+    if (prevBtn) prevBtn.disabled = (currentPage <= 1);
+    if (nextBtn) nextBtn.disabled = (currentPage >= totalPages);
+  }
+
+  // Filter/Search Logic
+  async function performFilter() {
+    const q = (searchInput ? searchInput.value : '').trim().toLowerCase();
+    searchScope = scopeSelect ? scopeSelect.value : 'chapter';
+
+    if (!q) {
+      filteredHadiths = [...allHadiths];
+    } else if (searchScope === 'global') {
+      if (window.HadeethAPI) {
+        const results = await window.HadeethAPI.search(q, 50);
+        filteredHadiths = results.map(r => ({
+          hadith_number: r.hadith_number || r.id,
+          text_en: r.primary_translation || r.english_text || '',
+          text_ar: r.arabic_text || '',
+          text_id: r.indonesian_text || r.primary_translation || '',
+          grade: r.grade || 'Sahih',
+          book_id: r.book_slug || 'bukhari'
+        }));
+      }
+    } else {
+      // Chapter filter
+      filteredHadiths = allHadiths.filter(h => {
+        const numStr = String(h.hadith_number || '');
+        const ar = (h.text_ar || '').toLowerCase();
+        const en = (h.text_en || '').toLowerCase();
+        const id = (h.text_id || '').toLowerCase();
+        return numStr === q || ar.includes(q) || en.includes(q) || id.includes(q);
+      });
+    }
+
+    currentPage = 1;
+    renderList();
+  }
+
+  // Event Listeners
+  if (searchInput) {
+    searchInput.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') performFilter();
+    });
+  }
+  if (scopeSelect) scopeSelect.addEventListener('change', performFilter);
+
+  if (langSelect) {
+    langSelect.addEventListener('change', () => {
+      currentLang = langSelect.value;
+      renderList();
+    });
+  }
+
+  if (pageSizeSelect) {
+    pageSizeSelect.addEventListener('change', () => {
+      pageSize = parseInt(pageSizeSelect.value) || 10;
+      currentPage = 1;
+      renderList();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        renderList();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const totalPages = Math.ceil(filteredHadiths.length / pageSize);
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderList();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  renderList();
 }
 
 /**
