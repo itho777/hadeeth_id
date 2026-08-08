@@ -1617,6 +1617,9 @@ async function loadSanadChain() {
 
   // Canonical Rawi Dictionary with complete 7 Rijal Metadata attributes & EN/ID transliterations
   const rawiDict = [
+    { key: 'عَبْدِ اللَّهِ بْنِ دِينَار', rawi_id: 'rawi_abdullah_bin_dinar', en: "Abdullah bin Dinar", id: "Abdullah bin Dinar", role: "Transmitter (Rawi) • Grade: Thiqah", ar: "عبد الله بن دينار", is_sahabi: false, kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "127 AH (745 CE)", counts: "Bukhari: 180 | Muslim: 160", remarks: "Ibn Hajar: Thiqah Mutqin | Imam al-Bukhari: Thiqah" },
+    { key: 'إِسْمَاعِيلُ بْنُ جَعْفَر', rawi_id: 'rawi_ismail_bin_jafar', en: "Isma'il bin Ja'far", id: "Ismail bin Ja'far", role: "Transmitter (Rawi) • Grade: Thiqah", ar: "إسماعيل بن جعفر", is_sahabi: false, kunyah: "Abu Ishaq", residence: "Madinah / Baghdad", death_ah: "180 AH (796 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Yahya bin Ma'in: Thiqah" },
+    { key: 'سُلَيْمَانُ بْنُ حَرْب', rawi_id: 'rawi_sulaiman_bin_harb', en: "Sulaiman bin Harb", id: "Sulaiman bin Harb", role: "Direct Sheikh of Bukhari • Grade: Thiqah", ar: "سليمان بن حرب", is_sahabi: false, kunyah: "Abu Ayyub", residence: "Basra / Makkah", death_ah: "224 AH (839 CE)", counts: "Bukhari: 145", remarks: "Ibn Hajar: Thiqah Imam Hafiz | Ahmad bin Hanbal: Thiqah Thabt" },
     { key: 'عَائِشَة', rawi_id: 'rawi_aisha_bint_abi_bakr', en: "'Aisha bint Abi Bakr (رضي الله عنها)", id: "Aisyah binti Abu Bakar ash-Shiddiq", role: "Sahabi (Companion) • Grade: Thiqah", ar: "عائشة بنت أبي بكر", is_sahabi: true, kunyah: "Umm Abdillah", residence: "Madinah", death_ah: "58 AH (678 CE)", counts: "Bukhari: 2420 | Muslim: 2210", remarks: "Ibn Hajar: Al-Faqiha Al-Hafiz | Al-Dhahabi: Ummu al-Mu'minin" },
     { key: 'عُمَر', rawi_id: 'rawi_umar_ibn_al_khattab', en: "'Umar bin Al-Khattab (رضي الله عنه)", id: "Umar bin al-Khaththab", role: "Sahabi (Companion) • Grade: Thiqah", ar: "عمر بن الخطاب", is_sahabi: true, kunyah: "Abu Hafsh", residence: "Madinah", death_ah: "23 AH (644 CE)", counts: "Bukhari: 537 | Muslim: 450", remarks: "Ibn Hajar: Amir al-Mu'minin Al-Farooq | Al-Dhahabi: Al-Imam Al-Adl" },
     { key: 'أَبِي هُرَيْرَة', rawi_id: 'rawi_abu_hurairah', en: "Abu Hurairah (رضي الله عنه)", id: "Abu Hurairah radliallahu 'anhu", role: "Sahabi (Companion) • Grade: Thiqah", ar: "أبو هريرة", is_sahabi: true, kunyah: "Abu Hurairah", residence: "Madinah / Bahrain", death_ah: "57 AH (678 CE)", counts: "Bukhari: 5374 | Muslim: 4000", remarks: "Ibn Hajar: Sayyid al-Huffaz | Al-Dhahabi: Al-Hafiz Al-Adl" },
@@ -1939,6 +1942,10 @@ function getArabicScriptForRawi(latinOrAr) {
   const lower = clean.toLowerCase();
 
   const map = {
+    "abdullah bin dinar": "عبد الله بن دينار",
+    "ismail bin jafar": "إسماعيل بن جعفر",
+    "ismail bin ja'far": "إسماعيل بن جعفر",
+    "sulaiman bin harb": "سليمان بن حرب",
     "atho bin yasar": "عطاء بن يسار",
     "atho' bin yasar": "عطاء بن يسار",
     "ata bin yasar": "عطاء بن يسار",
@@ -2041,6 +2048,12 @@ function getArabicScriptForRawi(latinOrAr) {
     'suhayb': 'صهيب',
     'yasser': 'ياسر',
     'yasar': 'يسار',
+    'dinar': 'دينار',
+    'ismail': 'إسماعيل',
+    'jafar': 'جعفر',
+    'ja\'far': 'جعفر',
+    'sulaiman': 'سليمان',
+    'harb': 'حرب',
     'atho': 'عطاء',
     'ata': 'عطاء',
     'hilal': 'هلال',
