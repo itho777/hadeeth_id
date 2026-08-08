@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_46"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_47"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -24,7 +24,7 @@
             "on-surface":"#1c1c1a","musnad-indigo":"#311B92"
           },
           fontFamily: { "body-md":["Plus Jakarta Sans"],"arabic-body":["Amiri"],"arabic-display":["Amiri"] },
-          spacing: { "stack-sm":"0.5rem","content-width-max":"800px","margin-main":"2rem","stack-lg":"2rem" }
+          spacing: { "stack-sm":"0.5rem","content-width-max":"1200px","margin-main":"2rem","stack-lg":"2rem" }
         }
       }
     }
@@ -127,24 +127,48 @@
   </div>
 
   <!-- AUTHOR SPECIAL BOX -->
-  <div id="author-spec-box" class="hidden bg-gradient-to-r from-primary to-slate-900 text-white rounded-2xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-center gap-6 shadow-md border border-slate-700">
-    <div class="flex flex-col gap-2">
-      <span class="bg-[#10b981] text-black text-[10px] uppercase font-bold px-2.5 py-0.5 rounded self-start">Author & Collector Statistics</span>
-      <h2 class="text-xl font-bold">Compendiums Authored & Erudition</h2>
-      <p id="author-spec-desc" class="text-xs text-gray-300 max-w-lg">Imam al-Bukhari evaluated over 600,000 oral traditions with complete chains of narration over 16 years, selecting 7,563 authentic Hadiths for Sahih al-Bukhari.</p>
-    </div>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center shrink-0">
-      <div class="bg-white/10 p-3.5 rounded-xl backdrop-blur">
-        <span id="author-spec-memorized" class="text-2xl md:text-3xl font-bold text-[#10b981] block">600,000</span>
-        <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold">Hadiths Memorized & Examined</span>
+  <div id="author-spec-box" class="hidden bg-gradient-to-br from-primary via-[#0f172a] to-[#1e293b] text-white rounded-2xl p-6 md:p-8 shadow-md border border-slate-700/60 relative overflow-hidden">
+    <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-sunan-emerald/10 blur-3xl pointer-events-none"></div>
+
+    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 relative z-10">
+      <!-- Left text area -->
+      <div class="flex flex-col gap-2 max-w-xl">
+        <span class="bg-[#10b981] text-black text-[10px] uppercase font-extrabold px-3 py-1 rounded-md tracking-wider self-start">
+          <span data-lang-en>Author & Collector Statistics</span>
+          <span data-lang-id style="display:none">Statistik Kolektor & Penulis</span>
+        </span>
+        <h2 class="text-xl md:text-2xl font-bold tracking-tight text-white mt-1">
+          <span data-lang-en>Compendiums Authored & Erudition</span>
+          <span data-lang-id style="display:none">Karya Kitab & Keahlian Hadits</span>
+        </h2>
+        <p id="author-spec-desc" class="text-xs md:text-sm text-gray-300 leading-relaxed">
+          Imam al-Bukhari evaluated over 600,000 oral traditions with complete chains of narration over 16 years, selecting 7,563 authentic Hadiths for Sahih al-Bukhari.
+        </p>
       </div>
-      <div class="bg-white/10 p-3.5 rounded-xl backdrop-blur">
-        <span id="author-spec-compiled" class="text-2xl md:text-3xl font-bold text-[#10b981] block">7,563</span>
-        <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold">Sahih Hadiths Compiled</span>
-      </div>
-      <div class="bg-white/10 p-3.5 rounded-xl backdrop-blur col-span-2 md:col-span-1">
-        <span id="author-spec-books" class="text-2xl md:text-3xl font-bold text-[#10b981] block">3+</span>
-        <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold">Major Books Authored</span>
+
+      <!-- Right 3-box statistics grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 w-full lg:w-auto shrink-0">
+        <div class="bg-white/5 dark:bg-slate-800/40 p-4 rounded-xl border border-white/10 backdrop-blur-md flex flex-col justify-center items-center text-center min-w-[140px]">
+          <span id="author-spec-memorized" class="text-2xl md:text-3xl font-extrabold text-[#10b981] tracking-tight">600,000</span>
+          <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold mt-1">
+            <span data-lang-en>Hadiths Examined</span>
+            <span data-lang-id style="display:none">Hadits Diuji & Diteliti</span>
+          </span>
+        </div>
+        <div class="bg-white/5 dark:bg-slate-800/40 p-4 rounded-xl border border-white/10 backdrop-blur-md flex flex-col justify-center items-center text-center min-w-[140px]">
+          <span id="author-spec-compiled" class="text-2xl md:text-3xl font-extrabold text-[#10b981] tracking-tight">7,563</span>
+          <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold mt-1">
+            <span data-lang-en>Sahih Compiled</span>
+            <span data-lang-id style="display:none">Shahih Dihimpun</span>
+          </span>
+        </div>
+        <div class="bg-white/5 dark:bg-slate-800/40 p-4 rounded-xl border border-white/10 backdrop-blur-md flex flex-col justify-center items-center text-center min-w-[140px]">
+          <span id="author-spec-books" class="text-2xl md:text-3xl font-extrabold text-[#10b981] tracking-tight">3+</span>
+          <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold mt-1">
+            <span data-lang-en>Major Books</span>
+            <span data-lang-id style="display:none">Kitab Utama</span>
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -323,7 +347,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_46"></script>
+<script src="js/app.js?v=20260808_47"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
