@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_54"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_55"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -376,7 +376,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_54"></script>
+<script src="js/app.js?v=20260808_55"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -769,6 +769,17 @@
       }
 
       // ── Populate Multi-Source Biography Object for Tabs View ──
+      let enrichedSources = null;
+      try {
+        const resSources = await fetch('scratch/enriched_rijal_sources.json');
+        if (resSources.ok) {
+          const sMap = await resSources.json();
+          enrichedSources = sMap[rawi.id] || sMap[(rawi.id || '').toLowerCase()];
+        }
+      } catch (e) {}
+
+      const wikiFromEnriched = enrichedSources && enrichedSources.sources && enrichedSources.sources.wikipedia;
+
       window.bioSourcesData = {
         taqrib: {
           en: bioEnClean,
@@ -776,9 +787,9 @@
           ar: rawi.bio_ar
         },
         wikipedia: {
-          en: (rawi.wiki_en || (local ? local.bio : bioEnClean)),
-          id: (rawi.wiki_id || (local ? local.bio : bioIdClean)),
-          ar: (rawi.wiki_ar || rawi.bio_ar || '')
+          en: (wikiFromEnriched && wikiFromEnriched.en) || rawi.wiki_en || (local ? local.bio : bioEnClean),
+          id: (wikiFromEnriched && wikiFromEnriched.id) || rawi.wiki_id || (local ? local.bio : bioIdClean),
+          ar: (wikiFromEnriched && wikiFromEnriched.ar) || rawi.wiki_ar || rawi.bio_ar || ''
         },
         siyar: {
           en: (rawi.siyar_en || `${rawi.name_en} was recorded among verified Hadith transmitters in Siyar A'lam al-Nubala by Imam al-Dhahabi. Evaluated as ${rawi.grade || 'Thiqah (Trustworthy)'} under Isnad critical consensus.`),
