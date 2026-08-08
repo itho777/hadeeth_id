@@ -295,9 +295,14 @@
     </div>
 
     <!-- Hadith Pagination -->
-    <div id="hadith-pagination" class="hidden flex items-center justify-between pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
+    <div id="hadith-pagination" class="hidden flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
       <button id="hadith-prev-btn" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] text-primary dark:text-white hover:bg-outline-variant/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all">&larr; Prev</button>
-      <span id="hadith-page-indicator" class="text-xs text-outline dark:text-gray-400 font-semibold">Page 1 of 1</span>
+      <div class="flex items-center gap-2">
+        <span id="hadith-page-indicator" class="text-xs text-outline dark:text-gray-400 font-semibold">Page 1 of 1</span>
+        <span class="text-outline dark:text-gray-600">|</span>
+        <input type="number" id="hadith-jump-input" min="1" max="1" placeholder="1" class="w-12 px-2 py-1 text-center bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-bold text-xs focus:outline-none focus:border-secondary dark:focus:border-[#10b981]"/>
+        <button id="hadith-jump-btn" class="px-2.5 py-1 bg-secondary dark:bg-[#10b981] text-white dark:text-black font-bold rounded-lg text-xs hover:opacity-90 transition-all">Go</button>
+      </div>
       <button id="hadith-next-btn" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] text-primary dark:text-white hover:bg-outline-variant/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all">Next &rarr;</button>
     </div>
   </div>
@@ -573,27 +578,42 @@
           gridH.innerHTML = hHtml;
 
           // Pagination controls
+          const tp = totalHadithPages();
           if (pagination) {
-            if (totalHadithPages() > 1) {
-              pagination.classList.remove('hidden');
-            } else {
-              pagination.classList.add('hidden');
-            }
+            pagination.classList.toggle('hidden', tp <= 1);
           }
-          if (indicator) indicator.innerText = `Page ${hadithPage} of ${totalHadithPages()} · Showing ${start + 1}–${end} of ${hadithRows.length}`;
+          if (indicator) indicator.innerText = `Page ${hadithPage} of ${tp} · Showing ${start + 1}–${end} of ${hadithRows.length}`;
           if (prevBtn) prevBtn.disabled = (hadithPage <= 1);
-          if (nextBtn) nextBtn.disabled = (hadithPage >= totalHadithPages());
+          if (nextBtn) nextBtn.disabled = (hadithPage >= tp);
+          // keep jump input in sync
+          const ji = document.getElementById('hadith-jump-input');
+          if (ji) { ji.max = tp; ji.value = hadithPage; }
         }
 
-        // Wire Prev / Next buttons
+        // Wire Prev / Next / Jump buttons
         const hPrevBtn = document.getElementById('hadith-prev-btn');
         const hNextBtn = document.getElementById('hadith-next-btn');
+        const hJumpInput = document.getElementById('hadith-jump-input');
+        const hJumpBtn  = document.getElementById('hadith-jump-btn');
+        const scrollToGrid = () => document.getElementById('transmitted-hadiths-grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
         if (hPrevBtn) hPrevBtn.addEventListener('click', () => {
-          if (hadithPage > 1) { hadithPage--; renderHadithPage(); document.getElementById('transmitted-hadiths-grid').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+          if (hadithPage > 1) { hadithPage--; renderHadithPage(); scrollToGrid(); }
         });
         if (hNextBtn) hNextBtn.addEventListener('click', () => {
-          if (hadithPage < totalHadithPages()) { hadithPage++; renderHadithPage(); document.getElementById('transmitted-hadiths-grid').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+          if (hadithPage < totalHadithPages()) { hadithPage++; renderHadithPage(); scrollToGrid(); }
         });
+        function handleHadithJump() {
+          const val = parseInt(hJumpInput.value, 10);
+          if (!isNaN(val) && val >= 1 && val <= totalHadithPages()) {
+            hadithPage = val;
+            renderHadithPage();
+            scrollToGrid();
+          } else {
+            hJumpInput.value = hadithPage;
+          }
+        }
+        if (hJumpBtn)   hJumpBtn.addEventListener('click', handleHadithJump);
+        if (hJumpInput) hJumpInput.addEventListener('keydown', e => { if (e.key === 'Enter') handleHadithJump(); });
 
         renderHadithPage();
 
