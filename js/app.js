@@ -516,17 +516,14 @@ async function loadHadithDetail() {
     console.warn('Failed to load chapter info for detail breadcrumb:', e);
   }
 
-  let chapterBreadcrumbText = `Hadith #${hadithId}`;
-  if (chapterObj) {
-    chapterBreadcrumbText = isIdLang ? (chapterObj.title_id || chapterObj.title_en) : chapterObj.title_en;
-  }
-
   if (bcBook) {
     bcBook.innerText = bookName;
     bcBook.href = `kitab.html?book=${bookId}`;
   }
   if (bcCurrent) {
-    bcCurrent.innerText = chapterBreadcrumbText;
+    const titleEn = chapterObj ? (chapterObj.title_en || `Hadith #${hadithId}`) : `Hadith #${hadithId}`;
+    const titleId = chapterObj ? (chapterObj.title_id || titleEn) : `Hadits #${hadithId}`;
+    bcCurrent.innerHTML = `<span data-lang-en>${titleEn}</span><span data-lang-id style="${isIdLang ? '' : 'display:none'}">${titleId}</span>`;
     if (chapterObj) bcCurrent.href = `kitab.html?book=${bookId}&chapter=${chapterObj.chapter_number || 1}`;
   }
 
