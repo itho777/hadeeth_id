@@ -1798,12 +1798,20 @@ async function loadSanadChain() {
     const brackets = isnadPartId.match(/\[([^\]]+)\]/g);
     
     if (brackets && brackets.length > 0) {
-      const stopWords = new Set(['Al Qur\'an', 'Al-Qur\'an', 'Islam', 'Nabi', 'Rasulullah', 'Allah', 'bapaknya', 'bapakku']);
+      const stopWords = new Set([
+        'Al Qur\'an', 'Al-Qur\'an', 'Islam', 'Nabi', 'Rasulullah', 'Allah',
+        'ayahnya', 'ayahku', 'bapaknya', 'bapakku', 'ibunya', 'ibuku',
+        'pamanku', 'pamannya', 'kakeknya', 'kakekku', 'saudaranya', 'saudaraku',
+        'anaknya', 'anakku', 'suaminya', 'istrinya', 'budaknya', 'sahabat',
+        'sahabatnya', 'beliau', 'mereka', 'seseorang', 'lelaki', 'wanita',
+        'orang', 'orang tua', 'keluarga', 'kaum', 'umat'
+      ]);
       const extractedNames = [];
       
       brackets.forEach(b => {
         const name = b.replace(/[\[\]]/g, '').trim();
-        if (name && !stopWords.has(name) && name.length > 2) {
+        const norm = name.toLowerCase();
+        if (name && !stopWords.has(norm) && !stopWords.has(name) && name.length > 2) {
           extractedNames.push(name);
         }
       });
