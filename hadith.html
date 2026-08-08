@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_27"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_28"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -84,9 +84,14 @@
     <div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-4">
       <div>
         <div class="flex items-center gap-2">
-          <span class="text-xs font-semibold text-secondary dark:text-[#10b981]" data-hadith-chapter>Book 1: Revelation</span>
-          <span>•</span>
-          <span class="text-xs font-semibold text-primary dark:text-white" data-hadith-rawi>Narrator: 'Umar bin Al-Khattab (رضي الله عنه)</span>
+          <span class="text-xs font-semibold text-secondary dark:text-[#10b981]" data-hadith-chapter>
+            <span data-lang-en>Book 1: Revelation</span><span data-lang-id style="display:none">Bab 1: Wahyu</span>
+          </span>
+          <span>&bull;</span>
+          <span class="text-xs font-semibold text-primary dark:text-white" data-hadith-rawi>
+            <span data-lang-en>Narrator:</span><span data-lang-id style="display:none">Perawi:</span>
+            <span id="rawi-name-display">'Umar bin Al-Khattab (&#x631;&#x636;&#x64a; &#x627;&#x644;&#x644;&#x647; &#x639;&#x646;&#x647;)</span>
+          </span>
         </div>
         <h1 class="text-xl font-bold text-primary dark:text-white mt-1" data-hadith-title>Sahih al-Bukhari 1</h1>
       </div>
@@ -112,10 +117,13 @@
         <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">account_tree</span>
         <div>
           <span class="font-semibold text-sm text-primary dark:text-white block" data-i18n="chain_of_narrators">Chain of Narration (Sanad)</span>
-          <span data-sanad-preview class="text-xs text-outline dark:text-gray-400">Al-Humaydi &rarr; Sufyan &rarr; Yahya &rarr; Muhammad al-Taymi &rarr; Alqama &rarr; 'Umar (RA) &rarr; Prophet ﷺ</span>
+          <span data-sanad-preview class="text-xs text-outline dark:text-gray-400">Al-Humaydi &rarr; Sufyan &rarr; Yahya &rarr; Muhammad al-Taymi &rarr; Alqama &rarr; 'Umar (RA) &rarr; Prophet &#xfe70;</span>
         </div>
       </div>
-      <span class="text-xs font-bold text-secondary dark:text-[#10b981]">Inspect Sanad &rarr;</span>
+      <span class="text-xs font-bold text-secondary dark:text-[#10b981]">
+        <span data-lang-en>Inspect Sanad &rarr;</span>
+        <span data-lang-id style="display:none">Periksa Sanad &rarr;</span>
+      </span>
     </a>
 
     <!-- Translation Panels (Bilingual / CDN Fetcher ready) -->
@@ -155,9 +163,13 @@
 
     <!-- Sharh / Commentary Box -->
     <div class="bg-surface-container-low dark:bg-[#0f172a] p-6 rounded-lg border border-outline-variant/20 dark:border-[#334155]">
-      <h3 class="font-bold text-sm text-primary dark:text-white mb-2" data-i18n="scholarly_commentary">Scholarly Commentary (Sharh)</h3>
-      <p class="text-xs text-on-surface-variant dark:text-gray-400 leading-relaxed">
-        Imam al-Shafi'i stated: "This Hadith is one-third of all Islamic knowledge, and enters into 70 different chapters of Fiqh." Imam al-Bukhari deliberately placed this narration as the very first Hadith in his Sahih to remind every seeker of knowledge to purify their intentions solely for Allah.
+      <h3 class="font-bold text-sm text-primary dark:text-white mb-2">
+        <span data-lang-en>Scholarly Commentary (Sharh)</span>
+        <span data-lang-id style="display:none">Syarah Hadits</span>
+      </h3>
+      <p class="text-xs text-on-surface-variant dark:text-gray-400 leading-relaxed" id="sharh-text">
+        <span data-lang-en>Imam al-Shafi'i stated: &ldquo;This Hadith is one-third of all Islamic knowledge, and enters into 70 different chapters of Fiqh.&rdquo; Imam al-Bukhari deliberately placed this narration as the very first Hadith in his Sahih to remind every seeker of knowledge to purify their intentions solely for Allah.</span>
+        <span data-lang-id style="display:none">Imam asy-Syafi&lsquo;i menyatakan: &ldquo;Hadits ini adalah sepertiga dari seluruh ilmu Islam dan masuk ke dalam 70 bab fikih.&rdquo; Imam al-Bukhari sengaja meletakkan hadits ini sebagai hadits pertama dalam Shahih-nya untuk mengingatkan setiap penuntut ilmu agar memurnikan niatnya hanya karena Allah.</span>
       </p>
     </div>
 
@@ -168,7 +180,72 @@
   <div><span data-i18n="footer_text">© 2024 HADEETH.ID - Digital Manuscript Preservation</span></div>
 </footer>
 
-<script src="js/api.js?v=20260808_27"></script>
-<script src="js/app.js?v=20260808_27"></script>
+<script src="js/api.js?v=20260808_28"></script>
+<script src="js/app.js?v=20260808_28"></script>
+
+<!-- Toast notification for Copy/Share -->
+<div id="share-toast" style="display:none;position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1B5E20;color:#fff;font-size:12px;font-weight:700;padding:10px 22px;border-radius:999px;z-index:9999;box-shadow:0 4px 24px rgba(0,0,0,.25);transition:opacity .3s"></div>
+
+<script>
+(function() {
+  // ── Copy / Share button ──
+  const copyBtn = document.querySelector('[data-copy-hadith]');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async () => {
+      const isId = (window.LangSystem && window.LangSystem.isIdMode());
+
+      // Build share text from visible content
+      const titleEl   = document.querySelector('[data-hadith-title]');
+      const arabicEl  = document.querySelector('[data-arabic-text]');
+      const translEl  = document.querySelector('[data-indonesian-text]') || document.querySelector('[data-english-text]');
+      const title     = titleEl   ? titleEl.innerText.trim()   : document.title;
+      const arabic    = arabicEl  ? arabicEl.innerText.trim()  : '';
+      const transl    = translEl  ? translEl.innerText.trim()  : '';
+      const url       = window.location.href;
+
+      const shareText = `${title}\n\n${arabic}\n\n${transl}\n\n${url}`;
+      const toastMsg  = isId ? 'Hadits disalin ke clipboard!' : 'Hadith copied to clipboard!';
+      const shareMsg  = isId ? 'Bagikan Hadits' : 'Share Hadith';
+
+      // Try native share sheet first (mobile)
+      if (navigator.share) {
+        try {
+          await navigator.share({ title: title, text: shareText, url: url });
+          return;
+        } catch(e) { /* user cancelled or not supported */ }
+      }
+
+      // Fallback: clipboard copy
+      try {
+        await navigator.clipboard.writeText(shareText);
+      } catch(e) {
+        // Last resort: execCommand
+        const ta = document.createElement('textarea');
+        ta.value = shareText;
+        ta.style.position = 'fixed';
+        ta.style.opacity  = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+
+      // Show toast
+      const toast = document.getElementById('share-toast');
+      if (toast) {
+        toast.textContent = toastMsg;
+        toast.style.display = 'block';
+        toast.style.opacity = '1';
+        setTimeout(() => { toast.style.opacity = '0'; setTimeout(() => { toast.style.display = 'none'; }, 300); }, 2000);
+      }
+    });
+  }
+
+  // ── Re-apply lang on language change ──
+  window.addEventListener('hadeeth_lang_change', () => {
+    if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+  });
+})();
+</script>
 </body>
 </html>
