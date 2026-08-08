@@ -479,6 +479,13 @@ async function loadHadithDetail() {
   const container = document.getElementById('hadith-detail-container');
   if (!container) return;
 
+  if (!window._hadithDetailLangListenerAttached) {
+    window._hadithDetailLangListenerAttached = true;
+    window.addEventListener('hadeeth_lang_change', () => {
+      loadHadithDetail();
+    });
+  }
+
   const bookNames = {
     bukhari: 'Sahih al-Bukhari',
     nawawi: 'Forty Nawawi',
@@ -557,7 +564,7 @@ async function loadHadithDetail() {
   const sanadPreview = container.querySelector('[data-sanad-preview]');
 
   if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${hadithId}`;
-  if (sanadPreview) sanadPreview.innerText = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
+  if (sanadPreview) sanadPreview.innerText = isIdLang ? `Periksa Silsilah ${bookName} #${hadithId} → Rasulullah ﷺ` : `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
 
   try {
     const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?id=eq.${bookId}_${hadithId}&select=id,hadith_number,text_ar,text_en,text_id,grade,book_id`, {
@@ -574,7 +581,7 @@ async function loadHadithDetail() {
         if (arabicElem) arabicElem.innerText = item.text_ar || '—';
         if (englishElem) englishElem.innerHTML = TafseerLinker.parse(item.text_en || '—');
         if (indonesianElem) indonesianElem.innerHTML = TafseerLinker.parse(item.text_id || '—');
-        if (titleElem) titleElem.innerText = `${bookName} Hadith #${item.hadith_number}`;
+        if (titleElem) titleElem.innerText = isIdLang ? `${bookName} Hadits #${item.hadith_number}` : `${bookName} Hadith #${item.hadith_number}`;
 
         if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${item.hadith_number}`;
 
@@ -612,25 +619,21 @@ async function loadHadithDetail() {
           }
 
           const rawiPrefix = isIdLang ? 'Perawi:' : 'Narrator:';
+          const prophetLabel = isIdLang ? 'Rasulullah ﷺ' : 'Prophet ﷺ';
 
           if (previewNames.length > 0) {
             // Companion (Primary narrator who heard directly from Prophet PBUH) is the LAST item in text order
             const companionRawi = previewNames[previewNames.length - 1];
-            if (sanadPreview) sanadPreview.innerText = previewNames.join(' → ') + ' → Prophet ﷺ';
+            if (sanadPreview) sanadPreview.innerText = previewNames.join(' → ') + ' → ' + prophetLabel;
             if (rawiElem) rawiElem.innerText = `${rawiPrefix} ${companionRawi}`;
           } else {
             const defaultCompanion = isIdLang ? 'Sahabat' : 'Sahabi (Companion)';
-            if (sanadPreview) sanadPreview.innerText = `Inspect Chain for ${bookName} #${item.hadith_number} → Prophet ﷺ`;
+            const inspectPrefix = isIdLang ? 'Periksa Silsilah' : 'Inspect Chain';
+            if (sanadPreview) sanadPreview.innerText = `${inspectPrefix} ${bookName} #${item.hadith_number} → ${prophetLabel}`;
             if (rawiElem) rawiElem.innerText = `${rawiPrefix} ${defaultCompanion}`;
           }
         }
 
-        if (!window._hadithDetailLangListenerAttached) {
-          window._hadithDetailLangListenerAttached = true;
-          window.addEventListener('hadeeth_lang_change', () => {
-            loadHadithDetail();
-          });
-        }
         return;
       }
     }
