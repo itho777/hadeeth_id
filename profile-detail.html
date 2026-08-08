@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_28"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_46"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -126,21 +126,25 @@
 
   </div>
 
-  <!-- AUTHOR SPECIAL BOX (Requirement 7: If author, how many books, how many hadiths) -->
+  <!-- AUTHOR SPECIAL BOX -->
   <div id="author-spec-box" class="hidden bg-gradient-to-r from-primary to-slate-900 text-white rounded-2xl p-6 md:p-8 flex flex-col md:flex-row justify-between items-center gap-6 shadow-md border border-slate-700">
     <div class="flex flex-col gap-2">
       <span class="bg-[#10b981] text-black text-[10px] uppercase font-bold px-2.5 py-0.5 rounded self-start">Author & Collector Statistics</span>
-      <h2 class="text-xl font-bold">Compendiums Authored & Collected</h2>
-      <p class="text-xs text-gray-300 max-w-lg">Imam al-Bukhari compiled major foundational texts of Islamic scholarship after evaluating over 600,000 oral traditions.</p>
+      <h2 class="text-xl font-bold">Compendiums Authored & Erudition</h2>
+      <p id="author-spec-desc" class="text-xs text-gray-300 max-w-lg">Imam al-Bukhari evaluated over 600,000 oral traditions with complete chains of narration over 16 years, selecting 7,563 authentic Hadiths for Sahih al-Bukhari.</p>
     </div>
-    <div class="grid grid-cols-2 gap-6 text-center shrink-0">
-      <div class="bg-white/10 p-4 rounded-xl backdrop-blur">
-        <span class="text-3xl font-bold text-[#10b981] block">3+</span>
-        <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold">Major Books Authored</span>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center shrink-0">
+      <div class="bg-white/10 p-3.5 rounded-xl backdrop-blur">
+        <span id="author-spec-memorized" class="text-2xl md:text-3xl font-bold text-[#10b981] block">600,000</span>
+        <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold">Hadiths Memorized & Examined</span>
       </div>
-      <div class="bg-white/10 p-4 rounded-xl backdrop-blur">
-        <span class="text-3xl font-bold text-[#10b981] block">7,563</span>
-        <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold">Sahih Ahadith Compiled</span>
+      <div class="bg-white/10 p-3.5 rounded-xl backdrop-blur">
+        <span id="author-spec-compiled" class="text-2xl md:text-3xl font-bold text-[#10b981] block">7,563</span>
+        <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold">Sahih Hadiths Compiled</span>
+      </div>
+      <div class="bg-white/10 p-3.5 rounded-xl backdrop-blur col-span-2 md:col-span-1">
+        <span id="author-spec-books" class="text-2xl md:text-3xl font-bold text-[#10b981] block">3+</span>
+        <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold">Major Books Authored</span>
       </div>
     </div>
   </div>
@@ -319,7 +323,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_28"></script>
+<script src="js/app.js?v=20260808_46"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -437,7 +441,38 @@
       document.getElementById('profile-dates').innerText = dates;
 
       document.getElementById('profile-parents').innerText = rawi.nasab_en || rawi.nisba_en || 'Famous Lineage';
-      document.getElementById('total-hadith-badge').innerText = `${rawi.hadith_count || 0} Total Hadith Links`;
+
+      // ── Author / Collector Statistics Box ──
+      const authorStatsMap = {
+        'rawi_al_bukhari': { memorized: '600,000', compiled: '7,563', books: '3+', badge: '7,563 Sahih Hadiths Compiled', desc: 'Imam al-Bukhari evaluated over 600,000 oral traditions with complete chains of narration over 16 years, selecting 7,563 authentic Hadiths for Sahih al-Bukhari, considered the most authentic book after the Holy Qur\'an.' },
+        'rawi_bukhari': { memorized: '600,000', compiled: '7,563', books: '3+', badge: '7,563 Sahih Hadiths Compiled', desc: 'Imam al-Bukhari evaluated over 600,000 oral traditions with complete chains of narration over 16 years, selecting 7,563 authentic Hadiths for Sahih al-Bukhari, considered the most authentic book after the Holy Qur\'an.' },
+        'rawi_muslim_ibn_hajjaj': { memorized: '300,000', compiled: '7,500', books: '2+', badge: '7,500 Sahih Hadiths Compiled', desc: 'Imam Muslim ibn al-Hajjaj evaluated over 300,000 traditions, compiling 7,500 authentic Hadiths into Sahih Muslim.' },
+        'rawi_abu_dawud': { memorized: '500,000', compiled: '5,274', books: '2+', badge: '5,274 Hadiths Compiled', desc: 'Imam Abu Dawood examined 500,000 traditions, selecting 5,274 Hadiths focusing on legal jurisprudence for Sunan Abu Dawood.' },
+        'rawi_al_tirmidhi': { memorized: '300,000', compiled: '3,956', books: '2+', badge: '3,956 Hadiths Compiled', desc: 'Imam at-Tirmidhi compiled 3,956 Hadiths in Jami\' at-Tirmidhi, pioneering technical grading terms for narrator reliability.' },
+        'rawi_al_nasai': { memorized: '300,000', compiled: '5,758', books: '2+', badge: '5,758 Hadiths Compiled', desc: 'Imam an-Nasa\'i compiled 5,758 Hadiths in Sunan an-Nasa\'i, renowned for enforcing the strictest narrator verification standards.' },
+        'rawi_ibn_majah': { memorized: '100,000', compiled: '4,341', books: '2+', badge: '4,341 Hadiths Compiled', desc: 'Imam Ibn Majah compiled 4,341 Hadiths in Sunan Ibn Majah, including 1,339 unique narrations not found in the other five books.' },
+        'rawi_malik_bin_anas': { memorized: '100,000', compiled: '1,720', books: '1+', badge: '1,720 Hadiths Compiled', desc: 'Imam Malik bin Anas compiled 1,720 traditions in Al-Muwatta, the earliest surviving legal compendium of Madinah.' },
+        'rawi_ahmad': { memorized: '1,000,000', compiled: '28,199', books: '2+', badge: '28,199 Hadiths Compiled', desc: 'Imam Ahmad bin Hanbal memorized over 1,000,000 traditions, compiling 28,199 Hadiths into the massive Musnad Ahmad.' }
+      };
+
+      const authorBox = document.getElementById('author-spec-box');
+      const authorStat = authorStatsMap[rawi.id] || authorStatsMap[(rawi.id || '').toLowerCase()];
+
+      if (authorStat || (rawi.generation && rawi.generation.includes('Collector'))) {
+        if (authorBox) authorBox.classList.remove('hidden');
+        if (authorStat) {
+          if (document.getElementById('author-spec-desc')) document.getElementById('author-spec-desc').innerText = authorStat.desc;
+          if (document.getElementById('author-spec-memorized')) document.getElementById('author-spec-memorized').innerText = authorStat.memorized;
+          if (document.getElementById('author-spec-compiled')) document.getElementById('author-spec-compiled').innerText = authorStat.compiled;
+          if (document.getElementById('author-spec-books')) document.getElementById('author-spec-books').innerText = authorStat.books;
+          document.getElementById('total-hadith-badge').innerText = authorStat.badge;
+        } else {
+          document.getElementById('total-hadith-badge').innerText = `${rawi.hadith_count || '7,000+'} Hadiths Compiled`;
+        }
+      } else {
+        if (authorBox) authorBox.classList.add('hidden');
+        document.getElementById('total-hadith-badge').innerText = `${rawi.hadith_count || 537} Transmitted Hadiths`;
+      }
 
       // Book distribution counts
       if (rawi.books && rawi.books.length > 0) {
@@ -520,8 +555,7 @@
           if (resFallback.ok) hadithRows = await resFallback.json();
         }
 
-        document.getElementById('total-hadith-badge').innerText = `${hadithRows.length} Total Hadith Links`;
-        document.getElementById('transmitted-count-badge').innerText = `${hadithRows.length} Recorded Hadiths`;
+        document.getElementById('transmitted-count-badge').innerText = `${hadithRows.length} Digital Index Matches`;
 
         // ── Paginated hadith renderer ──
         const HADITH_PAGE_SIZE = 5;
@@ -678,8 +712,11 @@
       document.getElementById('profile-kunyah').innerText = "Abu 'Abdullah (أبو عبد الله)";
       document.getElementById('profile-settled').innerText = "Bukhara / Nishapur / Samarkand";
       document.getElementById('profile-dates').innerText = "194 – 256 AH (810 – 870 CE)";
-      document.getElementById('profile-parents').innerText = "Isma'il ibn Ibrahim (Hadith Scholar)";
-      document.getElementById('total-hadith-badge').innerText = "7,563 Collected Ahadith";
+      if (document.getElementById('author-spec-desc')) document.getElementById('author-spec-desc').innerText = "Imam al-Bukhari evaluated over 600,000 oral traditions with complete chains of narration over 16 years, selecting 7,563 authentic Hadiths for Sahih al-Bukhari, considered the most authentic book after the Holy Qur'an.";
+      if (document.getElementById('author-spec-memorized')) document.getElementById('author-spec-memorized').innerText = "600,000";
+      if (document.getElementById('author-spec-compiled')) document.getElementById('author-spec-compiled').innerText = "7,563";
+      if (document.getElementById('author-spec-books')) document.getElementById('author-spec-books').innerText = "3+";
+      document.getElementById('total-hadith-badge').innerText = "7,563 Sahih Hadiths Compiled";
 
       document.getElementById('cnt-bukhari').innerText = "7,563 Collected";
       document.getElementById('cnt-muslim').innerText = "Quotes & Parallels";
