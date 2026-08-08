@@ -504,8 +504,10 @@ async function loadHadithDetail() {
 
   // Elements
   const bcBook = document.querySelector('[data-breadcrumb-book]');
-  const bcCurrent = document.querySelector('[data-breadcrumb-current]');
-  const chapterMeta = document.querySelector('[data-hadith-chapter]');
+  const bcCurrentEn = document.querySelector('[data-breadcrumb-current-en]');
+  const bcCurrentId = document.querySelector('[data-breadcrumb-current-id]');
+  const chapterMetaEn = document.querySelector('[data-hadith-chapter-en]');
+  const chapterMetaId = document.querySelector('[data-hadith-chapter-id]');
   const prevBtn = document.getElementById('prev-hadith-btn');
   const nextBtn = document.getElementById('next-hadith-btn');
 
@@ -526,22 +528,19 @@ async function loadHadithDetail() {
     bcBook.innerText = bookName;
     bcBook.href = `kitab.html?book=${bookId}`;
   }
-  if (bcCurrent) {
-    const titleEn = chapterObj ? (chapterObj.title_en || `Hadith #${hadithId}`) : `Hadith #${hadithId}`;
-    const titleId = chapterObj ? (chapterObj.title_id || titleEn) : `Hadits #${hadithId}`;
-    bcCurrent.innerHTML = `<span data-lang-en>${titleEn}</span><span data-lang-id>${titleId}</span>`;
-    if (chapterObj) bcCurrent.href = `kitab.html?book=${bookId}&chapter=${chapterObj.chapter_number || 1}`;
-  }
+
+  const titleTextEn = chapterObj ? (chapterObj.title_en || `Hadith #${hadithId}`) : `Hadith #${hadithId}`;
+  const titleTextId = chapterObj ? (chapterObj.title_id || titleTextEn) : `Hadits #${hadithId}`;
+
+  if (bcCurrentEn) bcCurrentEn.innerText = titleTextEn;
+  if (bcCurrentId) bcCurrentId.innerText = titleTextId;
 
   const chNum = chapterObj ? (chapterObj.chapter_number || '') : '';
-  const enCh = chNum ? `Chapter ${chNum}` : bookName;
-  const idCh = chNum ? `Bab ${chNum}` : bookName;
-  const enHd = `Hadith #${hadithId}`;
-  const idHd = `Hadits #${hadithId}`;
+  const enCh = chNum ? `Book ${chNum}: ${titleTextEn}` : bookName;
+  const idCh = chNum ? `Bab ${chNum}: ${titleTextId}` : bookName;
 
-  if (chapterMeta) {
-    chapterMeta.innerHTML = `<span data-lang-en>${enCh} &bull; ${enHd}</span><span data-lang-id>${idCh} &bull; ${idHd}</span>`;
-  }
+  if (chapterMetaEn) chapterMetaEn.innerText = enCh;
+  if (chapterMetaId) chapterMetaId.innerText = idCh;
 
   if (prevBtn) {
     if (currentNum > 1) {
@@ -562,18 +561,17 @@ async function loadHadithDetail() {
   const arabicElem = container.querySelector('[data-arabic-text]');
   const englishElem = container.querySelector('[data-english-text]');
   const indonesianElem = container.querySelector('[data-indonesian-text]');
-  const titleElem = container.querySelector('[data-hadith-title]');
-  const rawiElem = container.querySelector('[data-hadith-rawi]');
+  const titleEn = container.querySelector('[data-hadith-title-en]');
+  const titleId = container.querySelector('[data-hadith-title-id]');
+  const rawiEn = container.querySelector('[data-hadith-rawi-en]');
+  const rawiId = container.querySelector('[data-hadith-rawi-id]');
   const sanadLink = container.querySelector('[data-sanad-link]');
-  const sanadPreview = container.querySelector('[data-sanad-preview]');
+  const sanadPreviewEn = container.querySelector('[data-sanad-preview-en]');
+  const sanadPreviewId = container.querySelector('[data-sanad-preview-id]');
 
   if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${hadithId}`;
-  if (sanadPreview) {
-    sanadPreview.innerHTML = `
-      <span data-lang-en>Inspect Chain for ${bookName} #${hadithId} &rarr; Prophet ﷺ</span>
-      <span data-lang-id>Periksa Silsilah untuk ${bookName} #${hadithId} &rarr; Rasulullah ﷺ</span>
-    `;
-  }
+  if (sanadPreviewEn) sanadPreviewEn.innerText = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
+  if (sanadPreviewId) sanadPreviewId.innerText = `Periksa Silsilah untuk ${bookName} #${hadithId} → Rasulullah ﷺ`;
 
   try {
     const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?id=eq.${bookId}_${hadithId}&select=id,hadith_number,text_ar,text_en,text_id,grade,book_id`, {
@@ -591,12 +589,8 @@ async function loadHadithDetail() {
         if (englishElem) englishElem.innerHTML = TafseerLinker.parse(item.text_en || '—');
         if (indonesianElem) indonesianElem.innerHTML = TafseerLinker.parse(item.text_id || '—');
 
-        if (titleElem) {
-          titleElem.innerHTML = `
-            <span data-lang-en>${bookName} Hadith #${item.hadith_number}</span>
-            <span data-lang-id>${bookName} Hadits #${item.hadith_number}</span>
-          `;
-        }
+        if (titleEn) titleEn.innerText = `${bookName} Hadith #${item.hadith_number}`;
+        if (titleId) titleId.innerText = `${bookName} Hadits #${item.hadith_number}`;
 
         if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${item.hadith_number}`;
 
@@ -617,7 +611,7 @@ async function loadHadithDetail() {
           });
         });
 
-        if (sanadPreview || rawiElem) {
+        if (sanadPreviewEn || sanadPreviewId || rawiEn || rawiId) {
           let previewNames = [];
           if (item.text_id) {
             const isnadPartId = item.text_id.split(/beliau\s+bersabda\s*:|berfirman\s*:|berkata\s*:|tentang\s+firman\s+Allah|bahwa\s+Rasulullah/i)[0] || item.text_id;
@@ -635,31 +629,15 @@ async function loadHadithDetail() {
 
           if (previewNames.length > 0) {
             const companionRawi = previewNames[previewNames.length - 1];
-            if (sanadPreview) {
-              sanadPreview.innerHTML = `
-                <span data-lang-en>${previewNames.join(' → ')} &rarr; Prophet ﷺ</span>
-                <span data-lang-id>${previewNames.join(' → ')} &rarr; Rasulullah ﷺ</span>
-              `;
-            }
-            if (rawiElem) {
-              rawiElem.innerHTML = `
-                <span data-lang-en>Narrator: ${companionRawi}</span>
-                <span data-lang-id>Perawi: ${companionRawi}</span>
-              `;
-            }
+            if (sanadPreviewEn) sanadPreviewEn.innerText = previewNames.join(' → ') + ' → Prophet ﷺ';
+            if (sanadPreviewId) sanadPreviewId.innerText = previewNames.join(' → ') + ' → Rasulullah ﷺ';
+            if (rawiEn) rawiEn.innerText = `Narrator: ${companionRawi}`;
+            if (rawiId) rawiId.innerText = `Perawi: ${companionRawi}`;
           } else {
-            if (sanadPreview) {
-              sanadPreview.innerHTML = `
-                <span data-lang-en>Inspect Chain for ${bookName} #${item.hadith_number} &rarr; Prophet ﷺ</span>
-                <span data-lang-id>Periksa Silsilah untuk ${bookName} #${item.hadith_number} &rarr; Rasulullah ﷺ</span>
-              `;
-            }
-            if (rawiElem) {
-              rawiElem.innerHTML = `
-                <span data-lang-en>Narrator: Sahabi (Companion)</span>
-                <span data-lang-id>Perawi: Sahabat</span>
-              `;
-            }
+            if (sanadPreviewEn) sanadPreviewEn.innerText = `Inspect Chain for ${bookName} #${item.hadith_number} → Prophet ﷺ`;
+            if (sanadPreviewId) sanadPreviewId.innerText = `Periksa Silsilah untuk ${bookName} #${item.hadith_number} → Rasulullah ﷺ`;
+            if (rawiEn) rawiEn.innerText = `Narrator: Sahabi (Companion)`;
+            if (rawiId) rawiId.innerText = `Perawi: Sahabat`;
           }
         }
 
