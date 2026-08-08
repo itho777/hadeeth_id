@@ -97,11 +97,10 @@ const UI_I18N = {
 };
 
 const LangSystem = {
-  SUPPORTED: ['en', 'id', 'both'],
-  get() { return localStorage.getItem('hadeeth_lang') || 'en'; },
+  SUPPORTED: ['en', 'id'],
+  get() { return localStorage.getItem('hadeeth_lang') || 'id'; },
   isIdMode() {
-    const l = this.get();
-    return l === 'id' || l === 'both';
+    return this.get() === 'id';
   },
   set(lang) {
     if (!this.SUPPORTED.includes(lang)) return;
@@ -110,7 +109,7 @@ const LangSystem = {
     window.dispatchEvent(new CustomEvent('hadeeth_lang_change', { detail: { lang } }));
   },
   translateUI(lang) {
-    const targetLang = (lang === 'both' || lang === 'id') ? 'id' : 'en';
+    const targetLang = (lang === 'id') ? 'id' : 'en';
     const dict = UI_I18N[targetLang] || UI_I18N.en;
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -125,19 +124,20 @@ const LangSystem = {
     });
   },
   apply(lang) {
-    document.documentElement.setAttribute('data-lang', lang);
+    const current = this.SUPPORTED.includes(lang) ? lang : 'id';
+    document.documentElement.setAttribute('data-lang', current);
     // Show/hide translation containers
     document.querySelectorAll('[data-lang-en]').forEach(el => {
-      el.style.display = (lang === 'en' || lang === 'both') ? '' : 'none';
+      el.style.display = (current === 'en') ? '' : 'none';
     });
     document.querySelectorAll('[data-lang-id]').forEach(el => {
-      el.style.display = (lang === 'id' || lang === 'both') ? '' : 'none';
+      el.style.display = (current === 'id') ? '' : 'none';
     });
     // Translate static UI elements
-    this.translateUI(lang);
+    this.translateUI(current);
     // Update active button state
     document.querySelectorAll('[data-lang-btn]').forEach(btn => {
-      btn.classList.toggle('lang-btn-active', btn.dataset.langBtn === lang);
+      btn.classList.toggle('lang-btn-active', btn.dataset.langBtn === current);
     });
   },
   init() {
@@ -178,36 +178,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const copyBtn = e.target.closest('[data-copy-hadith], .btn-copy-share');
     if (!copyBtn) return;
 
+    e.preventDefault();
+    e.stopPropagation();
+
     const isIdMode = (window.LangSystem && window.LangSystem.isIdMode());
     let shareText = '';
     let targetUrl = copyBtn.dataset.shareUrl || window.location.href;
 
-    if (copyBtn.dataset.copyHadithTextEn || copyBtn.dataset.copyHadithTextId) {
-      // From Hadith list card dataset attributes
-      const title = copyBtn.dataset.hadithTitle || 'hadeeth.id';
-      const ar = copyBtn.dataset.copyHadithAr || '';
-      const body = isIdMode ? (copyBtn.dataset.copyHadithTextId || copyBtn.dataset.copyHadithTextEn) : (copyBtn.dataset.copyHadithTextEn || copyBtn.dataset.copyHadithTextId);
-      const transLabel = isIdMode ? 'Terjemahan Indonesia:' : 'English Translation:';
-      const linkTagline = isIdMode ? 'Baca & Telusuri Sanad Selengkapnya di hadeeth.id:' : 'Read & Inspect Sanad Chain on hadeeth.id:';
+    const cardBox = copyBtn.closest('.bg-surface, .p-6, .p-5, div');
+    const title = copyBtn.dataset.hadithTitle || document.querySelector('[data-hadith-title]')?.innerText || cardBox?.querySelector('h3, span.bg-primary')?.innerText || 'hadeeth.id';
+    const ar = copyBtn.dataset.copyHadithAr || document.querySelector('[data-arabic-text]')?.innerText || cardBox?.querySelector('p[dir="rtl"]')?.innerText || '';
+    const idBody = copyBtn.dataset.copyHadithTextId || document.querySelector('[data-indonesian-text]')?.innerText || cardBox?.querySelector('p.text-sm')?.innerText || '';
+    const enBody = copyBtn.dataset.copyHadithTextEn || document.querySelector('[data-english-text]')?.innerText || cardBox?.querySelector('p.text-sm')?.innerText || idBody;
+    
+    const body = isIdMode ? (idBody || enBody) : (enBody || idBody);
+    const transLabel = isIdMode ? 'Terjemahan Indonesia:' : 'English Translation:';
+    const rawiElem = document.querySelector('[data-hadith-rawi]');
+    const rawi = rawiElem ? rawiElem.innerText.replace(/^(Narrator|Perawi):\s*/i, '') : '';
+    const rawiLabel = isIdMode ? 'Perawi:' : 'Narrator:';
+    const linkTagline = isIdMode ? 'Baca & Telusuri Sanad Selengkapnya di hadeeth.id:' : 'Read & Inspect Sanad Chain on hadeeth.id:';
 
-      shareText = `[${title}]\n\n${ar}\n\n${transLabel}\n"${body}"\n\n${linkTagline}\n${targetUrl}`;
-    } else {
-      // From Hadith detail page elements
-      const titleElem = document.querySelector('[data-hadith-title]');
-      const title = titleElem ? titleElem.innerText : 'hadeeth.id';
-      const ar = document.querySelector('[data-arabic-text]')?.innerText || '';
-      const ind = document.querySelector('[data-indonesian-text]')?.innerText || '';
-      const en = document.querySelector('[data-english-text]')?.innerText || '';
-      const rawiElem = document.querySelector('[data-hadith-rawi]');
-      const rawi = rawiElem ? rawiElem.innerText.replace(/^(Narrator|Perawi):\s*/i, '') : '';
+    shareText = `[${title}]\n\n${ar ? ar + '\n\n' : ''}${transLabel}\n"${body}"\n\n${rawi ? `${rawiLabel} ${rawi}\n\n` : ''}${linkTagline}\n${targetUrl}`;
 
-      const body = isIdMode ? (ind || en) : (en || ind);
-      const transLabel = isIdMode ? 'Terjemahan Indonesia:' : 'English Translation:';
-      const rawiLabel = isIdMode ? 'Perawi:' : 'Narrator:';
-      const linkTagline = isIdMode ? 'Baca & Telusuri Sanad Selengkapnya di hadeeth.id:' : 'Read & Inspect Sanad Chain on hadeeth.id:';
-
-      shareText = `[${title}]\n\n${ar}\n\n${transLabel}\n"${body}"\n\n${rawi ? `${rawiLabel} ${rawi}\n\n` : ''}${linkTagline}\n${targetUrl}`;
-    }
+    let success = false;
 
     if (navigator.share) {
       try {
@@ -216,20 +209,33 @@ document.addEventListener('DOMContentLoaded', () => {
           text: shareText,
           url: targetUrl
         });
-        return;
+        success = true;
       } catch (err) {
-        // Fallback to clipboard write
+        // Fallback to clipboard if native share sheet dismissed/unsupported
       }
     }
 
-    if (navigator.clipboard && navigator.clipboard.writeText) {
+    if (!success) {
       try {
-        await navigator.clipboard.writeText(shareText);
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(shareText);
+        } else {
+          const textarea = document.createElement('textarea');
+          textarea.value = shareText;
+          textarea.style.position = 'fixed';
+          textarea.style.opacity = '0';
+          document.body.appendChild(textarea);
+          textarea.focus();
+          textarea.select();
+          document.execCommand('copy');
+          document.body.removeChild(textarea);
+        }
+        
         const originalHtml = copyBtn.innerHTML;
-        copyBtn.innerText = isIdMode ? 'Tersalin!' : 'Copied!';
-        setTimeout(() => copyBtn.innerHTML = originalHtml, 2000);
+        copyBtn.innerHTML = `<span class="material-symbols-outlined text-[14px]">check</span> ${isIdMode ? 'Tersalin!' : 'Copied!'}`;
+        setTimeout(() => copyBtn.innerHTML = originalHtml, 2200);
       } catch (err) {
-        console.warn('Clipboard write failed:', err);
+        console.warn('Clipboard write error:', err);
       }
     }
   });
