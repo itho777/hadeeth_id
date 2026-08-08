@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_48"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_49"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -347,7 +347,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_48"></script>
+<script src="js/app.js?v=20260808_49"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -662,6 +662,99 @@
         document.getElementById('bio-stories-content').innerHTML = bioHtml;
       }
 
+      // ── Scholarly Evaluation (Jarh wa Ta'dil) Map ──
+      const evaluationsMap = {
+        'rawi_al_bukhari': [
+          { critic: 'Imam Ahmad ibn Hanbal', book: 'Tabaqat al-Hanabilah', quoteEn: 'Al-Bukhari is the peak of Hadith criticism. Earth has not produced anyone more knowledgeable in the hidden defects (\'Ilal) of Hadith than him.', quoteId: 'Al-Bukhari adalah puncak pengkritik hadits. Bumi tidak pernah melahirkan orang yang lebih alim tentang cacat tersembunyi (\'Ilal) hadits dibanding beliau.', verdictEn: 'Amir al-Mu\'minin fi al-Hadith', verdictId: 'Amirul Mukminin dalam Hadits' },
+          { critic: 'Imam al-Dhahabi', book: 'Siyar A\'lam al-Nubala', quoteEn: 'The undisputed Imam of Hadith scholars. His Sahih is unanimously accepted as the most authentic book after the Holy Qur\'an.', quoteId: 'Imam tak tertandingi dari para ulama hadits. Kitab Shahihnya disepakati secara konsensus sebagai kitab paling otentik setelah Al-Qur\'an.', verdictEn: 'Imam Hafiz Hujjah', verdictId: 'Imam Hafizh Hujjah' },
+          { critic: 'Imam at-Tirmidhi', book: 'Sunan at-Tirmidhi', quoteEn: 'I have not seen anyone in Iraq or Khorasan more knowledgeable in the causes of Hadith defects and chains than Muhammad ibn Isma\'il.', quoteId: 'Aku tidak pernah melihat di Irak maupun Khorasan orang yang lebih paham tentang ilmu cacat hadits dan sanad daripada Muhammad bin Ismail.', verdictEn: 'Master Sheikh', verdictId: 'Guru Utama' }
+        ],
+        'rawi_bukhari': [
+          { critic: 'Imam Ahmad ibn Hanbal', book: 'Tabaqat al-Hanabilah', quoteEn: 'Al-Bukhari is the peak of Hadith criticism. Earth has not produced anyone more knowledgeable in the hidden defects (\'Ilal) of Hadith than him.', quoteId: 'Al-Bukhari adalah puncak pengkritik hadits. Bumi tidak pernah melahirkan orang yang lebih alim tentang cacat tersembunyi (\'Ilal) hadits dibanding beliau.', verdictEn: 'Amir al-Mu\'minin fi al-Hadith', verdictId: 'Amirul Mukminin dalam Hadits' },
+          { critic: 'Imam al-Dhahabi', book: 'Siyar A\'lam al-Nubala', quoteEn: 'The undisputed Imam of Hadith scholars. His Sahih is unanimously accepted as the most authentic book after the Holy Qur\'an.', quoteId: 'Imam tak tertandingi dari para ulama hadits. Kitab Shahihnya disepakati secara konsensus sebagai kitab paling otentik setelah Al-Qur\'an.', verdictEn: 'Imam Hafiz Hujjah', verdictId: 'Imam Hafizh Hujjah' },
+          { critic: 'Imam at-Tirmidhi', book: 'Sunan at-Tirmidhi', quoteEn: 'I have not seen anyone in Iraq or Khorasan more knowledgeable in the causes of Hadith defects and chains than Muhammad ibn Isma\'il.', quoteId: 'Aku tidak pernah melihat di Irak maupun Khorasan orang yang lebih paham tentang ilmu cacat hadits dan sanad daripada Muhammad bin Ismail.', verdictEn: 'Master Sheikh', verdictId: 'Guru Utama' }
+        ],
+        'rawi_muslim_ibn_hajjaj': [
+          { critic: 'Hafiz Ibn Hajar al-\'Asqalani', book: 'Taqrib al-Tahdhib', quoteEn: 'One of the supreme Hadith compilers of Islam. His Sahih is distinguished by meticulous arrangement and preservation of exact wording.', quoteId: 'Salah satu penghimpun hadits utama dalam Islam. Shahihnya unggul dalam kerapian susunan dan ketelitian redaksi.', verdictEn: 'Imam Hafiz Mutqin', verdictId: 'Imam Hafizh Mutqin' },
+          { critic: 'Imam al-Dhahabi', book: 'Siyar A\'lam al-Nubala', quoteEn: 'The great Hadith master of Nishapur. A devoted student of Imam al-Bukhari who produced the second most authentic Hadith compendium.', quoteId: 'Imam besar hadits dari Nishapur. Murid tekun Imam al-Bukhari yang menyusun kitab paling otentik kedua.', verdictEn: 'Imam Hafiz Hujjah', verdictId: 'Imam Hafizh Hujjah' }
+        ],
+        'rawi_abu_dawud': [
+          { critic: 'Imam Ahmad ibn Hanbal', book: 'Tabaqat al-Hanabilah', quoteEn: 'Abu Dawood is a noble, pious man. No one in our time is more knowledgeable in the jurisprudence of Hadith than him.', quoteId: 'Abu Daud adalah lelaki mulia dan wara\'. Tidak ada seorang pun di zaman kita yang lebih paham fikih hadits dibanding beliau.', verdictEn: 'Imam Hafiz Faqih', verdictId: 'Imam Hafizh Faqih' },
+          { critic: 'Hafiz Ibn Hajar al-\'Asqalani', book: 'Taqrib al-Tahdhib', quoteEn: 'Compiler of Sunan Abu Dawood, the primary legal reference work for jurists across all Sunni schools.', quoteId: 'Penyusun Sunan Abu Daud, kitab rujukan hukum utama bagi para fuqaha di seluruh mazhab.', verdictEn: 'Imam Hafiz', verdictId: 'Imam Hafizh' }
+        ],
+        'rawi_al_tirmidhi': [
+          { critic: 'Imam al-Dhahabi', book: 'Siyar A\'lam al-Nubala', quoteEn: 'Imam, Hafiz, and founder of systematic narrator evaluation terminology. His Jami\' is unique in documenting legal opinions of all major early jurists.', quoteId: 'Imam, Hafizh, dan pelopor sistem derajat hadits. Kitab Jami\'nya unik dalam mendokumentasikan pendapat para fuqaha.', verdictEn: 'Imam Hafiz', verdictId: 'Imam Hafizh' },
+          { critic: 'Hafiz Ibn Hajar al-\'Asqalani', book: 'Taqrib al-Tahdhib', quoteEn: 'Thiqah Hafiz, author of the Jami\' and Shama\'il. Renowned for precision and integrity.', quoteId: 'Tsiqah Hafizh, penyusun Jami\' dan Asy-Syama\'il. Terkenal dengan ketelitian dan integritasnya.', verdictEn: 'Thiqah Hafiz', verdictId: 'Tsiqah Hafizh' }
+        ],
+        'rawi_al_nasai': [
+          { critic: 'Imam al-Dhahabi', book: 'Siyar A\'lam al-Nubala', quoteEn: 'He was the most critical scholar in narrator evaluation among the compilers of the Six Books. His conditions for accepting narrators were even stricter than those of Abu Dawood and at-Tirmidhi.', quoteId: 'Beliau adalah pengkritik perawi paling ketat di antara penyusun Enam Kitab. Syarat beliau lebih ketat dibanding Abu Daud dan at-Tirmidzi.', verdictEn: 'Imam Hafiz Hujjah', verdictId: 'Imam Hafizh Hujjah' },
+          { critic: 'Hafiz Ibn Hajar al-\'Asqalani', book: 'Taqrib al-Tahdhib', quoteEn: 'Unmatched in his era for critical narrator examination and detection of subtle flaws.', quoteId: 'Tak tertandingi pada zamannya dalam menguji perawi dan mendeteksi cacat tersembunyi.', verdictEn: 'Imam Hafiz', verdictId: 'Imam Hafizh' }
+        ],
+        'rawi_ibn_majah': [
+          { critic: 'Imam al-Dhahabi', book: 'Siyar A\'lam al-Nubala', quoteEn: 'Great Hadith master, historian, and commentator. His Sunan is prized for its excellent chapter arrangement and unique narrations.', quoteId: 'Imam hadits, sejarawan, dan mufassir besar. Sunannya sangat bernilai karena kerapian bab dan riwayat uniknya.', verdictEn: 'Imam Hafiz', verdictId: 'Imam Hafizh' },
+          { critic: 'Hafiz Ibn Hajar al-\'Asqalani', book: 'Taqrib al-Tahdhib', quoteEn: 'Trustworthy compiler of the Sunan, containing 4,341 traditions.', quoteId: 'Penyusun Sunan terpercaya yang memuat 4.341 riwayat.', verdictEn: 'Imam Hafiz', verdictId: 'Imam Hafizh' }
+        ],
+        'rawi_abu_hurairah': [
+          { critic: 'Hafiz Ibn Hajar al-\'Asqalani', book: 'Taqrib al-Tahdhib', quoteEn: 'Sayyid al-Huffaz (Master of Preservers). The most prolific transmitter of Hadith among all Companions of the Prophet ﷺ.', quoteId: 'Sayyidul Huffazh (Pemimpin para penghafal). Perawi hadits terbanyak di antara seluruh Sahabat Nabi ﷺ.', verdictEn: 'Sahabi Adl', verdictId: 'Sahabat Adil' },
+          { critic: 'Imam al-Dhahabi', book: 'Siyar A\'lam al-Nubala', quoteEn: 'Al-Imam al-Adl. Devoted his entire life after conversion to preserving the sayings and actions of the Messenger of Allah ﷺ.', quoteId: 'Imam yang adil. Mengabdikan seluruh hidupnya setelah masuk Islam untuk menjaga sabda dan perbuatan Rasulullah ﷺ.', verdictEn: 'Sahabi Adl', verdictId: 'Sahabat Adil' }
+        ],
+        'rawi_umar_ibn_al_khattab': [
+          { critic: 'Hafiz Ibn Hajar al-\'Asqalani', book: 'Taqrib al-Tahdhib', quoteEn: 'Sahabi Jaleel, Amir al-Mu\'minin, Al-Farooq. One of the greatest leaders of Islam whose narrations carry supreme legal authority.', quoteId: 'Sahabat mulia, Amirul Mukminin, Al-Faruq. Pemimpin terbesar Islam yang riwayatnya bernilai hukum tertinggi.', verdictEn: 'Sahabi Adl', verdictId: 'Sahabat Adil' },
+          { critic: 'Imam al-Dhahabi', book: 'Siyar A\'lam al-Nubala', quoteEn: 'The Commander of the Faithful. Known for extreme precision, fear of Allah, and rigorous verification before accepting any narration.', quoteId: 'Amirul Mukminin. Dikenal sangat teliti, takut kepada Allah, dan sangat selektif sebelum menerima riwayat apa pun.', verdictEn: 'Sahabi Adl', verdictId: 'Sahabat Adil' }
+        ],
+        'rawi_aisha_bint_abi_bakr': [
+          { critic: 'Imam Ibn Shihab al-Zuhri', book: 'Siyar A\'lam al-Nubala', quoteEn: 'If the knowledge of all women were gathered and compared to the knowledge of \'Aisha, \'Aisha\'s knowledge would be superior.', quoteId: 'Jika ilmu seluruh wanita dikumpulkan dan dibandingkan dengan ilmu Aisyah, niscaya ilmu Aisyah jauh lebih unggul.', verdictEn: 'Faqihat al-Ummah', verdictId: 'Ahli Fikih Umat' },
+          { critic: 'Hafiz Ibn Hajar al-\'Asqalani', book: 'Taqrib al-Tahdhib', quoteEn: 'Ummu al-Mu\'minin, Al-Faqiha Al-Hafiz. Foremost female jurist and narrator in Islamic history.', quoteId: 'Ibunda Orang-Orang Beriman, Ahli Fikih dan Penghafal. Tokoh wanita fukaha terdepan dalam sejarah Islam.', verdictEn: 'Sahabi Adl', verdictId: 'Sahabat Adil' }
+        ]
+      };
+
+      function renderEvaluations(r, dbEvals) {
+        const grid = document.getElementById('remarks-grid');
+        if (!grid) return;
+
+        let evalList = dbEvals || [];
+
+        if (!evalList || evalList.length === 0) {
+          const dictItems = evaluationsMap[r.id] || evaluationsMap[(r.id || '').toLowerCase()];
+          if (dictItems && dictItems.length > 0) {
+            evalList = dictItems.map(d => ({
+              evaluator_en: d.critic,
+              source_book_en: d.book,
+              quote_en: d.quoteEn,
+              quote_id: d.quoteId,
+              verdict_en: d.verdictEn,
+              verdict_id: d.verdictId
+            }));
+          }
+        }
+
+        if (evalList && evalList.length > 0) {
+          let evalHtml = '';
+          evalList.forEach(ev => {
+            evalHtml += `
+              <div class="p-5 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-3">
+                <div class="flex justify-between items-center">
+                  <span class="font-bold text-xs text-primary dark:text-white">${escapeHtml(ev.evaluator_en || 'Scholarly Critic')}</span>
+                  <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded">${escapeHtml(ev.source_book_en || 'Jarh wa Ta\'dil')}</span>
+                </div>
+                <p class="text-xs text-on-surface-variant dark:text-gray-300 italic leading-relaxed">
+                  "<span data-lang-en>${escapeHtml(ev.quote_en || ev.quote_ar)}</span>
+                   <span data-lang-id style="display:none">${escapeHtml(ev.quote_id || ev.quote_en || ev.quote_ar)}</span>"
+                </p>
+                <div class="text-[11px] font-semibold text-sunan-emerald dark:text-[#10b981]">
+                  <span data-lang-en>Verdict: ${escapeHtml(ev.verdict_en || 'Thiqah')}</span>
+                  <span data-lang-id style="display:none">Penilaian: ${escapeHtml(ev.verdict_id || ev.verdict_en || 'Tsiqah')}</span>
+                </div>
+              </div>
+            `;
+          });
+          grid.innerHTML = evalHtml;
+          if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+        }
+      }
+
+      renderEvaluations(rawi, []);
+
       // Fetch Scholarly Evaluations (Jarh wa Ta'dil)
       try {
         const resEval = await fetch(`${supabaseUrl}/rest/v1/rijal_evaluations?rawi_id=eq.${rawi.id}&select=*`, {
@@ -669,26 +762,7 @@
         });
         if (resEval.ok) {
           const evals = await resEval.json();
-          if (evals && evals.length > 0) {
-            let evalHtml = '';
-            evals.forEach(ev => {
-              evalHtml += `
-                <div class="p-5 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-3">
-                  <div class="flex justify-between items-center">
-                    <span class="font-bold text-xs text-primary dark:text-white">${escapeHtml(ev.evaluator_en)}</span>
-                    <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded">${escapeHtml(ev.source_book_en || 'Jarh wa Ta\'dil')}</span>
-                  </div>
-                  <p class="text-xs text-on-surface-variant dark:text-gray-300 italic leading-relaxed">
-                    "${escapeHtml(ev.quote_en || ev.quote_ar)}"
-                  </p>
-                  <div class="text-[11px] font-semibold text-sunan-emerald dark:text-[#10b981]">
-                    Verdict: ${escapeHtml(ev.verdict_en)}
-                  </div>
-                </div>
-              `;
-            });
-            document.getElementById('remarks-grid').innerHTML = evalHtml;
-          }
+          renderEvaluations(rawi, evals);
         }
       } catch (e) {
         console.warn('Evaluations fetch error:', e);
