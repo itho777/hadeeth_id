@@ -1749,6 +1749,7 @@ async function loadSanadChain() {
   let textAr = '';
   let textEn = '';
   let textId = '';
+  let dbNarrators = null;
   // Try RPC / DB lookup first
   try {
     const resRpc = await fetch(`${supabaseUrl}/rest/v1/rpc/get_sanad_chain`, {
@@ -1788,30 +1789,30 @@ async function loadSanadChain() {
 
   // Master Rawi Dictionary with complete 3-name separation (Arabic script, EN Latin, ID Latin)
   const rawiDict = [
-    { rawi_id: 'rawi_abdullah_bin_dinar', en: "Abdullah bin Dinar", id: "Abdullah bin Dinar", ar: "عبد الله بن دينار", role: "Transmitter (Rawi) • Grade: Thiqah", kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "127 AH (745 CE)", counts: "Bukhari: 180 | Muslim: 160", remarks: "Ibn Hajar: Thiqah Mutqin | Imam al-Bukhari: Thiqah" },
-    { rawi_id: 'rawi_ismail_bin_jafar', en: "Isma'il bin Ja'far", id: "Ismail bin Ja'far al-Madani", ar: "إسماعيل بن جعفر", role: "Transmitter (Rawi) • Grade: Thiqah", kunyah: "Abu Ishaq", residence: "Madinah / Baghdad", death_ah: "180 AH (796 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Yahya bin Ma'in: Thiqah" },
-    { rawi_id: 'rawi_sulaiman_bin_harb', en: "Sulaiman bin Harb", id: "Sulaiman bin Harb al-Azdi", ar: "سليمان بن حرب", role: "Direct Sheikh of Bukhari • Grade: Thiqah", kunyah: "Abu Ayyub", residence: "Basra / Makkah", death_ah: "224 AH (839 CE)", counts: "Bukhari: 145", remarks: "Ibn Hajar: Thiqah Imam Hafiz | Ahmad bin Hanbal: Thiqah Thabt" },
-    { rawi_id: 'rawi_atho_bin_yasar', en: "Atho' bin Yasar", id: "Atha bin Yasar", ar: "عطاء بن يسار", role: "Tabi'i (Successor) • Grade: Thiqah", kunyah: "Abu Muhammad", residence: "Madinah", death_ah: "103 AH (721 CE)", counts: "Bukhari: 110 | Muslim: 95", remarks: "Ibn Hajar: Thiqah Fadil | Al-Dhahabi: Min A'immat al-Madinah" },
-    { rawi_id: 'rawi_hilal_bin_ali', en: "Hilal bin Ali", id: "Hilal bin Ali bin Osama", ar: "هلال بن علي", role: "Transmitter (Rawi) • Grade: Thiqah", kunyah: "Abu Maimunah", residence: "Madinah", death_ah: "120 AH (738 CE)", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah | Ibn Ma'in: La Ba'sa Bihi" },
-    { rawi_id: 'rawi_aisha_bint_abi_bakr', en: "'Aisha bint Abi Bakr", id: "Aisyah binti Abu Bakar ash-Shiddiq", ar: "عائشة بنت أبي بكر", role: "Sahabi (Companion) • Grade: Thiqah", kunyah: "Umm Abdillah", residence: "Madinah", death_ah: "58 AH (678 CE)", counts: "Bukhari: 2420 | Muslim: 2210", remarks: "Ibn Hajar: Al-Faqiha Al-Hafiz | Al-Dhahabi: Ummu al-Mu'minin" },
-    { rawi_id: 'rawi_umar_ibn_al_khattab', en: "'Umar bin Al-Khattab", id: "Umar bin al-Khaththab", ar: "عمر بن الخطاب", role: "Sahabi (Companion) • Grade: Thiqah", kunyah: "Abu Hafsh", residence: "Madinah", death_ah: "23 AH (644 CE)", counts: "Bukhari: 537 | Muslim: 450", remarks: "Ibn Hajar: Amir al-Mu'minin Al-Farooq | Al-Dhahabi: Al-Imam Al-Adl" },
-    { rawi_id: 'rawi_abu_hurairah', en: "Abu Hurairah", id: "Abu Hurairah radliallahu 'anhu", ar: "أبو هريرة", role: "Sahabi (Companion) • Grade: Thiqah", kunyah: "Abu Hurairah", residence: "Madinah / Bahrain", death_ah: "57 AH (678 CE)", counts: "Bukhari: 5374 | Muslim: 4000", remarks: "Ibn Hajar: Sayyid al-Huffaz | Al-Dhahabi: Al-Hafiz Al-Adl" },
-    { rawi_id: 'rawi_ibn_umar', en: "Ibnu 'Umar", id: "Ibnu Umar", ar: "عبد الله بن عمر", role: "Sahabi (Companion) • Grade: Thiqah", kunyah: "Abu Abdurrahman", residence: "Madinah", death_ah: "73 AH (693 CE)", counts: "Bukhari: 2630 | Muslim: 1800", remarks: "Ibn Hajar: Al-Faqih Al-Muttabi' | Ibn Ma'in: Thiqah Thabt" },
-    { rawi_id: 'rawi_ibn_abbas', en: "'Abdullah bin 'Abbas", id: "Abdullah bin Abbas", ar: "عبد الله بن عباس", role: "Sahabi (Companion) • Grade: Thiqah", kunyah: "Abu al-Abbas", residence: "Makkah / Ta'if", death_ah: "68 AH (687 CE)", counts: "Bukhari: 1660 | Muslim: 1200", remarks: "Ibn Hajar: Hibr al-Ummah wa Tarjuman al-Qur'an" },
-    { rawi_id: 'rawi_anas_bin_malik', en: "Anas bin Malik", id: "Anas bin Malik al-Anshari", ar: "أنس بن مالك", role: "Sahabi (Companion) • Grade: Thiqah", kunyah: "Abu Hamzah", residence: "Basra", death_ah: "93 AH (712 CE)", counts: "Bukhari: 2286 | Muslim: 1800", remarks: "Ibn Hajar: Khadim Rasulillahi ﷺ" },
-    { rawi_id: 'rawi_abdurrahman_bin_al_qasim', en: "'Abdurrahman bin Al-Qasim", id: "Abdurrahman bin al-Qasim bin Muhammad", ar: "عبد الرحمن بن القاسم", role: "Transmitter (Rawi) • Grade: Thiqah", kunyah: "Abu al-Qasim", residence: "Madinah", death_ah: "126 AH (744 CE)", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah Faqih | Imam Malik: Min Afdal Ahl al-Madinah" },
-    { rawi_id: 'rawi_abdullah_bin_yusuf', en: "'Abdullah bin Yusuf at-Tinnisi", id: "Abdullah bin Yusuf at-Tinnisi", ar: "عبد الله بن يوسف التنيسي", role: "Direct Sheikh of Bukhari • Grade: Thiqah", kunyah: "Abu Muhammad", residence: "Tinnis / Damascus", death_ah: "218 AH (833 CE)", counts: "Bukhari: 215", remarks: "Ibn Hajar: Thiqah Mutqin | Yahya bin Ma'in: Thiqah" },
-    { rawi_id: 'rawi_ikrimah_bin_khalid', en: "'Ikrimah bin Khalid", id: "Ikrimah bin Khalid", ar: "عكرمة بن خالد", role: "Transmitter (Rawi) • Grade: Thiqah", kunyah: "Abu Abdullah", residence: "Kufah / Basra", death_ah: "2nd Century AH", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah (Verified Transmitter)" },
-    { rawi_id: 'rawi_hanzalah_bin_abu_sufyan', en: "Hanzhalah bin Abu Sufyan", id: "Hanzhalah bin Abu Sufyan", ar: "حنظلة بن أبي سفيان", role: "Transmitter (Rawi) • Grade: Thiqah", kunyah: "Abu Abdullah", residence: "Kufah / Basra", death_ah: "2nd Century AH", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah (Verified Transmitter)" },
-    { rawi_id: 'rawi_malik_bin_anas', en: "Imam Malik bin Anas", id: "Imam Malik bin Anas", ar: "مالك بن أنس", role: "Imam of Madinah • Grade: Hafiz", kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "179 AH (795 CE)", counts: "Muwatta: 1720 | Bukhari: 850", remarks: "Ibn Hajar: Al-Imam Al-Hafiz | Al-Dhahabi: Sayyid al-Fuqaha" },
-    { rawi_id: 'rawi_said_bin_jubair', en: "Sa'id bin Jubair", id: "Sa'id bin Jubair", ar: "سعيد بن جبير", role: "Tabi'i (Successor) • Grade: Thiqah", kunyah: "Abu Abdillah", residence: "Kufah", death_ah: "95 AH (714 CE)", counts: "Bukhari: 140 | Muslim: 120", remarks: "Ibn Hajar: Thiqah Thabt Imam | Sufyan: A'lam al-Tabi'in" },
-    { rawi_id: 'rawi_sufyan_al_thawri', en: "Sufyan bin 'Uyaynah", id: "Sufyan bin Uyainah", ar: "سفيان بن عيينة", role: "Transmitter (Rawi) • Grade: Hafiz", kunyah: "Abu Muhammad", residence: "Makkah / Kufah", death_ah: "198 AH (814 CE)", counts: "Bukhari: 650 | Muslim: 580", remarks: "Ibn Hajar: Thiqah Hafiz Faqih | Ibn Ma'in: Thabt" },
-    { rawi_id: 'rawi_yahya_bin_said', en: "Yahya bin Sa'id al-Ansari", id: "Yahya bin Sa'id al-Anshari", ar: "يحيى بن سعيد الأنصاري", role: "Transmitter (Rawi) • Grade: Thiqah", kunyah: "Abu Sa'id", residence: "Madinah / Iraq", death_ah: "143 AH (760 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Ahmad bin Hanbal: Imam Hujjah" },
-    { rawi_id: 'rawi_al_humaydi', en: "'Abdullah bin al-Zubayr al-Humaydi", id: "Abdullah bin az-Zubair al-Humaidi", ar: "عبد الله بن الزبير الحميدي", role: "Direct Sheikh of Bukhari • Grade: Thiqah", kunyah: "Abu Bakr", residence: "Makkah / Madinah", death_ah: "219 AH (834 CE)", counts: "Bukhari: 75 | Muslim: 45", remarks: "Ibn Hajar: Thiqah Hafiz | Imam al-Bukhari: Imam fi al-Hadith" },
-    { rawi_id: 'rawi_muhammad_bin_ibrahim', en: "Muhammad bin Ibrahim al-Taymi", id: "Muhammad bin Ibrahim at-Taimi", ar: "محمد بن إبراهيم التيمي", role: "Tabi' al-Tabi'in • Grade: Thiqah", kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "120 AH (738 CE)", counts: "Bukhari: 110 | Muslim: 95", remarks: "Ibn Hajar: Thiqah Mutqin | Ibn Ma'in: Thiqah" },
-    { rawi_id: 'rawi_alqama_bin_waqqas', en: "'Alqama bin Waqqas al-Laythi", id: "Alqamah bin Waqqash al-Laitsi", ar: "علقمة بن وقاص الليثي", role: "Tabi'i (Successor) • Grade: Thiqah", kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "85 AH (704 CE)", counts: "Bukhari: 48 | Muslim: 40", remarks: "Ibn Hajar: Thiqah | Al-Dhahabi: Min Kibar al-Tabi'in" },
-    { rawi_id: 'rawi_al_araj', en: "Al-A'raj", id: "Al-A'raj (Abdurrahman bin Hormuz)", ar: "الأعرج", role: "Tabi'i (Successor) • Grade: Thiqah", kunyah: "Abu Dawood", residence: "Madinah / Alexandria", death_ah: "117 AH (735 CE)", counts: "Bukhari: 180 | Muslim: 150", remarks: "Ibn Hajar: Thiqah Mutqin | Al-Dhahabi: Imam al-Qura' wa al-Muhaddithin" },
-    { rawi_id: 'rawi_abu_az_zanad', en: "Abu Az-Zanad", id: "Abu Az-Zanad (Abdullah bin Zakwan)", ar: "أبو الزناد", role: "Transmitter (Rawi) • Grade: Thiqah", kunyah: "Abu Abdurrahman", residence: "Madinah / Baghdad", death_ah: "130 AH (748 CE)", counts: "Bukhari: 220 | Muslim: 180", remarks: "Ibn Hajar: Thiqah Thabt Faqih | Sufyan: Amir al-Mu'minin fi al-Hadith" }
+    { rawi_id: 'rawi_abdullah_bin_dinar', en: "Abdullah bin Dinar", id: "Abdullah bin Dinar", ar: "عبد الله بن دينار", roleEn: "Transmitter (Rawi) • Grade: Thiqah", roleId: "PERAWI (RAWI) • DERAJAT: TSIQAH", kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "127 AH (745 CE)", counts: "Bukhari: 180 | Muslim: 160", remarks: "Ibn Hajar: Thiqah Mutqin | Imam al-Bukhari: Thiqah" },
+    { rawi_id: 'rawi_ismail_bin_jafar', en: "Isma'il bin Ja'far", id: "Ismail bin Ja'far al-Madani", ar: "إسماعيل بن جعفر", roleEn: "Transmitter (Rawi) • Grade: Thiqah", roleId: "PERAWI (RAWI) • DERAJAT: TSIQAH", kunyah: "Abu Ishaq", residence: "Madinah / Baghdad", death_ah: "180 AH (796 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Yahya bin Ma'in: Thiqah" },
+    { rawi_id: 'rawi_sulaiman_bin_harb', en: "Sulaiman bin Harb", id: "Sulaiman bin Harb al-Azdi", ar: "سليمان بن حرب", roleEn: "Direct Sheikh of Bukhari • Grade: Thiqah", roleId: "GURU LANGSUNG BUKHARI • DERAJAT: TSIQAH", kunyah: "Abu Ayyub", residence: "Basra / Makkah", death_ah: "224 AH (839 CE)", counts: "Bukhari: 145", remarks: "Ibn Hajar: Thiqah Imam Hafiz | Ahmad bin Hanbal: Thiqah Thabt" },
+    { rawi_id: 'rawi_atho_bin_yasar', en: "Atho' bin Yasar", id: "Atha bin Yasar", ar: "عطاء بن يسار", roleEn: "Tabi'i (Successor) • Grade: Thiqah", roleId: "TABI'IN • DERAJAT: TSIQAH", kunyah: "Abu Muhammad", residence: "Madinah", death_ah: "103 AH (721 CE)", counts: "Bukhari: 110 | Muslim: 95", remarks: "Ibn Hajar: Thiqah Fadil | Al-Dhahabi: Min A'immat al-Madinah" },
+    { rawi_id: 'rawi_hilal_bin_ali', en: "Hilal bin Ali", id: "Hilal bin Ali bin Osama", ar: "هلال بن علي", roleEn: "Transmitter (Rawi) • Grade: Thiqah", roleId: "PERAWI (RAWI) • DERAJAT: TSIQAH", kunyah: "Abu Maimunah", residence: "Madinah", death_ah: "120 AH (738 CE)", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah | Ibn Ma'in: La Ba'sa Bihi" },
+    { rawi_id: 'rawi_aisha_bint_abi_bakr', en: "'Aisha bint Abi Bakr", id: "Aisyah binti Abu Bakar ash-Shiddiq", ar: "عائشة بنت أبي بكر", roleEn: "Sahabi (Companion) • Grade: Thiqah", roleId: "SAHABAT NABI • DERAJAT: TSIQAH", kunyah: "Umm Abdillah", residence: "Madinah", death_ah: "58 AH (678 CE)", counts: "Bukhari: 2420 | Muslim: 2210", remarks: "Ibn Hajar: Al-Faqiha Al-Hafiz | Al-Dhahabi: Ummu al-Mu'minin" },
+    { rawi_id: 'rawi_umar_ibn_al_khattab', en: "'Umar bin Al-Khattab", id: "Umar bin al-Khaththab", ar: "عمر بن الخطاب", roleEn: "Sahabi (Companion) • Grade: Thiqah", roleId: "SAHABAT NABI • DERAJAT: TSIQAH", kunyah: "Abu Hafsh", residence: "Madinah", death_ah: "23 AH (644 CE)", counts: "Bukhari: 537 | Muslim: 450", remarks: "Ibn Hajar: Amir al-Mu'minin Al-Farooq | Al-Dhahabi: Al-Imam Al-Adl" },
+    { rawi_id: 'rawi_abu_hurairah', en: "Abu Hurairah", id: "Abu Hurairah radliallahu 'anhu", ar: "أبو هريرة", roleEn: "Sahabi (Companion) • Grade: Thiqah", roleId: "SAHABAT NABI • DERAJAT: TSIQAH", kunyah: "Abu Hurairah", residence: "Madinah / Bahrain", death_ah: "57 AH (678 CE)", counts: "Bukhari: 5374 | Muslim: 4000", remarks: "Ibn Hajar: Sayyid al-Huffaz | Al-Dhahabi: Al-Hafiz Al-Adl" },
+    { rawi_id: 'rawi_ibn_umar', en: "Ibnu 'Umar", id: "Ibnu Umar", ar: "عبد الله بن عمر", roleEn: "Sahabi (Companion) • Grade: Thiqah", roleId: "SAHABAT NABI • DERAJAT: TSIQAH", kunyah: "Abu Abdurrahman", residence: "Madinah", death_ah: "73 AH (693 CE)", counts: "Bukhari: 2630 | Muslim: 1800", remarks: "Ibn Hajar: Al-Faqih Al-Muttabi' | Ibn Ma'in: Thiqah Thabt" },
+    { rawi_id: 'rawi_ibn_abbas', en: "'Abdullah bin 'Abbas", id: "Abdullah bin Abbas", ar: "عبد الله بن عباس", roleEn: "Sahabi (Companion) • Grade: Thiqah", roleId: "SAHABAT NABI • DERAJAT: TSIQAH", kunyah: "Abu al-Abbas", residence: "Makkah / Ta'if", death_ah: "68 AH (687 CE)", counts: "Bukhari: 1660 | Muslim: 1200", remarks: "Ibn Hajar: Hibr al-Ummah wa Tarjuman al-Qur'an" },
+    { rawi_id: 'rawi_anas_bin_malik', en: "Anas bin Malik", id: "Anas bin Malik al-Anshari", ar: "أنس بن مالك", roleEn: "Sahabi (Companion) • Grade: Thiqah", roleId: "SAHABAT NABI • DERAJAT: TSIQAH", kunyah: "Abu Hamzah", residence: "Basra", death_ah: "93 AH (712 CE)", counts: "Bukhari: 2286 | Muslim: 1800", remarks: "Ibn Hajar: Khadim Rasulillahi ﷺ" },
+    { rawi_id: 'rawi_abdurrahman_bin_al_qasim', en: "'Abdurrahman bin Al-Qasim", id: "Abdurrahman bin al-Qasim bin Muhammad", ar: "عبد الرحمن بن القاسم", roleEn: "Transmitter (Rawi) • Grade: Thiqah", roleId: "PERAWI (RAWI) • DERAJAT: TSIQAH", kunyah: "Abu al-Qasim", residence: "Madinah", death_ah: "126 AH (744 CE)", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah Faqih | Imam Malik: Min Afdal Ahl al-Madinah" },
+    { rawi_id: 'rawi_abdullah_bin_yusuf', en: "'Abdullah bin Yusuf at-Tinnisi", id: "Abdullah bin Yusuf at-Tinnisi", ar: "عبد الله بن يوسف التنيسي", roleEn: "Direct Sheikh of Bukhari • Grade: Thiqah", roleId: "GURU LANGSUNG BUKHARI • DERAJAT: TSIQAH", kunyah: "Abu Muhammad", residence: "Tinnis / Damascus", death_ah: "218 AH (833 CE)", counts: "Bukhari: 215", remarks: "Ibn Hajar: Thiqah Mutqin | Yahya bin Ma'in: Thiqah" },
+    { rawi_id: 'rawi_ikrimah_bin_khalid', en: "'Ikrimah bin Khalid", id: "Ikrimah bin Khalid", ar: "عكرمة بن خالد", roleEn: "Transmitter (Rawi) • Grade: Thiqah", roleId: "PERAWI (RAWI) • DERAJAT: TSIQAH", kunyah: "Abu Abdullah", residence: "Kufah / Basra", death_ah: "2nd Century AH", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah (Verified Transmitter)" },
+    { rawi_id: 'rawi_hanzalah_bin_abu_sufyan', en: "Hanzhalah bin Abu Sufyan", id: "Hanzhalah bin Abu Sufyan", ar: "حنظلة بن أبي سفيان", roleEn: "Transmitter (Rawi) • Grade: Thiqah", roleId: "PERAWI (RAWI) • DERAJAT: TSIQAH", kunyah: "Abu Abdullah", residence: "Kufah / Basra", death_ah: "2nd Century AH", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah (Verified Transmitter)" },
+    { rawi_id: 'rawi_malik_bin_anas', en: "Imam Malik bin Anas", id: "Imam Malik bin Anas", ar: "مالك بن أنس", roleEn: "Imam of Madinah • Grade: Hafiz", roleId: "IMAM MADINAH • DERAJAT: HAFIZH", kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "179 AH (795 CE)", counts: "Muwatta: 1720 | Bukhari: 850", remarks: "Ibn Hajar: Al-Imam Al-Hafiz | Al-Dhahabi: Sayyid al-Fuqaha" },
+    { rawi_id: 'rawi_said_bin_jubair', en: "Sa'id bin Jubair", id: "Sa'id bin Jubair", ar: "سعيد بن جبير", roleEn: "Tabi'i (Successor) • Grade: Thiqah", roleId: "TABI'IN • DERAJAT: TSIQAH", kunyah: "Abu Abdillah", residence: "Kufah", death_ah: "95 AH (714 CE)", counts: "Bukhari: 140 | Muslim: 120", remarks: "Ibn Hajar: Thiqah Thabt Imam | Sufyan: A'lam al-Tabi'in" },
+    { rawi_id: 'rawi_sufyan_al_thawri', en: "Sufyan bin 'Uyaynah", id: "Sufyan bin Uyainah", ar: "سفيان بن عيينة", roleEn: "Transmitter (Rawi) • Grade: Hafiz", roleId: "PERAWI (RAWI) • DERAJAT: HAFIZH", kunyah: "Abu Muhammad", residence: "Makkah / Kufah", death_ah: "198 AH (814 CE)", counts: "Bukhari: 650 | Muslim: 580", remarks: "Ibn Hajar: Thiqah Hafiz Faqih | Ibn Ma'in: Thabt" },
+    { rawi_id: 'rawi_yahya_bin_said', en: "Yahya bin Sa'id al-Ansari", id: "Yahya bin Sa'id al-Anshari", ar: "يحيى بن سعيد الأنصاري", roleEn: "Transmitter (Rawi) • Grade: Thiqah", roleId: "PERAWI (RAWI) • DERAJAT: TSIQAH", kunyah: "Abu Sa'id", residence: "Madinah / Iraq", death_ah: "143 AH (760 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Ahmad bin Hanbal: Imam Hujjah" },
+    { rawi_id: 'rawi_al_humaydi', en: "'Abdullah bin al-Zubayr al-Humaydi", id: "Abdullah bin az-Zubair al-Humaidi", ar: "عبد الله بن الزبير الحميدي", roleEn: "Direct Sheikh of Bukhari • Grade: Thiqah", roleId: "GURU LANGSUNG BUKHARI • DERAJAT: TSIQAH", kunyah: "Abu Bakr", residence: "Makkah / Madinah", death_ah: "219 AH (834 CE)", counts: "Bukhari: 75 | Muslim: 45", remarks: "Ibn Hajar: Thiqah Hafiz | Imam al-Bukhari: Imam fi al-Hadith" },
+    { rawi_id: 'rawi_muhammad_bin_ibrahim', en: "Muhammad bin Ibrahim al-Taymi", id: "Muhammad bin Ibrahim at-Taimi", ar: "محمد بن إبراهيم التيمي", roleEn: "Tabi' al-Tabi'in • Grade: Thiqah", roleId: "TABI'UT TABI'IN • DERAJAT: TSIQAH", kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "120 AH (738 CE)", counts: "Bukhari: 110 | Muslim: 95", remarks: "Ibn Hajar: Thiqah Mutqin | Ibn Ma'in: Thiqah" },
+    { rawi_id: 'rawi_alqama_bin_waqqas', en: "'Alqama bin Waqqas al-Laythi", id: "Alqamah bin Waqqash al-Laitsi", ar: "علقمة بن وقاص الليثي", roleEn: "Tabi'i (Successor) • Grade: Thiqah", roleId: "TABI'IN • DERAJAT: TSIQAH", kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "85 AH (704 CE)", counts: "Bukhari: 48 | Muslim: 40", remarks: "Ibn Hajar: Thiqah | Al-Dhahabi: Min Kibar al-Tabi'in" },
+    { rawi_id: 'rawi_al_araj', en: "Al-A'raj", id: "Al-A'raj (Abdurrahman bin Hormuz)", ar: "الأعرج", roleEn: "Tabi'i (Successor) • Grade: Thiqah", roleId: "TABI'IN • DERAJAT: TSIQAH", kunyah: "Abu Dawood", residence: "Madinah / Alexandria", death_ah: "117 AH (735 CE)", counts: "Bukhari: 180 | Muslim: 150", remarks: "Ibn Hajar: Thiqah Mutqin | Al-Dhahabi: Imam al-Qura' wa al-Muhaddithin" },
+    { rawi_id: 'rawi_abu_az_zanad', en: "Abu Az-Zanad", id: "Abu Az-Zanad (Abdullah bin Zakwan)", ar: "أبو الزناد", roleEn: "Transmitter (Rawi) • Grade: Thiqah", roleId: "PERAWI (RAWI) • DERAJAT: TSIQAH", kunyah: "Abu Abdurrahman", residence: "Madinah / Baghdad", death_ah: "130 AH (748 CE)", counts: "Bukhari: 220 | Muslim: 180", remarks: "Ibn Hajar: Thiqah Thabt Faqih | Sufyan: Amir al-Mu'minin fi al-Hadith" }
   ];
 
   // If DB returned structured chain from hadith_rijal with 3+ narrators, use it!
@@ -1825,11 +1826,14 @@ async function loadSanadChain() {
       );
       const enName = r.name_en || (matchDict ? matchDict.en : 'Transmitter');
       const idName = matchDict ? matchDict.id : getIndonesianRawiName(enName, r.rawi_id, r.name_ar);
+      const roleEnText = matchDict ? (matchDict.roleEn || matchDict.role) : `${r.generation || 'Transmitter'} • Grade: ${r.grade || 'Thiqah'}`;
+      const roleIdText = matchDict ? (matchDict.roleId || matchDict.role) : `${r.generation || 'PERAWI'} • DERAJAT: ${r.grade || 'TSIQAH'}`;
       return {
         rawi_id: r.rawi_id,
         name: enName + (r.is_sahabi ? ' (رضي الله عنه)' : ''),
         name_id: idName,
-        role: `${r.generation || 'Transmitter'} • Grade: ${r.grade || 'Thiqah'}`,
+        roleEn: roleEnText,
+        roleId: roleIdText,
         ar: r.name_ar || (matchDict ? matchDict.ar : ''),
         kunyah: r.kunyah || (matchDict ? matchDict.kunyah : 'Abu Abdullah'),
         residence: r.residence || (matchDict ? matchDict.residence : 'Madinah'),
@@ -1884,7 +1888,7 @@ async function loadSanadChain() {
         } else if (normName.includes('ikrimah')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_ikrimah_bin_khalid');
         } else if (normName.includes('hanzhalah')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_hanzhalah_bin_abu_sufyan');
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_hanzalah_bin_abu_sufyan');
         } else {
           matched = rawiDict.find(d => 
             d.en.toLowerCase() === normName ||
@@ -1898,7 +1902,8 @@ async function loadSanadChain() {
             rawi_id: matched.rawi_id,
             name: matched.en,
             name_id: matched.id || getIndonesianRawiName(matched.en, matched.rawi_id, matched.ar),
-            role: matched.role,
+            roleEn: matched.roleEn || matched.role,
+            roleId: matched.roleId || matched.role,
             ar: matched.ar,
             kunyah: matched.kunyah,
             residence: matched.residence,
@@ -1912,7 +1917,8 @@ async function loadSanadChain() {
             rawi_id: null,
             name: rawiName,
             name_id: getIndonesianRawiName(rawiName, null, null),
-            role: isFirst ? 'Sahabi (Companion) • Grade: Thiqah' : 'Transmitter (Rawi) • Grade: Thiqah',
+            roleEn: isFirst ? 'SAHABI (COMPANION) • GRADE: THIQAH' : 'TRANSMITTER (RAWI) • GRADE: THIQAH',
+            roleId: isFirst ? 'SAHABAT NABI • DERAJAT: TSIQAH' : 'PERAWI (RAWI) • DERAJAT: TSIQAH',
             ar: getArabicScriptForRawi(rawiName),
             kunyah: isFirst ? 'Abu Abdillah' : 'Abu Abdullah',
             residence: isFirst ? 'Madinah' : 'Kufah / Basra',
@@ -1928,18 +1934,21 @@ async function loadSanadChain() {
   // Fallback defaults if no narrators extracted
   if (narrators.length === 0) {
     narrators = [
-      { rawi_id: 'rawi_al_humaydi', name: "'Abdullah bin al-Zubayr al-Humaydi", name_id: "Abdullah bin az-Zubair al-Humaidi", role: "Direct Sheikh of Bukhari • Grade: Thiqah", ar: "عبد الله بن الزبير الحميدي", kunyah: "Abu Bakr", residence: "Makkah / Madinah", death_ah: "219 AH (834 CE)", counts: "Bukhari: 75 | Muslim: 45", remarks: "Ibn Hajar: Thiqah Hafiz | Imam al-Bukhari: Imam fi al-Hadith" },
-      { rawi_id: 'rawi_sufyan_al_thawri', name: "Sufyan bin 'Uyaynah", name_id: "Sufyan bin Uyainah", role: "Transmitter (Rawi) • Grade: Hafiz", ar: "سفيان بن عيينة", kunyah: "Abu Muhammad", residence: "Makkah / Kufah", death_ah: "198 AH (814 CE)", counts: "Bukhari: 650 | Muslim: 580", remarks: "Ibn Hajar: Thiqah Hafiz Faqih | Ibn Ma'in: Thabt" },
-      { rawi_id: 'rawi_yahya_bin_said', name: "Yahya bin Sa'id al-Ansari", name_id: "Yahya bin Sa'id al-Anshari", role: "Transmitter (Rawi) • Grade: Thiqah", ar: "يحيى بن سعيد الأنصاري", kunyah: "Abu Sa'id", residence: "Madinah / Iraq", death_ah: "143 AH (760 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Ahmad bin Hanbal: Imam Hujjah" },
-      { rawi_id: 'rawi_muhammad_bin_ibrahim', name: "Muhammad bin Ibrahim al-Taymi", name_id: "Muhammad bin Ibrahim at-Taimi", role: "Tabi' al-Tabi'in • Grade: Thiqah", ar: "محمد بن إبراهيم التيمي", kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "120 AH (738 CE)", counts: "Bukhari: 110 | Muslim: 95", remarks: "Ibn Hajar: Thiqah Mutqin | Ibn Ma'in: Thiqah" },
-      { rawi_id: 'rawi_alqama_bin_waqqas', name: "'Alqama bin Waqqas al-Laythi", name_id: "Alqamah bin Waqqash al-Laitsi", role: "Tabi'i (Successor) • Grade: Thiqah", ar: "علقمة بن وقاص الليثي", kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "85 AH (704 CE)", counts: "Bukhari: 48 | Muslim: 40", remarks: "Ibn Hajar: Thiqah | Al-Dhahabi: Min Kibar al-Tabi'in" },
-      { rawi_id: 'rawi_umar_ibn_al_khattab', name: "'Umar bin Al-Khattab (رضي الله عنه)", name_id: "Umar bin al-Khaththab", role: "Sahabi (Companion) • Grade: Thiqah", ar: "عمر بن الخطاب", kunyah: "Abu Hafsh", residence: "Madinah", death_ah: "23 AH (644 CE)", counts: "Bukhari: 537 | Muslim: 450", remarks: "Ibn Hajar: Amir al-Mu'minin Al-Farooq | Al-Dhahabi: Al-Imam Al-Adl" }
+      { rawi_id: 'rawi_al_humaydi', name: "'Abdullah bin al-Zubayr al-Humaydi", name_id: "Abdullah bin az-Zubair al-Humaidi", roleEn: "DIRECT SHEIKH OF BUKHARI • GRADE: THIQAH", roleId: "GURU LANGSUNG BUKHARI • DERAJAT: TSIQAH", ar: "عبد الله بن الزبير الحميدي", kunyah: "Abu Bakr", residence: "Makkah / Madinah", death_ah: "219 AH (834 CE)", counts: "Bukhari: 75 | Muslim: 45", remarks: "Ibn Hajar: Thiqah Hafiz | Imam al-Bukhari: Imam fi al-Hadith" },
+      { rawi_id: 'rawi_sufyan_al_thawri', name: "Sufyan bin 'Uyaynah", name_id: "Sufyan bin Uyainah", roleEn: "TRANSMITTER (RAWI) • GRADE: HAFIZ", roleId: "PERAWI (RAWI) • DERAJAT: HAFIZH", ar: "سفيان بن عيينة", kunyah: "Abu Muhammad", residence: "Makkah / Kufah", death_ah: "198 AH (814 CE)", counts: "Bukhari: 650 | Muslim: 580", remarks: "Ibn Hajar: Thiqah Hafiz Faqih | Ibn Ma'in: Thabt" },
+      { rawi_id: 'rawi_yahya_bin_said', name: "Yahya bin Sa'id al-Ansari", name_id: "Yahya bin Sa'id al-Anshari", roleEn: "TRANSMITTER (RAWI) • GRADE: THIQAH", roleId: "PERAWI (RAWI) • DERAJAT: TSIQAH", ar: "يحيى بن سعيد الأنصاري", kunyah: "Abu Sa'id", residence: "Madinah / Iraq", death_ah: "143 AH (760 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Ahmad bin Hanbal: Imam Hujjah" },
+      { rawi_id: 'rawi_muhammad_bin_ibrahim', name: "Muhammad bin Ibrahim al-Taymi", name_id: "Muhammad bin Ibrahim at-Taimi", roleEn: "TABI' AL-TABI'IN • GRADE: THIQAH", roleId: "TABI'UT TABI'IN • DERAJAT: TSIQAH", ar: "محمد بن إبراهيم التيمي", kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "120 AH (738 CE)", counts: "Bukhari: 110 | Muslim: 95", remarks: "Ibn Hajar: Thiqah Mutqin | Ibn Ma'in: Thiqah" },
+      { rawi_id: 'rawi_alqama_bin_waqqas', name: "'Alqama bin Waqqas al-Laythi", name_id: "Alqamah bin Waqqash al-Laitsi", roleEn: "TABI'I (SUCCESSOR) • GRADE: THIQAH", roleId: "TABI'IN • DERAJAT: TSIQAH", ar: "علقمة بن وقاص الليثي", kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "85 AH (704 CE)", counts: "Bukhari: 48 | Muslim: 40", remarks: "Ibn Hajar: Thiqah | Al-Dhahabi: Min Kibar al-Tabi'in" },
+      { rawi_id: 'rawi_umar_ibn_al_khattab', name: "'Umar bin Al-Khattab (رضي الله عنه)", name_id: "Umar bin al-Khaththab", roleEn: "SAHABI (COMPANION) • GRADE: THIQAH", roleId: "SAHABAT NABI • DERAJAT: TSIQAH", ar: "عمر بن الخطاب", kunyah: "Abu Hafsh", residence: "Madinah", death_ah: "23 AH (644 CE)", counts: "Bukhari: 537 | Muslim: 450", remarks: "Ibn Hajar: Amir al-Mu'minin Al-Farooq | Al-Dhahabi: Al-Imam Al-Adl" }
     ];
   }
 
   const countText = document.getElementById('sanad-count-text');
   if (countText) {
-    countText.innerText = isIdLang ? `${narrators.length} Perawi` : `${narrators.length} Narrators`;
+    countText.innerHTML = `
+      <span data-lang-en>${narrators.length} Narrators</span>
+      <span data-lang-id style="display:none">${narrators.length} Perawi</span>
+    `;
   }
 
   let html = `
@@ -1950,8 +1959,14 @@ async function loadSanadChain() {
       <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-sunan-emerald border-2 border-white dark:border-ink-black flex items-center justify-center text-white text-[10px]">ﷺ</div>
       <div class="flex justify-between items-center">
         <div>
-          <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-200">${isIdLang ? 'SUMBER WAHYU' : 'SOURCE OF REVELATION'}</span>
-          <h3 class="font-bold text-lg">${isIdLang ? 'Nabi Muhammad ﷺ' : 'The Prophet Muhammad ﷺ'}</h3>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-200">
+            <span data-lang-en>SOURCE OF REVELATION</span>
+            <span data-lang-id style="display:none">SUMBER WAHYU</span>
+          </span>
+          <h3 class="font-bold text-lg">
+            <span data-lang-en>The Prophet Muhammad ﷺ</span>
+            <span data-lang-id style="display:none">Nabi Muhammad ﷺ</span>
+          </h3>
         </div>
         <span class="font-arabic-body text-xl" dir="rtl">محمد رسول الله ﷺ</span>
       </div>
@@ -1967,22 +1982,10 @@ async function loadSanadChain() {
     }
     const profileUrl = `profile-detail.html?id=${encodeURIComponent(rawiSlug || 'rawi_abu_hurairah')}`;
 
-    let displayRole = nr.role || '';
-    if (isIdLang) {
-      displayRole = displayRole
-        .replace(/Sahabi\s*\(Companion\)/ig, 'SAHABAT')
-        .replace(/Sahabiya\s*\(Companion\)/ig, 'SAHABAT')
-        .replace(/Sahabiya/ig, 'SAHABAT')
-        .replace(/Sahabi/ig, 'SAHABAT')
-        .replace(/Transmitter\s*\(Rawi\)/ig, 'PERAWI (RAWI)')
-        .replace(/Transmitter/ig, 'PERAWI')
-        .replace(/Direct Sheikh of/ig, 'GURU LANGSUNG DARI')
-        .replace(/Imam of Madinah/ig, 'IMAM MADINAH')
-        .replace(/Grade:\s*/ig, 'DERAJAT: ')
-        .replace(/Thiqah/ig, 'TSIQAH')
-        .replace(/Hafiz/ig, 'HAFIZH');
-    }
-    const displayName = isIdLang ? getIndonesianRawiName(nr.name_id || nr.name, nr.rawi_id, nr.ar) : nr.name;
+    const roleEn = nr.roleEn || nr.role || 'TRANSMITTER (RAWI) • GRADE: THIQAH';
+    const roleId = nr.roleId || nr.role || 'PERAWI (RAWI) • DERAJAT: TSIQAH';
+    const nameEn = nr.name || 'Transmitter';
+    const nameId = nr.name_id || getIndonesianRawiName(nameEn, nr.rawi_id, nr.ar);
     const displayArName = getArabicScriptForRawi(nr.ar || nr.name_id || nr.name);
 
     html += `
@@ -1991,9 +1994,13 @@ async function loadSanadChain() {
         
         <div class="flex justify-between items-start border-b border-outline-variant/20 dark:border-[#334155] pb-3">
           <div>
-            <span class="text-[10px] uppercase font-bold text-sunan-emerald dark:text-[#10b981]">${escapeHtml(displayRole)}</span>
+            <span class="text-[10px] uppercase font-bold text-sunan-emerald dark:text-[#10b981]">
+              <span data-lang-en>${escapeHtml(roleEn)}</span>
+              <span data-lang-id style="display:none">${escapeHtml(roleId)}</span>
+            </span>
             <a href="${profileUrl}" class="font-bold text-base text-primary dark:text-white hover:text-sunan-emerald dark:hover:text-[#10b981] hover:underline flex items-center gap-1 mt-0.5">
-              ${escapeHtml(displayName)}
+              <span data-lang-en>${escapeHtml(nameEn)}</span>
+              <span data-lang-id style="display:none">${escapeHtml(nameId)}</span>
               <span class="material-symbols-outlined text-xs">open_in_new</span>
             </a>
           </div>
@@ -2006,22 +2013,34 @@ async function loadSanadChain() {
             <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.kunyah || 'Abu Abdullah')}</span>
           </div>
           <div>
-            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">${isIdLang ? 'DOMISILI:' : 'SETTLED IN:'}</span>
+            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">
+              <span data-lang-en>SETTLED IN:</span>
+              <span data-lang-id style="display:none">DOMISILI:</span>
+            </span>
             <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.residence || 'Madinah')}</span>
           </div>
           <div>
-            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">${isIdLang ? 'WAFAT:' : 'WAFAT (DIED):'}</span>
+            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">
+              <span data-lang-en>WAFAT (DIED):</span>
+              <span data-lang-id style="display:none">WAFAT:</span>
+            </span>
             <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.death_ah || 'Abad ke-1 H')}</span>
           </div>
           <div>
-            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">${isIdLang ? 'TOTAL HADITS:' : 'TOTAL HADITHS:'}</span>
+            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">
+              <span data-lang-en>TOTAL HADITHS:</span>
+              <span data-lang-id style="display:none">TOTAL HADITS:</span>
+            </span>
             <span class="font-semibold text-sunan-emerald dark:text-[#10b981]">${escapeHtml(nr.counts || 'Bukhari & Muslim')}</span>
           </div>
         </div>
 
         ${nr.remarks ? `
           <div class="mt-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155] text-xs text-on-surface-variant dark:text-gray-300 italic">
-            <span class="font-bold text-secondary dark:text-[#10b981] not-italic text-[10px] uppercase block mb-0.5">${isIdLang ? 'PENILAIAN ULAMA (JARH WA TA\'DIL):' : 'SCHOLAR REMARKS (JARH WA TA\'DIL):'}</span>
+            <span class="font-bold text-secondary dark:text-[#10b981] not-italic text-[10px] uppercase block mb-0.5">
+              <span data-lang-en>SCHOLAR REMARKS (JARH WA TA'DIL):</span>
+              <span data-lang-id style="display:none">CATATAN ULAMA (JARH WA TA'DIL):</span>
+            </span>
             "${escapeHtml(nr.remarks)}"
           </div>
         ` : ''}
@@ -2038,7 +2057,10 @@ async function loadSanadChain() {
       <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-primary border-2 border-white dark:border-ink-black flex items-center justify-center text-[10px]">📚</div>
       <div class="flex justify-between items-center">
         <div>
-          <span class="text-[10px] uppercase font-bold tracking-widest text-[#10b981]">${isIdLang ? 'KOLEKTOR & PENULIS' : 'COLLECTOR & AUTHOR'}</span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-[#10b981]">
+            <span data-lang-en>COLLECTOR & AUTHOR</span>
+            <span data-lang-id style="display:none">KOLEKTOR & PENULIS</span>
+          </span>
           <a href="${authorProfileUrl}" class="font-bold text-lg hover:underline flex items-center gap-1 text-white">
             ${escapeHtml(bookName)}
             <span class="material-symbols-outlined text-xs">open_in_new</span>
