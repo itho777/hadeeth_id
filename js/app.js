@@ -1935,10 +1935,16 @@ function getArabicScriptForRawi(latinOrAr) {
   if (!latinOrAr) return 'أحد الرواة';
   if (/[\u0600-\u06FF]/.test(latinOrAr)) return latinOrAr;
 
-  const clean = latinOrAr.trim();
+  const clean = latinOrAr.replace(/['`’]/g, '').trim();
   const lower = clean.toLowerCase();
 
   const map = {
+    "atho bin yasar": "عطاء بن يسار",
+    "atho' bin yasar": "عطاء بن يسار",
+    "ata bin yasar": "عطاء بن يسار",
+    "ata' bin yasar": "عطاء بن يسار",
+    "hilal bin ali": "هلال بن علي",
+    "hilal bin abi maimunah": "هلال بن علي بن أسامة",
     "aisyah": "عائشة بنت أبي بكر",
     "aisha": "عائشة بنت أبي بكر",
     "abdurrahman bin al qasim": "عبد الرحمن بن القاسم",
@@ -1996,7 +2002,81 @@ function getArabicScriptForRawi(latinOrAr) {
     if (lower.includes(k)) return v;
   }
 
-  return clean;
+  // Word-by-word Arabic Transliteration engine for unmapped narrators
+  const wordMap = {
+    'bin': 'بن',
+    'bint': 'بنت',
+    'binti': 'بنت',
+    'ibn': 'ابن',
+    'ibnu': 'ابن',
+    'abu': 'أبو',
+    'abi': 'أبي',
+    'umm': 'أم',
+    'ummu': 'أم',
+    'al': 'ال',
+    'muhammad': 'محمد',
+    'ahmad': 'أحمد',
+    'abdullah': 'عبد الله',
+    'abdurrahman': 'عبد الرحمن',
+    'ali': 'علي',
+    'umar': 'عمر',
+    'usman': 'عثمان',
+    'uthman': 'عثمان',
+    'aisyah': 'عائشة',
+    'aisha': 'عائشة',
+    'fatimah': 'فاطمة',
+    'hassan': 'الحسن',
+    'hussein': 'الحسين',
+    'hussain': 'الحسين',
+    'saad': 'سعد',
+    'said': 'سعيد',
+    'zayd': 'زيد',
+    'zaid': 'زيد',
+    'khalid': 'خالد',
+    'tariq': 'طارق',
+    'jabir': 'جابر',
+    'salman': 'سلمان',
+    'bilal': 'بلال',
+    'muadh': 'معاذ',
+    'suhayb': 'صهيب',
+    'yasser': 'ياسر',
+    'yasar': 'يسار',
+    'atho': 'عطاء',
+    'ata': 'عطاء',
+    'hilal': 'هلال',
+    'qasim': 'القاسم',
+    'tinnisi': 'التنيسي',
+    'humaydi': 'الحميدي',
+    'humaidi': 'الحميدي',
+    'ansari': 'الأنصاري',
+    'anshari': 'الأنصاري',
+    'zuhri': 'الزهري',
+    'malik': 'مالك',
+    'sufyan': 'سفيان',
+    'yahya': 'يحيى',
+    'urwah': 'عروة',
+    'nafi': 'نافع',
+    'salim': 'سالم',
+    'tawus': 'طاووس',
+    'ikrimah': 'عكرمة',
+    'katir': 'كثير',
+    'kathir': 'كثير',
+    'hisham': 'هشام',
+    'musab': 'مصعب',
+    'bukhari': 'البخاري',
+    'muslim': 'مسلم'
+  };
+
+  const words = clean.split(/\s+/);
+  const arWords = words.map(w => {
+    const lw = w.toLowerCase().replace(/[^a-z]/g, '');
+    return wordMap[lw] || w;
+  });
+
+  const converted = arWords.join(' ');
+  if (/[\u0600-\u06FF]/.test(converted)) return converted;
+
+  return 'أحد الرواة';
 }
 
 /**
