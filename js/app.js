@@ -2062,7 +2062,32 @@ async function loadSanadChain() {
     `;
   });
 
-  // Final Node: Collector
+  // Final Node: Collector & Author
+  const authorNamesEn = {
+    bukhari: 'Imam al-Bukhari',
+    muslim: 'Imam Muslim',
+    abudawud: 'Imam Abu Dawood',
+    tirmidhi: 'Imam at-Tirmidhi',
+    nasai: 'Imam an-Nasa\'i',
+    ibnmajah: 'Imam Ibn Majah',
+    malik: 'Imam Malik bin Anas',
+    ahmad: 'Imam Ahmad bin Hanbal'
+  };
+
+  const authorNamesId = {
+    bukhari: 'Imam al-Bukhari',
+    muslim: 'Imam Muslim',
+    abudawud: 'Imam Abu Daud',
+    tirmidhi: 'Imam at-Tirmidzi',
+    nasai: 'Imam an-Nasa\'i',
+    ibnmajah: 'Imam Ibn Majah',
+    malik: 'Imam Malik bin Anas',
+    ahmad: 'Imam Ahmad bin Hanbal'
+  };
+
+  const authorNameEn = authorNamesEn[bookId.toLowerCase()] || 'Imam al-Bukhari';
+  const authorNameId = authorNamesId[bookId.toLowerCase()] || 'Imam al-Bukhari';
+
   const authorIdMap = { 'bukhari': 'rawi_al_bukhari', 'muslim': 'rawi_muslim_ibn_hajjaj', 'abudawud': 'rawi_abu_dawud', 'tirmidhi': 'rawi_al_tirmidhi', 'nasai': 'rawi_al_nasai', 'ibnmajah': 'rawi_ibn_majah' };
   const authorProfileUrl = authorIdMap[bookId] ? `profile-detail.html?id=${authorIdMap[bookId]}` : `profile-detail.html?id=rawi_al_bukhari`;
 
@@ -2076,10 +2101,14 @@ async function loadSanadChain() {
             <span data-lang-id style="display:none">KOLEKTOR & PENULIS</span>
           </span>
           <a href="${authorProfileUrl}" class="font-bold text-lg hover:underline flex items-center gap-1 text-white">
-            ${escapeHtml(bookName)}
+            <span data-lang-en>${escapeHtml(authorNameEn)}</span>
+            <span data-lang-id style="display:none">${escapeHtml(authorNameId)}</span>
             <span class="material-symbols-outlined text-xs">open_in_new</span>
           </a>
-          <p class="text-xs text-gray-300">${isIdLang ? 'Tercatat dalam Koleksi Kitab Shahih Canonical' : 'Preserved in Authentic Canonical Corpus'}</p>
+          <p class="text-xs text-gray-300">
+            <span data-lang-en>Preserved in Authentic Canonical Corpus</span>
+            <span data-lang-id style="display:none">Tercatat dalam Koleksi Kitab Shahih Utama</span>
+          </p>
         </div>
       </div>
     </div>
