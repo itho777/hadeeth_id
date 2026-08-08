@@ -1940,12 +1940,21 @@ function getIndonesianRawiName(name, rawiId, arName) {
  */
 function getArabicScriptForRawi(latinOrAr) {
   if (!latinOrAr) return 'أحد الرواة';
-  if (/[\u0600-\u06FF]/.test(latinOrAr)) return latinOrAr;
 
-  const clean = latinOrAr.replace(/['`’]/g, '').trim();
+  let rawStr = typeof latinOrAr === 'string' ? latinOrAr : (latinOrAr.ar || latinOrAr.name_ar || latinOrAr.name || '');
+
+  // 1. If raw text contains pure Arabic script and ZERO Latin characters, return it immediately!
+  if (/[\u0600-\u06FF]/.test(rawStr) && !/[a-zA-Z]/.test(rawStr)) {
+    return rawStr.trim();
+  }
+
+  const clean = rawStr.replace(/['`’]/g, '').trim();
   const lower = clean.toLowerCase();
 
   const map = {
+    "qutaibah bin said": "قتيبة بن سعيد",
+    "qutaibah bin sa'id": "قتيبة بن سعيد",
+    "qutaybah bin said": "قتيبة بن سعيد",
     "abdullah bin dinar": "عبد الله بن دينار",
     "ismail bin jafar": "إسماعيل بن جعفر",
     "ismail bin ja'far": "إسماعيل بن جعفر",
@@ -2015,6 +2024,8 @@ function getArabicScriptForRawi(latinOrAr) {
 
   // Word-by-word Arabic Transliteration engine for unmapped narrators
   const wordMap = {
+    'qutaibah': 'قتيبة',
+    'qutaybah': 'قتيبة',
     'bin': 'بن',
     'bint': 'بنت',
     'binti': 'بنت',
@@ -2041,6 +2052,7 @@ function getArabicScriptForRawi(latinOrAr) {
     'hussain': 'الحسين',
     'saad': 'سعد',
     'said': 'سعيد',
+    'sa\'id': 'سعيد',
     'zayd': 'زيد',
     'zaid': 'زيد',
     'khalid': 'خالد',
@@ -2091,7 +2103,11 @@ function getArabicScriptForRawi(latinOrAr) {
   });
 
   const converted = arWords.join(' ');
-  if (/[\u0600-\u06FF]/.test(converted)) return converted;
+  // Purge any remaining Latin characters!
+  const arPurged = converted.replace(/[a-zA-Z0-9\(\)\'\`’\-\._]/g, '').trim().replace(/\s+/g, ' ');
+  if (/[\u0600-\u06FF]/.test(arPurged) && arPurged.length > 1) {
+    return arPurged;
+  }
 
   return 'أحد الرواة';
 }
