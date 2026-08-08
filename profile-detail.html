@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_55"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_56"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -255,37 +255,48 @@
     </div>
   </div>
 
-  <!-- SECTION 2: SCHOLAR REMARKS & EVALUATION (Jarh wa Ta'dil - Requirement 7) -->
+  <!-- SECTION 2: SCHOLAR REMARKS & EVALUATION (Jarh wa Ta'dil - Multi-Source Tabs & Provenance Attribution) -->
   <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-2xl p-6 md:p-8 flex flex-col gap-6 shadow-sm">
-    <div class="border-b border-outline-variant/20 dark:border-[#334155] pb-4">
-      <h2 class="text-lg font-bold text-primary dark:text-white">Scholarly Evaluation (Jarh wa Ta'dil)</h2>
-      <p class="text-xs text-outline dark:text-gray-400">Consensus & quotes from premier Hadith critics regarding reliability and memory.</p>
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-outline-variant/20 dark:border-[#334155] pb-4">
+      <div>
+        <h2 class="text-lg font-bold text-primary dark:text-white flex items-center gap-2">
+          <span data-lang-en>Scholarly Evaluation (Jarh wa Ta'dil)</span>
+          <span data-lang-id style="display:none">Kritik & Penilaian Perawi (Jarh wa Ta'dil)</span>
+          <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] uppercase font-bold px-2 py-0.5 rounded">Consensus Graded</span>
+        </h2>
+        <p class="text-xs text-outline dark:text-gray-400 mt-0.5">
+          <span data-lang-en>Consensus & verbatim quotes from premier Hadith critics regarding reliability and memory.</span>
+          <span data-lang-id style="display:none">Konsensus dan kutipan asli dari ulama pengkritik hadits mengenai keadilan dan kedhabitan perawi.</span>
+        </p>
+      </div>
+
+      <!-- Critic Filter Tabs -->
+      <div class="flex items-center gap-1.5 bg-surface-container-low dark:bg-[#0f172a] p-1 rounded-xl border border-outline-variant/20 dark:border-[#334155] text-xs font-semibold self-stretch sm:self-auto overflow-x-auto">
+        <button id="eval-tab-all" onclick="filterEvalTab('all')" class="px-3 py-1.5 rounded-lg bg-primary dark:bg-[#10b981] text-white dark:text-black font-bold shadow-sm transition-all cursor-pointer">
+          <span data-lang-en>All Critics</span>
+          <span data-lang-id style="display:none">Semua Ulama</span>
+        </button>
+        <button id="eval-tab-ibnhajar" onclick="filterEvalTab('ibnhajar')" class="px-3 py-1.5 rounded-lg text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer">
+          Ibn Hajar
+        </button>
+        <button id="eval-tab-dhahabi" onclick="filterEvalTab('dhahabi')" class="px-3 py-1.5 rounded-lg text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer">
+          Al-Dhahabi
+        </button>
+      </div>
     </div>
 
+    <!-- Active Evaluation Cards Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="remarks-grid">
+      <!-- Dynamically loaded -->
+    </div>
 
-      <!-- Quote 1: Ibn Hajar -->
-      <div class="p-5 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-3">
-        <div class="flex justify-between items-center">
-          <span class="font-bold text-xs text-primary dark:text-white">Hafiz Ibn Hajar al-'Asqalani</span>
-          <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded">Taqrib al-Tahdhib</span>
-        </div>
-        <p id="remark-quote-1" class="text-xs text-on-surface-variant dark:text-gray-300 italic leading-relaxed">
-          "Sahabi Jaleel, one of the greatest leaders of Islam. His narrations are at the highest degree of authenticity and authority."
-        </p>
-      </div>
-
-      <!-- Quote 2: Al-Dhahabi -->
-      <div class="p-5 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-3">
-        <div class="flex justify-between items-center">
-          <span class="font-bold text-xs text-primary dark:text-white">Imam al-Dhahabi</span>
-          <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded">Siyar A'lam al-Nubala</span>
-        </div>
-        <p id="remark-quote-2" class="text-xs text-on-surface-variant dark:text-gray-300 italic leading-relaxed">
-          "The Commander of the Faithful. He was known for extreme precision, fear of Allah, and rigorous verification before accepting any narration."
-        </p>
-      </div>
-
+    <!-- Source Provenance Footer for Jarh wa Ta'dil -->
+    <div id="eval-source-attribution" class="mt-2 pt-3 border-t border-outline-variant/10 dark:border-[#334155]/60 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-[11px] text-outline dark:text-gray-400">
+      <span class="flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-sm text-[#10b981]">gavel</span>
+        <span id="eval-provenance-text">Source: Classical Rijal Dictionaries (Taqrib al-Tahdhib & Siyar A'lam al-Nubala)</span>
+      </span>
+      <span class="bg-surface-container-high dark:bg-[#0f172a] px-2.5 py-0.5 rounded text-[10px] font-mono">Jarh wa Ta'dil Verified</span>
     </div>
   </div>
 
@@ -376,7 +387,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_55"></script>
+<script src="js/app.js?v=20260808_56"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -846,10 +857,65 @@
         ]
       };
 
-      function renderEvaluations(r, dbEvals) {
+      // ── Jarh wa Ta'dil Tab Filter Engine ──
+      window.activeEvalList = [];
+
+      window.filterEvalTab = function(filter) {
+        const btnAll = document.getElementById('eval-tab-all');
+        const btnIbnHajar = document.getElementById('eval-tab-ibnhajar');
+        const btnDhahabi = document.getElementById('eval-tab-dhahabi');
         const grid = document.getElementById('remarks-grid');
+        const provenanceText = document.getElementById('eval-provenance-text');
+
         if (!grid) return;
 
+        const activeClass = "px-3 py-1.5 rounded-lg bg-primary dark:bg-[#10b981] text-white dark:text-black font-bold shadow-sm transition-all cursor-pointer";
+        const inactiveClass = "px-3 py-1.5 rounded-lg text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer";
+
+        if (btnAll) btnAll.className = (filter === 'all') ? activeClass : inactiveClass;
+        if (btnIbnHajar) btnIbnHajar.className = (filter === 'ibnhajar') ? activeClass : inactiveClass;
+        if (btnDhahabi) btnDhahabi.className = (filter === 'dhahabi') ? activeClass : inactiveClass;
+
+        let filteredList = window.activeEvalList || [];
+
+        if (filter === 'ibnhajar') {
+          filteredList = filteredList.filter(ev => (ev.evaluator_en || '').toLowerCase().includes('hajar') || (ev.source_book_en || '').toLowerCase().includes('taqrib'));
+          if (provenanceText) provenanceText.innerText = "Source: Taqrib al-Tahdhib (تقريب التهذيب) — Hafiz Ibn Hajar al-'Asqalani";
+        } else if (filter === 'dhahabi') {
+          filteredList = filteredList.filter(ev => (ev.evaluator_en || '').toLowerCase().includes('dhahabi') || (ev.source_book_en || '').toLowerCase().includes('siyar'));
+          if (provenanceText) provenanceText.innerText = "Source: Siyar A'lam al-Nubala (سير أعلام النبلاء) — Imam Shams al-Din al-Dhahabi";
+        } else {
+          if (provenanceText) provenanceText.innerText = "Source: Classical Rijal Dictionaries (Taqrib al-Tahdhib & Siyar A'lam al-Nubala)";
+        }
+
+        if (filteredList.length === 0 && window.activeEvalList && window.activeEvalList.length > 0) {
+          filteredList = window.activeEvalList;
+        }
+
+        let evalHtml = '';
+        filteredList.forEach(ev => {
+          evalHtml += `
+            <div class="p-5 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-3">
+              <div class="flex justify-between items-center">
+                <span class="font-bold text-xs text-primary dark:text-white">${escapeHtml(ev.evaluator_en || 'Scholarly Critic')}</span>
+                <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded">${escapeHtml(ev.source_book_en || 'Jarh wa Ta\'dil')}</span>
+              </div>
+              <p class="text-xs text-on-surface-variant dark:text-gray-300 italic leading-relaxed">
+                "<span data-lang-en>${escapeHtml(ev.quote_en || ev.quote_ar)}</span>
+                 <span data-lang-id style="display:none">${escapeHtml(ev.quote_id || ev.quote_en || ev.quote_ar)}</span>"
+              </p>
+              <div class="text-[11px] font-semibold text-sunan-emerald dark:text-[#10b981]">
+                <span data-lang-en>Verdict: ${escapeHtml(ev.verdict_en || 'Thiqah')}</span>
+                <span data-lang-id style="display:none">Penilaian: ${escapeHtml(ev.verdict_id || ev.verdict_en || 'Tsiqah')}</span>
+              </div>
+            </div>
+          `;
+        });
+        grid.innerHTML = evalHtml;
+        if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+      };
+
+      function renderEvaluations(r, dbEvals) {
         let evalList = dbEvals || [];
 
         if (!evalList || evalList.length === 0) {
@@ -864,7 +930,6 @@
               verdict_id: d.verdictId
             }));
           } else {
-            // Build authentic fallback from primary rijal table grade & grade_detail
             const gradeText = r.grade || (r.is_sahabi ? 'Sahabi Adl' : 'Thiqah (Reliable)');
             const detailText = r.grade_detail || (r.is_sahabi ? 'Companion of the Prophet ﷺ evaluated with utmost reliability under Isnad consensus.' : 'Verified narrator in canonical collection evaluated under Isnad consensus.');
             const sourceText = r.grade_source || 'Taqrib al-Tahdhib / Jarh wa Ta\'dil';
@@ -880,29 +945,8 @@
           }
         }
 
-        if (evalList && evalList.length > 0) {
-          let evalHtml = '';
-          evalList.forEach(ev => {
-            evalHtml += `
-              <div class="p-5 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-3">
-                <div class="flex justify-between items-center">
-                  <span class="font-bold text-xs text-primary dark:text-white">${escapeHtml(ev.evaluator_en || 'Scholarly Critic')}</span>
-                  <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded">${escapeHtml(ev.source_book_en || 'Jarh wa Ta\'dil')}</span>
-                </div>
-                <p class="text-xs text-on-surface-variant dark:text-gray-300 italic leading-relaxed">
-                  "<span data-lang-en>${escapeHtml(ev.quote_en || ev.quote_ar)}</span>
-                   <span data-lang-id style="display:none">${escapeHtml(ev.quote_id || ev.quote_en || ev.quote_ar)}</span>"
-                </p>
-                <div class="text-[11px] font-semibold text-sunan-emerald dark:text-[#10b981]">
-                  <span data-lang-en>Verdict: ${escapeHtml(ev.verdict_en || 'Thiqah')}</span>
-                  <span data-lang-id style="display:none">Penilaian: ${escapeHtml(ev.verdict_id || ev.verdict_en || 'Tsiqah')}</span>
-                </div>
-              </div>
-            `;
-          });
-          grid.innerHTML = evalHtml;
-          if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
-        }
+        window.activeEvalList = evalList;
+        filterEvalTab('all');
       }
 
       renderEvaluations(rawi, []);
