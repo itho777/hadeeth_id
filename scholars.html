@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_23"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_24"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -171,8 +171,8 @@
   </div>
 </footer>
 
-<script src="js/api.js?v=20260808_23"></script>
-<script src="js/app.js?v=20260808_23"></script>
+<script src="js/api.js?v=20260808_24"></script>
+<script src="js/app.js?v=20260808_24"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -205,21 +205,52 @@
   };
 
   const fallbackScholars = [
-    { id: 'umar_ibn_al_khattab', name_en: "'Umar bin Al-Khattab", name_id: "Umar bin al-Khaththab", name_ar: "عمر بن الخطاب", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "23", died_ce: "644", hadith_count: 537, books: ["Sahih al-Bukhari", "Sahih Muslim"], bio_en: "Second Caliph of Islam, renowned for his justice and massive transmission of Hadiths." },
-    { id: 'aisha_bint_abi_bakr', name_en: "'Aisha bint Abi Bakr", name_id: "Aisyah binti Abu Bakar", name_ar: "عائشة بنت أبي بكر", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "58", died_ce: "678", hadith_count: 2420, books: ["Sahih al-Bukhari", "Sahih Muslim"], bio_en: "Mother of the Believers, jurisprudence scholar, and major transmitter of prophetic traditions." },
-    { id: 'abu_hurairah', name_en: "Abu Hurairah", name_id: "Abu Hurairah", name_ar: "أبو هريرة", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "57", died_ce: "678", hadith_count: 5374, books: ["Sahih al-Bukhari", "Sahih Muslim"], bio_en: "Top companion transmitter of Hadith with over 5,300 reported traditions." },
-    { id: 'anas_bin_malik', name_en: "Anas bin Malik", name_id: "Anas bin Malik al-Anshari", name_ar: "أنس بن مالك", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "93", died_ce: "712", hadith_count: 2286, books: ["Sahih al-Bukhari", "Sahih Muslim"], bio_en: "Personal servant of Prophet Muhammad ﷺ in Madinah for ten years." },
-    { id: 'malik_bin_anas', name_en: "Imam Malik bin Anas", name_id: "Imam Malik bin Anas", name_ar: "مالك بن أنس", is_sahabi: false, generation: "Tabi' al-Tabi'in", grade: "Hafiz / Imam", died_ah: "179", died_ce: "795", hadith_count: 1720, books: ["Muwatta Malik", "Sahih al-Bukhari"], bio_en: "Founder of Maliki Madhhab and compiler of Al-Muwatta." },
-    { id: 'al_bukhari', name_en: "Imam Muhammad al-Bukhari", name_id: "Imam al-Bukhari", name_ar: "محمد بن إسماعيل البخاري", is_sahabi: false, generation: "Collector", grade: "Amir al-Mu'minin fi al-Hadith", died_ah: "256", died_ce: "870", hadith_count: 7563, books: ["Sahih al-Bukhari"], bio_en: "Author of Sahih al-Bukhari, the most authentic book after the Qur'an." }
+    { id: 'rawi_umar_ibn_al_khattab', name_en: "'Umar bin Al-Khattab", name_id: "Umar bin al-Khaththab", name_ar: "عمر بن الخطاب", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "23", died_ce: "644", hadith_count: 537, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Second Caliph of Islam, renowned for his justice and massive transmission of Hadiths." },
+    { id: 'rawi_aisha_bint_abi_bakr', name_en: "'Aisha bint Abi Bakr", name_id: "Aisyah binti Abu Bakar ash-Shiddiq", name_ar: "عائشة بنت أبي بكر", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "58", died_ce: "678", hadith_count: 2420, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Mother of the Believers, jurisprudence scholar, and major transmitter of prophetic traditions." },
+    { id: 'rawi_abu_hurairah', name_en: "Abu Hurairah", name_id: "Abu Hurairah radliallahu 'anhu", name_ar: "أبو هريرة", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "57", died_ce: "678", hadith_count: 5374, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Top companion transmitter of Hadith with over 5,300 reported traditions." },
+    { id: 'rawi_ibn_umar', name_en: "Ibnu 'Umar", name_id: "Ibnu Umar", name_ar: "عبد الله بن عمر", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "73", died_ce: "693", hadith_count: 2630, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Son of Umar bin al-Khattab, eminent jurist and meticulous follower of Sunnah." },
+    { id: 'rawi_ibn_abbas', name_en: "'Abdullah bin 'Abbas", name_id: "Abdullah bin Abbas", name_ar: "عبد الله بن عباس", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "68", died_ce: "687", hadith_count: 1660, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Ta'if", bio_en: "Cousin of the Prophet ﷺ, known as Hibr al-Ummah (Scholar of the Nation)." },
+    { id: 'rawi_anas_bin_malik', name_en: "Anas bin Malik", name_id: "Anas bin Malik al-Anshari", name_ar: "أنس بن مالك", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "93", died_ce: "712", hadith_count: 2286, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Basra", bio_en: "Personal servant of Prophet Muhammad ﷺ in Madinah for ten years." },
+    { id: 'rawi_jaber_bin_abdullah', name_en: "Jabir bin 'Abdullah", name_id: "Jabir bin Abdullah al-Anshari", name_ar: "جابر بن عبد الله", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "78", died_ce: "697", hadith_count: 1540, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Anshari Companion who held famous Hadith study circles in the Prophet's Mosque." },
+    { id: 'rawi_abu_said_al_khudri', name_en: "Abu Sa'id al-Khudri", name_id: "Abu Sa'id al-Khudri", name_ar: "أبو سعيد الخدري", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "74", died_ce: "693", hadith_count: 1170, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Prominent young Companion who participated in major battles and transmitted core Hadiths." },
+    { id: 'rawi_abdullah_bin_masud', name_en: "'Abdullah bin Mas'ud", name_id: "Abdullah bin Mas'ud", name_ar: "عبد الله بن مسعود", is_sahabi: true, generation: "Sahabi (Companion)", grade: "Sahabi Adl", died_ah: "32", died_ce: "652", hadith_count: 848, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Early convert, trusted custodian of the Qur'an and pioneer jurist of Kufah." },
+    { id: 'rawi_malik_bin_anas', name_en: "Imam Malik bin Anas", name_id: "Imam Malik bin Anas", name_ar: "مالك بن أنس", is_sahabi: false, generation: "Tabi' al-Tabi'in", grade: "Hafiz / Imam", died_ah: "179", died_ce: "795", hadith_count: 1720, books: ["Muwatta Malik", "Sahih al-Bukhari"], city_of_death: "Madinah", bio_en: "Imam of Madinah, founder of Maliki Madhhab, and compiler of Al-Muwatta." },
+    { id: 'rawi_al_bukhari', name_en: "Imam Muhammad al-Bukhari", name_id: "Imam al-Bukhari", name_ar: "محمد بن إسماعيل البخاري", is_sahabi: false, generation: "Collector", grade: "Amir al-Mu'minin fi al-Hadith", died_ah: "256", died_ce: "870", hadith_count: 7563, books: ["Sahih al-Bukhari"], city_of_death: "Khartank", bio_en: "Compiler of Sahih al-Bukhari, universally acknowledged as the most authentic Hadith book." },
+    { id: 'rawi_muslim_ibn_hajjaj', name_en: "Imam Muslim ibn al-Hajjaj", name_id: "Imam Muslim ibn al-Hajjaj", name_ar: "مسلم بن الحجاج", is_sahabi: false, generation: "Collector", grade: "Amir al-Mu'minin fi al-Hadith", died_ah: "261", died_ce: "875", hadith_count: 7500, books: ["Sahih Muslim"], city_of_death: "Nishapur", bio_en: "Author of Sahih Muslim, renowned for immaculate sanad arrangement." },
+    { id: 'rawi_abu_dawud', name_en: "Imam Abu Dawood", name_id: "Imam Abu Dawood", name_ar: "أبو داود السجستاني", is_sahabi: false, generation: "Collector", grade: "Imam Hafiz", died_ah: "275", died_ce: "889", hadith_count: 5274, books: ["Sunan Abu Dawood"], city_of_death: "Basra", bio_en: "Compiler of Sunan Abu Dawood, focusing on legal Sunnah and jurisprudence." },
+    { id: 'rawi_al_tirmidhi', name_en: "Imam al-Tirmidhi", name_id: "Imam at-Tirmidhi", name_ar: "أبو عيسى الترمذي", is_sahabi: false, generation: "Collector", grade: "Imam Hafiz", died_ah: "279", died_ce: "892", hadith_count: 3956, books: ["Jami' at-Tirmidhi"], city_of_death: "Termez", bio_en: "Compiler of Jami' at-Tirmidhi, pioneer of Hadith grading terminology (Sahih, Hasan, Gharib)." },
+    { id: 'rawi_al_nasai', name_en: "Imam an-Nasa'i", name_id: "Imam an-Nasa'i", name_ar: "أحمد بن شعيب النسائي", is_sahabi: false, generation: "Collector", grade: "Imam Hafiz", died_ah: "303", died_ce: "915", hadith_count: 5758, books: ["Sunan an-Nasa'i"], city_of_death: "Ramla / Makkah", bio_en: "Compiler of Sunan an-Nasa'i, famed for extremely strict narrator conditions." },
+    { id: 'rawi_ibn_majah', name_en: "Imam Ibn Majah", name_id: "Imam Ibn Majah", name_ar: "ابن ماجه القزويني", is_sahabi: false, generation: "Collector", grade: "Imam Hafiz", died_ah: "273", died_ce: "887", hadith_count: 4341, books: ["Sunan Ibn Majah"], city_of_death: "Qazvin", bio_en: "Compiler of Sunan Ibn Majah, sixth canonical book of Kutub al-Sittah." },
+    { id: 'rawi_ahmad', name_en: "Imam Ahmad bin Hanbal", name_id: "Imam Ahmad bin Hanbal", name_ar: "أحمد بن حنبل", is_sahabi: false, generation: "Collector", grade: "Imam Ahl al-Sunnah", died_ah: "241", died_ce: "855", hadith_count: 28000, books: ["Musnad Ahmad"], city_of_death: "Baghdad", bio_en: "Founder of Hanbali Madhhab and compiler of the massive Musnad Ahmad." },
+    { id: 'rawi_al_zuhri', name_en: "Ibn Shihab al-Zuhri", name_id: "Ibn Shihab az-Zuhri", name_ar: "ابن شهاب الزهري", is_sahabi: false, generation: "Tabi'i", grade: "Thiqah Hafiz", died_ah: "124", died_ce: "742", hadith_count: 2200, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Master Tabi'i scholar of Madinah who spearheaded formal Hadith codification." },
+    { id: 'rawi_nafi', name_en: "Nafi' Maula Ibn 'Umar", name_id: "Nafi' Maula Ibnu Umar", name_ar: "نافع مولى ابن عمر", is_sahabi: false, generation: "Tabi'i", grade: "Thiqah Thabt", died_ah: "117", died_ce: "735", hadith_count: 1400, books: ["Muwatta Malik", "Sahih al-Bukhari"], city_of_death: "Madinah", bio_en: "Key link in the Golden Chain of Transmission (Malik -> Nafi' -> Ibn 'Umar)." },
+    { id: 'rawi_salim', name_en: "Salim bin 'Abdullah", name_id: "Salim bin Abdullah bin Umar", name_ar: "سالم بن عبد الله", is_sahabi: false, generation: "Tabi'i", grade: "Thiqah Faqih", died_ah: "106", died_ce: "725", hadith_count: 950, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "One of the Seven Fuqaha of Madinah and grandson of 'Umar bin al-Khattab." },
+    { id: 'rawi_urwah', name_en: "'Urwah bin al-Zubayr", name_id: "Urwah bin az-Zubair", name_ar: "عروة بن الزبير", is_sahabi: false, generation: "Tabi'i", grade: "Thiqah Faqih", died_ah: "94", died_ce: "713", hadith_count: 1300, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Nephew of 'Aisha bint Abi Bakr, founder of Maghazi literature and legal scholar." },
+    { id: 'rawi_said_bin_jubair', name_en: "Sa'id bin Jubair", name_id: "Sa'id bin Jubair", name_ar: "سعيد بن جبير", is_sahabi: false, generation: "Tabi'i", grade: "Thiqah Imam", died_ah: "95", died_ce: "714", hadith_count: 750, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Kufah", bio_en: "Top student of Ibn 'Abbas and prominent Tabi'i scholar of Kufah." },
+    { id: 'rawi_sufyan_al_thawri', name_en: "Sufyan bin 'Uyaynah", name_id: "Sufyan bin Uyainah", name_ar: "سفيان بن عيينة", is_sahabi: false, generation: "Tabi' al-Tabi'in", grade: "Thiqah Hafiz", died_ah: "198", died_ce: "814", hadith_count: 1250, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Makkah", bio_en: "Master Hadith scholar of Makkah and direct teacher of Imam al-Shafi'i." },
+    { id: 'rawi_yahya_bin_said', name_en: "Yahya bin Sa'id al-Ansari", name_id: "Yahya bin Sa'id al-Anshari", name_ar: "يحيى بن سعيد الأنصاري", is_sahabi: false, generation: "Tabi'i", grade: "Thiqah Thabt", died_ah: "143", died_ce: "760", hadith_count: 820, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah / Iraq", bio_en: "Judge of Madinah and central rawi of the famous 'Innama al-A'malu bi al-Niyyat' Hadith." },
+    { id: 'rawi_abdullah_bin_dinar', name_en: "Abdullah bin Dinar", name_id: "Abdullah bin Dinar", name_ar: "عبد الله بن دينار", is_sahabi: false, generation: "Tabi'i", grade: "Thiqah Mutqin", died_ah: "127", died_ce: "745", hadith_count: 340, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Trusworthy Madinan rawi who narrated extensively from Abdullah bin 'Umar." },
+    { id: 'rawi_ismail_bin_jafar', name_en: "Isma'il bin Ja'far", name_id: "Ismail bin Ja'far al-Madani", name_ar: "إسماعيل بن جعفر", is_sahabi: false, generation: "Tabi' al-Tabi'in", grade: "Thiqah Thabt", died_ah: "180", died_ce: "796", hadith_count: 400, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Baghdad", bio_en: "Madinan Quran reciter and Hadith transmitter who settled in Baghdad." },
+    { id: 'rawi_qutaibah_bin_said', name_en: "Qutaibah bin Sa'id", name_id: "Qutaibah bin Sa'id", name_ar: "قتيبة بن سعيد", is_sahabi: false, generation: "Tabi' al-Tabi'in", grade: "Thiqah Thabt", died_ah: "240", died_ce: "855", hadith_count: 1280, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Baghlan / Kufah", bio_en: "Major direct sheikh of Bukhari, Muslim, Abu Dawood, and Tirmidhi." },
+    { id: 'rawi_atho_bin_yasar', name_en: "Atho' bin Yasar", name_id: "Atha bin Yasar", name_ar: "عطاء بن يسar", is_sahabi: false, generation: "Tabi'i", grade: "Thiqah Fadil", died_ah: "103", died_ce: "721", hadith_count: 205, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Devout Madinan Tabi'i scholar and narrator from Abu Hurairah and Abu Sa'id al-Khudri." },
+    { id: 'rawi_hilal_bin_ali', name_en: "Hilal bin Ali", name_id: "Hilal bin Ali bin Osama", name_ar: "هلال بن علي", is_sahabi: false, generation: "Tabi'i", grade: "Thiqah", died_ah: "120", died_ce: "738", hadith_count: 150, books: ["Sahih al-Bukhari", "Sahih Muslim"], city_of_death: "Madinah", bio_en: "Authentic Madinan rawi who transmitted Hadiths from Atho' bin Yasar and Anas bin Malik." }
   ];
 
   function getCleanArabicName(r) {
-    if (r.name_ar && !r.name_ar.startsWith('Q') && /[\u0600-\u06FF]/.test(r.name_ar)) {
-      return r.name_ar;
+    const rawAr = r.name_ar || r.ar;
+    if (rawAr && !rawAr.startsWith('Q') && /[\u0600-\u06FF]/.test(rawAr) && !/[a-zA-Z]/.test(rawAr)) {
+      return rawAr.trim();
     }
     const slug = (r.id || '').toLowerCase();
     const nameLow = (r.name_en || '').toLowerCase();
-    return arNameDict[slug] || arNameDict[nameLow] || (r.name_ar && !r.name_ar.startsWith('Q') ? r.name_ar : '');
+    if (arNameDict[slug]) return arNameDict[slug];
+    if (arNameDict[nameLow]) return arNameDict[nameLow];
+    
+    // Call getArabicScriptForRawi helper from app.js?v=20260808_24 if available
+    if (typeof getArabicScriptForRawi === 'function') {
+      return getArabicScriptForRawi(r.name_en || r.name_id || r.id);
+    }
+    return '';
   }
 
   function getCleanEnglishName(r) {
@@ -283,7 +314,8 @@
     if (!grid) return;
 
     try {
-      let url = `${supabaseUrl}/rest/v1/rijal?select=*&order=hadith_count.desc,died_ah.asc&limit=100`;
+      // Query Supabase strictly for narrators with hadith_count > 0 AND valid Arabic names
+      let url = `${supabaseUrl}/rest/v1/rijal?select=*&hadith_count=gt.0&order=hadith_count.desc,died_ah.asc&limit=100`;
       if (activeGen === 'sahabah') {
         url += '&is_sahabi=eq.true';
       } else if (activeGen === 'tabiun') {
@@ -302,20 +334,37 @@
 
       if (res.ok) {
         const data = await res.json();
-        if (data && data.length > 0) {
-          allScholars = data;
+        // Filter out non-narrator modern entries lacking hadiths or proper names
+        const validNarrators = (data || []).filter(r => (r.hadith_count > 0 || r.is_sahabi) && r.name_en && !r.name_en.includes('Kampung'));
+        if (validNarrators.length > 0) {
+          allScholars = validNarrators;
         } else {
-          allScholars = fallbackScholars;
+          allScholars = filterFallbackScholars(gen, role, query);
         }
       } else {
-        allScholars = fallbackScholars;
+        allScholars = filterFallbackScholars(gen, role, query);
       }
     } catch (err) {
       console.warn('Error fetching scholars from Supabase, using fallback:', err);
-      allScholars = fallbackScholars;
+      allScholars = filterFallbackScholars(gen, role, query);
     }
 
     renderScholarsPage();
+  }
+
+  function filterFallbackScholars(gen, role, query) {
+    return fallbackScholars.filter(r => {
+      if (gen === 'sahabah' && !r.is_sahabi) return false;
+      if (gen === 'tabiun' && r.generation !== 'Tabi\'i') return false;
+      if (gen === 'collectors' && r.generation !== 'Collector') return false;
+      if (query) {
+        const q = query.toLowerCase();
+        const matchEn = (r.name_en || '').toLowerCase().includes(q);
+        const matchId = (r.name_id || '').toLowerCase().includes(q);
+        if (!matchEn && !matchId) return false;
+      }
+      return true;
+    });
   }
 
   function renderScholarsPage() {
