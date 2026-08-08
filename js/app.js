@@ -80,7 +80,7 @@ const UI_I18N = {
     loading_kitab: "Memuat indeks Kitab...",
     search_within_chapter: "Cari dalam bab ini atau ketik kata kunci...",
     scope_label: "Cakupan:",
-    scope_this_chapter: "Bab Ini",
+    scope_this_chapter: "Kitab Ini",
     scope_global: "Global (Semua Kitab)",
     translation_label: "Terjemahan:",
     trans_id: "Bahasa Indonesia",
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Copy & Social Media Share Hadith Handler ---
   document.addEventListener('click', async (e) => {
-    const copyBtn = e.target.closest('[data-copy-hadith], .btn-copy-share');
+    const copyBtn = e.target.closest('[data-copy-hadith], [data-copy-share-btn], .btn-copy-share');
     if (!copyBtn) return;
 
     e.preventDefault();
@@ -1338,6 +1338,7 @@ async function loadHadithCardsList() {
   const chapterTitleEn = document.querySelector('[data-list-chapter-title-en]');
   const chapterTitleId = document.querySelector('[data-list-chapter-title-id]');
   const chapterTitleAr = document.querySelector('[data-list-chapter-title-ar]');
+  const countMeta = document.querySelector('[data-list-count-meta]');
 
   if (listBcBook) {
     listBcBook.innerText = bookName;
@@ -1355,6 +1356,16 @@ async function loadHadithCardsList() {
     enTitle = chInfo.title_en || chInfo.name_en || enTitle;
     idTitle = chInfo.title_id || chInfo.name_id || enTitle;
     arTitle = chInfo.title_ar || chInfo.name_ar || '';
+
+    const startNum = chInfo.hadith_start || '';
+    const endNum = chInfo.hadith_end || '';
+    const hCount = chInfo.hadith_count || (endNum && startNum ? (endNum - startNum + 1) : '');
+
+    if (countMeta) {
+      countMeta.innerText = isIdLang
+        ? `Hadits ${startNum} - ${endNum} • ${hCount} Hadits dalam ${bookName} Kitab ${chapterId}`
+        : `Hadith ${startNum} - ${endNum} • ${hCount} Hadiths in ${bookName} Chapter ${chapterId}`;
+    }
   }
 
   if (listBcCurrent) listBcCurrent.innerText = isIdLang ? idTitle : enTitle;
@@ -1409,16 +1420,19 @@ async function loadHadithCardsList() {
             <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded">${isIdLang ? `Hadits #${num}` : `Hadith #${num}`}</span>
             <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2 py-0.5 rounded">${isIdLang ? 'Shahih' : 'Sahih'}</span>
           </div>
-          <span class="text-xs text-outline dark:text-gray-400">${escapeHtml(bookName)} #${num}</span>
+          <button type="button" data-copy-share-btn data-book="${bookId}" data-id="${num}" data-hadith-title="${escapeHtml(bookName)} #${num}" class="border border-outline-variant/30 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] text-xs font-semibold text-primary dark:text-white px-3 py-1 rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer">
+            <span class="material-symbols-outlined text-sm">share</span>
+            <span>${isIdLang ? 'Salin / Bagikan' : 'Copy / Share'}</span>
+          </button>
         </div>
         ${araText ? `<p class="font-arabic-body text-xl text-primary dark:text-white text-right leading-loose" dir="rtl">${escapeHtml(araText)}</p>` : ''}
         <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed">${escapeHtml(engText)}</p>
         <div class="flex justify-between items-center pt-3 border-t border-outline-variant/10 dark:border-[#334155]">
           <a href="hadith.html?book=${bookId}&id=${num}" class="text-xs font-bold text-primary dark:text-[#10b981] hover:underline flex items-center gap-1">
-            ${isIdLang ? 'Baca Hadits Selengkapnya &rarr;' : 'Read Full Hadith & Translation &rarr;'}
+            ${isIdLang ? 'Hadits Selengkapnya & Pensyarahan &rarr;' : 'Full Hadith & Commentary &rarr;'}
           </a>
           <a href="sanad.html?book=${bookId}&id=${num}" class="text-xs font-semibold text-secondary dark:text-gray-400 hover:underline flex items-center gap-1">
-            <span class="material-symbols-outlined text-[16px]">account_tree</span> ${isIdLang ? 'Telusuri Sanad' : 'View Sanad Chain'}
+            <span class="material-symbols-outlined text-[16px]">account_tree</span> ${isIdLang ? 'Telusuri Sanad' : 'Inspect Sanad Chain'}
           </a>
         </div>
       </div>
@@ -1426,6 +1440,7 @@ async function loadHadithCardsList() {
   });
 
   container.innerHTML = html;
+  LangSystem.apply(LangSystem.get());
   LangSystem.apply(LangSystem.get());
 
   if (!window._hadithCardsLangListenerAttached) {
