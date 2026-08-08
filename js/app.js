@@ -1577,8 +1577,6 @@ async function loadSanadChain() {
   let textAr = '';
   let textEn = '';
   let textId = '';
-  let dbNarrators = [];
-
   // Try RPC / DB lookup first
   try {
     const resRpc = await fetch(`${supabaseUrl}/rest/v1/rpc/get_sanad_chain`, {
@@ -1618,12 +1616,14 @@ async function loadSanadChain() {
 
   // Canonical Rawi Dictionary with complete 7 Rijal Metadata attributes & EN/ID transliterations
   const rawiDict = [
-    { key: 'عَائِشَة', rawi_id: 'rawi_aisha_bint_abi_bakr', en: "'Aisha bint Abi Bakr (رضي الله عنها)", id: "Aisyah binti Abu Bakar ash-Shiddiq", role: "Sahabiya • Mother of Believers", ar: "عائشة بنت أبي بكر", is_sahabi: true, kunyah: "Umm Abdillah", residence: "Madinah", death_ah: "58 AH (678 CE)", counts: "Bukhari: 242 | Muslim: 210", remarks: "Ibn Hajar: Al-Faqiha Al-Hafiz | Al-Dhahabi: Ummu al-Mu'minin" },
+    { key: 'عَائِشَة', rawi_id: 'rawi_aisha_bint_abi_bakr', en: "'Aisha bint Abi Bakr (رضي الله عنها)", id: "Aisyah binti Abu Bakar ash-Shiddiq", role: "Sahabi (Companion) • Grade: Thiqah", ar: "عائشة بنت أبي بكر", is_sahabi: true, kunyah: "Umm Abdillah", residence: "Madinah", death_ah: "58 AH (678 CE)", counts: "Bukhari: 2420 | Muslim: 2210", remarks: "Ibn Hajar: Al-Faqiha Al-Hafiz | Al-Dhahabi: Ummu al-Mu'minin" },
     { key: 'عُمَر', rawi_id: 'rawi_umar_ibn_al_khattab', en: "'Umar bin Al-Khattab (رضي الله عنه)", id: "Umar bin al-Khaththab", role: "Sahabi (Companion) • Grade: Thiqah", ar: "عمر بن الخطاب", is_sahabi: true, kunyah: "Abu Hafsh", residence: "Madinah", death_ah: "23 AH (644 CE)", counts: "Bukhari: 537 | Muslim: 450", remarks: "Ibn Hajar: Amir al-Mu'minin Al-Farooq | Al-Dhahabi: Al-Imam Al-Adl" },
     { key: 'أَبِي هُرَيْرَة', rawi_id: 'rawi_abu_hurairah', en: "Abu Hurairah (رضي الله عنه)", id: "Abu Hurairah radliallahu 'anhu", role: "Sahabi (Companion) • Grade: Thiqah", ar: "أبو هريرة", is_sahabi: true, kunyah: "Abu Hurairah", residence: "Madinah / Bahrain", death_ah: "57 AH (678 CE)", counts: "Bukhari: 5374 | Muslim: 4000", remarks: "Ibn Hajar: Sayyid al-Huffaz | Al-Dhahabi: Al-Hafiz Al-Adl" },
     { key: 'عَبْدِ اللَّهِ بْنِ عُمَر', rawi_id: 'rawi_ibn_umar', en: "Ibnu 'Umar", id: "Ibnu Umar", role: "Sahabi (Companion) • Grade: Thiqah", ar: "عبد الله بن عمر", is_sahabi: true, kunyah: "Abu Abdurrahman", residence: "Madinah", death_ah: "73 AH (693 CE)", counts: "Bukhari: 2630 | Muslim: 1800", remarks: "Ibn Hajar: Al-Faqih Al-Muttabi' | Ibn Ma'in: Thiqah Thabt" },
     { key: 'ابْنِ عَبَّاس', rawi_id: 'rawi_ibn_abbas', en: "'Abdullah bin 'Abbas (رضي الله عنه)", id: "Abdullah bin Abbas", role: "Sahabi (Companion) • Grade: Thiqah", ar: "عبد الله بن عباس", is_sahabi: true, kunyah: "Abu al-Abbas", residence: "Makkah / Ta'if", death_ah: "68 AH (687 CE)", counts: "Bukhari: 1660 | Muslim: 1200", remarks: "Ibn Hajar: Hibr al-Ummah wa Tarjuman al-Qur'an" },
     { key: 'أَنَس', rawi_id: 'rawi_anas_bin_malik', en: "Anas bin Malik (رضي الله عنه)", id: "Anas bin Malik al-Anshari", role: "Sahabi (Companion) • Grade: Thiqah", ar: "أنس بن مالك", is_sahabi: true, kunyah: "Abu Hamzah", residence: "Basra", death_ah: "93 AH (712 CE)", counts: "Bukhari: 2286 | Muslim: 1800", remarks: "Ibn Hajar: Khadim Rasulillahi ﷺ" },
+    { key: 'الْقَاسِم', rawi_id: 'rawi_abdurrahman_bin_al_qasim', en: "'Abdurrahman bin Al-Qasim", id: "Abdurrahman bin al-Qasim bin Muhammad", role: "Transmitter (Rawi) • Grade: Thiqah", ar: "عبد الرحمن بن القاسم", is_sahabi: false, kunyah: "Abu al-Qasim", residence: "Madinah", death_ah: "126 AH (744 CE)", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah Faqih | Imam Malik: Min Afdal Ahl al-Madinah" },
+    { key: 'يُوسُف', rawi_id: 'rawi_abdullah_bin_yusuf', en: "'Abdullah bin Yusuf at-Tinnisi", id: "Abdullah bin Yusuf at-Tinnisi", role: "Direct Sheikh of Bukhari • Grade: Thiqah", ar: "عبد الله بن يوسف التنيسي", is_sahabi: false, kunyah: "Abu Muhammad", residence: "Tinnis / Damascus", death_ah: "218 AH (833 CE)", counts: "Bukhari: 215", remarks: "Ibn Hajar: Thiqah Mutqin | Yahya bin Ma'in: Thiqah" },
     { key: 'عِكْرِمَة', rawi_id: 'rawi_ikrimah_bin_khalid', en: "'Ikrimah bin Khalid", id: "Ikrimah bin Khalid", role: "Transmitter (Rawi) • Grade: Thiqah", ar: "عكرمة بن خالد", is_sahabi: false, kunyah: "Abu Abdullah", residence: "Kufah / Basra", death_ah: "2nd Century AH", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah (Verified Transmitter)" },
     { key: 'حَنْظَلَة', rawi_id: 'rawi_hanzalah_bin_abu_sufyan', en: "Hanzhalah bin Abu Sufyan", id: "Hanzhalah bin Abu Sufyan", role: "Transmitter (Rawi) • Grade: Thiqah", ar: "حنظلة بن أبي سفيان", is_sahabi: false, kunyah: "Abu Abdullah", residence: "Kufah / Basra", death_ah: "2nd Century AH", counts: "Bukhari & Muslim", remarks: "Ibn Hajar: Thiqah (Verified Transmitter)" },
     { key: 'مَالِك', rawi_id: 'rawi_malik_bin_anas', en: "Imam Malik bin Anas", id: "Imam Malik bin Anas", role: "Imam of Madinah • Grade: Hafiz", ar: "مالك بن أنس", is_sahabi: false, kunyah: "Abu Abdillah", residence: "Madinah", death_ah: "179 AH (795 CE)", counts: "Muwatta: 1720 | Bukhari: 850", remarks: "Ibn Hajar: Al-Imam Al-Hafiz | Al-Dhahabi: Sayyid al-Fuqaha" },
@@ -1675,7 +1675,13 @@ async function loadSanadChain() {
         const normName = rawiName.toLowerCase().trim();
         let matched = null;
 
-        if (normName === 'malik' || normName === 'imam malik' || normName === 'malik bin anas') {
+        if (normName.includes('aisyah') || normName.includes('aisha')) {
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_aisha_bint_abi_bakr');
+        } else if (normName.includes('abdurrahman') && normName.includes('qasim')) {
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_abdurrahman_bin_al_qasim');
+        } else if (normName.includes('abdullah bin yusuf') || normName.includes('yusuf')) {
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_abdullah_bin_yusuf');
+        } else if (normName === 'malik' || normName === 'imam malik' || normName === 'malik bin anas') {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_malik_bin_anas');
         } else if (normName.includes('anas bin malik') || normName === 'anas') {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_anas_bin_malik');
@@ -1684,7 +1690,7 @@ async function loadSanadChain() {
         } else if (normName.includes('ikrimah')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_ikrimah_bin_khalid');
         } else if (normName.includes('hanzhalah')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_hanzalah_bin_abu_sufyan');
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_hanzhalah_bin_abu_sufyan');
         } else {
           matched = rawiDict.find(d => 
             d.en.toLowerCase() === normName ||
@@ -1707,16 +1713,16 @@ async function loadSanadChain() {
             remarks: matched.remarks
           });
         } else {
-          const isFirst = (idx === 0) || normName.includes('radliallahu') || normName.includes('sahabi') || normName.includes('abu hurairah') || normName.includes('umar');
+          const isFirst = (idx === 0) || normName.includes('radliallahu') || normName.includes('sahabi') || normName.includes('abu hurairah') || normName.includes('umar') || normName.includes('aisyah');
           narrators.push({
             rawi_id: null,
             name: rawiName,
             name_id: rawiName,
             role: isFirst ? 'Sahabi (Companion) • Grade: Thiqah' : 'Transmitter (Rawi) • Grade: Thiqah',
-            ar: rawiName,
+            ar: getArabicScriptForRawi(rawiName),
             kunyah: isFirst ? 'Abu Abdillah' : 'Abu Abdullah',
             residence: isFirst ? 'Madinah' : 'Kufah / Basra',
-            death_ah: isFirst ? '1st Century AH' : '2nd Century AH',
+            death_ah: isFirst ? 'Abad ke-1 H' : 'Abad ke-2 H',
             counts: 'Bukhari & Muslim',
             remarks: 'Ibn Hajar: Thiqah (Verified Transmitter)'
           });
@@ -1750,7 +1756,7 @@ async function loadSanadChain() {
       <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-sunan-emerald border-2 border-white dark:border-ink-black flex items-center justify-center text-white text-[10px]">ﷺ</div>
       <div class="flex justify-between items-center">
         <div>
-          <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-200">${isIdLang ? 'Sumber Wahyu' : 'Source of Revelation'}</span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-200">${isIdLang ? 'SUMBER WAHYU' : 'SOURCE OF REVELATION'}</span>
           <h3 class="font-bold text-lg">${isIdLang ? 'Nabi Muhammad ﷺ' : 'The Prophet Muhammad ﷺ'}</h3>
         </div>
         <span class="font-arabic-body text-xl" dir="rtl">محمد رسول الله ﷺ</span>
@@ -1770,14 +1776,14 @@ async function loadSanadChain() {
     let displayRole = nr.role || '';
     if (isIdLang) {
       displayRole = displayRole
-        .replace(/Sahabi\s*\(Companion\)/ig, 'Sahabat')
-        .replace(/Sahabi/ig, 'Sahabat')
-        .replace(/Transmitter\s*\(Rawi\)/ig, 'Rawi')
-        .replace(/Transmitter/ig, 'Rawi')
-        .replace(/Direct Sheikh of/ig, 'Guru Langsung dari')
-        .replace(/Grade:\s*/ig, 'Derajat: ')
-        .replace(/Thiqah/ig, 'Tsiqah')
-        .replace(/Hafiz/ig, 'Hafizh');
+        .replace(/Sahabi\s*\(Companion\)/ig, 'SAHABAT')
+        .replace(/Sahabi/ig, 'SAHABAT')
+        .replace(/Transmitter\s*\(Rawi\)/ig, 'PERAWI (RAWI)')
+        .replace(/Transmitter/ig, 'PERAWI')
+        .replace(/Direct Sheikh of/ig, 'GURU LANGSUNG DARI')
+        .replace(/Grade:\s*/ig, 'DERAJAT: ')
+        .replace(/Thiqah/ig, 'TSIQAH')
+        .replace(/Hafiz/ig, 'HAFIZH');
     }
     const displayName = isIdLang ? (nr.name_id || nr.name) : nr.name;
     const displayArName = getArabicScriptForRawi(nr.ar || nr.name_id || nr.name);
@@ -1799,26 +1805,26 @@ async function loadSanadChain() {
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
           <div>
-            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">Kunyah:</span>
+            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">KUNYAH:</span>
             <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.kunyah || 'Abu Abdullah')}</span>
           </div>
           <div>
-            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">${isIdLang ? 'Domisili:' : 'Settled In:'}</span>
+            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">${isIdLang ? 'DOMISILI:' : 'SETTLED IN:'}</span>
             <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.residence || 'Madinah')}</span>
           </div>
           <div>
-            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">${isIdLang ? 'Wafat:' : 'Wafat (Died):'}</span>
+            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">${isIdLang ? 'WAFAT:' : 'WAFAT (DIED):'}</span>
             <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.death_ah || 'Abad ke-1 H')}</span>
           </div>
           <div>
-            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">${isIdLang ? 'Total Hadits:' : 'Total Hadiths:'}</span>
+            <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">${isIdLang ? 'TOTAL HADITS:' : 'TOTAL HADITHS:'}</span>
             <span class="font-semibold text-sunan-emerald dark:text-[#10b981]">${escapeHtml(nr.counts || 'Bukhari & Muslim')}</span>
           </div>
         </div>
 
         ${nr.remarks ? `
           <div class="mt-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155] text-xs text-on-surface-variant dark:text-gray-300 italic">
-            <span class="font-bold text-secondary dark:text-[#10b981] not-italic text-[10px] uppercase block mb-0.5">${isIdLang ? 'Penilaian Ulama (Jarh wa Ta\'dil):' : 'Scholar Remarks (Jarh wa Ta\'dil):'}</span>
+            <span class="font-bold text-secondary dark:text-[#10b981] not-italic text-[10px] uppercase block mb-0.5">${isIdLang ? 'PENILAIAN ULAMA (JARH WA TA\'DIL):' : 'SCHOLAR REMARKS (JARH WA TA\'DIL):'}</span>
             "${escapeHtml(nr.remarks)}"
           </div>
         ` : ''}
@@ -1835,7 +1841,7 @@ async function loadSanadChain() {
       <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-primary border-2 border-white dark:border-ink-black flex items-center justify-center text-[10px]">📚</div>
       <div class="flex justify-between items-center">
         <div>
-          <span class="text-[10px] uppercase font-bold tracking-widest text-[#10b981]">${isIdLang ? 'Kolektor & Penulis' : 'Collector & Author'}</span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-[#10b981]">${isIdLang ? 'KOLEKTOR & PENULIS' : 'COLLECTOR & AUTHOR'}</span>
           <a href="${authorProfileUrl}" class="font-bold text-lg hover:underline flex items-center gap-1 text-white">
             ${escapeHtml(bookName)}
             <span class="material-symbols-outlined text-xs">open_in_new</span>
@@ -1846,6 +1852,14 @@ async function loadSanadChain() {
     </div>
   `;
   container.innerHTML = html;
+  LangSystem.apply(LangSystem.get());
+
+  if (!window._sanadLangListenerAttached) {
+    window._sanadLangListenerAttached = true;
+    window.addEventListener('hadeeth_lang_change', () => {
+      loadSanadChain();
+    });
+  }
 }
 
 /**
@@ -1859,6 +1873,17 @@ function getArabicScriptForRawi(latinOrAr) {
   const lower = clean.toLowerCase();
 
   const map = {
+    "aisyah": "عائشة بنت أبي بكر",
+    "aisha": "عائشة بنت أبي بكر",
+    "abdurrahman bin al qasim": "عبد الرحمن بن القاسم",
+    "abdurrahman bin al-qasim": "عبد الرحمن بن القاسم",
+    "abdurrahman bin qasim": "عبد الرحمن بن القاسم",
+    "abdullah bin yusuf": "عبد الله بن يوسف التنيسي",
+    "al-tinnisi": "عبد الله بن يوسف التنيسي",
+    "yusuf": "عبد الله بن يوسف التنيسي",
+    "al qasim": "القاسم بن محمد بن أبي بكر",
+    "al-qasim": "القاسم بن محمد بن أبي بكر",
+    "qasim": "القاسم بن محمد بن أبي بكر",
     "al a'raj": "الأعرج",
     "al-a'raj": "الأعرج",
     "al araj": "الأعرج",
