@@ -96,122 +96,6 @@ const UI_I18N = {
   }
 };
 
-
-const getIdNameFromEn = function(rawiName) {
-  if (!rawiName) return 'Perawi';
-  const n = rawiName.toLowerCase();
-  if (n.includes('abu hurairah') || n.includes('abu huraira')) return "Abu Hurairah radliallahu 'anhu";
-  if (n.includes('aisha') || n.includes('ayesha')) return 'Aisyah binti Abu Bakar ash-Shiddiq';
-  if (n.includes('ibn umar') || n.includes('ibnu umar') || (n.includes('umar') && n.includes('khattab') && !n.startsWith('umar'))) return "Ibnu 'Umar";
-  if (n.includes('umar') && n.includes('khattab')) return 'Umar bin al-Khaththab';
-  if (n.includes('ibn abbas') || n.includes('ibnu abbas') || (n.includes('abbas') && n.includes('abd'))) return 'Abdullah bin Abbas';
-  if (n.includes('anas') && n.includes('malik')) return 'Anas bin Malik al-Anshari';
-  if (n.includes('jabir') && n.includes('abd')) return 'Jabir bin Abdullah al-Anshari';
-  if (n.includes('said') && n.includes('khudri')) return "Abu Sa'id al-Khudri";
-  if (n.includes('ibn masud') || n.includes("mas'ud")) return "Abdullah bin Mas'ud";
-  if (n.includes('ali') && n.includes('talib')) return 'Ali bin Abi Thalib';
-  if (n.includes('zuhri')) return 'Ibn Shihab az-Zuhri';
-  if (n.includes('nafi')) return "Nafi' Maula Ibnu Umar";
-  if (n.includes('salim')) return 'Salim bin Abdullah bin Umar';
-  if (n.includes('urwah')) return 'Urwah bin az-Zubair';
-  if (n.includes('sufyan') && n.includes('uyayn')) return 'Sufyan bin Uyainah';
-  if (n.includes('yahya') && n.includes('said')) return "Yahya bin Sa'id al-Anshari";
-  return rawiName;
-};
-
-const globalIndonesianChapterTitles = {
-  'bukhari_1': 'Permulaan Wahyu',
-  'bukhari_2': 'Iman',
-  'bukhari_3': 'Ilmu',
-  'bukhari_4': 'Wudhu',
-  'bukhari_5': 'Mandi',
-  'bukhari_6': 'Haid',
-  'bukhari_7': 'Tayammum',
-  'bukhari_8': 'Shalat',
-  'bukhari_9': 'Waktu-Waktu Shalat',
-  'bukhari_10': 'Adzan',
-  'bukhari_11': 'Shalat Jum'at',
-  'bukhari_12': 'Shalat Khauf',
-  'bukhari_13': 'Dua Hari Raya (Idul Fitri & Idul Adha)',
-  'bukhari_14': 'Shalat Witir',
-  'bukhari_15': 'Istisqa' (Memohon Hujan)',
-  'bukhari_16': 'Gerhana (Kusuf)',
-  'bukhari_17': 'Sujud Al-Qur'an',
-  'bukhari_18': 'Qashar Shalat',
-  'bukhari_19': 'Tahajjud (Shalat Malam)',
-  'bukhari_20': 'Keutamaan Shalat di Makkah & Madinah',
-  'bukhari_21': 'Tindakan Saat Shalat',
-  'bukhari_22': 'Sujud Sahwi',
-  'bukhari_23': 'Jenazah',
-  'bukhari_24': 'Zakat',
-  'bukhari_25': 'Haji',
-  'bukhari_26': 'Umrah',
-  'bukhari_27': 'Orang Terhalang Haji',
-  'bukhari_28': 'Denda Berburu Saat Ihram',
-  'bukhari_29': 'Keutamaan Kota Madinah',
-  'bukhari_30': 'Puasa (Shaum)',
-  'bukhari_31': 'Shalat Tarawih',
-  'bukhari_32': 'Lailatul Qadr',
-  'bukhari_33': 'I'tikaf',
-  'bukhari_34': 'Jual Beli (Buyu')',
-  'bukhari_35': 'Jual Beli Salam',
-  'bukhari_36': 'Sewa Menyewa (Ijarah)',
-  'bukhari_37': 'Pengalihan Hutang (Hawalah)',
-  'bukhari_38': 'Wakalah (Perwakilan)',
-  'bukhari_39': 'Bercocok Tanam',
-  'bukhari_40': 'Penyiraman & Pengairan',
-  'bukhari_41': 'Pinjam Meminjam',
-  'bukhari_42': 'Persengketaan',
-  'bukhari_43': 'Barang Temuan',
-  'bukhari_44': 'Kedzaliman & Perampasan',
-  'bukhari_45': 'Syirkah (Kemitraan)',
-  'bukhari_46': 'Gadai (Rahn)',
-  'bukhari_47': 'Pembebasan Budak',
-  'bukhari_48': 'Hibah & Keutamaannya',
-  'bukhari_49': 'Persaksian (Syahadat)',
-  'bukhari_50': 'Perdamaian (Sulh)',
-  'bukhari_51': 'Syarat-Syarat',
-  'bukhari_52': 'Wasiat (Washaya)',
-  'bukhari_53': 'Jihad & Ekspedisi',
-  'bukhari_54': 'Permulaan Penciptaan',
-  'bukhari_55': 'Kisah Para Nabi',
-  'bukhari_56': 'Keutamaan Para Sahabat (Manaqib)',
-  'bukhari_57': 'Peperangan (Maghazi)',
-  'bukhari_58': 'Tafsir Al-Qur'an',
-  'bukhari_59': 'Keutamaan Al-Qur'an',
-  'bukhari_60': 'Pernikahan (Nikah)',
-  'bukhari_61': 'Perceraian (Thalaq)',
-  'bukhari_62': 'Nafkah Keluarga',
-  'bukhari_63': 'Makanan (At'imah)',
-  'bukhari_64': 'Aqiqah',
-  'bukhari_65': 'Penyembelihan & Berburu',
-  'bukhari_66': 'Kurban (Adh-Dhihiyyah)',
-  'bukhari_67': 'Minuman (Asy-Syaribah)',
-  'bukhari_68': 'Orang Sakit',
-  'bukhari_69': 'Pengobatan (Ath-Thibb)',
-  'bukhari_70': 'Pakaian (Al-Libas)',
-  'bukhari_71': 'Adab & Etika (Al-Adab)',
-  'bukhari_72': 'Minta Izin (Al-I'tidzan)',
-  'bukhari_73': 'Doa (Ad-Da'awat)',
-  'bukhari_74': 'Kata-Kata Lembut (Ar-Riqaq)',
-  'bukhari_75': 'Takdir (Al-Qadar)',
-  'bukhari_76': 'Sumpah & Nazar',
-  'bukhari_77': 'Kafarat Sumpah',
-  'bukhari_78': 'Hukum Waris (Al-Fara'id)',
-  'bukhari_79': 'Hukuman Pidana (Al-Hudud)',
-  'bukhari_80': 'Diyat (Ganti Rugi)',
-  'bukhari_81': 'Menuntut Taubat Murtad',
-  'bukhari_82': 'Pemaksaan (Al-Ikrah)',
-  'bukhari_83': 'Trik Hukum (Al-Hiyal)',
-  'bukhari_84': 'Tafsir Mimpi (At-Ta'bir)',
-  'bukhari_85': 'Fitnah Akhir Zaman',
-  'bukhari_86': 'Keputusan Hukum (Al-Ahkam)',
-  'bukhari_87': 'Harapan & Keinginan',
-  'bukhari_88': 'Khabar Ahad',
-  'bukhari_89': 'Berpegang Teguh Al-Qur'an & Sunnah',
-  'bukhari_90': 'Tauhid & Keagungan Allah'
-};
-
 const LangSystem = {
   SUPPORTED: ['en', 'id'],
   get() { return localStorage.getItem('hadeeth_lang') || 'id'; },
@@ -595,14 +479,6 @@ async function loadHadithDetail() {
   const container = document.getElementById('hadith-detail-container');
   if (!container) return;
 
-  // Always attach language change listener so switching EN/ID re-applies UI
-  if (!window._hadithDetailLangListenerAttached) {
-    window._hadithDetailLangListenerAttached = true;
-    window.addEventListener('hadeeth_lang_change', () => {
-      if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
-    });
-  }
-
   const bookNames = {
     bukhari: 'Sahih al-Bukhari',
     nawawi: 'Forty Nawawi',
@@ -619,7 +495,7 @@ async function loadHadithDetail() {
   // Save Last Read
   if (window.LastReadTracker) window.LastReadTracker.save(bookId, hadithId, bookName, `${bookName} Hadith #${hadithId}`);
 
-  // Elements
+  // Update Breadcrumb & Meta Headers
   const bcBook = document.querySelector('[data-breadcrumb-book]');
   const bcCurrent = document.querySelector('[data-breadcrumb-current]');
   const chapterMeta = document.querySelector('[data-hadith-chapter]');
@@ -629,7 +505,7 @@ async function loadHadithDetail() {
   const isIdLang = (window.LangSystem && window.LangSystem.isIdMode());
   const currentNum = parseInt(hadithId) || 1;
 
-  // Fetch Chapter info
+  // Fetch Chapter info to show real Chapter Title in top breadcrumb
   let chapterObj = null;
   try {
     const chapters = await window.HadeethAPI.getChapters(bookId);
@@ -640,16 +516,9 @@ async function loadHadithDetail() {
     console.warn('Failed to load chapter info for detail breadcrumb:', e);
   }
 
-  let chapterBreadcrumbTextEn = `Hadith #${hadithId}`;
-  let chapterBreadcrumbTextId = `Hadits #${hadithId}`;
-
+  let chapterBreadcrumbText = `Hadith #${hadithId}`;
   if (chapterObj) {
-    const chNum = chapterObj.chapter_number;
-    const bookChKey = `${bookId.toLowerCase()}_${chNum}`;
-    const customIdTitle = typeof globalIndonesianChapterTitles !== 'undefined' ? globalIndonesianChapterTitles[bookChKey] : null;
-
-    chapterBreadcrumbTextEn = chapterObj.title_en || `Hadith #${hadithId}`;
-    chapterBreadcrumbTextId = customIdTitle || (chapterObj.title_id && chapterObj.title_id !== chapterObj.title_en ? chapterObj.title_id : chapterBreadcrumbTextEn);
+    chapterBreadcrumbText = isIdLang ? (chapterObj.title_id || chapterObj.title_en) : chapterObj.title_en;
   }
 
   if (bcBook) {
@@ -657,25 +526,14 @@ async function loadHadithDetail() {
     bcBook.href = `kitab.html?book=${bookId}`;
   }
   if (bcCurrent) {
-    bcCurrent.innerHTML = `
-      <span data-lang-en>${chapterBreadcrumbTextEn}</span>
-      <span data-lang-id style="${isIdLang ? '' : 'display:none'}">${chapterBreadcrumbTextId}</span>
-    `;
+    bcCurrent.innerText = chapterBreadcrumbText;
     if (chapterObj) bcCurrent.href = `kitab.html?book=${bookId}&chapter=${chapterObj.chapter_number || 1}`;
   }
 
   const chNum = chapterObj ? (chapterObj.chapter_number || '') : '';
-  const enCh = chNum ? `Chapter ${chNum}` : bookName;
-  const idCh = chNum ? `Bab ${chNum}` : bookName;
-  const enHd = `Hadith #${hadithId}`;
-  const idHd = `Hadits #${hadithId}`;
-
-  if (chapterMeta) {
-    chapterMeta.innerHTML = `
-      <span data-lang-en>${enCh} &bull; ${enHd}</span>
-      <span data-lang-id style="${isIdLang ? '' : 'display:none'}">${idCh} &bull; ${idHd}</span>
-    `;
-  }
+  const chLabel = isIdLang ? (chNum ? `Bab ${chNum}` : bookName) : (chNum ? `Chapter ${chNum}` : bookName);
+  const hdLabel = isIdLang ? `Hadits #${hadithId}` : `Hadith #${hadithId}`;
+  if (chapterMeta) chapterMeta.innerText = `${chLabel} • ${hdLabel}`;
 
   if (prevBtn) {
     if (currentNum > 1) {
@@ -702,6 +560,7 @@ async function loadHadithDetail() {
   const sanadPreview = container.querySelector('[data-sanad-preview]');
 
   if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${hadithId}`;
+  if (sanadPreview) sanadPreview.innerText = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
 
   try {
     const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?id=eq.${bookId}_${hadithId}&select=id,hadith_number,text_ar,text_en,text_id,grade,book_id`, {
@@ -718,13 +577,7 @@ async function loadHadithDetail() {
         if (arabicElem) arabicElem.innerText = item.text_ar || '—';
         if (englishElem) englishElem.innerHTML = TafseerLinker.parse(item.text_en || '—');
         if (indonesianElem) indonesianElem.innerHTML = TafseerLinker.parse(item.text_id || '—');
-
-        if (titleElem) {
-          titleElem.innerHTML = `
-            <span data-lang-en>${bookName} Hadith #${item.hadith_number}</span>
-            <span data-lang-id style="${isIdLang ? '' : 'display:none'}">${bookName} Hadits #${item.hadith_number}</span>
-          `;
-        }
+        if (titleElem) titleElem.innerText = `${bookName} Hadith #${item.hadith_number}`;
 
         if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${item.hadith_number}`;
 
@@ -761,51 +614,63 @@ async function loadHadithDetail() {
             }
           }
 
+          const rawiPrefix = isIdLang ? 'Perawi:' : 'Narrator:';
+
           if (previewNames.length > 0) {
-            const companionRawiEn = previewNames[previewNames.length - 1];
-            const companionRawiId = getIdNameFromEn(companionRawiEn);
-
-            if (sanadPreview) {
-              const sanadEn = previewNames.join(' → ') + ' → Prophet ﷺ';
-              const sanadId = previewNames.map(n => getIdNameFromEn(n)).join(' → ') + ' → Rasulullah ﷺ';
-              sanadPreview.innerHTML = `
-                <span data-lang-en>${sanadEn}</span>
-                <span data-lang-id style="${isIdLang ? '' : 'display:none'}">${sanadId}</span>
-              `;
-            }
-
-            if (rawiElem) {
-              rawiElem.innerHTML = `
-                <span data-lang-en>Narrator: ${companionRawiEn}</span>
-                <span data-lang-id style="${isIdLang ? '' : 'display:none'}">Perawi: ${companionRawiId}</span>
-              `;
-            }
+            // Companion (Primary narrator who heard directly from Prophet PBUH) is the LAST item in text order
+            const companionRawi = previewNames[previewNames.length - 1];
+            if (sanadPreview) sanadPreview.innerText = previewNames.join(' → ') + ' → Prophet ﷺ';
+            if (rawiElem) rawiElem.innerText = `${rawiPrefix} ${companionRawi}`;
           } else {
-            const defaultCompanionEn = 'Sahabi (Companion)';
-            const defaultCompanionId = 'Sahabat';
-
-            if (sanadPreview) {
-              sanadPreview.innerHTML = `
-                <span data-lang-en>Inspect Chain for ${bookName} #${item.hadith_number} &rarr; Prophet ﷺ</span>
-                <span data-lang-id style="${isIdLang ? '' : 'display:none'}">Periksa Sanad untuk ${bookName} #${item.hadith_number} &rarr; Rasulullah ﷺ</span>
-              `;
-            }
-            if (rawiElem) {
-              rawiElem.innerHTML = `
-                <span data-lang-en>Narrator: ${defaultCompanionEn}</span>
-                <span data-lang-id style="${isIdLang ? '' : 'display:none'}">Perawi: ${defaultCompanionId}</span>
-              `;
-            }
+            const defaultCompanion = isIdLang ? 'Sahabat' : 'Sahabi (Companion)';
+            if (sanadPreview) sanadPreview.innerText = `Inspect Chain for ${bookName} #${item.hadith_number} → Prophet ﷺ`;
+            if (rawiElem) rawiElem.innerText = `${rawiPrefix} ${defaultCompanion}`;
           }
         }
 
-        if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+        if (!window._hadithDetailLangListenerAttached) {
+          window._hadithDetailLangListenerAttached = true;
+          window.addEventListener('hadeeth_lang_change', () => {
+            loadHadithDetail();
+          });
+        }
         return;
       }
     }
   } catch (err) {
     console.warn('Supabase fetch detail error, fallback to edition files:', err);
   }
+
+  // Fallback to CDN edition files if offline / REST fails
+  const [edition, arabicEdition, indEdition] = await Promise.all([
+    window.HadeethAPI.getEdition('eng', bookId),
+    window.HadeethAPI.getEdition('ara', bookId),
+    window.HadeethAPI.getEdition('ind', bookId)
+  ]);
+
+  let hadithTextEn = '';
+  let hadithTextAr = '';
+  let hadithTextId = '';
+
+  if (edition && edition.hadiths) {
+    const found = edition.hadiths.find(h => h.hadithnumber == hadithId);
+    if (found) hadithTextEn = found.text;
+  }
+  if (arabicEdition && arabicEdition.hadiths) {
+    const found = arabicEdition.hadiths.find(h => h.hadithnumber == hadithId);
+    if (found) hadithTextAr = found.text;
+  }
+  if (indEdition && indEdition.hadiths) {
+    const found = indEdition.hadiths.find(h => h.hadithnumber == hadithId);
+    if (found) hadithTextId = found.text;
+  }
+
+  if (arabicElem) arabicElem.innerText = hadithTextAr || '—';
+  if (englishElem) englishElem.innerHTML = TafseerLinker.parse(hadithTextEn || '—');
+  if (indonesianElem) indonesianElem.innerHTML = TafseerLinker.parse(hadithTextId || '—');
+  if (titleElem) titleElem.innerText = `${bookName} Hadith #${hadithId}`;
+  if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${hadithId}`;
+  if (sanadPreview) sanadPreview.innerText = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
 }
 
 /**
@@ -851,7 +716,98 @@ async function loadHadithList() {
   const pageIndicator = document.getElementById('page-indicator');
 
   // Indonesian Chapter Titles Master Mapping Dictionary
-  const indonesianChapterTitles = globalIndonesianChapterTitles;
+  const indonesianChapterTitles = {
+    'bukhari_1': 'Permulaan Wahyu',
+    'bukhari_2': 'Iman',
+    'bukhari_3': 'Ilmu',
+    'bukhari_4': 'Wudhu',
+    'bukhari_5': 'Mandi',
+    'bukhari_6': 'Haid',
+    'bukhari_7': 'Tayammum',
+    'bukhari_8': 'Shalat',
+    'bukhari_9': 'Waktu-Waktu Shalat',
+    'bukhari_10': 'Adzan',
+    'bukhari_11': 'Shalat Jum\'at',
+    'bukhari_12': 'Shalat Khauf',
+    'bukhari_13': 'Dua Hari Raya (Idul Fitri & Idul Adha)',
+    'bukhari_14': 'Shalat Witir',
+    'bukhari_15': 'Istisqa\' (Memohon Hujan)',
+    'bukhari_16': 'Gerhana (Kusuf)',
+    'bukhari_17': 'Sujud Al-Qur\'an',
+    'bukhari_18': 'Qashar Shalat',
+    'bukhari_19': 'Tahajjud (Shalat Malam)',
+    'bukhari_20': 'Keutamaan Shalat di Makkah & Madinah',
+    'bukhari_21': 'Tindakan Saat Shalat',
+    'bukhari_22': 'Sujud Sahwi',
+    'bukhari_23': 'Jenazah',
+    'bukhari_24': 'Zakat',
+    'bukhari_25': 'Haji',
+    'bukhari_26': 'Umrah',
+    'bukhari_27': 'Orang Terhalang Haji',
+    'bukhari_28': 'Denda Berburu Saat Ihram',
+    'bukhari_29': 'Keutamaan Kota Madinah',
+    'bukhari_30': 'Puasa (Shaum)',
+    'bukhari_31': 'Shalat Tarawih',
+    'bukhari_32': 'Lailatul Qadr',
+    'bukhari_33': 'I\'tikaf',
+    'bukhari_34': 'Jual Beli (Buyu\')',
+    'bukhari_35': 'Jual Beli Salam',
+    'bukhari_36': 'Sewa Menyewa (Ijarah)',
+    'bukhari_37': 'Hutang Piutang (Hawalah)',
+    'bukhari_38': 'Wakalah (Perwakilan)',
+    'bukhari_39': 'Bercocok Tanam',
+    'bukhari_40': 'Penyiraman & Pengairan',
+    'bukhari_41': 'Pinjam Meminjam',
+    'bukhari_42': 'Persengketaan',
+    'bukhari_43': 'Barang Temuan',
+    'bukhari_44': 'Kedzaliman & Perampasan',
+    'bukhari_45': 'Syirkah (Kemitraan)',
+    'bukhari_46': 'Gadai (Rahn)',
+    'bukhari_47': 'Pembebasan Budak',
+    'bukhari_48': 'Hibah & Keutamaannya',
+    'bukhari_49': 'Persaksian (Syahadat)',
+    'bukhari_50': 'Perdamaian (Sulh)',
+    'bukhari_51': 'Syarat-Syarat',
+    'bukhari_52': 'Wasiat (Washaya)',
+    'bukhari_53': 'Jihad & Ekspedisi',
+    'bukhari_54': 'Permulaan Penciptaan',
+    'bukhari_55': 'Kisah Para Nabi',
+    'bukhari_56': 'Keutamaan Para Sahabat (Manaqib)',
+    'bukhari_57': 'Peperangan (Maghazi)',
+    'bukhari_58': 'Tafsir Al-Qur\'an',
+    'bukhari_59': 'Keutamaan Al-Qur\'an',
+    'bukhari_60': 'Pernikahan (Nikah)',
+    'bukhari_61': 'Perceraian (Thalaq)',
+    'bukhari_62': 'Nafkah',
+    'bukhari_63': 'Makanan (Ath\'imah)',
+    'bukhari_64': 'Aqiqah',
+    'bukhari_65': 'Sembelihan & Berburu',
+    'bukhari_66': 'Kurban (Udhiyah)',
+    'bukhari_67': 'Minuman (Asyribah)',
+    'bukhari_68': 'Orang Sakit',
+    'bukhari_69': 'Pengobatan (Tibb)',
+    'bukhari_70': 'Pakaian (Libas)',
+    'bukhari_71': 'Adab (Etika Sopan Santun)',
+    'bukhari_72': 'Meminta Izin (Isti\'zan)',
+    'bukhari_73': 'Doa & Dzikir',
+    'bukhari_74': 'Kelembutan Hati (Riqaq)',
+    'bukhari_75': 'Takdir (Qadar)',
+    'bukhari_76': 'Sumpah & Nadzar',
+    'bukhari_77': 'Tebusan Sumpah',
+    'bukhari_78': 'Hukum Waris (Faradh)',
+    'bukhari_79': 'Hukuman Pidana Islam (Hudud)',
+    'bukhari_80': 'Denda Jiwa (Diyat)',
+    'bukhari_81': 'Meminta Taubat Orang Murtad',
+    'bukhari_82': 'Pemaksaan (Ikrah)',
+    'bukhari_83': 'Trik Hukum (Hiyal)',
+    'bukhari_84': 'Tafsir Mimpi',
+    'bukhari_85': 'Fitnah Akhir Zaman',
+    'bukhari_86': 'Hukum & Keputusan (Ahkam)',
+    'bukhari_87': 'Harapan (Tamanni)',
+    'bukhari_88': 'Khabar Ahad',
+    'bukhari_89': 'Berpegang Teguh pada Al-Qur\'an & Sunnah',
+    'bukhari_90': 'Tauhid & Keagungan Allah'
+  };
 
   // Fetch Chapter Metadata if available
   let chapterTitleNameEn = `Chapter ${chapterId}`;
