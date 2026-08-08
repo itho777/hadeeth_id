@@ -482,7 +482,7 @@ async function loadHadithDetail() {
   if (!window._hadithDetailLangListenerAttached) {
     window._hadithDetailLangListenerAttached = true;
     window.addEventListener('hadeeth_lang_change', () => {
-      loadHadithDetail();
+      if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
     });
   }
 
@@ -502,17 +502,16 @@ async function loadHadithDetail() {
   // Save Last Read
   if (window.LastReadTracker) window.LastReadTracker.save(bookId, hadithId, bookName, `${bookName} Hadith #${hadithId}`);
 
-  // Update Breadcrumb & Meta Headers
+  // Elements
   const bcBook = document.querySelector('[data-breadcrumb-book]');
   const bcCurrent = document.querySelector('[data-breadcrumb-current]');
   const chapterMeta = document.querySelector('[data-hadith-chapter]');
   const prevBtn = document.getElementById('prev-hadith-btn');
   const nextBtn = document.getElementById('next-hadith-btn');
 
-  const isIdLang = (window.LangSystem && window.LangSystem.isIdMode());
   const currentNum = parseInt(hadithId) || 1;
 
-  // Fetch Chapter info to show real Chapter Title in top breadcrumb
+  // Fetch Chapter info
   let chapterObj = null;
   try {
     const chapters = await window.HadeethAPI.getChapters(bookId);
@@ -530,14 +529,19 @@ async function loadHadithDetail() {
   if (bcCurrent) {
     const titleEn = chapterObj ? (chapterObj.title_en || `Hadith #${hadithId}`) : `Hadith #${hadithId}`;
     const titleId = chapterObj ? (chapterObj.title_id || titleEn) : `Hadits #${hadithId}`;
-    bcCurrent.innerHTML = `<span data-lang-en>${titleEn}</span><span data-lang-id style="${isIdLang ? '' : 'display:none'}">${titleId}</span>`;
+    bcCurrent.innerHTML = `<span data-lang-en>${titleEn}</span><span data-lang-id>${titleId}</span>`;
     if (chapterObj) bcCurrent.href = `kitab.html?book=${bookId}&chapter=${chapterObj.chapter_number || 1}`;
   }
 
   const chNum = chapterObj ? (chapterObj.chapter_number || '') : '';
-  const chLabel = isIdLang ? (chNum ? `Bab ${chNum}` : bookName) : (chNum ? `Chapter ${chNum}` : bookName);
-  const hdLabel = isIdLang ? `Hadits #${hadithId}` : `Hadith #${hadithId}`;
-  if (chapterMeta) chapterMeta.innerText = `${chLabel} • ${hdLabel}`;
+  const enCh = chNum ? `Chapter ${chNum}` : bookName;
+  const idCh = chNum ? `Bab ${chNum}` : bookName;
+  const enHd = `Hadith #${hadithId}`;
+  const idHd = `Hadits #${hadithId}`;
+
+  if (chapterMeta) {
+    chapterMeta.innerHTML = `<span data-lang-en>${enCh} &bull; ${enHd}</span><span data-lang-id>${idCh} &bull; ${idHd}</span>`;
+  }
 
   if (prevBtn) {
     if (currentNum > 1) {
@@ -564,7 +568,12 @@ async function loadHadithDetail() {
   const sanadPreview = container.querySelector('[data-sanad-preview]');
 
   if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${hadithId}`;
-  if (sanadPreview) sanadPreview.innerText = isIdLang ? `Periksa Silsilah ${bookName} #${hadithId} → Rasulullah ﷺ` : `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
+  if (sanadPreview) {
+    sanadPreview.innerHTML = `
+      <span data-lang-en>Inspect Chain for ${bookName} #${hadithId} &rarr; Prophet ﷺ</span>
+      <span data-lang-id>Periksa Silsilah untuk ${bookName} #${hadithId} &rarr; Rasulullah ﷺ</span>
+    `;
+  }
 
   try {
     const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?id=eq.${bookId}_${hadithId}&select=id,hadith_number,text_ar,text_en,text_id,grade,book_id`, {
@@ -581,7 +590,13 @@ async function loadHadithDetail() {
         if (arabicElem) arabicElem.innerText = item.text_ar || '—';
         if (englishElem) englishElem.innerHTML = TafseerLinker.parse(item.text_en || '—');
         if (indonesianElem) indonesianElem.innerHTML = TafseerLinker.parse(item.text_id || '—');
-        if (titleElem) titleElem.innerText = isIdLang ? `${bookName} Hadits #${item.hadith_number}` : `${bookName} Hadith #${item.hadith_number}`;
+
+        if (titleElem) {
+          titleElem.innerHTML = `
+            <span data-lang-en>${bookName} Hadith #${item.hadith_number}</span>
+            <span data-lang-id>${bookName} Hadits #${item.hadith_number}</span>
+          `;
+        }
 
         if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${item.hadith_number}`;
 
@@ -618,28 +633,45 @@ async function loadHadithDetail() {
             }
           }
 
-          const rawiPrefix = isIdLang ? 'Perawi:' : 'Narrator:';
-          const prophetLabel = isIdLang ? 'Rasulullah ﷺ' : 'Prophet ﷺ';
-
           if (previewNames.length > 0) {
-            // Companion (Primary narrator who heard directly from Prophet PBUH) is the LAST item in text order
             const companionRawi = previewNames[previewNames.length - 1];
-            if (sanadPreview) sanadPreview.innerText = previewNames.join(' → ') + ' → ' + prophetLabel;
-            if (rawiElem) rawiElem.innerText = `${rawiPrefix} ${companionRawi}`;
+            if (sanadPreview) {
+              sanadPreview.innerHTML = `
+                <span data-lang-en>${previewNames.join(' → ')} &rarr; Prophet ﷺ</span>
+                <span data-lang-id>${previewNames.join(' → ')} &rarr; Rasulullah ﷺ</span>
+              `;
+            }
+            if (rawiElem) {
+              rawiElem.innerHTML = `
+                <span data-lang-en>Narrator: ${companionRawi}</span>
+                <span data-lang-id>Perawi: ${companionRawi}</span>
+              `;
+            }
           } else {
-            const defaultCompanion = isIdLang ? 'Sahabat' : 'Sahabi (Companion)';
-            const inspectPrefix = isIdLang ? 'Periksa Silsilah' : 'Inspect Chain';
-            if (sanadPreview) sanadPreview.innerText = `${inspectPrefix} ${bookName} #${item.hadith_number} → ${prophetLabel}`;
-            if (rawiElem) rawiElem.innerText = `${rawiPrefix} ${defaultCompanion}`;
+            if (sanadPreview) {
+              sanadPreview.innerHTML = `
+                <span data-lang-en>Inspect Chain for ${bookName} #${item.hadith_number} &rarr; Prophet ﷺ</span>
+                <span data-lang-id>Periksa Silsilah untuk ${bookName} #${item.hadith_number} &rarr; Rasulullah ﷺ</span>
+              `;
+            }
+            if (rawiElem) {
+              rawiElem.innerHTML = `
+                <span data-lang-en>Narrator: Sahabi (Companion)</span>
+                <span data-lang-id>Perawi: Sahabat</span>
+              `;
+            }
           }
         }
 
+        if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
         return;
       }
     }
   } catch (err) {
     console.warn('Supabase fetch detail error, fallback to edition files:', err);
   }
+
+  if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
 
   // Fallback to CDN edition files if offline / REST fails
   const [edition, arabicEdition, indEdition] = await Promise.all([
