@@ -855,13 +855,26 @@ async function loadHadithList() {
   const activeChTitle = isIdLang ? chapterTitleNameId : chapterTitleNameEn;
   const activeChMeta = isIdLang ? `Kitab ${chapterId}` : `Chapter ${chapterId}`;
 
+  const bcCurrentEn = document.querySelector('[data-list-breadcrumb-current-en]');
+  const bcCurrentId = document.querySelector('[data-list-breadcrumb-current-id]');
+  const chMetaEn = document.querySelector('[data-list-chapter-meta-en]');
+  const chMetaId = document.querySelector('[data-list-chapter-meta-id]');
+  const countMetaEn = document.querySelector('[data-list-count-meta-en]');
+  const countMetaId = document.querySelector('[data-list-count-meta-id]');
+
   if (bcBook) {
     bcBook.innerText = bookName;
     bcBook.href = `kitab.html?book=${bookId}`;
   }
-  if (bcCurrent) bcCurrent.innerText = activeChTitle;
+  if (bcCurrentEn) bcCurrentEn.innerText = chapterTitleNameEn;
+  if (bcCurrentId) bcCurrentId.innerText = chapterTitleNameId;
+  if (bcCurrent && !bcCurrentEn) bcCurrent.innerText = activeChTitle;
+
   if (bookBadge) bookBadge.innerText = bookName;
-  if (chMeta) chMeta.innerText = activeChMeta;
+  if (chMetaEn) chMetaEn.innerText = `Chapter ${chapterId}`;
+  if (chMetaId) chMetaId.innerText = `Kitab ${chapterId}`;
+  if (chMeta && !chMetaEn) chMeta.innerText = activeChMeta;
+
   if (chTitleEn) chTitleEn.innerText = chapterTitleNameEn;
   if (chTitleId) chTitleId.innerText = chapterTitleNameId;
   if (chTitleAr) chTitleAr.innerText = chapterTitleNameAr;
@@ -941,17 +954,19 @@ async function loadHadithList() {
   }
 
   filteredHadiths = [...allHadiths];
-  if (countMeta) {
-    if (startHadithNum != null && endHadithNum != null) {
-      const count = chapterHadithCount || (endHadithNum - startHadithNum + 1);
-      countMeta.innerText = isIdLang
-        ? `Hadits ${startHadithNum} – ${endHadithNum} • ${count} Hadits dalam ${bookName} Kitab ${chapterId}`
-        : `Hadith ${startHadithNum} – ${endHadithNum} • ${count} Hadiths in ${bookName} Chapter ${chapterId}`;
-    } else {
-      countMeta.innerText = isIdLang
-        ? `Total ${allHadiths.length} Hadits dalam ${bookName} Kitab ${chapterId}`
-        : `Total ${allHadiths.length} Hadiths in ${bookName} Chapter ${chapterId}`;
-    }
+  if (startHadithNum != null && endHadithNum != null) {
+    const count = chapterHadithCount || (endHadithNum - startHadithNum + 1);
+    const enText = `Hadith ${startHadithNum} – ${endHadithNum} • ${count} Hadiths in ${bookName} Chapter ${chapterId}`;
+    const idText = `Hadits ${startHadithNum} – ${endHadithNum} • ${count} Hadits dalam ${bookName} Kitab ${chapterId}`;
+    if (countMetaEn) countMetaEn.innerText = enText;
+    if (countMetaId) countMetaId.innerText = idText;
+    if (countMeta && !countMetaEn) countMeta.innerText = isIdLang ? idText : enText;
+  } else {
+    const enText = `Total ${allHadiths.length} Hadiths in ${bookName} Chapter ${chapterId}`;
+    const idText = `Total ${allHadiths.length} Hadits dalam ${bookName} Kitab ${chapterId}`;
+    if (countMetaEn) countMetaEn.innerText = enText;
+    if (countMetaId) countMetaId.innerText = idText;
+    if (countMeta && !countMetaEn) countMeta.innerText = isIdLang ? idText : enText;
   }
 
   // Render Function

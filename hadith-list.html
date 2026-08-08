@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_21"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_22"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -70,7 +70,10 @@
     <span>/</span>
     <a href="kitab.html?book=bukhari" class="hover:underline" data-list-breadcrumb-book>Sahih al-Bukhari</a>
     <span>/</span>
-    <span class="text-primary dark:text-white font-semibold" data-list-breadcrumb-current>Book 1: Revelation</span>
+    <span class="text-primary dark:text-white font-semibold" data-list-breadcrumb-current>
+      <span data-list-breadcrumb-current-en data-lang-en>Bathing (Ghusl)</span>
+      <span data-list-breadcrumb-current-id data-lang-id style="display:none">Mandi</span>
+    </span>
   </div>
 
   <!-- Dynamic Header Banner -->
@@ -78,11 +81,17 @@
     <div class="flex flex-col gap-1">
       <div class="flex items-center gap-2">
         <span class="bg-sunan-emerald text-white text-[11px] font-bold px-2.5 py-0.5 rounded uppercase tracking-wider" data-list-book-badge>Sahih al-Bukhari</span>
-        <span class="text-xs text-secondary dark:text-[#10b981] font-semibold" data-list-chapter-meta>Chapter 1</span>
+        <span class="text-xs text-secondary dark:text-[#10b981] font-semibold" data-list-chapter-meta>
+          <span data-list-chapter-meta-en data-lang-en>Chapter 1</span>
+          <span data-list-chapter-meta-id data-lang-id style="display:none">Kitab 1</span>
+        </span>
       </div>
       <h1 class="text-2xl md:text-3xl font-bold text-primary dark:text-white" data-list-chapter-title-en data-lang-en>How Divine Revelation Started</h1>
       <h1 class="text-2xl md:text-3xl font-bold text-primary dark:text-white" data-list-chapter-title-id data-lang-id style="display:none">Cara Wahyu Dimulai</h1>
-      <p class="text-xs text-outline dark:text-gray-400 mt-1" data-list-count-meta>Loading Hadiths count...</p>
+      <p class="text-xs text-outline dark:text-gray-400 mt-1" data-list-count-meta>
+        <span data-list-count-meta-en data-lang-en>Loading Hadiths count...</span>
+        <span data-list-count-meta-id data-lang-id style="display:none">Memuat jumlah Hadits...</span>
+      </p>
     </div>
     <div class="text-right">
       <span class="font-arabic-body text-2xl md:text-3xl text-secondary dark:text-[#10b981]" dir="rtl" data-list-chapter-title-ar>كيف كان بدء الوحي</span>
@@ -164,7 +173,7 @@
   <div><span data-i18n="footer_text">© 2024 HADEETH.ID - Digital Manuscript Preservation</span></div>
 </footer>
 
-<script src="js/api.js?v=20260808_21"></script>
-<script src="js/app.js?v=20260808_21"></script>
+<script src="js/api.js?v=20260808_22"></script>
+<script src="js/app.js?v=20260808_22"></script>
 </body>
 </html>
