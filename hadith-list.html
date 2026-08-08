@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_6"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_7"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -99,10 +99,15 @@
         <input type="text" id="chapter-search-input" placeholder="Search within chapter or type keyword..." data-i18n="search_within_chapter" class="w-full pl-9 pr-4 py-2 text-xs bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white focus:outline-none focus:border-secondary dark:focus:border-[#10b981]"/>
       </div>
       <div class="flex items-center gap-1 w-full sm:w-auto">
-        <span class="text-xs text-outline dark:text-gray-400 whitespace-nowrap">Scope:</span>
+        <span class="text-xs text-outline dark:text-gray-400 whitespace-nowrap">
+          <span data-lang-en>Scope:</span>
+          <span data-lang-id>Lingkup:</span>
+        </span>
         <select id="search-scope-select" class="w-full sm:w-auto px-3 py-2 text-xs bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-semibold">
-          <option value="chapter">This Chapter</option>
-          <option value="global">Global (All Books)</option>
+          <option value="chapter" data-lang-en>This Chapter</option>
+          <option value="chapter" data-lang-id>Kitab Ini</option>
+          <option value="global" data-lang-en>Global (All Books)</option>
+          <option value="global" data-lang-id>Global (Semua Kitab)</option>
         </select>
       </div>
     </div>
@@ -111,17 +116,22 @@
     <div class="flex flex-wrap items-center gap-4 w-full lg:w-auto justify-between lg:justify-end border-t lg:border-t-0 pt-3 lg:pt-0 border-outline-variant/20 dark:border-[#334155]">
       <!-- Default Translation Language -->
       <div class="flex items-center gap-1.5 text-xs text-outline dark:text-gray-400">
-        <span>Translation:</span>
+        <span>
+          <span data-lang-en>Translation:</span>
+          <span data-lang-id>Terjemahan:</span>
+        </span>
         <select id="default-lang-select" class="px-2.5 py-1.5 text-xs bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-semibold">
           <option value="id" selected>Bahasa Indonesia</option>
           <option value="en">English</option>
-          <option value="both">Bilingual (EN + ID)</option>
         </select>
       </div>
 
       <!-- Page Size Selector -->
       <div class="flex items-center gap-1.5 text-xs text-outline dark:text-gray-400">
-        <span>Show per page:</span>
+        <span>
+          <span data-lang-en>Show per page:</span>
+          <span data-lang-id>Per Halaman:</span>
+        </span>
         <select id="page-size-select" class="px-2.5 py-1.5 text-xs bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-semibold">
           <option value="10" selected>10</option>
           <option value="25">25</option>
@@ -155,7 +165,7 @@
   <div><span data-i18n="footer_text">© 2024 HADEETH.ID - Digital Manuscript Preservation</span></div>
 </footer>
 
-<script src="js/api.js?v=20260808_6"></script>
-<script src="js/app.js?v=20260808_6"></script>
+<script src="js/api.js?v=20260808_7"></script>
+<script src="js/app.js?v=20260808_7"></script>
 </body>
 </html>
