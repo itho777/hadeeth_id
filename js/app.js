@@ -716,7 +716,7 @@ async function loadHadithList() {
 
   // Fetch Chapter Metadata if available
   let chapterTitleNameEn = `Chapter ${chapterId}`;
-  let chapterTitleNameId = `Bab ${chapterId}`;
+  let chapterTitleNameId = `Kitab ${chapterId}`;
   let chapterTitleNameAr = `باب رقم ${chapterId}`;
   let startHadithNum = null;
   let endHadithNum = null;
@@ -731,7 +731,14 @@ async function loadHadithList() {
         || chapters[0];
       if (chInfo) {
         chapterTitleNameEn = chInfo.title_en || chInfo.name_en || chInfo.title || `Chapter ${chapterId}`;
-        chapterTitleNameId = chInfo.title_id || chInfo.name_id || chapterTitleNameEn;
+        const rawId = chInfo.title_id || chInfo.name_id;
+        if (rawId) {
+          chapterTitleNameId = rawId;
+        } else if (chapterTitleNameEn.includes('(')) {
+          chapterTitleNameId = chapterTitleNameEn.replace(/.*?\((.*?)\)/, '$1');
+        } else {
+          chapterTitleNameId = chapterTitleNameEn;
+        }
         chapterTitleNameAr = chInfo.title_ar || chInfo.name_ar || chInfo.arabic || `باب رقم ${chapterId}`;
         startHadithNum = chInfo.hadith_start != null ? chInfo.hadith_start : null;
         endHadithNum = chInfo.hadith_end != null ? chInfo.hadith_end : null;
@@ -744,7 +751,7 @@ async function loadHadithList() {
 
   const isIdLang = (window.LangSystem && window.LangSystem.isIdMode());
   const activeChTitle = isIdLang ? chapterTitleNameId : chapterTitleNameEn;
-  const activeChMeta = isIdLang ? `Bab ${chapterId}` : `Chapter ${chapterId}`;
+  const activeChMeta = isIdLang ? `Kitab ${chapterId}` : `Chapter ${chapterId}`;
 
   if (bcBook) {
     bcBook.innerText = bookName;
@@ -828,9 +835,13 @@ async function loadHadithList() {
   if (countMeta) {
     if (startHadithNum != null && endHadithNum != null) {
       const count = chapterHadithCount || (endHadithNum - startHadithNum + 1);
-      countMeta.innerText = `Hadith ${startHadithNum} – ${endHadithNum} • ${count} Hadiths in ${bookName} Kitab ${chapterId}`;
+      countMeta.innerText = isIdLang
+        ? `Hadits ${startHadithNum} – ${endHadithNum} • ${count} Hadits dalam ${bookName} Kitab ${chapterId}`
+        : `Hadith ${startHadithNum} – ${endHadithNum} • ${count} Hadiths in ${bookName} Chapter ${chapterId}`;
     } else {
-      countMeta.innerText = `Total ${allHadiths.length} Hadiths in ${bookName} Kitab ${chapterId}`;
+      countMeta.innerText = isIdLang
+        ? `Total ${allHadiths.length} Hadits dalam ${bookName} Kitab ${chapterId}`
+        : `Total ${allHadiths.length} Hadiths in ${bookName} Chapter ${chapterId}`;
     }
   }
 
@@ -840,8 +851,8 @@ async function loadHadithList() {
       container.innerHTML = `
         <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
           <span class="material-symbols-outlined text-outline dark:text-gray-500 text-4xl">search_off</span>
-          <h3 class="mt-2 font-bold text-primary dark:text-white">No Hadiths found</h3>
-          <p class="text-xs text-outline dark:text-gray-400 mt-1">Try clearing your search query or changing search scope.</p>
+          <h3 class="mt-2 font-bold text-primary dark:text-white">${isIdLang ? 'Hadits Tidak Ditemukan' : 'No Hadiths found'}</h3>
+          <p class="text-xs text-outline dark:text-gray-400 mt-1">${isIdLang ? 'Coba bersihkan kata kunci pencarian atau ubah lingkup pencarian.' : 'Try clearing your search query or changing search scope.'}</p>
         </div>
       `;
       if (pageIndicator) pageIndicator.innerText = `0 of 0`;
@@ -890,7 +901,7 @@ async function loadHadithList() {
               <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded uppercase">${escapeHtml(bookName)} #${num}</span>
               <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2.5 py-0.5 rounded">${escapeHtml(grade)}</span>
             </div>
-            <button data-hadith-title="${escapeHtml(bookName)} #${num}" data-copy-hadith-ar="${escapeHtml(arText)}" data-copy-hadith-text-id="${escapeHtml(idText)}" data-copy-hadith-text-en="${escapeHtml(enText)}" data-share-url="${window.location.origin + window.location.pathname.replace('hadith-list.html', '')}${detailLink}" class="btn-copy-share text-xs font-semibold px-2.5 py-1 rounded border border-outline-variant/40 dark:border-[#334155] text-primary dark:text-white hover:bg-surface-container-low dark:hover:bg-[#334155] transition-all flex items-center gap-1.5 cursor-pointer">
+            <button data-copy-hadith data-copy-share-btn data-hadith-title="${escapeHtml(bookName)} #${num}" data-copy-hadith-ar="${escapeHtml(arText)}" data-copy-hadith-text-id="${escapeHtml(idText)}" data-copy-hadith-text-en="${escapeHtml(enText)}" data-share-url="${window.location.origin + window.location.pathname.replace('hadith-list.html', '')}${detailLink}" class="btn-copy-share text-xs font-semibold px-2.5 py-1 rounded border border-outline-variant/40 dark:border-[#334155] text-primary dark:text-white hover:bg-surface-container-low dark:hover:bg-[#334155] transition-all flex items-center gap-1.5 cursor-pointer">
               <span class="material-symbols-outlined text-[14px]">share</span>
               <span data-lang-en>Copy / Share</span><span data-lang-id>Salin / Bagikan</span>
             </button>
@@ -901,11 +912,12 @@ async function loadHadithList() {
 
           <div class="flex justify-between items-center pt-3 border-t border-outline-variant/10 dark:border-[#334155] text-xs">
             <a href="${isnadLink}" class="text-secondary dark:text-[#10b981] font-semibold hover:underline flex items-center gap-1">
-              <span class="material-symbols-outlined text-sm">account_tree</span> Inspect Sanad Chain
+              <span class="material-symbols-outlined text-sm">account_tree</span>
+              <span data-lang-en>Inspect Sanad Chain</span><span data-lang-id>Telusuri Sanad</span>
             </a>
             <div class="flex items-center gap-2">
               <a href="${detailLink}" class="text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors">
-                Full Hadith & Commentary &rarr;
+                <span data-lang-en>Full Hadith & Commentary &rarr;</span><span data-lang-id>Hadits Selengkapnya & Pensyarahan &rarr;</span>
               </a>
             </div>
           </div>
@@ -914,6 +926,7 @@ async function loadHadithList() {
     });
 
     container.innerHTML = html;
+    LangSystem.apply(LangSystem.get());
 
     // Update Pagination UI
     if (pageIndicator) pageIndicator.innerText = `Showing ${startIdx + 1}–${endIdx} of ${filteredHadiths.length} Ahadith (Page ${currentPage} of ${totalPages})`;
