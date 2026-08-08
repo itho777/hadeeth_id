@@ -1732,16 +1732,17 @@ async function loadSanadChain() {
     ahmad: 'Musnad Ahmad'
   };
   const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
-  
   const isIdLang = (window.LangSystem && window.LangSystem.isIdMode());
-  const titleElem = document.getElementById('sanad-title');
-  const subtitleElem = document.getElementById('sanad-subtitle');
-  if (titleElem) titleElem.innerText = `Sanad: ${bookName} ${hadithNum}`;
-  if (subtitleElem) {
-    subtitleElem.innerText = isIdLang
-      ? `Silsilah perawi (الإسناد) untuk ${bookName} Hadits #${hadithNum} yang bersambung sampai ke Rasulullah ﷺ.`
-      : `Chain of narrators (الإسناد) for ${bookName} Hadith #${hadithNum} tracing back to the Messenger of Allah ﷺ.`;
-  }
+
+  const titleEn = document.querySelector('#sanad-title [data-lang-en]');
+  const titleId = document.querySelector('#sanad-title [data-lang-id]');
+  const subEn = document.querySelector('#sanad-subtitle [data-lang-en]');
+  const subId = document.querySelector('#sanad-subtitle [data-lang-id]');
+
+  if (titleEn) titleEn.innerText = `Sanad: ${bookName} ${hadithNum}`;
+  if (titleId) titleId.innerText = `Sanad: ${bookName} Hadits #${hadithNum}`;
+  if (subEn) subEn.innerText = `Chain of narrators (الإسناد) for ${bookName} Hadith #${hadithNum} tracing back to the Messenger of Allah ﷺ.`;
+  if (subId) subId.innerText = `Silsilah perawi (الإسناد) untuk ${bookName} Hadits #${hadithNum} yang bersambung sampai ke Rasulullah ﷺ.`;
 
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -2089,7 +2090,7 @@ async function loadSanadChain() {
   if (!window._sanadLangListenerAttached) {
     window._sanadLangListenerAttached = true;
     window.addEventListener('hadeeth_lang_change', () => {
-      loadSanadChain();
+      LangSystem.apply(LangSystem.get());
     });
   }
 }
