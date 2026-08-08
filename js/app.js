@@ -398,6 +398,7 @@ function renderSearchResults(results, query, container) {
 async function loadBooksGrid() {
   const container = document.getElementById('books-grid');
   if (!container) return;
+  if (container.querySelectorAll('.book-card').length > 0) return;
 
   const books = await window.HadeethAPI.getBooks();
   if (!books || books.length === 0) return;
@@ -1034,8 +1035,8 @@ async function loadChaptersList() {
       ar: 'صحيح البخاري',
       author: 'Imam al-Bukhari',
       authorId: 'rawi_bukhari',
-      type: 'Jami',
-      badgeClass: 'bg-sunan-emerald text-white',
+      type: "Jami'",
+      badgeClass: 'bg-blue-700 text-white',
       desc: 'Recognized across Islamic scholarship as the supreme Jami collection of Hadith, compiled with unmatched authentication criteria.',
       kitabCount: '📚 97 Books (Kitab)',
       hadithCount: '📖 7,563 Total Hadith',
@@ -1046,8 +1047,8 @@ async function loadChaptersList() {
       ar: 'صحيح مسلم',
       author: 'Imam Muslim ibn al-Hajjaj',
       authorId: 'rawi_muslim',
-      type: 'Jami',
-      badgeClass: 'bg-sunan-emerald text-white',
+      type: "Jami'",
+      badgeClass: 'bg-blue-700 text-white',
       desc: 'Masterpiece Jami collection renowned for strict thematic organization and comprehensive parallel chains of narration (turuq).',
       kitabCount: '📚 56 Books (Kitab)',
       hadithCount: '📖 3,033 Total Hadith',
@@ -1058,8 +1059,8 @@ async function loadChaptersList() {
       ar: 'جامع الترمذي',
       author: "Imam Abu 'Isa al-Tirmidhi",
       authorId: 'rawi_al_tirmidhi',
-      type: 'Jami',
-      badgeClass: 'bg-sunan-emerald text-white',
+      type: "Jami'",
+      badgeClass: 'bg-blue-700 text-white',
       desc: 'Famous Jami collection featuring explicit grading of narrations (Sahih, Hasan, Gharib) and legal opinions of early jurists.',
       kitabCount: '📚 49 Books (Kitab)',
       hadithCount: '📖 3,956 Total Hadith',
@@ -1071,7 +1072,7 @@ async function loadChaptersList() {
       author: 'Imam Abu Dawood al-Sijistani',
       authorId: 'rawi_abu_dawud',
       type: 'Sunan',
-      badgeClass: 'bg-musnad-indigo text-white',
+      badgeClass: 'bg-indigo-600 text-white',
       desc: 'Primarily focuses on legal rulings (Ahkam) used as foundational evidence by jurists across Sunni Fiqh schools.',
       kitabCount: '📚 43 Books (Kitab)',
       hadithCount: '📖 5,274 Total Hadith',
@@ -1083,7 +1084,7 @@ async function loadChaptersList() {
       author: "Imam Ahmad an-Nasa'i",
       authorId: 'rawi_al_nasai',
       type: 'Sunan',
-      badgeClass: 'bg-musnad-indigo text-white',
+      badgeClass: 'bg-indigo-600 text-white',
       desc: 'Possesses the strictest authentication criteria among the Sunan books, second only to the Sahihain.',
       kitabCount: '📚 51 Books (Kitab)',
       hadithCount: '📖 5,758 Total Hadith',
@@ -1095,7 +1096,7 @@ async function loadChaptersList() {
       author: 'Imam Ibn Majah al-Qazwini',
       authorId: 'rawi_ibn_majah',
       type: 'Sunan',
-      badgeClass: 'bg-musnad-indigo text-white',
+      badgeClass: 'bg-indigo-600 text-white',
       desc: 'Renowned for systematic arrangement and unique narrations (zawa\'id) expanding Islamic jurisprudence.',
       kitabCount: '📚 37 Books (Kitab)',
       hadithCount: '📖 4,341 Total Hadith',
