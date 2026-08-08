@@ -1639,11 +1639,18 @@ async function loadSanadChain() {
   // If DB returned structured chain from hadith_rijal with 3+ narrators, use it!
   if (dbNarrators && dbNarrators.length >= 3) {
     narrators = dbNarrators.map(r => {
-      const matchDict = rawiDict.find(d => d.rawi_id === r.rawi_id || (d.ar && r.name_ar && d.ar.includes(r.name_ar)));
+      const normEn = (r.name_en || '').toLowerCase();
+      const matchDict = rawiDict.find(d => 
+        d.rawi_id === r.rawi_id || 
+        (d.ar && r.name_ar && (d.ar.includes(r.name_ar) || r.name_ar.includes(d.ar))) ||
+        (d.en && normEn && normEn.includes(d.en.toLowerCase().replace(/['`’]/g, '').trim()))
+      );
+      const enName = r.name_en || (matchDict ? matchDict.en : 'Transmitter');
+      const idName = matchDict ? matchDict.id : getIndonesianRawiName(enName, r.rawi_id, r.name_ar);
       return {
         rawi_id: r.rawi_id,
-        name: r.name_en + (r.is_sahabi ? ' (رضي الله عنه)' : ''),
-        name_id: (matchDict ? matchDict.id : r.name_en),
+        name: enName + (r.is_sahabi ? ' (رضي الله عنه)' : ''),
+        name_id: idName,
         role: `${r.generation || 'Transmitter'} • Grade: ${r.grade || 'Thiqah'}`,
         ar: r.name_ar || (matchDict ? matchDict.ar : ''),
         kunyah: r.kunyah || (matchDict ? matchDict.kunyah : 'Abu Abdullah'),
@@ -1704,7 +1711,7 @@ async function loadSanadChain() {
           narrators.push({
             rawi_id: matched.rawi_id,
             name: matched.en,
-            name_id: matched.id || matched.en,
+            name_id: matched.id || getIndonesianRawiName(matched.en, matched.rawi_id, matched.ar),
             role: matched.role,
             ar: matched.ar,
             kunyah: matched.kunyah,
@@ -1718,7 +1725,7 @@ async function loadSanadChain() {
           narrators.push({
             rawi_id: null,
             name: rawiName,
-            name_id: rawiName,
+            name_id: getIndonesianRawiName(rawiName, null, null),
             role: isFirst ? 'Sahabi (Companion) • Grade: Thiqah' : 'Transmitter (Rawi) • Grade: Thiqah',
             ar: getArabicScriptForRawi(rawiName),
             kunyah: isFirst ? 'Abu Abdillah' : 'Abu Abdullah',
@@ -1778,15 +1785,18 @@ async function loadSanadChain() {
     if (isIdLang) {
       displayRole = displayRole
         .replace(/Sahabi\s*\(Companion\)/ig, 'SAHABAT')
+        .replace(/Sahabiya\s*\(Companion\)/ig, 'SAHABAT')
+        .replace(/Sahabiya/ig, 'SAHABAT')
         .replace(/Sahabi/ig, 'SAHABAT')
         .replace(/Transmitter\s*\(Rawi\)/ig, 'PERAWI (RAWI)')
         .replace(/Transmitter/ig, 'PERAWI')
         .replace(/Direct Sheikh of/ig, 'GURU LANGSUNG DARI')
+        .replace(/Imam of Madinah/ig, 'IMAM MADINAH')
         .replace(/Grade:\s*/ig, 'DERAJAT: ')
         .replace(/Thiqah/ig, 'TSIQAH')
         .replace(/Hafiz/ig, 'HAFIZH');
     }
-    const displayName = isIdLang ? (nr.name_id || nr.name) : nr.name;
+    const displayName = isIdLang ? getIndonesianRawiName(nr.name_id || nr.name, nr.rawi_id, nr.ar) : nr.name;
     const displayArName = getArabicScriptForRawi(nr.ar || nr.name_id || nr.name);
 
     html += `
@@ -1861,6 +1871,61 @@ async function loadSanadChain() {
       loadSanadChain();
     });
   }
+}
+
+/**
+ * Helper to get clean Indonesian Latin name for Rawi/Scholar
+ */
+function getIndonesianRawiName(name, rawiId, arName) {
+  if (!name && !arName) return 'Perawi Hadits';
+  const clean = (name || '').trim();
+  const lower = clean.toLowerCase();
+
+  if (rawiId === 'rawi_aisha_bint_abi_bakr' || rawiId === 'rawi_aisha' || lower.includes('aisha') || lower.includes('aisyah')) {
+    return 'Aisyah binti Abu Bakar ash-Shiddiq';
+  }
+  if (rawiId === 'rawi_abdurrahman_bin_al_qasim' || (lower.includes('abdurrahman') && lower.includes('qasim'))) {
+    return 'Abdurrahman bin al-Qasim bin Muhammad';
+  }
+  if (rawiId === 'rawi_abdullah_bin_yusuf' || lower.includes('yusuf')) {
+    return 'Abdullah bin Yusuf at-Tinnisi';
+  }
+  if (rawiId === 'rawi_malik_bin_anas' || lower.includes('malik')) {
+    return 'Imam Malik bin Anas';
+  }
+  if (rawiId === 'rawi_umar_ibn_al_khattab' || lower.includes('umar')) {
+    return 'Umar bin al-Khaththab';
+  }
+  if (rawiId === 'rawi_abu_hurairah' || lower.includes('abu hurairah')) {
+    return 'Abu Hurairah radliallahu \'anhu';
+  }
+  if (lower.includes('al-humaydi') || lower.includes('humaidi')) {
+    return 'Abdullah bin az-Zubair al-Humaidi';
+  }
+  if (lower.includes('sufyan') && lower.includes('uyaynah')) {
+    return 'Sufyan bin Uyainah';
+  }
+  if (lower.includes('yahya') && lower.includes('said')) {
+    return 'Yahya bin Sa\'id al-Anshari';
+  }
+  if (lower.includes('muhammad') && lower.includes('ibrahim')) {
+    return 'Muhammad bin Ibrahim at-Taimi';
+  }
+  if (lower.includes('alqama')) {
+    return 'Alqamah bin Waqqash al-Laitsi';
+  }
+
+  return clean
+    .replace(/^'/, '')
+    .replace(/\s+'/, ' ')
+    .replace(/bint\s+/gi, 'binti ')
+    .replace(/bin\s+al-khattab/gi, 'bin al-Khaththab')
+    .replace(/al-ansari/gi, 'al-Anshari')
+    .replace(/al-laythi/gi, 'al-Laitsi')
+    .replace(/al-humaydi/gi, 'al-Humaidi')
+    .replace(/\(رضي الله عنها\)/gi, '')
+    .replace(/\(رضي الله عنه\)/gi, '')
+    .trim();
 }
 
 /**
