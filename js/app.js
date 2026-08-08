@@ -1992,8 +1992,8 @@ async function loadSanadChain() {
       <div class="sanad-node relative z-10 bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-5 shadow-sm hover:border-sunan-emerald/50 transition-colors flex flex-col gap-3">
         <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-secondary text-white border-2 border-white dark:border-ink-black flex items-center justify-center text-[10px]">${idx + 1}</div>
         
-        <div class="flex justify-between items-start border-b border-outline-variant/20 dark:border-[#334155] pb-3">
-          <div>
+        <div class="flex justify-between items-start gap-4 border-b border-outline-variant/20 dark:border-[#334155] pb-3">
+          <div class="flex-1 min-w-0">
             <span class="text-[10px] uppercase font-bold text-sunan-emerald dark:text-[#10b981]">
               <span data-lang-en>${escapeHtml(roleEn)}</span>
               <span data-lang-id style="display:none">${escapeHtml(roleId)}</span>
@@ -2001,10 +2001,10 @@ async function loadSanadChain() {
             <a href="${profileUrl}" class="font-bold text-base text-primary dark:text-white hover:text-sunan-emerald dark:hover:text-[#10b981] hover:underline flex items-center gap-1 mt-0.5">
               <span data-lang-en>${escapeHtml(nameEn)}</span>
               <span data-lang-id style="display:none">${escapeHtml(nameId)}</span>
-              <span class="material-symbols-outlined text-xs">open_in_new</span>
+              <span class="material-symbols-outlined text-xs shrink-0">open_in_new</span>
             </a>
           </div>
-          <span class="font-arabic-body text-lg text-secondary dark:text-[#10b981]" dir="rtl">${escapeHtml(displayArName)}</span>
+          <span class="font-arabic-body text-lg text-secondary dark:text-[#10b981] shrink-0 whitespace-nowrap" dir="rtl">${escapeHtml(displayArName)}</span>
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
@@ -2185,9 +2185,9 @@ function getArabicScriptForRawi(latinOrAr) {
     "abu zanad": "أبو الزناد",
     "abu hurairah": "أبو هريرة",
     "abu huraira": "أبو هريرة",
-    "alqama bin waqqas": "علقمة بن وقاص",
-    "alqamah bin waqqas": "علقمة بن وقاص",
-    "alqamah bin waqqash": "علقمة بن وقاص",
+    "alqama bin waqqas": "علقمة بن وقاص الليثي",
+    "alqamah bin waqqas": "علقمة بن وقاص الليثي",
+    "alqamah bin waqqash": "علقمة بن وقاص الليثي",
     "abdullah bin az-zubair al-humaydi": "عبد الله بن الزبير الحميدي",
     "al-humaydi": "الحميدي",
     "al humaydi": "الحميدي",
