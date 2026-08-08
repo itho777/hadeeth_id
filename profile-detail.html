@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_52"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_53"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -347,7 +347,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_52"></script>
+<script src="js/app.js?v=20260808_53"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -661,15 +661,21 @@
         document.getElementById('remark-quote-2').innerText = `"Evaluation source: ${rawi.grade_source}"`;
       }
 
-      // Bio text - Filter out generic auto-scraped template text
+      // Bio text - Filter out generic auto-scraped template text & format clean fallback
       let bioEnClean = rawi.bio_en || '';
       let bioIdClean = rawi.bio_id || '';
 
-      if (bioEnClean.includes('is an authentic transmitter of Hadith recorded in canonical collections')) {
-        bioEnClean = `${rawi.name_en} is a verified Hadith transmitter recorded in the canonical collections (${rawi.generation || 'Transmitter'}). Evaluated as ${rawi.grade || 'Thiqah (Trustworthy)'} under Isnad critical consensus in Taqrib al-Tahdhib.`;
+      let genCleanEn = rawi.generation || 'Transmitter';
+      let genCleanId = rawi.generation || 'Perawi';
+      if (genCleanEn.toLowerCase().includes('sahabi')) { genCleanEn = 'Sahabi (Companion)'; genCleanId = 'Sahabat Nabi'; }
+      else if (genCleanEn.toLowerCase().includes('tabi\'i') || genCleanEn.toLowerCase().includes('tabi\'in')) { genCleanEn = 'Tabi\'i Generation'; genCleanId = 'Generasi Tabi\'in'; }
+      else if (genCleanEn.toLowerCase().includes('collector')) { genCleanEn = 'Hadith Master & Collector'; genCleanId = 'Penghimpun & Hafizh Hadits'; }
+
+      if (bioEnClean.includes('is an authentic transmitter of Hadith recorded in canonical collections') || !bioEnClean) {
+        bioEnClean = `${rawi.name_en} is a verified Hadith transmitter recorded in the canonical collections (${genCleanEn}). Evaluated as ${rawi.grade || 'Thiqah (Trustworthy)'} under Isnad critical consensus in Taqrib al-Tahdhib.`;
       }
-      if (bioIdClean.includes('adalah perawi perawi hadis shahih')) {
-        bioIdClean = `${rawi.name_en} adalah perawi hadits terpercaya yang tercatat dalam korpus kitab-kitab induk (${rawi.generation || 'Perawi'}). Memiliki derajat ${rawi.grade || 'Tsiqah'} berdasarkan konsensus ulama kritik sanad.`;
+      if (bioIdClean.includes('adalah perawi perawi hadis shahih') || !bioIdClean) {
+        bioIdClean = `${rawi.name_en} adalah perawi hadits terpercaya yang tercatat dalam korpus kitab-kitab induk (${genCleanId}). Memiliki derajat ${rawi.grade || 'Tsiqah'} berdasarkan konsensus ulama kritik sanad dalam Taqrib at-Tahdzib.`;
       }
 
       let bioHtml = '';
