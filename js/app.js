@@ -1767,7 +1767,7 @@ async function loadSanadChain() {
         .replace(/Hafiz/ig, 'Hafizh');
     }
     const displayName = isIdLang ? (nr.name_id || nr.name) : nr.name;
-    const displayArName = nr.ar || nr.name_id || nr.name;
+    const displayArName = getArabicScriptForRawi(nr.ar || nr.name_id || nr.name);
 
     html += `
       <div class="sanad-node relative z-10 bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-5 shadow-sm hover:border-sunan-emerald/50 transition-colors flex flex-col gap-3">
@@ -1805,7 +1805,7 @@ async function loadSanadChain() {
 
         ${nr.remarks ? `
           <div class="mt-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155] text-xs text-on-surface-variant dark:text-gray-300 italic">
-            <span class="font-bold text-secondary dark:text-[#10b981] not-italic text-[10px] uppercase block mb-0.5">Scholar Remarks (Jarh wa Ta'dil):</span>
+            <span class="font-bold text-secondary dark:text-[#10b981] not-italic text-[10px] uppercase block mb-0.5">${isIdLang ? 'Penilaian Ulama (Jarh wa Ta\'dil):' : 'Scholar Remarks (Jarh wa Ta\'dil):'}</span>
             "${escapeHtml(nr.remarks)}"
           </div>
         ` : ''}
@@ -1822,17 +1822,77 @@ async function loadSanadChain() {
       <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-primary border-2 border-white dark:border-ink-black flex items-center justify-center text-[10px]">📚</div>
       <div class="flex justify-between items-center">
         <div>
-          <span class="text-[10px] uppercase font-bold tracking-widest text-[#10b981]">Collector & Author</span>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-[#10b981]">${isIdLang ? 'Kolektor & Penulis' : 'Collector & Author'}</span>
           <a href="${authorProfileUrl}" class="font-bold text-lg hover:underline flex items-center gap-1 text-white">
             ${escapeHtml(bookName)}
             <span class="material-symbols-outlined text-xs">open_in_new</span>
           </a>
-          <p class="text-xs text-gray-300">Preserved in Authentic Canonical Corpus</p>
+          <p class="text-xs text-gray-300">${isIdLang ? 'Tercatat dalam Koleksi Kitab Shahih Canonical' : 'Preserved in Authentic Canonical Corpus'}</p>
         </div>
       </div>
     </div>
   `;
   container.innerHTML = html;
+}
+
+/**
+ * Helper to get true Arabic script name for Rawi/Scholar
+ */
+function getArabicScriptForRawi(latinOrAr) {
+  if (!latinOrAr) return 'أحد الرواة';
+  if (/[\u0600-\u06FF]/.test(latinOrAr)) return latinOrAr;
+
+  const clean = latinOrAr.trim();
+  const lower = clean.toLowerCase();
+
+  const map = {
+    "al a'raj": "الأعرج",
+    "al-a'raj": "الأعرج",
+    "al araj": "الأعرج",
+    "abu az zanad": "أبو الزناد",
+    "abu az-zanad": "أبو الزناد",
+    "abu zanad": "أبو الزناد",
+    "abu hurairah": "أبو هريرة",
+    "abu huraira": "أبو هريرة",
+    "alqama bin waqqas": "علقمة بن وقاص",
+    "alqamah bin waqqas": "علقمة بن وقاص",
+    "alqamah bin waqqash": "علقمة بن وقاص",
+    "abdullah bin az-zubair al-humaydi": "عبد الله بن الزبير الحميدي",
+    "al-humaydi": "الحميدي",
+    "al humaydi": "الحميدي",
+    "sufyan bin 'uyaynah": "سفيان بن عيينة",
+    "sufyan bin uyainah": "سفيان بن عيينة",
+    "yahya bin sa'id": "يحيى بن سعيد الأنصاري",
+    "muhammad bin ibrahim": "محمد بن إبراهيم التيمي",
+    "umar bin al-khattab": "عمر بن الخطاب",
+    "umar bin al-khaththab": "عمر بن الخطاب",
+    "aisha bint abi bakr": "عائشة بنت أبي بكر",
+    "aisyah binti abu bakar": "عائشة بنت أبي بكر",
+    "ibn umar": "عبد الله بن عمر",
+    "ibnu umar": "عبد الله بن عمر",
+    "ibn abbas": "عبد الله بن عباس",
+    "anas bin malik": "أنس بن مالك",
+    "ikrimah": "عكرمة بن خالد",
+    "hanzhalah": "حنظلة بن أبي سفيان",
+    "malik bin anas": "مالك بن أنس",
+    "imam malik": "مالك بن أنس",
+    "sa'id bin jubair": "سعيد بن جبير",
+    "nafi'": "نافع مولي ابن عمر",
+    "nafi": "نافع",
+    "salim": "سالم بن عبد الله",
+    "urwah": "عروة بن الزبير",
+    "abu salama": "أبو سلمة بن عبد الرحمن",
+    "amr bin dinar": "عمرو بن دينار",
+    "al-zuhri": "ابن شهاب الزهري",
+    "az-zuhri": "ابن شهاب الزهري",
+    "zuhri": "ابن شهاب الزهري"
+  };
+
+  for (const [k, v] of Object.entries(map)) {
+    if (lower.includes(k)) return v;
+  }
+
+  return clean;
 }
 
 /**
