@@ -715,6 +715,100 @@ async function loadHadithList() {
   const nextBtn = document.getElementById('next-page-btn');
   const pageIndicator = document.getElementById('page-indicator');
 
+  // Indonesian Chapter Titles Master Mapping Dictionary
+  const indonesianChapterTitles = {
+    'bukhari_1': 'Permulaan Wahyu',
+    'bukhari_2': 'Iman',
+    'bukhari_3': 'Ilmu',
+    'bukhari_4': 'Wudhu',
+    'bukhari_5': 'Mandi',
+    'bukhari_6': 'Haid',
+    'bukhari_7': 'Tayammum',
+    'bukhari_8': 'Shalat',
+    'bukhari_9': 'Waktu-Waktu Shalat',
+    'bukhari_10': 'Adzan',
+    'bukhari_11': 'Shalat Jum\'at',
+    'bukhari_12': 'Shalat Khauf',
+    'bukhari_13': 'Dua Hari Raya (Idul Fitri & Idul Adha)',
+    'bukhari_14': 'Shalat Witir',
+    'bukhari_15': 'Istisqa\' (Memohon Hujan)',
+    'bukhari_16': 'Gerhana (Kusuf)',
+    'bukhari_17': 'Sujud Al-Qur\'an',
+    'bukhari_18': 'Qashar Shalat',
+    'bukhari_19': 'Tahajjud (Shalat Malam)',
+    'bukhari_20': 'Keutamaan Shalat di Makkah & Madinah',
+    'bukhari_21': 'Tindakan Saat Shalat',
+    'bukhari_22': 'Sujud Sahwi',
+    'bukhari_23': 'Jenazah',
+    'bukhari_24': 'Zakat',
+    'bukhari_25': 'Haji',
+    'bukhari_26': 'Umrah',
+    'bukhari_27': 'Orang Terhalang Haji',
+    'bukhari_28': 'Denda Berburu Saat Ihram',
+    'bukhari_29': 'Keutamaan Kota Madinah',
+    'bukhari_30': 'Puasa (Shaum)',
+    'bukhari_31': 'Shalat Tarawih',
+    'bukhari_32': 'Lailatul Qadr',
+    'bukhari_33': 'I\'tikaf',
+    'bukhari_34': 'Jual Beli (Buyu\')',
+    'bukhari_35': 'Jual Beli Salam',
+    'bukhari_36': 'Sewa Menyewa (Ijarah)',
+    'bukhari_37': 'Hutang Piutang (Hawalah)',
+    'bukhari_38': 'Wakalah (Perwakilan)',
+    'bukhari_39': 'Bercocok Tanam',
+    'bukhari_40': 'Penyiraman & Pengairan',
+    'bukhari_41': 'Pinjam Meminjam',
+    'bukhari_42': 'Persengketaan',
+    'bukhari_43': 'Barang Temuan',
+    'bukhari_44': 'Kedzaliman & Perampasan',
+    'bukhari_45': 'Syirkah (Kemitraan)',
+    'bukhari_46': 'Gadai (Rahn)',
+    'bukhari_47': 'Pembebasan Budak',
+    'bukhari_48': 'Hibah & Keutamaannya',
+    'bukhari_49': 'Persaksian (Syahadat)',
+    'bukhari_50': 'Perdamaian (Sulh)',
+    'bukhari_51': 'Syarat-Syarat',
+    'bukhari_52': 'Wasiat (Washaya)',
+    'bukhari_53': 'Jihad & Ekspedisi',
+    'bukhari_54': 'Permulaan Penciptaan',
+    'bukhari_55': 'Kisah Para Nabi',
+    'bukhari_56': 'Keutamaan Para Sahabat (Manaqib)',
+    'bukhari_57': 'Peperangan (Maghazi)',
+    'bukhari_58': 'Tafsir Al-Qur\'an',
+    'bukhari_59': 'Keutamaan Al-Qur\'an',
+    'bukhari_60': 'Pernikahan (Nikah)',
+    'bukhari_61': 'Perceraian (Thalaq)',
+    'bukhari_62': 'Nafkah',
+    'bukhari_63': 'Makanan (Ath\'imah)',
+    'bukhari_64': 'Aqiqah',
+    'bukhari_65': 'Sembelihan & Berburu',
+    'bukhari_66': 'Kurban (Udhiyah)',
+    'bukhari_67': 'Minuman (Asyribah)',
+    'bukhari_68': 'Orang Sakit',
+    'bukhari_69': 'Pengobatan (Tibb)',
+    'bukhari_70': 'Pakaian (Libas)',
+    'bukhari_71': 'Adab (Etika Sopan Santun)',
+    'bukhari_72': 'Meminta Izin (Isti\'zan)',
+    'bukhari_73': 'Doa & Dzikir',
+    'bukhari_74': 'Kelembutan Hati (Riqaq)',
+    'bukhari_75': 'Takdir (Qadar)',
+    'bukhari_76': 'Sumpah & Nadzar',
+    'bukhari_77': 'Tebusan Sumpah',
+    'bukhari_78': 'Hukum Waris (Faradh)',
+    'bukhari_79': 'Hukuman Pidana Islam (Hudud)',
+    'bukhari_80': 'Denda Jiwa (Diyat)',
+    'bukhari_81': 'Meminta Taubat Orang Murtad',
+    'bukhari_82': 'Pemaksaan (Ikrah)',
+    'bukhari_83': 'Trik Hukum (Hiyal)',
+    'bukhari_84': 'Tafsir Mimpi',
+    'bukhari_85': 'Fitnah Akhir Zaman',
+    'bukhari_86': 'Hukum & Keputusan (Ahkam)',
+    'bukhari_87': 'Harapan (Tamanni)',
+    'bukhari_88': 'Khabar Ahad',
+    'bukhari_89': 'Berpegang Teguh pada Al-Qur\'an & Sunnah',
+    'bukhari_90': 'Tauhid & Keagungan Allah'
+  };
+
   // Fetch Chapter Metadata if available
   let chapterTitleNameEn = `Chapter ${chapterId}`;
   let chapterTitleNameId = `Kitab ${chapterId}`;
@@ -732,7 +826,8 @@ async function loadHadithList() {
         || chapters[0];
       if (chInfo) {
         chapterTitleNameEn = chInfo.title_en || chInfo.name_en || chInfo.title || `Chapter ${chapterId}`;
-        const rawId = chInfo.title_id || chInfo.name_id;
+        const bookChKey = `${bookId.toLowerCase()}_${chapterId}`;
+        const rawId = indonesianChapterTitles[bookChKey] || chInfo.title_id || chInfo.name_id;
         if (rawId) {
           chapterTitleNameId = rawId;
         } else if (chapterTitleNameEn.includes('(')) {
@@ -750,6 +845,12 @@ async function loadHadithList() {
     console.warn('Chapter meta load error:', err);
   }
 
+  // Override title_id if in dictionary
+  const bookChKey = `${bookId.toLowerCase()}_${chapterId}`;
+  if (indonesianChapterTitles[bookChKey]) {
+    chapterTitleNameId = indonesianChapterTitles[bookChKey];
+  }
+
   const isIdLang = (window.LangSystem && window.LangSystem.isIdMode());
   const activeChTitle = isIdLang ? chapterTitleNameId : chapterTitleNameEn;
   const activeChMeta = isIdLang ? `Kitab ${chapterId}` : `Chapter ${chapterId}`;
@@ -765,6 +866,13 @@ async function loadHadithList() {
   if (chTitleId) chTitleId.innerText = chapterTitleNameId;
   if (chTitleAr) chTitleAr.innerText = chapterTitleNameAr;
   LangSystem.apply(LangSystem.get());
+
+  if (!window._hadithListLangListenerAttached) {
+    window._hadithListLangListenerAttached = true;
+    window.addEventListener('hadeeth_lang_change', () => {
+      loadHadithList();
+    });
+  }
 
   // Local state
   let allHadiths = [];
