@@ -9,274 +9,107 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_5"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_6"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "sunan-emerald":"#1B5E20","ink-black":"#0D0D10","secondary":"#7b5810",
-            "surface":"#fcf9f5","outline-variant":"#c3c6cf","primary":"#001932",
-            "manuscript-paper":"#FDFBF7","on-primary":"#ffffff","surface-container-low":"#f6f3ef",
-            "on-surface":"#1c1c1a","musnad-indigo":"#311B92"
-          },
-          fontFamily: { "body-md":["Plus Jakarta Sans"],"arabic-body":["Amiri"],"arabic-display":["Amiri"] },
-          spacing: { "stack-sm":"0.5rem","content-width-max":"800px","margin-main":"2rem","stack-lg":"2rem" }
-        }
-      }
-    }
-  </script>
-  <style>
-    .material-symbols-outlined { font-family:'Material Symbols Outlined'; font-weight:normal; font-style:normal; font-size:24px; line-height:1; display:inline-block; }
-  </style>
-</head>
-<body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
-
-<!-- TOP APP BAR -->
-<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
-  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
-    <a href="index.html" class="flex items-center gap-2">
-      <div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-[#0a1120] border border-outline-variant/30"><img src="assets/logo_light.jpg" alt="hadeeth.id logo" class="logo-light w-full h-full object-cover rounded-lg scale-125"/><img src="assets/logo_dark.jpg" alt="hadeeth.id logo" class="logo-dark w-full h-full object-cover rounded-lg scale-125"/></div>
-      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
-    </a>
-    <nav class="hidden md:flex items-center gap-stack-lg">
-      <a href="books.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1" data-i18n="nav_books">Books</a>
-      <a href="scholars.html" class="text-primary dark:text-white font-bold border-b-2 border-primary dark:border-[#10b981] py-1" data-i18n="nav_scholars">Scholars</a>
-      <a href="admin.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1" data-i18n="nav_admin">Admin</a>
-    </nav>
-        <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
-      <!-- Language Switcher -->
-      <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
-        <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
-        <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
-      </div>
-      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full">
-        <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8">
-
-  <!-- Page Header -->
-  <div class="flex flex-col gap-3 border-b border-outline-variant/30 dark:border-[#334155] pb-6">
-    <div class="flex justify-between items-start">
-      <div>
-        <div class="flex items-center gap-2 text-secondary dark:text-[#10b981] font-semibold text-xs uppercase tracking-wider">
-          <span class="material-symbols-outlined text-[18px]">groups</span>
-          <span>Rijal al-Hadith Biographical Index</span>
-        </div>
-        <h1 class="text-3xl font-bold text-primary dark:text-white mt-1">Scholars & Narrators</h1>
-      </div>
-      <span class="font-arabic-display text-3xl text-secondary dark:text-[#10b981]" dir="rtl">رواة الحديث</span>
-    </div>
-    <p class="text-xs text-on-surface-variant dark:text-gray-400 max-w-2xl">
-      Explore biographies and biographical evaluation (Ilm al-Jarh wa al-Ta'dil) of over 24,000 Hadith transmitters spanning 10 generations, from the Companions (Sahabah) to the Great Collectors.
-    </p>
-
-    <!-- Stats summary row -->
-    <div class="grid grid-cols-3 gap-4 mt-2">
-      <div class="bg-surface dark:bg-[#1e293b] p-3 rounded-lg border border-outline-variant/20 dark:border-[#334155] text-center">
-        <span class="text-lg font-bold text-primary dark:text-white block">24,000+</span>
-        <span class="text-[10px] text-outline dark:text-gray-400 uppercase">Narrators Indexed</span>
-      </div>
-      <div class="bg-surface dark:bg-[#1e293b] p-3 rounded-lg border border-outline-variant/20 dark:border-[#334155] text-center">
-        <span class="text-lg font-bold text-primary dark:text-white block">10</span>
-        <span class="text-[10px] text-outline dark:text-gray-400 uppercase">Generations (Tabaqat)</span>
-      </div>
-      <div class="bg-surface dark:bg-[#1e293b] p-3 rounded-lg border border-outline-variant/20 dark:border-[#334155] text-center">
-        <span class="text-lg font-bold text-sunan-emerald dark:text-[#10b981] block">100%</span>
-        <span class="text-[10px] text-outline dark:text-gray-400 uppercase">Scholarly Checked</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Search and Generation Filter Bar -->
-  <div class="flex flex-col gap-4">
-    <div class="w-full bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-3 flex items-center gap-3">
-      <span class="material-symbols-outlined text-outline dark:text-gray-400">search</span>
-      <input type="text" id="scholar-search" placeholder="Search narrator by name, kunyah, city, or generation..." class="w-full bg-transparent border-none focus:ring-0 text-sm text-primary dark:text-white outline-none"/>
-    </div>
-
-    <!-- Filter Chips Container -->
-    <div class="flex flex-col gap-2">
-      <!-- Generation Filter Chips -->
-      <div class="flex items-center gap-2 overflow-x-auto pb-1" id="generation-chips">
-        <span class="text-xs font-bold text-outline dark:text-gray-400 uppercase tracking-wider min-w-[90px]">Generation:</span>
-        <button class="gen-btn active px-3.5 py-1 rounded-full text-xs font-semibold bg-primary dark:bg-[#10b981] text-white dark:text-black" data-gen="all">All Generations</button>
-        <button class="gen-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-gen="sahabah">Sahabah (Companions)</button>
-        <button class="gen-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-gen="tabiun">Tabi'un (Successors)</button>
-        <button class="gen-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-gen="collectors">Great Collectors</button>
-      </div>
-
-      <!-- Position / Role Filter Chips -->
-      <div class="flex items-center gap-2 overflow-x-auto pb-1" id="role-chips">
-        <span class="text-xs font-bold text-outline dark:text-gray-400 uppercase tracking-wider min-w-[90px]">Position:</span>
-        <button class="role-btn active px-3.5 py-1 rounded-full text-xs font-semibold bg-secondary dark:bg-[#10b981] text-white dark:text-black" data-role="all">All Positions</button>
-        <button class="role-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-role="writers">Book Writers / Authors</button>
-        <button class="role-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-role="rawi">Rawi / Transmitters</button>
-        <button class="role-btn px-3.5 py-1 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-role="scholars">Scholars / Evaluators</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Scholars Grid -->
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="scholars-grid">
-
-    <!-- Card 1: Prophet (Special) -->
-    <div class="scholar-card bg-gradient-to-br from-sunan-emerald/10 to-emerald-900/10 dark:from-[#10b981]/20 dark:to-[#0f172a] border-2 border-sunan-emerald dark:border-[#10b981] rounded-xl p-5 flex flex-col justify-between card-lift" data-gen="sahabah">
-      <div>
-        <div class="flex justify-between items-start mb-3">
-          <span class="bg-sunan-emerald text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">Source of Revelation</span>
-          <span class="font-arabic-body text-xl text-sunan-emerald dark:text-[#10b981]" dir="rtl">محمد رسول الله ﷺ</span>
-        </div>
-        <h3 class="font-bold text-lg text-primary dark:text-white">Prophet Muhammad ﷺ</h3>
-        <p class="text-xs text-outline dark:text-gray-400 mt-1">570 – 632 CE (11 AH) • Makkah / Madinah</p>
-        <p class="text-xs text-on-surface-variant dark:text-gray-300 mt-2 line-clamp-2">The final Messenger of Allah, whose sayings, actions, and approvals constitute the Sunnah.</p>
-      </div>
-      <div class="mt-4 pt-3 border-t border-sunan-emerald/20 flex justify-between items-center text-xs font-bold text-sunan-emerald dark:text-[#10b981]">
-        <span>All 50,000+ Ahadith</span>
-        <span>Source &rarr;</span>
-      </div>
-    </div>
-
-    <!-- Card 2: Abu Hurairah -->
-    <div class="scholar-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 flex flex-col justify-between card-lift" data-gen="sahabah">
-      <div>
-        <div class="flex justify-between items-start mb-3">
-          <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded uppercase">Sahabi (Companion)</span>
-          <span class="font-arabic-body text-lg text-secondary dark:text-[#10b981]" dir="rtl">أبو هريرة</span>
-        </div>
-        <h3 class="font-bold text-base text-primary dark:text-white">Abu Hurairah (رضي الله عنه)</h3>
-        <p class="text-xs text-outline dark:text-gray-400 mt-1">Died: 57-58 AH (678 CE) • Madinah</p>
-        <div class="flex items-center gap-2 mt-2 text-xs font-semibold">
-          <span class="text-sunan-emerald dark:text-[#10b981]">Grade: Sahabi (Adl)</span>
-          <span>•</span>
-          <span class="text-primary dark:text-white">5,374 Ahadith</span>
-        </div>
-        <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-2 line-clamp-2">The prolific Sahabi who narrated the most Ahadith, renowned for constant companionship with the Prophet ﷺ.</p>
-      </div>
-      <div class="mt-4 pt-3 border-t border-outline-variant/10 dark:border-[#334155] flex justify-between items-center text-xs font-semibold text-secondary dark:text-[#10b981]">
-        <span>Appears in: All 9 Books</span>
-        <a href="profile-detail.html?id=rawi_abu_hurairah" class="hover:underline">View Profile &rarr;</a>
-      </div>
-    </div>
-
-    <!-- Card 3: Aisha -->
-    <div class="scholar-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 flex flex-col justify-between card-lift" data-gen="sahabah">
-      <div>
-        <div class="flex justify-between items-start mb-3">
-          <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded uppercase">Sahabiya • Mother of Believers</span>
-          <span class="font-arabic-body text-lg text-secondary dark:text-[#10b981]" dir="rtl">عائشة بنت أبي بكر</span>
-        </div>
-        <h3 class="font-bold text-base text-primary dark:text-white">'Aisha bint Abi Bakr (رضي الله عنها)</h3>
-        <p class="text-xs text-outline dark:text-gray-400 mt-1">Died: 58 AH (678 CE) • Madinah</p>
-        <div class="flex items-center gap-2 mt-2 text-xs font-semibold">
-          <span class="text-sunan-emerald dark:text-[#10b981]">Grade: Sahabiya (Faqiha)</span>
-          <span>•</span>
-          <span class="text-primary dark:text-white">2,210 Ahadith</span>
-        </div>
-        <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-2 line-clamp-2">Wife of the Prophet ﷺ and leading female jurist who conveyed private and public prophetic practices.</p>
-      </div>
-      <div class="mt-4 pt-3 border-t border-outline-variant/10 dark:border-[#334155] flex justify-between items-center text-xs font-semibold text-secondary dark:text-[#10b981]">
-        <span>Appears in: All 9 Books</span>
-        <a href="profile-detail.html?id=rawi_aisha_bint_abi_bakr" class="hover:underline">View Profile &rarr;</a>
-      </div>
-    </div>
-
-    <!-- Card 4: Umar -->
-    <div class="scholar-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 flex flex-col justify-between card-lift" data-gen="sahabah">
-      <div>
-        <div class="flex justify-between items-start mb-3">
-          <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded uppercase">Sahabi • 2nd Caliph</span>
-          <span class="font-arabic-body text-lg text-secondary dark:text-[#10b981]" dir="rtl">عمر بن الخطاب</span>
-        </div>
-        <h3 class="font-bold text-base text-primary dark:text-white">'Umar bin Al-Khattab (رضي الله عنه)</h3>
-        <p class="text-xs text-outline dark:text-gray-400 mt-1">Died: 23 AH (644 CE) • Madinah</p>
-        <div class="flex items-center gap-2 mt-2 text-xs font-semibold">
-          <span class="text-sunan-emerald dark:text-[#10b981]">Grade: Sahabi (Al-Farooq)</span>
-          <span>•</span>
-          <span class="text-primary dark:text-white">537 Ahadith</span>
-        </div>
-        <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-2 line-clamp-2">Key transmitter of foundationalHadiths, including Hadith #1 of Sahih al-Bukhari on Intention.</p>
-      </div>
-      <div class="mt-4 pt-3 border-t border-outline-variant/10 dark:border-[#334155] flex justify-between items-center text-xs font-semibold text-secondary dark:text-[#10b981]">
-        <span>Appears in: All 9 Books</span>
-        <a href="profile-detail.html?id=rawi_umar_ibn_al_khattab" class="hover:underline">View Profile &rarr;</a>
-      </div>
-    </div>
-
-    <!-- Card 5: Imam Bukhari -->
-    <div class="scholar-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 flex flex-col justify-between card-lift" data-gen="collectors">
-      <div>
-        <div class="flex justify-between items-start mb-3">
-          <span class="bg-secondary/10 text-secondary dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded uppercase">Master Collector</span>
-          <span class="font-arabic-body text-lg text-secondary dark:text-[#10b981]" dir="rtl">الإمام البخاري</span>
-        </div>
-        <h3 class="font-bold text-base text-primary dark:text-white">Imam Muhammad al-Bukhari</h3>
-        <p class="text-xs text-outline dark:text-gray-400 mt-1">194 – 256 AH (810 – 870 CE) • Bukhara</p>
-        <div class="flex items-center gap-2 mt-2 text-xs font-semibold">
-          <span class="text-secondary dark:text-[#10b981]">Grade: Amir al-Mu'minin fi al-Hadith</span>
-        </div>
-        <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-2 line-clamp-2">Author of Sahih al-Bukhari. Traveled thousands of miles across Persia, Iraq, Hijaz, and Egypt.</p>
-      </div>
-      <div class="mt-4 pt-3 border-t border-outline-variant/10 dark:border-[#334155] flex justify-between items-center text-xs font-semibold text-secondary dark:text-[#10b981]">
-        <span>Author: Sahih al-Bukhari</span>
-        <a href="profile-detail.html?id=rawi_bukhari" class="hover:underline">View Profile &rarr;</a>
-      </div>
-    </div>
-
-    <!-- Card 6: Imam Muslim -->
-    <div class="scholar-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 flex flex-col justify-between card-lift" data-gen="collectors">
-      <div>
-        <div class="flex justify-between items-start mb-3">
-          <span class="bg-secondary/10 text-secondary dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded uppercase">Master Collector</span>
-          <span class="font-arabic-body text-lg text-secondary dark:text-[#10b981]" dir="rtl">الإمام مسلم</span>
-        </div>
-        <h3 class="font-bold text-base text-primary dark:text-white">Imam Muslim ibn al-Hajjaj</h3>
-        <p class="text-xs text-outline dark:text-gray-400 mt-1">206 – 261 AH (821 – 875 CE) • Nishapur</p>
-        <div class="flex items-center gap-2 mt-2 text-xs font-semibold">
-          <span class="text-secondary dark:text-[#10b981]">Grade: Hafiz / Imam</span>
-        </div>
-        <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-2 line-clamp-2">Student of Imam al-Bukhari and compiler of Sahih Muslim, famous for precise isnad organization.</p>
-      </div>
-      <div class="mt-4 pt-3 border-t border-outline-variant/10 dark:border-[#334155] flex justify-between items-center text-xs font-semibold text-secondary dark:text-[#10b981]">
-        <span>Author: Sahih Muslim</span>
-        <a href="profile-detail.html?id=rawi_muslim" class="hover:underline">View Profile &rarr;</a>
-      </div>
-    </div>
-
-  </div>
-</main>
-
-<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 text-xs w-full py-8 px-margin-main flex justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-16">
-  <div><span data-i18n="footer_text">© 2024 HADEETH.ID - Digital Manuscript Preservation</span></div>
-</footer>
-
-<script src="js/app.js?v=20260808_5"></script>
-<script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
 
+  // Canonical Arabic names mapping for Rijal IDs & names
+  const arNameDict = {
+    'abu_darda': 'أبو الدرداء',
+    'abu darda': 'أبو الدرداء',
+    'zayd_ibn_thabit': 'زيد بن ثابت',
+    'zayd ibn thabit': 'زيد بن ثابت',
+    'uqbah_ibn_amir': 'عقبة بن عامر',
+    'uqbah ibn amir': 'عقبة بن عامر',
+    'abd_allah_ibn_abbas': 'عبد الله بن عباس',
+    'abdullah_bin_abbas': 'عبد الله بن عباس',
+    'abdullah bin abbas': 'عبد الله بن عباس',
+    'umar_ibn_abi_salama': 'عمر بن أبي سلمة',
+    'umar ibn abi salama': 'عمر بن أبي سلمة',
+    'q6732822': 'أنس بن مالك',
+    'abu_hurairah': 'أبو هريرة',
+    'aisha_bint_abi_bakr': 'عائشة بنت أبي بكر',
+    'umar_ibn_al_khattab': 'عمر بن الخطاب',
+    'anas_bin_malik': 'أنس بن مالك',
+    'malik_bin_anas': 'مالك بن أنس',
+    'al_bukhari': 'محمد بن إسماعيل البخاري',
+    'muslim_ibn_hajjaj': 'مسلم بن الحجاج',
+    'abu_dawud': 'أبو داود السجستاني',
+    'al_tirmidhi': 'أبو عيسى الترمذي',
+    'al_nasai': 'أحمد بن شعيب النسائي',
+    'ibn_majah': 'ابن ماجه القزويني'
+  };
+
+  function getCleanArabicName(r) {
+    if (r.name_ar && !r.name_ar.startsWith('Q') && /[\u0600-\u06FF]/.test(r.name_ar)) {
+      return r.name_ar;
+    }
+    const slug = (r.id || '').toLowerCase();
+    const nameLow = (r.name_en || '').toLowerCase();
+    return arNameDict[slug] || arNameDict[nameLow] || (r.name_ar && !r.name_ar.startsWith('Q') ? r.name_ar : '');
+  }
+
+  function getCleanEnglishName(r) {
+    if (r.id === 'Q6732822' || r.name_en === 'Q6732822') return 'Anas bin Malik (رضي الله عنه)';
+    return r.name_en || 'Scholar';
+  }
+
+  let allScholars = [];
+  let currentPage = 1;
+  const pageSize = 9; // Exactly 3 rows x 3 columns = 9 cards per page
+  let activeGen = 'all';
+  let activeRole = 'all';
+  let searchQuery = '';
+
   document.addEventListener('DOMContentLoaded', async () => {
     await fetchAndRenderScholars();
+
+    window.addEventListener('hadeeth_lang_change', () => {
+      renderScholarsPage();
+    });
+
+    const prevBtn = document.getElementById('scholars-prev-btn');
+    const nextBtn = document.getElementById('scholars-next-btn');
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        if (currentPage > 1) {
+          currentPage--;
+          renderScholarsPage();
+          window.scrollTo({ top: 300, behavior: 'smooth' });
+        }
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        const totalPages = Math.ceil(allScholars.length / pageSize) || 1;
+        if (currentPage < totalPages) {
+          currentPage++;
+          renderScholarsPage();
+          window.scrollTo({ top: 300, behavior: 'smooth' });
+        }
+      });
+    }
   });
 
-  async function fetchAndRenderScholars(filterGen = 'all', searchQuery = '') {
+  async function fetchAndRenderScholars(gen = 'all', role = 'all', query = '') {
+    activeGen = gen;
+    activeRole = role;
+    searchQuery = query;
+    currentPage = 1;
+
     const grid = document.getElementById('scholars-grid');
     if (!grid) return;
 
     try {
-      let url = `${supabaseUrl}/rest/v1/rijal?select=*&order=hadith_count.desc,died_ah.asc&limit=50`;
-      if (filterGen === 'sahabah') {
+      let url = `${supabaseUrl}/rest/v1/rijal?select=*&order=hadith_count.desc,died_ah.asc&limit=100`;
+      if (activeGen === 'sahabah') {
         url += '&is_sahabi=eq.true';
-      } else if (filterGen === 'tabiun') {
+      } else if (activeGen === 'tabiun') {
         url += '&generation=eq.Tabi\'i';
-      } else if (filterGen === 'collectors') {
+      } else if (activeGen === 'collectors') {
         url += '&generation=eq.Collector';
       }
 
@@ -288,85 +121,151 @@
         headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
       });
 
-      if (!res.ok) return;
-      const data = await res.json();
-      if (!data || data.length === 0) return;
-
-      let html = '';
-
-      data.forEach(r => {
-        const isSahabi = r.is_sahabi;
-        const isId = (window.LangSystem && window.LangSystem.isIdMode());
-        let genLabel = r.generation || (isSahabi ? (isId ? 'Sahabat' : 'Sahabi (Companion)') : 'Transmitter');
-        if (isId && genLabel.toLowerCase().includes('sahabi')) genLabel = 'Sahabat';
-        const profileUrl = `profile-detail.html?id=${encodeURIComponent(r.id)}`;
-        
-        let dateStr = '';
-        if (r.died_ah) dateStr += `Died: ${r.died_ah} AH`;
-        if (r.died_ce) dateStr += ` (${r.died_ce} CE)`;
-        if (r.city_of_death || r.region) dateStr += ` • ${r.city_of_death || r.region}`;
-
-        html += `
-          <div class="scholar-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 flex flex-col justify-between card-lift" data-gen="${isSahabi ? 'sahabah' : 'other'}">
-            <div>
-              <div class="flex justify-between items-start mb-3">
-                <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded uppercase">${escapeHtml(genLabel)}</span>
-                ${r.name_ar ? `<span class="font-arabic-body text-lg text-secondary dark:text-[#10b981]" dir="rtl">${escapeHtml(r.name_ar)}</span>` : ''}
-              </div>
-              <h3 class="font-bold text-base text-primary dark:text-white">${escapeHtml(r.name_en)}</h3>
-              <p class="text-xs text-outline dark:text-gray-400 mt-1">${escapeHtml(dateStr || 'Early Era')}</p>
-              <div class="flex items-center gap-2 mt-2 text-xs font-semibold">
-                <span class="text-sunan-emerald dark:text-[#10b981]">Grade: ${escapeHtml(r.grade || 'Thiqah')}</span>
-                <span>•</span>
-                <span class="text-primary dark:text-white">${r.hadith_count || 0} Hadith Links</span>
-              </div>
-              <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-2 line-clamp-2">${escapeHtml(r.bio_en || (r.kunya_en ? `Kunyah: ${r.kunya_en}` : 'Authentic transmitter in canonical Hadith collections.'))}</p>
-            </div>
-            <div class="mt-4 pt-3 border-t border-outline-variant/10 dark:border-[#334155] flex justify-between items-center text-xs font-semibold text-secondary dark:text-[#10b981]">
-              <span>${r.books && r.books.length ? 'Books: ' + r.books.join(', ') : 'Canonical Collections'}</span>
-              <a href="${profileUrl}" class="hover:underline flex items-center gap-1">View Profile &rarr;</a>
-            </div>
-          </div>
-        `;
-      });
-
-      grid.innerHTML = html;
-
+      if (res.ok) {
+        const data = await res.json();
+        if (data && data.length > 0) {
+          allScholars = data;
+        } else {
+          allScholars = [];
+        }
+      }
     } catch (err) {
       console.warn('Error fetching scholars from Supabase:', err);
+      allScholars = [];
     }
+
+    renderScholarsPage();
   }
 
-  let activeGen = 'all';
-  let activeRole = 'all';
+  function renderScholarsPage() {
+    const grid = document.getElementById('scholars-grid');
+    const pageIndicator = document.getElementById('scholars-page-indicator');
+    const pageNumber = document.getElementById('scholars-page-number');
+    const prevBtn = document.getElementById('scholars-prev-btn');
+    const nextBtn = document.getElementById('scholars-next-btn');
+
+    if (!grid) return;
+
+    if (!allScholars || allScholars.length === 0) {
+      const isId = (window.LangSystem && window.LangSystem.isIdMode());
+      grid.innerHTML = `
+        <div class="col-span-3 p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
+          <span class="material-symbols-outlined text-outline dark:text-gray-500 text-4xl">search_off</span>
+          <h3 class="mt-2 font-bold text-primary dark:text-white">${isId ? 'Tidak ada perawi ditemukan' : 'No narrators found'}</h3>
+          <p class="text-xs text-outline dark:text-gray-400 mt-1">${isId ? 'Coba ubah kata kunci atau filter pencarian.' : 'Try changing search query or filter chips.'}</p>
+        </div>
+      `;
+      if (pageIndicator) pageIndicator.innerText = isId ? '0 dari 0 Perawi' : '0 of 0 Narrators';
+      if (pageNumber) pageNumber.innerText = isId ? 'Halaman 1 dari 1' : 'Page 1 of 1';
+      if (prevBtn) prevBtn.disabled = true;
+      if (nextBtn) nextBtn.disabled = true;
+      return;
+    }
+
+    const totalPages = Math.ceil(allScholars.length / pageSize) || 1;
+    if (currentPage > totalPages) currentPage = totalPages;
+    if (currentPage < 1) currentPage = 1;
+
+    const startIdx = (currentPage - 1) * pageSize;
+    const endIdx = Math.min(startIdx + pageSize, allScholars.length);
+    const pageItems = allScholars.slice(startIdx, endIdx);
+
+    const isId = (window.LangSystem && window.LangSystem.isIdMode());
+    let html = '';
+
+    pageItems.forEach(r => {
+      const isSahabi = r.is_sahabi;
+      const cleanNameEn = getCleanEnglishName(r);
+      const cleanNameAr = getCleanArabicName(r);
+      const profileUrl = `profile-detail.html?id=${encodeURIComponent(r.id)}`;
+
+      let genLabel = r.generation || (isSahabi ? (isId ? 'Sahabat' : 'Sahabi (Companion)') : 'Rawi');
+      if (isId) {
+        genLabel = genLabel
+          .replace(/Sahabi\s*\(Companion\)/ig, 'Sahabat')
+          .replace(/Sahabi/ig, 'Sahabat')
+          .replace(/Transmitter/ig, 'Rawi')
+          .replace(/Collector/ig, 'Penghimpun');
+      }
+
+      let dateStr = '';
+      if (r.died_ah) dateStr += isId ? `Wafat: ${r.died_ah} H` : `Died: ${r.died_ah} AH`;
+      if (r.died_ce) dateStr += ` (${r.died_ce} M)`;
+      if (r.city_of_death || r.region) dateStr += ` &bull; ${r.city_of_death || r.region}`;
+
+      const gradeStr = isId ? `Derajat: ${r.grade || 'Tsiqah'}` : `Grade: ${r.grade || 'Thiqah'}`;
+      const hadithCountStr = isId ? `${r.hadith_count || 0} Hadits Terkait` : `${r.hadith_count || 0} Hadith Links`;
+      const viewProfileStr = isId ? 'Lihat Profil &rarr;' : 'View Profile &rarr;';
+      const booksStr = (r.books && r.books.length) ? (isId ? 'Kitab: ' + r.books.join(', ') : 'Books: ' + r.books.join(', ')) : (isId ? 'Koleksi Kitab Utama' : 'Canonical Collections');
+
+      html += `
+        <div class="scholar-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 flex flex-col justify-between card-lift" data-gen="${isSahabi ? 'sahabah' : 'other'}">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded uppercase">${escapeHtml(genLabel)}</span>
+              ${cleanNameAr ? `<span class="font-arabic-body text-lg text-secondary dark:text-[#10b981]" dir="rtl">${escapeHtml(cleanNameAr)}</span>` : ''}
+            </div>
+            <h3 class="font-bold text-base text-primary dark:text-white">${escapeHtml(cleanNameEn)}</h3>
+            <p class="text-xs text-outline dark:text-gray-400 mt-1">${escapeHtml(dateStr || (isId ? 'Masa Awal Islam' : 'Early Era'))}</p>
+            <div class="flex items-center gap-2 mt-2 text-xs font-semibold">
+              <span class="text-sunan-emerald dark:text-[#10b981]">${escapeHtml(gradeStr)}</span>
+              <span>&bull;</span>
+              <span class="text-primary dark:text-white">${escapeHtml(hadithCountStr)}</span>
+            </div>
+            <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-2 line-clamp-2">${escapeHtml(r.bio_en || (r.kunya_en ? `Kunyah: ${r.kunya_en}` : (isId ? 'Perawi otentik dalam kumpulan kitab Hadits utama.' : 'Authentic transmitter in canonical Hadith collections.')))}</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-outline-variant/10 dark:border-[#334155] flex justify-between items-center text-xs font-semibold text-secondary dark:text-[#10b981]">
+            <span>${escapeHtml(booksStr)}</span>
+            <a href="${profileUrl}" class="hover:underline flex items-center gap-1">${viewProfileStr}</a>
+          </div>
+        </div>
+      `;
+    });
+
+    grid.innerHTML = html;
+
+    // Update Pagination Controls
+    if (pageIndicator) pageIndicator.innerText = isId
+      ? `Menampilkan ${startIdx + 1}–${endIdx} dari ${allScholars.length} Perawi`
+      : `Showing ${startIdx + 1}–${endIdx} of ${allScholars.length} Narrators`;
+
+    if (pageNumber) pageNumber.innerText = isId
+      ? `Halaman ${currentPage} dari ${totalPages}`
+      : `Page ${currentPage} of ${totalPages}`;
+
+    if (prevBtn) prevBtn.disabled = (currentPage <= 1);
+    if (nextBtn) nextBtn.disabled = (currentPage >= totalPages);
+  }
 
   document.querySelectorAll('#generation-chips button').forEach(btn => {
     btn.addEventListener('click', async () => {
       document.querySelectorAll('#generation-chips button').forEach(b => {
-        b.classList.remove('bg-primary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black');
+        b.classList.remove('bg-primary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black', 'active');
         b.classList.add('bg-surface-container-high', 'dark:bg-[#1e293b]', 'text-on-surface-variant', 'dark:text-gray-300');
       });
       btn.classList.remove('bg-surface-container-high', 'dark:bg-[#1e293b]', 'text-on-surface-variant', 'dark:text-gray-300');
-      btn.classList.add('bg-primary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black');
+      btn.classList.add('bg-primary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black', 'active');
 
-      activeGen = btn.dataset.gen;
+      const gen = btn.dataset.gen;
+      const role = document.querySelector('#role-chips button.active')?.dataset.role || 'all';
       const searchVal = document.getElementById('scholar-search')?.value || '';
-      await fetchAndRenderScholars(activeGen, activeRole, searchVal);
+      await fetchAndRenderScholars(gen, role, searchVal);
     });
   });
 
   document.querySelectorAll('#role-chips button').forEach(btn => {
     btn.addEventListener('click', async () => {
       document.querySelectorAll('#role-chips button').forEach(b => {
-        b.classList.remove('bg-secondary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black');
+        b.classList.remove('bg-secondary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black', 'active');
         b.classList.add('bg-surface-container-high', 'dark:bg-[#1e293b]', 'text-on-surface-variant', 'dark:text-gray-300');
       });
       btn.classList.remove('bg-surface-container-high', 'dark:bg-[#1e293b]', 'text-on-surface-variant', 'dark:text-gray-300');
-      btn.classList.add('bg-secondary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black');
+      btn.classList.add('bg-secondary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black', 'active');
 
-      activeRole = btn.dataset.role;
+      const role = btn.dataset.role;
+      const gen = document.querySelector('#generation-chips button.active')?.dataset.gen || 'all';
       const searchVal = document.getElementById('scholar-search')?.value || '';
-      await fetchAndRenderScholars(activeGen, activeRole, searchVal);
+      await fetchAndRenderScholars(gen, role, searchVal);
     });
   });
 
@@ -374,7 +273,9 @@
   document.getElementById('scholar-search')?.addEventListener('input', (e) => {
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(async () => {
-      await fetchAndRenderScholars(activeGen, activeRole, e.target.value.trim());
+      const gen = document.querySelector('#generation-chips button.active')?.dataset.gen || 'all';
+      const role = document.querySelector('#role-chips button.active')?.dataset.role || 'all';
+      await fetchAndRenderScholars(gen, role, e.target.value.trim());
     }, 300);
   });
 
