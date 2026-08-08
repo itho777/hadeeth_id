@@ -178,35 +178,55 @@ document.addEventListener('DOMContentLoaded', () => {
     const copyBtn = e.target.closest('[data-copy-hadith], .btn-copy-share');
     if (!copyBtn) return;
 
-    let textToCopy = copyBtn.dataset.copyHadithText || '';
-    if (!textToCopy) {
+    const isIdMode = (window.LangSystem && window.LangSystem.isIdMode());
+    let shareText = '';
+    let targetUrl = copyBtn.dataset.shareUrl || window.location.href;
+
+    if (copyBtn.dataset.copyHadithTextEn || copyBtn.dataset.copyHadithTextId) {
+      // From Hadith list card dataset attributes
+      const title = copyBtn.dataset.hadithTitle || 'hadeeth.id';
+      const ar = copyBtn.dataset.copyHadithAr || '';
+      const body = isIdMode ? (copyBtn.dataset.copyHadithTextId || copyBtn.dataset.copyHadithTextEn) : (copyBtn.dataset.copyHadithTextEn || copyBtn.dataset.copyHadithTextId);
+      const transLabel = isIdMode ? 'Terjemahan Indonesia:' : 'English Translation:';
+      const linkTagline = isIdMode ? 'Baca & Telusuri Sanad Selengkapnya di hadeeth.id:' : 'Read & Inspect Sanad Chain on hadeeth.id:';
+
+      shareText = `[${title}]\n\n${ar}\n\n${transLabel}\n"${body}"\n\n${linkTagline}\n${targetUrl}`;
+    } else {
+      // From Hadith detail page elements
+      const titleElem = document.querySelector('[data-hadith-title]');
+      const title = titleElem ? titleElem.innerText : 'hadeeth.id';
       const ar = document.querySelector('[data-arabic-text]')?.innerText || '';
       const ind = document.querySelector('[data-indonesian-text]')?.innerText || '';
       const en = document.querySelector('[data-english-text]')?.innerText || '';
-      textToCopy = ar + '\n\n' + (ind || en);
+      const rawiElem = document.querySelector('[data-hadith-rawi]');
+      const rawi = rawiElem ? rawiElem.innerText.replace(/^(Narrator|Perawi):\s*/i, '') : '';
+
+      const body = isIdMode ? (ind || en) : (en || ind);
+      const transLabel = isIdMode ? 'Terjemahan Indonesia:' : 'English Translation:';
+      const rawiLabel = isIdMode ? 'Perawi:' : 'Narrator:';
+      const linkTagline = isIdMode ? 'Baca & Telusuri Sanad Selengkapnya di hadeeth.id:' : 'Read & Inspect Sanad Chain on hadeeth.id:';
+
+      shareText = `[${title}]\n\n${ar}\n\n${transLabel}\n"${body}"\n\n${rawi ? `${rawiLabel} ${rawi}\n\n` : ''}${linkTagline}\n${targetUrl}`;
     }
-    const currentUrl = window.location.href;
-    const fullShareContent = textToCopy + '\n\nVia hadeeth.id: ' + currentUrl;
 
     if (navigator.share) {
       try {
         await navigator.share({
           title: 'hadeeth.id',
-          text: textToCopy,
-          url: currentUrl
+          text: shareText,
+          url: targetUrl
         });
         return;
       } catch (err) {
-        // User cancelled or share sheet fallback
+        // Fallback to clipboard write
       }
     }
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
       try {
-        await navigator.clipboard.writeText(fullShareContent);
-        const isId = (window.LangSystem && window.LangSystem.isIdMode());
+        await navigator.clipboard.writeText(shareText);
         const originalHtml = copyBtn.innerHTML;
-        copyBtn.innerText = isId ? 'Tersalin!' : 'Copied!';
+        copyBtn.innerText = isIdMode ? 'Tersalin!' : 'Copied!';
         setTimeout(() => copyBtn.innerHTML = originalHtml, 2000);
       } catch (err) {
         console.warn('Clipboard write failed:', err);
@@ -864,7 +884,7 @@ async function loadHadithList() {
               <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded uppercase">${escapeHtml(bookName)} #${num}</span>
               <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2.5 py-0.5 rounded">${escapeHtml(grade)}</span>
             </div>
-            <button data-copy-hadith-text="${escapeHtml(arText + '\n\n' + (idText || enText))}" class="btn-copy-share text-xs font-semibold px-2.5 py-1 rounded border border-outline-variant/40 dark:border-[#334155] text-primary dark:text-white hover:bg-surface-container-low dark:hover:bg-[#334155] transition-all flex items-center gap-1.5 cursor-pointer">
+            <button data-hadith-title="${escapeHtml(bookName)} #${num}" data-copy-hadith-ar="${escapeHtml(arText)}" data-copy-hadith-text-id="${escapeHtml(idText)}" data-copy-hadith-text-en="${escapeHtml(enText)}" data-share-url="${window.location.origin + window.location.pathname.replace('hadith-list.html', '')}${detailLink}" class="btn-copy-share text-xs font-semibold px-2.5 py-1 rounded border border-outline-variant/40 dark:border-[#334155] text-primary dark:text-white hover:bg-surface-container-low dark:hover:bg-[#334155] transition-all flex items-center gap-1.5 cursor-pointer">
               <span class="material-symbols-outlined text-[14px]">share</span>
               <span data-lang-en>Copy / Share</span><span data-lang-id>Salin / Bagikan</span>
             </button>
