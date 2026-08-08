@@ -1381,13 +1381,16 @@ async function loadHadithCardsList() {
     </div>
   `;
 
-  // Fetch both English and Arabic edition files for complete bilingual cards
-  const [engEdition, araEdition] = await Promise.all([
-    window.HadeethAPI.getEdition('eng', bookId),
-    window.HadeethAPI.getEdition('ara', bookId)
+  const langSelectVal = document.getElementById('default-lang-select')?.value || (isIdLang ? 'id' : 'en');
+
+  // Fetch English, Arabic, and Indonesian edition files for complete bilingual/multilingual cards
+  const [engEdition, araEdition, indEdition] = await Promise.all([
+    window.HadeethAPI.getEdition('eng', bookId).catch(() => null),
+    window.HadeethAPI.getEdition('ara', bookId).catch(() => null),
+    window.HadeethAPI.getEdition('ind', bookId).catch(() => null)
   ]);
 
-  if (!engEdition || !engEdition.hadiths || engEdition.hadiths.length === 0) {
+  if ((!engEdition || !engEdition.hadiths) && (!indEdition || !indEdition.hadiths)) {
     container.innerHTML = `
       <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
         <p class="text-sm text-outline dark:text-gray-400">${isIdLang ? `Tidak ada hadits ditemukan untuk ${escapeHtml(bookId)}.` : `No Hadiths found for ${escapeHtml(bookId)}.`}</p>
@@ -1396,7 +1399,7 @@ async function loadHadithCardsList() {
     return;
   }
 
-  // Map Arabic hadith texts by hadithnumber
+  // Map Arabic & Indonesian hadith texts by hadithnumber
   const arabicMap = {};
   if (araEdition && araEdition.hadiths) {
     araEdition.hadiths.forEach(h => {
@@ -1404,14 +1407,48 @@ async function loadHadithCardsList() {
     });
   }
 
-  // Limit rendering or paginate to keep UI ultra responsive
-  const listHadiths = engEdition.hadiths.slice(0, 50);
+  const indMap = {};
+  if (indEdition && indEdition.hadiths) {
+    indEdition.hadiths.forEach(h => {
+      indMap[h.hadithnumber] = h.text;
+    });
+  }
+
+  const baseHadiths = (engEdition && engEdition.hadiths) ? engEdition.hadiths : indEdition.hadiths;
+  const listHadiths = baseHadiths.slice(0, 50);
 
   let html = '';
   listHadiths.forEach(h => {
     const num = h.hadithnumber;
     const engText = h.text || '';
     const araText = arabicMap[num] || '';
+    const indText = indMap[num] || '';
+
+    let transHtml = '';
+    if (langSelectVal === 'both') {
+      transHtml = `
+        <div class="flex flex-col gap-3 border-t border-outline-variant/10 dark:border-[#334155] pt-3">
+          ${indText ? `
+            <div>
+              <span class="text-[11px] uppercase font-bold text-sunan-emerald dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</span>
+              <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-sans">${escapeHtml(indText)}</p>
+            </div>
+          ` : ''}
+          ${engText ? `
+            <div>
+              <span class="text-[11px] uppercase font-bold text-secondary dark:text-gray-400 block mb-1">English Translation:</span>
+              <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-sans">${escapeHtml(engText)}</p>
+            </div>
+          ` : ''}
+        </div>
+      `;
+    } else if (langSelectVal === 'id') {
+      const textToUse = indText || engText;
+      transHtml = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-sans">${escapeHtml(textToUse)}</p>`;
+    } else {
+      const textToUse = engText || indText;
+      transHtml = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-sans">${escapeHtml(textToUse)}</p>`;
+    }
 
     html += `
       <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4 shadow-sm hadith-accent border-l-primary dark:border-l-[#10b981]">
@@ -1426,7 +1463,7 @@ async function loadHadithCardsList() {
           </button>
         </div>
         ${araText ? `<p class="font-arabic-body text-xl text-primary dark:text-white text-right leading-loose" dir="rtl">${escapeHtml(araText)}</p>` : ''}
-        <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed">${escapeHtml(engText)}</p>
+        ${transHtml}
         <div class="flex justify-between items-center pt-3 border-t border-outline-variant/10 dark:border-[#334155]">
           <a href="hadith.html?book=${bookId}&id=${num}" class="text-xs font-bold text-primary dark:text-[#10b981] hover:underline flex items-center gap-1">
             ${isIdLang ? 'Hadits Selengkapnya & Pensyarahan &rarr;' : 'Full Hadith & Commentary &rarr;'}
@@ -1441,7 +1478,14 @@ async function loadHadithCardsList() {
 
   container.innerHTML = html;
   LangSystem.apply(LangSystem.get());
-  LangSystem.apply(LangSystem.get());
+
+  const langSelect = document.getElementById('default-lang-select');
+  if (langSelect && !langSelect._langSelectBound) {
+    langSelect._langSelectBound = true;
+    langSelect.addEventListener('change', () => {
+      loadHadithCardsList();
+    });
+  }
 
   if (!window._hadithCardsLangListenerAttached) {
     window._hadithCardsLangListenerAttached = true;
