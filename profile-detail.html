@@ -281,7 +281,6 @@
     </div>
   </div>
 
-  <!-- SECTION 4: TRANSMITTED HADITHS INDEX -->
   <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-2xl p-6 md:p-8 flex flex-col gap-6 shadow-sm">
     <div class="border-b border-outline-variant/20 dark:border-[#334155] pb-4 flex justify-between items-center">
       <div>
@@ -293,6 +292,13 @@
 
     <div class="grid grid-cols-1 gap-4" id="transmitted-hadiths-grid">
       <div class="p-6 text-center text-xs text-outline dark:text-gray-400">Loading transmitted Hadiths...</div>
+    </div>
+
+    <!-- Hadith Pagination -->
+    <div id="hadith-pagination" class="hidden flex items-center justify-between pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
+      <button id="hadith-prev-btn" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] text-primary dark:text-white hover:bg-outline-variant/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all">&larr; Prev</button>
+      <span id="hadith-page-indicator" class="text-xs text-outline dark:text-gray-400 font-semibold">Page 1 of 1</span>
+      <button id="hadith-next-btn" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] text-primary dark:text-white hover:bg-outline-variant/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all">Next &rarr;</button>
     </div>
   </div>
 
@@ -491,7 +497,7 @@
 
       // Fetch Transmitted Hadiths
       try {
-        const resH = await fetch(`${supabaseUrl}/rest/v1/hadith_rijal?rawi_id=eq.${rawi.id}&select=position,hadiths(id,book_id,hadith_number,text_en,text_ar,text_id,grade)&limit=15`, {
+        const resH = await fetch(`${supabaseUrl}/rest/v1/hadith_rijal?rawi_id=eq.${rawi.id}&select=position,hadiths(id,book_id,hadith_number,text_en,text_ar,text_id,grade)&limit=50`, {
           headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
         });
         let hadithRows = [];
@@ -500,28 +506,54 @@
           hadithRows = hData.map(d => d.hadiths).filter(Boolean);
         }
 
-        // Fallback search in hadiths text_id / text_en if junction rows not yet linked
+        // Fallback: text search in hadiths if junction table empty
         if (hadithRows.length === 0) {
           const qName = rawi.name_id || rawi.name_en;
-          const resFallback = await fetch(`${supabaseUrl}/rest/v1/hadiths?or=(text_id.ilike.*[${encodeURIComponent(qName)}]*,text_en.ilike.*${encodeURIComponent(rawi.name_en)}*)&select=id,book_id,hadith_number,text_en,text_ar,text_id,grade&limit=10`, {
+          const resFallback = await fetch(`${supabaseUrl}/rest/v1/hadiths?or=(text_id.ilike.*[${encodeURIComponent(qName)}]*,text_en.ilike.*${encodeURIComponent(rawi.name_en)}*)&select=id,book_id,hadith_number,text_en,text_ar,text_id,grade&limit=30`, {
             headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
           });
-          if (resFallback.ok) {
-            hadithRows = await resFallback.json();
-          }
+          if (resFallback.ok) hadithRows = await resFallback.json();
         }
 
         document.getElementById('total-hadith-badge').innerText = `${hadithRows.length} Total Hadith Links`;
         document.getElementById('transmitted-count-badge').innerText = `${hadithRows.length} Recorded Hadiths`;
 
-        const gridH = document.getElementById('transmitted-hadiths-grid');
-        if (hadithRows.length > 0) {
-          let hHtml = '';
-          hadithRows.forEach(h => {
-            const bName = h.book_id === 'nawawi' ? 'Forty Nawawi' : 'Sahih al-Bukhari';
-            const textSnippet = h.text_id || h.text_en || h.text_ar || '';
-            const snippet = textSnippet.length > 200 ? textSnippet.substring(0, 200) + '...' : textSnippet;
+        // ── Paginated hadith renderer ──
+        const HADITH_PAGE_SIZE = 5;
+        let hadithPage = 1;
+        const totalHadithPages = () => Math.max(1, Math.ceil(hadithRows.length / HADITH_PAGE_SIZE));
 
+        const bookNameMap = {
+          bukhari: 'Sahih al-Bukhari', muslim: 'Sahih Muslim',
+          abudawud: 'Sunan Abu Dawood', tirmidhi: "Jami' at-Tirmidhi",
+          nasai: "Sunan an-Nasa'i", ibnmajah: 'Sunan Ibn Majah',
+          malik: 'Muwatta Malik', ahmad: 'Musnad Ahmad', nawawi: '40 Hadith Nawawi'
+        };
+
+        function renderHadithPage() {
+          const gridH = document.getElementById('transmitted-hadiths-grid');
+          const pagination = document.getElementById('hadith-pagination');
+          const indicator = document.getElementById('hadith-page-indicator');
+          const prevBtn = document.getElementById('hadith-prev-btn');
+          const nextBtn = document.getElementById('hadith-next-btn');
+
+          if (!gridH) return;
+
+          if (hadithRows.length === 0) {
+            gridH.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400">No recorded Hadith links found for this narrator.</div>`;
+            if (pagination) pagination.classList.add('hidden');
+            return;
+          }
+
+          const start = (hadithPage - 1) * HADITH_PAGE_SIZE;
+          const end = Math.min(start + HADITH_PAGE_SIZE, hadithRows.length);
+          const pageItems = hadithRows.slice(start, end);
+
+          let hHtml = '';
+          pageItems.forEach(h => {
+            const bName = bookNameMap[h.book_id] || h.book_id || 'Sahih al-Bukhari';
+            const textSnippet = h.text_id || h.text_en || h.text_ar || '';
+            const snippet = textSnippet.length > 220 ? textSnippet.substring(0, 220) + '...' : textSnippet;
             hHtml += `
               <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-2">
                 <div class="flex justify-between items-center">
@@ -539,9 +571,31 @@
             `;
           });
           gridH.innerHTML = hHtml;
-        } else {
-          gridH.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400">No recorded Hadith links found for this narrator.</div>`;
+
+          // Pagination controls
+          if (pagination) {
+            if (totalHadithPages() > 1) {
+              pagination.classList.remove('hidden');
+            } else {
+              pagination.classList.add('hidden');
+            }
+          }
+          if (indicator) indicator.innerText = `Page ${hadithPage} of ${totalHadithPages()} · Showing ${start + 1}–${end} of ${hadithRows.length}`;
+          if (prevBtn) prevBtn.disabled = (hadithPage <= 1);
+          if (nextBtn) nextBtn.disabled = (hadithPage >= totalHadithPages());
         }
+
+        // Wire Prev / Next buttons
+        const hPrevBtn = document.getElementById('hadith-prev-btn');
+        const hNextBtn = document.getElementById('hadith-next-btn');
+        if (hPrevBtn) hPrevBtn.addEventListener('click', () => {
+          if (hadithPage > 1) { hadithPage--; renderHadithPage(); document.getElementById('transmitted-hadiths-grid').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        });
+        if (hNextBtn) hNextBtn.addEventListener('click', () => {
+          if (hadithPage < totalHadithPages()) { hadithPage++; renderHadithPage(); document.getElementById('transmitted-hadiths-grid').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        });
+
+        renderHadithPage();
 
       } catch (errH) {
         console.warn('Hadith transmission fetch error:', errH);
