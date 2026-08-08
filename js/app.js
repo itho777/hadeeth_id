@@ -1117,12 +1117,12 @@ async function loadChaptersList() {
       ar: 'الأربعون النووية',
       author: 'Imam Yahya ibn Sharaf al-Nawawi',
       authorId: 'rawi_nawawi',
-      type: 'Forty Hadith',
+      type: "Jawami' al-Kalim",
       badgeClass: 'bg-emerald-700 text-white',
-      desc: 'The essential collection of 42 foundational Hadiths encapsulating the core principles of Islamic belief and practice.',
+      desc: 'Essential collection of 42 foundational narrations encapsulating Jawami\' al-Kalim (concise comprehensive prophetic guidance).',
       kitabCount: '📚 1 Volume',
       hadithCount: '📖 42 Total Hadith',
-      authenticity: '⭐️ Core Foundations'
+      authenticity: '⭐️ Jawami\' al-Kalim'
     },
     tabarani_kabir: {
       name: 'Al-Mu\'jam al-Kabir',
