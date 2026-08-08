@@ -173,17 +173,45 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // --- Copy Hadith Button ---
-  document.querySelectorAll('[data-copy-hadith]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const arabic = document.querySelector('[data-arabic-text]')?.innerText || '';
-      const english = document.querySelector('[data-english-text]')?.innerText || '';
-      const text = arabic + '\n\n' + english + '\n\n— HADEETH.ID';
-      navigator.clipboard.writeText(text).then(() => {
-        btn.textContent = 'Copied!';
-        setTimeout(() => btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">content_copy</span> Copy', 2000);
-      });
-    });
+  // --- Copy & Social Media Share Hadith Handler ---
+  document.addEventListener('click', async (e) => {
+    const copyBtn = e.target.closest('[data-copy-hadith], .btn-copy-share');
+    if (!copyBtn) return;
+
+    let textToCopy = copyBtn.dataset.copyHadithText || '';
+    if (!textToCopy) {
+      const ar = document.querySelector('[data-arabic-text]')?.innerText || '';
+      const ind = document.querySelector('[data-indonesian-text]')?.innerText || '';
+      const en = document.querySelector('[data-english-text]')?.innerText || '';
+      textToCopy = ar + '\n\n' + (ind || en);
+    }
+    const currentUrl = window.location.href;
+    const fullShareContent = textToCopy + '\n\nVia hadeeth.id: ' + currentUrl;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'hadeeth.id',
+          text: textToCopy,
+          url: currentUrl
+        });
+        return;
+      } catch (err) {
+        // User cancelled or share sheet fallback
+      }
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      try {
+        await navigator.clipboard.writeText(fullShareContent);
+        const isId = (window.LangSystem && window.LangSystem.isIdMode());
+        const originalHtml = copyBtn.innerHTML;
+        copyBtn.innerText = isId ? 'Tersalin!' : 'Copied!';
+        setTimeout(() => copyBtn.innerHTML = originalHtml, 2000);
+      } catch (err) {
+        console.warn('Clipboard write failed:', err);
+      }
+    }
   });
 
   // --- Real-time Search Handler ---
@@ -688,13 +716,17 @@ async function loadHadithList() {
     console.warn('Chapter meta load error:', err);
   }
 
+  const isIdLang = (window.LangSystem && window.LangSystem.isIdMode());
+  const activeChTitle = isIdLang ? chapterTitleNameId : chapterTitleNameEn;
+  const activeChMeta = isIdLang ? `Bab ${chapterId}` : `Chapter ${chapterId}`;
+
   if (bcBook) {
     bcBook.innerText = bookName;
     bcBook.href = `kitab.html?book=${bookId}`;
   }
-  if (bcCurrent) bcCurrent.innerText = `Kitab ${chapterId}: ${chapterTitleNameEn}`;
+  if (bcCurrent) bcCurrent.innerText = activeChTitle;
   if (bookBadge) bookBadge.innerText = bookName;
-  if (chMeta) chMeta.innerText = `Kitab ${chapterId}`;
+  if (chMeta) chMeta.innerText = activeChMeta;
   if (chTitleEn) chTitleEn.innerText = chapterTitleNameEn;
   if (chTitleId) chTitleId.innerText = chapterTitleNameId;
   if (chTitleAr) chTitleAr.innerText = chapterTitleNameAr;
@@ -832,9 +864,10 @@ async function loadHadithList() {
               <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded uppercase">${escapeHtml(bookName)} #${num}</span>
               <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2.5 py-0.5 rounded">${escapeHtml(grade)}</span>
             </div>
-            <a href="${detailLink}" class="text-xs font-bold text-sunan-emerald dark:text-[#10b981] hover:underline flex items-center gap-1">
-              Read Detail &rarr;
-            </a>
+            <button data-copy-hadith-text="${escapeHtml(arText + '\n\n' + (idText || enText))}" class="btn-copy-share text-xs font-semibold px-2.5 py-1 rounded border border-outline-variant/40 dark:border-[#334155] text-primary dark:text-white hover:bg-surface-container-low dark:hover:bg-[#334155] transition-all flex items-center gap-1.5 cursor-pointer">
+              <span class="material-symbols-outlined text-[14px]">share</span>
+              <span data-lang-en>Copy / Share</span><span data-lang-id>Salin / Bagikan</span>
+            </button>
           </div>
 
           ${arText ? `<p class="font-arabic-body text-2xl text-primary dark:text-white text-right leading-loose" dir="rtl">${escapeHtml(arText)}</p>` : ''}
