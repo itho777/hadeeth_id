@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_25"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_26"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -147,12 +147,27 @@
   <!-- Pagination Bar -->
   <div class="flex flex-col sm:flex-row justify-between items-center gap-4 bg-surface dark:bg-[#1e293b] p-4 rounded-xl border border-outline-variant/30 dark:border-[#334155]">
     <span id="scholars-page-indicator" class="text-xs text-outline dark:text-gray-400 font-medium">Menampilkan 1–9 Perawi</span>
-    <div class="flex items-center gap-3 text-xs">
-      <button id="scholars-prev-btn" class="px-3 py-1.5 bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-outline-variant/10">
+    <div class="flex flex-wrap items-center gap-3 text-xs">
+      <button id="scholars-prev-btn" class="px-3 py-1.5 bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-outline-variant/10 cursor-pointer">
         &larr; Prev
       </button>
+
       <span id="scholars-page-number" class="font-bold text-primary dark:text-white">Halaman 1 dari 1</span>
-      <button id="scholars-next-btn" class="px-3 py-1.5 bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-outline-variant/10">
+
+      <span class="text-outline dark:text-gray-400 font-normal">|</span>
+      <div class="flex items-center gap-1.5">
+        <span class="text-outline dark:text-gray-400 font-medium">
+          <span data-lang-en>Go to:</span>
+          <span data-lang-id style="display:none">Lompat ke hal:</span>
+        </span>
+        <input type="number" id="scholars-jump-input" min="1" max="1" placeholder="1" class="w-14 px-2 py-1 text-center bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-bold focus:outline-none focus:border-secondary dark:focus:border-[#10b981]"/>
+        <button id="scholars-jump-btn" class="px-2.5 py-1 bg-secondary dark:bg-[#10b981] text-white dark:text-black font-bold rounded-lg hover:opacity-90 transition-all cursor-pointer">
+          <span data-lang-en>Go</span>
+          <span data-lang-id style="display:none">Ke</span>
+        </button>
+      </div>
+
+      <button id="scholars-next-btn" class="px-3 py-1.5 bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-outline-variant/10 cursor-pointer">
         Next &rarr;
       </button>
     </div>
@@ -171,8 +186,8 @@
   </div>
 </footer>
 
-<script src="js/api.js?v=20260808_25"></script>
-<script src="js/app.js?v=20260808_25"></script>
+<script src="js/api.js?v=20260808_26"></script>
+<script src="js/app.js?v=20260808_26"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -246,7 +261,7 @@
     if (arNameDict[slug]) return arNameDict[slug];
     if (arNameDict[nameLow]) return arNameDict[nameLow];
     
-    // Call getArabicScriptForRawi helper from app.js?v=20260808_25 if available
+    // Call getArabicScriptForRawi helper from app.js?v=20260808_26 if available
     if (typeof getArabicScriptForRawi === 'function') {
       return getArabicScriptForRawi(r.name_en || r.name_id || r.id);
     }
@@ -465,7 +480,36 @@
 
     if (prevBtn) prevBtn.disabled = (currentPage <= 1);
     if (nextBtn) nextBtn.disabled = (currentPage >= totalPages);
+
+    const jumpInput = document.getElementById('scholars-jump-input');
+    if (jumpInput) {
+      jumpInput.min = 1;
+      jumpInput.max = totalPages;
+      jumpInput.value = currentPage;
+      jumpInput.placeholder = currentPage;
+    }
   }
+
+  function handleScholarsJump() {
+    const input = document.getElementById('scholars-jump-input');
+    if (!input) return;
+    const target = parseInt(input.value);
+    const totalPages = Math.ceil(allScholars.length / pageSize) || 1;
+    if (target && target >= 1 && target <= totalPages) {
+      currentPage = target;
+      renderScholarsPage();
+      window.scrollTo({ top: 300, behavior: 'smooth' });
+    } else if (target > totalPages) {
+      currentPage = totalPages;
+      renderScholarsPage();
+      window.scrollTo({ top: 300, behavior: 'smooth' });
+    }
+  }
+
+  document.getElementById('scholars-jump-btn')?.addEventListener('click', handleScholarsJump);
+  document.getElementById('scholars-jump-input')?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') handleScholarsJump();
+  });
 
   document.querySelectorAll('#generation-chips button').forEach(btn => {
     btn.addEventListener('click', async () => {

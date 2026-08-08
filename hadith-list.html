@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_25"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_26"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -158,13 +158,29 @@
   </div>
 
   <!-- Dynamic Pagination Controls -->
-  <div id="pagination-container" class="flex justify-between items-center bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-4 text-xs font-semibold shadow-sm">
-    <button id="prev-page-btn" class="px-4 py-2 bg-surface-container-high dark:bg-[#0f172a] rounded-lg text-primary dark:text-white hover:opacity-80 disabled:opacity-40 disabled:pointer-events-none flex items-center gap-1">
-      &larr; Previous
+  <div id="pagination-container" class="flex flex-col sm:flex-row justify-between items-center gap-4 bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-4 text-xs font-semibold shadow-sm">
+    <button id="prev-page-btn" class="px-4 py-2 bg-surface-container-high dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white hover:opacity-80 disabled:opacity-40 disabled:pointer-events-none flex items-center gap-1">
+      &larr; <span data-lang-en>Previous</span><span data-lang-id style="display:none">Sebelumnya</span>
     </button>
-    <span id="page-indicator" class="text-outline dark:text-gray-400">Page 1 of 1</span>
-    <button id="next-page-btn" class="px-4 py-2 bg-surface-container-high dark:bg-[#0f172a] rounded-lg text-primary dark:text-white hover:opacity-80 disabled:opacity-40 disabled:pointer-events-none flex items-center gap-1">
-      Next &rarr;
+
+    <div class="flex flex-wrap items-center justify-center gap-3">
+      <span id="page-indicator" class="text-outline dark:text-gray-400">Page 1 of 1</span>
+      <span class="text-outline dark:text-gray-400 font-normal hidden sm:inline">|</span>
+      <div class="flex items-center gap-1.5">
+        <span class="text-outline dark:text-gray-400 font-medium">
+          <span data-lang-en>Go to page:</span>
+          <span data-lang-id style="display:none">Lompat ke hal:</span>
+        </span>
+        <input type="number" id="jump-page-input" min="1" max="1" placeholder="1" class="w-14 px-2 py-1 text-center bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-bold focus:outline-none focus:border-secondary dark:focus:border-[#10b981]"/>
+        <button id="jump-page-btn" class="px-2.5 py-1 bg-secondary dark:bg-[#10b981] text-white dark:text-black font-bold rounded-lg hover:opacity-90 transition-all cursor-pointer">
+          <span data-lang-en>Go</span>
+          <span data-lang-id style="display:none">Ke</span>
+        </button>
+      </div>
+    </div>
+
+    <button id="next-page-btn" class="px-4 py-2 bg-surface-container-high dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white hover:opacity-80 disabled:opacity-40 disabled:pointer-events-none flex items-center gap-1">
+      <span data-lang-en>Next</span><span data-lang-id style="display:none">Selanjutnya</span> &rarr;
     </button>
   </div>
 </main>
@@ -173,7 +189,7 @@
   <div><span data-i18n="footer_text">© 2024 HADEETH.ID - Digital Manuscript Preservation</span></div>
 </footer>
 
-<script src="js/api.js?v=20260808_25"></script>
-<script src="js/app.js?v=20260808_25"></script>
+<script src="js/api.js?v=20260808_26"></script>
+<script src="js/app.js?v=20260808_26"></script>
 </body>
 </html>

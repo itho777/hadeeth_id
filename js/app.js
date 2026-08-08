@@ -1053,9 +1053,22 @@ async function loadHadithList() {
     LangSystem.apply(LangSystem.get());
 
     // Update Pagination UI
-    if (pageIndicator) pageIndicator.innerText = `Showing ${startIdx + 1}–${endIdx} of ${filteredHadiths.length} Ahadith (Page ${currentPage} of ${totalPages})`;
+    const isId = (window.LangSystem && window.LangSystem.isIdMode());
+    if (pageIndicator) {
+      pageIndicator.innerText = isId
+        ? `Menampilkan ${startIdx + 1}–${endIdx} dari ${filteredHadiths.length} Hadits (Hal ${currentPage} dari ${totalPages})`
+        : `Showing ${startIdx + 1}–${endIdx} of ${filteredHadiths.length} Ahadith (Page ${currentPage} of ${totalPages})`;
+    }
     if (prevBtn) prevBtn.disabled = (currentPage <= 1);
     if (nextBtn) nextBtn.disabled = (currentPage >= totalPages);
+
+    const jumpInput = document.getElementById('jump-page-input');
+    if (jumpInput) {
+      jumpInput.min = 1;
+      jumpInput.max = totalPages;
+      jumpInput.value = currentPage;
+      jumpInput.placeholder = currentPage;
+    }
   }
 
   // Filter/Search Logic
@@ -1133,6 +1146,31 @@ async function loadHadithList() {
         renderList();
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
+    });
+  }
+
+  const jumpInput = document.getElementById('jump-page-input');
+  const jumpBtn = document.getElementById('jump-page-btn');
+
+  function handleJump() {
+    if (!jumpInput) return;
+    const target = parseInt(jumpInput.value);
+    const totalPages = Math.ceil(filteredHadiths.length / pageSize) || 1;
+    if (target && target >= 1 && target <= totalPages) {
+      currentPage = target;
+      renderList();
+      window.scrollTo({ top: 300, behavior: 'smooth' });
+    } else if (target > totalPages) {
+      currentPage = totalPages;
+      renderList();
+      window.scrollTo({ top: 300, behavior: 'smooth' });
+    }
+  }
+
+  if (jumpBtn) jumpBtn.addEventListener('click', handleJump);
+  if (jumpInput) {
+    jumpInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleJump();
     });
   }
 
