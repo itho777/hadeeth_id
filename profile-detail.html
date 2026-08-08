@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_50"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_51"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -347,7 +347,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_50"></script>
+<script src="js/app.js?v=20260808_51"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -435,6 +435,20 @@
       }
 
       const rawi = data[0];
+      const local = localRawiDict[rawi.id] || localRawiDict[(rawi.id || '').toLowerCase()] || localRawiDict['rawi_' + rawi.id] || (rawi.id.includes('ahmad') ? localRawiDict['rawi_ahmad'] : null);
+
+      if (local) {
+        if (!rawi.name_ar || rawi.name_ar === rawi.name_en || /[a-zA-Z]/.test(rawi.name_ar)) rawi.name_ar = local.name_ar;
+        if (!rawi.bio_en || rawi.bio_en.includes('is an authentic transmitter of Hadith recorded in canonical collections')) rawi.bio_en = local.bio;
+        if (!rawi.bio_id || rawi.bio_id.includes('adalah perawi perawi hadis shahih')) rawi.bio_id = local.bio;
+        if (local.gen && (!rawi.generation || rawi.generation === 'Transmitter (Rawi)')) rawi.generation = local.gen;
+        if (local.grade && (!rawi.grade || rawi.grade === 'Thiqah (Trustworthy)')) rawi.grade = local.grade;
+        if (local.kunyah) rawi.kunya_en = local.kunyah;
+        if (local.nasab) rawi.nasab_en = local.nasab;
+        if (local.settled && (!rawi.region || rawi.region === 'Hijaz')) rawi.region = local.settled;
+        if (local.dates) rawi.died_ah = local.dates;
+        if (local.name_en && (rawi.name_en === 'Ahmad' || rawi.name_en === 'Rawi')) rawi.name_en = local.name_en;
+      }
 
       // Hide demo switcher bar if loading a real DB profile
       const demoBar = document.querySelector('.bg-surface-container-low.dark\\:bg-\\[\\#1e293b\\].p-3');
