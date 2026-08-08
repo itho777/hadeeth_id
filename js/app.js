@@ -1021,9 +1021,9 @@ async function loadChaptersList() {
       ar: 'صحيح البخاري',
       author: 'Imam al-Bukhari',
       authorId: 'rawi_bukhari',
-      type: 'Sahih',
+      type: 'Jami',
       badgeClass: 'bg-sunan-emerald text-white',
-      desc: 'Recognized across Islamic scholarship as the most authentic collection of Hadith, compiled with rigorous criteria.',
+      desc: 'Recognized across Islamic scholarship as the supreme Jami collection of Hadith, compiled with unmatched authentication criteria.',
       kitabCount: '📚 97 Books (Kitab)',
       hadithCount: '📖 7,563 Total Hadith',
       authenticity: '⭐️ 100% Authentic'
@@ -1033,12 +1033,24 @@ async function loadChaptersList() {
       ar: 'صحيح مسلم',
       author: 'Imam Muslim ibn al-Hajjaj',
       authorId: 'rawi_muslim',
-      type: 'Sahih',
+      type: 'Jami',
       badgeClass: 'bg-sunan-emerald text-white',
-      desc: 'Renowned for strict thematic organization and comprehensive compilation of parallel chains of narration (turuq).',
+      desc: 'Masterpiece Jami collection renowned for strict thematic organization and comprehensive parallel chains of narration (turuq).',
       kitabCount: '📚 56 Books (Kitab)',
       hadithCount: '📖 3,033 Total Hadith',
       authenticity: '⭐️ 100% Authentic'
+    },
+    tirmidhi: {
+      name: "Jami' al-Tirmidhi",
+      ar: 'جامع الترمذي',
+      author: "Imam Abu 'Isa al-Tirmidhi",
+      authorId: 'rawi_al_tirmidhi',
+      type: 'Jami',
+      badgeClass: 'bg-sunan-emerald text-white',
+      desc: 'Famous Jami collection featuring explicit grading of narrations (Sahih, Hasan, Gharib) and legal opinions of early jurists.',
+      kitabCount: '📚 49 Books (Kitab)',
+      hadithCount: '📖 3,956 Total Hadith',
+      authenticity: '⭐️ Graded Jami'
     },
     abudawud: {
       name: 'Sunan Abu Dawood',
@@ -1051,18 +1063,6 @@ async function loadChaptersList() {
       kitabCount: '📚 43 Books (Kitab)',
       hadithCount: '📖 5,274 Total Hadith',
       authenticity: '⭐️ Sunan Corpus'
-    },
-    tirmidhi: {
-      name: "Jami' al-Tirmidhi",
-      ar: 'جامع الترمذي',
-      author: "Imam Abu 'Isa al-Tirmidhi",
-      authorId: 'rawi_al_tirmidhi',
-      type: 'Sunan',
-      badgeClass: 'bg-musnad-indigo text-white',
-      desc: 'Famous for explicit grading of narrations (Sahih, Hasan, Gharib) and detailing legal opinions of early scholars.',
-      kitabCount: '📚 49 Books (Kitab)',
-      hadithCount: '📖 3,956 Total Hadith',
-      authenticity: '⭐️ Graded Sunan'
     },
     nasai: {
       name: "Sunan an-Nasa'i",
@@ -1093,9 +1093,9 @@ async function loadChaptersList() {
       ar: 'موطأ مالك',
       author: 'Imam Malik ibn Anas',
       authorId: 'rawi_malik',
-      type: 'Muwatta',
+      type: 'Mushannaf',
       badgeClass: 'bg-amber-600 text-white',
-      desc: 'The earliest surviving legal text of Islam, combining prophetic Hadiths with judicial decisions of Madinah.',
+      desc: 'The earliest surviving legal Mushannaf text of Islam, combining prophetic Hadiths with judicial rulings of Madinah.',
       kitabCount: '📚 61 Books (Kitab)',
       hadithCount: '📖 1,720 Total Hadith',
       authenticity: '⭐️ Imam of Hijaz'
@@ -1107,7 +1107,7 @@ async function loadChaptersList() {
       authorId: 'rawi_ahmad',
       type: 'Musnad',
       badgeClass: 'bg-purple-700 text-white',
-      desc: 'The massive encyclopedic Musnad arranged narrator by narrator, containing over 27,000 narrations.',
+      desc: 'The massive encyclopedic Musnad arranged companion by companion (Sahabi), containing over 27,000 narrations.',
       kitabCount: '📚 Musnad System',
       hadithCount: '📖 27,647 Total Hadith',
       authenticity: '⭐️ Encyclopedic Corpus'
@@ -1123,6 +1123,30 @@ async function loadChaptersList() {
       kitabCount: '📚 1 Volume',
       hadithCount: '📖 42 Total Hadith',
       authenticity: '⭐️ Core Foundations'
+    },
+    tabarani_kabir: {
+      name: 'Al-Mu\'jam al-Kabir',
+      ar: 'المعجم الكبير للطبراني',
+      author: 'Imam Al-Tabarani',
+      authorId: 'rawi_tabarani',
+      type: "Mu'jam",
+      badgeClass: 'bg-blue-700 text-white',
+      desc: 'Monumental Mu\'jam collection arranged according to the names of Companion narrators in alphabetical order.',
+      kitabCount: '📚 25 Volumes',
+      hadithCount: '📖 20,000+ Total Hadith',
+      authenticity: '⭐️ Framework Shell'
+    },
+    ibn_abi_shaybah: {
+      name: 'Musannaf Ibn Abi Shaybah',
+      ar: 'مصنف ابن أبي شيبة',
+      author: 'Imam Ibn Abi Shaybah',
+      authorId: 'rawi_ibn_abi_shaybah',
+      type: 'Mushannaf',
+      badgeClass: 'bg-amber-600 text-white',
+      desc: 'Encyclopedic Mushannaf collection preserving Marfu\', Mauquf, and Maqtu\' traditions ordered by Fiqh topics.',
+      kitabCount: '📚 37 Books',
+      hadithCount: '📖 37,000+ Total Hadith',
+      authenticity: '⭐️ Framework Shell'
     }
   };
 

@@ -1,75 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" class="dark">
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="HADEETH.ID — Explore the complete digital collection of Kutubut Tis'ah and major Hadith compendiums."/>
-  <title>Books Library - HADEETH.ID</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_7"/>
-  <script src="js/theme.js"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <title>Major Hadith Collections - HADEETH.ID</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: "class",
+      darkMode: 'class',
       theme: {
         extend: {
           colors: {
-            "sunan-emerald":"#1B5E20","ink-black":"#0D0D10","secondary":"#7b5810",
-            "surface-container-highest":"#e5e2de","on-surface-variant":"#43474e",
-            "surface":"#fcf9f5","outline-variant":"#c3c6cf","on-secondary-container":"#78550d",
-            "surface-container":"#f0ede9","tertiary":"#001932","background":"#fcf9f5",
-            "surface-container-high":"#eae8e4","surface-container-lowest":"#ffffff",
-            "outline":"#73777f","primary":"#001932","musnad-indigo":"#311B92",
-            "manuscript-paper":"#FDFBF7","on-primary":"#ffffff","surface-variant":"#e5e2de",
-            "surface-container-low":"#f6f3ef","on-background":"#1c1c1a","on-surface":"#1c1c1a"
+            'primary': '#0f172a',
+            'secondary': '#0284c7',
+            'sunan-emerald': '#059669',
+            'musnad-indigo': '#4f46e5',
+            'surface': '#ffffff',
+            'surface-container-lowest': '#f8fafc',
+            'surface-container-low': '#f1f5f9',
+            'surface-container-high': '#e2e8f0',
+            'outline': '#64748b',
+            'outline-variant': '#cbd5e1',
+            'on-primary': '#ffffff',
+            'on-surface-variant': '#475569',
+            'manuscript-paper': '#fcfbf7',
+            'ink-black': '#0a0e14'
           },
-          fontFamily: { "body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"arabic-body":["Amiri"] },
-          spacing: { "stack-sm":"0.5rem","content-width-max":"1200px","margin-main":"2rem","gutter-grid":"1.5rem","stack-md":"1rem","stack-lg":"2rem" }
+          maxWidth: {
+            'content-width-max': '1280px'
+          },
+          padding: {
+            'margin-main': '1.5rem',
+            'stack-lg': '3rem'
+          }
         }
       }
-    }
+    };
   </script>
-  <style>
-    .material-symbols-outlined { font-family:'Material Symbols Outlined'; font-weight:normal; font-style:normal; font-size:24px; line-height:1; display:inline-block; }
-  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/app.css?v=20260808_8" />
 </head>
-<body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
+<body class="bg-surface-container-lowest dark:bg-[#0a0e14] text-primary dark:text-white font-sans min-h-screen flex flex-col justify-between">
 
-<!-- TOP APP BAR -->
-<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
-  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
-    <a href="index.html" class="flex items-center gap-2">
-      <div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-[#0a1120] border border-outline-variant/30"><img src="assets/logo_light.jpg" alt="hadeeth.id logo" class="logo-light w-full h-full object-cover rounded-lg scale-125"/><img src="assets/logo_dark.jpg" alt="hadeeth.id logo" class="logo-dark w-full h-full object-cover rounded-lg scale-125"/></div>
-      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
+<!-- Header -->
+<header class="w-full bg-surface dark:bg-[#1e293b] border-b border-outline-variant/30 dark:border-[#334155] sticky top-0 z-50">
+  <div class="max-w-content-width-max mx-auto px-margin-main h-16 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <div class="w-9 h-9 rounded-xl overflow-hidden shadow-sm bg-[#0a1120] flex items-center justify-center border border-outline-variant/30">
+        <img src="assets/logo_light.jpg" alt="hadeeth.id logo" class="logo-light w-full h-full object-cover rounded-xl scale-125"/>
+        <img src="assets/logo_dark.jpg"  alt="hadeeth.id logo" class="logo-dark  w-full h-full object-cover rounded-xl scale-125"/>
+      </div>
+      <span class="font-bold text-lg text-primary dark:text-white tracking-tight">hadeeth.id</span>
     </a>
-    <nav class="hidden md:flex items-center gap-stack-lg">
-      <a href="books.html"   data-nav-page="books.html"   class="text-primary dark:text-white font-bold border-b-2 border-primary dark:border-[#10b981] py-1" data-i18n="nav_books">Books</a>
-      <a href="scholars.html" data-nav-page="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors" data-i18n="nav_scholars">Scholars</a>
-      <a href="admin.html"   data-nav-page="admin.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors" data-i18n="nav_admin">Admin</a>
+    <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+      <a href="books.html" class="text-secondary dark:text-[#10b981] font-bold" data-i18n="nav_books">Kitab</a>
+      <a href="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors" data-i18n="nav_scholars">Perawi & Ulama</a>
+      <a href="admin.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors" data-i18n="nav_admin">Admin</a>
     </nav>
     <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
-      <!-- Language Switcher -->
       <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
         <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
         <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
       </div>
-      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Toggle theme">
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full">
         <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
       </button>
-      <button id="mobile-menu-btn" class="p-2 md:hidden hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors">
-        <span class="material-symbols-outlined" data-menu-icon>menu</span>
-      </button>
-    </div>
-  </div>
-  <div id="mobile-menu" class="md:hidden bg-manuscript-paper dark:bg-[#10141a] border-t border-outline-variant dark:border-[#1e293b]">
-    <div class="flex flex-col px-margin-main py-2 gap-1">
-      <a href="books.html"   class="py-2 text-primary dark:text-white font-bold" data-i18n="nav_books">Books</a>
-      <a href="scholars.html" class="py-2 text-on-surface-variant dark:text-gray-400" data-i18n="nav_scholars">Scholars</a>
-      <a href="admin.html"   class="py-2 text-on-surface-variant dark:text-gray-400" data-i18n="nav_admin">Admin</a>
     </div>
   </div>
 </header>
@@ -80,29 +75,48 @@
   <div class="flex flex-col gap-2 border-b border-outline-variant/30 dark:border-[#334155] pb-6">
     <div class="flex items-center gap-2 text-secondary dark:text-[#10b981] font-semibold text-sm">
       <span class="material-symbols-outlined text-[18px]">library_books</span>
-      <span>Digital Library</span>
+      <span data-lang-en>Digital Library • Classical Hadith Genres</span>
+      <span data-lang-id>Perpustakaan Digital • Genre Hadits Klasik</span>
     </div>
-    <h1 class="text-3xl font-bold text-primary dark:text-white">Major Hadith Collections</h1>
+    <h1 class="text-3xl font-bold text-primary dark:text-white">
+      <span data-lang-en>Major Hadith Collections</span>
+      <span data-lang-id>Koleksi Kitab-Kitab Hadits Utama</span>
+    </h1>
     <p class="text-on-surface-variant dark:text-gray-400 text-sm max-w-xl">
-      Explore canonical collections of Sunnah, graded according to traditional Hadith scholarship methodology.
+      <span data-lang-en>Explore canonical Hadith compilations categorized strictly by classical Hadith literature genres: Jami', Sunan, Musnad, Mu'jam, and Mushannaf.</span>
+      <span data-lang-id>Jelajahi kumpulan kitab Hadits utama yang dikategorikan menurut genre sastra Hadits klasik: Jami', Sunan, Musnad, Mu'jam, dan Mushannaf.</span>
     </p>
 
     <!-- Category Filter Chips -->
     <div class="flex items-center gap-2 mt-4 overflow-x-auto pb-2" id="filter-chips">
-      <button class="chip-btn active px-4 py-1.5 rounded-full text-xs font-semibold bg-primary dark:bg-[#10b981] text-white dark:text-black" data-filter="all">All (9)</button>
-      <button class="chip-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-filter="sahih">Sahih (2)</button>
-      <button class="chip-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-filter="sunan">Sunan (4)</button>
-      <button class="chip-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-filter="musnad">Musnad & Others (3)</button>
+      <button class="chip-btn active px-4 py-1.5 rounded-full text-xs font-semibold bg-primary dark:bg-[#10b981] text-white dark:text-black" data-filter="all">
+        <span data-lang-en>All Collections (11)</span><span data-lang-id>Semua Kitab (11)</span>
+      </button>
+      <button class="chip-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-filter="jami">
+        <span>Jami' (الجامع)</span>
+      </button>
+      <button class="chip-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-filter="sunan">
+        <span>Sunan (السنن)</span>
+      </button>
+      <button class="chip-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-filter="musnad">
+        <span>Musnad (المسند)</span>
+      </button>
+      <button class="chip-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-filter="mujam">
+        <span>Mu'jam (المعجم)</span>
+      </button>
+      <button class="chip-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-filter="mushannaf">
+        <span>Mushannaf (المصنف)</span>
+      </button>
     </div>
   </div>
 
   <!-- Book Cards Grid -->
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="books-grid">
 
-    <!-- Card 1: Bukhari -->
-    <a href="kitab.html?book=bukhari" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="sahih">
+    <!-- Card 1: Bukhari (Jami') -->
+    <a href="kitab.html?book=bukhari" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="jami">
       <div class="h-36 w-full bg-cover bg-center relative" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4blNbTej-dhDOjRqXG4F_JQ87PfAskctDe70zZEsAq-X4kf98HqBltjVrP8d4RW28NxJq9cYlEQ9U1ta9dyM9Z_58m7P63jR-TSwDcSi2GWEHU-B6YRGJS36QfXTIXSvCYFA7jxPLlBGUH4I4I432RUSSLScuNaVVCO6o6zBNiXqY6OWOcDNRYuY16iqTHd1y1meQBODiQ1eVe4tQ0yfLbf-ll2LkH5LES_LN1t17Y9-XYcqRt702fQ')">
-        <span class="absolute top-3 left-3 bg-sunan-emerald text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded">Sahih</span>
+        <span class="absolute top-3 left-3 bg-blue-700 text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded shadow">Jami'</span>
       </div>
       <div class="p-5 flex flex-col gap-2 flex-grow">
         <div class="flex justify-between items-start">
@@ -110,7 +124,7 @@
           <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl">صحيح البخاري</span>
         </div>
         <p class="text-xs text-on-surface-variant dark:text-gray-400">Imam Muhammad al-Bukhari (d. 256 AH)</p>
-        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">The most authentic book after the Quran, containing rigorous conditions for narration authenticity.</p>
+        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">The premier comprehensive Jami' collection covering all 8 major subjects of religion with strict authenticity.</p>
         <div class="mt-auto pt-4 flex items-center justify-between border-t border-outline-variant/10 dark:border-[#334155] text-xs font-semibold text-outline dark:text-gray-400">
           <span>7,563 Ahadith • 97 Kitabs</span>
           <span class="text-secondary dark:text-[#10b981] group-hover:underline">Explore &rarr;</span>
@@ -118,10 +132,10 @@
       </div>
     </a>
 
-    <!-- Card 2: Muslim -->
-    <a href="kitab.html?book=muslim" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="sahih">
+    <!-- Card 2: Muslim (Jami') -->
+    <a href="kitab.html?book=muslim" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="jami">
       <div class="h-36 w-full bg-cover bg-center relative" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzqnq_A--Wp1V13r_f7R92bOejF-hct-hQfLCt4I-ftXrUjutMDxGksjJBngltuV29M_PS6AvdazjuLJlDmOd7Nc0ym-BdVhIEfg1h3CN3e8NDd2QVp_B8_BNT7AxfGGUpKlbIo9jptiJBClLqpzNbUikCMt5UMZV8IDKrIv4aNVNiQZzmN3Udc92x21MwHEjAngKlR9CIPHct5ipG9Yv4oAGsvvTUSVRu9IgTeTZEreNg2ilBcz2ztw')">
-        <span class="absolute top-3 left-3 bg-sunan-emerald text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded">Sahih</span>
+        <span class="absolute top-3 left-3 bg-blue-700 text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded shadow">Jami'</span>
       </div>
       <div class="p-5 flex flex-col gap-2 flex-grow">
         <div class="flex justify-between items-start">
@@ -129,7 +143,7 @@
           <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl">صحيح مسلم</span>
         </div>
         <p class="text-xs text-on-surface-variant dark:text-gray-400">Imam Muslim ibn al-Hajjaj (d. 261 AH)</p>
-        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Renowned for strict thematic arrangement and strict checking of parallel narrations (turuq).</p>
+        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Masterpiece Jami' collection renowned for strict thematic arrangement and checking of parallel chains (turuq).</p>
         <div class="mt-auto pt-4 flex items-center justify-between border-t border-outline-variant/10 dark:border-[#334155] text-xs font-semibold text-outline dark:text-gray-400">
           <span>3,033 Ahadith • 56 Kitabs</span>
           <span class="text-secondary dark:text-[#10b981] group-hover:underline">Explore &rarr;</span>
@@ -137,29 +151,10 @@
       </div>
     </a>
 
-    <!-- Card 3: Abu Dawood -->
-    <a href="kitab.html?book=abudawud" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="sunan">
-      <div class="h-36 w-full bg-cover bg-center relative" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkMHAUzA2zf4EkJQtTSFYou9cmwKTPyE2ztXo30ukiOVxDgchm1LW9tIFIpzOzay_RMjoRQkF16RWQlljSvi18E6obGnThSoSOtIbugYML7zIoCCZzUdL_fRHCPelxOIZYlqFAB3SJRDexPfe6ab4qQuf7v5ENiIJE-qS_UaEsl8Bp3HSvhxzro-_DLaSOJmAwuL5iVbLK9afbwO_AomK-JzBLklORmsRW79Eie3uosSbCyQZ8jQvJUw')">
-        <span class="absolute top-3 left-3 bg-musnad-indigo text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded">Sunan</span>
-      </div>
-      <div class="p-5 flex flex-col gap-2 flex-grow">
-        <div class="flex justify-between items-start">
-          <h3 class="font-bold text-lg text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">Sunan Abu Dawood</h3>
-          <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl">سنن أبي داود</span>
-        </div>
-        <p class="text-xs text-on-surface-variant dark:text-gray-400">Imam Abu Dawood al-Sijistani (d. 275 AH)</p>
-        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Focused primarily on legal rulings (ahkam) ahadith used by jurists across all Sunni schools.</p>
-        <div class="mt-auto pt-4 flex items-center justify-between border-t border-outline-variant/10 dark:border-[#334155] text-xs font-semibold text-outline dark:text-gray-400">
-          <span>5,274 Ahadith • 43 Kitabs</span>
-          <span class="text-secondary dark:text-[#10b981] group-hover:underline">Explore &rarr;</span>
-        </div>
-      </div>
-    </a>
-
-    <!-- Card 4: Tirmidhi -->
-    <a href="kitab.html?book=tirmidhi" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="sunan">
+    <!-- Card 3: Tirmidhi (Jami') -->
+    <a href="kitab.html?book=tirmidhi" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="jami">
       <div class="h-36 w-full bg-cover bg-center relative" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4blNbTej-dhDOjRqXG4F_JQ87PfAskctDe70zZEsAq-X4kf98HqBltjVrP8d4RW28NxJq9cYlEQ9U1ta9dyM9Z_58m7P63jR-TSwDcSi2GWEHU-B6YRGJS36QfXTIXSvCYFA7jxPLlBGUH4I4I432RUSSLScuNaVVCO6o6zBNiXqY6OWOcDNRYuY16iqTHd1y1meQBODiQ1eVe4tQ0yfLbf-ll2LkH5LES_LN1t17Y9-XYcqRt702fQ')">
-        <span class="absolute top-3 left-3 bg-musnad-indigo text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded">Sunan</span>
+        <span class="absolute top-3 left-3 bg-blue-700 text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded shadow">Jami'</span>
       </div>
       <div class="p-5 flex flex-col gap-2 flex-grow">
         <div class="flex justify-between items-start">
@@ -167,7 +162,7 @@
           <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl">جامع الترمذي</span>
         </div>
         <p class="text-xs text-on-surface-variant dark:text-gray-400">Imam Abu 'Isa al-Tirmidhi (d. 279 AH)</p>
-        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Famous for explicitly grading each hadith (Hasan, Sahih, Gharib) and stating legal opinions of scholars.</p>
+        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Famous Jami' featuring explicit grading (Sahih, Hasan, Gharib) and detailing legal opinions of early scholars.</p>
         <div class="mt-auto pt-4 flex items-center justify-between border-t border-outline-variant/10 dark:border-[#334155] text-xs font-semibold text-outline dark:text-gray-400">
           <span data-lang-en>3,956 Ahadith • 49 Kitabs</span><span data-lang-id>3.956 Hadits • 49 Kitab</span>
           <span class="text-secondary dark:text-[#10b981] group-hover:underline">Explore &rarr;</span>
@@ -175,10 +170,29 @@
       </div>
     </a>
 
-    <!-- Card 5: An-Nasa'i -->
+    <!-- Card 4: Abu Dawood (Sunan) -->
+    <a href="kitab.html?book=abudawud" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="sunan">
+      <div class="h-36 w-full bg-cover bg-center relative" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkMHAUzA2zf4EkJQtTSFYou9cmwKTPyE2ztXo30ukiOVxDgchm1LW9tIFIpzOzay_RMjoRQkF16RWQlljSvi18E6obGnThSoSOtIbugYML7zIoCCZzUdL_fRHCPelxOIZYlqFAB3SJRDexPfe6ab4qQuf7v5ENiIJE-qS_UaEsl8Bp3HSvhxzro-_DLaSOJmAwuL5iVbLK9afbwO_AomK-JzBLklORmsRW79Eie3uosSbCyQZ8jQvJUw')">
+        <span class="absolute top-3 left-3 bg-indigo-600 text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded shadow">Sunan</span>
+      </div>
+      <div class="p-5 flex flex-col gap-2 flex-grow">
+        <div class="flex justify-between items-start">
+          <h3 class="font-bold text-lg text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">Sunan Abu Dawood</h3>
+          <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl">سنن أبي داود</span>
+        </div>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">Imam Abu Dawood al-Sijistani (d. 275 AH)</p>
+        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Focused primarily on legal rulings (Ahkam) traditions used by jurists across Sunni Fiqh schools.</p>
+        <div class="mt-auto pt-4 flex items-center justify-between border-t border-outline-variant/10 dark:border-[#334155] text-xs font-semibold text-outline dark:text-gray-400">
+          <span>5,274 Ahadith • 43 Kitabs</span>
+          <span class="text-secondary dark:text-[#10b981] group-hover:underline">Explore &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 5: An-Nasa'i (Sunan) -->
     <a href="kitab.html?book=nasai" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="sunan">
       <div class="h-36 w-full bg-cover bg-center relative" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzqnq_A--Wp1V13r_f7R92bOejF-hct-hQfLCt4I-ftXrUjutMDxGksjJBngltuV29M_PS6AvdazjuLJlDmOd7Nc0ym-BdVhIEfg1h3CN3e8NDd2QVp_B8_BNT7AxfGGUpKlbIo9jptiJBClLqpzNbUikCMt5UMZV8IDKrIv4aNVNiQZzmN3Udc92x21MwHEjAngKlR9CIPHct5ipG9Yv4oAGsvvTUSVRu9IgTeTZEreNg2ilBcz2ztw')">
-        <span class="absolute top-3 left-3 bg-musnad-indigo text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded">Sunan</span>
+        <span class="absolute top-3 left-3 bg-indigo-600 text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded shadow">Sunan</span>
       </div>
       <div class="p-5 flex flex-col gap-2 flex-grow">
         <div class="flex justify-between items-start">
@@ -186,7 +200,7 @@
           <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl">سنن النسائي</span>
         </div>
         <p class="text-xs text-on-surface-variant dark:text-gray-400">Imam Ahmad an-Nasa'i (d. 303 AH)</p>
-        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Has the fewest weak narrations among the 4 Sunan books, with meticulous attention to narrator variations.</p>
+        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Sunan collection with strict authentication criteria, second only to the Sahihain in rigor.</p>
         <div class="mt-auto pt-4 flex items-center justify-between border-t border-outline-variant/10 dark:border-[#334155] text-xs font-semibold text-outline dark:text-gray-400">
           <span data-lang-en>5,761 Ahadith • 52 Kitabs</span><span data-lang-id>5.761 Hadits • 52 Kitab</span>
           <span class="text-secondary dark:text-[#10b981] group-hover:underline">Explore &rarr;</span>
@@ -194,10 +208,10 @@
       </div>
     </a>
 
-    <!-- Card 6: Ibn Majah -->
+    <!-- Card 6: Ibn Majah (Sunan) -->
     <a href="kitab.html?book=ibnmajah" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="sunan">
       <div class="h-36 w-full bg-cover bg-center relative" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkMHAUzA2zf4EkJQtTSFYou9cmwKTPyE2ztXo30ukiOVxDgchm1LW9tIFIpzOzay_RMjoRQkF16RWQlljSvi18E6obGnThSoSOtIbugYML7zIoCCZzUdL_fRHCPelxOIZYlqFAB3SJRDexPfe6ab4qQuf7v5ENiIJE-qS_UaEsl8Bp3HSvhxzro-_DLaSOJmAwuL5iVbLK9afbwO_AomK-JzBLklORmsRW79Eie3uosSbCyQZ8jQvJUw')">
-        <span class="absolute top-3 left-3 bg-musnad-indigo text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded">Sunan</span>
+        <span class="absolute top-3 left-3 bg-indigo-600 text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded shadow">Sunan</span>
       </div>
       <div class="p-5 flex flex-col gap-2 flex-grow">
         <div class="flex justify-between items-start">
@@ -205,7 +219,7 @@
           <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl">سنن ابن ماجه</span>
         </div>
         <p class="text-xs text-on-surface-variant dark:text-gray-400">Imam Ibn Majah al-Qazwini (d. 273 AH)</p>
-        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Completes the Kutubut Tis'ah with excellent chapter structuring and unique zawa'id narrations.</p>
+        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Completes the Six Books (Sittah) with excellent chapter structuring and unique zawa'id narrations.</p>
         <div class="mt-auto pt-4 flex items-center justify-between border-t border-outline-variant/10 dark:border-[#334155] text-xs font-semibold text-outline dark:text-gray-400">
           <span data-lang-en>4,341 Ahadith • 37 Kitabs</span><span data-lang-id>4.341 Hadits • 37 Kitab</span>
           <span class="text-secondary dark:text-[#10b981] group-hover:underline">Explore &rarr;</span>
@@ -213,10 +227,10 @@
       </div>
     </a>
 
-    <!-- Card 7: Musnad Ahmad -->
+    <!-- Card 7: Musnad Ahmad (Musnad) -->
     <a href="kitab.html?book=ahmad" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="musnad">
       <div class="h-36 w-full bg-cover bg-center relative" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4blNbTej-dhDOjRqXG4F_JQ87PfAskctDe70zZEsAq-X4kf98HqBltjVrP8d4RW28NxJq9cYlEQ9U1ta9dyM9Z_58m7P63jR-TSwDcSi2GWEHU-B6YRGJS36QfXTIXSvCYFA7jxPLlBGUH4I4I432RUSSLScuNaVVCO6o6zBNiXqY6OWOcDNRYuY16iqTHd1y1meQBODiQ1eVe4tQ0yfLbf-ll2LkH5LES_LN1t17Y9-XYcqRt702fQ')">
-        <span class="absolute top-3 left-3 bg-[#78550d] text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded">Musnad</span>
+        <span class="absolute top-3 left-3 bg-purple-700 text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded shadow">Musnad</span>
       </div>
       <div class="p-5 flex flex-col gap-2 flex-grow">
         <div class="flex justify-between items-start">
@@ -224,18 +238,18 @@
           <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl">مسند أحمد</span>
         </div>
         <p class="text-xs text-on-surface-variant dark:text-gray-400">Imam Ahmad ibn Hanbal (d. 241 AH)</p>
-        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">One of the largest encyclopedic collections arranged by Sahabi narrator transmission chains.</p>
+        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">The quintessential Musnad collection organized Companion by Companion (Sahabi), containing over 27,000 traditions.</p>
         <div class="mt-auto pt-4 flex items-center justify-between border-t border-outline-variant/10 dark:border-[#334155] text-xs font-semibold text-outline dark:text-gray-400">
-          <span data-lang-en>28,199 Ahadith • Musnad Order</span><span data-lang-id>28.199 Hadits • Urutan Musnad</span>
+          <span data-lang-en>27,647 Ahadith • Musnad Order</span><span data-lang-id>27.647 Hadits • Urutan Musnad</span>
           <span class="text-secondary dark:text-[#10b981] group-hover:underline">Explore &rarr;</span>
         </div>
       </div>
     </a>
 
-    <!-- Card 8: Muwatta Malik -->
-    <a href="kitab.html?book=malik" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="musnad">
+    <!-- Card 8: Muwatta Malik (Mushannaf) -->
+    <a href="kitab.html?book=malik" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="mushannaf">
       <div class="h-36 w-full bg-cover bg-center relative" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzqnq_A--Wp1V13r_f7R92bOejF-hct-hQfLCt4I-ftXrUjutMDxGksjJBngltuV29M_PS6AvdazjuLJlDmOd7Nc0ym-BdVhIEfg1h3CN3e8NDd2QVp_B8_BNT7AxfGGUpKlbIo9jptiJBClLqpzNbUikCMt5UMZV8IDKrIv4aNVNiQZzmN3Udc92x21MwHEjAngKlR9CIPHct5ipG9Yv4oAGsvvTUSVRu9IgTeTZEreNg2ilBcz2ztw')">
-        <span class="absolute top-3 left-3 bg-[#78550d] text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded">Muwatta</span>
+        <span class="absolute top-3 left-3 bg-amber-600 text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded shadow">Mushannaf</span>
       </div>
       <div class="p-5 flex flex-col gap-2 flex-grow">
         <div class="flex justify-between items-start">
@@ -243,18 +257,58 @@
           <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl">موطأ مالك</span>
         </div>
         <p class="text-xs text-on-surface-variant dark:text-gray-400">Imam Malik ibn Anas (d. 179 AH)</p>
-        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">The earliest written legal-hadith compendium representing the practice of the people of Madinah.</p>
+        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">The earliest surviving legal Mushannaf compendium representing legal Hadiths and rulings of Madinah.</p>
         <div class="mt-auto pt-4 flex items-center justify-between border-t border-outline-variant/10 dark:border-[#334155] text-xs font-semibold text-outline dark:text-gray-400">
-          <span data-lang-en>1,857 Ahadith • 61 Kitabs</span><span data-lang-id>1.857 Hadits • 61 Kitab</span>
+          <span data-lang-en>1,720 Ahadith • 61 Kitabs</span><span data-lang-id>1.720 Hadits • 61 Kitab</span>
           <span class="text-secondary dark:text-[#10b981] group-hover:underline">Explore &rarr;</span>
         </div>
       </div>
     </a>
 
-    <!-- Card 9: Nawawi 40 -->
-    <a href="kitab.html?book=nawawi" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="musnad">
+    <!-- Card 9: Al-Mu'jam al-Kabir (Mu'jam Shell Framework) -->
+    <div class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden flex flex-col opacity-90" data-type="mujam">
+      <div class="h-36 w-full bg-cover bg-center relative bg-gradient-to-r from-blue-900 to-slate-900 flex items-center justify-center">
+        <span class="absolute top-3 left-3 bg-teal-700 text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded shadow">Mu'jam</span>
+        <span class="text-white text-xs font-bold bg-black/40 px-3 py-1 rounded-full border border-white/20">Framework Shell</span>
+      </div>
+      <div class="p-5 flex flex-col gap-2 flex-grow">
+        <div class="flex justify-between items-start">
+          <h3 class="font-bold text-lg text-primary dark:text-white">Al-Mu'jam al-Kabir</h3>
+          <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl">المعجم الكبير</span>
+        </div>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">Imam Al-Tabarani (d. 360 AH)</p>
+        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Monumental Mu'jam organized alphabetically by the names of Companion narrators and Sheikhs.</p>
+        <div class="mt-auto pt-4 flex items-center justify-between border-t border-outline-variant/10 dark:border-[#334155] text-xs font-semibold text-outline dark:text-gray-400">
+          <span>20,000+ Ahadith • 25 Volumes</span>
+          <span class="text-outline text-xs italic">Content Integration Ready</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 10: Musannaf Ibn Abi Shaybah (Mushannaf Shell Framework) -->
+    <div class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden flex flex-col opacity-90" data-type="mushannaf">
+      <div class="h-36 w-full bg-cover bg-center relative bg-gradient-to-r from-amber-950 to-slate-900 flex items-center justify-center">
+        <span class="absolute top-3 left-3 bg-amber-600 text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded shadow">Mushannaf</span>
+        <span class="text-white text-xs font-bold bg-black/40 px-3 py-1 rounded-full border border-white/20">Framework Shell</span>
+      </div>
+      <div class="p-5 flex flex-col gap-2 flex-grow">
+        <div class="flex justify-between items-start">
+          <h3 class="font-bold text-lg text-primary dark:text-white">Musannaf Ibn Abi Shaybah</h3>
+          <span class="font-arabic-body text-xl text-secondary dark:text-[#10b981]" dir="rtl">مصنف ابن أبي شيبة</span>
+        </div>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">Imam Ibn Abi Shaybah (d. 235 AH)</p>
+        <p class="text-xs text-outline dark:text-gray-400 line-clamp-2 mt-1">Encyclopedic Mushannaf collection preserving Marfu', Mauquf, and Maqtu' traditions ordered by Fiqh topics.</p>
+        <div class="mt-auto pt-4 flex items-center justify-between border-t border-outline-variant/10 dark:border-[#334155] text-xs font-semibold text-outline dark:text-gray-400">
+          <span>37,000+ Ahadith • 37 Books</span>
+          <span class="text-outline text-xs italic">Content Integration Ready</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 11: 40 Hadith Nawawi (Arba'in) -->
+    <a href="kitab.html?book=nawawi" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col group card-lift" data-type="arbain">
       <div class="h-36 w-full bg-cover bg-center relative" style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkMHAUzA2zf4EkJQtTSFYou9cmwKTPyE2ztXo30ukiOVxDgchm1LW9tIFIpzOzay_RMjoRQkF16RWQlljSvi18E6obGnThSoSOtIbugYML7zIoCCZzUdL_fRHCPelxOIZYlqFAB3SJRDexPfe6ab4qQuf7v5ENiIJE-qS_UaEsl8Bp3HSvhxzro-_DLaSOJmAwuL5iVbLK9afbwO_AomK-JzBLklORmsRW79Eie3uosSbCyQZ8jQvJUw')">
-        <span class="absolute top-3 left-3 bg-sunan-emerald text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded">Arba'een</span>
+        <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] uppercase font-bold px-2 py-0.5 rounded">Arba'een</span>
       </div>
       <div class="p-5 flex flex-col gap-2 flex-grow">
         <div class="flex justify-between items-start">
@@ -282,10 +336,10 @@
   </div>
 </footer>
 
-<script src="js/api.js?v=20260808_7"></script>
-<script src="js/app.js?v=20260808_7"></script>
+<script src="js/api.js?v=20260808_8"></script>
+<script src="js/app.js?v=20260808_8"></script>
 <script>
-  // Simple filter logic for chips
+  // Simple filter logic for genre chips
   document.querySelectorAll('#filter-chips button').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('#filter-chips button').forEach(b => {
@@ -305,7 +359,6 @@
       });
     });
   });
-<script src="js/api.js?v=20260808_7"></script>
-<script src="js/app.js?v=20260808_7"></script>
+</script>
 </body>
 </html>
