@@ -267,10 +267,54 @@
     return '';
   }
 
+  // Indonesian name map — covers common Supabase rows that lack name_id
+  const idNameMap = [
+    { test: n => n.includes('abu hurairah'),                          id: "Abu Hurairah radliallahu 'anhu" },
+    { test: n => n.includes("'aisha") || n.includes('aisha bint'),    id: 'Aisyah binti Abu Bakar ash-Shiddiq' },
+    { test: n => n.includes('umar') && n.includes('khattab') && !n.includes('ibn umar') && !n.includes('ibnu'),  id: 'Umar bin al-Khaththab' },
+    { test: n => (n.includes('ibn umar') || n.includes('ibnu umar') || (n.includes('umar ibn') && n.includes('khattab') && n.startsWith('abd'))), id: "Ibnu 'Umar" },
+    { test: n => n.includes('ibn abbas') || n.includes('ibnu abbas') || (n.includes('abbas') && n.includes('abd')), id: 'Abdullah bin Abbas' },
+    { test: n => n.includes('anas') && n.includes('malik') && !n.includes('imam'), id: 'Anas bin Malik al-Anshari' },
+    { test: n => n.includes('jabir') && n.includes('abd'),            id: 'Jabir bin Abdullah al-Anshari' },
+    { test: n => n.includes("sa'id") && n.includes('khudri'),         id: "Abu Sa'id al-Khudri" },
+    { test: n => n.includes('abu said') && n.includes('khudr'),       id: "Abu Sa'id al-Khudri" },
+    { test: n => n.includes('ibn masud') || n.includes("mas'ud"),     id: "Abdullah bin Mas'ud" },
+    { test: n => n.includes('malik') && n.includes('anas') && n.includes('imam'), id: 'Imam Malik bin Anas' },
+    { test: n => n.includes('malik') && n.includes('anas') && !n.includes('imam'), id: 'Imam Malik bin Anas' },
+    { test: n => n.includes('bukhari'),                               id: 'Imam al-Bukhari' },
+    { test: n => n.includes('muslim') && (n.includes('hajjaj') || n.includes('imam')), id: 'Imam Muslim ibn al-Hajjaj' },
+    { test: n => n.includes('abu daw') || n.includes('dawood') || n.includes('dawud'), id: 'Imam Abu Dawood' },
+    { test: n => n.includes('tirmidh'),                               id: 'Imam at-Tirmidhi' },
+    { test: n => n.includes("nasa'i") || n.includes('nasai'),         id: "Imam an-Nasa'i" },
+    { test: n => n.includes('ibn majah'),                             id: 'Imam Ibn Majah' },
+    { test: n => n.includes('ahmad') && n.includes('hanbal'),         id: 'Imam Ahmad bin Hanbal' },
+    { test: n => n.includes('zuhri'),                                 id: 'Ibn Shihab az-Zuhri' },
+    { test: n => n.includes("nafi'") || (n.startsWith('nafi') && n.includes('umar')), id: "Nafi' Maula Ibnu Umar" },
+    { test: n => n.includes('salim') && n.includes('abd'),            id: 'Salim bin Abdullah bin Umar' },
+    { test: n => n.includes('urwah') || n.includes('urwa'),           id: 'Urwah bin az-Zubair' },
+    { test: n => n.includes("sa'id") && n.includes('jubair'),         id: "Sa'id bin Jubair" },
+    { test: n => n.includes('sufyan') && n.includes('uyayn'),         id: 'Sufyan bin Uyainah' },
+    { test: n => n.includes('sufyan') && n.includes('thawri'),        id: 'Sufyan ats-Tsauri' },
+    { test: n => n.includes('yahya') && (n.includes('said') || n.includes("sa'id")), id: "Yahya bin Sa'id al-Anshari" },
+    { test: n => n.includes('ali') && n.includes('talib'),            id: 'Ali bin Abi Thalib' },
+    { test: n => n.includes('qutaibah') || n.includes('qutaybah'),    id: "Qutaibah bin Sa'id" },
+    { test: n => n.includes('atho') || (n.includes('ata') && n.includes('yasar')), id: "Atho' bin Yasar" },
+    { test: n => n.includes('hilal') && n.includes('ali'),            id: 'Hilal bin Ali' },
+    { test: n => n.includes('abdullah') && n.includes('dinar'),       id: 'Abdullah bin Dinar' },
+    { test: n => n.includes('ismail') && n.includes('jafar'),         id: "Ismail bin Ja'far al-Madani" }
+  ];
+
+  function getIdName(r) {
+    if (r.name_id && r.name_id.trim().length > 2) return r.name_id;
+    const en = (r.name_en || '').toLowerCase();
+    const match = idNameMap.find(m => m.test(en));
+    return match ? match.id : (r.name_en || 'Perawi');
+  }
+
   function getCleanEnglishName(r) {
     if (r.id === 'Q6732822' || r.name_en === 'Q6732822') return 'Anas bin Malik (رضي الله عنه)';
     const isId = (window.LangSystem && window.LangSystem.isIdMode());
-    if (isId && r.name_id) return r.name_id;
+    if (isId) return getIdName(r);
     return r.name_en || r.name_id || 'Scholar';
   }
 
@@ -339,7 +383,7 @@
       }
 
       if (searchQuery) {
-        url += `&name_en=ilike.*${encodeURIComponent(searchQuery)}*`;
+        url += `&or=(name_en.ilike.*${encodeURIComponent(searchQuery)}*,name_id.ilike.*${encodeURIComponent(searchQuery)}*)`;
       }
 
       const res = await fetch(url, {
@@ -456,7 +500,7 @@
               <span>&bull;</span>
               <span class="text-primary dark:text-white">${escapeHtml(hadithCountStr)}</span>
             </div>
-            <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-2 line-clamp-2">${escapeHtml(r.bio_en || (r.kunya_en ? `Kunyah: ${r.kunya_en}` : (isId ? 'Perawi otentik dalam kumpulan kitab Hadits utama.' : 'Authentic transmitter in canonical Hadith collections.')))}</p>
+            <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-2 line-clamp-2">${escapeHtml(isId ? (r.bio_id || (r.bio_en ? r.bio_en : `Perawi otentik yang tercatat meriwayatkan ${r.hadith_count || 0} hadits dalam koleksi kitab hadits klasik.`)) : (r.bio_en || `Authentic transmitter recorded in ${r.hadith_count || 0} narrations across canonical Hadith collections.`))}</p>
           </div>
           <div class="mt-4 pt-3 border-t border-outline-variant/10 dark:border-[#334155] flex justify-between items-center text-xs font-semibold text-secondary dark:text-[#10b981]">
             <span>${escapeHtml(booksStr)}</span>
