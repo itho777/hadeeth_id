@@ -1870,30 +1870,43 @@ async function loadSanadChain() {
 
       // Reverse so chain runs Companion (Node 1) -> Collector (Node N)
       extractedNames.reverse().forEach((rawiName, idx) => {
-        const normName = rawiName.toLowerCase().trim();
+        const normNameKey = normalizeRawiNameKey(rawiName);
         let matched = null;
 
-        if (normName.includes('aisyah') || normName.includes('aisha')) {
+        if (normNameKey.includes('aisyah') || normNameKey.includes('aisha')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_aisha_bint_abi_bakr');
-        } else if (normName.includes('abdurrahman') && normName.includes('qasim')) {
+        } else if (normNameKey.includes('abdurrahman') && normNameKey.includes('qasim')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_abdurrahman_bin_al_qasim');
-        } else if (normName.includes('abdullah bin yusuf') || normName.includes('yusuf')) {
+        } else if (normNameKey.includes('abdullah bin yusuf') || normNameKey.includes('yusuf')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_abdullah_bin_yusuf');
-        } else if (normName === 'malik' || normName === 'imam malik' || normName === 'malik bin anas') {
+        } else if (normNameKey.includes('humaid') || normNameKey.includes('humayd') || normNameKey.includes('humai')) {
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_al_humaydi');
+        } else if (normNameKey === 'malik' || normNameKey.includes('imam malik') || normNameKey.includes('malik bin anas')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_malik_bin_anas');
-        } else if (normName.includes('anas bin malik') || normName === 'anas') {
+        } else if (normNameKey.includes('anas bin malik') || normNameKey === 'anas') {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_anas_bin_malik');
-        } else if (normName.includes('ibnu umar') || normName.includes('ibn umar')) {
+        } else if (normNameKey.includes('ibnu umar') || normNameKey.includes('ibn umar')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_ibn_umar');
-        } else if (normName.includes('ikrimah')) {
+        } else if (normNameKey.includes('ikrimah')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_ikrimah_bin_khalid');
-        } else if (normName.includes('hanzhalah')) {
+        } else if (normNameKey.includes('hanzhalah') || normNameKey.includes('hanzalah')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_hanzalah_bin_abu_sufyan');
+        } else if (normNameKey.includes('alqam') || normNameKey.includes('waq')) {
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_alqama_bin_waqqas');
+        } else if (normNameKey.includes('umar')) {
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_umar_ibn_al_khattab');
+        } else if (normNameKey.includes('sufyan')) {
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_sufyan_al_thawri');
+        } else if (normNameKey.includes('yahya')) {
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_yahya_bin_said');
+        } else if (normNameKey.includes('muhammad') && normNameKey.includes('ibrahim')) {
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_muhammad_bin_ibrahim');
         } else {
           matched = rawiDict.find(d => 
-            d.en.toLowerCase() === normName ||
-            normName.includes(d.en.toLowerCase()) ||
-            (d.id && normName.includes(d.id.toLowerCase()))
+            normalizeRawiNameKey(d.en) === normNameKey ||
+            normNameKey.includes(normalizeRawiNameKey(d.en)) ||
+            (d.id && normNameKey.includes(normalizeRawiNameKey(d.id))) ||
+            (d.id && normalizeRawiNameKey(d.id).includes(normNameKey))
           );
         }
 
@@ -2081,6 +2094,15 @@ async function loadSanadChain() {
   }
 }
 
+function normalizeRawiNameKey(str) {
+  return (str || '')
+    .toLowerCase()
+    .replace(/['`’\u2019]/g, '')
+    .replace(/[-_]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 /**
  * Helper to get clean Indonesian Latin name for Rawi/Scholar
  */
@@ -2149,10 +2171,23 @@ function getArabicScriptForRawi(latinOrAr) {
     return rawStr.trim();
   }
 
-  const clean = rawStr.replace(/['`’]/g, '').trim();
-  const lower = clean.toLowerCase();
+  const normKey = normalizeRawiNameKey(rawStr);
 
   const map = {
+    "umar bin al khaththab": "عمر بن الخطاب",
+    "umar bin al khattab": "عمر بن الخطاب",
+    "umar bin al-khattab": "عمر بن الخطاب",
+    "umar bin al-khaththab": "عمر بن الخطاب",
+    "alqamah bin waqash al laitsi": "علقمة بن وقاص الليثي",
+    "alqamah bin waqqash al laitsi": "علقمة بن وقاص الليثي",
+    "alqama bin waqqas al laythi": "علقمة بن وقاص الليثي",
+    "alqama bin waqqas": "علقمة بن وقاص الليثي",
+    "alqamah bin waqqas": "علقمة بن وقاص الليثي",
+    "alqamah bin waqqash": "علقمة بن وقاص الليثي",
+    "al humaidi abdullah bin az zubair": "عبد الله بن الزبير الحميدي",
+    "abdullah bin az-zubair al-humaydi": "عبد الله بن الزبير الحميدي",
+    "al-humaydi": "الحميدي",
+    "al humaydi": "الحميدي",
     "qutaibah bin said": "قتيبة بن سعيد",
     "qutaibah bin sa'id": "قتيبة بن سعيد",
     "qutaybah bin said": "قتيبة بن سعيد",
@@ -2185,18 +2220,10 @@ function getArabicScriptForRawi(latinOrAr) {
     "abu zanad": "أبو الزناد",
     "abu hurairah": "أبو هريرة",
     "abu huraira": "أبو هريرة",
-    "alqama bin waqqas": "علقمة بن وقاص",
-    "alqamah bin waqqas": "علقمة بن وقاص",
-    "alqamah bin waqqash": "علقمة بن وقاص",
-    "abdullah bin az-zubair al-humaydi": "عبد الله بن الزبير الحميدي",
-    "al-humaydi": "الحميدي",
-    "al humaydi": "الحميدي",
     "sufyan bin 'uyaynah": "سفيان بن عيينة",
     "sufyan bin uyainah": "سفيان بن عيينة",
     "yahya bin sa'id": "يحيى بن سعيد الأنصاري",
     "muhammad bin ibrahim": "محمد بن إبراهيم التيمي",
-    "umar bin al-khattab": "عمر بن الخطاب",
-    "umar bin al-khaththab": "عمر بن الخطاب",
     "aisha bint abi bakr": "عائشة بنت أبي بكر",
     "aisyah binti abu bakar": "عائشة بنت أبي بكر",
     "ibn umar": "عبد الله بن عمر",
@@ -2220,11 +2247,21 @@ function getArabicScriptForRawi(latinOrAr) {
   };
 
   for (const [k, v] of Object.entries(map)) {
-    if (lower.includes(k)) return v;
+    const kNorm = normalizeRawiNameKey(k);
+    if (normKey.includes(kNorm) || kNorm.includes(normKey)) return v;
   }
 
   // Word-by-word Arabic Transliteration engine for unmapped narrators
   const wordMap = {
+    'khaththab': 'الخطاب',
+    'khattab': 'الخطاب',
+    'alqamah': 'علقمة',
+    'alqama': 'علقمة',
+    'waqqash': 'وقاص',
+    'waqash': 'وقاص',
+    'waqqas': 'وقاص',
+    'laitsi': 'الليثي',
+    'laythi': 'الليثي',
     'qutaibah': 'قتيبة',
     'qutaybah': 'قتيبة',
     'bin': 'بن',
