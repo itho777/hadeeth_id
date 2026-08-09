@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_63"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_58"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -107,31 +107,19 @@
     <!-- Quick Info Specs Grid (Requirements 1 - 5) -->
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs">
       <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
-        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">
-          <span data-lang-en>Kunyah / Kuniyah (أبو/أم)</span>
-          <span data-lang-id>Kuniyah / Gelar (أبو/أم)</span>
-        </span>
+        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">Kunyah / Kuniyah (أبو/أم)</span>
         <span id="profile-kunyah" class="font-bold text-primary dark:text-white text-sm">Abu Hafs (أبو حفص)</span>
       </div>
       <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
-        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">
-          <span data-lang-en>Settled In (بلد الإقامة)</span>
-          <span data-lang-id>Tempat Tinggal / Wafat (بلد الإقامة)</span>
-        </span>
+        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">Settled In (بلد الإقامة)</span>
         <span id="profile-settled" class="font-bold text-primary dark:text-white text-sm">Madinah al-Munawwarah</span>
       </div>
       <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
-        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">
-          <span data-lang-en>Birth & Death Year</span>
-          <span data-lang-id>Tahun Lahir & Wafat</span>
-        </span>
+        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">Birth & Death Year</span>
         <span id="profile-dates" class="font-bold text-primary dark:text-white text-sm">583 CE – 23 AH / 644 CE</span>
       </div>
       <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
-        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">
-          <span data-lang-en>Parents & Lineage</span>
-          <span data-lang-id>Orang Tua & Nasab</span>
-        </span>
+        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">Parents & Lineage</span>
         <span id="profile-parents" class="font-bold text-primary dark:text-white text-sm">Al-Khattab ibn Nufayl / Hantamah</span>
       </div>
     </div>
@@ -399,7 +387,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_63"></script>
+<script src="js/app.js?v=20260808_58"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -476,46 +464,12 @@
 
   async function loadRawiProfile(id) {
     try {
-      const isId = (window.LangSystem && window.LangSystem.isIdMode());
-
-      // ── Local fallback dictionary ── complete bilingual metadata for core scholars ──
-      const localRawiDict = {
-        'rawi_umar_ibn_al_khattab':   { name_en:"'Umar bin Al-Khattab", name_id:"'Umar bin Al-Khattab", name_ar:"عمر بن الخطاب", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", grade_id:"Sahabat Adil (Keadilan Utuh)", nasab:"'Umar ibn al-Khattab ibn Nufayl al-Qurashi", kunyah:"Abu Hafs (أبو حفص)", settled:"Madinah al-Munawwarah", dates:"23 AH / 644 CE", hadith_count:"537", bio:"Second Caliph of Islam. Noted for justice, wisdom, and meticulous verification of narrations. Transmitted 537 Hadiths covering governance, prayer, and intention.", suffix:"رضي الله عنه" },
-        'rawi_aisha_bint_abi_bakr':   { name_en:"'Aisha bint Abi Bakr", name_id:"'Aisyah binti Abu Bakr", name_ar:"عائشة بنت أبي بكر", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", grade_id:"Sahabat Adil (Keadilan Utuh)", nasab:"'Aisha bint Abi Bakr al-Siddiq al-Qurashiyya", kunyah:"Umm Abdillah (أم عبد الله)", settled:"Madinah al-Munawwarah", dates:"58 AH / 678 CE", hadith_count:"2,420", bio:"Mother of the Believers. One of the most prolific transmitters of Hadith and the foremost female Islamic jurist. Narrated 2,420 traditions spanning all branches of Islamic law and ethics.", suffix:"رضي الله عنها" },
-        'rawi_abu_hurairah':          { name_en:"Abu Hurairah", name_id:"Abu Hurairah (Abdurrahman bin Sakhr ad-Dausi)", name_ar:"أبو هريرة", avatar:"أ", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", grade_id:"Sahabat Adil (Keadilan Utuh)", nasab:"'Abd al-Rahman ibn Sakhr al-Dawsi al-Zahrani", kunyah:"Abu Hurairah (أبو هريرة)", settled:"Madinah al-Munawwarah / Bahrain", dates:"57 AH / 678 CE", hadith_count:"5,374", bio:"The most prolific transmitter of Hadith among all Sahabah. Spent three years in close proximity to the Prophet ﷺ, devoting himself entirely to memorizing narrations.", suffix:"رضي الله عنه" },
-        'rawi_ibn_umar':              { name_en:"Ibnu 'Umar", name_id:"Ibnu 'Umar (Abdullah bin 'Umar bin al-Khattab)", name_ar:"عبد الله بن عمر", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", grade_id:"Sahabat Adil (Keadilan Utuh)", nasab:"'Abd Allah ibn 'Umar ibn al-Khattab al-Qurashi", kunyah:"Abu Abdurrahman (أبو عبد الرحمن)", settled:"Madinah al-Munawwarah", dates:"73 AH / 693 CE", hadith_count:"2,630", bio:"Son of Caliph 'Umar. Renowned for meticulous adherence to prophetic Sunnah and refusal to narrate anything he was uncertain about.", suffix:"رضي الله عنه" },
-        'rawi_ibn_abbas':             { name_en:"'Abdullah bin 'Abbas", name_id:"'Abdullah bin 'Abbas", name_ar:"عبد الله بن عباس", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", grade_id:"Sahabat Adil (Keadilan Utuh)", nasab:"'Abd Allah ibn al-'Abbas ibn 'Abd al-Muttalib al-Hashimi", kunyah:"Abu al-Abbas (أبو العباس)", settled:"Makkah / Ta'if", dates:"68 AH / 687 CE", hadith_count:"1,660", bio:"Cousin of Prophet Muhammad ﷺ, titled Hibr al-Ummah (Scholar of the Nation) and Tarjuman al-Qur'an (Interpreter of the Qur'an). He received the Prophet's prayer for deep understanding of religion.", suffix:"رضي الله عنه" },
-        'rawi_anas_bin_malik':        { name_en:"Anas bin Malik", name_id:"Anas bin Malik", name_ar:"أنس بن مالك", avatar:"أ", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", grade_id:"Sahabat Adil (Keadilan Utuh)", nasab:"Anas ibn Malik ibn al-Nadr al-Ansari al-Khazraji", kunyah:"Abu Hamzah (أبو حمزة)", settled:"Basra", dates:"93 AH / 712 CE", hadith_count:"2,286", bio:"Personal servant of the Prophet ﷺ in Madinah for ten years. One of the last major Sahabah to die, preserving prophetic traditions for the next generation.", suffix:"رضي الله عنه" },
-        'rawi_jaber_bin_abdullah':    { name_en:"Jabir bin 'Abdullah", name_id:"Jabir bin 'Abdullah", name_ar:"جابر بن عبد الله", avatar:"ج", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", grade_id:"Sahabat Adil (Keadilan Utuh)", nasab:"Jabir ibn 'Abd Allah ibn 'Amr al-Ansari al-Khazraji", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Madinah al-Munawwarah", dates:"78 AH / 697 CE", hadith_count:"1,540", bio:"Anshari Companion who participated in 19 expeditions. Held prominent Hadith study circles at the Prophet's Mosque.", suffix:"رضي الله عنه" },
-        'rawi_abu_said_al_khudri':    { name_en:"Abu Sa'id al-Khudri", name_id:"Abu Sa'id al-Khudri", name_ar:"أبو سعيد الخدري", avatar:"أ", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", grade_id:"Sahabat Adil (Keadilan Utuh)", nasab:"Sa'd ibn Malik ibn Sinan al-Ansari al-Khazraji", kunyah:"Abu Sa'id (أبو سعيد)", settled:"Madinah al-Munawwarah", dates:"74 AH / 693 CE", hadith_count:"1,170", bio:"Young Companion who participated in the Battle of Uhud and subsequent expeditions. Known for narrating Hadiths on prayer, Ramadan, and eschatology.", suffix:"رضي الله عنه" },
-        'rawi_abdullah_bin_masud':    { name_en:"'Abdullah bin Mas'ud", name_id:"'Abdullah bin Mas'ud", name_ar:"عبد الله بن مسعود", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", grade_id:"Sahabat Adil (Keadilan Utuh)", nasab:"'Abd Allah ibn Mas'ud al-Hudhali", kunyah:"Abu 'Abd al-Rahman (أبو عبد الرحمن)", settled:"Kufah / Madinah", dates:"32 AH / 652 CE", hadith_count:"848", bio:"One of the earliest converts to Islam. A trusted custodian of the Qur'an and founding jurist of Kufah, whose legal methodology laid the foundation for the Hanafi school.", suffix:"رضي الله عنه" },
-        'rawi_malik_bin_anas':        { name_en:"Imam Malik bin Anas", name_id:"Imam Malik bin Anas", name_ar:"مالك بن أنس", avatar:"م", gen:"Tabi' al-Tabi'in", gen_id:"Tabi' al-Tabi'in", grade:"Hafiz / Imam", grade_id:"Hafiz / Imam", nasab:"Malik ibn Anas ibn Malik al-Asbahi", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Madinah al-Munawwarah", dates:"179 AH / 795 CE", hadith_count:"1,720", bio:"Imam of Madinah and founder of the Maliki legal school. Compiled Al-Muwatta, the earliest surviving legal Mushannaf work. Imam al-Shafi'i said: 'Malik is the proof of God upon His creation after the Tabi'in.'", suffix:"رحمه الله" },
-        'rawi_al_bukhari':            { name_en:"Imam Muhammad al-Bukhari", name_id:"Imam Muhammad al-Bukhari", name_ar:"محمد بن إسماعيل البخاري", avatar:"خ", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Amir al-Mu'minin fi al-Hadith", grade_id:"Amirul Mukminin fil Hadits", nasab:"Muhammad ibn Isma'il ibn Ibrahim al-Ju'fi al-Bukhari", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Bukhara / Nishapur", dates:"194–256 AH / 810–870 CE", hadith_count:"7,563", bio:"Compiler of Sahih al-Bukhari — universally acknowledged the most authentic Hadith collection after the Qur'an. Memorized 600,000 narrations and selected only 7,563 into his Sahih after Ghusl and prayer.", suffix:"رحمه الله" },
-        'rawi_muslim_ibn_hajjaj':     { name_en:"Imam Muslim ibn al-Hajjaj", name_id:"Imam Muslim bin al-Hajjaj", name_ar:"مسلم بن الحجاج", avatar:"م", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Amir al-Mu'minin fi al-Hadith", grade_id:"Amirul Mukminin fil Hadits", nasab:"Muslim ibn al-Hajjaj ibn Muslim al-Qushayri al-Naysaburi", kunyah:"Abu al-Husayn (أبو الحسين)", settled:"Nishapur", dates:"204–261 AH / 820–875 CE", hadith_count:"7,500", bio:"Author of Sahih Muslim, second in rank after Sahih al-Bukhari. Renowned for grouping narrations thematically and arranging chains by quality. A student of Imam al-Bukhari himself.", suffix:"رحمه الله" },
-        'rawi_abu_dawud':             { name_en:"Imam Abu Dawood", name_id:"Imam Abu Daud", name_ar:"أبو داود السجستاني", avatar:"د", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Imam Hafiz", grade_id:"Imam Hafiz", nasab:"Sulayman ibn al-Ash'ath ibn Ishaq al-Azdi al-Sijistani", kunyah:"Abu Dawood (أبو داود)", settled:"Basra", dates:"202–275 AH / 817–889 CE", hadith_count:"5,274", bio:"Compiler of Sunan Abu Dawood, focused on legal (Ahkam) Hadiths used by jurists. Imam Ahmad praised him saying: 'No one is more knowledgeable in Hadith fiqh than Abu Dawood.'", suffix:"رحمه الله" },
-        'rawi_al_tirmidhi':           { name_en:"Imam al-Tirmidhi", name_id:"Imam at-Tirmidzi", name_ar:"أبو عيسى الترمذي", avatar:"ت", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Imam Hafiz", grade_id:"Imam Hafiz", nasab:"Muhammad ibn 'Isa ibn Sawrah ibn Musa al-Sulami al-Tirmidhi", kunyah:"Abu 'Isa (أبو عيسى)", settled:"Termez (Tirmidh)", dates:"209–279 AH / 824–892 CE", hadith_count:"3,956", bio:"Compiler of Jami' al-Tirmidhi. Pioneer of Hadith grading terminology — the first to systematically use 'Hasan' as a technical grade. Assessed narrator reliability and legal opinions in each chapter.", suffix:"رحمه الله" },
-        'rawi_al_nasai':              { name_en:"Imam an-Nasa'i", name_id:"Imam an-Nasa'i", name_ar:"أحمد بن شعيب النسائي", avatar:"ن", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Imam Hafiz", grade_id:"Imam Hafiz", nasab:"Ahmad ibn Shu'ayb ibn 'Ali al-Khurasani al-Nasa'i", kunyah:"Abu 'Abd al-Rahman (أبو عبد الرحمن)", settled:"Egypt / Ramla", dates:"215–303 AH / 830–915 CE", hadith_count:"5,758", bio:"Compiler of Sunan an-Nasa'i. Known for the strictest narrator authentication criteria among the Sunan compilers. Al-Dhahabi said his collection is second only to the Sahihain in authenticity.", suffix:"رحمه الله" },
-        'rawi_ibn_majah':             { name_en:"Imam Ibn Majah", name_id:"Imam Ibn Majah", name_ar:"ابن ماجه القزويني", avatar:"م", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Imam Hafiz", grade_id:"Imam Hafiz", nasab:"Muhammad ibn Yazid al-Qazwini", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Qazvin", dates:"209–273 AH / 824–887 CE", hadith_count:"4,341", bio:"Compiler of Sunan Ibn Majah — the sixth canonical book of Kutub al-Sittah. Notable for 1,339 unique narrations (zawa'id) not found in the other five books.", suffix:"رحمه الله" },
-        'rawi_ahmad':                 { name_en:"Imam Ahmad bin Hanbal", name_id:"Imam Ahmad bin Hanbal", name_ar:"أحمد بن حنبل", avatar:"أ", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Imam Ahl al-Sunnah", grade_id:"Imam Ahlus Sunnah", nasab:"Ahmad ibn Muhammad ibn Hanbal al-Shaybani", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Baghdad", dates:"164–241 AH / 780–855 CE", hadith_count:"28,000+", bio:"Founder of the Hanbali school and compiler of Musnad Ahmad — the largest Musnad collection arranged by Companion. Endured imprisonment for refusing to accept that the Qur'an was created.", suffix:"رحمه الله" },
-        'rawi_al_zuhri':              { name_en:"Ibn Shihab al-Zuhri", name_id:"Ibn Shihab al-Zuhri", name_ar:"ابن شهاب الزهري", avatar:"ز", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Hafiz", grade_id:"Tsiqah Hafiz", nasab:"Muhammad ibn Muslim ibn 'Ubayd Allah ibn Shihab al-Zuhri", kunyah:"Abu Bakr (أبو بكر)", settled:"Madinah al-Munawwarah", dates:"124 AH / 742 CE", hadith_count:"2,200", bio:"Master Tabi'i scholar who pioneered the formal codification of Hadith under Caliph 'Umar ibn 'Abd al-'Aziz. Transmitter of the famous 'Innama al-A'malu bi al-Niyyat' chain.", suffix:"رحمه الله" },
-        'rawi_nafi':                  { name_en:"Nafi' Maula Ibn 'Umar", name_id:"Nafi' Maula Ibnu 'Umar", name_ar:"نافع مولى ابن عمر", avatar:"ن", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Thabt", grade_id:"Tsiqah Tsabit", nasab:"Nafi' al-'Adawi, Mawla of Ibn 'Umar", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Madinah al-Munawwarah", dates:"117 AH / 735 CE", hadith_count:"1,400", bio:"Key link in the Golden Chain of Transmission: Imam Malik → Nafi' → Ibn 'Umar. Al-Bukhari took 80 narrations from Nafi' through this chain.", suffix:"رحمه الله" },
-        'rawi_salim':                 { name_en:"Salim bin 'Abdullah", name_id:"Salim bin 'Abdullah", name_ar:"سالم بن عبد الله", avatar:"س", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Faqih", grade_id:"Tsiqah Faqih", nasab:"Salim ibn 'Abd Allah ibn 'Umar ibn al-Khattab", kunyah:"Abu 'Umar (أبو عمر)", settled:"Madinah al-Munawwarah", dates:"106 AH / 725 CE", hadith_count:"950", bio:"One of the Seven Fuqaha of Madinah. Grandson of Caliph 'Umar and key transmitter of his grandfather's traditions through his father Ibn 'Umar.", suffix:"رحمه الله" },
-        'rawi_urwah':                 { name_en:"'Urwah bin al-Zubayr", name_id:"'Urwah bin al-Zubayr", name_ar:"عروة بن الزبير", avatar:"ع", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Faqih", grade_id:"Tsiqah Faqih", nasab:"'Urwah ibn al-Zubayr ibn al-'Awwam al-Qurashi", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Madinah al-Munawwarah", dates:"94 AH / 713 CE", hadith_count:"1,300", bio:"Nephew of 'Aisha bint Abi Bakr and primary transmitter of her narrations. One of the Seven Fuqaha of Madinah and founder of Maghazi (Prophetic biography) literature.", suffix:"رحمه الله" },
-        'rawi_said_bin_jubair':       { name_en:"Sa'id bin Jubair", name_id:"Sa'id bin Jubair", name_ar:"سعيد بن جبير", avatar:"س", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Imam", grade_id:"Tsiqah Imam", nasab:"Sa'id ibn Jubayr ibn Hisham al-Asadi al-Walabi", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Kufah", dates:"95 AH / 714 CE", hadith_count:"750", bio:"Top student of Ibn 'Abbas. Considered the greatest Tabi'i jurist of Kufah. Martyred by al-Hajjaj ibn Yusuf for refusing to swear allegiance.", suffix:"رحمه الله" },
-        'rawi_sufyan_al_thawri':      { name_en:"Sufyan bin 'Uyaynah", name_id:"Sufyan bin 'Uyaynah", name_ar:"سفيان بن عيينة", avatar:"س", gen:"Tabi' al-Tabi'in", gen_id:"Tabi' al-Tabi'in", grade:"Thiqah Hafiz", grade_id:"Tsiqah Hafiz", nasab:"Sufyan ibn 'Uyaynah ibn Abi 'Imran al-Hilali", kunyah:"Abu Muhammad (أبو محمد)", settled:"Makkah / Kufah", dates:"107–198 AH / 725–814 CE", hadith_count:"1,250", bio:"Master Hadith scholar of Makkah and direct teacher of Imam al-Shafi'i and Yahya ibn Ma'in. Imam Ahmad said: 'Sufyan ibn 'Uyaynah was the most knowledgeable person in Hadith in the Hijaz.'", suffix:"رحمه الله" },
-        'rawi_yahya_bin_said':        { name_en:"Yahya bin Sa'id al-Ansari", name_id:"Yahya bin Sa'id al-Ansari", name_ar:"يحيى بن سعيد الأنصاري", avatar:"ي", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Thabt", grade_id:"Tsiqah Tsabit", nasab:"Yahya ibn Sa'id ibn Qays al-Ansari al-Khazraji", kunyah:"Abu Sa'id (أبو سعيد)", settled:"Madinah / Iraq", dates:"143 AH / 760 CE", hadith_count:"820", bio:"Judge of Madinah and central transmitter of the 'Innama al-A'malu bi al-Niyyat' Hadith chain — the opening Hadith of Sahih al-Bukhari. Imam Ahmad called him: 'Imam, Hujjah.'", suffix:"رحمه الله" },
-        'rawi_abdullah_bin_dinar':    { name_en:"Abdullah bin Dinar", name_id:"Abdullah bin Dinar", name_ar:"عبد الله بن دينار", avatar:"ع", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Mutqin", grade_id:"Tsiqah Mutqin", nasab:"'Abd Allah ibn Dinar al-'Adawi, Mawla of Ibn 'Umar", kunyah:"Abu 'Abd al-Rahman (أبو عبد الرحمن)", settled:"Madinah al-Munawwarah", dates:"127 AH / 745 CE", hadith_count:"340", bio:"Trustworthy Madinan rawi who narrated extensively from Ibn 'Umar. Ibn Hajar in Taqrib rated him Thiqah Mutqin (precise and reliable).", suffix:"رحمه الله" },
-        'rawi_ismail_bin_jafar':      { name_en:"Isma'il bin Ja'far", name_id:"Isma'il bin Ja'far", name_ar:"إسماعيل بن جعفر", avatar:"إ", gen:"Tabi' al-Tabi'in", gen_id:"Tabi' al-Tabi'in", grade:"Thiqah Thabt", grade_id:"Tsiqah Tsabit", nasab:"Isma'il ibn Ja'far ibn Abi Kathir al-Ansari al-Madani", kunyah:"Abu Ishaq (أبو إسحاق)", settled:"Madinah / Baghdad", dates:"180 AH / 796 CE", hadith_count:"400", bio:"Madinan Qur'an reciter and Hadith transmitter who settled in Baghdad. Narrated from Malik ibn Anas and transmitted to Imam al-Bukhari and Imam Muslim.", suffix:"رحمه الله" },
-        'rawi_qutaibah_bin_said':     { name_en:"Qutaibah bin Sa'id", name_id:"Qutaibah bin Sa'id", name_ar:"قتيبة بن سعيد", avatar:"ق", gen:"Tabi' al-Tabi'in", gen_id:"Tabi' al-Tabi'in", grade:"Thiqah Thabt", grade_id:"Tsiqah Tsabit", nasab:"Qutaybah ibn Sa'id ibn Jamil al-Thaqafi al-Baghawi", kunyah:"Abu Raja' (أبو رجاء)", settled:"Baghlan / Kufah", dates:"148–240 AH / 765–855 CE", hadith_count:"1,280", bio:"Major direct sheikh of Imam al-Bukhari, Muslim, Abu Dawood, at-Tirmidhi, and an-Nasa'i. Traveled extensively collecting narrations from Iraq, Hijaz, and Khurasan.", suffix:"رحمه الله" },
-        'rawi_atho_bin_yasar':        { name_en:"Atho' bin Yasar", name_id:"Atho' bin Yasar", name_ar:"عطاء بن يسار", avatar:"ع", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Fadil", grade_id:"Tsiqah Fadhil", nasab:"'Ata' ibn Yasar al-Hilali, Mawla of Maymunah", kunyah:"Abu Muhammad (أبو محمد)", settled:"Madinah al-Munawwarah", dates:"103 AH / 721 CE", hadith_count:"205", bio:"Devout Madinan Tabi'i and freed-man of Maymunah (wife of the Prophet ﷺ). Narrated from Abu Hurairah, Abu Sa'id al-Khudri, and 'Aisha.", suffix:"رحمه الله" },
-        'rawi_hilal_bin_ali':         { name_en:"Hilal bin Ali", name_id:"Hilal bin Ali", name_ar:"هلال بن علي", avatar:"ه", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah", grade_id:"Tsiqah", nasab:"Hilal ibn 'Ali ibn Usamah al-'Adawi", kunyah:"Abu Maimunah (أبو ميمونة)", settled:"Madinah al-Munawwarah", dates:"120 AH / 738 CE", hadith_count:"150", bio:"Authentic Madinan rawi who transmitted from Atho' bin Yasar and Anas bin Malik. Ibn Hajar rated him Thiqah. His narrations appear in Sahih al-Bukhari and Sahih Muslim.", suffix:"رحمه الله" }
-      };
-
       let res = await fetch(`${supabaseUrl}/rest/v1/rijal?id=eq.${id}&select=*`, {
         headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
       });
       let data = res.ok ? await res.json() : [];
 
+      // Fallback: search by name if exact ID not found
       if (!data || data.length === 0) {
         const cleanName = id.replace(/^rawi_/, '').replace(/_/g, ' ');
         res = await fetch(`${supabaseUrl}/rest/v1/rijal?or=(name_id.ilike.*${encodeURIComponent(cleanName)}*,name_en.ilike.*${encodeURIComponent(cleanName)}*)&select=*&limit=1`, {
@@ -524,110 +478,110 @@
         if (res.ok) data = await res.json();
       }
 
-      let rawi = (data && data.length > 0) ? data[0] : null;
-      const local = localRawiDict[id] || localRawiDict[(id || '').toLowerCase()] || localRawiDict['rawi_' + (id || '').toLowerCase()] || (id.includes('ahmad') ? localRawiDict['rawi_ahmad'] : null);
+      const isId = (window.LangSystem && window.LangSystem.isIdMode());
 
-      if (!rawi && local) {
-        rawi = {
-          id: id,
-          name_en: local.name_en,
-          name_id: local.name_id,
-          name_ar: local.name_ar,
-          generation: local.gen,
-          grade: local.grade,
-          nasab_en: local.nasab,
-          kunya_en: local.kunyah,
-          region: local.settled,
-          died_ah: local.dates,
-          bio_en: local.bio,
-          avatar: local.avatar,
-          suffix: local.suffix
-        };
-      } else if (rawi && local) {
+      // ── Local fallback dictionary ── used when Supabase has no row for this id ──
+      const localRawiDict = {
+        'rawi_umar_ibn_al_khattab':   { name_en:"'Umar bin Al-Khattab", name_ar:"عمر بن الخطاب", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"'Umar ibn al-Khattab ibn Nufayl al-Qurashi", kunyah:"Abu Hafs (أبو حفص)", settled:"Madinah al-Munawwarah", dates:"Died 23 AH / 644 CE", hadith_count:"537", bio:"Second Caliph of Islam. Noted for justice, wisdom, and meticulous verification of narrations. Transmitted 537 Hadiths covering governance, prayer, and intention.", suffix:"رضي الله عنه" },
+        'rawi_aisha_bint_abi_bakr':   { name_en:"'Aisha bint Abi Bakr", name_ar:"عائشة بنت أبي بكر", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"'Aisha bint Abi Bakr al-Siddiq al-Qurashiyya", kunyah:"Umm Abdillah (أم عبد الله)", settled:"Madinah al-Munawwarah", dates:"Died 58 AH / 678 CE", hadith_count:"2,420", bio:"Mother of the Believers. One of the most prolific transmitters of Hadith and the foremost female Islamic jurist. Narrated 2,420 traditions spanning all branches of Islamic law and ethics.", suffix:"رضي الله عنها" },
+        'rawi_abu_hurairah':          { name_en:"Abu Hurairah", name_ar:"أبو هريرة", avatar:"أ", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"'Abd al-Rahman ibn Sakhr al-Dawsi al-Zahrani", kunyah:"Abu Hurairah (أبو هريرة)", settled:"Madinah al-Munawwarah / Bahrain", dates:"Died 57 AH / 678 CE", hadith_count:"5,374", bio:"The most prolific transmitter of Hadith among all Sahabah. Spent three years in close proximity to the Prophet ﷺ, devoting himself entirely to memorizing narrations.", suffix:"رضي الله عنه" },
+        'rawi_ibn_umar':              { name_en:"Ibnu 'Umar", name_ar:"عبد الله بن عمر", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"'Abd Allah ibn 'Umar ibn al-Khattab al-Qurashi", kunyah:"Abu Abdurrahman (أبو عبد الرحمن)", settled:"Madinah al-Munawwarah", dates:"Died 73 AH / 693 CE", hadith_count:"2,630", bio:"Son of Caliph 'Umar. Renowned for meticulous adherence to prophetic Sunnah and refusal to narrate anything he was uncertain about.", suffix:"رضي الله عنه" },
+        'rawi_ibn_abbas':             { name_en:"'Abdullah bin 'Abbas", name_ar:"عبد الله بن عباس", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"'Abd Allah ibn al-'Abbas ibn 'Abd al-Muttalib al-Hashimi", kunyah:"Abu al-Abbas (أبو العباس)", settled:"Makkah / Ta'if", dates:"Died 68 AH / 687 CE", hadith_count:"1,660", bio:"Cousin of Prophet Muhammad ﷺ, titled Hibr al-Ummah (Scholar of the Nation) and Tarjuman al-Qur'an (Interpreter of the Qur'an). He received the Prophet's prayer for deep understanding of religion.", suffix:"رضي الله عنه" },
+        'rawi_anas_bin_malik':        { name_en:"Anas bin Malik", name_ar:"أنس بن مالك", avatar:"أ", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"Anas ibn Malik ibn al-Nadr al-Ansari al-Khazraji", kunyah:"Abu Hamzah (أبو حمزة)", settled:"Basra", dates:"Died 93 AH / 712 CE", hadith_count:"2,286", bio:"Personal servant of the Prophet ﷺ in Madinah for ten years. One of the last major Sahabah to die, preserving prophetic traditions for the next generation.", suffix:"رضي الله عنه" },
+        'rawi_jaber_bin_abdullah':    { name_en:"Jabir bin 'Abdullah", name_ar:"جابر بن عبد الله", avatar:"ج", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"Jabir ibn 'Abd Allah ibn 'Amr al-Ansari al-Khazraji", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Madinah al-Munawwarah", dates:"Died 78 AH / 697 CE", hadith_count:"1,540", bio:"Anshari Companion who participated in 19 expeditions. Held prominent Hadith study circles at the Prophet's Mosque.", suffix:"رضي الله عنه" },
+        'rawi_abu_said_al_khudri':    { name_en:"Abu Sa'id al-Khudri", name_ar:"أبو سعيد الخدري", avatar:"أ", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"Sa'd ibn Malik ibn Sinan al-Ansari al-Khazraji", kunyah:"Abu Sa'id (أبو سعيد)", settled:"Madinah al-Munawwarah", dates:"Died 74 AH / 693 CE", hadith_count:"1,170", bio:"Young Companion who participated in the Battle of Uhud and subsequent expeditions. Known for narrating Hadiths on prayer, Ramadan, and eschatology.", suffix:"رضي الله عنه" },
+        'rawi_abdullah_bin_masud':    { name_en:"'Abdullah bin Mas'ud", name_ar:"عبد الله بن مسعود", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"'Abd Allah ibn Mas'ud al-Hudhali", kunyah:"Abu 'Abd al-Rahman (أبو عبد الرحمن)", settled:"Kufah / Madinah", dates:"Died 32 AH / 652 CE", hadith_count:"848", bio:"One of the earliest converts to Islam. A trusted custodian of the Qur'an and founding jurist of Kufah, whose legal methodology laid the foundation for the Hanafi school.", suffix:"رضي الله عنه" },
+        'rawi_malik_bin_anas':        { name_en:"Imam Malik bin Anas", name_ar:"مالك بن أنس", avatar:"م", gen:"Tabi' al-Tabi'in", gen_id:"Tabi' al-Tabi'in", grade:"Hafiz / Imam", nasab:"Malik ibn Anas ibn Malik al-Asbahi", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Madinah al-Munawwarah", dates:"Died 179 AH / 795 CE", hadith_count:"1,720", bio:"Imam of Madinah and founder of the Maliki legal school. Compiled Al-Muwatta, the earliest surviving legal Mushannaf work. Imam al-Shafi'i said: 'Malik is the proof of God upon His creation after the Tabi'in.'", suffix:"رحمه الله" },
+        'rawi_al_bukhari':            { name_en:"Imam Muhammad al-Bukhari", name_ar:"محمد بن إسماعيل البخاري", avatar:"خ", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Amir al-Mu'minin fi al-Hadith", nasab:"Muhammad ibn Isma'il ibn Ibrahim al-Ju'fi al-Bukhari", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Bukhara / Nishapur", dates:"194–256 AH / 810–870 CE", hadith_count:"7,563", bio:"Compiler of Sahih al-Bukhari — universally acknowledged the most authentic Hadith collection after the Qur'an. Memorized 600,000 narrations and selected only 7,563 into his Sahih after Ghusl and prayer.", suffix:"رحمه الله" },
+        'rawi_muslim_ibn_hajjaj':     { name_en:"Imam Muslim ibn al-Hajjaj", name_ar:"مسلم بن الحجاج", avatar:"م", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Amir al-Mu'minin fi al-Hadith", nasab:"Muslim ibn al-Hajjaj ibn Muslim al-Qushayri al-Naysaburi", kunyah:"Abu al-Husayn (أبو الحسين)", settled:"Nishapur", dates:"204–261 AH / 820–875 CE", hadith_count:"7,500", bio:"Author of Sahih Muslim, second in rank after Sahih al-Bukhari. Renowned for grouping narrations thematically and arranging chains by quality. A student of Imam al-Bukhari himself.", suffix:"رحمه الله" },
+        'rawi_abu_dawud':             { name_en:"Imam Abu Dawood", name_ar:"أبو داود السجستاني", avatar:"د", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Imam Hafiz", nasab:"Sulayman ibn al-Ash'ath ibn Ishaq al-Azdi al-Sijistani", kunyah:"Abu Dawood (أبو داود)", settled:"Basra", dates:"202–275 AH / 817–889 CE", hadith_count:"5,274", bio:"Compiler of Sunan Abu Dawood, focused on legal (Ahkam) Hadiths used by jurists. Imam Ahmad praised him saying: 'No one is more knowledgeable in Hadith fiqh than Abu Dawood.'", suffix:"رحمه الله" },
+        'rawi_al_tirmidhi':           { name_en:"Imam al-Tirmidhi", name_ar:"أبو عيسى الترمذي", avatar:"ت", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Imam Hafiz", nasab:"Muhammad ibn 'Isa ibn Sawrah ibn Musa al-Sulami al-Tirmidhi", kunyah:"Abu 'Isa (أبو عيسى)", settled:"Termez (Tirmidh)", dates:"209–279 AH / 824–892 CE", hadith_count:"3,956", bio:"Compiler of Jami' al-Tirmidhi. Pioneer of Hadith grading terminology — the first to systematically use 'Hasan' as a technical grade. Assessed narrator reliability and legal opinions in each chapter.", suffix:"رحمه الله" },
+        'rawi_al_nasai':              { name_en:"Imam an-Nasa'i", name_ar:"أحمد بن شعيب النسائي", avatar:"ن", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Imam Hafiz", nasab:"Ahmad ibn Shu'ayb ibn 'Ali al-Khurasani al-Nasa'i", kunyah:"Abu 'Abd al-Rahman (أبو عبد الرحمن)", settled:"Egypt / Ramla", dates:"215–303 AH / 830–915 CE", hadith_count:"5,758", bio:"Compiler of Sunan an-Nasa'i. Known for the strictest narrator authentication criteria among the Sunan compilers. Al-Dhahabi said his collection is second only to the Sahihain in authenticity.", suffix:"رحمه الله" },
+        'rawi_ibn_majah':             { name_en:"Imam Ibn Majah", name_ar:"ابن ماجه القزويني", avatar:"م", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Imam Hafiz", nasab:"Muhammad ibn Yazid al-Qazwini", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Qazvin", dates:"209–273 AH / 824–887 CE", hadith_count:"4,341", bio:"Compiler of Sunan Ibn Majah — the sixth canonical book of Kutub al-Sittah. Notable for 1,339 unique narrations (zawa'id) not found in the other five books.", suffix:"رحمه الله" },
+        'rawi_ahmad':                 { name_en:"Imam Ahmad bin Hanbal", name_ar:"أحمد بن حنبل", avatar:"أ", gen:"Collector (Hadith Master)", gen_id:"Penghimpun Hadits", grade:"Imam Ahl al-Sunnah", nasab:"Ahmad ibn Muhammad ibn Hanbal al-Shaybani", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Baghdad", dates:"164–241 AH / 780–855 CE", hadith_count:"28,000+", bio:"Founder of the Hanbali school and compiler of Musnad Ahmad — the largest Musnad collection arranged by Companion. Endured imprisonment for refusing to accept that the Qur'an was created.", suffix:"رحمه الله" },
+        'rawi_al_zuhri':              { name_en:"Ibn Shihab al-Zuhri", name_ar:"ابن شهاب الزهري", avatar:"ز", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Hafiz", nasab:"Muhammad ibn Muslim ibn 'Ubayd Allah ibn Shihab al-Zuhri", kunyah:"Abu Bakr (أبو بكر)", settled:"Madinah al-Munawwarah", dates:"Died 124 AH / 742 CE", hadith_count:"2,200", bio:"Master Tabi'i scholar who pioneered the formal codification of Hadith under Caliph 'Umar ibn 'Abd al-'Aziz. Transmitter of the famous 'Innama al-A'malu bi al-Niyyat' chain.", suffix:"رحمه الله" },
+        'rawi_nafi':                  { name_en:"Nafi' Maula Ibn 'Umar", name_ar:"نافع مولى ابن عمر", avatar:"ن", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Thabt", nasab:"Nafi' al-'Adawi, Mawla of Ibn 'Umar", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Madinah al-Munawwarah", dates:"Died 117 AH / 735 CE", hadith_count:"1,400", bio:"Key link in the Golden Chain of Transmission: Imam Malik → Nafi' → Ibn 'Umar. Al-Bukhari took 80 narrations from Nafi' through this chain.", suffix:"رحمه الله" },
+        'rawi_salim':                 { name_en:"Salim bin 'Abdullah", name_ar:"سالم بن عبد الله", avatar:"س", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Faqih", nasab:"Salim ibn 'Abd Allah ibn 'Umar ibn al-Khattab", kunyah:"Abu 'Umar (أبو عمر)", settled:"Madinah al-Munawwarah", dates:"Died 106 AH / 725 CE", hadith_count:"950", bio:"One of the Seven Fuqaha of Madinah. Grandson of Caliph 'Umar and key transmitter of his grandfather's traditions through his father Ibn 'Umar.", suffix:"رحمه الله" },
+        'rawi_urwah':                 { name_en:"'Urwah bin al-Zubayr", name_ar:"عروة بن الزبير", avatar:"ع", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Faqih", nasab:"'Urwah ibn al-Zubayr ibn al-'Awwam al-Qurashi", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Madinah al-Munawwarah", dates:"Died 94 AH / 713 CE", hadith_count:"1,300", bio:"Nephew of 'Aisha bint Abi Bakr and primary transmitter of her narrations. One of the Seven Fuqaha of Madinah and founder of Maghazi (Prophetic biography) literature.", suffix:"رحمه الله" },
+        'rawi_said_bin_jubair':       { name_en:"Sa'id bin Jubair", name_ar:"سعيد بن جبير", avatar:"س", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Imam", nasab:"Sa'id ibn Jubayr ibn Hisham al-Asadi al-Walabi", kunyah:"Abu 'Abd Allah (أبو عبد الله)", settled:"Kufah", dates:"Died 95 AH / 714 CE", hadith_count:"750", bio:"Top student of Ibn 'Abbas. Considered the greatest Tabi'i jurist of Kufah. Martyred by al-Hajjaj ibn Yusuf for refusing to swear allegiance.", suffix:"رحمه الله" },
+        'rawi_sufyan_al_thawri':      { name_en:"Sufyan bin 'Uyaynah", name_ar:"سفيان بن عيينة", avatar:"س", gen:"Tabi' al-Tabi'in", gen_id:"Tabi' al-Tabi'in", grade:"Thiqah Hafiz", nasab:"Sufyan ibn 'Uyaynah ibn Abi 'Imran al-Hilali", kunyah:"Abu Muhammad (أبو محمد)", settled:"Makkah / Kufah", dates:"107–198 AH / 725–814 CE", hadith_count:"1,250", bio:"Master Hadith scholar of Makkah and direct teacher of Imam al-Shafi'i and Yahya ibn Ma'in. Imam Ahmad said: 'Sufyan ibn 'Uyaynah was the most knowledgeable person in Hadith in the Hijaz.'", suffix:"رحمه الله" },
+        'rawi_yahya_bin_said':        { name_en:"Yahya bin Sa'id al-Ansari", name_ar:"يحيى بن سعيد الأنصاري", avatar:"ي", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Thabt", nasab:"Yahya ibn Sa'id ibn Qays al-Ansari al-Khazraji", kunyah:"Abu Sa'id (أبو سعيد)", settled:"Madinah / Iraq", dates:"Died 143 AH / 760 CE", hadith_count:"820", bio:"Judge of Madinah and central transmitter of the 'Innama al-A'malu bi al-Niyyat' Hadith chain — the opening Hadith of Sahih al-Bukhari. Imam Ahmad called him: 'Imam, Hujjah.'", suffix:"رحمه الله" },
+        'rawi_abdullah_bin_dinar':    { name_en:"Abdullah bin Dinar", name_ar:"عبد الله بن دينار", avatar:"ع", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Mutqin", nasab:"'Abd Allah ibn Dinar al-'Adawi, Mawla of Ibn 'Umar", kunyah:"Abu 'Abd al-Rahman (أبو عبد الرحمن)", settled:"Madinah al-Munawwarah", dates:"Died 127 AH / 745 CE", hadith_count:"340", bio:"Trustworthy Madinan rawi who narrated extensively from Ibn 'Umar. Ibn Hajar in Taqrib rated him Thiqah Mutqin (precise and reliable).", suffix:"رحمه الله" },
+        'rawi_ismail_bin_jafar':      { name_en:"Isma'il bin Ja'far", name_ar:"إسماعيل بن جعفر", avatar:"إ", gen:"Tabi' al-Tabi'in", gen_id:"Tabi' al-Tabi'in", grade:"Thiqah Thabt", nasab:"Isma'il ibn Ja'far ibn Abi Kathir al-Ansari al-Madani", kunyah:"Abu Ishaq (أبو إسحاق)", settled:"Madinah / Baghdad", dates:"Died 180 AH / 796 CE", hadith_count:"400", bio:"Madinan Qur'an reciter and Hadith transmitter who settled in Baghdad. Narrated from Malik ibn Anas and transmitted to Imam al-Bukhari and Imam Muslim.", suffix:"رحمه الله" },
+        'rawi_qutaibah_bin_said':     { name_en:"Qutaibah bin Sa'id", name_ar:"قتيبة بن سعيد", avatar:"ق", gen:"Tabi' al-Tabi'in", gen_id:"Tabi' al-Tabi'in", grade:"Thiqah Thabt", nasab:"Qutaybah ibn Sa'id ibn Jamil al-Thaqafi al-Baghawi", kunyah:"Abu Raja' (أبو رجاء)", settled:"Baghlan / Kufah", dates:"148–240 AH / 765–855 CE", hadith_count:"1,280", bio:"Major direct sheikh of Imam al-Bukhari, Muslim, Abu Dawood, at-Tirmidhi, and an-Nasa'i. Traveled extensively collecting narrations from Iraq, Hijaz, and Khurasan.", suffix:"رحمه الله" },
+        'rawi_atho_bin_yasar':        { name_en:"Atho' bin Yasar", name_ar:"عطاء بن يسار", avatar:"ع", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Fadil", nasab:"'Ata' ibn Yasar al-Hilali, Mawla of Maymunah", kunyah:"Abu Muhammad (أبو محمد)", settled:"Madinah al-Munawwarah", dates:"Died 103 AH / 721 CE", hadith_count:"205", bio:"Devout Madinan Tabi'i and freed-man of Maymunah (wife of the Prophet ﷺ). Narrated from Abu Hurairah, Abu Sa'id al-Khudri, and 'Aisha.", suffix:"رحمه الله" },
+        'rawi_hilal_bin_ali':         { name_en:"Hilal bin Ali", name_ar:"هلال بن علي", avatar:"ه", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah", nasab:"Hilal ibn 'Ali ibn Usamah al-'Adawi", kunyah:"Abu Maimunah (أبو ميمونة)", settled:"Madinah al-Munawwarah", dates:"Died 120 AH / 738 CE", hadith_count:"150", bio:"Authentic Madinan rawi who transmitted from Atho' bin Yasar and Anas bin Malik. Ibn Hajar rated him Thiqah. His narrations appear in Sahih al-Bukhari and Sahih Muslim.", suffix:"رحمه الله" }
+      };
+
+      if (!data || data.length === 0) {
+        const local = localRawiDict[id] || localRawiDict[id.toLowerCase()];
+        if (local) {
+          document.title = `Narrator Profile: ${local.name_en} — HADEETH.ID`;
+          document.getElementById('breadcrumb-name').innerText = local.name_en;
+          document.getElementById('profile-avatar').innerText = local.avatar;
+          document.getElementById('profile-gen-badge').innerText = isId ? local.gen_id : local.gen;
+          document.getElementById('profile-grade-badge').innerText = `Grade: ${local.grade}`;
+          document.getElementById('profile-english-name').innerText = local.name_en;
+          document.getElementById('profile-nasab').innerText = `Nasab: ${local.nasab}`;
+          document.getElementById('profile-arabic-name').innerText = `${local.name_ar} (${local.suffix})`;
+          document.getElementById('profile-kunyah').innerText = local.kunyah;
+          document.getElementById('profile-settled').innerText = local.settled;
+          document.getElementById('profile-dates').innerText = local.dates;
+          document.getElementById('profile-parents').innerText = local.nasab;
+          document.getElementById('total-hadith-badge').innerText = `${local.hadith_count} Narrations`;
+          const bioEl = document.getElementById('bio-stories-content');
+          if (bioEl) bioEl.innerHTML = `<p><strong class="text-primary dark:text-white">Biography:</strong> ${local.bio}</p>`;
+        }
+        return;
+      }
+
+      const rawi = data[0];
+      const local = localRawiDict[rawi.id] || localRawiDict[(rawi.id || '').toLowerCase()] || localRawiDict['rawi_' + rawi.id] || (rawi.id.includes('ahmad') ? localRawiDict['rawi_ahmad'] : null);
+
+      if (local) {
         if (!rawi.name_ar || rawi.name_ar === rawi.name_en || /[a-zA-Z]/.test(rawi.name_ar)) rawi.name_ar = local.name_ar;
-        if (!rawi.name_id) rawi.name_id = local.name_id;
+        if (!rawi.bio_en || rawi.bio_en.includes('is an authentic transmitter of Hadith recorded in canonical collections')) rawi.bio_en = local.bio;
+        if (!rawi.bio_id || rawi.bio_id.includes('adalah perawi perawi hadis shahih')) rawi.bio_id = local.bio;
         if (local.gen && (!rawi.generation || rawi.generation === 'Transmitter (Rawi)')) rawi.generation = local.gen;
         if (local.grade && (!rawi.grade || rawi.grade === 'Thiqah (Trustworthy)')) rawi.grade = local.grade;
         if (local.kunyah) rawi.kunya_en = local.kunyah;
         if (local.nasab) rawi.nasab_en = local.nasab;
         if (local.settled && (!rawi.region || rawi.region === 'Hijaz')) rawi.region = local.settled;
-        if (local.dates && !rawi.died_ah) rawi.died_ah = local.dates;
+        if (local.dates) rawi.died_ah = local.dates;
+        if (local.name_en && (rawi.name_en === 'Ahmad' || rawi.name_en === 'Rawi')) rawi.name_en = local.name_en;
       }
 
-      if (!rawi) return;
+      // Hide demo switcher bar if loading a real DB profile
+      const demoBar = document.querySelector('.bg-surface-container-low.dark\\:bg-\\[\\#1e293b\\].p-3');
+      if (demoBar) demoBar.style.display = 'none';
 
-      const mainNameEn = rawi.name_en || (local ? local.name_en : 'Rawi');
-      const mainNameId = rawi.name_id || (local ? local.name_id : mainNameEn);
-      const isSahabi = rawi.is_sahabi || (rawi.generation && rawi.generation.toLowerCase().includes('sahabi')) || false;
+      let genTitle = rawi.generation || (rawi.is_sahabi ? 'Sahabi (Companion)' : 'Transmitter');
+      if (isId && genTitle.toLowerCase().includes('sahabi')) genTitle = 'Sahabat';
 
-      // 1 & 2: Header Badges & Bilingual Title
-      let genTitleEn = rawi.generation || (isSahabi ? 'Sahabi (Companion)' : 'Transmitter');
-      let genTitleId = (local && local.gen_id) ? local.gen_id : (isSahabi ? 'Sahabat' : 'Perawi');
-      let genTitle = isId ? genTitleId : genTitleEn;
+      document.title = `Narrator Profile: ${rawi.name_en} — HADEETH.ID`;
+      document.getElementById('breadcrumb-name').innerText = rawi.name_en;
+      document.getElementById('profile-avatar').innerText = (rawi.name_ar || rawi.name_en).charAt(0);
       document.getElementById('profile-gen-badge').innerText = genTitle;
-
-      let gradeEn = rawi.grade || (isSahabi ? 'Sahabi Adl (Utmost Reliability)' : 'Thiqah (Trustworthy)');
-      let gradeId = (local && local.grade_id) ? local.grade_id : (isSahabi ? 'Sahabat Adil (Keadilan Utuh)' : 'Tsiqah (Terpercaya)');
-      document.getElementById('profile-grade-badge').innerText = isId ? `Derajat: ${gradeId}` : `Grade: ${gradeEn}`;
-
-      document.title = `Narrator Profile: ${isId ? mainNameId : mainNameEn} — HADEETH.ID`;
-      document.getElementById('breadcrumb-name').innerText = isId ? mainNameId : mainNameEn;
-      document.getElementById('profile-avatar').innerText = (rawi.avatar || rawi.name_ar || mainNameEn).charAt(0);
-
-      document.getElementById('profile-english-name').innerHTML = `
-        <span data-lang-en>${escapeHtml(mainNameEn)}</span>
-        <span data-lang-id>${escapeHtml(mainNameId)}</span>
-      `;
-
-      document.getElementById('profile-nasab').innerText = rawi.nasab_en ? `Nasab: ${rawi.nasab_en}` : (rawi.nasab ? `Nasab: ${rawi.nasab}` : (local ? `Nasab: ${local.nasab}` : `ID: ${rawi.id}`));
-
-      // Right side Arabic Calligraphy name
-      const cleanArName = (rawi.name_ar || (local ? local.name_ar : '')).replace(/[a-zA-Z]/g, '').trim();
-      const taradhiSuffix = isSahabi ? 'رضي الله عنه' : (rawi.suffix || (local ? local.suffix : 'رحمه الله') || 'رحمه الله');
-      const arContainer = document.getElementById('profile-arabic-name');
-      if (arContainer) {
-        arContainer.innerHTML = cleanArName ? `
-          <span class="font-arabic-title text-3xl md:text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl">${escapeHtml(cleanArName)}</span>
-          <span class="text-base md:text-xl text-emerald-600 dark:text-[#10b981]/90 font-arabic-body font-normal ms-2" dir="rtl">(${escapeHtml(taradhiSuffix)})</span>
-        ` : `<span class="text-base md:text-xl text-emerald-600 dark:text-[#10b981]/90 font-arabic-body font-normal" dir="rtl">(${escapeHtml(taradhiSuffix)})</span>`;
-      }
-
-      // 3. Settled In
-      document.getElementById('profile-kunyah').innerText = rawi.kunya_en ? `${rawi.kunya_en} (${rawi.kunya || ''})` : (rawi.kunya || (local ? local.kunyah : 'N/A'));
-      document.getElementById('profile-settled').innerText = rawi.region || rawi.city_of_residence || rawi.city_of_death || (local ? local.settled : 'Madinah al-Munawwarah');
-
-      // 4. Clean Birth & Death Year Sanitizer
-      let rawD = rawi.died_ah || (local ? local.dates : '') || '';
-      let cleanD = rawD.replace(/^Died\s+/gi, '').replace(/^Wafat\s+/gi, '').trim();
-      if (cleanD && !cleanD.includes('CE') && !cleanD.includes('M') && rawi.died_ce) {
-        cleanD += ` (${rawi.died_ce} CE)`;
-      }
+      document.getElementById('profile-grade-badge').innerText = `Grade: ${rawi.grade || (rawi.is_sahabi ? (isId ? 'Sahabat Adil' : 'Sahabi Adl') : 'Thiqah')}`;
+      document.getElementById('profile-english-name').innerText = rawi.name_en;
+      document.getElementById('profile-nasab').innerText = rawi.nasab_en ? `Nasab: ${rawi.nasab_en}` : (rawi.nasab ? `Nasab: ${rawi.nasab}` : `ID: ${rawi.id}`);
       
-      let finalDates = '';
-      if (isId) {
-        if (!cleanD) finalDates = 'Masa Awal (Abad ke-1 H)';
-        else {
-          let idStr = cleanD.replace(/AH/g, 'H').replace(/CE/g, 'M');
-          finalDates = idStr.startsWith('Wafat') ? idStr : `Wafat ${idStr}`;
-        }
-      } else {
-        if (!cleanD) finalDates = 'Early Era (1st Century AH)';
-        else {
-          finalDates = cleanD.startsWith('Died') ? cleanD : `Died ${cleanD}`;
-        }
-      }
-      document.getElementById('profile-dates').innerText = finalDates;
+      // Right side name: PURE ARABIC SCRIPT ONLY
+      const cleanArName = (rawi.name_ar || '').replace(/[a-zA-Z]/g, '').trim();
+      document.getElementById('profile-arabic-name').innerText = cleanArName ? `${cleanArName} ${rawi.is_sahabi ? '(رضي الله عنه)' : ''}` : (rawi.is_sahabi ? '(رضي الله عنه)' : '');
 
-      // 5. Parents & Lineage
-      document.getElementById('profile-parents').innerText = rawi.nasab_en || rawi.nasab || (local ? local.nasab : 'Famous Lineage');
+      document.getElementById('profile-kunyah').innerText = rawi.kunya_en ? `${rawi.kunya_en} (${rawi.kunya || ''})` : (rawi.kunya || 'N/A');
+      document.getElementById('profile-settled').innerText = rawi.region || rawi.city_of_residence || rawi.city_of_death || 'Hijaz';
 
-      if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
-    } catch (err) {
-      console.warn('Failed to load rawi profile:', err);
-    }
-  }
+      let dates = '';
+      if (rawi.died_ah) dates += `Died ${rawi.died_ah} AH`;
+      if (rawi.died_ce) dates += ` (${rawi.died_ce} CE)`;
+      if (!dates) dates = 'Early Era (1st Century AH)';
+      document.getElementById('profile-dates').innerText = dates;
 
-  // ── Author / Collector Statistics Box ──
+      document.getElementById('profile-parents').innerText = rawi.nasab_en || rawi.nisba_en || 'Famous Lineage';
+
+      // ── Author / Collector Statistics Box ──
       const authorStatsMap = {
         'rawi_al_bukhari': { memorized: '600,000', compiled: '7,563', books: '3+', badge: '7,563 Sahih Hadiths Compiled', desc: 'Imam al-Bukhari evaluated over 600,000 oral traditions with complete chains of narration over 16 years, selecting 7,563 authentic Hadiths for Sahih al-Bukhari, considered the most authentic book after the Holy Qur\'an.' },
         'rawi_bukhari': { memorized: '600,000', compiled: '7,563', books: '3+', badge: '7,563 Sahih Hadiths Compiled', desc: 'Imam al-Bukhari evaluated over 600,000 oral traditions with complete chains of narration over 16 years, selecting 7,563 authentic Hadiths for Sahih al-Bukhari, considered the most authentic book after the Holy Qur\'an.' },
