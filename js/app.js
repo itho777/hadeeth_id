@@ -2542,6 +2542,10 @@ async function loadHadithSyarah(bookId, hadithNum) {
   const hadithId = `${bookId}_${hadithNum}`;
   let commentaryData = null;
 
+  // Default Syarah language to current active site language (id or en)
+  const currentSiteLang = (window.LangSystem && window.LangSystem.get()) ? window.LangSystem.get() : ((window.LangSystem && window.LangSystem.isIdMode()) ? 'id' : 'en');
+  window.activeSyarahLang = currentSiteLang;
+
   try {
     const res = await fetch(`data/commentaries/${hadithId}.json`);
     if (res.ok) {
@@ -2563,5 +2567,15 @@ async function loadHadithSyarah(bookId, hadithNum) {
 
   window.activeSyarahData = commentaryData;
   renderSyarahUI();
+
+  // Listen for global site language changes and sync Syarah default language
+  if (!window._syarahLangListenerAttached) {
+    window._syarahLangListenerAttached = true;
+    window.addEventListener('hadeeth_lang_change', (e) => {
+      const newLang = (e && e.detail) ? e.detail : (window.LangSystem ? window.LangSystem.get() : 'id');
+      window.activeSyarahLang = newLang;
+      renderSyarahUI();
+    });
+  }
 }
 
