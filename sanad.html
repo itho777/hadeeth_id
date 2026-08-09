@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_68"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_69"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -63,16 +63,28 @@
 <main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8">
 
   <!-- Header -->
-  <div class="flex flex-col gap-2 border-b border-outline-variant/30 dark:border-[#334155] pb-6">
-    <div class="flex items-center gap-2 text-secondary dark:text-[#10b981] font-semibold text-xs uppercase tracking-wider">
-      <span class="material-symbols-outlined text-[18px]">account_tree</span>
-      <span data-lang-en>Isnad Transmission Chain</span>
-      <span data-lang-id style="display:none">Rantai Perawi (Sanad)</span>
+  <div class="flex flex-col gap-3 border-b border-outline-variant/30 dark:border-[#334155] pb-6">
+    <div class="flex justify-between items-center flex-wrap gap-3">
+      <a id="back-to-hadith-btn" href="hadith.html" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container-high dark:bg-[#1e293b] hover:bg-surface-container-highest dark:hover:bg-[#334155] border border-outline-variant/30 dark:border-[#334155] text-xs font-bold text-primary dark:text-white transition-all shadow-sm group">
+        <span class="material-symbols-outlined text-sm transition-transform group-hover:-translate-x-1">arrow_back</span>
+        <span data-lang-en>Back to Hadith Detail</span>
+        <span data-lang-id style="display:none">Kembali ke Detail Hadits</span>
+      </a>
+      <div class="flex items-center gap-2 text-secondary dark:text-[#10b981] font-semibold text-xs uppercase tracking-wider">
+        <span class="material-symbols-outlined text-[18px]">account_tree</span>
+        <span data-lang-en>Isnad Transmission Chain</span>
+        <span data-lang-id style="display:none">Rantai Perawi (Sanad)</span>
+      </div>
     </div>
+
     <h1 class="text-2xl md:text-3xl font-bold text-primary dark:text-white" id="sanad-title">
-      <span data-lang-en>Sanad: Sahih al-Bukhari 1</span>
-      <span data-lang-id style="display:none">Sanad: Shahih al-Bukhari Hadits #1</span>
+      <a id="sanad-title-link" href="hadith.html" class="hover:text-sunan-emerald dark:hover:text-[#10b981] hover:underline transition-colors inline-flex items-center gap-2 flex-wrap" title="View Hadith Detail">
+        <span data-lang-en>Sanad: Sahih al-Bukhari 1</span>
+        <span data-lang-id style="display:none">Sanad: Shahih al-Bukhari Hadits #1</span>
+        <span class="material-symbols-outlined text-lg opacity-70">open_in_new</span>
+      </a>
     </h1>
+
     <p class="text-xs text-on-surface-variant dark:text-gray-400" id="sanad-subtitle">
       <span data-lang-en>Chain of narrators (الإسناد) tracing back to the Messenger of Allah ﷺ.</span>
       <span data-lang-id style="display:none">Silsilah perawi (الإسناد) yang bersambung sampai ke Rasulullah ﷺ.</span>
@@ -158,7 +170,7 @@
   <div><span data-i18n="footer_text">© 2024 HADEETH.ID - Digital Manuscript Preservation</span></div>
 </footer>
 
-<script src="js/api.js?v=20260808_68"></script>
-<script src="js/app.js?v=20260808_68"></script>
+<script src="js/api.js?v=20260808_69"></script>
+<script src="js/app.js?v=20260808_69"></script>
 </body>
 </html>

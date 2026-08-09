@@ -1734,6 +1734,12 @@ async function loadSanadChain() {
   const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
   const isIdLang = (window.LangSystem && window.LangSystem.isIdMode());
 
+  const hadithUrl = `hadith.html?book=${encodeURIComponent(bookId)}&id=${encodeURIComponent(hadithNum)}`;
+  const backBtn = document.getElementById('back-to-hadith-btn');
+  if (backBtn) backBtn.href = hadithUrl;
+  const titleLink = document.getElementById('sanad-title-link');
+  if (titleLink) titleLink.href = hadithUrl;
+
   const titleEn = document.querySelector('#sanad-title [data-lang-en]');
   const titleId = document.querySelector('#sanad-title [data-lang-id]');
   const subEn = document.querySelector('#sanad-subtitle [data-lang-en]');
