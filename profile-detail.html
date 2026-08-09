@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_59"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_60"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -68,16 +68,7 @@
     <span>/</span>
     <a href="scholars.html" class="hover:underline">Profile</a>
     <span>/</span>
-    <span class="text-primary dark:text-white font-semibold" id="breadcrumb-name">'Umar bin Al-Khattab</span>
-  </div>
-
-  <!-- Profile Switcher Demo Bar -->
-  <div class="bg-surface-container-low dark:bg-[#1e293b] p-3 rounded-lg border border-outline-variant/30 dark:border-[#334155] flex flex-wrap items-center justify-between gap-3 text-xs">
-    <span class="text-outline dark:text-gray-400 font-semibold">Switch Demo Profile View:</span>
-    <div class="flex gap-2">
-      <button onclick="switchProfile('umar')" id="btn-umar" class="px-3 py-1 rounded font-bold bg-primary dark:bg-[#10b981] text-white dark:text-black">Sahabi Profile ('Umar bin Al-Khattab)</button>
-      <button onclick="switchProfile('bukhari')" id="btn-bukhari" class="px-3 py-1 rounded font-bold bg-surface-container-high dark:bg-[#0f172a] text-primary dark:text-white border border-outline-variant dark:border-[#334155]">Author Profile (Imam al-Bukhari)</button>
-    </div>
+    <span class="text-primary dark:text-white font-semibold" id="breadcrumb-name">Loading...</span>
   </div>
 
   <!-- HERO PROFILE CARD -->
@@ -88,19 +79,19 @@
       <div class="flex items-center gap-4">
         <!-- Initial Monogram Avatar -->
         <div id="profile-avatar" class="w-16 h-16 rounded-2xl bg-gradient-to-br from-sunan-emerald to-emerald-800 text-white font-bold text-2xl flex items-center justify-center shadow-md shrink-0">
-          ع
+          ...
         </div>
         <div class="flex flex-col gap-1">
           <div class="flex items-center gap-2 flex-wrap">
-            <span id="profile-gen-badge" class="bg-sunan-emerald text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded" data-i18n="role_sahabi">Sahabi (Companion)</span>
-            <span id="profile-grade-badge" class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] uppercase font-bold px-2.5 py-0.5 rounded border border-sunan-emerald/20">Grade: Sahabi Adl (Utmost Reliability)</span>
+            <span id="profile-gen-badge" class="bg-sunan-emerald text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded">Transmitter</span>
+            <span id="profile-grade-badge" class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] uppercase font-bold px-2.5 py-0.5 rounded border border-sunan-emerald/20">Grade: Verified</span>
           </div>
-          <h1 id="profile-english-name" class="text-2xl md:text-3xl font-bold text-primary dark:text-white">'Umar bin Al-Khattab</h1>
-          <p id="profile-nasab" class="text-xs text-outline dark:text-gray-400 font-mono">Nasab: 'Umar ibn al-Khattab ibn Nufayl ibn 'Abd al-'Uzza al-Qurashi al-'Adawi</p>
+          <h1 id="profile-english-name" class="text-2xl md:text-3xl font-bold text-primary dark:text-white">Loading Profile...</h1>
+          <p id="profile-nasab" class="text-xs text-outline dark:text-gray-400 font-mono">Nasab: Loading...</p>
         </div>
       </div>
       <div class="text-left md:text-right">
-        <span id="profile-arabic-name" class="font-arabic-display text-3xl md:text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl">أبو هريرة (رضي الله عنه)</span>
+        <span id="profile-arabic-name" class="font-arabic-display text-3xl md:text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl">...</span>
       </div>
     </div>
 
@@ -108,19 +99,19 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs">
       <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
         <span class="text-outline dark:text-gray-400 font-semibold block mb-1">Kunyah / Kuniyah (أبو/أم)</span>
-        <span id="profile-kunyah" class="font-bold text-primary dark:text-white text-sm">Abu Hafs (أبو حفص)</span>
+        <span id="profile-kunyah" class="font-bold text-primary dark:text-white text-sm">Loading...</span>
       </div>
       <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
         <span class="text-outline dark:text-gray-400 font-semibold block mb-1">Settled In (بلد الإقامة)</span>
-        <span id="profile-settled" class="font-bold text-primary dark:text-white text-sm">Madinah al-Munawwarah</span>
+        <span id="profile-settled" class="font-bold text-primary dark:text-white text-sm">Loading...</span>
       </div>
       <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
         <span class="text-outline dark:text-gray-400 font-semibold block mb-1">Birth & Death Year</span>
-        <span id="profile-dates" class="font-bold text-primary dark:text-white text-sm">583 CE – 23 AH / 644 CE</span>
+        <span id="profile-dates" class="font-bold text-primary dark:text-white text-sm">Loading...</span>
       </div>
       <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
         <span class="text-outline dark:text-gray-400 font-semibold block mb-1">Parents & Lineage</span>
-        <span id="profile-parents" class="font-bold text-primary dark:text-white text-sm">Al-Khattab ibn Nufayl / Hantamah</span>
+        <span id="profile-parents" class="font-bold text-primary dark:text-white text-sm">Loading...</span>
       </div>
     </div>
 
@@ -387,7 +378,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_59"></script>
+<script src="js/app.js?v=20260808_60"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -1197,78 +1188,6 @@
     }
   }
 
-  // Profile Switching Logic (Demo Fallback)
-  function switchProfile(type) {
-    const btnUmar = document.getElementById('btn-umar');
-    const btnBukhari = document.getElementById('btn-bukhari');
-    const authorBox = document.getElementById('author-spec-box');
-
-    if (type === 'umar') {
-      btnUmar.className = "px-3 py-1 rounded font-bold bg-primary dark:bg-[#10b981] text-white dark:text-black";
-      btnBukhari.className = "px-3 py-1 rounded font-bold bg-surface-container-high dark:bg-[#0f172a] text-primary dark:text-white border border-outline-variant dark:border-[#334155]";
-      authorBox.classList.add('hidden');
-
-      document.getElementById('breadcrumb-name').innerText = "'Umar bin Al-Khattab";
-      document.getElementById('profile-avatar').innerText = "ع";
-      document.getElementById('profile-gen-badge').innerText = "Sahabi (Companion)";
-      document.getElementById('profile-grade-badge').innerText = "Grade: Sahabi Adl (Utmost Reliability)";
-      document.getElementById('profile-english-name').innerText = "'Umar bin Al-Khattab";
-      document.getElementById('profile-nasab').innerText = "Nasab: 'Umar ibn al-Khattab ibn Nufayl ibn 'Abd al-'Uzza al-Qurashi";
-      document.getElementById('profile-arabic-name').innerText = "عمر بن الخطاب (رضي الله عنه)";
-      document.getElementById('profile-kunyah').innerText = "Abu Hafs (أبو حفص)";
-      document.getElementById('profile-settled').innerText = "Madinah al-Munawwarah";
-      document.getElementById('profile-dates').innerText = "583 CE – 23 AH / 644 CE";
-      document.getElementById('profile-parents').innerText = "Al-Khattab ibn Nufayl / Hantamah";
-      document.getElementById('total-hadith-badge').innerText = "537 Total Narrations";
-
-      document.getElementById('cnt-bukhari').innerText = "81 Hadiths";
-      document.getElementById('cnt-muslim').innerText = "93 Hadiths";
-      document.getElementById('cnt-abudawood').innerText = "112 Hadiths";
-
-      document.getElementById('remark-quote-1').innerText = '"Sahabi Jaleel, one of the greatest leaders of Islam. His narrations are at the highest degree of authenticity and authority."';
-      document.getElementById('remark-quote-2').innerText = '"The Commander of the Faithful. Known for extreme precision and rigorous verification before accepting any narration."';
-
-      document.getElementById('bio-stories-content').innerHTML = `
-        <p><strong class="text-primary dark:text-white">Early Life & Conversion:</strong> Born in Makkah into the Banu 'Adi clan of Quraysh, 'Umar was initially a vocal opponent of Islam until his historic conversion in the 6th year of Prophethood.</p>
-        <p><strong class="text-primary dark:text-white">Role in Transmission:</strong> Careful to avoid unnecessary narration lest people distract themselves from the Quran, his transmitted Hadiths carry immense weight concerning governance, jurisprudence, and intent.</p>
-        <p><strong class="text-primary dark:text-white">The Narration of Intention:</strong> Delivered the famous sermon stating "Actions are judged by intentions", which became Hadith #1 of Sahih al-Bukhari.</p>
-      `;
-
-    } else {
-      btnBukhari.className = "px-3 py-1 rounded font-bold bg-primary dark:bg-[#10b981] text-white dark:text-black";
-      btnUmar.className = "px-3 py-1 rounded font-bold bg-surface-container-high dark:bg-[#0f172a] text-primary dark:text-white border border-outline-variant dark:border-[#334155]";
-      authorBox.classList.remove('hidden');
-
-      document.getElementById('breadcrumb-name').innerText = "Imam al-Bukhari";
-      document.getElementById('profile-avatar').innerText = "خ";
-      document.getElementById('profile-gen-badge').innerText = "Great Master Collector";
-      document.getElementById('profile-grade-badge').innerText = "Grade: Amir al-Mu'minin fi al-Hadith";
-      document.getElementById('profile-english-name').innerText = "Imam Abu 'Abdullah al-Bukhari";
-      document.getElementById('profile-nasab').innerText = "Nasab: Muhammad ibn Isma'il ibn Ibrahim ibn al-Mughirah al-Ju'fi al-Bukhari";
-      document.getElementById('profile-arabic-name').innerText = "الإمام البخاري (رحمه الله)";
-      document.getElementById('profile-kunyah').innerText = "Abu 'Abdullah (أبو عبد الله)";
-      document.getElementById('profile-settled').innerText = "Bukhara / Nishapur / Samarkand";
-      document.getElementById('profile-dates').innerText = "194 – 256 AH (810 – 870 CE)";
-      if (document.getElementById('author-spec-desc')) document.getElementById('author-spec-desc').innerText = "Imam al-Bukhari evaluated over 600,000 oral traditions with complete chains of narration over 16 years, selecting 7,563 authentic Hadiths for Sahih al-Bukhari, considered the most authentic book after the Holy Qur'an.";
-      if (document.getElementById('author-spec-memorized')) document.getElementById('author-spec-memorized').innerText = "600,000";
-      if (document.getElementById('author-spec-compiled')) document.getElementById('author-spec-compiled').innerText = "7,563";
-      if (document.getElementById('author-spec-books')) document.getElementById('author-spec-books').innerText = "3+";
-      document.getElementById('total-hadith-badge').innerText = "7,563 Sahih Hadiths Compiled";
-
-      document.getElementById('cnt-bukhari').innerText = "7,563 Collected";
-      document.getElementById('cnt-muslim').innerText = "Quotes & Parallels";
-      document.getElementById('cnt-abudawood').innerText = "Referenced";
-
-      document.getElementById('remark-quote-1').innerText = '"Al-Bukhari is the peak of Hadith criticism. Earth has not seen anyone more knowledgeable in the hidden defects (\'Ilal) of Hadith than him." — Imam Ahmad ibn Hanbal';
-      document.getElementById('remark-quote-2').innerText = '"I have not seen anyone like Muhammad ibn Isma\'il al-Bukhari. It is as if he was created solely for Hadith." — Imam al-Tirmidhi';
-
-      document.getElementById('bio-stories-content').innerHTML = `
-        <p><strong class="text-primary dark:text-white">Author Journey:</strong> Imam al-Bukhari memorized 70,000 Hadiths by age 16. He traveled across Khurasan, Iraq, Hijaz, Syria, and Egypt gathering 600,000 narrations over 16 years.</p>
-        <p><strong class="text-primary dark:text-white">Books Authored:</strong> Authored <em>Sahih al-Bukhari</em>, <em>Al-Adab al-Mufrad</em> (Ethics), <em>Al-Tarikh al-Kabir</em> (Narrator History), and <em>Khalq Af'al al-'Ibad</em>.</p>
-        <p><strong class="text-primary dark:text-white">Rigorous Method:</strong> Before placing any Hadith in his Sahih, Imam al-Bukhari performed Ghusl (ritual ablution) and prayed two Raka'at of Istikharah prayer for guidance.</p>
-      `;
-    }
-  }
 </script>
 </body>
 </html>
