@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_66"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_67"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -390,7 +390,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_66"></script>
+<script src="js/app.js?v=20260808_67"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -516,6 +516,44 @@
         'rawi_hilal_bin_ali':         { name_en:"Hilal bin Ali", name_ar:"هلال بن علي", avatar:"ه", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah", nasab:"Hilal ibn 'Ali ibn Usamah al-'Adawi", kunyah:"Abu Maimunah (أبو ميمونة)", settled:"Madinah al-Munawwarah", dates:"Died 120 AH / 738 CE", hadith_count:"150", bio:"Authentic Madinan rawi who transmitted from Atho' bin Yasar and Anas bin Malik. Ibn Hajar rated him Thiqah. His narrations appear in Sahih al-Bukhari and Sahih Muslim.", suffix:"رحمه الله" }
       };
 
+  function formatNarratorDates(rawAh, rawCe, isId) {
+    if (!rawAh && !rawCe) {
+      return isId ? 'Masa Awal (Abad ke-1 H)' : 'Early Era (1st Century AH)';
+    }
+
+    let str = ((rawAh || '') + ' ' + (rawCe || '')).trim();
+    str = str
+      .replace(/Died/gi, '')
+      .replace(/Wafat/gi, '')
+      .replace(/\(\s*\d+\s*CE\s*\)/gi, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+    const allNumbers = str.match(/\d+/g);
+    if (!allNumbers || allNumbers.length === 0) {
+      return isId ? 'Masa Awal (Abad ke-1 H)' : 'Early Era (1st Century AH)';
+    }
+
+    const numbers = allNumbers.filter((n, idx) => allNumbers.indexOf(n) === idx);
+
+    if (numbers.length >= 4) {
+      const bAh = numbers[0], dAh = numbers[1], bCe = numbers[2], dCe = numbers[3];
+      return isId ? `${bAh}–${dAh} H / ${bCe}–${dCe} M` : `${bAh}–${dAh} AH / ${bCe}–${dCe} CE`;
+    }
+
+    if (numbers.length >= 2) {
+      const dAh = numbers[0], dCe = numbers[1];
+      return isId ? `Wafat ${dAh} H / ${dCe} M` : `Died ${dAh} AH / ${dCe} CE`;
+    }
+
+    if (numbers.length === 1) {
+      const yr = numbers[0];
+      return isId ? `Wafat ${yr} H` : `Died ${yr} AH`;
+    }
+
+    return isId ? 'Masa Awal' : 'Early Era';
+  }
+
       if (!data || data.length === 0) {
         const local = localRawiDict[id] || localRawiDict[id.toLowerCase()];
         if (local) {
@@ -529,7 +567,7 @@
           document.getElementById('profile-arabic-name').innerText = `${local.name_ar} (${local.suffix})`;
           document.getElementById('profile-kunyah').innerText = local.kunyah;
           document.getElementById('profile-settled').innerText = local.settled;
-          document.getElementById('profile-dates').innerText = local.dates;
+          document.getElementById('profile-dates').innerText = formatNarratorDates(local.dates, null, isId);
           document.getElementById('profile-parents').innerText = local.nasab;
           document.getElementById('total-hadith-badge').innerText = `${local.hadith_count} Narrations`;
           const bioEl = document.getElementById('bio-stories-content');
@@ -576,11 +614,7 @@
       document.getElementById('profile-kunyah').innerText = rawi.kunya_en ? `${rawi.kunya_en} (${rawi.kunya || ''})` : (rawi.kunya || 'N/A');
       document.getElementById('profile-settled').innerText = rawi.region || rawi.city_of_residence || rawi.city_of_death || 'Hijaz';
 
-      let dates = '';
-      if (rawi.died_ah) dates += `Died ${rawi.died_ah} AH`;
-      if (rawi.died_ce) dates += ` (${rawi.died_ce} CE)`;
-      if (!dates) dates = 'Early Era (1st Century AH)';
-      document.getElementById('profile-dates').innerText = dates;
+      document.getElementById('profile-dates').innerText = formatNarratorDates(rawi.died_ah, rawi.died_ce, isId);
 
       document.getElementById('profile-parents').innerText = rawi.nasab_en || rawi.nisba_en || 'Famous Lineage';
 
