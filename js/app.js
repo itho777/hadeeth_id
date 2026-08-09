@@ -2487,20 +2487,41 @@ function renderSyarahUI() {
   let benefits = [];
 
   if (src === 'fath') {
-    textExp = data[`explanation_fath_${lang}`] || data.explanation_fath_id || data[`explanation_${lang}`] || data.explanation_id || data.explanation_en;
-    benefits = data[`benefits_fath_${lang}`] || data[`benefits_${lang}`] || [];
+    textExp = data[`explanation_fath_${lang}`] || (lang === 'ar' ? data.explanation_fath_ar : (lang === 'id' ? data.explanation_fath_id : data.explanation_fath_en));
+    benefits = data[`benefits_fath_${lang}`] || (lang === 'ar' ? data.benefits_fath_ar : (lang === 'id' ? data.benefits_fath_id : data.benefits_fath_en)) || [];
+    if (!textExp) {
+      if (lang === 'id') {
+        textExp = '<span class="text-outline dark:text-gray-400 italic">Syarah Fathul Bari (Ibnu Hajar al-\'Asqalani) belum tersedia untuk nomor hadits ini dalam basis data.</span>';
+      } else if (lang === 'ar') {
+        textExp = '<span class="text-outline dark:text-gray-400 italic" dir="rtl">شرح فتح الباري للحافظ ابن حجر غير متوفر لهذا الحديث حالياً.</span>';
+      } else {
+        textExp = '<span class="text-outline dark:text-gray-400 italic">Sharh Fath al-Bari (Ibn Hajar al-\'Asqalani) is not yet available for this Hadith in the database.</span>';
+      }
+    }
   } else if (src === 'nawawi') {
-    textExp = data[`explanation_nawawi_${lang}`] || data.explanation_nawawi_id || data[`explanation_${lang}`] || data.explanation_id || data.explanation_en;
-    benefits = data[`benefits_nawawi_${lang}`] || data[`benefits_${lang}`] || [];
+    textExp = data[`explanation_nawawi_${lang}`] || (lang === 'ar' ? data.explanation_nawawi_ar : (lang === 'id' ? data.explanation_nawawi_id : data.explanation_nawawi_en));
+    benefits = data[`benefits_nawawi_${lang}`] || (lang === 'ar' ? data.benefits_nawawi_ar : (lang === 'id' ? data.benefits_nawawi_id : data.benefits_nawawi_en)) || [];
+    if (!textExp) {
+      if (lang === 'id') {
+        textExp = '<span class="text-outline dark:text-gray-400 italic">Syarah Sahih Muslim (Imam an-Nawawi) belum tersedia untuk nomor hadits ini dalam basis data.</span>';
+      } else if (lang === 'ar') {
+        textExp = '<span class="text-outline dark:text-gray-400 italic" dir="rtl">شرح صحيح مسلم للإمام النووي غير متوفر لهذا الحديث حالياً.</span>';
+      } else {
+        textExp = '<span class="text-outline dark:text-gray-400 italic">Sharh Sahih Muslim (Al-Nawawi) is not yet available for this Hadith in the database.</span>';
+      }
+    }
   } else {
     textExp = data[`explanation_${lang}`] || data.explanation_id || data.explanation_en;
     benefits = data[`benefits_${lang}`] || data.benefits_id || data.benefits_en || [];
-  }
-
-  if (!textExp) {
-    textExp = (lang === 'id') ? 
-      "Penjelasan syarah untuk hadits ini tercatat dalam rujukan kitab-kitab syarah utama berdasarkan konsensus ijma' ulama." :
-      "Scholarly commentary for this Hadith is recorded in canonical reference works under scholarly consensus.";
+    if (!textExp) {
+      if (lang === 'id') {
+        textExp = '<span class="text-outline dark:text-gray-400 italic">Syarah ringkas belum tersedia untuk nomor hadits ini.</span>';
+      } else if (lang === 'ar') {
+        textExp = '<span class="text-outline dark:text-gray-400 italic" dir="rtl">الشرح المختصر غير متوفر لهذا الحديث حالياً.</span>';
+      } else {
+        textExp = '<span class="text-outline dark:text-gray-400 italic">Concise commentary is not available for this Hadith.</span>';
+      }
+    }
   }
 
   expText.innerHTML = textExp;
