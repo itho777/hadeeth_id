@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_61"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_62"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -378,7 +378,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_61"></script>
+<script src="js/app.js?v=20260808_62"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -453,26 +453,97 @@
     }
   });
 
-  async function loadRawiProfile(id) {
-    try {
-      let res = await fetch(`${supabaseUrl}/rest/v1/rijal?id=eq.${id}&select=*`, {
-        headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
-      });
-      let data = res.ok ? await res.json() : [];
+  function renderRawiProfileUI(rawi) {
+    if (!rawi) return;
 
-      // Fallback: search by name if exact ID not found
-      if (!data || data.length === 0) {
-        const cleanName = id.replace(/^rawi_/, '').replace(/_/g, ' ');
-        res = await fetch(`${supabaseUrl}/rest/v1/rijal?or=(name_id.ilike.*${encodeURIComponent(cleanName)}*,name_en.ilike.*${encodeURIComponent(cleanName)}*)&select=*&limit=1`, {
-          headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
-        });
-        if (res.ok) data = await res.json();
+    const isId = (window.LangSystem && window.LangSystem.isIdMode());
+    const mainNameEn = rawi.name_en || 'Rawi';
+    const mainNameId = rawi.name_id || rawi.name_en || mainNameEn;
+    const isSahabi = rawi.is_sahabi || (rawi.generation && rawi.generation.toLowerCase().includes('sahabi')) || (rawi.gen && rawi.gen.toLowerCase().includes('sahabi')) || false;
+
+    let genTitle = rawi.generation || rawi.gen || (isSahabi ? 'Sahabi (Companion)' : 'Transmitter');
+    if (isId && (genTitle.toLowerCase().includes('sahabi') || genTitle === 'Sahabat')) {
+      genTitle = 'Sahabat';
+    }
+
+    const gradeText = rawi.grade || (isSahabi ? (isId ? 'Sahabat Adil' : 'Sahabi Adl') : 'Thiqah');
+
+    document.title = `Narrator Profile: ${mainNameEn} — HADEETH.ID`;
+    
+    const breadcrumbEl = document.getElementById('breadcrumb-name');
+    if (breadcrumbEl) breadcrumbEl.innerText = isId ? mainNameId : mainNameEn;
+
+    const avatarEl = document.getElementById('profile-avatar');
+    if (avatarEl) avatarEl.innerText = rawi.avatar || (rawi.name_ar || mainNameEn).charAt(0);
+
+    const genBadge = document.getElementById('profile-gen-badge');
+    if (genBadge) genBadge.innerText = genTitle;
+
+    const gradeBadge = document.getElementById('profile-grade-badge');
+    if (gradeBadge) gradeBadge.innerText = `Grade: ${gradeText}`;
+
+    const titleEl = document.getElementById('profile-english-name');
+    if (titleEl) {
+      titleEl.innerHTML = `
+        <span data-lang-en>${escapeHtml(mainNameEn)}</span>
+        <span data-lang-id>${escapeHtml(mainNameId)}</span>
+      `;
+    }
+
+    const nasabEl = document.getElementById('profile-nasab');
+    if (nasabEl) {
+      const nasabVal = rawi.nasab_en || rawi.nasab || rawi.nisba_en || `ID: ${rawi.id || ''}`;
+      nasabEl.innerText = `Nasab: ${nasabVal}`;
+    }
+
+    const cleanArName = (rawi.name_ar || '').replace(/[a-zA-Z]/g, '').trim();
+    const taradhiSuffix = isSahabi ? 'رضي الله عنه' : (rawi.suffix || 'رحمه الله');
+
+    const arContainer = document.getElementById('profile-arabic-name');
+    if (arContainer) {
+      arContainer.innerHTML = cleanArName ? `
+        <span class="font-arabic-title text-3xl md:text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl">${escapeHtml(cleanArName)}</span>
+        <span class="text-base md:text-xl text-emerald-600 dark:text-[#10b981]/90 font-arabic-body font-normal ms-2" dir="rtl">(${escapeHtml(taradhiSuffix)})</span>
+      ` : `<span class="text-base md:text-xl text-emerald-600 dark:text-[#10b981]/90 font-arabic-body font-normal" dir="rtl">(${escapeHtml(taradhiSuffix)})</span>`;
+    }
+
+    const kunyahEl = document.getElementById('profile-kunyah');
+    if (kunyahEl) {
+      const kVal = rawi.kunya_en ? `${rawi.kunya_en} (${rawi.kunya || ''})` : (rawi.kunyah || rawi.kunya || 'N/A');
+      kunyahEl.innerText = kVal;
+    }
+
+    const settledEl = document.getElementById('profile-settled');
+    if (settledEl) {
+      settledEl.innerText = rawi.settled || rawi.region || rawi.city_of_residence || rawi.city_of_death || 'Madinah al-Munawwarah';
+    }
+
+    const datesEl = document.getElementById('profile-dates');
+    if (datesEl) {
+      let rawD = rawi.died_ah || rawi.dates || '';
+      let cleanD = (rawD || '').replace(/^Died\s+/gi, '').replace(/^Died\s+/gi, '').trim();
+      if (cleanD && !cleanD.includes('CE') && rawi.died_ce) {
+        cleanD += ` (${rawi.died_ce} CE)`;
       }
+      let finalDates = cleanD ? `Died ${cleanD}` : (rawi.died_ce ? `Died ${rawi.died_ce} CE` : 'Early Era (1st Century AH)');
+      datesEl.innerText = finalDates.replace(/^Died\s+Died\s+/gi, 'Died ');
+    }
 
-      const isId = (window.LangSystem && window.LangSystem.isIdMode());
+    const parentsEl = document.getElementById('profile-parents');
+    if (parentsEl) {
+      parentsEl.innerText = rawi.nasab_en || rawi.nasab || 'Famous Lineage';
+    }
 
-      // ── Local fallback dictionary ── used when Supabase has no row for this id ──
-      const localRawiDict = {
+    const bioEl = document.getElementById('bio-stories-content');
+    if (bioEl && rawi.bio) {
+      bioEl.innerHTML = `<p><strong class="text-primary dark:text-white">Biography:</strong> ${escapeHtml(rawi.bio)}</p>`;
+    }
+
+    if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+  }
+
+  async function loadRawiProfile(id) {
+    const localRawiDict = {
         'rawi_umar_ibn_al_khattab':   { name_en:"'Umar bin Al-Khattab", name_ar:"عمر بن الخطاب", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"'Umar ibn al-Khattab ibn Nufayl al-Qurashi", kunyah:"Abu Hafs (أبو حفص)", settled:"Madinah al-Munawwarah", dates:"Died 23 AH / 644 CE", hadith_count:"537", bio:"Second Caliph of Islam. Noted for justice, wisdom, and meticulous verification of narrations. Transmitted 537 Hadiths covering governance, prayer, and intention.", suffix:"رضي الله عنه" },
         'rawi_aisha_bint_abi_bakr':   { name_en:"'Aisha bint Abi Bakr", name_ar:"عائشة بنت أبي بكر", avatar:"ع", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"'Aisha bint Abi Bakr al-Siddiq al-Qurashiyya", kunyah:"Umm Abdillah (أم عبد الله)", settled:"Madinah al-Munawwarah", dates:"Died 58 AH / 678 CE", hadith_count:"2,420", bio:"Mother of the Believers. One of the most prolific transmitters of Hadith and the foremost female Islamic jurist. Narrated 2,420 traditions spanning all branches of Islamic law and ethics.", suffix:"رضي الله عنها" },
         'rawi_abu_hurairah':          { name_en:"Abu Hurairah", name_ar:"أبو هريرة", avatar:"أ", gen:"Sahabi (Companion)", gen_id:"Sahabat", grade:"Sahabi Adl", nasab:"'Abd al-Rahman ibn Sakhr al-Dawsi al-Zahrani", kunyah:"Abu Hurairah (أبو هريرة)", settled:"Madinah al-Munawwarah / Bahrain", dates:"Died 57 AH / 678 CE", hadith_count:"5,374", bio:"The most prolific transmitter of Hadith among all Sahabah. Spent three years in close proximity to the Prophet ﷺ, devoting himself entirely to memorizing narrations.", suffix:"رضي الله عنه" },
@@ -503,121 +574,52 @@
         'rawi_atho_bin_yasar':        { name_en:"Atho' bin Yasar", name_ar:"عطاء بن يسار", avatar:"ع", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah Fadil", nasab:"'Ata' ibn Yasar al-Hilali, Mawla of Maymunah", kunyah:"Abu Muhammad (أبو محمد)", settled:"Madinah al-Munawwarah", dates:"Died 103 AH / 721 CE", hadith_count:"205", bio:"Devout Madinan Tabi'i and freed-man of Maymunah (wife of the Prophet ﷺ). Narrated from Abu Hurairah, Abu Sa'id al-Khudri, and 'Aisha.", suffix:"رحمه الله" },
         'rawi_hilal_bin_ali':         { name_en:"Hilal bin Ali", name_ar:"هلال بن علي", avatar:"ه", gen:"Tabi'i (Successor)", gen_id:"Tabi'in", grade:"Thiqah", nasab:"Hilal ibn 'Ali ibn Usamah al-'Adawi", kunyah:"Abu Maimunah (أبو ميمونة)", settled:"Madinah al-Munawwarah", dates:"Died 120 AH / 738 CE", hadith_count:"150", bio:"Authentic Madinan rawi who transmitted from Atho' bin Yasar and Anas bin Malik. Ibn Hajar rated him Thiqah. His narrations appear in Sahih al-Bukhari and Sahih Muslim.", suffix:"رحمه الله" }
       };
+      
+    const normId = (id || '').toLowerCase();
+    const local = localRawiDict[id] || localRawiDict[normId] || localRawiDict['rawi_' + normId] || (normId.includes('ahmad') ? localRawiDict['rawi_ahmad'] : null);
+
+    // Synchronous instant 0ms local render
+    if (local) {
+      renderRawiProfileUI(local);
+    }
+
+    try {
+      let res = await fetch(`${supabaseUrl}/rest/v1/rijal?id=eq.${id}&select=*`, {
+        headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
+      });
+      let data = res.ok ? await res.json() : [];
 
       if (!data || data.length === 0) {
-        const local = localRawiDict[id] || localRawiDict[id.toLowerCase()];
+        const cleanName = id.replace(/^rawi_/, '').replace(/_/g, ' ');
+        res = await fetch(`${supabaseUrl}/rest/v1/rijal?or=(name_id.ilike.*${encodeURIComponent(cleanName)}*,name_en.ilike.*${encodeURIComponent(cleanName)}*)&select=*&limit=1`, {
+          headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
+        });
+        if (res.ok) data = await res.json();
+      }
+
+      if (data && data.length > 0) {
+        const rawi = data[0];
         if (local) {
-          const nEn = local.name_en;
-          const nId = local.name_id || local.name_en;
-          document.title = `Narrator Profile: ${nEn} — HADEETH.ID`;
-          document.getElementById('breadcrumb-name').innerText = isId ? nId : nEn;
-          document.getElementById('profile-avatar').innerText = local.avatar;
-          document.getElementById('profile-gen-badge').innerText = isId ? local.gen_id : local.gen;
-          document.getElementById('profile-grade-badge').innerText = `Grade: ${local.grade}`;
-          document.getElementById('profile-english-name').innerHTML = `
-            <span data-lang-en>${escapeHtml(nEn)}</span>
-            <span data-lang-id>${escapeHtml(nId)}</span>
-          `;
-          document.getElementById('profile-nasab').innerText = `Nasab: ${local.nasab}`;
-          
-          const cleanAr = (local.name_ar || '').replace(/[a-zA-Z]/g, '').trim();
-          const tSuffix = local.suffix || 'رحمه الله';
-          document.getElementById('profile-arabic-name').innerHTML = cleanAr ? `
-            <span class="font-arabic-title text-3xl md:text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl">${escapeHtml(cleanAr)}</span>
-            <span class="text-base md:text-xl text-emerald-600 dark:text-[#10b981]/90 font-arabic-body font-normal ms-2" dir="rtl">(${escapeHtml(tSuffix)})</span>
-          ` : `<span class="text-base md:text-xl text-emerald-600 dark:text-[#10b981]/90 font-arabic-body font-normal" dir="rtl">(${escapeHtml(tSuffix)})</span>`;
-
-          document.getElementById('profile-kunyah').innerText = local.kunyah;
-          document.getElementById('profile-settled').innerText = local.settled;
-
-          let rawDate = local.dates || '';
-          let cleanD = rawDate.replace(/^Died\s+/gi, '').replace(/^Died\s+/gi, '').trim();
-          document.getElementById('profile-dates').innerText = cleanD ? `Died ${cleanD}` : 'Early Era (1st Century AH)';
-          document.getElementById('profile-parents').innerText = local.nasab;
-          document.getElementById('total-hadith-badge').innerText = `${local.hadith_count} Narrations`;
-          const bioEl = document.getElementById('bio-stories-content');
-          if (bioEl) bioEl.innerHTML = `<p><strong class="text-primary dark:text-white">Biography:</strong> ${local.bio}</p>`;
-
-          if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+          if (!rawi.name_ar || rawi.name_ar === rawi.name_en || /[a-zA-Z]/.test(rawi.name_ar)) rawi.name_ar = local.name_ar;
+          if (!rawi.bio_en || rawi.bio_en.includes('is an authentic transmitter of Hadith recorded in canonical collections')) rawi.bio_en = local.bio;
+          if (!rawi.bio_id || rawi.bio_id.includes('adalah perawi perawi hadis shahih')) rawi.bio_id = local.bio;
+          if (local.gen && (!rawi.generation || rawi.generation === 'Transmitter (Rawi)')) rawi.generation = local.gen;
+          if (local.grade && (!rawi.grade || rawi.grade === 'Thiqah (Trustworthy)')) rawi.grade = local.grade;
+          if (local.kunyah) rawi.kunya_en = local.kunyah;
+          if (local.nasab) rawi.nasab_en = local.nasab;
+          if (local.settled && (!rawi.region || rawi.region === 'Hijaz')) rawi.region = local.settled;
+          if (local.dates) rawi.died_ah = local.dates;
+          if (local.name_en && (rawi.name_en === 'Ahmad' || rawi.name_en === 'Rawi')) rawi.name_en = local.name_en;
+          if (local.name_id) rawi.name_id = local.name_id;
+          if (local.avatar) rawi.avatar = local.avatar;
+          if (local.suffix) rawi.suffix = local.suffix;
         }
-        return;
+        renderRawiProfileUI(rawi);
       }
-
-      const rawi = data[0];
-      const local = localRawiDict[rawi.id] || localRawiDict[(rawi.id || '').toLowerCase()] || localRawiDict['rawi_' + rawi.id] || (rawi.id.includes('ahmad') ? localRawiDict['rawi_ahmad'] : null);
-
-      if (local) {
-        if (!rawi.name_ar || rawi.name_ar === rawi.name_en || /[a-zA-Z]/.test(rawi.name_ar)) rawi.name_ar = local.name_ar;
-        if (!rawi.bio_en || rawi.bio_en.includes('is an authentic transmitter of Hadith recorded in canonical collections')) rawi.bio_en = local.bio;
-        if (!rawi.bio_id || rawi.bio_id.includes('adalah perawi perawi hadis shahih')) rawi.bio_id = local.bio;
-        if (local.gen && (!rawi.generation || rawi.generation === 'Transmitter (Rawi)')) rawi.generation = local.gen;
-        if (local.grade && (!rawi.grade || rawi.grade === 'Thiqah (Trustworthy)')) rawi.grade = local.grade;
-        if (local.kunyah) rawi.kunya_en = local.kunyah;
-        if (local.nasab) rawi.nasab_en = local.nasab;
-        if (local.settled && (!rawi.region || rawi.region === 'Hijaz')) rawi.region = local.settled;
-        if (local.dates) rawi.died_ah = local.dates;
-        if (local.name_en && (rawi.name_en === 'Ahmad' || rawi.name_en === 'Rawi')) rawi.name_en = local.name_en;
-        if (local.name_id) rawi.name_id = local.name_id;
-      }
-
-      // Hide demo switcher bar if loading a real DB profile
-      const demoBar = document.querySelector('.bg-surface-container-low.dark\\:bg-\\[\\#1e293b\\].p-3');
-      if (demoBar) demoBar.style.display = 'none';
-
-      let genTitle = rawi.generation || (rawi.is_sahabi ? 'Sahabi (Companion)' : 'Transmitter');
-      if (isId && genTitle.toLowerCase().includes('sahabi')) genTitle = 'Sahabat';
-
-      const mainNameEn = rawi.name_en || (local ? local.name_en : 'Rawi');
-      const mainNameId = rawi.name_id || (local ? local.name_id : mainNameEn);
-
-      document.title = `Narrator Profile: ${mainNameEn} — HADEETH.ID`;
-      document.getElementById('breadcrumb-name').innerText = isId ? mainNameId : mainNameEn;
-      document.getElementById('profile-avatar').innerText = (rawi.name_ar || mainNameEn).charAt(0);
-      document.getElementById('profile-gen-badge').innerText = genTitle;
-      document.getElementById('profile-grade-badge').innerText = `Grade: ${rawi.grade || (rawi.is_sahabi ? (isId ? 'Sahabat Adil' : 'Sahabi Adl') : 'Thiqah')}`;
-      
-      document.getElementById('profile-english-name').innerHTML = `
-        <span data-lang-en>${escapeHtml(mainNameEn)}</span>
-        <span data-lang-id>${escapeHtml(mainNameId)}</span>
-      `;
-
-      document.getElementById('profile-nasab').innerText = rawi.nasab_en ? `Nasab: ${rawi.nasab_en}` : (rawi.nasab ? `Nasab: ${rawi.nasab}` : (local ? `Nasab: ${local.nasab}` : `ID: ${rawi.id}`));
-      
-      // Right side name: Styled Arabic Calligraphy + Taradhi
-      const cleanArName = (rawi.name_ar || (local ? local.name_ar : '')).replace(/[a-zA-Z]/g, '').trim();
-      const taradhiSuffix = rawi.is_sahabi ? 'رضي الله عنه' : (rawi.suffix || (local ? local.suffix : 'رحمه الله') || 'رحمه الله');
-      
-      const arContainer = document.getElementById('profile-arabic-name');
-      if (arContainer) {
-        arContainer.innerHTML = cleanArName ? `
-          <span class="font-arabic-title text-3xl md:text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl">${escapeHtml(cleanArName)}</span>
-          <span class="text-base md:text-xl text-emerald-600 dark:text-[#10b981]/90 font-arabic-body font-normal ms-2" dir="rtl">(${escapeHtml(taradhiSuffix)})</span>
-        ` : `<span class="text-base md:text-xl text-emerald-600 dark:text-[#10b981]/90 font-arabic-body font-normal" dir="rtl">(${escapeHtml(taradhiSuffix)})</span>`;
-      }
-
-      document.getElementById('profile-kunyah').innerText = rawi.kunya_en ? `${rawi.kunya_en} (${rawi.kunya || ''})` : (rawi.kunya || (local ? local.kunyah : 'N/A'));
-      document.getElementById('profile-settled').innerText = rawi.region || rawi.city_of_residence || rawi.city_of_death || (local ? local.settled : 'Hijaz');
-
-      // ── Cleaned Date Sanitizer (No double Died or AH/CE) ──
-      let rawD = rawi.died_ah || (local ? local.dates : '') || '';
-      let datesText = '';
-      if (rawD) {
-        let cleanD = rawD.replace(/^Died\s+/gi, '').replace(/^Died\s+/gi, '').trim();
-        if (!cleanD.includes('CE') && rawi.died_ce) {
-          cleanD += ` (${rawi.died_ce} CE)`;
-        }
-        datesText = `Died ${cleanD}`;
-      } else if (rawi.died_ce) {
-        datesText = `Died ${rawi.died_ce} CE`;
-      } else {
-        datesText = 'Early Era (1st Century AH)';
-      }
-      datesText = datesText.replace(/^Died\s+Died\s+/gi, 'Died ');
-      document.getElementById('profile-dates').innerText = datesText;
-
-      document.getElementById('profile-parents').innerText = rawi.nasab_en || rawi.nasab || (local ? local.nasab : 'Famous Lineage');
-
-      if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+    } catch (err) {
+      console.warn('Supabase profile fetch warning:', err);
+      if (local) renderRawiProfileUI(local);
+    }
 
       // ── Author / Collector Statistics Box ──
       const authorStatsMap = {
