@@ -617,10 +617,31 @@ async function loadHadithDetail() {
             const isnadPartId = item.text_id.split(/beliau\s+bersabda\s*:|berfirman\s*:|berkata\s*:|tentang\s+firman\s+Allah|bahwa\s+Rasulullah/i)[0] || item.text_id;
             const brackets = isnadPartId.match(/\[([^\]]+)\]/g);
             if (brackets) {
-              const stopWords = new Set(['Al Qur\'an', 'Al-Qur\'an', 'Islam', 'Nabi', 'Rasulullah', 'Allah', 'bapaknya', 'bapakku']);
+              const stopWords = new Set([
+                'al qur\'an', 'al-qur\'an', 'qur\'an', 'islam', 'nabi', 'rasulullah', 'allah', 'tuhan',
+                'pamannya', 'pamanku', 'paman', 'uncle', 'my uncle', 'his uncle',
+                'ayahnya', 'ayahku', 'bapaknya', 'bapakku', 'ayah', 'bapak', 'father', 'his father', 'my father',
+                'kakeknya', 'kakekku', 'kakek', 'grandfather', 'his grandfather', 'my grandfather',
+                'ibunya', 'ibuku', 'ibu', 'mother', 'his mother', 'my mother',
+                'saudaranya', 'saudaraku', 'saudara', 'brother', 'his brother', 'my brother',
+                'saudari', 'saudarinya', 'sister', 'his sister',
+                'anaknya', 'anakku', 'anak', 'son', 'daughter', 'his son', 'his daughter',
+                'istrinya', 'istri', 'wife', 'his wife',
+                'suaminya', 'suami', 'husband', 'her husband',
+                'budaknya', 'budak', 'hamba', 'slave', 'freedman',
+                'bibinya', 'bibi', 'aunt', 'his aunt',
+                'sepupunya', 'sepupu', 'cousin',
+                'mertuanya', 'mertua', 'in-law',
+                'keluarganya', 'keluarga', 'family',
+                'kerabatnya', 'kerabat', 'kin',
+                'sahabat', 'sahabatnya', 'companion', 'companions',
+                'beliau', 'mereka', 'seseorang', 'seorang', 'lelaki', 'wanita', 'perempuan',
+                'orang', 'orang tua', 'kaum', 'umat', 'jamaah'
+              ]);
               brackets.forEach(b => {
                 const name = b.replace(/[\[\]]/g, '').trim();
-                if (name && !stopWords.has(name) && name.length > 2) {
+                const norm = name.toLowerCase();
+                if (name && !stopWords.has(norm) && !stopWords.has(name) && name.length > 2) {
                   previewNames.push(name);
                 }
               });
@@ -1858,12 +1879,25 @@ async function loadSanadChain() {
     
     if (brackets && brackets.length > 0) {
       const stopWords = new Set([
-        'Al Qur\'an', 'Al-Qur\'an', 'Islam', 'Nabi', 'Rasulullah', 'Allah',
-        'ayahnya', 'ayahku', 'bapaknya', 'bapakku', 'ibunya', 'ibuku',
-        'pamanku', 'pamannya', 'kakeknya', 'kakekku', 'saudaranya', 'saudaraku',
-        'anaknya', 'anakku', 'suaminya', 'istrinya', 'budaknya', 'sahabat',
-        'sahabatnya', 'beliau', 'mereka', 'seseorang', 'lelaki', 'wanita',
-        'orang', 'orang tua', 'keluarga', 'kaum', 'umat'
+        'al qur\'an', 'al-qur\'an', 'qur\'an', 'islam', 'nabi', 'rasulullah', 'allah', 'tuhan',
+        'pamannya', 'pamanku', 'paman', 'uncle', 'my uncle', 'his uncle',
+        'ayahnya', 'ayahku', 'bapaknya', 'bapakku', 'ayah', 'bapak', 'father', 'his father', 'my father',
+        'kakeknya', 'kakekku', 'kakek', 'grandfather', 'his grandfather', 'my grandfather',
+        'ibunya', 'ibuku', 'ibu', 'mother', 'his mother', 'my mother',
+        'saudaranya', 'saudaraku', 'saudara', 'brother', 'his brother', 'my brother',
+        'saudari', 'saudarinya', 'sister', 'his sister',
+        'anaknya', 'anakku', 'anak', 'son', 'daughter', 'his son', 'his daughter',
+        'istrinya', 'istri', 'wife', 'his wife',
+        'suaminya', 'suami', 'husband', 'her husband',
+        'budaknya', 'budak', 'hamba', 'slave', 'freedman',
+        'bibinya', 'bibi', 'aunt', 'his aunt',
+        'sepupunya', 'sepupu', 'cousin',
+        'mertuanya', 'mertua', 'in-law',
+        'keluarganya', 'keluarga', 'family',
+        'kerabatnya', 'kerabat', 'kin',
+        'sahabat', 'sahabatnya', 'companion', 'companions',
+        'beliau', 'mereka', 'seseorang', 'seorang', 'lelaki', 'wanita', 'perempuan',
+        'orang', 'orang tua', 'kaum', 'umat', 'jamaah'
       ]);
       const extractedNames = [];
       
