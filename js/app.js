@@ -1817,6 +1817,7 @@ async function loadSanadChain() {
 
   // Master Rawi Dictionary with complete 3-name separation (Arabic script, EN Latin, ID Latin)
   const rawiDict = [
+    { rawi_id: 'rawi_ali_bin_al_madini', en: "'Ali bin 'Abdillah al-Madini", id: "Ali bin Abdullah al-Madini", ar: "علي بن عبد الله المديني", roleEn: "Direct Sheikh of Bukhari • Grade: Hafiz Hujjah", roleId: "GURU LANGSUNG BUKHARI • DERAJAT: HAFIZH HUJJAH", kunyah: "Abu al-Hasan", residence: "Basra / Baghdad", death_ah: "234 AH (849 CE)", counts: "Bukhari: 303", remarks: "Ibn Hajar: Amir al-Mu'minin fi al-Hadith | Imam al-Bukhari: I never felt small before anyone except Ali ibn al-Madini" },
     { rawi_id: 'rawi_abdullah_bin_dinar', en: "Abdullah bin Dinar", id: "Abdullah bin Dinar", ar: "عبد الله بن دينار", roleEn: "Transmitter (Rawi) • Grade: Thiqah", roleId: "PERAWI (RAWI) • DERAJAT: TSIQAH", kunyah: "Abu Abdullah", residence: "Madinah", death_ah: "127 AH (745 CE)", counts: "Bukhari: 180 | Muslim: 160", remarks: "Ibn Hajar: Thiqah Mutqin | Imam al-Bukhari: Thiqah" },
     { rawi_id: 'rawi_ismail_bin_jafar', en: "Isma'il bin Ja'far", id: "Ismail bin Ja'far al-Madani", ar: "إسماعيل بن جعفر", roleEn: "Transmitter (Rawi) • Grade: Thiqah", roleId: "PERAWI (RAWI) • DERAJAT: TSIQAH", kunyah: "Abu Ishaq", residence: "Madinah / Baghdad", death_ah: "180 AH (796 CE)", counts: "Bukhari: 210 | Muslim: 190", remarks: "Ibn Hajar: Thiqah Thabt | Yahya bin Ma'in: Thiqah" },
     { rawi_id: 'rawi_sulaiman_bin_harb', en: "Sulaiman bin Harb", id: "Sulaiman bin Harb al-Azdi", ar: "سليمان بن حرب", roleEn: "Direct Sheikh of Bukhari • Grade: Thiqah", roleId: "GURU LANGSUNG BUKHARI • DERAJAT: TSIQAH", kunyah: "Abu Ayyub", residence: "Basra / Makkah", death_ah: "224 AH (839 CE)", counts: "Bukhari: 145", remarks: "Ibn Hajar: Thiqah Imam Hafiz | Ahmad bin Hanbal: Thiqah Thabt" },
@@ -1934,6 +1935,8 @@ async function loadSanadChain() {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_hanzalah_bin_abu_sufyan');
         } else if (normNameKey.includes('alqam') || normNameKey.includes('waq')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_alqama_bin_waqqas');
+        } else if (normNameKey === 'ali' || normNameKey.includes('ali bin abdullah') || normNameKey.includes('al madini') || normNameKey.includes('madini')) {
+          matched = rawiDict.find(d => d.rawi_id === 'rawi_ali_bin_al_madini');
         } else if (normNameKey.includes('umar')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_umar_ibn_al_khattab');
         } else if (normNameKey.includes('sufyan')) {
@@ -1945,9 +1948,8 @@ async function loadSanadChain() {
         } else {
           matched = rawiDict.find(d => 
             normalizeRawiNameKey(d.en) === normNameKey ||
-            normNameKey.includes(normalizeRawiNameKey(d.en)) ||
-            (d.id && normNameKey.includes(normalizeRawiNameKey(d.id))) ||
-            (d.id && normalizeRawiNameKey(d.id).includes(normNameKey))
+            (d.id && normalizeRawiNameKey(d.id) === normNameKey) ||
+            normNameKey.includes(normalizeRawiNameKey(d.en))
           );
         }
 
