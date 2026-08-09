@@ -1926,6 +1926,7 @@ async function loadSanadChain() {
             remarks: matched.remarks
           });
         } else {
+          const normName = normalizeRawiNameKey(rawiName);
           const isFirst = (idx === 0) || normName.includes('radliallahu') || normName.includes('sahabi') || normName.includes('abu hurairah') || normName.includes('umar') || normName.includes('aisyah');
           narrators.push({
             rawi_id: null,
@@ -2364,6 +2365,7 @@ function getArabicScriptForRawi(latinOrAr) {
     'muslim': 'مسلم'
   };
 
+  const clean = rawStr.replace(/\(.*?\)/g, '').replace(/[^a-zA-Z\s]/g, '').trim();
   const words = clean.split(/\s+/);
   const arWords = words.map(w => {
     const lw = w.toLowerCase().replace(/[^a-z]/g, '');
