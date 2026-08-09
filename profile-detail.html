@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_64"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_63"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -399,7 +399,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_64"></script>
+<script src="js/app.js?v=20260808_63"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -545,15 +545,13 @@
         };
       } else if (rawi && local) {
         if (!rawi.name_ar || rawi.name_ar === rawi.name_en || /[a-zA-Z]/.test(rawi.name_ar)) rawi.name_ar = local.name_ar;
-        if (local.name_id) rawi.name_id = local.name_id;
-        if (local.gen_id) rawi.gen_id = local.gen_id;
-        if (local.grade_id) rawi.grade_id = local.grade_id;
+        if (!rawi.name_id) rawi.name_id = local.name_id;
         if (local.gen && (!rawi.generation || rawi.generation === 'Transmitter (Rawi)')) rawi.generation = local.gen;
         if (local.grade && (!rawi.grade || rawi.grade === 'Thiqah (Trustworthy)')) rawi.grade = local.grade;
         if (local.kunyah) rawi.kunya_en = local.kunyah;
         if (local.nasab) rawi.nasab_en = local.nasab;
         if (local.settled && (!rawi.region || rawi.region === 'Hijaz')) rawi.region = local.settled;
-        if (local.dates) rawi.died_ah = local.dates;
+        if (local.dates && !rawi.died_ah) rawi.died_ah = local.dates;
       }
 
       if (!rawi) return;
@@ -564,12 +562,12 @@
 
       // 1 & 2: Header Badges & Bilingual Title
       let genTitleEn = rawi.generation || (isSahabi ? 'Sahabi (Companion)' : 'Transmitter');
-      let genTitleId = rawi.gen_id || (local && local.gen_id) ? (rawi.gen_id || local.gen_id) : (isSahabi ? 'Sahabat' : 'Perawi');
+      let genTitleId = (local && local.gen_id) ? local.gen_id : (isSahabi ? 'Sahabat' : 'Perawi');
       let genTitle = isId ? genTitleId : genTitleEn;
       document.getElementById('profile-gen-badge').innerText = genTitle;
 
       let gradeEn = rawi.grade || (isSahabi ? 'Sahabi Adl (Utmost Reliability)' : 'Thiqah (Trustworthy)');
-      let gradeId = rawi.grade_id || (local && local.grade_id) ? (rawi.grade_id || local.grade_id) : (isSahabi ? 'Sahabat Adil (Keadilan Utuh)' : 'Tsiqah (Terpercaya)');
+      let gradeId = (local && local.grade_id) ? local.grade_id : (isSahabi ? 'Sahabat Adil (Keadilan Utuh)' : 'Tsiqah (Terpercaya)');
       document.getElementById('profile-grade-badge').innerText = isId ? `Derajat: ${gradeId}` : `Grade: ${gradeEn}`;
 
       document.title = `Narrator Profile: ${isId ? mainNameId : mainNameEn} — HADEETH.ID`;
@@ -599,13 +597,11 @@
       document.getElementById('profile-settled').innerText = rawi.region || rawi.city_of_residence || rawi.city_of_death || (local ? local.settled : 'Madinah al-Munawwarah');
 
       // 4. Clean Birth & Death Year Sanitizer
-      let rawD = (local && local.dates) ? local.dates : (rawi.died_ah || '');
-      let cleanD = rawD
-        .replace(/AH\s*\(\d+\s*CE\)/gi, '')
-        .replace(/AH\s*CE/gi, '')
-        .replace(/^Died\s+/gi, '')
-        .replace(/^Wafat\s+/gi, '')
-        .trim();
+      let rawD = rawi.died_ah || (local ? local.dates : '') || '';
+      let cleanD = rawD.replace(/^Died\s+/gi, '').replace(/^Wafat\s+/gi, '').trim();
+      if (cleanD && !cleanD.includes('CE') && !cleanD.includes('M') && rawi.died_ce) {
+        cleanD += ` (${rawi.died_ce} CE)`;
+      }
       
       let finalDates = '';
       if (isId) {
