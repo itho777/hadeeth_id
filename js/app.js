@@ -2563,10 +2563,10 @@ async function loadHadithSyarah(bookId, hadithNum) {
       hadith_id: hadithId,
       book_id: bookId,
       hadith_number: hadithNum,
-      explanation_id: "Hadits ini memuat petunjuk hukum dan keutamaan amalan yang disepakati secara konsensus oleh para ulama hadits.",
-      explanation_en: "This Hadith provides fundamental legal guidance and virtues accepted under scholarly Hadith consensus.",
-      benefits_id: ["Memberikan petunjuk amalan utama dalam kehidupan muslim.", "Landasan hukum fiqih dalam bab terkait."],
-      benefits_en: ["Provides essential guidance for righteous daily practice.", "Forms foundational legal ruling in Islamic jurisprudence."]
+      explanation_id: "",
+      explanation_en: "",
+      benefits_id: [],
+      benefits_en: []
     };
   }
 
