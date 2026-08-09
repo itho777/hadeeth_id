@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_61"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_60"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -126,11 +126,11 @@
       <div class="flex flex-col gap-2 max-w-xl">
         <span class="bg-[#10b981] text-black text-[10px] uppercase font-extrabold px-3 py-1 rounded-md tracking-wider self-start">
           <span data-lang-en>Author & Collector Statistics</span>
-          <span data-lang-id>Statistik Kolektor & Penulis</span>
+          <span data-lang-id style="display:none">Statistik Kolektor & Penulis</span>
         </span>
         <h2 class="text-xl md:text-2xl font-bold tracking-tight text-white mt-1">
           <span data-lang-en>Compendiums Authored & Erudition</span>
-          <span data-lang-id>Karya Kitab & Keahlian Hadits</span>
+          <span data-lang-id style="display:none">Karya Kitab & Keahlian Hadits</span>
         </h2>
         <p id="author-spec-desc" class="text-xs md:text-sm text-gray-300 leading-relaxed">
           Imam al-Bukhari evaluated over 600,000 oral traditions with complete chains of narration over 16 years, selecting 7,563 authentic Hadiths for Sahih al-Bukhari.
@@ -143,21 +143,21 @@
           <span id="author-spec-memorized" class="text-2xl md:text-3xl font-extrabold text-[#10b981] tracking-tight">600,000</span>
           <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold mt-1">
             <span data-lang-en>Hadiths Examined</span>
-            <span data-lang-id>Hadits Diuji & Diteliti</span>
+            <span data-lang-id style="display:none">Hadits Diuji & Diteliti</span>
           </span>
         </div>
         <div class="bg-white/5 dark:bg-slate-800/40 p-4 rounded-xl border border-white/10 backdrop-blur-md flex flex-col justify-center items-center text-center min-w-[140px]">
           <span id="author-spec-compiled" class="text-2xl md:text-3xl font-extrabold text-[#10b981] tracking-tight">7,563</span>
           <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold mt-1">
             <span data-lang-en>Sahih Compiled</span>
-            <span data-lang-id>Shahih Dihimpun</span>
+            <span data-lang-id style="display:none">Shahih Dihimpun</span>
           </span>
         </div>
         <div class="bg-white/5 dark:bg-slate-800/40 p-4 rounded-xl border border-white/10 backdrop-blur-md flex flex-col justify-center items-center text-center min-w-[140px]">
           <span id="author-spec-books" class="text-2xl md:text-3xl font-extrabold text-[#10b981] tracking-tight">3+</span>
           <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold mt-1">
             <span data-lang-en>Major Books</span>
-            <span data-lang-id>Kitab Utama</span>
+            <span data-lang-id style="display:none">Kitab Utama</span>
           </span>
         </div>
       </div>
@@ -378,7 +378,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_61"></script>
+<script src="js/app.js?v=20260808_60"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -516,7 +516,7 @@
           document.getElementById('profile-grade-badge').innerText = `Grade: ${local.grade}`;
           document.getElementById('profile-english-name').innerHTML = `
             <span data-lang-en>${escapeHtml(nEn)}</span>
-            <span data-lang-id>${escapeHtml(nId)}</span>
+            <span data-lang-id style="display:none">${escapeHtml(nId)}</span>
           `;
           document.getElementById('profile-nasab').innerText = `Nasab: ${local.nasab}`;
           
@@ -537,8 +537,6 @@
           document.getElementById('total-hadith-badge').innerText = `${local.hadith_count} Narrations`;
           const bioEl = document.getElementById('bio-stories-content');
           if (bioEl) bioEl.innerHTML = `<p><strong class="text-primary dark:text-white">Biography:</strong> ${local.bio}</p>`;
-
-          if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
         }
         return;
       }
@@ -578,10 +576,10 @@
       
       document.getElementById('profile-english-name').innerHTML = `
         <span data-lang-en>${escapeHtml(mainNameEn)}</span>
-        <span data-lang-id>${escapeHtml(mainNameId)}</span>
+        <span data-lang-id style="display:none">${escapeHtml(mainNameId)}</span>
       `;
 
-      document.getElementById('profile-nasab').innerText = rawi.nasab_en ? `Nasab: ${rawi.nasab_en}` : (rawi.nasab ? `Nasab: ${rawi.nasab}` : (local ? `Nasab: ${local.nasab}` : `ID: ${rawi.id}`));
+      document.getElementById('profile-nasab').innerText = rawi.nasab_en ? `Nasab: ${rawi.nasab_en}` : (rawi.nasab ? `Nasab: ${rawi.nasab}` : `ID: ${rawi.id}`);
       
       // Right side name: Styled Arabic Calligraphy + Taradhi
       const cleanArName = (rawi.name_ar || (local ? local.name_ar : '')).replace(/[a-zA-Z]/g, '').trim();
@@ -595,8 +593,8 @@
         ` : `<span class="text-base md:text-xl text-emerald-600 dark:text-[#10b981]/90 font-arabic-body font-normal" dir="rtl">(${escapeHtml(taradhiSuffix)})</span>`;
       }
 
-      document.getElementById('profile-kunyah').innerText = rawi.kunya_en ? `${rawi.kunya_en} (${rawi.kunya || ''})` : (rawi.kunya || (local ? local.kunyah : 'N/A'));
-      document.getElementById('profile-settled').innerText = rawi.region || rawi.city_of_residence || rawi.city_of_death || (local ? local.settled : 'Hijaz');
+      document.getElementById('profile-kunyah').innerText = rawi.kunya_en ? `${rawi.kunya_en} (${rawi.kunya || ''})` : (rawi.kunya || 'N/A');
+      document.getElementById('profile-settled').innerText = rawi.region || rawi.city_of_residence || rawi.city_of_death || 'Hijaz';
 
       // ── Cleaned Date Sanitizer (No double Died or AH/CE) ──
       let rawD = rawi.died_ah || (local ? local.dates : '') || '';
@@ -615,9 +613,7 @@
       datesText = datesText.replace(/^Died\s+Died\s+/gi, 'Died ');
       document.getElementById('profile-dates').innerText = datesText;
 
-      document.getElementById('profile-parents').innerText = rawi.nasab_en || rawi.nasab || (local ? local.nasab : 'Famous Lineage');
-
-      if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+      document.getElementById('profile-parents').innerText = rawi.nasab_en || rawi.nisba_en || 'Famous Lineage';
 
       // ── Author / Collector Statistics Box ──
       const authorStatsMap = {
@@ -936,11 +932,11 @@
           const quoteEl = isVerbatim ? 
             `<p class="text-xs text-on-surface-variant dark:text-gray-300 italic leading-relaxed">
               "<span data-lang-en>${escapeHtml(ev.quote_en || ev.quote_ar)}</span>
-               <span data-lang-id>${escapeHtml(ev.quote_id || ev.quote_en || ev.quote_ar)}</span>"
+               <span data-lang-id style="display:none">${escapeHtml(ev.quote_id || ev.quote_en || ev.quote_ar)}</span>"
              </p>` :
             `<p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed">
               <span data-lang-en>${escapeHtml(ev.quote_en)}</span>
-              <span data-lang-id>${escapeHtml(ev.quote_id || ev.quote_en)}</span>
+              <span data-lang-id style="display:none">${escapeHtml(ev.quote_id || ev.quote_en)}</span>
              </p>`;
 
           const refTextEn = ev.ref_en || ev.source_book_en || 'Taqrib al-Tahdhib';
@@ -956,12 +952,12 @@
               <div class="flex justify-between items-center text-[11px] font-semibold text-sunan-emerald dark:text-[#10b981]">
                 <span>
                   <span data-lang-en>Verdict: ${escapeHtml(ev.verdict_en || 'Thiqah')}</span>
-                  <span data-lang-id>Penilaian: ${escapeHtml(ev.verdict_id || ev.verdict_en || 'Tsiqah')}</span>
+                  <span data-lang-id style="display:none">Penilaian: ${escapeHtml(ev.verdict_id || ev.verdict_en || 'Tsiqah')}</span>
                 </span>
               </div>
               <div class="text-[10px] text-outline dark:text-gray-400 font-mono border-t border-outline-variant/10 dark:border-[#334155]/60 pt-2 mt-1">
                 <span data-lang-en><strong>Reference Citation:</strong> ${escapeHtml(refTextEn)}</span>
-                <span data-lang-id><strong>Rujukan Kitab:</strong> ${escapeHtml(refTextId)}</span>
+                <span data-lang-id style="display:none"><strong>Rujukan Kitab:</strong> ${escapeHtml(refTextId)}</span>
               </div>
             </div>
           `;
