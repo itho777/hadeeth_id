@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_71"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_72"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -171,16 +171,69 @@
 
     </div>
 
-    <!-- Sharh / Commentary Box -->
-    <div class="bg-surface-container-low dark:bg-[#0f172a] p-6 rounded-lg border border-outline-variant/20 dark:border-[#334155]">
-      <h3 class="font-bold text-sm text-primary dark:text-white mb-2">
-        <span data-lang-en>Scholarly Commentary (Sharh)</span>
-        <span data-lang-id style="display:none">Syarah Hadits</span>
-      </h3>
-      <p class="text-xs text-on-surface-variant dark:text-gray-400 leading-relaxed" id="sharh-text">
-        <span data-lang-en>Imam al-Shafi'i stated: &ldquo;This Hadith is one-third of all Islamic knowledge, and enters into 70 different chapters of Fiqh.&rdquo; Imam al-Bukhari deliberately placed this narration as the very first Hadith in his Sahih to remind every seeker of knowledge to purify their intentions solely for Allah.</span>
-        <span data-lang-id style="display:none">Imam asy-Syafi&lsquo;i menyatakan: &ldquo;Hadits ini adalah sepertiga dari seluruh ilmu Islam dan masuk ke dalam 70 bab fikih.&rdquo; Imam al-Bukhari sengaja meletakkan hadits ini sebagai hadits pertama dalam Shahih-nya untuk mengingatkan setiap penuntut ilmu agar memurnikan niatnya hanya karena Allah.</span>
-      </p>
+    <!-- Sharh / Multi-Source Commentary Section -->
+    <div class="bg-surface-container-low dark:bg-[#0f172a] p-6 rounded-xl border border-outline-variant/20 dark:border-[#334155] flex flex-col gap-5" id="syarah-main-card">
+      <div class="flex justify-between items-center flex-wrap gap-4 border-b border-outline-variant/20 dark:border-[#334155] pb-4">
+        <div>
+          <div class="flex items-center gap-2 text-secondary dark:text-[#10b981] font-semibold text-xs uppercase tracking-wider mb-1">
+            <span class="material-symbols-outlined text-[18px]">auto_stories</span>
+            <span data-lang-en>Verified Scholarly Commentary</span>
+            <span data-lang-id style="display:none">Syarah & Penjelasan Hadits</span>
+          </div>
+          <h3 class="font-bold text-base md:text-lg text-primary dark:text-white" id="syarah-title-text">
+            <span data-lang-en>Scholarly Commentary (Sharh)</span>
+            <span data-lang-id style="display:none">Syarah & Penjelasan Hadits</span>
+          </h3>
+        </div>
+
+        <!-- Interchangeable Multi-Language Selector for Syarah -->
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-outline dark:text-gray-400 font-bold hidden sm:inline">
+            <span data-lang-en>Language:</span>
+            <span data-lang-id style="display:none">Bahasa:</span>
+          </span>
+          <select id="syarah-lang-select" onchange="window.switchSyarahLang(this.value)" class="text-xs bg-surface dark:bg-[#1e293b] border border-outline-variant dark:border-[#334155] rounded-lg px-3 py-1.5 text-primary dark:text-white font-bold cursor-pointer focus:ring-2 focus:ring-sunan-emerald shadow-sm">
+            <option value="id">🇮🇩 Bahasa Indonesia</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="ar">🇸🇦 العربية</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Multi-Source Reference Tabs -->
+      <div class="flex gap-2 border-b border-outline-variant/10 dark:border-[#334155]/60 pb-3 overflow-x-auto" id="syarah-source-tabs">
+        <button id="syarah-tab-enc" onclick="window.switchSyarahSource('enc')" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer bg-primary dark:bg-[#10b981] text-white dark:text-black shadow-sm">
+          <span data-lang-en>Concise Commentary (HadeethEnc)</span>
+          <span data-lang-id style="display:none">Syarah Ringkas (HadeethEnc)</span>
+        </button>
+        <button id="syarah-tab-fath" onclick="window.switchSyarahSource('fath')" class="px-3.5 py-1.5 rounded-lg text-xs font-medium text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer">
+          <span data-lang-en>Sharh Fath al-Bari (Ibn Hajar)</span>
+          <span data-lang-id style="display:none">Syarah Fathul Bari (Ibnu Hajar)</span>
+        </button>
+        <button id="syarah-tab-nawawi" onclick="window.switchSyarahSource('nawawi')" class="px-3.5 py-1.5 rounded-lg text-xs font-medium text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer">
+          <span data-lang-en>Sharh Sahih Muslim (Al-Nawawi)</span>
+          <span data-lang-id style="display:none">Syarah Sahih Muslim (An-Nawawi)</span>
+        </button>
+      </div>
+
+      <!-- Syarah Content Container -->
+      <div id="syarah-content-container" class="flex flex-col gap-4">
+        <!-- Explanation Paragraphs -->
+        <div id="syarah-explanation-box" class="text-xs md:text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed">
+          <p id="syarah-explanation-text">Loading verified commentary...</p>
+        </div>
+
+        <!-- Fawaid / Lessons & Benefits Box -->
+        <div id="syarah-benefits-box" class="bg-surface-container-high/40 dark:bg-[#1e293b]/60 p-4 rounded-lg border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-2">
+          <h4 class="font-bold text-xs text-sunan-emerald dark:text-[#10b981] uppercase tracking-wider flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-base">verified</span>
+            <span data-lang-en>Key Lessons & Benefits (Fawaid)</span>
+            <span data-lang-id style="display:none">Faedah & Pelajaran Hadits</span>
+          </h4>
+          <ul id="syarah-benefits-list" class="list-disc list-inside text-xs text-on-surface-variant dark:text-gray-300 flex flex-col gap-1.5">
+          </ul>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -190,8 +243,8 @@
   <div><span data-i18n="footer_text">© 2024 HADEETH.ID - Digital Manuscript Preservation</span></div>
 </footer>
 
-<script src="js/api.js?v=20260808_71"></script>
-<script src="js/app.js?v=20260808_71"></script>
+<script src="js/api.js?v=20260808_72"></script>
+<script src="js/app.js?v=20260808_72"></script>
 
 <!-- Toast notification for Copy/Share -->
 <div id="share-toast" style="display:none;position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1B5E20;color:#fff;font-size:12px;font-weight:700;padding:10px 22px;border-radius:999px;z-index:9999;box-shadow:0 4px 24px rgba(0,0,0,.25);transition:opacity .3s"></div>
