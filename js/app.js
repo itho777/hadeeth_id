@@ -608,6 +608,11 @@ async function loadHadithDetail() {
             } else if (val === 'ar') {
               targetP.innerText = item.text_ar || '—';
             }
+
+            // Sync Syarah language selector dropdown & update Syarah text!
+            if (window.switchSyarahLang) {
+              window.switchSyarahLang(val);
+            }
           });
         });
 
