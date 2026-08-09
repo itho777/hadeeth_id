@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_56"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_57"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -387,7 +387,7 @@
 </footer>
 
 <script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_56"></script>
+<script src="js/app.js?v=20260808_57"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -894,16 +894,24 @@
 
         let evalHtml = '';
         filteredList.forEach(ev => {
+          const isVerbatim = ev.is_verbatim !== false;
+          const quoteEl = isVerbatim ? 
+            `<p class="text-xs text-on-surface-variant dark:text-gray-300 italic leading-relaxed">
+              "<span data-lang-en>${escapeHtml(ev.quote_en || ev.quote_ar)}</span>
+               <span data-lang-id style="display:none">${escapeHtml(ev.quote_id || ev.quote_en || ev.quote_ar)}</span>"
+             </p>` :
+            `<p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed">
+              <span data-lang-en>${escapeHtml(ev.quote_en)}</span>
+              <span data-lang-id style="display:none">${escapeHtml(ev.quote_id || ev.quote_en)}</span>
+             </p>`;
+
           evalHtml += `
             <div class="p-5 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-3">
               <div class="flex justify-between items-center">
                 <span class="font-bold text-xs text-primary dark:text-white">${escapeHtml(ev.evaluator_en || 'Scholarly Critic')}</span>
                 <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded">${escapeHtml(ev.source_book_en || 'Jarh wa Ta\'dil')}</span>
               </div>
-              <p class="text-xs text-on-surface-variant dark:text-gray-300 italic leading-relaxed">
-                "<span data-lang-en>${escapeHtml(ev.quote_en || ev.quote_ar)}</span>
-                 <span data-lang-id style="display:none">${escapeHtml(ev.quote_id || ev.quote_en || ev.quote_ar)}</span>"
-              </p>
+              ${quoteEl}
               <div class="text-[11px] font-semibold text-sunan-emerald dark:text-[#10b981]">
                 <span data-lang-en>Verdict: ${escapeHtml(ev.verdict_en || 'Thiqah')}</span>
                 <span data-lang-id style="display:none">Penilaian: ${escapeHtml(ev.verdict_id || ev.verdict_en || 'Tsiqah')}</span>
@@ -927,20 +935,22 @@
               quote_en: d.quoteEn,
               quote_id: d.quoteId,
               verdict_en: d.verdictEn,
-              verdict_id: d.verdictId
+              verdict_id: d.verdictId,
+              is_verbatim: true
             }));
           } else {
             const gradeText = r.grade || (r.is_sahabi ? 'Sahabi Adl' : 'Thiqah (Reliable)');
-            const detailText = r.grade_detail || (r.is_sahabi ? 'Companion of the Prophet ﷺ evaluated with utmost reliability under Isnad consensus.' : 'Verified narrator in canonical collection evaluated under Isnad consensus.');
-            const sourceText = r.grade_source || 'Taqrib al-Tahdhib / Jarh wa Ta\'dil';
+            const detailTextEn = r.grade_detail || (r.is_sahabi ? 'Companion of the Prophet ﷺ evaluated with utmost reliability under Isnad consensus.' : 'Verified narrator in canonical collection evaluated under Isnad consensus.');
+            const detailTextId = r.grade_detail || (r.is_sahabi ? 'Sahabat Nabi ﷺ yang dinilai memiliki keadilan dan keandalan tertinggi berdasarkan konsensus sanad.' : 'Perawi terpercaya yang dinilai berdasarkan konsensus sanad dalam Taqrib at-Tahdzib.');
 
             evalList = [{
-              evaluator_en: 'Hafiz Ibn Hajar al-\'Asqalani',
-              source_book_en: sourceText,
-              quote_en: detailText,
-              quote_id: detailText,
+              evaluator_en: 'Canonical Isnad Consensus',
+              source_book_en: r.grade_source || 'Taqrib al-Tahdhib / Kutubus Sittah',
+              quote_en: detailTextEn,
+              quote_id: detailTextId,
               verdict_en: gradeText,
-              verdict_id: gradeText
+              verdict_id: gradeText,
+              is_verbatim: false
             }];
           }
         }
