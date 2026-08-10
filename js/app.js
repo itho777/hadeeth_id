@@ -2267,13 +2267,13 @@ function getIndonesianRawiName(name, rawiId, arName) {
   if (rawiId === 'rawi_abdurrahman_bin_al_qasim' || (lower.includes('abdurrahman') && lower.includes('qasim'))) {
     return 'Abdurrahman bin al-Qasim bin Muhammad';
   }
-  if (rawiId === 'rawi_abdullah_bin_yusuf' || lower.includes('yusuf')) {
+  if (rawiId === 'rawi_abdullah_bin_yusuf' || lower === 'abdullah bin yusuf') {
     return 'Abdullah bin Yusuf at-Tinnisi';
   }
-  if (rawiId === 'rawi_malik_bin_anas' || lower.includes('malik')) {
+  if (rawiId === 'rawi_malik_bin_anas' || lower === 'malik bin anas' || lower === 'imam malik') {
     return 'Imam Malik bin Anas';
   }
-  if (rawiId === 'rawi_umar_ibn_al_khattab' || lower.includes('umar')) {
+  if (rawiId === 'rawi_umar_ibn_al_khattab' || lower === 'umar' || lower === 'umar bin al-khattab') {
     return 'Umar bin al-Khaththab';
   }
   if (rawiId === 'rawi_abu_hurairah' || lower.includes('abu hurairah')) {
