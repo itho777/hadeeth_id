@@ -571,6 +571,11 @@ async function loadHadithDetail() {
   const sanadPreviewEn = container.querySelector('[data-sanad-preview-en]');
   const sanadPreviewId = container.querySelector('[data-sanad-preview-id]');
 
+  // Clear hardcoded initial placeholders to prevent stale text flash
+  if (arabicElem) arabicElem.innerText = 'مِنْ نَصِّ الْحَدِيثِ...';
+  if (englishElem) englishElem.innerHTML = '<span class="text-xs text-outline dark:text-gray-400 italic">Loading translation...</span>';
+  if (indonesianElem) indonesianElem.innerHTML = '<span class="text-xs text-outline dark:text-gray-400 italic">Memuat terjemahan...</span>';
+
   if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${hadithId}`;
   if (sanadPreviewEn) sanadPreviewEn.innerText = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
   if (sanadPreviewId) sanadPreviewId.innerText = `Periksa Silsilah untuk ${bookName} #${hadithId} → Rasulullah ﷺ`;
@@ -587,9 +592,34 @@ async function loadHadithDetail() {
       const data = await res.json();
       if (data && data.length > 0) {
         const item = data[0];
-        if (arabicElem) arabicElem.innerText = item.text_ar || '—';
-        if (englishElem) englishElem.innerHTML = TafseerLinker.parse(item.text_en || '—');
-        if (indonesianElem) indonesianElem.innerHTML = TafseerLinker.parse(item.text_id || '—');
+        const textAr = (item.text_ar && item.text_ar.trim()) ? item.text_ar.trim() : '';
+        const textEn = (item.text_en && item.text_en.trim()) ? item.text_en.trim() : '';
+        const textId = (item.text_id && item.text_id.trim()) ? item.text_id.trim() : '';
+
+        const fallbackIdMsg = '<span class="text-xs text-outline dark:text-gray-400 italic">Terjemahan Bahasa Indonesia untuk hadits ini sedang diselaraskan dari manuskrip sumber. Teks Arab lengkap tersedia di atas.</span>';
+        const fallbackEnMsg = '<span class="text-xs text-outline dark:text-gray-400 italic">English translation for this Hadith is being aligned from source manuscripts. Full Arabic text is available above.</span>';
+
+        if (arabicElem) arabicElem.innerText = textAr || '—';
+
+        if (indonesianElem) {
+          if (textId) {
+            indonesianElem.innerHTML = TafseerLinker.parse(textId);
+          } else if (textEn) {
+            indonesianElem.innerHTML = TafseerLinker.parse(textEn) + '<br/><span class="text-[11px] text-amber-600 dark:text-amber-400 block mt-2 font-medium">(Teks terjemahan bahasa Inggris ditampilkan karena terjemahan Indonesia sedang diproses)</span>';
+          } else {
+            indonesianElem.innerHTML = fallbackIdMsg;
+          }
+        }
+
+        if (englishElem) {
+          if (textEn) {
+            englishElem.innerHTML = TafseerLinker.parse(textEn);
+          } else if (textId) {
+            englishElem.innerHTML = TafseerLinker.parse(textId) + '<br/><span class="text-[11px] text-amber-600 dark:text-amber-400 block mt-2 font-medium">(Indonesian translation text displayed while English alignment is in progress)</span>';
+          } else {
+            englishElem.innerHTML = fallbackEnMsg;
+          }
+        }
 
         if (titleEn) titleEn.innerText = `${bookName} Hadith #${item.hadith_number}`;
         if (titleId) titleId.innerText = `${bookName} Hadits #${item.hadith_number}`;
@@ -604,11 +634,11 @@ async function loadHadithDetail() {
             if (!targetP) return;
             const val = selectElem.value;
             if (val === 'en') {
-              targetP.innerHTML = item.text_en ? TafseerLinker.parse(item.text_en) : '—';
+              targetP.innerHTML = textEn ? TafseerLinker.parse(textEn) : (textId ? TafseerLinker.parse(textId) : fallbackEnMsg);
             } else if (val === 'id') {
-              targetP.innerHTML = item.text_id ? TafseerLinker.parse(item.text_id) : '—';
+              targetP.innerHTML = textId ? TafseerLinker.parse(textId) : (textEn ? TafseerLinker.parse(textEn) : fallbackIdMsg);
             } else if (val === 'ar') {
-              targetP.innerText = item.text_ar || '—';
+              targetP.innerText = textAr || '—';
             }
 
             // Sync Syarah language selector dropdown & update Syarah text!
