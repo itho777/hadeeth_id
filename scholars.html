@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_28"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_79"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -185,8 +185,8 @@
   </div>
 </footer>
 
-<script src="js/api.js?v=20260808_28"></script>
-<script src="js/app.js?v=20260808_28"></script>
+<script src="js/api.js?v=20260808_79"></script>
+<script src="js/app.js?v=20260808_79"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -285,30 +285,55 @@
     { test: n => n.includes('muslim') && (n.includes('hajjaj') || n.includes('imam')), id: 'Imam Muslim ibn al-Hajjaj' },
     { test: n => n.includes('abu daw') || n.includes('dawood') || n.includes('dawud'), id: 'Imam Abu Dawood' },
     { test: n => n.includes('tirmidh'),                               id: 'Imam at-Tirmidhi' },
-    { test: n => n.includes("nasa'i") || n.includes('nasai'),         id: "Imam an-Nasa'i" },
-    { test: n => n.includes('ibn majah'),                             id: 'Imam Ibn Majah' },
-    { test: n => n.includes('ahmad') && n.includes('hanbal'),         id: 'Imam Ahmad bin Hanbal' },
-    { test: n => n.includes('zuhri'),                                 id: 'Ibn Shihab az-Zuhri' },
-    { test: n => n.includes("nafi'") || (n.startsWith('nafi') && n.includes('umar')), id: "Nafi' Maula Ibnu Umar" },
-    { test: n => n.includes('salim') && n.includes('abd'),            id: 'Salim bin Abdullah bin Umar' },
-    { test: n => n.includes('urwah') || n.includes('urwa'),           id: 'Urwah bin az-Zubair' },
-    { test: n => n.includes("sa'id") && n.includes('jubair'),         id: "Sa'id bin Jubair" },
-    { test: n => n.includes('sufyan') && n.includes('uyayn'),         id: 'Sufyan bin Uyainah' },
-    { test: n => n.includes('sufyan') && n.includes('thawri'),        id: 'Sufyan ats-Tsauri' },
-    { test: n => n.includes('yahya') && (n.includes('said') || n.includes("sa'id")), id: "Yahya bin Sa'id al-Anshari" },
-    { test: n => n.includes('ali') && n.includes('talib'),            id: 'Ali bin Abi Thalib' },
-    { test: n => n.includes('qutaibah') || n.includes('qutaybah'),    id: "Qutaibah bin Sa'id" },
-    { test: n => n.includes('atho') || (n.includes('ata') && n.includes('yasar')), id: "Atho' bin Yasar" },
-    { test: n => n.includes('hilal') && n.includes('ali'),            id: 'Hilal bin Ali' },
-    { test: n => n.includes('abdullah') && n.includes('dinar'),       id: 'Abdullah bin Dinar' },
-    { test: n => n.includes('ismail') && n.includes('jafar'),         id: "Ismail bin Ja'far al-Madani" }
+    { test: n => n.includes('abu hurairah'), id: "Abu Hurairah radliallahu 'anhu" },
+    { test: n => n.includes('aisha') || n.includes('aisy'), id: "Aisyah binti Abu Bakar ash-Shiddiq" },
+    { test: n => n.includes('umar') && n.includes('khattab') && (n.includes('abdullah') || n.includes('ibn umar') || n.includes('ibnu umar')), id: "Abdullah bin Umar bin al-Khaththab" },
+    { test: n => n.includes('umar') && n.includes('khattab') && !n.includes('abdullah'), id: "Umar bin al-Khaththab" },
+    { test: n => n.includes('abbas'), id: "Abdullah bin Abbas bin Abdul Mutthalib" },
+    { test: n => n.includes('jabir') || n.includes('jaber'), id: "Jabir bin Abdullah al-Anshari" },
+    { test: n => n.includes('anas') && n.includes('malik') && !n.includes('imam'), id: "Anas bin Malik al-Anshari" },
+    { test: n => n.includes('malik') && (n.includes('anas') || n.includes('imam')), id: "Imam Malik bin Anas" },
+    { test: n => n.includes('ali') && (n.includes('talib') || n.includes('thalib')), id: "Ali bin Abi Thalib" },
+    { test: n => n.includes('zuhri'), id: "Ibn Shihab az-Zuhri" },
+    { test: n => n.includes('sufyan') && (n.includes('uyayn') || n.includes('uyain')), id: "Sufyan bin Uyainah" },
+    { test: n => n.includes('sufyan') && (n.includes('thawr') || n.includes('tsaur')), id: "Sufyan ats-Tsauri" },
+    { test: n => n.includes('bukhari'), id: "Imam al-Bukhari" },
+    { test: n => n.includes('muslim'), id: "Imam Muslim ibn al-Hajjaj" },
+    { test: n => n.includes('dawud') || n.includes('dawood'), id: "Imam Abu Dawood" },
+    { test: n => n.includes('tirmidh'), id: "Imam at-Tirmidhi" },
+    { test: n => n.includes('nasai') || n.includes("nasa'i"), id: "Imam an-Nasa'i" },
+    { test: n => n.includes('majah'), id: "Imam Ibn Majah" },
+    { test: n => n.includes('ahmad') && n.includes('hanbal'), id: "Imam Ahmad bin Hanbal" },
+    { test: n => n.includes('nafi'), id: "Nafi' Maula Ibnu Umar" },
+    { test: n => n.includes('salim'), id: "Salim bin Abdullah bin Umar" },
+    { test: n => n.includes('urwah') || n.includes('urwa'), id: "Urwah bin az-Zubair" },
+    { test: n => n.includes('jubair') || n.includes('jubayr'), id: "Sa'id bin Jubair" },
+    { test: n => n.includes('qutaibah') || n.includes('qutaybah'), id: "Qutaibah bin Sa'id" },
+    { test: n => n.includes('atho') || n.includes('atha'), id: "Atho' bin Yasar" },
+    { test: n => n.includes('hilal'), id: "Hilal bin Ali bin Osama" },
+    { test: n => n.includes('dinar'), id: "Abdullah bin Dinar" },
+    { test: n => n.includes('jafar') || n.includes('ja\'far'), id: "Ismail bin Ja'far al-Madani" }
   ];
 
   function getIdName(r) {
-    if (r.name_id && r.name_id.trim().length > 2) return r.name_id;
-    const en = (r.name_en || '').toLowerCase();
+    if (r.name_id && r.name_id.trim().length > 2 && /bin|binti|Imam|Abu|Ibnu|Aisyah|Umar|Ali|Anas|Jabir/i.test(r.name_id)) return r.name_id;
+    const en = ((r.name_en || '') + ' ' + (r.name_id || '') + ' ' + (r.id || '')).toLowerCase();
     const match = idNameMap.find(m => m.test(en));
-    return match ? match.id : (r.name_en || 'Perawi');
+    return match ? match.id : (r.name_id || r.name_en || 'Perawi');
+  }
+
+  function translateGradeToId(g) {
+    if (!g) return 'Tsiqah';
+    return String(g)
+      .replace(/Sahabi Adl Imam/ig, 'Sahabat Adil Imam')
+      .replace(/Sahabi Adl/ig, 'Sahabat Adil')
+      .replace(/Sahabi/ig, 'Sahabat')
+      .replace(/Amir al-Mu'minin fi al-Hadith/ig, 'Amirul Mukminin fi al-Hadits')
+      .replace(/Thiqah Hafiz/ig, 'Tsiqah Hafizh')
+      .replace(/Thiqah Thabt/ig, 'Tsiqah Thabt')
+      .replace(/Thiqah/ig, 'Tsiqah')
+      .replace(/Hafiz \/ Imam/ig, 'Hafizh / Imam')
+      .replace(/Imam Hafiz/ig, 'Imam Hafizh');
   }
 
   function getCleanEnglishName(r) {
@@ -318,10 +343,9 @@
     return r.name_en || r.name_id || 'Scholar';
   }
 
-  // Indonesian biography map — pattern-matched from name_en for Supabase rows lacking bio_id
   function getIdBio(r) {
-    if (r.bio_id && r.bio_id.trim().length > 10) return r.bio_id;
-    const en = (r.name_en || '').toLowerCase();
+    if (r.bio_id && r.bio_id.trim().length > 10 && !/was|the|his|her|and|with|son of/i.test(r.bio_id)) return r.bio_id;
+    const en = ((r.name_en || '') + ' ' + (r.id || '')).toLowerCase();
     const n  = r.hadith_count || 0;
     if (en.includes('abu hurairah'))
       return `Abu Hurairah (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah sahabat yang paling banyak meriwayatkan hadits — tercatat ${n.toLocaleString('id')} riwayat. Selama tiga tahun beliau mendedikasikan dirinya sepenuhnya untuk menghafal sabda Nabi \ufe70.`;
@@ -375,7 +399,6 @@
       return `Salim bin Abdullah bin Umar adalah cucu Khalifah Umar dan salah satu Tujuh Fuqaha Madinah. Perawi utama tradisi-tradisi kakeknya melalui jalur ayahnya Ibnu Umar.`;
     if (en.includes('qutaibah') || en.includes('qutaybah'))
       return `Qutaibah bin Sa\'id adalah syaikh langsung Imam al-Bukhari, Muslim, Abu Dawood, at-Tirmidhi, dan an-Nasa\'i. Beliau meriwayatkan ${n.toLocaleString('id')} hadits dari perjalanan ilmiah ke Iraq, Hijaz, dan Khurasan.`;
-    // generic fallback
     return `Perawi tsiqah yang tercatat meriwayatkan ${n.toLocaleString('id')} hadits dalam koleksi kitab hadits kanonik Islam.`;
   }
 
@@ -390,84 +413,39 @@
     if (window.LangSystem) {
       window.LangSystem.apply(window.LangSystem.get());
     }
-
     await fetchAndRenderScholars();
-
     window.addEventListener('hadeeth_lang_change', () => {
       if (window.LangSystem) {
         window.LangSystem.apply(window.LangSystem.get());
       }
       renderScholarsPage();
     });
-
-    const prevBtn = document.getElementById('scholars-prev-btn');
-    const nextBtn = document.getElementById('scholars-next-btn');
-    if (prevBtn) {
-      prevBtn.addEventListener('click', () => {
-        if (currentPage > 1) {
-          currentPage--;
-          renderScholarsPage();
-          window.scrollTo({ top: 300, behavior: 'smooth' });
-        }
-      });
-    }
-    if (nextBtn) {
-      nextBtn.addEventListener('click', () => {
-        const totalPages = Math.ceil(allScholars.length / pageSize) || 1;
-        if (currentPage < totalPages) {
-          currentPage++;
-          renderScholarsPage();
-          window.scrollTo({ top: 300, behavior: 'smooth' });
-        }
-      });
-    }
+    document.getElementById('scholars-prev-btn')?.addEventListener('click', () => {
+      if (currentPage > 1) { currentPage--; renderScholarsPage(); window.scrollTo({ top: 300, behavior: 'smooth' }); }
+    });
+    document.getElementById('scholars-next-btn')?.addEventListener('click', () => {
+      const totalPages = Math.ceil(allScholars.length / pageSize) || 1;
+      if (currentPage < totalPages) { currentPage++; renderScholarsPage(); window.scrollTo({ top: 300, behavior: 'smooth' }); }
+    });
   });
 
   async function fetchAndRenderScholars(gen = 'all', role = 'all', query = '') {
-    activeGen = gen;
-    activeRole = role;
-    searchQuery = query;
-    currentPage = 1;
-
+    activeGen = gen; activeRole = role; searchQuery = query; currentPage = 1;
     const grid = document.getElementById('scholars-grid');
     if (!grid) return;
-
     try {
-      // Query Supabase strictly for narrators with hadith_count > 0 AND valid Arabic names
       let url = `${supabaseUrl}/rest/v1/rijal?select=*&hadith_count=gt.0&order=hadith_count.desc,died_ah.asc&limit=100`;
-      if (activeGen === 'sahabah') {
-        url += '&is_sahabi=eq.true';
-      } else if (activeGen === 'tabiun') {
-        url += '&generation=eq.Tabi\'i';
-      } else if (activeGen === 'collectors') {
-        url += '&generation=eq.Collector';
-      }
-
-      if (searchQuery) {
-        url += `&or=(name_en.ilike.*${encodeURIComponent(searchQuery)}*,name_id.ilike.*${encodeURIComponent(searchQuery)}*)`;
-      }
-
-      const res = await fetch(url, {
-        headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
-      });
-
+      if (activeGen === 'sahabah') url += '&is_sahabi=eq.true';
+      else if (activeGen === 'tabiun') url += '&generation=eq.Tabi\'i';
+      else if (activeGen === 'collectors') url += '&generation=eq.Collector';
+      if (searchQuery) url += `&or=(name_en.ilike.*${encodeURIComponent(searchQuery)}*,name_id.ilike.*${encodeURIComponent(searchQuery)}*)`;
+      const res = await fetch(url, { headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` } });
       if (res.ok) {
         const data = await res.json();
-        // Filter out non-narrator modern entries lacking hadiths or proper names
         const validNarrators = (data || []).filter(r => (r.hadith_count > 0 || r.is_sahabi) && r.name_en && !r.name_en.includes('Kampung'));
-        if (validNarrators.length > 0) {
-          allScholars = validNarrators;
-        } else {
-          allScholars = filterFallbackScholars(gen, role, query);
-        }
-      } else {
-        allScholars = filterFallbackScholars(gen, role, query);
-      }
-    } catch (err) {
-      console.warn('Error fetching scholars from Supabase, using fallback:', err);
-      allScholars = filterFallbackScholars(gen, role, query);
-    }
-
+        allScholars = validNarrators.length > 0 ? validNarrators : filterFallbackScholars(gen, role, query);
+      } else { allScholars = filterFallbackScholars(gen, role, query); }
+    } catch (err) { allScholars = filterFallbackScholars(gen, role, query); }
     renderScholarsPage();
   }
 
@@ -478,9 +456,7 @@
       if (gen === 'collectors' && r.generation !== 'Collector') return false;
       if (query) {
         const q = query.toLowerCase();
-        const matchEn = (r.name_en || '').toLowerCase().includes(q);
-        const matchId = (r.name_id || '').toLowerCase().includes(q);
-        if (!matchEn && !matchId) return false;
+        return (r.name_en || '').toLowerCase().includes(q) || (r.name_id || '').toLowerCase().includes(q);
       }
       return true;
     });
@@ -492,61 +468,45 @@
     const pageNumber = document.getElementById('scholars-page-number');
     const prevBtn = document.getElementById('scholars-prev-btn');
     const nextBtn = document.getElementById('scholars-next-btn');
-
     if (!grid) return;
-
+    const isId = (window.LangSystem && window.LangSystem.isIdMode());
     if (!allScholars || allScholars.length === 0) {
-      const isId = (window.LangSystem && window.LangSystem.isIdMode());
-      grid.innerHTML = `
-        <div class="col-span-3 p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
-          <span class="material-symbols-outlined text-outline dark:text-gray-500 text-4xl">search_off</span>
-          <h3 class="mt-2 font-bold text-primary dark:text-white">${isId ? 'Tidak ada perawi ditemukan' : 'No narrators found'}</h3>
-          <p class="text-xs text-outline dark:text-gray-400 mt-1">${isId ? 'Coba ubah kata kunci atau filter pencarian.' : 'Try changing search query or filter chips.'}</p>
-        </div>
-      `;
-      if (pageIndicator) pageIndicator.innerText = isId ? '0 dari 0 Perawi' : '0 of 0 Narrators';
-      if (pageNumber) pageNumber.innerText = isId ? 'Halaman 1 dari 1' : 'Page 1 of 1';
-      if (prevBtn) prevBtn.disabled = true;
-      if (nextBtn) nextBtn.disabled = true;
+      grid.innerHTML = `<div class="col-span-3 p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]"><h3 class="font-bold text-primary dark:text-white">${isId ? 'Tidak ada perawi ditemukan' : 'No narrators found'}</h3></div>`;
       return;
     }
-
     const totalPages = Math.ceil(allScholars.length / pageSize) || 1;
     if (currentPage > totalPages) currentPage = totalPages;
-    if (currentPage < 1) currentPage = 1;
-
     const startIdx = (currentPage - 1) * pageSize;
     const endIdx = Math.min(startIdx + pageSize, allScholars.length);
     const pageItems = allScholars.slice(startIdx, endIdx);
-
-    const isId = (window.LangSystem && window.LangSystem.isIdMode());
     let html = '';
-
     pageItems.forEach(r => {
       const isSahabi = r.is_sahabi;
-      const cleanNameEn = getCleanEnglishName(r);
       const cleanNameAr = getCleanArabicName(r);
       const profileUrl = `profile-detail.html?id=${encodeURIComponent(r.id)}`;
-
-      let genLabel = r.generation || (isSahabi ? (isId ? 'Sahabat' : 'Sahabi (Companion)') : 'Rawi');
+      const cardTitle = isId ? getIdName(r) : (r.name_en || r.name_id || 'Scholar');
+      const cardBio = isId ? getIdBio(r) : (r.bio_en || `Authentic transmitter recorded in ${r.hadith_count || 0} narrations across canonical Hadith collections.`);
+      let genLabel = r.generation || (isSahabi ? 'Sahabi (Companion)' : 'Rawi');
       if (isId) {
-        genLabel = genLabel
-          .replace(/Sahabi\s*\(Companion\)/ig, 'Sahabat')
-          .replace(/Sahabi/ig, 'Sahabat')
-          .replace(/Transmitter/ig, 'Rawi')
-          .replace(/Collector/ig, 'Penghimpun');
+        if (isSahabi) genLabel = 'Sahabat';
+        else if (r.generation === 'Collector') genLabel = 'Penghimpun';
+        else if (r.generation === 'Tabi\'i') genLabel = 'Tabi\'in';
+        else genLabel = 'Perawi (Rawi)';
       }
-
       let dateStr = '';
       if (r.died_ah) dateStr += isId ? `Wafat: ${r.died_ah} H` : `Died: ${r.died_ah} AH`;
       if (r.died_ce) dateStr += ` (${r.died_ce} M)`;
-      if (r.city_of_death || r.region) dateStr += ` &bull; ${r.city_of_death || r.region}`;
-
-      const gradeStr = isId ? `Derajat: ${r.grade || 'Tsiqah'}` : `Grade: ${r.grade || 'Thiqah'}`;
-      const hadithCountStr = isId ? `${r.hadith_count || 0} Hadits Terkait` : `${r.hadith_count || 0} Hadith Links`;
+      if (r.city_of_death || r.region) {
+        let cityStr = r.city_of_death || r.region;
+        if (isId) cityStr = cityStr.replace(/Mecca/ig, 'Makkah').replace(/Medina/ig, 'Madinah').replace(/Ta'if/ig, 'Tha\'if');
+        dateStr += ` &bull; ${cityStr}`;
+      }
+      let rawGrade = r.grade || (isSahabi ? 'Sahabi Adl' : 'Thiqah');
+      let gradeStr = isId ? `Derajat: ${translateGradeToId(rawGrade)}` : `Grade: ${rawGrade}`;
+      const hadithCountStr = isId ? `${(r.hadith_count || 0).toLocaleString('id')} Tautan Hadits` : `${(r.hadith_count || 0).toLocaleString('en')} Hadith Links`;
       const viewProfileStr = isId ? 'Lihat Profil &rarr;' : 'View Profile &rarr;';
-      const booksStr = (r.books && r.books.length) ? (isId ? 'Kitab: ' + r.books.join(', ') : 'Books: ' + r.books.join(', ')) : (isId ? 'Koleksi Kitab Utama' : 'Canonical Collections');
-
+      let booksText = (r.books && r.books.length) ? r.books.join(', ') : 'Bukhari, Muslim, Abu Dawud, Tirmidhi, Nasai, Ibn Majah';
+      const booksStr = isId ? `Kitab: ${booksText}` : `Books: ${booksText}`;
       html += `
         <div class="scholar-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 flex flex-col justify-between card-lift" data-gen="${isSahabi ? 'sahabah' : 'other'}">
           <div>
@@ -554,20 +514,19 @@
               <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] font-bold px-2 py-0.5 rounded uppercase">${escapeHtml(genLabel)}</span>
               ${cleanNameAr ? `<span class="font-arabic-body text-lg text-secondary dark:text-[#10b981]" dir="rtl">${escapeHtml(cleanNameAr)}</span>` : ''}
             </div>
-            <h3 class="font-bold text-base text-primary dark:text-white">${escapeHtml(cleanNameEn)}</h3>
+            <h3 class="font-bold text-base text-primary dark:text-white">${escapeHtml(cardTitle)}</h3>
             <p class="text-xs text-outline dark:text-gray-400 mt-1">${escapeHtml(dateStr || (isId ? 'Masa Awal Islam' : 'Early Era'))}</p>
             <div class="flex items-center gap-2 mt-2 text-xs font-semibold">
               <span class="text-sunan-emerald dark:text-[#10b981]">${escapeHtml(gradeStr)}</span>
               <span>&bull;</span>
               <span class="text-primary dark:text-white">${escapeHtml(hadithCountStr)}</span>
             </div>
-            <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-2 line-clamp-2">${escapeHtml(isId ? getIdBio(r) : (r.bio_en || `Authentic transmitter recorded in ${r.hadith_count || 0} narrations across canonical Hadith collections.`))}</p>
+            <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-2 line-clamp-2">${escapeHtml(cardBio)}</p>
           </div>
           <div class="mt-4 pt-3 border-t border-outline-variant/10 dark:border-[#334155] flex justify-between items-center text-xs font-semibold text-secondary dark:text-[#10b981]">
-            <span>${escapeHtml(booksStr)}</span>
-            <a href="${profileUrl}" class="hover:underline flex items-center gap-1">${viewProfileStr}</a>
+            <span class="truncate max-w-[200px]" title="${escapeHtml(booksStr)}">${escapeHtml(booksStr)}</span>
+            <a href="${profileUrl}" class="hover:underline flex items-center gap-1 shrink-0">${viewProfileStr}</a>
           </div>
-        </div>
       `;
     });
 
