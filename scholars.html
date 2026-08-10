@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_80"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_81"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -185,8 +185,8 @@
   </div>
 </footer>
 
-<script src="js/api.js?v=20260808_80"></script>
-<script src="js/app.js?v=20260808_80"></script>
+<script src="js/api.js?v=20260808_81"></script>
+<script src="js/app.js?v=20260808_81"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -316,10 +316,48 @@
   ];
 
   function getIdName(r) {
-    if (r.name_id && r.name_id.trim().length > 2 && /bin|binti|Imam|Abu|Ibnu|Aisyah|Umar|Ali|Anas|Jabir/i.test(r.name_id)) return r.name_id;
-    const en = ((r.name_en || '') + ' ' + (r.name_id || '') + ' ' + (r.id || '')).toLowerCase();
-    const match = idNameMap.find(m => m.test(en));
-    return match ? match.id : (r.name_id || r.name_en || 'Perawi');
+    const key = ((r.id || '') + ' ' + (r.name_en || '') + ' ' + (r.name_id || '')).toLowerCase();
+    if (key.includes('ibn_umar') || key.includes('ibn umar') || (key.includes('umar') && key.includes('khattab') && key.includes('abdullah')))
+      return "Abdullah bin Umar bin al-Khaththab";
+    if (key.includes('aisha') || key.includes('aisy'))
+      return "Aisyah binti Abu Bakar ash-Shiddiq";
+    if (key.includes('ibn_abbas') || key.includes('ibn abbas') || (key.includes('abbas') && key.includes('abd')))
+      return "Abdullah bin Abbas bin Abdul Mutthalib";
+    if (key.includes('jabir') || key.includes('jaber'))
+      return "Jabir bin Abdullah al-Anshari";
+    if (key.includes('abu_hurairah') || key.includes('abu hurairah'))
+      return "Abu Hurairah radliallahu 'anhu";
+    if (key.includes('sufyan'))
+      return "Sufyan bin Uyainah";
+    if (key.includes('malik'))
+      return "Imam Malik bin Anas";
+    if (key.includes('umar') && key.includes('khattab') && !key.includes('abdullah'))
+      return "Umar bin al-Khaththab";
+    if (key.includes('ali') && (key.includes('talib') || key.includes('thalib')))
+      return "Ali bin Abi Thalib";
+    if (key.includes('zuhri'))
+      return "Ibn Shihab az-Zuhri";
+    if (key.includes('musaddad'))
+      return "Musaddad bin Musarhad";
+    if (key.includes('bukhari'))
+      return "Imam al-Bukhari";
+    if (key.includes('muslim'))
+      return "Imam Muslim ibn al-Hajjaj";
+    if (key.includes('dawud') || key.includes('dawood'))
+      return "Imam Abu Dawood";
+    if (key.includes('tirmidh'))
+      return "Imam at-Tirmidhi";
+    if (key.includes('nasai') || key.includes("nasa'i"))
+      return "Imam an-Nasa'i";
+    if (key.includes('majah'))
+      return "Imam Ibn Majah";
+    if (key.includes('ahmad') && key.includes('hanbal'))
+      return "Imam Ahmad bin Hanbal";
+
+    if (r.name_id && r.name_id.trim().length > 2 && !/ibn|bint|al-khattab|al-ansari/i.test(r.name_id)) {
+      return r.name_id;
+    }
+    return r.name_id || r.name_en || 'Perawi';
   }
 
   function translateGradeToId(g) {
@@ -329,6 +367,7 @@
       .replace(/Sahabi Adl/ig, 'Sahabat Adil')
       .replace(/Sahabi/ig, 'Sahabat')
       .replace(/Amir al-Mu'minin fi al-Hadith/ig, 'Amirul Mukminin fi al-Hadits')
+      .replace(/Thiqah \(Trustworthy\)/ig, 'Tsiqah (Terpercaya)')
       .replace(/Thiqah Hafiz/ig, 'Tsiqah Hafizh')
       .replace(/Thiqah Thabt/ig, 'Tsiqah Thabt')
       .replace(/Thiqah/ig, 'Tsiqah')
@@ -344,62 +383,34 @@
   }
 
   function getIdBio(r) {
+    const key = ((r.id || '') + ' ' + (r.name_en || '') + ' ' + (r.name_id || '')).toLowerCase();
+    const n = (r.hadith_count || 0).toLocaleString('id');
+
+    if (key.includes('abu_hurairah') || key.includes('abu hurairah'))
+      return `Abu Hurairah (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah sahabat yang paling banyak meriwayatkan hadits — tercatat ${n} riwayat. Selama tiga tahun beliau mendedikasikan dirinya sepenuhnya untuk menghafal sabda Nabi \ufe70.`;
+    if (key.includes('aisha') || key.includes('aisy'))
+      return `Aisyah (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647\u0627), putri Abu Bakar ash-Shiddiq dan istri Nabi \ufe70, meriwayatkan ${n} hadits. Beliau adalah rujukan utama fikih ibadah, pernikahan, dan kehidupan rumah tangga Nabi \ufe70.`;
+    if (key.includes('ibn_umar') || key.includes('ibn umar') || (key.includes('umar') && key.includes('khattab') && key.includes('abdullah')))
+      return `Abdullah bin Umar (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647), putra Khalifah \'Umar bin al-Khaththab, dikenal atas ketekunannya mengikuti Sunnah Nabi \ufe70 secara harfiah. Beliau meriwayatkan ${n} hadits.`;
+    if (key.includes('ibn_abbas') || key.includes('ibn abbas') || (key.includes('abbas') && key.includes('abd')))
+      return `Abdullah bin Abbas (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647), sepupu Nabi \ufe70, digelari Turjumanul Qur\'an dan Hibrul Ummah. Nabi \ufe70 mendoakannya: \u201cYa Allah, jadikanlah ia faham dalam agama dan ajarilah ia ta\'wil.\u201d Beliau meriwayatkan ${n} hadits.`;
+    if (key.includes('jabir') || key.includes('jaber'))
+      return `Jabir bin Abdullah al-Anshari (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah sahabat Anshar yang mengikuti 19 peperangan bersama Nabi \ufe70. Beliau terkenal atas majelis-majelis hadits di Masjid Nabawi dan meriwayatkan ${n} hadits.`;
+    if (key.includes('sufyan'))
+      return `Sufyan bin Uyainah adalah hafizh dan ulama hadits terkemuka Makkah dari generasi Tabi\'ut Tabi\'in. Terdaftar dalam ${n} tautan hadits shahih dalam Kutubus Sittah.`;
+    if (key.includes('malik'))
+      return `Imam Malik bin Anas adalah Imam Negeri Hijrah (Madinah), penyusun Al-Muwaththa\' dan pendiri Mazhab Maliki. Terdaftar dalam ${n} tautan hadits shahih.`;
+    if (key.includes('umar') && key.includes('khattab') && !key.includes('abdullah'))
+      return `Umar bin al-Khaththab (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah Khalifah kedua Islam yang dikenal karena keadilan dan ketegasannya. Sangat berhati-hati dalam periwayatan, beliau tercatat meriwayatkan ${n} hadits.`;
+    if (key.includes('ali') && (key.includes('talib') || key.includes('thalib')))
+      return `Ali bin Abi Thalib (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647), sepupu sekaligus menantu Nabi \ufe70 dan Khalifah keempat Islam, meriwayatkan ${n} hadits. Beliau dijuluki \u201cPintu Ilmu\u201d dalam tradisi keilmuan Islam.`;
+    if (key.includes('zuhri'))
+      return `Ibn Shihab az-Zuhri adalah imam Tabi\'in yang mempelopori kodifikasi hadits secara resmi atas perintah Khalifah Umar bin Abdul Aziz. Terdaftar dalam ${n} tautan hadits.`;
+    if (key.includes('musaddad'))
+      return `Musaddad bin Musarhad al-Basri adalah perawi Tsiqah Thabt dan syaikh langsung Imam al-Bukhari dan Abu Dawood. Terdaftar dalam ${n} tautan hadits.`;
+
     if (r.bio_id && r.bio_id.trim().length > 10 && !/was|the|his|her|and|with|son of/i.test(r.bio_id)) return r.bio_id;
-    const en = ((r.name_en || '') + ' ' + (r.id || '')).toLowerCase();
-    const n  = r.hadith_count || 0;
-    if (en.includes('abu hurairah'))
-      return `Abu Hurairah (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah sahabat yang paling banyak meriwayatkan hadits — tercatat ${n.toLocaleString('id')} riwayat. Selama tiga tahun beliau mendedikasikan dirinya sepenuhnya untuk menghafal sabda Nabi \ufe70.`;
-    if (en.includes("'aisha") || en.includes('aisha bint'))
-      return `Aisyah (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647\u0627), putri Abu Bakar ash-Shiddiq dan istri Nabi \ufe70, meriwayatkan ${n.toLocaleString('id')} hadits. Beliau adalah rujukan utama fikih ibadah, pernikahan, dan kehidupan rumah tangga Nabi \ufe70.`;
-    if ((en.includes('ibn umar') || en.includes('ibnu umar') || (en.includes('umar') && en.includes('khattab') && !en.startsWith('umar'))))
-      return `Abdullah bin Umar (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647), putra Khalifah \'Umar bin al-Khaththab, dikenal atas ketekunannya mengikuti Sunnah Nabi \ufe70 secara harfiah. Beliau meriwayatkan ${n.toLocaleString('id')} hadits.`;
-    if (en.includes('ibn abbas') || en.includes('ibnu abbas'))
-      return `Abdullah bin Abbas (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647), sepupu Nabi \ufe70, digelari Turjumanul Qur\'an dan Hibrul Ummah. Nabi \ufe70 mendoakannya: \u201cYa Allah, jadikanlah ia faham dalam agama dan ajarilah ia ta\'wil.\u201d Beliau meriwayatkan ${n.toLocaleString('id')} hadits.`;
-    if (en.includes('anas') && en.includes('malik') && !en.includes('imam'))
-      return `Anas bin Malik al-Anshari (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah pelayan Nabi \ufe70 selama sepuluh tahun di Madinah. Salah satu sahabat terakhir yang wafat, beliau meriwayatkan ${n.toLocaleString('id')} hadits.`;
-    if (en.includes('jabir') && en.includes('abd'))
-      return `Jabir bin Abdullah al-Anshari (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah sahabat Anshar yang mengikuti 19 peperangan bersama Nabi \ufe70. Beliau terkenal atas majelis-majelis hadits di Masjid Nabawi dan meriwayatkan ${n.toLocaleString('id')} hadits.`;
-    if (en.includes('umar') && en.includes('khattab') && en.startsWith('umar'))
-      return `Umar bin al-Khaththab (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah Khalifah kedua Islam yang dikenal karena keadilan dan ketegasannya. Sangat berhati-hati dalam periwayatan, beliau tercatat meriwayatkan ${n.toLocaleString('id')} hadits.`;
-    if (en.includes('ali') && en.includes('talib'))
-      return `Ali bin Abi Thalib (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647), sepupu sekaligus menantu Nabi \ufe70 dan Khalifah keempat Islam, meriwayatkan ${n.toLocaleString('id')} hadits. Beliau dijuluki \u201cPintu Ilmu\u201d dalam tradisi keilmuan Islam.`;
-    if (en.includes("sa'id") && en.includes('khudri'))
-      return `Abu Sa\'id al-Khudri (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah sahabat muda yang mengikuti Perang Uhud dan peperangan-peperangan besar lainnya. Beliau meriwayatkan ${n.toLocaleString('id')} hadits, terutama tentang shalat, puasa, dan akhirat.`;
-    if (en.includes('ibn masud') || en.includes("mas'ud"))
-      return `Abdullah bin Mas\'ud (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah salah satu sahabat yang pertama masuk Islam. Penjaga kepercayaan Al-Qur\'an dan pendiri madrasah fikih Kufah yang menjadi cikal bakal mazhab Hanafi, beliau meriwayatkan ${n.toLocaleString('id')} hadits.`;
-    if (en.includes('zuhri'))
-      return `Ibn Shihab az-Zuhri adalah imam Tabi\'in yang mempelopori kodifikasi hadits secara resmi atas perintah Khalifah Umar bin Abdul Aziz. Imam Malik berkata: \u201cIlmu ini akan musnah tanpa az-Zuhri.\u201d Beliau meriwayatkan ${n.toLocaleString('id')} riwayat.`;
-    if (en.includes("nafi'") || (en.startsWith('nafi') && en.includes('umar')))
-      return `Nafi\u2019 Maula Ibnu Umar adalah mata rantai utama dalam Silsilah Emas Periwayatan: Imam Malik \u2192 Nafi\u2019 \u2192 Ibnu Umar. Imam al-Bukhari mengambil 80 riwayat darinya melalui jalur ini.`;
-    if (en.includes('malik') && en.includes('anas') && en.includes('imam'))
-      return `Imam Malik bin Anas adalah imam Madinah dan pendiri mazhab Maliki. Penyusun Al-Muwattha\u2019 \u2014 kitab hadits hukum tertua yang masih bertahan. Imam Syafi\'i berkata: \u201cMalik adalah hujjah Allah atas makhluk-Nya setelah para Tabi\'in.\u201d`;
-    if (en.includes('bukhari'))
-      return `Imam Muhammad al-Bukhari adalah penyusun Shahih al-Bukhari \u2014 kitab hadits paling sahih setelah Al-Qur\'an. Beliau menyeleksi ${n.toLocaleString('id')} hadits dari 600.000 riwayat yang dihafal selama 16 tahun perjalanan ilmiah ke seantero dunia Islam.`;
-    if (en.includes('muslim') && en.includes('hajjaj'))
-      return `Imam Muslim bin al-Hajjaj adalah penyusun Shahih Muslim, kitab hadits terpercaya kedua setelah Shahih al-Bukhari. Beliau terkenal dengan susunan tematik dan pengumpulan seluruh turuq (jalur) hadits secara sistematis.`;
-    if (en.includes('abu daw') || en.includes('dawood') || en.includes('dawud'))
-      return `Imam Abu Dawood al-Sijistani adalah penyusun Sunan Abu Dawood yang berfokus pada hadits-hadits hukum (ahkam). Imam Ahmad memujinya: \u201cTidak ada yang lebih ahli dalam fikih hadits daripada Abu Dawood.\u201d`;
-    if (en.includes('tirmidh'))
-      return `Imam at-Tirmidhi adalah penyusun Jami\u2019 at-Tirmidhi. Beliau adalah pelopor sistem penilaian hadits dengan istilah Shahih, Hasan, dan Gharib, serta mencatat pendapat para ulama fikih di setiap bab.`;
-    if (en.includes("nasa'i") || en.includes('nasai'))
-      return `Imam an-Nasa\u2019i dikenal memiliki standar seleksi perawi paling ketat di antara para penyusun Sunan. Kitabnya dinilai para ulama sebagai yang paling sahih setelah Shahihain.`;
-    if (en.includes('ibn majah'))
-      return `Imam Ibn Majah adalah penyusun Sunan Ibn Majah, kitab keenam dari Kutub as-Sittah. Kitabnya memuat 1.339 hadits unik (zawaid) yang tidak terdapat dalam lima kitab lainnya.`;
-    if (en.includes('ahmad') && en.includes('hanbal'))
-      return `Imam Ahmad bin Hanbal adalah pendiri mazhab Hanbali dan penyusun Musnad Ahmad \u2014 koleksi Musnad terbesar yang disusun berdasarkan nama sahabat, memuat lebih dari ${n.toLocaleString('id')} hadits.`;
-    if (en.includes('urwah') || en.includes('urwa'))
-      return `Urwah bin az-Zubair adalah keponakan Aisyah binti Abu Bakar dan perawi utama riwayat-riwayatnya. Salah satu Tujuh Fuqaha Madinah dan pelopor sastra Maghazi (biografi Nabi \ufe70).`;
-    if (en.includes("sa'id") && en.includes('jubair'))
-      return `Sa\'id bin Jubair adalah murid terkemuka Ibnu Abbas dan ahli fikih Tabi\'in terbesar di Kufah. Beliau menjadi syahid karena menolak bersumpah setia kepada al-Hajjaj bin Yusuf.`;
-    if (en.includes('sufyan') && en.includes('uyayn'))
-      return `Sufyan bin Uyainah adalah imam hadits Makkah dan guru langsung Imam Syafi\'i dan Yahya bin Ma\'in. Imam Ahmad berkata: \u201cSufyan bin Uyainah adalah orang paling berpengetahuan tentang hadits di Hijaz.\u201d`;
-    if (en.includes('yahya') && (en.includes('said') || en.includes("sa'id")))
-      return `Yahya bin Sa\'id al-Anshari adalah Hakim Madinah dan perawi sentral dalam sanad Hadits \u201cInnama al-A\'malu bin-Niyyat\u201d \u2014 hadits pembuka Shahih al-Bukhari. Imam Ahmad menyebutnya: \u201cImam, Hujjah.\u201d`;
-    if (en.includes('salim') && en.includes('abd'))
-      return `Salim bin Abdullah bin Umar adalah cucu Khalifah Umar dan salah satu Tujuh Fuqaha Madinah. Perawi utama tradisi-tradisi kakeknya melalui jalur ayahnya Ibnu Umar.`;
-    if (en.includes('qutaibah') || en.includes('qutaybah'))
-      return `Qutaibah bin Sa\'id adalah syaikh langsung Imam al-Bukhari, Muslim, Abu Dawood, at-Tirmidhi, dan an-Nasa\'i. Beliau meriwayatkan ${n.toLocaleString('id')} hadits dari perjalanan ilmiah ke Iraq, Hijaz, dan Khurasan.`;
-    return `Perawi tsiqah yang tercatat meriwayatkan ${n.toLocaleString('id')} hadits dalam koleksi kitab hadits kanonik Islam.`;
+    return `Perawi tsiqah yang tercatat meriwayatkan ${n} hadits dalam koleksi kitab hadits kanonik Islam.`;
   }
 
   let allScholars = [];
@@ -409,17 +420,19 @@
   let activeRole = 'all';
   let searchQuery = '';
 
+  // Attach global listener for language changes
+  window.addEventListener('hadeeth_lang_change', () => {
+    if (window.LangSystem) {
+      window.LangSystem.apply(window.LangSystem.get());
+    }
+    renderScholarsPage();
+  });
+
   document.addEventListener('DOMContentLoaded', async () => {
     if (window.LangSystem) {
       window.LangSystem.apply(window.LangSystem.get());
     }
     await fetchAndRenderScholars();
-    window.addEventListener('hadeeth_lang_change', () => {
-      if (window.LangSystem) {
-        window.LangSystem.apply(window.LangSystem.get());
-      }
-      renderScholarsPage();
-    });
     document.getElementById('scholars-prev-btn')?.addEventListener('click', () => {
       if (currentPage > 1) { currentPage--; renderScholarsPage(); window.scrollTo({ top: 300, behavior: 'smooth' }); }
     });
