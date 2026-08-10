@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_84"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_85"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -371,16 +371,31 @@
       <div class="p-6 text-center text-xs text-outline dark:text-gray-400">Loading transmitted Hadiths...</div>
     </div>
 
-    <!-- Hadith Pagination -->
-    <div id="hadith-pagination" class="hidden flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
-      <button id="hadith-prev-btn" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] text-primary dark:text-white hover:bg-outline-variant/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all">&larr; Prev</button>
+    <!-- Hadith Pagination & Items Per Page Selector -->
+    <div id="hadith-pagination" class="hidden flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-outline-variant/10 dark:border-[#334155]">
+      <div class="flex items-center gap-2">
+        <label for="hadith-limit-select" class="text-xs text-outline dark:text-gray-400 font-semibold">
+          <span data-lang-en>Per page:</span>
+          <span data-lang-id style="display:none">Per halaman:</span>
+        </label>
+        <select id="hadith-limit-select" class="px-2.5 py-1 bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-bold text-xs focus:outline-none focus:border-secondary dark:focus:border-[#10b981] cursor-pointer">
+          <option value="10" selected>10</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+        </select>
+      </div>
+
       <div class="flex items-center gap-2">
         <span id="hadith-page-indicator" class="text-xs text-outline dark:text-gray-400 font-semibold">Page 1 of 1</span>
         <span class="text-outline dark:text-gray-600">|</span>
         <input type="number" id="hadith-jump-input" min="1" max="1" placeholder="1" class="w-12 px-2 py-1 text-center bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-bold text-xs focus:outline-none focus:border-secondary dark:focus:border-[#10b981]"/>
         <button id="hadith-jump-btn" class="px-2.5 py-1 bg-secondary dark:bg-[#10b981] text-white dark:text-black font-bold rounded-lg text-xs hover:opacity-90 transition-all">Go</button>
       </div>
-      <button id="hadith-next-btn" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] text-primary dark:text-white hover:bg-outline-variant/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all">Next &rarr;</button>
+
+      <div class="flex items-center gap-2">
+        <button id="hadith-prev-btn" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] text-primary dark:text-white hover:bg-outline-variant/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all">&larr; Prev</button>
+        <button id="hadith-next-btn" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] text-primary dark:text-white hover:bg-outline-variant/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all">Next &rarr;</button>
+      </div>
     </div>
   </div>
 
@@ -395,8 +410,8 @@
   </div>
 </footer>
 
-<script src="js/api.js?v=20260808_84"></script>
-<script src="js/app.js?v=20260808_84"></script>
+<script src="js/api.js?v=20260808_85"></script>
+<script src="js/app.js?v=20260808_85"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -1180,7 +1195,17 @@
         const hNextBtn = document.getElementById('hadith-next-btn');
         const hJumpInput = document.getElementById('hadith-jump-input');
         const hJumpBtn  = document.getElementById('hadith-jump-btn');
+        const hLimitSelect = document.getElementById('hadith-limit-select');
         const scrollToGrid = () => document.getElementById('transmitted-hadiths-grid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        if (hLimitSelect) {
+          hLimitSelect.addEventListener('change', e => {
+            HADITH_PAGE_SIZE = parseInt(e.target.value, 10) || 10;
+            hadithPage = 1;
+            renderHadithPage();
+            scrollToGrid();
+          });
+        }
         if (hPrevBtn) hPrevBtn.addEventListener('click', () => {
           if (hadithPage > 1) { hadithPage--; renderHadithPage(); scrollToGrid(); }
         });
