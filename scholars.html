@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_82"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_83"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -185,8 +185,8 @@
   </div>
 </footer>
 
-<script src="js/api.js?v=20260808_82"></script>
-<script src="js/app.js?v=20260808_82"></script>
+<script src="js/api.js?v=20260808_83"></script>
+<script src="js/app.js?v=20260808_83"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -375,9 +375,22 @@
       .replace(/Imam Hafiz/ig, 'Imam Hafizh');
   }
 
+  function isIndonesianMode() {
+    if (window.LangSystem && typeof window.LangSystem.isIdMode === 'function') {
+      return window.LangSystem.isIdMode();
+    }
+    try {
+      const saved = localStorage.getItem('hadeeth_lang');
+      if (saved) return saved === 'id';
+    } catch (e) {}
+    const docLang = document.documentElement.getAttribute('data-lang');
+    if (docLang) return docLang === 'id';
+    return true; // Default to ID for HADEETH.ID
+  }
+
   function getCleanEnglishName(r) {
     if (r.id === 'Q6732822' || r.name_en === 'Q6732822') return 'Anas bin Malik (رضي الله عنه)';
-    const isId = (window.LangSystem && window.LangSystem.isIdMode());
+    const isId = isIndonesianMode();
     if (isId) return getIdName(r);
     return r.name_en || r.name_id || 'Scholar';
   }
@@ -482,7 +495,7 @@
     const prevBtn = document.getElementById('scholars-prev-btn');
     const nextBtn = document.getElementById('scholars-next-btn');
     if (!grid) return;
-    const isId = (window.LangSystem && window.LangSystem.isIdMode());
+    const isId = isIndonesianMode();
     if (!allScholars || allScholars.length === 0) {
       grid.innerHTML = `<div class="col-span-3 p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]"><h3 class="font-bold text-primary dark:text-white">${isId ? 'Tidak ada perawi ditemukan' : 'No narrators found'}</h3></div>`;
       return;

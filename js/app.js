@@ -149,6 +149,8 @@ const LangSystem = {
   }
 };
 
+window.LangSystem = LangSystem;
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // Init language system first
