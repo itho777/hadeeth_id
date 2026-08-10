@@ -1949,7 +1949,7 @@ async function loadSanadChain() {
 
   if (narrators.length < 3 && textId) {
     narrators = [];
-    const isnadPartId = textId.split(/beliau\s+bersabda\s*:|berfirman\s*:|berkata\s*:|tentang\s+firman\s+Allah|bahwa\s+Rasulullah/i)[0] || textId;
+    const isnadPartId = textId.split(/beliau\s+bersabda\s*:|berfirman\s*:|berkata\s*:|tentang\s+firman\s+Allah|bahwa\s+Rasulullah|bahwa\s+beliau|\(perawi\)\s+berkata/i)[0] || textId;
     const brackets = isnadPartId.match(/\[([^\]]+)\]/g);
     
     if (brackets && brackets.length > 0) {
@@ -2015,7 +2015,7 @@ async function loadSanadChain() {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_alqama_bin_waqqas');
         } else if (normNameKey === 'ali' || normNameKey.includes('ali bin abdullah') || normNameKey.includes('al madini') || normNameKey.includes('madini')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_ali_bin_al_madini');
-        } else if (normNameKey.includes('umar')) {
+        } else if (normNameKey === 'umar' || normNameKey.includes('umar bin al-khattab') || normNameKey.includes('umar bin khattab') || normNameKey.includes('umar bin al khaththab')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_umar_ibn_al_khattab');
         } else if (normNameKey.includes('sufyan')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_sufyan_al_thawri');
