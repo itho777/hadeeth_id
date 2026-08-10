@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/app.css?v=20260808_83"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_84"/>
   <script src="js/theme.js"></script>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
@@ -355,8 +355,14 @@
   <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-2xl p-6 md:p-8 flex flex-col gap-6 shadow-sm">
     <div class="border-b border-outline-variant/20 dark:border-[#334155] pb-4 flex justify-between items-center">
       <div>
-        <h2 class="text-lg font-bold text-primary dark:text-white">Transmitted Hadiths</h2>
-        <p class="text-xs text-outline dark:text-gray-400">Canonical Hadiths transmitted by this narrator in Sahih al-Bukhari and Kutub al-Sittah.</p>
+        <h2 class="text-lg font-bold text-primary dark:text-white">
+          <span data-lang-en>Transmitted Hadiths</span>
+          <span data-lang-id style="display:none">Hadits yang Diriwayatkan</span>
+        </h2>
+        <p class="text-xs text-outline dark:text-gray-400">
+          <span data-lang-en>Canonical Hadiths transmitted by this narrator in Sahih al-Bukhari and Kutub al-Sittah.</span>
+          <span data-lang-id style="display:none">Hadits-hadits kanonik yang diriwayatkan oleh perawi ini dalam Sahih al-Bukhari dan Kutubus Sittah.</span>
+        </p>
       </div>
       <span id="transmitted-count-badge" class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-bold px-3 py-1 rounded">Loading Hadiths...</span>
     </div>
@@ -389,8 +395,8 @@
   </div>
 </footer>
 
-<script src="js/api.js?v=20260808_83"></script>
-<script src="js/app.js?v=20260808_83"></script>
+<script src="js/api.js?v=20260808_84"></script>
+<script src="js/app.js?v=20260808_84"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -1048,7 +1054,7 @@
 
       // Fetch Transmitted Hadiths
       try {
-        const resH = await fetch(`${supabaseUrl}/rest/v1/hadith_rijal?rawi_id=eq.${rawi.id}&select=position,hadiths(id,book_id,hadith_number,text_en,text_ar,text_id,grade)&limit=50`, {
+        const resH = await fetch(`${supabaseUrl}/rest/v1/hadith_rijal?rawi_id=eq.${rawi.id}&select=position,hadiths(id,book_id,hadith_number,text_en,text_ar,text_id,grade)&limit=500`, {
           headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
         });
         let hadithRows = [];
@@ -1060,17 +1066,27 @@
         // Fallback: text search in hadiths if junction table empty
         if (hadithRows.length === 0) {
           const qName = rawi.name_id || rawi.name_en;
-          const resFallback = await fetch(`${supabaseUrl}/rest/v1/hadiths?or=(text_id.ilike.*[${encodeURIComponent(qName)}]*,text_en.ilike.*${encodeURIComponent(rawi.name_en)}*)&select=id,book_id,hadith_number,text_en,text_ar,text_id,grade&limit=30`, {
+          const resFallback = await fetch(`${supabaseUrl}/rest/v1/hadiths?or=(text_id.ilike.*[${encodeURIComponent(qName)}]*,text_en.ilike.*${encodeURIComponent(rawi.name_en)}*)&select=id,book_id,hadith_number,text_en,text_ar,text_id,grade&limit=200`, {
             headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
           });
           if (resFallback.ok) hadithRows = await resFallback.json();
         }
 
         renderBookDistribution(rawi, hadithRows);
-        document.getElementById('transmitted-count-badge').innerText = `${hadithRows.length} Digital Index Matches`;
+
+        function updateTransmittedBadge() {
+          const isId = (window.LangSystem && window.LangSystem.isIdMode());
+          const badgeEl = document.getElementById('transmitted-count-badge');
+          if (badgeEl) {
+            badgeEl.innerText = isId
+              ? `${hadithRows.length} Tautan Indeks Hadits`
+              : `${hadithRows.length} Digital Index Matches`;
+          }
+        }
+        updateTransmittedBadge();
 
         // ── Paginated hadith renderer ──
-        const HADITH_PAGE_SIZE = 5;
+        const HADITH_PAGE_SIZE = 10;
         let hadithPage = 1;
         const totalHadithPages = () => Math.max(1, Math.ceil(hadithRows.length / HADITH_PAGE_SIZE));
 
@@ -1089,9 +1105,11 @@
           const nextBtn = document.getElementById('hadith-next-btn');
 
           if (!gridH) return;
+          const isId = (window.LangSystem && window.LangSystem.isIdMode());
+          updateTransmittedBadge();
 
           if (hadithRows.length === 0) {
-            gridH.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400">No recorded Hadith links found for this narrator.</div>`;
+            gridH.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400">${isId ? 'Tidak ada catatan tautan Hadits untuk perawi ini.' : 'No recorded Hadith links found for this narrator.'}</div>`;
             if (pagination) pagination.classList.add('hidden');
             return;
           }
@@ -1103,8 +1121,11 @@
           let hHtml = '';
           pageItems.forEach(h => {
             const bName = bookNameMap[h.book_id] || h.book_id || 'Sahih al-Bukhari';
-            const textSnippet = h.text_id || h.text_en || h.text_ar || '';
-            const snippet = textSnippet.length > 220 ? textSnippet.substring(0, 220) + '...' : textSnippet;
+            const textSnippet = isId ? (h.text_id || h.text_en || h.text_ar || '') : (h.text_en || h.text_id || h.text_ar || '');
+            const snippet = textSnippet.length > 240 ? textSnippet.substring(0, 240) + '...' : textSnippet;
+            const readBtnText = isId ? 'Baca Hadits &rarr;' : 'Read Hadith &rarr;';
+            const inspectText = isId ? 'Inspeksi Jalur Sanad' : 'Inspect Sanad Chain';
+
             hHtml += `
               <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-2">
                 <div class="flex justify-between items-center">
@@ -1112,11 +1133,11 @@
                     <span class="bg-sunan-emerald text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase">${escapeHtml(bName)} #${h.hadith_number}</span>
                     <span class="text-xs font-semibold text-secondary dark:text-[#10b981]">${escapeHtml(h.grade || 'Sahih')}</span>
                   </div>
-                  <a href="hadith.html?book=${h.book_id}&id=${h.hadith_number}" class="text-xs font-bold text-sunan-emerald dark:text-[#10b981] hover:underline flex items-center gap-1">Read Hadith &rarr;</a>
+                  <a href="hadith.html?book=${h.book_id}&id=${h.hadith_number}" class="text-xs font-bold text-sunan-emerald dark:text-[#10b981] hover:underline flex items-center gap-1">${readBtnText}</a>
                 </div>
                 <p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed">${escapeHtml(snippet)}</p>
                 <div class="flex justify-between items-center pt-2 border-t border-outline-variant/10 dark:border-[#334155] text-[11px] text-outline dark:text-gray-400">
-                  <a href="sanad.html?book=${h.book_id}&id=${h.hadith_number}" class="hover:underline flex items-center gap-1"><span class="material-symbols-outlined text-xs">account_tree</span> Inspect Sanad Chain</a>
+                  <a href="sanad.html?book=${h.book_id}&id=${h.hadith_number}" class="hover:underline flex items-center gap-1"><span class="material-symbols-outlined text-xs">account_tree</span> ${inspectText}</a>
                 </div>
               </div>
             `;
@@ -1128,13 +1149,31 @@
           if (pagination) {
             pagination.classList.toggle('hidden', tp <= 1);
           }
-          if (indicator) indicator.innerText = `Page ${hadithPage} of ${tp} · Showing ${start + 1}–${end} of ${hadithRows.length}`;
-          if (prevBtn) prevBtn.disabled = (hadithPage <= 1);
-          if (nextBtn) nextBtn.disabled = (hadithPage >= tp);
+          if (indicator) {
+            indicator.innerText = isId
+              ? `Halaman ${hadithPage} dari ${tp} · Menampilkan ${start + 1}–${end} dari ${hadithRows.length} Hadits`
+              : `Page ${hadithPage} of ${tp} · Showing ${start + 1}–${end} of ${hadithRows.length} Hadiths`;
+          }
+          if (prevBtn) {
+            prevBtn.innerText = isId ? '← Sblm' : '← Prev';
+            prevBtn.disabled = (hadithPage <= 1);
+          }
+          if (nextBtn) {
+            nextBtn.innerText = isId ? 'Lanjut →' : 'Next →';
+            nextBtn.disabled = (hadithPage >= tp);
+          }
+          const jumpBtn = document.getElementById('hadith-jump-btn');
+          if (jumpBtn) jumpBtn.innerText = isId ? 'Buka' : 'Go';
+
           // keep jump input in sync
           const ji = document.getElementById('hadith-jump-input');
           if (ji) { ji.max = tp; ji.value = hadithPage; }
         }
+
+        // Global language event listener for live card updates
+        window.addEventListener('hadeeth_lang_change', () => {
+          renderHadithPage();
+        });
 
         // Wire Prev / Next / Jump buttons
         const hPrevBtn = document.getElementById('hadith-prev-btn');
