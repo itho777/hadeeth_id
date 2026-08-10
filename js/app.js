@@ -605,9 +605,9 @@ async function loadHadithDetail() {
           if (textId) {
             indonesianElem.innerHTML = TafseerLinker.parse(textId);
           } else if (textEn) {
-            indonesianElem.innerHTML = TafseerLinker.parse(textEn) + '<br/><span class="text-[11px] text-amber-600 dark:text-amber-400 block mt-2 font-medium">(Teks terjemahan bahasa Inggris ditampilkan karena terjemahan Indonesia sedang diproses)</span>';
+            indonesianElem.innerHTML = TafseerLinker.parse(textEn);
           } else {
-            indonesianElem.innerHTML = fallbackIdMsg;
+            indonesianElem.innerHTML = textAr ? 'Teks Arab lengkap tersedia di atas.' : '—';
           }
         }
 
@@ -615,9 +615,9 @@ async function loadHadithDetail() {
           if (textEn) {
             englishElem.innerHTML = TafseerLinker.parse(textEn);
           } else if (textId) {
-            englishElem.innerHTML = TafseerLinker.parse(textId) + '<br/><span class="text-[11px] text-amber-600 dark:text-amber-400 block mt-2 font-medium">(Indonesian translation text displayed while English alignment is in progress)</span>';
+            englishElem.innerHTML = TafseerLinker.parse(textId);
           } else {
-            englishElem.innerHTML = fallbackEnMsg;
+            englishElem.innerHTML = textAr ? 'Full Arabic text is displayed above.' : '—';
           }
         }
 
@@ -634,9 +634,9 @@ async function loadHadithDetail() {
             if (!targetP) return;
             const val = selectElem.value;
             if (val === 'en') {
-              targetP.innerHTML = textEn ? TafseerLinker.parse(textEn) : (textId ? TafseerLinker.parse(textId) : fallbackEnMsg);
+              targetP.innerHTML = textEn ? TafseerLinker.parse(textEn) : (textId ? TafseerLinker.parse(textId) : 'Full Arabic text is displayed above.');
             } else if (val === 'id') {
-              targetP.innerHTML = textId ? TafseerLinker.parse(textId) : (textEn ? TafseerLinker.parse(textEn) : fallbackIdMsg);
+              targetP.innerHTML = textId ? TafseerLinker.parse(textId) : (textEn ? TafseerLinker.parse(textEn) : 'Teks Arab lengkap tersedia di atas.');
             } else if (val === 'ar') {
               targetP.innerText = textAr || '—';
             }
