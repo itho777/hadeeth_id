@@ -2,23 +2,28 @@
   "hadith_id": "bukhari_1",
   "book_id": "bukhari",
   "hadith_number": 1,
-  "source_code": "enc",
-  "source_name_en": "Concise Verified Commentary (HadeethEnc)",
-  "source_name_id": "Syarah Ringkas Terverifikasi (HadeethEnc)",
-  "title": "Siapa pun yang menemui Allah (wafat) dalam keadaan tidak menyekutukan-Nya dengan sesuatu apa pun, ia pasti masuk surga. Siapa saja yang menemui-Nya (wafat) dalam keadaan berbuat kesyirikan, ia pasti masuk neraka",
-  "explanation_id": "Nabi ﷺ mengabarkan bahwa orang yang meninggal tanpa menyekutukan Allah dengan sesuatu apa pun, maka tempat akhirnya ialah ke surga, walaupun ia disiksa dengan sebagian dosanya. Sebaliknya, orang yang meninggal dengan membawa kesyirikan kepada Allah maka ia akan kekal di neraka.",
-  "explanation_en": "The Prophet (may Allah's peace and blessings be upon him) says that whoever dies while not associating anything as a partner with Allah will end up in Paradise, even if he is punished for some of his sins; and that whoever dies while associating anything as a partner with Allah will abide in Hellfire forever.",
-  "benefits_id": [
-    "1- Keutamaan tauhid; bahwa tauhid merupakan sebab untuk selamat dari keabadian di dalam neraka.\r",
-    "2- Kedekatan surga dan neraka dengan seorang hamba; bahwa pemisah antara hamba dan keduanya hanyalah kematian.\r",
-    "3- Larangan melakukan kesyirikan, sedikit maupun banyak, karena keselamatan dari neraka ialah dengan meninggalkannya.\r",
-    "4- Tolok ukur dalam amalan ialah bagian akhirnya."
+  "source_code": "fath",
+  "source_name_en": "Sharh Fath al-Bari (Ibn Hajar al-'Asqalani)",
+  "source_name_id": "Syarah Fathul Bari (Ibnu Hajar al-'Asqalani)",
+  "explanation_fath_id": "Hafiz Ibn Hajar al-'Asqalani menjelaskan dalam Fathul Bari (Jilid 1, bab Keutamaan Niat) bahwa Imam al-Bukhari sengaja menempatkan hadits 'Innamal a'malu bin niyyat' sebagai pembuka seluruh kitab Shahih-nya. Ini berfungsi sebagai peringatan spiritual agar setiap penuntut ilmu memurnikan ikhlas niatnya semata-mata karena Allah. Amalan lahiriah tanpa ikhlas batiniah tidak memberikan pahala di akhirat.",
+  "explanation_fath_en": "Hafiz Ibn Hajar al-'Asqalani explains in Fath al-Bari (Vol. 1, Chapter on Virtues of Intention) that Imam al-Bukhari deliberately placed the Hadith 'Actions are judged by intentions' as the opening narration of his entire Sahih collection. This serves as a spiritual reminder for seekers of knowledge to purify their intentions solely for Allah.",
+  "explanation_fath_ar": "قال الحافظ ابن حجر العسقلاني في فتح الباري: افتتح الإمام البخاري كتابه بهذا الحديث تذكيرا لطالب العلم بتصحيح النية، وأن العمل بلا إخلاص لا ثواب فيه.",
+  "benefits_fath_id": [
+    "Ibn Hajar membagi niat menjadi dua fungsi: membedakan ibadah dari kebiasaan, dan membedakan tingkat ibadah (wajib vs sunnah).",
+    "Pentingnya keikhlasan batiniah sebagai rukun utama diterimanya setiap amalan di sisi Allah."
   ],
-  "benefits_en": [
-    "This points out the merit of monotheist belief and that it is the means of salvation from an eternal stay in Hellfire.\r",
-    "Paradise and Hellfire are close to people, and only death separates them.\r",
-    "It warns against polytheism, little or much, for salvation from Hellfire is attained by avoiding it.\r",
-    "What matters in one's deeds is how they end up."
+  "benefits_fath_en": [
+    "Ibn Hajar outlines two primary functions of intention: distinguishing worship from routine habits, and categorizing degrees of worship (obligatory vs. voluntary).",
+    "Sincerity of the heart is the fundamental pillar for any deed to be accepted by Allah."
   ],
-  "attribution": "HR. Muslim"
+  "explanation_umdat_id": "Imam Badrul Din al-'Ayni menjelaskan dalam 'Umdatul Qari bahwa kata 'al-A'mal' mencakup amalan lisan, anggota badan, dan hati. Niat adalah pendorong utama perbuatan mukallaf.",
+  "explanation_umdat_en": "Imam Badr al-Din al-'Ayni explains in 'Umdat al-Qari that the term 'al-A'mal' encompasses verbal, physical, and spiritual deeds. Intention is the inner catalyst for human action.",
+  "benefits_umdat_id": [
+    "Ibn Hajar membagi niat menjadi dua fungsi: membedakan ibadah dari kebiasaan, dan membedakan tingkat ibadah (wajib vs sunnah).",
+    "Pentingnya keikhlasan batiniah sebagai rukun utama diterimanya setiap amalan di sisi Allah."
+  ],
+  "benefits_umdat_en": [
+    "Ibn Hajar outlines two primary functions of intention: distinguishing worship from routine habits, and categorizing degrees of worship (obligatory vs. voluntary).",
+    "Sincerity of the heart is the fundamental pillar for any deed to be accepted by Allah."
+  ]
 }

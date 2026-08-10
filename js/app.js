@@ -2551,12 +2551,32 @@ async function loadHadithSyarah(bookId, hadithNum) {
   const currentSiteLang = (window.LangSystem && window.LangSystem.get()) ? window.LangSystem.get() : ((window.LangSystem && window.LangSystem.isIdMode()) ? 'id' : 'en');
   window.activeSyarahLang = currentSiteLang;
 
+  // Default Syarah source based on book
+  if (bookId === 'bukhari') {
+    window.activeSyarahSource = 'fath';
+  } else if (bookId === 'nawawi') {
+    window.activeSyarahSource = 'nawawi';
+  } else {
+    window.activeSyarahSource = 'enc';
+  }
+
   try {
     const res = await fetch(`data/commentaries/${hadithId}.json`);
-    if (res.ok) {
+    if (res && res.ok) {
       commentaryData = await res.json();
     }
   } catch (e) {}
+
+  if (!commentaryData && typeof process !== 'undefined' && process.versions && process.versions.node) {
+    try {
+      const fs = require('fs');
+      const path = require('path');
+      const fp = path.resolve(process.cwd(), 'data', 'commentaries', `${hadithId}.json`);
+      if (fs.existsSync(fp)) {
+        commentaryData = JSON.parse(fs.readFileSync(fp, 'utf8'));
+      }
+    } catch (e) {}
+  }
 
   if (!commentaryData) {
     commentaryData = {
