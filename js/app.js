@@ -2026,8 +2026,7 @@ async function loadSanadChain() {
         } else {
           matched = rawiDict.find(d => 
             normalizeRawiNameKey(d.en) === normNameKey ||
-            (d.id && normalizeRawiNameKey(d.id) === normNameKey) ||
-            normNameKey.includes(normalizeRawiNameKey(d.en))
+            (d.id && normalizeRawiNameKey(d.id) === normNameKey)
           );
         }
 
