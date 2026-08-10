@@ -448,6 +448,39 @@ const TafseerLinker = {
       }
       return `<a href="https://tafseer.id/surah/${sNum}/${ayah}" target="_blank" rel="noopener" class="text-sunan-emerald dark:text-[#10b981] underline font-semibold hover:opacity-80">${match} ↗</a>`;
     });
+    
+    // Process Scholar/Narrator Links
+    // Exclude strings that already look like HTML (to avoid messing up the Qur'an links)
+    const tempTokens = [];
+    out = out.replace(/<a[\s\S]*?<\/a>/g, (m) => {
+        tempTokens.push(m);
+        return `__HTML_TOKEN_${tempTokens.length - 1}__`;
+    });
+    
+    out = out.replace(/\[(.*?)\]/g, (match, name) => {
+      let targetName = name;
+      let displayName = name;
+      
+      if (name.includes('|')) {
+        const parts = name.split('|');
+        targetName = parts[0].trim();
+        displayName = parts[1].trim();
+      }
+      
+      let cleanName = targetName.replace(/[\[\]'"]/g, '').trim();
+      cleanName = cleanName.replace(/\s*radliallahu\s+'?anh[ua]m?a?/gi, '').trim();
+      
+      const urlParams = new URLSearchParams({ name: cleanName });
+      return `[<a href="profile-detail.html?${urlParams.toString()}" class="font-semibold text-primary-600 dark:text-primary-400 hover:underline inline-flex items-center gap-0.5" title="View Scholar Profile">
+                <span class="inline-block translate-y-[2px] opacity-70">
+                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                </span>
+                ${displayName}
+              </a>]`;
+    });
+    
+    out = out.replace(/__HTML_TOKEN_(\d+)__/g, (m, idx) => tempTokens[parseInt(idx)]);
+    
     return out;
   }
 };
@@ -604,20 +637,16 @@ async function loadHadithDetail() {
         if (indonesianElem) {
           if (textId) {
             indonesianElem.innerHTML = TafseerLinker.parse(textId);
-          } else if (textEn) {
-            indonesianElem.innerHTML = TafseerLinker.parse(textEn);
           } else {
-            indonesianElem.innerHTML = textAr ? 'Teks Arab lengkap tersedia di atas.' : '—';
+            indonesianElem.innerHTML = '<span class="text-xs text-outline dark:text-gray-400 italic">Terjemahan Bahasa Indonesia untuk Hadits ini saat ini belum tersedia. Teks Arab lengkap tersedia di atas.</span>';
           }
         }
 
         if (englishElem) {
           if (textEn) {
             englishElem.innerHTML = TafseerLinker.parse(textEn);
-          } else if (textId) {
-            englishElem.innerHTML = TafseerLinker.parse(textId);
           } else {
-            englishElem.innerHTML = textAr ? 'Full Arabic text is displayed above.' : '—';
+            englishElem.innerHTML = '<span class="text-xs text-outline dark:text-gray-400 italic">English translation for this Hadith is currently unavailable. Full Arabic text is displayed above.</span>';
           }
         }
 
@@ -634,9 +663,9 @@ async function loadHadithDetail() {
             if (!targetP) return;
             const val = selectElem.value;
             if (val === 'en') {
-              targetP.innerHTML = textEn ? TafseerLinker.parse(textEn) : (textId ? TafseerLinker.parse(textId) : 'Full Arabic text is displayed above.');
+              targetP.innerHTML = textEn ? TafseerLinker.parse(textEn) : '<span class="text-xs text-outline dark:text-gray-400 italic">English translation for this Hadith is currently unavailable. Full Arabic text is displayed above.</span>';
             } else if (val === 'id') {
-              targetP.innerHTML = textId ? TafseerLinker.parse(textId) : (textEn ? TafseerLinker.parse(textEn) : 'Teks Arab lengkap tersedia di atas.');
+              targetP.innerHTML = textId ? TafseerLinker.parse(textId) : '<span class="text-xs text-outline dark:text-gray-400 italic">Terjemahan Bahasa Indonesia untuk Hadits ini saat ini belum tersedia. Teks Arab lengkap tersedia di atas.</span>';
             } else if (val === 'ar') {
               targetP.innerText = textAr || '—';
             }
@@ -676,7 +705,11 @@ async function loadHadithDetail() {
                 'orang', 'orang tua', 'kaum', 'umat', 'jamaah'
               ]);
               brackets.forEach(b => {
-                const name = b.replace(/[\[\]]/g, '').trim();
+                let nameStr = b.replace(/[\[\]]/g, '').trim();
+                let name = nameStr;
+                if (nameStr.includes('|')) {
+                  name = nameStr.split('|')[0].trim();
+                }
                 const norm = name.toLowerCase();
                 if (name && !stopWords.has(norm) && !stopWords.has(name) && name.length > 2) {
                   previewNames.push(name);
@@ -1944,7 +1977,11 @@ async function loadSanadChain() {
       const extractedNames = [];
       
       brackets.forEach(b => {
-        const name = b.replace(/[\[\]]/g, '').trim();
+        let name = b.replace(/[\[\]]/g, '').trim();
+        // Strip out any |Alias syntax so the Sanad tree just gets the Real Name
+        if (name.includes('|')) {
+          name = name.split('|')[0].trim();
+        }
         const norm = name.toLowerCase();
         if (name && !stopWords.has(norm) && !stopWords.has(name) && name.length > 2) {
           extractedNames.push(name);
@@ -1968,7 +2005,7 @@ async function loadSanadChain() {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_malik_bin_anas');
         } else if (normNameKey.includes('anas bin malik') || normNameKey === 'anas') {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_anas_bin_malik');
-        } else if (normNameKey.includes('ibnu umar') || normNameKey.includes('ibn umar')) {
+        } else if (normNameKey.includes('ibnu umar') || normNameKey.includes('ibn umar') || normNameKey === 'abdullah bin umar') {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_ibn_umar');
         } else if (normNameKey.includes('ikrimah')) {
           matched = rawiDict.find(d => d.rawi_id === 'rawi_ikrimah_bin_khalid');
