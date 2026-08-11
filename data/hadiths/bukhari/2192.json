@@ -1,0 +1,28 @@
+{
+  "hadithnumber": 2192,
+  "arabicnumber": 2192,
+  "text": "Telah menceritakan kepada kami [Muhammad] dia adalah anak dari Muqatil telah mengabarkan kepada kami ['Abdullah] telah mengabarkan kepada kami [Musa bin 'Uqbah] dari [Nafi'] dari [Ibnu 'Umar] dari [Zaid bin Tsabit] radliallahu 'anhum bahwa Rasulullah shallallahu 'alaihi wasallam telah memberi keringanan pada 'ariyah yang dijual dengan cara taksiran timbangan (berat). Berkata, Musa bin 'Uqbah: \"Dan yang dimaksud jual beli 'ariyyah adalah kurma-kurma yang sudah dikenal lalu kamu datang untuk membelinya",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Abdullah bin Umar bin al-Khattab",
+      "name_ar": "عبد الله بن عمر بن الخطاب",
+      "rawi_id": "rawi_ibn_umar"
+    },
+    {
+      "name_id": "Muhammad bin Isa at-Tirmidzi",
+      "name_ar": "محمد بن عيسى الترمذي",
+      "rawi_id": "rawi_al_tirmidhi"
+    }
+  ]
+}

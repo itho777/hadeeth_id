@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 4714,
+  "arabicnumber": 4714,
+  "text": "Telah menceritakan kepadaku ['Amru bin 'Ali] Telah menceritakan kepada kami [Yahya] Telah menceritakan kepada kami [Sufyan] Telah menceritakan kepadaku [Sulaiman] dari [Ibrahim] dari [Abu Ma'mar] dari ['Abdullah] mengenai firman Allah: Orang-orang yang mereka seru itu, mereka sendiri mencari jalan kepada Tuhan mereka.., (Al Isra: 57). Abdullah berkata; Sebagian orang menyembah bangsa Jin. Lalu bangsa jin tersebut masuk Islam, sedangkan orang yang menyembahnya tetap pada keyakinan mereka. [Al Asyaj] menambahkan dari [Sufyan] dari [Al A'masy] yaitu firman Allah: Katakanlah: \"Panggillah mereka yang kamu anggap (tuhan) selain Allah.., (Al Isra:)",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Abdullah bin Umar bin al-Khattab",
+      "name_ar": "عبد الله بن عمر بن الخطاب",
+      "rawi_id": "rawi_ibn_umar"
+    },
+    {
+      "name_id": "Sulaiman bin al-Asy'ats al-Azdi as-Sijistani",
+      "name_ar": "سليمان بن الأشعث الأزدي السجستاني",
+      "rawi_id": "rawi_abu_dawud"
+    },
+    {
+      "name_id": "Sufyan bin Sa'id ats-Tsauri al-Kufi",
+      "name_ar": "سفيان بن سعيد الثوري الكوفي",
+      "rawi_id": "rawi_sufyan_al_thawri"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "hadithnumber": 6771,
+  "arabicnumber": 6771,
+  "text": "Telah menceritakan kepada kami [Qutaibah bin Sa'id] telah menceritakan kepada kami [Sufyan] dari [Az Zuhri] dari [Urwah] dari [Aisyah] mengatakan; Rasulullah Shallallahu'alaihi wa sallam suatu hari menemui kami dengan ceria, lantas beliau berujar: \"Wahai Aisyah, tidakkah engkau lihat Mujazzaz Al Madlaji menemuiku lantas ia memandang Usamah bin Zaid dan Zaid yang sedang berselimut, tertutup kedua kepalanya, dan terlihat telapak kaki keduanya?\" Lantas beliau bersabda: \"sesungguhnya telapak kaki-telapak kaki merupakan bagian satu dengan yang lainnya",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Aisyah binti Abu Bakar ash-Shiddiq",
+      "name_ar": "عائشة بنت أبي بكر الصديق",
+      "rawi_id": "rawi_aisha_bint_abi_bakr"
+    },
+    {
+      "name_id": "Urwah bin az-Zubair bin al-Awwam",
+      "name_ar": "عروة بن الزبير بن العوام",
+      "rawi_id": "rawi_urwah_ibn_zubayr"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Sufyan bin Sa'id ats-Tsauri al-Kufi",
+      "name_ar": "سفيان بن سعيد الثوري الكوفي",
+      "rawi_id": "rawi_sufyan_al_thawri"
+    }
+  ]
+}

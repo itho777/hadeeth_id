@@ -1,0 +1,28 @@
+{
+  "hadithnumber": 3946,
+  "arabicnumber": 3946,
+  "text": "Telah menceritakan kepadaku [Al Hasan bin 'Umar bin Syaqiq] telah menceritakan kepada kami [Mu'tamir] berkata [bapakku], Dan telah menceritakan kepada kami [Abu 'Utsman] dari [Salman Al Farisiy] bahwa dia telah berpindah-pindah tidak kurang sepuluh kali dari satu tuan ke tuan lain",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Al Hasan bin 'Umar bin Syaqiq",
+      "name_ar": "Al Hasan bin 'Umar bin Syaqiq"
+    },
+    {
+      "name_id": "Mu'tamir",
+      "name_ar": "Mu'tamir"
+    },
+    {
+      "name_id": "bapakku",
+      "name_ar": "bapakku"
+    },
+    {
+      "name_id": "Abu 'Utsman",
+      "name_ar": "Abu 'Utsman"
+    },
+    {
+      "name_id": "Salman Al Farisiy",
+      "name_ar": "Salman Al Farisiy"
+    }
+  ]
+}

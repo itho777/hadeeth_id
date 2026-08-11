@@ -1,0 +1,28 @@
+{
+  "hadithnumber": 2397,
+  "arabicnumber": 2397,
+  "text": "Telah menceritakan kepada kami [Abu Al Yaman] telah mengabarkan kepada kami [Syu'aib] dari [Az Zuhriy]. Dan diriwayatkan pula, telah menceritakan kepada kami [Isma'il] berkata, telah menceritakan kepadaku [saudaraku] dari [Sulaiman] dari [Muhammad bin Abi 'Atiq] dari [Ibnu Syihab] dari ['Urwah] bahwa ['Aisyah radliallahu 'anha] mengabarkan kepadanya bahwa Rasulullah shallallahu 'alaihi wasallam berdo'a dalam shalat: \"Allahumma innii a'uudzu bika minal ma'tsami wal maghram\" (Ya Allah aku berlindung kepadamu dari berbuat dosa dan terlilit hutang). Lalu ada seseorang yang bertanya: \"Mengapa anda banyak meminta perlindungan dari hutang, wahai Rasulullah?\" Beliau menjawab: \"Sesungguhnya seseorang apabila sedang berhutang ketika dia berbicara biasanya berdusta dan bila berjanji sering menyelisihinya",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Sulaiman bin al-Asy'ats al-Azdi as-Sijistani",
+      "name_ar": "سليمان بن الأشعث الأزدي السجستاني",
+      "rawi_id": "rawi_abu_dawud"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    },
+    {
+      "name_id": "Ahmad bin Syu'aib an-Nasa'i",
+      "name_ar": "أحمد بن شعيب النسائي",
+      "rawi_id": "rawi_al_nasai"
+    }
+  ]
+}

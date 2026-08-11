@@ -1,0 +1,18 @@
+{
+  "hadithnumber": 3123,
+  "arabicnumber": 3123,
+  "text": "Telah bercerita kepada kami [Isma'il] berkata telah bercerita kepadaku [Malik] dari [Abu Az Zanad] dari [Al A'roj] dari [Abu Hurairah radliallahu 'anhu] bahwa Rasulullah Shallallahu'alaiwasallam bersabda: \"Allah menjamin bagi siapa yang berjihad di jalan-Nya, tak ada niyat bagi orang itu untuk berangkat selain untuk berjihad di jalan-Nya dan membenarkan kalimat-Nya, agar untuk memasukkannya ke dalam surga atau Allah mengembalikannya ke tempat tinggalnya yang ia tinggalkan dengan membawa pulang pahala atau ghanimah",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    }
+  ]
+}

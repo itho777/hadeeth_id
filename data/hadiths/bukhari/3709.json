@@ -1,0 +1,28 @@
+{
+  "hadithnumber": 3709,
+  "arabicnumber": 3709,
+  "text": "Telah bercerita kepadaku ['Amru bin 'Ali] telah bercerita kepada kami [Yazid bin Harun] telah mengabarkan kepada kami [Isma'il bin Abu Khalid] dari [asy-Sya'biy] bahwa [Ibnu 'Umar radliallahu 'anhuma] bila memberi salam kepada putra Ja'far, dia berkata; \"Salam sejahtera buat anda wahai putra dari orang yang punya dua sayap",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "'Amru bin 'Ali",
+      "name_ar": "'Amru bin 'Ali"
+    },
+    {
+      "name_id": "Yazid bin Harun",
+      "name_ar": "Yazid bin Harun"
+    },
+    {
+      "name_id": "Isma'il bin Abu Khalid",
+      "name_ar": "Isma'il bin Abu Khalid"
+    },
+    {
+      "name_id": "asy-Sya'biy",
+      "name_ar": "asy-Sya'biy"
+    },
+    {
+      "name_id": "Ibnu 'Umar radliallahu 'anhuma",
+      "name_ar": "Ibnu 'Umar radliallahu 'anhuma"
+    }
+  ]
+}

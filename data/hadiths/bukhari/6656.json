@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 6656,
+  "arabicnumber": 6656,
+  "text": "Telah menceritakan kepada kami [Isma'il] menuturkan; telah menceritakan kepadaku [Malik] dari [Ibnu Syihab] dari [Ibnul Musayyab] dari [Abu Hurairah], bahwasanya Rasulullah Shallallahu'alaihiwasallam bersabda: \"Seorang muslim yang mendapat kematian ketiga anaknya, tidak akan tersentuh api neraka kecuali sebatas pelaksanaan sumpah Allah",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 5190,
+  "arabicnumber": 5190,
+  "text": "Telah menceritakan kepada kami [Abdullah bin Muhammad] Telah menceritakan kepada kami [Hisyam] Telah mengabarkan kepada kami [Ma'mar] dari [Az Zuhri] dari [Urwah] dari [Aisyah] ia berkta; Suatu ketika, orang-orang Habasyah sedang bermain-main dengan peralatan perang mereka, lalu Rasulullah shallallahu 'alaihi wasallam pun menutupiku, sementara aku menonton mereka. Begitulah seterusnya hingga aku sendirilah yang bosan dan beranjak sendiri. Karena itu, jadilah kalian seperti anak kecil yang suka bergurau",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Aisyah binti Abu Bakar ash-Shiddiq",
+      "name_ar": "عائشة بنت أبي بكر الصديق",
+      "rawi_id": "rawi_aisha_bint_abi_bakr"
+    },
+    {
+      "name_id": "Urwah bin az-Zubair bin al-Awwam",
+      "name_ar": "عروة بن الزبير بن العوام",
+      "rawi_id": "rawi_urwah_ibn_zubayr"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    }
+  ]
+}

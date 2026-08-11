@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 5505,
+  "arabicnumber": 5505,
+  "text": "Telah menceritakan kepada kami [Ismail] berkata; telah menceritakan kepadaku [Malik] dari [Nafi'] dari [Laki-laki Anshar] dari [Mu'adz bin Sa'd atau Sa'd bin Mu'adz] ia mengabarkan kepadanya, bahwa budak wanita Ka'b bin Malik mengembalakan kambing di daerah Sal', lalu salah satu kambingnya terkena sakit hingga ia pun menyembelihnya dengan batu. Ketika Nabi shallallahu 'alaihi wasallam ditanya tentang hukum (daging sembelihannya), beliau menjawab: \"Makanlah",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    }
+  ]
+}

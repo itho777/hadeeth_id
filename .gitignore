@@ -1,5 +1,5 @@
-# Per-Hadith individual JSON files (7,600+ files — served from CDN, not needed in repo)
-data/hadiths/
+# Per-Hadith individual JSON files (served from GitHub Pages / Cloudflare Pages)
+# data/hadiths/ is intentionally tracked to act as a blazing-fast static CDN
 
 # Large binary files (too large for GitHub)
 data/sqlite/

@@ -1,0 +1,18 @@
+{
+  "hadithnumber": 1512,
+  "arabicnumber": 1512,
+  "text": "Telah menceritakan kepada kami [Musaddad] telah menceritakan kepada kami [Yahya] dari ['Ubaidullah] berkata, telah menceritakan kepada saya [Nafi'] dari [Ibnu 'Umar radliallahu 'anhu] berkata; \"Rasulullah shallallahu 'alaihi wasallam mewajibkan zakat fithri satu sha' dari gandum atau sha' dari kurma bagi setiap anak kecil maupun dewasa, orang yang merdeka maupun hamba sahaya (budak)",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    }
+  ]
+}

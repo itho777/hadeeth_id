@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 4157,
+  "arabicnumber": 4157,
+  "text": "Telah menceritakan kepada kami [Ali bin Abdullah] telah menceritakan kepada kami [Sufyan] dari [Az Zuhri] dari ['Urwah] dari [Marwan] dan [Al Miswar bin Makhramah] keduanya berkata; \"Pada peristiwa Hudaibiyyah, Nabi shallallahu 'alaihi wasallam berangkat dari Madinah bersama para sahabat yang berjumlah sekitar seribu orang lebih. Ketika sampai di Dzul Hulaifah, Nabi shallallahu 'alaihi wasallam mengikat dan menandai hewan qurban beliau, lalu memulai ihram dari san`a.\" Sudah tidak terhitung berapa kali aku mendengarnya dari Sufyan hingga akhirnya aku mendengar dia berkata; \"Aku tidak hafal hadits dari Az Zuhri tentang memberi tanda dan mengikat hewan qurban. Aku tidak tahu yaitu tempat menandai dan mengikat hewan qurban atau redaksi hadits keseluruhannya",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Urwah bin az-Zubair bin al-Awwam",
+      "name_ar": "عروة بن الزبير بن العوام",
+      "rawi_id": "rawi_urwah_ibn_zubayr"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Sufyan bin Sa'id ats-Tsauri al-Kufi",
+      "name_ar": "سفيان بن سعيد الثوري الكوفي",
+      "rawi_id": "rawi_sufyan_al_thawri"
+    }
+  ]
+}

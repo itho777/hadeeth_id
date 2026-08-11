@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 242,
+  "arabicnumber": 242,
+  "text": "Telah menceritakan kepada kami ['Ali bin 'Abdullah] berkata, telah menceritakan kepada kami [Sufyan] berkata, telah menceritakan kepada kami [Az Zuhri] dari [Abu Salamah] dari ['Aisyah] dari Nabi shallallahu 'alaihi wasallam, beliau bersabda: \"Setiap minuman yang memabukkan adalah haram",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Aisyah binti Abu Bakar ash-Shiddiq",
+      "name_ar": "عائشة بنت أبي بكر الصديق",
+      "rawi_id": "rawi_aisha_bint_abi_bakr"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Sufyan bin Sa'id ats-Tsauri al-Kufi",
+      "name_ar": "سفيان بن سعيد الثوري الكوفي",
+      "rawi_id": "rawi_sufyan_al_thawri"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "hadithnumber": 340,
+  "arabicnumber": 340,
+  "text": "Telah menceritakan kepada kami [Sulaiman bin Harb] berkata, telah menceritakan kepada kami [Syu'bah] dari [Al Hakam] dari [Dzar] dari [Ibnu 'Abdurrahman bin Abza] dari [Bapaknya] bahwa ia pernah melihat 'Umar saat ['Ammar] bertanya kepadanya, \"Kami sedang dalam perjalanan, kemudian kami junub?\" dia menjawab, \"Hendaknya bertayamum",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Sulaiman bin Harb",
+      "name_ar": "Sulaiman bin Harb"
+    },
+    {
+      "name_id": "Syu'bah",
+      "name_ar": "Syu'bah"
+    },
+    {
+      "name_id": "Al Hakam",
+      "name_ar": "Al Hakam"
+    },
+    {
+      "name_id": "Dzar",
+      "name_ar": "Dzar"
+    },
+    {
+      "name_id": "Ibnu 'Abdurrahman bin Abza",
+      "name_ar": "Ibnu 'Abdurrahman bin Abza"
+    },
+    {
+      "name_id": "Abza",
+      "name_ar": "Abza"
+    },
+    {
+      "name_id": "'Ammar",
+      "name_ar": "'Ammar"
+    }
+  ]
+}

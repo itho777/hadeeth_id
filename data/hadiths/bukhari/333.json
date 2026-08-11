@@ -1,0 +1,32 @@
+{
+  "hadithnumber": 333,
+  "arabicnumber": 333,
+  "text": "Telah menceritakan kepada kami [Al Hasan bin Mudrik] berkata, telah menceritakan kepada kami [Yahya bin Hammad] berkata, telah mengabarkan kepada kami [Abu 'Awanah] nama aslinya adalah Al Wadldlah sebagaimana dalam kitabnya, ia berkata; telah mengabarkan kepada kami [Sulaiman Asy Syaibani] dari ['Abdullah bin Syaddad] berkata, Aku mendengar bibiku [Maimunah] isteri Nabi shallallahu 'alaihi wasallam, bahwa ia mengalami haid dan tidak melaksanakan shalat. Dan ia tidur di depan tempat sujud Rasulullah shallallahu 'alaihi wasallam yang saat itu sedang shalat di atas tikar (kecil) nya, jika sujud beliau maka sebagian kainnya mengenaiku",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Al Hasan bin Mudrik",
+      "name_ar": "Al Hasan bin Mudrik"
+    },
+    {
+      "name_id": "Yahya bin Hammad",
+      "name_ar": "Yahya bin Hammad"
+    },
+    {
+      "name_id": "Abu 'Awanah",
+      "name_ar": "Abu 'Awanah"
+    },
+    {
+      "name_id": "Sulaiman Asy Syaibani",
+      "name_ar": "Sulaiman Asy Syaibani"
+    },
+    {
+      "name_id": "'Abdullah bin Syaddad",
+      "name_ar": "'Abdullah bin Syaddad"
+    },
+    {
+      "name_id": "Maimunah",
+      "name_ar": "Maimunah"
+    }
+  ]
+}

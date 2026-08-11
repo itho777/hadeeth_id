@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 1732,
+  "arabicnumber": 1732,
+  "text": "Dan telah berkata, kepada kami [Abu Nu'aim] telah menceritakan kepada kami [Sufyan] dari ['Ubaidullah] dari [Nafi'] dari [Ibnu'Umar radliallahu 'anhuma] bahwa dia melaksanakan thawaf satu kali saja kemudian qailulah (tidur sebentar di siang hari) kemudian mendatangi Mina pada hari Nahar\". Hadits ini dimarfu'kan oleh ['Abdur Razaq], telah mengabarkan kepada kami ['Ubaidullah]",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Sufyan bin Sa'id ats-Tsauri al-Kufi",
+      "name_ar": "سفيان بن سعيد الثوري الكوفي",
+      "rawi_id": "rawi_sufyan_al_thawri"
+    }
+  ]
+}

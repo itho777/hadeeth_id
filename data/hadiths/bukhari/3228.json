@@ -1,0 +1,18 @@
+{
+  "hadithnumber": 3228,
+  "arabicnumber": 3228,
+  "text": "(Masih dari jalur periwayatan yang sama dengan hadis sebelumnya -dari [Abu Hurairah]-) bagi setiap Muslim dalam setiap tujuh hari ada satu hari yang hari itu mereka mencuci kepala dan badannya (mandi) \".",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    }
+  ]
+}

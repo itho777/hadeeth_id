@@ -1,0 +1,36 @@
+{
+  "hadithnumber": 3857,
+  "arabicnumber": 3857,
+  "text": "Telah menceritakan kepadaku [Abdullah bin Hammad Al Amuli] berkata, telah menceritakan kepadaku [Yahya bin Ma'in] telah menceritakan kepada kami [Isma'il bin Mujalid] dari [Bayan] dari [Wabarah] dari [Hammam bin Al Harits] berkata, ['Ammar bin Yasir] menceritakan; Aku melihat Rasulullah shallallahu 'alaihi wasallam, dan tidak ada sorangpun yang menyertai beliau melainkan lima orang hamba sahaya, dua orang wanita dan Abu Bakr",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Abdullah bin Hammad Al Amuli",
+      "name_ar": "Abdullah bin Hammad Al Amuli"
+    },
+    {
+      "name_id": "Yahya bin Ma'in",
+      "name_ar": "Yahya bin Ma'in"
+    },
+    {
+      "name_id": "Isma'il bin Mujalid",
+      "name_ar": "Isma'il bin Mujalid"
+    },
+    {
+      "name_id": "Bayan",
+      "name_ar": "Bayan"
+    },
+    {
+      "name_id": "Wabarah",
+      "name_ar": "Wabarah"
+    },
+    {
+      "name_id": "Hammam bin Al Harits",
+      "name_ar": "Hammam bin Al Harits"
+    },
+    {
+      "name_id": "'Ammar bin Yasir",
+      "name_ar": "'Ammar bin Yasir"
+    }
+  ]
+}

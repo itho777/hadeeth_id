@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 925,
+  "arabicnumber": 925,
+  "text": "Telah menceritakan kepada kami [Abu Al Yaman] berkata, telah mengabarkan kepada kami [Syu'aib] dari [Az Zuhri] berkata, telah mengabarkan kepadaku ['Urwah] dari [Abu Humaid As Sa'idi] bahwasanya dia mengabarkan kepadanya, bahwa setelah melaksanakan shalat di awal malam (Isya) Rasulullah shallallahu 'alaihi wasallam berdiri, lalu membaca syahadah dan puja pujnya kepada Allah dengan pujian yang layak (bagi Allah), beliau lalu mengucapkan: \"Amma ba'du.\" Hadits ini dikuatkan oleh [Abu Mu'awiyyah] dan [Abu Usamah] dari [Hisyam] dari [Bapaknya] dari [Abu Humaid As Sa'idi] dari Nabi shallallahu 'alaihi wasallam, beliau bersabda: \"Amma ba'du.\" Dikuatkan juga oleh [Al 'Adani] dari [Sufyan] tentang ucapan 'Amma ba'du",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Urwah bin az-Zubair bin al-Awwam",
+      "name_ar": "عروة بن الزبير بن العوام",
+      "rawi_id": "rawi_urwah_ibn_zubayr"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Ahmad bin Syu'aib an-Nasa'i",
+      "name_ar": "أحمد بن شعيب النسائي",
+      "rawi_id": "rawi_al_nasai"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 1695,
+  "arabicnumber": 1695,
+  "text": "Telah menceritakan kepada kami [Ahmad bin Muhammad] telah mengabarkan kepada kami ['Abdullah] telah mengabarkan kepada kami [Ma'mar] dari [Az Zuhriy] dari ['Urwah bin Az Zubair] dari [Al Miswar bin Makhramah] dan [Marwan] keduanya berkata: \"Nabi Shallallahu'alaihiwasallam berangkat saat perjanjian Al Hudaibiyah dari Madinah bersama sekitar seribu orang sahabat Beliau hingga ketika sampai di Dzul Hulaifah, Nabi Shallallahu'alaihiwasallam mengikatnya dan menandai hewan qurban Beliau, lalu berihram untuk 'umrah",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Urwah bin az-Zubair bin al-Awwam",
+      "name_ar": "عروة بن الزبير بن العوام",
+      "rawi_id": "rawi_urwah_ibn_zubayr"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Abdullah bin Umar bin al-Khattab",
+      "name_ar": "عبد الله بن عمر بن الخطاب",
+      "rawi_id": "rawi_ibn_umar"
+    }
+  ]
+}

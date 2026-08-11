@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 2154,
+  "arabicnumber": 2154,
+  "text": "Telah menceritakan kepada kami [Isma'il] berkata, telah menceritakan kepada saya [Malik] dari [Ibnu Syihab] dari ['Ubaidullah] dari [Abu Hurairah] dan [Zaid bin Khalid] radliallahu 'anhuma bahwa Rasulullah shallallahu 'alaihi wasallam ditanya tentang seorang budak wanita bila berzina sedangkan dia belum menikah, maka Beliau bersabda: \"Jika dia berzina maka dihukum cambuk kemudian bila berzina lagi maka dijual sekalipun seharga seuntai rambut\". Ibnu Syihab berkata: \"Aku tidak tahu apakah dia dijual setelah tiga kali atau empat kali berzina",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    }
+  ]
+}

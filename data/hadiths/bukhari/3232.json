@@ -1,0 +1,24 @@
+{
+  "hadithnumber": 3232,
+  "arabicnumber": 3232,
+  "text": "Telah bercerita kepada kami [Qais bin Hafsh] telah bercerita kepada kami ['Abdul Wahid] telah bercerita kepada kami [Kulaib bin Wa'il] berkata, telah bercerita kepadaku anak tiri Nabi Shallallhu 'alaihi wa salam yaitu [Zainab binti Abu Salamah]. Kulaib berkata; \"Aku pernah bertanya kepadanya; \"Apa pendapat kamu tentang Nabi Shallallhu 'alaihi wa salam, apakah dia berasal dari suku Mudlar?\". Zainab berkata; \"Dari suku mana lagi kalau bukan suku Mudlar?. Beliau adalah keturunan Bani an-Nadlir bin Kinanah\".",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Qais bin Hafsh",
+      "name_ar": "Qais bin Hafsh"
+    },
+    {
+      "name_id": "'Abdul Wahid",
+      "name_ar": "'Abdul Wahid"
+    },
+    {
+      "name_id": "Kulaib bin Wa'il",
+      "name_ar": "Kulaib bin Wa'il"
+    },
+    {
+      "name_id": "Zainab binti Abu Salamah",
+      "name_ar": "Zainab binti Abu Salamah"
+    }
+  ]
+}

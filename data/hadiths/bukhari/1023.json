@@ -1,0 +1,18 @@
+{
+  "hadithnumber": 1023,
+  "arabicnumber": 1023,
+  "text": "Telah berbicara kepada kami [Abu Al Yaman] berkata, telah mengabarkan kepada kami [Syu'aib] dari [Az Zuhri] berkata, telah menceritakan kepadaku ['Abbad bin Tamim] bahwa [Pamannya] -salah seorang sahabat Nabi shallallahu 'alaihi wasallam- mengabarkan kepadanya, bahwa Nabi shallallahu 'alaihi wasallam pernah keluar bersama manusia (melaksanakan shalat istisqa') memintakan hujan untuk mereka. Beliau kemudian berdiri menghadap kiblat dan berdoa dalam keadaan berdiri sambil membalikkan kain selendangnya. Setelah itu mereka pun mendapatkan hujan",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Ahmad bin Syu'aib an-Nasa'i",
+      "name_ar": "أحمد بن شعيب النسائي",
+      "rawi_id": "rawi_al_nasai"
+    }
+  ]
+}

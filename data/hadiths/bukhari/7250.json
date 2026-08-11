@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 7250,
+  "arabicnumber": 7250,
+  "text": "Telah menceritakan kepada kami [Ismail] telah menceritakan kepadaku [Malik] dari [Ayyub] dari [Muhammad] dari [Abu Hurairah], bahwa Rasulullah shallallahu 'alaihi wasallam menyelesaikan shalatnya padahal baru melakukan dua rakaat. Karenanya Dzul Yadaini bertanya, 'Apakah engkau meringkas shalat ya Rasulullah, ataukah engkau sekedar lupa? ' Nabi balik bertanya: 'Apakah Dzul Yadaini benar? ' Para sahabat menjawab, 'Benar! Lantas Rasulullah shallallahu 'alaihi wasallam berdiri dan melanjutkan shalat dua rakaat berikutnya, kemudian beliau mengucapkan salam, kemudian bertakbir, kemudian sujud seperti sujudnya atau lebih lama, kemudian mengangkat sujudnya, kemudian bertakbir dan sujud seperti sujudnya, kemudian beliau mengangkat sujudnya",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Muhammad bin Isa at-Tirmidzi",
+      "name_ar": "محمد بن عيسى الترمذي",
+      "rawi_id": "rawi_al_tirmidhi"
+    },
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    }
+  ]
+}

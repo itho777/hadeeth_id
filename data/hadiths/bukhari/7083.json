@@ -1,0 +1,144 @@
+{
+  "hadithnumber": 7083,
+  "arabicnumber": 7083,
+  "text": "Telah menceritakan kepada kami ['Abdullah bin Abdul Wahhab], telah menceritakan kepada kami [Hammad] dari [seseorang yang tidak dia sebutkan namanya] dari [Al Hasan] mengatakan, Aku keluar dengan membawa senjataku di malam-malam terjadi fitnah, maka [Abu Bakrah] menemuiku dengan bertanya; 'mau kemana kamu? ' aku menjawab; 'Aku ingin menolong keponakan Rasulullah Shallallahu'alaihiwasallam' (maksudnya 'Ali). Abu Bakrah berkata, Rasulullah Shallallahu'alaihiwasallam bersabda; \"Jika dua muslim berhadap-hadapan dengan kedua pedangnya, maka keduanya sama-sama masuk neraka.\" Maka ada yang bertanya; 'kalau yang membunuh sudah maklum, lantas apa dosa yang dibunuh? ' Nabi shallallahu 'alaihi wasallam menjawab: \"Ia juga berkehendak membunuh saudaranya.\" [Hammad bin Zaid] berkata; maka hadits ini kusampaikan kepada [Ayyub] dan [Yunus bin Ubaid], dan aku ingin keduanya menceritakan kepadaku (jalur periwayatan) hadits ini, maka keduanya mengatakan; 'Hadits ini diriwayatkan oleh [Al Hasan] dari [Ahnaf bin Qais] dari [Abu Bakrah]. Telah menceritakan kepada kami [Sulaiman] telah menceritakan kepada kami [Hammad] tentang hal itu. [Mu'ammal] berkata; telah menceritakan kepada kami [Hammad bin Zaid] telah menceritakan kepada kami [Ayyub], [Yunus bin Ubaid], [Hisyam] dan [Mu'ala bin Zaid] dari [Al Hasan] dari [Ahnaf] dari [Abu Bakrah] dari Nabi shallallahu 'alaihi wasallam, dan diriwayatkan oleh [Ma'mar] dari [Ayyub], dan diriwayatkan oleh [Bakkar bin Abdul aziz] dari [ayahnya] dari [Abu Bakrah] dan [Ghundar] mengatakan; telah menceritakan kepada kami [Syu'bah] dari [Manshur] dari [Rib'i bin Hirasy] dari [Abu Bakrah] dari Nabi shallallahu 'alaihi wasallam, dan [Sufyan] tidak memarfu'kannya dari [Manshur]",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "'Abdullah bin Abdul Wahhab",
+      "name_ar": "'Abdullah bin Abdul Wahhab"
+    },
+    {
+      "name_id": "Hammad",
+      "name_ar": "Hammad"
+    },
+    {
+      "name_id": "seseorang yang tidak dia sebutkan namanya",
+      "name_ar": "seseorang yang tidak dia sebutkan namanya"
+    },
+    {
+      "name_id": "Al Hasan",
+      "name_ar": "Al Hasan"
+    },
+    {
+      "name_id": "Abu Bakrah",
+      "name_ar": "Abu Bakrah"
+    },
+    {
+      "name_id": "Hammad bin Zaid",
+      "name_ar": "Hammad bin Zaid"
+    },
+    {
+      "name_id": "Ayyub",
+      "name_ar": "Ayyub"
+    },
+    {
+      "name_id": "Yunus bin Ubaid",
+      "name_ar": "Yunus bin Ubaid"
+    },
+    {
+      "name_id": "Al Hasan",
+      "name_ar": "Al Hasan"
+    },
+    {
+      "name_id": "Ahnaf bin Qais",
+      "name_ar": "Ahnaf bin Qais"
+    },
+    {
+      "name_id": "Abu Bakrah",
+      "name_ar": "Abu Bakrah"
+    },
+    {
+      "name_id": "Sulaiman",
+      "name_ar": "Sulaiman"
+    },
+    {
+      "name_id": "Hammad",
+      "name_ar": "Hammad"
+    },
+    {
+      "name_id": "Mu'ammal",
+      "name_ar": "Mu'ammal"
+    },
+    {
+      "name_id": "Hammad bin Zaid",
+      "name_ar": "Hammad bin Zaid"
+    },
+    {
+      "name_id": "Ayyub",
+      "name_ar": "Ayyub"
+    },
+    {
+      "name_id": "Yunus bin Ubaid",
+      "name_ar": "Yunus bin Ubaid"
+    },
+    {
+      "name_id": "Hisyam",
+      "name_ar": "هشام"
+    },
+    {
+      "name_id": "Mu'ala bin Zaid",
+      "name_ar": "Mu'ala bin Zaid"
+    },
+    {
+      "name_id": "Al Hasan",
+      "name_ar": "Al Hasan"
+    },
+    {
+      "name_id": "Ahnaf",
+      "name_ar": "Ahnaf"
+    },
+    {
+      "name_id": "Abu Bakrah",
+      "name_ar": "Abu Bakrah"
+    },
+    {
+      "name_id": "Ma'mar",
+      "name_ar": "معمر"
+    },
+    {
+      "name_id": "Ayyub",
+      "name_ar": "Ayyub"
+    },
+    {
+      "name_id": "Bakkar bin Abdul aziz",
+      "name_ar": "Bakkar bin Abdul aziz"
+    },
+    {
+      "name_id": "ayahnya",
+      "name_ar": "ayahnya"
+    },
+    {
+      "name_id": "Abu Bakrah",
+      "name_ar": "Abu Bakrah"
+    },
+    {
+      "name_id": "Ghundar",
+      "name_ar": "Ghundar"
+    },
+    {
+      "name_id": "Syu'bah",
+      "name_ar": "Syu'bah"
+    },
+    {
+      "name_id": "Manshur",
+      "name_ar": "Manshur"
+    },
+    {
+      "name_id": "Rib'i bin Hirasy",
+      "name_ar": "Rib'i bin Hirasy"
+    },
+    {
+      "name_id": "Abu Bakrah",
+      "name_ar": "Abu Bakrah"
+    },
+    {
+      "name_id": "Sufyan",
+      "name_ar": "Sufyan"
+    },
+    {
+      "name_id": "Manshur",
+      "name_ar": "Manshur"
+    }
+  ]
+}

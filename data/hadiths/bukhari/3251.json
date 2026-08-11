@@ -1,0 +1,18 @@
+{
+  "hadithnumber": 3251,
+  "arabicnumber": 3251,
+  "text": "Telah bercerita kepadaku [Muhammad bin Ghurair Az Zuhriy] telah bercerita kepada kami [Ya'qub bin Ibrahim] dari [bapaknya] dari [Shalih] telah bercerita kepada kami [Nafi'] bahwa ['Abdullah] mengabarkan kepadanya bahwa Rasulullah shallallahu 'alaihi wasallam bersabda dari atas mimbar: \"Suku Ghifar, kiranya \"ghafarallahu lahaa\" (Allah mengampuninya), suku Aslam kiranya \"salaamahallahu' (Allah menyelamatkannya) dan 'Ushayyah, mereka betul-betul \"'ashatillaha wa rasuulih\" (durhaka kepada Allah dan rasul-Nya) \".",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    },
+    {
+      "name_id": "Sa'd bin Malik al-Khudri",
+      "name_ar": "سعد بن مالك الخدري",
+      "rawi_id": "rawi_abu_said_al_khudri"
+    }
+  ]
+}
