@@ -2391,6 +2391,7 @@ function getArabicScriptForRawi(latinOrAr) {
     "urwah": "عروة بن الزبير",
     "abu salama": "أبو سلمة بن عبد الرحمن",
     "amr bin dinar": "عمرو بن دينار",
+    "amru bin dinar": "عمرو بن دينار",
     "al-zuhri": "ابن شهاب الزهري",
     "az-zuhri": "ابن شهاب الزهري",
     "zuhri": "ابن شهاب الزهري"
@@ -2452,6 +2453,8 @@ function getArabicScriptForRawi(latinOrAr) {
     'suhayb': 'صهيب',
     'yasser': 'ياسر',
     'yasar': 'يسار',
+    'amr': 'عمرو',
+    'amru': 'عمرو',
     'dinar': 'دينار',
     'ismail': 'إسماعيل',
     'jafar': 'جعفر',
