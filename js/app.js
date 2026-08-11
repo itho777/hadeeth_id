@@ -1007,9 +1007,9 @@ async function loadHadithList() {
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
 
   try {
-    let queryUrl = `${supabaseUrl}/rest/v1/hadiths?book_id=eq.${bookId}&select=*&order=hadith_number.asc&limit=500`;
+    let queryUrl = `${supabaseUrl}/rest/v1/hadiths?book_id=eq.${bookId}&select=*&order=hadith_number.asc&limit=2000`;
     if (startHadithNum != null && endHadithNum != null) {
-      queryUrl = `${supabaseUrl}/rest/v1/hadiths?book_id=eq.${bookId}&hadith_number=gte.${startHadithNum}&hadith_number=lte.${endHadithNum}&select=*&order=hadith_number.asc&limit=500`;
+      queryUrl = `${supabaseUrl}/rest/v1/hadiths?book_id=eq.${bookId}&hadith_number=gte.${startHadithNum}&hadith_number=lte.${endHadithNum}&select=*&order=hadith_number.asc&limit=2000`;
     }
     const res = await fetch(queryUrl, {
       headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
@@ -1105,6 +1105,7 @@ async function loadHadithList() {
       const num = item.hadith_number || (startIdx + idx + 1);
       const enText = item.text_en || '';
       const arText = item.text_ar || '';
+      const hasId = !!item.text_id;
       const idText = item.text_id || enText;
       const grade = item.grade || 'Sahih';
 
@@ -1113,14 +1114,17 @@ async function loadHadithList() {
 
       let displayText = '';
       if (currentLang === 'id') {
-        displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${escapeHtml(idText)}</p>`;
+        const badge = hasId ? 'Terjemahan Indonesia:' : 'English Translation (Fallback):';
+        displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">${badge}</strong>${escapeHtml(idText)}</p>`;
       } else if (currentLang === 'en') {
         displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${escapeHtml(enText)}</p>`;
       } else {
+        const idHtml = hasId ? `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${escapeHtml(item.text_id)}</p>` : '';
+        const enHtml = enText ? `<p class="text-xs text-outline dark:text-gray-400 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${escapeHtml(enText)}</p>` : '';
         displayText = `
           <div class="flex flex-col gap-3 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
-            <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${escapeHtml(idText)}</p>
-            <p class="text-xs text-outline dark:text-gray-400 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${escapeHtml(enText)}</p>
+            ${idHtml}
+            ${enHtml}
           </div>
         `;
       }
