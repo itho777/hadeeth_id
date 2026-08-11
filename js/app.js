@@ -1530,6 +1530,33 @@ async function loadChaptersList() {
         { chapter_number: 1, name_en: 'Prayer Times (Kitab Wuqut al-Salah)', name_ar: 'وقوت الصلاة', hadith_range: 'Hadith 1 – 31' },
         { chapter_number: 2, name_en: 'Purity (Kitab al-Taharah)', name_ar: 'كتاب الطهارة', hadith_range: 'Hadith 32 – 146' }
       ];
+    } else if (bookId === 'darimi') {
+      chapters = [
+        { chapter_number: 1, name_en: 'Muqaddimah (Introduction)', name_ar: 'المقدمة', hadith_range: 'Hadith 1 – 141' },
+        { chapter_number: 2, name_en: 'Purification (Taharah)', name_ar: 'كتاب الطهارة', hadith_range: 'Hadith 142 – 282' },
+        { chapter_number: 3, name_en: 'Prayer (Salah)', name_ar: 'كتاب الصلاة', hadith_range: 'Hadith 283 – 423' },
+        { chapter_number: 4, name_en: 'Charity (Zakat)', name_ar: 'كتاب الزكاة', hadith_range: 'Hadith 424 – 564' },
+        { chapter_number: 5, name_en: 'Fasting (Sawm)', name_ar: 'كتاب الصوم', hadith_range: 'Hadith 565 – 705' },
+        { chapter_number: 6, name_en: 'Pilgrimage (Manasik)', name_ar: 'كتاب المناسك', hadith_range: 'Hadith 706 – 846' },
+        { chapter_number: 7, name_en: 'Sacrifices (Adahi)', name_ar: 'كتاب الأضاحي', hadith_range: 'Hadith 847 – 987' },
+        { chapter_number: 8, name_en: 'Hunting (Sayd)', name_ar: 'كتاب الصيد', hadith_range: 'Hadith 988 – 1128' },
+        { chapter_number: 9, name_en: "Food (At'imah)", name_ar: 'كتاب الأطعمة', hadith_range: 'Hadith 1129 – 1269' },
+        { chapter_number: 10, name_en: 'Drinks (Ashribah)', name_ar: 'كتاب الأشربة', hadith_range: 'Hadith 1270 – 1410' },
+        { chapter_number: 11, name_en: "Dreams (Ru'ya)", name_ar: 'كتاب الرؤيا', hadith_range: 'Hadith 1411 – 1551' },
+        { chapter_number: 12, name_en: 'Marriage (Nikah)', name_ar: 'كتاب النكاح', hadith_range: 'Hadith 1552 – 1692' },
+        { chapter_number: 13, name_en: 'Divorce (Talaq)', name_ar: 'كتاب الطلاق', hadith_range: 'Hadith 1693 – 1833' },
+        { chapter_number: 14, name_en: 'Punishments (Hudud)', name_ar: 'كتاب الحدود', hadith_range: 'Hadith 1834 – 1974' },
+        { chapter_number: 15, name_en: 'Blood Money (Diyat)', name_ar: 'كتاب الديات', hadith_range: 'Hadith 1975 – 2115' },
+        { chapter_number: 16, name_en: 'Jihad', name_ar: 'كتاب الجهاد', hadith_range: 'Hadith 2116 – 2256' },
+        { chapter_number: 17, name_en: 'Expeditions (Siyar)', name_ar: 'كتاب السير', hadith_range: 'Hadith 2257 – 2397' },
+        { chapter_number: 18, name_en: 'Battles (Maghazi)', name_ar: 'كتاب المغازي', hadith_range: 'Hadith 2398 – 2538' },
+        { chapter_number: 19, name_en: 'Exegesis (Tafsir)', name_ar: 'كتاب التفسير', hadith_range: 'Hadith 2539 – 2679' },
+        { chapter_number: 20, name_en: "Virtues of Qur'an (Fada'il al-Qur'an)", name_ar: 'كتاب فضائل القرآن', hadith_range: 'Hadith 2680 – 2820' },
+        { chapter_number: 21, name_en: 'Wills (Wasiyyah)', name_ar: 'كتاب الوصايا', hadith_range: 'Hadith 2821 – 2961' },
+        { chapter_number: 22, name_en: "Inheritance (Fara'id)", name_ar: 'كتاب الفرائض', hadith_range: 'Hadith 2962 – 3102' },
+        { chapter_number: 23, name_en: 'Heart-Melting Traditions (Riqaq)', name_ar: 'كتاب الرقاق', hadith_range: 'Hadith 3103 – 3243' },
+        { chapter_number: 24, name_en: "Trade (Buyu')", name_ar: 'كتاب البيوع', hadith_range: 'Hadith 3244 – 3367' }
+      ];
     } else if (bookId === 'ahmad') {
       chapters = [
         { chapter_number: 1, name_en: 'Musnad of 10 Promised Companions', name_ar: 'مسند العشرة المبشرين بالجنة', hadith_range: 'Hadith 1 – 1380' },
@@ -1643,6 +1670,8 @@ async function loadHadithCardsList() {
   let idTitle = `Kitab ${chapterId}`;
   let arTitle = '';
 
+  let startNum = '';
+  let endNum = '';
   // Fetch chapter title info
   const chapters = await window.HadeethAPI.getChapters(bookId);
   if (chapters && chapters.length >= parseInt(chapterId)) {
@@ -1651,8 +1680,8 @@ async function loadHadithCardsList() {
     idTitle = chInfo.title_id || chInfo.name_id || enTitle;
     arTitle = chInfo.title_ar || chInfo.name_ar || '';
 
-    const startNum = chInfo.hadith_start || '';
-    const endNum = chInfo.hadith_end || '';
+    startNum = chInfo.hadith_start || '';
+    endNum = chInfo.hadith_end || '';
     const hCount = chInfo.hadith_count || (endNum && startNum ? (endNum - startNum + 1) : '');
 
     if (countMeta) {
@@ -1709,7 +1738,16 @@ async function loadHadithCardsList() {
   }
 
   const baseHadiths = (engEdition && engEdition.hadiths) ? engEdition.hadiths : indEdition.hadiths;
-  const listHadiths = baseHadiths.slice(0, 50);
+  
+  // Actually filter by chapter ranges!
+  let listHadiths = baseHadiths;
+  // Use chapter range if we successfully extracted it from getChapters
+  if (typeof startNum !== 'undefined' && startNum !== '' && endNum !== '') {
+    listHadiths = baseHadiths.filter(h => h.hadithnumber >= parseInt(startNum) && h.hadithnumber <= parseInt(endNum));
+  } else {
+    // Fallback to first 100 if we couldn't parse chapter ranges
+    listHadiths = baseHadiths.slice(0, 100);
+  }
 
   let html = '';
   listHadiths.forEach(h => {
