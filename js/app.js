@@ -530,7 +530,8 @@ async function loadHadithDetail() {
     nasai: "Sunan an-Nasa'i",
     ibnmajah: 'Sunan Ibn Majah',
     malik: 'Muwatta Malik',
-    ahmad: 'Musnad Ahmad'
+    ahmad: 'Musnad Ahmad',
+    darimi: 'Sunan ad-Darimi'
   };
   const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
 
@@ -798,7 +799,8 @@ async function loadHadithList() {
     nasai: "Sunan an-Nasa'i",
     ibnmajah: 'Sunan Ibn Majah',
     malik: 'Muwatta Malik',
-    ahmad: 'Musnad Ahmad'
+    ahmad: 'Musnad Ahmad',
+    darimi: 'Sunan ad-Darimi'
   };
   const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
 
@@ -1392,6 +1394,18 @@ async function loadChaptersList() {
       hadithCount: '📖 27,647 Total Hadith',
       authenticity: '⭐️ Encyclopedic Corpus'
     },
+    darimi: {
+      name: 'Sunan ad-Darimi',
+      ar: 'سنن الدارمي',
+      author: 'Imam Abdullah bin Abdul Rahman ad-Darimi',
+      authorId: 'rawi_darimi',
+      type: 'Sunan',
+      badgeClass: 'bg-indigo-600 text-white',
+      desc: 'Highly respected Hadith collection with rigorous standards, frequently considered alongside the Kutub al-Sittah.',
+      kitabCount: '📚 24 Books (Kitab)',
+      hadithCount: '📖 3,367 Total Hadith',
+      authenticity: '⭐️ Sunan Corpus'
+    },
     nawawi: {
       name: 'Forty Nawawi',
       ar: 'الأربعون النووية',
@@ -1824,7 +1838,8 @@ async function loadSanadChain() {
     nasai: "Sunan an-Nasa'i",
     ibnmajah: 'Sunan Ibn Majah',
     malik: 'Muwatta Malik',
-    ahmad: 'Musnad Ahmad'
+    ahmad: 'Musnad Ahmad',
+    darimi: 'Sunan ad-Darimi'
   };
   const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
   const isIdLang = (window.LangSystem && window.LangSystem.isIdMode());
@@ -2191,7 +2206,8 @@ async function loadSanadChain() {
     nasai: 'Imam an-Nasa\'i',
     ibnmajah: 'Imam Ibn Majah',
     malik: 'Imam Malik bin Anas',
-    ahmad: 'Imam Ahmad bin Hanbal'
+    ahmad: 'Imam Ahmad bin Hanbal',
+    darimi: 'Imam Abdullah bin Abdul Rahman ad-Darimi'
   };
 
   const authorNamesId = {
@@ -2202,13 +2218,14 @@ async function loadSanadChain() {
     nasai: 'Imam an-Nasa\'i',
     ibnmajah: 'Imam Ibn Majah',
     malik: 'Imam Malik bin Anas',
-    ahmad: 'Imam Ahmad bin Hanbal'
+    ahmad: 'Imam Ahmad bin Hanbal',
+    darimi: 'Imam Abdullah bin Abdul Rahman ad-Darimi'
   };
 
   const authorNameEn = authorNamesEn[bookId.toLowerCase()] || 'Imam al-Bukhari';
   const authorNameId = authorNamesId[bookId.toLowerCase()] || 'Imam al-Bukhari';
 
-  const authorIdMap = { 'bukhari': 'rawi_al_bukhari', 'muslim': 'rawi_muslim_ibn_hajjaj', 'abudawud': 'rawi_abu_dawud', 'tirmidhi': 'rawi_al_tirmidhi', 'nasai': 'rawi_al_nasai', 'ibnmajah': 'rawi_ibn_majah' };
+  const authorIdMap = { 'bukhari': 'rawi_al_bukhari', 'muslim': 'rawi_muslim_ibn_hajjaj', 'abudawud': 'rawi_abu_dawud', 'tirmidhi': 'rawi_al_tirmidhi', 'nasai': 'rawi_al_nasai', 'ibnmajah': 'rawi_ibn_majah', 'malik': 'rawi_malik_bin_anas', 'ahmad': 'rawi_ahmad', 'darimi': 'rawi_darimi' };
   const authorProfileUrl = authorIdMap[bookId] ? `profile-detail.html?id=${authorIdMap[bookId]}` : `profile-detail.html?id=rawi_al_bukhari`;
 
   html += `
