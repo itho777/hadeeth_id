@@ -1961,46 +1961,15 @@ async function loadSanadChain() {
   if (subEn) subEn.innerText = `Chain of narrators (الإسناد) for ${bookName} Hadith #${hadithNum} tracing back to the Messenger of Allah ﷺ.`;
   if (subId) subId.innerText = `Silsilah perawi (الإسناد) untuk ${bookName} Hadits #${hadithNum} yang bersambung sampai ke Rasulullah ﷺ.`;
 
-  const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
-  const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
-
-  let textAr = '';
-  let textEn = '';
-  let textId = '';
-  let dbNarrators = null;
-  // Try RPC / DB lookup first
+  let dbNarrators = [];
   try {
-    const resRpc = await fetch(`${supabaseUrl}/rest/v1/rpc/get_sanad_chain`, {
-      method: 'POST',
-      headers: {
-        'apikey': anonKey,
-        'Authorization': `Bearer ${anonKey}`,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ p_hadith_id: hadithId })
-    });
-    if (resRpc.ok) {
-      dbNarrators = await resRpc.json();
-    }
-  } catch (err) {
-    console.warn('RPC get_sanad_chain error:', err);
-  }
-
-  // Fetch Hadith text as fallback/supplement
-  try {
-    const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?id=eq.${hadithId}&select=text_ar,text_en,text_id`, {
-      headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
-    });
+    const res = await fetch(`data/hadiths/${bookId}/${hadithNum}.json`);
     if (res.ok) {
       const data = await res.json();
-      if (data && data.length > 0) {
-        textAr = data[0].text_ar || '';
-        textEn = data[0].text_en || '';
-        textId = data[0].text_id || '';
-      }
+      dbNarrators = data.sanad || [];
     }
   } catch (err) {
-    console.warn('Supabase fetch sanad error:', err);
+    console.warn('Local sanad fetch error:', err);
   }
 
   let narrators = [];
@@ -2035,182 +2004,28 @@ async function loadSanadChain() {
   ];
 
   // If DB returned structured chain from hadith_rijal with 3+ narrators, use it!
-  if (dbNarrators && dbNarrators.length >= 3) {
-    narrators = dbNarrators.map(r => {
-      const normEn = (r.name_en || '').toLowerCase();
-      const matchDict = rawiDict.find(d => 
-        d.rawi_id === r.rawi_id || 
-        (d.ar && r.name_ar && (d.ar.includes(r.name_ar) || r.name_ar.includes(d.ar))) ||
-        (d.en && normEn && normEn.includes(d.en.toLowerCase().replace(/['`’]/g, '').trim()))
-      );
-      const enName = r.name_en || (matchDict ? matchDict.en : 'Transmitter');
-      const idName = matchDict ? matchDict.id : getIndonesianRawiName(enName, r.rawi_id, r.name_ar);
-      const roleEnText = matchDict ? (matchDict.roleEn || matchDict.role) : `${r.generation || 'Transmitter'} • Grade: ${r.grade || 'Thiqah'}`;
-      const roleIdText = matchDict ? (matchDict.roleId || matchDict.role) : `${r.generation || 'PERAWI'} • DERAJAT: ${r.grade || 'TSIQAH'}`;
+  if (dbNarrators && dbNarrators.length > 0) {
+    narrators = dbNarrators.map((r, idx) => {
+      const matchDict = rawiDict.find(d => d.rawi_id === r.rawi_id);
+      
+      const enName = matchDict ? matchDict.en : (r.name_id || 'Transmitter');
+      const idName = r.name_id || (matchDict ? matchDict.id : 'Perawi');
+      const isFirst = (idx === 0) || (matchDict && matchDict.roleEn.includes('Sahabi'));
+
       return {
         rawi_id: r.rawi_id,
-        name: enName + (r.is_sahabi ? ' (رضي الله عنه)' : ''),
+        name: enName + (isFirst && !enName.includes('رضي الله') ? ' (رضي الله عنه)' : ''),
         name_id: idName,
-        roleEn: roleEnText,
-        roleId: roleIdText,
-        ar: r.name_ar || (matchDict ? matchDict.ar : ''),
-        kunyah: r.kunyah || (matchDict ? matchDict.kunyah : 'Abu Abdullah'),
-        residence: r.residence || (matchDict ? matchDict.residence : 'Madinah'),
-        death_ah: r.death_ah || (matchDict ? matchDict.death_ah : 'Early Era'),
+        roleEn: matchDict ? (matchDict.roleEn || matchDict.role) : (isFirst ? 'SAHABI (COMPANION) • GRADE: THIQAH' : 'TRANSMITTER (RAWI) • GRADE: THIQAH'),
+        roleId: matchDict ? (matchDict.roleId || matchDict.role) : (isFirst ? 'SAHABAT NABI • DERAJAT: TSIQAH' : 'PERAWI (RAWI) • DERAJAT: TSIQAH'),
+        ar: getArabicScriptForRawi(r.name_ar || (matchDict ? matchDict.ar : r.name_id)),
+        kunyah: matchDict ? matchDict.kunyah : (isFirst ? 'Abu Abdillah' : 'Abu Abdullah'),
+        residence: matchDict ? matchDict.residence : (isFirst ? 'Madinah' : 'Kufah / Basra'),
+        death_ah: matchDict ? matchDict.death_ah : (isFirst ? 'Early Era' : 'Abad ke-2 H'),
         counts: matchDict ? matchDict.counts : 'Bukhari & Muslim',
         remarks: matchDict ? matchDict.remarks : 'Ibn Hajar: Thiqah'
       };
     });
-  }
-
-  if (narrators.length < 3 && textId) {
-    narrators = [];
-    const isnadPartId = textId.split(/beliau\s+bersabda\s*:|berfirman\s*:|berkata\s*:|tentang\s+firman\s+Allah|bahwa\s+Rasulullah|bahwa\s+beliau|\(perawi\)\s+berkata/i)[0] || textId;
-    const brackets = isnadPartId.match(/\[([^\]]+)\]/g);
-    
-    if (brackets && brackets.length > 0) {
-      const stopWords = new Set([
-        'al qur\'an', 'al-qur\'an', 'qur\'an', 'islam', 'nabi', 'rasulullah', 'allah', 'tuhan',
-        'pamannya', 'pamanku', 'paman', 'uncle', 'my uncle', 'his uncle',
-        'ayahnya', 'ayahku', 'bapaknya', 'bapakku', 'ayah', 'bapak', 'father', 'his father', 'my father',
-        'kakeknya', 'kakekku', 'kakek', 'grandfather', 'his grandfather', 'my grandfather',
-        'ibunya', 'ibuku', 'ibu', 'mother', 'his mother', 'my mother',
-        'saudaranya', 'saudaraku', 'saudara', 'brother', 'his brother', 'my brother',
-        'saudari', 'saudarinya', 'sister', 'his sister',
-        'anaknya', 'anakku', 'anak', 'son', 'daughter', 'his son', 'his daughter',
-        'istrinya', 'istri', 'wife', 'his wife',
-        'suaminya', 'suami', 'husband', 'her husband',
-        'budaknya', 'budak', 'hamba', 'slave', 'freedman',
-        'bibinya', 'bibi', 'aunt', 'his aunt',
-        'sepupunya', 'sepupu', 'cousin',
-        'mertuanya', 'mertua', 'in-law',
-        'keluarganya', 'keluarga', 'family',
-        'kerabatnya', 'kerabat', 'kin',
-        'sahabat', 'sahabatnya', 'companion', 'companions',
-        'beliau', 'mereka', 'seseorang', 'seorang', 'lelaki', 'wanita', 'perempuan',
-        'orang', 'orang tua', 'kaum', 'umat', 'jamaah'
-      ]);
-      const extractedNames = [];
-      
-      brackets.forEach(b => {
-        let name = b.replace(/[\[\]]/g, '').trim();
-        // Strip out any |Alias syntax so the Sanad tree just gets the Real Name
-        if (name.includes('|')) {
-          name = name.split('|')[0].trim();
-        }
-        const norm = name.toLowerCase();
-        const cleanNorm = norm.replace(/\s+radliallahu.*$/, '').replace(/\s+semoga allah.*$/, '').trim();
-        
-        // Dynamic pronoun resolution for Sanad accuracy
-        if (['bapaknya', 'ayahnya', 'his father', 'pamannya', 'kakeknya', 'ibunya'].includes(cleanNorm)) {
-          const prevRaw = extractedNames.length > 0 ? extractedNames[extractedNames.length - 1] : '';
-          const prevName = prevRaw.toLowerCase().replace(/[\']/g, ''); // ignore apostrophes for matching
-          
-          if (cleanNorm === 'bapaknya' || cleanNorm === 'ayahnya' || cleanNorm === 'his father') {
-            const pronounMap = {
-              'hisyam': 'Urwah bin Az-Zubair',
-              'suhail': 'Abu Shalih',
-              'salim': 'Abdullah bin Umar',
-              'ibnu thawus': 'Thawus',
-              'mutamir': 'Sulaiman At-Taimi',
-              'al-mutamir': 'Sulaiman At-Taimi',
-              'al mutamir': 'Sulaiman At-Taimi',
-              'jafar': 'Muhammad bin Ali',
-              'ibnu buraidah': 'Buraidah'
-            };
-            if (pronounMap[prevName]) {
-              name = pronounMap[prevName];
-            } else if (prevRaw.includes(' bin ')) {
-              // Smart fallback: "X bin Y" -> Father is "Y"
-              name = prevRaw.split(' bin ')[1].trim();
-            }
-          } else if (cleanNorm === 'pamannya') {
-            if (prevName.includes('abbad bin tamim')) name = 'Abdullah bin Zaid';
-            if (prevName.includes('ibnu akhi ibnu syihab')) name = 'Ibnu Syihab';
-          }
-        }
-        
-        // Only ignore if it is still a generic stop word
-        if (name && !stopWords.has(name.toLowerCase()) && !stopWords.has(cleanNorm) && name.length > 2) {
-          extractedNames.push(name);
-        }
-      });
-
-      // Reverse so chain runs Companion (Node 1) -> Collector (Node N)
-      extractedNames.reverse().forEach((rawiName, idx) => {
-        const normNameKey = normalizeRawiNameKey(rawiName);
-        let matched = null;
-
-        if (normNameKey.includes('aisyah') || normNameKey.includes('aisha')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_aisha_bint_abi_bakr');
-        } else if (normNameKey.includes('abdurrahman') && normNameKey.includes('qasim')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_abdurrahman_bin_al_qasim');
-        } else if (normNameKey.includes('abdullah bin yusuf') || normNameKey.includes('yusuf')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_abdullah_bin_yusuf');
-        } else if (normNameKey.includes('humaid') || normNameKey.includes('humayd') || normNameKey.includes('humai')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_al_humaydi');
-        } else if (normNameKey === 'malik' || normNameKey.includes('imam malik') || normNameKey.includes('malik bin anas')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_malik_bin_anas');
-        } else if (normNameKey.includes('anas bin malik') || normNameKey === 'anas') {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_anas_bin_malik');
-        } else if (normNameKey.includes('ibnu umar') || normNameKey.includes('ibn umar') || normNameKey === 'abdullah bin umar') {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_ibn_umar');
-        } else if (normNameKey.includes('ikrimah')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_ikrimah_bin_khalid');
-        } else if (normNameKey.includes('hanzhalah') || normNameKey.includes('hanzalah')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_hanzalah_bin_abu_sufyan');
-        } else if (normNameKey.includes('alqam') || normNameKey.includes('waq')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_alqama_bin_waqqas');
-        } else if (normNameKey === 'ali' || normNameKey.includes('ali bin abdullah') || normNameKey.includes('al madini') || normNameKey.includes('madini')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_ali_bin_al_madini');
-        } else if (normNameKey === 'umar' || normNameKey.includes('umar bin al-khattab') || normNameKey.includes('umar bin khattab') || normNameKey.includes('umar bin al khaththab')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_umar_ibn_al_khattab');
-        } else if (normNameKey.includes('sufyan')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_sufyan_al_thawri');
-        } else if (normNameKey.includes('yahya')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_yahya_bin_said');
-        } else if (normNameKey.includes('muhammad') && normNameKey.includes('ibrahim')) {
-          matched = rawiDict.find(d => d.rawi_id === 'rawi_muhammad_bin_ibrahim');
-        } else {
-          matched = rawiDict.find(d => 
-            normalizeRawiNameKey(d.en) === normNameKey ||
-            (d.id && normalizeRawiNameKey(d.id) === normNameKey)
-          );
-        }
-
-        if (matched) {
-          narrators.push({
-            rawi_id: matched.rawi_id,
-            name: matched.en,
-            name_id: matched.id || getIndonesianRawiName(matched.en, matched.rawi_id, matched.ar),
-            roleEn: matched.roleEn || matched.role,
-            roleId: matched.roleId || matched.role,
-            ar: matched.ar,
-            kunyah: matched.kunyah,
-            residence: matched.residence,
-            death_ah: matched.death_ah,
-            counts: matched.counts,
-            remarks: matched.remarks
-          });
-        } else {
-          const normName = normalizeRawiNameKey(rawiName);
-          const isFirst = (idx === 0) || normName.includes('radliallahu') || normName.includes('sahabi') || normName.includes('abu hurairah') || normName.includes('umar') || normName.includes('aisyah');
-          narrators.push({
-            rawi_id: null,
-            name: rawiName,
-            name_id: getIndonesianRawiName(rawiName, null, null),
-            roleEn: isFirst ? 'SAHABI (COMPANION) • GRADE: THIQAH' : 'TRANSMITTER (RAWI) • GRADE: THIQAH',
-            roleId: isFirst ? 'SAHABAT NABI • DERAJAT: TSIQAH' : 'PERAWI (RAWI) • DERAJAT: TSIQAH',
-            ar: getArabicScriptForRawi(rawiName),
-            kunyah: isFirst ? 'Abu Abdillah' : 'Abu Abdullah',
-            residence: isFirst ? 'Madinah' : 'Kufah / Basra',
-            death_ah: isFirst ? 'Abad ke-1 H' : 'Abad ke-2 H',
-            counts: 'Bukhari & Muslim',
-            remarks: 'Ibn Hajar: Thiqah (Verified Transmitter)'
-          });
-        }
-      });
-    }
   }
 
   // Fallback defaults if no narrators extracted
