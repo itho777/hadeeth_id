@@ -7,8 +7,8 @@
     "title_ar": "المقدمة",
     "title_id": "Muqaddimah",
     "hadith_start": 1,
-    "hadith_end": 141,
-    "hadith_count": 141
+    "hadith_end": 649,
+    "hadith_count": 649
   },
   {
     "id": "darimi_c2",
@@ -17,9 +17,9 @@
     "title_en": "Purification (Taharah)",
     "title_ar": "كتاب الطهارة",
     "title_id": "Taharah",
-    "hadith_start": 142,
-    "hadith_end": 282,
-    "hadith_count": 141
+    "hadith_start": 650,
+    "hadith_end": 1159,
+    "hadith_count": 510
   },
   {
     "id": "darimi_c3",
@@ -28,9 +28,9 @@
     "title_en": "Prayer (Salah)",
     "title_ar": "كتاب الصلاة",
     "title_id": "Shalat",
-    "hadith_start": 283,
-    "hadith_end": 423,
-    "hadith_count": 141
+    "hadith_start": 1160,
+    "hadith_end": 1578,
+    "hadith_count": 419
   },
   {
     "id": "darimi_c4",
@@ -39,9 +39,9 @@
     "title_en": "Charity (Zakat)",
     "title_ar": "كتاب الزكاة",
     "title_id": "Zakat",
-    "hadith_start": 424,
-    "hadith_end": 564,
-    "hadith_count": 141
+    "hadith_start": 1579,
+    "hadith_end": 1637,
+    "hadith_count": 59
   },
   {
     "id": "darimi_c5",
@@ -50,9 +50,9 @@
     "title_en": "Fasting (Sawm)",
     "title_ar": "كتاب الصوم",
     "title_id": "Puasa",
-    "hadith_start": 565,
-    "hadith_end": 705,
-    "hadith_count": 141
+    "hadith_start": 1638,
+    "hadith_end": 1735,
+    "hadith_count": 98
   },
   {
     "id": "darimi_c6",
@@ -61,9 +61,9 @@
     "title_en": "Pilgrimage (Manasik)",
     "title_ar": "كتاب المناسك",
     "title_id": "Manasik",
-    "hadith_start": 706,
-    "hadith_end": 846,
-    "hadith_count": 141
+    "hadith_start": 1736,
+    "hadith_end": 1904,
+    "hadith_count": 169
   },
   {
     "id": "darimi_c7",
@@ -72,9 +72,9 @@
     "title_en": "Sacrifices (Adahi)",
     "title_ar": "كتاب الأضاحي",
     "title_id": "Kurban",
-    "hadith_start": 847,
-    "hadith_end": 987,
-    "hadith_count": 141
+    "hadith_start": 1905,
+    "hadith_end": 1943,
+    "hadith_count": 39
   },
   {
     "id": "darimi_c8",
@@ -83,9 +83,9 @@
     "title_en": "Hunting (Sayd)",
     "title_ar": "كتاب الصيد",
     "title_id": "Berburu",
-    "hadith_start": 988,
-    "hadith_end": 1128,
-    "hadith_count": 141
+    "hadith_start": 1944,
+    "hadith_end": 2022,
+    "hadith_count": 79
   },
   {
     "id": "darimi_c9",
@@ -94,9 +94,9 @@
     "title_en": "Food (At'imah)",
     "title_ar": "كتاب الأطعمة",
     "title_id": "Makanan",
-    "hadith_start": 1129,
-    "hadith_end": 1269,
-    "hadith_count": 141
+    "hadith_start": 2023,
+    "hadith_end": 2095,
+    "hadith_count": 73
   },
   {
     "id": "darimi_c10",
@@ -105,9 +105,9 @@
     "title_en": "Drinks (Ashribah)",
     "title_ar": "كتاب الأشربة",
     "title_id": "Minuman",
-    "hadith_start": 1270,
-    "hadith_end": 1410,
-    "hadith_count": 141
+    "hadith_start": 2096,
+    "hadith_end": 2145,
+    "hadith_count": 50
   },
   {
     "id": "darimi_c11",
@@ -116,9 +116,9 @@
     "title_en": "Dreams (Ru'ya)",
     "title_ar": "كتاب الرؤيا",
     "title_id": "Mimpi",
-    "hadith_start": 1411,
-    "hadith_end": 1551,
-    "hadith_count": 141
+    "hadith_start": 2146,
+    "hadith_end": 2176,
+    "hadith_count": 31
   },
   {
     "id": "darimi_c12",
@@ -127,9 +127,9 @@
     "title_en": "Marriage (Nikah)",
     "title_ar": "كتاب النكاح",
     "title_id": "Pernikahan",
-    "hadith_start": 1552,
-    "hadith_end": 1692,
-    "hadith_count": 141
+    "hadith_start": 2177,
+    "hadith_end": 2255,
+    "hadith_count": 79
   },
   {
     "id": "darimi_c13",
@@ -138,9 +138,9 @@
     "title_en": "Divorce (Talaq)",
     "title_ar": "كتاب الطلاق",
     "title_id": "Talak",
-    "hadith_start": 1693,
-    "hadith_end": 1833,
-    "hadith_count": 141
+    "hadith_start": 2256,
+    "hadith_end": 2307,
+    "hadith_count": 52
   },
   {
     "id": "darimi_c14",
@@ -149,86 +149,86 @@
     "title_en": "Punishments (Hudud)",
     "title_ar": "كتاب الحدود",
     "title_id": "Hukuman",
-    "hadith_start": 1834,
-    "hadith_end": 1974,
-    "hadith_count": 141
+    "hadith_start": 2308,
+    "hadith_end": 2351,
+    "hadith_count": 44
   },
   {
     "id": "darimi_c15",
     "book_id": "darimi",
     "chapter_number": 15,
-    "title_en": "Blood Money (Diyat)",
-    "title_ar": "كتاب الديات",
-    "title_id": "Diyat",
-    "hadith_start": 1975,
-    "hadith_end": 2115,
-    "hadith_count": 141
+    "title_en": "Vows and Oaths (Nudhur)",
+    "title_ar": "كتاب النذور والأيمان",
+    "title_id": "Nazar dan Sumpah",
+    "hadith_start": 2352,
+    "hadith_end": 2379,
+    "hadith_count": 28
   },
   {
     "id": "darimi_c16",
     "book_id": "darimi",
     "chapter_number": 16,
-    "title_en": "Jihad",
-    "title_ar": "كتاب الجهاد",
-    "title_id": "Jihad",
-    "hadith_start": 2116,
-    "hadith_end": 2256,
-    "hadith_count": 141
+    "title_en": "Blood Money (Diyat)",
+    "title_ar": "كتاب الديات",
+    "title_id": "Diyat",
+    "hadith_start": 2380,
+    "hadith_end": 2432,
+    "hadith_count": 53
   },
   {
     "id": "darimi_c17",
     "book_id": "darimi",
     "chapter_number": 17,
-    "title_en": "Expeditions (Siyar)",
-    "title_ar": "كتاب السير",
-    "title_id": "Siyar",
-    "hadith_start": 2257,
-    "hadith_end": 2397,
-    "hadith_count": 141
+    "title_en": "Jihad",
+    "title_ar": "كتاب الجهاد",
+    "title_id": "Jihad",
+    "hadith_start": 2433,
+    "hadith_end": 2475,
+    "hadith_count": 43
   },
   {
     "id": "darimi_c18",
     "book_id": "darimi",
     "chapter_number": 18,
-    "title_en": "Battles (Maghazi)",
-    "title_ar": "كتاب المغازي",
-    "title_id": "Peperangan",
-    "hadith_start": 2398,
-    "hadith_end": 2538,
-    "hadith_count": 141
+    "title_en": "Expeditions (Siyar)",
+    "title_ar": "كتاب السير",
+    "title_id": "Siyar",
+    "hadith_start": 2476,
+    "hadith_end": 2530,
+    "hadith_count": 55
   },
   {
     "id": "darimi_c19",
     "book_id": "darimi",
     "chapter_number": 19,
-    "title_en": "Exegesis (Tafsir)",
-    "title_ar": "كتاب التفسير",
-    "title_id": "Tafsir",
-    "hadith_start": 2539,
-    "hadith_end": 2679,
-    "hadith_count": 141
+    "title_en": "Trade (Buyu')",
+    "title_ar": "كتاب البيوع",
+    "title_id": "Jual Beli",
+    "hadith_start": 2531,
+    "hadith_end": 2631,
+    "hadith_count": 101
   },
   {
     "id": "darimi_c20",
     "book_id": "darimi",
     "chapter_number": 20,
-    "title_en": "Virtues of Qur'an (Fada'il al-Qur'an)",
-    "title_ar": "كتاب فضائل القرآن",
-    "title_id": "Keutamaan Al-Qur'an",
-    "hadith_start": 2680,
-    "hadith_end": 2820,
-    "hadith_count": 141
+    "title_en": "Permission (Isti'dhan)",
+    "title_ar": "كتاب الاستئذان",
+    "title_id": "Meminta Izin",
+    "hadith_start": 2632,
+    "hadith_end": 2715,
+    "hadith_count": 84
   },
   {
     "id": "darimi_c21",
     "book_id": "darimi",
     "chapter_number": 21,
-    "title_en": "Wills (Wasiyyah)",
-    "title_ar": "كتاب الوصايا",
-    "title_id": "Wasiat",
-    "hadith_start": 2821,
-    "hadith_end": 2961,
-    "hadith_count": 141
+    "title_en": "Heart-Melting Traditions (Riqaq)",
+    "title_ar": "كتاب الرقاق",
+    "title_id": "Riqaq",
+    "hadith_start": 2716,
+    "hadith_end": 2831,
+    "hadith_count": 116
   },
   {
     "id": "darimi_c22",
@@ -237,30 +237,30 @@
     "title_en": "Inheritance (Fara'id)",
     "title_ar": "كتاب الفرائض",
     "title_id": "Faraidh",
-    "hadith_start": 2962,
-    "hadith_end": 3102,
-    "hadith_count": 141
+    "hadith_start": 2832,
+    "hadith_end": 3131,
+    "hadith_count": 300
   },
   {
     "id": "darimi_c23",
     "book_id": "darimi",
     "chapter_number": 23,
-    "title_en": "Heart-Melting Traditions (Riqaq)",
-    "title_ar": "كتاب الرقاق",
-    "title_id": "Riqaq",
-    "hadith_start": 3103,
-    "hadith_end": 3243,
-    "hadith_count": 141
+    "title_en": "Wills (Wasiyyah)",
+    "title_ar": "كتاب الوصايا",
+    "title_id": "Wasiat",
+    "hadith_start": 3132,
+    "hadith_end": 3175,
+    "hadith_count": 44
   },
   {
     "id": "darimi_c24",
     "book_id": "darimi",
     "chapter_number": 24,
-    "title_en": "Trade (Buyu')",
-    "title_ar": "كتاب البيوع",
-    "title_id": "Jual Beli",
-    "hadith_start": 3244,
+    "title_en": "Virtues of Qur'an (Fada'il al-Qur'an)",
+    "title_ar": "كتاب فضائل القرآن",
+    "title_id": "Keutamaan Al-Qur'an",
+    "hadith_start": 3176,
     "hadith_end": 3367,
-    "hadith_count": 124
+    "hadith_count": 192
   }
 ]
