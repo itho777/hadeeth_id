@@ -480,9 +480,12 @@
   // Load dynamic rawi profile on DOM load
   document.addEventListener('DOMContentLoaded', async () => {
     const params = new URLSearchParams(window.location.search);
-    const rawiId = params.get('id');
+    const rawiId = params.get('id') || params.get('name');
     if (rawiId) {
       await loadRawiProfile(rawiId);
+    } else {
+      document.getElementById('profile-english-name').innerText = "Profile Not Found";
+      document.getElementById('profile-nasab').innerText = "Invalid URL parameters.";
     }
   });
 
@@ -576,7 +579,17 @@
   }
 
       if (!data || data.length === 0) {
-        const local = localRawiDict[id] || localRawiDict[id.toLowerCase()];
+        let lookupId = id.toLowerCase();
+        let local = localRawiDict[id] || localRawiDict[lookupId] || localRawiDict['rawi_' + lookupId] || localRawiDict['rawi_' + lookupId.replace(/\s+/g, '_')];
+        
+        // Try looking up in the global rawiDict from app.js if localRawiDict fails
+        if (!local && typeof rawiDict !== 'undefined') {
+            const matched = rawiDict.find(d => d.en === id || d.id === id || (d.rawi_id && d.rawi_id === id));
+            if (matched && matched.rawi_id) {
+                local = localRawiDict[matched.rawi_id];
+            }
+        }
+
         if (local) {
           document.title = `Narrator Profile: ${local.name_en} — HADEETH.ID`;
           document.getElementById('breadcrumb-name').innerText = local.name_en;
@@ -593,6 +606,9 @@
           document.getElementById('total-hadith-badge').innerText = `${local.hadith_count} Narrations`;
           const bioEl = document.getElementById('bio-stories-content');
           if (bioEl) bioEl.innerHTML = `<p><strong class="text-primary dark:text-white">Biography:</strong> ${local.bio}</p>`;
+        } else {
+          document.getElementById('profile-english-name').innerText = "Profile Not Found";
+          document.getElementById('profile-nasab').innerText = "Could not locate this narrator in the database.";
         }
         return;
       }
