@@ -712,7 +712,37 @@ async function loadHadithDetail() {
                   name = nameStr.split('|')[0].trim();
                 }
                 const norm = name.toLowerCase();
-                if (name && !stopWords.has(norm) && !stopWords.has(name) && name.length > 2) {
+                const cleanNorm = norm.replace(/\s+radliallahu.*$/, '').replace(/\s+semoga allah.*$/, '').trim();
+                
+                // Dynamic pronoun resolution for Sanad preview
+                if (['bapaknya', 'ayahnya', 'his father', 'pamannya', 'kakeknya', 'ibunya'].includes(cleanNorm)) {
+                  const prevRaw = previewNames.length > 0 ? previewNames[previewNames.length - 1] : '';
+                  const prevName = prevRaw.toLowerCase().replace(/[\']/g, '');
+                  
+                  if (cleanNorm === 'bapaknya' || cleanNorm === 'ayahnya' || cleanNorm === 'his father') {
+                    const pronounMap = {
+                      'hisyam': 'Urwah bin Az-Zubair',
+                      'suhail': 'Abu Shalih',
+                      'salim': 'Abdullah bin Umar',
+                      'ibnu thawus': 'Thawus',
+                      'mutamir': 'Sulaiman At-Taimi',
+                      'al-mutamir': 'Sulaiman At-Taimi',
+                      'al mutamir': 'Sulaiman At-Taimi',
+                      'jafar': 'Muhammad bin Ali',
+                      'ibnu buraidah': 'Buraidah'
+                    };
+                    if (pronounMap[prevName]) {
+                      name = pronounMap[prevName];
+                    } else if (prevRaw.includes(' bin ')) {
+                      name = prevRaw.split(' bin ')[1].trim();
+                    }
+                  } else if (cleanNorm === 'pamannya') {
+                    if (prevName.includes('abbad bin tamim')) name = 'Abdullah bin Zaid';
+                    if (prevName.includes('ibnu akhi ibnu syihab')) name = 'Ibnu Syihab';
+                  }
+                }
+                
+                if (name && !stopWords.has(name.toLowerCase()) && !stopWords.has(cleanNorm) && name.length > 2) {
                   previewNames.push(name);
                 }
               });
@@ -2069,7 +2099,39 @@ async function loadSanadChain() {
           name = name.split('|')[0].trim();
         }
         const norm = name.toLowerCase();
-        if (name && !stopWords.has(norm) && !stopWords.has(name) && name.length > 2) {
+        const cleanNorm = norm.replace(/\s+radliallahu.*$/, '').replace(/\s+semoga allah.*$/, '').trim();
+        
+        // Dynamic pronoun resolution for Sanad accuracy
+        if (['bapaknya', 'ayahnya', 'his father', 'pamannya', 'kakeknya', 'ibunya'].includes(cleanNorm)) {
+          const prevRaw = extractedNames.length > 0 ? extractedNames[extractedNames.length - 1] : '';
+          const prevName = prevRaw.toLowerCase().replace(/[\']/g, ''); // ignore apostrophes for matching
+          
+          if (cleanNorm === 'bapaknya' || cleanNorm === 'ayahnya' || cleanNorm === 'his father') {
+            const pronounMap = {
+              'hisyam': 'Urwah bin Az-Zubair',
+              'suhail': 'Abu Shalih',
+              'salim': 'Abdullah bin Umar',
+              'ibnu thawus': 'Thawus',
+              'mutamir': 'Sulaiman At-Taimi',
+              'al-mutamir': 'Sulaiman At-Taimi',
+              'al mutamir': 'Sulaiman At-Taimi',
+              'jafar': 'Muhammad bin Ali',
+              'ibnu buraidah': 'Buraidah'
+            };
+            if (pronounMap[prevName]) {
+              name = pronounMap[prevName];
+            } else if (prevRaw.includes(' bin ')) {
+              // Smart fallback: "X bin Y" -> Father is "Y"
+              name = prevRaw.split(' bin ')[1].trim();
+            }
+          } else if (cleanNorm === 'pamannya') {
+            if (prevName.includes('abbad bin tamim')) name = 'Abdullah bin Zaid';
+            if (prevName.includes('ibnu akhi ibnu syihab')) name = 'Ibnu Syihab';
+          }
+        }
+        
+        // Only ignore if it is still a generic stop word
+        if (name && !stopWords.has(name.toLowerCase()) && !stopWords.has(cleanNorm) && name.length > 2) {
           extractedNames.push(name);
         }
       });
