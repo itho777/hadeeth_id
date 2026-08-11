@@ -1161,11 +1161,22 @@ async function loadHadithList() {
     });
 
     let transparencyFooter = '';
-    if (bookId === 'bukhari') {
+    const validBooksWithNote = ['bukhari', 'muslim'];
+    
+    if (validBooksWithNote.includes(bookId)) {
+      const bookNames = {
+        'bukhari': 'Sahih al-Bukhari (7,589 hadiths)',
+        'muslim': 'Sahih Muslim (7,563 hadiths)'
+      };
+      const bookNamesId = {
+        'bukhari': 'Shahih Bukhari (7.589 hadits)',
+        'muslim': 'Shahih Muslim (7.563 hadits)'
+      };
+      
       transparencyFooter = `
         <div class="mt-8 p-4 bg-surface-variant/30 dark:bg-[#1e293b]/50 border border-outline-variant/40 dark:border-[#334155] rounded-xl text-xs text-outline dark:text-gray-400 text-center">
           <strong class="text-primary dark:text-white block mb-1"><span class="material-symbols-outlined text-sm inline-block align-middle mr-1">verified_user</span>Data Validity Note / Catatan Validitas Data:</strong>
-          <span data-lang-en>The Arabic text and numbering for Sahih al-Bukhari follow the global Fath al-Bari standard (7,589 hadiths). The Indonesian translations are sourced from the verified Lidwa (Irsyadulibad) dataset and mapped using universal Abdul Baqi indexing. Minor structural repetitions without direct translations are supplemented from identical predecessors.</span><span data-lang-id class="hidden">Penomoran dan teks Arab untuk Shahih Bukhari mengikuti standar global Fath al-Bari (7.589 hadits). Terjemahan bahasa Indonesia bersumber dari dataset Lidwa (Irsyadulibad) yang terverifikasi dan dipetakan menggunakan indeks universal Abdul Baqi. Beberapa repetisi struktural disamakan dengan hadits sebelumnya yang identik.</span>
+          <span data-lang-en>The Arabic text and numbering for ${bookNames[bookId]} follow the global standard. The Indonesian translations are sourced from the verified Lidwa (Irsyadulibad) dataset and mapped using universal indexing. Minor structural repetitions without direct translations are supplemented from identical predecessors.</span><span data-lang-id class="hidden">Penomoran dan teks Arab untuk ${bookNamesId[bookId]} mengikuti standar global. Terjemahan bahasa Indonesia bersumber dari dataset Lidwa (Irsyadulibad) yang terverifikasi dan dipetakan menggunakan indeks universal. Beberapa repetisi struktural disamakan dengan hadits sebelumnya yang identik.</span>
         </div>
       `;
     } else if (bookId === 'darimi') {
