@@ -150,8 +150,8 @@
     "title_ar": "كتاب الحدود",
     "title_id": "Hukuman",
     "hadith_start": 2223,
-    "hadith_end": 2351,
-    "hadith_count": 129
+    "hadith_end": 2255,
+    "hadith_count": 33
   },
   {
     "id": "darimi_c15",
@@ -160,9 +160,9 @@
     "title_en": "Vows and Oaths (Nudhur)",
     "title_ar": "كتاب النذور والأيمان",
     "title_id": "Nazar dan Sumpah",
-    "hadith_start": 2352,
-    "hadith_end": 2379,
-    "hadith_count": 28
+    "hadith_start": 2256,
+    "hadith_end": 2273,
+    "hadith_count": 18
   },
   {
     "id": "darimi_c16",
@@ -171,9 +171,9 @@
     "title_en": "Blood Money (Diyat)",
     "title_ar": "كتاب الديات",
     "title_id": "Diyat",
-    "hadith_start": 2380,
-    "hadith_end": 2432,
-    "hadith_count": 53
+    "hadith_start": 2274,
+    "hadith_end": 2311,
+    "hadith_count": 38
   },
   {
     "id": "darimi_c17",
@@ -182,9 +182,9 @@
     "title_en": "Jihad",
     "title_ar": "كتاب الجهاد",
     "title_id": "Jihad",
-    "hadith_start": 2433,
-    "hadith_end": 2475,
-    "hadith_count": 43
+    "hadith_start": 2312,
+    "hadith_end": 2359,
+    "hadith_count": 48
   },
   {
     "id": "darimi_c18",
@@ -193,9 +193,9 @@
     "title_en": "Expeditions (Siyar)",
     "title_ar": "كتاب السير",
     "title_id": "Siyar",
-    "hadith_start": 2476,
-    "hadith_end": 2530,
-    "hadith_count": 55
+    "hadith_start": 2360,
+    "hadith_end": 2450,
+    "hadith_count": 91
   },
   {
     "id": "darimi_c19",
@@ -204,9 +204,9 @@
     "title_en": "Trade (Buyu')",
     "title_ar": "كتاب البيوع",
     "title_id": "Jual Beli",
-    "hadith_start": 2531,
-    "hadith_end": 2631,
-    "hadith_count": 101
+    "hadith_start": 2451,
+    "hadith_end": 2547,
+    "hadith_count": 97
   },
   {
     "id": "darimi_c20",
@@ -215,9 +215,9 @@
     "title_en": "Permission (Isti'dhan)",
     "title_ar": "كتاب الاستئذان",
     "title_id": "Meminta Izin",
-    "hadith_start": 2632,
-    "hadith_end": 2715,
-    "hadith_count": 84
+    "hadith_start": 2548,
+    "hadith_end": 2622,
+    "hadith_count": 75
   },
   {
     "id": "darimi_c21",
@@ -226,9 +226,9 @@
     "title_en": "Heart-Melting Traditions (Riqaq)",
     "title_ar": "كتاب الرقاق",
     "title_id": "Riqaq",
-    "hadith_start": 2716,
-    "hadith_end": 2831,
-    "hadith_count": 116
+    "hadith_start": 2623,
+    "hadith_end": 2759,
+    "hadith_count": 137
   },
   {
     "id": "darimi_c22",
@@ -237,9 +237,9 @@
     "title_en": "Inheritance (Fara'id)",
     "title_ar": "كتاب الفرائض",
     "title_id": "Faraidh",
-    "hadith_start": 2832,
-    "hadith_end": 3131,
-    "hadith_count": 300
+    "hadith_start": 2760,
+    "hadith_end": 3084,
+    "hadith_count": 325
   },
   {
     "id": "darimi_c23",
@@ -248,9 +248,9 @@
     "title_en": "Wills (Wasiyyah)",
     "title_ar": "كتاب الوصايا",
     "title_id": "Wasiat",
-    "hadith_start": 3132,
-    "hadith_end": 3175,
-    "hadith_count": 44
+    "hadith_start": 3085,
+    "hadith_end": 3210,
+    "hadith_count": 126
   },
   {
     "id": "darimi_c24",
@@ -259,8 +259,8 @@
     "title_en": "Virtues of Qur'an (Fada'il al-Qur'an)",
     "title_ar": "كتاب فضائل القرآن",
     "title_id": "Keutamaan Al-Qur'an",
-    "hadith_start": 3176,
+    "hadith_start": 3211,
     "hadith_end": 3367,
-    "hadith_count": 192
+    "hadith_count": 157
   }
 ]
