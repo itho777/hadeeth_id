@@ -62,8 +62,8 @@
     "title_ar": "كتاب المناسك",
     "title_id": "Manasik",
     "hadith_start": 1736,
-    "hadith_end": 1904,
-    "hadith_count": 169
+    "hadith_end": 1888,
+    "hadith_count": 153
   },
   {
     "id": "darimi_c7",
@@ -72,9 +72,9 @@
     "title_en": "Sacrifices (Adahi)",
     "title_ar": "كتاب الأضاحي",
     "title_id": "Kurban",
-    "hadith_start": 1905,
+    "hadith_start": 1889,
     "hadith_end": 1943,
-    "hadith_count": 39
+    "hadith_count": 55
   },
   {
     "id": "darimi_c8",
@@ -84,8 +84,8 @@
     "title_ar": "كتاب الصيد",
     "title_id": "Berburu",
     "hadith_start": 1944,
-    "hadith_end": 2022,
-    "hadith_count": 79
+    "hadith_end": 1959,
+    "hadith_count": 16
   },
   {
     "id": "darimi_c9",
@@ -94,9 +94,9 @@
     "title_en": "Food (At'imah)",
     "title_ar": "كتاب الأطعمة",
     "title_id": "Makanan",
-    "hadith_start": 2023,
-    "hadith_end": 2095,
-    "hadith_count": 73
+    "hadith_start": 1960,
+    "hadith_end": 2022,
+    "hadith_count": 63
   },
   {
     "id": "darimi_c10",
@@ -105,9 +105,9 @@
     "title_en": "Drinks (Ashribah)",
     "title_ar": "كتاب الأشربة",
     "title_id": "Minuman",
-    "hadith_start": 2096,
-    "hadith_end": 2145,
-    "hadith_count": 50
+    "hadith_start": 2023,
+    "hadith_end": 2071,
+    "hadith_count": 49
   },
   {
     "id": "darimi_c11",
@@ -116,9 +116,9 @@
     "title_en": "Dreams (Ru'ya)",
     "title_ar": "كتاب الرؤيا",
     "title_id": "Mimpi",
-    "hadith_start": 2146,
-    "hadith_end": 2176,
-    "hadith_count": 31
+    "hadith_start": 2072,
+    "hadith_end": 2098,
+    "hadith_count": 27
   },
   {
     "id": "darimi_c12",
@@ -127,9 +127,9 @@
     "title_en": "Marriage (Nikah)",
     "title_ar": "كتاب النكاح",
     "title_id": "Pernikahan",
-    "hadith_start": 2177,
-    "hadith_end": 2255,
-    "hadith_count": 79
+    "hadith_start": 2099,
+    "hadith_end": 2190,
+    "hadith_count": 92
   },
   {
     "id": "darimi_c13",
@@ -138,9 +138,9 @@
     "title_en": "Divorce (Talaq)",
     "title_ar": "كتاب الطلاق",
     "title_id": "Talak",
-    "hadith_start": 2256,
-    "hadith_end": 2307,
-    "hadith_count": 52
+    "hadith_start": 2191,
+    "hadith_end": 2222,
+    "hadith_count": 32
   },
   {
     "id": "darimi_c14",
@@ -149,9 +149,9 @@
     "title_en": "Punishments (Hudud)",
     "title_ar": "كتاب الحدود",
     "title_id": "Hukuman",
-    "hadith_start": 2308,
+    "hadith_start": 2223,
     "hadith_end": 2351,
-    "hadith_count": 44
+    "hadith_count": 129
   },
   {
     "id": "darimi_c15",
