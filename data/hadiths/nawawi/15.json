@@ -1,0 +1,28 @@
+{
+  "id": "nawawi_15",
+  "book_id": "nawawi",
+  "chapter_id": "nawawi_c1",
+  "book_number": 1,
+  "chapter_number": 1,
+  "hadith_number": 15,
+  "in_book_number": 15,
+  "abd_al_baqi_number": 15,
+  "darussalam_number": 15,
+  "usc_msa_ref": "Book 1, Hadith 15",
+  "text_ar": "عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ أَنَّ رَسُولَ اللَّهِ صلى الله عليه و سلم قَالَ: مَنْ كَانَ يُؤْمِنُ بِاَللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ، وَمَنْ كَانَ يُؤْمِنُ بِاَللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيُكْرِمْ جَارَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاَللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيُكْرِمْ ضَيْفَهُ .<br>[رَوَاهُ الْبُخَارِيُّ] ، [وَمُسْلِمٌ]",
+  "text_ar_search": "عن ابي هريره رضي الله عنه ان رسول الله صلى الله عليه و سلم قال: من كان يؤمن بالله واليوم الاخر فليقل خيرا او ليصمت، ومن كان يؤمن بالله واليوم الاخر فليكرم جاره، ومن كان يؤمن بالله واليوم الاخر فليكرم ضيفه .<br>[رواه البخاري] ، [ومسلم]",
+  "text_en": "On the authority of Abu Hurayrah (may Allah be pleased with him), that the Messenger of Allah (peace and blessings of Allah be upon him) said: Let him who believes in Allah and the Last Day speak good, or keep silent; and let him who believes in Allah and the Last Day be generous to his neighbour; and let him who believes in Allah and the Last Day be generous to his guest. [Al-Bukhari] [Muslim]",
+  "text_id": "",
+  "text_ur": "",
+  "text_fr": "Selon Abou Hourayra (qu’Allah l’agrée), le Messager d’Allah (ﷺ) a dit : « Que celui qui croit en Allah et au Jour Dernier dise du bien ou se taise ; que celui qui croit en Allah et au Jour Dernier soit généreux envers son voisin ; et que celui qui croit en Allah et au Jour Dernier soit généreux envers son invité. » [Boukhari] [Mouslim]",
+  "grade": "Sahih/Hasan",
+  "grade_by": "Imam Nawawi",
+  "commentary": {
+    "source": "HadeethEnc / Classical Sharh",
+    "sharh_summary": "Explanation of Hadith #15 from Forty Hadith of an-Nawawi.",
+    "key_learnings": [
+      "Importance of sincere intentions in worship and daily deeds.",
+      "Direct guidance from the Prophet (peace be upon him)."
+    ]
+  }
+}
