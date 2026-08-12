@@ -603,16 +603,16 @@ async function loadHadithDetail() {
   let hadithTextId = '';
 
   if (edition && edition.hadiths) {
-    const found = edition.hadiths.find(h => h.hadithnumber == hadithId);
-    if (found) hadithTextEn = found.text;
+    const found = edition.hadiths.find(h => (h.hadithnumber ?? h.id) == hadithId);
+    if (found) hadithTextEn = found.text || '';
   }
   if (arabicEdition && arabicEdition.hadiths) {
-    const found = arabicEdition.hadiths.find(h => h.hadithnumber == hadithId);
-    if (found) hadithTextAr = found.text;
+    const found = arabicEdition.hadiths.find(h => (h.hadithnumber ?? h.id) == hadithId);
+    if (found) hadithTextAr = found.text || '';
   }
   if (indEdition && indEdition.hadiths) {
-    const found = indEdition.hadiths.find(h => h.hadithnumber == hadithId);
-    if (found) hadithTextId = found.text;
+    const found = indEdition.hadiths.find(h => (h.hadithnumber ?? h.id) == hadithId);
+    if (found) hadithTextId = found.terjemah || found.text || '';
   }
 
   const item = {
@@ -998,26 +998,29 @@ async function loadHadithList() {
       const araMap = {};
       const engMap = {};
       const indMap = {};
-      if (araEd && araEd.hadiths) araEd.hadiths.forEach(h => araMap[h.hadithnumber] = h.text);
-      if (engEd && engEd.hadiths) engEd.hadiths.forEach(h => engMap[h.hadithnumber] = h.text);
-      if (indEd && indEd.hadiths) indEd.hadiths.forEach(h => indMap[h.hadithnumber] = h.text);
+      if (araEd && araEd.hadiths) araEd.hadiths.forEach(h => araMap[h.hadithnumber ?? h.id] = h.text);
+      if (engEd && engEd.hadiths) engEd.hadiths.forEach(h => engMap[h.hadithnumber ?? h.id] = h.text);
+      if (indEd && indEd.hadiths) indEd.hadiths.forEach(h => indMap[h.hadithnumber ?? h.id] = h.text === undefined ? (h.terjemah || '') : h.text);
 
       let sourceHadiths = mainEd.hadiths;
       if (startHadithNum != null && endHadithNum != null) {
         sourceHadiths = sourceHadiths.filter(h => {
-          const num = parseInt(h.hadithnumber);
+          const num = parseInt(h.hadithnumber ?? h.id);
           return num >= startHadithNum && num <= endHadithNum;
         });
       }
 
-      allHadiths = sourceHadiths.map(h => ({
-        hadith_number: h.hadithnumber,
-        text_en: engMap[h.hadithnumber] || h.text || '',
-        text_ar: araMap[h.hadithnumber] || '',
-        text_id: indMap[h.hadithnumber] || h.text || '',
-        grade: 'Sahih',
-        book_id: bookId
-      }));
+      allHadiths = sourceHadiths.map(h => {
+        const num = h.hadithnumber ?? h.id;
+        return {
+          hadith_number: num,
+          text_en: engMap[num] || h.text || '',
+          text_ar: araMap[num] || '',
+          text_id: indMap[num] || h.terjemah || h.text || '',
+          grade: 'Sahih',
+          book_id: bookId
+        };
+      });
     }
   } catch (e) {
     console.warn('CDN edition load error:', e);

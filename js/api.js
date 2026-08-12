@@ -63,13 +63,41 @@ const HadeethAPI = {
   },
 
   /**
+   * Normalize an edition JSON to the standard {metadata, hadiths} format.
+   * Handles edge cases:
+   *   - Flat arrays (e.g. old ind-muslim format)
+   *   - Hadiths using 'id' instead of 'hadithnumber'
+   */
+  normalizeEdition(data) {
+    if (!data) return null;
+
+    // If it's a raw array, wrap it
+    if (Array.isArray(data)) {
+      data = { metadata: {}, hadiths: data };
+    }
+
+    if (!data.hadiths) return data;
+
+    // Ensure each hadith has 'hadithnumber' (fallback to 'id')
+    data.hadiths = data.hadiths.map(h => {
+      if (h.hadithnumber === undefined && h.id !== undefined) {
+        return { ...h, hadithnumber: h.id };
+      }
+      return h;
+    });
+
+    return data;
+  },
+
+  /**
    * Fetch full language edition file (e.g. 'ara-bukhari', 'ind-bukhari')
    */
   async getEdition(langCode, bookId) {
     try {
       const res = await fetch(`${this.baseUrl}/editions/${langCode}-${bookId}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      return await res.json();
+      const raw = await res.json();
+      return this.normalizeEdition(raw);
     } catch (err) {
       console.error(`Failed to load edition ${langCode}-${bookId}:`, err);
       return null;
