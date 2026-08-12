@@ -1014,9 +1014,9 @@ async function loadHadithList() {
         const num = h.hadithnumber ?? h.id;
         return {
           hadith_number: num,
-          text_en: engMap[num] || h.text || '',
-          text_ar: araMap[num] || '',
-          text_id: indMap[num] || h.terjemah || h.text || '',
+          text_en: engMap[num] !== undefined ? engMap[num] : '',
+          text_ar: araMap[num] !== undefined ? araMap[num] : '',
+          text_id: indMap[num] !== undefined ? indMap[num] : (h.terjemah || h.text || ''),
           grade: 'Sahih',
           book_id: bookId
         };
