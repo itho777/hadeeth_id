@@ -947,8 +947,8 @@ async function loadHadithList() {
   };
 
   // Fetch Chapter Metadata if available
-  let chapterTitleNameEn = `Chapter ${chapterId}`;
-  let chapterTitleNameId = `Kitab ${chapterId}`;
+  let chapterTitleNameEn = chapterId === '0' ? 'Introduction' : `Chapter ${chapterId}`;
+  let chapterTitleNameId = chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`;
   let chapterTitleNameAr = `باب رقم ${chapterId}`;
   let startHadithNum = null;
   let endHadithNum = null;
@@ -990,7 +990,7 @@ async function loadHadithList() {
 
   const isIdLang = (window.LangSystem && window.LangSystem.isIdMode());
   const activeChTitle = isIdLang ? chapterTitleNameId : chapterTitleNameEn;
-  const activeChMeta = isIdLang ? `Kitab ${chapterId}` : `Chapter ${chapterId}`;
+  const activeChMeta = isIdLang ? (chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`) : (chapterId === '0' ? 'Introduction' : `Chapter ${chapterId}`);
 
   const bcCurrentEn = document.querySelector('[data-list-breadcrumb-current-en]');
   const bcCurrentId = document.querySelector('[data-list-breadcrumb-current-id]');
@@ -1008,8 +1008,8 @@ async function loadHadithList() {
   if (bcCurrent && !bcCurrentEn) bcCurrent.innerText = activeChTitle;
 
   if (bookBadge) bookBadge.innerText = bookName;
-  if (chMetaEn) chMetaEn.innerText = `Chapter ${chapterId}`;
-  if (chMetaId) chMetaId.innerText = `Kitab ${chapterId}`;
+  if (chMetaEn) chMetaEn.innerText = chapterId === '0' ? 'Introduction' : `Chapter ${chapterId}`;
+  if (chMetaId) chMetaId.innerText = chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`;
   if (chMeta && !chMetaEn) chMeta.innerText = activeChMeta;
 
   if (chTitleEn) chTitleEn.innerText = chapterTitleNameEn;
@@ -1094,13 +1094,13 @@ async function loadHadithList() {
   if (startHadithNum != null && endHadithNum != null) {
     const count = chapterHadithCount || (endHadithNum - startHadithNum + 1);
     const enText = `Hadith ${startHadithNum} – ${endHadithNum} • ${count} Hadiths in ${bookName} Chapter ${chapterId}`;
-    const idText = `Hadits ${startHadithNum} – ${endHadithNum} • ${count} Hadits dalam ${bookName} Kitab ${chapterId}`;
+    const idText = `Hadits ${startHadithNum} – ${endHadithNum} • ${count} Hadits dalam ${bookName} ${chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`}`;
     if (countMetaEn) countMetaEn.innerText = enText;
     if (countMetaId) countMetaId.innerText = idText;
     if (countMeta && !countMetaEn) countMeta.innerText = isIdLang ? idText : enText;
   } else {
     const enText = `Total ${allHadiths.length} Hadiths in ${bookName} Chapter ${chapterId}`;
-    const idText = `Total ${allHadiths.length} Hadits dalam ${bookName} Kitab ${chapterId}`;
+    const idText = `Total ${allHadiths.length} Hadits dalam ${bookName} ${chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`}`;
     if (countMetaEn) countMetaEn.innerText = enText;
     if (countMetaId) countMetaId.innerText = idText;
     if (countMeta && !countMetaEn) countMeta.innerText = isIdLang ? idText : enText;
@@ -1634,7 +1634,7 @@ async function loadChaptersList() {
 
   let html = '';
   chapters.forEach((ch, idx) => {
-    const chNum = ch.chapter_number || (idx + 1);
+    const chNum = ch.chapter_number !== undefined && ch.chapter_number !== null && ch.chapter_number !== '' ? ch.chapter_number : (idx + 1);
     // Support both field name conventions: title_en (JSON files) and name_en (skeleton fallbacks)
     const titleEn = ch.title_en || ch.name_en || ch.title || `Chapter ${chNum}`;
     const titleId = ch.title_id || ch.name_id || titleEn;
@@ -1647,7 +1647,7 @@ async function loadChaptersList() {
     html += `
       <a href="hadith-list.html?book=${bookId}&chapter=${chNum}" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
         <div class="flex gap-4 items-center">
-          <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center flex-shrink-0">${chNum}</div>
+          <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center flex-shrink-0">${chNum === 0 || chNum === '0' ? 'M' : chNum}</div>
           <div class="flex flex-col gap-0.5">
             <span class="text-xs text-outline dark:text-gray-400 font-semibold">${escapeHtml(hadithRange)}${hadithCount ? ` &bull; ${hadithCount} hadiths` : ''}</span>
             <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]" data-lang-en>${escapeHtml(titleEn)}</h3>
@@ -1730,7 +1730,7 @@ async function loadHadithCardsList() {
   }
 
   let enTitle = `Chapter ${chapterId}`;
-  let idTitle = `Kitab ${chapterId}`;
+  let idTitle = chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`;
   let arTitle = '';
 
   let startNum = '';
@@ -1749,13 +1749,13 @@ async function loadHadithCardsList() {
 
     if (countMeta) {
       countMeta.innerText = isIdLang
-        ? `Hadits ${startNum} - ${endNum} • ${hCount} Hadits dalam ${bookName} Kitab ${chapterId}`
+        ? `Hadits ${startNum} - ${endNum} • ${hCount} Hadits dalam ${bookName} ${chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`}`
         : `Hadith ${startNum} - ${endNum} • ${hCount} Hadiths in ${bookName} Chapter ${chapterId}`;
     }
   }
 
   if (listBcCurrent) listBcCurrent.innerText = isIdLang ? idTitle : enTitle;
-  if (chapterMeta) chapterMeta.innerText = isIdLang ? `Kitab ${chapterId}` : `Chapter ${chapterId}`;
+  if (chapterMeta) chapterMeta.innerText = isIdLang ? (chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`) : (chapterId === '0' ? 'Introduction' : `Chapter ${chapterId}`);
   if (chapterTitleEn) chapterTitleEn.innerText = enTitle;
   if (chapterTitleId) chapterTitleId.innerText = idTitle;
   if (chapterTitleAr) chapterTitleAr.innerText = arTitle;
@@ -1763,7 +1763,7 @@ async function loadHadithCardsList() {
   container.innerHTML = `
     <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
       <span class="material-symbols-outlined animate-spin text-secondary dark:text-[#10b981] text-3xl">progress_activity</span>
-      <p class="mt-2 text-sm text-outline dark:text-gray-400">${isIdLang ? `Memuat daftar hadits untuk ${escapeHtml(bookName)} Kitab ${chapterId}...` : `Loading authentic Hadith list for ${escapeHtml(bookName)} Chapter ${chapterId}...`}</p>
+      <p class="mt-2 text-sm text-outline dark:text-gray-400">${isIdLang ? `Memuat daftar hadits untuk ${escapeHtml(bookName)} ${chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`}...` : `Loading authentic Hadith list for ${escapeHtml(bookName)} ${chapterId === '0' ? 'Introduction' : `Chapter ${chapterId}`}...`}</p>
     </div>
   `;
 

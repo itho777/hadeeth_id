@@ -1,5 +1,16 @@
 [
   {
+    "id": "muslim_c0",
+    "book_id": "muslim",
+    "chapter_number": 0,
+    "title_en": "Introduction",
+    "title_ar": "المقدمة",
+    "title_id": "Pengantar",
+    "hadith_start": 1,
+    "hadith_end": 92,
+    "hadith_count": 92
+  },
+  {
     "id": "muslim_c1",
     "book_id": "muslim",
     "chapter_number": 1,
@@ -9,17 +20,6 @@
     "hadith_start": 8,
     "hadith_end": 222,
     "hadith_count": 439
-  },
-  {
-    "id": "muslim_cintroduction",
-    "book_id": "muslim",
-    "chapter_number": 2,
-    "title_en": "Introduction",
-    "title_ar": "المقدمة",
-    "title_id": "Pengantar",
-    "hadith_start": 1,
-    "hadith_end": 7,
-    "hadith_count": 91
   },
   {
     "id": "muslim_c2",
