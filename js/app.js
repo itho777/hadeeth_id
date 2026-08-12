@@ -591,193 +591,7 @@ async function loadHadithDetail() {
     nextBtn.href = `hadith.html?book=${bookId}&id=${currentNum + 1}`;
   }
 
-  const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
-  const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
-
-  const arabicElem = container.querySelector('[data-arabic-text]');
-  const englishElem = container.querySelector('[data-english-text]');
-  const indonesianElem = container.querySelector('[data-indonesian-text]');
-  const titleEn = container.querySelector('[data-hadith-title-en]');
-  const titleId = container.querySelector('[data-hadith-title-id]');
-  const rawiEn = container.querySelector('[data-hadith-rawi-en]');
-  const rawiId = container.querySelector('[data-hadith-rawi-id]');
-  const sanadLink = container.querySelector('[data-sanad-link]');
-  const sanadPreviewEn = container.querySelector('[data-sanad-preview-en]');
-  const sanadPreviewId = container.querySelector('[data-sanad-preview-id]');
-
-  // Clear hardcoded initial placeholders to prevent stale text flash
-  if (arabicElem) arabicElem.innerText = 'مِنْ نَصِّ الْحَدِيثِ...';
-  if (englishElem) englishElem.innerHTML = '<span class="text-xs text-outline dark:text-gray-400 italic">Loading translation...</span>';
-  if (indonesianElem) indonesianElem.innerHTML = '<span class="text-xs text-outline dark:text-gray-400 italic">Memuat terjemahan...</span>';
-
-  if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${hadithId}`;
-  if (sanadPreviewEn) sanadPreviewEn.innerText = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
-  if (sanadPreviewId) sanadPreviewId.innerText = `Periksa Silsilah untuk ${bookName} #${hadithId} → Rasulullah ﷺ`;
-
-  try {
-    const res = await fetch(`${supabaseUrl}/rest/v1/hadiths?id=eq.${bookId}_${hadithId}&select=id,hadith_number,text_ar,text_en,text_id,grade,book_id`, {
-      headers: {
-        'apikey': anonKey,
-        'Authorization': `Bearer ${anonKey}`
-      }
-    });
-
-    if (res.ok) {
-      const data = await res.json();
-      if (data && data.length > 0) {
-        const item = data[0];
-        const textAr = (item.text_ar && item.text_ar.trim()) ? item.text_ar.trim() : '';
-        const textEn = (item.text_en && item.text_en.trim()) ? item.text_en.trim() : '';
-        const textId = (item.text_id && item.text_id.trim()) ? item.text_id.trim() : '';
-
-        const fallbackIdMsg = '<span class="text-xs text-outline dark:text-gray-400 italic">Terjemahan Bahasa Indonesia untuk hadits ini sedang diselaraskan dari manuskrip sumber. Teks Arab lengkap tersedia di atas.</span>';
-        const fallbackEnMsg = '<span class="text-xs text-outline dark:text-gray-400 italic">English translation for this Hadith is being aligned from source manuscripts. Full Arabic text is available above.</span>';
-
-        if (arabicElem) arabicElem.innerText = textAr || '—';
-
-        if (indonesianElem) {
-          if (textId) {
-            indonesianElem.innerHTML = TafseerLinker.parse(textId);
-          } else {
-            indonesianElem.innerHTML = '<span class="text-xs text-outline dark:text-gray-400 italic">Terjemahan Bahasa Indonesia untuk Hadits ini saat ini belum tersedia. Teks Arab lengkap tersedia di atas.</span>';
-          }
-        }
-
-        if (englishElem) {
-          if (textEn) {
-            englishElem.innerHTML = TafseerLinker.parse(textEn);
-          } else {
-            englishElem.innerHTML = '<span class="text-xs text-outline dark:text-gray-400 italic">English translation for this Hadith is currently unavailable. Full Arabic text is displayed above.</span>';
-          }
-        }
-
-        if (titleEn) titleEn.innerText = `${bookName} Hadith #${item.hadith_number}`;
-        if (titleId) titleId.innerText = `${bookName} Hadits #${item.hadith_number}`;
-
-        if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${item.hadith_number}`;
-
-        const langSelects = container.querySelectorAll('[data-lang-select]');
-        langSelects.forEach(selectElem => {
-          selectElem.addEventListener('change', () => {
-            const cardBox = selectElem.closest('.p-5');
-            const targetP = cardBox ? cardBox.querySelector('p') : null;
-            if (!targetP) return;
-            const val = selectElem.value;
-            if (val === 'en') {
-              targetP.innerHTML = textEn ? TafseerLinker.parse(textEn) : '<span class="text-xs text-outline dark:text-gray-400 italic">English translation for this Hadith is currently unavailable. Full Arabic text is displayed above.</span>';
-            } else if (val === 'id') {
-              targetP.innerHTML = textId ? TafseerLinker.parse(textId) : '<span class="text-xs text-outline dark:text-gray-400 italic">Terjemahan Bahasa Indonesia untuk Hadits ini saat ini belum tersedia. Teks Arab lengkap tersedia di atas.</span>';
-            } else if (val === 'ar') {
-              targetP.innerText = textAr || '—';
-            }
-
-            // Sync Syarah language selector dropdown & update Syarah text!
-            if (window.switchSyarahLang) {
-              window.switchSyarahLang(val);
-            }
-          });
-        });
-
-        if (sanadPreviewEn || sanadPreviewId || rawiEn || rawiId) {
-          let previewNames = [];
-          if (item.text_id) {
-            const isnadPartId = item.text_id.split(/beliau\s+bersabda\s*:|berfirman\s*:|berkata\s*:|tentang\s+firman\s+Allah|bahwa\s+Rasulullah/i)[0] || item.text_id;
-            const brackets = isnadPartId.match(/\[([^\]]+)\]/g);
-            if (brackets) {
-              const stopWords = new Set([
-                'al qur\'an', 'al-qur\'an', 'qur\'an', 'islam', 'nabi', 'rasulullah', 'allah', 'tuhan',
-                'pamannya', 'pamanku', 'paman', 'uncle', 'my uncle', 'his uncle',
-                'ayahnya', 'ayahku', 'bapaknya', 'bapakku', 'ayah', 'bapak', 'father', 'his father', 'my father',
-                'kakeknya', 'kakekku', 'kakek', 'grandfather', 'his grandfather', 'my grandfather',
-                'ibunya', 'ibuku', 'ibu', 'mother', 'his mother', 'my mother',
-                'saudaranya', 'saudaraku', 'saudara', 'brother', 'his brother', 'my brother',
-                'saudari', 'saudarinya', 'sister', 'his sister',
-                'anaknya', 'anakku', 'anak', 'son', 'daughter', 'his son', 'his daughter',
-                'istrinya', 'istri', 'wife', 'his wife',
-                'suaminya', 'suami', 'husband', 'her husband',
-                'budaknya', 'budak', 'hamba', 'slave', 'freedman',
-                'bibinya', 'bibi', 'aunt', 'his aunt',
-                'sepupunya', 'sepupu', 'cousin',
-                'mertuanya', 'mertua', 'in-law',
-                'keluarganya', 'keluarga', 'family',
-                'kerabatnya', 'kerabat', 'kin',
-                'sahabat', 'sahabatnya', 'companion', 'companions',
-                'beliau', 'mereka', 'seseorang', 'seorang', 'lelaki', 'wanita', 'perempuan',
-                'orang', 'orang tua', 'kaum', 'umat', 'jamaah'
-              ]);
-              brackets.forEach(b => {
-                let nameStr = b.replace(/[\[\]]/g, '').trim();
-                let name = nameStr;
-                if (nameStr.includes('|')) {
-                  name = nameStr.split('|')[0].trim();
-                }
-                const norm = name.toLowerCase();
-                const cleanNorm = norm.replace(/\s+radliallahu.*$/, '').replace(/\s+semoga allah.*$/, '').trim();
-                
-                // Dynamic pronoun resolution for Sanad preview
-                if (['bapaknya', 'ayahnya', 'his father', 'pamannya', 'kakeknya', 'ibunya'].includes(cleanNorm)) {
-                  const prevRaw = previewNames.length > 0 ? previewNames[previewNames.length - 1] : '';
-                  const prevName = prevRaw.toLowerCase().replace(/[\']/g, '');
-                  
-                  if (cleanNorm === 'bapaknya' || cleanNorm === 'ayahnya' || cleanNorm === 'his father') {
-                    const pronounMap = {
-                      'hisyam': 'Urwah bin Az-Zubair',
-                      'suhail': 'Abu Shalih',
-                      'salim': 'Abdullah bin Umar',
-                      'ibnu thawus': 'Thawus',
-                      'mutamir': 'Sulaiman At-Taimi',
-                      'al-mutamir': 'Sulaiman At-Taimi',
-                      'al mutamir': 'Sulaiman At-Taimi',
-                      'jafar': 'Muhammad bin Ali',
-                      'ibnu buraidah': 'Buraidah'
-                    };
-                    if (pronounMap[prevName]) {
-                      name = pronounMap[prevName];
-                    } else if (prevRaw.includes(' bin ')) {
-                      name = prevRaw.split(' bin ')[1].trim();
-                    }
-                  } else if (cleanNorm === 'pamannya') {
-                    if (prevName.includes('abbad bin tamim')) name = 'Abdullah bin Zaid';
-                    if (prevName.includes('ibnu akhi ibnu syihab')) name = 'Ibnu Syihab';
-                  }
-                }
-                
-                if (name && !stopWords.has(name.toLowerCase()) && !stopWords.has(cleanNorm) && name.length > 2) {
-                  previewNames.push(name);
-                }
-              });
-            }
-          }
-
-          if (previewNames.length > 0) {
-            const companionRawi = previewNames[previewNames.length - 1];
-            if (sanadPreviewEn) sanadPreviewEn.innerText = previewNames.join(' → ') + ' → Prophet ﷺ';
-            if (sanadPreviewId) sanadPreviewId.innerText = previewNames.join(' → ') + ' → Rasulullah ﷺ';
-            if (rawiEn) rawiEn.innerText = `Narrator: ${companionRawi}`;
-            if (rawiId) rawiId.innerText = `Perawi: ${companionRawi}`;
-          } else {
-            if (sanadPreviewEn) sanadPreviewEn.innerText = `Inspect Chain for ${bookName} #${item.hadith_number} → Prophet ﷺ`;
-            if (sanadPreviewId) sanadPreviewId.innerText = `Periksa Silsilah untuk ${bookName} #${item.hadith_number} → Rasulullah ﷺ`;
-            if (rawiEn) rawiEn.innerText = `Narrator: Sahabi (Companion)`;
-            if (rawiId) rawiId.innerText = `Perawi: Sahabat`;
-          }
-        }
-
-        if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${item.hadith_number || item.id}`;
-
-        loadHadithSyarah(bookId, item.hadith_number || hadithId);
-
-        if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
-        return;
-      }
-    }
-  } catch (err) {
-    console.warn('Supabase fetch detail error, fallback to edition files:', err);
-  }
-
-  if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
-
-  // Fallback to CDN edition files if offline / REST fails
+  // Fetch from CDN
   const [edition, arabicEdition, indEdition] = await Promise.all([
     window.HadeethAPI.getEdition('eng', bookId),
     window.HadeethAPI.getEdition('ara', bookId),
@@ -801,12 +615,153 @@ async function loadHadithDetail() {
     if (found) hadithTextId = found.text;
   }
 
-  if (arabicElem) arabicElem.innerText = hadithTextAr || '—';
-  if (englishElem) englishElem.innerHTML = TafseerLinker.parse(hadithTextEn || '—');
-  if (indonesianElem) indonesianElem.innerHTML = TafseerLinker.parse(hadithTextId || '—');
-  if (titleElem) titleElem.innerText = `${bookName} Hadith #${hadithId}`;
-  if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${hadithId}`;
-  if (sanadPreview) sanadPreview.innerText = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
+  const item = {
+    hadith_number: hadithId,
+    text_ar: hadithTextAr,
+    text_en: hadithTextEn,
+    text_id: hadithTextId,
+    grade: 'Sahih',
+    book_id: bookId
+  };
+
+  const textAr = (item.text_ar && item.text_ar.trim()) ? item.text_ar.trim() : '';
+  const textEn = (item.text_en && item.text_en.trim()) ? item.text_en.trim() : '';
+  const textId = (item.text_id && item.text_id.trim()) ? item.text_id.trim() : '';
+
+  if (arabicElem) arabicElem.innerText = textAr || '—';
+
+  if (indonesianElem) {
+    if (textId) {
+      indonesianElem.innerHTML = TafseerLinker.parse(textId);
+    } else {
+      indonesianElem.innerHTML = '<span class="text-xs text-outline dark:text-gray-400 italic">Terjemahan Bahasa Indonesia untuk Hadits ini saat ini belum tersedia. Teks Arab lengkap tersedia di atas.</span>';
+    }
+  }
+
+  if (englishElem) {
+    if (textEn) {
+      englishElem.innerHTML = TafseerLinker.parse(textEn);
+    } else {
+      englishElem.innerHTML = '<span class="text-xs text-outline dark:text-gray-400 italic">English translation for this Hadith is currently unavailable. Full Arabic text is displayed above.</span>';
+    }
+  }
+
+  if (titleEn) titleEn.innerText = `${bookName} Hadith #${item.hadith_number}`;
+  if (titleId) titleId.innerText = `${bookName} Hadits #${item.hadith_number}`;
+
+  if (sanadLink) sanadLink.href = `sanad.html?book=${bookId}&id=${item.hadith_number}`;
+
+  const langSelects = container.querySelectorAll('[data-lang-select]');
+  langSelects.forEach(selectElem => {
+    selectElem.addEventListener('change', () => {
+      const cardBox = selectElem.closest('.p-5');
+      const targetP = cardBox ? cardBox.querySelector('p') : null;
+      if (!targetP) return;
+      const val = selectElem.value;
+      if (val === 'en') {
+        targetP.innerHTML = textEn ? TafseerLinker.parse(textEn) : '<span class="text-xs text-outline dark:text-gray-400 italic">English translation for this Hadith is currently unavailable. Full Arabic text is displayed above.</span>';
+      } else if (val === 'id') {
+        targetP.innerHTML = textId ? TafseerLinker.parse(textId) : '<span class="text-xs text-outline dark:text-gray-400 italic">Terjemahan Bahasa Indonesia untuk Hadits ini saat ini belum tersedia. Teks Arab lengkap tersedia di atas.</span>';
+      } else if (val === 'ar') {
+        targetP.innerText = textAr || '—';
+      }
+
+      // Sync Syarah language selector dropdown & update Syarah text!
+      if (window.switchSyarahLang) {
+        window.switchSyarahLang(val);
+      }
+    });
+  });
+
+  if (sanadPreviewEn || sanadPreviewId || rawiEn || rawiId) {
+    let previewNames = [];
+    if (item.text_id) {
+      const isnadPartId = item.text_id.split(/beliau\s+bersabda\s*:|berfirman\s*:|berkata\s*:|tentang\s+firman\s+Allah|bahwa\s+Rasulullah/i)[0] || item.text_id;
+      const brackets = isnadPartId.match(/\[([^\]]+)\]/g);
+      if (brackets) {
+        const stopWords = new Set([
+          'al qur\'an', 'al-qur\'an', 'qur\'an', 'islam', 'nabi', 'rasulullah', 'allah', 'tuhan',
+          'pamannya', 'pamanku', 'paman', 'uncle', 'my uncle', 'his uncle',
+          'ayahnya', 'ayahku', 'bapaknya', 'bapakku', 'ayah', 'bapak', 'father', 'his father', 'my father',
+          'kakeknya', 'kakekku', 'kakek', 'grandfather', 'his grandfather', 'my grandfather',
+          'ibunya', 'ibuku', 'ibu', 'mother', 'his mother', 'my mother',
+          'saudaranya', 'saudaraku', 'saudara', 'brother', 'his brother', 'my brother',
+          'saudari', 'saudarinya', 'sister', 'his sister',
+          'anaknya', 'anakku', 'anak', 'son', 'daughter', 'his son', 'his daughter',
+          'istrinya', 'istri', 'wife', 'his wife',
+          'suaminya', 'suami', 'husband', 'her husband',
+          'budaknya', 'budak', 'hamba', 'slave', 'freedman',
+          'bibinya', 'bibi', 'aunt', 'his aunt',
+          'sepupunya', 'sepupu', 'cousin',
+          'mertuanya', 'mertua', 'in-law',
+          'keluarganya', 'keluarga', 'family',
+          'kerabatnya', 'kerabat', 'kin',
+          'sahabat', 'sahabatnya', 'companion', 'companions',
+          'beliau', 'mereka', 'seseorang', 'seorang', 'lelaki', 'wanita', 'perempuan',
+          'orang', 'orang tua', 'kaum', 'umat', 'jamaah'
+        ]);
+        brackets.forEach(b => {
+          let nameStr = b.replace(/[\[\]]/g, '').trim();
+          let name = nameStr;
+          if (nameStr.includes('|')) {
+            name = nameStr.split('|')[0].trim();
+          }
+          const norm = name.toLowerCase();
+          const cleanNorm = norm.replace(/\s+radliallahu.*$/, '').replace(/\s+semoga allah.*$/, '').trim();
+          
+          // Dynamic pronoun resolution for Sanad preview
+          if (['bapaknya', 'ayahnya', 'his father', 'pamannya', 'kakeknya', 'ibunya'].includes(cleanNorm)) {
+            const prevRaw = previewNames.length > 0 ? previewNames[previewNames.length - 1] : '';
+            const prevName = prevRaw.toLowerCase().replace(/[\']/g, '');
+            
+            if (cleanNorm === 'bapaknya' || cleanNorm === 'ayahnya' || cleanNorm === 'his father') {
+              const pronounMap = {
+                'hisyam': 'Urwah bin Az-Zubair',
+                'suhail': 'Abu Shalih',
+                'salim': 'Abdullah bin Umar',
+                'ibnu thawus': 'Thawus',
+                'mutamir': 'Sulaiman At-Taimi',
+                'al-mutamir': 'Sulaiman At-Taimi',
+                'al mutamir': 'Sulaiman At-Taimi',
+                'jafar': 'Muhammad bin Ali',
+                'ibnu buraidah': 'Buraidah'
+              };
+              if (pronounMap[prevName]) {
+                name = pronounMap[prevName];
+              } else if (prevRaw.includes(' bin ')) {
+                name = prevRaw.split(' bin ')[1].trim();
+              }
+            } else if (cleanNorm === 'pamannya') {
+              if (prevName.includes('abbad bin tamim')) name = 'Abdullah bin Zaid';
+              if (prevName.includes('ibnu akhi ibnu syihab')) name = 'Ibnu Syihab';
+            }
+          }
+          
+          if (name && !stopWords.has(name.toLowerCase()) && !stopWords.has(cleanNorm) && name.length > 2) {
+            previewNames.push(name);
+          }
+        });
+      }
+    }
+
+    if (previewNames.length > 0) {
+      const companionRawi = previewNames[previewNames.length - 1];
+      if (sanadPreviewEn) sanadPreviewEn.innerText = previewNames.join(' → ') + ' → Prophet ﷺ';
+      if (sanadPreviewId) sanadPreviewId.innerText = previewNames.join(' → ') + ' → Rasulullah ﷺ';
+      if (rawiEn) rawiEn.innerText = `Narrator: ${companionRawi}`;
+      if (rawiId) rawiId.innerText = `Perawi: ${companionRawi}`;
+    } else {
+      if (sanadPreviewEn) sanadPreviewEn.innerText = `Inspect Chain for ${bookName} #${item.hadith_number} → Prophet ﷺ`;
+      if (sanadPreviewId) sanadPreviewId.innerText = `Periksa Silsilah untuk ${bookName} #${item.hadith_number} → Rasulullah ﷺ`;
+      if (rawiEn) rawiEn.innerText = `Narrator: Sahabi (Companion)`;
+      if (rawiId) rawiId.innerText = `Perawi: Sahabat`;
+    }
+  }
+
+  loadHadithSyarah(bookId, item.hadith_number || hadithId);
+
+  if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+
 }
 
 /**
@@ -1032,62 +987,40 @@ async function loadHadithList() {
   let currentLang = langSelect ? langSelect.value : 'id';
   let searchScope = scopeSelect ? scopeSelect.value : 'chapter';
 
-  // Fetch Hadiths from Supabase filtered by chapter range if available
-  const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
-  const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
-
+  // Load from CDN
   try {
-    let queryUrl = `${supabaseUrl}/rest/v1/hadiths?book_id=eq.${bookId}&select=*&order=hadith_number.asc&limit=2000`;
-    if (startHadithNum != null && endHadithNum != null) {
-      queryUrl = `${supabaseUrl}/rest/v1/hadiths?book_id=eq.${bookId}&hadith_number=gte.${startHadithNum}&hadith_number=lte.${endHadithNum}&select=*&order=hadith_number.asc&limit=2000`;
-    }
-    const res = await fetch(queryUrl, {
-      headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
-    });
+    const indEd = await window.HadeethAPI.getEdition('ind', bookId);
+    const engEd = await window.HadeethAPI.getEdition('eng', bookId);
+    const araEd = await window.HadeethAPI.getEdition('ara', bookId);
 
-    if (res.ok) {
-      allHadiths = await res.json();
-    }
-  } catch (err) {
-    console.warn('Fetch hadiths REST error, fallback to edition file:', err);
-  }
+    const mainEd = indEd || engEd;
+    if (mainEd && mainEd.hadiths) {
+      const araMap = {};
+      const engMap = {};
+      const indMap = {};
+      if (araEd && araEd.hadiths) araEd.hadiths.forEach(h => araMap[h.hadithnumber] = h.text);
+      if (engEd && engEd.hadiths) engEd.hadiths.forEach(h => engMap[h.hadithnumber] = h.text);
+      if (indEd && indEd.hadiths) indEd.hadiths.forEach(h => indMap[h.hadithnumber] = h.text);
 
-  // Fallback to local edition file if REST returns empty or offline
-  if (!allHadiths || allHadiths.length === 0) {
-    try {
-      const indEd = await window.HadeethAPI.getEdition('ind', bookId);
-      const engEd = await window.HadeethAPI.getEdition('eng', bookId);
-      const araEd = await window.HadeethAPI.getEdition('ara', bookId);
-
-      const mainEd = indEd || engEd;
-      if (mainEd && mainEd.hadiths) {
-        const araMap = {};
-        const engMap = {};
-        const indMap = {};
-        if (araEd && araEd.hadiths) araEd.hadiths.forEach(h => araMap[h.hadithnumber] = h.text);
-        if (engEd && engEd.hadiths) engEd.hadiths.forEach(h => engMap[h.hadithnumber] = h.text);
-        if (indEd && indEd.hadiths) indEd.hadiths.forEach(h => indMap[h.hadithnumber] = h.text);
-
-        let sourceHadiths = mainEd.hadiths;
-        if (startHadithNum != null && endHadithNum != null) {
-          sourceHadiths = sourceHadiths.filter(h => {
-            const num = parseInt(h.hadithnumber);
-            return num >= startHadithNum && num <= endHadithNum;
-          });
-        }
-
-        allHadiths = sourceHadiths.map(h => ({
-          hadith_number: h.hadithnumber,
-          text_en: engMap[h.hadithnumber] || h.text || '',
-          text_ar: araMap[h.hadithnumber] || '',
-          text_id: indMap[h.hadithnumber] || h.text || '',
-          grade: 'Sahih',
-          book_id: bookId
-        }));
+      let sourceHadiths = mainEd.hadiths;
+      if (startHadithNum != null && endHadithNum != null) {
+        sourceHadiths = sourceHadiths.filter(h => {
+          const num = parseInt(h.hadithnumber);
+          return num >= startHadithNum && num <= endHadithNum;
+        });
       }
-    } catch (e) {
-      console.warn('Fallback edition load error:', e);
+
+      allHadiths = sourceHadiths.map(h => ({
+        hadith_number: h.hadithnumber,
+        text_en: engMap[h.hadithnumber] || h.text || '',
+        text_ar: araMap[h.hadithnumber] || '',
+        text_id: indMap[h.hadithnumber] || h.text || '',
+        grade: 'Sahih',
+        book_id: bookId
+      }));
     }
+  } catch (e) {
+    console.warn('CDN edition load error:', e);
   }
 
   filteredHadiths = [...allHadiths];
