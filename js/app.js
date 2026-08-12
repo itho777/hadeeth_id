@@ -1016,7 +1016,7 @@ async function loadHadithList() {
           hadith_number: num,
           text_en: engMap[num] !== undefined ? engMap[num] : '',
           text_ar: araMap[num] !== undefined ? araMap[num] : '',
-          text_id: indMap[num] !== undefined ? indMap[num] : (h.terjemah || h.text || ''),
+          text_id: indMap[num] !== undefined ? indMap[num] : (h.terjemah || ''),
           grade: 'Sahih',
           book_id: bookId
         };
@@ -1080,12 +1080,14 @@ async function loadHadithList() {
 
       let displayText = '';
       if (currentLang === 'id') {
-        const badge = hasId ? 'Terjemahan Indonesia:' : 'English Translation (Fallback):';
-        displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">${badge}</strong>${escapeHtml(idText)}</p>`;
+        const badge = 'Terjemahan Indonesia:';
+        const content = hasId ? escapeHtml(item.text_id) : '<em class="text-outline dark:text-gray-500">(Terjemahan tidak tersedia untuk variasi sanad ini)</em>';
+        displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">${badge}</strong>${content}</p>`;
       } else if (currentLang === 'en') {
         displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${escapeHtml(enText)}</p>`;
       } else {
-        const idHtml = hasId ? `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${escapeHtml(item.text_id)}</p>` : '';
+        const idContent = hasId ? escapeHtml(item.text_id) : '<em class="text-outline dark:text-gray-500">(Terjemahan tidak tersedia untuk variasi sanad ini)</em>';
+        const idHtml = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${idContent}</p>`;
         const enHtml = enText ? `<p class="text-xs text-outline dark:text-gray-400 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${escapeHtml(enText)}</p>` : '';
         displayText = `
           <div class="flex flex-col gap-3 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
@@ -1142,14 +1144,14 @@ async function loadHadithList() {
       transparencyFooter = `
         <div class="mt-8 p-4 bg-surface-variant/30 dark:bg-[#1e293b]/50 border border-outline-variant/40 dark:border-[#334155] rounded-xl text-xs text-outline dark:text-gray-400 text-center">
           <strong class="text-primary dark:text-white block mb-1"><span class="material-symbols-outlined text-sm inline-block align-middle mr-1">verified_user</span>Data Validity Note / Catatan Validitas Data:</strong>
-          <span data-lang-en>The Arabic text and numbering for ${bookNames[bookId]} follow the global standard. The Indonesian translations are sourced from the verified Lidwa (Irsyadulibad) dataset and mapped using universal indexing. Minor structural repetitions without direct translations are supplemented from identical predecessors.</span><span data-lang-id class="hidden">Penomoran dan teks Arab untuk ${bookNamesId[bookId]} mengikuti standar global. Terjemahan bahasa Indonesia bersumber dari dataset Lidwa (Irsyadulibad) yang terverifikasi dan dipetakan menggunakan indeks universal. Beberapa repetisi struktural disamakan dengan hadits sebelumnya yang identik.</span>
+          <span data-lang-en>The Arabic text and numbering for ${bookNames[bookId]} follow the global standard. The Indonesian translations are sourced from the verified Lidwa (Irsyadulibad) dataset and mapped using universal indexing. Hadiths without a direct Indonesian translation in the Lidwa dataset are marked as unavailable.</span><span data-lang-id class="hidden">Penomoran dan teks Arab untuk ${bookNamesId[bookId]} mengikuti standar global. Terjemahan bahasa Indonesia bersumber dari dataset Lidwa (Irsyadulibad) yang terverifikasi dan dipetakan menggunakan indeks universal. Hadits yang tidak memiliki terjemahan langsung dalam dataset Lidwa ditandai sebagai tidak tersedia.</span>
         </div>
       `;
     } else if (bookId === 'darimi') {
       transparencyFooter = `
         <div class="mt-8 p-4 bg-surface-variant/30 dark:bg-[#1e293b]/50 border border-outline-variant/40 dark:border-[#334155] rounded-xl text-xs text-outline dark:text-gray-400 text-center">
           <strong class="text-primary dark:text-white block mb-1"><span class="material-symbols-outlined text-sm inline-block align-middle mr-1">verified_user</span>Data Validity Note / Catatan Validitas Data:</strong>
-          <span data-lang-en>Darimi numbering is based on standard structural groupings. English translations are used as fallbacks where Indonesian is unavailable.</span><span data-lang-id class="hidden">Penomoran Sunan Ad-Darimi didasarkan pada pengelompokan struktural standar. Terjemahan bahasa Inggris digunakan sebagai pengganti sementara apabila terjemahan bahasa Indonesia tidak tersedia.</span>
+          <span data-lang-en>Darimi numbering is based on standard structural groupings. Hadiths without a direct Indonesian translation are marked as unavailable.</span><span data-lang-id class="hidden">Penomoran Sunan Ad-Darimi didasarkan pada pengelompokan struktural standar. Hadits yang tidak memiliki terjemahan bahasa Indonesia secara langsung ditandai sebagai tidak tersedia.</span>
         </div>
       `;
     }
@@ -1191,7 +1193,7 @@ async function loadHadithList() {
           hadith_number: r.hadith_number || r.id,
           text_en: r.primary_translation || r.english_text || '',
           text_ar: r.arabic_text || '',
-          text_id: r.indonesian_text || r.primary_translation || '',
+          text_id: r.indonesian_text || '',
           grade: r.grade || 'Sahih',
           book_id: r.book_slug || 'bukhari'
         }));
