@@ -802,6 +802,13 @@ async function loadHadithList() {
   const searchInput = document.getElementById('chapter-search-input');
   const scopeSelect = document.getElementById('search-scope-select');
   const langSelect = document.getElementById('default-lang-select');
+  
+  // Sync the dropdown with the global language setting ONCE on page load
+  if (langSelect && !langSelect.hasAttribute('data-synced-initially')) {
+    langSelect.value = LangSystem.get() === 'id' ? 'id' : 'en';
+    langSelect.setAttribute('data-synced-initially', 'true');
+  }
+
   const pageSizeSelect = document.getElementById('page-size-select');
   const prevBtn = document.getElementById('prev-page-btn');
   const nextBtn = document.getElementById('next-page-btn');
@@ -975,6 +982,10 @@ async function loadHadithList() {
   if (!window._hadithListLangListenerAttached) {
     window._hadithListLangListenerAttached = true;
     window.addEventListener('hadeeth_lang_change', () => {
+      const langSel = document.getElementById('default-lang-select');
+      if (langSel) {
+        langSel.value = LangSystem.get() === 'id' ? 'id' : 'en';
+      }
       loadHadithList();
     });
   }
