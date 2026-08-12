@@ -1578,7 +1578,9 @@ async function loadChaptersList() {
     // Support both: pre-computed hadith_range string OR hadith_start/hadith_end numbers
     const hadithRange = ch.hadith_range
       || (ch.hadith_start != null ? `Hadith ${ch.hadith_start} – ${ch.hadith_end}` : `Chapter ${chNum}`);
-    const hadithCount = ch.hadith_end && ch.hadith_start ? (ch.hadith_end - ch.hadith_start + 1) : '';
+    // Prefer the explicit hadith_count field; fall back to range size
+    const hadithCount = ch.hadith_count != null ? ch.hadith_count
+      : (ch.hadith_end && ch.hadith_start ? (ch.hadith_end - ch.hadith_start + 1) : '');
 
     html += `
       <a href="hadith-list.html?book=${bookId}&chapter=${chNum}" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
