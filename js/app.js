@@ -1318,7 +1318,7 @@ async function loadChaptersList() {
       badgeClass: 'bg-blue-700 text-white',
       desc: 'Masterpiece Jami collection renowned for strict thematic organization and comprehensive parallel chains of narration (turuq).',
       kitabCount: '📚 56 Books (Kitab)',
-      hadithCount: '📖 3,033 Total Hadith',
+      hadithCount: '📖 7,563 Total Hadith',
       authenticity: '⭐️ 100% Authentic'
     },
     tirmidhi: {
