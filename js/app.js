@@ -327,11 +327,16 @@ const BOOK_DATASETS = {
 
 /**
  * Switch to a different dataset version and reload the page.
+ * Strips the `dataset` URL param so localStorage controls the active dataset
+ * (prevents the URL-baked param from overriding the user's explicit choice).
  * @param {string} datasetId - 'primary' | 'native_ahmedbaset' | 'native_lidwa'
  */
 window.__switchDataset = function(datasetId) {
   localStorage.setItem('dataset_version', datasetId);
-  location.reload();
+  // Remove ?dataset param from URL so localStorage wins on reload
+  const url = new URL(location.href);
+  url.searchParams.delete('dataset');
+  location.href = url.toString();
 };
 
 /**
@@ -1190,8 +1195,10 @@ async function loadHadithList() {
   const params = new URLSearchParams(window.location.search);
   const bookId = params.get('book') || 'bukhari';
   const chapterId = params.get('chapter') || '1';
-  // Dataset from URL takes precedence (set by chapter links), then localStorage
+  // Dataset from URL takes precedence on first arrival (set by chapter links),
+  // then localStorage. Sync localStorage so the banner reflects the URL param.
   const datasetParam = params.get('dataset');
+  if (datasetParam) localStorage.setItem('dataset_version', datasetParam);
   const activeDataset = datasetParam || localStorage.getItem('dataset_version') || 'primary';
 
   const bookNames = {
