@@ -175,6 +175,82 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // --- Dataset Version Switcher ---
+  const versionSelect = document.getElementById('dataset-version');
+  if (versionSelect) {
+    const currentVersion = localStorage.getItem('dataset_version') || 'primary';
+    versionSelect.value = currentVersion;
+    
+    const urlParams = new URLSearchParams(window.location.search);
+    const bookId = urlParams.get('book');
+    const lidwaBooks = ['bukhari', 'muslim', 'abudawud', 'tirmidhi', 'nasai', 'ibnmajah', 'malik', 'darimi', 'ahmad', 'nawawi'];
+    
+    if (bookId && !lidwaBooks.includes(bookId)) {
+       const lidwaOpt = versionSelect.querySelector('option[value="native_lidwa"]');
+       if (lidwaOpt) lidwaOpt.disabled = true;
+       if (currentVersion === 'native_lidwa') {
+          versionSelect.value = 'primary';
+          localStorage.setItem('dataset_version', 'primary');
+       }
+    }
+    
+    versionSelect.addEventListener('change', (e) => {
+      localStorage.setItem('dataset_version', e.target.value);
+      location.reload();
+    });
+  }
+
+  // --- Initialize Books Rendering ---
+  const isIndex = location.pathname.endsWith('index.html') || location.pathname === '/';
+  const isBooks = location.pathname.endsWith('books.html');
+
+  if (isIndex || isBooks) {
+    api.getBooks().then(books => {
+      if (isIndex) {
+        const grid = document.getElementById('tisah-grid');
+        if (grid) renderBookCards(books.slice(0, 9), grid);
+      }
+      if (isBooks) {
+        const sittahGrid = document.getElementById('sittah-grid');
+        const tisahGrid = document.getElementById('tisah-grid-books');
+        const secondaryGrid = document.getElementById('secondary-grid');
+        
+        if (sittahGrid) renderBookCards(books.slice(0, 6), sittahGrid);
+        if (tisahGrid) renderBookCards(books.slice(6, 9), tisahGrid);
+        if (secondaryGrid) renderBookCards(books.slice(9, 17), secondaryGrid);
+      }
+    });
+  }
+
+  function renderBookCards(books, container) {
+    container.innerHTML = books.map(book => {
+      const isJami = ['bukhari', 'muslim', 'tirmidhi'].includes(book.id) ? "Jami'" : "Kitab";
+      const bgImage = "https://lh3.googleusercontent.com/aida-public/AB6AXuBzqnq_A--Wp1V13r_f7R92bOejF-hct-hQfLCt4I-ftXrUjutMDxGksjJBngltuV29M_PS6AvdazjuLJlDmOd7Nc0ym-BdVhIEfg1h3CN3e8NDd2QVp_B8_BNT7AxfGGUpKlbIo9jptiJBClLqpzNbUikCMt5UMZV8IDKrIv4aNVNiQZzmN3Udc92x21MwHEjAngKlR9CIPHct5ipG9Yv4oAGsvvTUSVRu9IgTeTZEreNg2ilBcz2ztw";
+      
+      return `
+        <a href="kitab.html?book=${book.id}" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group card-lift">
+          <div class="h-32 w-full bg-cover bg-center border-b border-outline-variant/20 dark:border-[#334155] relative"
+               style="background-image:url('${bgImage}')">
+            <div class="absolute top-2 left-2 bg-blue-700 text-white px-2 py-0.5 rounded font-label-sm text-[10px] uppercase tracking-wider font-bold">${isJami}</div>
+          </div>
+          <div class="p-4 flex flex-col gap-1 flex-grow">
+            <div class="flex justify-between items-start">
+              <h3 class="font-body-md text-body-md font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">${book.title_en}</h3>
+              <span class="font-arabic-body text-lg text-secondary dark:text-[#10b981]" dir="rtl">${book.title_ar}</span>
+            </div>
+            <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">${book.author_en}</p>
+            <div class="mt-3 flex items-center justify-between text-label-sm font-label-sm text-outline dark:text-gray-500 border-t border-outline-variant/10 dark:border-[#334155] pt-2 mt-auto">
+              <span data-lang-en>${book.total_hadiths.toLocaleString()} Ahadith</span>
+              <span data-lang-id style="display:none">${book.total_hadiths.toLocaleString()} Hadits</span>
+              <span class="text-secondary dark:text-[#10b981] group-hover:underline cursor-pointer">Explore →</span>
+            </div>
+          </div>
+        </a>
+      `;
+    }).join('');
+    LangSystem.updateDOM();
+  }
+
   // --- Copy & Social Media Share Hadith Handler ---
   document.addEventListener('click', async (e) => {
     const copyBtn = e.target.closest('[data-copy-hadith], [data-copy-share-btn], .btn-copy-share');
@@ -1914,7 +1990,8 @@ async function loadSanadChain() {
 
   let dbNarrators = [];
   try {
-    const res = await fetch(`data/hadiths/${bookId}/${hadithNum}.json`);
+    const primaryId = await window.HadeethAPI.getPrimaryAnchorId(bookId, hadithNum);
+    const res = await fetch(`data/hadiths/${bookId}/${primaryId}.json`);
     if (res.ok) {
       const data = await res.json();
       dbNarrators = data.sanad || [];
@@ -2559,7 +2636,9 @@ async function loadHadithSyarah(bookId, hadithNum) {
   }
 
   try {
-    const res = await fetch(`data/commentaries/${hadithId}.json`);
+    const primaryId = await window.HadeethAPI.getPrimaryAnchorId(bookId, hadithNum);
+    const resolvedHadithId = `${bookId}_${primaryId}`;
+    const res = await fetch(`data/commentaries/${resolvedHadithId}.json`);
     if (res && res.ok) {
       commentaryData = await res.json();
     }

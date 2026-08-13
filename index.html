@@ -160,56 +160,12 @@
 
     <!-- Kutubut Tis'ah Grid -->
     <section class="w-full flex flex-col gap-stack-md">
-      <div class="flex items-end justify-between border-b border-outline-variant/30 dark:border-[#334155] pb-2">
-        <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-white font-bold" data-i18n="kutub_tisah_title">Kutubut Tis'ah</h2>
-        <a href="books.html" class="text-label-sm font-label-sm text-secondary dark:text-[#10b981] hover:underline" data-i18n="view_all_collections">View All Collections</a>
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">library_books</span>
+        <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-white font-bold">Kutubut Tis'ah (The 9 Books)</h2>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-grid mt-4">
-        <!-- Book Card: Bukhari -->
-        <a href="kitab.html?book=bukhari" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group card-lift">
-          <div class="h-32 w-full bg-cover bg-center border-b border-outline-variant/20 dark:border-[#334155] relative"
-               style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4blNbTej-dhDOjRqXG4F_JQ87PfAskctDe70zZEsAq-X4kf98HqBltjVrP8d4RW28NxJq9cYlEQ9U1ta9dyM9Z_58m7P63jR-TSwDcSi2GWEHU-B6YRGJS36QfXTIXSvCYFA7jxPLlBGUH4I4I432RUSSLScuNaVVCO6o6zBNiXqY6OWOcDNRYuY16iqTHd1y1meQBODiQ1eVe4tQ0yfLbf-ll2LkH5LES_LN1t17Y9-XYcqRt702fQ')">
-            <div class="absolute top-2 left-2 bg-blue-700 text-white px-2 py-0.5 rounded font-label-sm text-[10px] uppercase tracking-wider font-bold">Jami'</div>
-          </div>
-          <div class="p-4 flex flex-col gap-1 flex-grow">
-            <h3 class="font-body-md text-body-md font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">Sahih al-Bukhari</h3>
-            <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Imam Muhammad al-Bukhari</p>
-            <div class="mt-3 flex items-center justify-between text-label-sm font-label-sm text-outline dark:text-gray-500">
-              <span data-lang-en>7,563 Ahadith</span><span data-lang-id>7.563 Hadits</span>
-              <span class="material-symbols-outlined text-[16px]">bookmark_border</span>
-            </div>
-          </div>
-        </a>
-        <!-- Book Card: Muslim -->
-        <a href="kitab.html?book=muslim" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group card-lift">
-          <div class="h-32 w-full bg-cover bg-center border-b border-outline-variant/20 dark:border-[#334155] relative"
-               style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzqnq_A--Wp1V13r_f7R92bOejF-hct-hQfLCt4I-ftXrUjutMDxGksjJBngltuV29M_PS6AvdazjuLJlDmOd7Nc0ym-BdVhIEfg1h3CN3e8NDd2QVp_B8_BNT7AxfGGUpKlbIo9jptiJBClLqpzNbUikCMt5UMZV8IDKrIv4aNVNiQZzmN3Udc92x21MwHEjAngKlR9CIPHct5ipG9Yv4oAGsvvTUSVRu9IgTeTZEreNg2ilBcz2ztw')">
-            <div class="absolute top-2 left-2 bg-blue-700 text-white px-2 py-0.5 rounded font-label-sm text-[10px] uppercase tracking-wider font-bold">Jami'</div>
-          </div>
-          <div class="p-4 flex flex-col gap-1 flex-grow">
-            <h3 class="font-body-md text-body-md font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">Sahih Muslim</h3>
-            <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Imam Muslim ibn al-Hajjaj</p>
-            <div class="mt-3 flex items-center justify-between text-label-sm font-label-sm text-outline dark:text-gray-500">
-              <span data-lang-en>3,033 Ahadith</span><span data-lang-id>3.033 Hadits</span>
-              <span class="material-symbols-outlined text-[16px]">bookmark_border</span>
-            </div>
-          </div>
-        </a>
-        <!-- Book Card: Abu Dawud -->
-        <a href="kitab.html?book=abudawud" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group card-lift">
-          <div class="h-32 w-full bg-cover bg-center border-b border-outline-variant/20 dark:border-[#334155] relative"
-               style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkMHAUzA2zf4EkJQtTSFYou9cmwKTPyE2ztXo30ukiOVxDgchm1LW9tIFIpzOzay_RMjoRQkF16RWQlljSvi18E6obGnThSoSOtIbugYML7zIoCCZzUdL_fRHCPelxOIZYlqFAB3SJRDexPfe6ab4qQuf7v5ENiIJE-qS_UaEsl8Bp3HSvhxzro-_DLaSOJmAwuL5iVbLK9afbwO_AomK-JzBLklORmsRW79Eie3uosSbCyQZ8jQvJUw')">
-            <div class="absolute top-2 left-2 bg-musnad-indigo text-white px-2 py-0.5 rounded font-label-sm text-[10px] uppercase tracking-wider font-bold">Sunan</div>
-          </div>
-          <div class="p-4 flex flex-col gap-1 flex-grow">
-            <h3 class="font-body-md text-body-md font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors">Sunan Abu Dawood</h3>
-            <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Imam Abu Dawood</p>
-            <div class="mt-3 flex items-center justify-between text-label-sm font-label-sm text-outline dark:text-gray-500">
-              <span data-lang-en>5,274 Ahadith</span><span data-lang-id>5.274 Hadits</span>
-              <span class="material-symbols-outlined text-[16px]">bookmark_border</span>
-            </div>
-          </div>
-        </a>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="tisah-grid">
+        <!-- Dynamic Book Cards will be injected here by app.js -->
       </div>
     </section>
 
