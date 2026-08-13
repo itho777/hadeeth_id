@@ -1633,27 +1633,40 @@ async function loadHadithList() {
       let displayText = '';
       const isAhmedBaset = item._source === 'ahmedbaset';
       const isLidwa = item._source === 'lidwa';
-      const idUnavailableNote = isAhmedBaset
-        ? '<em class="text-outline dark:text-gray-500">(Indonesian translation not in AhmedBaset dataset)</em>'
-        : '<em class="text-outline dark:text-gray-500">(Terjemahan tidak tersedia untuk variasi sanad ini)</em>';
+
+      // AhmedBaset transparency callout — shown whenever ID text is displayed
+      // The Indonesian text is matched from Lidwa by hadith number, NOT from AhmedBaset itself
+      const abIdSourceNote = `<div class="mt-2 px-3 py-2 rounded-lg border border-amber-500/30 bg-amber-500/5 text-[11px] text-amber-600 dark:text-amber-400 leading-snug">
+        <strong class="font-semibold">Note — Indonesian translation source:</strong> AhmedBaset does not include Indonesian translations.
+        The text below is sourced from <strong>Lidwa / Irsyad</strong>, matched by hadith number.
+        It may not correspond perfectly to this AhmedBaset narration variant.
+      </div>`;
+
+      // Grade-by explanation helper
+      const gradeByHtml = (gradedBy) => gradedBy
+        ? `<p class="text-[11px] text-outline dark:text-gray-500 mt-1">Graded Sahih by: <em>${escapeHtml(gradedBy)}</em> <span class="opacity-60">(grading per Lidwa/Irsyad)</span></p>`
+        : '';
+
+      const idUnavailableNote = '<em class="text-outline dark:text-gray-500">(Terjemahan tidak tersedia untuk variasi sanad ini)</em>';
 
       if (currentLang === 'id') {
         const content = hasId ? escapeHtml(item.text_id) : idUnavailableNote;
         displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${content}</p>`;
-        if (isLidwa && item.grade_by) displayText += `<p class="text-[11px] text-outline dark:text-gray-500 mt-1">Grade: <em>${escapeHtml(item.grade_by)}</em></p>`;
+        if (isAhmedBaset && hasId) displayText += abIdSourceNote;
+        if (isLidwa) displayText += gradeByHtml(item.grade_by);
       } else if (currentLang === 'en') {
         displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${escapeHtml(enText)}</p>`;
-        if (isAhmedBaset) displayText += `<p class="text-[11px] text-outline/70 dark:text-gray-600 mt-1 italic">Source: AhmedBaset · No Indonesian in this dataset</p>`;
-        if (isLidwa && item.grade_by) displayText += `<p class="text-[11px] text-outline dark:text-gray-500 mt-1">Grade: <em>${escapeHtml(item.grade_by)}</em></p>`;
+        if (isAhmedBaset) displayText += `<p class="text-[11px] text-outline/70 dark:text-gray-500 mt-1 italic">Source: AhmedBaset · Switch to <strong>Dual Language</strong> or <strong>Bahasa Indonesia</strong> to see the Lidwa-sourced Indonesian translation (matched by number — not from AhmedBaset)</p>`;
+        if (isLidwa) displayText += gradeByHtml(item.grade_by);
       } else {
         const idContent = hasId ? escapeHtml(item.text_id) : idUnavailableNote;
         const idHtml = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${idContent}</p>`;
         const enHtml = enText ? `<p class="text-xs text-outline dark:text-gray-400 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${escapeHtml(enText)}</p>` : '';
-        const sourceNote = isAhmedBaset ? `<p class="text-[11px] text-outline/70 dark:text-gray-600 italic">Source: AhmedBaset · Indonesian filled from Darussalam where available</p>` : '';
-        const gradeNote = (isLidwa && item.grade_by) ? `<p class="text-[11px] text-outline dark:text-gray-500">Grade: <em>${escapeHtml(item.grade_by)}</em></p>` : '';
+        const gradeNote = isLidwa ? gradeByHtml(item.grade_by) : '';
+        const abNote = (isAhmedBaset && hasId) ? abIdSourceNote : '';
         displayText = `
           <div class="flex flex-col gap-3 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
-            ${idHtml}${enHtml}${sourceNote}${gradeNote}
+            ${idHtml}${enHtml}${abNote}${gradeNote}
           </div>
         `;
       }
