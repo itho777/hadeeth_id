@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
@@ -62,24 +62,13 @@
 
 <main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8">
 
-  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-    <!-- Breadcrumbs -->
+  <!-- Breadcrumbs -->
   <div class="flex items-center gap-2 text-xs text-outline dark:text-gray-400">
     <a href="index.html" class="hover:underline">Home</a>
     <span>/</span>
     <a href="books.html" class="hover:underline" data-i18n="nav_books">Books</a>
     <span>/</span>
     <span class="text-primary dark:text-white font-semibold" data-breadcrumb-book>Sahih al-Bukhari</span>
-  </div>
-    <!-- Version Selector -->
-    <div class="flex items-center gap-2 text-sm">
-      <label for="dataset-version" class="text-on-surface-variant dark:text-gray-400 font-semibold text-xs whitespace-nowrap">Dataset:</label>
-      <select id="dataset-version" class="bg-surface-container-high dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-lg px-3 py-1.5 text-primary dark:text-white focus:outline-none focus:ring-2 focus:ring-secondary text-xs w-full max-w-[250px]">
-        <option value="primary">Primary Architecture (Linked)</option>
-        <option value="native_lidwa">Native Lidwa (Indonesian Anchor)</option>
-        <option value="native_ahmedbaset">Native AhmedBaset (Strict Darussalam)</option>
-      </select>
-    </div>
   </div>
 
   <!-- Book Header -->
@@ -103,6 +92,9 @@
       <span class="font-arabic-display text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl" data-book-arabic-title>الجامع الصحيح البخاري</span>
     </div>
   </div>
+
+  <!-- Dataset Banner (populated by JS) -->
+  <div id="dataset-banner"></div>
 
   <!-- Search Filter within Book -->
   <div class="w-full bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-lg p-3 flex items-center gap-3">

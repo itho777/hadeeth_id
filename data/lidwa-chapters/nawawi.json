@@ -1,0 +1,18 @@
+{
+  "book_id": "nawawi",
+  "title_id_source": "Lidwa / Irsyad (irsyadulibad.com)",
+  "title_en_source": "Darussalam",
+  "title_ar_source": "fawazahmed0-CDN",
+  "chapters": [
+    {
+      "id": "nawawi_c1",
+      "book_id": "nawawi",
+      "chapter_number": 1,
+      "title_ar": "الأربعون النووية",
+      "title_en": "Forty Hadith of al-Nawawi",
+      "title_id": "Empat Puluh Hadits Nawawi",
+      "hadith_start": 1,
+      "hadith_end": 42
+    }
+  ]
+}
