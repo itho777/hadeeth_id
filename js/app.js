@@ -1866,9 +1866,15 @@ async function loadChaptersList() {
       type: "Jami'",
       badgeClass: 'bg-blue-700 text-white',
       desc: 'Recognized across Islamic scholarship as the supreme Jami collection of Hadith, compiled with unmatched authentication criteria.',
-      kitabCount: '📚 97 Books (Kitab)',
-      hadithCount: '📖 7,563 Total Hadith',
-      authenticity: '⭐️ 100% Authentic'
+      desc_id: "Diakui oleh seluruh ulama Islam sebagai koleksi Jami' tertinggi dari Hadits, disusun dengan kriteria otentikasi yang tak tertandingi.",
+      kitabCount: '📚 97 Kitab',
+      hadithCount: '📖 7.563 Hadits',
+      authenticity: '⭐️ 100% Sahih',
+      datasetInfo: {
+        primary:           { kitab: '📚 97 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
+        native_ahmedbaset: { kitab: '📚 97 Kitab', hadith: '📖 7.277 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–7277)' },
+        native_lidwa:      { kitab: '📚 98 Kitab', hadith: '📖 7.589 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–7589)' }
+      }
     },
     muslim: {
       name: 'Sahih Muslim',
@@ -1878,9 +1884,15 @@ async function loadChaptersList() {
       type: "Jami'",
       badgeClass: 'bg-blue-700 text-white',
       desc: 'Masterpiece Jami collection renowned for strict thematic organization and comprehensive parallel chains of narration (turuq).',
-      kitabCount: '📚 56 Books (Kitab)',
-      hadithCount: '📖 7,563 Total Hadith',
-      authenticity: '⭐️ 100% Authentic'
+      desc_id: "Koleksi Jami' terbaik yang terkenal dengan organisasi tematik yang ketat dan rantai periwayatan paralel (turuq) yang komprehensif.",
+      kitabCount: '📚 57 Kitab',
+      hadithCount: '📖 7.563 Hadits',
+      authenticity: '⭐️ 100% Sahih',
+      datasetInfo: {
+        primary:           { kitab: '📚 57 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
+        native_ahmedbaset: { kitab: '📚 56 Kitab', hadith: '📖 7.459 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–7459)' },
+        native_lidwa:      { kitab: '📚 —', hadith: '📖 7.563 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa (1–7563) · tidak ada pembagian kitab dari sumber Lidwa' }
+      }
     },
     tirmidhi: {
       name: "Jami' al-Tirmidhi",
@@ -1890,9 +1902,15 @@ async function loadChaptersList() {
       type: "Jami'",
       badgeClass: 'bg-blue-700 text-white',
       desc: 'Famous Jami collection featuring explicit grading of narrations (Sahih, Hasan, Gharib) and legal opinions of early jurists.',
-      kitabCount: '📚 49 Books (Kitab)',
-      hadithCount: '📖 3,956 Total Hadith',
-      authenticity: '⭐️ Graded Jami'
+      desc_id: "Koleksi Jami' yang terkenal dengan penilaian hadits secara eksplisit (Sahih, Hasan, Gharib) dan pendapat hukum ulama awal.",
+      kitabCount: '📚 49 Kitab',
+      hadithCount: '📖 3.956 Hadits',
+      authenticity: "⭐️ Jami' Tergrading",
+      datasetInfo: {
+        primary:           { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–3956)' },
+        native_ahmedbaset: { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–3956)' },
+        native_lidwa:      { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–3956)' }
+      }
     },
     abudawud: {
       name: 'Sunan Abu Dawood',
@@ -1902,9 +1920,15 @@ async function loadChaptersList() {
       type: 'Sunan',
       badgeClass: 'bg-indigo-600 text-white',
       desc: 'Primarily focuses on legal rulings (Ahkam) used as foundational evidence by jurists across Sunni Fiqh schools.',
-      kitabCount: '📚 43 Books (Kitab)',
-      hadithCount: '📖 5,274 Total Hadith',
-      authenticity: '⭐️ Sunan Corpus'
+      desc_id: 'Terutama berfokus pada hukum fiqih (Ahkam) yang digunakan sebagai dalil pokok oleh para ulama Fiqih Sunni.',
+      kitabCount: '📚 43 Kitab',
+      hadithCount: '📖 5.274 Hadits',
+      authenticity: '⭐️ Korpus Sunan',
+      datasetInfo: {
+        primary:           { kitab: '📚 43 Kitab', hadith: '📖 5.274 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–5274)' },
+        native_ahmedbaset: { kitab: '📚 43 Kitab', hadith: '📖 5.274 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–5274)' },
+        native_lidwa:      { kitab: '📚 43 Kitab', hadith: '📖 5.274 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5274)' }
+      }
     },
     nasai: {
       name: "Sunan an-Nasa'i",
@@ -1914,9 +1938,15 @@ async function loadChaptersList() {
       type: 'Sunan',
       badgeClass: 'bg-indigo-600 text-white',
       desc: 'Possesses the strictest authentication criteria among the Sunan books, second only to the Sahihain.',
-      kitabCount: '📚 51 Books (Kitab)',
-      hadithCount: '📖 5,758 Total Hadith',
-      authenticity: '⭐️ High Authenticity'
+      desc_id: 'Memiliki kriteria otentikasi paling ketat di antara kitab Sunan, hanya di bawah dua kitab Shahih.',
+      kitabCount: '📚 52 Kitab',
+      hadithCount: '📖 5.758 Hadits',
+      authenticity: '⭐️ Otentisitas Tinggi',
+      datasetInfo: {
+        primary:           { kitab: '📚 52 Kitab', hadith: '📖 5.758 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–5758)' },
+        native_ahmedbaset: { kitab: '📚 51 Kitab', hadith: '📖 5.758 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–5758)' },
+        native_lidwa:      { kitab: '📚 51 Kitab', hadith: '📖 5.758 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5758)' }
+      }
     },
     ibnmajah: {
       name: 'Sunan Ibn Majah',
@@ -1925,10 +1955,16 @@ async function loadChaptersList() {
       authorId: 'rawi_ibn_majah',
       type: 'Sunan',
       badgeClass: 'bg-indigo-600 text-white',
-      desc: 'Renowned for systematic arrangement and unique narrations (zawa\'id) expanding Islamic jurisprudence.',
-      kitabCount: '📚 37 Books (Kitab)',
-      hadithCount: '📖 4,341 Total Hadith',
-      authenticity: '⭐️ Sunan Corpus'
+      desc: "Renowned for systematic arrangement and unique narrations (zawa'id) expanding Islamic jurisprudence.",
+      desc_id: "Terkenal dengan susunan sistematis dan periwayatan unik (zawa'id) yang memperluas khazanah fiqih Islam.",
+      kitabCount: '📚 37 Kitab',
+      hadithCount: '📖 4.341 Hadits',
+      authenticity: '⭐️ Korpus Sunan',
+      datasetInfo: {
+        primary:           { kitab: '📚 37 Kitab', hadith: '📖 4.341 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–4341)' },
+        native_ahmedbaset: { kitab: '📚 37 Kitab', hadith: '📖 4.341 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–4341)' },
+        native_lidwa:      { kitab: '📚 37 Kitab', hadith: '📖 4.341 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–4341)' }
+      }
     },
     malik: {
       name: 'Muwatta Malik',
@@ -1938,9 +1974,15 @@ async function loadChaptersList() {
       type: 'Mushannaf',
       badgeClass: 'bg-amber-600 text-white',
       desc: 'The earliest surviving legal Mushannaf text of Islam, combining prophetic Hadiths with judicial rulings of Madinah.',
-      kitabCount: '📚 61 Books (Kitab)',
-      hadithCount: '📖 1,720 Total Hadith',
-      authenticity: '⭐️ Imam of Hijaz'
+      desc_id: 'Teks Mushannaf fiqih tertua yang masih ada dalam Islam, menggabungkan Hadits Nabi dengan keputusan hukum ulama Madinah.',
+      kitabCount: '📚 56 Kitab',
+      hadithCount: '📖 1.720 Hadits',
+      authenticity: '⭐️ Imam Hijaz',
+      datasetInfo: {
+        primary:           { kitab: '📚 56 Kitab', hadith: '📖 1.858 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–1858)' },
+        native_ahmedbaset: { kitab: '📚 61 Kitab', hadith: '📖 1.858 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–1858) · 61 kitab (5 lebih banyak dari DB primer)' },
+        native_lidwa:      { kitab: '📚 56 Kitab', hadith: '📖 1.720 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–1720) · beberapa hadits dikelompokkan' }
+      }
     },
     ahmad: {
       name: 'Musnad Ahmad',
@@ -1950,9 +1992,15 @@ async function loadChaptersList() {
       type: 'Musnad',
       badgeClass: 'bg-purple-700 text-white',
       desc: 'The massive encyclopedic Musnad arranged companion by companion (Sahabi), containing over 27,000 narrations.',
-      kitabCount: '📚 Musnad System',
-      hadithCount: '📖 27,647 Total Hadith',
-      authenticity: '⭐️ Encyclopedic Corpus'
+      desc_id: 'Musnad ensiklopedis yang sangat besar, disusun berdasarkan sahabat per sahabat (Sahabi), berisi lebih dari 27.000 riwayat.',
+      kitabCount: '📚 Sistem Musnad',
+      hadithCount: '📖 27.647 Hadits',
+      authenticity: '⭐️ Korpus Ensiklopedis',
+      datasetInfo: {
+        primary:           { kitab: '📚 7 Bagian Musnad', hadith: '📖 27.647 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–27647)' },
+        native_ahmedbaset: { kitab: '📚 8 Bagian Musnad', hadith: '📖 27.647 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–27647) · 8 bagian musnad' },
+        native_lidwa:      { kitab: '📚 Susunan Musnad', hadith: '📖 27.519 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–27519) · susunan musnad' }
+      }
     },
     darimi: {
       name: 'Sunan ad-Darimi',
@@ -1962,9 +2010,15 @@ async function loadChaptersList() {
       type: 'Sunan',
       badgeClass: 'bg-indigo-600 text-white',
       desc: 'Highly respected Hadith collection with rigorous standards, frequently considered alongside the Kutub al-Sittah.',
-      kitabCount: '📚 24 Books (Kitab)',
-      hadithCount: '📖 3,367 Total Hadith',
-      authenticity: '⭐️ Sunan Corpus'
+      desc_id: 'Koleksi Hadits yang sangat dihormati dengan standar ketat, sering dianggap setara dengan Kutub al-Sittah.',
+      kitabCount: '📚 24 Kitab',
+      hadithCount: '📖 3.367 Hadits',
+      authenticity: '⭐️ Korpus Sunan',
+      datasetInfo: {
+        primary:           { kitab: '📚 24 Kitab', hadith: '📖 3.367 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–3367)' },
+        native_ahmedbaset: { kitab: '📚 24 Kitab', hadith: '📖 3.367 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–3367)' },
+        native_lidwa:      { kitab: '📚 24 Kitab', hadith: '📖 3.367 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–3367)' }
+      }
     },
     nawawi: {
       name: 'Forty Nawawi',
@@ -1973,22 +2027,29 @@ async function loadChaptersList() {
       authorId: 'rawi_nawawi',
       type: "Jawami' al-Kalim",
       badgeClass: 'bg-emerald-700 text-white',
-      desc: 'Essential collection of 42 foundational narrations encapsulating Jawami\' al-Kalim (concise comprehensive prophetic guidance).',
-      kitabCount: '📚 1 Volume',
-      hadithCount: '📖 42 Total Hadith',
-      authenticity: '⭐️ Jawami\' al-Kalim'
+      desc: "Essential collection of 42 foundational narrations encapsulating Jawami' al-Kalim (concise comprehensive prophetic guidance).",
+      desc_id: "Koleksi esensial 42 riwayat fondasi yang mencakup Jawami' al-Kalim (bimbingan Nabi yang ringkas dan menyeluruh).",
+      kitabCount: '📚 1 Jilid',
+      hadithCount: '📖 42 Hadits',
+      authenticity: "⭐️ Jawami' al-Kalim",
+      datasetInfo: {
+        primary:      { kitab: '📚 1 Jilid', hadith: '📖 42 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–42)' },
+        native_lidwa: { kitab: '📚 1 Jilid', hadith: '📖 42 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–42)' }
+      }
     },
     tabarani_kabir: {
-      name: 'Al-Mu\'jam al-Kabir',
+      name: "Al-Mu'jam al-Kabir",
       ar: 'المعجم الكبير للطبراني',
       author: 'Imam Al-Tabarani',
       authorId: 'rawi_tabarani',
       type: "Mu'jam",
       badgeClass: 'bg-blue-700 text-white',
-      desc: 'Monumental Mu\'jam collection arranged according to the names of Companion narrators in alphabetical order.',
-      kitabCount: '📚 25 Volumes',
-      hadithCount: '📖 20,000+ Total Hadith',
-      authenticity: '⭐️ Framework Shell'
+      desc: "Monumental Mu'jam collection arranged according to the names of Companion narrators in alphabetical order.",
+      desc_id: "Koleksi Mu'jam monumental yang disusun berdasarkan nama perawi Sahabat secara alfabetis.",
+      kitabCount: '📚 25 Jilid',
+      hadithCount: '📖 20.000+ Hadits',
+      authenticity: '⭐️ Kerangka',
+      datasetInfo: { primary: { kitab: '📚 25 Jilid', hadith: '📖 20.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
     },
     ibn_abi_shaybah: {
       name: 'Musannaf Ibn Abi Shaybah',
@@ -1997,14 +2058,15 @@ async function loadChaptersList() {
       authorId: 'rawi_ibn_abi_shaybah',
       type: 'Mushannaf',
       badgeClass: 'bg-amber-600 text-white',
-      desc: 'Encyclopedic Mushannaf collection preserving Marfu\', Mauquf, and Maqtu\' traditions ordered by Fiqh topics.',
-      kitabCount: '📚 37 Books',
-      hadithCount: '📖 37,000+ Total Hadith',
-      authenticity: '⭐️ Framework Shell'
+      desc: "Encyclopedic Mushannaf collection preserving Marfu', Mauquf, and Maqtu' traditions ordered by Fiqh topics.",
+      desc_id: "Koleksi Mushannaf ensiklopedis yang melestarikan tradisi Marfu', Mauquf, dan Maqtu' berdasarkan topik Fiqih.",
+      kitabCount: '📚 37 Kitab',
+      hadithCount: '📖 37.000+ Hadits',
+      authenticity: '⭐️ Kerangka',
+      datasetInfo: { primary: { kitab: '📚 37 Kitab', hadith: '📖 37.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
     }
   };
-
-  const meta = bookMasterDict[bookId] || {
+    const meta = bookMasterDict[bookId] || {
     name: bookId.toUpperCase(),
     ar: bookId,
     author: 'Author Sheikh',
@@ -2039,9 +2101,15 @@ async function loadChaptersList() {
     authorLink.innerText = `By ${meta.author} →`;
   }
   if (titleElem) titleElem.innerText = meta.name;
+
+  // Bilingual description
+  const descEnElem = document.querySelector('[data-book-desc-en]');
+  const descIdElem = document.querySelector('[data-book-desc-id]');
+  if (descEnElem) descEnElem.innerText = meta.desc;
+  if (descIdElem) descIdElem.innerText = meta.desc_id || meta.desc;
+  // Legacy fallback (if old [data-book-desc] still present)
   if (descElem) descElem.innerText = meta.desc;
-  if (kitabCountElem) kitabCountElem.innerText = meta.kitabCount;
-  if (hadithCountElem) hadithCountElem.innerText = meta.hadithCount;
+
   if (authElem) authElem.innerText = meta.authenticity;
   if (arTitleElem) arTitleElem.innerText = meta.ar;
 
@@ -2054,6 +2122,16 @@ async function loadChaptersList() {
   const dsConfig = BOOK_DATASETS[bookId] || [];
   const validDs = dsConfig.find(d => d.id === activeDataset);
   const resolvedDataset = validDs ? activeDataset : 'primary';
+
+  // Apply dataset-specific counts to info card
+  const dsInfo = (meta.datasetInfo || {})[resolvedDataset] || (meta.datasetInfo || {}).primary || {};
+  if (kitabCountElem) kitabCountElem.innerText = dsInfo.kitab || meta.kitabCount;
+  if (hadithCountElem) hadithCountElem.innerText = dsInfo.hadith || meta.hadithCount;
+  const datasetInfoElem = document.querySelector('[data-book-dataset-info]');
+  if (datasetInfoElem && dsInfo.numbering) {
+    datasetInfoElem.innerText = dsInfo.numbering;
+    datasetInfoElem.style.display = '';
+  }
 
   // ================================================================
   // BRANCH A — Primary (Darussalam / fawazahmed0)
