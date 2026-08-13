@@ -1,33 +1,22 @@
 {
-  "hadith_id": "nawawi_1",
+  "id": 24,
   "book_id": "nawawi",
   "hadith_number": 1,
-  "source_code": "nawawi",
+  "source_name_ar": null,
   "source_name_en": "Sharh Arba'in al-Nawawi (Imam al-Nawawi)",
-  "source_name_id": "Syarah Arba'in An-Nawawiyah (Imam an-Nawawi)",
-  "explanation_nawawi_id": "Bahwasanya setiap amalan itu tergantung pada niatnya, dan setiap orang akan mendapatkan balasan sesuai dengan apa yang ia niatkan. Niat adalah syarat sahnya seluruh ibadah fiqhiyah (salat, zakat, puasa, haji). Imam asy-Syafi'i menyatakan bahwa hadits ini adalah sepertiga dari seluruh ilmu Islam dan masuk ke dalam 70 bab fikih.",
-  "explanation_nawawi_en": "Actions are judged solely by intentions, and every person will receive reward according to what they intended. Intention (Niyyah) is the essential prerequisite for all acts of worship. Imam al-Shafi'i stated that this Hadith constitutes one-third of all Islamic knowledge and enters into 70 chapters of Fiqh.",
-  "explanation_nawawi_ar": "إنما الأعمال بالنيات وإنما لكل امرئ ما نوى. النية هي شرط صحة سائر العبادات الشرعية. وقال الإمام الشافعي: هذا الحديث ثلث العلم ويدخل في سبعين بابا من الفقه.",
-  "benefits_nawawi_id": [
-    "Niat merupakan syarat utama diterimanya amalan di sisi Allah SWT.",
-    "Membedakan antara ibadah yang dilakukan karena Allah dan kebiasaan adat sehari-hari.",
-    "Hijrah karena niat duniawi atau wanita tidak mendapatkan pahala akhirat."
-  ],
-  "benefits_nawawi_en": [
+  "source_name_id": null,
+  "explanation_ar": "إنما الأعمال بالنيات وإنما لكل امرئ ما نوى. النية هي شرط صحة سائر العبادات الشرعية. وقال الإمام الشافعي: هذا الحديث ثلث العلم ويدخل في سبعين بابا من الفقه.",
+  "explanation_en": "Actions are judged solely by intentions, and every person will receive reward according to what they intended. Intention (Niyyah) is the essential prerequisite for all acts of worship. Imam al-Shafi'i stated that this Hadith constitutes one-third of all Islamic knowledge and enters into 70 chapters of Fiqh.",
+  "explanation_id": "Bahwasanya setiap amalan itu tergantung pada niatnya, dan setiap orang akan mendapatkan balasan sesuai dengan apa yang ia niatkan. Niat adalah syarat sahnya seluruh ibadah fiqhiyah (salat, zakat, puasa, haji). Imam asy-Syafi'i menyatakan bahwa hadits ini adalah sepertiga dari seluruh ilmu Islam dan masuk ke dalam 70 bab fikih.",
+  "benefits_en": [
     "Intention is the primary condition for deeds to be accepted by Allah.",
     "Distinguishes acts of worship performed for Allah from routine daily habits.",
     "Migration performed for worldly gain or marriage yields no reward in the Hereafter."
   ],
-  "explanation_ibnrajab_id": "Ibn Rajab al-Hanbali menjelaskan dalam Jami'ul 'Ulum wal Hikam bahwa hadits ini adalah salah satu dari kaidah utama agama Islam. Amalan lahiriah tanpa ikhlas niat batiniah adalah hampa di hadapan Allah.",
-  "explanation_ibnrajab_en": "Ibn Rajab al-Hanbali explains in Jami' al-'Ulum wa al-Hikam that this Hadith is a foundational pillar of Islam. Outward deeds without sincere inward intention hold no weight before Allah.",
-  "benefits_ibnrajab_id": [
+  "benefits_id": [
     "Niat merupakan syarat utama diterimanya amalan di sisi Allah SWT.",
     "Membedakan antara ibadah yang dilakukan karena Allah dan kebiasaan adat sehari-hari.",
     "Hijrah karena niat duniawi atau wanita tidak mendapatkan pahala akhirat."
   ],
-  "benefits_ibnrajab_en": [
-    "Intention is the primary condition for deeds to be accepted by Allah.",
-    "Distinguishes acts of worship performed for Allah from routine daily habits.",
-    "Migration performed for worldly gain or marriage yields no reward in the Hereafter."
-  ]
+  "hadith_id": "nawawi_1"
 }

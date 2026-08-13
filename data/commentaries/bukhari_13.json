@@ -1,0 +1,24 @@
+{
+  "id": 32,
+  "book_id": "bukhari",
+  "hadith_number": 13,
+  "source_name_ar": null,
+  "source_name_en": "Fath al-Bari by Ibn Hajar al-Asqalani",
+  "source_name_id": null,
+  "explanation_ar": "يُوضِّحُ الحافظ ابن حجر العسقلاني في شرحه أن النَّفْيَ فِي قَوْلِهِ «لا يُؤْمِنُ» يُقْصَدُ بِهِ نَفْيُ كَمَالِ الإِيمَانِ الْوَاجِبِ لا نَفْيُ أَصْلِ الإِيمَانِ. وَالْمُرَادُ بِالْخَيْرِ المَذْكُورِ هُوَ الطَّاعَاتُ وَالأُمُورُ الْمُبَاحَةُ فِي الدِّينِ وَالدُّنْيَا. وَتَحْقِيقُ هَذِهِ المَرْتَبَةِ يَتَطَلَّبُ مِنَ الْمُسْلِمِ التَّوَاضُعَ وَتَرْكَ الحَسَدِ وَالأَثَرَةِ، بِحَيْثُ يُحِبُّ لِأَخِيهِ مِنَ الخَيْرِ مَا يُحِبُّهُ لِنَفْسِهِ دُونَ أَنْ يَنْقُصَ مِنْ خَيْرِهِ شَيْءٌ.",
+  "explanation_en": "According to Ibn Hajar al-Asqalani in Fath al-Bari, the negation 'does not believe' means the negation of the complete or obligatory level of faith, not the total absence of faith. The 'good' referred to encompasses religious acts of obedience as well as permissible worldly benefits. Attaining this stage of faith requires a believer to purify the heart from envy (hasad), arrogance, and selfishness, genuinely wishing for their fellow Muslim the same blessings they wish for themselves without wanting those blessings to be diminished from anyone.",
+  "explanation_id": "Menurut Ibnu Hajar al-Asqalani dalam Fathul Bari, penafian 'tidak beriman' dalam hadis ini bermakna tidak sempurna iman yang wajib pada diri seseorang, bukan hilangnya iman secara total. Kebaikan yang dimaksud mencakup ketaatan agama maupun hal-hal mubah dalam urusan dunia. Untuk mencapai tingkatan iman ini, seorang Muslim dituntut membersihkan hatinya dari sifat dengki (hasad), kesombongan, dan egoisme, serta secara tulus menginginkan kebaikan bagi saudaranya sebagaimana ia menginginkannya untuk dirinya sendiri.",
+  "benefits_en": [
+    "Perfection of faith is tied to sincere love and goodwill towards fellow Muslims.",
+    "The phrase 'does not believe' denotes the lack of complete required faith, not apostasy.",
+    "It is obligatory to combat and eliminate envy, malice, and selfishness from the heart.",
+    "Encourages strong brotherhood, mutual support, and altruism within the Muslim community."
+  ],
+  "benefits_id": [
+    "Kesempurnaan iman seseorang terikat dengan kecintaan dan kebaikan yang tulus terhadap sesama Muslim.",
+    "Ungkapan 'tidak beriman' menunjukkan belum mencapainya tingkatan iman yang sempurna secara wajib, bukan keluar dari Islam.",
+    "Kewajiban untuk mengikis dan membersihkan hati dari sifat dengki, iri, dan egois.",
+    "Mendorong terwujudnya rasa persaudaraan yang kuat, kepedulian, dan sikap altruisme dalam masyarakat."
+  ],
+  "hadith_id": "bukhari_13"
+}

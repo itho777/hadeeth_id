@@ -1,0 +1,24 @@
+{
+  "id": 39,
+  "book_id": "bukhari",
+  "hadith_number": 8,
+  "source_name_ar": null,
+  "source_name_en": "Fath al-Bari by Ibn Hajar al-Asqalani",
+  "source_name_id": null,
+  "explanation_ar": "يشبه النبي صلى الله عليه وسلم الإسلام ببناء متماسك يقوم على خمسة أركان رئيسية، وأعظم هذه الأركان شهادة أن لا إله إلا الله وأن محمداً رسول الله التي هي شرط صحة الباقي. ثم يتبعها الصلاة والزكاة والحج وصوم رمضان، وإقامة هذه الأركان هي القواعد العملية التي ينبني عليها دِين المرء وتصان بها إسلامه.",
+  "explanation_en": "In this foundational tradition, the Prophet (peace be upon him) metaphorically compares Islam to a physical structure resting upon five essential pillars. The two testimonies of faith (Shahada) constitute the core foundation upon which all other deeds depend, while prayer, zakat, hajj, and fasting during Ramadan represent the practical pillars that reinforce and complete the edifice of a Muslim's faith.",
+  "explanation_id": "Dalam hadits yang amat mendasar ini, Nabi ﷺ menyerupakan Islam dengan sebuah bangunan yang ditegakkan di atas lima tiang utama. Dua kalimat syahadat merupakan fondasi paling mendasar yang menjadi syarat sahnya seluruh amal, sedangkan shalat, zakat, haji, dan puasa Ramadan adalah pilar-pilar praktis yang memperkokoh keimanan seorang muslim.",
+  "benefits_en": [
+    "Islam is built upon five essential pillars that define its core obligations.",
+    "The Shahadah (Testimony of Faith) is the foundation without which no deed is accepted.",
+    "Prayer and Zakat are the most critical practical acts of worship following faith itself.",
+    "The pillars are arranged in order of importance and frequency of practice."
+  ],
+  "benefits_id": [
+    "Islam ditegakkan di atas lima pilar utama yang menjadi pondasi dasar syariat.",
+    "Dua kalimat syahadat adalah fondasi utama dan syarat diterimanya seluruh ibadah.",
+    "Shalat dan zakat merupakan pilar amal terpenting setelah pengakuan keimanan.",
+    "Urutan rukun Islam mencerminkan tingkat keutamaan serta frekuensi pelaksanaannya."
+  ],
+  "hadith_id": "bukhari_8"
+}

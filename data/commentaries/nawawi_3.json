@@ -1,29 +1,20 @@
 {
-  "hadith_id": "nawawi_3",
+  "id": 26,
   "book_id": "nawawi",
   "hadith_number": 3,
-  "source_code": "nawawi",
+  "source_name_ar": null,
   "source_name_en": "Sharh Arba'in al-Nawawi (Imam al-Nawawi)",
-  "source_name_id": "Syarah Arba'in An-Nawawiyah (Imam an-Nawawi)",
-  "explanation_nawawi_id": "Islam dibangun di atas lima tiang utama: Syahadat, Salat, Zakat, Haji, dan Puasa Ramadan. Pengibaratan Islam seperti bangunan kubah yang ditopang oleh tiang-tiang fondasi.",
-  "explanation_nawawi_en": "Islam is built upon five foundational pillars: Testimony of Faith, Prayer, Zakat, Hajj, and Fasting in Ramadan. Islam is likened to a structure supported by vital pillars.",
-  "explanation_nawawi_ar": "بني الإسلام على خمس: شهادة أن لا إله إلا الله وأن محمدا رسول الله، وإقام الصلاة، وإيتاء الزكاة، وحج البيت، وصوم رمضان.",
-  "benefits_nawawi_id": [
-    "Dua kalimat syahadat adalah fondasi dasar utama bagi berdirinya Islam seseorang.",
-    "Meninggalkan rukun utama meruntuhkan keutuhan bangunan Islam seseorang."
-  ],
-  "benefits_nawawi_en": [
+  "source_name_id": null,
+  "explanation_ar": "بني الإسلام على خمس: شهادة أن لا إله إلا الله وأن محمدا رسول الله، وإقام الصلاة، وإيتاء الزكاة، وحج البيت، وصوم رمضان.",
+  "explanation_en": "Islam is built upon five foundational pillars: Testimony of Faith, Prayer, Zakat, Hajj, and Fasting in Ramadan. Islam is likened to a structure supported by vital pillars.",
+  "explanation_id": "Islam dibangun di atas lima tiang utama: Syahadat, Salat, Zakat, Haji, dan Puasa Ramadan. Pengibaratan Islam seperti bangunan kubah yang ditopang oleh tiang-tiang fondasi.",
+  "benefits_en": [
     "The Shahadah is the indispensable foundation for a person's Islam.",
     "Abandoning core pillars undermines the integrity of one's faith structure."
   ],
-  "explanation_ibnrajab_id": "",
-  "explanation_ibnrajab_en": "",
-  "benefits_ibnrajab_id": [
+  "benefits_id": [
     "Dua kalimat syahadat adalah fondasi dasar utama bagi berdirinya Islam seseorang.",
     "Meninggalkan rukun utama meruntuhkan keutuhan bangunan Islam seseorang."
   ],
-  "benefits_ibnrajab_en": [
-    "The Shahadah is the indispensable foundation for a person's Islam.",
-    "Abandoning core pillars undermines the integrity of one's faith structure."
-  ]
+  "hadith_id": "nawawi_3"
 }

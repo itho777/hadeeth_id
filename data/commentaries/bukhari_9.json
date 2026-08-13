@@ -1,0 +1,22 @@
+{
+  "id": 40,
+  "book_id": "bukhari",
+  "hadith_number": 9,
+  "source_name_ar": null,
+  "source_name_en": "Fath al-Bari by Ibn Hajar al-Asqalani",
+  "source_name_id": null,
+  "explanation_ar": "يوضح الحافظ ابن حجر في فتح الباري أن الإيمان أصل يتشعب منه أعمال القلب واللسان والجوارح، ولفظ 'بضع' يدل على العدد من ثلاثة إلى تسعة. وقد خص النبي صلى الله عليه وسلم 'الحياء' بالذكر بين شعب الإيمان لأنه الداعي إلى بقية الشعب، إذ يحث المكلف على ترك القباحات وفعل الطاعات، وكونه خلقاً جبلياً لا يمنع من كونه من الإيمان إذ يمكن اكتسابه واستعماله وفق الشريعة.",
+  "explanation_en": "In Fath al-Bari, Ibn Hajar al-Asqalani explains that faith (Iman) consists of a core with various branches encompassing actions of the heart, tongue, and physical limbs. The term 'Bidh' denotes a number between three and nine. The Prophet ﷺ specifically highlighted modesty (Haya') among all branches because it serves as the chief catalyst driving a person to perform righteous deeds and abstain from abominable acts. Even if modesty can be an innate character trait, cultivating it according to Islamic teachings makes it an integral part of faith.",
+  "explanation_id": "Ibnu Hajar al-Asqalani dalam Fathul Bari menjelaskan bahwa iman memiliki pokok dan cabang-cabang yang mencakup amalan hati, lisan, dan anggota badan. Kata 'Bidh'un' menunjukkan angka antara tiga hingga sembilan. Nabi ﷺ secara khusus menyebutkan 'malu' (Haya') di antara cabang-cabang iman karena rasa malu menjadi pendorong utama yang mengajak seseorang untuk menjalankan ketaatan dan meninggalkan keburukan. Meskipun malu bisa bersifat bawaan, mengandalkannya sesuai syariat menjadikannya bagian dari kesempurnaan iman.",
+  "benefits_en": [
+    "Faith (Iman) is comprised of multiple branches encompassing speech, belief, and physical actions.",
+    "Modesty (Haya') is a commendable virtue and an essential branch of faith that restrains one from sin.",
+    "Increments and decrements occur in faith depending on the fulfillment of its various branches."
+  ],
+  "benefits_id": [
+    "Iman terdiri dari banyak cabang yang mencakup perkataan, keyakinan hati, dan perbuatan anggota badan.",
+    "Rasa malu (Haya') adalah akhlak mulia dan bagian penting dari iman yang mencegah seseorang dari perbuatan maksiat.",
+    "Iman dapat bertambah dan berkurang sesuai dengan pengamalan cabang-cabang iman tersebut."
+  ],
+  "hadith_id": "bukhari_9"
+}

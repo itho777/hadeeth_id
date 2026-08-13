@@ -1,0 +1,22 @@
+{
+  "id": 30,
+  "book_id": "bukhari",
+  "hadith_number": 11,
+  "source_name_ar": null,
+  "source_name_en": "Fath al-Bari Sharh Sahih al-Bukhari",
+  "source_name_id": null,
+  "explanation_ar": "يوضح الحافظ ابن حجر العسقلاني في كتاب فتح الباري أن الحديث يبين كمال إسلام المرء وعلو درجته عند كف أذاه عن الناس. وقد خُص اللسان واليد بالذكر لأن غالب الأذى يصدر منهما؛ فاللسان يعبر عما في النفس ويتناول الماضي والحاضر والمستقبل وحتى الأموات، واليد هي الأداة الرئيسية للبطش والفعل المادي. وقُدِّم اللسان في الذكر لأن الأذى به أسهل وقوعاً وأكثر انتشاراً وأشد تأثيراً على القلوب.",
+  "explanation_en": "In Fath al-Bari, Ibn Hajar al-Asqalani explains that this hadith highlights the excellence of a Muslim whose faith translates into protecting others from harm. The tongue and hands are specifically highlighted because most harms originate from them. The tongue is mentioned before the hand because verbal harm is easier to commit, occurs more frequently, and can affect anyone (living or dead, present or absent), whereas physical harm via the hand is usually direct and localized.",
+  "explanation_id": "Dalam Fathul Bari, Ibn Hajar Al-Asqalani menjelaskan bahwa hadis ini menunjukkan keutamaan seorang Muslim yang keimanannya berbuah pada perlindungan bagi orang lain dari kejahatannya. Lisan dan tangan disebutkan secara khusus karena mayoritas gangguan berasal dari keduanya. Lisan didahulukan daripada tangan karena gangguan verbal lebih mudah terjadi, lebih sering dilakukan, dan dampaknya bisa menimpa siapa saja (baik yang masih hidup maupun sudah meninggal), sedangkan gangguan tangan biasanya bersifat fisik dan terbatas.",
+  "benefits_en": [
+    "True excellence in Islam requires fulfilling both the rights of Allah and refraining from violating the rights of created beings.",
+    "Verbal harm (such as backbiting, slander, and insults) can often be more destructive and pervasive than physical harm.",
+    "Restraining oneself from harming others is a practical demonstration of faith and Islamic character."
+  ],
+  "benefits_id": [
+    "Kesempurnaan Islam seseorang menuntut pemenuhan hak Allah sekaligus menjaga hak-hak sesama manusia.",
+    "Bahaya lisan (seperti ghibah, fitnah, dan cataan) sering kali lebih luas dan merusak daripada bahaya fisik.",
+    "Menahan diri dari merugikan atau menyakiti orang lain merupakan bukti nyata dari keimanan dan akhlak Islam."
+  ],
+  "hadith_id": "bukhari_11"
+}
