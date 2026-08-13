@@ -1012,12 +1012,20 @@ async function loadHadithDetail() {
     nextBtn.href = `hadith.html?book=${bookId}&id=${currentNum + 1}`;
   }
 
-  // Fetch from CDN
-  const [edition, arabicEdition, indEdition] = await Promise.all([
+  // Fetch from CDN + live Lidwa source
+  const [edition, arabicEdition] = await Promise.all([
     window.HadeethAPI.getEdition('eng', bookId),
-    window.HadeethAPI.getEdition('ara', bookId),
-    window.HadeethAPI.getEdition('ind', bookId)
+    window.HadeethAPI.getEdition('ara', bookId)
   ]);
+
+  let indEdition = null;
+  try {
+    const baseUrl = window.__HADEETH_BASE__ ? window.__HADEETH_BASE__ + '/data' : window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
+    const lResp = await fetch(`${baseUrl}/sources/lidwa/${bookId}.json`);
+    if (lResp.ok) indEdition = { hadiths: await lResp.json() };
+  } catch (e) {
+    console.warn('Lidwa ID source not available for detail header');
+  }
 
   let hadithTextEn = '';
   let hadithTextAr = '';
@@ -1032,8 +1040,8 @@ async function loadHadithDetail() {
     if (found) hadithTextAr = found.text || '';
   }
   if (indEdition && indEdition.hadiths) {
-    const found = indEdition.hadiths.find(h => (h.hadithnumber ?? h.id) == hadithId);
-    if (found) hadithTextId = found.terjemah || found.text || '';
+    const found = indEdition.hadiths.find(h => (h.hadith_number ?? h.hadithnumber ?? h.id) == hadithId);
+    if (found) hadithTextId = found.text_id || found.terjemah || found.text || '';
   }
 
   const item = {
@@ -1451,17 +1459,52 @@ async function loadHadithList() {
         if (chMetaEn) chMetaEn.innerText = `AhmedBaset Kitab ${chapterId}`;
         if (chMetaId) chMetaId.innerText = `AhmedBaset Kitab ${chapterId}`;
 
-        allHadiths = (abChapter.hadiths || []).map(h => ({
-          hadith_number: h.idInBook || h.id,
-          hadith_id_global: h.id,
-          text_ar: h.arabic || '',
-          text_en: h.english ? (h.english.narrator ? `${h.english.narrator} ${h.english.text}` : h.english.text || '') : '',
-          text_id: '', // no ID in AhmedBaset — will show note
-          grade: 'Sahih',
-          book_id: bookId,
-          _source: 'ahmedbaset',
-          _noId: true
-        }));
+        // Fetch Link Matrix to map AhmedBaset ID -> Lidwa HNum
+        let abToLidwaMap = {};
+        let lidwaIdMap = {};
+        try {
+          const baseUrl = window.__HADEETH_BASE__ ? window.__HADEETH_BASE__ + '/data' : window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
+          
+          const [linkResp, lidwaResp] = await Promise.all([
+            fetch(`${baseUrl}/links/${bookId}.json`).catch(() => null),
+            fetch(`${baseUrl}/sources/lidwa/${bookId}.json`).catch(() => null)
+          ]);
+
+          if (linkResp && linkResp.ok) {
+            const linkData = await linkResp.json();
+            for (const [lNum, val] of Object.entries(linkData)) {
+              if (val.ahmedbaset_id !== undefined) abToLidwaMap[String(val.ahmedbaset_id)] = String(lNum);
+            }
+          }
+
+          if (lidwaResp && lidwaResp.ok) {
+            const lidwaData = await lidwaResp.json();
+            (Array.isArray(lidwaData) ? lidwaData : (lidwaData.hadiths || [])).forEach(h => {
+              const num = h.hadith_number ?? h.hadithnumber ?? h.id;
+              if (num !== undefined && h.text_id) lidwaIdMap[String(num)] = h.text_id;
+            });
+          }
+        } catch (e) {
+          console.warn('Linking engine error for AhmedBaset:', e);
+        }
+
+        allHadiths = (abChapter.hadiths || []).map(h => {
+          const abIdGlobal = String(h.id);
+          const lidwaNum = abToLidwaMap[abIdGlobal];
+          const matchedIdText = lidwaNum ? (lidwaIdMap[lidwaNum] || '') : '';
+          
+          return {
+            hadith_number: h.idInBook || h.id,
+            hadith_id_global: h.id,
+            text_ar: h.arabic || '',
+            text_en: h.english ? (h.english.narrator ? `${h.english.narrator} ${h.english.text}` : h.english.text || '') : '',
+            text_id: matchedIdText,
+            grade: 'Sahih',
+            book_id: bookId,
+            _source: 'ahmedbaset',
+            _noId: !matchedIdText
+          };
+        });
 
         const countEl = document.querySelector('[data-list-count-meta-en]');
         const countIdEl = document.querySelector('[data-list-count-meta-id]');
