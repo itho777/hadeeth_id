@@ -1,6 +1,7 @@
 {
-  "name": "Hadits Arba'in An-Nawawi",
-  "language": "indonesian",
+  "metadata": {
+    "name": "Indonesian Translation for nawawi"
+  },
   "hadiths": [
     {
       "hadithnumber": 1,

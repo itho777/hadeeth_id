@@ -1,0 +1,222 @@
+[
+  {
+    "id": "riyad_c0",
+    "book_id": "riyad",
+    "chapter_number": 0,
+    "title_en": "Chapter 0",
+    "title_ar": "باب 0",
+    "title_id": "Bab 0",
+    "hadith_start": 1218,
+    "hadith_end": 1896,
+    "hadith_count": 679
+  },
+  {
+    "id": "riyad_c1",
+    "book_id": "riyad",
+    "chapter_number": 1,
+    "title_en": "Chapter 1",
+    "title_ar": "باب 1",
+    "title_id": "Bab 1",
+    "hadith_start": 1,
+    "hadith_end": 47,
+    "hadith_count": 47
+  },
+  {
+    "id": "riyad_c2",
+    "book_id": "riyad",
+    "chapter_number": 2,
+    "title_en": "Chapter 2",
+    "title_ar": "باب 2",
+    "title_id": "Bab 2",
+    "hadith_start": 48,
+    "hadith_end": 98,
+    "hadith_count": 51
+  },
+  {
+    "id": "riyad_c3",
+    "book_id": "riyad",
+    "chapter_number": 3,
+    "title_en": "Chapter 3",
+    "title_ar": "باب 3",
+    "title_id": "Bab 3",
+    "hadith_start": 99,
+    "hadith_end": 133,
+    "hadith_count": 35
+  },
+  {
+    "id": "riyad_c4",
+    "book_id": "riyad",
+    "chapter_number": 4,
+    "title_en": "Chapter 4",
+    "title_ar": "باب 4",
+    "title_id": "Bab 4",
+    "hadith_start": 134,
+    "hadith_end": 164,
+    "hadith_count": 31
+  },
+  {
+    "id": "riyad_c5",
+    "book_id": "riyad",
+    "chapter_number": 5,
+    "title_en": "Chapter 5",
+    "title_ar": "باب 5",
+    "title_id": "Bab 5",
+    "hadith_start": 165,
+    "hadith_end": 214,
+    "hadith_count": 50
+  },
+  {
+    "id": "riyad_c6",
+    "book_id": "riyad",
+    "chapter_number": 6,
+    "title_en": "Chapter 6",
+    "title_ar": "باب 6",
+    "title_id": "Bab 6",
+    "hadith_start": 215,
+    "hadith_end": 276,
+    "hadith_count": 62
+  },
+  {
+    "id": "riyad_c7",
+    "book_id": "riyad",
+    "chapter_number": 7,
+    "title_en": "Chapter 7",
+    "title_ar": "باب 7",
+    "title_id": "Bab 7",
+    "hadith_start": 277,
+    "hadith_end": 311,
+    "hadith_count": 35
+  },
+  {
+    "id": "riyad_c8",
+    "book_id": "riyad",
+    "chapter_number": 8,
+    "title_en": "Chapter 8",
+    "title_ar": "باب 8",
+    "title_id": "Bab 8",
+    "hadith_start": 312,
+    "hadith_end": 588,
+    "hadith_count": 277
+  },
+  {
+    "id": "riyad_c9",
+    "book_id": "riyad",
+    "chapter_number": 9,
+    "title_en": "Chapter 9",
+    "title_ar": "باب 9",
+    "title_id": "Bab 9",
+    "hadith_start": 589,
+    "hadith_end": 591,
+    "hadith_count": 3
+  },
+  {
+    "id": "riyad_c10",
+    "book_id": "riyad",
+    "chapter_number": 10,
+    "title_en": "Chapter 10",
+    "title_ar": "باب 10",
+    "title_id": "Bab 10",
+    "hadith_start": 592,
+    "hadith_end": 605,
+    "hadith_count": 14
+  },
+  {
+    "id": "riyad_c11",
+    "book_id": "riyad",
+    "chapter_number": 11,
+    "title_en": "Chapter 11",
+    "title_ar": "باب 11",
+    "title_id": "Bab 11",
+    "hadith_start": 606,
+    "hadith_end": 696,
+    "hadith_count": 91
+  },
+  {
+    "id": "riyad_c12",
+    "book_id": "riyad",
+    "chapter_number": 12,
+    "title_en": "Chapter 12",
+    "title_ar": "باب 12",
+    "title_id": "Bab 12",
+    "hadith_start": 697,
+    "hadith_end": 713,
+    "hadith_count": 17
+  },
+  {
+    "id": "riyad_c13",
+    "book_id": "riyad",
+    "chapter_number": 13,
+    "title_en": "Chapter 13",
+    "title_ar": "باب 13",
+    "title_id": "Bab 13",
+    "hadith_start": 714,
+    "hadith_end": 717,
+    "hadith_count": 4
+  },
+  {
+    "id": "riyad_c14",
+    "book_id": "riyad",
+    "chapter_number": 14,
+    "title_en": "Chapter 14",
+    "title_ar": "باب 14",
+    "title_id": "Bab 14",
+    "hadith_start": 718,
+    "hadith_end": 728,
+    "hadith_count": 11
+  },
+  {
+    "id": "riyad_c15",
+    "book_id": "riyad",
+    "chapter_number": 15,
+    "title_en": "Chapter 15",
+    "title_ar": "باب 15",
+    "title_id": "Bab 15",
+    "hadith_start": 729,
+    "hadith_end": 785,
+    "hadith_count": 57
+  },
+  {
+    "id": "riyad_c16",
+    "book_id": "riyad",
+    "chapter_number": 16,
+    "title_en": "Chapter 16",
+    "title_ar": "باب 16",
+    "title_id": "Bab 16",
+    "hadith_start": 786,
+    "hadith_end": 831,
+    "hadith_count": 46
+  },
+  {
+    "id": "riyad_c17",
+    "book_id": "riyad",
+    "chapter_number": 17,
+    "title_en": "Chapter 17",
+    "title_ar": "باب 17",
+    "title_id": "Bab 17",
+    "hadith_start": 832,
+    "hadith_end": 1128,
+    "hadith_count": 297
+  },
+  {
+    "id": "riyad_c18",
+    "book_id": "riyad",
+    "chapter_number": 18,
+    "title_en": "Chapter 18",
+    "title_ar": "باب 18",
+    "title_id": "Bab 18",
+    "hadith_start": 1129,
+    "hadith_end": 1189,
+    "hadith_count": 61
+  },
+  {
+    "id": "riyad_c19",
+    "book_id": "riyad",
+    "chapter_number": 19,
+    "title_en": "Chapter 19",
+    "title_ar": "باب 19",
+    "title_id": "Bab 19",
+    "hadith_start": 1190,
+    "hadith_end": 1217,
+    "hadith_count": 28
+  }
+]

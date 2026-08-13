@@ -1,0 +1,178 @@
+[
+  {
+    "id": "bulugh_c1",
+    "book_id": "bulugh",
+    "chapter_number": 1,
+    "title_en": "Chapter 1",
+    "title_ar": "باب 1",
+    "title_id": "Bab 1",
+    "hadith_start": 1,
+    "hadith_end": 179,
+    "hadith_count": 179
+  },
+  {
+    "id": "bulugh_c2",
+    "book_id": "bulugh",
+    "chapter_number": 2,
+    "title_en": "Chapter 2",
+    "title_ar": "باب 2",
+    "title_id": "Bab 2",
+    "hadith_start": 180,
+    "hadith_end": 640,
+    "hadith_count": 461
+  },
+  {
+    "id": "bulugh_c3",
+    "book_id": "bulugh",
+    "chapter_number": 3,
+    "title_en": "Chapter 3",
+    "title_ar": "باب 3",
+    "title_id": "Bab 3",
+    "hadith_start": 641,
+    "hadith_end": 706,
+    "hadith_count": 66
+  },
+  {
+    "id": "bulugh_c4",
+    "book_id": "bulugh",
+    "chapter_number": 4,
+    "title_en": "Chapter 4",
+    "title_ar": "باب 4",
+    "title_id": "Bab 4",
+    "hadith_start": 707,
+    "hadith_end": 757,
+    "hadith_count": 51
+  },
+  {
+    "id": "bulugh_c5",
+    "book_id": "bulugh",
+    "chapter_number": 5,
+    "title_en": "Chapter 5",
+    "title_ar": "باب 5",
+    "title_id": "Bab 5",
+    "hadith_start": 758,
+    "hadith_end": 815,
+    "hadith_count": 58
+  },
+  {
+    "id": "bulugh_c6",
+    "book_id": "bulugh",
+    "chapter_number": 6,
+    "title_en": "Chapter 6",
+    "title_ar": "باب 6",
+    "title_id": "Bab 6",
+    "hadith_start": 816,
+    "hadith_end": 889,
+    "hadith_count": 74
+  },
+  {
+    "id": "bulugh_c7",
+    "book_id": "bulugh",
+    "chapter_number": 7,
+    "title_en": "Chapter 7",
+    "title_ar": "باب 7",
+    "title_id": "Bab 7",
+    "hadith_start": 890,
+    "hadith_end": 1122,
+    "hadith_count": 233
+  },
+  {
+    "id": "bulugh_c8",
+    "book_id": "bulugh",
+    "chapter_number": 8,
+    "title_en": "Chapter 8",
+    "title_ar": "باب 8",
+    "title_id": "Bab 8",
+    "hadith_start": 1123,
+    "hadith_end": 1344,
+    "hadith_count": 222
+  },
+  {
+    "id": "bulugh_c9",
+    "book_id": "bulugh",
+    "chapter_number": 9,
+    "title_en": "Chapter 9",
+    "title_ar": "باب 9",
+    "title_id": "Bab 9",
+    "hadith_start": 1345,
+    "hadith_end": 1391,
+    "hadith_count": 47
+  },
+  {
+    "id": "bulugh_c10",
+    "book_id": "bulugh",
+    "chapter_number": 10,
+    "title_en": "Chapter 10",
+    "title_ar": "باب 10",
+    "title_id": "Bab 10",
+    "hadith_start": 1392,
+    "hadith_end": 1448,
+    "hadith_count": 57
+  },
+  {
+    "id": "bulugh_c11",
+    "book_id": "bulugh",
+    "chapter_number": 11,
+    "title_en": "Chapter 11",
+    "title_ar": "باب 11",
+    "title_id": "Bab 11",
+    "hadith_start": 1449,
+    "hadith_end": 1511,
+    "hadith_count": 63
+  },
+  {
+    "id": "bulugh_c12",
+    "book_id": "bulugh",
+    "chapter_number": 12,
+    "title_en": "Chapter 12",
+    "title_ar": "باب 12",
+    "title_id": "Bab 12",
+    "hadith_start": 1512,
+    "hadith_end": 1555,
+    "hadith_count": 44
+  },
+  {
+    "id": "bulugh_c13",
+    "book_id": "bulugh",
+    "chapter_number": 13,
+    "title_en": "Chapter 13",
+    "title_ar": "باب 13",
+    "title_id": "Bab 13",
+    "hadith_start": 1556,
+    "hadith_end": 1578,
+    "hadith_count": 23
+  },
+  {
+    "id": "bulugh_c14",
+    "book_id": "bulugh",
+    "chapter_number": 14,
+    "title_en": "Chapter 14",
+    "title_ar": "باب 14",
+    "title_id": "Bab 14",
+    "hadith_start": 1579,
+    "hadith_end": 1614,
+    "hadith_count": 36
+  },
+  {
+    "id": "bulugh_c15",
+    "book_id": "bulugh",
+    "chapter_number": 15,
+    "title_en": "Chapter 15",
+    "title_ar": "باب 15",
+    "title_id": "Bab 15",
+    "hadith_start": 1615,
+    "hadith_end": 1634,
+    "hadith_count": 20
+  },
+  {
+    "id": "bulugh_c16",
+    "book_id": "bulugh",
+    "chapter_number": 16,
+    "title_en": "Chapter 16",
+    "title_ar": "باب 16",
+    "title_id": "Bab 16",
+    "hadith_start": 1635,
+    "hadith_end": 1767,
+    "hadith_count": 133
+  }
+]
