@@ -224,9 +224,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderBookCards(books, container) {
     container.innerHTML = books.map(book => {
-      const isJami = ['bukhari', 'muslim', 'tirmidhi'].includes(book.id) ? "Jami'" : "Kitab";
-      const bgImage = "https://lh3.googleusercontent.com/aida-public/AB6AXuBzqnq_A--Wp1V13r_f7R92bOejF-hct-hQfLCt4I-ftXrUjutMDxGksjJBngltuV29M_PS6AvdazjuLJlDmOd7Nc0ym-BdVhIEfg1h3CN3e8NDd2QVp_B8_BNT7AxfGGUpKlbIo9jptiJBClLqpzNbUikCMt5UMZV8IDKrIv4aNVNiQZzmN3Udc92x21MwHEjAngKlR9CIPHct5ipG9Yv4oAGsvvTUSVRu9IgTeTZEreNg2ilBcz2ztw";
-      
       let dataType = 'other';
       if (['bukhari', 'muslim', 'tirmidhi'].includes(book.id)) dataType = 'jami';
       else if (['abudawud', 'nasai', 'ibnmajah', 'darimi'].includes(book.id)) dataType = 'sunan';
@@ -234,11 +231,23 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (book.id === 'malik') dataType = 'mushannaf';
       else if (['nawawi', 'qudsi', 'shah', 'adab', 'bulugh', 'mishkat', 'riyad', 'shamail'].includes(book.id)) dataType = 'jawami';
       
+      const typeLabels = {
+        'jami': "Jami'",
+        'sunan': "Sunan",
+        'musnad': "Musnad",
+        'mushannaf': "Mushannaf",
+        'jawami': "Jawami'",
+        'other': "Kitab"
+      };
+      const badgeText = typeLabels[dataType] || "Kitab";
+
+      const bgImage = "https://lh3.googleusercontent.com/aida-public/AB6AXuBzqnq_A--Wp1V13r_f7R92bOejF-hct-hQfLCt4I-ftXrUjutMDxGksjJBngltuV29M_PS6AvdazjuLJlDmOd7Nc0ym-BdVhIEfg1h3CN3e8NDd2QVp_B8_BNT7AxfGGUpKlbIo9jptiJBClLqpzNbUikCMt5UMZV8IDKrIv4aNVNiQZzmN3Udc92x21MwHEjAngKlR9CIPHct5ipG9Yv4oAGsvvTUSVRu9IgTeTZEreNg2ilBcz2ztw";
+      
       return `
         <a href="kitab.html?book=${book.id}" data-type="${dataType}" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group card-lift">
           <div class="h-32 w-full bg-cover bg-center border-b border-outline-variant/20 dark:border-[#334155] relative"
                style="background-image:url('${bgImage}')">
-            <div class="absolute top-2 left-2 bg-blue-700 text-white px-2 py-0.5 rounded font-label-sm text-[10px] uppercase tracking-wider font-bold">${isJami}</div>
+            <div class="absolute top-2 left-2 bg-blue-700 text-white px-2 py-0.5 rounded font-label-sm text-[10px] uppercase tracking-wider font-bold">${badgeText}</div>
           </div>
           <div class="p-4 flex flex-col gap-1 flex-grow">
             <div class="flex justify-between items-start">
