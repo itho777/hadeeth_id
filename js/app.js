@@ -161,14 +161,14 @@ const BOOK_DATASETS = {
   bukhari: [
     { id: 'primary',
       label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
-      sources: 'Arabic: fawazahmed0 CDN · EN/ID: Darussalam',
-      sourcesId: 'Arab: fawazahmed0 CDN · EN/ID: Darussalam',
+      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
+      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
       label: 'AhmedBaset', labelId: 'AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (7,277 hadiths, 97 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (7.277 hadits, 97 kitab)',
-      note: 'ID translation filled from Darussalam where available', noteId: 'Terjemahan ID diambil dari Darussalam bila tersedia' },
+      note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
       label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
       sources: 'AR/EN/ID/UR/FR: Lidwa SQL (7,589 entries, 98 kitab groupings)',
@@ -178,14 +178,14 @@ const BOOK_DATASETS = {
   muslim: [
     { id: 'primary',
       label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
-      sources: 'Arabic: fawazahmed0 CDN · EN/ID: Darussalam',
-      sourcesId: 'Arab: fawazahmed0 CDN · EN/ID: Darussalam',
+      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
+      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: 'Last ~112 hadiths: known upstream duplication in Arabic text', noteId: '~112 hadits terakhir: duplikasi teks Arab dari sumber upstream' },
     { id: 'native_ahmedbaset',
       label: 'AhmedBaset', labelId: 'AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (7,459 hadiths, 56 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (7.459 hadits, 56 kitab)',
-      note: 'ID translation filled from Darussalam where available', noteId: 'Terjemahan ID diambil dari Darussalam bila tersedia' },
+      note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
       label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
       sources: 'AR/EN/ID: Lidwa SQL — 5,362 entries (groups variant narrations)',
@@ -195,14 +195,14 @@ const BOOK_DATASETS = {
   abudawud: [
     { id: 'primary',
       label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
-      sources: 'Arabic: fawazahmed0 CDN · EN/ID: Darussalam',
-      sourcesId: 'Arab: fawazahmed0 CDN · EN/ID: Darussalam',
+      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
+      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
       label: 'AhmedBaset', labelId: 'AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (5,274 hadiths, 43 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (5.274 hadits, 43 kitab)',
-      note: 'ID translation filled from Darussalam where available', noteId: 'Terjemahan ID diambil dari Darussalam bila tersedia' },
+      note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
       label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
       sources: 'AR/EN/ID: Lidwa SQL (5,274 entries, 43 kitab)',
@@ -212,14 +212,14 @@ const BOOK_DATASETS = {
   tirmidhi: [
     { id: 'primary',
       label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
-      sources: 'Arabic: fawazahmed0 CDN · EN/ID: Darussalam',
-      sourcesId: 'Arab: fawazahmed0 CDN · EN/ID: Darussalam',
+      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
+      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
       label: 'AhmedBaset', labelId: 'AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (3,956 hadiths, 49 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (3.956 hadits, 49 kitab)',
-      note: 'ID translation filled from Darussalam where available', noteId: 'Terjemahan ID diambil dari Darussalam bila tersedia' },
+      note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
       label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
       sources: 'AR/EN/ID: Lidwa SQL (3,956 entries, 49 kitab)',
@@ -229,14 +229,14 @@ const BOOK_DATASETS = {
   nasai: [
     { id: 'primary',
       label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
-      sources: 'Arabic: fawazahmed0 CDN · EN/ID: Darussalam',
-      sourcesId: 'Arab: fawazahmed0 CDN · EN/ID: Darussalam',
+      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
+      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
       label: 'AhmedBaset', labelId: 'AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (5,758 hadiths, 51 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (5.758 hadits, 51 kitab)',
-      note: 'ID translation filled from Darussalam where available', noteId: 'Terjemahan ID diambil dari Darussalam bila tersedia' },
+      note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
       label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
       sources: 'AR/EN/ID: Lidwa SQL (5,758 entries, 51 kitab)',
@@ -246,14 +246,14 @@ const BOOK_DATASETS = {
   ibnmajah: [
     { id: 'primary',
       label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
-      sources: 'Arabic: fawazahmed0 CDN · EN/ID: Darussalam',
-      sourcesId: 'Arab: fawazahmed0 CDN · EN/ID: Darussalam',
+      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
+      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
       label: 'AhmedBaset', labelId: 'AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (4,341 hadiths, 37 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (4.341 hadits, 37 kitab)',
-      note: 'ID translation filled from Darussalam where available', noteId: 'Terjemahan ID diambil dari Darussalam bila tersedia' },
+      note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
       label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
       sources: 'AR/EN/ID: Lidwa SQL (4,341 entries, 37 kitab)',
@@ -263,14 +263,14 @@ const BOOK_DATASETS = {
   malik: [
     { id: 'primary',
       label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
-      sources: 'Arabic: fawazahmed0 CDN · EN/ID: Darussalam',
-      sourcesId: 'Arab: fawazahmed0 CDN · EN/ID: Darussalam',
+      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
+      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
       label: 'AhmedBaset', labelId: 'AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (1,858 hadiths, 61 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (1.858 hadits, 61 kitab)',
-      note: 'ID translation filled from Darussalam where available', noteId: 'Terjemahan ID diambil dari Darussalam bila tersedia' },
+      note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
       label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
       sources: 'AR/EN/ID: Lidwa SQL (1,720 entries — some hadiths grouped)',
@@ -280,14 +280,14 @@ const BOOK_DATASETS = {
   darimi: [
     { id: 'primary',
       label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
-      sources: 'Arabic: fawazahmed0 CDN · EN/ID: Darussalam',
-      sourcesId: 'Arab: fawazahmed0 CDN · EN/ID: Darussalam',
+      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
+      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
       label: 'AhmedBaset', labelId: 'AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (3,367 hadiths, 24 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (3.367 hadits, 24 kitab)',
-      note: 'ID translation filled from Darussalam where available', noteId: 'Terjemahan ID diambil dari Darussalam bila tersedia' },
+      note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
       label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
       sources: 'AR/EN/ID: Lidwa SQL (3,367 entries, 24 kitab)',
@@ -297,14 +297,14 @@ const BOOK_DATASETS = {
   ahmad: [
     { id: 'primary',
       label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
-      sources: 'Arabic: fawazahmed0 CDN · ID: Lidwa/Darussalam',
-      sourcesId: 'Arab: fawazahmed0 CDN · ID: Lidwa/Darussalam',
+      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
+      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
       label: 'AhmedBaset', labelId: 'AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (27,647 hadiths, 90 musnad sections)',
       sourcesId: 'Arab + EN: AhmedBaset native (27.647 hadits, 90 bagian musnad)',
-      note: 'ID translation filled from Lidwa where available', noteId: 'Terjemahan ID diambil dari Lidwa bila tersedia' },
+      note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
       label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
       sources: 'AR/EN/ID: Lidwa SQL (27,519 entries, musnad arrangement)',
@@ -314,8 +314,8 @@ const BOOK_DATASETS = {
   nawawi: [
     { id: 'primary',
       label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
-      sources: 'Arabic: fawazahmed0 CDN · EN/ID: Darussalam (42 hadiths)',
-      sourcesId: 'Arab: fawazahmed0 CDN · EN/ID: Darussalam (42 hadits)',
+      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (42 hadiths, matched by number — not native to fawazahmed0)',
+      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (42 hadits, dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_lidwa',
       label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
@@ -1545,21 +1545,45 @@ async function loadHadithList() {
     }
 
   // ================================================================
-  // BRANCH A — Primary (Darussalam / fawazahmed0) — unchanged
+  // ================================================================
+  // BRANCH A — Primary (fawazahmed0 CDN)
+  // AR + EN: fawazahmed0 CDN editions
+  // ID: Lidwa/Irsyad source data (fawazahmed0 has no ind edition —
+  //     ind-*.json files are stripped skeletons kept only as API stubs)
   // ================================================================
   } else {
-    const indEd = await window.HadeethAPI.getEdition('ind', bookId);
     const engEd = await window.HadeethAPI.getEdition('eng', bookId);
     const araEd = await window.HadeethAPI.getEdition('ara', bookId);
 
-    const mainEd = indEd || engEd;
+    // Load Indonesian from Lidwa source data directly (same as Branch C)
+    let lidwaIdMap = {};
+    try {
+      const baseUrl = window.__HADEETH_BASE__
+        ? window.__HADEETH_BASE__ + '/data'
+        : (() => {
+            const s = document.querySelector('script[src*="js/api.js"]');
+            if (s) return new URL(s.src, window.location.href).href.replace(/js\/api\.js.*$/, 'data');
+            return window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
+          })();
+      const lidwaResp = await fetch(`${baseUrl}/sources/lidwa/${bookId}.json`);
+      if (lidwaResp.ok) {
+        const lidwaData = await lidwaResp.json();
+        // Build map: hadith_number → text_id
+        (Array.isArray(lidwaData) ? lidwaData : (lidwaData.hadiths || [])).forEach(h => {
+          const num = h.hadith_number ?? h.hadithnumber ?? h.id;
+          if (num !== undefined && h.text_id) lidwaIdMap[String(num)] = h.text_id;
+        });
+      }
+    } catch (e) {
+      console.warn('Lidwa ID source not available for', bookId, e);
+    }
+
+    const mainEd = engEd;
     if (mainEd && mainEd.hadiths) {
       const araMap = {};
       const engMap = {};
-      const indMap = {};
       if (araEd && araEd.hadiths) araEd.hadiths.forEach(h => araMap[h.hadithnumber ?? h.id] = h.text);
       if (engEd && engEd.hadiths) engEd.hadiths.forEach(h => engMap[h.hadithnumber ?? h.id] = h.text);
-      if (indEd && indEd.hadiths) indEd.hadiths.forEach(h => indMap[h.hadithnumber ?? h.id] = h.text === undefined ? (h.terjemah || '') : h.text);
 
       let sourceHadiths = mainEd.hadiths;
       if (startHadithNum != null && endHadithNum != null) {
@@ -1575,9 +1599,11 @@ async function loadHadithList() {
           hadith_number: num,
           text_en: engMap[num] !== undefined ? engMap[num] : '',
           text_ar: araMap[num] !== undefined ? araMap[num] : '',
-          text_id: indMap[num] !== undefined ? indMap[num] : (h.terjemah || ''),
+          // Indonesian linked live from Lidwa/Irsyad, matched by hadith number
+          text_id: lidwaIdMap[String(num)] || '',
           grade: 'Sahih',
-          book_id: bookId
+          book_id: bookId,
+          _source: 'primary'  // marks this for the blue attribution note in renderList
         };
       });
     }
@@ -1640,13 +1666,27 @@ async function loadHadithList() {
       let displayText = '';
       const isAhmedBaset = item._source === 'ahmedbaset';
       const isLidwa = item._source === 'lidwa';
+      const isPrimary = !isAhmedBaset && !isLidwa;
 
-      // AhmedBaset transparency callout — shown whenever ID text is displayed
-      // The Indonesian text is matched from Lidwa by hadith number, NOT from AhmedBaset itself
-      const abIdSourceNote = `<div class="mt-2 px-3 py-2 rounded-lg border border-amber-500/30 bg-amber-500/5 text-[11px] text-amber-600 dark:text-amber-400 leading-snug">
+      // Indonesian source transparency notes
+      // Both primary (fawazahmed0) and AhmedBaset source Indonesian from Lidwa/Irsyad.
+      // fawazahmed0 has NO ind edition — our local ind-*.json files are built from Lidwa data.
+
+      // Primary/fawazahmed: subtle blue attribution (ID exists but comes from Lidwa)
+      const primaryIdSourceNote = `<div class="mt-2 px-3 py-2 rounded-lg border border-blue-500/20 bg-blue-500/5 text-[11px] text-blue-600 dark:text-blue-400 leading-snug">
+        <strong class="font-semibold">Sumber terjemahan Indonesia:</strong> fawazahmed0 CDN tidak memiliki edisi Bahasa Indonesia.
+        Teks ini bersumber dari <strong>Lidwa / Irsyad</strong>, dicocokkan berdasarkan nomor hadits.
+      </div>`;
+
+      // AhmedBaset: amber warning (may not align to AhmedBaset narration variant)
+      const abIdSourceNote = hasId
+        ? `<div class="mt-2 px-3 py-2 rounded-lg border border-amber-500/30 bg-amber-500/5 text-[11px] text-amber-600 dark:text-amber-400 leading-snug">
         <strong class="font-semibold">Note — Indonesian translation source:</strong> AhmedBaset does not include Indonesian translations.
         The text below is sourced from <strong>Lidwa / Irsyad</strong>, matched by hadith number.
         It may not correspond perfectly to this AhmedBaset narration variant.
+      </div>`
+        : `<div class="mt-2 px-3 py-2 rounded-lg border border-amber-500/30 bg-amber-500/5 text-[11px] text-amber-600 dark:text-amber-400 leading-snug">
+        <strong class="font-semibold">Note:</strong> AhmedBaset has no Indonesian translation, and no Lidwa match was found for this hadith number.
       </div>`;
 
       // Grade-by explanation helper
@@ -1659,21 +1699,23 @@ async function loadHadithList() {
       if (currentLang === 'id') {
         const content = hasId ? escapeHtml(item.text_id) : idUnavailableNote;
         displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${content}</p>`;
-        if (isAhmedBaset && hasId) displayText += abIdSourceNote;
+        if (isPrimary) displayText += primaryIdSourceNote;
+        if (isAhmedBaset) displayText += abIdSourceNote;
         if (isLidwa) displayText += gradeByHtml(item.grade_by);
       } else if (currentLang === 'en') {
         displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${escapeHtml(enText)}</p>`;
-        if (isAhmedBaset) displayText += `<p class="text-[11px] text-outline/70 dark:text-gray-500 mt-1 italic">Source: AhmedBaset · Switch to <strong>Dual Language</strong> or <strong>Bahasa Indonesia</strong> to see the Lidwa-sourced Indonesian translation (matched by number — not from AhmedBaset)</p>`;
+        if (isPrimary) displayText += `<p class="text-[11px] text-blue-500/70 dark:text-blue-400/70 mt-1 italic">Switch to <strong>Dual Language</strong> or <strong>Bahasa Indonesia</strong> to view Indonesian — sourced from Lidwa/Irsyad (fawazahmed0 has no ind edition)</p>`;
+        if (isAhmedBaset) displayText += `<p class="text-[11px] text-amber-600/80 dark:text-amber-400/70 mt-1 italic">Source: AhmedBaset · Switch to <strong>Dual Language</strong> or <strong>Bahasa Indonesia</strong> to see the Lidwa-sourced Indonesian translation (matched by number — not from AhmedBaset)</p>`;
         if (isLidwa) displayText += gradeByHtml(item.grade_by);
       } else {
         const idContent = hasId ? escapeHtml(item.text_id) : idUnavailableNote;
         const idHtml = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${idContent}</p>`;
         const enHtml = enText ? `<p class="text-xs text-outline dark:text-gray-400 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${escapeHtml(enText)}</p>` : '';
         const gradeNote = isLidwa ? gradeByHtml(item.grade_by) : '';
-        const abNote = (isAhmedBaset && hasId) ? abIdSourceNote : '';
+        const sourceNote = isPrimary ? primaryIdSourceNote : (isAhmedBaset ? abIdSourceNote : '');
         displayText = `
           <div class="flex flex-col gap-3 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
-            ${idHtml}${enHtml}${abNote}${gradeNote}
+            ${idHtml}${enHtml}${sourceNote}${gradeNote}
           </div>
         `;
       }
@@ -2480,14 +2522,35 @@ async function loadHadithCardsList() {
 
   const langSelectVal = document.getElementById('default-lang-select')?.value || (isIdLang ? 'id' : 'en');
 
-  // Fetch English, Arabic, and Indonesian edition files for complete bilingual/multilingual cards
-  const [engEdition, araEdition, indEdition] = await Promise.all([
+  // Fetch English + Arabic from fawazahmed0 CDN; Indonesian from Lidwa source directly
+  const [engEdition, araEdition] = await Promise.all([
     window.HadeethAPI.getEdition('eng', bookId).catch(() => null),
-    window.HadeethAPI.getEdition('ara', bookId).catch(() => null),
-    window.HadeethAPI.getEdition('ind', bookId).catch(() => null)
+    window.HadeethAPI.getEdition('ara', bookId).catch(() => null)
   ]);
 
-  if ((!engEdition || !engEdition.hadiths) && (!indEdition || !indEdition.hadiths)) {
+  // Load Indonesian live from Lidwa/Irsyad source data
+  let indMap = {};
+  try {
+    const baseUrl = window.__HADEETH_BASE__
+      ? window.__HADEETH_BASE__ + '/data'
+      : (() => {
+          const s = document.querySelector('script[src*="js/api.js"]');
+          if (s) return new URL(s.src, window.location.href).href.replace(/js\/api\.js.*$/, 'data');
+          return window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
+        })();
+    const lResp = await fetch(`${baseUrl}/sources/lidwa/${bookId}.json`);
+    if (lResp.ok) {
+      const lData = await lResp.json();
+      (Array.isArray(lData) ? lData : (lData.hadiths || [])).forEach(h => {
+        const num = h.hadith_number ?? h.hadithnumber ?? h.id;
+        if (num !== undefined && h.text_id) indMap[String(num)] = h.text_id;
+      });
+    }
+  } catch (e) {
+    console.warn('Lidwa ID not available for detail page', bookId, e);
+  }
+
+  if (!engEdition || !engEdition.hadiths) {
     container.innerHTML = `
       <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
         <p class="text-sm text-outline dark:text-gray-400">${isIdLang ? `Tidak ada hadits ditemukan untuk ${escapeHtml(bookId)}.` : `No Hadiths found for ${escapeHtml(bookId)}.`}</p>
@@ -2496,7 +2559,7 @@ async function loadHadithCardsList() {
     return;
   }
 
-  // Map Arabic & Indonesian hadith texts by hadithnumber
+  // Map Arabic hadith texts by hadithnumber
   const arabicMap = {};
   if (araEdition && araEdition.hadiths) {
     araEdition.hadiths.forEach(h => {
@@ -2504,14 +2567,7 @@ async function loadHadithCardsList() {
     });
   }
 
-  const indMap = {};
-  if (indEdition && indEdition.hadiths) {
-    indEdition.hadiths.forEach(h => {
-      indMap[h.hadithnumber] = h.text;
-    });
-  }
-
-  const baseHadiths = (engEdition && engEdition.hadiths) ? engEdition.hadiths : indEdition.hadiths;
+  const baseHadiths = engEdition.hadiths;
   
   // Actually filter by chapter ranges!
   let listHadiths = baseHadiths;
@@ -2528,7 +2584,7 @@ async function loadHadithCardsList() {
     const num = h.hadithnumber;
     const engText = h.text || '';
     const araText = arabicMap[num] || '';
-    const indText = indMap[num] || '';
+    const indText = indMap[String(num)] || '';
 
     let transHtml = '';
     if (langSelectVal === 'both') {
