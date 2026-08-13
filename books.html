@@ -149,7 +149,50 @@
 <script src="js/api.js?v=20260813_07"></script>
 <script src="js/app.js?v=20260813_07"></script>
 <script>
-  // Simple filter logic for genre chips
+  // ============================================================
+  // INLINE BOOK DATA — bypasses all CDN/fetch/cache issues
+  // This guarantees all 17 books render regardless of CDN state
+  // ============================================================
+  const BOOKS_DATA = [{"id":"bukhari","title_ar":"\u0635\u062d\u064a\u062d \u0627\u0644\u0628\u062e\u0627\u0631\u064a","title_en":"Sahih al-Bukhari","title_id":"Shahih al-Bukhari","author_en":"Imam Muhammad al-Bukhari","title_ar_display":"\u0635\u062d\u064a\u062d \u0627\u0644\u0628\u062e\u0627\u0631\u064a","total_hadiths":7563},{"id":"muslim","title_ar":"\u0635\u062d\u064a\u062d \u0645\u0633\u0644\u0645","title_en":"Sahih Muslim","author_en":"Imam Muslim ibn al-Hajjaj","total_hadiths":7563},{"id":"abudawud","title_ar":"\u0633\u0646\u0646 \u0623\u0628\u064a \u062f\u0627\u0648\u062f","title_en":"Sunan Abi Dawud","author_en":"Imam Abu Dawud","total_hadiths":5274},{"id":"tirmidhi","title_ar":"\u062c\u0627\u0645\u0639 \u0627\u0644\u062a\u0631\u0645\u0630\u064a","title_en":"Jami' at-Tirmidhi","author_en":"Imam at-Tirmidhi","total_hadiths":3956},{"id":"nasai","title_ar":"\u0633\u0646\u0646 \u0627\u0644\u0646\u0633\u0627\u0626\u064a","title_en":"Sunan an-Nasa'i","author_en":"Imam an-Nasa'i","total_hadiths":5758},{"id":"ibnmajah","title_ar":"\u0633\u0646\u0646 \u0627\u0628\u0646 \u0645\u0627\u062c\u0647","title_en":"Sunan Ibn Majah","author_en":"Imam Ibn Majah","total_hadiths":4341},{"id":"malik","title_ar":"\u0645\u0648\u0637\u0623 \u0645\u0627\u0644\u0643","title_en":"Muwatta Malik","author_en":"Imam Malik ibn Anas","total_hadiths":1858},{"id":"darimi","title_ar":"\u0633\u0646\u0646 \u0627\u0644\u062f\u0627\u0631\u0645\u064a","title_en":"Sunan ad-Darimi","author_en":"Imam ad-Darimi","total_hadiths":3367},{"id":"ahmad","title_ar":"\u0645\u0633\u0646\u062f \u0623\u062d\u0645\u062f","title_en":"Musnad Ahmad","author_en":"Imam Ahmad ibn Hanbal","total_hadiths":27519},{"id":"nawawi","title_ar":"\u0627\u0644\u0623\u0631\u0628\u0639\u0648\u0646 \u0627\u0644\u0646\u0648\u0648\u064a\u0629","title_en":"Forty Hadith of an-Nawawi","author_en":"Imam an-Nawawi","total_hadiths":42},{"id":"qudsi","title_ar":"\u0627\u0644\u062d\u062f\u064a\u062b \u0627\u0644\u0642\u062f\u0633\u064a","title_en":"40 Hadith Qudsi","author_en":"Various","total_hadiths":40},{"id":"shah","title_ar":"\u0627\u0644\u0623\u0631\u0628\u0639\u0648\u0646 \u0644\u0648\u0644\u064a \u0627\u0644\u0644\u0647","title_en":"Forty Hadith of Shah Waliullah","author_en":"Shah Waliullah Dehlawi","total_hadiths":40},{"id":"adab","title_ar":"\u0627\u0644\u0623\u062f\u0628 \u0627\u0644\u0645\u0641\u0631\u062f","title_en":"Al-Adab Al-Mufrad","author_en":"Imam Muhammad al-Bukhari","total_hadiths":1322},{"id":"bulugh","title_ar":"\u0628\u0644\u0648\u063a \u0627\u0644\u0645\u0631\u0627\u0645","title_en":"Bulugh al-Maram","author_en":"Ibn Hajar al-'Asqalani","total_hadiths":1596},{"id":"mishkat","title_ar":"\u0645\u0634\u0643\u0627\u0629 \u0627\u0644\u0645\u0635\u0627\u0628\u064a\u062d","title_en":"Mishkat al-Masabih","author_en":"Al-Khatib al-Tabrizi","total_hadiths":5945},{"id":"riyad","title_ar":"\u0631\u064a\u0627\u0636 \u0627\u0644\u0635\u0627\u0644\u062d\u064a\u0646","title_en":"Riyad as-Salihin","author_en":"Imam an-Nawawi","total_hadiths":1896},{"id":"shamail","title_ar":"\u0627\u0644\u0634\u0645\u0627\u0626\u0644 \u0627\u0644\u0645\u062d\u0645\u062f\u064a\u0629","title_en":"Shamail al-Muhammadiyah","author_en":"Imam at-Tirmidhi","total_hadiths":399}];
+
+  const BG = "https://lh3.googleusercontent.com/aida-public/AB6AXuBzqnq_A--Wp1V13r_f7R92bOejF-hct-hQfLCt4I-ftXrUjutMDxGksjJBngltuV29M_PS6AvdazjuLJlDmOd7Nc0ym-BdVhIEfg1h3CN3e8NDd2QVp_B8_BNT7AxfGGUpKlbIo9jptiJBClLqpzNbUikCMt5UMZV8IDKrIv4aNVNiQZzmN3Udc92x21MwHEjAngKlR9CIPHct5ipG9Yv4oAGsvvTUSVRu9IgTeTZEreNg2ilBcz2ztw";
+
+  function getType(id) {
+    if (['bukhari','muslim','tirmidhi'].includes(id)) return 'jami';
+    if (['abudawud','nasai','ibnmajah','darimi'].includes(id)) return 'sunan';
+    if (id === 'ahmad') return 'musnad';
+    if (id === 'malik') return 'mushannaf';
+    if (['nawawi','qudsi','shah','adab','bulugh','mishkat','riyad','shamail'].includes(id)) return 'jawami';
+    return 'other';
+  }
+
+  const TYPE_LABELS = {'jami':"Jami'",'sunan':"Sunan",'musnad':"Musnad",'mushannaf':"Mushannaf",'jawami':"Jawami'",'other':"Kitab"};
+
+  function makeCard(book) {
+    const t = getType(book.id);
+    return `<a href="kitab.html?book=${book.id}" data-type="${t}" class="book-card bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group card-lift">
+      <div class="h-32 w-full bg-cover bg-center border-b border-outline-variant/20 dark:border-[#334155] relative" style="background-image:url('${BG}')">
+        <div class="absolute top-2 left-2 bg-blue-700 text-white px-2 py-0.5 rounded text-[10px] uppercase tracking-wider font-bold">${TYPE_LABELS[t]}</div>
+      </div>
+      <div class="p-4 flex flex-col gap-1 flex-grow">
+        <div class="flex justify-between items-start">
+          <h3 class="font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors text-sm">${book.title_en}</h3>
+          <span class="text-base text-secondary dark:text-[#10b981]" dir="rtl">${book.title_ar}</span>
+        </div>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">${book.author_en}</p>
+        <div class="mt-auto flex items-center justify-between text-xs text-outline dark:text-gray-500 border-t border-outline-variant/10 dark:border-[#334155] pt-2">
+          <span>${book.total_hadiths.toLocaleString()} Ahadith</span>
+          <span class="text-secondary dark:text-[#10b981] group-hover:underline">Explore &#8594;</span>
+        </div>
+      </div>
+    </a>`;
+  }
+
+  document.getElementById('sittah-grid').innerHTML = BOOKS_DATA.slice(0,6).map(makeCard).join('');
+  document.getElementById('tisah-grid-books').innerHTML = BOOKS_DATA.slice(6,9).map(makeCard).join('');
+  document.getElementById('secondary-grid').innerHTML = BOOKS_DATA.slice(9,17).map(makeCard).join('');
+
+  // Filter chips
   document.querySelectorAll('#filter-chips button').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('#filter-chips button').forEach(b => {
@@ -158,17 +201,13 @@
       });
       btn.classList.remove('bg-surface-container-high', 'dark:bg-[#1e293b]', 'text-on-surface-variant', 'dark:text-gray-300');
       btn.classList.add('bg-primary', 'dark:bg-[#10b981]', 'text-white', 'dark:text-black');
-
       const filter = btn.dataset.filter;
       document.querySelectorAll('.book-card').forEach(card => {
-        if (filter === 'all' || card.dataset.type === filter) {
-          card.style.display = 'flex';
-        } else {
-          card.style.display = 'none';
-        }
+        card.style.display = (filter === 'all' || card.dataset.type === filter) ? 'flex' : 'none';
       });
     });
   });
 </script>
 </body>
 </html>
+
