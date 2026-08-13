@@ -1489,12 +1489,12 @@ async function loadHadithList() {
         }
 
         allHadiths = (abChapter.hadiths || []).map(h => {
-          const abIdGlobal = String(h.id);
+          const abIdGlobal = String(h.chapterId) + '_' + String(h.idInBook || h.id);
           const lidwaNum = abToLidwaMap[abIdGlobal];
           const matchedIdText = lidwaNum ? (lidwaIdMap[lidwaNum] || '') : '';
           
           return {
-            hadith_number: h.idInBook || h.id,
+            hadith_number: lidwaNum ? String(lidwaNum) : (h.idInBook || h.id),
             hadith_id_global: h.id,
             text_ar: h.arabic || '',
             text_en: h.english ? (h.english.narrator ? `${h.english.narrator} ${h.english.text}` : h.english.text || '') : '',
@@ -1527,7 +1527,14 @@ async function loadHadithList() {
       if (resp.ok) {
         const lidwaAll = await resp.json();
         const chNum = parseInt(chapterId);
-        const chapHadiths = lidwaAll.filter(h => h.chapter_number === chNum);
+        let chapHadiths = lidwaAll.filter(h => h.chapter_number === chNum);
+        
+        // Fix Lidwa lexicographical sorting issue (e.g. 10 before 8)
+        chapHadiths.sort((a, b) => {
+          const numA = parseInt(String(a.hadith_number).replace(/\D/g, '')) || 0;
+          const numB = parseInt(String(b.hadith_number).replace(/\D/g, '')) || 0;
+          return numA - numB;
+        });
 
         // Get chapter title from lidwa-chapters index
         let chapTitleId = `Kitab ${chapterId}`;
