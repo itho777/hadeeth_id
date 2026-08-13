@@ -1,0 +1,318 @@
+[
+  {
+    "id": "bukhari",
+    "title_ar": "صحيح البخاري",
+    "title_en": "Sahih al-Bukhari",
+    "title_id": "Shahih Bukhari",
+    "author_ar": "الإمام محمد بن إسماعيل البخاري",
+    "author_en": "Imam Muhammad al-Bukhari",
+    "author_id": "Imam Muhammad al-Bukhari",
+    "death_year_ah": 256,
+    "total_hadiths": 7563,
+    "total_chapters": 97,
+    "grade_summary": "صحيح (Sahih)",
+    "order_index": 1,
+    "editions": [
+      "ara-bukhari",
+      "eng-bukhari",
+      "ind-bukhari"
+    ]
+  },
+  {
+    "id": "muslim",
+    "title_ar": "صحيح مسلم",
+    "title_en": "Sahih Muslim",
+    "title_id": "Shahih Muslim",
+    "author_ar": "الإمام مسلم بن الحجاج",
+    "author_en": "Imam Muslim ibn al-Hajjaj",
+    "author_id": "Imam Muslim",
+    "death_year_ah": 261,
+    "total_hadiths": 3033,
+    "total_chapters": 56,
+    "grade_summary": "صحيح (Sahih)",
+    "order_index": 2,
+    "editions": [
+      "ara-muslim",
+      "eng-muslim",
+      "ind-muslim"
+    ]
+  },
+  {
+    "id": "abudawud",
+    "title_ar": "سنن أبي داود",
+    "title_en": "Sunan Abi Dawud",
+    "title_id": "Sunan Abu Dawud",
+    "author_ar": "الإمام أبو داود السجستاني",
+    "author_en": "Imam Abu Dawud",
+    "author_id": "Imam Abu Dawud",
+    "death_year_ah": 275,
+    "total_hadiths": 5274,
+    "total_chapters": 43,
+    "grade_summary": "صحيح، حسن، وضعيف (Varies)",
+    "order_index": 3,
+    "editions": [
+      "ara-abudawud",
+      "eng-abudawud",
+      "ind-abudawud"
+    ]
+  },
+  {
+    "id": "tirmidhi",
+    "title_ar": "جامع الترمذي",
+    "title_en": "Jami' at-Tirmidhi",
+    "title_id": "Jami' at-Tirmidhi",
+    "author_ar": "الإمام أبو عيسى الترمذي",
+    "author_en": "Imam at-Tirmidhi",
+    "author_id": "Imam at-Tirmidhi",
+    "death_year_ah": 279,
+    "total_hadiths": 3956,
+    "total_chapters": 50,
+    "grade_summary": "صحيح، حسن، وضعيف (Varies)",
+    "order_index": 4,
+    "editions": [
+      "ara-tirmidhi",
+      "eng-tirmidhi",
+      "ind-tirmidhi"
+    ]
+  },
+  {
+    "id": "nasai",
+    "title_ar": "سنن النسائي",
+    "title_en": "Sunan an-Nasa'i",
+    "title_id": "Sunan an-Nasa'i",
+    "author_ar": "الإمام أحمد بن شعيب النسائي",
+    "author_en": "Imam an-Nasa'i",
+    "author_id": "Imam an-Nasa'i",
+    "death_year_ah": 303,
+    "total_hadiths": 5758,
+    "total_chapters": 51,
+    "grade_summary": "صحيح، حسن، وضعيف (Varies)",
+    "order_index": 5,
+    "editions": [
+      "ara-nasai",
+      "eng-nasai",
+      "ind-nasai"
+    ]
+  },
+  {
+    "id": "ibnmajah",
+    "title_ar": "سنن ابن ماجه",
+    "title_en": "Sunan Ibn Majah",
+    "title_id": "Sunan Ibnu Majah",
+    "author_ar": "الإمام محمد بن يزيد ابن ماجه",
+    "author_en": "Imam Ibn Majah",
+    "author_id": "Imam Ibnu Majah",
+    "death_year_ah": 273,
+    "total_hadiths": 4341,
+    "total_chapters": 39,
+    "grade_summary": "صحيح، حسن، وضعيف (Varies)",
+    "order_index": 6,
+    "editions": [
+      "ara-ibnmajah",
+      "eng-ibnmajah",
+      "ind-ibnmajah"
+    ]
+  },
+  {
+    "id": "malik",
+    "title_ar": "موطأ مالك",
+    "title_en": "Muwatta Malik",
+    "title_id": "Muwaththa' Malik",
+    "author_ar": "الإمام مالك بن أنس",
+    "author_en": "Imam Malik ibn Anas",
+    "author_id": "Imam Malik",
+    "death_year_ah": 179,
+    "total_hadiths": 1858,
+    "total_chapters": 61,
+    "grade_summary": "صحيح (Mostly Sahih)",
+    "order_index": 7,
+    "editions": [
+      "ara-malik",
+      "eng-malik",
+      "ind-malik"
+    ]
+  },
+  {
+    "id": "darimi",
+    "title_ar": "سنن الدارمي",
+    "title_en": "Sunan ad-Darimi",
+    "title_id": "Sunan ad-Darimi",
+    "author_ar": "الإمام عبد الله بن عبد الرحمن الدارمي",
+    "author_en": "Imam ad-Darimi",
+    "author_id": "Imam ad-Darimi",
+    "death_year_ah": 255,
+    "total_hadiths": 3367,
+    "total_chapters": 24,
+    "grade_summary": "صحيح، حسن، وضعيف (Varies)",
+    "order_index": 8,
+    "editions": [
+      "ara-darimi",
+      "eng-darimi",
+      "ind-darimi"
+    ]
+  },
+  {
+    "id": "ahmad",
+    "title_ar": "مسند أحمد",
+    "title_en": "Musnad Ahmad",
+    "title_id": "Musnad Ahmad",
+    "author_ar": "الإمام أحمد بن حنبل",
+    "author_en": "Imam Ahmad ibn Hanbal",
+    "author_id": "Imam Ahmad ibn Hanbal",
+    "death_year_ah": 241,
+    "total_hadiths": 27519,
+    "total_chapters": 90,
+    "grade_summary": "صحيح، حسن، وضعيف (Varies)",
+    "order_index": 9,
+    "editions": [
+      "ara-ahmad",
+      "eng-ahmad",
+      "ind-ahmad"
+    ]
+  },
+  {
+    "id": "nawawi",
+    "title_ar": "الأربعون النووية",
+    "title_en": "Forty Hadith of an-Nawawi",
+    "title_id": "Hadits Arba'in An-Nawawi",
+    "author_ar": "الإمام يحيى بن شرف النووي",
+    "author_en": "Imam Yahya ibn Sharaf al-Nawawi",
+    "author_id": "Imam An-Nawawi",
+    "death_year_ah": 676,
+    "total_hadiths": 42,
+    "total_chapters": 1,
+    "grade_summary": "صحيح وحسن (Sahih & Hasan)",
+    "order_index": 10,
+    "editions": [
+      "ara-nawawi",
+      "eng-nawawi",
+      "ind-nawawi"
+    ]
+  },
+  {
+    "id": "qudsi",
+    "title_ar": "الحديث القدسي",
+    "title_en": "40 Hadith Qudsi",
+    "title_id": "40 Hadits Qudsi",
+    "author_ar": "متنوع",
+    "author_en": "Various",
+    "author_id": "Beragam",
+    "death_year_ah": 0,
+    "total_hadiths": 40,
+    "total_chapters": 1,
+    "grade_summary": "Varies",
+    "order_index": 11,
+    "editions": [
+      "ara-qudsi",
+      "eng-qudsi"
+    ]
+  },
+  {
+    "id": "shah",
+    "title_ar": "الأربعون لولي الله",
+    "title_en": "Forty Hadith of Shah Waliullah",
+    "title_id": "40 Hadits Shah Waliullah",
+    "author_ar": "شاه ولي الله الدهلوي",
+    "author_en": "Shah Waliullah Dehlawi",
+    "author_id": "Shah Waliullah Dehlawi",
+    "death_year_ah": 1176,
+    "total_hadiths": 40,
+    "total_chapters": 1,
+    "grade_summary": "Varies",
+    "order_index": 12,
+    "editions": [
+      "ara-shah",
+      "eng-shah"
+    ]
+  },
+  {
+    "id": "adab",
+    "title_ar": "الأدب المفرد",
+    "title_en": "Al-Adab Al-Mufrad",
+    "title_id": "Al-Adab Al-Mufrad",
+    "author_ar": "الإمام محمد بن إسماعيل البخاري",
+    "author_en": "Imam Muhammad al-Bukhari",
+    "author_id": "Imam Muhammad al-Bukhari",
+    "death_year_ah": 256,
+    "total_hadiths": 1322,
+    "total_chapters": 1,
+    "grade_summary": "Varies",
+    "order_index": 13,
+    "editions": [
+      "ara-adab",
+      "eng-adab"
+    ]
+  },
+  {
+    "id": "bulugh",
+    "title_ar": "بلوغ المرام",
+    "title_en": "Bulugh al-Maram",
+    "title_id": "Bulughul Maram",
+    "author_ar": "الحافظ ابن حجر العسقلاني",
+    "author_en": "Ibn Hajar al-'Asqalani",
+    "author_id": "Ibnu Hajar al-'Asqalani",
+    "death_year_ah": 852,
+    "total_hadiths": 1596,
+    "total_chapters": 1,
+    "grade_summary": "Varies",
+    "order_index": 14,
+    "editions": [
+      "ara-bulugh",
+      "eng-bulugh"
+    ]
+  },
+  {
+    "id": "mishkat",
+    "title_ar": "مشكاة المصابيح",
+    "title_en": "Mishkat al-Masabih",
+    "title_id": "Misykat al-Mashabih",
+    "author_ar": "الخطيب التبريزي",
+    "author_en": "Al-Khatib al-Tabrizi",
+    "author_id": "Al-Khatib at-Tabrizi",
+    "death_year_ah": 741,
+    "total_hadiths": 5945,
+    "total_chapters": 1,
+    "grade_summary": "Varies",
+    "order_index": 15,
+    "editions": [
+      "ara-mishkat",
+      "eng-mishkat"
+    ]
+  },
+  {
+    "id": "riyad",
+    "title_ar": "رياض الصالحين",
+    "title_en": "Riyad as-Salihin",
+    "title_id": "Riyadhus Shalihin",
+    "author_ar": "الإمام يحيى بن شرف النووي",
+    "author_en": "Imam Yahya ibn Sharaf al-Nawawi",
+    "author_id": "Imam An-Nawawi",
+    "death_year_ah": 676,
+    "total_hadiths": 1896,
+    "total_chapters": 1,
+    "grade_summary": "Mostly Sahih",
+    "order_index": 16,
+    "editions": [
+      "ara-riyad",
+      "eng-riyad"
+    ]
+  },
+  {
+    "id": "shamail",
+    "title_ar": "الشمائل المحمدية",
+    "title_en": "Shamail al-Muhammadiyah",
+    "title_id": "Syamail Muhammadiyah",
+    "author_ar": "الإمام أبو عيسى الترمذي",
+    "author_en": "Imam at-Tirmidhi",
+    "author_id": "Imam at-Tirmidhi",
+    "death_year_ah": 279,
+    "total_hadiths": 399,
+    "total_chapters": 1,
+    "grade_summary": "Varies",
+    "order_index": 17,
+    "editions": [
+      "ara-shamail",
+      "eng-shamail"
+    ]
+  }
+]
