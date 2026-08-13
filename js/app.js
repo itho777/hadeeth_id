@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const isBooks = location.pathname.endsWith('books.html');
 
   if (isIndex || isBooks) {
-    api.getBooks().then(books => {
+    window.HadeethAPI.getBooks().then(books => {
       if (isIndex) {
         const grid = document.getElementById('tisah-grid');
         if (grid) renderBookCards(books.slice(0, 9), grid);
