@@ -25,7 +25,7 @@ const HadeethAPI = {
    */
   async getBooks() {
     try {
-      const cb = '20260813_05'; // Force cache buster for the UI overhaul
+      const cb = Date.now(); // Dynamic cache buster to completely avoid stale books.json
       const res = await fetch(`${this.baseUrl}/books.json?cb=${cb}`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.json();
