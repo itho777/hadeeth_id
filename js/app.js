@@ -54,7 +54,7 @@ const UI_I18N = {
     chain_of_narrators: "Chain of Narration (Sanad)",
     full_sanad_graph: "View Full Interactive Sanad Graph →",
     role_sahabi: "Sahabi (Companion)",
-    footer_text: "© 2024 HADEETH.ID - Digital Manuscript Preservation"
+    footer_text: "© 2026 HADEETH.ID - Digital Manuscript Preservation"
   },
   id: {
     nav_books: "Kitab",
@@ -92,7 +92,7 @@ const UI_I18N = {
     chain_of_narrators: "Rantai Perawi (Sanad)",
     full_sanad_graph: "Lihat Grafik Interaktif Sanad Lengkap →",
     role_sahabi: "Sahabat",
-    footer_text: "© 2024 HADEETH.ID - Pelestarian Manuskrip Digital"
+    footer_text: "© 2026 HADEETH.ID - Pelestarian Manuskrip Digital"
   }
 };
 
@@ -340,6 +340,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('last-read-card')) {
     loadHomeLastRead();
   }
+  if (document.getElementById('hotd-container')) {
+    loadHOTD();
+  }
   if (document.getElementById('books-grid')) {
     loadBooksGrid();
   }
@@ -363,13 +366,94 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 function loadHomeLastRead() {
   const lastRead = LastReadTracker.get();
-  if (!lastRead) return;
   const card = document.getElementById('last-read-card');
   const bookElem = document.getElementById('last-read-book');
   const titleElem = document.getElementById('last-read-title');
+  const section = document.getElementById('last-read-section');
+
+  if (!lastRead) {
+    // Hide the widget if no history yet
+    if (section) section.style.display = 'none';
+    return;
+  }
+
+  if (section) section.style.display = '';
   if (card) card.href = `hadith.html?book=${lastRead.bookId}&id=${lastRead.hadithId}`;
   if (bookElem) bookElem.innerText = lastRead.bookName;
   if (titleElem) titleElem.innerText = lastRead.hadithTitle || `${lastRead.bookName} Hadith #${lastRead.hadithId}`;
+}
+
+/**
+ * loadHOTD — Load Hadith of the Day from localStorage (set via admin panel)
+ */
+async function loadHOTD() {
+  const container = document.getElementById('hotd-container');
+  if (!container) return;
+
+  // Load config from localStorage (set by admin panel)
+  let hotdConfig = null;
+  try {
+    const raw = localStorage.getItem('hadeeth_hotd');
+    if (raw) hotdConfig = JSON.parse(raw);
+  } catch (e) {}
+
+  // Default fallback: Bukhari #1
+  const bookId = (hotdConfig && hotdConfig.bookId) || 'bukhari';
+  const hadithId = (hotdConfig && hotdConfig.hadithId) || '1';
+
+  const bookNames = {
+    bukhari: 'Sahih al-Bukhari', muslim: 'Sahih Muslim',
+    abudawud: 'Sunan Abu Dawud', tirmidhi: "Jami' at-Tirmidhi",
+    nasai: "Sunan an-Nasa'i", ibnmajah: 'Sunan Ibn Majah',
+    malik: 'Muwatta Malik', darimi: 'Sunan ad-Darimi',
+    ahmad: 'Musnad Ahmad', nawawi: 'Forty Hadith an-Nawawi',
+    qudsi: '40 Hadith Qudsi', shah: 'Forty Hadith Shah Waliullah',
+    adab: 'Al-Adab Al-Mufrad', bulugh: 'Bulugh al-Maram',
+    mishkat: 'Mishkat al-Masabih', riyad: 'Riyad as-Salihin',
+    shamail: 'Shamail al-Muhammadiyah'
+  };
+  const bookName = bookNames[bookId] || bookId;
+
+  // Show loading state
+  const hotdBookLabel = document.getElementById('hotd-book-label');
+  const hotdChapterLabel = document.getElementById('hotd-chapter-label');
+  const hotdArabic = document.getElementById('hotd-arabic');
+  const hotdEnglish = document.getElementById('hotd-english');
+  const hotdRawi = document.getElementById('hotd-rawi');
+  const hotdLink = document.getElementById('hotd-read-link');
+
+  if (hotdBookLabel) hotdBookLabel.textContent = `${bookName} ${hadithId}`;
+  if (hotdLink) hotdLink.href = `hadith.html?book=${bookId}&id=${hadithId}`;
+
+  try {
+    const [arabicEd, engEd] = await Promise.all([
+      window.HadeethAPI.getEdition('ara', bookId),
+      window.HadeethAPI.getEdition('eng', bookId)
+    ]);
+
+    let textAr = '';
+    let textEn = '';
+    let rawi = '';
+
+    if (arabicEd && arabicEd.hadiths) {
+      const h = arabicEd.hadiths.find(h => (h.hadithnumber ?? h.id) == hadithId);
+      if (h) textAr = h.text || '';
+    }
+    if (engEd && engEd.hadiths) {
+      const h = engEd.hadiths.find(h => (h.hadithnumber ?? h.id) == hadithId);
+      if (h) {
+        textEn = h.text || '';
+        rawi = h.narrated_by || h.narrator || '';
+      }
+    }
+
+    if (hotdArabic) hotdArabic.textContent = textAr || '—';
+    if (hotdEnglish) hotdEnglish.textContent = textEn ? `"${textEn.substring(0, 220)}${textEn.length > 220 ? '...' : ''}"` : '—';
+    if (hotdRawi && rawi) hotdRawi.textContent = `Narrated by ${rawi}.`;
+    if (hotdChapterLabel) hotdChapterLabel.textContent = '';
+  } catch (e) {
+    console.warn('HOTD load failed:', e);
+  }
 }
 
 /**
@@ -615,17 +699,27 @@ async function loadHadithDetail() {
 
   const bookNames = {
     bukhari: 'Sahih al-Bukhari',
-    nawawi: 'Forty Nawawi',
     muslim: 'Sahih Muslim',
-    abudawud: 'Sunan Abu Dawood',
-    tirmidhi: "Jami' al-Tirmidhi",
+    abudawud: 'Sunan Abu Dawud',
+    tirmidhi: "Jami' at-Tirmidhi",
     nasai: "Sunan an-Nasa'i",
     ibnmajah: 'Sunan Ibn Majah',
     malik: 'Muwatta Malik',
+    darimi: 'Sunan ad-Darimi',
     ahmad: 'Musnad Ahmad',
-    darimi: 'Sunan ad-Darimi'
+    nawawi: "Forty Hadith an-Nawawi",
+    qudsi: '40 Hadith Qudsi',
+    shah: 'Forty Hadith Shah Waliullah',
+    adab: 'Al-Adab Al-Mufrad',
+    bulugh: 'Bulugh al-Maram',
+    mishkat: 'Mishkat al-Masabih',
+    riyad: 'Riyad as-Salihin',
+    shamail: 'Shamail al-Muhammadiyah'
   };
   const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
+
+  // Update page title dynamically
+  document.title = `${bookName} Hadith #${hadithId} - HADEETH.ID`;
 
   // Save Last Read
   if (window.LastReadTracker) window.LastReadTracker.save(bookId, hadithId, bookName, `${bookName} Hadith #${hadithId}`);

@@ -142,7 +142,7 @@
   <div class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-12">
 
     <!-- Continue Reading -->
-    <section class="w-full flex flex-col gap-stack-sm">
+    <section id="last-read-section" class="w-full flex flex-col gap-stack-sm">
       <h2 class="font-label-sm text-label-sm uppercase text-outline dark:text-gray-500 tracking-wider" data-i18n="continue_reading">Continue Reading</h2>
       <a id="last-read-card" href="hadith.html?book=bukhari&id=1" class="group block bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary/40 rounded-lg p-4 transition-all hover:shadow-sm flex items-center justify-between">
         <div class="flex items-center gap-4">
@@ -151,7 +151,7 @@
           </div>
           <div class="flex flex-col">
             <span id="last-read-book" class="font-body-md text-body-md font-semibold text-primary dark:text-white">Sahih al-Bukhari</span>
-            <span id="last-read-title" class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Book of Revelation • Hadith 1</span>
+            <span id="last-read-title" class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Book of Revelation &bull; Hadith 1</span>
           </div>
         </div>
         <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white transition-colors">arrow_forward</span>
@@ -162,7 +162,7 @@
     <section class="w-full flex flex-col gap-stack-md">
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">library_books</span>
-        <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-white font-bold">Kutubut Tis'ah (The 9 Books)</h2>
+        <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-white font-bold" data-i18n="kutub_tisah_title">Kutubut Tis'ah (The 9 Books)</h2>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="tisah-grid">
         <!-- Dynamic Book Cards will be injected here by app.js -->
@@ -173,32 +173,32 @@
     <section class="w-full flex flex-col gap-stack-md pt-8">
       <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">auto_awesome</span>
-        <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-white font-bold">Hadith of the Day</h2>
+        <h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-white font-bold" data-i18n="hadith_of_day_title">Hadith of the Day</h2>
       </div>
-      <div class="bg-surface dark:bg-[#1e293b] border border-secondary/20 dark:border-[#10b981]/20 rounded-xl p-6 md:p-8 flex flex-col gap-6 shadow-sm relative overflow-hidden">
+      <div id="hotd-container" class="bg-surface dark:bg-[#1e293b] border border-secondary/20 dark:border-[#10b981]/20 rounded-xl p-6 md:p-8 flex flex-col gap-6 shadow-sm relative overflow-hidden">
         <div class="absolute -top-12 -right-12 text-surface-container-highest dark:text-[#1e293b] opacity-50 select-none pointer-events-none transform rotate-12 scale-150">
           <span class="material-symbols-outlined text-[120px]" style="font-variation-settings:'FILL' 1">menu_book</span>
         </div>
         <div class="flex justify-between items-start z-10">
           <div>
-            <span class="font-body-md text-body-md font-semibold text-secondary dark:text-[#10b981]">Sahih al-Bukhari 1</span>
-            <p class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Book of Revelation</p>
+            <span id="hotd-book-label" class="font-body-md text-body-md font-semibold text-secondary dark:text-[#10b981]">Loading...</span>
+            <p id="hotd-chapter-label" class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400"></p>
           </div>
           <div class="bg-sunan-emerald/10 dark:bg-[#10b981]/10 text-sunan-emerald dark:text-[#10b981] px-3 py-1 rounded-full font-label-sm text-label-sm font-bold border border-sunan-emerald/20 uppercase">Sahih</div>
         </div>
         <div class="w-full bg-surface-container-low/50 dark:bg-[#0f172a] p-6 rounded-lg text-right z-10 border border-outline-variant/10 dark:border-[#334155]">
-          <p class="font-arabic-display text-arabic-display text-primary dark:text-white leading-loose" dir="rtl" data-arabic-text>
-            إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى
+          <p id="hotd-arabic" class="font-arabic-display text-arabic-display text-primary dark:text-white leading-loose" dir="rtl">
+            إنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى
           </p>
         </div>
-        <div class="z-10" data-english-text>
-          <p class="font-body-md text-body-md text-on-surface-variant dark:text-gray-300 leading-relaxed">
+        <div class="z-10">
+          <p id="hotd-english" class="font-body-md text-body-md text-on-surface-variant dark:text-gray-300 leading-relaxed">
             "The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended."
           </p>
-          <p class="text-label-sm font-label-sm text-outline dark:text-gray-500 mt-2 italic">Narrated by 'Umar bin Al-Khattab.</p>
+          <p id="hotd-rawi" class="text-label-sm font-label-sm text-outline dark:text-gray-500 mt-2 italic">Narrated by 'Umar bin Al-Khattab.</p>
         </div>
         <div class="flex items-center gap-4 mt-2 z-10 border-t border-outline-variant/20 dark:border-[#334155] pt-4 flex-wrap">
-          <a href="hadith.html?book=bukhari&id=1" class="bg-primary dark:bg-[#10b981] text-on-primary dark:text-black px-5 py-2 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-opacity flex items-center gap-2">
+          <a id="hotd-read-link" href="hadith.html?book=bukhari&id=1" class="bg-primary dark:bg-[#10b981] text-on-primary dark:text-black px-5 py-2 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-opacity flex items-center gap-2">
             Read Full Context <span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
           </a>
           <button data-copy-hadith class="border border-secondary dark:border-[#10b981] text-secondary dark:text-[#10b981] px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-secondary/5 transition-colors flex items-center gap-2">
@@ -213,12 +213,11 @@
 
 <!-- ===== FOOTER ===== -->
 <footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
-  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2024 HADEETH.ID - Digital Manuscript Preservation</span></div>
+  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2026 HADEETH.ID - Digital Manuscript Preservation</span></div>
   <div class="flex flex-wrap gap-4 items-center justify-center">
-    <a href="#" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
-    <a href="#" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Project Info</a>
-    <a href="#" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Documentation</a>
-    <a href="#" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
+    <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
+    <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
+    <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
   </div>
 </footer>
 

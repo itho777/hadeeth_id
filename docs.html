@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="HADEETH.ID Data Sources — Complete documentation of all 17 hadith collections, their origins, databases, and validation methodology."/>
+  <title>Data Sources & Documentation - HADEETH.ID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/app.css?v=20260813_07"/>
+  <script src="js/theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: { extend: {
+        colors: {
+          "ink-black":"#0D0D10","secondary":"#7b5810","surface":"#fcf9f5","outline-variant":"#c3c6cf",
+          "primary":"#001932","manuscript-paper":"#FDFBF7","on-primary":"#ffffff",
+          "surface-container-low":"#f6f3ef","on-surface":"#1c1c1a","surface-container-high":"#ece9e4",
+          "on-surface-variant":"#44474f","outline":"#74777f","sunan-emerald":"#15803d"
+        },
+        fontFamily: { "body-md":["Plus Jakarta Sans"] },
+        spacing: { "stack-sm":"0.5rem","stack-md":"1rem","stack-lg":"2rem","margin-main":"2rem","content-width-max":"860px" }
+      }}
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-family:'Material Symbols Outlined'; font-weight:normal; font-style:normal; font-size:24px; line-height:1; display:inline-block; }
+  </style>
+</head>
+<body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
+
+<!-- TOP APP BAR -->
+<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
+  <div class="flex justify-between items-center w-full px-margin-main max-w-[1100px] mx-auto h-16">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-[#0a1120] border border-outline-variant/30"><img src="assets/logo_light.jpg" alt="hadeeth.id logo" class="logo-light w-full h-full object-cover rounded-lg scale-125"/><img src="assets/logo_dark.jpg" alt="hadeeth.id logo" class="logo-dark w-full h-full object-cover rounded-lg scale-125"/></div>
+      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6">
+      <a href="books.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Kitab</a>
+      <a href="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1">Perawi & Ulama</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full">
+        <span class="material-symbols-outlined text-on-surface-variant dark:text-gray-400" data-theme-icon>dark_mode</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main class="w-full max-w-[860px] mx-auto px-margin-main py-stack-lg flex flex-col gap-10">
+
+  <!-- Header -->
+  <div class="flex flex-col gap-2 border-b border-outline-variant/30 dark:border-[#334155] pb-6">
+    <div class="flex items-center gap-2 text-secondary dark:text-[#10b981] font-semibold text-xs uppercase tracking-wider">
+      <span class="material-symbols-outlined text-[18px]">database</span>
+      <span>Data Provenance & Validation</span>
+    </div>
+    <h1 class="text-3xl font-bold text-primary dark:text-white">Data Sources</h1>
+    <p class="text-sm text-on-surface-variant dark:text-gray-400 max-w-xl">
+      HADEETH.ID aggregates hadith text from multiple authoritative open-source databases.
+      This page documents every collection available on the platform, its origin, and our validation approach.
+    </p>
+    <div class="flex items-start gap-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/40 rounded-lg p-4 mt-2">
+      <span class="material-symbols-outlined text-amber-600 dark:text-amber-400 text-[20px] mt-0.5">verified_user</span>
+      <p class="text-xs text-amber-800 dark:text-amber-300">
+        <strong>Core principle:</strong> Hadith text is <em>never overwritten, never deleted, never altered</em>.
+        All source data is stored verbatim. Any editorial notes are clearly labelled and separated from the original text.
+      </p>
+    </div>
+  </div>
+
+  <!-- Primary Sources -->
+  <section class="flex flex-col gap-4">
+    <h2 class="text-lg font-bold text-primary dark:text-white flex items-center gap-2">
+      <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">source</span>
+      Primary Databases
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-[10px] font-bold uppercase px-2 py-0.5 rounded">Primary Anchor</span>
+        </div>
+        <h3 class="font-bold text-primary dark:text-white">Lidwa Hadith DB</h3>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">
+          Used as the primary source for the <strong>Kutubut Tis'ah</strong> (9 core books). Provides structured JSON with
+          Arabic text, Indonesian translations, chapter metadata, and narrator chains.
+        </p>
+        <p class="text-xs text-outline dark:text-gray-500 mt-1">Source: <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded">open.hadithapi.com / Lidwa Pusaka</code></p>
+      </div>
+      <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 text-[10px] font-bold uppercase px-2 py-0.5 rounded">Secondary Source</span>
+        </div>
+        <h3 class="font-bold text-primary dark:text-white">AhmedBaset / HadithAPI.com</h3>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">
+          Used for the <strong>8 secondary collections</strong> (Nawawi, Qudsi, Shah Waliullah, Adab al-Mufrad, Bulugh al-Maram,
+          Mishkat, Riyad as-Salihin, Shamail). Provides Arabic and English text in structured JSON.
+        </p>
+        <p class="text-xs text-outline dark:text-gray-500 mt-1">Source: <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded">hadithapi.com / github.com/ahadees</code></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection Table -->
+  <section class="flex flex-col gap-4">
+    <h2 class="text-lg font-bold text-primary dark:text-white flex items-center gap-2">
+      <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">library_books</span>
+      All 17 Collections
+    </h2>
+
+    <!-- Kutubus Sittah -->
+    <div class="flex flex-col gap-2">
+      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">
+        <span class="w-2 h-2 rounded-full bg-secondary dark:bg-[#10b981]"></span>
+        Kutubus Sittah — The Six Books (Indices 1–6)
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs border-collapse">
+          <thead>
+            <tr class="bg-surface-container-low dark:bg-[#0f172a] text-on-surface-variant dark:text-gray-400">
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">#</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Collection</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Arabic Title</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Hadiths</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Source DB</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Languages</th>
+            </tr>
+          </thead>
+          <tbody class="text-on-surface dark:text-gray-200">
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">1</td><td class="p-3 font-semibold">Sahih al-Bukhari</td><td class="p-3 font-arabic" dir="rtl">صحيح البخاري</td><td class="p-3">7,563</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded">Lidwa</span></td><td class="p-3">AR, EN, ID</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">2</td><td class="p-3 font-semibold">Sahih Muslim</td><td class="p-3 font-arabic" dir="rtl">صحيح مسلم</td><td class="p-3">7,563</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded">Lidwa</span></td><td class="p-3">AR, EN, ID</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">3</td><td class="p-3 font-semibold">Sunan Abu Dawud</td><td class="p-3 font-arabic" dir="rtl">سنن أبي داود</td><td class="p-3">5,274</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded">Lidwa</span></td><td class="p-3">AR, EN, ID</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">4</td><td class="p-3 font-semibold">Jami' at-Tirmidhi</td><td class="p-3 font-arabic" dir="rtl">جامع الترمذي</td><td class="p-3">3,956</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded">Lidwa</span></td><td class="p-3">AR, EN, ID</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">5</td><td class="p-3 font-semibold">Sunan an-Nasa'i</td><td class="p-3 font-arabic" dir="rtl">سنن النسائي</td><td class="p-3">5,758</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded">Lidwa</span></td><td class="p-3">AR, EN, ID</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">6</td><td class="p-3 font-semibold">Sunan Ibn Majah</td><td class="p-3 font-arabic" dir="rtl">سنن ابن ماجه</td><td class="p-3">4,341</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded">Lidwa</span></td><td class="p-3">AR, EN, ID</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Additional 3 (Kutubut Tis'ah) -->
+    <div class="flex flex-col gap-2 mt-4">
+      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
+        <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+        Additional 3 — Completing Kutubut Tis'ah (Indices 7–9)
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs border-collapse">
+          <thead>
+            <tr class="bg-surface-container-low dark:bg-[#0f172a] text-on-surface-variant dark:text-gray-400">
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">#</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Collection</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Arabic Title</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Hadiths</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Source DB</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Languages</th>
+            </tr>
+          </thead>
+          <tbody class="text-on-surface dark:text-gray-200">
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">7</td><td class="p-3 font-semibold">Muwatta Malik</td><td class="p-3 font-arabic" dir="rtl">موطأ مالك</td><td class="p-3">1,858</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded">Lidwa</span></td><td class="p-3">AR, EN, ID</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">8</td><td class="p-3 font-semibold">Sunan ad-Darimi</td><td class="p-3 font-arabic" dir="rtl">سنن الدارمي</td><td class="p-3">3,367</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded">Lidwa</span></td><td class="p-3">AR, EN, ID</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">9</td><td class="p-3 font-semibold">Musnad Ahmad</td><td class="p-3 font-arabic" dir="rtl">مسند أحمد</td><td class="p-3">27,519</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded">Lidwa</span></td><td class="p-3">AR, EN, ID</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Secondary 8 Collections -->
+    <div class="flex flex-col gap-2 mt-4">
+      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400">
+        <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+        Secondary Collections (Indices 10–17)
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-xs border-collapse">
+          <thead>
+            <tr class="bg-surface-container-low dark:bg-[#0f172a] text-on-surface-variant dark:text-gray-400">
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">#</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Collection</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Author</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Hadiths</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Source DB</th>
+              <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Languages</th>
+            </tr>
+          </thead>
+          <tbody class="text-on-surface dark:text-gray-200">
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">10</td><td class="p-3 font-semibold">Forty Hadith an-Nawawi</td><td class="p-3 text-on-surface-variant dark:text-gray-400">Imam an-Nawawi</td><td class="p-3">42</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded">AhmedBaset</span></td><td class="p-3">AR, EN, ID</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">11</td><td class="p-3 font-semibold">40 Hadith Qudsi</td><td class="p-3 text-on-surface-variant dark:text-gray-400">Various</td><td class="p-3">40</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded">AhmedBaset</span></td><td class="p-3">AR, EN</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">12</td><td class="p-3 font-semibold">Forty Hadith Shah Waliullah</td><td class="p-3 text-on-surface-variant dark:text-gray-400">Shah Waliullah Dehlawi</td><td class="p-3">40</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded">AhmedBaset</span></td><td class="p-3">AR, EN</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">13</td><td class="p-3 font-semibold">Al-Adab Al-Mufrad</td><td class="p-3 text-on-surface-variant dark:text-gray-400">Imam al-Bukhari</td><td class="p-3">1,322</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded">AhmedBaset</span></td><td class="p-3">AR, EN</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">14</td><td class="p-3 font-semibold">Bulugh al-Maram</td><td class="p-3 text-on-surface-variant dark:text-gray-400">Ibn Hajar al-'Asqalani</td><td class="p-3">1,596</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded">AhmedBaset</span></td><td class="p-3">AR, EN</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">15</td><td class="p-3 font-semibold">Mishkat al-Masabih</td><td class="p-3 text-on-surface-variant dark:text-gray-400">Al-Khatib al-Tabrizi</td><td class="p-3">5,945</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded">AhmedBaset</span></td><td class="p-3">AR, EN</td>
+            </tr>
+            <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">16</td><td class="p-3 font-semibold">Riyad as-Salihin</td><td class="p-3 text-on-surface-variant dark:text-gray-400">Imam an-Nawawi</td><td class="p-3">1,896</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded">AhmedBaset</span></td><td class="p-3">AR, EN</td>
+            </tr>
+            <tr class="hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
+              <td class="p-3 text-outline dark:text-gray-500">17</td><td class="p-3 font-semibold">Shamail al-Muhammadiyah</td><td class="p-3 text-on-surface-variant dark:text-gray-400">Imam at-Tirmidhi</td><td class="p-3">399</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded">AhmedBaset</span></td><td class="p-3">AR, EN</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture -->
+  <section class="flex flex-col gap-4">
+    <h2 class="text-lg font-bold text-primary dark:text-white flex items-center gap-2">
+      <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">architecture</span>
+      Technical Architecture
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5">
+        <h3 class="font-bold text-sm text-primary dark:text-white mb-2">Static JSON CDN</h3>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">All hadith data is served as pre-built JSON files via Cloudflare Pages CDN. No database queries on the client — data is fetched once per session.</p>
+      </div>
+      <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5">
+        <h3 class="font-bold text-sm text-primary dark:text-white mb-2">Edition System</h3>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">Each kitab has multiple editions identified by prefix: <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded">ara-bukhari</code>, <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded">eng-bukhari</code>, <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded">ind-bukhari</code>. Each edition is a separate JSON file.</p>
+      </div>
+      <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5">
+        <h3 class="font-bold text-sm text-primary dark:text-white mb-2">Narrator Data</h3>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">Narrator (rawi) profiles and isnad chains sourced from the Lidwa narrator database, supplemented by scholarly commentary (syarah) from linked data pipelines.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Integrity -->
+  <section class="flex flex-col gap-4">
+    <h2 class="text-lg font-bold text-primary dark:text-white flex items-center gap-2">
+      <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">fact_check</span>
+      Data Integrity Policy
+    </h2>
+    <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-3 text-sm text-on-surface-variant dark:text-gray-300">
+      <p>✅ <strong>Verbatim preservation</strong> — Hadith text is stored exactly as received from the source database. No paraphrasing, summarising, or reformatting of the original Arabic or translation.</p>
+      <p>✅ <strong>Non-destructive versioning</strong> — Original source files are archived in <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded text-xs">data/raw_baseline/</code>. Any processing scripts produce new files, never mutating the originals.</p>
+      <p>✅ <strong>Open-source pipeline</strong> — All import and processing scripts are available in the project repository for independent audit.</p>
+      <p>✅ <strong>Grade transparency</strong> — Hadith grading (Sahih, Hasan, Da'if) is displayed exactly as provided by the source database. No editorial grading is applied.</p>
+      <p>⚠️ <strong>Translation disclaimer</strong> — English and Indonesian translations are those provided by the source databases. For scholarly use, always verify against authoritative printed editions.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 text-xs w-full py-8 px-margin-main flex flex-col md:flex-row justify-between items-center max-w-[860px] mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-16">
+  <div><span>© 2026 HADEETH.ID - Digital Manuscript Preservation</span></div>
+  <div class="flex gap-4 mt-2 md:mt-0">
+    <a href="index.html" class="hover:underline">Home</a>
+    <a href="privacy.html" class="hover:underline">Privacy Policy</a>
+    <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:underline">tafseer.id</a>
+  </div>
+</footer>
+
+<script src="js/api.js?v=20260813_07"></script>
+<script src="js/app.js?v=20260813_07"></script>
+</body>
+</html>
