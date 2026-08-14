@@ -95,7 +95,7 @@ const HadeethAPI = {
    */
   async getEdition(langCode, bookId) {
     try {
-      const cacheBuster = '20260813';
+      const cacheBuster = '20260814';
       const res = await fetch(`${this.baseUrl}/editions/${langCode}-${bookId}.json?v=${cacheBuster}`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const raw = await res.json();
