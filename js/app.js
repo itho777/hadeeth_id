@@ -1143,6 +1143,10 @@ async function loadHadithDetail() {
 
   const textAr = (item.text_ar && item.text_ar.trim()) ? item.text_ar.trim() : '';
 
+  const arabicElem = document.querySelector('[data-arabic-text]');
+  const englishElem = document.querySelector('[data-english-text]');
+  const indonesianElem = document.querySelector('[data-indonesian-text]');
+
   if (arabicElem) arabicElem.innerText = textAr || '—';
 
   async function updateTranslationBox(selectElem, targetBox) {
