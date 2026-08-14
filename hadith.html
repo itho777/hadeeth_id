@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
@@ -143,10 +143,8 @@
       <div class="flex flex-col gap-3 p-5 bg-surface-container-low/40 dark:bg-[#0a0e14] rounded-lg border border-outline-variant/10 dark:border-[#334155]">
         <div class="flex justify-between items-center border-b border-outline-variant/10 dark:border-[#334155] pb-2">
           <span class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">English Translation</span>
-          <select data-lang-select class="text-xs bg-surface dark:bg-[#1e293b] border border-outline-variant dark:border-[#334155] rounded px-2 py-1 text-primary dark:text-white cursor-pointer font-medium focus:ring-1 focus:ring-sunan-emerald">
-            <option value="en" class="bg-white dark:bg-[#1e293b] text-gray-900 dark:text-white">English (USC-MSA)</option>
-            <option value="id" class="bg-white dark:bg-[#1e293b] text-gray-900 dark:text-white">Indonesian (Kemenag)</option>
-            <option value="ar" class="bg-white dark:bg-[#1e293b] text-gray-900 dark:text-white">Arabic (الأصل)</option>
+          <select id="lang-select-1" data-lang-select class="text-xs bg-surface dark:bg-[#1e293b] border border-outline-variant dark:border-[#334155] rounded px-2 py-1 text-primary dark:text-white cursor-pointer font-medium focus:ring-1 focus:ring-sunan-emerald w-48 max-w-full">
+            <option value="">Loading...</option>
           </select>
         </div>
         <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed" data-english-text>
@@ -158,10 +156,8 @@
       <div class="flex flex-col gap-3 p-5 bg-surface-container-low/40 dark:bg-[#0a0e14] rounded-lg border border-outline-variant/10 dark:border-[#334155]">
         <div class="flex justify-between items-center border-b border-outline-variant/10 dark:border-[#334155] pb-2">
           <span class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">Bahasa Indonesia</span>
-          <select data-lang-select class="text-xs bg-surface dark:bg-[#1e293b] border border-outline-variant dark:border-[#334155] rounded px-2 py-1 text-primary dark:text-white cursor-pointer font-medium focus:ring-1 focus:ring-sunan-emerald">
-            <option value="id" class="bg-white dark:bg-[#1e293b] text-gray-900 dark:text-white">Indonesian (Kemenag)</option>
-            <option value="en" class="bg-white dark:bg-[#1e293b] text-gray-900 dark:text-white">English (USC-MSA)</option>
-            <option value="ar" class="bg-white dark:bg-[#1e293b] text-gray-900 dark:text-white">Arabic (الأصل)</option>
+          <select id="lang-select-2" data-lang-select class="text-xs bg-surface dark:bg-[#1e293b] border border-outline-variant dark:border-[#334155] rounded px-2 py-1 text-primary dark:text-white cursor-pointer font-medium focus:ring-1 focus:ring-sunan-emerald w-48 max-w-full">
+            <option value="">Loading...</option>
           </select>
         </div>
         <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed" data-indonesian-text>

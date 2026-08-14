@@ -51,7 +51,7 @@ BOOKS_META = [
         "total_chapters": 97,
         "grade_summary": "صحيح متفق عليه (Sahih)",
         "order_index": 1,
-        "editions": ["ara-bukhari", "eng-bukhari", "ind-bukhari", "urd-bukhari", "fra-bukhari"],
+        "editions": ["ara-bukhari", "eng-bukhari", "urd-bukhari", "fra-bukhari"],
     },
     {
         "id": "nawawi",
