@@ -1046,7 +1046,7 @@ async function loadHadithDetail() {
   if (fawazEditions[bookId]) {
       const editions = fawazEditions[bookId].collection || [];
       editions.forEach(ed => {
-          if (ed.name.startsWith('ara-')) return; 
+          if (ed.name.startsWith('ara-') || ed.name.startsWith('ind-')) return; 
           const langCode = ed.language.toUpperCase();
           const author = ed.author !== 'Unknown' ? ed.author : 'Fawazahmed0';
           translationOptions.push({
