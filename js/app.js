@@ -1146,6 +1146,10 @@ async function loadHadithDetail() {
   const arabicElem = document.querySelector('[data-arabic-text]');
   const englishElem = document.querySelector('[data-english-text]');
   const indonesianElem = document.querySelector('[data-indonesian-text]');
+  const sanadPreviewEn = document.querySelector('[data-sanad-preview-en]');
+  const sanadPreviewId = document.querySelector('[data-sanad-preview-id]');
+  const rawiEn = document.querySelector('[data-rawi-en]');
+  const rawiId = document.querySelector('[data-rawi-id]');
 
   if (arabicElem) arabicElem.innerText = textAr || '—';
 
