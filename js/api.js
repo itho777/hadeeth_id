@@ -41,7 +41,7 @@ const HadeethAPI = {
   async getActiveRawis() {
     if (this.rawisCache) return this.rawisCache;
     try {
-      const res = await fetch(${this.baseUrl}/rawis/active_rawis.min.json?v=20260814);
+      const res = await fetch(`${this.baseUrl}/rawis/active_rawis.min.json?v=20260814`);
       if (res.ok) {
         this.rawisCache = await res.json();
       } else {
@@ -51,7 +51,7 @@ const HadeethAPI = {
       this.rawisCache = {};
     }
     return this.rawisCache;
-  }
+  },
 
   async getChapters(bookId) {
     try {
