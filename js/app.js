@@ -2930,7 +2930,7 @@ async function loadSanadChain() {
   let narrators = [];
   try {
     const rawisDict = await window.HadeethAPI.getActiveRawis();
-    const linkRes = await fetch(data/links/.json?v=20260814);
+    const linkRes = await fetch(`data/links/${bookId}.json?v=20260814`);
     if (linkRes.ok) {
       const linkGraph = await linkRes.json();
       const rawiIds = (linkGraph.fawaz_to_rawis && linkGraph.fawaz_to_rawis[hadithNum]) || [];
