@@ -314,5 +314,22 @@
       "ara-shamail",
       "eng-shamail"
     ]
+  },
+  {
+    "id": "tabarani",
+    "title_ar": "المعجم الكبير",
+    "title_en": "Al-Mujam al-Kabir",
+    "title_id": "Mu'jam al-Kabir",
+    "author_ar": "الطبراني",
+    "author_en": "Imam At-Tabarani",
+    "author_id": "Imam At-Tabarani",
+    "death_year_ah": 360,
+    "total_hadiths": 21850,
+    "total_chapters": 1,
+    "grade_summary": "Mixed",
+    "order_index": 18,
+    "editions": [
+      "ara-tabarani"
+    ]
   }
 ]

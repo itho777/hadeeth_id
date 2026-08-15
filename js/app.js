@@ -1058,15 +1058,17 @@ async function loadHadithDetail() {
       if (idPanel) idPanel.style.display = 'none';
       if (engPanel) engPanel.style.display = 'flex';
   } else {
-      if (idPanel) idPanel.style.display = 'none';
+      if (idPanel) idPanel.style.display = 'flex';
       if (engPanel) engPanel.style.display = 'flex';
   }
 
   // Adjust grid columns if one panel is hidden
-  const panelsContainer = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2');
+  const panelsContainer = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2') || document.querySelector('.grid.grid-cols-1.gap-6');
   if (panelsContainer) {
-      if (activeDataset === 'native_lidwa' || activeDataset === 'native_ahmedbaset' || activeDataset === 'fawazahmed') {
+      if (activeDataset === 'native_lidwa' || activeDataset === 'native_ahmedbaset') {
           panelsContainer.className = "grid grid-cols-1 gap-6";
+      } else {
+          panelsContainer.className = "grid grid-cols-1 md:grid-cols-2 gap-6";
       }
   }
 
