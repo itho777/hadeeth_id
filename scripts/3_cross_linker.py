@@ -4,7 +4,7 @@ import re
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LIDWA_DIR = os.path.join(BASE_DIR, "data", "sources", "lidwa")
-FAWAZ_DIR = os.path.join(BASE_DIR, "data", "raw_baseline")
+FAWAZ_DIR = os.path.join(BASE_DIR, "data", "editions")
 AHMEDBASET_DIR = os.path.join(BASE_DIR, "data", "sources", "ahmedbaset", "by_book", "the_9_books")
 LINKS_DIR = os.path.join(BASE_DIR, "data", "links")
 
@@ -13,7 +13,7 @@ AB_MAP = {
     "ahmad": "ahmed"
 }
 
-BOOKS = ["bukhari", "muslim", "abudawud", "tirmidhi", "nasai", "ibnmajah", "malik"]
+BOOKS = ["bukhari", "muslim", "abudawud", "tirmidhi", "nasai", "ibnmajah", "malik", "darimi", "ahmad"]
 
 def normalize_arabic(text):
     if not text:

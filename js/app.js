@@ -1168,6 +1168,21 @@ async function loadHadithDetail() {
               file: `${baseUrl}/sources/lidwa/${bookId}.json`
           });
       }
+
+      // Inject AhmedBaset translation if Fawaz lacks English
+      const hasEnglish = translationOptions.some(o => o.lang.toLowerCase() === 'english');
+      if (!hasEnglish && abId) {
+          const abBookMap = { ahmad: 'ahmed' };
+          const abBook = abBookMap[bookId] || bookId;
+          translationOptions.push({
+              id: 'ab-en',
+              label: `EN - AhmedBaset (Fallback)`,
+              lang: 'English',
+              source: 'ab',
+              hid: abId,
+              file: `${baseUrl}/sources/ahmedbaset/by_book/the_9_books/${abBook}.json`
+          });
+      }
   }
 
   async function fetchTranslationText(opt) {
@@ -1207,7 +1222,7 @@ async function loadHadithDetail() {
       });
       // Set defaults
       if (idx === 0) {
-         const defaultEn = translationOptions.find(o => o.id.includes('eng-bukhari') || (o.lang==='English' && o.source==='fawaz')) || translationOptions[0];
+         const defaultEn = translationOptions.find(o => o.id.includes('eng-bukhari') || (o.lang==='English' && (o.source==='fawaz' || o.source==='ab'))) || translationOptions[0];
          if (defaultEn) selectElem.value = defaultEn.id;
       } else {
          const defaultId = translationOptions.find(o => o.id === 'lidwa-id') || translationOptions[0];
@@ -1742,6 +1757,7 @@ async function loadHadithList() {
     const engEd = await window.HadeethAPI.getEdition('eng', bookId);
     const araEd = await window.HadeethAPI.getEdition('ara', bookId);
     let lidwaIdMap = {};
+    let abEngMap = {};
     let linkGraph = {};
     try {
       const baseUrl = window.__HADEETH_BASE__
@@ -1752,9 +1768,13 @@ async function loadHadithList() {
             return window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
           })();
       
-      const [lidwaResp, linkResp] = await Promise.all([
+      const abBookMap = { ahmad: 'ahmed' };
+      const abBook = abBookMap[bookId] || bookId;
+
+      const [lidwaResp, linkResp, abResp] = await Promise.all([
           fetch(`${baseUrl}/sources/lidwa/${bookId}.json`).catch(() => null),
-          fetch(`${baseUrl}/links/${bookId}.json`).catch(() => null)
+          fetch(`${baseUrl}/links/${bookId}.json`).catch(() => null),
+          fetch(`${baseUrl}/sources/ahmedbaset/by_book/the_9_books/${abBook}.json`).catch(() => null)
       ]);
 
       if (linkResp && linkResp.ok) linkGraph = await linkResp.json();
@@ -1767,8 +1787,18 @@ async function loadHadithList() {
           if (num !== undefined && h.text_id) lidwaIdMap[String(num)] = h.text_id;
         });
       }
+
+      if (abResp && abResp.ok) {
+        const abData = await abResp.json();
+        (abData.hadiths || []).forEach(h => {
+          if (h.english && h.english.text) {
+             const txt = h.english.narrator ? `${h.english.narrator} ${h.english.text}` : h.english.text;
+             abEngMap[String(h.idInBook)] = txt;
+          }
+        });
+      }
     } catch (e) {
-      console.warn('Lidwa ID source or links not available for', bookId, e);
+      console.warn('Fallback sources or links not available for', bookId, e);
     }
 
     const mainEd = engEd;
@@ -1794,14 +1824,24 @@ async function loadHadithList() {
             targetLidwaId = linkGraph.fawaz_to_lidwa[num];
         }
 
+        let targetAbId = num;
+        if (linkGraph && linkGraph.fawaz_to_ab && linkGraph.fawaz_to_ab[num]) {
+            targetAbId = linkGraph.fawaz_to_ab[num];
+        }
+
         let idText = lidwaIdMap[targetLidwaId] || '';
         if (idText && targetLidwaId !== num) {
             idText = `<div class="mb-2 text-xs text-blue-500 font-semibold">[Linked from Lidwa #${targetLidwaId}]</div>` + idText;
         }
 
+        let finalEnText = engMap[num] !== undefined ? engMap[num] : '';
+        if (!finalEnText && abEngMap[targetAbId]) {
+            finalEnText = `<div class="mb-2 text-xs text-amber-500 font-semibold">[Linked from AhmedBaset #${targetAbId}]</div>` + abEngMap[targetAbId];
+        }
+
         return {
           hadith_number: num,
-          text_en: engMap[num] !== undefined ? engMap[num] : '',
+          text_en: finalEnText,
           text_ar: araMap[num] !== undefined ? araMap[num] : '',
           // Indonesian linked dynamically from Lidwa/Irsyad via graph
           text_id: idText,
@@ -1878,8 +1918,7 @@ async function loadHadithList() {
 
       // Primary/fawazahmed: subtle blue attribution (ID exists but comes from Lidwa)
       const primaryIdSourceNote = `<div class="mt-2 px-3 py-2 rounded-lg border border-blue-500/20 bg-blue-500/5 text-[11px] text-blue-600 dark:text-blue-400 leading-snug">
-        <strong class="font-semibold">Sumber terjemahan Indonesia:</strong> fawazahmed0 CDN tidak memiliki edisi Bahasa Indonesia.
-        Teks ini bersumber dari <strong>Lidwa / Irsyad</strong>, dicocokkan berdasarkan nomor hadits.
+        <strong class="font-semibold">Info Sumber:</strong> Teks terjemahan Indonesia ini diintegrasikan dari <strong>Lidwa / Irsyad</strong> (dicocokkan berdasarkan nomor hadits).
       </div>`;
 
       // AhmedBaset: amber warning (may not align to AhmedBaset narration variant)
