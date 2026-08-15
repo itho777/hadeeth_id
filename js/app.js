@@ -1,8 +1,55 @@
+
+window.addEventListener('error', function(e) {
+    const dbg = document.getElementById('debug-log-screen');
+    if (!dbg) {
+        const div = document.createElement('div');
+        div.id = 'debug-log-screen';
+        div.style.position = 'fixed';
+        div.style.bottom = '0';
+        div.style.left = '0';
+        div.style.width = '100%';
+        div.style.height = '300px';
+        div.style.background = 'rgba(0,0,0,0.8)';
+        div.style.color = 'red';
+        div.style.zIndex = '999999';
+        div.style.overflow = 'auto';
+        div.style.padding = '10px';
+        document.body.appendChild(div);
+    }
+    document.getElementById('debug-log-screen').innerHTML += '<br>' + e.message + ' at ' + e.filename + ':' + e.lineno;
+});
+window.addEventListener('unhandledrejection', function(e) {
+    const dbg = document.getElementById('debug-log-screen');
+    if (!dbg) {
+        const div = document.createElement('div');
+        div.id = 'debug-log-screen';
+        div.style.position = 'fixed';
+        div.style.bottom = '0';
+        div.style.left = '0';
+        div.style.width = '100%';
+        div.style.height = '300px';
+        div.style.background = 'rgba(0,0,0,0.8)';
+        div.style.color = 'orange';
+        div.style.zIndex = '999999';
+        div.style.overflow = 'auto';
+        div.style.padding = '10px';
+        document.body.appendChild(div);
+    }
+    document.getElementById('debug-log-screen').innerHTML += '<br>Unhandled Promise: ' + (e.reason ? e.reason.message || e.reason : 'unknown');
+});
+
 /**
  * HADEETH.ID — Dynamic App Logic v20260807_8
  * Real-time Supabase RPC search integration, dynamic CDN book/hadith loading, and interactive UI.
  * Bilingual EN/ID language switcher with persistent localStorage state.
  */
+
+// Auto-migrate legacy 'primary' dataset ID
+if (typeof localStorage !== 'undefined') {
+    if (localStorage.getItem('dataset_version') === 'primary') {
+        localStorage.setItem('dataset_version', 'fawazahmed');
+    }
+}
 
 function escapeHtml(str) {
   if (!str) return '';
@@ -159,166 +206,166 @@ window.LangSystem = LangSystem;
 const BOOK_DATASETS = {
   // Books with all 3 datasets (Kutub Tis'ah + Nawawi)
   bukhari: [
-    { id: 'primary',
-      label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
+    { id: 'fawazahmed',
+      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
       sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
       sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
-      label: 'AhmedBaset', labelId: 'AhmedBaset',
+      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (7,277 hadiths, 97 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (7.277 hadits, 97 kitab)',
       note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
-      label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
+      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
       sources: 'AR/EN/ID/UR/FR: Lidwa SQL (7,589 entries, 98 kitab groupings)',
       sourcesId: 'AR/EN/ID/UR/FR: SQL Lidwa (7.589 entri, 98 pengelompokan kitab)',
       note: null, noteId: null }
   ],
   muslim: [
-    { id: 'primary',
-      label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
+    { id: 'fawazahmed',
+      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
       sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
       sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: 'Last ~112 hadiths: known upstream duplication in Arabic text', noteId: '~112 hadits terakhir: duplikasi teks Arab dari sumber upstream' },
     { id: 'native_ahmedbaset',
-      label: 'AhmedBaset', labelId: 'AhmedBaset',
+      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (7,459 hadiths, 56 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (7.459 hadits, 56 kitab)',
       note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
-      label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
+      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
       sources: 'AR/EN/ID: Lidwa SQL — 5,362 entries (groups variant narrations)',
       sourcesId: 'AR/EN/ID: SQL Lidwa — 5.362 entri (mengelompokkan variasi riwayat)',
       note: 'Darussalam numbers 5,363–7,563 have no Lidwa equivalent', noteId: 'Nomor Darussalam 5.363–7.563 tidak memiliki padanan Lidwa' }
   ],
   abudawud: [
-    { id: 'primary',
-      label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
+    { id: 'fawazahmed',
+      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
       sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
       sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
-      label: 'AhmedBaset', labelId: 'AhmedBaset',
+      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (5,274 hadiths, 43 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (5.274 hadits, 43 kitab)',
       note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
-      label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
+      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
       sources: 'AR/EN/ID: Lidwa SQL (5,274 entries, 43 kitab)',
       sourcesId: 'AR/EN/ID: SQL Lidwa (5.274 entri, 43 kitab)',
       note: null, noteId: null }
   ],
   tirmidhi: [
-    { id: 'primary',
-      label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
+    { id: 'fawazahmed',
+      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
       sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
       sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
-      label: 'AhmedBaset', labelId: 'AhmedBaset',
+      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (3,956 hadiths, 49 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (3.956 hadits, 49 kitab)',
       note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
-      label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
+      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
       sources: 'AR/EN/ID: Lidwa SQL (3,956 entries, 49 kitab)',
       sourcesId: 'AR/EN/ID: SQL Lidwa (3.956 entri, 49 kitab)',
       note: null, noteId: null }
   ],
   nasai: [
-    { id: 'primary',
-      label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
+    { id: 'fawazahmed',
+      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
       sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
       sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
-      label: 'AhmedBaset', labelId: 'AhmedBaset',
+      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (5,758 hadiths, 51 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (5.758 hadits, 51 kitab)',
       note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
-      label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
+      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
       sources: 'AR/EN/ID: Lidwa SQL (5,758 entries, 51 kitab)',
       sourcesId: 'AR/EN/ID: SQL Lidwa (5.758 entri, 51 kitab)',
       note: null, noteId: null }
   ],
   ibnmajah: [
-    { id: 'primary',
-      label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
+    { id: 'fawazahmed',
+      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
       sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
       sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
-      label: 'AhmedBaset', labelId: 'AhmedBaset',
+      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (4,341 hadiths, 37 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (4.341 hadits, 37 kitab)',
       note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
-      label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
+      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
       sources: 'AR/EN/ID: Lidwa SQL (4,341 entries, 37 kitab)',
       sourcesId: 'AR/EN/ID: SQL Lidwa (4.341 entri, 37 kitab)',
       note: null, noteId: null }
   ],
   malik: [
-    { id: 'primary',
-      label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
+    { id: 'fawazahmed',
+      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
       sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
       sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
-      label: 'AhmedBaset', labelId: 'AhmedBaset',
+      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (1,858 hadiths, 61 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (1.858 hadits, 61 kitab)',
       note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
-      label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
+      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
       sources: 'AR/EN/ID: Lidwa SQL (1,720 entries — some hadiths grouped)',
       sourcesId: 'AR/EN/ID: SQL Lidwa (1.720 entri — beberapa hadits dikelompokkan)',
       note: null, noteId: null }
   ],
   darimi: [
-    { id: 'primary',
-      label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
+    { id: 'fawazahmed',
+      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
       sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
       sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
-      label: 'AhmedBaset', labelId: 'AhmedBaset',
+      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (3,367 hadiths, 24 kitab)',
       sourcesId: 'Arab + EN: AhmedBaset native (3.367 hadits, 24 kitab)',
       note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
-      label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
+      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
       sources: 'AR/EN/ID: Lidwa SQL (3,367 entries, 24 kitab)',
       sourcesId: 'AR/EN/ID: SQL Lidwa (3.367 entri, 24 kitab)',
       note: null, noteId: null }
   ],
   ahmad: [
-    { id: 'primary',
-      label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
+    { id: 'fawazahmed',
+      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
       sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
       sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_ahmedbaset',
-      label: 'AhmedBaset', labelId: 'AhmedBaset',
+      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
       sources: 'Arabic + EN: AhmedBaset native (27,647 hadiths, 90 musnad sections)',
       sourcesId: 'Arab + EN: AhmedBaset native (27.647 hadits, 90 bagian musnad)',
       note: 'ID translation sourced from Lidwa/Irsyad, matched by hadith number — may not align perfectly with AhmedBaset narration variant', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, dicocokkan berdasarkan nomor — mungkin tidak sesuai sempurna dengan varian riwayat AhmedBaset' },
     { id: 'native_lidwa',
-      label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
+      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
       sources: 'AR/EN/ID: Lidwa SQL (27,519 entries, musnad arrangement)',
       sourcesId: 'AR/EN/ID: SQL Lidwa (27.519 entri, susunan musnad)',
       note: null, noteId: null }
   ],
   nawawi: [
-    { id: 'primary',
-      label: 'Darussalam / fawazahmed0', labelId: 'Darussalam / fawazahmed0',
+    { id: 'fawazahmed',
+      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
       sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (42 hadiths, matched by number — not native to fawazahmed0)',
       sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (42 hadits, dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
       note: null, noteId: null },
     { id: 'native_lidwa',
-      label: 'Lidwa / Irsyad', labelId: 'Lidwa / Irsyad',
+      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
       sources: 'AR/EN/ID: Lidwa SQL (42 entries)',
       sourcesId: 'AR/EN/ID: SQL Lidwa (42 entri)',
       note: null, noteId: null }
@@ -358,7 +405,7 @@ function renderDatasetBanner(bookId, containerId, forceDataset) {
     return;
   }
 
-  const currentDs = forceDataset || localStorage.getItem('dataset_version') || 'primary';
+  const currentDs = forceDataset || localStorage.getItem('dataset_version') || 'fawazahmed';
   const isId = window.LangSystem && window.LangSystem.isIdMode();
 
   // Validate: if the selected dataset doesn't exist for this book, fall back to primary
@@ -427,7 +474,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Dataset Version Switcher (legacy select, kept for back-compat) ---
   const versionSelect = document.getElementById('dataset-version');
   if (versionSelect) {
-    const currentVersion = localStorage.getItem('dataset_version') || 'primary';
+    const currentVersion = localStorage.getItem('dataset_version') || 'fawazahmed';
     versionSelect.value = currentVersion;
     versionSelect.addEventListener('change', (e) => {
       localStorage.setItem('dataset_version', e.target.value);
@@ -436,24 +483,17 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Initialize Books Rendering ---
-  const isIndex = location.pathname.endsWith('index.html') || location.pathname === '/';
-  const isBooks = location.pathname.endsWith('books.html');
+  const tisahGrid = document.getElementById('tisah-grid');
+  const tisahGridBooks = document.getElementById('tisah-grid-books');
+  const sittahGrid = document.getElementById('sittah-grid');
+  const secondaryGrid = document.getElementById('secondary-grid');
 
-  if (isIndex || isBooks) {
+  if (tisahGrid || tisahGridBooks || sittahGrid || secondaryGrid) {
     window.HadeethAPI.getBooks().then(books => {
-      if (isIndex) {
-        const grid = document.getElementById('tisah-grid');
-        if (grid) renderBookCards(books.slice(0, 9), grid);
-      }
-      if (isBooks) {
-        const sittahGrid = document.getElementById('sittah-grid');
-        const tisahGrid = document.getElementById('tisah-grid-books');
-        const secondaryGrid = document.getElementById('secondary-grid');
-        
-        if (sittahGrid) renderBookCards(books.slice(0, 6), sittahGrid);
-        if (tisahGrid) renderBookCards(books.slice(6, 9), tisahGrid);
-        if (secondaryGrid) renderBookCards(books.slice(9, 17), secondaryGrid);
-      }
+      if (tisahGrid) renderBookCards(books.slice(0, 9), tisahGrid);
+      if (sittahGrid) renderBookCards(books.slice(0, 6), sittahGrid);
+      if (tisahGridBooks) renderBookCards(books.slice(6, 9), tisahGridBooks);
+      if (secondaryGrid) renderBookCards(books.slice(9, 17), secondaryGrid);
     });
   }
 
@@ -499,7 +539,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </a>
       `;
     }).join('');
-    LangSystem.updateDOM();
+    if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
   }
 
   // --- Copy & Social Media Share Hadith Handler ---
@@ -578,9 +618,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('hotd-container')) {
     loadHOTD();
   }
-  if (document.getElementById('books-grid')) {
-    loadBooksGrid();
-  }
+
   if (document.getElementById('hadith-detail-container')) {
     loadHadithDetail();
   }
@@ -589,6 +627,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   if (document.getElementById('hadith-cards-container')) {
     loadHadithList();
+  }
+  if (document.getElementById('profile-header-name-en')) {
+    loadProfileDetail();
   }
   if (document.getElementById('sanad-nodes-container')) {
     loadSanadChain();
@@ -805,37 +846,7 @@ function renderSearchResults(results, query, container) {
   container.innerHTML = html;
 }
 
-/**
- * Load Books Grid Dynamically
- */
-async function loadBooksGrid() {
-  const container = document.getElementById('books-grid');
-  if (!container) return;
-  if (container.querySelectorAll('.book-card').length > 0) return;
 
-  const books = await window.HadeethAPI.getBooks();
-  if (!books || books.length === 0) return;
-
-  const isIdMode = (window.LangSystem && window.LangSystem.isIdMode());
-  let html = '';
-  books.forEach(b => {
-    const countUnit = isIdMode ? 'Hadits' : 'Ahadith';
-    html += `
-      <a href="kitab.html?book=${b.id}" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl overflow-hidden hover:shadow-md transition-all flex flex-col cursor-pointer group">
-        <div class="p-5 flex flex-col gap-2 flex-grow">
-          <div class="flex justify-between items-start">
-            <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] px-2 py-0.5 rounded font-bold text-xs uppercase">${b.grade || 'Sahih'}</span>
-            <span class="text-xs text-outline dark:text-gray-400 font-bold">${b.total_hadiths || '—'} ${countUnit}</span>
-          </div>
-          <h3 class="text-lg font-bold text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981] transition-colors mt-1">${escapeHtml(b.name_en)}</h3>
-          <p class="font-arabic-body text-base text-secondary dark:text-[#10b981]" dir="rtl">${escapeHtml(b.name_ar || '')}</p>
-          <p class="text-xs text-on-surface-variant dark:text-gray-400 mt-1">${escapeHtml(b.author || '')}</p>
-        </div>
-      </a>
-    `;
-  });
-  container.innerHTML = html;
-}
 
 /**
  * TafseerLinker — Automatically hyperlinking Qur'anic references to tafseer.id
@@ -913,6 +924,7 @@ const LastReadTracker = {
     }
   }
 };
+window.LastReadTracker = LastReadTracker;
 
 /**
  * Load Hadith Detail View Dynamic from URL params
@@ -989,8 +1001,23 @@ async function loadHadithDetail() {
   const titleTextEn = chapterObj ? (chapterObj.title_en || `Hadith #${hadithId}`) : `Hadith #${hadithId}`;
   const titleTextId = chapterObj ? (chapterObj.title_id || titleTextEn) : `Hadits #${hadithId}`;
 
-  if (bcCurrentEn) bcCurrentEn.innerText = titleTextEn;
-  if (bcCurrentId) bcCurrentId.innerText = titleTextId;
+  
+  // Append active dataset to title
+  const activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
+  let activeDsLabel = '';
+  if (activeDataset === 'native_lidwa') activeDsLabel = 'Lidwa Edition';
+  else if (activeDataset === 'native_ahmedbaset') activeDsLabel = 'AhmedBaset Edition';
+  else activeDsLabel = 'Fawazahmed0 Edition';
+
+  let activeDsLabelId = '';
+  if (activeDataset === 'native_lidwa') activeDsLabelId = 'Edisi Lidwa';
+  else if (activeDataset === 'native_ahmedbaset') activeDsLabelId = 'Edisi AhmedBaset';
+  else activeDsLabelId = 'Edisi Fawazahmed0';
+
+  if (bcCurrentEn) bcCurrentEn.innerText = titleTextEn + ` (${activeDsLabel})`;
+  if (bcCurrentId) bcCurrentId.innerText = titleTextId + ` (${activeDsLabelId})`;
+  document.title = `${bookName} Hadith #${hadithId} (${activeDsLabel}) - HADEETH.ID`;
+
 
   const chNum = chapterObj ? (chapterObj.chapter_number || '') : '';
   const enCh = chNum ? `Book ${chNum}: ${titleTextEn}` : bookName;
@@ -1012,14 +1039,40 @@ async function loadHadithDetail() {
     nextBtn.href = `hadith.html?book=${bookId}&id=${currentNum + 1}`;
   }
 
-  
+  // Render the dataset switcher banner at the top of the detail page
+  renderDatasetBanner(bookId, 'dataset-banner');
+
   const baseUrl = window.__HADEETH_BASE__ ? window.__HADEETH_BASE__ + '/data' : window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
   
-  // 1. Fetch Link Graph & Editions List & Baseline Arabic
-  const [linkResp, editionsResp, araResp] = await Promise.all([
+  // 1. Determine active dataset
+  // activeDataset is already determined above
+
+  // Hide panels based on strict data integrity isolation requested by user
+  const engPanel = document.querySelector('[data-english-text]')?.closest('.flex.flex-col');
+  const idPanel = document.querySelector('[data-indonesian-text]')?.closest('.flex.flex-col');
+  
+  if (activeDataset === 'native_lidwa') {
+      if (engPanel) engPanel.style.display = 'none';
+      if (idPanel) idPanel.style.display = 'flex';
+  } else if (activeDataset === 'native_ahmedbaset') {
+      if (idPanel) idPanel.style.display = 'none';
+      if (engPanel) engPanel.style.display = 'flex';
+  } else {
+      if (idPanel) idPanel.style.display = 'none';
+      if (engPanel) engPanel.style.display = 'flex';
+  }
+
+  // Adjust grid columns if one panel is hidden
+  const panelsContainer = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2');
+  if (panelsContainer) {
+      if (activeDataset === 'native_lidwa' || activeDataset === 'native_ahmedbaset' || activeDataset === 'fawazahmed') {
+          panelsContainer.className = "grid grid-cols-1 gap-6";
+      }
+  }
+
+  const [linkResp, editionsResp] = await Promise.all([
     fetch(`${baseUrl}/links/${bookId}.json`).catch(() => null),
-    fetch(`${baseUrl}/meta/fawaz_editions.json`).catch(() => null),
-    fetch(`${baseUrl}/raw_baseline/ara-${bookId}.json`).catch(() => null)
+    fetch(`${baseUrl}/meta/fawaz_editions.json`).catch(() => null)
   ]);
 
   let linkGraph = {};
@@ -1028,65 +1081,93 @@ async function loadHadithDetail() {
   if (editionsResp && editionsResp.ok) fawazEditions = await editionsResp.json();
   
   let hadithTextAr = '';
-  if (araResp && araResp.ok) {
-    const araData = await araResp.json();
-    const found = (araData.hadiths || []).find(h => (h.hadithnumber ?? h.id) == hadithId);
-    if (found) hadithTextAr = found.text || '';
+  
+  // Fetch Arabic text based on ACTIVE dataset (Strict Isolation)
+  if (activeDataset === 'native_lidwa') {
+      const lidwaResp = await fetch(`${baseUrl}/sources/lidwa/${bookId}.json`).catch(() => null);
+      if (lidwaResp && lidwaResp.ok) {
+          const data = await lidwaResp.json();
+          const found = (Array.isArray(data) ? data : (data.hadiths || [])).find(h => (h.hadith_number ?? h.hadithnumber ?? h.id) == hadithId);
+          if (found) hadithTextAr = found.ar || found.text_ar || '';
+      }
+  } else if (activeDataset === 'native_ahmedbaset') {
+      const abBookMap = { ahmad: 'ahmed' };
+      const abBook = abBookMap[bookId] || bookId;
+      const abResp = await fetch(`${baseUrl}/sources/ahmedbaset/by_book/the_9_books/${abBook}.json`).catch(() => null);
+      if (abResp && abResp.ok) {
+          const data = await abResp.json();
+          const found = (data.hadiths || []).find(h => String(h.idInBook) === String(hadithId));
+          if (found) hadithTextAr = found.arabic || '';
+      }
+  } else {
+      // Default fawazahmed
+      const araResp = await fetch(`${baseUrl}/raw_baseline/ara-${bookId}.json`).catch(() => null);
+      if (araResp && araResp.ok) {
+          const araData = await araResp.json();
+          const found = (araData.hadiths || []).find(h => (h.hadithnumber ?? h.id) == hadithId);
+          if (found) hadithTextAr = found.text || '';
+      }
   }
 
-  // Determine IDs for different datasets
-  const fawazId = hadithId;
-  const lidwaId = linkGraph.fawaz_to_lidwa ? (linkGraph.fawaz_to_lidwa[fawazId] || null) : null;
-  const abId = linkGraph.fawaz_to_ab ? (linkGraph.fawaz_to_ab[fawazId] || null) : null;
+  // Determine IDs for cross-dataset mapping (only used for syarah/sanad now, not for injecting translation boxes)
+  const fawazId = activeDataset === 'fawazahmed' ? hadithId : (Object.keys(linkGraph.fawaz_to_lidwa || {}).find(k => linkGraph.fawaz_to_lidwa[k] == hadithId) || hadithId);
+  const lidwaId = activeDataset === 'native_lidwa' ? hadithId : (linkGraph.fawaz_to_lidwa ? (linkGraph.fawaz_to_lidwa[fawazId] || null) : null);
+  const abId = activeDataset === 'native_ahmedbaset' ? hadithId : (linkGraph.fawaz_to_ab ? (linkGraph.fawaz_to_ab[fawazId] || null) : null);
 
-  // Build the list of available translations for THIS hadith
   const translationOptions = [];
   
-  // Fawaz Editions
-  if (fawazEditions[bookId]) {
-      const editions = fawazEditions[bookId].collection || [];
-      editions.forEach(ed => {
-          if (ed.name.startsWith('ara-') || ed.name.startsWith('ind-')) return; 
-          const langCode = ed.language.toUpperCase();
-          const author = ed.author !== 'Unknown' ? ed.author : 'Fawazahmed0';
-          translationOptions.push({
-              id: `fawaz-${ed.name}`,
-              label: `${langCode} - ${author} (Fawazahmed0)`,
-              lang: ed.language,
-              source: 'fawaz',
-              hid: fawazId,
-              file: `${baseUrl}/raw_baseline/${ed.name}.json`
-          });
-      });
-  }
-
-  // Add Lidwa (if linked)
-  if (lidwaId) {
+  if (activeDataset === 'native_lidwa') {
       translationOptions.push({
           id: 'lidwa-id',
-          label: `ID - Kemenag (Lidwa) [Link #${lidwaId}]`,
+          label: `ID - Kemenag (Lidwa)`,
           lang: 'Indonesian',
           source: 'lidwa',
-          hid: lidwaId,
+          hid: hadithId,
           file: `${baseUrl}/sources/lidwa/${bookId}.json`
       });
-  }
-
-  // Add AhmedBaset (if linked)
-  if (abId) {
+  } else if (activeDataset === 'native_ahmedbaset') {
       const abBookMap = { ahmad: 'ahmed' };
       const abBook = abBookMap[bookId] || bookId;
       translationOptions.push({
           id: 'ab-en',
-          label: `EN - AhmedBaset [Link #${abId}]`,
+          label: `EN - AhmedBaset`,
           lang: 'English',
           source: 'ab',
-          hid: abId,
+          hid: hadithId,
           file: `${baseUrl}/sources/ahmedbaset/by_book/the_9_books/${abBook}.json`
       });
+  } else {
+      // Fawaz Editions
+      if (fawazEditions[bookId]) {
+          const editions = fawazEditions[bookId].collection || [];
+          editions.forEach(ed => {
+              if (ed.name.startsWith('ara-') || ed.name.startsWith('ind-')) return; 
+              const langCode = ed.language.toUpperCase();
+              const author = ed.author !== 'Unknown' ? ed.author : 'Fawazahmed0';
+              translationOptions.push({
+                  id: `fawaz-${ed.name}`,
+                  label: `${langCode} - ${author}`,
+                  lang: ed.language,
+                  source: 'fawaz',
+                  hid: hadithId,
+                  file: `${baseUrl}/raw_baseline/${ed.name}.json`
+              });
+          });
+      }
+      
+      // Inject Lidwa translation via Master Link Engine for Indonesian fallback
+      if (lidwaId) {
+          translationOptions.push({
+              id: 'lidwa-id',
+              label: `ID - Kemenag (Lidwa)`,
+              lang: 'Indonesian',
+              source: 'lidwa',
+              hid: lidwaId,
+              file: `${baseUrl}/sources/lidwa/${bookId}.json`
+          });
+      }
   }
 
-  // Helper to fetch and extract specific hadith text
   async function fetchTranslationText(opt) {
       try {
           const resp = await fetch(opt.file);
@@ -1207,89 +1288,18 @@ async function loadHadithDetail() {
     });
   });
 
-if (sanadPreviewEn || sanadPreviewId || rawiEn || rawiId) {
-    let previewNames = [];
-    if (item.text_id) {
-      const isnadPartId = item.text_id.split(/beliau\s+bersabda\s*:|berfirman\s*:|berkata\s*:|tentang\s+firman\s+Allah|bahwa\s+Rasulullah/i)[0] || item.text_id;
-      const brackets = isnadPartId.match(/\[([^\]]+)\]/g);
-      if (brackets) {
-        const stopWords = new Set([
-          'al qur\'an', 'al-qur\'an', 'qur\'an', 'islam', 'nabi', 'rasulullah', 'allah', 'tuhan',
-          'pamannya', 'pamanku', 'paman', 'uncle', 'my uncle', 'his uncle',
-          'ayahnya', 'ayahku', 'bapaknya', 'bapakku', 'ayah', 'bapak', 'father', 'his father', 'my father',
-          'kakeknya', 'kakekku', 'kakek', 'grandfather', 'his grandfather', 'my grandfather',
-          'ibunya', 'ibuku', 'ibu', 'mother', 'his mother', 'my mother',
-          'saudaranya', 'saudaraku', 'saudara', 'brother', 'his brother', 'my brother',
-          'saudari', 'saudarinya', 'sister', 'his sister',
-          'anaknya', 'anakku', 'anak', 'son', 'daughter', 'his son', 'his daughter',
-          'istrinya', 'istri', 'wife', 'his wife',
-          'suaminya', 'suami', 'husband', 'her husband',
-          'budaknya', 'budak', 'hamba', 'slave', 'freedman',
-          'bibinya', 'bibi', 'aunt', 'his aunt',
-          'sepupunya', 'sepupu', 'cousin',
-          'mertuanya', 'mertua', 'in-law',
-          'keluarganya', 'keluarga', 'family',
-          'kerabatnya', 'kerabat', 'kin',
-          'sahabat', 'sahabatnya', 'companion', 'companions',
-          'beliau', 'mereka', 'seseorang', 'seorang', 'lelaki', 'wanita', 'perempuan',
-          'orang', 'orang tua', 'kaum', 'umat', 'jamaah'
-        ]);
-        brackets.forEach(b => {
-          let nameStr = b.replace(/[\[\]]/g, '').trim();
-          let name = nameStr;
-          if (nameStr.includes('|')) {
-            name = nameStr.split('|')[0].trim();
-          }
-          const norm = name.toLowerCase();
-          const cleanNorm = norm.replace(/\s+radliallahu.*$/, '').replace(/\s+semoga allah.*$/, '').trim();
-          
-          // Dynamic pronoun resolution for Sanad preview
-          if (['bapaknya', 'ayahnya', 'his father', 'pamannya', 'kakeknya', 'ibunya'].includes(cleanNorm)) {
-            const prevRaw = previewNames.length > 0 ? previewNames[previewNames.length - 1] : '';
-            const prevName = prevRaw.toLowerCase().replace(/[\']/g, '');
-            
-            if (cleanNorm === 'bapaknya' || cleanNorm === 'ayahnya' || cleanNorm === 'his father') {
-              const pronounMap = {
-                'hisyam': 'Urwah bin Az-Zubair',
-                'suhail': 'Abu Shalih',
-                'salim': 'Abdullah bin Umar',
-                'ibnu thawus': 'Thawus',
-                'mutamir': 'Sulaiman At-Taimi',
-                'al-mutamir': 'Sulaiman At-Taimi',
-                'al mutamir': 'Sulaiman At-Taimi',
-                'jafar': 'Muhammad bin Ali',
-                'ibnu buraidah': 'Buraidah'
-              };
-              if (pronounMap[prevName]) {
-                name = pronounMap[prevName];
-              } else if (prevRaw.includes(' bin ')) {
-                name = prevRaw.split(' bin ')[1].trim();
-              }
-            } else if (cleanNorm === 'pamannya') {
-              if (prevName.includes('abbad bin tamim')) name = 'Abdullah bin Zaid';
-              if (prevName.includes('ibnu akhi ibnu syihab')) name = 'Ibnu Syihab';
-            }
-          }
-          
-          if (name && !stopWords.has(name.toLowerCase()) && !stopWords.has(cleanNorm) && name.length > 2) {
-            previewNames.push(name);
-          }
-        });
-      }
-    }
+  const sanadLinkBtn = document.querySelector('[data-sanad-link]');
+  if (sanadLinkBtn) {
+    sanadLinkBtn.href = `sanad.html?book=${bookId}&id=${hadithId}`;
+  }
 
-    if (previewNames.length > 0) {
-      const companionRawi = previewNames[previewNames.length - 1];
-      if (sanadPreviewEn) sanadPreviewEn.innerText = previewNames.join(' → ') + ' → Prophet ﷺ';
-      if (sanadPreviewId) sanadPreviewId.innerText = previewNames.join(' → ') + ' → Rasulullah ﷺ';
-      if (rawiEn) rawiEn.innerText = `Narrator: ${companionRawi}`;
-      if (rawiId) rawiId.innerText = `Perawi: ${companionRawi}`;
-    } else {
-      if (sanadPreviewEn) sanadPreviewEn.innerText = `Inspect Chain for ${bookName} #${item.hadith_number} → Prophet ﷺ`;
-      if (sanadPreviewId) sanadPreviewId.innerText = `Periksa Silsilah untuk ${bookName} #${item.hadith_number} → Rasulullah ﷺ`;
-      if (rawiEn) rawiEn.innerText = `Narrator: Sahabi (Companion)`;
-      if (rawiId) rawiId.innerText = `Perawi: Sahabat`;
-    }
+  if (sanadPreviewEn || sanadPreviewId || rawiEn || rawiId) {
+    // text_id is not populated since migration to lazy-loading translations
+    // Fallback to generic preview
+    if (sanadPreviewEn) sanadPreviewEn.innerText = `Inspect Chain for ${bookName} #${item.hadith_number} → Prophet ﷺ`;
+    if (sanadPreviewId) sanadPreviewId.innerText = `Periksa Silsilah untuk ${bookName} #${item.hadith_number} → Rasulullah ﷺ`;
+    if (rawiEn) rawiEn.innerText = `Narrator: Sahabi (Companion)`;
+    if (rawiId) rawiId.innerText = `Perawi: Sahabat`;
   }
 
   loadHadithSyarah(bookId, item.hadith_number || hadithId);
@@ -1312,7 +1322,7 @@ async function loadHadithList() {
   // then localStorage. Sync localStorage so the banner reflects the URL param.
   const datasetParam = params.get('dataset');
   if (datasetParam) localStorage.setItem('dataset_version', datasetParam);
-  const activeDataset = datasetParam || localStorage.getItem('dataset_version') || 'primary';
+  const activeDataset = datasetParam || localStorage.getItem('dataset_version') || 'fawazahmed';
 
   const bookNames = {
     bukhari: 'Sahih al-Bukhari',
@@ -1577,8 +1587,12 @@ async function loadHadithList() {
 
           if (linkResp && linkResp.ok) {
             const linkData = await linkResp.json();
-            for (const [lNum, val] of Object.entries(linkData)) {
-              if (val.ahmedbaset_id !== undefined) abToLidwaMap[String(val.ahmedbaset_id)] = String(lNum);
+            const fawazToLidwa = linkData.fawaz_to_lidwa || {};
+            const abToFawaz = linkData.ab_to_fawaz || {};
+            for (const [abId, fawazId] of Object.entries(abToFawaz)) {
+              if (fawazToLidwa[fawazId] !== undefined) {
+                  abToLidwaMap[abId] = String(fawazToLidwa[fawazId]);
+              }
             }
           }
 
@@ -1594,7 +1608,7 @@ async function loadHadithList() {
         }
 
         allHadiths = (abChapter.hadiths || []).map(h => {
-          const abIdGlobal = String(h.chapterId) + '_' + String(h.idInBook || h.id);
+          const abIdGlobal = String(h.idInBook || h.id);
           const lidwaNum = abToLidwaMap[abIdGlobal];
           const matchedIdText = lidwaNum ? (lidwaIdMap[lidwaNum] || '') : '';
           
@@ -1632,19 +1646,13 @@ async function loadHadithList() {
       if (resp.ok) {
         const lidwaAll = await resp.json();
         const chNum = parseInt(chapterId);
-        let chapHadiths = lidwaAll.filter(h => h.chapter_number === chNum);
         
-        // Fix Lidwa lexicographical sorting issue (e.g. 10 before 8)
-        chapHadiths.sort((a, b) => {
-          const numA = parseInt(String(a.hadith_number).replace(/\D/g, '')) || 0;
-          const numB = parseInt(String(b.hadith_number).replace(/\D/g, '')) || 0;
-          return numA - numB;
-        });
-
-        // Get chapter title from lidwa-chapters index
         let chapTitleId = `Kitab ${chapterId}`;
         let chapTitleEn = `Chapter ${chapterId}`;
         let chapTitleAr = '';
+        let startNum = -1;
+        let endNum = -1;
+        
         try {
           const idxResp = await fetch(`data/lidwa-chapters/${bookId}.json`);
           if (idxResp.ok) {
@@ -1654,9 +1662,29 @@ async function loadHadithList() {
               chapTitleId = ch.title_id || chapTitleId;
               chapTitleEn = ch.title_en || chapTitleEn;
               chapTitleAr = ch.title_ar || '';
+              if (ch.hadith_start !== undefined) startNum = ch.hadith_start;
+              if (ch.hadith_end !== undefined) endNum = ch.hadith_end;
             }
           }
         } catch(e2) { /* ignore */ }
+
+        let chapHadiths = lidwaAll;
+        if (startNum !== -1 && endNum !== -1) {
+            chapHadiths = lidwaAll.filter(h => {
+                const n = parseInt(String(h.hadith_number).replace(/\D/g, '')) || 0;
+                return n >= startNum && n <= endNum;
+            });
+        } else {
+            // Fallback just grab first 100 if range not found
+            chapHadiths = lidwaAll.slice(0, 100);
+        }
+        
+        // Fix Lidwa lexicographical sorting issue (e.g. 10 before 8)
+        chapHadiths.sort((a, b) => {
+          const numA = parseInt(String(a.hadith_number).replace(/\D/g, '')) || 0;
+          const numB = parseInt(String(b.hadith_number).replace(/\D/g, '')) || 0;
+          return numA - numB;
+        });
 
         if (chTitleEn) chTitleEn.innerText = chapTitleEn;
         if (chTitleId) chTitleId.innerText = chapTitleId;
@@ -1670,7 +1698,8 @@ async function loadHadithList() {
         if (chMetaEn2) chMetaEn2.innerText = `Lidwa Kitab ${chapterId}`;
         if (chMetaId2) chMetaId2.innerText = `Lidwa Kitab ${chapterId}`;
 
-        allHadiths = chapHadiths.map(h => ({
+        allHadiths = chapHadiths.map(h => {
+          return {
           hadith_number: h.hadith_number,
           text_ar: h.text_ar || '',
           text_en: h.text_en || '',
@@ -1682,7 +1711,8 @@ async function loadHadithList() {
           book_id: bookId,
           _source: 'lidwa',
           _lidwaRef: h.usc_msa_ref || ''
-        }));
+        };
+        });
 
         const total = allHadiths.length;
         const firstH = chapHadiths[0];
@@ -1782,7 +1812,7 @@ async function loadHadithList() {
   } // end primary branch
 
   filteredHadiths = [...allHadiths];
-  if (activeDataset === 'primary') {
+  if (activeDataset === 'fawazahmed') {
     if (startHadithNum != null && endHadithNum != null) {
       const count = chapterHadithCount || (endHadithNum - startHadithNum + 1);
       const enText = `Hadith ${startHadithNum} – ${endHadithNum} • ${count} Hadiths in ${bookName} Chapter ${chapterId}`;
@@ -2283,7 +2313,7 @@ async function loadChaptersList() {
       kitabCount: '📚 25 Jilid',
       hadithCount: '📖 20.000+ Hadits',
       authenticity: '⭐️ Kerangka',
-      datasetInfo: { primary: { kitab: '📚 25 Jilid', hadith: '📖 20.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
+      datasetInfo: { fawazahmed: { kitab: '📚 25 Jilid', hadith: '📖 20.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
     },
     ibn_abi_shaybah: {
       name: 'Musannaf Ibn Abi Shaybah',
@@ -2297,7 +2327,7 @@ async function loadChaptersList() {
       kitabCount: '📚 37 Kitab',
       hadithCount: '📖 37.000+ Hadits',
       authenticity: '⭐️ Kerangka',
-      datasetInfo: { primary: { kitab: '📚 37 Kitab', hadith: '📖 37.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
+      datasetInfo: { fawazahmed: { kitab: '📚 37 Kitab', hadith: '📖 37.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
     }
   };
     const meta = bookMasterDict[bookId] || {
@@ -2350,7 +2380,7 @@ async function loadChaptersList() {
   // Render dataset banner BEFORE chapter listing
   renderDatasetBanner(bookId, 'dataset-banner');
 
-  const activeDataset = localStorage.getItem('dataset_version') || 'primary';
+  const activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
 
   // Validate dataset availability for this book
   const dsConfig = BOOK_DATASETS[bookId] || [];
@@ -2358,7 +2388,7 @@ async function loadChaptersList() {
   const resolvedDataset = validDs ? activeDataset : 'primary';
 
   // Apply dataset-specific counts to info card
-  const dsInfo = (meta.datasetInfo || {})[resolvedDataset] || (meta.datasetInfo || {}).primary || {};
+  const dsInfo = (meta.datasetInfo || {})[resolvedDataset] || (meta.datasetInfo || {}).fawazahmed || {};
   if (kitabCountElem) kitabCountElem.innerText = dsInfo.kitab || meta.kitabCount;
   if (hadithCountElem) hadithCountElem.innerText = dsInfo.hadith || meta.hadithCount;
   const datasetInfoElem = document.querySelector('[data-book-dataset-info]');
@@ -2371,7 +2401,7 @@ async function loadChaptersList() {
   // BRANCH A — Primary (Darussalam / fawazahmed0)
   // Reads from data/chapters/<book>.json (pre-indexed)
   // ================================================================
-  if (resolvedDataset === 'primary') {
+  if (resolvedDataset === 'fawazahmed') {
     let chapters = await window.HadeethAPI.getChapters(bookId);
 
     // Default Chapter Skeletons for Books without pre-generated JSON files
@@ -3456,38 +3486,49 @@ function renderSyarahUI() {
   const activeClass = "px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer bg-primary dark:bg-[#10b981] text-white dark:text-black shadow-sm";
   const inactiveClass = "px-3.5 py-1.5 rounded-lg text-xs font-medium text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer";
 
-  const src = window.activeSyarahSource || 'enc';
   const lang = window.activeSyarahLang || ((window.LangSystem && window.LangSystem.isIdMode()) ? 'id' : 'en');
 
-  if (btnEnc) btnEnc.className = (src === 'enc') ? activeClass : inactiveClass;
-  if (btnFath) btnFath.className = (src === 'fath') ? activeClass : inactiveClass;
-  if (btnNawawi) btnNawawi.className = (src === 'nawawi') ? activeClass : inactiveClass;
-  if (langSelect && langSelect.value !== lang) langSelect.value = lang;
-
-  const data = window.activeSyarahData;
-  if (!data) {
-    expText.innerText = (lang === 'id') ? "Syarah sedang dimuat..." : "Loading commentary...";
+  const dataArray = window.activeSyarahData;
+  if (!dataArray || dataArray.length === 0) {
+    if (expText) expText.innerText = (lang === 'id') ? "Syarah sedang dimuat atau tidak tersedia..." : "Loading commentary or unavailable...";
     return;
   }
 
-  let textExp = '';
-  let benefits = [];
+  // Ensure active index
+  let activeIndex = window.activeSyarahIndex || 0;
+  if (activeIndex >= dataArray.length) activeIndex = 0;
 
-  // Look for exact lang match, then fallback to English
-  textExp = data[`explanation_${lang}`] || data[`explanation_${src}_${lang}`] || data[`explanation_en`] || data[`explanation_${src}_en`] || '';
-  benefits = data[`benefits_${lang}`] || data[`benefits_${src}_${lang}`] || data[`benefits_en`] || data[`benefits_${src}_en`] || [];
+  const data = dataArray[activeIndex];
+  const srcNameEn = data.source_name_en || (data.book_id === 'bukhari' ? 'Fath al-Bari' : 'Commentary');
+  const srcNameId = data.source_name_id || srcNameEn;
 
-  if (!textExp) {
-    if (src === 'fath') {
-      textExp = lang === 'id' ? '<span class="text-outline dark:text-gray-400 italic">Syarah Fathul Bari belum tersedia.</span>' : '<span class="text-outline dark:text-gray-400 italic">Sharh Fath al-Bari is not yet available.</span>';
-    } else if (src === 'nawawi') {
-      textExp = lang === 'id' ? '<span class="text-outline dark:text-gray-400 italic">Syarah Sahih Muslim (Imam an-Nawawi) belum tersedia.</span>' : '<span class="text-outline dark:text-gray-400 italic">Sharh of Imam an-Nawawi is not yet available.</span>';
-    } else {
-      textExp = lang === 'id' ? '<span class="text-outline dark:text-gray-400 italic">Syarah (Penjelasan Hadits) belum tersedia untuk hadits ini dalam basis data.</span>' : '<span class="text-outline dark:text-gray-400 italic">Syarah (Commentary) is not yet available for this Hadith in the database.</span>';
-    }
+  // Dynamically generate tabs
+  const tabsContainer = document.getElementById('syarah-source-tabs');
+  if (tabsContainer) {
+    let tabsHtml = '';
+    dataArray.forEach((c, idx) => {
+      const cNameEn = c.source_name_en || 'Commentary ' + (idx + 1);
+      const cNameId = c.source_name_id || cNameEn;
+      const cName = lang === 'id' ? cNameId : cNameEn;
+      
+      const isActive = idx === activeIndex;
+      const cls = isActive ? activeClass : inactiveClass;
+      
+      tabsHtml += `<button onclick="window.switchSyarahSource(${idx})" class="${cls}">${escapeHtml(cName)}</button>`;
+    });
+    tabsContainer.innerHTML = tabsHtml;
   }
 
-  expText.innerHTML = textExp;
+  if (langSelect && langSelect.value !== lang) langSelect.value = lang;
+
+  let textExp = data[`explanation_${lang}`] || data[`explanation_en`] || '';
+  let benefits = data[`benefits_${lang}`] || data[`benefits_en`] || [];
+
+  if (!textExp) {
+    textExp = lang === 'id' ? '<span class="text-outline dark:text-gray-400 italic">Syarah (Penjelasan Hadits) belum tersedia untuk hadits ini dalam bahasa ini.</span>' : '<span class="text-outline dark:text-gray-400 italic">Syarah (Commentary) is not yet available for this Hadith in this language.</span>';
+  }
+
+  if (expText) expText.innerHTML = textExp;
 
   if (benefitsList) {
     if (benefits && benefits.length > 0) {
@@ -3501,56 +3542,42 @@ function renderSyarahUI() {
   if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
 }
 
+window.switchSyarahSource = function(idx) {
+  window.activeSyarahIndex = parseInt(idx) || 0;
+  renderSyarahUI();
+};
+
 async function loadHadithSyarah(bookId, hadithNum) {
   const hadithId = `${bookId}_${hadithNum}`;
-  let commentaryData = null;
+  let commentariesArray = [];
 
   // Default Syarah language to current active site language (id or en)
   const currentSiteLang = (window.LangSystem && window.LangSystem.get()) ? window.LangSystem.get() : ((window.LangSystem && window.LangSystem.isIdMode()) ? 'id' : 'en');
   window.activeSyarahLang = currentSiteLang;
 
-  // Default Syarah source based on book
-  if (bookId === 'bukhari') {
-    window.activeSyarahSource = 'fath';
-  } else if (bookId === 'nawawi') {
-    window.activeSyarahSource = 'nawawi';
-  } else {
-    window.activeSyarahSource = 'enc';
-  }
-
   try {
-    const primaryId = await window.HadeethAPI.getPrimaryAnchorId(bookId, hadithNum);
-    const resolvedHadithId = `${bookId}_${primaryId}`;
-    const res = await fetch(`data/commentaries/${resolvedHadithId}.json`);
-    if (res && res.ok) {
-      commentaryData = await res.json();
-    }
+    let resolvedHadithId = hadithNum;
+    try {
+       resolvedHadithId = await window.HadeethAPI.getPrimaryAnchorId(bookId, hadithNum);
+    } catch (e) {}
+
+    commentariesArray = await window.HadeethAPI.getCommentaries(bookId, resolvedHadithId);
   } catch (e) {}
 
-  if (!commentaryData && typeof process !== 'undefined' && process.versions && process.versions.node) {
-    try {
-      const fs = require('fs');
-      const path = require('path');
-      const fp = path.resolve(process.cwd(), 'data', 'commentaries', `${hadithId}.json`);
-      if (fs.existsSync(fp)) {
-        commentaryData = JSON.parse(fs.readFileSync(fp, 'utf8'));
-      }
-    } catch (e) {}
+  if (!commentariesArray || commentariesArray.length === 0) {
+    if (typeof process !== 'undefined' && process.versions && process.versions.node) {
+      try {
+        const fs = require('fs');
+        const path = require('path');
+        const fp = path.resolve(process.cwd(), 'data', 'commentaries', `${bookId}_${hadithNum}.json`);
+        if (fs.existsSync(fp)) {
+          commentariesArray.push(JSON.parse(fs.readFileSync(fp, 'utf8')));
+        }
+      } catch (e) {}
+    }
   }
 
-  if (!commentaryData) {
-    commentaryData = {
-      hadith_id: hadithId,
-      book_id: bookId,
-      hadith_number: hadithNum,
-      explanation_id: "",
-      explanation_en: "",
-      benefits_id: [],
-      benefits_en: []
-    };
-  }
-
-  window.activeSyarahData = commentaryData;
+  window.activeSyarahData = commentariesArray;
   renderSyarahUI();
 
   // Listen for global site language changes and sync Syarah default language
@@ -3564,3 +3591,27 @@ async function loadHadithSyarah(bookId, hadithNum) {
   }
 }
 
+
+
+async function loadProfileDetail() {
+  const params = new URLSearchParams(window.location.search);
+  const rawiIdRaw = params.get('id') || params.get('name') || 'rawi_abu_hurairah';
+  
+  let rawiId = rawiIdRaw;
+  if (rawiId.startsWith('rawi_')) {
+     const p = rawiId.split('_')[1];
+     if (!isNaN(parseInt(p))) rawiId = p;
+  }
+  if (!isNaN(parseInt(rawiIdRaw))) rawiId = rawiIdRaw;
+
+  const rawisDict = await window.HadeethAPI.getActiveRawis();
+  const rawiData = rawisDict[rawiId] || await window.HadeethAPI.getRawiProfile(rawiId);
+
+  const nameEnEl = document.getElementById('profile-header-name-en');
+  const nameIdEl = document.getElementById('profile-header-name-id');
+  const gradeEl = document.getElementById('profile-header-grade');
+
+  if (nameEnEl && rawiData) nameEnEl.innerText = rawiData.en || rawiData.name_en || 'Transmitter';
+  if (nameIdEl && rawiData) nameIdEl.innerText = rawiData.id || rawiData.name_ar || rawiData.name_en || 'Perawi';
+  if (gradeEl && rawiData) gradeEl.innerText = rawiData.grade || 'Unknown';
+}

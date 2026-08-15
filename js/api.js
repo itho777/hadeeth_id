@@ -54,10 +54,14 @@ const HadeethAPI = {
   },
 
   async getChapters(bookId) {
+    if (this.chaptersCache && this.chaptersCache[bookId]) return this.chaptersCache[bookId];
     try {
       const res = await fetch(`${this.baseUrl}/chapters/${bookId}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      return await res.json();
+      const data = await res.json();
+      this.chaptersCache = this.chaptersCache || {};
+      this.chaptersCache[bookId] = data;
+      return data;
     } catch (err) {
       console.error(`Failed to load chapters for ${bookId}:`, err);
       return [];
@@ -274,15 +278,44 @@ const HadeethAPI = {
   },
 
   /**
-   * Fetch commentary & sharh explanation
+   * Resolve primary anchor ID for a Hadith (used for Syarah and cross-dataset mapping)
    */
-  async getCommentary(bookId, hadithNumber) {
+  async getPrimaryAnchorId(bookId, hadithNumber) {
+    // For now, return the provided hadithNumber directly as Lidwa data doesn't map to a different anchor natively.
+    return hadithNumber;
+  },
+
+  /**
+   * Fetch commentary & sharh explanation (supports multiple)
+   */
+  async getCommentaries(bookId, hadithNumber) {
+    const commentaries = [];
     try {
       const res = await fetch(`${this.baseUrl}/commentaries/${bookId}_${hadithNumber}.json`);
+      if (res.ok) commentaries.push(await res.json());
+      
+      // Probe for alternative/multiple commentaries (e.g. bukhari_1_2.json)
+      for (let i = 2; i <= 5; i++) {
+        const altRes = await fetch(`${this.baseUrl}/commentaries/${bookId}_${hadithNumber}_${i}.json`);
+        if (altRes.ok) commentaries.push(await altRes.json());
+        else break;
+      }
+    } catch (err) {
+      console.warn(`Commentary fetch error for ${bookId}_${hadithNumber}:`, err);
+    }
+    return commentaries;
+  },
+
+  /**
+   * Fetch individual rawi (narrator) profile
+   */
+  async getRawiProfile(rawiId) {
+    try {
+      const res = await fetch(`${this.baseUrl}/rawis/profiles/${rawiId}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.json();
     } catch (err) {
-      console.warn(`Commentary not found for ${bookId}_${hadithNumber}`);
+      console.warn(`Rawi profile not found for ${rawiId}`);
       return null;
     }
   }

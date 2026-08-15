@@ -75,10 +75,12 @@
       </span>
     </div>
     <div class="flex gap-2">
-      <a id="prev-hadith-btn" href="#" class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80 flex items-center">← Prev</a>
-      <a id="next-hadith-btn" href="#" class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80 flex items-center">Next →</a>
+      <a id="prev-hadith-btn" href="#" class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80 flex items-center">&larr; Prev</a>
+      <a id="next-hadith-btn" href="#" class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80 flex items-center">Next &rarr;</a>
     </div>
   </div>
+
+  <div id="dataset-banner"></div>
 
   <!-- Hadith Core Card -->
   <div id="hadith-detail-container" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 md:p-8 flex flex-col gap-8 shadow-sm">
@@ -198,18 +200,7 @@
 
       <!-- Multi-Source Reference Tabs -->
       <div class="flex gap-2 border-b border-outline-variant/10 dark:border-[#334155]/60 pb-3 overflow-x-auto" id="syarah-source-tabs">
-        <button id="syarah-tab-enc" onclick="window.switchSyarahSource('enc')" class="px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer bg-primary dark:bg-[#10b981] text-white dark:text-black shadow-sm">
-          <span data-lang-en>Concise Commentary (HadeethEnc)</span>
-          <span data-lang-id style="display:none">Syarah Ringkas (HadeethEnc)</span>
-        </button>
-        <button id="syarah-tab-fath" onclick="window.switchSyarahSource('fath')" class="px-3.5 py-1.5 rounded-lg text-xs font-medium text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer">
-          <span data-lang-en>Sharh Fath al-Bari (Ibn Hajar)</span>
-          <span data-lang-id style="display:none">Syarah Fathul Bari (Ibnu Hajar)</span>
-        </button>
-        <button id="syarah-tab-nawawi" onclick="window.switchSyarahSource('nawawi')" class="px-3.5 py-1.5 rounded-lg text-xs font-medium text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer">
-          <span data-lang-en>Sharh Sahih Muslim (Al-Nawawi)</span>
-          <span data-lang-id style="display:none">Syarah Sahih Muslim (An-Nawawi)</span>
-        </button>
+        <!-- Tabs will be dynamically generated here -->
       </div>
 
       <!-- Syarah Content Container -->
@@ -239,8 +230,8 @@
   <div><span data-i18n="footer_text">© 2026 HADEETH.ID - Digital Manuscript Preservation</span></div>
 </footer>
 
-<script src="js/api.js?v=1786671525"></script>
-<script src="js/app.js?v=1786671525"></script>
+<script src="js/api.js?v=2026081411"></script>
+<script src="js/app.js?v=2026081411"></script>
 
 <!-- Toast notification for Copy/Share -->
 <div id="share-toast" style="display:none;position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1B5E20;color:#fff;font-size:12px;font-weight:700;padding:10px 22px;border-radius:999px;z-index:9999;box-shadow:0 4px 24px rgba(0,0,0,.25);transition:opacity .3s"></div>

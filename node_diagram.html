@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HADEETH.ID - Multidimensional Linking Visualization</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0e14; color: #fff; margin: 0; overflow: hidden; }
+    #controls { position: absolute; top: 20px; left: 20px; background: rgba(15, 23, 42, 0.8); padding: 15px; border-radius: 8px; border: 1px solid #334155; }
+    h1 { margin: 0 0 10px 0; font-size: 18px; color: #10b981; }
+    .legend { display: flex; align-items: center; gap: 8px; font-size: 12px; margin-bottom: 5px; }
+    .legend-box { width: 12px; height: 12px; border-radius: 50%; }
+    #svg-container { width: 100vw; height: 100vh; }
+    .node-label { font-size: 10px; fill: #cbd5e1; pointer-events: none; }
+  </style>
+</head>
+<body>
+
+  <div id="controls">
+    <h1>Linking Database (Node-Link Diagram)</h1>
+    <p style="font-size: 12px; margin: 0 0 15px 0; max-width: 300px; color: #94a3b8;">
+      Visualizing Sahih Bukhari (Hadiths 1-100) relationships. 
+      Central anchors mapped to Lidwa translations and Kaggle rawis (narrators).
+    </p>
+    <div class="legend"><div class="legend-box" style="background:#3b82f6;"></div> Anchor (Fawazahmed/AhmedBaset)</div>
+    <div class="legend"><div class="legend-box" style="background:#10b981;"></div> Translation (Lidwa/Irsyad)</div>
+    <div class="legend"><div class="legend-box" style="background:#eab308;"></div> Rawi / Narrator (Sanad)</div>
+    <div class="legend"><div class="legend-box" style="background:#ec4899;"></div> Syarah (Commentary)</div>
+  </div>
+
+  <div id="svg-container"></div>
+
+  <script>
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    const svg = d3.select("#svg-container").append("svg")
+      .attr("width", width)
+      .attr("height", height)
+      .call(d3.zoom().on("zoom", (event) => {
+        g.attr("transform", event.transform);
+      }));
+
+    const g = svg.append("g");
+
+    // Colors mapping
+    const colorMap = {
+      'anchor': '#3b82f6',
+      'translation': '#10b981',
+      'sanad': '#eab308',
+      'syarah': '#ec4899'
+    };
+
+    async function loadData() {
+      try {
+        const response = await fetch('data/links/bukhari.json');
+        const data = await response.json();
+        
+        let nodes = [];
+        let links = [];
+        
+        // D3 expects nodes with unique 'id'
+        const nodeSet = new Set();
+        
+        function addNode(id, group, label) {
+          if (!nodeSet.has(id)) {
+            nodes.push({ id, group, label });
+            nodeSet.add(id);
+          }
+        }
+        
+        // Limit to first 100 hadiths to keep visualization smooth
+        const limit = 100;
+        let count = 0;
+        
+        for (const [anchor_id, rels] of Object.entries(data)) {
+          if (count >= limit) break;
+          
+          const anchorNode = `anchor_${anchor_id}`;
+          addNode(anchorNode, 'anchor', `Bukhari ${anchor_id}`);
+          
+          if (rels.lidwa_id) {
+            const transNode = `lidwa_${rels.lidwa_id}`;
+            addNode(transNode, 'translation', `Lidwa ${rels.lidwa_id}`);
+            links.push({ source: anchorNode, target: transNode, value: 2 });
+          }
+          
+          if (rels.kaggle_narrators && Array.isArray(rels.kaggle_narrators)) {
+            rels.kaggle_narrators.forEach(n_id => {
+              const sanadNode = `rawi_${n_id}`;
+              addNode(sanadNode, 'sanad', `Rawi ${n_id}`);
+              links.push({ source: anchorNode, target: sanadNode, value: 1 });
+            });
+          }
+          
+          count++;
+        }
+        
+        renderGraph(nodes, links);
+      } catch (err) {
+        console.error("Failed to load visualization data", err);
+      }
+    }
+
+    function renderGraph(nodes, links) {
+      const simulation = d3.forceSimulation(nodes)
+          .force("link", d3.forceLink(links).id(d => d.id).distance(50))
+          .force("charge", d3.forceManyBody().strength(-150))
+          .force("center", d3.forceCenter(width / 2, height / 2))
+          .force("collide", d3.forceCollide().radius(20));
+
+      const link = g.append("g")
+          .attr("stroke", "#475569")
+          .attr("stroke-opacity", 0.6)
+          .selectAll("line")
+          .data(links)
+          .join("line")
+          .attr("stroke-width", d => d.value);
+
+      const node = g.append("g")
+          .attr("stroke", "#fff")
+          .attr("stroke-width", 1.5)
+          .selectAll("circle")
+          .data(nodes)
+          .join("circle")
+          .attr("r", d => d.group === 'anchor' ? 8 : 5)
+          .attr("fill", d => colorMap[d.group])
+          .call(drag(simulation));
+
+      node.append("title")
+          .text(d => d.label);
+          
+      const labels = g.append("g")
+          .selectAll("text")
+          .data(nodes)
+          .join("text")
+          .attr("class", "node-label")
+          .attr("dx", 10)
+          .attr("dy", 3)
+          .text(d => d.group === 'anchor' ? d.label : '');
+
+      simulation.on("tick", () => {
+        link
+            .attr("x1", d => d.source.x)
+            .attr("y1", d => d.source.y)
+            .attr("x2", d => d.target.x)
+            .attr("y2", d => d.target.y);
+
+        node
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y);
+            
+        labels
+            .attr("x", d => d.x)
+            .attr("y", d => d.y);
+      });
+    }
+    
+    function drag(simulation) {
+      function dragstarted(event) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        event.subject.fx = event.subject.x;
+        event.subject.fy = event.subject.y;
+      }
+      
+      function dragged(event) {
+        event.subject.fx = event.x;
+        event.subject.fy = event.y;
+      }
+      
+      function dragended(event) {
+        if (!event.active) simulation.alphaTarget(0);
+        event.subject.fx = null;
+        event.subject.fy = null;
+      }
+      
+      return d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended);
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
