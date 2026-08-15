@@ -1819,12 +1819,12 @@ async function loadHadithList() {
       allHadiths = sourceHadiths.map(h => {
         const num = String(h.hadithnumber ?? h.id);
         
-        let targetLidwaId = num;
+        let targetLidwaId = null;
         if (linkGraph && linkGraph.fawaz_to_lidwa && linkGraph.fawaz_to_lidwa[num]) {
             targetLidwaId = linkGraph.fawaz_to_lidwa[num];
         }
 
-        let targetAbId = num;
+        let targetAbId = null;
         if (linkGraph && linkGraph.fawaz_to_ab && linkGraph.fawaz_to_ab[num]) {
             targetAbId = linkGraph.fawaz_to_ab[num];
         }
