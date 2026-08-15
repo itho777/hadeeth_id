@@ -493,7 +493,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (tisahGrid) renderBookCards(books.slice(0, 9), tisahGrid);
       if (sittahGrid) renderBookCards(books.slice(0, 6), sittahGrid);
       if (tisahGridBooks) renderBookCards(books.slice(6, 9), tisahGridBooks);
-      if (secondaryGrid) renderBookCards(books.slice(9, 17), secondaryGrid);
+      if (secondaryGrid) renderBookCards(books.slice(9), secondaryGrid);
     });
   }
 
@@ -504,6 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
       else if (['abudawud', 'nasai', 'ibnmajah', 'darimi'].includes(book.id)) dataType = 'sunan';
       else if (book.id === 'ahmad') dataType = 'musnad';
       else if (book.id === 'malik') dataType = 'mushannaf';
+      else if (book.id === 'tabarani') dataType = 'mujam';
       else if (['nawawi', 'qudsi', 'shah', 'adab', 'bulugh', 'mishkat', 'riyad', 'shamail'].includes(book.id)) dataType = 'jawami';
       
       const typeLabels = {
@@ -512,6 +513,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'musnad': "Musnad",
         'mushannaf': "Mushannaf",
         'jawami': "Jawami'",
+        'mujam': "Mu'jam",
         'other': "Kitab"
       };
       const badgeText = typeLabels[dataType] || "Kitab";
