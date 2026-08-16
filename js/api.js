@@ -71,9 +71,9 @@ const HadeethAPI = {
   /**
    * Fetch full unified record for a single Hadith
    */
-  async getHadith(bookId, hadithNumber) {
+  async getHadith(bookId, hadithNumber, datasetPrefix = 'fawaz') {
     try {
-      const res = await fetch(`${this.baseUrl}/hadiths/${bookId}/${hadithNumber}.json`);
+      const res = await fetch(`${this.baseUrl}/hadiths/${bookId}/${datasetPrefix}/${hadithNumber}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.json();
     } catch (err) {
