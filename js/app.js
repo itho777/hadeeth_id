@@ -1017,15 +1017,170 @@ async function loadHadithDetail() {
   
   if (arabicElem) arabicElem.innerText = data.text_ar || 'Not Available';
   
-  if (englishElem) {
-    if (data.text_en) englishElem.innerHTML = data.text_en;
-    else englishElem.innerHTML = `<span class="text-xs text-outline dark:text-gray-400 italic">English Translation not available.</span>`;
+  // Restore dynamic translation options
+  const baseUrl = window.__HADEETH_BASE__ ? window.__HADEETH_BASE__ + '/data' : window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
+  const [linkResp, editionsResp] = await Promise.all([
+    fetch(`${baseUrl}/links/${bookId}.json`).catch(() => null),
+    fetch(`${baseUrl}/meta/fawaz_editions.json`).catch(() => null)
+  ]);
+
+  let linkGraph = {};
+  if (linkResp && linkResp.ok) linkGraph = await linkResp.json();
+  let fawazEditions = {};
+  if (editionsResp && editionsResp.ok) fawazEditions = await editionsResp.json();
+
+  const fawazId = activeDataset === 'fawazahmed' ? hadithId : (Object.keys(linkGraph.fawaz_to_lidwa || {}).find(k => linkGraph.fawaz_to_lidwa[k] == hadithId) || hadithId);
+  const lidwaId = activeDataset === 'native_lidwa' ? hadithId : (linkGraph.fawaz_to_lidwa ? (linkGraph.fawaz_to_lidwa[fawazId] || null) : null);
+  const abId = activeDataset === 'native_ahmedbaset' ? hadithId : (linkGraph.fawaz_to_ab ? (linkGraph.fawaz_to_ab[fawazId] || null) : null);
+
+  const translationOptions = [];
+  
+  // Even if we are on Lidwa or Ahmedbaset, we want to allow users to switch languages!
+  if (fawazEditions[bookId]) {
+      const editions = fawazEditions[bookId].collection || [];
+      editions.forEach(ed => {
+          if (ed.name.startsWith('ara-')) return; 
+          if (ed.name.startsWith('ind-')) return; // We use Lidwa for ID
+          const langCode = ed.language.toUpperCase();
+          const author = ed.author !== 'Unknown' ? ed.author : 'Fawazahmed0';
+          translationOptions.push({
+              id: `fawaz-${ed.name}`,
+              label: `${langCode} - ${author}`,
+              lang: ed.language,
+              source: 'fawaz',
+              hid: fawazId,
+              file: `${baseUrl}/raw_baseline/${ed.name}.json`
+          });
+      });
   }
   
-  if (indonesianElem) {
-    if (data.text_id) indonesianElem.innerHTML = data.text_id;
-    else indonesianElem.innerHTML = `<span class="text-xs text-outline dark:text-gray-400 italic">Indonesian Translation not available.</span>`;
+  // Inject Lidwa translation via Master Link Engine for Indonesian fallback
+  if (lidwaId || activeDataset === 'native_lidwa') {
+      translationOptions.push({
+          id: 'lidwa-id',
+          label: `ID - Kemenag (Lidwa)`,
+          lang: 'Indonesian',
+          source: 'lidwa',
+          hid: lidwaId || hadithId,
+          file: `${baseUrl}/sources/lidwa/${bookId}.json`
+      });
   }
+
+  // Inject AhmedBaset translation if Fawaz lacks English
+  const abBookMap = { ahmad: 'ahmed' };
+  const abBook = abBookMap[bookId] || bookId;
+  const hasEnglish = translationOptions.some(o => o.lang.toLowerCase() === 'english');
+  if ((!hasEnglish && abId) || activeDataset === 'native_ahmedbaset') {
+      translationOptions.push({
+          id: 'ab-en',
+          label: `EN - AhmedBaset${!hasEnglish ? ' (Fallback)' : ''}`,
+          lang: 'English',
+          source: 'ab',
+          hid: abId || hadithId,
+          file: `${baseUrl}/sources/ahmedbaset/by_book/the_9_books/${abBook}.json`
+      });
+  }
+
+  async function fetchTranslationText(opt) {
+      // Small optimization: If it's the active dataset and the language matches, we already have the text in `data`
+      if (opt.source === 'fawaz' && opt.lang === 'English' && activeDataset === 'fawazahmed' && data.text_en) return data.text_en;
+      if (opt.source === 'lidwa' && activeDataset === 'native_lidwa' && data.text_id) return data.text_id;
+      if (opt.source === 'ab' && activeDataset === 'native_ahmedbaset' && data.text_en) return data.text_en;
+
+      try {
+          const resp = await fetch(opt.file);
+          if (!resp.ok) return null;
+          const json_data = await resp.json();
+          let text = '';
+          
+          if (opt.source === 'fawaz') {
+              const found = (json_data.hadiths || []).find(h => (h.hadithnumber ?? h.id) == opt.hid);
+              if (found) text = found.text;
+          } else if (opt.source === 'lidwa') {
+              const found = (Array.isArray(json_data) ? json_data : (json_data.hadiths || [])).find(h => (h.hadith_number ?? h.hadithnumber ?? h.id) == opt.hid);
+              if (found) text = found.text_id || found.terjemah || found.text;
+          } else if (opt.source === 'ab') {
+              const found = (json_data.hadiths || []).find(h => String(h.idInBook) === String(opt.hid));
+              if (found) text = found.english ? (found.english.narrator ? `${found.english.narrator} ${found.english.text}` : found.english.text) : '';
+          }
+          return text;
+      } catch(e) {
+          console.warn('Failed to fetch', opt, e);
+          return null;
+      }
+  }
+
+  // Populate Dropdowns
+  const langSelects = container.querySelectorAll('[data-lang-select]');
+  langSelects.forEach((selectElem, idx) => {
+      selectElem.style.display = 'block'; // Ensure it's unhidden
+      selectElem.innerHTML = '';
+      translationOptions.forEach(opt => {
+          const option = document.createElement('option');
+          option.value = opt.id;
+          option.innerText = opt.label;
+          option.className = "bg-white dark:bg-[#1e293b] text-gray-900 dark:text-white";
+          selectElem.appendChild(option);
+      });
+      // Set defaults
+      if (idx === 0) {
+         const defaultEn = translationOptions.find(o => o.id.includes('eng-bukhari') || (o.lang==='English' && (o.source==='fawaz' || o.source==='ab'))) || translationOptions[0];
+         if (defaultEn) selectElem.value = defaultEn.id;
+      } else {
+         const defaultId = translationOptions.find(o => o.id === 'lidwa-id') || translationOptions[0];
+         if (defaultId) selectElem.value = defaultId.id;
+      }
+  });
+
+  async function updateTranslationBox(selectElem, targetBox) {
+      const val = selectElem.value;
+      const opt = translationOptions.find(o => o.id === val);
+      if (!opt) return;
+      
+      targetBox.innerHTML = '<span class="text-xs text-secondary animate-pulse">Loading translation...</span>';
+      
+      const txt = await fetchTranslationText(opt);
+      if (txt) {
+          let output = typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(txt) : txt;
+          
+          if (opt.source !== 'fawaz' && activeDataset === 'fawazahmed') {
+             output = `<div class="mb-2 text-xs text-blue-500 font-semibold">[Linked via Arabic matching → ${opt.source.toUpperCase()} #${opt.hid}]</div>` + output;
+          }
+          
+          targetBox.innerHTML = output;
+      } else {
+          targetBox.innerHTML = `<span class="text-xs text-outline dark:text-gray-400 italic">Translation not available in ${opt.label}.</span>`;
+      }
+  }
+
+  // Initial load for both boxes
+  if (englishElem && langSelects[0]) {
+      updateTranslationBox(langSelects[0], englishElem);
+  } else if (englishElem) {
+      if (data.text_en) englishElem.innerHTML = data.text_en;
+  }
+  
+  if (indonesianElem && langSelects[1]) {
+      updateTranslationBox(langSelects[1], indonesianElem);
+  } else if (indonesianElem) {
+      if (data.text_id) indonesianElem.innerHTML = data.text_id;
+  }
+
+  // Listeners
+  langSelects.forEach(selectElem => {
+    selectElem.addEventListener('change', () => {
+      const cardBox = selectElem.closest('.p-5');
+      const targetP = cardBox ? cardBox.querySelector('p') : null;
+      if (targetP) {
+          updateTranslationBox(selectElem, targetP);
+      }
+      if (window.switchSyarahLang) {
+          // Sync syarah lang loosely
+          const val = selectElem.value.toLowerCase();
+          window.switchSyarahLang(val.includes('id') || val.includes('ind') ? 'id' : 'en');
+      }
+    });
+  });
 
   // Fix panels layout
   const engPanel = document.querySelector('[data-english-text]')?.closest('.flex.flex-col');
@@ -1044,9 +1199,42 @@ async function loadHadithDetail() {
     sanadLinkBtn.href = `sanad.html?book=${bookId}&id=${hadithId}`;
   }
   
-  // Clean up legacy dropdowns
-  const langSelects = container.querySelectorAll('[data-lang-select]');
-  langSelects.forEach(selectElem => selectElem.style.display = 'none');
+  // Sanad Preview Text (Strictly from Lidwa Bracket Data)
+  const sanadPreviewEn = document.querySelector('[data-sanad-preview-en]');
+  const sanadPreviewId = document.querySelector('[data-sanad-preview-id]');
+  const rawiEn = document.querySelector('[data-hadith-rawi-en]');
+  const rawiId = document.querySelector('[data-hadith-rawi-id]');
+  
+  if (sanadPreviewEn || sanadPreviewId) {
+      let previewStrEn = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
+      let previewStrId = `Periksa Silsilah untuk ${bookName} #${hadithId} → Rasulullah ﷺ`;
+      let narratorEn = "Unknown";
+      let narratorId = "Tidak diketahui";
+      
+      if (data.text_id && data.text_id.includes('[')) {
+          // Extract names from Lidwa brackets [...]
+          const regex = /\[(.*?)\]/g;
+          const matches = [];
+          let match;
+          while ((match = regex.exec(data.text_id)) !== null) {
+              if (match[1] && match[1].length > 2) {
+                  matches.push(match[1]);
+              }
+          }
+          
+          if (matches.length > 0) {
+              previewStrEn = matches.join(' → ') + ' → Prophet ﷺ';
+              previewStrId = matches.join(' → ') + ' → Rasulullah ﷺ';
+              narratorEn = matches[matches.length - 1];
+              narratorId = matches[matches.length - 1];
+          }
+      }
+      
+      if (sanadPreviewEn) sanadPreviewEn.innerText = previewStrEn;
+      if (sanadPreviewId) sanadPreviewId.innerText = previewStrId;
+      if (rawiEn) rawiEn.innerText = `Narrator: ${narratorEn}`;
+      if (rawiId) rawiId.innerText = `Perawi: ${narratorId}`;
+  }
   
   const banners = document.querySelectorAll('#dataset-banner');
   banners.forEach(b => b.style.display = 'none');
@@ -1058,6 +1246,7 @@ async function loadHadithDetail() {
 
   if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
 }
+
 
 
 /**
@@ -2703,7 +2892,6 @@ async function loadSanadChain() {
   const params = new URLSearchParams(window.location.search);
   const bookId = params.get('book') || 'bukhari';
   const hadithNum = params.get('id') || '1';
-  const hadithId = `${bookId}_${hadithNum}`;
 
   const bookNames = {
     bukhari: 'Sahih al-Bukhari',
@@ -2736,44 +2924,48 @@ async function loadSanadChain() {
   if (subEn) subEn.innerText = `Chain of narrators (الإسناد) for ${bookName} Hadith #${hadithNum} tracing back to the Messenger of Allah ﷺ.`;
   if (subId) subId.innerText = `Silsilah perawi (الإسناد) untuk ${bookName} Hadits #${hadithNum} yang bersambung sampai ke Rasulullah ﷺ.`;
 
-  
+  const activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
+  let dsPrefix = 'fawaz';
+  if (activeDataset === 'native_lidwa') dsPrefix = 'lidwa';
+  else if (activeDataset === 'native_ahmedbaset') dsPrefix = 'ab';
+
   let narrators = [];
   try {
     const rawisDict = await window.HadeethAPI.getActiveRawis();
-    const linkRes = await fetch(`data/links/${bookId}.json?v=20260814`);
-    if (linkRes.ok) {
-      const linkGraph = await linkRes.json();
-      const rawiIds = (linkGraph.fawaz_to_rawis && linkGraph.fawaz_to_rawis[hadithNum]) || [];
+    const data = await window.HadeethAPI.getHadith(bookId, hadithNum, dsPrefix);
+    
+    if (data && data.rawis && data.rawis.length > 0) {
+      let rawiIds = data.rawis.slice().reverse();
       
-      if (rawiIds.length > 0) {
-        narrators = rawiIds.map((rId, idx) => {
-          const rawiData = rawisDict[rId] || {};
-          const isFirst = idx === 0 || (rawiData.grade && rawiData.grade.toLowerCase().includes('sahab'));
-          
-          let enName = rawiData.en || 'Transmitter';
-          let idName = rawiData.id || 'Perawi';
-          
-          return {
-            rawi_id: rId,
-            name: enName + (isFirst && !enName.includes('رضي الله') ? ' (رضي الله عنه)' : ''),
-            name_id: idName,
-            roleEn: rawiData.role || (isFirst ? 'SAHABI (COMPANION) • GRADE: THIQAH' : 'TRANSMITTER (RAWI) • GRADE: ' + (rawiData.grade || 'THIQAH')),
-            roleId: rawiData.roleId || (isFirst ? 'SAHABAT NABI • DERAJAT: TSIQAH' : 'PERAWI (RAWI) • DERAJAT: ' + (rawiData.grade || 'TSIQAH')),
-            ar: getArabicScriptForRawi(rawiData.ar || idName),
-            kunyah: rawiData.kunyah || (isFirst ? 'Abu Abdillah' : '-'),
-            residence: rawiData.residence || (isFirst ? 'Madinah' : '-'),
-            death_ah: rawiData.death_ah || (isFirst ? 'Early Era' : '-'),
-            counts: rawiData.counts || '-',
-            remarks: rawiData.grade ? 'Grade: ' + rawiData.grade : 'No remarks'
-          };
-        });
-      }
+      // Filter out Prophet (1) since we hardcode it at the top
+      // And filter out the author if it's already there? The old code just mapped whatever was in fawaz_to_rawis.
+      
+      narrators = rawiIds.map((rId, idx) => {
+        const rawiData = rawisDict[rId] || {};
+        const isFirst = idx === 0 || (rawiData.grade && rawiData.grade.toLowerCase().includes('sahab'));
+        
+        let enName = rawiData.en || 'Transmitter ' + rId;
+        let idName = rawiData.id || 'Perawi ' + rId;
+        
+        return {
+          rawi_id: rId,
+          name: enName + (isFirst && !enName.includes('رضي الله عنه') ? ' (رضي الله عنه)' : ''),
+          name_id: idName,
+          roleEn: rawiData.role || (isFirst ? 'SAHABI (COMPANION) • GRADE: THIQAH' : 'TRANSMITTER (RAWI) • GRADE: ' + (rawiData.grade || 'THIQAH')),
+          roleId: rawiData.roleId || (isFirst ? 'SAHABAT NABI • DERAJAT: TSIQAH' : 'PERAWI (RAWI) • DERAJAT: ' + (rawiData.grade || 'TSIQAH')),
+          ar: rawiData.ar || idName,
+          kunyah: rawiData.kunyah || (isFirst ? 'Abu Abdillah' : '-'),
+          residence: rawiData.residence || (isFirst ? 'Madinah' : '-'),
+          death_ah: rawiData.death_ah || (isFirst ? 'Early Era' : '-'),
+          counts: rawiData.counts || '-',
+          remarks: rawiData.grade ? 'Grade: ' + rawiData.grade : 'No remarks'
+        };
+      });
     }
   } catch (err) {
     console.warn('Failed to load sanad chain:', err);
   }
 
-  // Fallback defaults if no narrators extracted
   if (narrators.length === 0) {
     narrators = [
       { rawi_id: null, name: "Sanad tidak terdeteksi", name_id: "Sanad tidak terdeteksi", roleEn: "UNKNOWN", roleId: "TIDAK DIKETAHUI", ar: "غير معروف", kunyah: "-", residence: "-", death_ah: "-", counts: "-", remarks: "Sistem belum mendeteksi teks sanad" }
@@ -2810,8 +3002,11 @@ async function loadSanadChain() {
     </div>
   `;
 
+  // Filter out the Prophet (ID "1" or name containing Prophet) from the dynamic loop since we hardcode him above
+  const filteredNarrators = narrators.filter(nr => nr.rawi_id !== "1" && !nr.name.toLowerCase().includes('prophet muhammad'));
+
   // Render Narrators from Companion down to Direct Sheikh of Author
-  narrators.forEach((nr, idx) => {
+  filteredNarrators.forEach((nr, idx) => {
     let rawiSlug = nr.rawi_id;
     if (!rawiSlug && nr.name) {
       const cleanName = nr.name.replace(/\(.*?\)/g, '').replace(/[^a-zA-Z0-9\s]/g, '').trim().toLowerCase().replace(/\s+/g, '_');
@@ -2819,11 +3014,20 @@ async function loadSanadChain() {
     }
     const profileUrl = `profile-detail.html?id=${encodeURIComponent(rawiSlug || 'rawi_abu_hurairah')}`;
 
-    const roleEn = nr.roleEn || nr.role || 'TRANSMITTER (RAWI) • GRADE: THIQAH';
-    const roleId = nr.roleId || nr.role || 'PERAWI (RAWI) • DERAJAT: TSIQAH';
-    const nameEn = nr.name || 'Transmitter';
-    const nameId = nr.name_id || getIndonesianRawiName(nameEn, nr.rawi_id, nr.ar);
-    const displayArName = getArabicScriptForRawi(nr.ar || nr.name_id || nr.name);
+    const roleEn = nr.roleEn;
+    const roleId = nr.roleId;
+    
+    const rawNameEn = nr.name || 'Transmitter';
+    const pureLatinName = rawNameEn.replace(/[\u0600-\u06FF]/g, '').replace(/\s*\(\s*\)/g, '').replace(/\s+/g, ' ').trim();
+    
+    const nameEn = pureLatinName;
+    const nameId = typeof getIndonesianRawiName === 'function' ? getIndonesianRawiName(pureLatinName, nr.rawi_id, nr.ar) : pureLatinName;
+    const displayArName = typeof getArabicScriptForRawi === 'function' ? getArabicScriptForRawi(nr.ar || rawNameEn) : (nr.ar || '');
+    
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+    }
 
     html += `
       <div class="sanad-node relative z-10 bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-5 shadow-sm hover:border-sunan-emerald/50 transition-colors flex flex-col gap-3">
@@ -2847,28 +3051,28 @@ async function loadSanadChain() {
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
           <div>
             <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">KUNYAH:</span>
-            <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.kunyah || 'Abu Abdullah')}</span>
+            <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.kunyah)}</span>
           </div>
           <div>
             <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">
               <span data-lang-en>SETTLED IN:</span>
               <span data-lang-id style="display:none">DOMISILI:</span>
             </span>
-            <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.residence || 'Madinah')}</span>
+            <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.residence)}</span>
           </div>
           <div>
             <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">
               <span data-lang-en>WAFAT (DIED):</span>
               <span data-lang-id style="display:none">WAFAT:</span>
             </span>
-            <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.death_ah || 'Abad ke-1 H')}</span>
+            <span class="font-semibold text-primary dark:text-white">${escapeHtml(nr.death_ah)}</span>
           </div>
           <div>
             <span class="text-outline dark:text-gray-400 block text-[10px] uppercase font-bold">
               <span data-lang-en>TOTAL HADITHS:</span>
               <span data-lang-id style="display:none">TOTAL HADITS:</span>
             </span>
-            <span class="font-semibold text-sunan-emerald dark:text-[#10b981]">${escapeHtml(nr.counts || 'Bukhari & Muslim')}</span>
+            <span class="font-semibold text-sunan-emerald dark:text-[#10b981]">${escapeHtml(nr.counts)}</span>
           </div>
         </div>
 
@@ -2939,15 +3143,11 @@ async function loadSanadChain() {
     </div>
   `;
   container.innerHTML = html;
-  LangSystem.apply(LangSystem.get());
-
-  if (!window._sanadLangListenerAttached) {
-    window._sanadLangListenerAttached = true;
-    window.addEventListener('hadeeth_lang_change', () => {
-      LangSystem.apply(LangSystem.get());
-    });
-  }
+  
+  if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
 }
+
+
 
 function normalizeRawiNameKey(str) {
   return (str || '')
