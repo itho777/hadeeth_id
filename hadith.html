@@ -90,22 +90,22 @@
       <div>
         <div class="flex items-center gap-2">
           <span class="text-xs font-semibold text-secondary dark:text-[#10b981]" data-hadith-chapter>
-            <span data-hadith-chapter-en data-lang-en>Book 1: Revelation</span>
-            <span data-hadith-chapter-id data-lang-id style="display:none">Bab 1: Wahyu</span>
+            <span data-hadith-chapter-en data-lang-en>&nbsp;</span>
+            <span data-hadith-chapter-id data-lang-id style="display:none">&nbsp;</span>
           </span>
           <span>&bull;</span>
           <span class="text-xs font-semibold text-primary dark:text-white" data-hadith-rawi>
-            <span data-hadith-rawi-en data-lang-en></span>
-            <span data-hadith-rawi-id data-lang-id style="display:none"></span>
+            <span data-hadith-rawi-en data-lang-en>&nbsp;</span>
+            <span data-hadith-rawi-id data-lang-id style="display:none">&nbsp;</span>
           </span>
         </div>
         <h1 class="text-xl font-bold text-primary dark:text-white mt-1" data-hadith-title>
-          <span data-hadith-title-en data-lang-en></span>
-          <span data-hadith-title-id data-lang-id style="display:none"></span>
+          <span data-hadith-title-en data-lang-en>&nbsp;</span>
+          <span data-hadith-title-id data-lang-id style="display:none">&nbsp;</span>
         </h1>
       </div>
       <div class="flex items-center gap-2">
-        <span class="bg-sunan-emerald text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">Sahih</span>
+        <span data-hadith-grade class="bg-sunan-emerald text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider" style="display: none;"></span>
         <button data-copy-hadith class="px-3 py-1.5 border border-outline-variant dark:border-[#334155] rounded-lg text-xs font-semibold flex items-center gap-1.5 hover:bg-surface-container-low dark:hover:bg-[#334155] transition-all">
           <span class="material-symbols-outlined text-[16px]">share</span>
           <span data-lang-en>Copy / Share</span><span data-lang-id style="display:none">Salin / Bagikan</span>
@@ -116,12 +116,13 @@
     <!-- Full Arabic Text -->
     <div class="w-full bg-surface-container-low/60 dark:bg-[#0f172a] p-6 md:p-8 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
       <p class="font-arabic-display text-2xl md:text-3xl text-primary dark:text-white text-right leading-loose" dir="rtl" data-arabic-text>
-        حَدَّثَنَا الْحُمَيْدِيُّ عَبْدُ اللَّهِ بْنُ الزُّبَيْرِ، قَالَ حَدَّثَنَا سُفْيَانُ، قَالَ حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ الأَنْصَارِيُّ، قَالَ أَخْبَرَنِي مُحَمَّدُ بْنُ إِبْرَاهِيمَ التَّيْمِيُّ، أَنَّهُ سَمِعَ عَلْقَمَةَ بْنَ وَقَّاصٍ اللَّيْثِيَّ، يَقُولُ سَمِعْتُ عُمَرَ بْنَ الْخَطَّابِ رضى الله عنه عَلَى الْمِنْبَرِ قَالَ سَمِعْتُ رَسُولَ اللَّهِ صلى الله عليه وسلم يَقُولُ: «إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ».
+        <span class="animate-pulse bg-surface-container-high dark:bg-[#1e293b] text-transparent rounded inline-block w-full h-8 mb-2"></span>
+        <span class="animate-pulse bg-surface-container-high dark:bg-[#1e293b] text-transparent rounded inline-block w-3/4 h-8"></span>
       </p>
     </div>
 
     <!-- Narration Chain Button -->
-    <a data-sanad-link href="sanad.html?book=bukhari&id=1" class="flex items-center justify-between p-4 bg-secondary/5 dark:bg-[#10b981]/10 border border-secondary/20 dark:border-[#10b981]/20 rounded-lg hover:bg-secondary/10 transition-colors">
+    <a data-sanad-link href="#" class="flex items-center justify-between p-4 bg-secondary/5 dark:bg-[#10b981]/10 border border-secondary/20 dark:border-[#10b981]/20 rounded-lg hover:bg-secondary/10 transition-colors">
       <div class="flex items-center gap-3">
         <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">account_tree</span>
         <div>
@@ -229,7 +230,7 @@
 </footer>
 
 <script src="js/api.js?v=2026081411"></script>
-<script src="js/app.js?v=2026081411"></script>
+<script src="js/app.js?v=2026081706"></script>
 
 <!-- Toast notification for Copy/Share -->
 <div id="share-toast" style="display:none;position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1B5E20;color:#fff;font-size:12px;font-weight:700;padding:10px 22px;border-radius:999px;z-index:9999;box-shadow:0 4px 24px rgba(0,0,0,.25);transition:opacity .3s"></div>

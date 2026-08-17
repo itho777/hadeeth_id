@@ -41,7 +41,7 @@ const HadeethAPI = {
   async getActiveRawis() {
     if (this.rawisCache) return this.rawisCache;
     try {
-      const res = await fetch(`${this.baseUrl}/rawis/active_rawis.min.json?v=20260814`);
+      const res = await fetch(`${this.baseUrl}/rawis/active_rawis.min.json?v=20260816`);
       if (res.ok) {
         this.rawisCache = await res.json();
       } else {
@@ -54,28 +54,75 @@ const HadeethAPI = {
   },
 
   async getChapters(bookId) {
-    if (this.chaptersCache && this.chaptersCache[bookId]) return this.chaptersCache[bookId];
+    const activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
+    const isLidwa = activeDataset === 'native_lidwa';
+    const folder = isLidwa ? 'lidwa-chapters' : 'chapters';
+    const cacheKey = `${folder}_${bookId}`;
+
+    if (this.chaptersCache && this.chaptersCache[cacheKey]) return this.chaptersCache[cacheKey];
     try {
-      const res = await fetch(`${this.baseUrl}/chapters/${bookId}.json`);
+      const res = await fetch(`${this.baseUrl}/${folder}/${bookId}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
+      
       this.chaptersCache = this.chaptersCache || {};
-      this.chaptersCache[bookId] = data;
-      return data;
+      this.chaptersCache[cacheKey] = data.chapters || data; // handle both formats
+      return this.chaptersCache[cacheKey];
     } catch (err) {
-      console.error(`Failed to load chapters for ${bookId}:`, err);
+      console.error(`Failed to load ${folder} for ${bookId}:`, err);
       return [];
     }
   },
 
   /**
-   * Fetch full unified record for a single Hadith
+   * Fetch hadiths for a specific chapter from the consolidated API
    */
-  async getHadith(bookId, hadithNumber, datasetPrefix = 'fawaz') {
+  async getChapterHadiths(bookId, chapterId) {
     try {
-      const res = await fetch(`${this.baseUrl}/hadiths/${bookId}/${datasetPrefix}/${hadithNumber}.json`);
+      if (!this.apiCache) this.apiCache = {};
+      if (!this.apiCache[bookId]) this.apiCache[bookId] = {};
+      
+      const res = await fetch(`${this.baseUrl}/api/${bookId}/${chapterId}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      return await res.json();
+      const chapterHadiths = await res.json();
+      
+      const activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
+      
+      return chapterHadiths.map(h => ({
+        id: h.id,
+        hadithnumber: h.hadith_number || h.id,
+        lidwa_id: h.lidwa_id || null,
+        data: {
+          text_ar: h.text_ar || '',
+          text_en: h.text_en || '',
+          text_id: h.text_id || '',
+          grade: h.grade || ''
+        }
+      }));
+    } catch (err) {
+      console.error(`Failed to load chapter hadiths ${bookId} c${chapterId}:`, err);
+      return [];
+    }
+  },
+
+  /**
+   * Fetch full unified record for a single Hadith (Uses Consolidated API)
+   */
+  async getHadith(bookId, hadithNumber) {
+    try {
+      if (!this.apiCache) this.apiCache = {};
+      if (!this.apiCache[bookId]) this.apiCache[bookId] = {};
+      
+      // We will fetch the monolithic file and cache it.
+      // In a real app we'd resolve the chapter ID and fetch that chunk, 
+      // but for direct hadith lookups without chapter context, this works.
+      if (!this.apiCache[bookId]['all']) {
+        const res = await fetch(`${this.baseUrl}/api/${bookId}.json`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        this.apiCache[bookId]['all'] = await res.json();
+      }
+      
+      return this.apiCache[bookId]['all'][hadithNumber] || null;
     } catch (err) {
       console.error(`Failed to load Hadith ${bookId}:${hadithNumber}:`, err);
       return null;

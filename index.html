@@ -144,14 +144,18 @@
     <!-- Continue Reading -->
     <section id="last-read-section" class="w-full flex flex-col gap-stack-sm">
       <h2 class="font-label-sm text-label-sm uppercase text-outline dark:text-gray-500 tracking-wider" data-i18n="continue_reading">Continue Reading</h2>
-      <a id="last-read-card" href="hadith.html?book=bukhari&id=1" class="group block bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary/40 rounded-lg p-4 transition-all hover:shadow-sm flex items-center justify-between">
+      <a id="last-read-card" href="#" class="group block bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary/40 rounded-lg p-4 transition-all hover:shadow-sm flex items-center justify-between">
         <div class="flex items-center gap-4">
           <div class="w-10 h-12 bg-surface-container-high dark:bg-[#334155] rounded flex items-center justify-center text-outline dark:text-gray-400 group-hover:text-secondary transition-colors">
             <span class="material-symbols-outlined">book_4</span>
           </div>
-          <div class="flex flex-col">
-            <span id="last-read-book" class="font-body-md text-body-md font-semibold text-primary dark:text-white">Sahih al-Bukhari</span>
-            <span id="last-read-title" class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">Book of Revelation &bull; Hadith 1</span>
+          <div class="flex flex-col gap-1">
+            <span id="last-read-book" class="font-body-md text-body-md font-semibold text-primary dark:text-white">
+              <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-32">&nbsp;</span>
+            </span>
+            <span id="last-read-title" class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400">
+              <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-48">&nbsp;</span>
+            </span>
           </div>
         </div>
         <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white transition-colors">arrow_forward</span>
@@ -181,24 +185,33 @@
         </div>
         <div class="flex justify-between items-start z-10">
           <div>
-            <span id="hotd-book-label" class="font-body-md text-body-md font-semibold text-secondary dark:text-[#10b981]">Loading...</span>
-            <p id="hotd-chapter-label" class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400"></p>
+            <span id="hotd-book-label" class="font-body-md text-body-md font-semibold text-secondary dark:text-[#10b981]">
+              <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-24">&nbsp;</span>
+            </span>
+            <p id="hotd-chapter-label" class="text-label-sm font-label-sm text-on-surface-variant dark:text-gray-400 mt-1">
+              <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-32">&nbsp;</span>
+            </p>
           </div>
-          <div class="bg-sunan-emerald/10 dark:bg-[#10b981]/10 text-sunan-emerald dark:text-[#10b981] px-3 py-1 rounded-full font-label-sm text-label-sm font-bold border border-sunan-emerald/20 uppercase">Sahih</div>
+          <div id="hotd-badge" class="bg-sunan-emerald/10 dark:bg-[#10b981]/10 text-sunan-emerald dark:text-[#10b981] px-3 py-1 rounded-full font-label-sm text-label-sm font-bold border border-sunan-emerald/20 uppercase" style="display:none"></div>
         </div>
         <div class="w-full bg-surface-container-low/50 dark:bg-[#0f172a] p-6 rounded-lg text-right z-10 border border-outline-variant/10 dark:border-[#334155]">
           <p id="hotd-arabic" class="font-arabic-display text-arabic-display text-primary dark:text-white leading-loose" dir="rtl">
-            إنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى
+            <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-full h-8 mb-2">&nbsp;</span>
+            <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-3/4 h-8">&nbsp;</span>
           </p>
         </div>
-        <div class="z-10">
+        <div class="z-10 flex flex-col gap-2">
           <p id="hotd-english" class="font-body-md text-body-md text-on-surface-variant dark:text-gray-300 leading-relaxed">
-            "The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended."
+            <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-full h-4">&nbsp;</span>
+            <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-full h-4">&nbsp;</span>
+            <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-1/2 h-4">&nbsp;</span>
           </p>
-          <p id="hotd-rawi" class="text-label-sm font-label-sm text-outline dark:text-gray-500 mt-2 italic">Narrated by 'Umar bin Al-Khattab.</p>
+          <p id="hotd-rawi" class="text-label-sm font-label-sm text-outline dark:text-gray-500 mt-2 italic">
+            <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-48 h-4">&nbsp;</span>
+          </p>
         </div>
         <div class="flex items-center gap-4 mt-2 z-10 border-t border-outline-variant/20 dark:border-[#334155] pt-4 flex-wrap">
-          <a id="hotd-read-link" href="hadith.html?book=bukhari&id=1" class="bg-primary dark:bg-[#10b981] text-on-primary dark:text-black px-5 py-2 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-opacity flex items-center gap-2">
+          <a id="hotd-read-link" href="#" class="bg-primary dark:bg-[#10b981] text-on-primary dark:text-black px-5 py-2 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-opacity flex items-center gap-2">
             Read Full Context <span class="material-symbols-outlined text-[16px]">arrow_right_alt</span>
           </a>
           <button data-copy-hadith class="border border-secondary dark:border-[#10b981] text-secondary dark:text-[#10b981] px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-secondary/5 transition-colors flex items-center gap-2">
@@ -222,6 +235,6 @@
 </footer>
 
 <script src="js/api.js?v=2026081411"></script>
-<script src="js/app.js?v=2026081411"></script>
+<script src="js/app.js?v=2026081706"></script>
 </body>
 </html>

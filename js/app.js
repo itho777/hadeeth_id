@@ -675,9 +675,10 @@ async function loadHOTD() {
     if (raw) hotdConfig = JSON.parse(raw);
   } catch (e) {}
 
-  // Default fallback: Bukhari #1
+  // User specifically requested a Hajj hadith as the default HOTD
+  // Bukhari 7038: "My mother vowed to perform the Hajj but she died before performing it..."
   const bookId = (hotdConfig && hotdConfig.bookId) || 'bukhari';
-  const hadithId = (hotdConfig && hotdConfig.hadithId) || '1';
+  const hadithId = (hotdConfig && hotdConfig.hadithId) || '7038';
 
   const bookNames = {
     bukhari: 'Sahih al-Bukhari', muslim: 'Sahih Muslim',
@@ -692,43 +693,44 @@ async function loadHOTD() {
   };
   const bookName = bookNames[bookId] || bookId;
 
-  // Show loading state
   const hotdBookLabel = document.getElementById('hotd-book-label');
-  const hotdChapterLabel = document.getElementById('hotd-chapter-label');
   const hotdArabic = document.getElementById('hotd-arabic');
   const hotdEnglish = document.getElementById('hotd-english');
   const hotdRawi = document.getElementById('hotd-rawi');
   const hotdLink = document.getElementById('hotd-read-link');
 
-  if (hotdBookLabel) hotdBookLabel.textContent = `${bookName} ${hadithId}`;
-  if (hotdLink) hotdLink.href = `hadith.html?book=${bookId}&id=${hadithId}`;
-
   try {
-    const [arabicEd, engEd] = await Promise.all([
-      window.HadeethAPI.getEdition('ara', bookId),
-      window.HadeethAPI.getEdition('eng', bookId)
-    ]);
-
-    let textAr = '';
-    let textEn = '';
-    let rawi = '';
-
-    if (arabicEd && arabicEd.hadiths) {
-      const h = arabicEd.hadiths.find(h => (h.hadithnumber ?? h.id) == hadithId);
-      if (h) textAr = h.text || '';
+    // Fetch unified hadith record from the new consolidated API
+    const h = await window.HadeethAPI.getHadith(bookId, hadithId);
+    if (!h) return;
+    
+    if (hotdBookLabel) hotdBookLabel.textContent = `${bookName} ${h.hadith_number || h.id}`;
+    if (hotdLink) hotdLink.href = `hadith.html?book=${bookId}&id=${h.hadith_number || h.id}`;
+    
+    if (hotdArabic) {
+      hotdArabic.textContent = h.text_ar_plain || h.text_ar || '—';
+      hotdArabic.classList.remove('animate-pulse', 'text-transparent', 'bg-surface-container-high');
     }
-    if (engEd && engEd.hadiths) {
-      const h = engEd.hadiths.find(h => (h.hadithnumber ?? h.id) == hadithId);
-      if (h) {
-        textEn = h.text || '';
-        rawi = h.narrated_by || h.narrator || '';
-      }
+    
+    const textEn = h.text_en || '';
+    if (hotdEnglish) {
+      hotdEnglish.textContent = textEn ? `"${textEn.substring(0, 220)}${textEn.length > 220 ? '...' : ''}"` : '—';
+      hotdEnglish.classList.remove('animate-pulse', 'text-transparent', 'bg-surface-container-high');
     }
-
-    if (hotdArabic) hotdArabic.textContent = textAr || '—';
-    if (hotdEnglish) hotdEnglish.textContent = textEn ? `"${textEn.substring(0, 220)}${textEn.length > 220 ? '...' : ''}"` : '—';
-    if (hotdRawi && rawi) hotdRawi.textContent = `Narrated by ${rawi}.`;
-    if (hotdChapterLabel) hotdChapterLabel.textContent = '';
+    
+    const rawis = h.rawis || [];
+    let rawiStr = '';
+    if (rawis.length > 0) {
+      const sahabi = rawis.find(r => r.rank === 1 || (r.tags && r.tags.includes('Sahabi')));
+      if (sahabi) rawiStr = sahabi.name_en || sahabi.name_ar;
+    }
+    if (!rawiStr) rawiStr = "The Prophet's Companion";
+    
+    if (hotdRawi) {
+      hotdRawi.textContent = `Narrated by ${rawiStr}.`;
+      hotdRawi.classList.remove('animate-pulse', 'text-transparent', 'bg-surface-container-high');
+    }
+    
   } catch (e) {
     console.warn('HOTD load failed:', e);
   }
@@ -2106,7 +2108,7 @@ async function loadChaptersList() {
       datasetInfo: {
         primary:           { kitab: '📚 97 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
         native_ahmedbaset: { kitab: '📚 97 Kitab', hadith: '📖 7.277 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–7277)' },
-        native_lidwa:      { kitab: '📚 98 Kitab', hadith: '📖 7.589 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–7589)' }
+        native_lidwa:      { kitab: '📚 98 Kitab', hadith: '📖 7.008 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–7008)' }
       }
     },
     muslim: {
@@ -2124,7 +2126,7 @@ async function loadChaptersList() {
       datasetInfo: {
         primary:           { kitab: '📚 57 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
         native_ahmedbaset: { kitab: '📚 56 Kitab', hadith: '📖 7.459 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–7459)' },
-        native_lidwa:      { kitab: '📚 —', hadith: '📖 7.563 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa (1–7563) · tidak ada pembagian kitab dari sumber Lidwa' }
+        native_lidwa:      { kitab: '📚 —', hadith: '📖 5.362 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa (1–5362) · tidak ada pembagian kitab dari sumber Lidwa' }
       }
     },
     tirmidhi: {
@@ -2178,7 +2180,7 @@ async function loadChaptersList() {
       datasetInfo: {
         primary:           { kitab: '📚 52 Kitab', hadith: '📖 5.758 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–5758)' },
         native_ahmedbaset: { kitab: '📚 51 Kitab', hadith: '📖 5.758 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–5758)' },
-        native_lidwa:      { kitab: '📚 51 Kitab', hadith: '📖 5.758 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5758)' }
+        native_lidwa:      { kitab: '📚 51 Kitab', hadith: '📖 5.662 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5662)' }
       }
     },
     ibnmajah: {
@@ -2214,7 +2216,7 @@ async function loadChaptersList() {
       datasetInfo: {
         primary:           { kitab: '📚 56 Kitab', hadith: '📖 1.858 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–1858)' },
         native_ahmedbaset: { kitab: '📚 61 Kitab', hadith: '📖 1.858 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–1858) · 61 kitab (5 lebih banyak dari DB primer)' },
-        native_lidwa:      { kitab: '📚 56 Kitab', hadith: '📖 1.720 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–1720) · beberapa hadits dikelompokkan' }
+        native_lidwa:      { kitab: '📚 56 Kitab', hadith: '📖 1.594 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–1594) · beberapa hadits dikelompokkan' }
       }
     },
     ahmad: {
@@ -2232,7 +2234,7 @@ async function loadChaptersList() {
       datasetInfo: {
         primary:           { kitab: '📚 7 Bagian Musnad', hadith: '📖 27.647 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–27647)' },
         native_ahmedbaset: { kitab: '📚 8 Bagian Musnad', hadith: '📖 27.647 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–27647) · 8 bagian musnad' },
-        native_lidwa:      { kitab: '📚 Susunan Musnad', hadith: '📖 27.519 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–27519) · susunan musnad' }
+        native_lidwa:      { kitab: '📚 Susunan Musnad', hadith: '📖 26.363 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–26363) · susunan musnad' }
       }
     },
     darimi: {

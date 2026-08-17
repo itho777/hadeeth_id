@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Sanad Chain Explorer — Interactive transmission tree for Sahih al-Bukhari 1."/>
-  <title>Sanad Explorer - Sahih al-Bukhari 1 - HADEETH.ID</title>
+  <meta name="description" content="Sanad Chain Explorer — Interactive transmission tree for Hadith."/>
+  <title>Sanad Explorer - HADEETH.ID</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
@@ -79,8 +79,12 @@
 
     <h1 class="text-2xl md:text-3xl font-bold text-primary dark:text-white" id="sanad-title">
       <a id="sanad-title-link" href="hadith.html" class="hover:text-sunan-emerald dark:hover:text-[#10b981] hover:underline transition-colors inline-flex items-center gap-2 flex-wrap" title="View Hadith Detail">
-        <span data-lang-en>Sanad: Sahih al-Bukhari 1</span>
-        <span data-lang-id style="display:none">Sanad: Shahih al-Bukhari Hadits #1</span>
+        <span data-lang-en>
+          <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-64">&nbsp;</span>
+        </span>
+        <span data-lang-id style="display:none">
+          <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-64">&nbsp;</span>
+        </span>
         <span class="material-symbols-outlined text-lg opacity-70">open_in_new</span>
       </a>
     </h1>
@@ -115,16 +119,17 @@
             <span data-lang-en>Total Transmitters:</span>
             <span data-lang-id>Jumlah Perawi:</span>
           </span>
-          <span class="font-bold text-primary dark:text-white" id="sanad-count-text">6 Narrators</span>
+          <span class="font-bold text-primary dark:text-white" id="sanad-count-text">
+            <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-24">&nbsp;</span>
+          </span>
         </div>
         <div class="flex justify-between text-xs">
           <span class="text-outline dark:text-gray-400">
             <span data-lang-en>Chain Status:</span>
             <span data-lang-id>Status Sanad:</span>
           </span>
-          <span class="font-bold text-sunan-emerald dark:text-[#10b981]">
-            <span data-lang-en>Muttasil (Continuous)</span>
-            <span data-lang-id>Muttashil (Bersambung)</span>
+          <span class="font-bold text-sunan-emerald dark:text-[#10b981]" id="sanad-status-text">
+            <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-24">&nbsp;</span>
           </span>
         </div>
         <div class="flex justify-between text-xs">
@@ -132,9 +137,8 @@
             <span data-lang-en>Elevated Status:</span>
             <span data-lang-id>Derajat Hadits:</span>
           </span>
-          <span class="font-bold text-primary dark:text-white">
-            <span data-lang-en>Marfu' (To Prophet ﷺ)</span>
-            <span data-lang-id>Marfu' (Sampai ke Nabi ﷺ)</span>
+          <span class="font-bold text-primary dark:text-white" id="sanad-elevated-text">
+            <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-24">&nbsp;</span>
           </span>
         </div>
         <div class="flex justify-between text-xs">
@@ -142,9 +146,8 @@
             <span data-lang-en>Highest Grade:</span>
             <span data-lang-id>Tingkat Keabsahan:</span>
           </span>
-          <span class="font-bold text-primary dark:text-white">
-            <span data-lang-en>Sahih (100% Authentic)</span>
-            <span data-lang-id>Shahih (100% Otentik)</span>
+          <span class="font-bold text-primary dark:text-white" id="sanad-grade-text">
+            <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-24">&nbsp;</span>
           </span>
         </div>
       </div>
@@ -171,6 +174,6 @@
 </footer>
 
 <script src="js/api.js?v=2026081411"></script>
-<script src="js/app.js?v=2026081411"></script>
+<script src="js/app.js?v=2026081706"></script>
 </body>
 </html>
