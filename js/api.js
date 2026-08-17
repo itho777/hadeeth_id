@@ -82,11 +82,20 @@ const HadeethAPI = {
       if (!this.apiCache) this.apiCache = {};
       if (!this.apiCache[bookId]) this.apiCache[bookId] = {};
       
-      const res = await fetch(`${this.baseUrl}/api/${bookId}/${chapterId}.json`);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const chapterHadiths = await res.json();
+      if (!this.apiCache[bookId]['all']) {
+        const res = await fetch(`${this.baseUrl}/api/${bookId}.json`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        this.apiCache[bookId]['all'] = await res.json();
+      }
       
-      const activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
+      const allHadiths = this.apiCache[bookId]['all'];
+      let chapterHadiths = [];
+      
+      if (Array.isArray(allHadiths)) {
+        chapterHadiths = allHadiths.filter(h => String(h.chapter_id) === String(chapterId));
+      } else {
+        chapterHadiths = Object.values(allHadiths).filter(h => String(h.chapter_id) === String(chapterId));
+      }
       
       return chapterHadiths.map(h => ({
         id: h.id,
@@ -114,15 +123,17 @@ const HadeethAPI = {
       if (!this.apiCache[bookId]) this.apiCache[bookId] = {};
       
       // We will fetch the monolithic file and cache it.
-      // In a real app we'd resolve the chapter ID and fetch that chunk, 
-      // but for direct hadith lookups without chapter context, this works.
       if (!this.apiCache[bookId]['all']) {
         const res = await fetch(`${this.baseUrl}/api/${bookId}.json`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         this.apiCache[bookId]['all'] = await res.json();
       }
       
-      return this.apiCache[bookId]['all'][hadithNumber] || null;
+      const allHadiths = this.apiCache[bookId]['all'];
+      if (Array.isArray(allHadiths)) {
+        return allHadiths.find(h => String(h.hadith_number) === String(hadithNumber) || String(h.id) === String(hadithNumber)) || null;
+      }
+      return allHadiths[hadithNumber] || null;
     } catch (err) {
       console.error(`Failed to load Hadith ${bookId}:${hadithNumber}:`, err);
       return null;
