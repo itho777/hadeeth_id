@@ -1982,8 +1982,7 @@ async function loadHadithList() {
       const abIdSourceNote = hasId
         ? `<div class="mt-2 px-3 py-2 rounded-lg border border-amber-500/30 bg-amber-500/5 text-[11px] text-amber-600 dark:text-amber-400 leading-snug">
         <strong class="font-semibold">Note — Indonesian translation source:</strong> AhmedBaset does not include Indonesian translations.
-        The text below is sourced from <strong>Lidwa / Irsyad</strong>, matched by hadith number.
-        It may not correspond perfectly to this AhmedBaset narration variant.
+        The text below is sourced from <strong>Lidwa / Irsyad</strong>, matched by using Arabic Hadith text matching algoritm.
       </div>`
         : `<div class="mt-2 px-3 py-2 rounded-lg border border-amber-500/30 bg-amber-500/5 text-[11px] text-amber-600 dark:text-amber-400 leading-snug">
         <strong class="font-semibold">Note:</strong> AhmedBaset has no Indonesian translation, and no Lidwa match was found for this hadith number.
