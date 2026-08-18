@@ -827,14 +827,18 @@ function renderSearchResults(results, query, container) {
     const englishText = res.primary_translation || res.english_text || '';
     const bookName = res.book_name || (res.book_slug === 'nawawi' ? 'Forty Nawawi' : 'Sahih al-Bukhari');
     const hadithNum = res.hadith_number || res.id;
-    const grade = res.grade || 'Sahih';
+    const gradeEn = res.grade_en || res.grade || 'Sahih';
+    const gradeId = res.grade_id || 'Shahih';
 
     html += `
       <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 hover:border-secondary/50 dark:hover:border-[#10b981]/50 transition-all shadow-sm flex flex-col gap-3">
         <div class="flex items-center justify-between border-b border-outline-variant/10 dark:border-[#334155] pb-2">
           <div class="flex items-center gap-2">
             <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2 py-0.5 rounded">${escapeHtml(bookName)} #${hadithNum}</span>
-            <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2 py-0.5 rounded">${escapeHtml(grade)}</span>
+            <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2 py-0.5 rounded">
+              <span data-lang-en>${escapeHtml(gradeEn)}</span>
+              <span data-lang-id style="display:none">${escapeHtml(gradeId)}</span>
+            </span>
           </div>
           <a href="hadith.html?book=${res.book_slug || 'bukhari'}&id=${hadithNum}" class="text-xs text-secondary dark:text-[#10b981] font-semibold hover:underline flex items-center gap-1">
             View Detail &rarr;
@@ -1820,7 +1824,8 @@ async function loadHadithList() {
       const arText = item.text_ar || '';
       const hasId = !!item.text_id;
       const idText = item.text_id || enText;
-      const grade = item.grade || 'Sahih';
+      const gradeEn = item.grade_en || item.grade || 'Sahih';
+      const gradeId = item.grade_id || 'Shahih';
 
       const isnadLink = `sanad.html?book=${bookId}&id=${num}`;
       const detailLink = `hadith.html?book=${bookId}&id=${num}`;
@@ -1889,7 +1894,10 @@ async function loadHadithList() {
           <div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-3">
             <div class="flex items-center gap-2">
               <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded uppercase">${escapeHtml(bookName)} #${num}</span>
-              <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2.5 py-0.5 rounded">${escapeHtml(grade)}</span>
+              <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2.5 py-0.5 rounded">
+                <span data-lang-en>${escapeHtml(gradeEn)}</span>
+                <span data-lang-id style="display:none">${escapeHtml(gradeId)}</span>
+              </span>
             </div>
             <button data-copy-hadith data-copy-share-btn data-hadith-title="${escapeHtml(bookName)} #${num}" data-copy-hadith-ar="${escapeHtml(arText)}" data-copy-hadith-text-id="${escapeHtml(idText)}" data-copy-hadith-text-en="${escapeHtml(enText)}" data-share-url="${window.location.origin + window.location.pathname.replace('hadith-list.html', '')}${detailLink}" class="btn-copy-share text-xs font-semibold px-2.5 py-1 rounded border border-outline-variant/40 dark:border-[#334155] text-primary dark:text-white hover:bg-surface-container-low dark:hover:bg-[#334155] transition-all flex items-center gap-1.5 cursor-pointer">
               <span class="material-symbols-outlined text-[14px]">share</span>
@@ -3139,6 +3147,19 @@ async function loadSanadChain() {
   `;
   container.innerHTML = html;
   
+  // Populate Sidebar Metrics
+  const countEl = document.getElementById('sanad-count-text');
+  const statusEl = document.getElementById('sanad-status-text');
+  const elevatedEl = document.getElementById('sanad-elevated-text');
+  
+  if (countEl) countEl.innerHTML = `<span data-lang-en>${filteredNarrators.length} Transmitters</span><span data-lang-id style="display:none">${filteredNarrators.length} Perawi</span>`;
+  if (statusEl) statusEl.innerHTML = `<span data-lang-en>Connected (Muttasil)</span><span data-lang-id style="display:none">Bersambung (Muttashil)</span>`;
+  if (elevatedEl) {
+    const gradeEn = data.grade_en || data.grade || 'Sahih';
+    const gradeId = data.grade_id || 'Shahih';
+    elevatedEl.innerHTML = `<span data-lang-en>${escapeHtml(gradeEn)}</span><span data-lang-id style="display:none">${escapeHtml(gradeId)}</span>`;
+  }
+  
   if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
 }
 
@@ -3318,105 +3339,7 @@ function getArabicScriptForRawi(latinOrAr) {
     if (normKey.includes(kNorm) || kNorm.includes(normKey)) return v;
   }
 
-  // Word-by-word Arabic Transliteration engine for unmapped narrators
-  const wordMap = {
-    'khaththab': 'الخطاب',
-    'khattab': 'الخطاب',
-    'alqamah': 'علقمة',
-    'alqama': 'علقمة',
-    'waqqash': 'وقاص',
-    'waqash': 'وقاص',
-    'waqqas': 'وقاص',
-    'laitsi': 'الليثي',
-    'laythi': 'الليثي',
-    'qutaibah': 'قتيبة',
-    'qutaybah': 'قتيبة',
-    'bin': 'بن',
-    'bint': 'بنت',
-    'binti': 'بنت',
-    'ibn': 'ابن',
-    'ibnu': 'ابن',
-    'abu': 'أبو',
-    'abi': 'أبي',
-    'umm': 'أم',
-    'ummu': 'أم',
-    'al': 'ال',
-    'muhammad': 'محمد',
-    'ahmad': 'أحمد',
-    'abdullah': 'عبد الله',
-    'abdurrahman': 'عبد الرحمن',
-    'ali': 'علي',
-    'umar': 'عمر',
-    'usman': 'عثمان',
-    'uthman': 'عثمان',
-    'aisyah': 'عائشة',
-    'aisha': 'عائشة',
-    'fatimah': 'فاطمة',
-    'hassan': 'الحسن',
-    'hussein': 'الحسين',
-    'hussain': 'الحسين',
-    'saad': 'سعد',
-    'said': 'سعيد',
-    'sa\'id': 'سعيد',
-    'zayd': 'زيد',
-    'zaid': 'زيد',
-    'khalid': 'خالد',
-    'tariq': 'طارق',
-    'jabir': 'جابر',
-    'salman': 'سلمان',
-    'bilal': 'بلال',
-    'muadh': 'معاذ',
-    'suhayb': 'صهيب',
-    'yasser': 'ياسر',
-    'yasar': 'يسار',
-    'amr': 'عمرو',
-    'amru': 'عمرو',
-    'dinar': 'دينار',
-    'ismail': 'إسماعيل',
-    'jafar': 'جعفر',
-    'ja\'far': 'جعفر',
-    'sulaiman': 'سليمان',
-    'harb': 'حرب',
-    'atho': 'عطاء',
-    'ata': 'عطاء',
-    'hilal': 'هلال',
-    'qasim': 'القاسم',
-    'tinnisi': 'التنيسي',
-    'humaydi': 'الحميدي',
-    'humaidi': 'الحميدي',
-    'ansari': 'الأنصاري',
-    'anshari': 'الأنصاري',
-    'zuhri': 'الزهري',
-    'malik': 'مالك',
-    'sufyan': 'سفيان',
-    'yahya': 'يحيى',
-    'urwah': 'عروة',
-    'nafi': 'نافع',
-    'salim': 'سالم',
-    'tawus': 'طاووس',
-    'ikrimah': 'عكرمة',
-    'katir': 'كثير',
-    'kathir': 'كثير',
-    'hisham': 'هشام',
-    'musab': 'مصعب',
-    'bukhari': 'البخاري',
-    'muslim': 'مسلم'
-  };
-
-  const clean = rawStr.replace(/\(.*?\)/g, '').replace(/[^a-zA-Z\s]/g, '').trim();
-  const words = clean.split(/\s+/);
-  const arWords = words.map(w => {
-    const lw = w.toLowerCase().replace(/[^a-z]/g, '');
-    return wordMap[lw] || w;
-  });
-
-  const converted = arWords.join(' ');
-  // Purge any remaining Latin characters!
-  const arPurged = converted.replace(/[a-zA-Z0-9\(\)\'\`’\-\._]/g, '').trim().replace(/\s+/g, ' ');
-  if (/[\u0600-\u06FF]/.test(arPurged) && arPurged.length > 1) {
-    return arPurged;
-  }
-
+  // Remove broken word-by-word Arabic Transliteration engine for unmapped narrators
   return 'أحد الرواة';
 }
 
