@@ -2928,17 +2928,19 @@ async function loadSanadChain() {
     const data = await window.HadeethAPI.getHadith(bookId, hadithNum, dsPrefix);
     
     if (data && data.rawis && data.rawis.length > 0) {
-      let rawiIds = data.rawis.slice().reverse();
+      let rawiList = data.rawis.slice().reverse();
       
       // Filter out Prophet (1) since we hardcode it at the top
-      // And filter out the author if it's already there? The old code just mapped whatever was in fawaz_to_rawis.
-      
-      narrators = rawiIds.map((rId, idx) => {
+      narrators = rawiList.map((rawItem, idx) => {
+        const isObj = typeof rawItem === 'object' && rawItem !== null;
+        const rId = isObj ? rawItem.id : rawItem;
+        
         const rawiData = rawisDict[rId] || {};
         const isFirst = idx === 0 || (rawiData.grade && rawiData.grade.toLowerCase().includes('sahab'));
         
-        let enName = rawiData.en || 'Transmitter ' + rId;
-        let idName = rawiData.id || 'Perawi ' + rId;
+        let enName = (isObj ? rawItem.name_en : null) || rawiData.en || 'Transmitter ' + rId;
+        let idName = (isObj ? rawItem.name_id : null) || rawiData.id || 'Perawi ' + rId;
+        let arName = (isObj ? rawItem.ar : null) || rawiData.ar || idName;
         
         return {
           rawi_id: rId,
@@ -2946,7 +2948,7 @@ async function loadSanadChain() {
           name_id: idName,
           roleEn: rawiData.role || (isFirst ? 'SAHABI (COMPANION) • GRADE: THIQAH' : 'TRANSMITTER (RAWI) • GRADE: ' + (rawiData.grade || 'THIQAH')),
           roleId: rawiData.roleId || (isFirst ? 'SAHABAT NABI • DERAJAT: TSIQAH' : 'PERAWI (RAWI) • DERAJAT: ' + (rawiData.grade || 'TSIQAH')),
-          ar: rawiData.ar || idName,
+          ar: arName,
           kunyah: rawiData.kunyah || (isFirst ? 'Abu Abdillah' : '-'),
           residence: rawiData.residence || (isFirst ? 'Madinah' : '-'),
           death_ah: rawiData.death_ah || (isFirst ? 'Early Era' : '-'),
