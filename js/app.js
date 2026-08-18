@@ -1208,23 +1208,20 @@ async function loadHadithDetail() {
       let narratorEn = "Unknown";
       let narratorId = "Tidak diketahui";
       
-      if (data.text_id && data.text_id.includes('[')) {
-          // Extract names from Lidwa brackets [...]
-          const regex = /\[(.*?)\]/g;
-          const matches = [];
-          let match;
-          while ((match = regex.exec(data.text_id)) !== null) {
-              if (match[1] && match[1].length > 2) {
-                  matches.push(match[1]);
-              }
-          }
+      if (data.rawis && data.rawis.length > 0) {
+          // Lidwa rawis array is ordered from Highest (Sahabi) to Lowest (Mukharrij).
+          // We display from Lowest to Highest -> Prophet.
+          const reversedRawis = [...data.rawis].reverse();
           
-          if (matches.length > 0) {
-              previewStrEn = matches.join(' → ') + ' → Prophet ﷺ';
-              previewStrId = matches.join(' → ') + ' → Rasulullah ﷺ';
-              narratorEn = matches[matches.length - 1];
-              narratorId = matches[matches.length - 1];
-          }
+          const namesEn = reversedRawis.map(r => r.name_en || r.ar);
+          const namesId = reversedRawis.map(r => r.name_id || r.ar);
+          
+          previewStrEn = namesEn.join(' → ') + ' → Prophet ﷺ';
+          previewStrId = namesId.join(' → ') + ' → Rasulullah ﷺ';
+          
+          // The narrator closest to the Prophet (Sahabi) is the first element in Lidwa's rawis array
+          narratorEn = data.rawis[0].name_en || data.rawis[0].ar;
+          narratorId = data.rawis[0].name_id || data.rawis[0].ar;
       }
       
       if (sanadPreviewEn) sanadPreviewEn.innerText = previewStrEn;
