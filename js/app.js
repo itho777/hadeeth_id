@@ -1084,11 +1084,12 @@ async function loadHadithDetail() {
   }
 
   async function fetchTranslationText(opt) {
-      // Small optimization: If it's the active dataset and the language matches, we already have the text in `data`
-      if (opt.source === 'fawaz' && opt.lang === 'English' && activeDataset === 'fawazahmed' && data.text_en) return data.text_en;
-      if (opt.source === 'lidwa' && activeDataset === 'native_lidwa' && data.text_id) return data.text_id;
-      if (opt.source === 'ab' && activeDataset === 'native_ahmedbaset' && data.text_en) return data.text_en;
-
+      // Since we are using the new consolidated API, the 'data' object ALREADY contains
+      // the AhmedBaset English translation (as data.text_en) and Lidwa Indonesian (as data.text_id).
+      if (opt.source === 'lidwa' && data.text_id) return data.text_id;
+      if (opt.source === 'ab' && data.text_en) return data.text_en;
+      
+      // For Fawaz translations (like Spanish, French, or Fawaz's English), we still fetch the raw baseline file.
       try {
           const resp = await fetch(opt.file);
           if (!resp.ok) return null;
@@ -1098,12 +1099,6 @@ async function loadHadithDetail() {
           if (opt.source === 'fawaz') {
               const found = (json_data.hadiths || []).find(h => (h.hadithnumber ?? h.id) == opt.hid);
               if (found) text = found.text;
-          } else if (opt.source === 'lidwa') {
-              const found = (Array.isArray(json_data) ? json_data : (json_data.hadiths || [])).find(h => (h.hadith_number ?? h.hadithnumber ?? h.id) == opt.hid);
-              if (found) text = found.text_id || found.terjemah || found.text;
-          } else if (opt.source === 'ab') {
-              const found = (json_data.hadiths || []).find(h => String(h.idInBook) === String(opt.hid));
-              if (found) text = found.english ? (found.english.narrator ? `${found.english.narrator} ${found.english.text}` : found.english.text) : '';
           }
           return text;
       } catch(e) {
