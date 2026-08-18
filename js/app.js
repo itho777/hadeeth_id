@@ -973,7 +973,7 @@ async function loadHadithDetail() {
   }
 
   // Extract variables
-  const bookName = (data.book_id === 'nawawi' ? 'Forty Nawawi' : data.book_id.toUpperCase());
+  const bookName = (bookId === 'nawawi' ? 'Forty Nawawi' : bookId.toUpperCase());
   const titleTextEn = `Hadith #${data.hadith_number}`;
   const titleTextId = `Hadits #${data.hadith_number}`;
   
@@ -992,8 +992,8 @@ async function loadHadithDetail() {
 
   const chapterMetaEn = document.querySelector('[data-hadith-chapter-en]');
   const chapterMetaId = document.querySelector('[data-hadith-chapter-id]');
-  if (chapterMetaEn) chapterMetaEn.innerText = `Book ${data.book_number}`;
-  if (chapterMetaId) chapterMetaId.innerText = `Bab ${data.book_number}`;
+  if (chapterMetaEn) chapterMetaEn.innerText = `Chapter ${data.chapter_id}`;
+  if (chapterMetaId) chapterMetaId.innerText = `Bab ${data.chapter_id}`;
 
   // Next / Prev buttons
   const prevBtn = document.getElementById('prev-hadith-btn');
