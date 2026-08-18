@@ -2937,7 +2937,18 @@ async function loadSanadChain() {
     data = await window.HadeethAPI.getHadith(bookId, hadithNum, dsPrefix);
     
     if (data && data.rawis && data.rawis.length > 0) {
-      let rawiList = data.rawis.slice().reverse();
+      // Filter out consecutive duplicates
+      let rawiList = [];
+      for (const item of data.rawis) {
+        const id = typeof item === 'object' ? item.id : item;
+        if (rawiList.length === 0) {
+          rawiList.push(item);
+        } else {
+          const lastItem = rawiList[rawiList.length - 1];
+          const lastId = typeof lastItem === 'object' ? lastItem.id : lastItem;
+          if (lastId !== id) rawiList.push(item);
+        }
+      }
       
       // Filter out Prophet (1) since we hardcode it at the top
       narrators = rawiList.map((rawItem, idx) => {
