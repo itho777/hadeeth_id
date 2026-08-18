@@ -41,7 +41,8 @@ const HadeethAPI = {
   async getActiveRawis() {
     if (this.rawisCache) return this.rawisCache;
     try {
-      const res = await fetch(`${this.baseUrl}/rawis/active_rawis.min.json?v=20260816`);
+      const cacheBuster = Date.now();
+      const res = await fetch(`${this.baseUrl}/rawis/active_rawis.min.json?v=${cacheBuster}`);
       if (res.ok) {
         this.rawisCache = await res.json();
       } else {
@@ -124,7 +125,8 @@ const HadeethAPI = {
       
       // We will fetch the monolithic file and cache it.
       if (!this.apiCache[bookId]['all']) {
-        const res = await fetch(`${this.baseUrl}/api/${bookId}.json`);
+        const cacheBuster = Date.now();
+        const res = await fetch(`${this.baseUrl}/api/${bookId}.json?v=${cacheBuster}`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         this.apiCache[bookId]['all'] = await res.json();
       }

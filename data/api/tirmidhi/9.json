@@ -41,6 +41,40 @@
           "ar": "Al Husain bin Huraits bin Al Hasan"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_3260",
+            "name_en": "Sa'ad bin Malik bin Sinan bin 'Ubaid",
+            "name_id": "Sa'ad bin Malik bin Sinan bin 'Ubaid",
+            "ar": "Sa'ad bin Malik bin Sinan bin 'Ubaid"
+          },
+          {
+            "id": "lidwa_5647",
+            "name_en": "Athiyyah bin Sa'ad bin Junadah",
+            "name_id": "Athiyyah bin Sa'ad bin Junadah",
+            "ar": "Athiyyah bin Sa'ad bin Junadah"
+          },
+          {
+            "id": "lidwa_3010",
+            "name_en": "Zakariya bin Abi Za'idah Khalid",
+            "name_id": "Zakariya bin Abi Za'idah Khalid",
+            "ar": "Zakariya bin Abi Za'idah Khalid"
+          },
+          {
+            "id": "lidwa_1560",
+            "name_en": "Al Fadlol bin Musa",
+            "name_id": "Al Fadlol bin Musa",
+            "ar": "Al Fadlol bin Musa"
+          },
+          {
+            "id": "lidwa_1325",
+            "name_en": "Al Husain bin Huraits bin Al Hasan",
+            "name_id": "Al Husain bin Huraits bin Al Hasan",
+            "ar": "Al Husain bin Huraits bin Al Hasan"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -68,28 +102,10 @@
           "ar": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah"
         },
         {
-          "id": "lidwa_3232",
-          "name_en": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah",
-          "name_id": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah",
-          "ar": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah"
-        },
-        {
           "id": "lidwa_6984",
           "name_en": "Muhammad bin Sa'ad bin Abi Waqash",
           "name_id": "Muhammad bin Sa'ad bin Abi Waqash",
           "ar": "Muhammad bin Sa'ad bin Abi Waqash"
-        },
-        {
-          "id": "lidwa_6984",
-          "name_en": "Muhammad bin Sa'ad bin Abi Waqash",
-          "name_id": "Muhammad bin Sa'ad bin Abi Waqash",
-          "ar": "Muhammad bin Sa'ad bin Abi Waqash"
-        },
-        {
-          "id": "lidwa_8568",
-          "name_en": "Yusuf bin Al Hakam bin 'Aqil",
-          "name_id": "Yusuf bin Al Hakam bin 'Aqil",
-          "ar": "Yusuf bin Al Hakam bin 'Aqil"
         },
         {
           "id": "lidwa_8568",
@@ -104,18 +120,6 @@
           "ar": "Muhammad bin Abi Sufyan bin Al 'Alaa'"
         },
         {
-          "id": "lidwa_6769",
-          "name_en": "Muhammad bin Abi Sufyan bin Al 'Alaa'",
-          "name_id": "Muhammad bin Abi Sufyan bin Al 'Alaa'",
-          "ar": "Muhammad bin Abi Sufyan bin Al 'Alaa'"
-        },
-        {
-          "id": "lidwa_7272",
-          "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
-          "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
-          "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
-        },
-        {
           "id": "lidwa_7272",
           "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
           "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
@@ -126,18 +130,6 @@
           "name_en": "Shalih bin Kaisan",
           "name_id": "Shalih bin Kaisan",
           "ar": "Shalih bin Kaisan"
-        },
-        {
-          "id": "lidwa_3891",
-          "name_en": "Shalih bin Kaisan",
-          "name_id": "Shalih bin Kaisan",
-          "ar": "Shalih bin Kaisan"
-        },
-        {
-          "id": "lidwa_823",
-          "name_en": "Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
-          "name_id": "Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
-          "ar": "Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf"
         },
         {
           "id": "lidwa_823",
@@ -152,23 +144,125 @@
           "ar": "Sulaiman bin Daud bin Daud bin 'Ali"
         },
         {
-          "id": "lidwa_8513",
-          "name_en": "Ya'qub bin Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
-          "name_id": "Ya'qub bin Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
-          "ar": "Ya'qub bin Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf"
-        },
-        {
           "id": "lidwa_417",
           "name_en": "Ahmad bin Al Hasan bin Junaidab",
           "name_id": "Ahmad bin Al Hasan bin Junaidab",
           "ar": "Ahmad bin Al Hasan bin Junaidab"
-        },
-        {
-          "id": "lidwa_4232",
-          "name_en": "Abdul Hamid bin Humaid bin Nashr",
-          "name_id": "Abdul Hamid bin Humaid bin Nashr",
-          "ar": "Abdul Hamid bin Humaid bin Nashr"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_3232",
+            "name_en": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah",
+            "name_id": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah",
+            "ar": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah"
+          },
+          {
+            "id": "lidwa_6984",
+            "name_en": "Muhammad bin Sa'ad bin Abi Waqash",
+            "name_id": "Muhammad bin Sa'ad bin Abi Waqash",
+            "ar": "Muhammad bin Sa'ad bin Abi Waqash"
+          },
+          {
+            "id": "lidwa_8568",
+            "name_en": "Yusuf bin Al Hakam bin 'Aqil",
+            "name_id": "Yusuf bin Al Hakam bin 'Aqil",
+            "ar": "Yusuf bin Al Hakam bin 'Aqil"
+          },
+          {
+            "id": "lidwa_6769",
+            "name_en": "Muhammad bin Abi Sufyan bin Al 'Alaa'",
+            "name_id": "Muhammad bin Abi Sufyan bin Al 'Alaa'",
+            "ar": "Muhammad bin Abi Sufyan bin Al 'Alaa'"
+          },
+          {
+            "id": "lidwa_7272",
+            "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
+          },
+          {
+            "id": "lidwa_3891",
+            "name_en": "Shalih bin Kaisan",
+            "name_id": "Shalih bin Kaisan",
+            "ar": "Shalih bin Kaisan"
+          },
+          {
+            "id": "lidwa_823",
+            "name_en": "Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
+            "name_id": "Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
+            "ar": "Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf"
+          },
+          {
+            "id": "lidwa_3587",
+            "name_en": "Sulaiman bin Daud bin Daud bin 'Ali",
+            "name_id": "Sulaiman bin Daud bin Daud bin 'Ali",
+            "ar": "Sulaiman bin Daud bin Daud bin 'Ali"
+          },
+          {
+            "id": "lidwa_417",
+            "name_en": "Ahmad bin Al Hasan bin Junaidab",
+            "name_id": "Ahmad bin Al Hasan bin Junaidab",
+            "ar": "Ahmad bin Al Hasan bin Junaidab"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_3232",
+            "name_en": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah",
+            "name_id": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah",
+            "ar": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah"
+          },
+          {
+            "id": "lidwa_6984",
+            "name_en": "Muhammad bin Sa'ad bin Abi Waqash",
+            "name_id": "Muhammad bin Sa'ad bin Abi Waqash",
+            "ar": "Muhammad bin Sa'ad bin Abi Waqash"
+          },
+          {
+            "id": "lidwa_8568",
+            "name_en": "Yusuf bin Al Hakam bin 'Aqil",
+            "name_id": "Yusuf bin Al Hakam bin 'Aqil",
+            "ar": "Yusuf bin Al Hakam bin 'Aqil"
+          },
+          {
+            "id": "lidwa_6769",
+            "name_en": "Muhammad bin Abi Sufyan bin Al 'Alaa'",
+            "name_id": "Muhammad bin Abi Sufyan bin Al 'Alaa'",
+            "ar": "Muhammad bin Abi Sufyan bin Al 'Alaa'"
+          },
+          {
+            "id": "lidwa_7272",
+            "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
+          },
+          {
+            "id": "lidwa_3891",
+            "name_en": "Shalih bin Kaisan",
+            "name_id": "Shalih bin Kaisan",
+            "ar": "Shalih bin Kaisan"
+          },
+          {
+            "id": "lidwa_823",
+            "name_en": "Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
+            "name_id": "Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
+            "ar": "Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf"
+          },
+          {
+            "id": "lidwa_8513",
+            "name_en": "Ya'qub bin Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
+            "name_id": "Ya'qub bin Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
+            "ar": "Ya'qub bin Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf"
+          },
+          {
+            "id": "lidwa_4232",
+            "name_en": "Abdul Hamid bin Humaid bin Nashr",
+            "name_id": "Abdul Hamid bin Humaid bin Nashr",
+            "ar": "Abdul Hamid bin Humaid bin Nashr"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -197,18 +291,6 @@
           "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
         },
         {
-          "id": "lidwa_4883",
-          "name_en": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
-          "name_id": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
-          "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
-        },
-        {
-          "id": "lidwa_3307",
-          "name_en": "Sa'id bin Jubair bin Hisyam",
-          "name_id": "Sa'id bin Jubair bin Hisyam",
-          "ar": "Sa'id bin Jubair bin Hisyam"
-        },
-        {
           "id": "lidwa_3307",
           "name_en": "Sa'id bin Jubair bin Hisyam",
           "name_id": "Sa'id bin Jubair bin Hisyam",
@@ -219,18 +301,6 @@
           "name_en": "Habib bin Abi Tsabit Qais bin Dinar",
           "name_id": "Habib bin Abi Tsabit Qais bin Dinar",
           "ar": "Habib bin Abi Tsabit Qais bin Dinar"
-        },
-        {
-          "id": "lidwa_2244",
-          "name_en": "Habib bin Abi Tsabit Qais bin Dinar",
-          "name_id": "Habib bin Abi Tsabit Qais bin Dinar",
-          "ar": "Habib bin Abi Tsabit Qais bin Dinar"
-        },
-        {
-          "id": "lidwa_3436",
-          "name_en": "Sufyan bin Sa'id bin Masruq",
-          "name_id": "Sufyan bin Sa'id bin Masruq",
-          "ar": "Sufyan bin Sa'id bin Masruq"
         },
         {
           "id": "lidwa_3436",
@@ -245,23 +315,89 @@
           "ar": "Bisyir bin As Sariy bin Al Harits bin 'Umair"
         },
         {
-          "id": "lidwa_6649",
-          "name_en": "Mu'ammal bin Isma'il",
-          "name_id": "Mu'ammal bin Isma'il",
-          "ar": "Mu'ammal bin Isma'il"
-        },
-        {
-          "id": "lidwa_7352",
-          "name_en": "Mahmud bin Ghailan",
-          "name_id": "Mahmud bin Ghailan",
-          "ar": "Mahmud bin Ghailan"
-        },
-        {
           "id": "lidwa_7352",
           "name_en": "Mahmud bin Ghailan",
           "name_id": "Mahmud bin Ghailan",
           "ar": "Mahmud bin Ghailan"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4883",
+            "name_en": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "name_id": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
+          },
+          {
+            "id": "lidwa_3307",
+            "name_en": "Sa'id bin Jubair bin Hisyam",
+            "name_id": "Sa'id bin Jubair bin Hisyam",
+            "ar": "Sa'id bin Jubair bin Hisyam"
+          },
+          {
+            "id": "lidwa_2244",
+            "name_en": "Habib bin Abi Tsabit Qais bin Dinar",
+            "name_id": "Habib bin Abi Tsabit Qais bin Dinar",
+            "ar": "Habib bin Abi Tsabit Qais bin Dinar"
+          },
+          {
+            "id": "lidwa_3436",
+            "name_en": "Sufyan bin Sa'id bin Masruq",
+            "name_id": "Sufyan bin Sa'id bin Masruq",
+            "ar": "Sufyan bin Sa'id bin Masruq"
+          },
+          {
+            "id": "lidwa_1866",
+            "name_en": "Bisyir bin As Sariy bin Al Harits bin 'Umair",
+            "name_id": "Bisyir bin As Sariy bin Al Harits bin 'Umair",
+            "ar": "Bisyir bin As Sariy bin Al Harits bin 'Umair"
+          },
+          {
+            "id": "lidwa_7352",
+            "name_en": "Mahmud bin Ghailan",
+            "name_id": "Mahmud bin Ghailan",
+            "ar": "Mahmud bin Ghailan"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4883",
+            "name_en": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "name_id": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
+          },
+          {
+            "id": "lidwa_3307",
+            "name_en": "Sa'id bin Jubair bin Hisyam",
+            "name_id": "Sa'id bin Jubair bin Hisyam",
+            "ar": "Sa'id bin Jubair bin Hisyam"
+          },
+          {
+            "id": "lidwa_2244",
+            "name_en": "Habib bin Abi Tsabit Qais bin Dinar",
+            "name_id": "Habib bin Abi Tsabit Qais bin Dinar",
+            "ar": "Habib bin Abi Tsabit Qais bin Dinar"
+          },
+          {
+            "id": "lidwa_3436",
+            "name_en": "Sufyan bin Sa'id bin Masruq",
+            "name_id": "Sufyan bin Sa'id bin Masruq",
+            "ar": "Sufyan bin Sa'id bin Masruq"
+          },
+          {
+            "id": "lidwa_6649",
+            "name_en": "Mu'ammal bin Isma'il",
+            "name_id": "Mu'ammal bin Isma'il",
+            "ar": "Mu'ammal bin Isma'il"
+          },
+          {
+            "id": "lidwa_7352",
+            "name_en": "Mahmud bin Ghailan",
+            "name_id": "Mahmud bin Ghailan",
+            "ar": "Mahmud bin Ghailan"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -314,6 +450,40 @@
           "ar": "Muhammad bin Basysyar bin 'Utsman"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_720",
+            "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
+          },
+          {
+            "id": "lidwa_6458",
+            "name_en": "Qatadah bin Da'amah bin Qatadah",
+            "name_id": "Qatadah bin Da'amah bin Qatadah",
+            "ar": "Qatadah bin Da'amah bin Qatadah"
+          },
+          {
+            "id": "lidwa_3795",
+            "name_en": "Syu'bah bin Al Hajjaj bin Al Warad",
+            "name_id": "Syu'bah bin Al Hajjaj bin Al Warad",
+            "ar": "Syu'bah bin Al Hajjaj bin Al Warad"
+          },
+          {
+            "id": "lidwa_6904",
+            "name_en": "Muhammad bin Ja'far ",
+            "name_id": "Muhammad bin Ja'far ",
+            "ar": "Muhammad bin Ja'far "
+          },
+          {
+            "id": "lidwa_6879",
+            "name_en": "Muhammad bin Basysyar bin 'Utsman",
+            "name_id": "Muhammad bin Basysyar bin 'Utsman",
+            "ar": "Muhammad bin Basysyar bin 'Utsman"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -341,18 +511,6 @@
           "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
         },
         {
-          "id": "lidwa_4883",
-          "name_en": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
-          "name_id": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
-          "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
-        },
-        {
-          "id": "lidwa_3307",
-          "name_en": "Sa'id bin Jubair bin Hisyam",
-          "name_id": "Sa'id bin Jubair bin Hisyam",
-          "ar": "Sa'id bin Jubair bin Hisyam"
-        },
-        {
           "id": "lidwa_3307",
           "name_en": "Sa'id bin Jubair bin Hisyam",
           "name_id": "Sa'id bin Jubair bin Hisyam",
@@ -363,18 +521,6 @@
           "name_en": "Thariq bin 'Abdur Rahman",
           "name_id": "Thariq bin 'Abdur Rahman",
           "ar": "Thariq bin 'Abdur Rahman"
-        },
-        {
-          "id": "lidwa_3993",
-          "name_en": "Thariq bin 'Abdur Rahman",
-          "name_id": "Thariq bin 'Abdur Rahman",
-          "ar": "Thariq bin 'Abdur Rahman"
-        },
-        {
-          "id": "lidwa_3629",
-          "name_en": "Sulaiman bin Mihran",
-          "name_id": "Sulaiman bin Mihran",
-          "ar": "Sulaiman bin Mihran"
         },
         {
           "id": "lidwa_3629",
@@ -389,23 +535,89 @@
           "ar": "Abdul Hamid bin 'Abdur Rahman"
         },
         {
-          "id": "lidwa_8268",
-          "name_en": "Yahya bin Sa'id bin Abban bin Sa'id bin Al 'Ash bin Umayyah",
-          "name_id": "Yahya bin Sa'id bin Abban bin Sa'id bin Al 'Ash bin Umayyah",
-          "ar": "Yahya bin Sa'id bin Abban bin Sa'id bin Al 'Ash bin Umayyah"
-        },
-        {
           "id": "lidwa_6852",
           "name_en": "Muhammad bin Al 'Alaa' bin Kuraib",
           "name_id": "Muhammad bin Al 'Alaa' bin Kuraib",
           "ar": "Muhammad bin Al 'Alaa' bin Kuraib"
-        },
-        {
-          "id": "lidwa_5278",
-          "name_en": "Abdul Wahhab bin 'Abdul Hakim bin Nafi'",
-          "name_id": "Abdul Wahhab bin 'Abdul Hakim bin Nafi'",
-          "ar": "Abdul Wahhab bin 'Abdul Hakim bin Nafi'"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4883",
+            "name_en": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "name_id": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
+          },
+          {
+            "id": "lidwa_3307",
+            "name_en": "Sa'id bin Jubair bin Hisyam",
+            "name_id": "Sa'id bin Jubair bin Hisyam",
+            "ar": "Sa'id bin Jubair bin Hisyam"
+          },
+          {
+            "id": "lidwa_3993",
+            "name_en": "Thariq bin 'Abdur Rahman",
+            "name_id": "Thariq bin 'Abdur Rahman",
+            "ar": "Thariq bin 'Abdur Rahman"
+          },
+          {
+            "id": "lidwa_3629",
+            "name_en": "Sulaiman bin Mihran",
+            "name_id": "Sulaiman bin Mihran",
+            "ar": "Sulaiman bin Mihran"
+          },
+          {
+            "id": "lidwa_4240",
+            "name_en": "Abdul Hamid bin 'Abdur Rahman",
+            "name_id": "Abdul Hamid bin 'Abdur Rahman",
+            "ar": "Abdul Hamid bin 'Abdur Rahman"
+          },
+          {
+            "id": "lidwa_6852",
+            "name_en": "Muhammad bin Al 'Alaa' bin Kuraib",
+            "name_id": "Muhammad bin Al 'Alaa' bin Kuraib",
+            "ar": "Muhammad bin Al 'Alaa' bin Kuraib"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4883",
+            "name_en": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "name_id": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
+          },
+          {
+            "id": "lidwa_3307",
+            "name_en": "Sa'id bin Jubair bin Hisyam",
+            "name_id": "Sa'id bin Jubair bin Hisyam",
+            "ar": "Sa'id bin Jubair bin Hisyam"
+          },
+          {
+            "id": "lidwa_3993",
+            "name_en": "Thariq bin 'Abdur Rahman",
+            "name_id": "Thariq bin 'Abdur Rahman",
+            "ar": "Thariq bin 'Abdur Rahman"
+          },
+          {
+            "id": "lidwa_3629",
+            "name_en": "Sulaiman bin Mihran",
+            "name_id": "Sulaiman bin Mihran",
+            "ar": "Sulaiman bin Mihran"
+          },
+          {
+            "id": "lidwa_8268",
+            "name_en": "Yahya bin Sa'id bin Abban bin Sa'id bin Al 'Ash bin Umayyah",
+            "name_id": "Yahya bin Sa'id bin Abban bin Sa'id bin Al 'Ash bin Umayyah",
+            "ar": "Yahya bin Sa'id bin Abban bin Sa'id bin Al 'Ash bin Umayyah"
+          },
+          {
+            "id": "lidwa_5278",
+            "name_en": "Abdul Wahhab bin 'Abdul Hakim bin Nafi'",
+            "name_id": "Abdul Wahhab bin 'Abdul Hakim bin Nafi'",
+            "ar": "Abdul Wahhab bin 'Abdul Hakim bin Nafi'"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -458,6 +670,40 @@
           "ar": "Al Qasim bin Zakariya' bin Dinar"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_720",
+            "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
+          },
+          {
+            "id": "lidwa_5629",
+            "name_en": "Atha' bin As Sa'ib bin Malik",
+            "name_id": "Atha' bin As Sa'ib bin Malik",
+            "ar": "Atha' bin As Sa'ib bin Malik"
+          },
+          {
+            "id": "lidwa_2149",
+            "name_en": "Ja'far bin Ziyad",
+            "name_id": "Ja'far bin Ziyad",
+            "ar": "Ja'far bin Ziyad"
+          },
+          {
+            "id": "lidwa_969",
+            "name_en": "Ishaq bin Manshur ",
+            "name_id": "Ishaq bin Manshur ",
+            "ar": "Ishaq bin Manshur "
+          },
+          {
+            "id": "lidwa_1575",
+            "name_en": "Al Qasim bin Zakariya' bin Dinar",
+            "name_id": "Al Qasim bin Zakariya' bin Dinar",
+            "ar": "Al Qasim bin Zakariya' bin Dinar"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -485,22 +731,10 @@
           "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
         },
         {
-          "id": "lidwa_6674",
-          "name_en": "Malik bin Rabi'ah bin Al Badan",
-          "name_id": "Malik bin Rabi'ah bin Al Badan",
-          "ar": "Malik bin Rabi'ah bin Al Badan"
-        },
-        {
           "id": "lidwa_8272",
           "name_en": "Yahya bin Sa'id bin Qais",
           "name_id": "Yahya bin Sa'id bin Qais",
           "ar": "Yahya bin Sa'id bin Qais"
-        },
-        {
-          "id": "lidwa_720",
-          "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
-          "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
-          "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
         },
         {
           "id": "lidwa_6641",
@@ -514,6 +748,48 @@
           "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
           "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_720",
+            "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
+          },
+          {
+            "id": "lidwa_8272",
+            "name_en": "Yahya bin Sa'id bin Qais",
+            "name_id": "Yahya bin Sa'id bin Qais",
+            "ar": "Yahya bin Sa'id bin Qais"
+          },
+          {
+            "id": "lidwa_6641",
+            "name_en": "Laits bin Sa'ad bin 'Abdur Rahman",
+            "name_id": "Laits bin Sa'ad bin 'Abdur Rahman",
+            "ar": "Laits bin Sa'ad bin 'Abdur Rahman"
+          },
+          {
+            "id": "lidwa_6460",
+            "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
+          }
+        ],
+        [
+          {
+            "id": "lidwa_6674",
+            "name_en": "Malik bin Rabi'ah bin Al Badan",
+            "name_id": "Malik bin Rabi'ah bin Al Badan",
+            "ar": "Malik bin Rabi'ah bin Al Badan"
+          },
+          {
+            "id": "lidwa_720",
+            "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -542,34 +818,10 @@
           "ar": "Malik bin Rabi'ah bin Al Badan"
         },
         {
-          "id": "lidwa_4396",
-          "name_en": "Abdur Rahman bin Shakhr",
-          "name_id": "Abdur Rahman bin Shakhr",
-          "ar": "Abdur Rahman bin Shakhr"
-        },
-        {
-          "id": "lidwa_4396",
-          "name_en": "Abdur Rahman bin Shakhr",
-          "name_id": "Abdur Rahman bin Shakhr",
-          "ar": "Abdur Rahman bin Shakhr"
-        },
-        {
           "id": "lidwa_720",
           "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
           "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
           "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
-        },
-        {
-          "id": "lidwa_4903",
-          "name_en": "Abdullah bin 'Abdur Rahman bin 'Auf",
-          "name_id": "Abdullah bin 'Abdur Rahman bin 'Auf",
-          "ar": "Abdullah bin 'Abdur Rahman bin 'Auf"
-        },
-        {
-          "id": "lidwa_5409",
-          "name_en": "Ubaidullah bin 'Abdullah bin 'Utbah bin Mas'ud",
-          "name_id": "Ubaidullah bin 'Abdullah bin 'Utbah bin Mas'ud",
-          "ar": "Ubaidullah bin 'Abdullah bin 'Utbah bin Mas'ud"
         },
         {
           "id": "lidwa_6458",
@@ -578,34 +830,10 @@
           "ar": "Qatadah bin Da'amah bin Qatadah"
         },
         {
-          "id": "lidwa_7272",
-          "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
-          "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
-          "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
-        },
-        {
-          "id": "lidwa_7272",
-          "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
-          "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
-          "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
-        },
-        {
           "id": "lidwa_3795",
           "name_en": "Syu'bah bin Al Hajjaj bin Al Warad",
           "name_id": "Syu'bah bin Al Hajjaj bin Al Warad",
           "ar": "Syu'bah bin Al Hajjaj bin Al Warad"
-        },
-        {
-          "id": "lidwa_7633",
-          "name_en": "Ma'mar bin Raosyid",
-          "name_id": "Ma'mar bin Raosyid",
-          "ar": "Ma'mar bin Raosyid"
-        },
-        {
-          "id": "lidwa_7633",
-          "name_en": "Ma'mar bin Raosyid",
-          "name_id": "Ma'mar bin Raosyid",
-          "ar": "Ma'mar bin Raosyid"
         },
         {
           "id": "lidwa_6904",
@@ -619,6 +847,98 @@
           "name_id": "Muhammad bin Basysyar bin 'Utsman",
           "ar": "Muhammad bin Basysyar bin 'Utsman"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_6674",
+            "name_en": "Malik bin Rabi'ah bin Al Badan",
+            "name_id": "Malik bin Rabi'ah bin Al Badan",
+            "ar": "Malik bin Rabi'ah bin Al Badan"
+          },
+          {
+            "id": "lidwa_720",
+            "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
+          },
+          {
+            "id": "lidwa_6458",
+            "name_en": "Qatadah bin Da'amah bin Qatadah",
+            "name_id": "Qatadah bin Da'amah bin Qatadah",
+            "ar": "Qatadah bin Da'amah bin Qatadah"
+          },
+          {
+            "id": "lidwa_3795",
+            "name_en": "Syu'bah bin Al Hajjaj bin Al Warad",
+            "name_id": "Syu'bah bin Al Hajjaj bin Al Warad",
+            "ar": "Syu'bah bin Al Hajjaj bin Al Warad"
+          },
+          {
+            "id": "lidwa_6904",
+            "name_en": "Muhammad bin Ja'far ",
+            "name_id": "Muhammad bin Ja'far ",
+            "ar": "Muhammad bin Ja'far "
+          },
+          {
+            "id": "lidwa_6879",
+            "name_en": "Muhammad bin Basysyar bin 'Utsman",
+            "name_id": "Muhammad bin Basysyar bin 'Utsman",
+            "ar": "Muhammad bin Basysyar bin 'Utsman"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_4903",
+            "name_en": "Abdullah bin 'Abdur Rahman bin 'Auf",
+            "name_id": "Abdullah bin 'Abdur Rahman bin 'Auf",
+            "ar": "Abdullah bin 'Abdur Rahman bin 'Auf"
+          },
+          {
+            "id": "lidwa_7272",
+            "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
+          },
+          {
+            "id": "lidwa_7633",
+            "name_en": "Ma'mar bin Raosyid",
+            "name_id": "Ma'mar bin Raosyid",
+            "ar": "Ma'mar bin Raosyid"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_5409",
+            "name_en": "Ubaidullah bin 'Abdullah bin 'Utbah bin Mas'ud",
+            "name_id": "Ubaidullah bin 'Abdullah bin 'Utbah bin Mas'ud",
+            "ar": "Ubaidullah bin 'Abdullah bin 'Utbah bin Mas'ud"
+          },
+          {
+            "id": "lidwa_7272",
+            "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
+          },
+          {
+            "id": "lidwa_7633",
+            "name_en": "Ma'mar bin Raosyid",
+            "name_id": "Ma'mar bin Raosyid",
+            "ar": "Ma'mar bin Raosyid"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -671,6 +991,40 @@
           "ar": "Salm bin Junadah bin Salm"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_2069",
+            "name_en": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "name_id": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "ar": "Jabir bin 'Abdullah bin 'Amru bin Haram"
+          },
+          {
+            "id": "lidwa_4099",
+            "name_en": "Amir bin Syarahil",
+            "name_id": "Amir bin Syarahil",
+            "ar": "Amir bin Syarahil"
+          },
+          {
+            "id": "lidwa_6712",
+            "name_en": "Mujalid bin Sa'id bin 'Umair",
+            "name_id": "Mujalid bin Sa'id bin 'Umair",
+            "ar": "Mujalid bin Sa'id bin 'Umair"
+          },
+          {
+            "id": "lidwa_428",
+            "name_en": "Ahmad bin Basyir maula 'Amru bin Harits",
+            "name_id": "Ahmad bin Basyir maula 'Amru bin Harits",
+            "ar": "Ahmad bin Basyir maula 'Amru bin Harits"
+          },
+          {
+            "id": "lidwa_3470",
+            "name_en": "Salm bin Junadah bin Salm",
+            "name_id": "Salm bin Junadah bin Salm",
+            "ar": "Salm bin Junadah bin Salm"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -721,6 +1075,40 @@
           "name_id": "Salm bin Junadah bin Salm",
           "ar": "Salm bin Junadah bin Salm"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_2069",
+            "name_en": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "name_id": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "ar": "Jabir bin 'Abdullah bin 'Amru bin Haram"
+          },
+          {
+            "id": "lidwa_4099",
+            "name_en": "Amir bin Syarahil",
+            "name_id": "Amir bin Syarahil",
+            "ar": "Amir bin Syarahil"
+          },
+          {
+            "id": "lidwa_6712",
+            "name_en": "Mujalid bin Sa'id bin 'Umair",
+            "name_id": "Mujalid bin Sa'id bin 'Umair",
+            "ar": "Mujalid bin Sa'id bin 'Umair"
+          },
+          {
+            "id": "lidwa_428",
+            "name_en": "Ahmad bin Basyir maula 'Amru bin Harits",
+            "name_id": "Ahmad bin Basyir maula 'Amru bin Harits",
+            "ar": "Ahmad bin Basyir maula 'Amru bin Harits"
+          },
+          {
+            "id": "lidwa_3470",
+            "name_en": "Salm bin Junadah bin Salm",
+            "name_id": "Salm bin Junadah bin Salm",
+            "ar": "Salm bin Junadah bin Salm"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -779,6 +1167,46 @@
           "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_5722",
+            "name_en": "Ali bin Abi Thalib bin 'Abdu Al Muthallib bin Hasyim bin 'Abdi Manaf",
+            "name_id": "Ali bin Abi Thalib bin 'Abdu Al Muthallib bin Hasyim bin 'Abdi Manaf",
+            "ar": "Ali bin Abi Thalib bin 'Abdu Al Muthallib bin Hasyim bin 'Abdi Manaf"
+          },
+          {
+            "id": "lidwa_4077",
+            "name_en": "Ashim bin 'Amru",
+            "name_id": "Ashim bin 'Amru",
+            "ar": "Ashim bin 'Amru"
+          },
+          {
+            "id": "lidwa_6139",
+            "name_en": "Amru bin Sulaim biu Khaldah bin Makhlad bin 'Amir bin Zuraiq",
+            "name_id": "Amru bin Sulaim biu Khaldah bin Makhlad bin 'Amir bin Zuraiq",
+            "ar": "Amru bin Sulaim biu Khaldah bin Makhlad bin 'Amir bin Zuraiq"
+          },
+          {
+            "id": "lidwa_3280",
+            "name_en": "Sa'id bin Abi Sa'id Kaisan",
+            "name_id": "Sa'id bin Abi Sa'id Kaisan",
+            "ar": "Sa'id bin Abi Sa'id Kaisan"
+          },
+          {
+            "id": "lidwa_6641",
+            "name_en": "Laits bin Sa'ad bin 'Abdur Rahman",
+            "name_id": "Laits bin Sa'ad bin 'Abdur Rahman",
+            "ar": "Laits bin Sa'ad bin 'Abdur Rahman"
+          },
+          {
+            "id": "lidwa_6460",
+            "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -806,18 +1234,6 @@
           "ar": "Ali bin Abi Thalib bin 'Abdu Al Muthallib bin Hasyim bin 'Abdi Manaf"
         },
         {
-          "id": "lidwa_4396",
-          "name_en": "Abdur Rahman bin Shakhr",
-          "name_id": "Abdur Rahman bin Shakhr",
-          "ar": "Abdur Rahman bin Shakhr"
-        },
-        {
-          "id": "lidwa_201",
-          "name_en": "Abu Sa'id bin Al Mu'allaa",
-          "name_id": "Abu Sa'id bin Al Mu'allaa",
-          "ar": "Abu Sa'id bin Al Mu'allaa"
-        },
-        {
           "id": "lidwa_201",
           "name_en": "Abu Sa'id bin Al Mu'allaa",
           "name_id": "Abu Sa'id bin Al Mu'allaa",
@@ -830,28 +1246,10 @@
           "ar": "Salamah bin Wardan"
         },
         {
-          "id": "lidwa_3524",
-          "name_en": "Salamah bin Wardan",
-          "name_id": "Salamah bin Wardan",
-          "ar": "Salamah bin Wardan"
-        },
-        {
           "id": "lidwa_8620",
           "name_en": "Yunus bin Yahya bin Nubatah",
           "name_id": "Yunus bin Yahya bin Nubatah",
           "ar": "Yunus bin Yahya bin Nubatah"
-        },
-        {
-          "id": "lidwa_8620",
-          "name_en": "Yunus bin Yahya bin Nubatah",
-          "name_id": "Yunus bin Yahya bin Nubatah",
-          "ar": "Yunus bin Yahya bin Nubatah"
-        },
-        {
-          "id": "lidwa_4693",
-          "name_en": "Abdullah bin Al Hakam bin Abi Ziyad",
-          "name_id": "Abdullah bin Al Hakam bin Abi Ziyad",
-          "ar": "Abdullah bin Al Hakam bin Abi Ziyad"
         },
         {
           "id": "lidwa_4693",
@@ -859,6 +1257,72 @@
           "name_id": "Abdullah bin Al Hakam bin Abi Ziyad",
           "ar": "Abdullah bin Al Hakam bin Abi Ziyad"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_5722",
+            "name_en": "Ali bin Abi Thalib bin 'Abdu Al Muthallib bin Hasyim bin 'Abdi Manaf",
+            "name_id": "Ali bin Abi Thalib bin 'Abdu Al Muthallib bin Hasyim bin 'Abdi Manaf",
+            "ar": "Ali bin Abi Thalib bin 'Abdu Al Muthallib bin Hasyim bin 'Abdi Manaf"
+          },
+          {
+            "id": "lidwa_201",
+            "name_en": "Abu Sa'id bin Al Mu'allaa",
+            "name_id": "Abu Sa'id bin Al Mu'allaa",
+            "ar": "Abu Sa'id bin Al Mu'allaa"
+          },
+          {
+            "id": "lidwa_3524",
+            "name_en": "Salamah bin Wardan",
+            "name_id": "Salamah bin Wardan",
+            "ar": "Salamah bin Wardan"
+          },
+          {
+            "id": "lidwa_8620",
+            "name_en": "Yunus bin Yahya bin Nubatah",
+            "name_id": "Yunus bin Yahya bin Nubatah",
+            "ar": "Yunus bin Yahya bin Nubatah"
+          },
+          {
+            "id": "lidwa_4693",
+            "name_en": "Abdullah bin Al Hakam bin Abi Ziyad",
+            "name_id": "Abdullah bin Al Hakam bin Abi Ziyad",
+            "ar": "Abdullah bin Al Hakam bin Abi Ziyad"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_201",
+            "name_en": "Abu Sa'id bin Al Mu'allaa",
+            "name_id": "Abu Sa'id bin Al Mu'allaa",
+            "ar": "Abu Sa'id bin Al Mu'allaa"
+          },
+          {
+            "id": "lidwa_3524",
+            "name_en": "Salamah bin Wardan",
+            "name_id": "Salamah bin Wardan",
+            "ar": "Salamah bin Wardan"
+          },
+          {
+            "id": "lidwa_8620",
+            "name_en": "Yunus bin Yahya bin Nubatah",
+            "name_id": "Yunus bin Yahya bin Nubatah",
+            "ar": "Yunus bin Yahya bin Nubatah"
+          },
+          {
+            "id": "lidwa_4693",
+            "name_en": "Abdullah bin Al Hakam bin Abi Ziyad",
+            "name_id": "Abdullah bin Al Hakam bin Abi Ziyad",
+            "ar": "Abdullah bin Al Hakam bin Abi Ziyad"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -910,6 +1374,40 @@
           "name_id": "Muhammad bin Kamil",
           "ar": "Muhammad bin Kamil"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_1775",
+            "name_en": "Al Walid bin Rabah",
+            "name_id": "Al Walid bin Rabah",
+            "ar": "Al Walid bin Rabah"
+          },
+          {
+            "id": "lidwa_6562",
+            "name_en": "Katsir bin Zaid",
+            "name_id": "Katsir bin Zaid",
+            "ar": "Katsir bin Zaid"
+          },
+          {
+            "id": "lidwa_4553",
+            "name_en": "Abdul 'Aziz bin Abi Hazim Salamah bin Dinar",
+            "name_id": "Abdul 'Aziz bin Abi Hazim Salamah bin Dinar",
+            "ar": "Abdul 'Aziz bin Abi Hazim Salamah bin Dinar"
+          },
+          {
+            "id": "lidwa_7247",
+            "name_en": "Muhammad bin Kamil",
+            "name_id": "Muhammad bin Kamil",
+            "ar": "Muhammad bin Kamil"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -968,6 +1466,46 @@
           "ar": "Muhammad bin Basysyar bin 'Utsman"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4967",
+            "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
+          },
+          {
+            "id": "lidwa_7863",
+            "name_en": "\"Nafi', maula Ibnu 'Umar \"",
+            "name_id": "\"Nafi', maula Ibnu 'Umar \"",
+            "ar": "\"Nafi', maula Ibnu 'Umar \""
+          },
+          {
+            "id": "lidwa_746",
+            "name_en": "Ayyub bin Abi Tamimah Kaysan",
+            "name_id": "Ayyub bin Abi Tamimah Kaysan",
+            "ar": "Ayyub bin Abi Tamimah Kaysan"
+          },
+          {
+            "id": "lidwa_8035",
+            "name_en": "Hisyam bin Abi 'Abdullah Sanbar",
+            "name_id": "Hisyam bin Abi 'Abdullah Sanbar",
+            "ar": "Hisyam bin Abi 'Abdullah Sanbar"
+          },
+          {
+            "id": "lidwa_7563",
+            "name_en": "Mu'adz bin Hisyam bin Abi 'Abdullah ",
+            "name_id": "Mu'adz bin Hisyam bin Abi 'Abdullah ",
+            "ar": "Mu'adz bin Hisyam bin Abi 'Abdullah "
+          },
+          {
+            "id": "lidwa_6879",
+            "name_en": "Muhammad bin Basysyar bin 'Utsman",
+            "name_id": "Muhammad bin Basysyar bin 'Utsman",
+            "ar": "Muhammad bin Basysyar bin 'Utsman"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -1018,6 +1556,40 @@
           "name_id": "Muhammad bin 'Abdul A'laa",
           "ar": "Muhammad bin 'Abdul A'laa"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4967",
+            "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
+          },
+          {
+            "id": "lidwa_7863",
+            "name_en": "\"Nafi', maula Ibnu 'Umar \"",
+            "name_id": "\"Nafi', maula Ibnu 'Umar \"",
+            "ar": "\"Nafi', maula Ibnu 'Umar \""
+          },
+          {
+            "id": "lidwa_5421",
+            "name_en": "Ubaidullah bin 'Umar bin Hafsh bin 'Ashim bin 'Umar bin Al Khaththab",
+            "name_id": "Ubaidullah bin 'Umar bin Hafsh bin 'Ashim bin 'Umar bin Al Khaththab",
+            "ar": "Ubaidullah bin 'Umar bin Hafsh bin 'Ashim bin 'Umar bin Al Khaththab"
+          },
+          {
+            "id": "lidwa_7607",
+            "name_en": "Mu'tamir bin Sulaiman bin Thurkhan",
+            "name_id": "Mu'tamir bin Sulaiman bin Thurkhan",
+            "ar": "Mu'tamir bin Sulaiman bin Thurkhan"
+          },
+          {
+            "id": "lidwa_7050",
+            "name_en": "Muhammad bin 'Abdul A'laa",
+            "name_id": "Muhammad bin 'Abdul A'laa",
+            "ar": "Muhammad bin 'Abdul A'laa"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -1070,6 +1642,40 @@
           "ar": "Salm bin Junadah bin Salm"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_5594",
+            "name_en": "Urwah bin Az Zubair bin Al 'Awwam bin Khuwailid bin Asad bin 'Abdul 'Izzi bin Qu",
+            "name_id": "Urwah bin Az Zubair bin Al 'Awwam bin Khuwailid bin Asad bin 'Abdul 'Izzi bin Qu",
+            "ar": "Urwah bin Az Zubair bin Al 'Awwam bin Khuwailid bin Asad bin 'Abdul 'Izzi bin Qu"
+          },
+          {
+            "id": "lidwa_8055",
+            "name_en": "Hisyam bin 'Urwah bin Az Zubair bin Al 'Awwam",
+            "name_id": "Hisyam bin 'Urwah bin Az Zubair bin Al 'Awwam",
+            "ar": "Hisyam bin 'Urwah bin Az Zubair bin Al 'Awwam"
+          },
+          {
+            "id": "lidwa_2185",
+            "name_en": "Junadah bin Salmi bin Khalid",
+            "name_id": "Junadah bin Salmi bin Khalid",
+            "ar": "Junadah bin Salmi bin Khalid"
+          },
+          {
+            "id": "lidwa_3470",
+            "name_en": "Salm bin Junadah bin Salm",
+            "name_id": "Salm bin Junadah bin Salm",
+            "ar": "Salm bin Junadah bin Salm"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -1097,28 +1703,10 @@
           "ar": "Jabir bin 'Abdullah bin 'Amru bin Haram"
         },
         {
-          "id": "lidwa_2069",
-          "name_en": "Jabir bin 'Abdullah bin 'Amru bin Haram",
-          "name_id": "Jabir bin 'Abdullah bin 'Amru bin Haram",
-          "ar": "Jabir bin 'Abdullah bin 'Amru bin Haram"
-        },
-        {
           "id": "lidwa_6864",
           "name_en": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair",
           "name_id": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair",
           "ar": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair"
-        },
-        {
-          "id": "lidwa_6864",
-          "name_en": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair",
-          "name_id": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair",
-          "ar": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair"
-        },
-        {
-          "id": "lidwa_6659",
-          "name_en": "Malik bin Anas bin Malik bin Abi 'Amir",
-          "name_id": "Malik bin Anas bin Malik bin Abi 'Amir",
-          "ar": "Malik bin Anas bin Malik bin Abi 'Amir"
         },
         {
           "id": "lidwa_6659",
@@ -1133,17 +1721,71 @@
           "ar": "Ma'an bin 'Isa bin Yahya bin Dinar"
         },
         {
-          "id": "lidwa_6460",
-          "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
-          "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
-          "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
-        },
-        {
           "id": "lidwa_971",
           "name_en": "Ishaq bin Musa bin 'Abdullah ",
           "name_id": "Ishaq bin Musa bin 'Abdullah ",
           "ar": "Ishaq bin Musa bin 'Abdullah "
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_2069",
+            "name_en": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "name_id": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "ar": "Jabir bin 'Abdullah bin 'Amru bin Haram"
+          },
+          {
+            "id": "lidwa_6864",
+            "name_en": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair",
+            "name_id": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair",
+            "ar": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair"
+          },
+          {
+            "id": "lidwa_6659",
+            "name_en": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "name_id": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "ar": "Malik bin Anas bin Malik bin Abi 'Amir"
+          },
+          {
+            "id": "lidwa_7643",
+            "name_en": "Ma'an bin 'Isa bin Yahya bin Dinar",
+            "name_id": "Ma'an bin 'Isa bin Yahya bin Dinar",
+            "ar": "Ma'an bin 'Isa bin Yahya bin Dinar"
+          },
+          {
+            "id": "lidwa_971",
+            "name_en": "Ishaq bin Musa bin 'Abdullah ",
+            "name_id": "Ishaq bin Musa bin 'Abdullah ",
+            "ar": "Ishaq bin Musa bin 'Abdullah "
+          }
+        ],
+        [
+          {
+            "id": "lidwa_2069",
+            "name_en": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "name_id": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "ar": "Jabir bin 'Abdullah bin 'Amru bin Haram"
+          },
+          {
+            "id": "lidwa_6864",
+            "name_en": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair",
+            "name_id": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair",
+            "ar": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair"
+          },
+          {
+            "id": "lidwa_6659",
+            "name_en": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "name_id": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "ar": "Malik bin Anas bin Malik bin Abi 'Amir"
+          },
+          {
+            "id": "lidwa_6460",
+            "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -1172,18 +1814,6 @@
           "ar": "Abdur Rahman bin Shakhr"
         },
         {
-          "id": "lidwa_4396",
-          "name_en": "Abdur Rahman bin Shakhr",
-          "name_id": "Abdur Rahman bin Shakhr",
-          "ar": "Abdur Rahman bin Shakhr"
-        },
-        {
-          "id": "lidwa_3299",
-          "name_en": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru",
-          "name_id": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru",
-          "ar": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru"
-        },
-        {
           "id": "lidwa_3299",
           "name_en": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru",
           "name_id": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru",
@@ -1194,18 +1824,6 @@
           "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
           "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
           "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
-        },
-        {
-          "id": "lidwa_7272",
-          "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
-          "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
-          "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
-        },
-        {
-          "id": "lidwa_6659",
-          "name_en": "Malik bin Anas bin Malik bin Abi 'Amir",
-          "name_id": "Malik bin Anas bin Malik bin Abi 'Amir",
-          "ar": "Malik bin Anas bin Malik bin Abi 'Amir"
         },
         {
           "id": "lidwa_6659",
@@ -1218,19 +1836,79 @@
           "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
           "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
           "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
-        },
-        {
-          "id": "lidwa_7643",
-          "name_en": "Ma'an bin 'Isa bin Yahya bin Dinar",
-          "name_id": "Ma'an bin 'Isa bin Yahya bin Dinar",
-          "ar": "Ma'an bin 'Isa bin Yahya bin Dinar"
-        },
-        {
-          "id": "lidwa_971",
-          "name_en": "Ishaq bin Musa bin 'Abdullah ",
-          "name_id": "Ishaq bin Musa bin 'Abdullah ",
-          "ar": "Ishaq bin Musa bin 'Abdullah "
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_3299",
+            "name_en": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru",
+            "name_id": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru",
+            "ar": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru"
+          },
+          {
+            "id": "lidwa_7272",
+            "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
+          },
+          {
+            "id": "lidwa_6659",
+            "name_en": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "name_id": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "ar": "Malik bin Anas bin Malik bin Abi 'Amir"
+          },
+          {
+            "id": "lidwa_6460",
+            "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_3299",
+            "name_en": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru",
+            "name_id": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru",
+            "ar": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru"
+          },
+          {
+            "id": "lidwa_7272",
+            "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
+          },
+          {
+            "id": "lidwa_6659",
+            "name_en": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "name_id": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "ar": "Malik bin Anas bin Malik bin Abi 'Amir"
+          },
+          {
+            "id": "lidwa_7643",
+            "name_en": "Ma'an bin 'Isa bin Yahya bin Dinar",
+            "name_id": "Ma'an bin 'Isa bin Yahya bin Dinar",
+            "ar": "Ma'an bin 'Isa bin Yahya bin Dinar"
+          },
+          {
+            "id": "lidwa_971",
+            "name_en": "Ishaq bin Musa bin 'Abdullah ",
+            "name_id": "Ishaq bin Musa bin 'Abdullah ",
+            "ar": "Ishaq bin Musa bin 'Abdullah "
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -1259,28 +1937,10 @@
           "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
         },
         {
-          "id": "lidwa_720",
-          "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
-          "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
-          "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
-        },
-        {
           "id": "lidwa_6068",
           "name_en": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\"",
           "name_id": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\"",
           "ar": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\""
-        },
-        {
-          "id": "lidwa_6068",
-          "name_en": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\"",
-          "name_id": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\"",
-          "ar": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\""
-        },
-        {
-          "id": "lidwa_6659",
-          "name_en": "Malik bin Anas bin Malik bin Abi 'Amir",
-          "name_id": "Malik bin Anas bin Malik bin Abi 'Amir",
-          "ar": "Malik bin Anas bin Malik bin Abi 'Amir"
         },
         {
           "id": "lidwa_6659",
@@ -1293,19 +1953,67 @@
           "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
           "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
           "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
-        },
-        {
-          "id": "lidwa_7643",
-          "name_en": "Ma'an bin 'Isa bin Yahya bin Dinar",
-          "name_id": "Ma'an bin 'Isa bin Yahya bin Dinar",
-          "ar": "Ma'an bin 'Isa bin Yahya bin Dinar"
-        },
-        {
-          "id": "lidwa_971",
-          "name_en": "Ishaq bin Musa bin 'Abdullah ",
-          "name_id": "Ishaq bin Musa bin 'Abdullah ",
-          "ar": "Ishaq bin Musa bin 'Abdullah "
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_720",
+            "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
+          },
+          {
+            "id": "lidwa_6068",
+            "name_en": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\"",
+            "name_id": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\"",
+            "ar": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\""
+          },
+          {
+            "id": "lidwa_6659",
+            "name_en": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "name_id": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "ar": "Malik bin Anas bin Malik bin Abi 'Amir"
+          },
+          {
+            "id": "lidwa_6460",
+            "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
+          }
+        ],
+        [
+          {
+            "id": "lidwa_720",
+            "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
+          },
+          {
+            "id": "lidwa_6068",
+            "name_en": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\"",
+            "name_id": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\"",
+            "ar": "\"Amru bin Abi 'Amru Maisarah, maula Al Muthallib bin Hanthab\""
+          },
+          {
+            "id": "lidwa_6659",
+            "name_en": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "name_id": "Malik bin Anas bin Malik bin Abi 'Amir",
+            "ar": "Malik bin Anas bin Malik bin Abi 'Amir"
+          },
+          {
+            "id": "lidwa_7643",
+            "name_en": "Ma'an bin 'Isa bin Yahya bin Dinar",
+            "name_id": "Ma'an bin 'Isa bin Yahya bin Dinar",
+            "ar": "Ma'an bin 'Isa bin Yahya bin Dinar"
+          },
+          {
+            "id": "lidwa_971",
+            "name_en": "Ishaq bin Musa bin 'Abdullah ",
+            "name_id": "Ishaq bin Musa bin 'Abdullah ",
+            "ar": "Ishaq bin Musa bin 'Abdullah "
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -1364,6 +2072,46 @@
           "ar": "Al Husain bin Huraits bin Al Hasan"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_2123",
+            "name_en": "Jarir bin 'Abdullah bin Jabir",
+            "name_id": "Jarir bin 'Abdullah bin Jabir",
+            "ar": "Jarir bin 'Abdullah bin Jabir"
+          },
+          {
+            "id": "lidwa_181",
+            "name_en": "Abu Zur'ah bin 'Amru bin Jarir bin 'Abdullah ",
+            "name_id": "Abu Zur'ah bin 'Amru bin Jarir bin 'Abdullah ",
+            "ar": "Abu Zur'ah bin 'Amru bin Jarir bin 'Abdullah "
+          },
+          {
+            "id": "lidwa_6377",
+            "name_en": "Ghaylan bin 'Abdullah ",
+            "name_id": "Ghaylan bin 'Abdullah ",
+            "ar": "Ghaylan bin 'Abdullah "
+          },
+          {
+            "id": "lidwa_6322",
+            "name_en": "Isa bin 'Ubaid bin Malik",
+            "name_id": "Isa bin 'Ubaid bin Malik",
+            "ar": "Isa bin 'Ubaid bin Malik"
+          },
+          {
+            "id": "lidwa_1560",
+            "name_en": "Al Fadlol bin Musa",
+            "name_id": "Al Fadlol bin Musa",
+            "ar": "Al Fadlol bin Musa"
+          },
+          {
+            "id": "lidwa_1325",
+            "name_en": "Al Husain bin Huraits bin Al Hasan",
+            "name_id": "Al Husain bin Huraits bin Al Hasan",
+            "ar": "Al Husain bin Huraits bin Al Hasan"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -1421,6 +2169,46 @@
           "ar": "Mahmud bin Ghailan"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_2840",
+            "name_en": "Dzakwan",
+            "name_id": "Dzakwan",
+            "ar": "Dzakwan"
+          },
+          {
+            "id": "lidwa_3855",
+            "name_en": "Shalih bin Abi Shalih",
+            "name_id": "Shalih bin Abi Shalih",
+            "ar": "Shalih bin Abi Shalih"
+          },
+          {
+            "id": "lidwa_8055",
+            "name_en": "Hisyam bin 'Urwah bin Az Zubair bin Al 'Awwam",
+            "name_id": "Hisyam bin 'Urwah bin Az Zubair bin Al 'Awwam",
+            "ar": "Hisyam bin 'Urwah bin Az Zubair bin Al 'Awwam"
+          },
+          {
+            "id": "lidwa_1560",
+            "name_en": "Al Fadlol bin Musa",
+            "name_id": "Al Fadlol bin Musa",
+            "ar": "Al Fadlol bin Musa"
+          },
+          {
+            "id": "lidwa_7352",
+            "name_en": "Mahmud bin Ghailan",
+            "name_id": "Mahmud bin Ghailan",
+            "ar": "Mahmud bin Ghailan"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -1448,30 +2236,6 @@
           "ar": "Abdullah bin 'Adiy bin Hamra'"
         },
         {
-          "id": "lidwa_4948",
-          "name_en": "Abdullah bin 'Adiy bin Hamra'",
-          "name_id": "Abdullah bin 'Adiy bin Hamra'",
-          "ar": "Abdullah bin 'Adiy bin Hamra'"
-        },
-        {
-          "id": "lidwa_4396",
-          "name_en": "Abdur Rahman bin Shakhr",
-          "name_id": "Abdur Rahman bin Shakhr",
-          "ar": "Abdur Rahman bin Shakhr"
-        },
-        {
-          "id": "lidwa_4903",
-          "name_en": "Abdullah bin 'Abdur Rahman bin 'Auf",
-          "name_id": "Abdullah bin 'Abdur Rahman bin 'Auf",
-          "ar": "Abdullah bin 'Abdur Rahman bin 'Auf"
-        },
-        {
-          "id": "lidwa_4903",
-          "name_en": "Abdullah bin 'Abdur Rahman bin 'Auf",
-          "name_id": "Abdullah bin 'Abdur Rahman bin 'Auf",
-          "ar": "Abdullah bin 'Abdur Rahman bin 'Auf"
-        },
-        {
           "id": "lidwa_4903",
           "name_en": "Abdullah bin 'Abdur Rahman bin 'Auf",
           "name_id": "Abdullah bin 'Abdur Rahman bin 'Auf",
@@ -1482,30 +2246,12 @@
           "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
           "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
           "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
-        },
-        {
-          "id": "lidwa_7272",
-          "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
-          "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
-          "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
-        },
-        {
-          "id": "lidwa_7225",
-          "name_en": "Muhammad bin 'Amru bin 'Alqamah bin Waqash",
-          "name_id": "Muhammad bin 'Amru bin 'Alqamah bin Waqash",
-          "ar": "Muhammad bin 'Amru bin 'Alqamah bin Waqash"
         },
         {
           "id": "lidwa_5688",
           "name_en": "Uqail bin Khalid bin 'Uqail",
           "name_id": "Uqail bin Khalid bin 'Uqail",
           "ar": "Uqail bin Khalid bin 'Uqail"
-        },
-        {
-          "id": "lidwa_8621",
-          "name_en": "Yunus bin Yazid bin Abi An Najjad",
-          "name_id": "Yunus bin Yazid bin Abi An Najjad",
-          "ar": "Yunus bin Yazid bin Abi An Najjad"
         },
         {
           "id": "lidwa_6641",
@@ -1519,6 +2265,92 @@
           "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
           "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4948",
+            "name_en": "Abdullah bin 'Adiy bin Hamra'",
+            "name_id": "Abdullah bin 'Adiy bin Hamra'",
+            "ar": "Abdullah bin 'Adiy bin Hamra'"
+          },
+          {
+            "id": "lidwa_4903",
+            "name_en": "Abdullah bin 'Abdur Rahman bin 'Auf",
+            "name_id": "Abdullah bin 'Abdur Rahman bin 'Auf",
+            "ar": "Abdullah bin 'Abdur Rahman bin 'Auf"
+          },
+          {
+            "id": "lidwa_7272",
+            "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
+          },
+          {
+            "id": "lidwa_5688",
+            "name_en": "Uqail bin Khalid bin 'Uqail",
+            "name_id": "Uqail bin Khalid bin 'Uqail",
+            "ar": "Uqail bin Khalid bin 'Uqail"
+          },
+          {
+            "id": "lidwa_6641",
+            "name_en": "Laits bin Sa'ad bin 'Abdur Rahman",
+            "name_id": "Laits bin Sa'ad bin 'Abdur Rahman",
+            "ar": "Laits bin Sa'ad bin 'Abdur Rahman"
+          },
+          {
+            "id": "lidwa_6460",
+            "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4948",
+            "name_en": "Abdullah bin 'Adiy bin Hamra'",
+            "name_id": "Abdullah bin 'Adiy bin Hamra'",
+            "ar": "Abdullah bin 'Adiy bin Hamra'"
+          },
+          {
+            "id": "lidwa_4903",
+            "name_en": "Abdullah bin 'Abdur Rahman bin 'Auf",
+            "name_id": "Abdullah bin 'Abdur Rahman bin 'Auf",
+            "ar": "Abdullah bin 'Abdur Rahman bin 'Auf"
+          },
+          {
+            "id": "lidwa_7272",
+            "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+            "ar": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab"
+          },
+          {
+            "id": "lidwa_8621",
+            "name_en": "Yunus bin Yazid bin Abi An Najjad",
+            "name_id": "Yunus bin Yazid bin Abi An Najjad",
+            "ar": "Yunus bin Yazid bin Abi An Najjad"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_4903",
+            "name_en": "Abdullah bin 'Abdur Rahman bin 'Auf",
+            "name_id": "Abdullah bin 'Abdur Rahman bin 'Auf",
+            "ar": "Abdullah bin 'Abdur Rahman bin 'Auf"
+          },
+          {
+            "id": "lidwa_7225",
+            "name_en": "Muhammad bin 'Amru bin 'Alqamah bin Waqash",
+            "name_id": "Muhammad bin 'Amru bin 'Alqamah bin Waqash",
+            "ar": "Muhammad bin 'Amru bin 'Alqamah bin Waqash"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -1547,30 +2379,12 @@
           "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
         },
         {
-          "id": "lidwa_4883",
-          "name_en": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
-          "name_id": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
-          "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
-        },
-        {
           "id": "lidwa_3307",
           "name_en": "Sa'id bin Jubair bin Hisyam",
           "name_id": "Sa'id bin Jubair bin Hisyam",
           "ar": "Sa'id bin Jubair bin Hisyam"
         },
         {
-          "id": "lidwa_4118",
-          "name_en": "Amir bin Watsilah bin 'Abdullah ",
-          "name_id": "Amir bin Watsilah bin 'Abdullah ",
-          "ar": "Amir bin Watsilah bin 'Abdullah "
-        },
-        {
-          "id": "lidwa_4944",
-          "name_en": "Abdullah bin 'Utsman bin Khutsaim",
-          "name_id": "Abdullah bin 'Utsman bin Khutsaim",
-          "ar": "Abdullah bin 'Utsman bin Khutsaim"
-        },
-        {
           "id": "lidwa_4944",
           "name_en": "Abdullah bin 'Utsman bin Khutsaim",
           "name_id": "Abdullah bin 'Utsman bin Khutsaim",
@@ -1581,18 +2395,6 @@
           "name_en": "Fudloil bin Sulaiman",
           "name_id": "Fudloil bin Sulaiman",
           "ar": "Fudloil bin Sulaiman"
-        },
-        {
-          "id": "lidwa_6423",
-          "name_en": "Fudloil bin Sulaiman",
-          "name_id": "Fudloil bin Sulaiman",
-          "ar": "Fudloil bin Sulaiman"
-        },
-        {
-          "id": "lidwa_7298",
-          "name_en": "Muhammad bin Musa bin Nufai'",
-          "name_id": "Muhammad bin Musa bin Nufai'",
-          "ar": "Muhammad bin Musa bin Nufai'"
         },
         {
           "id": "lidwa_7298",
@@ -1600,6 +2402,72 @@
           "name_id": "Muhammad bin Musa bin Nufai'",
           "ar": "Muhammad bin Musa bin Nufai'"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4883",
+            "name_en": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "name_id": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
+          },
+          {
+            "id": "lidwa_3307",
+            "name_en": "Sa'id bin Jubair bin Hisyam",
+            "name_id": "Sa'id bin Jubair bin Hisyam",
+            "ar": "Sa'id bin Jubair bin Hisyam"
+          },
+          {
+            "id": "lidwa_4944",
+            "name_en": "Abdullah bin 'Utsman bin Khutsaim",
+            "name_id": "Abdullah bin 'Utsman bin Khutsaim",
+            "ar": "Abdullah bin 'Utsman bin Khutsaim"
+          },
+          {
+            "id": "lidwa_6423",
+            "name_en": "Fudloil bin Sulaiman",
+            "name_id": "Fudloil bin Sulaiman",
+            "ar": "Fudloil bin Sulaiman"
+          },
+          {
+            "id": "lidwa_7298",
+            "name_en": "Muhammad bin Musa bin Nufai'",
+            "name_id": "Muhammad bin Musa bin Nufai'",
+            "ar": "Muhammad bin Musa bin Nufai'"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4883",
+            "name_en": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "name_id": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+            "ar": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim "
+          },
+          {
+            "id": "lidwa_4118",
+            "name_en": "Amir bin Watsilah bin 'Abdullah ",
+            "name_id": "Amir bin Watsilah bin 'Abdullah ",
+            "ar": "Amir bin Watsilah bin 'Abdullah "
+          },
+          {
+            "id": "lidwa_4944",
+            "name_en": "Abdullah bin 'Utsman bin Khutsaim",
+            "name_id": "Abdullah bin 'Utsman bin Khutsaim",
+            "ar": "Abdullah bin 'Utsman bin Khutsaim"
+          },
+          {
+            "id": "lidwa_6423",
+            "name_en": "Fudloil bin Sulaiman",
+            "name_id": "Fudloil bin Sulaiman",
+            "ar": "Fudloil bin Sulaiman"
+          },
+          {
+            "id": "lidwa_7298",
+            "name_en": "Muhammad bin Musa bin Nufai'",
+            "name_id": "Muhammad bin Musa bin Nufai'",
+            "ar": "Muhammad bin Musa bin Nufai'"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -1628,18 +2496,6 @@
           "ar": "Salman bin Al Islam"
         },
         {
-          "id": "lidwa_3476",
-          "name_en": "Salman bin Al Islam",
-          "name_id": "Salman bin Al Islam",
-          "ar": "Salman bin Al Islam"
-        },
-        {
-          "id": "lidwa_7783",
-          "name_en": "Rawi terputus",
-          "name_id": "Rawi terputus",
-          "ar": "Rawi terputus"
-        },
-        {
           "id": "lidwa_7783",
           "name_en": "Rawi terputus",
           "name_id": "Rawi terputus",
@@ -1652,28 +2508,10 @@
           "ar": "Hushain bin Jundub bin 'Amru bin Al Harits"
         },
         {
-          "id": "lidwa_2393",
-          "name_en": "Hushain bin Jundub bin 'Amru bin Al Harits",
-          "name_id": "Hushain bin Jundub bin 'Amru bin Al Harits",
-          "ar": "Hushain bin Jundub bin 'Amru bin Al Harits"
-        },
-        {
           "id": "lidwa_6442",
           "name_en": "Qabus bin Abi Zhabyan",
           "name_id": "Qabus bin Abi Zhabyan",
           "ar": "Qabus bin Abi Zhabyan"
-        },
-        {
-          "id": "lidwa_6442",
-          "name_en": "Qabus bin Abi Zhabyan",
-          "name_id": "Qabus bin Abi Zhabyan",
-          "ar": "Qabus bin Abi Zhabyan"
-        },
-        {
-          "id": "lidwa_3760",
-          "name_en": "Syuja' bin Al Walid bin Qais",
-          "name_id": "Syuja' bin Al Walid bin Qais",
-          "ar": "Syuja' bin Al Walid bin Qais"
         },
         {
           "id": "lidwa_3760",
@@ -1686,13 +2524,85 @@
           "name_en": "Muhammad bin Yahya bin 'Abdul Karim",
           "name_id": "Muhammad bin Yahya bin 'Abdul Karim",
           "ar": "Muhammad bin Yahya bin 'Abdul Karim"
-        },
-        {
-          "id": "lidwa_494",
-          "name_en": "Ahmad bin Mani' bin 'Abdur Rahman",
-          "name_id": "Ahmad bin Mani' bin 'Abdur Rahman",
-          "ar": "Ahmad bin Mani' bin 'Abdur Rahman"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_3476",
+            "name_en": "Salman bin Al Islam",
+            "name_id": "Salman bin Al Islam",
+            "ar": "Salman bin Al Islam"
+          },
+          {
+            "id": "lidwa_7783",
+            "name_en": "Rawi terputus",
+            "name_id": "Rawi terputus",
+            "ar": "Rawi terputus"
+          },
+          {
+            "id": "lidwa_2393",
+            "name_en": "Hushain bin Jundub bin 'Amru bin Al Harits",
+            "name_id": "Hushain bin Jundub bin 'Amru bin Al Harits",
+            "ar": "Hushain bin Jundub bin 'Amru bin Al Harits"
+          },
+          {
+            "id": "lidwa_6442",
+            "name_en": "Qabus bin Abi Zhabyan",
+            "name_id": "Qabus bin Abi Zhabyan",
+            "ar": "Qabus bin Abi Zhabyan"
+          },
+          {
+            "id": "lidwa_3760",
+            "name_en": "Syuja' bin Al Walid bin Qais",
+            "name_id": "Syuja' bin Al Walid bin Qais",
+            "ar": "Syuja' bin Al Walid bin Qais"
+          },
+          {
+            "id": "lidwa_7322",
+            "name_en": "Muhammad bin Yahya bin 'Abdul Karim",
+            "name_id": "Muhammad bin Yahya bin 'Abdul Karim",
+            "ar": "Muhammad bin Yahya bin 'Abdul Karim"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_3476",
+            "name_en": "Salman bin Al Islam",
+            "name_id": "Salman bin Al Islam",
+            "ar": "Salman bin Al Islam"
+          },
+          {
+            "id": "lidwa_7783",
+            "name_en": "Rawi terputus",
+            "name_id": "Rawi terputus",
+            "ar": "Rawi terputus"
+          },
+          {
+            "id": "lidwa_2393",
+            "name_en": "Hushain bin Jundub bin 'Amru bin Al Harits",
+            "name_id": "Hushain bin Jundub bin 'Amru bin Al Harits",
+            "ar": "Hushain bin Jundub bin 'Amru bin Al Harits"
+          },
+          {
+            "id": "lidwa_6442",
+            "name_en": "Qabus bin Abi Zhabyan",
+            "name_id": "Qabus bin Abi Zhabyan",
+            "ar": "Qabus bin Abi Zhabyan"
+          },
+          {
+            "id": "lidwa_3760",
+            "name_en": "Syuja' bin Al Walid bin Qais",
+            "name_id": "Syuja' bin Al Walid bin Qais",
+            "ar": "Syuja' bin Al Walid bin Qais"
+          },
+          {
+            "id": "lidwa_494",
+            "name_en": "Ahmad bin Mani' bin 'Abdur Rahman",
+            "name_id": "Ahmad bin Mani' bin 'Abdur Rahman",
+            "ar": "Ahmad bin Mani' bin 'Abdur Rahman"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -1757,6 +2667,52 @@
           "ar": "Abdul Hamid bin Humaid bin Nashr"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_5543",
+            "name_en": "Utsman bin 'Affan bin Abi Al 'Ash bin Umayyah",
+            "name_id": "Utsman bin 'Affan bin Abi Al 'Ash bin Umayyah",
+            "ar": "Utsman bin 'Affan bin Abi Al 'Ash bin Umayyah"
+          },
+          {
+            "id": "lidwa_3992",
+            "name_en": "Thariq bin Syihab bin 'Abdu Syams bin Hilal bin Salamah bin 'Auf",
+            "name_id": "Thariq bin Syihab bin 'Abdu Syams bin Hilal bin Salamah bin 'Auf",
+            "ar": "Thariq bin Syihab bin 'Abdu Syams bin Hilal bin Salamah bin 'Auf"
+          },
+          {
+            "id": "lidwa_7355",
+            "name_en": "Mukhariq bin Khalifah bin Jabir",
+            "name_id": "Mukhariq bin Khalifah bin Jabir",
+            "ar": "Mukhariq bin Khalifah bin Jabir"
+          },
+          {
+            "id": "lidwa_2399",
+            "name_en": "Hushain bin 'Umar",
+            "name_id": "Hushain bin 'Umar",
+            "ar": "Hushain bin 'Umar"
+          },
+          {
+            "id": "lidwa_4917",
+            "name_en": "Abdullah bin 'Abdullah bin Al Aswad",
+            "name_id": "Abdullah bin 'Abdullah bin Al Aswad",
+            "ar": "Abdullah bin 'Abdullah bin Al Aswad"
+          },
+          {
+            "id": "lidwa_6881",
+            "name_en": "Muhammad bin Bisyir bin Al Furafashah",
+            "name_id": "Muhammad bin Bisyir bin Al Furafashah",
+            "ar": "Muhammad bin Bisyir bin Al Furafashah"
+          },
+          {
+            "id": "lidwa_4232",
+            "name_en": "Abdul Hamid bin Humaid bin Nashr",
+            "name_id": "Abdul Hamid bin Humaid bin Nashr",
+            "ar": "Abdul Hamid bin Humaid bin Nashr"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -1813,6 +2769,46 @@
           "name_id": "Yahya bin Musa bin 'Abdui Rabbihi bin Salim",
           "ar": "Yahya bin Musa bin 'Abdui Rabbihi bin Salim"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4022",
+            "name_en": "Thalhah bin Malik",
+            "name_id": "Thalhah bin Malik",
+            "ar": "Thalhah bin Malik"
+          },
+          {
+            "id": "lidwa_602",
+            "name_en": "Ummu Al Hurair maulah Thalhah bin Malik",
+            "name_id": "Ummu Al Hurair maulah Thalhah bin Malik",
+            "ar": "Ummu Al Hurair maulah Thalhah bin Malik"
+          },
+          {
+            "id": "lidwa_671",
+            "name_en": "Ummu Muhammad bin Abi Razin",
+            "name_id": "Ummu Muhammad bin Abi Razin",
+            "ar": "Ummu Muhammad bin Abi Razin"
+          },
+          {
+            "id": "lidwa_6768",
+            "name_en": "Muhammad bin Abi Razin ",
+            "name_id": "Muhammad bin Abi Razin ",
+            "ar": "Muhammad bin Abi Razin "
+          },
+          {
+            "id": "lidwa_3579",
+            "name_en": "Sulaiman bin Harb bin Bujail",
+            "name_id": "Sulaiman bin Harb bin Bujail",
+            "ar": "Sulaiman bin Harb bin Bujail"
+          },
+          {
+            "id": "lidwa_8342",
+            "name_en": "Yahya bin Musa bin 'Abdui Rabbihi bin Salim",
+            "name_id": "Yahya bin Musa bin 'Abdui Rabbihi bin Salim",
+            "ar": "Yahya bin Musa bin 'Abdui Rabbihi bin Salim"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -1871,6 +2867,46 @@
           "ar": "Muhammad bin Yahya bin 'Abdul Karim"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_6361",
+            "name_en": "Ghuzailah binti Daudan bin 'Amru",
+            "name_id": "Ghuzailah binti Daudan bin 'Amru",
+            "ar": "Ghuzailah binti Daudan bin 'Amru"
+          },
+          {
+            "id": "lidwa_2069",
+            "name_en": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "name_id": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "ar": "Jabir bin 'Abdullah bin 'Amru bin Haram"
+          },
+          {
+            "id": "lidwa_7270",
+            "name_en": "Muhammad bin Muslim bin Tadrus",
+            "name_id": "Muhammad bin Muslim bin Tadrus",
+            "ar": "Muhammad bin Muslim bin Tadrus"
+          },
+          {
+            "id": "lidwa_5223",
+            "name_en": "Abdul Malik bin 'Abdul 'Aziz bin Juraij",
+            "name_id": "Abdul Malik bin 'Abdul 'Aziz bin Juraij",
+            "ar": "Abdul Malik bin 'Abdul 'Aziz bin Juraij"
+          },
+          {
+            "id": "lidwa_2304",
+            "name_en": "Hajjaj bin Muhammad",
+            "name_id": "Hajjaj bin Muhammad",
+            "ar": "Hajjaj bin Muhammad"
+          },
+          {
+            "id": "lidwa_7322",
+            "name_en": "Muhammad bin Yahya bin 'Abdul Karim",
+            "name_id": "Muhammad bin Yahya bin 'Abdul Karim",
+            "ar": "Muhammad bin Yahya bin 'Abdul Karim"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -1928,6 +2964,46 @@
           "ar": "Bisyir bin Mu'adz"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_3642",
+            "name_en": "Samrah bij Jundab bin Hilal",
+            "name_id": "Samrah bij Jundab bin Hilal",
+            "ar": "Samrah bij Jundab bin Hilal"
+          },
+          {
+            "id": "lidwa_1239",
+            "name_en": "Al Hasan bin Abi Al Hasan Yasar",
+            "name_id": "Al Hasan bin Abi Al Hasan Yasar",
+            "ar": "Al Hasan bin Abi Al Hasan Yasar"
+          },
+          {
+            "id": "lidwa_6458",
+            "name_en": "Qatadah bin Da'amah bin Qatadah",
+            "name_id": "Qatadah bin Da'amah bin Qatadah",
+            "ar": "Qatadah bin Da'amah bin Qatadah"
+          },
+          {
+            "id": "lidwa_3281",
+            "name_en": "Sa'id bin Abi 'Urubah Mihran",
+            "name_id": "Sa'id bin Abi 'Urubah Mihran",
+            "ar": "Sa'id bin Abi 'Urubah Mihran"
+          },
+          {
+            "id": "lidwa_8418",
+            "name_en": "Yazid bin Zurai'",
+            "name_id": "Yazid bin Zurai'",
+            "ar": "Yazid bin Zurai'"
+          },
+          {
+            "id": "lidwa_1889",
+            "name_en": "Bisyir bin Mu'adz",
+            "name_id": "Bisyir bin Mu'adz",
+            "ar": "Bisyir bin Mu'adz"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -1979,6 +3055,40 @@
           "ar": "Sufyan bin Waki'bin Al Jarrah"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_3854",
+            "name_en": "Shalih bin Abi Shalih",
+            "name_id": "Shalih bin Abi Shalih",
+            "ar": "Shalih bin Abi Shalih"
+          },
+          {
+            "id": "lidwa_130",
+            "name_en": "Abu Bakar bin 'Ayyasy bin Salim",
+            "name_id": "Abu Bakar bin 'Ayyasy bin Salim",
+            "ar": "Abu Bakar bin 'Ayyasy bin Salim"
+          },
+          {
+            "id": "lidwa_8192",
+            "name_en": "\"Yahya bin Adam bin Sulaiman, maula keluarga Abi Mu'ith\"",
+            "name_id": "\"Yahya bin Adam bin Sulaiman, maula keluarga Abi Mu'ith\"",
+            "ar": "\"Yahya bin Adam bin Sulaiman, maula keluarga Abi Mu'ith\""
+          },
+          {
+            "id": "lidwa_3446",
+            "name_en": "Sufyan bin Waki'bin Al Jarrah",
+            "name_id": "Sufyan bin Waki'bin Al Jarrah",
+            "ar": "Sufyan bin Waki'bin Al Jarrah"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -2029,6 +3139,40 @@
           "name_id": "Ali bin Hajar bin Iyas",
           "ar": "Ali bin Hajar bin Iyas"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_3202",
+            "name_en": "\"Salim, maula Ibnu Muthi'\"",
+            "name_id": "\"Salim, maula Ibnu Muthi'\"",
+            "ar": "\"Salim, maula Ibnu Muthi'\""
+          },
+          {
+            "id": "lidwa_2057",
+            "name_en": "Tsaur bin Zaid",
+            "name_id": "Tsaur bin Zaid",
+            "ar": "Tsaur bin Zaid"
+          },
+          {
+            "id": "lidwa_4765",
+            "name_en": "Abdullah bin Ja'far bin Najih",
+            "name_id": "Abdullah bin Ja'far bin Najih",
+            "ar": "Abdullah bin Ja'far bin Najih"
+          },
+          {
+            "id": "lidwa_5757",
+            "name_en": "Ali bin Hajar bin Iyas",
+            "name_id": "Ali bin Hajar bin Iyas",
+            "ar": "Ali bin Hajar bin Iyas"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -2087,6 +3231,46 @@
           "ar": "Abdullah bin Al Hakam bin Abi Ziyad"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_3131",
+            "name_en": "Zaid bin Tsabit bin Adl Dlahhak",
+            "name_id": "Zaid bin Tsabit bin Adl Dlahhak",
+            "ar": "Zaid bin Tsabit bin Adl Dlahhak"
+          },
+          {
+            "id": "lidwa_720",
+            "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
+          },
+          {
+            "id": "lidwa_6458",
+            "name_en": "Qatadah bin Da'amah bin Qatadah",
+            "name_id": "Qatadah bin Da'amah bin Qatadah",
+            "ar": "Qatadah bin Da'amah bin Qatadah"
+          },
+          {
+            "id": "lidwa_6039",
+            "name_en": "Imran bin Daud",
+            "name_id": "Imran bin Daud",
+            "ar": "Imran bin Daud"
+          },
+          {
+            "id": "lidwa_3585",
+            "name_en": "Sulaiman bin Daud bin Al Jarud",
+            "name_id": "Sulaiman bin Daud bin Al Jarud",
+            "ar": "Sulaiman bin Daud bin Al Jarud"
+          },
+          {
+            "id": "lidwa_4693",
+            "name_en": "Abdullah bin Al Hakam bin Abi Ziyad",
+            "name_id": "Abdullah bin Al Hakam bin Abi Ziyad",
+            "ar": "Abdullah bin Al Hakam bin Abi Ziyad"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -2138,6 +3322,40 @@
           "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_4903",
+            "name_en": "Abdullah bin 'Abdur Rahman bin 'Auf",
+            "name_id": "Abdullah bin 'Abdur Rahman bin 'Auf",
+            "ar": "Abdullah bin 'Abdur Rahman bin 'Auf"
+          },
+          {
+            "id": "lidwa_7225",
+            "name_en": "Muhammad bin 'Amru bin 'Alqamah bin Waqash",
+            "name_id": "Muhammad bin 'Amru bin 'Alqamah bin Waqash",
+            "ar": "Muhammad bin 'Amru bin 'Alqamah bin Waqash"
+          },
+          {
+            "id": "lidwa_4591",
+            "name_en": "Abdul 'Aziz bin Muhammad bin 'Ubaid bin Abi 'Ubaid",
+            "name_id": "Abdul 'Aziz bin Muhammad bin 'Ubaid bin Abi 'Ubaid",
+            "ar": "Abdul 'Aziz bin Muhammad bin 'Ubaid bin Abi 'Ubaid"
+          },
+          {
+            "id": "lidwa_6460",
+            "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -2165,28 +3383,10 @@
           "ar": "Abdur Rahman bin Shakhr"
         },
         {
-          "id": "lidwa_4396",
-          "name_en": "Abdur Rahman bin Shakhr",
-          "name_id": "Abdur Rahman bin Shakhr",
-          "ar": "Abdur Rahman bin Shakhr"
-        },
-        {
           "id": "lidwa_334",
           "name_en": "Abu Maryam",
           "name_id": "Abu Maryam",
           "ar": "Abu Maryam"
-        },
-        {
-          "id": "lidwa_334",
-          "name_en": "Abu Maryam",
-          "name_id": "Abu Maryam",
-          "ar": "Abu Maryam"
-        },
-        {
-          "id": "lidwa_7584",
-          "name_en": "Mu'awiyah bin Shalih bin Hudair",
-          "name_id": "Mu'awiyah bin Shalih bin Hudair",
-          "ar": "Mu'awiyah bin Shalih bin Hudair"
         },
         {
           "id": "lidwa_7584",
@@ -2201,23 +3401,77 @@
           "ar": "Zaid bin Al Hubbab bin Ar Rayyan"
         },
         {
-          "id": "lidwa_4493",
-          "name_en": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman",
-          "name_id": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman",
-          "ar": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman"
-        },
-        {
           "id": "lidwa_494",
           "name_en": "Ahmad bin Mani' bin 'Abdur Rahman",
           "name_id": "Ahmad bin Mani' bin 'Abdur Rahman",
           "ar": "Ahmad bin Mani' bin 'Abdur Rahman"
-        },
-        {
-          "id": "lidwa_6879",
-          "name_en": "Muhammad bin Basysyar bin 'Utsman",
-          "name_id": "Muhammad bin Basysyar bin 'Utsman",
-          "ar": "Muhammad bin Basysyar bin 'Utsman"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_334",
+            "name_en": "Abu Maryam",
+            "name_id": "Abu Maryam",
+            "ar": "Abu Maryam"
+          },
+          {
+            "id": "lidwa_7584",
+            "name_en": "Mu'awiyah bin Shalih bin Hudair",
+            "name_id": "Mu'awiyah bin Shalih bin Hudair",
+            "ar": "Mu'awiyah bin Shalih bin Hudair"
+          },
+          {
+            "id": "lidwa_3124",
+            "name_en": "Zaid bin Al Hubbab bin Ar Rayyan",
+            "name_id": "Zaid bin Al Hubbab bin Ar Rayyan",
+            "ar": "Zaid bin Al Hubbab bin Ar Rayyan"
+          },
+          {
+            "id": "lidwa_494",
+            "name_en": "Ahmad bin Mani' bin 'Abdur Rahman",
+            "name_id": "Ahmad bin Mani' bin 'Abdur Rahman",
+            "ar": "Ahmad bin Mani' bin 'Abdur Rahman"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_334",
+            "name_en": "Abu Maryam",
+            "name_id": "Abu Maryam",
+            "ar": "Abu Maryam"
+          },
+          {
+            "id": "lidwa_7584",
+            "name_en": "Mu'awiyah bin Shalih bin Hudair",
+            "name_id": "Mu'awiyah bin Shalih bin Hudair",
+            "ar": "Mu'awiyah bin Shalih bin Hudair"
+          },
+          {
+            "id": "lidwa_4493",
+            "name_en": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman",
+            "name_id": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman",
+            "ar": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman"
+          },
+          {
+            "id": "lidwa_6879",
+            "name_en": "Muhammad bin Basysyar bin 'Utsman",
+            "name_id": "Muhammad bin Basysyar bin 'Utsman",
+            "ar": "Muhammad bin Basysyar bin 'Utsman"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -2270,6 +3524,40 @@
           "ar": "Abdul Quddus bin Muhammad bin 'Abdul Kabir bin Syu'aib"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_720",
+            "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
+          },
+          {
+            "id": "lidwa_3804",
+            "name_en": "Syu'aib bin Al Habhaab",
+            "name_id": "Syu'aib bin Al Habhaab",
+            "ar": "Syu'aib bin Al Habhaab"
+          },
+          {
+            "id": "lidwa_4538",
+            "name_en": "Abdus Salam bin Syu'aib bin Al Habhaab",
+            "name_id": "Abdus Salam bin Syu'aib bin Al Habhaab",
+            "ar": "Abdus Salam bin Syu'aib bin Al Habhaab"
+          },
+          {
+            "id": "lidwa_3882",
+            "name_en": "Shalih bin 'Abdul Kabir bin Syu'aib bin Al Habhaab",
+            "name_id": "Shalih bin 'Abdul Kabir bin Syu'aib bin Al Habhaab",
+            "ar": "Shalih bin 'Abdul Kabir bin Syu'aib bin Al Habhaab"
+          },
+          {
+            "id": "lidwa_4604",
+            "name_en": "Abdul Quddus bin Muhammad bin 'Abdul Kabir bin Syu'aib",
+            "name_id": "Abdul Quddus bin Muhammad bin 'Abdul Kabir bin Syu'aib",
+            "ar": "Abdul Quddus bin Muhammad bin 'Abdul Kabir bin Syu'aib"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -2320,6 +3608,40 @@
           "name_id": "Abdul Quddus bin Muhammad bin 'Abdul Kabir bin Syu'aib",
           "ar": "Abdul Quddus bin Muhammad bin 'Abdul Kabir bin Syu'aib"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_720",
+            "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+            "ar": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram"
+          },
+          {
+            "id": "lidwa_6376",
+            "name_en": "Ghaylan bin Jarir",
+            "name_id": "Ghaylan bin Jarir",
+            "ar": "Ghaylan bin Jarir"
+          },
+          {
+            "id": "lidwa_7701",
+            "name_en": "Mahdiy bin Maimun",
+            "name_id": "Mahdiy bin Maimun",
+            "ar": "Mahdiy bin Maimun"
+          },
+          {
+            "id": "lidwa_7248",
+            "name_en": "Muhammad bin Katsir ",
+            "name_id": "Muhammad bin Katsir ",
+            "ar": "Muhammad bin Katsir "
+          },
+          {
+            "id": "lidwa_4604",
+            "name_en": "Abdul Quddus bin Muhammad bin 'Abdul Kabir bin Syu'aib",
+            "name_id": "Abdul Quddus bin Muhammad bin 'Abdul Kabir bin Syu'aib",
+            "ar": "Abdul Quddus bin Muhammad bin 'Abdul Kabir bin Syu'aib"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -2372,6 +3694,40 @@
           "ar": "Muhammad bin 'Abdul Malik bin Zanjawaih"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_7830",
+            "name_en": "Bina'bin Abi Mina'",
+            "name_id": "Bina'bin Abi Mina'",
+            "ar": "Bina'bin Abi Mina'"
+          },
+          {
+            "id": "lidwa_8096",
+            "name_en": "Hammam bin Nafi'",
+            "name_id": "Hammam bin Nafi'",
+            "ar": "Hammam bin Nafi'"
+          },
+          {
+            "id": "lidwa_4533",
+            "name_en": "Abdur Razzaq bin Hammam bin Nafi'",
+            "name_id": "Abdur Razzaq bin Hammam bin Nafi'",
+            "ar": "Abdur Razzaq bin Hammam bin Nafi'"
+          },
+          {
+            "id": "lidwa_7141",
+            "name_en": "Muhammad bin 'Abdul Malik bin Zanjawaih",
+            "name_id": "Muhammad bin 'Abdul Malik bin Zanjawaih",
+            "ar": "Muhammad bin 'Abdul Malik bin Zanjawaih"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -2423,6 +3779,40 @@
           "ar": "Ahmad bin Mani' bin 'Abdur Rahman"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_2650",
+            "name_en": "Khalid bin Zaid bin Kulaib",
+            "name_id": "Khalid bin Zaid bin Kulaib",
+            "ar": "Khalid bin Zaid bin Kulaib"
+          },
+          {
+            "id": "lidwa_7744",
+            "name_en": "Musa bin Thalhah bin 'Ubaidillah",
+            "name_id": "Musa bin Thalhah bin 'Ubaidillah",
+            "ar": "Musa bin Thalhah bin 'Ubaidillah"
+          },
+          {
+            "id": "lidwa_3248",
+            "name_en": "Sa'ad bin Thariq bin Usyaim",
+            "name_id": "Sa'ad bin Thariq bin Usyaim",
+            "ar": "Sa'ad bin Thariq bin Usyaim"
+          },
+          {
+            "id": "lidwa_8488",
+            "name_en": "Yazid bin Harun",
+            "name_id": "Yazid bin Harun",
+            "ar": "Yazid bin Harun"
+          },
+          {
+            "id": "lidwa_494",
+            "name_en": "Ahmad bin Mani' bin 'Abdur Rahman",
+            "name_id": "Ahmad bin Mani' bin 'Abdur Rahman",
+            "ar": "Ahmad bin Mani' bin 'Abdur Rahman"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -2467,6 +3857,34 @@
           "name_id": "Ali bin Hajar bin Iyas",
           "ar": "Ali bin Hajar bin Iyas"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4967",
+            "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
+          },
+          {
+            "id": "lidwa_4797",
+            "name_en": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
+            "name_id": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
+            "ar": "\"Abdullah bin Dinar, maula Ibnu 'Umar\""
+          },
+          {
+            "id": "lidwa_1012",
+            "name_en": "Isma'il bin Ja'far bin Abi Katsir",
+            "name_id": "Isma'il bin Ja'far bin Abi Katsir",
+            "ar": "Isma'il bin Ja'far bin Abi Katsir"
+          },
+          {
+            "id": "lidwa_5757",
+            "name_en": "Ali bin Hajar bin Iyas",
+            "name_id": "Ali bin Hajar bin Iyas",
+            "ar": "Ali bin Hajar bin Iyas"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -2518,6 +3936,40 @@
           "name_id": "Yahya bin Khalaf",
           "ar": "Yahya bin Khalaf"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_2069",
+            "name_en": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "name_id": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+            "ar": "Jabir bin 'Abdullah bin 'Amru bin Haram"
+          },
+          {
+            "id": "lidwa_7270",
+            "name_en": "Muhammad bin Muslim bin Tadrus",
+            "name_id": "Muhammad bin Muslim bin Tadrus",
+            "ar": "Muhammad bin Muslim bin Tadrus"
+          },
+          {
+            "id": "lidwa_4944",
+            "name_en": "Abdullah bin 'Utsman bin Khutsaim",
+            "name_id": "Abdullah bin 'Utsman bin Khutsaim",
+            "ar": "Abdullah bin 'Utsman bin Khutsaim"
+          },
+          {
+            "id": "lidwa_5280",
+            "name_en": "Abdul Wahhab bin 'Abdul Majid bin Ash Shalti",
+            "name_id": "Abdul Wahhab bin 'Abdul Majid bin Ash Shalti",
+            "ar": "Abdul Wahhab bin 'Abdul Majid bin Ash Shalti"
+          },
+          {
+            "id": "lidwa_8257",
+            "name_en": "Yahya bin Khalaf",
+            "name_id": "Yahya bin Khalaf",
+            "ar": "Yahya bin Khalaf"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -2576,6 +4028,46 @@
           "ar": "Zaid bin Akhzam"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_6036",
+            "name_en": "Imran bin Hushain bin 'Ubaid bin Khalaf",
+            "name_id": "Imran bin Hushain bin 'Ubaid bin Khalaf",
+            "ar": "Imran bin Hushain bin 'Ubaid bin Khalaf"
+          },
+          {
+            "id": "lidwa_7783",
+            "name_en": "Rawi terputus",
+            "name_id": "Rawi terputus",
+            "ar": "Rawi terputus"
+          },
+          {
+            "id": "lidwa_1239",
+            "name_en": "Al Hasan bin Abi Al Hasan Yasar",
+            "name_id": "Al Hasan bin Abi Al Hasan Yasar",
+            "ar": "Al Hasan bin Abi Al Hasan Yasar"
+          },
+          {
+            "id": "lidwa_8042",
+            "name_en": "Hisyam bin Hassan",
+            "name_id": "Hisyam bin Hassan",
+            "ar": "Hisyam bin Hassan"
+          },
+          {
+            "id": "lidwa_4601",
+            "name_en": "Abdul Qahir bin Syu'aib bin Al Habhab",
+            "name_id": "Abdul Qahir bin Syu'aib bin Al Habhab",
+            "ar": "Abdul Qahir bin Syu'aib bin Al Habhab"
+          },
+          {
+            "id": "lidwa_3119",
+            "name_en": "Zaid bin Akhzam",
+            "name_id": "Zaid bin Akhzam",
+            "ar": "Zaid bin Akhzam"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -2603,28 +4095,10 @@
           "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
         },
         {
-          "id": "lidwa_4967",
-          "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
-          "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
-          "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
-        },
-        {
           "id": "lidwa_4952",
           "name_en": "Abdullah bin 'Ushum",
           "name_id": "Abdullah bin 'Ushum",
           "ar": "Abdullah bin 'Ushum"
-        },
-        {
-          "id": "lidwa_4952",
-          "name_en": "Abdullah bin 'Ushum",
-          "name_id": "Abdullah bin 'Ushum",
-          "ar": "Abdullah bin 'Ushum"
-        },
-        {
-          "id": "lidwa_3792",
-          "name_en": "Syarik bin 'Abdullah bin Abi Syarik",
-          "name_id": "Syarik bin 'Abdullah bin Abi Syarik",
-          "ar": "Syarik bin 'Abdullah bin Abi Syarik"
         },
         {
           "id": "lidwa_3792",
@@ -2639,17 +4113,71 @@
           "ar": "Al Fadlol bin Musa"
         },
         {
-          "id": "lidwa_4510",
-          "name_en": "Abdur Rahman bin Waqid bin Muslim",
-          "name_id": "Abdur Rahman bin Waqid bin Muslim",
-          "ar": "Abdur Rahman bin Waqid bin Muslim"
-        },
-        {
           "id": "lidwa_5757",
           "name_en": "Ali bin Hajar bin Iyas",
           "name_id": "Ali bin Hajar bin Iyas",
           "ar": "Ali bin Hajar bin Iyas"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4967",
+            "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
+          },
+          {
+            "id": "lidwa_4952",
+            "name_en": "Abdullah bin 'Ushum",
+            "name_id": "Abdullah bin 'Ushum",
+            "ar": "Abdullah bin 'Ushum"
+          },
+          {
+            "id": "lidwa_3792",
+            "name_en": "Syarik bin 'Abdullah bin Abi Syarik",
+            "name_id": "Syarik bin 'Abdullah bin Abi Syarik",
+            "ar": "Syarik bin 'Abdullah bin Abi Syarik"
+          },
+          {
+            "id": "lidwa_1560",
+            "name_en": "Al Fadlol bin Musa",
+            "name_id": "Al Fadlol bin Musa",
+            "ar": "Al Fadlol bin Musa"
+          },
+          {
+            "id": "lidwa_5757",
+            "name_en": "Ali bin Hajar bin Iyas",
+            "name_id": "Ali bin Hajar bin Iyas",
+            "ar": "Ali bin Hajar bin Iyas"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4967",
+            "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
+          },
+          {
+            "id": "lidwa_4952",
+            "name_en": "Abdullah bin 'Ushum",
+            "name_id": "Abdullah bin 'Ushum",
+            "ar": "Abdullah bin 'Ushum"
+          },
+          {
+            "id": "lidwa_3792",
+            "name_en": "Syarik bin 'Abdullah bin Abi Syarik",
+            "name_id": "Syarik bin 'Abdullah bin Abi Syarik",
+            "ar": "Syarik bin 'Abdullah bin Abi Syarik"
+          },
+          {
+            "id": "lidwa_4510",
+            "name_en": "Abdur Rahman bin Waqid bin Muslim",
+            "name_id": "Abdur Rahman bin Waqid bin Muslim",
+            "ar": "Abdur Rahman bin Waqid bin Muslim"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -2701,6 +4229,40 @@
           "name_id": "Ahmad bin Mani' bin 'Abdur Rahman",
           "ar": "Ahmad bin Mani' bin 'Abdur Rahman"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_3280",
+            "name_en": "Sa'id bin Abi Sa'id Kaisan",
+            "name_id": "Sa'id bin Abi Sa'id Kaisan",
+            "ar": "Sa'id bin Abi Sa'id Kaisan"
+          },
+          {
+            "id": "lidwa_747",
+            "name_en": "Ayyub bin Abi Miskin",
+            "name_id": "Ayyub bin Abi Miskin",
+            "ar": "Ayyub bin Abi Miskin"
+          },
+          {
+            "id": "lidwa_8488",
+            "name_en": "Yazid bin Harun",
+            "name_id": "Yazid bin Harun",
+            "ar": "Yazid bin Harun"
+          },
+          {
+            "id": "lidwa_494",
+            "name_en": "Ahmad bin Mani' bin 'Abdur Rahman",
+            "name_id": "Ahmad bin Mani' bin 'Abdur Rahman",
+            "ar": "Ahmad bin Mani' bin 'Abdur Rahman"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -2759,6 +4321,46 @@
           "ar": "Muhammad bin Isma'il bin Ibrahim"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_6624",
+            "name_en": "Kaisan",
+            "name_id": "Kaisan",
+            "ar": "Kaisan"
+          },
+          {
+            "id": "lidwa_3280",
+            "name_en": "Sa'id bin Abi Sa'id Kaisan",
+            "name_id": "Sa'id bin Abi Sa'id Kaisan",
+            "ar": "Sa'id bin Abi Sa'id Kaisan"
+          },
+          {
+            "id": "lidwa_6811",
+            "name_en": "Muhammad bin Ishaq bin Yasar",
+            "name_id": "Muhammad bin Ishaq bin Yasar",
+            "ar": "Muhammad bin Ishaq bin Yasar"
+          },
+          {
+            "id": "lidwa_441",
+            "name_en": "Ahmad bin Khalid",
+            "name_id": "Ahmad bin Khalid",
+            "ar": "Ahmad bin Khalid"
+          },
+          {
+            "id": "lidwa_6817",
+            "name_en": "Muhammad bin Isma'il bin Ibrahim",
+            "name_id": "Muhammad bin Isma'il bin Ibrahim",
+            "ar": "Muhammad bin Isma'il bin Ibrahim"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -2786,28 +4388,10 @@
           "ar": "Ubaid bin Wahab"
         },
         {
-          "id": "lidwa_7570",
-          "name_en": "Mu'awiyah bin Abi Sufyan Shakhr bin Harb bin Umayyah",
-          "name_id": "Mu'awiyah bin Abi Sufyan Shakhr bin Harb bin Umayyah",
-          "ar": "Mu'awiyah bin Abi Sufyan Shakhr bin Harb bin Umayyah"
-        },
-        {
           "id": "lidwa_4090",
           "name_en": "Amir bin Abi 'Amir",
           "name_id": "Amir bin Abi 'Amir",
           "ar": "Amir bin Abi 'Amir"
-        },
-        {
-          "id": "lidwa_4090",
-          "name_en": "Amir bin Abi 'Amir",
-          "name_id": "Amir bin Abi 'Amir",
-          "ar": "Amir bin Abi 'Amir"
-        },
-        {
-          "id": "lidwa_6692",
-          "name_en": "Malik bin Masruh",
-          "name_id": "Malik bin Masruh",
-          "ar": "Malik bin Masruh"
         },
         {
           "id": "lidwa_6692",
@@ -2822,18 +4406,6 @@
           "ar": "Numair bin Aus"
         },
         {
-          "id": "lidwa_7939",
-          "name_en": "Numair bin Aus",
-          "name_id": "Numair bin Aus",
-          "ar": "Numair bin Aus"
-        },
-        {
-          "id": "lidwa_5107",
-          "name_en": "Abdullah bin Maladz",
-          "name_id": "Abdullah bin Maladz",
-          "ar": "Abdullah bin Maladz"
-        },
-        {
           "id": "lidwa_5107",
           "name_en": "Abdullah bin Maladz",
           "name_id": "Abdullah bin Maladz",
@@ -2846,28 +4418,10 @@
           "ar": "Jarir bin Hazim bin Zaid"
         },
         {
-          "id": "lidwa_2119",
-          "name_en": "Jarir bin Hazim bin Zaid",
-          "name_id": "Jarir bin Hazim bin Zaid",
-          "ar": "Jarir bin Hazim bin Zaid"
-        },
-        {
           "id": "lidwa_8169",
           "name_en": "Wahab bin Jarir bin Hazim",
           "name_id": "Wahab bin Jarir bin Hazim",
           "ar": "Wahab bin Jarir bin Hazim"
-        },
-        {
-          "id": "lidwa_8169",
-          "name_en": "Wahab bin Jarir bin Hazim",
-          "name_id": "Wahab bin Jarir bin Hazim",
-          "ar": "Wahab bin Jarir bin Hazim"
-        },
-        {
-          "id": "lidwa_904",
-          "name_en": "Ibrahim bin Ya'qub bin Ishaq",
-          "name_id": "Ibrahim bin Ya'qub bin Ishaq",
-          "ar": "Ibrahim bin Ya'qub bin Ishaq"
         },
         {
           "id": "lidwa_904",
@@ -2875,6 +4429,108 @@
           "name_id": "Ibrahim bin Ya'qub bin Ishaq",
           "ar": "Ibrahim bin Ya'qub bin Ishaq"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_5350",
+            "name_en": "Ubaid bin Wahab",
+            "name_id": "Ubaid bin Wahab",
+            "ar": "Ubaid bin Wahab"
+          },
+          {
+            "id": "lidwa_4090",
+            "name_en": "Amir bin Abi 'Amir",
+            "name_id": "Amir bin Abi 'Amir",
+            "ar": "Amir bin Abi 'Amir"
+          },
+          {
+            "id": "lidwa_6692",
+            "name_en": "Malik bin Masruh",
+            "name_id": "Malik bin Masruh",
+            "ar": "Malik bin Masruh"
+          },
+          {
+            "id": "lidwa_7939",
+            "name_en": "Numair bin Aus",
+            "name_id": "Numair bin Aus",
+            "ar": "Numair bin Aus"
+          },
+          {
+            "id": "lidwa_5107",
+            "name_en": "Abdullah bin Maladz",
+            "name_id": "Abdullah bin Maladz",
+            "ar": "Abdullah bin Maladz"
+          },
+          {
+            "id": "lidwa_2119",
+            "name_en": "Jarir bin Hazim bin Zaid",
+            "name_id": "Jarir bin Hazim bin Zaid",
+            "ar": "Jarir bin Hazim bin Zaid"
+          },
+          {
+            "id": "lidwa_8169",
+            "name_en": "Wahab bin Jarir bin Hazim",
+            "name_id": "Wahab bin Jarir bin Hazim",
+            "ar": "Wahab bin Jarir bin Hazim"
+          },
+          {
+            "id": "lidwa_904",
+            "name_en": "Ibrahim bin Ya'qub bin Ishaq",
+            "name_id": "Ibrahim bin Ya'qub bin Ishaq",
+            "ar": "Ibrahim bin Ya'qub bin Ishaq"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_7570",
+            "name_en": "Mu'awiyah bin Abi Sufyan Shakhr bin Harb bin Umayyah",
+            "name_id": "Mu'awiyah bin Abi Sufyan Shakhr bin Harb bin Umayyah",
+            "ar": "Mu'awiyah bin Abi Sufyan Shakhr bin Harb bin Umayyah"
+          },
+          {
+            "id": "lidwa_4090",
+            "name_en": "Amir bin Abi 'Amir",
+            "name_id": "Amir bin Abi 'Amir",
+            "ar": "Amir bin Abi 'Amir"
+          },
+          {
+            "id": "lidwa_6692",
+            "name_en": "Malik bin Masruh",
+            "name_id": "Malik bin Masruh",
+            "ar": "Malik bin Masruh"
+          },
+          {
+            "id": "lidwa_7939",
+            "name_en": "Numair bin Aus",
+            "name_id": "Numair bin Aus",
+            "ar": "Numair bin Aus"
+          },
+          {
+            "id": "lidwa_5107",
+            "name_en": "Abdullah bin Maladz",
+            "name_id": "Abdullah bin Maladz",
+            "ar": "Abdullah bin Maladz"
+          },
+          {
+            "id": "lidwa_2119",
+            "name_en": "Jarir bin Hazim bin Zaid",
+            "name_id": "Jarir bin Hazim bin Zaid",
+            "ar": "Jarir bin Hazim bin Zaid"
+          },
+          {
+            "id": "lidwa_8169",
+            "name_en": "Wahab bin Jarir bin Hazim",
+            "name_id": "Wahab bin Jarir bin Hazim",
+            "ar": "Wahab bin Jarir bin Hazim"
+          },
+          {
+            "id": "lidwa_904",
+            "name_en": "Ibrahim bin Ya'qub bin Ishaq",
+            "name_id": "Ibrahim bin Ya'qub bin Ishaq",
+            "ar": "Ibrahim bin Ya'qub bin Ishaq"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -2927,6 +4583,40 @@
           "ar": "Muhammad bin Basysyar bin 'Utsman"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4967",
+            "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
+          },
+          {
+            "id": "lidwa_4797",
+            "name_en": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
+            "name_id": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
+            "ar": "\"Abdullah bin Dinar, maula Ibnu 'Umar\""
+          },
+          {
+            "id": "lidwa_3795",
+            "name_en": "Syu'bah bin Al Hajjaj bin Al Warad",
+            "name_id": "Syu'bah bin Al Hajjaj bin Al Warad",
+            "ar": "Syu'bah bin Al Hajjaj bin Al Warad"
+          },
+          {
+            "id": "lidwa_4493",
+            "name_en": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman",
+            "name_id": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman",
+            "ar": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman"
+          },
+          {
+            "id": "lidwa_6879",
+            "name_en": "Muhammad bin Basysyar bin 'Utsman",
+            "name_id": "Muhammad bin Basysyar bin 'Utsman",
+            "ar": "Muhammad bin Basysyar bin 'Utsman"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -2954,18 +4644,6 @@
           "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
         },
         {
-          "id": "lidwa_4967",
-          "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
-          "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
-          "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
-        },
-        {
-          "id": "lidwa_4797",
-          "name_en": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
-          "name_id": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
-          "ar": "\"Abdullah bin Dinar, maula Ibnu 'Umar\""
-        },
-        {
           "id": "lidwa_4797",
           "name_en": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
           "name_id": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
@@ -2978,29 +4656,71 @@
           "ar": "Isma'il bin Ja'far bin Abi Katsir"
         },
         {
-          "id": "lidwa_3436",
-          "name_en": "Sufyan bin Sa'id bin Masruq",
-          "name_id": "Sufyan bin Sa'id bin Masruq",
-          "ar": "Sufyan bin Sa'id bin Masruq"
-        },
-        {
           "id": "lidwa_5757",
           "name_en": "Ali bin Hajar bin Iyas",
           "name_id": "Ali bin Hajar bin Iyas",
           "ar": "Ali bin Hajar bin Iyas"
-        },
-        {
-          "id": "lidwa_6649",
-          "name_en": "Mu'ammal bin Isma'il",
-          "name_id": "Mu'ammal bin Isma'il",
-          "ar": "Mu'ammal bin Isma'il"
-        },
-        {
-          "id": "lidwa_6879",
-          "name_en": "Muhammad bin Basysyar bin 'Utsman",
-          "name_id": "Muhammad bin Basysyar bin 'Utsman",
-          "ar": "Muhammad bin Basysyar bin 'Utsman"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4967",
+            "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
+          },
+          {
+            "id": "lidwa_4797",
+            "name_en": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
+            "name_id": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
+            "ar": "\"Abdullah bin Dinar, maula Ibnu 'Umar\""
+          },
+          {
+            "id": "lidwa_1012",
+            "name_en": "Isma'il bin Ja'far bin Abi Katsir",
+            "name_id": "Isma'il bin Ja'far bin Abi Katsir",
+            "ar": "Isma'il bin Ja'far bin Abi Katsir"
+          },
+          {
+            "id": "lidwa_5757",
+            "name_en": "Ali bin Hajar bin Iyas",
+            "name_id": "Ali bin Hajar bin Iyas",
+            "ar": "Ali bin Hajar bin Iyas"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4967",
+            "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
+          },
+          {
+            "id": "lidwa_4797",
+            "name_en": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
+            "name_id": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
+            "ar": "\"Abdullah bin Dinar, maula Ibnu 'Umar\""
+          },
+          {
+            "id": "lidwa_3436",
+            "name_en": "Sufyan bin Sa'id bin Masruq",
+            "name_id": "Sufyan bin Sa'id bin Masruq",
+            "ar": "Sufyan bin Sa'id bin Masruq"
+          },
+          {
+            "id": "lidwa_6649",
+            "name_en": "Mu'ammal bin Isma'il",
+            "name_id": "Mu'ammal bin Isma'il",
+            "ar": "Mu'ammal bin Isma'il"
+          },
+          {
+            "id": "lidwa_6879",
+            "name_en": "Muhammad bin Basysyar bin 'Utsman",
+            "name_id": "Muhammad bin Basysyar bin 'Utsman",
+            "ar": "Muhammad bin Basysyar bin 'Utsman"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -3052,6 +4772,40 @@
           "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
           "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_4506",
+            "name_en": "Abdur Rahman bin Hurmuz",
+            "name_id": "Abdur Rahman bin Hurmuz",
+            "ar": "Abdur Rahman bin Hurmuz"
+          },
+          {
+            "id": "lidwa_4798",
+            "name_en": "Abdullah bin Dzakwan Abu Az Zanad",
+            "name_id": "Abdullah bin Dzakwan Abu Az Zanad",
+            "ar": "Abdullah bin Dzakwan Abu Az Zanad"
+          },
+          {
+            "id": "lidwa_1667",
+            "name_en": "Al Mughirah bin 'Abdur Rahman bin 'Abdullah bin Khalid bin Khizam ",
+            "name_id": "Al Mughirah bin 'Abdur Rahman bin 'Abdullah bin Khalid bin Khizam ",
+            "ar": "Al Mughirah bin 'Abdur Rahman bin 'Abdullah bin Khalid bin Khizam "
+          },
+          {
+            "id": "lidwa_6460",
+            "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+            "ar": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah "
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -3110,6 +4864,46 @@
           "ar": "Muhammad bin Basysyar bin 'Utsman"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_6036",
+            "name_en": "Imran bin Hushain bin 'Ubaid bin Khalaf",
+            "name_id": "Imran bin Hushain bin 'Ubaid bin Khalaf",
+            "ar": "Imran bin Hushain bin 'Ubaid bin Khalaf"
+          },
+          {
+            "id": "lidwa_3944",
+            "name_en": "Shafwan bin Muhriz bin Ziyad",
+            "name_id": "Shafwan bin Muhriz bin Ziyad",
+            "ar": "Shafwan bin Muhriz bin Ziyad"
+          },
+          {
+            "id": "lidwa_2080",
+            "name_en": "Jami' bin Syaddad",
+            "name_id": "Jami' bin Syaddad",
+            "ar": "Jami' bin Syaddad"
+          },
+          {
+            "id": "lidwa_3436",
+            "name_en": "Sufyan bin Sa'id bin Masruq",
+            "name_id": "Sufyan bin Sa'id bin Masruq",
+            "ar": "Sufyan bin Sa'id bin Masruq"
+          },
+          {
+            "id": "lidwa_4493",
+            "name_en": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman",
+            "name_id": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman",
+            "ar": "Abdur Rahman bin Mahdiy bin Hassan bin 'Abdur Rahman"
+          },
+          {
+            "id": "lidwa_6879",
+            "name_en": "Muhammad bin Basysyar bin 'Utsman",
+            "name_id": "Muhammad bin Basysyar bin 'Utsman",
+            "ar": "Muhammad bin Basysyar bin 'Utsman"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -3167,6 +4961,46 @@
           "ar": "Mahmud bin Ghailan"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_7929",
+            "name_en": "Nufai' bin Al Harits bin Kildah",
+            "name_id": "Nufai' bin Al Harits bin Kildah",
+            "ar": "Nufai' bin Al Harits bin Kildah"
+          },
+          {
+            "id": "lidwa_4270",
+            "name_en": "Abdur Rahman bin Abi Bakrah Nufai' bin Al Harits",
+            "name_id": "Abdur Rahman bin Abi Bakrah Nufai' bin Al Harits",
+            "ar": "Abdur Rahman bin Abi Bakrah Nufai' bin Al Harits"
+          },
+          {
+            "id": "lidwa_5233",
+            "name_en": "Abdul Malik bin 'Umair bin Suwaid",
+            "name_id": "Abdul Malik bin 'Umair bin Suwaid",
+            "ar": "Abdul Malik bin 'Umair bin Suwaid"
+          },
+          {
+            "id": "lidwa_3436",
+            "name_en": "Sufyan bin Sa'id bin Masruq",
+            "name_id": "Sufyan bin Sa'id bin Masruq",
+            "ar": "Sufyan bin Sa'id bin Masruq"
+          },
+          {
+            "id": "lidwa_7100",
+            "name_en": "Muhammad bin 'Abdullah bin Az Zubair bin 'Umar bin Dirham",
+            "name_id": "Muhammad bin 'Abdullah bin Az Zubair bin 'Umar bin Dirham",
+            "ar": "Muhammad bin 'Abdullah bin Az Zubair bin 'Umar bin Dirham"
+          },
+          {
+            "id": "lidwa_7352",
+            "name_en": "Mahmud bin Ghailan",
+            "name_id": "Mahmud bin Ghailan",
+            "ar": "Mahmud bin Ghailan"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -3194,22 +5028,10 @@
           "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
         },
         {
-          "id": "lidwa_4967",
-          "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
-          "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
-          "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
-        },
-        {
           "id": "lidwa_7863",
           "name_en": "\"Nafi', maula Ibnu 'Umar \"",
           "name_id": "\"Nafi', maula Ibnu 'Umar \"",
           "ar": "\"Nafi', maula Ibnu 'Umar \""
-        },
-        {
-          "id": "lidwa_3194",
-          "name_en": "Salim bin 'Abdullah bin 'Umar bin Al Khaththab",
-          "name_id": "Salim bin 'Abdullah bin 'Umar bin Al Khaththab",
-          "ar": "Salim bin 'Abdullah bin 'Umar bin Al Khaththab"
         },
         {
           "id": "lidwa_4997",
@@ -3229,6 +5051,54 @@
           "name_id": "Bisyir bin Adam bin Yazid",
           "ar": "Bisyir bin Adam bin Yazid"
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4967",
+            "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
+          },
+          {
+            "id": "lidwa_7863",
+            "name_en": "\"Nafi', maula Ibnu 'Umar \"",
+            "name_id": "\"Nafi', maula Ibnu 'Umar \"",
+            "ar": "\"Nafi', maula Ibnu 'Umar \""
+          },
+          {
+            "id": "lidwa_4997",
+            "name_en": "Abdullah bin 'Aun bin Arthaban",
+            "name_id": "Abdullah bin 'Aun bin Arthaban",
+            "ar": "Abdullah bin 'Aun bin Arthaban"
+          },
+          {
+            "id": "lidwa_523",
+            "name_en": "Azhar bin Sa'ad",
+            "name_id": "Azhar bin Sa'ad",
+            "ar": "Azhar bin Sa'ad"
+          },
+          {
+            "id": "lidwa_1864",
+            "name_en": "Bisyir bin Adam bin Yazid",
+            "name_id": "Bisyir bin Adam bin Yazid",
+            "ar": "Bisyir bin Adam bin Yazid"
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4967",
+            "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+            "ar": "Abdullah bin 'Umar bin Al Khaththab bin Nufail"
+          },
+          {
+            "id": "lidwa_3194",
+            "name_en": "Salim bin 'Abdullah bin 'Umar bin Al Khaththab",
+            "name_id": "Salim bin 'Abdullah bin 'Umar bin Al Khaththab",
+            "ar": "Salim bin 'Abdullah bin 'Umar bin Al Khaththab"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",
@@ -3293,6 +5163,52 @@
           "ar": "Muhammad bin Basysyar bin 'Utsman"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_3131",
+            "name_en": "Zaid bin Tsabit bin Adl Dlahhak",
+            "name_id": "Zaid bin Tsabit bin Adl Dlahhak",
+            "ar": "Zaid bin Tsabit bin Adl Dlahhak"
+          },
+          {
+            "id": "lidwa_4392",
+            "name_en": "Abdur Rahman bin Syimasah",
+            "name_id": "Abdur Rahman bin Syimasah",
+            "ar": "Abdur Rahman bin Syimasah"
+          },
+          {
+            "id": "lidwa_8366",
+            "name_en": "Yazid bin Abi Habib Suwaid",
+            "name_id": "Yazid bin Abi Habib Suwaid",
+            "ar": "Yazid bin Abi Habib Suwaid"
+          },
+          {
+            "id": "lidwa_8213",
+            "name_en": "Yahya bin Ayyub",
+            "name_id": "Yahya bin Ayyub",
+            "ar": "Yahya bin Ayyub"
+          },
+          {
+            "id": "lidwa_2119",
+            "name_en": "Jarir bin Hazim bin Zaid",
+            "name_id": "Jarir bin Hazim bin Zaid",
+            "ar": "Jarir bin Hazim bin Zaid"
+          },
+          {
+            "id": "lidwa_8169",
+            "name_en": "Wahab bin Jarir bin Hazim",
+            "name_id": "Wahab bin Jarir bin Hazim",
+            "ar": "Wahab bin Jarir bin Hazim"
+          },
+          {
+            "id": "lidwa_6879",
+            "name_en": "Muhammad bin Basysyar bin 'Utsman",
+            "name_id": "Muhammad bin Basysyar bin 'Utsman",
+            "ar": "Muhammad bin Basysyar bin 'Utsman"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -3344,6 +5260,40 @@
           "ar": "Muhammad bin Basysyar bin 'Utsman"
         }
       ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_3280",
+            "name_en": "Sa'id bin Abi Sa'id Kaisan",
+            "name_id": "Sa'id bin Abi Sa'id Kaisan",
+            "ar": "Sa'id bin Abi Sa'id Kaisan"
+          },
+          {
+            "id": "lidwa_8047",
+            "name_en": "Hisyam bin Sa'ad",
+            "name_id": "Hisyam bin Sa'ad",
+            "ar": "Hisyam bin Sa'ad"
+          },
+          {
+            "id": "lidwa_5231",
+            "name_en": "Abdul Malik bin 'Amru",
+            "name_id": "Abdul Malik bin 'Amru",
+            "ar": "Abdul Malik bin 'Amru"
+          },
+          {
+            "id": "lidwa_6879",
+            "name_en": "Muhammad bin Basysyar bin 'Utsman",
+            "name_id": "Muhammad bin Basysyar bin 'Utsman",
+            "ar": "Muhammad bin Basysyar bin 'Utsman"
+          }
+        ]
+      ],
       "syarah_ar": "",
       "syarah_en": "",
       "syarah_id": "",
@@ -3371,12 +5321,6 @@
           "ar": "Abdur Rahman bin Shakhr"
         },
         {
-          "id": "lidwa_4396",
-          "name_en": "Abdur Rahman bin Shakhr",
-          "name_id": "Abdur Rahman bin Shakhr",
-          "ar": "Abdur Rahman bin Shakhr"
-        },
-        {
           "id": "lidwa_6624",
           "name_en": "Kaisan",
           "name_id": "Kaisan",
@@ -3389,28 +5333,10 @@
           "ar": "Sa'id bin Abi Sa'id Kaisan"
         },
         {
-          "id": "lidwa_3280",
-          "name_en": "Sa'id bin Abi Sa'id Kaisan",
-          "name_id": "Sa'id bin Abi Sa'id Kaisan",
-          "ar": "Sa'id bin Abi Sa'id Kaisan"
-        },
-        {
-          "id": "lidwa_8047",
-          "name_en": "Hisyam bin Sa'ad",
-          "name_id": "Hisyam bin Sa'ad",
-          "ar": "Hisyam bin Sa'ad"
-        },
-        {
           "id": "lidwa_7712",
           "name_en": "Musa bin Abi 'Alqamah",
           "name_id": "Musa bin Abi 'Alqamah",
           "ar": "Musa bin Abi 'Alqamah"
-        },
-        {
-          "id": "lidwa_3436",
-          "name_en": "Sufyan bin Sa'id bin Masruq",
-          "name_id": "Sufyan bin Sa'id bin Masruq",
-          "ar": "Sufyan bin Sa'id bin Masruq"
         },
         {
           "id": "lidwa_7990",
@@ -3418,6 +5344,66 @@
           "name_id": "Harun bin Musa bin Abi 'Alqamah 'Abdullah ",
           "ar": "Harun bin Musa bin Abi 'Alqamah 'Abdullah "
         }
+      ],
+      "paths": [
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_6624",
+            "name_en": "Kaisan",
+            "name_id": "Kaisan",
+            "ar": "Kaisan"
+          },
+          {
+            "id": "lidwa_3280",
+            "name_en": "Sa'id bin Abi Sa'id Kaisan",
+            "name_id": "Sa'id bin Abi Sa'id Kaisan",
+            "ar": "Sa'id bin Abi Sa'id Kaisan"
+          },
+          {
+            "id": "lidwa_7712",
+            "name_en": "Musa bin Abi 'Alqamah",
+            "name_id": "Musa bin Abi 'Alqamah",
+            "ar": "Musa bin Abi 'Alqamah"
+          },
+          {
+            "id": "lidwa_7990",
+            "name_en": "Harun bin Musa bin Abi 'Alqamah 'Abdullah ",
+            "name_id": "Harun bin Musa bin Abi 'Alqamah 'Abdullah ",
+            "ar": "Harun bin Musa bin Abi 'Alqamah 'Abdullah "
+          }
+        ],
+        [
+          {
+            "id": "lidwa_4396",
+            "name_en": "Abdur Rahman bin Shakhr",
+            "name_id": "Abdur Rahman bin Shakhr",
+            "ar": "Abdur Rahman bin Shakhr"
+          },
+          {
+            "id": "lidwa_3280",
+            "name_en": "Sa'id bin Abi Sa'id Kaisan",
+            "name_id": "Sa'id bin Abi Sa'id Kaisan",
+            "ar": "Sa'id bin Abi Sa'id Kaisan"
+          },
+          {
+            "id": "lidwa_8047",
+            "name_en": "Hisyam bin Sa'ad",
+            "name_id": "Hisyam bin Sa'ad",
+            "ar": "Hisyam bin Sa'ad"
+          },
+          {
+            "id": "lidwa_3436",
+            "name_en": "Sufyan bin Sa'id bin Masruq",
+            "name_id": "Sufyan bin Sa'id bin Masruq",
+            "ar": "Sufyan bin Sa'id bin Masruq"
+          }
+        ]
       ],
       "syarah_ar": "",
       "syarah_en": "",

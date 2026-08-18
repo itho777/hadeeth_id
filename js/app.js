@@ -2936,50 +2936,123 @@ async function loadSanadChain() {
     const rawisDict = await window.HadeethAPI.getActiveRawis();
     data = await window.HadeethAPI.getHadith(bookId, hadithNum, dsPrefix);
     
+    // Final Node: Collector & Author metadata
+    const authorNamesEn = {
+      bukhari: 'Imam al-Bukhari', muslim: 'Imam Muslim', abudawud: 'Imam Abu Dawood',
+      tirmidhi: 'Imam at-Tirmidhi', nasai: 'Imam an-Nasa\'i', ibnmajah: 'Imam Ibn Majah',
+      malik: 'Imam Malik bin Anas', ahmad: 'Imam Ahmad bin Hanbal', darimi: 'Imam Abdullah bin Abdul Rahman ad-Darimi'
+    };
+    const authorNamesId = {
+      bukhari: 'Imam al-Bukhari', muslim: 'Imam Muslim', abudawud: 'Imam Abu Daud',
+      tirmidhi: 'Imam at-Tirmidzi', nasai: 'Imam an-Nasa\'i', ibnmajah: 'Imam Ibn Majah',
+      malik: 'Imam Malik bin Anas', ahmad: 'Imam Ahmad bin Hanbal', darimi: 'Imam Abdullah bin Abdul Rahman ad-Darimi'
+    };
+    const authorNameEn = authorNamesEn[bookId.toLowerCase()] || 'Imam al-Bukhari';
+    const authorNameId = authorNamesId[bookId.toLowerCase()] || 'Imam al-Bukhari';
+    const authorIdMap = { 'bukhari': 'rawi_al_bukhari', 'muslim': 'rawi_muslim_ibn_hajjaj', 'abudawud': 'rawi_abu_dawud', 'tirmidhi': 'rawi_al_tirmidhi', 'nasai': 'rawi_al_nasai', 'ibnmajah': 'rawi_ibn_majah', 'malik': 'rawi_malik_bin_anas', 'ahmad': 'rawi_ahmad', 'darimi': 'rawi_darimi' };
+    const authorProfileUrl = authorIdMap[bookId] ? `profile-detail.html?id=${authorIdMap[bookId]}` : `profile-detail.html?id=rawi_al_bukhari`;
+
     if (data && data.rawis && data.rawis.length > 0) {
-      // Filter out consecutive duplicates
-      let rawiList = [];
-      for (const item of data.rawis) {
-        const id = typeof item === 'object' ? item.id : item;
-        if (rawiList.length === 0) {
-          rawiList.push(item);
-        } else {
-          const lastItem = rawiList[rawiList.length - 1];
-          const lastId = typeof lastItem === 'object' ? lastItem.id : lastItem;
-          if (lastId !== id) rawiList.push(item);
-        }
+      let paths = data.paths || [];
+      if (paths.length === 0) {
+        // Fallback for single path
+        paths = [data.rawis];
       }
       
-      // Filter out Prophet (1) since we hardcode it at the top
-      narrators = rawiList.map((rawItem, idx) => {
-        const isObj = typeof rawItem === 'object' && rawItem !== null;
-        const rId = isObj ? rawItem.id : rawItem;
+      const tabsContainer = document.getElementById('sanad-tabs-container');
+      if (paths.length > 1) {
+        tabsContainer.classList.remove('hidden');
+        let tabsHtml = '';
+        paths.forEach((path, idx) => {
+          // Identify the unique top narrator (usually the sheikh or the one who branches)
+          // Since the path is Companion -> Sheikh, the last element is the Sheikh
+          const lastRawi = path[path.length - 1];
+          const rawiName = typeof lastRawi === 'object' ? (lastRawi.name_id || lastRawi.name_en || lastRawi.id) : lastRawi;
+          const isActive = idx === 0 ? 'bg-primary text-white dark:bg-[#10b981] dark:text-black' : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container dark:bg-[#1e293b] dark:text-gray-300 dark:hover:bg-[#334155]';
+          
+          tabsHtml += `
+            <button class="sanad-tab-btn px-4 py-2 rounded-lg font-bold text-sm whitespace-nowrap transition-colors border border-outline-variant/30 dark:border-[#334155] ${isActive}" data-path-idx="${idx}">
+              <span data-lang-en>Branch ${idx + 1} (${rawiName})</span>
+              <span data-lang-id style="display:none">Jalur ${idx + 1} (${rawiName})</span>
+            </button>
+          `;
+        });
+        tabsContainer.innerHTML = tabsHtml;
         
-        const rawiData = rawisDict[rId] || {};
-        const isFirst = idx === 0 || (rawiData.grade && rawiData.grade.toLowerCase().includes('sahab'));
-        
-        let enName = (isObj ? rawItem.name_en : null) || rawiData.en || 'Transmitter ' + rId;
-        let idName = (isObj ? rawItem.name_id : null) || rawiData.id || 'Perawi ' + rId;
-        let arName = (isObj ? rawItem.ar : null) || rawiData.ar || idName;
-        
-        return {
-          rawi_id: rId,
-          name: enName + (isFirst && !enName.includes('رضي الله عنه') ? ' (رضي الله عنه)' : ''),
-          name_id: idName,
-          roleEn: rawiData.role || (isFirst ? 'SAHABI (COMPANION) • GRADE: THIQAH' : 'TRANSMITTER (RAWI) • GRADE: ' + (rawiData.grade || 'THIQAH')),
-          roleId: rawiData.roleId || (isFirst ? 'SAHABAT NABI • DERAJAT: TSIQAH' : 'PERAWI (RAWI) • DERAJAT: ' + (rawiData.grade || 'TSIQAH')),
-          ar: arName,
-          kunyah: rawiData.kunyah || (isFirst ? 'Abu Abdillah' : '-'),
-          residence: rawiData.residence || (isFirst ? 'Madinah' : '-'),
-          death_ah: rawiData.death_ah || (isFirst ? 'Early Era' : '-'),
-          counts: rawiData.counts || '-',
-          remarks: rawiData.grade ? 'Grade: ' + rawiData.grade : 'No remarks'
-        };
-      });
+        // Attach event listeners
+        setTimeout(() => {
+          const btns = tabsContainer.querySelectorAll('.sanad-tab-btn');
+          btns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+              // Update active tab style
+              btns.forEach(b => {
+                b.className = b.className.replace(/bg-primary text-white dark:bg-\[\#10b981\] dark:text-black/g, 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container dark:bg-[#1e293b] dark:text-gray-300 dark:hover:bg-[#334155]');
+              });
+              const clicked = e.currentTarget;
+              clicked.className = clicked.className.replace(/bg-surface-container-low text-on-surface-variant hover:bg-surface-container dark:bg-\[\#1e293b\] dark:text-gray-300 dark:hover:bg-\[\#334155\]/g, 'bg-primary text-white dark:bg-[#10b981] dark:text-black');
+              
+              const idx = parseInt(clicked.getAttribute('data-path-idx'));
+              renderSanadPath(paths[idx], rawisDict, data, bookId, authorProfileUrl, authorNameEn, authorNameId);
+            });
+          });
+        }, 50);
+      } else {
+        tabsContainer.classList.add('hidden');
+      }
+
+      // Initial render of Path 0
+      renderSanadPath(paths[0], rawisDict, data, bookId, authorProfileUrl, authorNameEn, authorNameId);
+
+    } else {
+      // Empty fallback
+      renderSanadPath([], rawisDict, data, bookId, authorProfileUrl, authorNameEn, authorNameId);
     }
   } catch (err) {
     console.warn('Failed to load sanad chain:', err);
   }
+}
+
+function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, authorNameEn, authorNameId) {
+  let narrators = [];
+  
+  // Filter out consecutive duplicates within the path
+  let filteredRawiList = [];
+  for (const item of rawiList) {
+    const id = typeof item === 'object' ? item.id : item;
+    if (filteredRawiList.length === 0) {
+      filteredRawiList.push(item);
+    } else {
+      const lastItem = filteredRawiList[filteredRawiList.length - 1];
+      const lastId = typeof lastItem === 'object' ? lastItem.id : lastItem;
+      if (lastId !== id) filteredRawiList.push(item);
+    }
+  }
+  
+  narrators = filteredRawiList.map((rawItem, idx) => {
+    const isObj = typeof rawItem === 'object' && rawItem !== null;
+    const rId = isObj ? rawItem.id : rawItem;
+    
+    const rawiData = rawisDict[rId] || {};
+    const isFirst = idx === 0 || (rawiData.grade && rawiData.grade.toLowerCase().includes('sahab'));
+    
+    let enName = (isObj ? rawItem.name_en : null) || rawiData.en || 'Transmitter ' + rId;
+    let idName = (isObj ? rawItem.name_id : null) || rawiData.id || 'Perawi ' + rId;
+    let arName = (isObj ? rawItem.ar : null) || rawiData.ar || idName;
+    
+    return {
+      rawi_id: rId,
+      name: enName + (isFirst && !enName.includes('رضي الله عنه') ? ' (رضي الله عنه)' : ''),
+      name_id: idName,
+      roleEn: rawiData.role || (isFirst ? 'SAHABI (COMPANION) • GRADE: THIQAH' : 'TRANSMITTER (RAWI) • GRADE: ' + (rawiData.grade || 'THIQAH')),
+      roleId: rawiData.roleId || (isFirst ? 'SAHABAT NABI • DERAJAT: TSIQAH' : 'PERAWI (RAWI) • DERAJAT: ' + (rawiData.grade || 'TSIQAH')),
+      ar: arName,
+      kunyah: rawiData.kunyah || (isFirst ? 'Abu Abdillah' : '-'),
+      residence: rawiData.residence || (isFirst ? 'Madinah' : '-'),
+      death_ah: rawiData.death_ah || (isFirst ? 'Early Era' : '-'),
+      counts: rawiData.counts || '-',
+      remarks: rawiData.grade ? 'Grade: ' + rawiData.grade : 'No remarks'
+    };
+  });
 
   if (narrators.length === 0) {
     narrators = [
@@ -3017,10 +3090,8 @@ async function loadSanadChain() {
     </div>
   `;
 
-  // Filter out the Prophet (ID "1" or name containing Prophet) from the dynamic loop since we hardcode him above
   const filteredNarrators = narrators.filter(nr => nr.rawi_id !== "1" && !nr.name.toLowerCase().includes('prophet muhammad'));
 
-  // Render Narrators from Companion down to Direct Sheikh of Author
   filteredNarrators.forEach((nr, idx) => {
     let rawiSlug = nr.rawi_id;
     if (!rawiSlug && nr.name) {
@@ -3104,37 +3175,6 @@ async function loadSanadChain() {
     `;
   });
 
-  // Final Node: Collector & Author
-  const authorNamesEn = {
-    bukhari: 'Imam al-Bukhari',
-    muslim: 'Imam Muslim',
-    abudawud: 'Imam Abu Dawood',
-    tirmidhi: 'Imam at-Tirmidhi',
-    nasai: 'Imam an-Nasa\'i',
-    ibnmajah: 'Imam Ibn Majah',
-    malik: 'Imam Malik bin Anas',
-    ahmad: 'Imam Ahmad bin Hanbal',
-    darimi: 'Imam Abdullah bin Abdul Rahman ad-Darimi'
-  };
-
-  const authorNamesId = {
-    bukhari: 'Imam al-Bukhari',
-    muslim: 'Imam Muslim',
-    abudawud: 'Imam Abu Daud',
-    tirmidhi: 'Imam at-Tirmidzi',
-    nasai: 'Imam an-Nasa\'i',
-    ibnmajah: 'Imam Ibn Majah',
-    malik: 'Imam Malik bin Anas',
-    ahmad: 'Imam Ahmad bin Hanbal',
-    darimi: 'Imam Abdullah bin Abdul Rahman ad-Darimi'
-  };
-
-  const authorNameEn = authorNamesEn[bookId.toLowerCase()] || 'Imam al-Bukhari';
-  const authorNameId = authorNamesId[bookId.toLowerCase()] || 'Imam al-Bukhari';
-
-  const authorIdMap = { 'bukhari': 'rawi_al_bukhari', 'muslim': 'rawi_muslim_ibn_hajjaj', 'abudawud': 'rawi_abu_dawud', 'tirmidhi': 'rawi_al_tirmidhi', 'nasai': 'rawi_al_nasai', 'ibnmajah': 'rawi_ibn_majah', 'malik': 'rawi_malik_bin_anas', 'ahmad': 'rawi_ahmad', 'darimi': 'rawi_darimi' };
-  const authorProfileUrl = authorIdMap[bookId] ? `profile-detail.html?id=${authorIdMap[bookId]}` : `profile-detail.html?id=rawi_al_bukhari`;
-
   html += `
     <div class="sanad-node relative z-10 bg-primary text-white dark:bg-[#0f172a] border border-primary dark:border-[#334155] rounded-xl p-5 shadow-sm">
       <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-primary border-2 border-white dark:border-ink-black flex items-center justify-center text-[10px]">📚</div>
@@ -3157,14 +3197,12 @@ async function loadSanadChain() {
       </div>
     </div>
   `;
-  container.innerHTML = html;
+  const container = document.getElementById('sanad-nodes-container');
+  if (container) container.innerHTML = html;
   
-  // Populate Sidebar Metrics
-  const countEl = document.getElementById('sanad-count-text');
   const statusEl = document.getElementById('sanad-status-text');
   const elevatedEl = document.getElementById('sanad-elevated-text');
   
-  if (countEl) countEl.innerHTML = `<span data-lang-en>${filteredNarrators.length} Transmitters</span><span data-lang-id style="display:none">${filteredNarrators.length} Perawi</span>`;
   if (statusEl) statusEl.innerHTML = `<span data-lang-en>Connected (Muttasil)</span><span data-lang-id style="display:none">Bersambung (Muttashil)</span>`;
   if (elevatedEl) {
     if (data) {
