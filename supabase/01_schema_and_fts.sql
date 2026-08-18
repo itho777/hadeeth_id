@@ -46,6 +46,15 @@ CREATE TABLE IF NOT EXISTS public.hadiths (
     text_fr TEXT,
     grade TEXT,
     grade_by TEXT,
+    grade_id TEXT,
+    is_qudsi BOOLEAN DEFAULT FALSE,
+    is_mutawatir BOOLEAN DEFAULT FALSE,
+    is_marfu BOOLEAN DEFAULT FALSE,
+    is_mauquf BOOLEAN DEFAULT FALSE,
+    is_maqthu BOOLEAN DEFAULT FALSE,
+    is_mursal BOOLEAN DEFAULT FALSE,
+    is_munqathi BOOLEAN DEFAULT FALSE,
+    is_muallaq BOOLEAN DEFAULT FALSE,
     search_vector tsvector,
     created_at TIMESTAMPTZ DEFAULT NOW()
 );

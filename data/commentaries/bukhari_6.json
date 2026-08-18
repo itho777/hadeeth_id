@@ -1,24 +1,12 @@
 {
-  "id": 37,
   "book_id": "bukhari",
-  "hadith_number": 6,
-  "source_name_ar": null,
-  "source_name_en": "Fath al-Bari Sharh Sahih al-Bukhari",
-  "source_name_id": null,
-  "explanation_ar": "يوضح الحافظ ابن حجر في فتح الباري أن الحديث يدل على استحباب إكثار الجود والإحسان في شهر رمضان، وبركة مجالسة الصالحين واللقاء بهم، وعرض القرآن ومدارسته. وتشبيه جوده صلى الله عليه وسلم بالريح المرسلة يبين عموم نفع كرمه وسرعة إعطائه بالخيرات من غير توقف ولا تردد، كما تُرسل الريح بالرحمة والغيث العام.",
-  "explanation_en": "In Fath al-Bari, Ibn Hajar al-Asqalani explains that this hadith highlights the Prophet's (ﷺ) supreme generosity, which reached its absolute peak during Ramadan due to the noble company of Angel Jibril and the night reviews of the Qur'an. The comparison to the 'sent wind' (al-reeh al-mursalah) signifies both the swiftness of his giving and the widespread, unreserved benefit of his kindness to everyone in need, much like a rain-bearing wind brings life to all.",
-  "explanation_id": "Dalam Fathul Bari, Ibnu Hajar al-Asqalani menjelaskan bahwa hadis ini menunjukkan puncak kedermawanan Rasulullah صلى الله عليه وسلم yang semakin meningkat di bulan Ramadan karena keberkahan bertemunya beliau dengan Malaikat Jibril dan kegiatan tadarus/mengkaji Al-Qur'an. Perumpamaan kedermawanan beliau seperti 'angin yang berhembus' menggambarkan kecepatan beliau dalam berbuat kebaikan serta luasnya manfaat kedermawanan beliau bagi seluruh manusia tanpa ragu dan menunda-nunda.",
-  "benefits_en": [
-    "The strong recommendation to increase generosity, charity, and good deeds specifically during Ramadan.",
-    "The virtue of reviewing and studying the Holy Qur'an (mudarasah) during the nights of Ramadan.",
-    "The spiritual benefit of associating with the righteous, as meeting Jibril renewed and increased the Prophet's spiritual enthusiasm.",
-    "Understanding the Prophet's unmatched eagerness and speed in relieving the needs of others."
-  ],
-  "benefits_id": [
-    "Anjuran kuat untuk memperbanyak kedermawanan, sedekah, dan amal kebaikan khususnya di bulan Ramadan.",
-    "Keutamaan tadarus dan mengkaji Al-Qur'an (mudarasah) pada malam-malam bulan Ramadan.",
-    "Pengaruh positif dari bergaul dan berkumpul dengan orang-orang saleh terhadap peningkatan amal kebaikan.",
-    "Meneladani kesegeraan dan kelapangan dada Rasulullah صلى الله عليه وسلم dalam memberi bantuan kepada sesama."
-  ],
-  "hadith_id": "bukhari_6"
+  "anchor_id": "6",
+  "source": "Dorar",
+  "hadith_ar": "الولاءُ لُحْمَةٌ كلُحْمَةِ النَّسبِ لا يُباعُ ولا يُورَثُ",
+  "rawi": "عبدالله بن عمر",
+  "muhaddith": "ابن الملقن",
+  "masdar": "شرح البخاري لابن الملقن",
+  "grade": "صحيح",
+  "takhrij": "أخرجه الشافعي في ((الأم)) (5/268)، وابن حبان (4950)، والحاكم (7990) باختلاف يسير.",
+  "syarah_ar": "الوَلاءُ مِنَ الحُقوقِ الَّتِي تَثبُتُ بالعِتْقِ، وصورتُه أنْ يُعتِقَ رَجُلٌ عبدًا، فيُصبِحَ هذا العبدُ حُرًّا، ولكنْ يَبقَى وَلاؤُه لِمَن أَعتَقَه.\n\nوفي هذا الحَديثِ يقولُ النَّبيُّ صلَّى اللهُ عليه وسلَّمَ: \"الولاءُ لُحمَةٌ\"، أي: عَلاقَةٌ ورابِطَةٌ \"كلُحمَةِ النَّسَبِ\" من الدَّمِ \"لا يُباعُ ولا يُورَثُ\" والمعنى أنَّه لا يَجوزُ نَقلُه مِن شخصٍ إلى شخصٍ آخَرَ، وقيل: مَعناهُ أنَّ المسلِمَ إذا استَأذَنه أحَدٌ أنْ يتَولَّاه أو أنْ يطلُبَ هو أن يَجعَلَ ولاءَه إلى غيرِ مُعتِقِه، فإنَّه يُمنَعُ عن ذلك، ويُعرِّفُه أنَّه لا يَحِلُّ له الخُروجُ عن مَواليهِ؛ ولهذا الولاءِ حُقوقٌ، ومِن أهمِّها حقُّ المِيراثِ، فالإنسانُ إذا أَعتَقَ عبدًا، ولم يكُن له وارِثٌ، فإنَّ مُعتِقَه يَرِثُه بالوَلاءِ، فالوَلاءُ كالنَّسَبِ، فكما أنَّ النَّسَبَ لا يُباعُ ولا يُوهَبُ، فكذلك الوَلاءُ ."
 }

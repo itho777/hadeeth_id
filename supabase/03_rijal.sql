@@ -18,6 +18,16 @@ CREATE TABLE IF NOT EXISTS public.rijal (
     name_en             TEXT NOT NULL,               -- Latin transliteration (primary)
     name_id             TEXT,                        -- Indonesian transliteration
 
+    -- Lidwa explicit Indonesian fields
+    kalangan_id         TEXT,                        -- Lidwa "Kalangan" e.g. Shahabat, Tabi'in
+    nasab_id            TEXT,                        -- Lidwa "Nasab"
+    kuniyah_id          TEXT,                        -- Lidwa "Kuniyah"
+    laqob_id            TEXT,                        -- Lidwa "Laqob"
+    negeri_hidup_id     TEXT,                        -- Lidwa "Negeri_Hidup"
+    negeri_wafat_id     TEXT,                        -- Lidwa "Negeri_Wafat"
+    tahun_wafat_id      TEXT,                        -- Lidwa "Tahun_Wafat"
+    quality_id          INTEGER,                     -- Lidwa "Quality" ID
+
     -- Name components
     kunya               TEXT,                        -- Teknonym e.g. "أبو هريرة" (Father of X)
     kunya_en            TEXT,                        -- Kunya in Latin e.g. "Abu Hurairah"

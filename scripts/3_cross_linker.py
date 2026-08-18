@@ -33,10 +33,11 @@ AB_PATHS = {
 def normalize_arabic(text):
     if not text:
         return ""
+    text = re.sub(r'[\u200e\u200f\u202a-\u202e\u200b\u200c\u200d\uFEFF]', '', text)
     text = re.sub(r'[\u0617-\u061A\u064B-\u0652]', '', text)
-    text = re.sub(r'[إأآا]', 'ا', text)
-    text = re.sub(r'[ة]', 'ه', text)
-    text = re.sub(r'[ى]', 'ي', text)
+    text = re.sub(r'[\u0625\u0623\u0622\u0627]', '\u0627', text)
+    text = re.sub(r'[\u0629]', '\u0647', text)
+    text = re.sub(r'[\u0649]', '\u064A', text)
     text = re.sub(r'[\W_]+', '', text)
     return text
 

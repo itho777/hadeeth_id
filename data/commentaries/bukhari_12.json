@@ -1,24 +1,12 @@
 {
-  "id": 31,
   "book_id": "bukhari",
-  "hadith_number": 12,
-  "source_name_ar": null,
-  "source_name_en": "Fath al-Bari by Ibn Hajar al-Asqalani",
-  "source_name_id": null,
-  "explanation_ar": "يوضح الحافظ ابن حجر في فتح الباري أن النبي صلى الله عليه وسلم جمع في هذا الحديث بين النفع الفعلي المالي وهو إطعام الطعام والنفع القولي وهو إفشاء السلام، وهما من أفضل خصال الإسلام لما فيهما من تأليف القلوب، وسد حاجة المحتاجين، ونشر الأمن والمحبة بين المسلمين دون تمييز بين معارف وغرباء، وفي ذلك سلامة من الكبر والرياء. كما بين أن اختلاف إجابة النبي صلى الله عليه وسلم في أفضليات الأعمال كان يراعي فيه حاجة السائل أو الحال.",
-  "explanation_en": "In Fath al-Bari, Ibn Hajar al-Asqalani explains that the Prophet (peace be upon him) combined two of the best qualities of Islam in this narration: practical financial benefit by feeding others and verbal/social benefit by spreading greetings of peace (Salam). Feeding food addresses the physical needs of people and shows generosity, while greeting both acquaintances and strangers fosters mutual love, unity, and safety within society while eliminating arrogance and hypocrisy. Ibn Hajar notes that the Prophet answered questions about the best deeds differently depending on the specific needs or circumstances of the questioner.",
-  "explanation_id": "Dalam Fathul Bari, Ibnu Hajar al-Asqalani menjelaskan bahwa Nabi صلى الله عليه وسلم memadukan dua sifat Islam terbaik dalam hadits ini: kebaikan nyata secara finansial (memberi makan) dan kebaikan lisan/sosial (menebarkan salam). Memberi makan memenuhi kebutuhan fisik sesama dan menunjukkan kedermawanan, sedangkan mengucapkan salam kepada orang yang dikenal maupun tidak dikenal menumbuhkan rasa kasih sayang, persatuan, dan menghilangkan sifat sombong serta riya. Ibnu Hajar juga mencatat bahwa perbedaan jawaban Nabi dalam hadits ini dibanding hadits lain disesuaikan dengan kondisi dan kebutuhan orang yang bertanya.",
-  "benefits_en": [
-    "Combining practical generosity (feeding food) and social warmth (spreading salam) reflects excellence in Islamic manners.",
-    "Greeting both acquaintances and strangers purifies the heart from pride, ostentation, and social discrimination.",
-    "Promoting social solidarity, safety, and mutual affection within the Muslim community.",
-    "Demonstrating the Prophet's wisdom in tailoring his answers to suit the context and spiritual needs of the questioner."
-  ],
-  "benefits_id": [
-    "Menggabungkan kebaikan finansial (memberi makan) dan kebaikan sosial/lisan (menebar salam) merupakan cerminan kesempurnaan akhlak Islam.",
-    "Mengucapkan salam kepada orang yang dikenal maupun tidak dikenal membersihkan hati dari sifat sombong, riya, dan diskriminasi sosial.",
-    "Mempererat tali persaudaraan, solidaritas sosial, dan rasa aman di tengah masyarakat.",
-    "Menunjukkan hikmah Rasulullah صلى الله عليه وسلم dalam memberikan nasehat yang sesuai dengan kondisi dan kebutuhan penanya."
-  ],
-  "hadith_id": "bukhari_12"
+  "anchor_id": "12",
+  "source": "Dorar",
+  "hadith_ar": "",
+  "rawi": "",
+  "muhaddith": "",
+  "masdar": "",
+  "grade": "",
+  "takhrij": "",
+  "syarah_ar": ""
 }

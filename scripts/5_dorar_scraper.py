@@ -54,6 +54,53 @@ def fetch_explanation(scraper, xplain_id):
     try:
         response = scraper.get(url, timeout=10)
         soup = BeautifulSoup(response.text, 'html.parser')
+        
+        result = {
+            "hadith_ar": "",
+            "rawi": "",
+            "muhaddith": "",
+            "masdar": "",
+            "grade": "",
+            "takhrij": "",
+            "syarah_ar": "Not Available"
+        }
+        
+        sharh_content = soup.find('div', id='sharh-text-content')
+        if sharh_content:
+            first_div = sharh_content.find('div')
+            if first_div:
+                text_div = first_div.find('div')
+                if text_div:
+                    result["hadith_ar"] = text_div.get_text(strip=True)
+                    
+            for span in sharh_content.find_all('span'):
+                classes = span.get('class', [])
+                if '#ae8422' in classes or span.get('style', '') == 'color: #ae8422':
+                    prev = span.previous_sibling
+                    if prev and isinstance(prev, str):
+                        if "الراوي" in prev: result["rawi"] = span.get_text(strip=True)
+                        if "المحدث" in prev and "خلاصة" not in prev: result["muhaddith"] = span.get_text(strip=True)
+                        if "المصدر" in prev: result["masdar"] = span.get_text(strip=True)
+                        if "خلاصة" in prev: result["grade"] = span.get_text(strip=True)
+                        
+            takhrij_p = sharh_content.find('p')
+            if takhrij_p and "التخريج" in takhrij_p.get_text():
+                span = takhrij_p.find('span')
+                if span:
+                    result["takhrij"] = span.get_text(strip=True)
+            
+            if first_div:
+                syarah_parts = []
+                for sibling in first_div.next_siblings:
+                    if sibling.name:
+                        syarah_parts.append(sibling.get_text(separator='\n\n', strip=True))
+                    elif str(sibling).strip():
+                        syarah_parts.append(str(sibling).strip())
+                result["syarah_ar"] = "\n\n".join(filter(None, syarah_parts))
+                
+            return result
+        
+        # Fallback to old logic
         tj = soup.find('div', class_='text-justify')
         if tj:
             ns = tj.find_next_sibling()
@@ -65,10 +112,10 @@ def fetch_explanation(scraper, xplain_id):
                     sharh_text = "\n\n".join(lines[1:]).strip()
                     if not sharh_text:
                         sharh_text = parts[-1].strip()
-                    return sharh_text
+                    result["syarah_ar"] = sharh_text
                 else:
-                    return full_text
-        return None
+                    result["syarah_ar"] = full_text
+        return result
     except Exception as e:
         logging.error(f"Fetch explanation failed: {e}")
         return None
@@ -117,18 +164,19 @@ def scrape_syarah():
             logging.info(f"Scraping Syarah for {book_id} - {anchor_id}")
             
             xplain_id = search_dorar(scraper, text_ar)
-            syarah_text = "Not Available"
+            extracted_data = None
             if xplain_id:
-                extracted = fetch_explanation(scraper, xplain_id)
-                if extracted:
-                    syarah_text = extracted
+                extracted_data = fetch_explanation(scraper, xplain_id)
                     
             syarah_payload = {
                 "book_id": book_id,
                 "anchor_id": anchor_id,
-                "source": "Dorar",
-                "syarah_ar": syarah_text
+                "source": "Dorar"
             }
+            if extracted_data:
+                syarah_payload.update(extracted_data)
+            else:
+                syarah_payload["syarah_ar"] = "Not Available"
             
             with open(syarah_path, 'w', encoding='utf-8') as f:
                 json.dump(syarah_payload, f, ensure_ascii=False, indent=2)

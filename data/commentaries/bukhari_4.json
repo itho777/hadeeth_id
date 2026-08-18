@@ -1,22 +1,12 @@
 {
-  "id": 35,
   "book_id": "bukhari",
-  "hadith_number": 4,
-  "source_name_ar": null,
-  "source_name_en": "Fath al-Bari",
-  "source_name_id": null,
-  "explanation_ar": "يتناول هذا الحديث فترة 'فترة الوحي' حيث انقطع الوحي مؤقتاً ليذهب عن النبي ﷺ الروع ويشتاق للوحي. ثم رأى الملك جالساً على كرسي بين السماء والأرض، فنزل قوله تعالى 'يا أيها المدثر'.",
-  "explanation_en": "This hadith discusses the 'Fatra al-Wahy' (pause in revelation), a period where revelation temporarily stopped so the Prophet could recover from his initial shock and yearn for its return. He then saw the angel sitting on a throne between heaven and earth, leading to the revelation of 'O you enveloped in garments'.",
-  "explanation_id": "Hadis ini membahas tentang 'Fatra al-Wahy' (jeda wahyu), sebuah periode di mana wahyu berhenti sementara agar Nabi dapat pulih dari keterkejutan awalnya dan merindukan kembalinya wahyu. Ia kemudian melihat malaikat duduk di kursi antara langit dan bumi, yang mengarah pada turunnya ayat 'Hai orang yang berselimut'.",
-  "benefits_en": [
-    "The pause in revelation was to build the Prophet's longing.",
-    "The command to actively preach began with Surah Al-Muddaththir.",
-    "Fear is a natural human reaction to the unseen."
-  ],
-  "benefits_id": [
-    "Jeda wahyu bertujuan untuk menumbuhkan kerinduan Nabi.",
-    "Perintah untuk mulai berdakwah dimulai dengan Surah Al-Muddaththir.",
-    "Rasa takut adalah reaksi alami manusia terhadap hal gaib."
-  ],
-  "hadith_id": "bukhari_4"
+  "anchor_id": "4",
+  "source": "Dorar",
+  "hadith_ar": "",
+  "rawi": "",
+  "muhaddith": "",
+  "masdar": "",
+  "grade": "",
+  "takhrij": "",
+  "syarah_ar": ""
 }

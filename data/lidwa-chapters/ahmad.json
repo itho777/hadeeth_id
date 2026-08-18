@@ -1,85 +1,162 @@
 {
   "book_id": "ahmad",
-  "title_id_source": "Lidwa / Irsyad (irsyadulibad.com)",
-  "title_en_source": "AhmedBaset (partial, 7 of 8 musnad sections matched)",
-  "title_ar_source": "fawazahmed0-CDN",
+  "title_id_source": "Native Lidwa Database",
+  "title_en_source": "Native Lidwa Database (ID fallback)",
+  "title_ar_source": "Native Lidwa Database",
   "chapters": [
     {
       "id": "ahmad_c1",
       "book_id": "ahmad",
       "chapter_number": 1,
-      "title_en": "Musnad Abu Bakr as-Siddiq (ra)",
-      "title_ar": "مُسْنَدُ أَبِي بَكْرٍ الصِّدِّيقِ رَضِيَ اللَّهُ عَنْهُ",
-      "title_id": "Musnad Abu Bakr as-Shiddiq RA",
+      "title_en": "Musnad sepuluh sahabat yang dijamin masuk surga",
+      "title_ar": " مسند العشرة المبشرين بالجنة",
+      "title_id": "Musnad sepuluh sahabat yang dijamin masuk surga",
       "hadith_start": 1,
-      "hadith_end": 81,
-      "hadith_count": 77
+      "hadith_end": 1608,
+      "hadith_count": 1608
     },
     {
       "id": "ahmad_c2",
       "book_id": "ahmad",
       "chapter_number": 2,
-      "title_en": "Musnad `Umar b. al-Khattab (ra)",
-      "title_ar": "مُسْنَدِ عُمَرَ بْنِ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ",
-      "title_id": "Musnad Umar bin al-Khaththab RA",
-      "hadith_start": 82,
-      "hadith_end": 390,
-      "hadith_count": 291
+      "title_en": "Musnad sahabat setelah sepuluh sahabat yang dijamin masuk surga",
+      "title_ar": " مسند الصحابة بعد العشرة",
+      "title_id": "Musnad sahabat setelah sepuluh sahabat yang dijamin masuk surga",
+      "hadith_start": 1609,
+      "hadith_end": 1624,
+      "hadith_count": 16
     },
     {
       "id": "ahmad_c3",
       "book_id": "ahmad",
       "chapter_number": 3,
-      "title_en": "The Hadeeth of Saqeefah",
-      "title_ar": "حَدِيثُ السَّقِيفَةِ",
-      "title_id": "Hadits Saqifah",
-      "hadith_start": 391,
-      "hadith_end": 398,
-      "hadith_count": 8
+      "title_en": "Musnad ahli bait ",
+      "title_ar": " مسند أهل البيت",
+      "title_id": "Musnad ahli bait ",
+      "hadith_start": 1625,
+      "hadith_end": 1670,
+      "hadith_count": 46
     },
     {
       "id": "ahmad_c4",
       "book_id": "ahmad",
       "chapter_number": 4,
-      "title_en": "Musnad Uthman ibn Affan",
-      "title_ar": "مُسْنَدُ عُثْمَانَ بْنِ عَفَّانَ رَضِيَ اللَّهُ عَنْهُ",
-      "title_id": "Musnad Utsman bin Affan RA",
-      "hadith_start": 399,
-      "hadith_end": 561,
-      "hadith_count": 152
+      "title_en": "Dari musnad Bani Hasyim",
+      "title_ar": " ومن مسند بني هاشم",
+      "title_id": "Dari musnad Bani Hasyim",
+      "hadith_start": 1671,
+      "hadith_end": 3366,
+      "hadith_count": 1696
     },
     {
       "id": "ahmad_c5",
       "book_id": "ahmad",
       "chapter_number": 5,
-      "title_en": "Musnad 'Ali Ibn Abi Talib",
-      "title_ar": "وَمِنْ مُسْنَدِ عَلِيِّ بْنِ أَبِي طَالِبٍ رَضِيَ اللَّهُ عَنْهُ",
-      "title_id": "Musnad Ali bin Abi Thalib RA",
-      "hadith_start": 562,
-      "hadith_end": 1380,
-      "hadith_count": 778
+      "title_en": "Musnad sahabat yang banyak meriwayatkan hadits ",
+      "title_ar": " مسند المكثرين من الصحابة",
+      "title_id": "Musnad sahabat yang banyak meriwayatkan hadits ",
+      "hadith_start": 3367,
+      "hadith_end": 6821,
+      "hadith_count": 3455
     },
     {
       "id": "ahmad_c6",
       "book_id": "ahmad",
       "chapter_number": 6,
-      "title_en": "Musnad of Abu Muhammad Talhah bin 'Ubaidullah",
-      "title_ar": "مُسْنَدُ أَبِي مُحَمَّدٍ طَلْحَةَ بْنِ عُبَيْدِ اللَّهِ رَضِيَ اللَّهُ تَعَالَى عَنْهُ",
-      "title_id": "Musnad Thalhah bin Ubaidillah RA",
-      "hadith_start": 1381,
-      "hadith_end": 1404,
-      "hadith_count": 22
+      "title_en": "Sisa Musnad sahabat yang banyak meriwayatkan hadits ",
+      "title_ar": " باقي مسند المكثرين",
+      "title_id": "Sisa Musnad sahabat yang banyak meriwayatkan hadits ",
+      "hadith_start": 6822,
+      "hadith_end": 14760,
+      "hadith_count": 7939
     },
     {
       "id": "ahmad_c7",
       "book_id": "ahmad",
       "chapter_number": 7,
-      "title_en": "The Musnad of az-Zubair bin al-'Awwam",
-      "title_ar": "مُسْنَدُ الزُّبَيْرِ بْنِ الْعَوَّامِ رَضِيَ اللَّهُ عَنْهُ",
-      "title_id": "Musnad az-Zubair bin al-Awwam RA",
-      "hadith_start": 1405,
-      "hadith_end": 1438,
-      "hadith_count": 31
+      "title_en": "Musnad penduduk Makkah",
+      "title_ar": " مسند المكيين",
+      "title_id": "Musnad penduduk Makkah",
+      "hadith_start": 14761,
+      "hadith_end": 15507,
+      "hadith_count": 747
+    },
+    {
+      "id": "ahmad_c8",
+      "book_id": "ahmad",
+      "chapter_number": 8,
+      "title_en": "Musnad penduduk Madinah",
+      "title_ar": "مسند المدنيين",
+      "title_id": "Musnad penduduk Madinah",
+      "hadith_start": 15508,
+      "hadith_end": 16208,
+      "hadith_count": 701
+    },
+    {
+      "id": "ahmad_c9",
+      "book_id": "ahmad",
+      "chapter_number": 9,
+      "title_en": "Musnad penduduk Syam",
+      "title_ar": " مسند الشاميين",
+      "title_id": "Musnad penduduk Syam",
+      "hadith_start": 16209,
+      "hadith_end": 17393,
+      "hadith_count": 1185
+    },
+    {
+      "id": "ahmad_c10",
+      "book_id": "ahmad",
+      "chapter_number": 10,
+      "title_en": "Musnad penduduk Kufah",
+      "title_ar": "مسند الكوفيين",
+      "title_id": "Musnad penduduk Kufah",
+      "hadith_start": 17394,
+      "hadith_end": 18926,
+      "hadith_count": 1533
+    },
+    {
+      "id": "ahmad_c11",
+      "book_id": "ahmad",
+      "chapter_number": 11,
+      "title_en": "Musnad penduduk Bashrah",
+      "title_ar": "مسند البصريين",
+      "title_id": "Musnad penduduk Bashrah",
+      "hadith_start": 18927,
+      "hadith_end": 20171,
+      "hadith_count": 1245
+    },
+    {
+      "id": "ahmad_c12",
+      "book_id": "ahmad",
+      "chapter_number": 12,
+      "title_en": "Musnad sahabat Anshar",
+      "title_ar": "مسند الأنصار",
+      "title_id": "Musnad sahabat Anshar",
+      "hadith_start": 20172,
+      "hadith_end": 21119,
+      "hadith_count": 948
+    },
+    {
+      "id": "ahmad_c13",
+      "book_id": "ahmad",
+      "chapter_number": 13,
+      "title_en": "Sisa musnad sahabat Anshar",
+      "title_ar": " باقي مسند الأنصار",
+      "title_id": "Sisa musnad sahabat Anshar",
+      "hadith_start": 21120,
+      "hadith_end": 25900,
+      "hadith_count": 4781
+    },
+    {
+      "id": "ahmad_c14",
+      "book_id": "ahmad",
+      "chapter_number": 14,
+      "title_en": "Musnad dari beberapa kabilah",
+      "title_ar": "مسند القبائل",
+      "title_id": "Musnad dari beberapa kabilah",
+      "hadith_start": 25901,
+      "hadith_end": 26363,
+      "hadith_count": 463
     }
   ]
 }

@@ -1,24 +1,6 @@
 {
-  "id": 29,
   "book_id": "bukhari",
-  "hadith_number": 10,
-  "source_name_ar": null,
-  "source_name_en": "Fath al-Bari by Ibn Hajar al-Asqalani",
-  "source_name_id": null,
-  "explanation_ar": "يوضح الحافظ ابن حجر في «فتح الباري» أن المراد بـ «المسلم» في هذا الحديث هو المسلم الكامل الذي تحقق فيه كمال الإسلام، وتخصيص اللسان واليد بالذكر لأنهما أصل معظم الأضرار والتعديات؛ فاللسان يعبر عن القول كالغيبة والنميمة، واليد تعبر عن الفعل كالضرب والأخذ بغير حق. كما بين أن «المهاجر» الحقيقي ليس فقط من هجر البلدان، بل من هجر الذنوب والمعاصي وما نهى الله عنه، وهذه هي الهجرة المعنوية الدائمة التي تلزم كل مسلم في كل زمان ومكان.",
-  "explanation_en": "In 'Fath al-Bari', Al-Hafiz Ibn Hajar explains that 'the Muslim' mentioned here refers to the complete or ideal Muslim who has attained perfection in his faith. The Prophet (ﷺ) specifically highlighted the tongue and the hand because most transgressions originate from them—the tongue representing verbal harm (such as backbiting and slander) and the hand representing physical or material harm. Furthermore, the true 'Muhajir' (emigrant) is not merely one who migrates physically from one land to another, but the one who spiritually abandons sins and all prohibitions set by Allah.",
-  "explanation_id": "Dalam 'Fathul Bari', Al-Hafiz Ibn Hajar menjelaskan bahwa kata 'seorang Muslim' yang dimaksud di sini adalah Muslim yang sempurna keIslamannya. Penyebutan lisan dan tangan secara khusus disebabkan sebagian besar gangguan dan kezaliman bersumber dari keduanya; lisan mewakili perkataan (seperti ghibah dan fitnah) sedangkan tangan mewakili perbuatan fisik maupun perampasan hak. Selain itu, 'Muhajir' (orang yang berhijrah) sejati bukan hanya orang yang berpindah tempat secara fisik, melainkan orang yang meninggalkan dosa, kemaksiatan, dan segala apa yang dilarang oleh Allah SWT.",
-  "benefits_en": [
-    "Perfection of Islam is tied to good conduct and refraining from harming others.",
-    "The tongue and hands are specified as they are the primary means of causing injury and injustice.",
-    "Spiritual migration—abandoning sins and disobedience—is a continuous duty required of every believer.",
-    "Protection of a Muslim's blood, property, and honor is a fundamental principle in Islam."
-  ],
-  "benefits_id": [
-    "Kesempurnaan Islam seseorang diukur dari akhlak dan kemampuannya menjaga orang lain dari gangguannya.",
-    "Lisan dan tangan merupakan dua anggota tubuh utama yang paling sering menjadi sarana berbuat zalim.",
-    "Hijrah secara makna (meninggalkan maksiat dan larangan Allah) adalah kewajiban yang terus berlaku bagi setiap Muslim.",
-    "Pentingnya menjaga kehormatan, jiwa, dan harta sesama Muslim."
-  ],
-  "hadith_id": "bukhari_10"
+  "anchor_id": "10",
+  "source": "Dorar",
+  "syarah_ar": "Not Available"
 }

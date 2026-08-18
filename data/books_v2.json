@@ -16,7 +16,8 @@
       "ara-bukhari",
       "eng-bukhari",
       "ind-bukhari"
-    ]
+    ],
+    "total_hadiths_lidwa": 7008
   },
   {
     "id": "muslim",
@@ -35,7 +36,8 @@
       "ara-muslim",
       "eng-muslim",
       "ind-muslim"
-    ]
+    ],
+    "total_hadiths_lidwa": 5362
   },
   {
     "id": "abudawud",
@@ -54,7 +56,8 @@
       "ara-abudawud",
       "eng-abudawud",
       "ind-abudawud"
-    ]
+    ],
+    "total_hadiths_lidwa": 5274
   },
   {
     "id": "tirmidhi",
@@ -73,7 +76,8 @@
       "ara-tirmidhi",
       "eng-tirmidhi",
       "ind-tirmidhi"
-    ]
+    ],
+    "total_hadiths_lidwa": 3956
   },
   {
     "id": "nasai",
@@ -92,7 +96,8 @@
       "ara-nasai",
       "eng-nasai",
       "ind-nasai"
-    ]
+    ],
+    "total_hadiths_lidwa": 5662
   },
   {
     "id": "ibnmajah",
@@ -111,7 +116,8 @@
       "ara-ibnmajah",
       "eng-ibnmajah",
       "ind-ibnmajah"
-    ]
+    ],
+    "total_hadiths_lidwa": 4341
   },
   {
     "id": "malik",
@@ -130,7 +136,8 @@
       "ara-malik",
       "eng-malik",
       "ind-malik"
-    ]
+    ],
+    "total_hadiths_lidwa": 1594
   },
   {
     "id": "darimi",
@@ -149,7 +156,8 @@
       "ara-darimi",
       "eng-darimi",
       "ind-darimi"
-    ]
+    ],
+    "total_hadiths_lidwa": 3367
   },
   {
     "id": "ahmad",
@@ -168,7 +176,8 @@
       "ara-ahmad",
       "eng-ahmad",
       "ind-ahmad"
-    ]
+    ],
+    "total_hadiths_lidwa": 26363
   },
   {
     "id": "nawawi",
@@ -331,5 +340,37 @@
     "editions": [
       "ara-tabarani"
     ]
+  },
+  {
+    "id": "syafii",
+    "title_ar": "مسند الشافعي",
+    "title_en": "Musnad al-Shafi'i",
+    "title_id": "Musnad Syafi'i",
+    "author_ar": "الإمام الشافعي",
+    "author_en": "Imam al-Shafi'i",
+    "author_id": "Imam Syafi'i",
+    "death_year_ah": 204,
+    "total_hadiths": 1800,
+    "total_chapters": 0,
+    "grade_summary": "Varies",
+    "order_index": 19,
+    "editions": [],
+    "total_hadiths_lidwa": 1800
+  },
+  {
+    "id": "riyad_arab",
+    "title_ar": "رياض الصالحين (عربي)",
+    "title_en": "Riyad as-Salihin (Arabic)",
+    "title_id": "Riyadhus Shalihin (Arab)",
+    "author_ar": "الإمام النووي",
+    "author_en": "Imam an-Nawawi",
+    "author_id": "Imam an-Nawawi",
+    "death_year_ah": 676,
+    "total_hadiths": 850,
+    "total_chapters": 0,
+    "grade_summary": "Varies",
+    "order_index": 20,
+    "editions": [],
+    "total_hadiths_lidwa": 850
   }
 ]

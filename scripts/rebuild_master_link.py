@@ -51,21 +51,24 @@ def rebuild_master_link():
             f_to_ab = links_data.get('fawaz_to_ab', {})
             f_to_rawis = links_data.get('fawaz_to_rawis', {})
             
-            # Load Lidwa to get hnum
+            # Load Lidwa to get hnum and rawis
             lidwa_hnums = {}
+            lidwa_rawis = {}
             lidwa_path = os.path.join(SOURCES_DIR, "lidwa", f"{book_id}.json")
             if os.path.exists(lidwa_path):
                 with open(lidwa_path, 'r', encoding='utf-8') as f:
                     ld = json.load(f)
                     for r in ld:
-                        lidwa_hnums[str(r.get('id', ''))] = str(r.get('hadith_number', r.get('id')))
+                        l_id = str(r.get('id', ''))
+                        lidwa_hnums[l_id] = str(r.get('hadith_number', l_id))
+                        lidwa_rawis[l_id] = r.get('kaggle_narrators', [])
                         
             for row in fawaz_data:
                 fawaz_id = str(row.get('hadithnumber', row.get('id')))
                 lidwa_id = f_to_l.get(fawaz_id)
                 lidwa_hnum = lidwa_hnums.get(str(lidwa_id)) if lidwa_id else None
                 ab_id = f_to_ab.get(fawaz_id)
-                rawis = f_to_rawis.get(fawaz_id, [])
+                rawis = lidwa_rawis.get(str(lidwa_id), []) if lidwa_id else []
                 
                 master_link[book_id][fawaz_id] = {
                     "anchor_source": "fawazahmed0",
