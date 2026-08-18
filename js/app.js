@@ -2931,9 +2931,10 @@ async function loadSanadChain() {
   else if (activeDataset === 'native_ahmedbaset') dsPrefix = 'ab';
 
   let narrators = [];
+  let data = null;
   try {
     const rawisDict = await window.HadeethAPI.getActiveRawis();
-    const data = await window.HadeethAPI.getHadith(bookId, hadithNum, dsPrefix);
+    data = await window.HadeethAPI.getHadith(bookId, hadithNum, dsPrefix);
     
     if (data && data.rawis && data.rawis.length > 0) {
       let rawiList = data.rawis.slice().reverse();
@@ -3155,9 +3156,11 @@ async function loadSanadChain() {
   if (countEl) countEl.innerHTML = `<span data-lang-en>${filteredNarrators.length} Transmitters</span><span data-lang-id style="display:none">${filteredNarrators.length} Perawi</span>`;
   if (statusEl) statusEl.innerHTML = `<span data-lang-en>Connected (Muttasil)</span><span data-lang-id style="display:none">Bersambung (Muttashil)</span>`;
   if (elevatedEl) {
-    const gradeEn = data.grade_en || data.grade || 'Sahih';
-    const gradeId = data.grade_id || 'Shahih';
-    elevatedEl.innerHTML = `<span data-lang-en>${escapeHtml(gradeEn)}</span><span data-lang-id style="display:none">${escapeHtml(gradeId)}</span>`;
+          if (data && data.grade) {
+            elevatedEl.innerHTML = `<span data-lang-en>${escapeHtml(data.grade_en || data.grade || 'Sahih')}</span><span data-lang-id style="display:none">${escapeHtml(data.grade_id || 'Shahih')}</span>`;
+          } else {
+            elevatedEl.innerHTML = `<span data-lang-en>Sahih</span><span data-lang-id style="display:none">Shahih</span>`;
+          }
   }
   
   if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
@@ -3340,7 +3343,7 @@ function getArabicScriptForRawi(latinOrAr) {
   }
 
   // Remove broken word-by-word Arabic Transliteration engine for unmapped narrators
-  return 'أحد الرواة';
+  return '';
 }
 
 /**
