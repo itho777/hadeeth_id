@@ -3287,113 +3287,19 @@ function getIndonesianRawiName(name, rawiId, arName) {
  * Helper to get true Arabic script name for Rawi/Scholar
  */
 function getArabicScriptForRawi(latinOrAr) {
-  if (!latinOrAr) return 'أحد الرواة';
+  if (!latinOrAr) return '';
 
   let rawStr = typeof latinOrAr === 'string' ? latinOrAr : (latinOrAr.ar || latinOrAr.name_ar || latinOrAr.name || '');
 
-  // 1. If raw text contains pure Arabic script and ZERO Latin characters, return it immediately!
-  if (/[\u0600-\u06FF]/.test(rawStr) && !/[a-zA-Z]/.test(rawStr)) {
-    return rawStr.trim();
+  // 1. If raw text contains Arabic script, return the Arabic parts.
+  if (/[\u0600-\u06FF]/.test(rawStr)) {
+    const arabicParts = rawStr.match(/[\u0600-\u06FF\s]+/g);
+    if (arabicParts) {
+        return arabicParts.join(' ').trim();
+    }
   }
 
-  const normKey = normalizeRawiNameKey(rawStr);
-
-  const map = {
-    "umar bin al khaththab": "عمر بن الخطاب",
-    "umar bin al khattab": "عمر بن الخطاب",
-    "umar bin al-khattab": "عمر بن الخطاب",
-    "umar bin al-khaththab": "عمر بن الخطاب",
-    "alqamah bin waqash al laitsi": "علقمة بن وقاص الليثي",
-    "alqamah bin waqqash al laitsi": "علقمة بن وقاص الليثي",
-    "alqama bin waqqas al laythi": "علقمة بن وقاص الليثي",
-    "alqama bin waqqas": "علقمة بن وقاص الليثي",
-    "alqamah bin waqqas": "علقمة بن وقاص الليثي",
-    "alqamah bin waqqash": "علقمة بن وقاص الليثي",
-    "al humaidi abdullah bin az zubair": "عبد الله بن الزبير الحميدي",
-    "abdullah bin az-zubair al-humaydi": "عبد الله بن الزبير الحميدي",
-    "al-humaydi": "الحميدي",
-    "al humaydi": "الحميدي",
-    "qutaibah bin said": "قتيبة بن سعيد",
-    "qutaibah bin sa'id": "قتيبة بن سعيد",
-    "qutaybah bin said": "قتيبة بن سعيد",
-    "abdullah bin dinar": "عبد الله بن دينار",
-    "ismail bin jafar": "إسماعيل بن جعفر",
-    "ismail bin ja'far": "إسماعيل بن جعفر",
-    "sulaiman bin harb": "سليمان بن حرب",
-    "atho bin yasar": "عطاء بن يسار",
-    "atho' bin yasar": "عطاء بن يسار",
-    "ata bin yasar": "عطاء بن يسار",
-    "ata' bin yasar": "عطاء بن يسار",
-    "hilal bin ali": "هلال بن علي",
-    "hilal bin abi maimunah": "هلال بن علي بن أسامة",
-    "aisyah": "عائشة بنت أبي بكر",
-    "aisha": "عائشة بنت أبي بكر",
-    "hafsyah": "حفصة",
-    "hafshah": "حفصة",
-    "ma'mar": "معمر",
-    "mamar": "معمر",
-    "abdur razaq": "عبد الرزاق",
-    "abdur razaaq": "عبد الرزاق",
-    "abdurrazaq": "عبد الرزاق",
-    "mahmud": "محمود",
-    "hisyam": "هشام",
-    "salim": "سالم",
-    "abdullah bin muhammad": "عبد الله بن محمد",
-    "az zuhriy": "الزهري",
-    "az-zuhriy": "الزهري",
-    "az zuhri": "الزهري",
-    "ibnu syihab": "ابن شهاب",
-    "ibnu syihab az-zuhri": "ابن شهاب الزهري",
-    "abdurrahman bin al qasim": "عبد الرحمن بن القاسم",
-    "abdurrahman bin al-qasim": "عبد الرحمن بن القاسم",
-    "abdurrahman bin qasim": "عبد الرحمن بن القاسم",
-    "abdullah bin yusuf": "عبد الله بن يوسف التنيسي",
-    "al-tinnisi": "عبد الله بن يوسف التنيسي",
-    "yusuf": "عبد الله بن يوسف التنيسي",
-    "al qasim": "القاسم بن محمد بن أبي بكر",
-    "al-qasim": "القاسم بن محمد بن أبي بكر",
-    "qasim": "القاسم بن محمد بن أبي بكر",
-    "al a'raj": "الأعرج",
-    "al-a'raj": "الأعرج",
-    "al araj": "الأعرج",
-    "abu az zanad": "أبو الزناد",
-    "abu az-zanad": "أبو الزناد",
-    "abu zanad": "أبو الزناد",
-    "abu hurairah": "أبو هريرة",
-    "abu huraira": "أبو هريرة",
-    "sufyan bin 'uyaynah": "سفيان بن عيينة",
-    "sufyan bin uyainah": "سفيان بن عيينة",
-    "yahya bin sa'id": "يحيى بن سعيد الأنصاري",
-    "muhammad bin ibrahim": "محمد بن إبراهيم التيمي",
-    "aisha bint abi bakr": "عائشة بنت أبي بكر",
-    "aisyah binti abu bakar": "عائشة بنت أبي بكر",
-    "ibn umar": "عبد الله بن عمر",
-    "ibnu umar": "عبد الله بن عمر",
-    "ibn abbas": "عبد الله بن عباس",
-    "anas bin malik": "أنس بن مالك",
-    "ikrimah": "عكرمة بن خالد",
-    "hanzhalah": "حنظلة بن أبي سفيان",
-    "malik bin anas": "مالك بن أنس",
-    "imam malik": "مالك بن أنس",
-    "sa'id bin jubair": "سعيد بن جبير",
-    "nafi'": "نافع مولي ابن عمر",
-    "nafi": "نافع",
-    "salim": "سالم بن عبد الله",
-    "urwah": "عروة بن الزبير",
-    "abu salama": "أبو سلمة بن عبد الرحمن",
-    "amr bin dinar": "عمرو بن دينار",
-    "amru bin dinar": "عمرو بن دينار",
-    "al-zuhri": "ابن شهاب الزهري",
-    "az-zuhri": "ابن شهاب الزهري",
-    "zuhri": "ابن شهاب الزهري"
-  };
-
-  for (const [k, v] of Object.entries(map)) {
-    const kNorm = normalizeRawiNameKey(k);
-    if (normKey.includes(kNorm) || kNorm.includes(normKey)) return v;
-  }
-
-  // Remove broken word-by-word Arabic Transliteration engine for unmapped narrators
+  // If it reached here, there are no Arabic characters in the string.
   return '';
 }
 
