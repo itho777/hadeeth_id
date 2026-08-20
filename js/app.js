@@ -102,7 +102,7 @@ const UI_I18N = {
     chain_of_narrators: "Chain of Narration (Sanad)",
     full_sanad_graph: "View Full Interactive Sanad Graph →",
     role_sahabi: "Sahabi (Companion)",
-    footer_text: "© 2026 HADEETH.ID - Digital Manuscript Preservation"
+    footer_text: "© 2026 hadeeth.id - Digital Hadith Manuscript Preservation"
   },
   id: {
     nav_books: "Kitab",
@@ -141,7 +141,7 @@ const UI_I18N = {
     chain_of_narrators: "Rantai Perawi (Sanad)",
     full_sanad_graph: "Lihat Grafik Interaktif Sanad Lengkap →",
     role_sahabi: "Sahabat",
-    footer_text: "© 2026 HADEETH.ID - Pelestarian Manuskrip Digital"
+    footer_text: "© 2026 hadeeth.id - Pelestarian Manuskrip Hadits Digital"
   }
 };
 
