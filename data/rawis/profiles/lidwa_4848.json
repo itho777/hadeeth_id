@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4848",
+  "name_en": "Abdullah bin Sulaiman bin Zur'ah",
+  "name_id": "Abdullah bin Sulaiman bin Zur'ah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "136 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Hamzah",
+  "parents": "Al Humairiy Al Mishriy",
+  "nasab": "Al Humairiy Al Mishriy",
+  "laqob": "Ath Thawil",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

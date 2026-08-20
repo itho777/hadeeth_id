@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6114",
+  "name_en": "Amru bin Hammad binThalhah",
+  "name_id": "Amru bin Hammad binThalhah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "222 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Kufiy",
+  "nasab": "Al Kufiy",
+  "laqob": "Al Qannad",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

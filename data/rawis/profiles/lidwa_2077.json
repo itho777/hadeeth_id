@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2077",
+  "name_en": "Jariyah bin Zhafar",
+  "name_id": "Jariyah bin Zhafar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Nimran",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_982",
+  "name_en": "Isra'il bin Yunus bin Abi Ishaq",
+  "name_id": "Isra'il bin Yunus bin Abi Ishaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "160 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Yusuf",
+  "parents": "As Subay'iy Al Hamdaniy",
+  "nasab": "As Subay'iy Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "831",
+  "book_counts": {
+    "bukhari": 79,
+    "muslim": 16,
+    "abudaud": 46,
+    "tirmidzi": 88,
+    "nasai": 35,
+    "ibnumajah": 44,
+    "ahmad": 465,
+    "malik": 0,
+    "darimi": 58
+  }
+}

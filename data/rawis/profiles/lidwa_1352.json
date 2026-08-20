@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1352",
+  "name_en": "Al Husain bin Manshur bin Ja'far",
+  "name_id": "Al Husain bin Manshur bin Ja'far",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "238 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Ali",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 20,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "rawi_ibn_umar",
+  "name_en": "Ibnu 'Umar",
+  "name_id": "Ibnu Umar",
+  "name_ar": "عبد الله بن عمر",
+  "is_sahabi": "true",
+  "generation": "Sahabi (Companion)",
+  "grade": "Sahabi Adl",
+  "died_ah": "73",
+  "died_ce": "693",
+  "hadith_count": "2630",
+  "city_of_death": "Madinah",
+  "bio_en": "Son of Umar bin al-Khattab, eminent jurist and meticulous follower of Sunnah.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 790,
+    "muslim": 567,
+    "abudaud": 361,
+    "tirmidzi": 305,
+    "nasai": 565,
+    "ibnumajah": 364,
+    "ahmad": 2125,
+    "malik": 341,
+    "darimi": 186
+  }
+}

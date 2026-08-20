@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_681",
+  "name_en": "Ummu Ma'qil",
+  "name_id": "Ummu Ma'qil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Ma'qil",
+  "parents": "Al Asadiyyah",
+  "nasab": "Al Asadiyyah",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 1
+  }
+}

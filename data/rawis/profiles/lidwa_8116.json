@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8116",
+  "name_en": "Wasi' bin Habban bin Munqidz",
+  "name_id": "Wasi' bin Habban bin Munqidz",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy Al Maziniy",
+  "nasab": "Al Anshariy Al Maziniy",
+  "laqob": "-",
+  "hadith_count": "45",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 3,
+    "abudaud": 3,
+    "tirmidzi": 4,
+    "nasai": 5,
+    "ibnumajah": 2,
+    "ahmad": 18,
+    "malik": 2,
+    "darimi": 4
+  }
+}

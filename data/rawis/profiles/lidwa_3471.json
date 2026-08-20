@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3471",
+  "name_en": "Salm bin Zawir",
+  "name_id": "Salm bin Zawir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bisyir",
+  "parents": "Al 'Atharidiy",
+  "nasab": "Al 'Atharidiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

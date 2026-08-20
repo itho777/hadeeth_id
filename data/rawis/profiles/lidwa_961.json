@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_961",
+  "name_en": "Ishaq bin 'Umar bin Salith ",
+  "name_id": "Ishaq bin 'Umar bin Salith ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "229 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Al Hadzaliy",
+  "nasab": "Al Hadzaliy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

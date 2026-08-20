@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_647",
+  "name_en": "Ummu 'Utsman binti Sufyan",
+  "name_id": "Ummu 'Utsman binti Sufyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Ummu 'utsman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

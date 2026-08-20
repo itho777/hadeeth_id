@@ -66,55 +66,48 @@ def fetch_explanation(scraper, xplain_id):
         }
         
         sharh_content = soup.find('div', id='sharh-text-content')
-        if sharh_content:
-            first_div = sharh_content.find('div')
-            if first_div:
-                text_div = first_div.find('div')
-                if text_div:
-                    result["hadith_ar"] = text_div.get_text(strip=True)
+        if not sharh_content:
+            return result
+            
+        metadata_spans = []
+        for span in sharh_content.find_all('span'):
+            classes = span.get('class', [])
+            if '#ae8422' in classes or span.get('style', '') == 'color: #ae8422':
+                metadata_spans.append(span)
+                prev = span.previous_sibling
+                if prev and isinstance(prev, str):
+                    if "الراوي" in prev: result["rawi"] = span.get_text(strip=True)
+                    if "المحدث" in prev and "خلاصة" not in prev: result["muhaddith"] = span.get_text(strip=True)
+                    if "المصدر" in prev: result["masdar"] = span.get_text(strip=True)
+                    if "خلاصة" in prev: result["grade"] = span.get_text(strip=True)
                     
-            for span in sharh_content.find_all('span'):
-                classes = span.get('class', [])
-                if '#ae8422' in classes or span.get('style', '') == 'color: #ae8422':
-                    prev = span.previous_sibling
-                    if prev and isinstance(prev, str):
-                        if "الراوي" in prev: result["rawi"] = span.get_text(strip=True)
-                        if "المحدث" in prev and "خلاصة" not in prev: result["muhaddith"] = span.get_text(strip=True)
-                        if "المصدر" in prev: result["masdar"] = span.get_text(strip=True)
-                        if "خلاصة" in prev: result["grade"] = span.get_text(strip=True)
-                        
-            takhrij_p = sharh_content.find('p')
-            if takhrij_p and "التخريج" in takhrij_p.get_text():
-                span = takhrij_p.find('span')
+        takhrij_p = None
+        for p in sharh_content.find_all(['p', 'div']):
+            if "التخريج" in p.get_text() and len(p.get_text()) < 100:
+                takhrij_p = p
+                span = p.find('span')
                 if span:
                     result["takhrij"] = span.get_text(strip=True)
-            
-            if first_div:
-                syarah_parts = []
-                for sibling in first_div.next_siblings:
-                    if sibling.name:
-                        syarah_parts.append(sibling.get_text(separator='\n\n', strip=True))
-                    elif str(sibling).strip():
-                        syarah_parts.append(str(sibling).strip())
-                result["syarah_ar"] = "\n\n".join(filter(None, syarah_parts))
+                break
                 
-            return result
+        html_content = str(sharh_content)
         
-        # Fallback to old logic
-        tj = soup.find('div', class_='text-justify')
-        if tj:
-            ns = tj.find_next_sibling()
-            if ns:
-                full_text = ns.get_text(separator='\n\n', strip=True)
-                parts = full_text.split('التخريج :')
-                if len(parts) > 1:
-                    lines = parts[-1].split('\n\n')
-                    sharh_text = "\n\n".join(lines[1:]).strip()
-                    if not sharh_text:
-                        sharh_text = parts[-1].strip()
-                    result["syarah_ar"] = sharh_text
-                else:
-                    result["syarah_ar"] = full_text
+        if metadata_spans:
+            before_span = html_content.split(str(metadata_spans[0]))[0]
+            t = BeautifulSoup(before_span, 'html.parser').get_text(separator=' ', strip=True)
+            for kw in ['الراوي :', 'المحدث :', 'المصدر :', 'خلاصة حكم المحدث :', 'التخريج :', 'الصفحة أو الرقم :']:
+                if t.endswith(kw):
+                    t = t[:-len(kw)].strip()
+                t = t.replace(kw, '')
+            result["hadith_ar"] = t.strip()
+            
+        last_marker = takhrij_p if takhrij_p else (metadata_spans[-1] if metadata_spans else None)
+        if last_marker:
+            after_marker = html_content.split(str(last_marker))[-1]
+            t = BeautifulSoup(after_marker, 'html.parser').get_text(separator='\n\n', strip=True)
+            if t.startswith(':'): t = t[1:].strip()
+            if t: result["syarah_ar"] = t.strip()
+            
         return result
     except Exception as e:
         logging.error(f"Fetch explanation failed: {e}")
@@ -132,12 +125,17 @@ def scrape_syarah():
         print(f"\n[*] Processing {book_id}...")
         
         # Determine if Anchor is Fawaz or AhmedBaset
-        fawaz_path = os.path.join(FAWAZ_DIR, f"ara-{book_id}.json")
+        fawaz_path_ndjson = os.path.join(FAWAZ_DIR, f"ara-{book_id}.ndjson")
+        fawaz_path_json = os.path.join(FAWAZ_DIR, f"ara-{book_id}.json")
         anchor_data = []
         is_fawaz = False
         
-        if os.path.exists(fawaz_path):
-            with open(fawaz_path, 'r', encoding='utf-8') as f:
+        if os.path.exists(fawaz_path_ndjson):
+            with open(fawaz_path_ndjson, 'r', encoding='utf-8') as f:
+                anchor_data = [json.loads(line) for line in f if line.strip()]
+                is_fawaz = True
+        elif os.path.exists(fawaz_path_json):
+            with open(fawaz_path_json, 'r', encoding='utf-8') as f:
                 fd = json.load(f)
                 anchor_data = fd.get('hadiths', []) if isinstance(fd, dict) else fd
                 is_fawaz = True

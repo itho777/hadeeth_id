@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1295",
+  "name_en": "Al Hasan bin Muhammad bin A'yan",
+  "name_id": "Al Hasan bin Muhammad bin A'yan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan biasa",
+  "grade": "4",
+  "died_ah": "210 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Ali",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "53",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 36,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 14,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

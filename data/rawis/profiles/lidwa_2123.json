@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2123",
+  "name_en": "Jarir bin 'Abdullah bin Jabir",
+  "name_id": "Jarir bin 'Abdullah bin Jabir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "51 H",
+  "city_of_death": "Qudaid",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Amru",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "229",
+  "book_counts": {
+    "bukhari": 32,
+    "muslim": 25,
+    "abudaud": 11,
+    "tirmidzi": 14,
+    "nasai": 24,
+    "ibnumajah": 12,
+    "ahmad": 104,
+    "malik": 0,
+    "darimi": 7
+  }
+}

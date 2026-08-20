@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7591",
+  "name_en": "Mu'awiyah bin Qurrah bin Iyas bin Hilal",
+  "name_id": "Mu'awiyah bin Qurrah bin Iyas bin Hilal",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "113 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Iyas",
+  "parents": "Al Muzaniy",
+  "nasab": "Al Muzaniy",
+  "laqob": "-",
+  "hadith_count": "96",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 7,
+    "abudaud": 6,
+    "tirmidzi": 5,
+    "nasai": 4,
+    "ibnumajah": 8,
+    "ahmad": 45,
+    "malik": 0,
+    "darimi": 12
+  }
+}

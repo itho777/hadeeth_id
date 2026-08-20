@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1417",
+  "name_en": "Ar Rabi' bin Muslim",
+  "name_id": "Ar Rabi' bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 12,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

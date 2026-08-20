@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7481",
+  "name_en": "Muslim bin Kaisan",
+  "name_id": "Muslim bin Kaisan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Adl Dlabbiy Al Mula'iy",
+  "nasab": "Adl Dlabbiy Al Mula'iy",
+  "laqob": "Al A'war",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7433",
+  "name_en": "Mis'ar bin Kidam bin Zhuhair",
+  "name_id": "Mis'ar bin Kidam bin Zhuhair",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "153 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Salamah",
+  "parents": "Al Hilaliy Al 'Amiriy",
+  "nasab": "Al Hilaliy Al 'Amiriy",
+  "laqob": "Al Mushhaf",
+  "hadith_count": "287",
+  "book_counts": {
+    "bukhari": 26,
+    "muslim": 36,
+    "abudaud": 22,
+    "tirmidzi": 11,
+    "nasai": 31,
+    "ibnumajah": 23,
+    "ahmad": 126,
+    "malik": 0,
+    "darimi": 12
+  }
+}

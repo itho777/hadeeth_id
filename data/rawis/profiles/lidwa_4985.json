@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4985",
+  "name_en": "Abdullah bin 'Amru bin 'Utsman bin 'Affan",
+  "name_id": "Abdullah bin 'Amru bin 'Utsman bin 'Affan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "96 H",
+  "city_of_death": "Maru",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al Umawiy",
+  "nasab": "Al Qurasyiy Al Umawiy",
+  "laqob": "Al Mutharrif",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 1,
+    "darimi": 0
+  }
+}

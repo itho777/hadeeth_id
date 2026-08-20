@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2028",
+  "name_en": "Tsabit bin Muhammad",
+  "name_id": "Tsabit bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "215 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

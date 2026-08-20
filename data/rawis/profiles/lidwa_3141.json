@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3141",
+  "name_en": "Zaid bin Sallam bin Abi Salam Mamthur",
+  "name_id": "Zaid bin Sallam bin Abi Salam Mamthur",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Habasyiy",
+  "nasab": "Al Habasyiy",
+  "laqob": "-",
+  "hadith_count": "53",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 8,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 32,
+    "malik": 0,
+    "darimi": 2
+  }
+}

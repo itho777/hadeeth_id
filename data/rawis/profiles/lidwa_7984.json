@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7984",
+  "name_en": "Harun bin 'Antarah bin 'Abdur Rahman",
+  "name_id": "Harun bin 'Antarah bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "142 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Asy Syaibaniy",
+  "nasab": "Asy Syaibaniy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 4
+  }
+}

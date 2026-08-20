@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7977",
+  "name_en": "Harun bin Zaid bin Abi Az Zarqa'",
+  "name_id": "Harun bin Zaid bin Abi Az Zarqa'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Musa",
+  "parents": "At Taghlibiy Al Maushiliy",
+  "nasab": "At Taghlibiy Al Maushiliy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 13,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

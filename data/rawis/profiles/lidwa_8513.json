@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8513",
+  "name_en": "Ya'qub bin Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
+  "name_id": "Ya'qub bin Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "208 H",
+  "city_of_death": "Falisthina",
+  "residence": "Baghdad",
+  "kunyah": "Abu Yusuf",
+  "parents": "Az Zuhriy Al Madaniy",
+  "nasab": "Az Zuhriy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "718",
+  "book_counts": {
+    "bukhari": 51,
+    "muslim": 96,
+    "abudaud": 27,
+    "tirmidzi": 12,
+    "nasai": 48,
+    "ibnumajah": 3,
+    "ahmad": 479,
+    "malik": 0,
+    "darimi": 2
+  }
+}

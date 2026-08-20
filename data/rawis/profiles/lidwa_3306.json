@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3306",
+  "name_en": "Sa'id bin Basyir",
+  "name_id": "Sa'id bin Basyir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "168 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Azdiy",
+  "nasab": "Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 6,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

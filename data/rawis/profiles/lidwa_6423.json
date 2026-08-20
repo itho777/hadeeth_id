@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6423",
+  "name_en": "Fudloil bin Sulaiman",
+  "name_id": "Fudloil bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "185 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sulaiman",
+  "parents": "An Numairiy",
+  "nasab": "An Numairiy",
+  "laqob": "-",
+  "hadith_count": "50",
+  "book_counts": {
+    "bukhari": 24,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 7,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

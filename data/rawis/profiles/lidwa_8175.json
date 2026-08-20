@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8175",
+  "name_en": "Wahab bin 'Abdullah ",
+  "name_id": "Wahab bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "74 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Juhaifah",
+  "parents": "As Suwa'iy",
+  "nasab": "As Suwa'iy",
+  "laqob": "Al Khair",
+  "hadith_count": "121",
+  "book_counts": {
+    "bukhari": 29,
+    "muslim": 7,
+    "abudaud": 5,
+    "tirmidzi": 11,
+    "nasai": 7,
+    "ibnumajah": 10,
+    "ahmad": 47,
+    "malik": 0,
+    "darimi": 5
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4029",
+  "name_en": "Thalq bin Habib",
+  "name_id": "Thalq bin Habib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "Hait",
+  "residence": "Baghdad",
+  "kunyah": "-",
+  "parents": "Al 'Anaziy",
+  "nasab": "Al 'Anaziy",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

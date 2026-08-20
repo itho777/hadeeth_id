@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3235",
+  "name_en": "Sa'ad bin Ibrahim bin Sa'ad bin Ibrahim 'Abdur Rahman",
+  "name_id": "Sa'ad bin Ibrahim bin Sa'ad bin Ibrahim 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "201 H",
+  "city_of_death": "Mubarak",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ishaq",
+  "parents": "Az Zuhriy Al Qurasyiy",
+  "nasab": "Az Zuhriy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 23,
+    "malik": 0,
+    "darimi": 0
+  }
+}

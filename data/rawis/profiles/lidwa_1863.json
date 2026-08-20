@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1863",
+  "name_en": "Bisyir bin Adam",
+  "name_id": "Bisyir bin Adam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "218 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Adl Dlurair",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

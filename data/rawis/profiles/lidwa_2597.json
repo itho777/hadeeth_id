@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2597",
+  "name_en": "Haywah bin Suraih bin Yazid",
+  "name_id": "Haywah bin Suraih bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "224 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 14,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 29,
+    "malik": 0,
+    "darimi": 1
+  }
+}

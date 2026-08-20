@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1347",
+  "name_en": "Al Husain bin Muhammad bin Bahram",
+  "name_id": "Al Husain bin Muhammad bin Bahram",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "213 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ahmad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "367",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 6,
+    "abudaud": 8,
+    "tirmidzi": 8,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 338,
+    "malik": 0,
+    "darimi": 0
+  }
+}

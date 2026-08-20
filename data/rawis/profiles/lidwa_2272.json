@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2272",
+  "name_en": "Habib bin Maslamah bin Malik",
+  "name_id": "Habib bin Maslamah bin Malik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "42 H",
+  "city_of_death": "Armenia",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Habibu Ar Ruum",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 2
+  }
+}

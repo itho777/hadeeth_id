@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7235",
+  "name_en": "Muhammad bin Firas",
+  "name_id": "Muhammad bin Firas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "245 H",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu Hurairah",
+  "parents": "Adl Dluba'iy Ash Shairifiy",
+  "nasab": "Adl Dluba'iy Ash Shairifiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

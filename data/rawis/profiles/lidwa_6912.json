@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6912",
+  "name_en": "Muhammad bin Hatim bin Maimun",
+  "name_id": "Muhammad bin Hatim bin Maimun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan biasa",
+  "grade": "3",
+  "died_ah": "235 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Marwaziy",
+  "nasab": "Al Marwaziy",
+  "laqob": "As Samin",
+  "hadith_count": "217",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 214,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8033",
+  "name_en": "Huzail bin Syurahbil",
+  "name_id": "Huzail bin Syurahbil",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Audiy",
+  "nasab": "Al Audiy",
+  "laqob": "Al A'maa",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 4,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 3
+  }
+}

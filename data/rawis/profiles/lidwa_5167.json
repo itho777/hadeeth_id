@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5167",
+  "name_en": "\"Abdullah bin Yazid, maula Al Aswad bin Sufyan \"",
+  "name_id": "\"Abdullah bin Yazid, maula Al Aswad bin Sufyan \"",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "148 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Makhzumiy Al Muqri'",
+  "nasab": "Al Makhzumiy Al Muqri'",
+  "laqob": "-",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 18,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 5,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

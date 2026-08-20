@@ -1,0 +1,28 @@
+{
+  "hadithnumber": 7135,
+  "arabicnumber": 7135,
+  "text": "Telah menceritakan kepada kami [Abul Yaman] telah mengabarkan kepada kami [Syu'aib] dari [Az Zuhri] -lewat jalur periwayatan lain-- telah menceritakan kepada kami [Ismail] telah menceritakan kepadaku [Saudaraku] dari [Sulaiman] dari [Muhammad bin Abu 'Atiq] dari [Ibnu syihab] dari ['Urwah bin Zubair], bahwasanya [Zainab binti Abu Salamah] menceritakan kepadanya dari [Ummi habibah binti Sufyan], dari [Zainab binti Jahsy], Rasulullah Shallallahu'alaihiwasallam suatu hari menemuinya dengan gusar seraya mengatakan: \"Celaka bangsa arab dari keburukan yang telah dekat, hari ini telah dibuka benteng ya'juj dan Ma'juj seperti ini, \" seraya beliau melingkarkan kedua jarinya, telunjuk dan jempol. Zainab binti Jahsy mengatakan, maka aku bertanya; 'Apakah kita akan juga dibinasakan padahal ditengah-tengah kami masih ada orang-orang shalih? ' Nabi menjawab: \"Iya, jika kejahatan telah merajalela",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Sulaiman bin al-Asy'ats al-Azdi as-Sijistani",
+      "name_ar": "سليمان بن الأشعث الأزدي السجستاني",
+      "rawi_id": "rawi_abu_dawud"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    },
+    {
+      "name_id": "Ahmad bin Syu'aib an-Nasa'i",
+      "name_ar": "أحمد بن شعيب النسائي",
+      "rawi_id": "rawi_al_nasai"
+    }
+  ]
+}

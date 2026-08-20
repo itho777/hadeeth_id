@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5161",
+  "name_en": "Abdullah bin Yazid",
+  "name_id": "Abdullah bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Bajaliy Al Qasriy",
+  "nasab": "Al Bajaliy Al Qasriy",
+  "laqob": "Qashu Al Ajnad",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3592",
+  "name_en": "Sulaiman bin Suhaim",
+  "name_id": "Sulaiman bin Suhaim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ayyub",
+  "parents": "Al Madaniy ",
+  "nasab": "Al Madaniy ",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 2
+  }
+}

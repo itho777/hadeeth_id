@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6322",
+  "name_en": "Isa bin 'Ubaid bin Malik",
+  "name_id": "Isa bin 'Ubaid bin Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Al Munib",
+  "parents": "Al Kindiy Al Marwaziy",
+  "nasab": "Al Kindiy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

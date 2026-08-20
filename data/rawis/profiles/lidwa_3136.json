@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3136",
+  "name_en": "Zaid bin Kharijah bin Abi Zuhair",
+  "name_id": "Zaid bin Kharijah bin Abi Zuhair",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy Al Khazrajiy",
+  "nasab": "Al Anshariy Al Khazrajiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

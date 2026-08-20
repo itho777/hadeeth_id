@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5091",
+  "name_en": "Abdullah bin Mu'adz bin Nasyith",
+  "name_id": "Abdullah bin Mu'adz bin Nasyith",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "181 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Ash Shan'aniy",
+  "nasab": "Ash Shan'aniy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

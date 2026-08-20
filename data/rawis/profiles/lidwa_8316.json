@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8316",
+  "name_en": "Yahya bin 'Ali bin Yahya",
+  "name_id": "Yahya bin 'Ali bin Yahya",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "129 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Az Zurqiy Al Anshariy",
+  "nasab": "Az Zurqiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

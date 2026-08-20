@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5282",
+  "name_en": "Abdul Wahhab bin Najdah",
+  "name_id": "Abdul Wahhab bin Najdah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "232 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Hawthi Al Jabaliy",
+  "nasab": "Al Hawthi Al Jabaliy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 20,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

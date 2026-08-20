@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6426",
+  "name_en": "Fudloil bin 'Iyadl bin Mas'ud",
+  "name_id": "Fudloil bin 'Iyadl bin Mas'ud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "187 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Ali",
+  "parents": "At Tamimiy Al Yarbu'iy",
+  "nasab": "At Tamimiy Al Yarbu'iy",
+  "laqob": "-",
+  "hadith_count": "33",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 7,
+    "abudaud": 1,
+    "tirmidzi": 4,
+    "nasai": 10,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 6
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_118",
+  "name_en": "Abu Bakar bin 'Abdur Rahman Al Harits bin Hisyam bin Al Mughirah",
+  "name_id": "Abu Bakar bin 'Abdur Rahman Al Harits bin Hisyam bin Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Makhzumiy Al Qurasyiy",
+  "nasab": "Al Makhzumiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "156",
+  "book_counts": {
+    "bukhari": 17,
+    "muslim": 14,
+    "abudaud": 13,
+    "tirmidzi": 7,
+    "nasai": 12,
+    "ibnumajah": 8,
+    "ahmad": 62,
+    "malik": 15,
+    "darimi": 8
+  }
+}

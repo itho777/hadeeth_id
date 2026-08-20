@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7126",
+  "name_en": "Muhammad bin 'Abdullah bin 'Amru bin Al 'Ash",
+  "name_id": "Muhammad bin 'Abdullah bin 'Amru bin Al 'Ash",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy As Sahmiy",
+  "nasab": "Al Qurasyiy As Sahmiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

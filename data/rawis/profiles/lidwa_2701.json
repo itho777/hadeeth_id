@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2701",
+  "name_en": "Khubaib bin 'Abdur Rahman",
+  "name_id": "Khubaib bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Harits",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "84",
+  "book_counts": {
+    "bukhari": 18,
+    "muslim": 10,
+    "abudaud": 6,
+    "tirmidzi": 3,
+    "nasai": 5,
+    "ibnumajah": 5,
+    "ahmad": 32,
+    "malik": 2,
+    "darimi": 3
+  }
+}

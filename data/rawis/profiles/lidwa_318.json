@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_318",
+  "name_en": "Abu Kinanah",
+  "name_id": "Abu Kinanah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Kinanah",
+  "parents": "Al Qurasiy",
+  "nasab": "Al Qurasiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

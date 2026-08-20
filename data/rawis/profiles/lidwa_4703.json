@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4703",
+  "name_en": "Abdullah bin As Sa'ib bin Shaifiy",
+  "name_id": "Abdullah bin As Sa'ib bin Shaifiy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Makhzumiy",
+  "nasab": "Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6702",
+  "name_en": "Mubarak bin Hassan",
+  "name_id": "Mubarak bin Hassan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Yunus",
+  "parents": "As Sulamiy Al Bashriy",
+  "nasab": "As Sulamiy Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5570",
+  "name_en": "\"Ajlan,maula Fathimah binti 'Utbah\"",
+  "name_id": "\"Ajlan,maula Fathimah binti 'Utbah\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "65",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 4,
+    "tirmidzi": 5,
+    "nasai": 2,
+    "ibnumajah": 7,
+    "ahmad": 41,
+    "malik": 0,
+    "darimi": 4
+  }
+}

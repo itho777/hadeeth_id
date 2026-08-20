@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4688",
+  "name_en": "Abdullah bin Al Harits bin Naufal bin Al Harits bin 'Abdul Muthallib bin Hasyim",
+  "name_id": "Abdullah bin Al Harits bin Naufal bin Al Harits bin 'Abdul Muthallib bin Hasyim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "84 H",
+  "city_of_death": "Ukbara'",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "Babbah",
+  "hadith_count": "103",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 11,
+    "abudaud": 6,
+    "tirmidzi": 8,
+    "nasai": 5,
+    "ibnumajah": 6,
+    "ahmad": 55,
+    "malik": 0,
+    "darimi": 4
+  }
+}

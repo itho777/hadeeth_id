@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_148",
+  "name_en": "Abu Habib kakek Al Hirmas",
+  "name_id": "Abu Habib kakek Al Hirmas",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "At Taymiy Al'Anbariy",
+  "nasab": "At Taymiy Al'Anbariy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

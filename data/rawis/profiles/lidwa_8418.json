@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8418",
+  "name_en": "Yazid bin Zurai'",
+  "name_id": "Yazid bin Zurai'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "182 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Mu'awiyah",
+  "parents": "Al 'Iysiy",
+  "nasab": "Al 'Iysiy",
+  "laqob": "-",
+  "hadith_count": "441",
+  "book_counts": {
+    "bukhari": 77,
+    "muslim": 83,
+    "abudaud": 59,
+    "tirmidzi": 28,
+    "nasai": 103,
+    "ibnumajah": 26,
+    "ahmad": 36,
+    "malik": 0,
+    "darimi": 29
+  }
+}

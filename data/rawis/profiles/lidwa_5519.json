@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5519",
+  "name_en": "Utsman bin Sa'ad",
+  "name_id": "Utsman bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "At Tamimiy",
+  "nasab": "At Tamimiy",
+  "laqob": "Al Katib",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

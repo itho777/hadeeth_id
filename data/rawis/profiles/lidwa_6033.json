@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6033",
+  "name_en": "Imran bin Taymi",
+  "name_id": "Imran bin Taymi",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "107 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Raja'",
+  "parents": "Al 'Atharidiy",
+  "nasab": "Al 'Atharidiy",
+  "laqob": "-",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 7,
+    "abudaud": 2,
+    "tirmidzi": 5,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 20,
+    "malik": 0,
+    "darimi": 5
+  }
+}

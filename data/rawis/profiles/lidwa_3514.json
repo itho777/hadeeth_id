@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3514",
+  "name_en": "Salamah bin Qais",
+  "name_id": "Salamah bin Qais",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Qudmah",
+  "parents": "Al Asyja'iy Al Ghathafaiy",
+  "nasab": "Al Asyja'iy Al Ghathafaiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

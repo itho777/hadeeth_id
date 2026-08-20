@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4833",
+  "name_en": "Abdullah bin Sa'id bin Abi Sa'id",
+  "name_id": "Abdullah bin Sa'id bin Abi Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abbad",
+  "parents": "Al Maqburiy Al Laitsiy",
+  "nasab": "Al Maqburiy Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 8,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

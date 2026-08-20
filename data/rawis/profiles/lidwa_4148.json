@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4148",
+  "name_en": "Abbad bin Musa",
+  "name_id": "Abbad bin Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "229 H",
+  "city_of_death": "Thabariyah",
+  "residence": "Baghdad",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Khuttaliy Al Anbariy",
+  "nasab": "Al Khuttaliy Al Anbariy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 10,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

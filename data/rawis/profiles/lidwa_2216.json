@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2216",
+  "name_en": "Hajib bin Al Walid bin Maymun",
+  "name_id": "Hajib bin Al Walid bin Maymun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "228 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ahmad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al A'war",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 8,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

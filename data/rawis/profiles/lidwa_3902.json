@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3902",
+  "name_en": "Shubay bin Ma'bad",
+  "name_id": "Shubay bin Ma'bad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "At Taghlabiy",
+  "nasab": "At Taghlabiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

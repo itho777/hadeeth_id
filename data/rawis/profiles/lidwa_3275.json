@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3275",
+  "name_en": "Sa'id bin Abi Bardah 'Amir vbin Abi Musa",
+  "name_id": "Sa'id bin Abi Bardah 'Amir vbin Abi Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "138 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Ays'ariy",
+  "nasab": "Al Ays'ariy",
+  "laqob": "-",
+  "hadith_count": "46",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 9,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 1
+  }
+}

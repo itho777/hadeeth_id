@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4742",
+  "name_en": "Abdullah bin Busr bin Abi Busr",
+  "name_id": "Abdullah bin Busr bin Abi Busr",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "88 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu Shafwan",
+  "parents": "Al Maziniy Al Qaisiy",
+  "nasab": "Al Maziniy Al Qaisiy",
+  "laqob": "-",
+  "hadith_count": "55",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 8,
+    "tirmidzi": 5,
+    "nasai": 1,
+    "ibnumajah": 9,
+    "ahmad": 28,
+    "malik": 0,
+    "darimi": 2
+  }
+}

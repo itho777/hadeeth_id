@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5946",
+  "name_en": "Umar bin Rabi'ah",
+  "name_id": "Umar bin Rabi'ah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Rabi'ah",
+  "parents": "Al Iyadiy",
+  "nasab": "Al Iyadiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

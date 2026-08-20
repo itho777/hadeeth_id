@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3621",
+  "name_en": "Sulaiman bin Katsir",
+  "name_id": "Sulaiman bin Katsir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "133 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Daud",
+  "parents": "Al 'Abdiy Al Wasithiy",
+  "nasab": "Al 'Abdiy Al Wasithiy",
+  "laqob": "-",
+  "hadith_count": "47",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 2,
+    "abudaud": 11,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 7
+  }
+}

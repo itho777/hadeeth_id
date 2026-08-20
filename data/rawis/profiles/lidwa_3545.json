@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3545",
+  "name_en": "Salim bin Hayyan bin Bistham",
+  "name_id": "Salim bin Hayyan bin Bistham",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "bashrah",
+  "kunyah": "-",
+  "parents": "Al Hadzaliy",
+  "nasab": "Al Hadzaliy",
+  "laqob": "-",
+  "hadith_count": "56",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 8,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 36,
+    "malik": 0,
+    "darimi": 0
+  }
+}

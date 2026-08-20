@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_873",
+  "name_en": "Ibrahim bin Muhammad bin Al Muntasyir bin Al Ajda'",
+  "name_id": "Ibrahim bin Muhammad bin Al Muntasyir bin Al Ajda'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Hamdaniy",
+  "nasab": "Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "34",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 11,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 3
+  }
+}

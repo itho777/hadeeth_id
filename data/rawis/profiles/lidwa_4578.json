@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4578",
+  "name_en": "Abdul 'Aziz bin 'Abdullah bin Khalid",
+  "name_id": "Abdul 'Aziz bin 'Abdullah bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Dzul Marwah",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Al Hajjaj",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 1
+  }
+}

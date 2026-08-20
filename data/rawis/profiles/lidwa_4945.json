@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4945",
+  "name_en": "Abdullah bin 'Utsman bin 'Amir bin 'Amru bin Ka'ab bin Sa'ad binTaymi bin Murrah",
+  "name_id": "Abdullah bin 'Utsman bin 'Amir bin 'Amru bin Ka'ab bin Sa'ad binTaymi bin Murrah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "13 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Bakar",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "Ash Shiddiq",
+  "hadith_count": "229",
+  "book_counts": {
+    "bukhari": 32,
+    "muslim": 9,
+    "abudaud": 11,
+    "tirmidzi": 22,
+    "nasai": 22,
+    "ibnumajah": 16,
+    "ahmad": 81,
+    "malik": 19,
+    "darimi": 17
+  }
+}

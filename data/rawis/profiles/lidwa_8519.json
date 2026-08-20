@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8519",
+  "name_en": "Ya'qub bin Al Walid bin 'Abdullah ",
+  "name_id": "Ya'qub bin Al Walid bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "12",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Yusuf",
+  "parents": "Al Azdiy",
+  "nasab": "Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

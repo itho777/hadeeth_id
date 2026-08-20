@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2746",
+  "name_en": "Khalifah bin Ghalib",
+  "name_id": "Khalifah bin Ghalib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Ghalib",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

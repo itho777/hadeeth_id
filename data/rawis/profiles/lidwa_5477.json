@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5477",
+  "name_en": "Utbah bin Yaqzhan",
+  "name_id": "Utbah bin Yaqzhan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Ar Rasibiy",
+  "nasab": "Ar Rasibiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

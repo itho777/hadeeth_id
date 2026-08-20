@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1277",
+  "name_en": "Al Hasan bin 'Athiyyah bin Sa'ad",
+  "name_id": "Al Hasan bin 'Athiyyah bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "181 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al 'Aufiy",
+  "nasab": "Al 'Aufiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

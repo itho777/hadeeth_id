@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3510",
+  "name_en": "Salamah bin 'Abdullah bin 'Umar",
+  "name_id": "Salamah bin 'Abdullah bin 'Umar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Makhzumiy",
+  "nasab": "Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

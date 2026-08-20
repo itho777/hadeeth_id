@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1187",
+  "name_en": "Al Harits bin Khazamah bin 'Adiy",
+  "name_id": "Al Harits bin Khazamah bin 'Adiy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "40 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Basyar",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

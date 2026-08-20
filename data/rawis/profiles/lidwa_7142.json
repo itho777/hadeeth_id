@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7142",
+  "name_en": "Muhammad bin 'Abdul Malik bin Marwan",
+  "name_id": "Muhammad bin 'Abdul Malik bin Marwan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "266 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ja'far",
+  "parents": "Ad Daqiqiy Al Wasithiy",
+  "nasab": "Ad Daqiqiy Al Wasithiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

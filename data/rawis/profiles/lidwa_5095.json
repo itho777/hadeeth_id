@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5095",
+  "name_en": "Abdullah bin Mu'awiyah bin Musa",
+  "name_id": "Abdullah bin Mu'awiyah bin Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "243 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Qurasyiy Al Jamhiy",
+  "nasab": "Al Qurasyiy Al Jamhiy",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 12,
+    "nasai": 0,
+    "ibnumajah": 6,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

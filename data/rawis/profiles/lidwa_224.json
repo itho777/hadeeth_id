@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_224",
+  "name_en": "Abu Sayyarah",
+  "name_id": "Abu Sayyarah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Sayyarah",
+  "parents": "Al Mutta'iy Al Qaisiy",
+  "nasab": "Al Mutta'iy Al Qaisiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

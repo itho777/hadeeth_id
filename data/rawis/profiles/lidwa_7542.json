@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7542",
+  "name_en": "Muzhaffar bin Mudrik",
+  "name_id": "Muzhaffar bin Mudrik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "207 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Kamil",
+  "parents": "Al Khurasaniy",
+  "nasab": "Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "224",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 223,
+    "malik": 0,
+    "darimi": 0
+  }
+}

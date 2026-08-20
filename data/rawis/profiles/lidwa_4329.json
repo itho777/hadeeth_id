@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4329",
+  "name_en": "Abdur Rahman bin Tsarwan",
+  "name_id": "Abdur Rahman bin Tsarwan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "120 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Qais",
+  "parents": "Al Awdiy",
+  "nasab": "Al Awdiy",
+  "laqob": "-",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 4,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 3
+  }
+}

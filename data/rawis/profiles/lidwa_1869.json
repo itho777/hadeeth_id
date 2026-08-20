@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1869",
+  "name_en": "Bisyir bin Bakar",
+  "name_id": "Bisyir bin Bakar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "205 H",
+  "city_of_death": "Damasyqi Syam",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

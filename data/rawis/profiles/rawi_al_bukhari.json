@@ -1,0 +1,28 @@
+{
+  "id": "rawi_al_bukhari",
+  "name_en": "Imam Muhammad al-Bukhari",
+  "name_id": "Imam al-Bukhari",
+  "name_ar": "محمد بن إسماعيل البخاري",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Amir al-Mu'minin fi al-Hadith",
+  "died_ah": "256",
+  "died_ce": "870",
+  "hadith_count": "7563",
+  "city_of_death": "Khartank",
+  "bio_en": "Compiler of Sahih al-Bukhari, universally acknowledged as the most authentic Hadith book.",
+  "books": [
+    "Sahih al-Bukhari"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

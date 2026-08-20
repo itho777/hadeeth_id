@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4727",
+  "name_en": "Abdullah bin An Nu'man",
+  "name_id": "Abdullah bin An Nu'man",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Yamamah",
+  "kunyah": "-",
+  "parents": "As Suhaimiy Al Yamamiy",
+  "nasab": "As Suhaimiy Al Yamamiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

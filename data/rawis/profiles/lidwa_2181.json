@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2181",
+  "name_en": "Jamilah binti Watsilah bin Al Asqa'",
+  "name_id": "Jamilah binti Watsilah bin Al Asqa'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

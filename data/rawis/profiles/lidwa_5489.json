@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5489",
+  "name_en": "Utsman bin Abi Sulaiman bin Jubair bin Muth'im",
+  "name_id": "Utsman bin Abi Sulaiman bin Jubair bin Muth'im",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "An Naufaliy",
+  "nasab": "An Naufaliy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 5,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 1
+  }
+}

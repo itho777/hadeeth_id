@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7682",
+  "name_en": "Manshur bin 'Abdur Rahman bin Thalhah bin Al Harits",
+  "name_id": "Manshur bin 'Abdur Rahman bin Thalhah bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "137 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "Ibnu Shafiyyah",
+  "hadith_count": "52",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 8,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 7,
+    "ibnumajah": 3,
+    "ahmad": 23,
+    "malik": 1,
+    "darimi": 0
+  }
+}

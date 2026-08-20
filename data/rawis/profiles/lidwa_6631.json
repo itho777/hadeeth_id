@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6631",
+  "name_en": "Lajlaaj",
+  "name_id": "Lajlaaj",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al 'Amiriy Ad Damasyqiy",
+  "nasab": "Al 'Amiriy Ad Damasyqiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

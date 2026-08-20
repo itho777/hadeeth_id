@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4992",
+  "name_en": "Abdullah bin 'Inabah",
+  "name_id": "Abdullah bin 'Inabah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Inabah",
+  "parents": "Al Khawlaniy Al Himshiy",
+  "nasab": "Al Khawlaniy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

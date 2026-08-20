@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3843",
+  "name_en": "Syaibah bin 'Utsman bin Abi Thalhah",
+  "name_id": "Syaibah bin 'Utsman bin Abi Thalhah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "59 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al 'Abdariy Al Hajabiy",
+  "nasab": "Al 'Abdariy Al Hajabiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

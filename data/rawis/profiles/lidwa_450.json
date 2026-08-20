@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_450",
+  "name_en": "Ahmad bin Sayyar bin Ayyub",
+  "name_id": "Ahmad bin Sayyar bin Ayyub",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "268 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Marwaziy",
+  "nasab": "Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5518",
+  "name_en": "Utsman bin Zufar bin Muzahim",
+  "name_id": "Utsman bin Zufar bin Muzahim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "218 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Zufar",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8607",
+  "name_en": "Yunus bin Jubair",
+  "name_id": "Yunus bin Jubair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ghallab",
+  "parents": "Al Bahiliy",
+  "nasab": "Al Bahiliy",
+  "laqob": "-",
+  "hadith_count": "47",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 5,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 9,
+    "ibnumajah": 5,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 4
+  }
+}

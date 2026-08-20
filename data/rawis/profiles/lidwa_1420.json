@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1420",
+  "name_en": "Ar Rabi' binti Mu'awwidz bin 'Afra' ",
+  "name_id": "Ar Rabi' binti Mu'awwidz bin 'Afra' ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 1,
+    "abudaud": 6,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 8,
+    "ahmad": 14,
+    "malik": 1,
+    "darimi": 2
+  }
+}

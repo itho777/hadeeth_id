@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4871",
+  "name_en": "Abdullah bin Thawus bin Kaisan",
+  "name_id": "Abdullah bin Thawus bin Kaisan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Yaman",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Hamdaniy Al Abnawiy",
+  "nasab": "Al Hamdaniy Al Abnawiy",
+  "laqob": "-",
+  "hadith_count": "220",
+  "book_counts": {
+    "bukhari": 38,
+    "muslim": 40,
+    "abudaud": 15,
+    "tirmidzi": 6,
+    "nasai": 35,
+    "ibnumajah": 9,
+    "ahmad": 69,
+    "malik": 0,
+    "darimi": 8
+  }
+}

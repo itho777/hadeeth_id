@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8043",
+  "name_en": "Hisyam bin Hakim bin Hizam",
+  "name_id": "Hisyam bin Hakim bin Hizam",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al Asadiy",
+  "nasab": "Al Qurasyiy Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

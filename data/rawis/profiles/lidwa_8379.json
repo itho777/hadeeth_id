@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8379",
+  "name_en": "Yazid bin Abi Maryam",
+  "name_id": "Yazid bin Abi Maryam",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "144 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ad Damasyqiy Al Anshariy",
+  "nasab": "Ad Damasyqiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

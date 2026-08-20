@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6539",
+  "name_en": "Qais bin Muslim",
+  "name_id": "Qais bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "120 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Jadaliy Al 'Udawaniy",
+  "nasab": "Al Jadaliy Al 'Udawaniy",
+  "laqob": "-",
+  "hadith_count": "62",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 8,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 7,
+    "ibnumajah": 2,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 3
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6445",
+  "name_en": "Qasim bin Abi Bazzah",
+  "name_id": "Qasim bin Abi Bazzah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "115 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Makhzumiy",
+  "nasab": "Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

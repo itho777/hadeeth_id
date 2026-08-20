@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3419",
+  "name_en": "Sa'id bin Ya'qub",
+  "name_id": "Sa'id bin Ya'qub",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "244 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 6,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3642",
+  "name_en": "Samrah bij Jundab bin Hilal",
+  "name_id": "Samrah bij Jundab bin Hilal",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "58 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Fazariy",
+  "nasab": "Al Fazariy",
+  "laqob": "-",
+  "hadith_count": "348",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 13,
+    "abudaud": 41,
+    "tirmidzi": 34,
+    "nasai": 28,
+    "ibnumajah": 28,
+    "ahmad": 180,
+    "malik": 0,
+    "darimi": 10
+  }
+}

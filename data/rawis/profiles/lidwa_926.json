@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_926",
+  "name_en": "Ishaq bin Ibrahim bin Muhammad",
+  "name_id": "Ishaq bin Ibrahim bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "253 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Ash Shawwaf Al Bahiliy",
+  "nasab": "Ash Shawwaf Al Bahiliy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

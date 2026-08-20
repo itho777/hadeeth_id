@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4140",
+  "name_en": "Abbad bin 'Abbad bin Habib bin Al Muhallab bin Abi Shafrah",
+  "name_id": "Abbad bin 'Abbad bin Habib bin Al Muhallab bin Abi Shafrah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "180 H",
+  "city_of_death": "Baghdad",
+  "residence": "Bashrah",
+  "kunyah": "Abu Mu'awiyah",
+  "parents": "Al 'Atakiy Al Azdiy",
+  "nasab": "Al 'Atakiy Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "64",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 9,
+    "abudaud": 6,
+    "tirmidzi": 5,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 36,
+    "malik": 0,
+    "darimi": 0
+  }
+}

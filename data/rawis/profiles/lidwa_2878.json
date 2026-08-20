@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2878",
+  "name_en": "Rabah bin Zaid",
+  "name_id": "Rabah bin Zaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "187 H",
+  "city_of_death": "-",
+  "residence": "Yaman",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "58",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 52,
+    "malik": 0,
+    "darimi": 0
+  }
+}

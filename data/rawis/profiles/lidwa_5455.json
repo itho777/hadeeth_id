@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5455",
+  "name_en": "Attab bin Basyir",
+  "name_id": "Attab bin Basyir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "190 H",
+  "city_of_death": "Habasyah (Ethiopia)",
+  "residence": "Jazirah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Jazariy",
+  "nasab": "Al Jazariy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_292",
+  "name_en": "Abu 'Amru bin Himas",
+  "name_id": "Abu 'Amru bin Himas",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "139 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 1,
+    "darimi": 0
+  }
+}

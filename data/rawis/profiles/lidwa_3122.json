@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3122",
+  "name_en": "Zaid bin Aslam",
+  "name_id": "Zaid bin Aslam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "136 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Usamah",
+  "parents": "Al 'Adawiy Al Qurasyiy",
+  "nasab": "Al 'Adawiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "542",
+  "book_counts": {
+    "bukhari": 74,
+    "muslim": 38,
+    "abudaud": 44,
+    "tirmidzi": 36,
+    "nasai": 39,
+    "ibnumajah": 38,
+    "ahmad": 171,
+    "malik": 81,
+    "darimi": 21
+  }
+}

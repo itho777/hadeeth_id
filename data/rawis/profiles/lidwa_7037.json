@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7037",
+  "name_en": "Muhammad bin Thalhah bin 'Ubaidillah",
+  "name_id": "Muhammad bin Thalhah bin 'Ubaidillah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "At Taymiy Al Qurasyiy",
+  "nasab": "At Taymiy Al Qurasyiy",
+  "laqob": "As Sajjad",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

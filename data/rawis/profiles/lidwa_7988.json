@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7988",
+  "name_en": "Harun bin Ma'ruf",
+  "name_id": "Harun bin Ma'ruf",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "231 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Marwaziy",
+  "nasab": "Al Marwaziy",
+  "laqob": "Al Khazzaz",
+  "hadith_count": "163",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 33,
+    "abudaud": 6,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 123,
+    "malik": 0,
+    "darimi": 0
+  }
+}

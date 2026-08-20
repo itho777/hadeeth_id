@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5500",
+  "name_en": "Utsman bin Al Mughirah",
+  "name_id": "Utsman bin Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Mughirah",
+  "parents": "Ats_Tsaqafiy",
+  "nasab": "Ats_Tsaqafiy",
+  "laqob": "Al A'sya Ibnu Abi Zur'ah",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 4,
+    "nasai": 1,
+    "ibnumajah": 6,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 5
+  }
+}

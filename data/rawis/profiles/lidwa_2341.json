@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2341",
+  "name_en": "Harmalah bin 'Abdul 'Aziz bin Ar Rabi' bin Sabrah bin Ma'bad",
+  "name_id": "Harmalah bin 'Abdul 'Aziz bin Ar Rabi' bin Sabrah bin Ma'bad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hijaz",
+  "kunyah": "Abu Sa'id",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

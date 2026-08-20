@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7531",
+  "name_en": "Mutharrif bin 'Abdullah bin Asy Syakhir",
+  "name_id": "Mutharrif bin 'Abdullah bin Asy Syakhir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "95 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Mush'ab",
+  "parents": "Al Harsyiy Al 'Amiriy",
+  "nasab": "Al Harsyiy Al 'Amiriy",
+  "laqob": "-",
+  "hadith_count": "185",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 16,
+    "abudaud": 15,
+    "tirmidzi": 6,
+    "nasai": 22,
+    "ibnumajah": 11,
+    "ahmad": 100,
+    "malik": 0,
+    "darimi": 8
+  }
+}

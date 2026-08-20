@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1676",
+  "name_en": "Al Mughirah bin Nahik",
+  "name_id": "Al Mughirah bin Nahik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

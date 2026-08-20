@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="HADEETH.ID — Scholar & Rawi Detailed Biography, Transmission Statistics, and Jarh wa Ta'dil evaluations."/>
-  <title>Narrator Profile: 'Umar bin Al-Khattab — HADEETH.ID</title>
+  <meta name="description" content="HADEETH.ID Ã¢â‚¬â€ Scholar & Rawi Detailed Biography, Transmission Statistics, and Jarh wa Ta'dil evaluations."/>
+  <title>Narrator Profile: 'Umar bin Al-Khattab Ã¢â‚¬â€ HADEETH.ID</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
@@ -43,19 +43,32 @@
       <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
     </a>
     <nav class="hidden md:flex items-center gap-stack-lg">
-      <a href="books.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1" data-i18n="nav_books">Books</a>
-      <a href="scholars.html" class="text-primary dark:text-white font-bold border-b-2 border-primary dark:border-[#10b981] py-1" data-i18n="nav_scholars">Scholars</a>
-      <a href="admin.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1" data-i18n="nav_admin">Admin</a>
+      <a href="books.html"   data-nav-page="books.html" data-i18n="nav_books" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Books</a>
+      <a href="topics.html"   data-nav-page="topics.html" data-i18n="nav_topics" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Topics</a>
+      <a href="scholars.html" data-nav-page="scholars.html" data-i18n="nav_scholars" class="text-primary dark:text-white font-bold border-b-2 border-primary dark:border-[#10b981] py-1">Scholars</a>
+      <a href="admin.html"   data-nav-page="admin.html" data-i18n="nav_admin" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Admin</a>
     </nav>
-        <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
+    <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
       <!-- Language Switcher -->
       <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
         <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
         <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
       </div>
-      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full">
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Toggle theme">
         <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
       </button>
+      <button id="mobile-menu-btn" class="p-2 md:hidden hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors">
+        <span class="material-symbols-outlined" data-menu-icon>menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-manuscript-paper dark:bg-[#10141a] border-t border-outline-variant dark:border-[#1e293b]">
+    <div class="flex flex-col px-margin-main py-2 gap-1">
+      <a href="books.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_books">Books</a>
+      <a href="topics.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_topics">Topics</a>
+      <a href="scholars.html" class="py-2 text-primary dark:text-white font-bold" data-i18n="nav_scholars">Scholars</a>
+      <a href="admin.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_admin">Admin</a>
     </div>
   </div>
 </header>
@@ -401,19 +414,370 @@
 
 </main>
 
-<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 text-xs w-full py-8 px-margin-main flex justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-16">
-  <div><span data-i18n="footer_text">© 2026 HADEETH.ID - Digital Manuscript Preservation</span></div>
-  <div class="flex gap-4">
-    <a href="index.html" class="hover:underline">Home</a>
-    <a href="scholars.html" class="hover:underline" data-i18n="nav_scholars">Scholars</a>
-    <a href="books.html" class="hover:underline" data-i18n="nav_books">Books</a>
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
+  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2026 HADEETH.ID - Digital Manuscript Preservation</span></div>
+  <div class="flex flex-wrap gap-4 items-center justify-center">
+    <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
+    <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
+    <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
   </div>
 </footer>
 
 <script src="js/api.js?v=2026081411"></script>
-<script src="js/app.js?v=2026081706"></script>
-<script src="js/api.js?v=2026081411"></script>
-<script src="js/app.js?v=2026081706"></script>
+<script src="js/app.js?v=2026082009"></script>
 
+
+<script>
+  async function renderProfileData() {
+      const params = new URLSearchParams(window.location.search);
+      let rawiIdRaw = params.get('id') || params.get('name') || 'rawi_abu_hurairah';
+      let rawiId = rawiIdRaw.startsWith('rawi_') ? (isNaN(parseInt(rawiIdRaw.split('_')[1])) ? rawiIdRaw : rawiIdRaw.split('_')[1]) : rawiIdRaw;
+      if (!isNaN(parseInt(rawiIdRaw))) rawiId = rawiIdRaw;
+
+      // Try fetching from the dynamically created profiles folder first
+      let rawi = null;
+      try {
+          const res = await fetch(`data/rawis/profiles/${rawiIdRaw}.json`);
+          if (res.ok) rawi = await res.json();
+      } catch (e) {}
+
+      if (!rawi) {
+          const rawisDict = await window.HadeethAPI.getActiveRawis();
+          rawi = rawisDict[rawiId] || await window.HadeethAPI.getRawiProfile(rawiId);
+      }
+
+      if (rawi) {
+          window._currentRawi = rawi;
+
+          // ?????? SCHOLARS REMARKS ??????????????????????????????????????????????????
+          const remarksGrid = document.getElementById('remarks-grid');
+          if (remarksGrid) {
+            if (rawi.scholars_remarks && rawi.scholars_remarks.length > 0) {
+              remarksGrid.innerHTML = rawi.scholars_remarks.map(r => `
+                <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155]" data-critic="${r.critic_id || 'all'}">
+                  <span class="text-[10px] font-bold text-primary dark:text-[#10b981] mb-1 block">${r.critic || 'Scholar'}</span>
+                  <p class="text-xs text-on-surface-variant dark:text-gray-300" data-lang-en>"${r.remark_en}"</p>
+                  <p class="text-xs text-on-surface-variant dark:text-gray-300" data-lang-id style="display:none">"${r.remark_id || r.remark_en}"</p>
+                </div>
+              `).join('');
+            } else {
+              const grade = rawi.grade || 'Unknown';
+              remarksGrid.innerHTML = `
+                <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155]" data-critic="ibnhajar">
+                  <span class="text-[10px] font-bold text-primary dark:text-[#10b981] mb-1 block">Taqrib al-Tahdhib</span>
+                  <p class="text-xs text-on-surface-variant dark:text-gray-300" data-lang-en>"Rated as <strong>${grade}</strong> in traditional Rijal consensus."</p>
+                  <p class="text-xs text-on-surface-variant dark:text-gray-300" data-lang-id style="display:none">"Dinilai sebagai <strong>${grade}</strong> menurut konsensus ulama rijal."</p>
+                </div>
+              `;
+            }
+          }
+          
+          switchBioTab('taqrib'); // load initial bio text
+
+          // Headers
+          const nameEn = rawi.name_en || rawi.en || 'Transmitter';
+          const nameId = rawi.name_id || rawi.id || nameEn;
+          const nameAr = rawi.name_ar || rawi.ar || '';
+          
+          if(document.getElementById('profile-english-name')) document.getElementById('profile-english-name').innerText = nameEn;
+          if(document.getElementById('profile-header-name-en')) document.getElementById('profile-header-name-en').innerText = nameEn;
+          if(document.getElementById('profile-header-name-id')) document.getElementById('profile-header-name-id').innerText = nameId;
+          if(document.getElementById('profile-arabic-name')) document.getElementById('profile-arabic-name').innerText = nameAr;
+          if(document.getElementById('profile-nasab')) document.getElementById('profile-nasab').innerText = `Nasab: ${rawi.nasab || nameEn}`;
+          
+          // Stats
+          if(document.getElementById('profile-grade-badge')) document.getElementById('profile-grade-badge').innerText = `Grade: ${rawi.grade || 'Unknown'}`;
+          if(document.getElementById('profile-header-grade')) document.getElementById('profile-header-grade').innerText = rawi.grade || 'Unknown';
+          
+          // Quick Info
+          if(document.getElementById('profile-kunyah')) document.getElementById('profile-kunyah').innerText = rawi.kunyah || rawi.kunya_en || 'N/A';
+          if(document.getElementById('profile-settled')) document.getElementById('profile-settled').innerText = rawi.city_of_death || rawi.residence || 'Hijaz';
+          
+          let dates = rawi.dates || '';
+          if (!dates && rawi.died_ah) dates = `${rawi.died_ah} AH / ${rawi.died_ce} CE`;
+          if(document.getElementById('profile-dates')) document.getElementById('profile-dates').innerText = dates || 'N/A';
+          if(document.getElementById('profile-parents')) document.getElementById('profile-parents').innerText = rawi.parents || 'N/A';
+
+          // ── NARRATIONS BREAKDOWN: proportional estimates from real total ──────
+          const totalNarrations = parseInt(rawi.hadith_count) || 0;
+          if (totalNarrations > 0) {
+            let counts = {};
+            let maxCount = 0;
+            const bookKeys = ['bukhari', 'muslim', 'abudaud', 'tirmidzi', 'nasai', 'ibnumajah'];
+            
+            // if we have exact book_counts from the database, use them!
+            let dbSum = 0;
+            if (rawi.book_counts) {
+              bookKeys.forEach(b => dbSum += (rawi.book_counts[b] || 0));
+            }
+
+            if (dbSum > 0) {
+              bookKeys.forEach(b => {
+                counts[b] = rawi.book_counts[b] || 0;
+              });
+              maxCount = Math.max(...Object.values(counts));
+            } else {
+              // fallback to consensus ratios
+              const RATIOS = {
+                bukhari:   0.15,
+                muslim:    0.13,
+                abudaud:   0.19,
+                tirmidzi:  0.11,
+                nasai:     0.23,
+                ibnumajah: 0.19
+              };
+              let runningTotal = 0;
+              bookKeys.forEach((b, idx) => {
+                if (idx < bookKeys.length - 1) {
+                  counts[b] = Math.round(totalNarrations * RATIOS[b]);
+                  runningTotal += counts[b];
+                } else {
+                  counts[b] = Math.max(0, totalNarrations - runningTotal);
+                }
+              });
+              maxCount = Math.max(...Object.values(counts));
+            }
+
+            const badge = document.getElementById('total-hadith-badge');
+            if (badge) badge.textContent = `${totalNarrations.toLocaleString()} Total Narrations`;
+
+            bookKeys.forEach(b => {
+              // fallback ids mapping
+              let domId = b;
+              if (b === 'abudaud') domId = 'abudawood';
+              if (b === 'tirmidzi') domId = 'tirmidhi';
+              
+              const cntEl = document.getElementById('cnt-' + domId);
+              const barEl = document.getElementById('bar-' + domId);
+              // Do not add ~ if it's the exact number from database
+              if (cntEl) cntEl.textContent = `${dbSum > 0 ? '' : '~'}${counts[b].toLocaleString()} Hadiths`;
+              if (barEl) barEl.style.width = (maxCount > 0 ? (counts[b] / maxCount * 100) : 0) + '%';
+            });
+          }
+
+          // Update transmitted count badge
+          const txBadge = document.getElementById('transmitted-count-badge');
+          if (txBadge) txBadge.textContent = `${totalNarrations.toLocaleString()} Total`;
+
+          // ── HADITH LIST: fetch from Supabase by narrator name ────────────
+          await loadNarratorHadiths(nameEn, totalNarrations);
+      }
+  }
+
+  // ── Fetch hadiths by narrator name from Supabase REST ─────────────
+  let _hadithPage = 1;
+  let _hadithLimit = 10;
+  let _allHadiths  = [];
+  let _narratorName = '';
+
+  async function loadNarratorHadiths(nameEn, totalCount) {
+    _narratorName = nameEn;
+    const grid = document.getElementById('transmitted-hadiths-grid');
+    const pagination = document.getElementById('hadith-pagination');
+    if (!grid) return;
+
+    grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">Loading hadiths from Supabase…</div>`;
+
+    const SUPABASE_URL = 'https://idokyspokenbmzoegahq.supabase.co';
+    const ANON_KEY = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
+
+    // Try Supabase narrator search via narrator_chain field or sanad text
+    const shortName = nameEn.replace(/^(Ibnu?|Imam|Abu)\s+/i, '').split(' ')[0]; // e.g. "Umar", "Hurairah"
+    const searchTerms = [nameEn, shortName].filter(Boolean);
+
+    let hadiths = [];
+    for (const term of searchTerms) {
+      try {
+        const url = `${SUPABASE_URL}/rest/v1/hadiths?or=(narrator_en.ilike.*${encodeURIComponent(term)}*,sanad_en.ilike.*${encodeURIComponent(term)}*)&limit=50&order=book_id,hadith_number`;
+        const res = await fetch(url, {
+          headers: { 'apikey': ANON_KEY, 'Authorization': `Bearer ${ANON_KEY}` }
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.length > 0) { hadiths = data; break; }
+        }
+      } catch (e) {}
+    }
+
+    // If Supabase had nothing, try a broader text search
+    if (hadiths.length === 0 && searchTerms[0]) {
+      hadiths = await window.HadeethAPI.search(searchTerms[0], 'all', 25)
+        .then(r => r.map(h => ({
+          id: h.id, book_id: h.book_slug, hadith_number: h.hadith_number,
+          text_ar: h.arabic_text, text_en: h.english_text, text_id: h.indonesian_text, grade: h.grade
+        })));
+    }
+
+    _allHadiths = hadiths;
+    _hadithPage  = 1;
+    renderHadithPage();
+
+    if (_allHadiths.length > 0 && pagination) {
+      pagination.classList.remove('hidden');
+      updatePaginationUI();
+    }
+  }
+
+  function renderHadithPage() {
+    const grid = document.getElementById('transmitted-hadiths-grid');
+    if (!grid) return;
+
+    const start = (_hadithPage - 1) * _hadithLimit;
+    const slice = _allHadiths.slice(start, start + _hadithLimit);
+
+    if (slice.length === 0) {
+      grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400">
+        No detailed narrations found in the online dataset for this narrator.<br>
+        <span class="opacity-60">The total count above is sourced from the narrator index.</span>
+      </div>`;
+      return;
+    }
+
+    const BOOK_NAMES = {
+      bukhari: 'Sahih al-Bukhari', muslim: 'Sahih Muslim', abudawud: 'Sunan Abu Dawood',
+      tirmidhi: "Jami' al-Tirmidhi", nasai: "Sunan an-Nasa'i", ibnmajah: 'Sunan Ibn Majah',
+      ahmad: 'Musnad Ahmad', malik: 'Muwatta Malik', nawawi: 'Forty Nawawi',
+      darimi: 'Sunan ad-Darimi', daruquthni: 'Sunan ad-Daruquthni'
+    };
+
+    grid.innerHTML = slice.map(h => {
+      const bookName = BOOK_NAMES[h.book_id] || (h.book_id || '').toUpperCase();
+      const num = h.hadith_number || h.id || '';
+      const ar = h.text_ar || '';
+      const en = h.text_en || h.primary_translation || '';
+      const id = h.text_id || '';
+      const grade = h.grade || '';
+      return `
+        <a href="hadith.html?book=${h.book_id}&hadith=${num}"
+           class="block p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10
+                  dark:border-[#334155] hover:border-secondary/40 dark:hover:border-[#10b981]/40 transition-all group cursor-pointer">
+          <div class="flex justify-between items-start mb-2 gap-2">
+            <span class="text-[10px] bg-primary dark:bg-[#10b981] text-white dark:text-black font-bold px-2 py-0.5 rounded uppercase tracking-wider shrink-0">${bookName} #${num}</span>
+            ${grade ? `<span class="text-[10px] text-outline dark:text-gray-400 font-mono shrink-0">${grade}</span>` : ''}
+          </div>
+          ${ar ? `<p class="text-sm text-right leading-relaxed font-arabic-body text-primary dark:text-white mb-2" dir="rtl">${ar}</p>` : ''}
+          <p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed line-clamp-3" data-lang-en>${en}</p>
+          ${id ? `<p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed line-clamp-3" data-lang-id style="display:none">${id}</p>` : ''}
+          <span class="text-[10px] text-secondary dark:text-[#10b981] group-hover:underline mt-2 block">View full hadith →</span>
+        </a>`;
+    }).join('');
+
+    if (window.LangSystem && typeof window.LangSystem.apply === 'function') {
+      window.LangSystem.apply(window.LangSystem.get());
+    }
+    updatePaginationUI();
+  }
+
+  function updatePaginationUI() {
+    const totalPages = Math.ceil(_allHadiths.length / _hadithLimit);
+    const indicator = document.getElementById('hadith-page-indicator');
+    const prevBtn   = document.getElementById('hadith-prev-btn');
+    const nextBtn   = document.getElementById('hadith-next-btn');
+    const jumpInput = document.getElementById('hadith-jump-input');
+    if (indicator) indicator.textContent = `Page ${_hadithPage} of ${totalPages || 1}`;
+    if (prevBtn)   prevBtn.disabled = _hadithPage <= 1;
+    if (nextBtn)   nextBtn.disabled = _hadithPage >= totalPages;
+    if (jumpInput) { jumpInput.max = totalPages; jumpInput.value = _hadithPage; }
+  }
+
+  // Wire pagination controls
+  document.addEventListener('DOMContentLoaded', () => {
+    const prevBtn   = document.getElementById('hadith-prev-btn');
+    const nextBtn   = document.getElementById('hadith-next-btn');
+    const jumpBtn   = document.getElementById('hadith-jump-btn');
+    const limitSel  = document.getElementById('hadith-limit-select');
+
+    if (prevBtn)  prevBtn.addEventListener('click',  () => { if (_hadithPage > 1) { _hadithPage--; renderHadithPage(); } });
+    if (nextBtn)  nextBtn.addEventListener('click',  () => { const total = Math.ceil(_allHadiths.length / _hadithLimit); if (_hadithPage < total) { _hadithPage++; renderHadithPage(); } });
+    if (jumpBtn)  jumpBtn.addEventListener('click',  () => { const v = parseInt(document.getElementById('hadith-jump-input').value); const total = Math.ceil(_allHadiths.length / _hadithLimit); if (v >= 1 && v <= total) { _hadithPage = v; renderHadithPage(); } });
+    if (limitSel) limitSel.addEventListener('change', () => { _hadithLimit = parseInt(limitSel.value); _hadithPage = 1; renderHadithPage(); updatePaginationUI(); });
+  });
+  
+
+  // ── Bio Source Tab Switcher ──────────────────────────────────
+  const BIO_TABS = {
+    taqrib: {
+      label_en: 'Taqrib al-Tahdhib',
+      label_id: 'Taqrib at-Tahdzib',
+      provenance: 'Source: Taqrib al-Tahdhib (تقريب التهذيب) — Hafiz Ibn Hajar al-Asqalani'
+    },
+    wiki: {
+      label_en: 'Wikipedia / Wikidata',
+      label_id: 'Wikipedia / Wikidata',
+      provenance: 'Source: Wikipedia / Wikidata (CC BY-SA 4.0)'
+    },
+    siyar: {
+      label_en: "Siyar A\'lam al-Nubala",
+      label_id: "Siyar A\'lam an-Nubala",
+      provenance: "Source: Siyar A\'lam al-Nubala (سير أعلام النبلاء) — Imam al-Dhahabi"
+    }
+  };
+
+  let _activeBioTab = 'taqrib';
+
+  function switchBioTab(tabId) {
+    _activeBioTab = tabId;
+    const tabs = ['taqrib', 'wiki', 'siyar'];
+    tabs.forEach(t => {
+      const btn = document.getElementById('tab-btn-' + t);
+      if (!btn) return;
+      if (t === tabId) {
+        btn.className = 'px-3 py-1.5 rounded-lg bg-primary dark:bg-[#10b981] text-white dark:text-black font-bold shadow-sm transition-all';
+      } else {
+        btn.className = 'px-3 py-1.5 rounded-lg text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all';
+      }
+    });
+    const meta = BIO_TABS[tabId] || BIO_TABS.taqrib;
+    const prov = document.getElementById('bio-provenance-text');
+    if (prov) prov.textContent = meta.provenance;
+    
+    // Bio content
+    const content = document.getElementById('bio-stories-content');
+    if (content && window._currentRawi) {
+      const rawi = window._currentRawi;
+      if (tabId === 'wiki') {
+        content.innerHTML = '<p class="text-xs text-outline dark:text-gray-400 italic p-4 text-center">Wiki/Wikidata integration pending for this narrator.</p>';
+      } else if (tabId === 'siyar') {
+        content.innerHTML = '<p class="text-xs text-outline dark:text-gray-400 italic p-4 text-center">Siyar A&apos;lam al-Nubala text translation in progress.</p>';
+      } else {
+        const bioEn = rawi.bio_en || `Transmitter of Hadith from the ${rawi.generation || 'Unknown'} generation. ${rawi.city_of_death && rawi.city_of_death !== '-' ? 'Settled or died in ' + rawi.city_of_death + '.' : ''}`;
+        const bioId = rawi.bio_id || `Perawi Hadits dari kalangan ${rawi.generation || 'Tidak diketahui'}. ${rawi.city_of_death && rawi.city_of_death !== '-' ? 'Menetap atau wafat di ' + rawi.city_of_death + '.' : ''}`;
+        content.innerHTML = `<p data-lang-en>${bioEn}</p><p data-lang-id style="display:none">${bioId}</p>`;
+      }
+      if (window.LangSystem && typeof window.LangSystem.apply === 'function') {
+        window.LangSystem.apply(window.LangSystem.get());
+      }
+    }
+  }
+
+  // ── Eval Critic Tab Switcher ──────────────────────────────────
+  let _activeEvalTab = 'all';
+
+  function filterEvalTab(tabId) {
+    _activeEvalTab = tabId;
+    const tabs = ['all', 'ibnhajar', 'dhahabi'];
+    tabs.forEach(t => {
+      const btn = document.getElementById('eval-tab-' + t);
+      if (!btn) return;
+      if (t === tabId) {
+        btn.className = 'px-3 py-1.5 rounded-lg bg-primary dark:bg-[#10b981] text-white dark:text-black font-bold shadow-sm transition-all cursor-pointer';
+      } else {
+        btn.className = 'px-3 py-1.5 rounded-lg text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer';
+      }
+    });
+    // Filter visible remark cards
+    document.querySelectorAll('#remarks-grid [data-critic]').forEach(card => {
+      card.style.display = (tabId === 'all' || card.dataset.critic === tabId) ? '' : 'none';
+    });
+  }
+
+  // Call it when DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(renderProfileData, 100);
+  });
+</script>
 </body>
 </html>
+
+
+

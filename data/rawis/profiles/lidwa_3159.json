@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3159",
+  "name_en": "Zaid bin Waqid",
+  "name_id": "Zaid bin Waqid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "138 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Umar",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 8,
+    "ibnumajah": 5,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 2
+  }
+}

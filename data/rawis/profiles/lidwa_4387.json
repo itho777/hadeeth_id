@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4387",
+  "name_en": "Abdur Rahman bin Samrah bin Habib bin 'Abdu Syams",
+  "name_id": "Abdur Rahman bin Samrah bin Habib bin 'Abdu Syams",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "50 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al 'Absyamiy",
+  "nasab": "Al 'Absyamiy",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 5,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 10,
+    "ibnumajah": 2,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 2
+  }
+}

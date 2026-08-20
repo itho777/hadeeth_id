@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5340",
+  "name_en": "Ubaid bin 'Umair bin Qatadah bin Sa'id",
+  "name_id": "Ubaid bin 'Umair bin Qatadah bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "68 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Ashim",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "77",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 11,
+    "abudaud": 10,
+    "tirmidzi": 2,
+    "nasai": 12,
+    "ibnumajah": 4,
+    "ahmad": 26,
+    "malik": 0,
+    "darimi": 5
+  }
+}

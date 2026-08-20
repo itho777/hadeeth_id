@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2168",
+  "name_en": "Ja'far bin Maymun",
+  "name_id": "Ja'far bin Maymun",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Ali",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Bayya'u Al Anmath",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

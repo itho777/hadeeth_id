@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2308",
+  "name_en": "Hajjaj bin Yusuf bin Hajjaj",
+  "name_id": "Hajjaj bin Yusuf bin Hajjaj",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "259 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Ibnu Asy Sya'ir",
+  "hadith_count": "88",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 71,
+    "abudaud": 11,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

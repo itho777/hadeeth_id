@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1733",
+  "name_en": "An Nu'man bin Basyir binb Sa'ad",
+  "name_id": "An Nu'man bin Basyir binb Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "65 h",
+  "city_of_death": "Halwan",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "235",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 23,
+    "abudaud": 18,
+    "tirmidzi": 15,
+    "nasai": 30,
+    "ibnumajah": 15,
+    "ahmad": 110,
+    "malik": 2,
+    "darimi": 10
+  }
+}

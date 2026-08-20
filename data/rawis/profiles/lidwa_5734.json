@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5734",
+  "name_en": "Ali bin Al Hasan bin Sulaiman",
+  "name_id": "Ali bin Al Hasan bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "236 H",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Hadlramiy Al Adamiy",
+  "nasab": "Al Hadlramiy Al Adamiy",
+  "laqob": "Abu As Sya'tsa'",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

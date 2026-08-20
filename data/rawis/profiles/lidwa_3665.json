@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3665",
+  "name_en": "Sahal bin Abi Hatsmah bin Sa'idah bin 'Amir",
+  "name_id": "Sahal bin Abi Hatsmah bin Sa'idah bin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Anshariy Al Khazrajiy",
+  "nasab": "Al Anshariy Al Khazrajiy",
+  "laqob": "-",
+  "hadith_count": "69",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 8,
+    "abudaud": 11,
+    "tirmidzi": 4,
+    "nasai": 15,
+    "ibnumajah": 3,
+    "ahmad": 15,
+    "malik": 2,
+    "darimi": 3
+  }
+}

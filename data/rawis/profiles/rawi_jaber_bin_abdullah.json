@@ -1,0 +1,29 @@
+{
+  "id": "rawi_jaber_bin_abdullah",
+  "name_en": "Jabir bin 'Abdullah",
+  "name_id": "Jabir bin Abdullah al-Anshari",
+  "name_ar": "جابر بن عبد الله",
+  "is_sahabi": "true",
+  "generation": "Sahabi (Companion)",
+  "grade": "Sahabi Adl",
+  "died_ah": "78",
+  "died_ce": "697",
+  "hadith_count": "1540",
+  "city_of_death": "Madinah",
+  "bio_en": "Anshari Companion who held famous Hadith study circles in the Prophet's Mosque.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 306,
+    "muslim": 414,
+    "abudaud": 242,
+    "tirmidzi": 185,
+    "nasai": 286,
+    "ibnumajah": 231,
+    "ahmad": 1242,
+    "malik": 16,
+    "darimi": 104
+  }
+}

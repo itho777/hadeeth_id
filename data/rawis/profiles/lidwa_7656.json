@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7656",
+  "name_en": "\"Miqsam bin Bajarah, maula 'Abdullah bin Al Harits\"",
+  "name_id": "\"Miqsam bin Bajarah, maula 'Abdullah bin Al Harits\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "101 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Al Qasim",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "150",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 11,
+    "tirmidzi": 15,
+    "nasai": 7,
+    "ibnumajah": 16,
+    "ahmad": 88,
+    "malik": 0,
+    "darimi": 11
+  }
+}

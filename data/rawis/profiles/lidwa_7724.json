@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7724",
+  "name_en": "Musa bin Al Musayyab",
+  "name_id": "Musa bin Al Musayyab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Ats Tsaqafiy Al Bazzaz",
+  "nasab": "Ats Tsaqafiy Al Bazzaz",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

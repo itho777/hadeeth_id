@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6040",
+  "name_en": "Imran bin Za'idah bin Nasyith",
+  "name_id": "Imran bin Za'idah bin Nasyith",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Kufiy",
+  "nasab": "Al Kufiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

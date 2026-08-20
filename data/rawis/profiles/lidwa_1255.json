@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1255",
+  "name_en": "Al Hasan bin Al Furrat bin Abi 'Abdur Rahman",
+  "name_id": "Al Hasan bin Al Furrat bin Abi 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "At Tamiymiy Al Qazaz",
+  "nasab": "At Tamiymiy Al Qazaz",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

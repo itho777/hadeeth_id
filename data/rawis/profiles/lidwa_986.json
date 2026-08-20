@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_986",
+  "name_en": "Isma'il bin Abi Al Harits Asad bin Syahin",
+  "name_id": "Isma'il bin Abi Al Harits Asad bin Syahin",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "258 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Baghdadiy",
+  "nasab": "Al Baghdadiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1027",
+  "name_en": "Isma'il bin Sulaiman bin Abi Al Mughirah",
+  "name_id": "Isma'il bin Sulaiman bin Abi Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "At Tamimiy ",
+  "nasab": "At Tamimiy ",
+  "laqob": "Al Azraq",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

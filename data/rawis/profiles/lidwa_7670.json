@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7670",
+  "name_en": "Manshur bin Abi Al Aswad",
+  "name_id": "Manshur bin Abi Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 5
+  }
+}

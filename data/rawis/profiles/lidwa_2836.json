@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2836",
+  "name_en": "Dzu'aib bin Halhalah bin 'Amru bin Kulaib",
+  "name_id": "Dzu'aib bin Halhalah bin 'Amru bin Kulaib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Abu Qabishah",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

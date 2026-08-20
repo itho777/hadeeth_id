@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1052",
+  "name_en": "Isma'il bin Mujalid bin Sa'id bin 'Umair",
+  "name_id": "Isma'il bin Mujalid bin Sa'id bin 'Umair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Umar",
+  "parents": "Al Hamdaniy",
+  "nasab": "Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

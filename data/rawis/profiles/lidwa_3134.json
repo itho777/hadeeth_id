@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3134",
+  "name_en": "Zaid bin Haritsah bin Syarahil",
+  "name_id": "Zaid bin Haritsah bin Syarahil",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "8 H",
+  "city_of_death": "Kasymihan",
+  "residence": "Madinah",
+  "kunyah": "Abu Usamah",
+  "parents": "Al Kalibiy",
+  "nasab": "Al Kalibiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

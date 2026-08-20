@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7283",
+  "name_en": "Muhammad bin Ma'mar",
+  "name_id": "Muhammad bin Ma'mar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Hadlramiy",
+  "nasab": "Al Hadlramiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 8,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

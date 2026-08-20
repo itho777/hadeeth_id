@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5651",
+  "name_en": "Athiyyah bin Qays",
+  "name_id": "Athiyyah bin Qays",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "121 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Kilabiy",
+  "nasab": "Al Kilabiy",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 5
+  }
+}

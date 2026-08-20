@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6488",
+  "name_en": "Qaza'ah bin Yahya",
+  "name_id": "Qaza'ah bin Yahya",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Ghadiyah",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "74",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 9,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 5,
+    "ahmad": 44,
+    "malik": 0,
+    "darimi": 2
+  }
+}

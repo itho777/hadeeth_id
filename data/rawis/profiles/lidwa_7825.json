@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7825",
+  "name_en": "Maimunah binti Al Harits",
+  "name_id": "Maimunah binti Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "9",
+  "died_ah": "51 H",
+  "city_of_death": "Sarkhas",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al 'Amiriyyah Al Hilaliyyah",
+  "nasab": "Al 'Amiriyyah Al Hilaliyyah",
+  "laqob": "Ummu Al Mu'minin",
+  "hadith_count": "172",
+  "book_counts": {
+    "bukhari": 22,
+    "muslim": 20,
+    "abudaud": 13,
+    "tirmidzi": 6,
+    "nasai": 27,
+    "ibnumajah": 11,
+    "ahmad": 60,
+    "malik": 1,
+    "darimi": 12
+  }
+}

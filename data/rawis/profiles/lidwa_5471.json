@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5471",
+  "name_en": "Utbah bin 'Abdullah bin 'Utbah bin 'Abdullah bin Mas'ud",
+  "name_id": "Utbah bin 'Abdullah bin 'Utbah bin 'Abdullah bin Mas'ud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al 'Umais",
+  "parents": "Al Hudzaliy Al Mas'udiy",
+  "nasab": "Al Hudzaliy Al Mas'udiy",
+  "laqob": "-",
+  "hadith_count": "52",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 11,
+    "abudaud": 5,
+    "tirmidzi": 1,
+    "nasai": 6,
+    "ibnumajah": 3,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 4
+  }
+}

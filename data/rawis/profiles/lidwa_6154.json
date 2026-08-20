@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6154",
+  "name_en": "Amru bin 'Abdullah bin Shafwan bin Umayyah",
+  "name_id": "Amru bin 'Abdullah bin Shafwan bin Umayyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Jumahiy",
+  "nasab": "Al Jumahiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

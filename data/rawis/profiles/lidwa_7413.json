@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7413",
+  "name_en": "Muzahim bin Dzawwad bin 'Ulbah",
+  "name_id": "Muzahim bin Dzawwad bin 'Ulbah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Haritsiy",
+  "nasab": "Al Haritsiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

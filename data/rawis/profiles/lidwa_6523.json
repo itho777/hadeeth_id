@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6523",
+  "name_en": "Qais bin Sa'ad",
+  "name_id": "Qais bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "119 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Abdul Malik",
+  "parents": "Al Habsyiy",
+  "nasab": "Al Habsyiy",
+  "laqob": "-",
+  "hadith_count": "59",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 6,
+    "abudaud": 8,
+    "tirmidzi": 0,
+    "nasai": 8,
+    "ibnumajah": 1,
+    "ahmad": 29,
+    "malik": 0,
+    "darimi": 5
+  }
+}

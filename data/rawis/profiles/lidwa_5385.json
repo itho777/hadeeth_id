@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5385",
+  "name_en": "Ubaidullah bin Zahr",
+  "name_id": "Ubaidullah bin Zahr",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Afriqiyah",
+  "kunyah": "-",
+  "parents": "Adl Dlamriy",
+  "nasab": "Adl Dlamriy",
+  "laqob": "-",
+  "hadith_count": "50",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 9,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 35,
+    "malik": 0,
+    "darimi": 1
+  }
+}

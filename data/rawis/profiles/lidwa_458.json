@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_458",
+  "name_en": "Ahmad bin 'Abdullah bin Abi Syu'aib Muslim",
+  "name_id": "Ahmad bin 'Abdullah bin Abi Syu'aib Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "233 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 15,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

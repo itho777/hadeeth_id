@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8514",
+  "name_en": "Ya'qub bin Ibrahim bin Katsir",
+  "name_id": "Ya'qub bin Ibrahim bin Katsir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "252 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Yusuf",
+  "parents": "Ad Dawraqiy Al 'Abdiy",
+  "nasab": "Ad Dawraqiy Al 'Abdiy",
+  "laqob": "-",
+  "hadith_count": "216",
+  "book_counts": {
+    "bukhari": 34,
+    "muslim": 35,
+    "abudaud": 12,
+    "tirmidzi": 8,
+    "nasai": 109,
+    "ibnumajah": 8,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 8
+  }
+}

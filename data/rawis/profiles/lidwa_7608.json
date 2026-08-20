@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7608",
+  "name_en": "Ma'dan bin Abi Thalhah",
+  "name_id": "Ma'dan bin Abi Thalhah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Ya'mariy Al Kinaniy",
+  "nasab": "Al Ya'mariy Al Kinaniy",
+  "laqob": "-",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 7,
+    "abudaud": 4,
+    "tirmidzi": 6,
+    "nasai": 4,
+    "ibnumajah": 6,
+    "ahmad": 36,
+    "malik": 0,
+    "darimi": 4
+  }
+}

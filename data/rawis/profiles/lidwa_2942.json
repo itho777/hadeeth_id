@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2942",
+  "name_en": "Rifa'ah bin Rafi' bin Malik bin Al 'Ajlan",
+  "name_id": "Rifa'ah bin Rafi' bin Malik bin Al 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "41 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Mu'adz",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 4,
+    "nasai": 7,
+    "ibnumajah": 2,
+    "ahmad": 9,
+    "malik": 1,
+    "darimi": 2
+  }
+}

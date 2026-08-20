@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6916",
+  "name_en": "Muhammad bin Harb",
+  "name_id": "Muhammad bin Harb",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "194 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Khawlaniy",
+  "nasab": "Al Khawlaniy",
+  "laqob": "Al Abrasy",
+  "hadith_count": "72",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 12,
+    "abudaud": 10,
+    "tirmidzi": 1,
+    "nasai": 25,
+    "ibnumajah": 6,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 1
+  }
+}

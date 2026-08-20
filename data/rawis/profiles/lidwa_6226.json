@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6226",
+  "name_en": "Umair",
+  "name_id": "Umair",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Buhaisah",
+  "parents": "Al Fazariy",
+  "nasab": "Al Fazariy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

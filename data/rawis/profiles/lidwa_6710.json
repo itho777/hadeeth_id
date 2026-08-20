@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6710",
+  "name_en": "Mujasyi' bin Mas'ud bin Tsa'labah bin Wahab",
+  "name_id": "Mujasyi' bin Mas'ud bin Tsa'labah bin Wahab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "36 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "As Sulamiy",
+  "nasab": "As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7370",
+  "name_en": "Makhlad bin Yazid",
+  "name_id": "Makhlad bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "193 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "49",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 27,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

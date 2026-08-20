@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8351",
+  "name_en": "Yahya bin Yahya bin Qais",
+  "name_id": "Yahya bin Yahya bin Qais",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "135 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Ghassaniy",
+  "nasab": "Al Ghassaniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

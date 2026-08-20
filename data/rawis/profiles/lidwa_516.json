@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_516",
+  "name_en": "Arqam bin Abi Arqam",
+  "name_id": "Arqam bin Abi Arqam",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "55 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Qurasyiy Al Makhzumiy",
+  "nasab": "Al Qurasyiy Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

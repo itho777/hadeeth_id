@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2885",
+  "name_en": "Rabi'ah bin Abi 'Abdur Rahman Farrukh",
+  "name_id": "Rabi'ah bin Abi 'Abdur Rahman Farrukh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "136 H",
+  "city_of_death": "Anbar",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Utrsman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Rabi'ah Ar Ra'yi",
+  "hadith_count": "131",
+  "book_counts": {
+    "bukhari": 18,
+    "muslim": 11,
+    "abudaud": 14,
+    "tirmidzi": 4,
+    "nasai": 8,
+    "ibnumajah": 6,
+    "ahmad": 27,
+    "malik": 39,
+    "darimi": 4
+  }
+}

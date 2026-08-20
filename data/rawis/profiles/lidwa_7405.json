@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7405",
+  "name_en": "Marwan bin Syuja'",
+  "name_id": "Marwan bin Syuja'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "184 H",
+  "city_of_death": "Baghdad",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Jazari Al Umawiy",
+  "nasab": "Al Jazari Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 0
+  }
+}

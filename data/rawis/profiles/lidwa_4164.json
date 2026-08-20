@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4164",
+  "name_en": "Abbas bin Al Fadlol",
+  "name_id": "Abbas bin Al Fadlol",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "10",
+  "died_ah": "186 H",
+  "city_of_death": "-",
+  "residence": "Maushul",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "Al Anshariy Al Waqifiy",
+  "nasab": "Al Anshariy Al Waqifiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

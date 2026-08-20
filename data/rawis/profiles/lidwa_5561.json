@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5561",
+  "name_en": "Utsman bin Nu'aim bin Qais",
+  "name_id": "Utsman bin Nu'aim bin Qais",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru ",
+  "kunyah": "-",
+  "parents": "Ar Ru'ainiy Adz Dzabhaniy",
+  "nasab": "Ar Ru'ainiy Adz Dzabhaniy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

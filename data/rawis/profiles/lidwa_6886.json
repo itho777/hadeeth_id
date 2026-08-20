@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6886",
+  "name_en": "Muhammad bin Bakkaar bin 'Utsman",
+  "name_id": "Muhammad bin Bakkaar bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "204 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Bursaniy",
+  "nasab": "Al Bursaniy",
+  "laqob": "-",
+  "hadith_count": "363",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 56,
+    "abudaud": 14,
+    "tirmidzi": 6,
+    "nasai": 3,
+    "ibnumajah": 8,
+    "ahmad": 267,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1730",
+  "name_en": "An Nu'man bin Abi 'Ayyasy",
+  "name_id": "An Nu'man bin Abi 'Ayyasy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Salamah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 8,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 6,
+    "ibnumajah": 1,
+    "ahmad": 9,
+    "malik": 1,
+    "darimi": 2
+  }
+}

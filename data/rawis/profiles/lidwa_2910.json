@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2910",
+  "name_en": "Raja' bin Abi Salamah Mihran",
+  "name_id": "Raja' bin Abi Salamah Mihran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "161 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Miqdam",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 3
+  }
+}

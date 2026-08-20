@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8620",
+  "name_en": "Yunus bin Yahya bin Nubatah",
+  "name_id": "Yunus bin Yahya bin Nubatah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "207 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Nubatah",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

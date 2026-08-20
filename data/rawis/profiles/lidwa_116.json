@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_116",
+  "name_en": "Abu Bakar bin Salim bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_id": "Abu Bakar bin Salim bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al 'Adawiy Al Madaniy",
+  "nasab": "Al 'Adawiy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

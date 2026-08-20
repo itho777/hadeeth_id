@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1225",
+  "name_en": "Al Harits bin Hisyam bin Al Mughirah",
+  "name_id": "Al Harits bin Hisyam bin Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "18 H",
+  "city_of_death": "Syam",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Makhzumiy Al Qurasyiy",
+  "nasab": "Al Makhzumiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

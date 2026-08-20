@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4883",
+  "name_en": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+  "name_id": "Abdullah bin 'Abbas bin 'Abdul Muthallib bin Hasyim ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "68 H",
+  "city_of_death": "Tha'if",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "Al Qurasyiy Al Hasyimiy",
+  "nasab": "Al Qurasyiy Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "4848",
+  "book_counts": {
+    "bukhari": 706,
+    "muslim": 357,
+    "abudaud": 425,
+    "tirmidzi": 328,
+    "nasai": 498,
+    "ibnumajah": 344,
+    "ahmad": 1897,
+    "malik": 50,
+    "darimi": 243
+  }
+}

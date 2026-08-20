@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7320",
+  "name_en": "Muhammad bin Yahya bin Sa'id bin Farrukh",
+  "name_id": "Muhammad bin Yahya bin Sa'id bin Farrukh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "233 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Shalih",
+  "parents": "Al Qaththan Al Wasithiy",
+  "nasab": "Al Qaththan Al Wasithiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

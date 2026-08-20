@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8105",
+  "name_en": "Hunaydah bin Khalid",
+  "name_id": "Hunaydah bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Khuza'iy",
+  "nasab": "Al Khuza'iy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 6,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

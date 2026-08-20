@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5990",
+  "name_en": "Umar bin 'Ali bin Al Husain bin 'Ali",
+  "name_id": "Umar bin 'Ali bin Al Husain bin 'Ali",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

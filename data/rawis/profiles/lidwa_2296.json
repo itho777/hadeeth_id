@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2296",
+  "name_en": "Hajjaj bin Dinar",
+  "name_id": "Hajjaj bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 2
+  }
+}

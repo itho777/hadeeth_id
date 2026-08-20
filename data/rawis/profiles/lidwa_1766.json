@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1766",
+  "name_en": "Al Walid bin Al 'Ayzar bin Huraits",
+  "name_id": "Al Walid bin Al 'Ayzar bin Huraits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5997",
+  "name_en": "Umar bin Katsir bin Aflah",
+  "name_id": "Umar bin Katsir bin Aflah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 2,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7992",
+  "name_en": "Harun bin Harun bin 'Abdullah ",
+  "name_id": "Harun bin Harun bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhriz",
+  "parents": "Al Qurasyiy At Taymiy",
+  "nasab": "Al Qurasyiy At Taymiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

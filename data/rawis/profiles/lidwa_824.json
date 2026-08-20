@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_824",
+  "name_en": "Ibrahim bin Sa'id ",
+  "name_id": "Ibrahim bin Sa'id ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "249 H",
+  "city_of_death": "Mushayshah",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Jauhariy Ath Thabariy",
+  "nasab": "Al Jauhariy Ath Thabariy",
+  "laqob": "Ibnu Abi 'Utsman",
+  "hadith_count": "34",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 13,
+    "nasai": 2,
+    "ibnumajah": 11,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7508",
+  "name_en": "Mishda'",
+  "name_id": "Mishda'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah ",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "Al A'raj Al Ma'riqab",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 2
+  }
+}

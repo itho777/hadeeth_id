@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7261",
+  "name_en": "Muhammad bin Muhammad bin Marzuq",
+  "name_id": "Muhammad bin Muhammad bin Marzuq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "248 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Bahiliy",
+  "nasab": "Al Bahiliy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

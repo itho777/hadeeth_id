@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7373",
+  "name_en": "Mikhnaf bin Sulaim bin Al Harits",
+  "name_id": "Mikhnaf bin Sulaim bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "64 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Azdiy Al Ghamidiy",
+  "nasab": "Al Azdiy Al Ghamidiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

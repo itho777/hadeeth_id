@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 2042,
+  "arabicnumber": 2042,
+  "text": "Telah menceritakan kepada kami [Isma'il bin 'Abdullah] dari [saudaranya] dari [Sulaiman bin Bilal] dari ['Ubaidullah bin 'Umar] dari [Nafi'] dari ['Abdullah bin 'Umar] dari ['Umar bin Al Khaththob radliallahu 'anhu] bahwa dia berkata: \"Wahai Rasulullah, aku pernah bernadzar di zaman Jahiliyyah untuk beri'tikaf satu malam di Al Masjidil Haram\". Maka Nabi shallallahu 'alaihi wasallam berkata kepadanya: \"Tunaikanlah nadzarmu itu\". Maka kemudian 'Umar bin Al Khaththob radliallahu 'anhu melaksanakan i'tikafnya pada suatu malam",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Abdullah bin Umar bin al-Khattab",
+      "name_ar": "عبد الله بن عمر بن الخطاب",
+      "rawi_id": "rawi_ibn_umar"
+    },
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Sulaiman bin al-Asy'ats al-Azdi as-Sijistani",
+      "name_ar": "سليمان بن الأشعث الأزدي السجستاني",
+      "rawi_id": "rawi_abu_dawud"
+    }
+  ]
+}

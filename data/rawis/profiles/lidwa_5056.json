@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5056",
+  "name_en": "Abdullah bin Muhammad bin Rumhi",
+  "name_id": "Abdullah bin Muhammad bin Rumhi",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "255 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Sa'id",
+  "parents": "At Tajibiny",
+  "nasab": "At Tajibiny",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

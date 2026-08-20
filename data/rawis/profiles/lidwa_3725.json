@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3725",
+  "name_en": "Sayyar bin Abi Sayyar Wardan",
+  "name_id": "Sayyar bin Abi Sayyar Wardan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "122 H",
+  "city_of_death": "Hait",
+  "residence": "Hait",
+  "kunyah": "Abu Al Hakam",
+  "parents": "Al 'Anbariy",
+  "nasab": "Al 'Anbariy",
+  "laqob": "-",
+  "hadith_count": "68",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 11,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 8,
+    "ibnumajah": 0,
+    "ahmad": 29,
+    "malik": 0,
+    "darimi": 5
+  }
+}

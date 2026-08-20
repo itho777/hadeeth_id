@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5612",
+  "name_en": "Azrah bin 'Abdur Rahman bin Zurarah",
+  "name_id": "Azrah bin 'Abdur Rahman bin Zurarah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Khuza'iy",
+  "nasab": "Al Khuza'iy",
+  "laqob": "Al A'war",
+  "hadith_count": "34",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 8,
+    "ibnumajah": 1,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 3
+  }
+}

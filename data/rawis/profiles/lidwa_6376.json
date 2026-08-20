@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6376",
+  "name_en": "Ghaylan bin Jarir",
+  "name_id": "Ghaylan bin Jarir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "129 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Ma'waliy Al Azdiy",
+  "nasab": "Al Ma'waliy Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 11,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 9,
+    "ibnumajah": 5,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 2
+  }
+}

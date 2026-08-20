@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1826",
+  "name_en": "Bahar bin Kunaiz",
+  "name_id": "Bahar bin Kunaiz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "160 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "As Saqa'",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

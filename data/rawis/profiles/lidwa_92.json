@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_92",
+  "name_en": "Abu Al Munib",
+  "name_id": "Abu Al Munib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Munib",
+  "parents": "Al Jurasyiy Ad Damsyiqiy",
+  "nasab": "Al Jurasyiy Ad Damsyiqiy",
+  "laqob": "Al Ahdab",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

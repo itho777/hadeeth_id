@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8090",
+  "name_en": "Hilal bin Yasaf",
+  "name_id": "Hilal bin Yasaf",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Asyja'iy",
+  "nasab": "Al Asyja'iy",
+  "laqob": "-",
+  "hadith_count": "119",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 7,
+    "abudaud": 13,
+    "tirmidzi": 12,
+    "nasai": 17,
+    "ibnumajah": 7,
+    "ahmad": 58,
+    "malik": 0,
+    "darimi": 4
+  }
+}

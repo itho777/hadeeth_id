@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3285",
+  "name_en": "Sa'id bin Abi Hilal",
+  "name_id": "Sa'id bin Abi Hilal",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "135 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Al 'Alaa'",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "92",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 13,
+    "abudaud": 9,
+    "tirmidzi": 7,
+    "nasai": 15,
+    "ibnumajah": 3,
+    "ahmad": 23,
+    "malik": 0,
+    "darimi": 7
+  }
+}

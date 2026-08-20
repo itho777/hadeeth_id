@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2094",
+  "name_en": "Jubair bin Hayah bin Mas'ud",
+  "name_id": "Jubair bin Hayah bin Mas'ud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Syiraz",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

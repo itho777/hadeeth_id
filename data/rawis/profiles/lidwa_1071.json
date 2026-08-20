@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1071",
+  "name_en": "Iyas bin Tsa'labah",
+  "name_id": "Iyas bin Tsa'labah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Umamah",
+  "parents": "Al Balawiy Al Haritsiy",
+  "nasab": "Al Balawiy Al Haritsiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 4,
+    "malik": 1,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8349",
+  "name_en": "Yahya bin Watstsab",
+  "name_id": "Yahya bin Watstsab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "103 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Asadiy Al Muqri'iy",
+  "nasab": "Al Asadiy Al Muqri'iy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 1
+  }
+}

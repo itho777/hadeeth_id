@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3939",
+  "name_en": "Shafwan bin Shalih bin Shafwan bin Dinar",
+  "name_id": "Shafwan bin Shalih bin Shafwan bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "239 H",
+  "city_of_death": "-",
+  "residence": "Dujail",
+  "kunyah": "Abu 'Abdul Malik ",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

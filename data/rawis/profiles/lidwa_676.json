@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_676",
+  "name_en": "Ummu Muhammad bin 'Abdur Rahman bin Tsauban",
+  "name_id": "Ummu Muhammad bin 'Abdur Rahman bin Tsauban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Ummu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 1,
+    "darimi": 1
+  }
+}

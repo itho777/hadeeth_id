@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6487",
+  "name_en": "Qaza'ah bin Suwaid bin Hujair",
+  "name_id": "Qaza'ah bin Suwaid bin Hujair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Bahiliy",
+  "nasab": "Al Bahiliy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,1 +1,5 @@
-{"ar": "al-Muttalib bin 'Abdullah bin Hantab المطلب بن عبد الله بن حنطب", "en": "al-Muttalib bin 'Abdullah bin Hantab المطلب بن عبد الله بن حنطب", "id": "", "kunyah": "-", "residence": "Medina", "death_ah": "-", "grade": "Follower(Tabi') [4th generation]", "counts": "9 Hadiths"}
+ID=19944: counts='9 Hadiths'
+ID=374: counts='1 Hadiths'
+ID=25106: counts='1 Hadiths'
+ID=901: counts='21 Hadiths'
+ID=19098: counts='2 Hadiths'

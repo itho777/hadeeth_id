@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5222",
+  "name_en": "Abdul Malik bin 'Abdul 'Aziz",
+  "name_id": "Abdul Malik bin 'Abdul 'Aziz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "228 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Nashr",
+  "parents": "At Tammar Al Qusyairiy",
+  "nasab": "At Tammar Al Qusyairiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

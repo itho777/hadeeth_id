@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7306",
+  "name_en": "Muhammad bin Hasyim bin Sa'id",
+  "name_id": "Muhammad bin Hasyim bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "7",
+  "died_ah": "254 H",
+  "city_of_death": "Ba'labak",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Qurasyiy Al Ba'labakkiy",
+  "nasab": "Al Qurasyiy Al Ba'labakkiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 8,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

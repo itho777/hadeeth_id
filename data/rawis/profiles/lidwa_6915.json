@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6915",
+  "name_en": "Muhammad bin Hathib bin Al Harits",
+  "name_id": "Muhammad bin Hathib bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "86 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Qasim",
+  "parents": "Al Jumahiy",
+  "nasab": "Al Jumahiy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

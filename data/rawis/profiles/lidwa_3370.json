@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3370",
+  "name_en": "Sa'id bin 'Ubaidillah bin Jubair bin Hayyah",
+  "name_id": "Sa'id bin 'Ubaidillah bin Jubair bin Hayyah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Ats Tsaqafiy Al Jubairiy",
+  "nasab": "Ats Tsaqafiy Al Jubairiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

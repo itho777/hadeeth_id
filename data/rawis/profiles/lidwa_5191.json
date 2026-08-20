@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5191",
+  "name_en": "Abdul Malik bin Abi Bakar bin 'Abdur Rahman bin Al Harits bin Hisyam",
+  "name_id": "Abdul Malik bin Abi Bakar bin 'Abdur Rahman bin Al Harits bin Hisyam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al makhzumiy",
+  "nasab": "Al makhzumiy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 6,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 17,
+    "malik": 3,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8250",
+  "name_en": "Yahya bin Hassan bin Hayyan",
+  "name_id": "Yahya bin Hassan bin Hayyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "208 H",
+  "city_of_death": "Maru",
+  "residence": "Maru",
+  "kunyah": "Abu Zakariya",
+  "parents": "Al Bakriy At Tunisiy",
+  "nasab": "Al Bakriy At Tunisiy",
+  "laqob": "-",
+  "hadith_count": "93",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 19,
+    "abudaud": 14,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 51
+  }
+}

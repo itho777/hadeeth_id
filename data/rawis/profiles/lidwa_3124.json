@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3124",
+  "name_en": "Zaid bin Al Hubbab bin Ar Rayyan",
+  "name_id": "Zaid bin Al Hubbab bin Ar Rayyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "230 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Husain",
+  "parents": "Al 'Akaliy",
+  "nasab": "Al 'Akaliy",
+  "laqob": "-",
+  "hadith_count": "281",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 16,
+    "abudaud": 27,
+    "tirmidzi": 43,
+    "nasai": 15,
+    "ibnumajah": 48,
+    "ahmad": 126,
+    "malik": 0,
+    "darimi": 6
+  }
+}

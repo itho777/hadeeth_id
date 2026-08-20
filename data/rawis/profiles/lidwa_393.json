@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_393",
+  "name_en": "Abu Yunus maula 'Aisyah RAh ",
+  "name_id": "Abu Yunus maula 'Aisyah RAh ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 2,
+    "darimi": 0
+  }
+}

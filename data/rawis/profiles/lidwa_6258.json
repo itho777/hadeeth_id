@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6258",
+  "name_en": "Auf bin Al Harits bin Ath Thufail bin Sakhbarah",
+  "name_id": "Auf bin Al Harits bin Ath Thufail bin Sakhbarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Azdiy",
+  "nasab": "Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

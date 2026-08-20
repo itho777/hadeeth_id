@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7551",
+  "name_en": "Mu'adz bin Rifa'ah bin Rafi' bin Malik bin 'Ajlan",
+  "name_id": "Mu'adz bin Rifa'ah bin Rafi' bin Malik bin 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy Az Zurqiy",
+  "nasab": "Al Anshariy Az Zurqiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

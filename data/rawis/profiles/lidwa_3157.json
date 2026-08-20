@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3157",
+  "name_en": "Zaid bin Mirba' Qaizhiy",
+  "name_id": "Zaid bin Mirba' Qaizhiy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Ausiy Al Anshariy",
+  "nasab": "Al Ausiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

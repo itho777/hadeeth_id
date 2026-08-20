@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1555",
+  "name_en": "Al Fadlol bin 'Anbasah",
+  "name_id": "Al Fadlol bin 'Anbasah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "201 H",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Al Hasan",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

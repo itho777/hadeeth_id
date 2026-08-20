@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5217",
+  "name_en": "Abdul Malik bin Sal'i",
+  "name_id": "Abdul Malik bin Sal'i",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Hamdaniy",
+  "nasab": "Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

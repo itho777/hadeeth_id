@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5155",
+  "name_en": "Abdullah bin Yazid",
+  "name_id": "Abdullah bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "100 H",
+  "city_of_death": "Afriqiyah",
+  "residence": "-",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Mu'afiriy Al Hubuliy",
+  "nasab": "Al Mu'afiriy Al Hubuliy",
+  "laqob": "-",
+  "hadith_count": "123",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 10,
+    "tirmidzi": 14,
+    "nasai": 11,
+    "ibnumajah": 9,
+    "ahmad": 70,
+    "malik": 0,
+    "darimi": 5
+  }
+}

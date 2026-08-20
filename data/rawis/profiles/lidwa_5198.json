@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5198",
+  "name_en": "Abdul Malik bin Ibrahim",
+  "name_id": "Abdul Malik bin Ibrahim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "204 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Jadiy Al Hijaziy",
+  "nasab": "Al Jadiy Al Hijaziy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

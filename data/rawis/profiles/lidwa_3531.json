@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3531",
+  "name_en": "Salmaa binti Qais bin 'Amru",
+  "name_id": "Salmaa binti Qais bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ammu Al Mundzir",
+  "parents": "Al Anshariyyah An Najjariyyah",
+  "nasab": "Al Anshariyyah An Najjariyyah",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

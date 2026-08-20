@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6651",
+  "name_en": "Mu'ammal bin Al Fadlol bin Mujahid",
+  "name_id": "Mu'ammal bin Al Fadlol bin Mujahid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "229 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Harraniy",
+  "nasab": "Al Harraniy",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 25,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

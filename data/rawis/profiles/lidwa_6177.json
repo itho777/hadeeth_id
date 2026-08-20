@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6177",
+  "name_en": "Amru bin 'Aun bin Aus bin Al Ja'di",
+  "name_id": "Amru bin 'Aun bin Aus bin Al Ja'di",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "225 H",
+  "city_of_death": "Hait",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Wasithiy Al Bazzar",
+  "nasab": "Al Wasithiy Al Bazzar",
+  "laqob": "-",
+  "hadith_count": "128",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 2,
+    "abudaud": 41,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 67
+  }
+}

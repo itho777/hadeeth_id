@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8049",
+  "name_en": "Hisyam bin Sa'id bin Zaid bin 'Amru bin Nufail",
+  "name_id": "Hisyam bin Sa'id bin Zaid bin 'Amru bin Nufail",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al 'Adawiy",
+  "nasab": "Al Qurasyiy Al 'Adawiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

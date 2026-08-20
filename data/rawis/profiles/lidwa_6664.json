@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6664",
+  "name_en": "Malik bin Al Harits bin 'Abdu Yaghuts",
+  "name_id": "Malik bin Al Harits bin 'Abdu Yaghuts",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "37 H",
+  "city_of_death": "Qalzum",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "An Nakha'iy",
+  "nasab": "An Nakha'iy",
+  "laqob": "Al Asytar",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

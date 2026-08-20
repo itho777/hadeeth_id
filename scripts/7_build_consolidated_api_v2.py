@@ -126,8 +126,9 @@ def build_api():
                         "paths": enriched_paths
                     }
 
-    # Pre-load Lidwa Grades from lidwa_plaintext.db
+    # Pre-load Lidwa Grades and Elevations from lidwa_plaintext.db
     lidwa_grades_map = {}
+    lidwa_elevation_map = {}
     lidwa_db_path = os.path.join(BASE_DIR, "scratch", "lidwa_plaintext.db")
     if os.path.exists(lidwa_db_path):
         conn = sqlite3.connect(lidwa_db_path)
@@ -138,7 +139,9 @@ def build_api():
             "tirmidhi": "derajat_tirmidzi",
             "nasai": "derajat_nasai",
             "ibnmajah": "derajat_ibnumajah",
-            "darimi": "derajat_darimi"
+            "darimi": "derajat_darimi",
+            "ahmad": "derajat_ahmad",
+            "malik": "derajat_malik"
         }
         for b_id, table_name in table_map.items():
             lidwa_grades_map[b_id] = {}
@@ -148,6 +151,42 @@ def build_api():
                     lidwa_grades_map[b_id][str(row[0])] = row[1].strip()
             except sqlite3.OperationalError:
                 pass
+                
+        # Kumpulan for Elevation
+        kumpulan_tables = {
+            "kumpulan_marfu": "Marfu'",
+            "kumpulan_mauquf": "Mauquf",
+            "kumpulan_maqthu": "Maqthu'",
+            "kumpulan_mursal": "Mursal",
+            "kumpulan_muallaq": "Mu'allaq",
+            "kumpulan_munqathi": "Munqathi'",
+            "kumpulan_mutawatir": "Mutawatir",
+            "kumpulan_qudsi": "Qudsi"
+        }
+        book_name_to_id = {
+            "bukhari": "bukhari", "muslim": "muslim", "abudaud": "abudawud",
+            "tirmidzi": "tirmidhi", "nasai": "nasai", "ibnumajah": "ibnmajah",
+            "darimi": "darimi", "ahmad": "ahmad", "malik": "malik"
+        }
+        for table, label in kumpulan_tables.items():
+            try:
+                # Schema might be: (Id, Kitab, NoHdt)
+                cursor = conn.execute(f"SELECT * FROM {table}")
+                for row in cursor.fetchall():
+                    b_name = row[1]
+                    h_num = str(row[2])
+                    b_id = book_name_to_id.get(b_name.lower(), b_name)
+                    if b_id not in lidwa_elevation_map:
+                        lidwa_elevation_map[b_id] = {}
+                    
+                    # If already has one, maybe join them? Usually a hadith is only one main type, but could be Qudsi and Marfu.
+                    if h_num in lidwa_elevation_map[b_id]:
+                        lidwa_elevation_map[b_id][h_num] += f", {label}"
+                    else:
+                        lidwa_elevation_map[b_id][h_num] = label
+            except sqlite3.OperationalError:
+                pass
+                
         conn.close()
 
     total_hadiths_built = 0
@@ -267,9 +306,16 @@ def build_api():
                             syarah_source = cdat.get('source', '')
             syarah_ar = syarah_ar.strip()
             
-            # Grade
+            # Grade & Elevation
             grade_en = h.get('grade_en', '')
             grade_ar = h.get('grade', '') # keep if it actually existed in ahmedbaset
+            
+            elevation = ""
+            if lidwa_h:
+                b_elevs = lidwa_elevation_map.get(book_id, {})
+                elevation = b_elevs.get(str(lidwa_h.get('hadith_number')), "")
+                if not elevation:
+                    elevation = b_elevs.get(str(lidwa_h.get('id')), "")
             
             # Standardize payload
             out_obj = {
@@ -290,6 +336,7 @@ def build_api():
                 "related": related,
                 "grade_en": grade_en,
                 "grade_id": grade_id,
+                "elevation": elevation,
                 "lidwa_id": lidwa_id
             }
             

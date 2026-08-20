@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2155",
+  "name_en": "Ja'far bin 'Abdullah bin 'Utsman bin Humaid",
+  "name_id": "Ja'far bin 'Abdullah bin 'Utsman bin Humaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

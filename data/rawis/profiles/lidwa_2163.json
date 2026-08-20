@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2163",
+  "name_en": "Ja'far bin Muhammad bin 'Ali bin Al Husain",
+  "name_id": "Ja'far bin Muhammad bin 'Ali bin Al Husain",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "148 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Ash Shadiq",
+  "hadith_count": "169",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 17,
+    "abudaud": 11,
+    "tirmidzi": 20,
+    "nasai": 44,
+    "ibnumajah": 19,
+    "ahmad": 36,
+    "malik": 14,
+    "darimi": 8
+  }
+}

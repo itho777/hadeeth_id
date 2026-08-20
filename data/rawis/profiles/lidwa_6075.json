@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6075",
+  "name_en": "Amru bin Al Ahwash",
+  "name_id": "Amru bin Al Ahwash",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Jasymiy",
+  "nasab": "Al Jasymiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

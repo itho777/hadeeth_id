@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_976",
+  "name_en": "Ishaq bin Yanya bin 'Alqamah",
+  "name_id": "Ishaq bin Yanya bin 'Alqamah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Kalibiy Al Himshiy",
+  "nasab": "Al Kalibiy Al Himshiy",
+  "laqob": "Al 'Aushiy",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3760",
+  "name_en": "Syuja' bin Al Walid bin Qais",
+  "name_id": "Syuja' bin Al Walid bin Qais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "204 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Badar",
+  "parents": "As Sukuniy Al Kufiy",
+  "nasab": "As Sukuniy Al Kufiy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 7,
+    "tirmidzi": 4,
+    "nasai": 1,
+    "ibnumajah": 6,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 2
+  }
+}

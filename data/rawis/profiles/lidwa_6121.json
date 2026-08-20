@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6121",
+  "name_en": "Amru bin Khuzaimah",
+  "name_id": "Amru bin Khuzaimah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Khuzaimah",
+  "parents": "Al Muzaniy",
+  "nasab": "Al Muzaniy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

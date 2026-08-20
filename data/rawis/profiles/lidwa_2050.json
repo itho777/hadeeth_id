@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2050",
+  "name_en": "Tsumamah bin 'Abdullah bin Anas bin Malik",
+  "name_id": "Tsumamah bin 'Abdullah bin Anas bin Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "70",
+  "book_counts": {
+    "bukhari": 30,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 8,
+    "nasai": 3,
+    "ibnumajah": 5,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 3
+  }
+}

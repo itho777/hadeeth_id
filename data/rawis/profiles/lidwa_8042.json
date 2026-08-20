@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8042",
+  "name_en": "Hisyam bin Hassan",
+  "name_id": "Hisyam bin Hassan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "148 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Azdiy Al Qurdusiy",
+  "nasab": "Al Azdiy Al Qurdusiy",
+  "laqob": "-",
+  "hadith_count": "492",
+  "book_counts": {
+    "bukhari": 28,
+    "muslim": 54,
+    "abudaud": 39,
+    "tirmidzi": 32,
+    "nasai": 31,
+    "ibnumajah": 23,
+    "ahmad": 228,
+    "malik": 0,
+    "darimi": 57
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5672",
+  "name_en": "Uqbah bin 'Amir bin 'Abs",
+  "name_id": "Uqbah bin 'Amir bin 'Abs",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "58 H",
+  "city_of_death": "Maqthum",
+  "residence": "Maru",
+  "kunyah": "Abu Hammad",
+  "parents": "Al Juhaniy",
+  "nasab": "Al Juhaniy",
+  "laqob": "-",
+  "hadith_count": "355",
+  "book_counts": {
+    "bukhari": 19,
+    "muslim": 21,
+    "abudaud": 26,
+    "tirmidzi": 20,
+    "nasai": 41,
+    "ibnumajah": 24,
+    "ahmad": 175,
+    "malik": 0,
+    "darimi": 29
+  }
+}

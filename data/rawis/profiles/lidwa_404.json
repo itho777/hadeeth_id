@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_404",
+  "name_en": "Ahmad bin Asad bin 'Ashim bin Mughawwil ",
+  "name_id": "Ahmad bin Asad bin 'Ashim bin Mughawwil ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "229 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Ashim",
+  "parents": "Al Bajaliy",
+  "nasab": "Al Bajaliy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 4
+  }
+}

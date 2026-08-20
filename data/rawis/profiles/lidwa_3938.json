@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3938",
+  "name_en": "Shafwan bin Sulaim",
+  "name_id": "Shafwan bin Sulaim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "132 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Az Zuhriy",
+  "nasab": "Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "75",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 5,
+    "abudaud": 7,
+    "tirmidzi": 6,
+    "nasai": 10,
+    "ibnumajah": 7,
+    "ahmad": 16,
+    "malik": 8,
+    "darimi": 6
+  }
+}

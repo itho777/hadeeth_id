@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8387",
+  "name_en": "Yazid bin Ibrahim",
+  "name_id": "Yazid bin Ibrahim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "163 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "At Tustariy At Tamimiy",
+  "nasab": "At Tustariy At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "41",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 3
+  }
+}

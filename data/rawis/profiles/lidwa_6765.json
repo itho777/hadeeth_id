@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6765",
+  "name_en": "Muhammad bin Abi Hafshah Maisarah ",
+  "name_id": "Muhammad bin Abi Hafshah Maisarah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Salamah",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 31,
+    "malik": 0,
+    "darimi": 1
+  }
+}

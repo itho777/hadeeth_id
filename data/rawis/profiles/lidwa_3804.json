@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3804",
+  "name_en": "Syu'aib bin Al Habhaab",
+  "name_id": "Syu'aib bin Al Habhaab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "130 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Shalih",
+  "parents": "Al Azdiy Al Mu'awwaliy",
+  "nasab": "Al Azdiy Al Mu'awwaliy",
+  "laqob": "-",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 3
+  }
+}

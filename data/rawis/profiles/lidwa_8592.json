@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8592",
+  "name_en": "Yusuf bin Musa bin Raosyid bin Bilal",
+  "name_id": "Yusuf bin Musa bin Raosyid bin Bilal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "253 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Al Qaththan Ar Raziy",
+  "nasab": "Al Qaththan Ar Raziy",
+  "laqob": "-",
+  "hadith_count": "49",
+  "book_counts": {
+    "bukhari": 22,
+    "muslim": 0,
+    "abudaud": 11,
+    "tirmidzi": 5,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 6
+  }
+}

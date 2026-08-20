@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_846",
+  "name_en": "Ibrahim bin 'Abdullah bin Al Mundzir",
+  "name_id": "Ibrahim bin 'Abdullah bin Al Mundzir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Yaman",
+  "kunyah": "-",
+  "parents": "Al Bahiliy Ash Shan'aniy",
+  "nasab": "Al Bahiliy Ash Shan'aniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

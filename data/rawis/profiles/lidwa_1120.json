@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1120",
+  "name_en": "Ibnu Mirsa maula Quraisy",
+  "name_id": "Ibnu Mirsa maula Quraisy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 1,
+    "darimi": 0
+  }
+}

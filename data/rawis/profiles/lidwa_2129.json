@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2129",
+  "name_en": "Ja'di bin Dinar",
+  "name_id": "Ja'di bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Shahibu Al Haliya",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 8,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 3
+  }
+}

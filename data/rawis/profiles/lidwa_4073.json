@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4073",
+  "name_en": "Ashim bin 'Umar bin Hafsh bin 'Ashim",
+  "name_id": "Ashim bin 'Umar bin Hafsh bin 'Ashim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "154 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Umar",
+  "parents": "Al 'Umariy",
+  "nasab": "Al 'Umariy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

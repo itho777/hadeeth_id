@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7009",
+  "name_en": "Muhammad bin Sinan",
+  "name_id": "Muhammad bin Sinan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "223 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Bahiliy Al 'Aufiy",
+  "nasab": "Al Bahiliy Al 'Aufiy",
+  "laqob": "-",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

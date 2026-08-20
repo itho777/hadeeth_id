@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6437",
+  "name_en": "Fulaih bin Sulaiman bin Abi Al Mughirah",
+  "name_id": "Fulaih bin Sulaiman bin Abi Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "168 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Khuza'iy",
+  "nasab": "Al Khuza'iy",
+  "laqob": "-",
+  "hadith_count": "207",
+  "book_counts": {
+    "bukhari": 53,
+    "muslim": 5,
+    "abudaud": 10,
+    "tirmidzi": 8,
+    "nasai": 1,
+    "ibnumajah": 6,
+    "ahmad": 119,
+    "malik": 0,
+    "darimi": 5
+  }
+}

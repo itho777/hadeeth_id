@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2573",
+  "name_en": "Hanzhalah bin Qais bin 'Amru",
+  "name_id": "Hanzhalah bin Qais bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 1,
+    "darimi": 0
+  }
+}

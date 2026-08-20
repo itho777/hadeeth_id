@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3528",
+  "name_en": "Salmaa bin 'Abdullah bin Salmaa",
+  "name_id": "Salmaa bin 'Abdullah bin Salmaa",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "10",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "AbuBakar",
+  "parents": "Al Hadzaliy",
+  "nasab": "Al Hadzaliy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

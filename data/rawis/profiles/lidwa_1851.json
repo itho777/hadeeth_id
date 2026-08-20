@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1851",
+  "name_en": "Busrah binti Shafwan bin Naufal",
+  "name_id": "Busrah binti Shafwan bin Naufal",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Mu'awiyah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 6,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 1,
+    "darimi": 2
+  }
+}

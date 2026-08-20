@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4506",
+  "name_en": "Abdur Rahman bin Hurmuz",
+  "name_id": "Abdur Rahman bin Hurmuz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "117 H",
+  "city_of_death": "Iskandariyah",
+  "residence": "Madinah",
+  "kunyah": "Abu Daud",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "Al A'raj",
+  "hadith_count": "960",
+  "book_counts": {
+    "bukhari": 194,
+    "muslim": 140,
+    "abudaud": 53,
+    "tirmidzi": 40,
+    "nasai": 86,
+    "ibnumajah": 47,
+    "ahmad": 306,
+    "malik": 68,
+    "darimi": 26
+  }
+}

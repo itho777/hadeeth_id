@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8015",
+  "name_en": "Hubaimah bin Hayya",
+  "name_id": "Hubaimah bin Hayya",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "81 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Ummu Ad Darda'",
+  "parents": "Al Awshabiyyah",
+  "nasab": "Al Awshabiyyah",
+  "laqob": "-",
+  "hadith_count": "71",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 7,
+    "abudaud": 11,
+    "tirmidzi": 8,
+    "nasai": 1,
+    "ibnumajah": 10,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 5
+  }
+}

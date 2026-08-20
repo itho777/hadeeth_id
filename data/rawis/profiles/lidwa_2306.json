@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2306",
+  "name_en": "Hajjaj bin Nushair",
+  "name_id": "Hajjaj bin Nushair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "213 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Fasathithiy Al Bashri",
+  "nasab": "Al Fasathithiy Al Bashri",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 2
+  }
+}

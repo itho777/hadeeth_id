@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_788",
+  "name_en": "Ibrahim bin Adham bin Manshur ",
+  "name_id": "Ibrahim bin Adham bin Manshur ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "162 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al 'Ijliy Al Balkhiy",
+  "nasab": "Al 'Ijliy Al Balkhiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

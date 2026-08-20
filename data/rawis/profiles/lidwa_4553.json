@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4553",
+  "name_en": "Abdul 'Aziz bin Abi Hazim Salamah bin Dinar",
+  "name_id": "Abdul 'Aziz bin Abi Hazim Salamah bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "184 H",
+  "city_of_death": "Madinah ",
+  "residence": "Madinah",
+  "kunyah": "Abu Tammam",
+  "parents": "Al Muharibiy",
+  "nasab": "Al Muharibiy",
+  "laqob": "-",
+  "hadith_count": "129",
+  "book_counts": {
+    "bukhari": 47,
+    "muslim": 22,
+    "abudaud": 5,
+    "tirmidzi": 6,
+    "nasai": 5,
+    "ibnumajah": 34,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 2
+  }
+}

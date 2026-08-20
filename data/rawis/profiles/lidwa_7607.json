@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7607",
+  "name_en": "Mu'tamir bin Sulaiman bin Thurkhan",
+  "name_id": "Mu'tamir bin Sulaiman bin Thurkhan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "9",
+  "died_ah": "187 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "Ath Thufail",
+  "hadith_count": "379",
+  "book_counts": {
+    "bukhari": 61,
+    "muslim": 73,
+    "abudaud": 33,
+    "tirmidzi": 24,
+    "nasai": 55,
+    "ibnumajah": 23,
+    "ahmad": 92,
+    "malik": 0,
+    "darimi": 18
+  }
+}

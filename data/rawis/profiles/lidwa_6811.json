@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6811",
+  "name_en": "Muhammad bin Ishaq bin Yasar",
+  "name_id": "Muhammad bin Ishaq bin Yasar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "150 H",
+  "city_of_death": "Baghdad",
+  "residence": "Madinah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Muthallibiy",
+  "nasab": "Al Muthallibiy",
+  "laqob": "-",
+  "hadith_count": "1041",
+  "book_counts": {
+    "bukhari": 17,
+    "muslim": 7,
+    "abudaud": 169,
+    "tirmidzi": 58,
+    "nasai": 39,
+    "ibnumajah": 80,
+    "ahmad": 604,
+    "malik": 0,
+    "darimi": 67
+  }
+}

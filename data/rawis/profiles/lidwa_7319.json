@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7319",
+  "name_en": "Muhammad bin Yahya bin Hibban",
+  "name_id": "Muhammad bin Yahya bin Hibban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "121 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Anshariy Al Maziniy",
+  "nasab": "Al Anshariy Al Maziniy",
+  "laqob": "-",
+  "hadith_count": "153",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 13,
+    "abudaud": 13,
+    "tirmidzi": 5,
+    "nasai": 23,
+    "ibnumajah": 11,
+    "ahmad": 51,
+    "malik": 15,
+    "darimi": 12
+  }
+}

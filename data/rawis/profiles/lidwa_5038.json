@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5038",
+  "name_en": "Abdullah bin Malik bin Al Qasyab",
+  "name_id": "Abdullah bin Malik bin Al Qasyab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "56 H",
+  "city_of_death": "Bathun Raym",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Azdiy",
+  "nasab": "Al Azdiy",
+  "laqob": "Ibnu Buhainah",
+  "hadith_count": "55",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 7,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 8,
+    "ibnumajah": 4,
+    "ahmad": 16,
+    "malik": 2,
+    "darimi": 4
+  }
+}

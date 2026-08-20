@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6506",
+  "name_en": "Qais",
+  "name_id": "Qais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Mada'in",
+  "kunyah": "Abu Maryam",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

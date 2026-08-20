@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_980",
+  "name_en": "Ishaq maula Za'idah",
+  "name_id": "Ishaq maula Za'idah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 1,
+    "darimi": 0
+  }
+}

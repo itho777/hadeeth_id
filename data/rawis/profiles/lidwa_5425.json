@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5425",
+  "name_en": "Ubaidullah bin 'Amru bin Abi Al Walid",
+  "name_id": "Ubaidullah bin 'Amru bin Abi Al Walid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "180 H",
+  "city_of_death": "Riqqah",
+  "residence": "Syam",
+  "kunyah": "Abu Wahab",
+  "parents": "Al Asadiy Al Jazariy",
+  "nasab": "Al Asadiy Al Jazariy",
+  "laqob": "-",
+  "hadith_count": "134",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 17,
+    "abudaud": 7,
+    "tirmidzi": 8,
+    "nasai": 16,
+    "ibnumajah": 9,
+    "ahmad": 57,
+    "malik": 0,
+    "darimi": 17
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3888",
+  "name_en": "Shalih bin 'Atha' bin Khabbab",
+  "name_id": "Shalih bin 'Atha' bin Khabbab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Ad Dailiy",
+  "nasab": "Ad Dailiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

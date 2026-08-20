@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5943",
+  "name_en": "Umar bin Dzar bin 'Abdullah bin Zurarah",
+  "name_id": "Umar bin Dzar bin 'Abdullah bin Zurarah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "153 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Dzar",
+  "parents": "Al Marhabiy Al Hamdaniy",
+  "nasab": "Al Marhabiy Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

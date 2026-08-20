@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7852",
+  "name_en": "Nafi' bin 'Abdur Rahman bin Abi Nu'aim",
+  "name_id": "Nafi' bin 'Abdur Rahman bin Abi Nu'aim",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "69 H",
+  "city_of_death": "-",
+  "residence": "Ashpahan",
+  "kunyah": "-",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "Maula Bani Laits",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

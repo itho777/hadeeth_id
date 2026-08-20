@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6513",
+  "name_en": "Qais bin Al Hajaj bin Khaliy",
+  "name_id": "Qais bin Al Hajaj bin Khaliy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "129 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "Al Kala'iy As Salafiy",
+  "nasab": "Al Kala'iy As Salafiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

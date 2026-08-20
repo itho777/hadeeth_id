@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8368",
+  "name_en": "Yazid bin Abi Ziyad",
+  "name_id": "Yazid bin Abi Ziyad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "136 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Qurasyiy Al Hasyimiy",
+  "nasab": "Al Qurasyiy Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "176",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 19,
+    "tirmidzi": 14,
+    "nasai": 3,
+    "ibnumajah": 21,
+    "ahmad": 110,
+    "malik": 0,
+    "darimi": 8
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7518",
+  "name_en": "Mush'ab bin Syaibah bin Jubair",
+  "name_id": "Mush'ab bin Syaibah bin Jubair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al 'Abdariy Al Hajabiy",
+  "nasab": "Al 'Abdariy Al Hajabiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 5,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

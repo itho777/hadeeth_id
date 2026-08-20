@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6557",
+  "name_en": "Katsir bin Al Yaman",
+  "name_id": "Katsir bin Al Yaman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Yaman",
+  "parents": "Ar Rihal",
+  "nasab": "Ar Rihal",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "rawi_atho_bin_yasar",
+  "name_en": "Atho' bin Yasar",
+  "name_id": "Atha bin Yasar",
+  "name_ar": "عطاء بن يسار",
+  "is_sahabi": "false",
+  "generation": "Tabi'i",
+  "grade": "Thiqah Fadil",
+  "died_ah": "103",
+  "died_ce": "721",
+  "hadith_count": "205",
+  "city_of_death": "Madinah",
+  "bio_en": "Devout Madinan Tabi'i scholar and narrator from Abu Hurairah and Abu Sa'id al-Khudri.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 61,
+    "muslim": 32,
+    "abudaud": 33,
+    "tirmidzi": 25,
+    "nasai": 30,
+    "ibnumajah": 28,
+    "ahmad": 150,
+    "malik": 36,
+    "darimi": 21
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7841",
+  "name_en": "Na'im bin Ujail",
+  "name_id": "Na'im bin Ujail",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "80 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Hamdaniy",
+  "nasab": "Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

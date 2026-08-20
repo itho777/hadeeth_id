@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5614",
+  "name_en": "Isil bin Sufyan",
+  "name_id": "Isil bin Sufyan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Qurrah",
+  "parents": "At Tamimiy Al Yarbu'iy",
+  "nasab": "At Tamimiy Al Yarbu'iy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

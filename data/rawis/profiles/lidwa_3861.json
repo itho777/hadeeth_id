@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3861",
+  "name_en": "Shalih bin Basyir bin Wadi'",
+  "name_id": "Shalih bin Basyir bin Wadi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "172 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bisyir",
+  "parents": "Al Qari'iy Al Muriy",
+  "nasab": "Al Qari'iy Al Muriy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 4
+  }
+}

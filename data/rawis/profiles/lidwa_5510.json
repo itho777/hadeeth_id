@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5510",
+  "name_en": "Utsman bin Hanif bin Wahab",
+  "name_id": "Utsman bin Hanif bin Wahab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Anshariy Al Ausiy",
+  "nasab": "Al Anshariy Al Ausiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

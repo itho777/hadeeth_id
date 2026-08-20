@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6266",
+  "name_en": "Aun bin 'Abdullah bin 'Utbah",
+  "name_id": "Aun bin 'Abdullah bin 'Utbah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Hudzaliy",
+  "nasab": "Al Hudzaliy",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 5,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 7
+  }
+}

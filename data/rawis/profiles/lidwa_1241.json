@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1241",
+  "name_en": "Al Hasan bin Abi Ja'far 'Ajlan",
+  "name_id": "Al Hasan bin Abi Ja'far 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Ja'fariy",
+  "nasab": "Al Ja'fariy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 3
+  }
+}

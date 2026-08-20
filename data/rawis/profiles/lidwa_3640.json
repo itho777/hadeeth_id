@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3640",
+  "name_en": "Simak bin 'Ubaid bin Al Walid",
+  "name_id": "Simak bin 'Ubaid bin Al Walid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Marbadiy",
+  "nasab": "Al Marbadiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

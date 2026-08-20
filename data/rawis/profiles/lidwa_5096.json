@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5096",
+  "name_en": "Abdullah bin Ma'bad",
+  "name_id": "Abdullah bin Ma'bad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Az Zamaniy",
+  "nasab": "Az Zamaniy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

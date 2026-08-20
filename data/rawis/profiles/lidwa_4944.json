@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4944",
+  "name_en": "Abdullah bin 'Utsman bin Khutsaim",
+  "name_id": "Abdullah bin 'Utsman bin Khutsaim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Qari'",
+  "nasab": "Al Qari'",
+  "laqob": "-",
+  "hadith_count": "148",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 10,
+    "tirmidzi": 11,
+    "nasai": 2,
+    "ibnumajah": 19,
+    "ahmad": 95,
+    "malik": 0,
+    "darimi": 9
+  }
+}

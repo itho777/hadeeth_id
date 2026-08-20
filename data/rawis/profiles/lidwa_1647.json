@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1647",
+  "name_en": "Al Mu'afiy bin 'Imran",
+  "name_id": "Al Mu'afiy bin 'Imran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "185 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Mas'ud",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 9,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 2
+  }
+}

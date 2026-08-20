@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8254",
+  "name_en": "Yahya bin Hamzah bin Waqid",
+  "name_id": "Yahya bin Hamzah bin Waqid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "183 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Hadlramiy Al Batlahiy",
+  "nasab": "Al Hadlramiy Al Batlahiy",
+  "laqob": "-",
+  "hadith_count": "96",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 8,
+    "abudaud": 8,
+    "tirmidzi": 2,
+    "nasai": 17,
+    "ibnumajah": 17,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 30
+  }
+}

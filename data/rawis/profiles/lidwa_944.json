@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_944",
+  "name_en": "Ishaq bin bin Sa'id bin 'Amru bin Sa'id bin Al 'Ash",
+  "name_id": "Ishaq bin bin Sa'id bin 'Amru bin Sa'id bin Al 'Ash",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "170 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Umawiy Al Qurasyiy",
+  "nasab": "Al Umawiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "33",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 21,
+    "malik": 0,
+    "darimi": 0
+  }
+}

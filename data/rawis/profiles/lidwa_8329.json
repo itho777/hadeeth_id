@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8329",
+  "name_en": "Yahya bin Katsir bin Dirham",
+  "name_id": "Yahya bin Katsir bin Dirham",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "206 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ghassan",
+  "parents": "Al 'Anbariy Al Khurasaniy",
+  "nasab": "Al 'Anbariy Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 3,
+    "tirmidzi": 5,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

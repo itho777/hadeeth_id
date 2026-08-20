@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1735",
+  "name_en": "An Nu'man bin Rasyid",
+  "name_id": "An Nu'man bin Rasyid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ishaq",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 0
+  }
+}

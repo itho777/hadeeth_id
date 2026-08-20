@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7561",
+  "name_en": "Mu'adz bin Mu'adz bin Nashr bin Hassan ",
+  "name_id": "Mu'adz bin Mu'adz bin Nashr bin Hassan ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "196 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Mutsannaa",
+  "parents": "Al 'Anbariy At Tamimiy",
+  "nasab": "Al 'Anbariy At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "318",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 173,
+    "abudaud": 55,
+    "tirmidzi": 5,
+    "nasai": 9,
+    "ibnumajah": 6,
+    "ahmad": 37,
+    "malik": 0,
+    "darimi": 8
+  }
+}

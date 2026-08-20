@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_877",
+  "name_en": "Ibrahim bin Muhammad bion Thalhah",
+  "name_id": "Ibrahim bin Muhammad bion Thalhah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "110 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Ishaq",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "Al A'raj",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

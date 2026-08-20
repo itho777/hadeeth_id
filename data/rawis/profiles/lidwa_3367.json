@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3367",
+  "name_en": "Sa'id bin 'Ubaid",
+  "name_id": "Sa'id bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Hudzail",
+  "parents": "Ath Tha'iy",
+  "nasab": "Ath Tha'iy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

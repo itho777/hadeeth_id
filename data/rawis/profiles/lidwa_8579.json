@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8579",
+  "name_en": "Yusuf bin 'Abdullah bin Al Harits",
+  "name_id": "Yusuf bin 'Abdullah bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Walid",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

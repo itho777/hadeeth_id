@@ -20,6 +20,72 @@ const HadeethAPI = {
     return window.location.origin + base + '/data';
   },
 
+  get dataUrl() {
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        return this.baseUrl;
+    }
+    return 'https://raw.githubusercontent.com/itho777/hadeeth_id/main/data';
+  },
+
+  /**
+   * Fetch and cache the NDJSON byte offset index for a specific file
+   */
+  async fetchNdjsonIndex(prefix, bookId) {
+    if (!this.ndjsonIndexes) this.ndjsonIndexes = {};
+    const key = `${prefix}_${bookId}`;
+    if (this.ndjsonIndexes[key]) return this.ndjsonIndexes[key];
+    
+    const url = `${this.dataUrl}/${prefix}/${bookId}_ndjson_index.json`;
+    const res = await fetch(url).catch(() => null);
+    if (res && res.ok) {
+        this.ndjsonIndexes[key] = await res.json();
+        return this.ndjsonIndexes[key];
+    }
+    return null;
+  },
+
+  /**
+   * Fetch a specific byte range from an NDJSON file
+   */
+  async fetchNdjsonRange(prefix, bookId, startByte, endByte) {
+    const url = `${this.dataUrl}/${prefix}/${bookId}.ndjson`;
+    const res = await fetch(url, {
+        headers: { 'Range': `bytes=${startByte}-${endByte}` }
+    });
+    if (!res.ok && res.status !== 206) throw new Error(`HTTP ${res.status}`);
+    
+    let buffer = await res.arrayBuffer();
+    
+    // If the server ignored our Range request and sent the full file (status 200), slice it manually.
+    if (res.status === 200) {
+        buffer = buffer.slice(startByte, endByte + 1);
+    }
+    
+    const text = new TextDecoder('utf-8').decode(buffer);
+    const lines = text.split('\n').filter(l => l.trim().length > 0);
+    const results = [];
+    for (const line of lines) {
+      try {
+        results.push(JSON.parse(line));
+      } catch (e) {
+        // Truncated boundary fragment — skip it (expected when range cuts mid-line)
+      }
+    }
+    return results;
+  },
+  
+  /**
+   * Fallback to fetch the entire NDJSON file
+   */
+  async fetchNdjsonFull(prefix, bookId) {
+    const url = `${this.dataUrl}/${prefix}/${bookId}.ndjson`;
+    const res = await fetch(url).catch(() => null);
+    if (!res || !res.ok) throw new Error(`HTTP ${res ? res.status : 'Network Error'}`);
+    const text = await res.text();
+    const lines = text.split('\n').filter(l => l.trim().length > 0);
+    return lines.map(l => JSON.parse(l));
+  },
+
   /**
    * Fetch master list of books
    */
@@ -76,26 +142,20 @@ const HadeethAPI = {
   },
 
   /**
-   * Fetch hadiths for a specific chapter from the consolidated API
+   * Fetch hadiths for a specific chapter from the consolidated API using HTTP Range Requests
    */
   async getChapterHadiths(bookId, chapterId) {
     try {
-      if (!this.apiCache) this.apiCache = {};
-      if (!this.apiCache[bookId]) this.apiCache[bookId] = {};
-      
-      if (!this.apiCache[bookId]['all']) {
-        const res = await fetch(`${this.baseUrl}/api/${bookId}.json`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        this.apiCache[bookId]['all'] = await res.json();
-      }
-      
-      const allHadiths = this.apiCache[bookId]['all'];
+      const idx = await this.fetchNdjsonIndex('api', bookId);
       let chapterHadiths = [];
       
-      if (Array.isArray(allHadiths)) {
-        chapterHadiths = allHadiths.filter(h => String(h.chapter_id) === String(chapterId));
+      if (idx && idx.chapters && idx.chapters[chapterId]) {
+          const range = idx.chapters[chapterId];
+          chapterHadiths = await this.fetchNdjsonRange('api', bookId, range.start, range.end);
       } else {
-        chapterHadiths = Object.values(allHadiths).filter(h => String(h.chapter_id) === String(chapterId));
+          // Fallback to full fetch if no index
+          const allHadiths = await this.fetchNdjsonFull('api', bookId);
+          chapterHadiths = allHadiths.filter(h => String(h.chapter_id) === String(chapterId));
       }
       
       return chapterHadiths.map(h => ({
@@ -116,26 +176,48 @@ const HadeethAPI = {
   },
 
   /**
-   * Fetch full unified record for a single Hadith (Uses Consolidated API)
+   * Fetch full unified record for a single Hadith using HTTP Range Requests
    */
   async getHadith(bookId, hadithNumber) {
     try {
-      if (!this.apiCache) this.apiCache = {};
-      if (!this.apiCache[bookId]) this.apiCache[bookId] = {};
-      
-      // We will fetch the monolithic file and cache it.
-      if (!this.apiCache[bookId]['all']) {
-        const cacheBuster = Date.now();
-        const res = await fetch(`${this.baseUrl}/api/${bookId}.json?v=${cacheBuster}`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        this.apiCache[bookId]['all'] = await res.json();
+      let h = null;
+      const idx = await this.fetchNdjsonIndex('api', bookId);
+      if (idx && Array.isArray(idx)) {
+          const entry = idx.find(e => String(e.id) === String(hadithNumber) || String(e.lidwa_id) === String(hadithNumber));
+          if (entry) {
+              const hadiths = await this.fetchNdjsonRange('api', bookId, entry.start, entry.end);
+              h = hadiths[0] || null;
+          } else {
+              const allHadiths = await this.fetchNdjsonFull('api', bookId);
+              h = allHadiths.find(item => String(item.hadith_number) === String(hadithNumber) || String(item.id) === String(hadithNumber)) || null;
+          }
+      } else if (idx && idx.hadiths && idx.hadiths[hadithNumber]) {
+          const range = idx.hadiths[hadithNumber];
+          const hadiths = await this.fetchNdjsonRange('api', bookId, range[0], range[1]);
+          h = hadiths[0] || null;
+      } else {
+          const allHadiths = await this.fetchNdjsonFull('api', bookId);
+          h = allHadiths.find(item => String(item.hadith_number) === String(hadithNumber) || String(item.id) === String(hadithNumber)) || null;
       }
       
-      const allHadiths = this.apiCache[bookId]['all'];
-      if (Array.isArray(allHadiths)) {
-        return allHadiths.find(h => String(h.hadith_number) === String(hadithNumber) || String(h.id) === String(hadithNumber)) || null;
+      // Backward compatibility wrapper for old hadith.html
+      if (h) {
+          h.hadith_number = h.id;
+          if (h.translations) {
+              if (h.translations.ar && h.translations.ar.length > 0) h.text_ar = h.translations.ar[0].text;
+              if (h.translations.en && h.translations.en.length > 0) h.text_en = h.translations.en[0].text;
+              if (h.translations.id && h.translations.id.length > 0) h.text_id = h.translations.id[0].text;
+          }
+          if (h.sanad) {
+              h.rawis = h.sanad;
+          }
+          if (h.gradings && h.gradings.length > 0) {
+              h.grade = h.gradings[0].grade;
+              h.grade_en = h.grade;
+              h.grade_id = h.grade;
+          }
       }
-      return allHadiths[hadithNumber] || null;
+      return h;
     } catch (err) {
       console.error(`Failed to load Hadith ${bookId}:${hadithNumber}:`, err);
       return null;
@@ -144,41 +226,38 @@ const HadeethAPI = {
 
   /**
    * Normalize an edition JSON to the standard {metadata, hadiths} format.
-   * Handles edge cases:
-   *   - Flat arrays (e.g. old ind-muslim format)
-   *   - Hadiths using 'id' instead of 'hadithnumber'
    */
   normalizeEdition(data) {
     if (!data) return null;
-
-    // If it's a raw array, wrap it
     if (Array.isArray(data)) {
       data = { metadata: {}, hadiths: data };
     }
-
     if (!data.hadiths) return data;
-
-    // Ensure each hadith has 'hadithnumber' (fallback to 'id')
     data.hadiths = data.hadiths.map(h => {
       if (h.hadithnumber === undefined && h.id !== undefined) {
         return { ...h, hadithnumber: h.id };
       }
       return h;
     });
-
     return data;
   },
 
   /**
-   * Fetch full language edition file (e.g. 'ara-bukhari', 'ind-bukhari')
+   * Fetch full language edition file using NDJSON Fallback
    */
   async getEdition(langCode, bookId) {
     try {
-      const cacheBuster = '20260814';
-      const res = await fetch(`${this.baseUrl}/editions/${langCode}-${bookId}.json?v=${cacheBuster}`);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const raw = await res.json();
-      return this.normalizeEdition(raw);
+      let raw = [];
+      const prefix = 'editions';
+      const fileId = `${langCode}-${bookId}`;
+      const idx = await this.fetchNdjsonIndex(prefix, fileId);
+      if (idx && idx.array_key) {
+          raw = await this.fetchNdjsonFull(prefix, fileId);
+          return this.normalizeEdition({ metadata: idx.metadata || {}, [idx.array_key]: raw });
+      } else {
+          raw = await this.fetchNdjsonFull(prefix, fileId);
+          return this.normalizeEdition({ metadata: {}, hadiths: raw });
+      }
     } catch (err) {
       console.error(`Failed to load edition ${langCode}-${bookId}:`, err);
       return null;

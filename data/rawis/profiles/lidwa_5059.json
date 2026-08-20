@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5059",
+  "name_en": "Abdullah bin Muhammad bin 'Abdullah bin Abi Farwah",
+  "name_id": "Abdullah bin Muhammad bin 'Abdullah bin Abi Farwah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "190 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Qamah",
+  "parents": "Al Farwiy",
+  "nasab": "Al Farwiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

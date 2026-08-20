@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1550",
+  "name_en": "Al Fadlol bin Sahal bin Ibrahim",
+  "name_id": "Al Fadlol bin Sahal bin Ibrahim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "255 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 5,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

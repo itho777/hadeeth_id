@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7299",
+  "name_en": "Muhammad bin Muyassar",
+  "name_id": "Muhammad bin Muyassar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Sa'ad",
+  "parents": "Al Ju'fiy Ash Shaghaniy",
+  "nasab": "Al Ju'fiy Ash Shaghaniy",
+  "laqob": "Adl Dlurair",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 1
+  }
+}

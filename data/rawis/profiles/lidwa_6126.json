@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6126",
+  "name_en": "Amru bin Rafi' boin Al Furrat",
+  "name_id": "Amru bin Rafi' boin Al Furrat",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "237 H",
+  "city_of_death": "-",
+  "residence": "Qarqisiya",
+  "kunyah": "Abu Hajar",
+  "parents": "Al Bajaliy",
+  "nasab": "Al Bajaliy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 39,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7189",
+  "name_en": "Muhammad bin 'Ali bin Harb",
+  "name_id": "Muhammad bin 'Ali bin Harb",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kafar Jadiya ",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Marwaziy",
+  "nasab": "Al Marwaziy",
+  "laqob": "At Turk",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 7,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2220",
+  "name_en": "Haritsah bin An Nu'man bin Rafi'",
+  "name_id": "Haritsah bin An Nu'man bin Rafi'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

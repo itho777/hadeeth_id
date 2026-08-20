@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7929",
+  "name_en": "Nufai' bin Al Harits bin Kildah",
+  "name_id": "Nufai' bin Al Harits bin Kildah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "10",
+  "died_ah": "52 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakrah",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "297",
+  "book_counts": {
+    "bukhari": 43,
+    "muslim": 18,
+    "abudaud": 24,
+    "tirmidzi": 17,
+    "nasai": 31,
+    "ibnumajah": 13,
+    "ahmad": 144,
+    "malik": 0,
+    "darimi": 7
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_117",
+  "name_en": "Abu Bakar bin Sulaiman bin Abu Hatsmah 'Abdullah bin Hudzaifah ",
+  "name_id": "Abu Bakar bin Sulaiman bin Abu Hatsmah 'Abdullah bin Hudzaifah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al 'Adawiy ",
+  "nasab": "Al 'Adawiy ",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 2,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3601",
+  "name_en": "Sulaiman bin Thurkhan",
+  "name_id": "Sulaiman bin Thurkhan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "143 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Mu'yamir",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "402",
+  "book_counts": {
+    "bukhari": 61,
+    "muslim": 69,
+    "abudaud": 18,
+    "tirmidzi": 27,
+    "nasai": 41,
+    "ibnumajah": 20,
+    "ahmad": 149,
+    "malik": 0,
+    "darimi": 17
+  }
+}

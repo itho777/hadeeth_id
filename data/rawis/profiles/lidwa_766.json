@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_766",
+  "name_en": "Ayyub bin 'Abdur Rahman bin Sha'sha'ah",
+  "name_id": "Ayyub bin 'Abdur Rahman bin Sha'sha'ah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

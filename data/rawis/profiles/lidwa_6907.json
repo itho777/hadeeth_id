@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6907",
+  "name_en": "Muhammad bin Ja'far bin Az Zubair boin Al 'Awwam",
+  "name_id": "Muhammad bin Ja'far bin Az Zubair boin Al 'Awwam",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "50",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 4,
+    "abudaud": 15,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 18,
+    "malik": 0,
+    "darimi": 3
+  }
+}

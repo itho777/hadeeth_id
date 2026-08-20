@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3570",
+  "name_en": "Sulaiman bin Al Mughirah",
+  "name_id": "Sulaiman bin Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "165 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Qaisiy",
+  "nasab": "Al Qaisiy",
+  "laqob": "-",
+  "hadith_count": "179",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 39,
+    "abudaud": 16,
+    "tirmidzi": 4,
+    "nasai": 8,
+    "ibnumajah": 4,
+    "ahmad": 94,
+    "malik": 0,
+    "darimi": 9
+  }
+}

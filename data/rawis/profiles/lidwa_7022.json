@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7022",
+  "name_en": "Muhammad bin Syu'aib bin Syabur",
+  "name_id": "Muhammad bin Syu'aib bin Syabur",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "200 H",
+  "city_of_death": "Baitul Maqdis",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Umawiy Al Bairutiy",
+  "nasab": "Al Umawiy Al Bairutiy",
+  "laqob": "-",
+  "hadith_count": "33",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 11,
+    "tirmidzi": 1,
+    "nasai": 7,
+    "ibnumajah": 10,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8414",
+  "name_en": "Yazid bin Rabah",
+  "name_id": "Yazid bin Rabah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "90 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Firas",
+  "parents": "Al Qurasyiy As Sahmiy",
+  "nasab": "Al Qurasyiy As Sahmiy",
+  "laqob": "Misyqar",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

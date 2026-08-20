@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3077",
+  "name_en": "Ziyad bin Jubair bin Hayyah",
+  "name_id": "Ziyad bin Jubair bin Hayyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

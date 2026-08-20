@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6731",
+  "name_en": "Mihjan bin Abi Al Aswad",
+  "name_id": "Mihjan bin Abi Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "108 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Harb",
+  "parents": "Ad Diyliy",
+  "nasab": "Ad Diyliy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 1
+  }
+}

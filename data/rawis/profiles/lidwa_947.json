@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_947",
+  "name_en": "Ishaq bin Suwaid bin Hubayrah",
+  "name_id": "Ishaq bin Suwaid bin Hubayrah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "131 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al 'Adawiy At Tamimiy",
+  "nasab": "Al 'Adawiy At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 2
+  }
+}

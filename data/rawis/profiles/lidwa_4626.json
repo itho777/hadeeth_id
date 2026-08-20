@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4626",
+  "name_en": "Abdullah bin Abi As Safar Sa'id bin Yahmad",
+  "name_id": "Abdullah bin Abi As Safar Sa'id bin Yahmad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Hamdaniy Ats Tsauriy",
+  "nasab": "Al Hamdaniy Ats Tsauriy",
+  "laqob": "-",
+  "hadith_count": "51",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 4,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 7,
+    "ibnumajah": 1,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 5
+  }
+}

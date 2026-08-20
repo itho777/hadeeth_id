@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1243",
+  "name_en": "Al Hasan bin Ahmad bin Abi Syu'aib",
+  "name_id": "Al Hasan bin Ahmad bin Abi Syu'aib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "250 H",
+  "city_of_death": "Rashafatu Hisyam",
+  "residence": "Jazirah",
+  "kunyah": "Abu Muslim",
+  "parents": "Al Umawwiy Al Hiraniy",
+  "nasab": "Al Umawwiy Al Hiraniy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

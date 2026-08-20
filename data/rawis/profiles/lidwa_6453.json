@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6453",
+  "name_en": "Qabishah bin Dzu'aib bin Halhalah",
+  "name_id": "Qabishah bin Dzu'aib bin Halhalah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "86 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah'id",
+  "parents": "Al Khuza'iy Al Madaniy",
+  "nasab": "Al Khuza'iy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 8,
+    "tirmidzi": 6,
+    "nasai": 1,
+    "ibnumajah": 4,
+    "ahmad": 13,
+    "malik": 3,
+    "darimi": 0
+  }
+}

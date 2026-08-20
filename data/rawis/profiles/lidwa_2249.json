@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2249",
+  "name_en": "Habib bin Abi 'Amrah",
+  "name_id": "Habib bin Abi 'Amrah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "142 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Bayya'u Al Qashab",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 6,
+    "ibnumajah": 1,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

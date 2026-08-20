@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7923",
+  "name_en": "Nu'aim bin Maisarah",
+  "name_id": "Nu'aim bin Maisarah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "174 H",
+  "city_of_death": "Rayi",
+  "residence": "Rayi",
+  "kunyah": "Abu 'Amru",
+  "parents": "An Nahwiy Al Kufiy",
+  "nasab": "An Nahwiy Al Kufiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

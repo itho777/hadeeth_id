@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3248",
+  "name_en": "Sa'ad bin Thariq bin Usyaim",
+  "name_id": "Sa'ad bin Thariq bin Usyaim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Malik",
+  "parents": "Al Asyja'iy",
+  "nasab": "Al Asyja'iy",
+  "laqob": "-",
+  "hadith_count": "79",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 19,
+    "abudaud": 7,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 7,
+    "ahmad": 39,
+    "malik": 0,
+    "darimi": 0
+  }
+}

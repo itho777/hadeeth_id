@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7756",
+  "name_en": "Musa bin 'Uqbah bin Abi 'Ayyasy",
+  "name_id": "Musa bin 'Uqbah bin Abi 'Ayyasy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "141 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "362",
+  "book_counts": {
+    "bukhari": 99,
+    "muslim": 57,
+    "abudaud": 20,
+    "tirmidzi": 19,
+    "nasai": 28,
+    "ibnumajah": 16,
+    "ahmad": 108,
+    "malik": 3,
+    "darimi": 12
+  }
+}

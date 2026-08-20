@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6293",
+  "name_en": "Isa bin Abi 'Isa Mahan",
+  "name_id": "Isa bin Abi 'Isa Mahan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "Rayi",
+  "residence": "Rayi",
+  "kunyah": "Abu Ja'far",
+  "parents": "Ar Raziy At Tamimiy",
+  "nasab": "Ar Raziy At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 4,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 2
+  }
+}

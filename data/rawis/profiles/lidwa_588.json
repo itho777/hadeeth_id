@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_588",
+  "name_en": "Ashbagh bin Nubatah",
+  "name_id": "Ashbagh bin Nubatah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Qasim",
+  "parents": "At Tamimiy",
+  "nasab": "At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6452",
+  "name_en": "Qabishah bin Huraits",
+  "name_id": "Qabishah bin Huraits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "67 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Anshariy At Tamimiy",
+  "nasab": "Al Anshariy At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

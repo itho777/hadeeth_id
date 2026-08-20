@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_797",
+  "name_en": "Ibrahim bin Isma'il bin Yahya bin Salamah bin Kuhayl",
+  "name_id": "Ibrahim bin Isma'il bin Yahya bin Salamah bin Kuhayl",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "258 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Hadlramiy",
+  "nasab": "Al Hadlramiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

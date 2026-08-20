@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5544",
+  "name_en": "Utsman bin 'Umar bin Faris bin Laqith",
+  "name_id": "Utsman bin 'Umar bin Faris bin Laqith",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "209 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al 'Abdiy",
+  "nasab": "Al 'Abdiy",
+  "laqob": "-",
+  "hadith_count": "247",
+  "book_counts": {
+    "bukhari": 23,
+    "muslim": 12,
+    "abudaud": 15,
+    "tirmidzi": 12,
+    "nasai": 16,
+    "ibnumajah": 10,
+    "ahmad": 119,
+    "malik": 0,
+    "darimi": 40
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1228",
+  "name_en": "Al Harits bin Yazid",
+  "name_id": "Al Harits bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "130 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdul Karim",
+  "parents": "Al Hadlramiy",
+  "nasab": "Al Hadlramiy",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 34,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8321",
+  "name_en": "Yahya bin 'Isa bin 'Abdur Rahman",
+  "name_id": "Yahya bin 'Isa bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "201 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Zakariya",
+  "parents": "At Tamimiy An Nahsyaliy",
+  "nasab": "At Tamimiy An Nahsyaliy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

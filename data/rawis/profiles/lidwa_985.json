@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_985",
+  "name_en": "Isma'il bin Abban",
+  "name_id": "Isma'il bin Abban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "216 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Warraq Al Azadiy",
+  "nasab": "Al Warraq Al Azadiy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 28
+  }
+}

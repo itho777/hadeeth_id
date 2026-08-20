@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8098",
+  "name_en": "Hannad bin As Sariy bin Mush'ab",
+  "name_id": "Hannad bin As Sariy bin Mush'ab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "243 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu As Sariy",
+  "parents": "At Tamimiy Ad Darimiy",
+  "nasab": "At Tamimiy Ad Darimiy",
+  "laqob": "-",
+  "hadith_count": "487",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 25,
+    "abudaud": 74,
+    "tirmidzi": 280,
+    "nasai": 74,
+    "ibnumajah": 32,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

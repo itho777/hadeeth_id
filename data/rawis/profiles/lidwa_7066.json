@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7066",
+  "name_en": "Muhammad bin 'Abdur Rahman bin Hakim",
+  "name_id": "Muhammad bin 'Abdur Rahman bin Hakim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "243 H",
+  "city_of_death": "Anthakiyah",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Anthakiy ",
+  "nasab": "Al Anthakiy ",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 5,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

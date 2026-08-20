@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6533",
+  "name_en": "Qais bin 'Ubaid",
+  "name_id": "Qais bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Basyir",
+  "parents": "As Saa'idiy Al Anshariy",
+  "nasab": "As Saa'idiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 1,
+    "darimi": 0
+  }
+}

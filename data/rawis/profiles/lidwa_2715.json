@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2715",
+  "name_en": "Khushaif bin 'Abdur Rahman",
+  "name_id": "Khushaif bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "137 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Aun",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "62",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 9,
+    "tirmidzi": 7,
+    "nasai": 5,
+    "ibnumajah": 3,
+    "ahmad": 32,
+    "malik": 0,
+    "darimi": 6
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3304",
+  "name_en": "Sa'id bin Basyar",
+  "name_id": "Sa'id bin Basyar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Juhaniy Al Qubbiy",
+  "nasab": "Al Juhaniy Al Qubbiy",
+  "laqob": "Sa'dan",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

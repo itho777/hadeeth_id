@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3672",
+  "name_en": "Sahal bin Sa'ad bin Malik",
+  "name_id": "Sahal bin Sa'ad bin Malik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "88 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "As Sa'adiy Al Anshariy",
+  "nasab": "As Sa'adiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "378",
+  "book_counts": {
+    "bukhari": 131,
+    "muslim": 33,
+    "abudaud": 21,
+    "tirmidzi": 17,
+    "nasai": 21,
+    "ibnumajah": 30,
+    "ahmad": 102,
+    "malik": 8,
+    "darimi": 15
+  }
+}

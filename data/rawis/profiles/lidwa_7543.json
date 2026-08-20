@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7543",
+  "name_en": "Mu'adz bin Asad bin Abi Sakhbarah",
+  "name_id": "Mu'adz bin Asad bin Abi Sakhbarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "221 H",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Ghanawiy Al Marwaziy",
+  "nasab": "Al Ghanawiy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

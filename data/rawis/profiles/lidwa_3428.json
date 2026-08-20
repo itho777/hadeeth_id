@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3428",
+  "name_en": "Sufyan bin Al Hakam",
+  "name_id": "Sufyan bin Al Hakam",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Hadlramiy",
+  "nasab": "Al Hadlramiy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

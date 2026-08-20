@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6716",
+  "name_en": "Mujahid bin Musa bin Farrukh",
+  "name_id": "Mujahid bin Musa bin Farrukh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "244 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Khawarizmiy Al Khattaliy",
+  "nasab": "Al Khawarizmiy Al Khattaliy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 18,
+    "ibnumajah": 7,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 8
+  }
+}

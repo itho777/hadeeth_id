@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1906",
+  "name_en": "Basyir bin 'Abdul Mundzir bin Zubair bin Zaid bin Umayah",
+  "name_id": "Basyir bin 'Abdul Mundzir bin Zubair bin Zaid bin Umayah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Lubabah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "28",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 8,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 1,
+    "darimi": 1
+  }
+}

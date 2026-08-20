@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7494",
+  "name_en": "Maslamah Ar Raziy",
+  "name_id": "Maslamah Ar Raziy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": " Ar Raziy",
+  "nasab": " Ar Raziy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

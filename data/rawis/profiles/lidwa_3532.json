@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3532",
+  "name_en": "\"Salmaa, bibi 'Abdur Rahman bin Abi Rafi'\"",
+  "name_id": "\"Salmaa, bibi 'Abdur Rahman bin Abi Rafi'\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

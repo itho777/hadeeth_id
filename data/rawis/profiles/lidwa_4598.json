@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4598",
+  "name_en": "Abdul Ghaffar bin Daud bin Mihran bin Ziyad",
+  "name_id": "Abdul Ghaffar bin Daud bin Mihran bin Ziyad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "224 H",
+  "city_of_death": "Maru",
+  "residence": "Maru",
+  "kunyah": "Abu Shalih",
+  "parents": "Al Hiraniy Al Bakriy",
+  "nasab": "Al Hiraniy Al Bakriy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3412",
+  "name_en": "Sa'id bin Yahya bin Mahdiy",
+  "name_id": "Sa'id bin Yahya bin Mahdiy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "202 H",
+  "city_of_death": "Hait",
+  "residence": "Hait",
+  "kunyah": "Abu Sufyan",
+  "parents": "Al Humairiy Al Hidza'iy",
+  "nasab": "Al Humairiy Al Hidza'iy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7748",
+  "name_en": "Musa bin 'Abdur Rahman bin Sa'id",
+  "name_id": "Musa bin 'Abdur Rahman bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "258 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Isa",
+  "parents": "Al Kindiy Al Masruqiy",
+  "nasab": "Al Kindiy Al Masruqiy",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 8,
+    "nasai": 12,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

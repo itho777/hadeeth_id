@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2331",
+  "name_en": "Haram bin Sa'ad bin Muhayyishah",
+  "name_id": "Haram bin Sa'ad bin Muhayyishah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "113 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Sa'ad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 11,
+    "malik": 2,
+    "darimi": 0
+  }
+}

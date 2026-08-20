@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_583",
+  "name_en": "Asy'ats bin Qays bin Ma'diy Karb",
+  "name_id": "Asy'ats bin Qays bin Ma'diy Karb",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "40 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Kindiy",
+  "nasab": "Al Kindiy",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 1,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 0
+  }
+}

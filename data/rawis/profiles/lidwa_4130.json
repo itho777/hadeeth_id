@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4130",
+  "name_en": "Abbad bin Tamim bin Ghazyah",
+  "name_id": "Abbad bin Tamim bin Ghazyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Mazini Al Anshariy",
+  "nasab": "Al Mazini Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "111",
+  "book_counts": {
+    "bukhari": 24,
+    "muslim": 12,
+    "abudaud": 9,
+    "tirmidzi": 2,
+    "nasai": 15,
+    "ibnumajah": 5,
+    "ahmad": 36,
+    "malik": 5,
+    "darimi": 3
+  }
+}

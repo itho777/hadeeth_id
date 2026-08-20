@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8097",
+  "name_en": "Hammam bin Yahya bin Dinar",
+  "name_id": "Hammam bin Yahya bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "165 H",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Azdiy Al 'Awdziy",
+  "nasab": "Al Azdiy Al 'Awdziy",
+  "laqob": "-",
+  "hadith_count": "821",
+  "book_counts": {
+    "bukhari": 91,
+    "muslim": 58,
+    "abudaud": 66,
+    "tirmidzi": 37,
+    "nasai": 27,
+    "ibnumajah": 20,
+    "ahmad": 477,
+    "malik": 0,
+    "darimi": 45
+  }
+}

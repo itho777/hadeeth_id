@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5347",
+  "name_en": "Ubaid bin Hisyam",
+  "name_id": "Ubaid bin Hisyam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Nu'aim",
+  "parents": "Al Halabiy Al Qalanisiy",
+  "nasab": "Al Halabiy Al Qalanisiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

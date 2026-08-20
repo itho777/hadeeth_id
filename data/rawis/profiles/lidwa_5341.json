@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5341",
+  "name_en": "Ubaid bin Fayruz",
+  "name_id": "Ubaid bin Fayruz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Adl Dlahhak",
+  "parents": "Asy Syaibaniy",
+  "nasab": "Asy Syaibaniy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 1,
+    "darimi": 2
+  }
+}

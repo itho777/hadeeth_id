@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7",
+  "name_en": "Aminah binti Mihshan",
+  "name_id": "Aminah binti Mihshan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Qais",
+  "parents": "Al Asadiyyah",
+  "nasab": "Al Asadiyyah",
+  "laqob": "-",
+  "hadith_count": "34",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 4,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 9,
+    "malik": 1,
+    "darimi": 2
+  }
+}

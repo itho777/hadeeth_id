@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4933",
+  "name_en": "Abdullah bin 'Ubaidillah bin 'Abbas",
+  "name_id": "Abdullah bin 'Ubaidillah bin 'Abbas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al hasyimiy",
+  "nasab": "Al Qurasyiy Al hasyimiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4023",
+  "name_en": "Thalhah bin Musharrif bin 'Amru bin Ka'ab",
+  "name_id": "Thalhah bin Musharrif bin 'Amru bin Ka'ab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "112 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Yamiy Al Hamdaniy",
+  "nasab": "Al Yamiy Al Hamdaniy",
+  "laqob": "Sayyidu Al Qura'",
+  "hadith_count": "80",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 7,
+    "abudaud": 10,
+    "tirmidzi": 3,
+    "nasai": 15,
+    "ibnumajah": 6,
+    "ahmad": 25,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7103",
+  "name_en": "Muhammad bin 'Abdullah bin Al Mutsannaa bin 'Abdullah bin Anas bin Malik",
+  "name_id": "Muhammad bin 'Abdullah bin Al Mutsannaa bin 'Abdullah bin Anas bin Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "215 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "105",
+  "book_counts": {
+    "bukhari": 28,
+    "muslim": 1,
+    "abudaud": 6,
+    "tirmidzi": 12,
+    "nasai": 5,
+    "ibnumajah": 8,
+    "ahmad": 43,
+    "malik": 0,
+    "darimi": 2
+  }
+}

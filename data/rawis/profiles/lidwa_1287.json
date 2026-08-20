@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1287",
+  "name_en": "Al Hasan bin 'Umar bin Syaqiq bin Asma'",
+  "name_id": "Al Hasan bin 'Umar bin Syaqiq bin Asma'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "232 H",
+  "city_of_death": "Bashrah",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Juramiy Ar Raoziy",
+  "nasab": "Al Juramiy Ar Raoziy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

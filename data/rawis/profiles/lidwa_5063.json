@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5063",
+  "name_en": "Abdullah bin Muhammad bin 'Ali bin Abi Thalib",
+  "name_id": "Abdullah bin Muhammad bin 'Ali bin Abi Thalib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "99 H",
+  "city_of_death": "Hamimah",
+  "residence": "Madinah",
+  "kunyah": "Abu Hasyim",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 5,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 1,
+    "darimi": 2
+  }
+}

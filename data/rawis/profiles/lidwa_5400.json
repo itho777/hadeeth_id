@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5400",
+  "name_en": "Ubaidullah bin 'Abdur Rahman bin 'Abdullah bin Mawhab",
+  "name_id": "Ubaidullah bin 'Abdur Rahman bin 'Abdullah bin Mawhab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "At Taymiy Al Qurasyiy",
+  "nasab": "At Taymiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

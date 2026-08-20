@@ -1,0 +1,8 @@
+text = open('scripts/fix_fawaz_lidwa_links.py', 'r', encoding='utf-8').read()
+text = text.replace('f"{book_id}.ndjson"', 'f"{book_id}.json"')
+text = text.replace('ara-{book}.ndjson', 'ara-{book}.json')
+text = text.replace('ara-{book_id}.ndjson', 'ara-{book_id}.json')
+text = text.replace('links/{book_id}.ndjson', 'links/{book_id}.json')
+text = text.replace('_report.ndjson', '_report.json')
+text = text.replace('os.path.join(LIDWA_DIR, f"{book_id}.json")', 'os.path.join(LIDWA_DIR, f"{book_id}.ndjson")')
+open('scripts/fix_fawaz_lidwa_links.py', 'w', encoding='utf-8').write(text)

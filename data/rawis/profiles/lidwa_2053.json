@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2053",
+  "name_en": "Tsumamah bin Wa'il bin Hushain",
+  "name_id": "Tsumamah bin Wa'il bin Hushain",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Tsifal",
+  "parents": "Al Murriy",
+  "nasab": "Al Murriy",
+  "laqob": "Asy Sya'ir",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

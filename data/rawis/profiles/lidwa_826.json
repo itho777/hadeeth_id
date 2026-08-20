@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_826",
+  "name_en": "Ibrahim bin Sulaiman",
+  "name_id": "Ibrahim bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Dujail",
+  "kunyah": "Al Afthas",
+  "parents": "Ad Damsyiqiy",
+  "nasab": "Ad Damsyiqiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

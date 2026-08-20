@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8530",
+  "name_en": "Ya'qub bin 'Abdullah bin Sa'ad bin Malik",
+  "name_id": "Ya'qub bin 'Abdullah bin Sa'ad bin Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "174 H",
+  "city_of_death": "Qirqisiyah",
+  "residence": "Qirmisain",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Asy'ariy Al Qummiy",
+  "nasab": "Al Asy'ariy Al Qummiy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 5
+  }
+}

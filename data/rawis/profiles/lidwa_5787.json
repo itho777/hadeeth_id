@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5787",
+  "name_en": "Ali bin 'Abdu Al A'laa",
+  "name_id": "Ali bin 'Abdu Al A'laa",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Ats Tsa'labiy",
+  "nasab": "Ats Tsa'labiy",
+  "laqob": "Al Ahwal",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 5,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 1
+  }
+}

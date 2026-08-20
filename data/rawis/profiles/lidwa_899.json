@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_899",
+  "name_en": "Ibrahim bin Yahya bin Muhammad ",
+  "name_id": "Ibrahim bin Yahya bin Muhammad ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Asy Syajariy",
+  "nasab": "Asy Syajariy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

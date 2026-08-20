@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6973",
+  "name_en": "Muhammad bin Ziyad",
+  "name_id": "Muhammad bin Ziyad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "12",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Sufyan",
+  "parents": "Al Alhaniy",
+  "nasab": "Al Alhaniy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

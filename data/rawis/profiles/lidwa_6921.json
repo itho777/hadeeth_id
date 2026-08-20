@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6921",
+  "name_en": "Muhammad bin Hassan bin Khalid",
+  "name_id": "Muhammad bin Hassan bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "228 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ja'far",
+  "parents": "Adl DlabbiyAs Simtiy",
+  "nasab": "Adl DlabbiyAs Simtiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5735",
+  "name_en": "Ali bin Al Hasan bin Saqiq",
+  "name_id": "Ali bin Al Hasan bin Saqiq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "215 H",
+  "city_of_death": "Kafar Jadiya",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al 'Abdiy Al Marwaziy",
+  "nasab": "Al 'Abdiy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 3,
+    "tirmidzi": 5,
+    "nasai": 12,
+    "ibnumajah": 4,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1157",
+  "name_en": "Al Bara' bin 'Azib bin Al Harits",
+  "name_id": "Al Bara' bin 'Azib bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "72 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Imarah",
+  "parents": "Al Anshariy Al Ausiy",
+  "nasab": "Al Anshariy Al Ausiy",
+  "laqob": "-",
+  "hadith_count": "638",
+  "book_counts": {
+    "bukhari": 138,
+    "muslim": 64,
+    "abudaud": 44,
+    "tirmidzi": 50,
+    "nasai": 53,
+    "ibnumajah": 30,
+    "ahmad": 239,
+    "malik": 2,
+    "darimi": 18
+  }
+}

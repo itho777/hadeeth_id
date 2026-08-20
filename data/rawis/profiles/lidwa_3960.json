@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3960",
+  "name_en": "Shunabih bin Al A'mar",
+  "name_id": "Shunabih bin Al A'mar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Ahmasiy Al Bajaliy",
+  "nasab": "Al Ahmasiy Al Bajaliy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

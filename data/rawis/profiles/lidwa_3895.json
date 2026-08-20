@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3895",
+  "name_en": "Shalih bin Mismar",
+  "name_id": "Shalih bin Mismar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "246 H",
+  "city_of_death": "Kirman",
+  "residence": "Himsh",
+  "kunyah": "AbuAl Fadlol",
+  "parents": "As Salmiy Al Kasymaihaniy",
+  "nasab": "As Salmiy Al Kasymaihaniy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

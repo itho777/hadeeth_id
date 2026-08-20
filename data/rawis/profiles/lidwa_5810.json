@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5810",
+  "name_en": "Ali bin Muhammad bin Abi Al Khashib",
+  "name_id": "Ali bin Muhammad bin Abi Al Khashib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "258 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 7,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

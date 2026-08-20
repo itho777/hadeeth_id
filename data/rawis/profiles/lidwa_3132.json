@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3132",
+  "name_en": "Zaid bin Jubair bin Hirmal",
+  "name_id": "Zaid bin Jubair bin Hirmal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Ath Tha'iy Al Jasymiy",
+  "nasab": "Ath Tha'iy Al Jasymiy",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 4,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 1
+  }
+}

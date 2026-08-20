@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7526",
+  "name_en": "Mathar bin 'Abdur Rahman",
+  "name_id": "Mathar bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al 'Anbariy",
+  "nasab": "Al 'Anbariy",
+  "laqob": "Al A'naq",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

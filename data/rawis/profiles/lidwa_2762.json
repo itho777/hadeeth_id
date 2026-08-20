@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2762",
+  "name_en": "\"Khaiorah, maulah Ummu Salamah\"",
+  "name_id": "\"Khaiorah, maulah Ummu Salamah\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Al Hasan",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 1
+  }
+}

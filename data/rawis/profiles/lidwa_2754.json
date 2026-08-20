@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2754",
+  "name_en": "Khawlah binti Qais bin Qahd",
+  "name_id": "Khawlah binti Qais bin Qahd",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Khuwailah",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

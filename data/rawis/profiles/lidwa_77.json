@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_77",
+  "name_en": " Abu Al Ghauts bin Hushain",
+  "name_id": " Abu Al Ghauts bin Hushain",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": " Abu Al Ghauts ",
+  "parents": "Al Khasy'amiy",
+  "nasab": "Al Khasy'amiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7345",
+  "name_en": "Muhammad bin Yusuf bin Waqid bin 'Utsman",
+  "name_id": "Muhammad bin Yusuf bin Waqid bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "212 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Adl Dlabbiy Al Firyabi",
+  "nasab": "Adl Dlabbiy Al Firyabi",
+  "laqob": "-",
+  "hadith_count": "427",
+  "book_counts": {
+    "bukhari": 88,
+    "muslim": 7,
+    "abudaud": 19,
+    "tirmidzi": 20,
+    "nasai": 15,
+    "ibnumajah": 13,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 263
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4584",
+  "name_en": "Abdul 'Aziz bin 'Ubaidillah bin Hamzah",
+  "name_id": "Abdul 'Aziz bin 'Ubaidillah bin Hamzah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Himshiy",
+  "nasab": "Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

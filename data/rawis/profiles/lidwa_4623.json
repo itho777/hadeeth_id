@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4623",
+  "name_en": "Abdullah bin Abi Al Jadz'aa'",
+  "name_id": "Abdullah bin Abi Al Jadz'aa'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "At Tamimiy",
+  "nasab": "At Tamimiy",
+  "laqob": "Maisarah Al Fajar",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

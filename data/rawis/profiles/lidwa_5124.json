@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5124",
+  "name_en": "Abdullah bin Nafi' bin Tsabit",
+  "name_id": "Abdullah bin Nafi' bin Tsabit",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "216 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Bakar",
+  "parents": "Az Zubairiy",
+  "nasab": "Az Zubairiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

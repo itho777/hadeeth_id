@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3641",
+  "name_en": "Simak bin 'Athiyyah",
+  "name_id": "Simak bin 'Athiyyah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "Kufah",
+  "residence": "Kufsh",
+  "kunyah": "-",
+  "parents": "As Suwa'iy",
+  "nasab": "As Suwa'iy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 5,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

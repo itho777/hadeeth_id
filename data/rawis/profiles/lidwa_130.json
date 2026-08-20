@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_130",
+  "name_en": "Abu Bakar bin 'Ayyasy bin Salim",
+  "name_id": "Abu Bakar bin 'Ayyasy bin Salim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "193 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "Al Muqri'i",
+  "hadith_count": "261",
+  "book_counts": {
+    "bukhari": 20,
+    "muslim": 0,
+    "abudaud": 15,
+    "tirmidzi": 35,
+    "nasai": 18,
+    "ibnumajah": 36,
+    "ahmad": 118,
+    "malik": 0,
+    "darimi": 19
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3116",
+  "name_en": "Zaid bin Abi Az Zarqa' Yazid",
+  "name_id": "Zaid bin Abi Az Zarqa' Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "194 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Muhammad",
+  "parents": "Ats Tsa'labiy",
+  "nasab": "Ats Tsa'labiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 15,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

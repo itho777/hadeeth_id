@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6369",
+  "name_en": "Ghuthaib bin Al Harits bin Zunaim",
+  "name_id": "Ghuthaib bin Al Harits bin Zunaim",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Asma'",
+  "parents": "As Sakuniy Al Kindiy",
+  "nasab": "As Sakuniy Al Kindiy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

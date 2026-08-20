@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3411",
+  "name_en": "Sa'id bin Yahya bin Shalih",
+  "name_id": "Sa'id bin Yahya bin Shalih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Lakhmiy Al Kufiy",
+  "nasab": "Al Lakhmiy Al Kufiy",
+  "laqob": "Sa'dan",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

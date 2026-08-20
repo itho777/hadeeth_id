@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_664",
+  "name_en": "Ummu Kaltsum binti 'Ali bin Abi Thalib",
+  "name_id": "Ummu Kaltsum binti 'Ali bin Abi Thalib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Hasyimiiyyah",
+  "nasab": "Al Hasyimiiyyah",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

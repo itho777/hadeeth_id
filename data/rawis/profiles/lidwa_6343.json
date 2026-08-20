@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6343",
+  "name_en": "Isa bin Yunus bin Abi Ishaq",
+  "name_id": "Isa bin Yunus bin Abi Ishaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "187 H",
+  "city_of_death": "Hadats",
+  "residence": "Kufah",
+  "kunyah": "Abnu 'Amru",
+  "parents": "As Suba'iy",
+  "nasab": "As Suba'iy",
+  "laqob": "-",
+  "hadith_count": "372",
+  "book_counts": {
+    "bukhari": 27,
+    "muslim": 113,
+    "abudaud": 78,
+    "tirmidzi": 36,
+    "nasai": 40,
+    "ibnumajah": 32,
+    "ahmad": 34,
+    "malik": 0,
+    "darimi": 12
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7005",
+  "name_en": "Muhammad bin Sulaiman bin Habib",
+  "name_id": "Muhammad bin Sulaiman bin Habib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "246 H",
+  "city_of_death": "Adzanah",
+  "residence": "Mashishah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "Al 'Allaf",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 0
+  }
+}

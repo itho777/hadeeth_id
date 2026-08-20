@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5688",
+  "name_en": "Uqail bin Khalid bin 'Uqail",
+  "name_id": "Uqail bin Khalid bin 'Uqail",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "144 H",
+  "city_of_death": "Maru",
+  "residence": "Syam",
+  "kunyah": "Abu Khalid",
+  "parents": "Al Umawiy Al Ayliy",
+  "nasab": "Al Umawiy Al Ayliy",
+  "laqob": "-",
+  "hadith_count": "415",
+  "book_counts": {
+    "bukhari": 187,
+    "muslim": 65,
+    "abudaud": 24,
+    "tirmidzi": 13,
+    "nasai": 24,
+    "ibnumajah": 12,
+    "ahmad": 76,
+    "malik": 0,
+    "darimi": 14
+  }
+}

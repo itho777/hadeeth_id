@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1773",
+  "name_en": "Al Walid bin Jamil bin Qais",
+  "name_id": "Al Walid bin Jamil bin Qais",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Hajjaj",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8088",
+  "name_en": "Hilal bin Maimun",
+  "name_id": "Hilal bin Maimun",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Juhaniy Ar Ramliy",
+  "nasab": "Al Juhaniy Ar Ramliy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

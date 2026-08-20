@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2663",
+  "name_en": "Khalid bin 'Abdullah bin 'Abdur Rahman bin Yazaid",
+  "name_id": "Khalid bin 'Abdullah bin 'Abdur Rahman bin Yazaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "179 H",
+  "city_of_death": "Hait",
+  "residence": "Hait",
+  "kunyah": "Abu Al Haitsam",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Ath Thahhan",
+  "hadith_count": "259",
+  "book_counts": {
+    "bukhari": 49,
+    "muslim": 42,
+    "abudaud": 65,
+    "tirmidzi": 6,
+    "nasai": 5,
+    "ibnumajah": 6,
+    "ahmad": 50,
+    "malik": 0,
+    "darimi": 36
+  }
+}

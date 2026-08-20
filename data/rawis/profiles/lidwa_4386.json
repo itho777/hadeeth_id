@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4386",
+  "name_en": "Abdur Rahman bin Sulaiman bin 'Abdullah bin Hanzhalah",
+  "name_id": "Abdur Rahman bin Sulaiman bin 'Abdullah bin Hanzhalah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "172 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Sulaiman",
+  "parents": "Al Anshariy Al Ausiy",
+  "nasab": "Al Anshariy Al Ausiy",
+  "laqob": "Ibnu Al Ghasil",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_659",
+  "name_en": "Ummu Farwah binti Abi Qahafah",
+  "name_id": "Ummu Farwah binti Abi Qahafah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Farwah",
+  "parents": "Al Qurasyiyyah",
+  "nasab": "Al Qurasyiyyah",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

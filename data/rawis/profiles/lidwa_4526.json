@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4526",
+  "name_en": "Abdur Rahim bin Sulaiman",
+  "name_id": "Abdur Rahim bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "187 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Kinaniy Al Marwaziy",
+  "nasab": "Al Kinaniy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "66",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 12,
+    "abudaud": 5,
+    "tirmidzi": 8,
+    "nasai": 9,
+    "ibnumajah": 24,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 3
+  }
+}

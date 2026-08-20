@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7409",
+  "name_en": "Muray bin Qathariy",
+  "name_id": "Muray bin Qathariy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Kufiy",
+  "nasab": "Al Kufiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

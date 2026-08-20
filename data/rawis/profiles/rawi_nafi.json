@@ -1,0 +1,29 @@
+{
+  "id": "rawi_nafi",
+  "name_en": "Nafi' Maula Ibn 'Umar",
+  "name_id": "Nafi' Maula Ibnu Umar",
+  "name_ar": "نافع مولى ابن عمر",
+  "is_sahabi": "false",
+  "generation": "Tabi'i",
+  "grade": "Thiqah Thabt",
+  "died_ah": "117",
+  "died_ce": "735",
+  "hadith_count": "1400",
+  "city_of_death": "Madinah",
+  "bio_en": "Key link in the Golden Chain of Transmission (Malik -> Nafi' -> Ibn 'Umar).",
+  "books": [
+    "Muwatta Malik",
+    "Sahih al-Bukhari"
+  ],
+  "book_counts": {
+    "bukhari": 409,
+    "muslim": 312,
+    "abudaud": 200,
+    "tirmidzi": 144,
+    "nasai": 283,
+    "ibnumajah": 189,
+    "ahmad": 931,
+    "malik": 274,
+    "darimi": 102
+  }
+}

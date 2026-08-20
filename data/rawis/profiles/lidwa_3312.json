@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3312",
+  "name_en": "Sa'id bin Hafsh bin 'Umar",
+  "name_id": "Sa'id bin Hafsh bin 'Umar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "237 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Hadzaliy An Nufailiy",
+  "nasab": "Al Hadzaliy An Nufailiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

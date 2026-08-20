@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5703",
+  "name_en": "\"Ikrimah, maula Ibnu 'Abbas\"",
+  "name_id": "\"Ikrimah, maula Ibnu 'Abbas\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "104 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Barburiy",
+  "nasab": "Al Barburiy",
+  "laqob": "-",
+  "hadith_count": "1017",
+  "book_counts": {
+    "bukhari": 139,
+    "muslim": 2,
+    "abudaud": 141,
+    "tirmidzi": 94,
+    "nasai": 80,
+    "ibnumajah": 95,
+    "ahmad": 402,
+    "malik": 1,
+    "darimi": 63
+  }
+}

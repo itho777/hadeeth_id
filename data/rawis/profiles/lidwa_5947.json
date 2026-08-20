@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5947",
+  "name_en": "Umar bin Riyah",
+  "name_id": "Umar bin Riyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hafsh",
+  "parents": "Al 'Abdiy",
+  "nasab": "Al 'Abdiy",
+  "laqob": "Adl Dlurair",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

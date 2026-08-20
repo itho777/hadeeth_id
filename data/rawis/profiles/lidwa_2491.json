@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2491",
+  "name_en": "Hammad bin Zaid bin Dirham",
+  "name_id": "Hammad bin Zaid bin Dirham",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "179 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Isma'il",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Azraq",
+  "hadith_count": "1174",
+  "book_counts": {
+    "bukhari": 203,
+    "muslim": 199,
+    "abudaud": 142,
+    "tirmidzi": 78,
+    "nasai": 116,
+    "ibnumajah": 57,
+    "ahmad": 277,
+    "malik": 0,
+    "darimi": 102
+  }
+}

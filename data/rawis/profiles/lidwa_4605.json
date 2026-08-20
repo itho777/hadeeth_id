@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4605",
+  "name_en": "Abdul Kabir bin 'Abdul Majid bin 'Ubaidillah bin Syarik",
+  "name_id": "Abdul Kabir bin 'Abdul Majid bin 'Ubaidillah bin Syarik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "204 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah ",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Hanafiy",
+  "nasab": "Al Hanafiy",
+  "laqob": "-",
+  "hadith_count": "62",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 10,
+    "abudaud": 3,
+    "tirmidzi": 6,
+    "nasai": 4,
+    "ibnumajah": 11,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 0
+  }
+}

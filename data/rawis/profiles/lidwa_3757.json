@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3757",
+  "name_en": "Syutair bvin Syakal bin Humaid",
+  "name_id": "Syutair bvin Syakal bin Humaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Isa",
+  "parents": "Al 'Abasiy",
+  "nasab": "Al 'Abasiy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 0
+  }
+}

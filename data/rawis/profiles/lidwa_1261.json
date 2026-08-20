@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1261",
+  "name_en": "Al Hasan bin Hammad bin Kusaib",
+  "name_id": "Al Hasan bin Hammad bin Kusaib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "241 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Hadlramiy",
+  "nasab": "Al Hadlramiy",
+  "laqob": "Sajaadah",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

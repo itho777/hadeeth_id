@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6498",
+  "name_en": "Qathan bin Wahab bin 'Uwaimir",
+  "name_id": "Qathan bin Wahab bin 'Uwaimir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 1,
+    "darimi": 0
+  }
+}

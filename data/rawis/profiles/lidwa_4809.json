@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4809",
+  "name_en": "Abdullah bin Zurair",
+  "name_id": "Abdullah bin Zurair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "81 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "Al Ghafiqiy",
+  "nasab": "Al Ghafiqiy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

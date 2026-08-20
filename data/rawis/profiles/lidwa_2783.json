@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2783",
+  "name_en": "Daud bin Rusyaid",
+  "name_id": "Daud bin Rusyaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "239 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 14,
+    "abudaud": 7,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

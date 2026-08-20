@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1980",
+  "name_en": "Bayan bin Basyar",
+  "name_id": "Bayan bin Basyar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Bisyir",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Mu'allim",
+  "hadith_count": "55",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 7,
+    "abudaud": 3,
+    "tirmidzi": 5,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 3
+  }
+}

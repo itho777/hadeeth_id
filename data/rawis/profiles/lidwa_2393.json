@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2393",
+  "name_en": "Hushain bin Jundub bin 'Amru bin Al Harits",
+  "name_id": "Hushain bin Jundub bin 'Amru bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "90 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Zhabyan",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "53",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 3,
+    "abudaud": 6,
+    "tirmidzi": 8,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 28,
+    "malik": 0,
+    "darimi": 3
+  }
+}

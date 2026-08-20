@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7327",
+  "name_en": "Muhammad bin Yahya bin Muhammad bin Katsir",
+  "name_id": "Muhammad bin Yahya bin Muhammad bin Katsir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "267 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Kalbiy Al Harraniy",
+  "nasab": "Al Kalbiy Al Harraniy",
+  "laqob": "Lu'lu'",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 8,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

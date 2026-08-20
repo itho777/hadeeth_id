@@ -1,0 +1,58 @@
+[
+  {
+    "book": "bukhari",
+    "total_fawaz_hadiths": 7580,
+    "matched_above_threshold": 7468,
+    "below_threshold": 112,
+    "coverage_pct": 98.5,
+    "previous_link_count": 7488
+  },
+  {
+    "book": "muslim",
+    "total_fawaz_hadiths": 7360,
+    "matched_above_threshold": 6478,
+    "below_threshold": 882,
+    "coverage_pct": 88.0,
+    "previous_link_count": 3011
+  },
+  {
+    "book": "abudawud",
+    "total_fawaz_hadiths": 5272,
+    "matched_above_threshold": 5034,
+    "below_threshold": 238,
+    "coverage_pct": 95.5,
+    "previous_link_count": 5263
+  },
+  {
+    "book": "tirmidhi",
+    "total_fawaz_hadiths": 3924,
+    "matched_above_threshold": 3898,
+    "below_threshold": 26,
+    "coverage_pct": 99.3,
+    "previous_link_count": 3953
+  },
+  {
+    "book": "nasai",
+    "total_fawaz_hadiths": 5679,
+    "matched_above_threshold": 5658,
+    "below_threshold": 21,
+    "coverage_pct": 99.6,
+    "previous_link_count": 5756
+  },
+  {
+    "book": "ibnmajah",
+    "total_fawaz_hadiths": 4338,
+    "matched_above_threshold": 4337,
+    "below_threshold": 1,
+    "coverage_pct": 100.0,
+    "previous_link_count": 4341
+  },
+  {
+    "book": "malik",
+    "total_fawaz_hadiths": 1829,
+    "matched_above_threshold": 1574,
+    "below_threshold": 255,
+    "coverage_pct": 86.1,
+    "previous_link_count": 1602
+  }
+]

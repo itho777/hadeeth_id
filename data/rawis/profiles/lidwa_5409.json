@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5409",
+  "name_en": "Ubaidullah bin 'Abdullah bin 'Utbah bin Mas'ud",
+  "name_id": "Ubaidullah bin 'Abdullah bin 'Utbah bin Mas'ud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "98 H",
+  "city_of_death": "-",
+  "residence": "Madinah ",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Hudzaliy",
+  "nasab": "Al Hudzaliy",
+  "laqob": "-",
+  "hadith_count": "664",
+  "book_counts": {
+    "bukhari": 170,
+    "muslim": 55,
+    "abudaud": 43,
+    "tirmidzi": 27,
+    "nasai": 72,
+    "ibnumajah": 36,
+    "ahmad": 213,
+    "malik": 20,
+    "darimi": 28
+  }
+}

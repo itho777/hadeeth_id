@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_582",
+  "name_en": "Asy'ats bin 'Abdul Malik ",
+  "name_id": "Asy'ats bin 'Abdul Malik ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "142 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hani'",
+  "parents": "Al Himraniy",
+  "nasab": "Al Himraniy",
+  "laqob": "-",
+  "hadith_count": "60",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 8,
+    "tirmidzi": 6,
+    "nasai": 20,
+    "ibnumajah": 3,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 5
+  }
+}

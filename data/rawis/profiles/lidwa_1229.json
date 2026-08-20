@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1229",
+  "name_en": "Al Harits bin Yazid",
+  "name_id": "Al Harits bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al 'Ukliy At Taymiy",
+  "nasab": "Al 'Ukliy At Taymiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 5
+  }
+}

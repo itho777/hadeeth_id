@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5448",
+  "name_en": "Abidah bin 'Amru",
+  "name_id": "Abidah bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "74 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Amru",
+  "parents": "As Salmaniy Al Muradiy",
+  "nasab": "As Salmaniy Al Muradiy",
+  "laqob": "-",
+  "hadith_count": "97",
+  "book_counts": {
+    "bukhari": 19,
+    "muslim": 10,
+    "abudaud": 5,
+    "tirmidzi": 10,
+    "nasai": 8,
+    "ibnumajah": 3,
+    "ahmad": 33,
+    "malik": 0,
+    "darimi": 9
+  }
+}

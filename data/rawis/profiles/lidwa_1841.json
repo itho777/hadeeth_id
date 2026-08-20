@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1841",
+  "name_en": "Buraidah bin Al Hashib bin 'Abdullah bin Al Harits",
+  "name_id": "Buraidah bin Al Hashib bin 'Abdullah bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "63 H",
+  "city_of_death": "Kafar Jadiya",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sahal",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "299",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 21,
+    "abudaud": 39,
+    "tirmidzi": 32,
+    "nasai": 32,
+    "ibnumajah": 31,
+    "ahmad": 128,
+    "malik": 0,
+    "darimi": 12
+  }
+}

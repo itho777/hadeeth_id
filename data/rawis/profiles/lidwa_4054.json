@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4054",
+  "name_en": "Abis bin Rabi'ah",
+  "name_id": "Abis bin Rabi'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "An Nakha'iy",
+  "nasab": "An Nakha'iy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

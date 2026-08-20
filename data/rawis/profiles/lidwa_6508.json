@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6508",
+  "name_en": "Qais bin Abi Hazim Hushain",
+  "name_id": "Qais bin Abi Hazim Hushain",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "97 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Bajaliy Al Ahmasiy",
+  "nasab": "Al Bajaliy Al Ahmasiy",
+  "laqob": "-",
+  "hadith_count": "278",
+  "book_counts": {
+    "bukhari": 78,
+    "muslim": 26,
+    "abudaud": 9,
+    "tirmidzi": 21,
+    "nasai": 9,
+    "ibnumajah": 18,
+    "ahmad": 107,
+    "malik": 0,
+    "darimi": 10
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5193",
+  "name_en": "Abdul Malik bin Abi Sulaiman Maysarah",
+  "name_id": "Abdul Malik bin Abi Sulaiman Maysarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "145 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al 'Urzumiy",
+  "nasab": "Al 'Urzumiy",
+  "laqob": "-",
+  "hadith_count": "174",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 25,
+    "abudaud": 14,
+    "tirmidzi": 10,
+    "nasai": 33,
+    "ibnumajah": 10,
+    "ahmad": 57,
+    "malik": 0,
+    "darimi": 25
+  }
+}

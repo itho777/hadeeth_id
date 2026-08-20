@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7414",
+  "name_en": "Muzahin bin Zufar bin Al Harits",
+  "name_id": "Muzahin bin Zufar bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Adl Dlabiy Al 'Amiriy",
+  "nasab": "Adl Dlabiy Al 'Amiriy",
+  "laqob": "Ibnu Abi Muzahim",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

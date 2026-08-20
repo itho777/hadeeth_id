@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3494",
+  "name_en": "Salamah bin Al Fadlol",
+  "name_id": "Salamah bin Al Fadlol",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "Rayi",
+  "residence": "Rayi",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "Al Abrasy Al Azraq",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 12,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 2
+  }
+}

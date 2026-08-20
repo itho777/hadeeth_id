@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1003",
+  "name_en": "Isma'il bin Ibrahim bin Muqsim",
+  "name_id": "Isma'il bin Ibrahim bin Muqsim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "193 H",
+  "city_of_death": "Baghdad",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bisyir",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "Ibnu 'Ulayyah",
+  "hadith_count": "1227",
+  "book_counts": {
+    "bukhari": 70,
+    "muslim": 204,
+    "abudaud": 86,
+    "tirmidzi": 66,
+    "nasai": 115,
+    "ibnumajah": 53,
+    "ahmad": 615,
+    "malik": 0,
+    "darimi": 18
+  }
+}

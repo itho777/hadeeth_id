@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4294",
+  "name_en": "Abdur Rahman bin Ishaq bin Al Harits",
+  "name_id": "Abdur Rahman bin Ishaq bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Syaibah",
+  "parents": "Al Anshariy Al Wasithiy",
+  "nasab": "Al Anshariy Al Wasithiy",
+  "laqob": "-",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 11,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 3
+  }
+}

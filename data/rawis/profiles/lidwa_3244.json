@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3244",
+  "name_en": "Sa'ad bin Sa'id bin Abi Sa'id",
+  "name_id": "Sa'ad bin Sa'id bin Abi Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Sahal",
+  "parents": "Al Maqbariy",
+  "nasab": "Al Maqbariy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

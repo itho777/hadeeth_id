@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3745",
+  "name_en": "Syibil bin Hamid",
+  "name_id": "Syibil bin Hamid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Muzaniy",
+  "nasab": "Al Muzaniy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

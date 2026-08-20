@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6638",
+  "name_en": "Laits bin Abi Sulaim bin Zunaim",
+  "name_id": "Laits bin Abi Sulaim bin Zunaim",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "148 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "200",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 6,
+    "tirmidzi": 25,
+    "nasai": 0,
+    "ibnumajah": 25,
+    "ahmad": 99,
+    "malik": 0,
+    "darimi": 42
+  }
+}

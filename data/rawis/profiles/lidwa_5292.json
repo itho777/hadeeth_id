@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5292",
+  "name_en": "Abdu Rabbih",
+  "name_id": "Abdu Rabbih",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Na'amah",
+  "parents": "As Sa'adiy",
+  "nasab": "As Sa'adiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8272",
+  "name_en": "Yahya bin Sa'id bin Qais",
+  "name_id": "Yahya bin Sa'id bin Qais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "144 H",
+  "city_of_death": "Hasyimiyah",
+  "residence": "Madinah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Anshariy An Najjariy",
+  "nasab": "Al Anshariy An Najjariy",
+  "laqob": "-",
+  "hadith_count": "933",
+  "book_counts": {
+    "bukhari": 125,
+    "muslim": 76,
+    "abudaud": 49,
+    "tirmidzi": 39,
+    "nasai": 149,
+    "ibnumajah": 43,
+    "ahmad": 181,
+    "malik": 218,
+    "darimi": 53
+  }
+}

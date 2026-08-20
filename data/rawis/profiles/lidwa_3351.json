@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3351",
+  "name_en": "Sa'id bin 'Abdul Jabbar bin Yazid",
+  "name_id": "Sa'id bin 'Abdul Jabbar bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "236 H",
+  "city_of_death": "Bashrah",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Qurasyiy Al Kirabaisiy",
+  "nasab": "Al Qurasyiy Al Kirabaisiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

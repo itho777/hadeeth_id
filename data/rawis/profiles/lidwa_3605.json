@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3605",
+  "name_en": "Sulaiman bin 'Abdur Rahman bin Hammad",
+  "name_id": "Sulaiman bin 'Abdur Rahman bin Hammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "252 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Daud",
+  "parents": "Ath Thalhiy At Tammar",
+  "nasab": "Ath Thalhiy At Tammar",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

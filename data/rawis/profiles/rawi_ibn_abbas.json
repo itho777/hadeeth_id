@@ -1,0 +1,29 @@
+{
+  "id": "rawi_ibn_abbas",
+  "name_en": "'Abdullah bin 'Abbas",
+  "name_id": "Abdullah bin Abbas",
+  "name_ar": "عبد الله بن عباس",
+  "is_sahabi": "true",
+  "generation": "Sahabi (Companion)",
+  "grade": "Sahabi Adl",
+  "died_ah": "68",
+  "died_ce": "687",
+  "hadith_count": "1660",
+  "city_of_death": "Ta'if",
+  "bio_en": "Cousin of the Prophet ï·º, known as Hibr al-Ummah (Scholar of the Nation).",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 706,
+    "muslim": 357,
+    "abudaud": 425,
+    "tirmidzi": 328,
+    "nasai": 498,
+    "ibnumajah": 344,
+    "ahmad": 1897,
+    "malik": 50,
+    "darimi": 243
+  }
+}

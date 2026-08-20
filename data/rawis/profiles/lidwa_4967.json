@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4967",
+  "name_en": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+  "name_id": "Abdullah bin 'Umar bin Al Khaththab bin Nufail",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "73 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al 'Adawiy Al Qurasyiy",
+  "nasab": "Al 'Adawiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "5604",
+  "book_counts": {
+    "bukhari": 790,
+    "muslim": 567,
+    "abudaud": 361,
+    "tirmidzi": 305,
+    "nasai": 565,
+    "ibnumajah": 364,
+    "ahmad": 2125,
+    "malik": 341,
+    "darimi": 186
+  }
+}

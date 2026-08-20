@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7749",
+  "name_en": "Musa bin 'Abdul 'Aziz",
+  "name_id": "Musa bin 'Abdul 'Aziz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "175 H",
+  "city_of_death": "-",
+  "residence": "Yaman",
+  "kunyah": "Abu Syu'aib",
+  "parents": "Al 'Adaniy Al Qanbariy",
+  "nasab": "Al 'Adaniy Al Qanbariy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

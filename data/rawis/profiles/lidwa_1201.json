@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1201",
+  "name_en": "Al Harits bin 'Abdullah bin Abi Rabi'ah",
+  "name_id": "Al Harits bin 'Abdullah bin Abi Rabi'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Makhzumiy Al Qurasyiy",
+  "nasab": "Al Makhzumiy Al Qurasyiy",
+  "laqob": "Al Qubbaa'",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

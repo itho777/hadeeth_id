@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_449",
+  "name_en": "Ahmad bin Sinan bin Asad bin Hibban",
+  "name_id": "Ahmad bin Sinan bin Asad bin Hibban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "259 H",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Waasithiy Al Qaththan",
+  "nasab": "Al Waasithiy Al Qaththan",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 5,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 29,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

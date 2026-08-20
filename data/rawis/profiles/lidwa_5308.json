@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5308",
+  "name_en": "Ubaid bin Abi Umayyah",
+  "name_id": "Ubaid bin Abi Umayyah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "Ath Thanafisiy Al Hanafiy",
+  "nasab": "Ath Thanafisiy Al Hanafiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

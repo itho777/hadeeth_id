@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2477",
+  "name_en": "Hakim bin Mu'awiyah bin Haydah",
+  "name_id": "Hakim bin Mu'awiyah bin Haydah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "81",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 9,
+    "tirmidzi": 11,
+    "nasai": 8,
+    "ibnumajah": 6,
+    "ahmad": 42,
+    "malik": 0,
+    "darimi": 5
+  }
+}

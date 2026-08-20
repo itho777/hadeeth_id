@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3310",
+  "name_en": "Sa'id bin Hassan",
+  "name_id": "Sa'id bin Hassan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Qurisyiy Al Makhzumiy",
+  "nasab": "Al Qurisyiy Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

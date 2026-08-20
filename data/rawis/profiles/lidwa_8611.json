@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8611",
+  "name_en": "Yunus bin Saif",
+  "name_id": "Yunus bin Saif",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "120 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Kalla'iy Al Himshiy",
+  "nasab": "Al Kalla'iy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

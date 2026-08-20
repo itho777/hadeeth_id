@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4649",
+  "name_en": "Abdullah bin Abi Qatadah",
+  "name_id": "Abdullah bin Abi Qatadah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "95 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Anshariy As Salmiy",
+  "nasab": "Al Anshariy As Salmiy",
+  "laqob": "-",
+  "hadith_count": "170",
+  "book_counts": {
+    "bukhari": 27,
+    "muslim": 16,
+    "abudaud": 6,
+    "tirmidzi": 6,
+    "nasai": 26,
+    "ibnumajah": 9,
+    "ahmad": 65,
+    "malik": 1,
+    "darimi": 14
+  }
+}

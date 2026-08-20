@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_969",
+  "name_en": "Ishaq bin Manshur ",
+  "name_id": "Ishaq bin Manshur ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "205 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "As Saluliy",
+  "nasab": "As Saluliy",
+  "laqob": "-",
+  "hadith_count": "45",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 8,
+    "abudaud": 7,
+    "tirmidzi": 10,
+    "nasai": 2,
+    "ibnumajah": 9,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 2
+  }
+}

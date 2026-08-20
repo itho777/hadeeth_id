@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3137",
+  "name_en": "Zaid bin Khalid",
+  "name_id": "Zaid bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "68 H",
+  "city_of_death": "Madinah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Juhaniy Al MAdaniy",
+  "nasab": "Al Juhaniy Al MAdaniy",
+  "laqob": "-",
+  "hadith_count": "163",
+  "book_counts": {
+    "bukhari": 35,
+    "muslim": 16,
+    "abudaud": 16,
+    "tirmidzi": 11,
+    "nasai": 7,
+    "ibnumajah": 11,
+    "ahmad": 55,
+    "malik": 7,
+    "darimi": 5
+  }
+}

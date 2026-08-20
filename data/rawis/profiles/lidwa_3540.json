@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3540",
+  "name_en": "Sulaim bin Akhdlor",
+  "name_id": "Sulaim bin Akhdlor",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "180 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 5,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7285",
+  "name_en": "Muhammad bin Ma'an bin Muhammad bin Ma'an bin Nadllah bin 'Amru",
+  "name_id": "Muhammad bin Ma'an bin Muhammad bin Ma'an bin Nadllah bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "198 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Yunus",
+  "parents": "Al Ghifariy",
+  "nasab": "Al Ghifariy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

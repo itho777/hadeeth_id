@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1410",
+  "name_en": "Ar Rabi' bin Sulaiman bin 'Abdul Jabbar ",
+  "name_id": "Ar Rabi' bin Sulaiman bin 'Abdul Jabbar ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "270 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 10,
+    "tirmidzi": 0,
+    "nasai": 13,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

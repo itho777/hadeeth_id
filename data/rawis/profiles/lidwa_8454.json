@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8454",
+  "name_en": "Yazid bin 'Abdullah bin Khushaifah bin 'Abdullah bin Yazid",
+  "name_id": "Yazid bin 'Abdullah bin Khushaifah bin 'Abdullah bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Kindiy",
+  "nasab": "Al Kindiy",
+  "laqob": "-",
+  "hadith_count": "50",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 5,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 20,
+    "malik": 4,
+    "darimi": 2
+  }
+}

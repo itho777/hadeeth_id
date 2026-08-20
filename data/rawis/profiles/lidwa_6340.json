@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6340",
+  "name_en": "Isa bin Yazid",
+  "name_id": "Isa bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Mu'adz",
+  "parents": "Al Marwaziy",
+  "nasab": "Al Marwaziy",
+  "laqob": "Al Azraq",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5718",
+  "name_en": "Alqamah bin Wa'il bin Hajar",
+  "name_id": "Alqamah bin Wa'il bin Hajar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Hadlramiy Al Kindiy",
+  "nasab": "Al Hadlramiy Al Kindiy",
+  "laqob": "-",
+  "hadith_count": "55",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 10,
+    "abudaud": 10,
+    "tirmidzi": 7,
+    "nasai": 8,
+    "ibnumajah": 1,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 4
+  }
+}

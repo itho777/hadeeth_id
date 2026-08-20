@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3753",
+  "name_en": "Syabib bin Gharqadah",
+  "name_id": "Syabib bin Gharqadah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "As Salmiy",
+  "nasab": "As Salmiy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

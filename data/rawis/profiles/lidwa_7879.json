@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7879",
+  "name_en": "\"Nudbah/Budayyah, maula Maimunah\"",
+  "name_id": "\"Nudbah/Budayyah, maula Maimunah\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

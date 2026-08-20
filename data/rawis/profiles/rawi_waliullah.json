@@ -1,0 +1,28 @@
+{
+  "id": "rawi_waliullah",
+  "name_en": "Shah Waliullah ad-Dahlawi",
+  "name_id": "Shah Waliullah ad-Dahlawi",
+  "name_ar": "شاه ولي الله الدهلوي",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Mujaddid",
+  "died_ah": "1176",
+  "died_ce": "1762",
+  "hadith_count": "40",
+  "city_of_death": "Delhi",
+  "bio_en": "Great reviver of Islam in the Indian subcontinent.",
+  "books": [
+    "Shah Waliullah's Arba'in"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

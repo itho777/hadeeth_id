@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3167",
+  "name_en": "Zainab binti 'Amir bin 'Uwaimir",
+  "name_id": "Zainab binti 'Amir bin 'Uwaimir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Ruman",
+  "parents": "Al Firasiyyah",
+  "nasab": "Al Firasiyyah",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

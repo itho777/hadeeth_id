@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4573",
+  "name_en": "Abdul 'Aziz bin Siyah",
+  "name_id": "Abdul 'Aziz bin Siyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Asadiy Al Hammaniy",
+  "nasab": "Al Asadiy Al Hammaniy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6529",
+  "name_en": "Qais bin 'A'idz",
+  "name_id": "Qais bin 'A'idz",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Kahil",
+  "parents": "Al Ahmashiy",
+  "nasab": "Al Ahmashiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

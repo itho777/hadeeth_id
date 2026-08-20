@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1053",
+  "name_en": "Isma'il bin Muhammad bin Isma'il ",
+  "name_id": "Isma'il bin Muhammad bin Isma'il ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "232 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

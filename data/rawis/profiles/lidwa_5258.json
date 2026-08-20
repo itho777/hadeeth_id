@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5258",
+  "name_en": "Abdul Wahid bin Ayman. Maula Ibnu Abi 'Amru",
+  "name_id": "Abdul Wahid bin Ayman. Maula Ibnu Abi 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Al Qasim",
+  "parents": "Al Makhzumiy",
+  "nasab": "Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 2
+  }
+}

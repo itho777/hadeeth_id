@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3801",
+  "name_en": "Syu'aib bin Abi Hamzah Dinar",
+  "name_id": "Syu'aib bin Abi Hamzah Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "162 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Bisyir",
+  "parents": "Al Umawiy ",
+  "nasab": "Al Umawiy ",
+  "laqob": "-",
+  "hadith_count": "558",
+  "book_counts": {
+    "bukhari": 299,
+    "muslim": 32,
+    "abudaud": 25,
+    "tirmidzi": 9,
+    "nasai": 63,
+    "ibnumajah": 2,
+    "ahmad": 96,
+    "malik": 0,
+    "darimi": 32
+  }
+}

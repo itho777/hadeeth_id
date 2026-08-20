@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5275",
+  "name_en": "Abdul Wahhab bin Bukhti",
+  "name_id": "Abdul Wahhab bin Bukhti",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "113 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Ubaidah",
+  "parents": "Al Umawiy Al Makkiy",
+  "nasab": "Al Umawiy Al Makkiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4049",
+  "name_en": "Aisyah binti Abi Bakar Ash Shiddiq",
+  "name_id": "Aisyah binti Abi Bakar Ash Shiddiq",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "58 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Ummu 'Abdullah",
+  "parents": "At Taymiyyah",
+  "nasab": "At Taymiyyah",
+  "laqob": "Ummu Al Mu'minin",
+  "hadith_count": "5964",
+  "book_counts": {
+    "bukhari": 849,
+    "muslim": 630,
+    "abudaud": 429,
+    "tirmidzi": 288,
+    "nasai": 664,
+    "ibnumajah": 386,
+    "ahmad": 2395,
+    "malik": 128,
+    "darimi": 195
+  }
+}

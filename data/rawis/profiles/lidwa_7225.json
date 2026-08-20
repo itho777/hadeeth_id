@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7225",
+  "name_en": "Muhammad bin 'Amru bin 'Alqamah bin Waqash",
+  "name_id": "Muhammad bin 'Amru bin 'Alqamah bin Waqash",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "145 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "509",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 7,
+    "abudaud": 37,
+    "tirmidzi": 51,
+    "nasai": 31,
+    "ibnumajah": 50,
+    "ahmad": 297,
+    "malik": 2,
+    "darimi": 30
+  }
+}

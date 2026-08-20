@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3923",
+  "name_en": "Shadaqah bin Khalid",
+  "name_id": "Shadaqah bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "180 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al' Abbas",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 12,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 4
+  }
+}

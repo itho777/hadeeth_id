@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3462",
+  "name_en": "Salam bin Miskin bin Rabi'ah",
+  "name_id": "Salam bin Miskin bin Rabi'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Rauh",
+  "parents": "Al Azdiy An Numariy",
+  "nasab": "Al Azdiy An Numariy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 5,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1078",
+  "name_en": "Iyas bin 'Abdullah bin Abi Dzubab",
+  "name_id": "Iyas bin 'Abdullah bin Abi Dzubab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Ad Dausiy",
+  "nasab": "Ad Dausiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

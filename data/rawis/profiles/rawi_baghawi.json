@@ -1,0 +1,28 @@
+{
+  "id": "rawi_baghawi",
+  "name_en": "Imam al-Baghawi",
+  "name_id": "Imam al-Baghawi",
+  "name_ar": "البغوي",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz",
+  "died_ah": "516",
+  "died_ce": "1122",
+  "hadith_count": "5945",
+  "city_of_death": "Marw",
+  "bio_en": "Reviver of Sunnah, author of Masabih as-Sunnah (expanded into Mishkat).",
+  "books": [
+    "Mishkat al-Masabih"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

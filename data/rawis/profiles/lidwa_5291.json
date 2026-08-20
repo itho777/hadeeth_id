@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5291",
+  "name_en": "Abdah binti Khalid bin Ma'dan",
+  "name_id": "Abdah binti Khalid bin Ma'dan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Ummu 'Abdullah",
+  "parents": "Al Kala'iyyah",
+  "nasab": "Al Kala'iyyah",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 6
+  }
+}

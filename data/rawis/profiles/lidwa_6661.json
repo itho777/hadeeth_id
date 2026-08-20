@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6661",
+  "name_en": "Malik bin Isma'il bin Dirham",
+  "name_id": "Malik bin Isma'il bin Dirham",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "219 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ghassan",
+  "parents": "An Nahdiy",
+  "nasab": "An Nahdiy",
+  "laqob": "-",
+  "hadith_count": "60",
+  "book_counts": {
+    "bukhari": 30,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 20
+  }
+}

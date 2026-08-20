@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2640",
+  "name_en": "Khalid bin Dinar",
+  "name_id": "Khalid bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "152 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Husain",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

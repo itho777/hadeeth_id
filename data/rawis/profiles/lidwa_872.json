@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_872",
+  "name_en": "Ibrahim bin Muhammad bin Al 'Abbas",
+  "name_id": "Ibrahim bin Muhammad bin Al 'Abbas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "238 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Ishaq",
+  "parents": "Asy Syafi'iy Al Muthallibiy",
+  "nasab": "Asy Syafi'iy Al Muthallibiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 8,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

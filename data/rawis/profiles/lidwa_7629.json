@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7629",
+  "name_en": "Mu'allaa bin Manshur",
+  "name_id": "Mu'allaa bin Manshur",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "11",
+  "died_ah": "211 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ya'laa",
+  "parents": "Ar Raziy",
+  "nasab": "Ar Raziy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 4,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

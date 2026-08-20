@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7983",
+  "name_en": "Harun bin 'Abdullah bin Marwan",
+  "name_id": "Harun bin 'Abdullah bin Marwan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "243 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Musa",
+  "parents": "Al Baghdadiy Al Bazzaz",
+  "nasab": "Al Baghdadiy Al Bazzaz",
+  "laqob": "Al Hammal",
+  "hadith_count": "221",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 78,
+    "abudaud": 59,
+    "tirmidzi": 8,
+    "nasai": 62,
+    "ibnumajah": 13,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

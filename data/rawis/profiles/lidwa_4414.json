@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4414",
+  "name_en": "Abdur Rahman bin 'Abdullah ",
+  "name_id": "Abdur Rahman bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hamzah ",
+  "parents": "Al Maziniy ",
+  "nasab": "Al Maziniy ",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

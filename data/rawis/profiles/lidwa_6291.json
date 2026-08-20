@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6291",
+  "name_en": "Iyadl bin Hilal",
+  "name_id": "Iyadl bin Hilal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_478",
+  "name_en": "Ahmad bin 'Amru bin 'Ubaidah",
+  "name_id": "Ahmad bin 'Amru bin 'Ubaidah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "253 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "Al Qillawariy Al 'Ashfariy",
+  "nasab": "Al Qillawariy Al 'Ashfariy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

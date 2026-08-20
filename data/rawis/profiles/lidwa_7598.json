@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7598",
+  "name_en": "Ma'bad bin Khalid bin Murair",
+  "name_id": "Ma'bad bin Khalid bin Murair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "118 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Jadaliy Al Qaisiy",
+  "nasab": "Al Jadaliy Al Qaisiy",
+  "laqob": "-",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 6,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 2
+  }
+}

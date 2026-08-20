@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3523",
+  "name_en": "Salamah bin Nufail",
+  "name_id": "Salamah bin Nufail",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "As Sukuniy At Taraghimiy",
+  "nasab": "As Sukuniy At Taraghimiy",
+  "laqob": "Salamah",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

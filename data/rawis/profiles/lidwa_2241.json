@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2241",
+  "name_en": "Hubsyiy bin Junadah bin Nashr",
+  "name_id": "Hubsyiy bin Junadah bin Nashr",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Janub",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3793",
+  "name_en": "Syarik bin 'Abdullah bin Abi Namir",
+  "name_id": "Syarik bin 'Abdullah bin Abi Namir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "144 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Laitsiy ",
+  "nasab": "Al Laitsiy ",
+  "laqob": "-",
+  "hadith_count": "68",
+  "book_counts": {
+    "bukhari": 16,
+    "muslim": 10,
+    "abudaud": 7,
+    "tirmidzi": 0,
+    "nasai": 8,
+    "ibnumajah": 4,
+    "ahmad": 21,
+    "malik": 2,
+    "darimi": 0
+  }
+}

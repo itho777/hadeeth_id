@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5606",
+  "name_en": "Uryan bin Al Haytsam bin Al Aswad",
+  "name_id": "Uryan bin Al Haytsam bin Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "An Nakha'i",
+  "nasab": "An Nakha'i",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

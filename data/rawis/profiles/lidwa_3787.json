@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3787",
+  "name_en": "Syuraih bin Hani' bin Yazid bin Nahik",
+  "name_id": "Syuraih bin Hani' bin Yazid bin Nahik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "78 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Miqdam",
+  "parents": "Al Haritsiy Al Al Mudzhajiy",
+  "nasab": "Al Haritsiy Al Al Mudzhajiy",
+  "laqob": "-",
+  "hadith_count": "92",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 9,
+    "abudaud": 7,
+    "tirmidzi": 2,
+    "nasai": 17,
+    "ibnumajah": 6,
+    "ahmad": 49,
+    "malik": 0,
+    "darimi": 2
+  }
+}

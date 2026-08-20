@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5996",
+  "name_en": "Umar bin Qais Al Mashir",
+  "name_id": "Umar bin Qais Al Mashir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ash Shabbah",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

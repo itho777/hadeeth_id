@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8550",
+  "name_en": "Ya'laa bin 'Atha'",
+  "name_id": "Ya'laa bin 'Atha'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "120 H",
+  "city_of_death": "-",
+  "residence": "Tha'if",
+  "kunyah": "-",
+  "parents": "Al 'Amiriy",
+  "nasab": "Al 'Amiriy",
+  "laqob": "-",
+  "hadith_count": "131",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 11,
+    "tirmidzi": 10,
+    "nasai": 13,
+    "ibnumajah": 10,
+    "ahmad": 75,
+    "malik": 0,
+    "darimi": 9
+  }
+}

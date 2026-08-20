@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_386",
+  "name_en": "Abu Yazid (dari Fadlolah)",
+  "name_id": "Abu Yazid (dari Fadlolah)",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Yazid",
+  "parents": "Al Khawlaaniy",
+  "nasab": "Al Khawlaaniy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

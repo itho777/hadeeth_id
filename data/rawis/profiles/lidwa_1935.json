@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1935",
+  "name_en": "Bakar bin 'Amru",
+  "name_id": "Bakar bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru ",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 1
+  }
+}

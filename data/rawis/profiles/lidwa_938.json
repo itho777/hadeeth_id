@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_938",
+  "name_en": "Ishaq bin Tsa'labah ",
+  "name_id": "Ishaq bin Tsa'labah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Shafwan",
+  "parents": "Al Humayriy",
+  "nasab": "Al Humayriy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

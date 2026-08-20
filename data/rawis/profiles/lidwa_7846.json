@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7846",
+  "name_en": "Nafi' bin Jubaidr bin Muth'iom bin 'Adiy",
+  "name_id": "Nafi' bin Jubaidr bin Muth'iom bin 'Adiy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "99 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "An Naufaliy",
+  "nasab": "An Naufaliy",
+  "laqob": "-",
+  "hadith_count": "130",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 13,
+    "abudaud": 9,
+    "tirmidzi": 9,
+    "nasai": 14,
+    "ibnumajah": 9,
+    "ahmad": 52,
+    "malik": 5,
+    "darimi": 6
+  }
+}

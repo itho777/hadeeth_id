@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5054",
+  "name_en": "Abdullah bin Muhammad bin Ar Rabi'",
+  "name_id": "Abdullah bin Muhammad bin Ar Rabi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Mashishah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al 'A'idziy Al Karmaniy",
+  "nasab": "Al 'A'idziy Al Karmaniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

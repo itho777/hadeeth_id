@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7663",
+  "name_en": "Mamthur",
+  "name_id": "Mamthur",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Sallam",
+  "parents": "Al Habsyiy Ad Damasyqiy",
+  "nasab": "Al Habsyiy Ad Damasyqiy",
+  "laqob": "Al Aswad Al A'raj",
+  "hadith_count": "88",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 8,
+    "abudaud": 10,
+    "tirmidzi": 6,
+    "nasai": 6,
+    "ibnumajah": 6,
+    "ahmad": 46,
+    "malik": 0,
+    "darimi": 6
+  }
+}

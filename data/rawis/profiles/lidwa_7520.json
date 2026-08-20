@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7520",
+  "name_en": "Mush'ab bin 'Abdullah bin Mush'ab",
+  "name_id": "Mush'ab bin 'Abdullah bin Mush'ab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "236 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Asadiy Az Zubairiy",
+  "nasab": "Al Asadiy Az Zubairiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 0
+  }
+}

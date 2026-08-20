@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_833",
+  "name_en": "Ibrahim bin Thahman bin Syu'bah",
+  "name_id": "Ibrahim bin Thahman bin Syu'bah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": " ",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Himsh",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Khirasaniy Al Makkiy",
+  "nasab": "Al Khirasaniy Al Makkiy",
+  "laqob": "-",
+  "hadith_count": "98",
+  "book_counts": {
+    "bukhari": 23,
+    "muslim": 4,
+    "abudaud": 18,
+    "tirmidzi": 2,
+    "nasai": 24,
+    "ibnumajah": 4,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 6
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7254",
+  "name_en": "Muhammad bin Kunasah bin 'Abdullah bin 'Abdul A'laa bin 'Abdullah bin Khalifah",
+  "name_id": "Muhammad bin Kunasah bin 'Abdullah bin 'Abdul A'laa bin 'Abdullah bin Khalifah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "207 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "Ibnu Kunasah",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4789",
+  "name_en": "Abdullah bin Khabbab",
+  "name_id": "Abdullah bin Khabbab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy An Najjariy",
+  "nasab": "Al Anshariy An Najjariy",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 1
+  }
+}

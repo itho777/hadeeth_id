@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3434",
+  "name_en": "Sufyan bin Ziyad",
+  "name_id": "Sufyan bin Ziyad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Warqa'",
+  "parents": "Al 'Asfariy Al Ahmar",
+  "nasab": "Al 'Asfariy Al Ahmar",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

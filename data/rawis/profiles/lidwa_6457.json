@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6457",
+  "name_en": "Qatadah bin An Nu'man bin Zaid",
+  "name_id": "Qatadah bin An Nu'man bin Zaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "23 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Ausiy Al Anshariy",
+  "nasab": "Al Ausiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

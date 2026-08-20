@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8149",
+  "name_en": "Warqa' bin 'Umar bin Kulaib",
+  "name_id": "Warqa' bin 'Umar bin Kulaib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Bisyir",
+  "parents": "Al Yasykuriy",
+  "nasab": "Al Yasykuriy",
+  "laqob": "-",
+  "hadith_count": "106",
+  "book_counts": {
+    "bukhari": 18,
+    "muslim": 17,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 6,
+    "ibnumajah": 3,
+    "ahmad": 50,
+    "malik": 0,
+    "darimi": 4
+  }
+}

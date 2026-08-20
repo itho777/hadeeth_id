@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_16",
+  "name_en": "Aban bin 'Abdullah bin Abu Hazim",
+  "name_id": "Aban bin 'Abdullah bin Abu Hazim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Bajaliy Al Ahmasiy",
+  "nasab": "Al Bajaliy Al Ahmasiy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 3
+  }
+}

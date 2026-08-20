@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4263",
+  "name_en": "Abdur Rahman bin Abi Ar Rijal",
+  "name_id": "Abdur Rahman bin Abi Ar Rijal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 0
+  }
+}

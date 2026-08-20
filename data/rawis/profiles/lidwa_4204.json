@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4204",
+  "name_en": "Abdul A'laa bin Al Qasim",
+  "name_id": "Abdul A'laa bin Al Qasim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bisyir",
+  "parents": "Al Hamdaniy Al Lu'lu'iy",
+  "nasab": "Al Hamdaniy Al Lu'lu'iy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

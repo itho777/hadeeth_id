@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7704",
+  "name_en": "Mihran bin Abi 'Umar",
+  "name_id": "Mihran bin Abi 'Umar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Rayi",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Aththar",
+  "nasab": "Al 'Aththar",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

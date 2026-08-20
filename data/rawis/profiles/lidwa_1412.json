@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1412",
+  "name_en": "Ar Rabi' bin Shabiih",
+  "name_id": "Ar Rabi' bin Shabiih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "160 H",
+  "city_of_death": "Sind",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 4
+  }
+}

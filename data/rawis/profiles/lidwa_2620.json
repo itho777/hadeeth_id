@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2620",
+  "name_en": "Khalid bin Abi Karimah",
+  "name_id": "Khalid bin Abi Karimah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Ashpahan",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

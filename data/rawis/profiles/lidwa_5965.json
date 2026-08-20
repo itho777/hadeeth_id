@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5965",
+  "name_en": "Umar bin Syabib bin 'Umar",
+  "name_id": "Umar bin Syabib bin 'Umar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "202 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hafsh",
+  "parents": "Al Musalliy Al Madzhajiy",
+  "nasab": "Al Musalliy Al Madzhajiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

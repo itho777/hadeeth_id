@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2998",
+  "name_en": "Zurarah bin Awfaa",
+  "name_id": "Zurarah bin Awfaa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "93 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hajib",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "147",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 16,
+    "abudaud": 11,
+    "tirmidzi": 9,
+    "nasai": 23,
+    "ibnumajah": 11,
+    "ahmad": 62,
+    "malik": 0,
+    "darimi": 8
+  }
+}

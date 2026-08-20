@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8505",
+  "name_en": "Yusair bin 'Amru",
+  "name_id": "Yusair bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "85 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Khabbaz",
+  "parents": "Al Kindiy",
+  "nasab": "Al Kindiy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 6,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

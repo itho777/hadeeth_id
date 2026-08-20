@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5749",
+  "name_en": "Ali bin Al Haytsam",
+  "name_id": "Ali bin Al Haytsam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "-",
+  "parents": "Al Baghdadiy",
+  "nasab": "Al Baghdadiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

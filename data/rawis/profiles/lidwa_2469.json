@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2469",
+  "name_en": "Hakim bin Hakim bin 'Abbad",
+  "name_id": "Hakim bin Hakim bin 'Abbad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

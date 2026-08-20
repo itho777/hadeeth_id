@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1570",
+  "name_en": "Al Qasim bin Al Fadlol bin Ma'dan",
+  "name_id": "Al Qasim bin Al Fadlol bin Ma'dan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Mughirah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 23,
+    "malik": 0,
+    "darimi": 1
+  }
+}

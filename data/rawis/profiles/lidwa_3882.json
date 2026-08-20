@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3882",
+  "name_en": "Shalih bin 'Abdul Kabir bin Syu'aib bin Al Habhaab",
+  "name_id": "Shalih bin 'Abdul Kabir bin Syu'aib bin Al Habhaab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Mu'awwaliy",
+  "nasab": "Al Mu'awwaliy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

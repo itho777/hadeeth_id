@@ -1,0 +1,29 @@
+{
+  "id": "rawi_nawawi",
+  "name_en": "Imam an-Nawawi",
+  "name_id": "Imam an-Nawawi",
+  "name_ar": "النووي",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz Faqih",
+  "died_ah": "676",
+  "died_ce": "1277",
+  "hadith_count": "2795",
+  "city_of_death": "Nawa",
+  "bio_en": "Prominent Shafi'i jurist and author of Arba'in and Riyad as-Salihin.",
+  "books": [
+    "Forty Nawawi",
+    "Riyad as-Salihin"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

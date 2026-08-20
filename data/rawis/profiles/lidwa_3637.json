@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3637",
+  "name_en": "Simak bin Al Walid",
+  "name_id": "Simak bin Al Walid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Zumail",
+  "parents": "Al Hanafiy Al Yamamiy",
+  "nasab": "Al Hanafiy Al Yamamiy",
+  "laqob": "-",
+  "hadith_count": "33",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 6,
+    "abudaud": 5,
+    "tirmidzi": 6,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5369",
+  "name_en": "Ubaidullah bin Al Akhnas",
+  "name_id": "Ubaidullah bin Al Akhnas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Malik",
+  "parents": "An Nakha'iy",
+  "nasab": "An Nakha'iy",
+  "laqob": "Al Khazzaz",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 2,
+    "abudaud": 6,
+    "tirmidzi": 1,
+    "nasai": 8,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

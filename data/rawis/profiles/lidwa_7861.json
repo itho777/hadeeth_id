@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7861",
+  "name_en": "Nafi' bin Yazid",
+  "name_id": "Nafi' bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "7",
+  "died_ah": "168 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Yazid",
+  "parents": "Al Kala'iy",
+  "nasab": "Al Kala'iy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 2,
+    "abudaud": 7,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 3,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

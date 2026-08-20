@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6086",
+  "name_en": "Amru bin Al 'Ash bin Wa'il bin Hasyim",
+  "name_id": "Amru bin Al 'Ash bin Wa'il bin Hasyim",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "43 H",
+  "city_of_death": "Maru",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "As_Sahmiy",
+  "nasab": "As_Sahmiy",
+  "laqob": "-",
+  "hadith_count": "83",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 5,
+    "abudaud": 7,
+    "tirmidzi": 5,
+    "nasai": 1,
+    "ibnumajah": 6,
+    "ahmad": 51,
+    "malik": 1,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3969",
+  "name_en": "Dluba'ah binti Az Zubair bin 'Abdul Muthallib",
+  "name_id": "Dluba'ah binti Az Zubair bin 'Abdul Muthallib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Hasyimiyyah",
+  "nasab": "Al Hasyimiyyah",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

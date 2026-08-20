@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3795",
+  "name_en": "Syu'bah bin Al Hajjaj bin Al Warad",
+  "name_id": "Syu'bah bin Al Hajjaj bin Al Warad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "160 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bistham",
+  "parents": "Al Azdiy Al Wasithiy",
+  "nasab": "Al Azdiy Al Wasithiy",
+  "laqob": "-",
+  "hadith_count": "5656",
+  "book_counts": {
+    "bukhari": 795,
+    "muslim": 590,
+    "abudaud": 278,
+    "tirmidzi": 299,
+    "nasai": 562,
+    "ibnumajah": 180,
+    "ahmad": 2681,
+    "malik": 0,
+    "darimi": 271
+  }
+}

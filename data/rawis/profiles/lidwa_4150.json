@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4150",
+  "name_en": "Abbad bin Nusaib",
+  "name_id": "Abbad bin Nusaib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "AbuAl Wadli'i",
+  "parents": "Al Qaisiy",
+  "nasab": "Al Qaisiy",
+  "laqob": "As Sahtaniy",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

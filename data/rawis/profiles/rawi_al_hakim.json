@@ -1,0 +1,28 @@
+{
+  "id": "rawi_al_hakim",
+  "name_en": "Imam al-Hakim",
+  "name_id": "Imam al-Hakim an-Naisaburi",
+  "name_ar": "الحاكم النيسابوري",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz",
+  "died_ah": "405",
+  "died_ce": "1014",
+  "hadith_count": "8803",
+  "city_of_death": "Nishapur",
+  "bio_en": "Compiler of Al-Mustadrak, collecting Sahih hadiths that met the conditions of Bukhari and Muslim.",
+  "books": [
+    "Al-Mustadrak ala as-Sahihayn"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

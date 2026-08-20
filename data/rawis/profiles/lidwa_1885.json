@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1885",
+  "name_en": "Bisyir bin 'Umar bin Al Hakam",
+  "name_id": "Bisyir bin 'Umar bin Al Hakam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "207 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Az Zahrani Al Azdi",
+  "nasab": "Az Zahrani Al Azdi",
+  "laqob": "-",
+  "hadith_count": "40",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 5,
+    "abudaud": 10,
+    "tirmidzi": 6,
+    "nasai": 1,
+    "ibnumajah": 8,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 7
+  }
+}

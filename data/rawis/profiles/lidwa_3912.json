@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3912",
+  "name_en": "\"Shakhr bin Juwairiyah, maula Bani Tamim\"",
+  "name_id": "\"Shakhr bin Juwairiyah, maula Bani Tamim\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Nafi'",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 5,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

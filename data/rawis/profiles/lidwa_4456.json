@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4456",
+  "name_en": "Abdur Rahman bin 'Amru bin Abi 'Amrah",
+  "name_id": "Abdur Rahman bin 'Amru bin Abi 'Amrah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah ",
+  "kunyah": "-",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 1,
+    "darimi": 0
+  }
+}

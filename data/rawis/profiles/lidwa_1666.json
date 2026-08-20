@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1666",
+  "name_en": "Al Mughirah bin 'Abdur Rahman bin Al Harits",
+  "name_id": "Al Mughirah bin 'Abdur Rahman bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "186 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Hisyam",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 9,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

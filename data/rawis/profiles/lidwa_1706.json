@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1706",
+  "name_en": "Al Muhallab bin Shufrah",
+  "name_id": "Al Muhallab bin Shufrah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "82 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

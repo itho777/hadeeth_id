@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7854",
+  "name_en": "Nafi' bin 'Utbah bin Abi Waqash",
+  "name_id": "Nafi' bin 'Utbah bin Abi Waqash",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Az Zuhriy",
+  "nasab": "Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2396",
+  "name_en": "Hushain bin 'Abdur Rahman bin 'Amru",
+  "name_id": "Hushain bin 'Abdur Rahman bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "126 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

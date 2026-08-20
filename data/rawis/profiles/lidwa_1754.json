@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1754",
+  "name_en": "Al Haitsam bin Kharijah",
+  "name_id": "Al Haitsam bin Kharijah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "227 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ahmad ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "41",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 39,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6647",
+  "name_en": "\"Laila, maulah Ummu 'Umarah\"",
+  "name_id": "\"Laila, maulah Ummu 'Umarah\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Bashriyyah",
+  "nasab": "Al Bashriyyah",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 1
+  }
+}

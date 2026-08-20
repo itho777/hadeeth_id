@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8359",
+  "name_en": "Yahya bin Ya'mar",
+  "name_id": "Yahya bin Ya'mar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "89 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Sulaiman",
+  "parents": "Al Bashriy Al Qaisiy",
+  "nasab": "Al Bashriy Al Qaisiy",
+  "laqob": "-",
+  "hadith_count": "72",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 8,
+    "abudaud": 12,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 38,
+    "malik": 0,
+    "darimi": 0
+  }
+}

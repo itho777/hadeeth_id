@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8275",
+  "name_en": "Yahya bin Sulaim bin Balji ",
+  "name_id": "Yahya bin Sulaim bin Balji ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Balji",
+  "parents": "Al Fazariy",
+  "nasab": "Al Fazariy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 18,
+    "malik": 0,
+    "darimi": 0
+  }
+}

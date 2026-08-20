@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7911",
+  "name_en": "Nu'aim bin Hakim",
+  "name_id": "Nu'aim bin Hakim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "148 H",
+  "city_of_death": "-",
+  "residence": "Mada'in",
+  "kunyah": "-",
+  "parents": "Al Mada'iniy",
+  "nasab": "Al Mada'iniy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

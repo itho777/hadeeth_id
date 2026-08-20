@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1484",
+  "name_en": "Adl Dlahhaak bin Sufyan",
+  "name_id": "Adl Dlahhaak bin Sufyan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Malthiyah",
+  "kunyah": "Abu Sa'id",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 1,
+    "darimi": 0
+  }
+}

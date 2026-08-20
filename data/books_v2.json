@@ -4,7 +4,7 @@
     "title_ar": "صحيح البخاري",
     "title_en": "Sahih al-Bukhari",
     "title_id": "Shahih Bukhari",
-    "author_ar": "الإمام محمد بن إسماعيل البخاري",
+    "author_ar": "الإمام محمد البخاري",
     "author_en": "Imam Muhammad al-Bukhari",
     "author_id": "Imam Muhammad al-Bukhari",
     "death_year_ah": 256,
@@ -14,17 +14,25 @@
     "order_index": 1,
     "editions": [
       "ara-bukhari",
+      "ara-bukhari1",
+      "ben-bukhari",
       "eng-bukhari",
-      "ind-bukhari"
+      "fra-bukhari",
+      "ind-bukhari",
+      "rus-bukhari",
+      "tam-bukhari",
+      "tur-bukhari",
+      "urd-bukhari"
     ],
-    "total_hadiths_lidwa": 7008
+    "total_hadiths_lidwa": 7008,
+    "book_type_ar": "الجامع"
   },
   {
     "id": "muslim",
     "title_ar": "صحيح مسلم",
     "title_en": "Sahih Muslim",
     "title_id": "Shahih Muslim",
-    "author_ar": "الإمام مسلم بن الحجاج",
+    "author_ar": "الإمام مسلم",
     "author_en": "Imam Muslim ibn al-Hajjaj",
     "author_id": "Imam Muslim",
     "death_year_ah": 261,
@@ -34,17 +42,25 @@
     "order_index": 2,
     "editions": [
       "ara-muslim",
+      "ara-muslim1",
+      "ben-muslim",
       "eng-muslim",
-      "ind-muslim"
+      "fra-muslim",
+      "ind-muslim",
+      "rus-muslim",
+      "tam-muslim",
+      "tur-muslim",
+      "urd-muslim"
     ],
-    "total_hadiths_lidwa": 5362
+    "total_hadiths_lidwa": 5362,
+    "book_type_ar": "الجامع"
   },
   {
     "id": "abudawud",
     "title_ar": "سنن أبي داود",
     "title_en": "Sunan Abi Dawud",
     "title_id": "Sunan Abu Dawud",
-    "author_ar": "الإمام أبو داود السجستاني",
+    "author_ar": "الإمام أبو داود",
     "author_en": "Imam Abu Dawud",
     "author_id": "Imam Abu Dawud",
     "death_year_ah": 275,
@@ -54,17 +70,24 @@
     "order_index": 3,
     "editions": [
       "ara-abudawud",
+      "ara-abudawud1",
+      "ben-abudawud",
       "eng-abudawud",
-      "ind-abudawud"
+      "fra-abudawud",
+      "ind-abudawud",
+      "rus-abudawud",
+      "tur-abudawud",
+      "urd-abudawud"
     ],
-    "total_hadiths_lidwa": 5274
+    "total_hadiths_lidwa": 5274,
+    "book_type_ar": "السنن"
   },
   {
     "id": "tirmidhi",
     "title_ar": "جامع الترمذي",
     "title_en": "Jami' at-Tirmidhi",
     "title_id": "Jami' at-Tirmidhi",
-    "author_ar": "الإمام أبو عيسى الترمذي",
+    "author_ar": "الإمام الترمذي",
     "author_en": "Imam at-Tirmidhi",
     "author_id": "Imam at-Tirmidhi",
     "death_year_ah": 279,
@@ -74,17 +97,22 @@
     "order_index": 4,
     "editions": [
       "ara-tirmidhi",
+      "ara-tirmidhi1",
+      "ben-tirmidhi",
       "eng-tirmidhi",
-      "ind-tirmidhi"
+      "ind-tirmidhi",
+      "tur-tirmidhi",
+      "urd-tirmidhi"
     ],
-    "total_hadiths_lidwa": 3956
+    "total_hadiths_lidwa": 3956,
+    "book_type_ar": "الجامع"
   },
   {
     "id": "nasai",
     "title_ar": "سنن النسائي",
     "title_en": "Sunan an-Nasa'i",
     "title_id": "Sunan an-Nasa'i",
-    "author_ar": "الإمام أحمد بن شعيب النسائي",
+    "author_ar": "الإمام النسائي",
     "author_en": "Imam an-Nasa'i",
     "author_id": "Imam an-Nasa'i",
     "death_year_ah": 303,
@@ -94,17 +122,23 @@
     "order_index": 5,
     "editions": [
       "ara-nasai",
+      "ara-nasai1",
+      "ben-nasai",
       "eng-nasai",
-      "ind-nasai"
+      "fra-nasai",
+      "ind-nasai",
+      "tur-nasai",
+      "urd-nasai"
     ],
-    "total_hadiths_lidwa": 5662
+    "total_hadiths_lidwa": 5662,
+    "book_type_ar": "السنن"
   },
   {
     "id": "ibnmajah",
     "title_ar": "سنن ابن ماجه",
     "title_en": "Sunan Ibn Majah",
     "title_id": "Sunan Ibnu Majah",
-    "author_ar": "الإمام محمد بن يزيد ابن ماجه",
+    "author_ar": "الإمام ابن ماجه",
     "author_en": "Imam Ibn Majah",
     "author_id": "Imam Ibnu Majah",
     "death_year_ah": 273,
@@ -114,37 +148,49 @@
     "order_index": 6,
     "editions": [
       "ara-ibnmajah",
+      "ara-ibnmajah1",
+      "ben-ibnmajah",
       "eng-ibnmajah",
-      "ind-ibnmajah"
+      "fra-ibnmajah",
+      "ind-ibnmajah",
+      "tur-ibnmajah",
+      "urd-ibnmajah"
     ],
-    "total_hadiths_lidwa": 4341
+    "total_hadiths_lidwa": 4341,
+    "book_type_ar": "السنن"
   },
   {
     "id": "malik",
     "title_ar": "موطأ مالك",
     "title_en": "Muwatta Malik",
     "title_id": "Muwaththa' Malik",
-    "author_ar": "الإمام مالك بن أنس",
+    "author_ar": "الإمام مالك",
     "author_en": "Imam Malik ibn Anas",
     "author_id": "Imam Malik",
     "death_year_ah": 179,
     "total_hadiths": 1858,
     "total_chapters": 61,
-    "grade_summary": "صحيح (Mostly Sahih)",
+    "grade_summary": "صحيح (Sahih)",
     "order_index": 7,
     "editions": [
       "ara-malik",
+      "ara-malik1",
+      "ben-malik",
       "eng-malik",
-      "ind-malik"
+      "fra-malik",
+      "ind-malik",
+      "tur-malik",
+      "urd-malik"
     ],
-    "total_hadiths_lidwa": 1594
+    "total_hadiths_lidwa": 1594,
+    "book_type_ar": "الموطأ"
   },
   {
     "id": "darimi",
     "title_ar": "سنن الدارمي",
     "title_en": "Sunan ad-Darimi",
     "title_id": "Sunan ad-Darimi",
-    "author_ar": "الإمام عبد الله بن عبد الرحمن الدارمي",
+    "author_ar": "الإمام الدارمي",
     "author_en": "Imam ad-Darimi",
     "author_id": "Imam ad-Darimi",
     "death_year_ah": 255,
@@ -152,19 +198,16 @@
     "total_chapters": 24,
     "grade_summary": "صحيح، حسن، وضعيف (Varies)",
     "order_index": 8,
-    "editions": [
-      "ara-darimi",
-      "eng-darimi",
-      "ind-darimi"
-    ],
-    "total_hadiths_lidwa": 3367
+    "editions": [],
+    "total_hadiths_lidwa": 3367,
+    "book_type_ar": "السنن"
   },
   {
     "id": "ahmad",
     "title_ar": "مسند أحمد",
     "title_en": "Musnad Ahmad",
     "title_id": "Musnad Ahmad",
-    "author_ar": "الإمام أحمد بن حنبل",
+    "author_ar": "الإمام أحمد",
     "author_en": "Imam Ahmad ibn Hanbal",
     "author_id": "Imam Ahmad ibn Hanbal",
     "death_year_ah": 241,
@@ -172,38 +215,39 @@
     "total_chapters": 90,
     "grade_summary": "صحيح، حسن، وضعيف (Varies)",
     "order_index": 9,
-    "editions": [
-      "ara-ahmad",
-      "eng-ahmad",
-      "ind-ahmad"
-    ],
-    "total_hadiths_lidwa": 26363
+    "editions": [],
+    "total_hadiths_lidwa": 26363,
+    "book_type_ar": "المسند"
   },
   {
     "id": "nawawi",
     "title_ar": "الأربعون النووية",
     "title_en": "Forty Hadith of an-Nawawi",
     "title_id": "Hadits Arba'in An-Nawawi",
-    "author_ar": "الإمام يحيى بن شرف النووي",
+    "author_ar": "الإمام النووي",
     "author_en": "Imam Yahya ibn Sharaf al-Nawawi",
     "author_id": "Imam An-Nawawi",
     "death_year_ah": 676,
     "total_hadiths": 42,
     "total_chapters": 1,
-    "grade_summary": "صحيح وحسن (Sahih & Hasan)",
+    "grade_summary": "صحيح (Sahih)",
     "order_index": 10,
     "editions": [
       "ara-nawawi",
+      "ara-nawawi1",
+      "ben-nawawi",
       "eng-nawawi",
-      "ind-nawawi"
-    ]
+      "fra-nawawi",
+      "tur-nawawi"
+    ],
+    "book_type_ar": "جوامع الكلم"
   },
   {
     "id": "qudsi",
-    "title_ar": "الحديث القدسي",
+    "title_ar": "الأربعون القدسية",
     "title_en": "40 Hadith Qudsi",
     "title_id": "40 Hadits Qudsi",
-    "author_ar": "متنوع",
+    "author_ar": "متعدد",
     "author_en": "Various",
     "author_id": "Beragam",
     "death_year_ah": 0,
@@ -213,15 +257,18 @@
     "order_index": 11,
     "editions": [
       "ara-qudsi",
-      "eng-qudsi"
-    ]
+      "ara-qudsi1",
+      "eng-qudsi",
+      "fra-qudsi"
+    ],
+    "book_type_ar": "جوامع الكلم"
   },
   {
     "id": "shah",
-    "title_ar": "الأربعون لولي الله",
+    "title_ar": "أربعون الشاه ولي الله",
     "title_en": "Forty Hadith of Shah Waliullah",
     "title_id": "40 Hadits Shah Waliullah",
-    "author_ar": "شاه ولي الله الدهلوي",
+    "author_ar": "الشاه ولي الله الدهلوي",
     "author_en": "Shah Waliullah Dehlawi",
     "author_id": "Shah Waliullah Dehlawi",
     "death_year_ah": 1176,
@@ -229,17 +276,15 @@
     "total_chapters": 1,
     "grade_summary": "Varies",
     "order_index": 12,
-    "editions": [
-      "ara-shah",
-      "eng-shah"
-    ]
+    "editions": [],
+    "book_type_ar": "جوامع الكلم"
   },
   {
     "id": "adab",
     "title_ar": "الأدب المفرد",
     "title_en": "Al-Adab Al-Mufrad",
     "title_id": "Al-Adab Al-Mufrad",
-    "author_ar": "الإمام محمد بن إسماعيل البخاري",
+    "author_ar": "الإمام البخاري",
     "author_en": "Imam Muhammad al-Bukhari",
     "author_id": "Imam Muhammad al-Bukhari",
     "death_year_ah": 256,
@@ -247,17 +292,15 @@
     "total_chapters": 1,
     "grade_summary": "Varies",
     "order_index": 13,
-    "editions": [
-      "ara-adab",
-      "eng-adab"
-    ]
+    "editions": [],
+    "book_type_ar": "متنوع"
   },
   {
     "id": "bulugh",
     "title_ar": "بلوغ المرام",
     "title_en": "Bulugh al-Maram",
     "title_id": "Bulughul Maram",
-    "author_ar": "الحافظ ابن حجر العسقلاني",
+    "author_ar": "ابن حجر العسقلاني",
     "author_en": "Ibn Hajar al-'Asqalani",
     "author_id": "Ibnu Hajar al-'Asqalani",
     "death_year_ah": 852,
@@ -265,10 +308,8 @@
     "total_chapters": 1,
     "grade_summary": "Varies",
     "order_index": 14,
-    "editions": [
-      "ara-bulugh",
-      "eng-bulugh"
-    ]
+    "editions": [],
+    "book_type_ar": "أحكام"
   },
   {
     "id": "mishkat",
@@ -283,35 +324,31 @@
     "total_chapters": 1,
     "grade_summary": "Varies",
     "order_index": 15,
-    "editions": [
-      "ara-mishkat",
-      "eng-mishkat"
-    ]
+    "editions": [],
+    "book_type_ar": "متنوع"
   },
   {
     "id": "riyad",
     "title_ar": "رياض الصالحين",
     "title_en": "Riyad as-Salihin",
     "title_id": "Riyadhus Shalihin",
-    "author_ar": "الإمام يحيى بن شرف النووي",
+    "author_ar": "الإمام النووي",
     "author_en": "Imam Yahya ibn Sharaf al-Nawawi",
     "author_id": "Imam An-Nawawi",
     "death_year_ah": 676,
     "total_hadiths": 1896,
     "total_chapters": 1,
-    "grade_summary": "Mostly Sahih",
+    "grade_summary": "صحيح (Sahih)",
     "order_index": 16,
-    "editions": [
-      "ara-riyad",
-      "eng-riyad"
-    ]
+    "editions": [],
+    "book_type_ar": "متنوع"
   },
   {
     "id": "shamail",
     "title_ar": "الشمائل المحمدية",
     "title_en": "Shamail al-Muhammadiyah",
     "title_id": "Syamail Muhammadiyah",
-    "author_ar": "الإمام أبو عيسى الترمذي",
+    "author_ar": "الإمام الترمذي",
     "author_en": "Imam at-Tirmidhi",
     "author_id": "Imam at-Tirmidhi",
     "death_year_ah": 279,
@@ -319,17 +356,15 @@
     "total_chapters": 1,
     "grade_summary": "Varies",
     "order_index": 17,
-    "editions": [
-      "ara-shamail",
-      "eng-shamail"
-    ]
+    "editions": [],
+    "book_type_ar": "متنوع"
   },
   {
     "id": "tabarani",
     "title_ar": "المعجم الكبير",
     "title_en": "Al-Mujam al-Kabir",
     "title_id": "Mu'jam al-Kabir",
-    "author_ar": "الطبراني",
+    "author_ar": "الإمام الطبراني",
     "author_en": "Imam At-Tabarani",
     "author_id": "Imam At-Tabarani",
     "death_year_ah": 360,
@@ -337,9 +372,8 @@
     "total_chapters": 1,
     "grade_summary": "Mixed",
     "order_index": 18,
-    "editions": [
-      "ara-tabarani"
-    ]
+    "editions": [],
+    "book_type_ar": "المعجم"
   },
   {
     "id": "syafii",
@@ -355,7 +389,8 @@
     "grade_summary": "Varies",
     "order_index": 19,
     "editions": [],
-    "total_hadiths_lidwa": 1800
+    "total_hadiths_lidwa": 1800,
+    "book_type_ar": "المسند"
   },
   {
     "id": "riyad_arab",
@@ -371,6 +406,99 @@
     "grade_summary": "Varies",
     "order_index": 20,
     "editions": [],
-    "total_hadiths_lidwa": 850
+    "total_hadiths_lidwa": 850,
+    "book_type_ar": "متنوع"
+  },
+  {
+    "id": "ibnukhuzaimah",
+    "name": "Shahih Ibnu Khuzaimah",
+    "nameId": "Shahih Ibnu Khuzaimah",
+    "count": 1808,
+    "description": "Koleksi hadits shahih dari Imam Ibnu Khuzaimah.",
+    "descriptionId": "Koleksi hadits shahih dari Imam Ibnu Khuzaimah.",
+    "icon": "menu_book",
+    "total_hadiths": 1808,
+    "title_en": "Shahih Ibn Khuzaimah",
+    "title_id": "Shahih Ibnu Khuzaimah",
+    "title_ar": "صحيح ابن خزيمة",
+    "author_en": "Imam Muhammad bin Ishaq Ibn Khuzaimah an-Naisaburi",
+    "author_id": "Imam Muhammad bin Ishaq Ibnu Khuzaimah an-Naisaburi",
+    "author_ar": "الإمام ابن خزيمة",
+    "death_year_ah": 311,
+    "grade_summary": "صحيح (Shahih)",
+    "order_index": 10,
+    "source": "mjna",
+    "authorId": "mjna_001",
+    "editions": [],
+    "book_type_ar": "الصحيح"
+  },
+  {
+    "id": "ibnuhibban",
+    "name": "Shahih Ibnu Hibban",
+    "nameId": "Shahih Ibnu Hibban",
+    "count": 2769,
+    "description": "Koleksi hadits shahih dari Imam Ibnu Hibban.",
+    "descriptionId": "Koleksi hadits shahih dari Imam Ibnu Hibban.",
+    "icon": "menu_book",
+    "total_hadiths": 2769,
+    "title_en": "Shahih Ibn Hibban",
+    "title_id": "Shahih Ibnu Hibban",
+    "title_ar": "صحيح ابن حبان",
+    "author_en": "Imam Muhammad bin Hibban at-Tamimi al-Busti",
+    "author_id": "Imam Muhammad bin Hibban at-Tamimi al-Busti",
+    "author_ar": "الإمام ابن حبان",
+    "death_year_ah": 354,
+    "grade_summary": "صحيح (Shahih)",
+    "order_index": 11,
+    "source": "mjna",
+    "authorId": "mjna_002",
+    "editions": [],
+    "book_type_ar": "الصحيح"
+  },
+  {
+    "id": "mustadrak",
+    "name": "Mustadrak Al-Hakim",
+    "nameId": "Mustadrak Al-Hakim",
+    "count": 673,
+    "description": "Koleksi hadits dari Imam Al-Hakim An-Naisaburi.",
+    "descriptionId": "Koleksi hadits dari Imam Al-Hakim An-Naisaburi.",
+    "icon": "menu_book",
+    "total_hadiths": 673,
+    "title_en": "Al-Mustadrak ala as-Sahihayn",
+    "title_id": "Al-Mustadrak Al-Hakim",
+    "title_ar": "المستدرك على الصحيحين",
+    "author_en": "Imam Abu Abdullah Al-Hakim an-Naisaburi",
+    "author_id": "Imam Abu Abdillah Al-Hakim an-Naisaburi",
+    "author_ar": "الإمام الحاكم",
+    "death_year_ah": 405,
+    "grade_summary": "مختلف فيه (Mukhtalaf fihi)",
+    "order_index": 12,
+    "source": "mjna",
+    "authorId": "mjna_003",
+    "editions": [],
+    "book_type_ar": "المستدرك"
+  },
+  {
+    "id": "daruquthni",
+    "name": "Sunan Daruquthni",
+    "nameId": "Sunan Daruquthni",
+    "count": 4790,
+    "description": "Koleksi hadits sunan dari Imam Ad-Daruquthni.",
+    "descriptionId": "Koleksi hadits sunan dari Imam Ad-Daruquthni.",
+    "icon": "menu_book",
+    "total_hadiths": 4790,
+    "title_en": "Sunan ad-Daruquthni",
+    "title_id": "Sunan Ad-Daruquthni",
+    "title_ar": "سنن الدارقطني",
+    "author_en": "Imam Abu al-Hasan Ali bin 'Umar ad-Daruquthni",
+    "author_id": "Imam Abu al-Hasan Ali bin Umar ad-Daruquthni",
+    "author_ar": "الإمام الدارقطني",
+    "death_year_ah": 385,
+    "grade_summary": "مختلف فيه (Mukhtalaf fihi)",
+    "order_index": 13,
+    "source": "mjna",
+    "authorId": "mjna_004",
+    "editions": [],
+    "book_type_ar": "السنن"
   }
 ]

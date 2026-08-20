@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5945",
+  "name_en": "Umar bin Raosyid bin Syajarah",
+  "name_id": "Umar bin Raosyid bin Syajarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Yamamah",
+  "kunyah": "Abu Hafsh",
+  "parents": "Al Yamamiy",
+  "nasab": "Al Yamamiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

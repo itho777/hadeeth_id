@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3934",
+  "name_en": "Sha'sha'ah bin Mu'awiyah bin Hushain",
+  "name_id": "Sha'sha'ah bin Mu'awiyah bin Hushain",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "At Tamimi As Sa'adiy",
+  "nasab": "At Tamimi As Sa'adiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 1
+  }
+}

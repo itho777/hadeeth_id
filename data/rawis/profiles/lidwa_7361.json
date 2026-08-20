@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7361",
+  "name_en": "Makhramah bin Bukair bin 'Abdullah ",
+  "name_id": "Makhramah bin Bukair bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "159 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Musawwir",
+  "parents": "Al Qurasyiy Al Makhzumiy",
+  "nasab": "Al Qurasyiy Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 17,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 14,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

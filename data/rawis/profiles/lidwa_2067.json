@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2067",
+  "name_en": "Jabir bin Shubhi",
+  "name_id": "Jabir bin Shubhi",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bisyir",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

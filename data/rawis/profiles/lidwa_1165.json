@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1165",
+  "name_en": "Al Jarud bin Al Mu'allaa",
+  "name_id": "Al Jarud bin Al Mu'allaa",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "21 H",
+  "city_of_death": "Fayid",
+  "residence": "Bahrain",
+  "kunyah": "Abu 'Itab",
+  "parents": "Al 'Abdiy",
+  "nasab": "Al 'Abdiy",
+  "laqob": "Said 'Abdul Qais",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7721",
+  "name_en": "Musa bin Isma'il",
+  "name_id": "Musa bin Isma'il",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "223 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Salamah",
+  "parents": "At Tabudzakiy Al Manqiriy",
+  "nasab": "At Tabudzakiy Al Manqiriy",
+  "laqob": "-",
+  "hadith_count": "598",
+  "book_counts": {
+    "bukhari": 271,
+    "muslim": 1,
+    "abudaud": 317,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

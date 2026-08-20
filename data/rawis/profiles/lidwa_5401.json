@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5401",
+  "name_en": "Ubaidullah bin 'Abdul Karim bin Yazid bin Farrukh",
+  "name_id": "Ubaidullah bin 'Abdul Karim bin Yazid bin Farrukh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "264 H",
+  "city_of_death": "Rayi",
+  "residence": "Rayi",
+  "kunyah": "Abu Zur'ah",
+  "parents": "Ar Raziy Al Makhzumiy",
+  "nasab": "Ar Raziy Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

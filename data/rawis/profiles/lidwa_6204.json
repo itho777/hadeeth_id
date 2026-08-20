@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6204",
+  "name_en": "Amru bin Mu'awiyah",
+  "name_id": "Amru bin Mu'awiyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Muhallab",
+  "parents": "Al Jarmiy",
+  "nasab": "Al Jarmiy",
+  "laqob": "-",
+  "hadith_count": "64",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 7,
+    "abudaud": 6,
+    "tirmidzi": 5,
+    "nasai": 11,
+    "ibnumajah": 5,
+    "ahmad": 21,
+    "malik": 0,
+    "darimi": 9
+  }
+}

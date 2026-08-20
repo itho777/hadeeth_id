@@ -1,0 +1,28 @@
+{
+  "id": "rawi_ibn_majah",
+  "name_en": "Imam Ibn Majah",
+  "name_id": "Imam Ibn Majah",
+  "name_ar": "ابن ماجه القزويني",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz",
+  "died_ah": "273",
+  "died_ce": "887",
+  "hadith_count": "4341",
+  "city_of_death": "Qazvin",
+  "bio_en": "Compiler of Sunan Ibn Majah, sixth canonical book of Kutub al-Sittah.",
+  "books": [
+    "Sunan Ibn Majah"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

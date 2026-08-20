@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1270",
+  "name_en": "Al Hasan bin Syuja' bin Raja'",
+  "name_id": "Al Hasan bin Syuja' bin Raja'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "244 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Balkhiy",
+  "nasab": "Al Balkhiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

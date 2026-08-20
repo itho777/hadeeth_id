@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 3568,
+  "arabicnumber": 3568,
+  "text": "Telah menceritakan kepadaku [Abdullah bin Hammad Al Amuli] berkata, telah menceritakan kepadaku [Yahya bin Ma'in] telah menceritakan kepada kami [Isma'il bin Mujalid] dari [Bayan] dari [Wabarah] dari [Hammam bin Al Harits] berkata, ['Ammar bin Yasir] menceritakan; Aku melihat Rasulullah shallallahu 'alaihi wasallam, dan tidak ada sorangpun yang menyertai beliau melainkan lima orang hamba sahaya, dua orang wanita dan Abu Bakr.",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Urwah bin az-Zubair bin al-Awwam",
+      "name_ar": "عروة بن الزبير بن العوام",
+      "rawi_id": "rawi_urwah_ibn_zubayr"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Sufyan bin Sa'id ats-Tsauri al-Kufi",
+      "name_ar": "سفيان بن سعيد الثوري الكوفي",
+      "rawi_id": "rawi_sufyan_al_thawri"
+    }
+  ]
+}

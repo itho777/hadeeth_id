@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5244",
+  "name_en": "Abdul Malik bin Marwan bin Qarizh",
+  "name_id": "Abdul Malik bin Marwan bin Qarizh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Marwan",
+  "parents": "Al Ahwaziy Al Hidza'",
+  "nasab": "Al Ahwaziy Al Hidza'",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3511",
+  "name_en": "Salamah bin 'Abdul Malik",
+  "name_id": "Salamah bin 'Abdul Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al 'Aushiy Al Kalbiy",
+  "nasab": "Al 'Aushiy Al Kalbiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

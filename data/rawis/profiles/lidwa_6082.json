@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6082",
+  "name_en": "Amru bin Al Hamiq bin Kahil",
+  "name_id": "Amru bin Al Hamiq bin Kahil",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "51 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Khuza'iy",
+  "nasab": "Al Khuza'iy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

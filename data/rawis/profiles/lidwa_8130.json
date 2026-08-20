@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8130",
+  "name_en": "Walid (ayah) Abi Ibrahim Al Asyhaliy",
+  "name_id": "Walid (ayah) Abi Ibrahim Al Asyhaliy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Asyhaliy ",
+  "nasab": "Al Asyhaliy ",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

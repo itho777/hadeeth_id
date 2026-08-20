@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1223",
+  "name_en": "Al Harits bin Nabhan",
+  "name_id": "Al Harits bin Nabhan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Jurmiy",
+  "nasab": "Al Jurmiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

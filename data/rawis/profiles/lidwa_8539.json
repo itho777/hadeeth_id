@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8539",
+  "name_en": "Ya'qub bin Muhammad bin 'Isa bin 'Abdul Malik",
+  "name_id": "Ya'qub bin Muhammad bin 'Isa bin 'Abdul Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "213 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Yusuf",
+  "parents": "Az Zuhriy Al Madaniy",
+  "nasab": "Az Zuhriy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2484",
+  "name_en": "Hammad bin Usamah bin Zaid",
+  "name_id": "Hammad bin Usamah bin Zaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "201 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Usamah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "776",
+  "book_counts": {
+    "bukhari": 180,
+    "muslim": 246,
+    "abudaud": 54,
+    "tirmidzi": 44,
+    "nasai": 30,
+    "ibnumajah": 100,
+    "ahmad": 93,
+    "malik": 0,
+    "darimi": 29
+  }
+}

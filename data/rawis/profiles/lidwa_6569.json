@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6569",
+  "name_en": "Katsir bin Farqad",
+  "name_id": "Katsir bin Farqad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 7,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 1,
+    "darimi": 0
+  }
+}

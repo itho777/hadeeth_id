@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2964",
+  "name_en": "Rauh bin Al Qasim",
+  "name_id": "Rauh bin Al Qasim",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "141 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ghiyats",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 28,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6152",
+  "name_en": "Amru bin 'Abdullah bin Al Aswar",
+  "name_id": "Amru bin 'Abdullah bin Al Aswar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Yaman",
+  "kunyah": "-",
+  "parents": "Al Yamaniy",
+  "nasab": "Al Yamaniy",
+  "laqob": "Ibnu Barqi",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

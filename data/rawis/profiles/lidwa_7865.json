@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7865",
+  "name_en": "Nabhan",
+  "name_id": "Nabhan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Qurasyiy Al Makhzumiy",
+  "nasab": "Al Qurasyiy Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

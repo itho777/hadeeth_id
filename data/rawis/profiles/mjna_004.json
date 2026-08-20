@@ -1,0 +1,32 @@
+{
+  "id": "rawi_daruquthni",
+  "name_ar": "أبو الحسن علي بن عمر الدارقطني البغدادي",
+  "name_en": "Imam Abu al-Hasan Ali bin 'Umar ad-Daruquthni al-Baghdadi",
+  "name_id": "Imam Abu al-Hasan Ali bin Umar ad-Daruquthni al-Baghdadi",
+  "kunya": "Abu al-Hasan",
+  "laqab": "Al-Hafizh, Amirul Mu'minin fil Hadits, Syaikhul Islam",
+  "birth_year_ah": 306,
+  "death_year_ah": 385,
+  "birth_city": "Dar al-Quthn, Baghdad",
+  "death_city": "Baghdad",
+  "region": "Baghdad, Irak",
+  "madhab": "Syafi'i",
+  "bio_id": "Imam Ad-Daruquthni adalah ulama besar ahli hadis dari Baghdad yang lahir pada 306 H / 918 M di kawasan Dar al-Quthn — dari nama inilah nisbat 'Ad-Daruquthni' berasal. Nama lengkapnya: Abu al-Hasan Ali bin Umar bin Ahmad bin Mahdi bin Mas'ud bin an-Nu'man bin Dinar bin Abdullah al-Baghdadi ad-Daruquthni. Beliau mendapat gelar Amirul Mu'minin fil Hadits (Pemimpin Orang Beriman dalam Ilmu Hadis) — gelar tertinggi dalam tradisi ilmu hadis. Keunggulan utama beliau adalah ketajaman dalam ilmu 'ilal (mendeteksi cacat tersembunyi pada sanad) dan penguasaan luas atas nama perawi hadis. Selain pakar hadis, beliau menguasai ilmu qiraat, fikih, bahasa Arab, sastra, dan syair. Kitab monumental beliau, Sunan Ad-Daruquthni, memuat hadis-hadis hukum disertai analisis kritis 'ilal masing-masing hadis. Abu Bakar al-Khatib al-Baghdadi menyebutnya sebagai imam tanpa tandingan pada masanya dalam ilmu atsar, 'ilal, dan rijal. Beliau wafat di Baghdad pada 385 H / 995 M dalam usia sekitar 79 tahun.",
+  "bio_en": "Imam ad-Daruquthni was a major hadith scholar of Baghdad, born in 306 AH / 918 CE in the Dar al-Quthn district — hence his nisba 'al-Daruquthni'. He was titled Amir al-Mu'minin fi al-Hadith (Commander of the Faithful in Hadith) — the highest honor in the hadith tradition. He excelled in 'ilal al-hadith (detecting hidden defects in chains) and rijal studies. His Sunan al-Daruquthni contains legal hadiths with critical analysis of their chains. Al-Khatib al-Baghdadi called him unrivaled in his era in hadith, 'ilal, and rijal. He passed away in Baghdad in 385 AH / 995 CE.",
+  "known_books": [
+    "سنن الدارقطني",
+    "العلل",
+    "الضعفاء والمتروكون"
+  ],
+  "teachers": [
+    "Ibn Khuzaimah",
+    "Yahya bin Sa'id al-Qattan"
+  ],
+  "students": [
+    "Al-Hakim an-Naisaburi",
+    "Abu Bakr al-Khatib al-Baghdadi"
+  ],
+  "source": "mjna",
+  "source_url": "https://www.mjna.or.id/daruquthni",
+  "profile_id": "mjna_004"
+}

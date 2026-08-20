@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_717",
+  "name_en": "Anas bin Sirin",
+  "name_id": "Anas bin Sirin",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "120 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Musa",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "76",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 8,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 7,
+    "ahmad": 42,
+    "malik": 0,
+    "darimi": 3
+  }
+}

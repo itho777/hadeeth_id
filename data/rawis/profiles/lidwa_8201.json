@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8201",
+  "name_en": "Yahya bin Abi Hayyah Huyay",
+  "name_id": "Yahya bin Abi Hayyah Huyay",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "147 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "AbuJannab",
+  "parents": "Al Kalbiy",
+  "nasab": "Al Kalbiy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 0
+  }
+}

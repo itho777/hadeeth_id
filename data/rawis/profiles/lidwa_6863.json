@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6863",
+  "name_en": "Muhammad bin Al Muntasyir bin Al Ajda' bin Malik",
+  "name_id": "Muhammad bin Al Muntasyir bin Al Ajda' bin Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Hamdaniy Al Wadi'iy",
+  "nasab": "Al Hamdaniy Al Wadi'iy",
+  "laqob": "-",
+  "hadith_count": "40",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 5,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 11,
+    "ibnumajah": 2,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 5
+  }
+}

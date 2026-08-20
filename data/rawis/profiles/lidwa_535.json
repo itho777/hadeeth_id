@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_535",
+  "name_en": "Usamah bin 'Umair bin 'Amir",
+  "name_id": "Usamah bin 'Umair bin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Hadzaliy",
+  "nasab": "Al Hadzaliy",
+  "laqob": "-",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 18,
+    "malik": 0,
+    "darimi": 2
+  }
+}

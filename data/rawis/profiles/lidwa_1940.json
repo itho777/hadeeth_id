@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1940",
+  "name_en": "Bakar bin Mudlor bin Muhammad bin Hakim",
+  "name_id": "Bakar bin Mudlor bin Muhammad bin Hakim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "174 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "95",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 12,
+    "abudaud": 8,
+    "tirmidzi": 10,
+    "nasai": 23,
+    "ibnumajah": 0,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 4
+  }
+}

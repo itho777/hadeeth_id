@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7100",
+  "name_en": "Muhammad bin 'Abdullah bin Az Zubair bin 'Umar bin Dirham",
+  "name_id": "Muhammad bin 'Abdullah bin Az Zubair bin 'Umar bin Dirham",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "203 H",
+  "city_of_death": "Ahwaz",
+  "residence": "Kufah",
+  "kunyah": "Abu Ahmad",
+  "parents": "Az Zubairiy Al Asadiy",
+  "nasab": "Az Zubairiy Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "393",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 22,
+    "abudaud": 26,
+    "tirmidzi": 50,
+    "nasai": 3,
+    "ibnumajah": 17,
+    "ahmad": 262,
+    "malik": 0,
+    "darimi": 1
+  }
+}

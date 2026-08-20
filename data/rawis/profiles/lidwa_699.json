@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_699",
+  "name_en": "Umayyah bin Bistham bin Al Muntasir",
+  "name_id": "Umayyah bin Bistham bin Al Muntasir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "231 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al 'Aisyiy",
+  "nasab": "Al 'Aisyiy",
+  "laqob": "-",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 25,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

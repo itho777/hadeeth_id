@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2865",
+  "name_en": "Rafi' bin Khudaij bin Rafi'",
+  "name_id": "Rafi' bin Khudaij bin Rafi'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "73 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "249",
+  "book_counts": {
+    "bukhari": 23,
+    "muslim": 25,
+    "abudaud": 20,
+    "tirmidzi": 14,
+    "nasai": 66,
+    "ibnumajah": 19,
+    "ahmad": 69,
+    "malik": 3,
+    "darimi": 10
+  }
+}

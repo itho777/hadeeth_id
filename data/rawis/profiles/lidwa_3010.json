@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3010",
+  "name_en": "Zakariya bin Abi Za'idah Khalid",
+  "name_id": "Zakariya bin Abi Za'idah Khalid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "148 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Hamdaniy Al Wadi'iy",
+  "nasab": "Al Hamdaniy Al Wadi'iy",
+  "laqob": "-",
+  "hadith_count": "219",
+  "book_counts": {
+    "bukhari": 26,
+    "muslim": 32,
+    "abudaud": 15,
+    "tirmidzi": 19,
+    "nasai": 20,
+    "ibnumajah": 10,
+    "ahmad": 81,
+    "malik": 0,
+    "darimi": 16
+  }
+}

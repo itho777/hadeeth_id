@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2539",
+  "name_en": "Humaid bin Ziyad",
+  "name_id": "Humaid bin Ziyad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "189 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Shakhr",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Shahibu Al 'Iba'",
+  "hadith_count": "47",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 10,
+    "abudaud": 7,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 2
+  }
+}

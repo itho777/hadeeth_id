@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5633",
+  "name_en": "Atha' bin 'Ajlan",
+  "name_id": "Atha' bin 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Hanafiy Al 'Aththar",
+  "nasab": "Al Hanafiy Al 'Aththar",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

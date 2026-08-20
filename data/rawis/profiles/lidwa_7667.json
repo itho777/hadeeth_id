@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7667",
+  "name_en": "Mindal bin 'Ali",
+  "name_id": "Mindal bin 'Ali",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "167 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Anaziy",
+  "nasab": "Al 'Anaziy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 9,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 3
+  }
+}

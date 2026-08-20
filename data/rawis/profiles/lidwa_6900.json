@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6900",
+  "name_en": "Muhammad bin Jubair bin Muth'im bin 'Adiy",
+  "name_id": "Muhammad bin Jubair bin Muth'im bin 'Adiy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "100 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Sa'id",
+  "parents": "An Naufaliy",
+  "nasab": "An Naufaliy",
+  "laqob": "-",
+  "hadith_count": "77",
+  "book_counts": {
+    "bukhari": 21,
+    "muslim": 7,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 27,
+    "malik": 2,
+    "darimi": 7
+  }
+}

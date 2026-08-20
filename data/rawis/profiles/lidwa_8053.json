@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8053",
+  "name_en": "Hisyam bin 'Abdul Mallik",
+  "name_id": "Hisyam bin 'Abdul Mallik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "227 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Walid",
+  "parents": "Ath Thayalisiy Al Bahiliy",
+  "nasab": "Ath Thayalisiy Al Bahiliy",
+  "laqob": "-",
+  "hadith_count": "376",
+  "book_counts": {
+    "bukhari": 121,
+    "muslim": 9,
+    "abudaud": 56,
+    "tirmidzi": 13,
+    "nasai": 14,
+    "ibnumajah": 9,
+    "ahmad": 37,
+    "malik": 0,
+    "darimi": 117
+  }
+}

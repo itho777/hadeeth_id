@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6153",
+  "name_en": "Amru bin 'Abdullah bin Hanasy",
+  "name_id": "Amru bin 'Abdullah bin Hanasy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Audiy",
+  "nasab": "Al Audiy",
+  "laqob": "-",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 29,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

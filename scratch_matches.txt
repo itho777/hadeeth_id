@@ -1,0 +1,3 @@
+Lidwa 3942 text snippet: حَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ حَدَّث
+Fawaz IDs matching Lidwa 3942's start: [2124, 2616, 4430, 5435]
+Lidwa IDs matching Fawaz 2883's start: []

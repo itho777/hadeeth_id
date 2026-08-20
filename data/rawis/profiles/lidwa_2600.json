@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2600",
+  "name_en": "Huyyay bin Hani' bin Nadlir",
+  "name_id": "Huyyay bin Hani' bin Nadlir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "128 H",
+  "city_of_death": "Baralas",
+  "residence": "Maru",
+  "kunyah": "Abu Qabil",
+  "parents": "Al Ma'afiri",
+  "nasab": "Al Ma'afiri",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 1
+  }
+}

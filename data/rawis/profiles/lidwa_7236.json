@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7236",
+  "name_en": "Muhammad bin Fadlo' bin Khalid",
+  "name_id": "Muhammad bin Fadlo' bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu Bahar",
+  "parents": "Al Azdiy Al Jahdlomiy",
+  "nasab": "Al Azdiy Al Jahdlomiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

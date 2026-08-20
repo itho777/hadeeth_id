@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_592",
+  "name_en": "Aflah bin Humaid bin nafi'",
+  "name_id": "Aflah bin Humaid bin nafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "165 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Anshariy An Najariy",
+  "nasab": "Al Anshariy An Najariy",
+  "laqob": "Ibnu Shafira",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 7,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 2
+  }
+}

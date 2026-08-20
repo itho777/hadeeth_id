@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3378",
+  "name_en": "Sa'id bin 'Amru",
+  "name_id": "Sa'id bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Kabsyah",
+  "parents": "Al Anshariy Al Madzhajiy",
+  "nasab": "Al Anshariy Al Madzhajiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7348",
+  "name_en": "Mahmud bin Khalid binAbi Khalid",
+  "name_id": "Mahmud bin Khalid binAbi Khalid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "249 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Ali",
+  "parents": "As Sulamiy Ad Damasyqiy",
+  "nasab": "As Sulamiy Ad Damasyqiy",
+  "laqob": "-",
+  "hadith_count": "70",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 42,
+    "tirmidzi": 0,
+    "nasai": 23,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

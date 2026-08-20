@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5580",
+  "name_en": "Adiy bin 'Umayrah",
+  "name_id": "Adiy bin 'Umayrah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "40 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Zurarah",
+  "parents": "Al Kindiy",
+  "nasab": "Al Kindiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7252",
+  "name_en": "Muhammad bin Ka'ab bin Sulaim bin Asad",
+  "name_id": "Muhammad bin Ka'ab bin Sulaim bin Asad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "118 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Hamzah",
+  "parents": "Al Qurazhiy",
+  "nasab": "Al Qurazhiy",
+  "laqob": "-",
+  "hadith_count": "59",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 8,
+    "tirmidzi": 9,
+    "nasai": 1,
+    "ibnumajah": 7,
+    "ahmad": 25,
+    "malik": 2,
+    "darimi": 5
+  }
+}

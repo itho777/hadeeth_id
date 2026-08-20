@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_110",
+  "name_en": "Abu Bakar bin Abu Musa 'Abdullah bin Qais",
+  "name_id": "Abu Bakar bin Abu Musa 'Abdullah bin Qais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "106 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Asy'ariy",
+  "nasab": "Al Asy'ariy",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 8,
+    "abudaud": 1,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 4
+  }
+}

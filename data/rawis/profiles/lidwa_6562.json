@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6562",
+  "name_en": "Katsir bin Zaid",
+  "name_id": "Katsir bin Zaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "158 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Aslamiy As Sahmiy",
+  "nasab": "Al Aslamiy As Sahmiy",
+  "laqob": "Ibnu Shafinah",
+  "hadith_count": "40",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 6,
+    "ahmad": 24,
+    "malik": 0,
+    "darimi": 1
+  }
+}

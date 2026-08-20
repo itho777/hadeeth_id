@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_502",
+  "name_en": "Ahmad bin Yusuf bin Khalid",
+  "name_id": "Ahmad bin Yusuf bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "264 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Azdiy An Naysaburiy",
+  "nasab": "Al Azdiy An Naysaburiy",
+  "laqob": "Hamdan",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 11,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 14,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

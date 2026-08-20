@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3941",
+  "name_en": "Shafwan bin 'Assal",
+  "name_id": "Shafwan bin 'Assal",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Muradiy Ar Rabadliy",
+  "nasab": "Al Muradiy Ar Rabadliy",
+  "laqob": "-",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 6,
+    "nasai": 5,
+    "ibnumajah": 6,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 1
+  }
+}

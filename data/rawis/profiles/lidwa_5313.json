@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5313",
+  "name_en": "Ubaid bin Asbath bin Muhammad",
+  "name_id": "Ubaid bin Asbath bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 12,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

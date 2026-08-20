@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1986",
+  "name_en": "Tubai' bin 'Amir",
+  "name_id": "Tubai' bin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "101 H",
+  "city_of_death": "Iskandariyah",
+  "residence": "Syam",
+  "kunyah": "Abu 'Ubaidah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2219",
+  "name_en": "Haritsah bin Abi Ar Rijal bin Muhammad bin 'Abdur Rahman",
+  "name_id": "Haritsah bin Abi Ar Rijal bin Muhammad bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "148 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 8,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

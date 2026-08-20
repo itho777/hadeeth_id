@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6272",
+  "name_en": "Ayyasy bin Abi Rabi'ah",
+  "name_id": "Ayyasy bin Abi Rabi'ah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "15 H",
+  "city_of_death": "-",
+  "residence": "Yamamah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Makhzumiy Al Qurasyiy",
+  "nasab": "Al Makhzumiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

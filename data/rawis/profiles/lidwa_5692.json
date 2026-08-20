@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5692",
+  "name_en": "Aqil bin Ma'qil bin Munabbih",
+  "name_id": "Aqil bin Ma'qil bin Munabbih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Yaman",
+  "kunyah": "-",
+  "parents": "Al Yamaniy",
+  "nasab": "Al Yamaniy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

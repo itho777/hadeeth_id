@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7073",
+  "name_en": "Muhammad bin 'Abdur Rahman bin 'Irqi",
+  "name_id": "Muhammad bin 'Abdur Rahman bin 'Irqi",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Walid",
+  "parents": "Al Yahshabiy Al Himshiy",
+  "nasab": "Al Yahshabiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

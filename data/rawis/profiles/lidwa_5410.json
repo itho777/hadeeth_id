@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5410",
+  "name_en": "Ubaidullah bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_id": "Ubaidullah bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah ",
+  "kunyah": "AbuBakar",
+  "parents": "Al 'Adawiy",
+  "nasab": "Al 'Adawiy",
+  "laqob": "-",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 5,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 9,
+    "malik": 2,
+    "darimi": 4
+  }
+}

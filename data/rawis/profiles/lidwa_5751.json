@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5751",
+  "name_en": "Ali bin Badzimah",
+  "name_id": "Ali bin Badzimah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al jazariy",
+  "nasab": "Al jazariy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

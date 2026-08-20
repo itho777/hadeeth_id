@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7079",
+  "name_en": "Muhammad bin 'Abdul 'Aziz",
+  "name_id": "Muhammad bin 'Abdul 'Aziz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Rauh",
+  "parents": "Al Jurmiy Ar Rasibiy",
+  "nasab": "Al Jurmiy Ar Rasibiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

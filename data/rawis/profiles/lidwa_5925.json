@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5925",
+  "name_en": "Umar bin Tsarwan",
+  "name_id": "Umar bin Tsarwan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Khuza'iy",
+  "nasab": "Al Khuza'iy",
+  "laqob": "Ibnu Abi Wahab",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

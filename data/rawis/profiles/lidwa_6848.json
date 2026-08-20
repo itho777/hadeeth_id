@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6848",
+  "name_en": "Muhammad bin Ash Shalti",
+  "name_id": "Muhammad bin Ash Shalti",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "228 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ya'laa",
+  "parents": "At Tawziy",
+  "nasab": "At Tawziy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

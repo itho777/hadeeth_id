@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_992",
+  "name_en": "Isma'il bin Ibrahim ",
+  "name_id": "Isma'il bin Ibrahim ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Yahya",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "Al Ahwal",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6856",
+  "name_en": "Muhammad bin Al Fadlol bin 'Athiyyah",
+  "name_id": "Muhammad bin Al Fadlol bin 'Athiyyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "12",
+  "died_ah": "180 H",
+  "city_of_death": "Bukhara",
+  "residence": "Bukhara",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Abasiy Al Marwaziy",
+  "nasab": "Al 'Abasiy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

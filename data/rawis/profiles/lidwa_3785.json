@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3785",
+  "name_en": "Syuraih bin 'Ubaid bin Syuraih",
+  "name_id": "Syuraih bin 'Ubaid bin Syuraih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ash Shalti",
+  "parents": "Al Hadllramiy Al Muqra'iy",
+  "nasab": "Al Hadllramiy Al Muqra'iy",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 12,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 1
+  }
+}

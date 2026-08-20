@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1153",
+  "name_en": "Al Bakhtariy bin Abi Al Bakhtariy Al Mukhtar",
+  "name_id": "Al Bakhtariy bin Abi Al Bakhtariy Al Mukhtar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "148 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al 'Abdiy",
+  "nasab": "Al 'Abdiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8546",
+  "name_en": "Ya'laa bin Hakim",
+  "name_id": "Ya'laa bin Hakim",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "-",
+  "parents": "Ats Tsaqafiy Al Makkiy",
+  "nasab": "Ats Tsaqafiy Al Makkiy",
+  "laqob": "-",
+  "hadith_count": "51",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 5,
+    "abudaud": 7,
+    "tirmidzi": 1,
+    "nasai": 5,
+    "ibnumajah": 3,
+    "ahmad": 23,
+    "malik": 0,
+    "darimi": 3
+  }
+}

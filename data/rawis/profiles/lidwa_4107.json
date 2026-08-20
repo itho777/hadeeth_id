@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4107",
+  "name_en": "Amir bin 'Abdullah bin Az Zubair bin Al 'Awwam",
+  "name_id": "Amir bin 'Abdullah bin Az Zubair bin Al 'Awwam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "121 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al harits",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "57",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 5,
+    "abudaud": 6,
+    "tirmidzi": 1,
+    "nasai": 7,
+    "ibnumajah": 4,
+    "ahmad": 22,
+    "malik": 4,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5078",
+  "name_en": "Abdullah bin Musafi' bin 'Abdullah ",
+  "name_id": "Abdullah bin Musafi' bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "98 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al 'Abdariy Al Hajabiy",
+  "nasab": "Al 'Abdariy Al Hajabiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

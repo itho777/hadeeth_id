@@ -1,0 +1,29 @@
+{
+  "id": "rawi_abdullah_bin_masud",
+  "name_en": "'Abdullah bin Mas'ud",
+  "name_id": "Abdullah bin Mas'ud",
+  "name_ar": "عبد الله بن مسعود",
+  "is_sahabi": "true",
+  "generation": "Sahabi (Companion)",
+  "grade": "Sahabi Adl",
+  "died_ah": "32",
+  "died_ce": "652",
+  "hadith_count": "848",
+  "city_of_death": "Madinah",
+  "bio_en": "Early convert, trusted custodian of the Qur'an and pioneer jurist of Kufah.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 264,
+    "muslim": 167,
+    "abudaud": 101,
+    "tirmidzi": 144,
+    "nasai": 167,
+    "ibnumajah": 131,
+    "ahmad": 874,
+    "malik": 3,
+    "darimi": 171
+  }
+}

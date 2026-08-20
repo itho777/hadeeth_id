@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6147",
+  "name_en": "Amru bin 'Amir",
+  "name_id": "Amru bin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 2
+  }
+}

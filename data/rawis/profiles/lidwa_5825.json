@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5825",
+  "name_en": "Ali bin Hasyim bin Al Marzuq",
+  "name_id": "Ali bin Hasyim bin Al Marzuq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Rayi",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5860",
+  "name_en": "Ammar bin Yasir bin 'Amir bin Malik bin Kinanah bin Qays",
+  "name_id": "Ammar bin Yasir bin 'Amir bin Malik bin Kinanah bin Qays",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "37 H",
+  "city_of_death": "Sharifain",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Yaqzhan",
+  "parents": "Al 'Anasiy Al Madaniy",
+  "nasab": "Al 'Anasiy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "103",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 5,
+    "abudaud": 15,
+    "tirmidzi": 7,
+    "nasai": 13,
+    "ibnumajah": 8,
+    "ahmad": 34,
+    "malik": 0,
+    "darimi": 6
+  }
+}

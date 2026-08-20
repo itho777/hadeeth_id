@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3764",
+  "name_en": "Syaddad bin Aus bin Tsabit",
+  "name_id": "Syaddad bin Aus bin Tsabit",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "58 H",
+  "city_of_death": "Bani Taghlab",
+  "residence": "Syam",
+  "kunyah": "Abu Ya'laa",
+  "parents": "Al Anshari Al Madaniy",
+  "nasab": "Al Anshari Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "57",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 7,
+    "ibnumajah": 6,
+    "ahmad": 31,
+    "malik": 0,
+    "darimi": 2
+  }
+}

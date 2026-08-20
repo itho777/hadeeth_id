@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_615",
+  "name_en": "Ummu Jundab",
+  "name_id": "Ummu Jundab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Ummu Jundab",
+  "parents": "Al Azdiyyah",
+  "nasab": "Al Azdiyyah",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

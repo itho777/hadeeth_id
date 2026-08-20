@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_581",
+  "name_en": "Asy'ats bin 'Abdullah bin Jabir ",
+  "name_id": "Asy'ats bin 'Abdullah bin Jabir ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Hidaniy Al Azdiy",
+  "nasab": "Al Hidaniy Al Azdiy",
+  "laqob": "Al A'maa",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 5
+  }
+}

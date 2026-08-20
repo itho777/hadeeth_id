@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_901",
+  "name_en": "Ibrahim bin Yazid bin Syarik",
+  "name_id": "Ibrahim bin Yazid bin Syarik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "93 H",
+  "city_of_death": "Hait",
+  "residence": "Kufah",
+  "kunyah": "Abu Asma'",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "108",
+  "book_counts": {
+    "bukhari": 20,
+    "muslim": 18,
+    "abudaud": 6,
+    "tirmidzi": 6,
+    "nasai": 8,
+    "ibnumajah": 5,
+    "ahmad": 41,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5387",
+  "name_en": "Ubaidullah bin Sa'ad bin Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Raphman bin 'A",
+  "name_id": "Ubaidullah bin Sa'ad bin Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Raphman bin 'A",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "260 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "Az Zuhriy",
+  "nasab": "Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 1,
+    "nasai": 23,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8488",
+  "name_en": "Yazid bin Harun",
+  "name_id": "Yazid bin Harun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "206 H",
+  "city_of_death": "Hait ",
+  "residence": "Hait",
+  "kunyah": "Abu Khalid",
+  "parents": "As Sulamiy",
+  "nasab": "As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "1988",
+  "book_counts": {
+    "bukhari": 33,
+    "muslim": 67,
+    "abudaud": 58,
+    "tirmidzi": 91,
+    "nasai": 61,
+    "ibnumajah": 108,
+    "ahmad": 1370,
+    "malik": 0,
+    "darimi": 200
+  }
+}

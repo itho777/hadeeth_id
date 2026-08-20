@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2542",
+  "name_en": "Humaid bin 'Abdur Rahman bin 'Auf",
+  "name_id": "Humaid bin 'Abdur Rahman bin 'Auf",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "105 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Ibrahim",
+  "parents": "Az Zuhri Al Qarasyi",
+  "nasab": "Az Zuhri Al Qarasyi",
+  "laqob": "-",
+  "hadith_count": "212",
+  "book_counts": {
+    "bukhari": 49,
+    "muslim": 26,
+    "abudaud": 10,
+    "tirmidzi": 12,
+    "nasai": 28,
+    "ibnumajah": 9,
+    "ahmad": 58,
+    "malik": 12,
+    "darimi": 8
+  }
+}

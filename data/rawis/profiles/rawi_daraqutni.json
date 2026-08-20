@@ -1,0 +1,28 @@
+{
+  "id": "rawi_daraqutni",
+  "name_en": "Imam ad-Daraqutni",
+  "name_id": "Imam ad-Daruquthni",
+  "name_ar": "الدارقطني",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz",
+  "died_ah": "385",
+  "died_ce": "995",
+  "hadith_count": "4836",
+  "city_of_death": "Baghdad",
+  "bio_en": "Master of 'Ilal (hidden defects in Hadith) and compiler of the famous Sunan.",
+  "books": [
+    "Sunan ad-Daruquthni"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

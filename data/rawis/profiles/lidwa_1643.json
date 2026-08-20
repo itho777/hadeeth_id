@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1643",
+  "name_en": "Al Muthallib bin 'Abdullah bin Hanthab ",
+  "name_id": "Al Muthallib bin 'Abdullah bin Hanthab ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "58",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 4,
+    "nasai": 3,
+    "ibnumajah": 4,
+    "ahmad": 40,
+    "malik": 1,
+    "darimi": 0
+  }
+}

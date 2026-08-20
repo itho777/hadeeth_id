@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4542",
+  "name_en": "Abdus Salam bin 'Abdul Quddus bin Habib",
+  "name_id": "Abdus Salam bin 'Abdul Quddus bin Habib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Kila'iy Ad Damsyiqiy",
+  "nasab": "Al Kila'iy Ad Damsyiqiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "rawi_abu_dawud",
+  "name_en": "Imam Abu Dawood",
+  "name_id": "Imam Abu Dawood",
+  "name_ar": "أبو داود السجستاني",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz",
+  "died_ah": "275",
+  "died_ce": "889",
+  "hadith_count": "5274",
+  "city_of_death": "Basra",
+  "bio_en": "Compiler of Sunan Abu Dawood, focusing on legal Sunnah and jurisprudence.",
+  "books": [
+    "Sunan Abu Dawood"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "hadithnumber": 3366,
+  "arabicnumber": 3366,
+  "text": "Telah bercerita kepadaku [Khalaf bin Khalid Al Qurasyiy] telah bercerita kepada kami [Bakr bin Mudlar] dari [Ja'far bin Rabi'ah] dari ['Irak binMalik] dari ['Ubaidullah bin Abdullah bin Mas'ud] dari [Ibnu 'Abbas radliallahu 'anhuma] bahwa bulan pernah terbelah pada zaman Nabi shallallahu 'alaihi wasallam.",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Khalaf bin Khalid Al Qurasyiy",
+      "name_ar": "Khalaf bin Khalid Al Qurasyiy"
+    },
+    {
+      "name_id": "Bakr bin Mudlar",
+      "name_ar": "Bakr bin Mudlar"
+    },
+    {
+      "name_id": "Ja'far bin Rabi'ah",
+      "name_ar": "Ja'far bin Rabi'ah"
+    },
+    {
+      "name_id": "'Irak binMalik",
+      "name_ar": "'Irak binMalik"
+    },
+    {
+      "name_id": "'Ubaidullah bin Abdullah bin Mas'ud",
+      "name_ar": "'Ubaidullah bin Abdullah bin Mas'ud"
+    },
+    {
+      "name_id": "Ibnu 'Abbas radliallahu 'anhuma",
+      "name_ar": "Ibnu 'Abbas radliallahu 'anhuma"
+    }
+  ]
+}

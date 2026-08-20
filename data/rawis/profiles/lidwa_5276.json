@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5276",
+  "name_en": "Abdul Wahhab bin Sa'id bin 'Athiyyah",
+  "name_id": "Abdul Wahhab bin Sa'id bin 'Athiyyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "213 H",
+  "city_of_death": "-",
+  "residence": "Dujail",
+  "kunyah": "Abu Muhammad",
+  "parents": "As Salamiy",
+  "nasab": "As Salamiy",
+  "laqob": "Wahab",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 8
+  }
+}

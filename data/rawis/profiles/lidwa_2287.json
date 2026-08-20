@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2287",
+  "name_en": "Hajjaj bin Abi 'Utsman Maysarah",
+  "name_id": "Hajjaj bin Abi 'Utsman Maysarah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "143 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ash Shalti",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Ash Shawwaf",
+  "hadith_count": "78",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 15,
+    "abudaud": 9,
+    "tirmidzi": 7,
+    "nasai": 12,
+    "ibnumajah": 2,
+    "ahmad": 29,
+    "malik": 0,
+    "darimi": 2
+  }
+}

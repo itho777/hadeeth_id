@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4128",
+  "name_en": "Abbad bin Al 'Awwam bin 'Umar",
+  "name_id": "Abbad bin Al 'Awwam bin 'Umar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "185H",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Sahal",
+  "parents": "Al Kilabiy",
+  "nasab": "Al Kilabiy",
+  "laqob": "-",
+  "hadith_count": "84",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 8,
+    "abudaud": 8,
+    "tirmidzi": 8,
+    "nasai": 8,
+    "ibnumajah": 10,
+    "ahmad": 25,
+    "malik": 0,
+    "darimi": 12
+  }
+}

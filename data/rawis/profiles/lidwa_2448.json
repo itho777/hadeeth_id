@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2448",
+  "name_en": "Hafsh bin Ghiyats bin Thalq",
+  "name_id": "Hafsh bin Ghiyats bin Thalq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "194 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Umar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "328",
+  "book_counts": {
+    "bukhari": 94,
+    "muslim": 69,
+    "abudaud": 28,
+    "tirmidzi": 26,
+    "nasai": 23,
+    "ibnumajah": 34,
+    "ahmad": 28,
+    "malik": 0,
+    "darimi": 26
+  }
+}

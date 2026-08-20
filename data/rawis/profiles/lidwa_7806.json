@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7806",
+  "name_en": "Maimun",
+  "name_id": "Maimun",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hamzah",
+  "parents": "Al_Qashshab Ar Ra'iy",
+  "nasab": "Al_Qashshab Ar Ra'iy",
+  "laqob": "Al A'war",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 6,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 5
+  }
+}

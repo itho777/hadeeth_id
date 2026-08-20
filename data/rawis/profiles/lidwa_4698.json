@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4698",
+  "name_en": "Abdullah bin Az Zubair bin 'Isa bin 'Ubaidillah",
+  "name_id": "Abdullah bin Az Zubair bin 'Isa bin 'Ubaidillah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "219 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Humaidiy Al Qurasyiy",
+  "nasab": "Al Humaidiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "98",
+  "book_counts": {
+    "bukhari": 79,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 5,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 5
+  }
+}

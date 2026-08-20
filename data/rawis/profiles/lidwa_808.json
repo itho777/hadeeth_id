@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_808",
+  "name_en": "Ibrahim bin Al Mundzir bin 'Abdullah ",
+  "name_id": "Ibrahim bin Al Mundzir bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "236 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Asadiy Al Hizamiy",
+  "nasab": "Al Asadiy Al Hizamiy",
+  "laqob": "-",
+  "hadith_count": "114",
+  "book_counts": {
+    "bukhari": 73,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 29,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 11
+  }
+}

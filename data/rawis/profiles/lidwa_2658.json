@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2658",
+  "name_en": "Khalid bin Thahman",
+  "name_id": "Khalid bin Thahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al 'Alaa'",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

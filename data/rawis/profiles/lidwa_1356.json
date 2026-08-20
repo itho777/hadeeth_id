@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1356",
+  "name_en": "Al Husain bin Yazid bin Yahya",
+  "name_id": "Al Husain bin Yazid bin Yahya",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "8",
+  "died_ah": "244 H",
+  "city_of_death": "-",
+  "residence": "Kufah ",
+  "kunyah": "Abu 'Ali",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 6,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4697",
+  "name_en": "Abdullah bin Az Zubair bin Al 'Awwam bin Khuwailid bin Asad",
+  "name_id": "Abdullah bin Az Zubair bin Al 'Awwam bin Khuwailid bin Asad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "73 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Asadiy Al Qurasyiy",
+  "nasab": "Al Asadiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "179",
+  "book_counts": {
+    "bukhari": 22,
+    "muslim": 15,
+    "abudaud": 15,
+    "tirmidzi": 13,
+    "nasai": 22,
+    "ibnumajah": 11,
+    "ahmad": 64,
+    "malik": 11,
+    "darimi": 6
+  }
+}

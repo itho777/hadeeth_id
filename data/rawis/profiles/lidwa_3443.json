@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3443",
+  "name_en": "Sufyan bin 'Uyainah bin Abi 'Imran Maimun",
+  "name_id": "Sufyan bin 'Uyainah bin Abi 'Imran Maimun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "198 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Hilaliy",
+  "nasab": "Al Hilaliy",
+  "laqob": "-",
+  "hadith_count": "3005",
+  "book_counts": {
+    "bukhari": 416,
+    "muslim": 459,
+    "abudaud": 212,
+    "tirmidzi": 279,
+    "nasai": 391,
+    "ibnumajah": 298,
+    "ahmad": 821,
+    "malik": 0,
+    "darimi": 129
+  }
+}

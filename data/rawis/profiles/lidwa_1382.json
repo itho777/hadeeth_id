@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1382",
+  "name_en": "Al Hakam bin Nafi'",
+  "name_id": "Al Hakam bin Nafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "222 H",
+  "city_of_death": "Halwan",
+  "residence": "Syam",
+  "kunyah": "Abu Al Yaman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "537",
+  "book_counts": {
+    "bukhari": 279,
+    "muslim": 32,
+    "abudaud": 9,
+    "tirmidzi": 2,
+    "nasai": 8,
+    "ibnumajah": 1,
+    "ahmad": 169,
+    "malik": 0,
+    "darimi": 37
+  }
+}

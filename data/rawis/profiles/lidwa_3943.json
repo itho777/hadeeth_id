@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3943",
+  "name_en": "Shafwan bin 'Isa",
+  "name_id": "Shafwan bin 'Isa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "200 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Az Zuhriy",
+  "nasab": "Az Zuhriy",
+  "laqob": "Al Qassam",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 7,
+    "tirmidzi": 5,
+    "nasai": 5,
+    "ibnumajah": 12,
+    "ahmad": 34,
+    "malik": 0,
+    "darimi": 2
+  }
+}

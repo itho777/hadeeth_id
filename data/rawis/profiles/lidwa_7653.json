@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7653",
+  "name_en": "Muqatil bin Hayyan",
+  "name_id": "Muqatil bin Hayyan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "Qahastan",
+  "residence": "Himsh",
+  "kunyah": "Abu Bistham",
+  "parents": "Al Balkhiy Al Khazzaz",
+  "nasab": "Al Balkhiy Al Khazzaz",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 3
+  }
+}

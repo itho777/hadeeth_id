@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7421",
+  "name_en": "Mussah",
+  "name_id": "Mussah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Ummu Bussah",
+  "parents": "Al Azdiyyah",
+  "nasab": "Al Azdiyyah",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

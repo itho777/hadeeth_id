@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3281",
+  "name_en": "Sa'id bin Abi 'Urubah Mihran",
+  "name_id": "Sa'id bin Abi 'Urubah Mihran",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "156 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu An Nadlor",
+  "parents": "Al Yasykuriy Al 'Adawiy",
+  "nasab": "Al Yasykuriy Al 'Adawiy",
+  "laqob": "-",
+  "hadith_count": "853",
+  "book_counts": {
+    "bukhari": 58,
+    "muslim": 77,
+    "abudaud": 68,
+    "tirmidzi": 52,
+    "nasai": 99,
+    "ibnumajah": 69,
+    "ahmad": 400,
+    "malik": 0,
+    "darimi": 30
+  }
+}

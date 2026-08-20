@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_553",
+  "name_en": "Asma' binti Abu Bakar Ash Shiddiq",
+  "name_id": "Asma' binti Abu Bakar Ash Shiddiq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "73 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Madinah",
+  "kunyah": "Ummu 'Abdullah ",
+  "parents": "Al Qurasyiyyah",
+  "nasab": "Al Qurasyiyyah",
+  "laqob": "Dzatu An Nuthaqain",
+  "hadith_count": "209",
+  "book_counts": {
+    "bukhari": 42,
+    "muslim": 27,
+    "abudaud": 12,
+    "tirmidzi": 5,
+    "nasai": 13,
+    "ibnumajah": 11,
+    "ahmad": 83,
+    "malik": 8,
+    "darimi": 8
+  }
+}

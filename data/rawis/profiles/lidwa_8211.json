@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8211",
+  "name_en": "Yahya bin Aktsam bin Muhammad",
+  "name_id": "Yahya bin Aktsam bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "243 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Muhammad",
+  "parents": "At Tamimiy Al Usaidiy",
+  "nasab": "At Tamimiy Al Usaidiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 5,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

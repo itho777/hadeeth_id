@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8064",
+  "name_en": "Hiqul bin Ziyad bin 'Ubaidillah",
+  "name_id": "Hiqul bin Ziyad bin 'Ubaidillah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "179 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "As Saksakiy Ad Damsyqiy",
+  "nasab": "As Saksakiy Ad Damsyqiy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 6,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 3
+  }
+}

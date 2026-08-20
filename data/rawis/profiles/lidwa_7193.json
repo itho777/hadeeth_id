@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7193",
+  "name_en": "Muhammad bin 'Ali bin Maimun",
+  "name_id": "Muhammad bin 'Ali bin Maimun",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "268 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "Al Qurasyiy Al Makhzumiy",
+  "nasab": "Al Qurasyiy Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 13,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

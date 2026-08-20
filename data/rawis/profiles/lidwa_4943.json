@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4943",
+  "name_en": "Abdullah bin 'Utsman bin Jablah bin Abi Rawwad",
+  "name_id": "Abdullah bin 'Utsman bin Jablah bin Abi Rawwad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "221 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Azdiy Al Marwaziy",
+  "nasab": "Al Azdiy Al Marwaziy",
+  "laqob": "Abdan ",
+  "hadith_count": "129",
+  "book_counts": {
+    "bukhari": 118,
+    "muslim": 4,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

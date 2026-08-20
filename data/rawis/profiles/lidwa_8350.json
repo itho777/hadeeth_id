@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8350",
+  "name_en": "Yahya bin Yahya bin Bukair bin 'Abdur Rahman",
+  "name_id": "Yahya bin Yahya bin Bukair bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "226 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Zakariya",
+  "parents": "At Tamimiy Al Hanzhaliy",
+  "nasab": "At Tamimiy Al Hanzhaliy",
+  "laqob": "-",
+  "hadith_count": "705",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 692,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

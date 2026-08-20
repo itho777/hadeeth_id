@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8452",
+  "name_en": "Yazid bin 'Abdullah bin Usamah bin Al Had",
+  "name_id": "Yazid bin 'Abdullah bin Usamah bin Al Had",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "139 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "257",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 34,
+    "abudaud": 23,
+    "tirmidzi": 9,
+    "nasai": 34,
+    "ibnumajah": 12,
+    "ahmad": 108,
+    "malik": 4,
+    "darimi": 8
+  }
+}

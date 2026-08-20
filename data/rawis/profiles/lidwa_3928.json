@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3928",
+  "name_en": "Shadaqah bin Yasar",
+  "name_id": "Shadaqah bin Yasar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Jazariy",
+  "nasab": "Al Jazariy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 4,
+    "darimi": 0
+  }
+}

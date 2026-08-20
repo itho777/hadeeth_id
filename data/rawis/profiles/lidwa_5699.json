@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5699",
+  "name_en": "Ikrimah bin Khalid bn Al 'Ash",
+  "name_id": "Ikrimah bin Khalid bn Al 'Ash",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Makhzumiy Al Qurasyiy",
+  "nasab": "Al Makhzumiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "58",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 2,
+    "abudaud": 6,
+    "tirmidzi": 3,
+    "nasai": 7,
+    "ibnumajah": 0,
+    "ahmad": 36,
+    "malik": 0,
+    "darimi": 1
+  }
+}

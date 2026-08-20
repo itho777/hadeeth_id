@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2553",
+  "name_en": "Humaid bin Hilal bin Hubairah",
+  "name_id": "Humaid bin Hilal bin Hubairah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Nashr",
+  "parents": "Al 'Adawi",
+  "nasab": "Al 'Adawi",
+  "laqob": "-",
+  "hadith_count": "172",
+  "book_counts": {
+    "bukhari": 19,
+    "muslim": 18,
+    "abudaud": 15,
+    "tirmidzi": 3,
+    "nasai": 16,
+    "ibnumajah": 8,
+    "ahmad": 84,
+    "malik": 0,
+    "darimi": 9
+  }
+}

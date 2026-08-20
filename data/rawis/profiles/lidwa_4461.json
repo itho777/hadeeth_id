@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4461",
+  "name_en": "Abdur Rahman bin 'Auf bin 'Abdi 'Auf bin 'Abdi bin Al Harits bin Zahrah",
+  "name_id": "Abdur Rahman bin 'Auf bin 'Abdi 'Auf bin 'Abdi bin Al Harits bin Zahrah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "32 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Az Zuhriy Al Qurasyiy ",
+  "nasab": "Az Zuhriy Al Qurasyiy ",
+  "laqob": "-",
+  "hadith_count": "99",
+  "book_counts": {
+    "bukhari": 17,
+    "muslim": 4,
+    "abudaud": 6,
+    "tirmidzi": 9,
+    "nasai": 7,
+    "ibnumajah": 5,
+    "ahmad": 43,
+    "malik": 7,
+    "darimi": 1
+  }
+}

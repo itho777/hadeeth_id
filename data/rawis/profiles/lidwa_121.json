@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_121",
+  "name_en": "Abu Bakar bin 'Abdullah bin Muhammad bin Abu Sabrah",
+  "name_id": "Abu Bakar bin 'Abdullah bin Muhammad bin Abu Sabrah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "162 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "As Sabriy Al Madaniy",
+  "nasab": "As Sabriy Al Madaniy",
+  "laqob": "Ibnu Abu Sabrah",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

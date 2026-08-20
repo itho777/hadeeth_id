@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5785",
+  "name_en": "Ali bin 'Abis",
+  "name_id": "Ali bin 'Abis",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Asadiy Al Mula'iy",
+  "nasab": "Al Asadiy Al Mula'iy",
+  "laqob": "Al Azraq",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

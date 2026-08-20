@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2775",
+  "name_en": "Daud bin Al Hushain",
+  "name_id": "Daud bin Al Hushain",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "135 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Sulaiman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "73",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 3,
+    "abudaud": 9,
+    "tirmidzi": 6,
+    "nasai": 5,
+    "ibnumajah": 10,
+    "ahmad": 22,
+    "malik": 14,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_13",
+  "name_en": "Aban bin Shalih bin 'Umair bin 'Ubaid",
+  "name_id": "Aban bin Shalih bin 'Umair bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "115 H",
+  "city_of_death": "Abdasa",
+  "residence": "Kufah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Quraisyiy Al Madiniy",
+  "nasab": "Al Quraisyiy Al Madiniy",
+  "laqob": "-",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 2
+  }
+}

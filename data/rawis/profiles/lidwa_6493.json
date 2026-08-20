@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6493",
+  "name_en": "Quthbah bin Qatadah bin Jarir",
+  "name_id": "Quthbah bin Qatadah bin Jarir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Al Huwaishilah",
+  "parents": "As Sadusiy",
+  "nasab": "As Sadusiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

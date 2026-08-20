@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6482",
+  "name_en": "Quraisy bin Anas",
+  "name_id": "Quraisy bin Anas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "208 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Anas",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

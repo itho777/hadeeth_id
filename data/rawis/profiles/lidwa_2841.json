@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2841",
+  "name_en": "\"Dzakwan, maula 'Aisyah RAh \"",
+  "name_id": "\"Dzakwan, maula 'Aisyah RAh \"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "63 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Amru",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 0
+  }
+}

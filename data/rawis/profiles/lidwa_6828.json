@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6828",
+  "name_en": "Muhammad bin Al Harits bin Ziyad bin Ar Rubai'",
+  "name_id": "Muhammad bin Al Harits bin Ziyad bin Ar Rubai'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Haritsiy",
+  "nasab": "Al Haritsiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

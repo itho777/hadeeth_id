@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2063",
+  "name_en": "Jabir bin Zaid",
+  "name_id": "Jabir bin Zaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "93 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Asy Sya'tas'",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "94",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 8,
+    "abudaud": 8,
+    "tirmidzi": 5,
+    "nasai": 16,
+    "ibnumajah": 8,
+    "ahmad": 31,
+    "malik": 0,
+    "darimi": 5
+  }
+}

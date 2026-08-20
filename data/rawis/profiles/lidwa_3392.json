@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3392",
+  "name_en": "Sa'id bin Muhammad",
+  "name_id": "Sa'id bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Warraq Ats Tsaqafiy",
+  "nasab": "Al Warraq Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

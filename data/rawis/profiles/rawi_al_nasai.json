@@ -1,0 +1,28 @@
+{
+  "id": "rawi_al_nasai",
+  "name_en": "Imam an-Nasa'i",
+  "name_id": "Imam an-Nasa'i",
+  "name_ar": "أحمد بن شعيب النسائي",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz",
+  "died_ah": "303",
+  "died_ce": "915",
+  "hadith_count": "5758",
+  "city_of_death": "Ramla / Makkah",
+  "bio_en": "Compiler of Sunan an-Nasa'i, famed for extremely strict narrator conditions.",
+  "books": [
+    "Sunan an-Nasa'i"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

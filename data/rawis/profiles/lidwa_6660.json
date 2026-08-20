@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6660",
+  "name_en": "Malik bin Aus bin Al Hadatsan",
+  "name_id": "Malik bin Aus bin Al Hadatsan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "92 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Sa'id",
+  "parents": "An Nashriy",
+  "nasab": "An Nashriy",
+  "laqob": "-",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 3,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 18,
+    "malik": 1,
+    "darimi": 1
+  }
+}

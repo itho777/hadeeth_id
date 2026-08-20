@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5745",
+  "name_en": "Ali bin Al Mubarak",
+  "name_id": "Ali bin Al Mubarak",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Hana'iy",
+  "nasab": "Al Hana'iy",
+  "laqob": "-",
+  "hadith_count": "109",
+  "book_counts": {
+    "bukhari": 18,
+    "muslim": 10,
+    "abudaud": 8,
+    "tirmidzi": 10,
+    "nasai": 16,
+    "ibnumajah": 2,
+    "ahmad": 44,
+    "malik": 0,
+    "darimi": 1
+  }
+}

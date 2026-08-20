@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2609",
+  "name_en": "Kharijah bin Mush'ab bin Kharijah",
+  "name_id": "Kharijah bin Mush'ab bin Kharijah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "11",
+  "died_ah": "168 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Al Hajjaj",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

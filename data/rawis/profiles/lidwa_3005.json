@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3005",
+  "name_en": "Zur'ah bin 'Abdur Rahman bin Jarhad",
+  "name_id": "Zur'ah bin 'Abdur Rahman bin Jarhad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Aslamiy",
+  "nasab": "Al Aslamiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 1
+  }
+}

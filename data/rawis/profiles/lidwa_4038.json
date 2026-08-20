@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4038",
+  "name_en": "Zhalim bin 'Amru bin Sufyan",
+  "name_id": "Zhalim bin 'Amru bin Sufyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "69H",
+  "city_of_death": "Bashrah ",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Aswad",
+  "parents": "Ad Da'uliy",
+  "nasab": "Ad Da'uliy",
+  "laqob": "-",
+  "hadith_count": "54",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 7,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_852",
+  "name_en": "Ibrahim bin 'Abdullah bin Muhammad ",
+  "name_id": "Ibrahim bin 'Abdullah bin Muhammad ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "265 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Syaybah",
+  "parents": "Al 'Abasiy",
+  "nasab": "Al 'Abasiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

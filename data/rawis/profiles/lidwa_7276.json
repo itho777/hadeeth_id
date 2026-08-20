@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7276",
+  "name_en": "Muhammad bin Mush'ab bin Shadaqah",
+  "name_id": "Muhammad bin Mush'ab bin Shadaqah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "208 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Qarqasaniy",
+  "nasab": "Al Qarqasaniy",
+  "laqob": "-",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 7,
+    "ahmad": 59,
+    "malik": 0,
+    "darimi": 0
+  }
+}

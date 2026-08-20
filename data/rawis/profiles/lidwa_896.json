@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_896",
+  "name_en": "Ibrahim bin Nafi' ",
+  "name_id": "Ibrahim bin Nafi' ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Makhzumiy",
+  "nasab": "Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 5,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

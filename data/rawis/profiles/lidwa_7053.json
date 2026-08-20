@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7053",
+  "name_en": "Muhammad bin 'Abdur Rahman",
+  "name_id": "Muhammad bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "9",
+  "died_ah": "187 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Mundzir",
+  "parents": "Ath Thufawiy",
+  "nasab": "Ath Thufawiy",
+  "laqob": "-",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 21,
+    "malik": 0,
+    "darimi": 0
+  }
+}

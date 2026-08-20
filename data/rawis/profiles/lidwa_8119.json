@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8119",
+  "name_en": "Washil bin 'Abdul A'laa",
+  "name_id": "Washil bin 'Abdul A'laa",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "244 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Qasim",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 11,
+    "abudaud": 6,
+    "tirmidzi": 14,
+    "nasai": 13,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

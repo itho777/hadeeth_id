@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_531",
+  "name_en": "Usamah bin Zaid bin Aslam ",
+  "name_id": "Usamah bin Zaid bin Aslam ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Zaid",
+  "parents": "Al 'Adawiy",
+  "nasab": "Al 'Adawiy",
+  "laqob": "Ash Shaghir",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

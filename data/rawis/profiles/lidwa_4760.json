@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4760",
+  "name_en": "Abdullah bin Jahsy bin Ri'ab bin Ya'mar bin Shabrah bin Murrah",
+  "name_id": "Abdullah bin Jahsy bin Ri'ab bin Ya'mar bin Shabrah bin Murrah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

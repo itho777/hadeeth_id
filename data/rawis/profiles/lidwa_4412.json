@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4412",
+  "name_en": "Abdur Rahman bin 'Abdullah ",
+  "name_id": "Abdur Rahman bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "115 H",
+  "city_of_death": "-",
+  "residence": "Andalus",
+  "kunyah": "-",
+  "parents": "Al Ghafiqiy",
+  "nasab": "Al Ghafiqiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

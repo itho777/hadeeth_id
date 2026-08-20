@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4044",
+  "name_en": "A'idz bin Nadllah",
+  "name_id": "A'idz bin Nadllah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Majid",
+  "parents": "Al Hanafiy Al 'Ajaliy",
+  "nasab": "Al Hanafiy Al 'Ajaliy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7642",
+  "name_en": "Ma'an bin 'Abdur Rahman bin 'Abdullah bin Mas'ud",
+  "name_id": "Ma'an bin 'Abdur Rahman bin 'Abdullah bin Mas'ud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Qasim",
+  "parents": "Al Hudaliy Al Mas'udiy",
+  "nasab": "Al Hudaliy Al Mas'udiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 2
+  }
+}

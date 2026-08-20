@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6309",
+  "name_en": "Isa bin Sulaim",
+  "name_id": "Isa bin Sulaim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu hamzah",
+  "parents": "Ar Rustaniy Al 'Ansiy",
+  "nasab": "Ar Rustaniy Al 'Ansiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

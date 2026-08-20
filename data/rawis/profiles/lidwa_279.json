@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_279",
+  "name_en": "Abu 'Ukasyah (dari Rifa'ah bin Syaddad)",
+  "name_id": "Abu 'Ukasyah (dari Rifa'ah bin Syaddad)",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Ukasyah ",
+  "parents": "Al Mihdaniy",
+  "nasab": "Al Mihdaniy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

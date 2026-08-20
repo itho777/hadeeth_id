@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_966",
+  "name_en": "Ishaq bin Muhammad bin Isma'il bin 'Abdullah ",
+  "name_id": "Ishaq bin Muhammad bin Isma'il bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "226 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Al Farawiy Al Umawiy",
+  "nasab": "Al Farawiy Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

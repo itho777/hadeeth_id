@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7045",
+  "name_en": "Muhammad bin 'Abbad bin Az Zibriqan",
+  "name_id": "Muhammad bin 'Abbad bin Az Zibriqan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "234 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Makkiy",
+  "nasab": "Al Makkiy",
+  "laqob": "-",
+  "hadith_count": "56",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 42,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

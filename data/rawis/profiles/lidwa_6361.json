@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6361",
+  "name_en": "Ghuzailah binti Daudan bin 'Amru",
+  "name_id": "Ghuzailah binti Daudan bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Syarik",
+  "parents": "Al 'Amiriyyah",
+  "nasab": "Al 'Amiriyyah",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

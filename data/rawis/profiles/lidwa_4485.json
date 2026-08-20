@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4485",
+  "name_en": "Abdur Rahman bin Muth'im",
+  "name_id": "Abdur Rahman bin Muth'im",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "106 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Al Minhal",
+  "parents": "Al Bananiy",
+  "nasab": "Al Bananiy",
+  "laqob": "-",
+  "hadith_count": "40",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 4,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 7,
+    "ibnumajah": 2,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6641",
+  "name_en": "Laits bin Sa'ad bin 'Abdur Rahman",
+  "name_id": "Laits bin Sa'ad bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "175 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Al Harits",
+  "parents": "Al Fahmiy",
+  "nasab": "Al Fahmiy",
+  "laqob": "-",
+  "hadith_count": "1989",
+  "book_counts": {
+    "bukhari": 437,
+    "muslim": 298,
+    "abudaud": 148,
+    "tirmidzi": 170,
+    "nasai": 286,
+    "ibnumajah": 122,
+    "ahmad": 450,
+    "malik": 0,
+    "darimi": 78
+  }
+}

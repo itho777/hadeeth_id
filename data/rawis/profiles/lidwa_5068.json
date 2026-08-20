@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5068",
+  "name_en": "Abdullah bin Muhammad bin Yahya",
+  "name_id": "Abdullah bin Muhammad bin Yahya",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Thabariyah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Ath Thursisiy",
+  "nasab": "Ath Thursisiy",
+  "laqob": "Adl Dla'if",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

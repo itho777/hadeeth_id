@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_469",
+  "name_en": "Ahmad bin 'Abdah bin Musa",
+  "name_id": "Ahmad bin 'Abdah bin Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "245 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Adl Dlabbiy",
+  "nasab": "Adl Dlabbiy",
+  "laqob": "-",
+  "hadith_count": "140",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 32,
+    "abudaud": 18,
+    "tirmidzi": 34,
+    "nasai": 9,
+    "ibnumajah": 45,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

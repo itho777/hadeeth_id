@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6630",
+  "name_en": "Lubabah binti Al harits bin Hazan",
+  "name_id": "Lubabah binti Al harits bin Hazan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah ",
+  "kunyah": "Ummu Al Fadlol",
+  "parents": "Al Hilaliyyah",
+  "nasab": "Al Hilaliyyah",
+  "laqob": "Istri Al 'Abbas bin 'Abdul Muthallib",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 8,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 4,
+    "ahmad": 18,
+    "malik": 2,
+    "darimi": 2
+  }
+}

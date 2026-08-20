@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2899",
+  "name_en": "Rabi'ah bin 'Amru",
+  "name_id": "Rabi'ah bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "64 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Ghazi",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

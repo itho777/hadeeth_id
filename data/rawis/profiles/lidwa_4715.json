@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4715",
+  "name_en": "Abdullah bin Al Muammal bin Wahballoh",
+  "name_id": "Abdullah bin Al Muammal bin Wahballoh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "160 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Makhzumiy Al 'Abidiy",
+  "nasab": "Al Makhzumiy Al 'Abidiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

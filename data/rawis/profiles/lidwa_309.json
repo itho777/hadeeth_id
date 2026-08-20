@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_309",
+  "name_en": "Abu Kabsyah",
+  "name_id": "Abu Kabsyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Kabsyah",
+  "parents": "As Saluliy",
+  "nasab": "As Saluliy",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 3
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5263",
+  "name_en": "Abdul Wahid bin 'Abdullah bin Ka'ab",
+  "name_id": "Abdul Wahid bin 'Abdullah bin Ka'ab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Bisyir",
+  "parents": "An Nashriy Ad Damsyiqiy",
+  "nasab": "An Nashriy Ad Damsyiqiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_720",
+  "name_en": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+  "name_id": "Anas bin Malik bin An Nadlir bin Dlamdlom bin Zaid bin Haram",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "91 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hamzah",
+  "parents": "Al Anshariy Al Madaniy",
+  "nasab": "Al Anshariy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "4964",
+  "book_counts": {
+    "bukhari": 829,
+    "muslim": 485,
+    "abudaud": 257,
+    "tirmidzi": 367,
+    "nasai": 366,
+    "ibnumajah": 279,
+    "ahmad": 2189,
+    "malik": 35,
+    "darimi": 157
+  }
+}

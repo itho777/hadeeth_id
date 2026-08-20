@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_851",
+  "name_en": "Ibrahim bin 'Abdullah bin Qarizh",
+  "name_id": "Ibrahim bin 'Abdullah bin Qarizh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Kinaniy",
+  "nasab": "Al Kinaniy",
+  "laqob": "-",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 5,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 0,
+    "ahmad": 18,
+    "malik": 0,
+    "darimi": 1
+  }
+}

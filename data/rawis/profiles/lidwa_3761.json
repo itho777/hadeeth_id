@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3761",
+  "name_en": "Syuja' bin Makhlad",
+  "name_id": "Syuja' bin Makhlad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "235 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Fadlol ",
+  "parents": "Al Fulas Al Baghawiy",
+  "nasab": "Al Fulas Al Baghawiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

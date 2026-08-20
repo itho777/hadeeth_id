@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_322",
+  "name_en": "Abu Malik",
+  "name_id": "Abu Malik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "18 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu Malik",
+  "parents": "Al Asy'ariy",
+  "nasab": "Al Asy'ariy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 8,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 4,
+    "ahmad": 23,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1873",
+  "name_en": "Bisyir bin Khalid",
+  "name_id": "Bisyir bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "253 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al 'Asykariy Al Fara`idhiy",
+  "nasab": "Al 'Asykariy Al Fara`idhiy",
+  "laqob": "-",
+  "hadith_count": "55",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 18,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 19,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

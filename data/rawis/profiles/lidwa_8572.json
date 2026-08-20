@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8572",
+  "name_en": "Yusuf bin Hammad",
+  "name_id": "Yusuf bin Hammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "245 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Al Ma'aniy",
+  "nasab": "Al Ma'aniy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 5,
+    "abudaud": 0,
+    "tirmidzi": 8,
+    "nasai": 6,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

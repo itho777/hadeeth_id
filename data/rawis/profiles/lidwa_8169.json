@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8169",
+  "name_en": "Wahab bin Jarir bin Hazim",
+  "name_id": "Wahab bin Jarir bin Hazim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "206 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah ",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "Al Azdiy",
+  "nasab": "Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "233",
+  "book_counts": {
+    "bukhari": 33,
+    "muslim": 32,
+    "abudaud": 16,
+    "tirmidzi": 27,
+    "nasai": 15,
+    "ibnumajah": 8,
+    "ahmad": 73,
+    "malik": 0,
+    "darimi": 29
+  }
+}

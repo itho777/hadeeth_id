@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2772",
+  "name_en": "Daud bin Abi Hind Dinar",
+  "name_id": "Daud bin Abi Hind Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "139 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "271",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 35,
+    "abudaud": 23,
+    "tirmidzi": 25,
+    "nasai": 26,
+    "ibnumajah": 17,
+    "ahmad": 111,
+    "malik": 0,
+    "darimi": 29
+  }
+}

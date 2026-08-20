@@ -170280,5 +170280,33 @@
     "grade": "4th Century AH [Hanbali]",
     "birth_year": null,
     "death_year": 363
+  },
+  "mjna_001": {
+    "name_ar": "أبو بكر محمد بن إسحاق بن خزيمة النيسابوري الشافعي",
+    "name_en": "Imam Muhammad bin Ishaq Ibn Khuzaimah an-Naisaburi",
+    "grade": "Scholar — Syafi'i",
+    "birth_year": 223,
+    "death_year": 311
+  },
+  "mjna_002": {
+    "name_ar": "أبو حاتم محمد بن حبان بن أحمد التميمي البستي",
+    "name_en": "Imam Muhammad bin Hibban at-Tamimi al-Busti",
+    "grade": "Scholar — Syafi'i",
+    "birth_year": 270,
+    "death_year": 354
+  },
+  "mjna_003": {
+    "name_ar": "أبو عبد الله محمد بن عبد الله الحاكم النيسابوري",
+    "name_en": "Imam Abu Abdullah Al-Hakim an-Naisaburi",
+    "grade": "Scholar — Syafi'i / Asy'ari",
+    "birth_year": 321,
+    "death_year": 405
+  },
+  "mjna_004": {
+    "name_ar": "أبو الحسن علي بن عمر الدارقطني البغدادي",
+    "name_en": "Imam Abu al-Hasan Ali bin 'Umar ad-Daruquthni al-Baghdadi",
+    "grade": "Scholar — Syafi'i",
+    "birth_year": 306,
+    "death_year": 385
   }
 }

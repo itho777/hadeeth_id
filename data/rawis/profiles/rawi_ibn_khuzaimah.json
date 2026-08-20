@@ -1,0 +1,28 @@
+{
+  "id": "rawi_ibn_khuzaimah",
+  "name_en": "Imam Ibn Khuzaimah",
+  "name_id": "Imam Ibnu Khuzaimah",
+  "name_ar": "ابن خزيمة",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz Faqih",
+  "died_ah": "311",
+  "died_ce": "924",
+  "hadith_count": "3079",
+  "city_of_death": "Nishapur",
+  "bio_en": "Known as 'Imam of Imams', author of one of the most authentic collections after the Sahihayn.",
+  "books": [
+    "Shahih Ibn Khuzaimah"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

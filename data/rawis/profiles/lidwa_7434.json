@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7434",
+  "name_en": "Mas'ud bin Al Aswad bin Haritsah",
+  "name_id": "Mas'ud bin Al Aswad bin Haritsah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kasymihan",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al 'Adawiy",
+  "nasab": "Al Qurasyiy Al 'Adawiy",
+  "laqob": "Ibnu Al 'Ajma'",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

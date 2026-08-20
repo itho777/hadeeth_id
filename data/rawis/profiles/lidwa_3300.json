@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3300",
+  "name_en": "Sa'id bin Al Mughirah",
+  "name_id": "Sa'id bin Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Ash Shayyad Al Mushayshiy",
+  "nasab": "Ash Shayyad Al Mushayshiy",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 19
+  }
+}

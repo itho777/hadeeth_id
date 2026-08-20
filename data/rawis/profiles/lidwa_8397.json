@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8397",
+  "name_en": "Yazid bin Al Miqdam bin Syuraih",
+  "name_id": "Yazid bin Al Miqdam bin Syuraih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Hadlramiy Al Haritsiy",
+  "nasab": "Al Hadlramiy Al Haritsiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

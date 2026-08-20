@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7063",
+  "name_en": "Muhammad bin 'Abdur Rahman bin Al Mughirah bin Al Harits bin Abi Dzi`b",
+  "name_id": "Muhammad bin 'Abdur Rahman bin Al Mughirah bin Al Harits bin Abi Dzi`b",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "10",
+  "died_ah": "158 H",
+  "city_of_death": "Kufah",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Harits",
+  "parents": "Al Qurasyiy Al 'Amiriy",
+  "nasab": "Al Qurasyiy Al 'Amiriy",
+  "laqob": "-",
+  "hadith_count": "494",
+  "book_counts": {
+    "bukhari": 59,
+    "muslim": 13,
+    "abudaud": 41,
+    "tirmidzi": 21,
+    "nasai": 33,
+    "ibnumajah": 27,
+    "ahmad": 277,
+    "malik": 0,
+    "darimi": 23
+  }
+}

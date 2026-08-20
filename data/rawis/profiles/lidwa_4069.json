@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4069",
+  "name_en": "Ashim bin 'Ubaidillah bin 'Ashim",
+  "name_id": "Ashim bin 'Ubaidillah bin 'Ashim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al 'Adawiy",
+  "nasab": "Al Qurasyiy Al 'Adawiy",
+  "laqob": "-",
+  "hadith_count": "72",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 8,
+    "nasai": 1,
+    "ibnumajah": 10,
+    "ahmad": 47,
+    "malik": 0,
+    "darimi": 0
+  }
+}

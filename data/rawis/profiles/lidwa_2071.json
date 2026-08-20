@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2071",
+  "name_en": "Jabir bin 'Amru",
+  "name_id": "Jabir bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Wazi'",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 0
+  }
+}

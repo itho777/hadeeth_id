@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2318",
+  "name_en": "Hujain bin Al Mutsannaa",
+  "name_id": "Hujain bin Al Mutsannaa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "205 H",
+  "city_of_death": "Baghdad",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Umar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "84",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 14,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 7,
+    "ibnumajah": 0,
+    "ahmad": 60,
+    "malik": 0,
+    "darimi": 0
+  }
+}

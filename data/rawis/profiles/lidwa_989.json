@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_989",
+  "name_en": "Isma'il bin Abi Khalid ",
+  "name_id": "Isma'il bin Abi Khalid ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "146 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Bajaliy Al Ahmasiy",
+  "nasab": "Al Bajaliy Al Ahmasiy",
+  "laqob": "-",
+  "hadith_count": "492",
+  "book_counts": {
+    "bukhari": 101,
+    "muslim": 46,
+    "abudaud": 23,
+    "tirmidzi": 28,
+    "nasai": 34,
+    "ibnumajah": 33,
+    "ahmad": 197,
+    "malik": 0,
+    "darimi": 30
+  }
+}

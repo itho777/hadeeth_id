@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5042",
+  "name_en": "Abdullah bin Mihshan",
+  "name_id": "Abdullah bin Mihshan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Anshariy Al Khasy'amiy",
+  "nasab": "Al Anshariy Al Khasy'amiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

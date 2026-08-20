@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3585",
+  "name_en": "Sulaiman bin Daud bin Al Jarud",
+  "name_id": "Sulaiman bin Daud bin Al Jarud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "204 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Daud",
+  "parents": "Ath Thayyalisiy",
+  "nasab": "Ath Thayyalisiy",
+  "laqob": "-",
+  "hadith_count": "523",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 43,
+    "abudaud": 30,
+    "tirmidzi": 136,
+    "nasai": 58,
+    "ibnumajah": 31,
+    "ahmad": 204,
+    "malik": 0,
+    "darimi": 10
+  }
+}

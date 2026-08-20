@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7679",
+  "name_en": "Manshur bin Salamah bin 'Abdul 'Aziz bin Shalih",
+  "name_id": "Manshur bin Salamah bin 'Abdul 'Aziz bin Shalih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "7",
+  "died_ah": "210 H",
+  "city_of_death": "Thabariyah",
+  "residence": "Baghdad",
+  "kunyah": "Abu Salamah",
+  "parents": "Al Khuza'iy",
+  "nasab": "Al Khuza'iy",
+  "laqob": "-",
+  "hadith_count": "129",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 117,
+    "malik": 0,
+    "darimi": 5
+  }
+}

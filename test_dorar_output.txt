@@ -1,0 +1,195 @@
+--- text-justify ---
+<div class="text-justify rtl">
+ ﻿
+ <div class="border-bottom py-4">
+  <article style="overflow: hidden;padding-top: 7px;">
+   <h5 class="h5-responsive">
+    - الأعْمالُ بالنِّيّاتِ [يعني حديث: إنَّما الأعْمالُ بالنِّيّاتِ، وإنَّما لِكُلِّ امْرِئٍ ما نَوَى، فمَن كانَتْ هِجْرَتُهُ إلى دُنْيا يُصِيبُها ، أوْ إلى امْرَأَةٍ يَنْكِحُها، فَهِجْرَتُهُ إلى ما هاجَرَ إلَيْهِ.]
+   </h5>
+  </article>
+  <div class="d-block mb-2">
+   <strong class="px-2" style="background-color: var(--dropdown_hover);">
+    خلاصة حكم المحدث :
+    <span class="">
+     صحيح
+    </span>
+   </strong>
+   <br/>
+   <strong class="px-2">
+    الراوي :
+    <span class="primary-text-color">
+     [عمر بن الخطاب]
+    </span>
+   </strong>
+   <strong class="px-2">
+    | المحدث :
+    <span class="primary-text-color">
+     الزرقاني
+    </span>
+   </strong>
+   <strong class="px-2">
+    | المصدر :
+    <span class="primary-text-color">
+     مختصر المقاصد
+    </span>
+   </strong>
+   <strong class="px-2">
+    | الصفحة أو الرقم :
+    <span class="primary-text-color">
+     117
+    </span>
+   </strong>
+   <br/>
+   <strong class="px-2">
+    | التخريج :
+    <span class="primary-text-color">
+     أخرجه البخاري (1) واللفظ له، ومسلم (1907)
+    </span>
+   </strong>
+   <br/>
+   <span class="px-2">
+    التصنيف الموضوعي:
+    <a class="badge-default badge-dorar z-depth-1 rounded mx-1 px-1" href="/hadith-category/cat/c481e8eb6c1426794e80d8ac5ca68e9c" style="font-size: 0.8em !important; border: .1px solid #fff; border-radius: .25rem !important; box-shadow: 0 2px 5px rgba(0,0,0,0.15) !important;" target="_blank">
+     رقائق وزهد - النية
+    </a>
+    <a class="badge-default badge-dorar z-depth-1 rounded mx-1 px-1" href="/hadith-category/cat/f7e0fa86266ba7f1f9ad4c6e6742b213" style="font-size: 0.8em !important; border: .1px solid #fff; border-radius: .25rem !important; box-shadow: 0 2px 5px rgba(0,0,0,0.15) !important;" target="_blank">
+     صلاة - النية في الأعمال
+    </a>
+    <a class="badge-default badge-dorar z-depth-1 rounded mx-1 px-1" href="/hadith-category/cat/d7d5c9d92e" style="font-size: 0.8em !important; border: .1px solid #fff; border-radius: .25rem !important; box-shadow: 0 2px 5px rgba(0,0,0,0.15) !important;" target="_blank">
+     إيمان - الاحتساب والنية
+    </a>
+    <a class="badge-default badge-dorar z-depth-1 rounded mx-1 px-1" href="/hadith-category/cat/0557c2acef" style="font-size: 0.8em !important; border: .1px solid #fff; border-radius: .25rem !important; box-shadow: 0 2px 5px rgba(0,0,0,0.15) !important;" target="_blank">
+     نية - النية في العبادات
+    </a>
+    <a class="badge-default badge-dorar z-depth-1 rounded mx-1 px-1" href="/hadith-category/cat/43c4b40ebd" style="font-size: 0.8em !important; border: .1px solid #fff; border-radius: .25rem !important; box-shadow: 0 2px 5px rgba(0,0,0,0.15) !important;" target="_blank">
+     وضوء - وجوب النية
+    </a>
+   </span>
+   <br/>
+   <strong class="px-2">
+    <span style="color:red;font-size:25px;">
+     |
+    </span>
+    <a class="color-3d6b13" href="/h/JIDbtVSz?sims=1" style="margin-right:5px;color:#3399ff;" target="_blank">
+     <i class="fa fa-link" style="font-size: 16px;">
+     </i>
+     أحاديث مشابهة
+    </a>
+   </strong>
+   <strong class="px-2">
+    <span style="color:red;font-size:25px;">
+     |
+    </span>
+    <a class="color-3d6b13" href="/h/JIDbtVSz?osoul=1" style="margin-right:5px;color:#3399ff;" target="_blank">
+     <i class="fa fa-link" style="font-size: 16px;">
+     </i>
+     أصول الحديث
+    </a>
+   </strong>
+  </div>
+  <a class="btn btn-outline-grey px-3 btn-sm copy-btn" data-clipboard-text="&lt;ref&gt;الراوي: [عمر بن الخطاب] | المحدث: الزرقاني&lt;br&gt;المصدر: مختصر المقاصد | الصفحة أو الرقم: 117&lt;br&gt;خلاصة حكم المحدث: صحيح&lt;br&gt;موقع الدرر السنية&lt;/ref&gt;">
+   <i class="fa fa-wikipedia-w fa-lg font-weight-bolder">
+   </i>
+  </a>
+  <a class="btn btn-outline-grey px-3 btn-sm shareLink a-btn" data-target="#modalSocial" data-toggle="modal" href="https://dorar.net/hadith/sharh/74201" tag="JIDbtVSz">
+   <i aria-hidden="true" class="fa fa-share-alt">
+   </i>
+  </a>
+  <a class="btn btn-outline-grey px-3 btn-sm a-btn" href="/feedback/error-report?link=https://dorar.net/h/JIDbtVSz" title="اخبر عن خطأ">
+   <i class="fa fa-exclamation-triangle">
+   </i>
+  </a>
+ </div>
+</div>
+
+--- next sibling ---
+<div class="text-justify rtl" style="padding-top: 15px;">
+ <div id="sharh-text-content">
+  ﻿
+  <div>
+   <div>
+    الأعمالُ بالنِّيَّةِ، ولكُلِّ امرِئٍ ما نَوى، فمَن كانَت هِجرَتُه إلى اللهِ ورَسولِه فهِجرَتُه إلى اللهِ ورَسولِه، ومَن كانَت هِجرَتُه لدُنيا يُصيبُها أوِ امرَأةٍ يَتَزَوَّجُها فهِجرَتُه إلى ما هاجَرَ إليه.
+   </div>
+   <div class="app-hadith-info">
+    الراوي :
+    <span class="color: #ae8422">
+     عمر بن الخطاب
+    </span>
+    <span style="color:maroon;font-size:20px;">
+     |
+    </span>
+    المحدث :
+    <span class="color: #ae8422">
+     البخاري
+    </span>
+    <span style="color:maroon;font-size:20px;">
+     |
+    </span>
+    المصدر :
+    <span class="color: #ae8422">
+     صحيح البخاري
+    </span>
+   </div>
+   <div class="app-hadith-info">
+    الصفحة أو الرقم:
+    <span class="color: #ae8422">
+     54
+    </span>
+    <span style="color:maroon;font-size:20px;">
+     |
+    </span>
+    خلاصة حكم المحدث :
+    <span class="color: #ae8422">
+     [صحيح]
+    </span>
+   </div>
+   <p class="color: #3d6b13">
+    التخريج :
+    <span class="color: #ae8422">
+     أخرجه مسلم (1907) باختلاف يسير.
+    </span>
+   </p>
+   <hr/>
+  </div>
+  هذا الحديثُ العَظيمُ قاعدةٌ مِن قواعدِ الإسلامِ، وأصلٌ مِن أُصولِ الشَّريعةِ، حتَّى قِيلَ فيه: إنَّه ثُلثُ العِلمِ، حيثُ قال فيه صلَّى اللهُ عليه وسلَّمَ: «الأعمالُ بِالنِّيَّةِ»، فلا تصِحُّ جَميعُ العِباداتِ الشَّرعيَّةِ إلَّا بوُجودِ النِّيَّةِ فيها، «ولِكلِّ امرِئٍ ما نَوى»، فإنَّما يَعودُ على المسلمِ مِن عَملِه ما قصَدَه منه، وهذا الحُكمُ عامٌّ في جَميعِ الأعمالِ مِنَ العباداتِ والمعاملاتِ والأعمالِ العاديَّةِ، فمَنْ قصَدَ بعَملِه مَنفعةً دُنيويَّةً لم يَنلْ إلَّا تلكَ المَنفعةَ ولو كان عِبادةً، فَلا ثَوابَ له عليها، ومَن قصَدَ بعَملِه التَّقرُّبَ إلى اللهِ تعالَى وابتغاءَ مَرضاتِه، نالَ مِن عَملِه المَثوبةَ والأجرَ ولو كان عمَلًا عاديًّا، كالأكلِ والشُّربِ، ثُمَّ ضرَبَ صلَّى اللهُ عليه وسلَّمَ الأمثلةَ العمليَّةَ لِبيانِ تَأثيرِ النِّيَّاتِ في الأعمالِ فبيَّنَ أنَّ مَن قصَدَ بِهجرتِه امتثالَ أمْرِ ربِّهِ، وابتغاءَ مَرضاتِه، والفرارَ بِدِينِه مِنَ الفتنِ؛ فهِجرتُه هِجرةٌ شرعيَّةٌ مَقبولةٌ عندَ اللهِ تعالَى ويُثابُ عليها لصِدقِ نيِّتِه، وأنَّ مَن قصَدَ بِهِجرتِه مَنفعةً دُنيويَّةً وغرَضًا شخصيًّا، مِن مالٍ، أو تجارةٍ، أو زَوجةٍ حَسناءَ؛ «فهِجرتُه إلى ما هاجَرَ إليه»، فلا يَنالُ مِن هِجرتِه إلَّا تلك المنفعةَ الَّتي نَواها، ولا نَصيبَ له مِنَ الأجرِ والثَّوابِ.
+  <div class="visible-xs" style="height: 60px;">
+  </div>
+ </div>
+</div>
+
+--- full_text ---
+﻿
+
+الأعمالُ بالنِّيَّةِ، ولكُلِّ امرِئٍ ما نَوى، فمَن كانَت هِجرَتُه إلى اللهِ ورَسولِه فهِجرَتُه إلى اللهِ ورَسولِه، ومَن كانَت هِجرَتُه لدُنيا يُصيبُها أوِ امرَأةٍ يَتَزَوَّجُها فهِجرَتُه إلى ما هاجَرَ إليه.
+
+الراوي :
+
+عمر بن الخطاب
+
+|
+
+المحدث :
+
+البخاري
+
+|
+
+المصدر :
+
+صحيح البخاري
+
+الصفحة أو الرقم:
+
+54
+
+|
+
+خلاصة حكم المحدث :
+
+[صحيح]
+
+التخريج :
+
+أخرجه مسلم (1907) باختلاف يسير.
+
+هذا الحديثُ العَظيمُ قاعدةٌ مِن قواعدِ الإسلامِ، وأصلٌ مِن أُصولِ الشَّريعةِ، حتَّى قِيلَ فيه: إنَّه ثُلثُ العِلمِ، حيثُ قال فيه صلَّى اللهُ عليه وسلَّمَ: «الأعمالُ بِالنِّيَّةِ»، فلا تصِحُّ جَميعُ العِباداتِ الشَّرعيَّةِ إلَّا بوُجودِ النِّيَّةِ فيها، «ولِكلِّ امرِئٍ ما نَوى»، فإنَّما يَعودُ على المسلمِ مِن عَملِه ما قصَدَه منه، وهذا الحُكمُ عامٌّ في جَميعِ الأعمالِ مِنَ العباداتِ والمعاملاتِ والأعمالِ العاديَّةِ، فمَنْ قصَدَ بعَملِه مَنفعةً دُنيويَّةً لم يَنلْ إلَّا تلكَ المَنفعةَ ولو كان عِبادةً، فَلا ثَوابَ له عليها، ومَن قصَدَ بعَملِه التَّقرُّبَ إلى اللهِ تعالَى وابتغاءَ مَرضاتِه، نالَ مِن عَملِه المَثوبةَ والأجرَ ولو كان عمَلًا عاديًّا، كالأكلِ والشُّربِ، ثُمَّ ضرَبَ صلَّى اللهُ عليه وسلَّمَ الأمثلةَ العمليَّةَ لِبيانِ تَأثيرِ النِّيَّاتِ في الأعمالِ فبيَّنَ أنَّ مَن قصَدَ بِهجرتِه امتثالَ أمْرِ ربِّهِ، وابتغاءَ مَرضاتِه، والفرارَ بِدِينِه مِنَ الفتنِ؛ فهِجرتُه هِجرةٌ شرعيَّةٌ مَقبولةٌ عندَ اللهِ تعالَى ويُثابُ عليها لصِدقِ نيِّتِه، وأنَّ مَن قصَدَ بِهِجرتِه مَنفعةً دُنيويَّةً وغرَضًا شخصيًّا، مِن مالٍ، أو تجارةٍ، أو زَوجةٍ حَسناءَ؛ «فهِجرتُه إلى ما هاجَرَ إليه»، فلا يَنالُ مِن هِجرتِه إلَّا تلك المنفعةَ الَّتي نَواها، ولا نَصيبَ له مِنَ الأجرِ والثَّوابِ.

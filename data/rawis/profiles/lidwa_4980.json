@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4980",
+  "name_en": "Abdullah bin 'Amru bin Al 'Ash bin Wa'il",
+  "name_id": "Abdullah bin 'Amru bin Al 'Ash bin Wa'il",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "63 H",
+  "city_of_death": "Tha'if",
+  "residence": "Maru",
+  "kunyah": "Abu Muhammad",
+  "parents": "As Sahmiy Al Qurasyiy",
+  "nasab": "As Sahmiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "1315",
+  "book_counts": {
+    "bukhari": 71,
+    "muslim": 67,
+    "abudaud": 154,
+    "tirmidzi": 93,
+    "nasai": 124,
+    "ibnumajah": 116,
+    "ahmad": 639,
+    "malik": 10,
+    "darimi": 41
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2149",
+  "name_en": "Ja'far bin Ziyad",
+  "name_id": "Ja'far bin Ziyad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Ahmar ",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_909",
+  "name_en": "Idris bin Yazid bin 'Abdur Rahman",
+  "name_id": "Idris bin Yazid bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Awdiy Az Zu'afiriy",
+  "nasab": "Al Awdiy Az Zu'afiriy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 3
+  }
+}

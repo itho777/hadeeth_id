@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1018",
+  "name_en": "Isma'il bin Rafi' ",
+  "name_id": "Isma'il bin Rafi' ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Rafi'",
+  "parents": "Al Anshariy Al Muzaniy",
+  "nasab": "Al Anshariy Al Muzaniy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 6,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7323",
+  "name_en": "Muhammad bin Yahya bin 'Abdullah bin Khalid bin Faris bin Dzu'aib",
+  "name_id": "Muhammad bin Yahya bin 'Abdullah bin Khalid bin Faris bin Dzu'aib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "258 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Adz Dzuhaliy An Naisaburiy",
+  "nasab": "Adz Dzuhaliy An Naisaburiy",
+  "laqob": "-",
+  "hadith_count": "380",
+  "book_counts": {
+    "bukhari": 23,
+    "muslim": 0,
+    "abudaud": 76,
+    "tirmidzi": 38,
+    "nasai": 20,
+    "ibnumajah": 218,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1621",
+  "name_en": "Al Mutsannaa bin Sa'id",
+  "name_id": "Al Mutsannaa bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Qushair Al Qassam",
+  "hadith_count": "49",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 6,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 24,
+    "malik": 0,
+    "darimi": 1
+  }
+}

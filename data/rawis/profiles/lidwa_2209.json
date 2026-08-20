@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2209",
+  "name_en": "Hatim bin Isma'il bin Ubay",
+  "name_id": "Hatim bin Isma'il bin Ubay",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "187 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Isma'il",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "152",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 36,
+    "abudaud": 16,
+    "tirmidzi": 21,
+    "nasai": 15,
+    "ibnumajah": 20,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 5
+  }
+}

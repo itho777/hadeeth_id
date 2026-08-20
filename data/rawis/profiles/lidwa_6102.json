@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6102",
+  "name_en": "Amru bin Tsabit",
+  "name_id": "Amru bin Tsabit",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al 'Atawariy Al Laitsiy Al Madaniy",
+  "nasab": "Al 'Atawariy Al Laitsiy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

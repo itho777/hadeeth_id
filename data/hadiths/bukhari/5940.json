@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 5940,
+  "arabicnumber": 5940,
+  "text": "Telah menceritakan kepadaku [Muhammad] telah menceritakan kepada kami ['Abdah] dari ['Ubaidullah] dari [Nafi'] dari [Ibnu Umar] radliallahu 'anhuma dia berkata; Nabi shallallahu 'alaihi wasallam melaknat orang yang menyambung rambutnya dan yang minta disambung rambutnya, dan orang yang mentato dan orang yang minta ditato",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Muhammad bin Isa at-Tirmidzi",
+      "name_ar": "محمد بن عيسى الترمذي",
+      "rawi_id": "rawi_al_tirmidhi"
+    }
+  ]
+}

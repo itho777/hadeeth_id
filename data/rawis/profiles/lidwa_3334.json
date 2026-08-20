@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3334",
+  "name_en": "Sa'id bin Sa'ad bin Malik bin Sinan",
+  "name_id": "Sa'id bin Sa'ad bin Malik bin Sinan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Khudriy",
+  "nasab": "Al Khudriy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

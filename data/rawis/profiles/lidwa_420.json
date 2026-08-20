@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_420",
+  "name_en": "Ahmad bin Al Farrat bin Khalid",
+  "name_id": "Ahmad bin Al Farrat bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "258 H",
+  "city_of_death": "-",
+  "residence": "Ashbahan",
+  "kunyah": "Abu Mas'ud",
+  "parents": "Adl Dlabbiy Ar raziy",
+  "nasab": "Adl Dlabbiy Ar raziy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

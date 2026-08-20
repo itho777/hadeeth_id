@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6528",
+  "name_en": "Qais bin Thalaq bin 'Ali",
+  "name_id": "Qais bin Thalaq bin 'Ali",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Yamamah",
+  "kunyah": "-",
+  "parents": "Al Hanafiy",
+  "nasab": "Al Hanafiy",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 0
+  }
+}

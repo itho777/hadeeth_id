@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1059",
+  "name_en": "Isma'il bin Muslim",
+  "name_id": "Isma'il bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "28",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 10,
+    "nasai": 0,
+    "ibnumajah": 11,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 6
+  }
+}

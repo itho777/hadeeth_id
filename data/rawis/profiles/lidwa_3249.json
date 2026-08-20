@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3249",
+  "name_en": "Sa'ad bin Tharif",
+  "name_id": "Sa'ad bin Tharif",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "11",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Iskaf Al Hanzhaliy",
+  "nasab": "Al Iskaf Al Hanzhaliy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 4,
+    "darimi": 0
+  }
+}

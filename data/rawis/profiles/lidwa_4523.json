@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4523",
+  "name_en": "\"Abdur Rahman bin Yunus bin Hasyim,maula Abi Ja'far Al Manshur\"",
+  "name_id": "\"Abdur Rahman bin Yunus bin Hasyim,maula Abi Ja'far Al Manshur\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "224 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Muslim",
+  "parents": "Al Mustamiliy Ar Ruumiy",
+  "nasab": "Al Mustamiliy Ar Ruumiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

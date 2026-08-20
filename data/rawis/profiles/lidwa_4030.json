@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4030",
+  "name_en": "Thalq bin 'Ali bin Al Mundzir",
+  "name_id": "Thalq bin 'Ali bin Al Mundzir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Yamamah",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Hanafiy As Suhaimiy",
+  "nasab": "Al Hanafiy As Suhaimiy",
+  "laqob": "-",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 18,
+    "malik": 0,
+    "darimi": 0
+  }
+}

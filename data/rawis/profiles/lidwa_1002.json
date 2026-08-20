@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1002",
+  "name_en": "Isma'il bin Ibrahim bin Ma'mar bin Al Hasan ",
+  "name_id": "Isma'il bin Ibrahim bin Ma'mar bin Al Hasan ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "236 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ma'mar",
+  "parents": "Al Hadzaliy Al Qayhi'iy",
+  "nasab": "Al Hadzaliy Al Qayhi'iy",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 3,
+    "abudaud": 8,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 14
+  }
+}

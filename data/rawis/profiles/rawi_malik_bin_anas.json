@@ -1,0 +1,29 @@
+{
+  "id": "rawi_malik_bin_anas",
+  "name_en": "Imam Malik bin Anas",
+  "name_id": "Imam Malik bin Anas",
+  "name_ar": "مالك بن أنس",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Hafiz / Imam",
+  "died_ah": "179",
+  "died_ce": "795",
+  "hadith_count": "1720",
+  "city_of_death": "Madinah",
+  "bio_en": "Imam of Madinah, founder of Maliki Madhhab, and compiler of Al-Muwatta.",
+  "books": [
+    "Muwatta Malik",
+    "Sahih al-Bukhari"
+  ],
+  "book_counts": {
+    "bukhari": 644,
+    "muslim": 346,
+    "abudaud": 302,
+    "tirmidzi": 165,
+    "nasai": 354,
+    "ibnumajah": 71,
+    "ahmad": 594,
+    "malik": 0,
+    "darimi": 131
+  }
+}

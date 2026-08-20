@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_719",
+  "name_en": "Anas bin Malik ",
+  "name_id": "Anas bin Malik ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Umayyah",
+  "parents": "Al Ka'biy Al Qusyairiy",
+  "nasab": "Al Ka'biy Al Qusyairiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

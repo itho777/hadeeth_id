@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6470",
+  "name_en": "Qurran bin Tammam",
+  "name_id": "Qurran bin Tammam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "181 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Tammam",
+  "parents": "Al Asadiy Al Kufiy",
+  "nasab": "Al Asadiy Al Kufiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 0
+  }
+}

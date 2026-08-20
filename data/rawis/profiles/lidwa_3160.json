@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3160",
+  "name_en": "Zaid bin Wahab",
+  "name_id": "Zaid bin Wahab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "96 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Sulaiman",
+  "parents": "Al Juhaniy Al Hamdaniy",
+  "nasab": "Al Juhaniy Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "113",
+  "book_counts": {
+    "bukhari": 27,
+    "muslim": 11,
+    "abudaud": 8,
+    "tirmidzi": 5,
+    "nasai": 6,
+    "ibnumajah": 6,
+    "ahmad": 48,
+    "malik": 0,
+    "darimi": 2
+  }
+}

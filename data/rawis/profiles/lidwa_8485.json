@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8485",
+  "name_en": "Yazid bin Na'amah",
+  "name_id": "Yazid bin Na'amah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Maudud",
+  "parents": "Adl Dlabbiy",
+  "nasab": "Adl Dlabbiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3631",
+  "name_en": "Sulaiman bin Musa",
+  "name_id": "Sulaiman bin Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "115 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ayyub",
+  "parents": "Al Umawiy Ad Damsyiqiy",
+  "nasab": "Al Umawiy Ad Damsyiqiy",
+  "laqob": "Al Asydaq",
+  "hadith_count": "121",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 12,
+    "tirmidzi": 6,
+    "nasai": 9,
+    "ibnumajah": 13,
+    "ahmad": 67,
+    "malik": 0,
+    "darimi": 14
+  }
+}

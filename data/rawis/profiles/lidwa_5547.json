@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5547",
+  "name_en": "Utsman bin 'Umair",
+  "name_id": "Utsman bin 'Umair",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Yaqzhan",
+  "parents": "Al Bajaliy",
+  "nasab": "Al Bajaliy",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 6,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4229",
+  "name_en": "Abdul Hamid bin Jubair bin Syaibah bin 'Utsman bin Abi Thalhah",
+  "name_id": "Abdul Hamid bin Jubair bin Syaibah bin 'Utsman bin Abi Thalhah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al 'Abdari Al Hajabiy",
+  "nasab": "Al 'Abdari Al Hajabiy",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 4
+  }
+}

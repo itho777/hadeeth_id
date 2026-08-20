@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5640",
+  "name_en": "Atha' bin Yasar",
+  "name_id": "Atha' bin Yasar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "103 H",
+  "city_of_death": "Iskandariyah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Hilaliy",
+  "nasab": "Al Hilaliy",
+  "laqob": "-",
+  "hadith_count": "416",
+  "book_counts": {
+    "bukhari": 61,
+    "muslim": 32,
+    "abudaud": 33,
+    "tirmidzi": 25,
+    "nasai": 30,
+    "ibnumajah": 28,
+    "ahmad": 150,
+    "malik": 36,
+    "darimi": 21
+  }
+}

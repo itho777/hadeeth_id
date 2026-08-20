@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_154",
+  "name_en": "Abu Hushain bin Yahya bin Sulaiman",
+  "name_id": "Abu Hushain bin Yahya bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Hushain ",
+  "parents": "Ar Raziy",
+  "nasab": "Ar Raziy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

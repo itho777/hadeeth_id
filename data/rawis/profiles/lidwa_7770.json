@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7770",
+  "name_en": "Musa bin Mas'ud",
+  "name_id": "Musa bin Mas'ud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "220 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hudzaifah",
+  "parents": "An Nahdiy",
+  "nasab": "An Nahdiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 2
+  }
+}

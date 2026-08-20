@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6613",
+  "name_en": "Kulaib bin Syihab bin Al Majnun",
+  "name_id": "Kulaib bin Syihab bin Al Majnun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Jarmiy",
+  "nasab": "Al Jarmiy",
+  "laqob": "-",
+  "hadith_count": "66",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 10,
+    "tirmidzi": 4,
+    "nasai": 16,
+    "ibnumajah": 7,
+    "ahmad": 26,
+    "malik": 0,
+    "darimi": 3
+  }
+}

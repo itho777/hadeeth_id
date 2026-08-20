@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6659",
+  "name_en": "Malik bin Anas bin Malik bin Abi 'Amir",
+  "name_id": "Malik bin Anas bin Malik bin Abi 'Amir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "179 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Ashbahiy Al Humairiy",
+  "nasab": "Al Ashbahiy Al Humairiy",
+  "laqob": "-",
+  "hadith_count": "2607",
+  "book_counts": {
+    "bukhari": 644,
+    "muslim": 346,
+    "abudaud": 302,
+    "tirmidzi": 165,
+    "nasai": 354,
+    "ibnumajah": 71,
+    "ahmad": 594,
+    "malik": 0,
+    "darimi": 131
+  }
+}

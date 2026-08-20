@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3381",
+  "name_en": "Sa'id bin 'Amru bin Sa'id bin Al 'Ash",
+  "name_id": "Sa'id bin 'Amru bin Sa'id bin Al 'Ash",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Umawiy Al Madaniy",
+  "nasab": "Al Umawiy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "54",
+  "book_counts": {
+    "bukhari": 18,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 0
+  }
+}

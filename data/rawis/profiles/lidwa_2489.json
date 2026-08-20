@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2489",
+  "name_en": "Hammad bin Khalid",
+  "name_id": "Hammad bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Khayyath",
+  "hadith_count": "100",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 8,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 84,
+    "malik": 0,
+    "darimi": 0
+  }
+}

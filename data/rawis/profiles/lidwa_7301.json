@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7301",
+  "name_en": "Muhammad bin Maimun",
+  "name_id": "Muhammad bin Maimun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu An Nadlor",
+  "parents": "Az Za'faraniy",
+  "nasab": "Az Za'faraniy",
+  "laqob": "Al Mafluj",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

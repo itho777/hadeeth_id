@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8458",
+  "name_en": "Yazid bin 'Abdul Malik bin Al Mughirah",
+  "name_id": "Yazid bin 'Abdul Malik bin Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "167 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Mughirah",
+  "parents": "Al Hasyimiy Al Qurasyiy",
+  "nasab": "Al Hasyimiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

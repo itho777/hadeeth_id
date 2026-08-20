@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7971",
+  "name_en": "Harun bin Ishaq bin Muhammad",
+  "name_id": "Harun bin Ishaq bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "258 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Qasim",
+  "parents": "Al Hamdaniy",
+  "nasab": "Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "47",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 20,
+    "nasai": 15,
+    "ibnumajah": 12,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

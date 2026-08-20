@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7815",
+  "name_en": "Maimun bin Abi Syabib",
+  "name_id": "Maimun bin Abi Syabib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "7",
+  "died_ah": "83 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Nashr",
+  "parents": "Ar Rib'iy",
+  "nasab": "Ar Rib'iy",
+  "laqob": "-",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 5,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 1
+  }
+}

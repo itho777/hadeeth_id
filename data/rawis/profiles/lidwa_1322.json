@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1322",
+  "name_en": "Al Husain bin Al Walid",
+  "name_id": "Al Husain bin Al Walid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "202 H",
+  "city_of_death": "Nihawand",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Ali",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

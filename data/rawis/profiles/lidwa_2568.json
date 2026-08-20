@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2568",
+  "name_en": "Hanzhalah bin Ar Rabi' bin Shayfiy",
+  "name_id": "Hanzhalah bin Ar Rabi' bin Shayfiy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Rib'iy",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Hanzhalah Al Katib",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

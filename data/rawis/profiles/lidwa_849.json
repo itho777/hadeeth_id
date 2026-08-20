@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_849",
+  "name_en": "Ibrahim bin 'Abdullah bin Hunain ",
+  "name_id": "Ibrahim bin 'Abdullah bin Hunain ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah ",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "54",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 9,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 21,
+    "ibnumajah": 3,
+    "ahmad": 11,
+    "malik": 2,
+    "darimi": 1
+  }
+}

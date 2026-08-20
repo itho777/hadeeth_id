@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5629",
+  "name_en": "Atha' bin As Sa'ib bin Malik",
+  "name_id": "Atha' bin As Sa'ib bin Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "136 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu As Sa'ib",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "317",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 21,
+    "tirmidzi": 28,
+    "nasai": 32,
+    "ibnumajah": 20,
+    "ahmad": 190,
+    "malik": 0,
+    "darimi": 25
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3618",
+  "name_en": "Sulaiman bin Qarm bin Mu'adz",
+  "name_id": "Sulaiman bin Qarm bin Mu'adz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Daud",
+  "parents": "At Tamimiy Adl Dlabbiy",
+  "nasab": "At Tamimiy Adl Dlabbiy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 0
+  }
+}

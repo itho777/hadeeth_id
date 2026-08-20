@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8598",
+  "name_en": "Yusuf bin Ya'qub bin Abi Al Qasim",
+  "name_id": "Yusuf bin Ya'qub bin Abi Al Qasim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "201 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ya'qub",
+  "parents": "As Sadusiy As Sulamiy",
+  "nasab": "As Sadusiy As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

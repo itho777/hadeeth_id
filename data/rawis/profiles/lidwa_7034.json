@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7034",
+  "name_en": "Muhammad bin Tharif bin Khalifah",
+  "name_id": "Muhammad bin Tharif bin Khalifah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "242 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Bajaliy",
+  "nasab": "Al Bajaliy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 12,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

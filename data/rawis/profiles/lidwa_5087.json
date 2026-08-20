@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5087",
+  "name_en": "Abdullah bin Mathar",
+  "name_id": "Abdullah bin Mathar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Raihanah",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

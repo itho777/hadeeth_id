@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6271",
+  "name_en": "Uwaimir bin Malik bin Qais bin Umayyah bin 'Amir",
+  "name_id": "Uwaimir bin Malik bin Qais bin Umayyah bin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "32 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ad Darda'",
+  "parents": "Al Anshariy Al Khazrajiy",
+  "nasab": "Al Anshariy Al Khazrajiy",
+  "laqob": "-",
+  "hadith_count": "264",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 15,
+    "abudaud": 25,
+    "tirmidzi": 24,
+    "nasai": 10,
+    "ibnumajah": 26,
+    "ahmad": 122,
+    "malik": 3,
+    "darimi": 26
+  }
+}

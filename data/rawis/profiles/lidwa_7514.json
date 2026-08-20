@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7514",
+  "name_en": "Mush'ab bin Sa'ad bin Abi Waqash",
+  "name_id": "Mush'ab bin Sa'ad bin Abi Waqash",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "103 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Zurarah",
+  "parents": "Az Zuhriy Al Madaniy",
+  "nasab": "Az Zuhriy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "87",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 12,
+    "abudaud": 5,
+    "tirmidzi": 9,
+    "nasai": 12,
+    "ibnumajah": 6,
+    "ahmad": 29,
+    "malik": 1,
+    "darimi": 4
+  }
+}

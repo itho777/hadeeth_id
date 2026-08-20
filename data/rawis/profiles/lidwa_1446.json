@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1446",
+  "name_en": "As Saa'ib bin Khallaad bin Suwaid",
+  "name_id": "As Saa'ib bin Khallaad bin Suwaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "71 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Sahlah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 13,
+    "malik": 1,
+    "darimi": 1
+  }
+}

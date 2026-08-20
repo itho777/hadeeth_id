@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7080",
+  "name_en": "Muhammad bin 'Abdul 'Aziz bin Rizmah",
+  "name_id": "Muhammad bin 'Abdul 'Aziz bin Rizmah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "241 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Yasykuriy Al Marwaziy",
+  "nasab": "Al Yasykuriy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 1,
+    "nasai": 10,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

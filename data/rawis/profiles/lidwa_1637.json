@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1637",
+  "name_en": "Al Musayyab bin Rafi'",
+  "name_id": "Al Musayyab bin Rafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "105 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al 'Alaa'",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al A'maa",
+  "hadith_count": "59",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 3,
+    "abudaud": 6,
+    "tirmidzi": 1,
+    "nasai": 12,
+    "ibnumajah": 4,
+    "ahmad": 23,
+    "malik": 0,
+    "darimi": 6
+  }
+}

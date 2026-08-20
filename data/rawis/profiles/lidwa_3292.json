@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3292",
+  "name_en": "Sa'id bin Al Harits bin Abi Sa'id bin Al Mu'allaa",
+  "name_id": "Sa'id bin Al Harits bin Abi Sa'id bin Al Mu'allaa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 2
+  }
+}

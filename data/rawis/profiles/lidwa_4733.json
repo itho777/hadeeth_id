@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4733",
+  "name_en": "Abdullah bin Baabah",
+  "name_id": "Abdullah bin Baabah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Makkiy Al Makhzumiy",
+  "nasab": "Al Makkiy Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "28",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 2
+  }
+}

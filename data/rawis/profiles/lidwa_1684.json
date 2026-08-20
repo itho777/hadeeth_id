@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1684",
+  "name_en": "Al Miqdad bin 'Amru bin Tsa'labah bin Malik",
+  "name_id": "Al Miqdad bin 'Amru bin Tsa'labah bin Malik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "33 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Aswad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Abu Al Aswad",
+  "hadith_count": "46",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 5,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 25,
+    "malik": 1,
+    "darimi": 0
+  }
+}

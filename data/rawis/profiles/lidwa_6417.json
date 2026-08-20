@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6417",
+  "name_en": "Fadlolah bin Al Fadlol bin Fadlolah",
+  "name_id": "Fadlolah bin Al Fadlol bin Fadlolah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "At Tamimiy Ath Thahawiy",
+  "nasab": "At Tamimiy Ath Thahawiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

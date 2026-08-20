@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4802",
+  "name_en": "Abdullah bin Rabah",
+  "name_id": "Abdullah bin Rabah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Khalid",
+  "parents": "Al Anshariy Al Madaniy",
+  "nasab": "Al Anshariy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "47",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 6,
+    "abudaud": 9,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 5
+  }
+}

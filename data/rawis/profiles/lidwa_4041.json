@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4041",
+  "name_en": "A'idz bin Habib bin Al Mallah",
+  "name_id": "A'idz bin Habib bin Al Mallah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "190 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ahmad ",
+  "parents": "Al 'Abasiy",
+  "nasab": "Al 'Abasiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

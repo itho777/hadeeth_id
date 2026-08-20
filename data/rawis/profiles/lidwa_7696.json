@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7696",
+  "name_en": "Mahdiy bin Ja'far bin Hayyan",
+  "name_id": "Mahdiy bin Ja'far bin Hayyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Ar Ramliy",
+  "nasab": "Ar Ramliy",
+  "laqob": "Az Zahid",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

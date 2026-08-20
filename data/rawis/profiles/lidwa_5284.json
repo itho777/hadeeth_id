@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5284",
+  "name_en": "Abdul Wahhab bin Yahya bin 'Abbad",
+  "name_id": "Abdul Wahhab bin Yahya bin 'Abbad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Asadiy Az Zubairiy",
+  "nasab": "Al Asadiy Az Zubairiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

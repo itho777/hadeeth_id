@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6729",
+  "name_en": "Mahbub bin Musa",
+  "name_id": "Mahbub bin Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "230 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Shalih",
+  "parents": "Al Anthakiy Al Farra'",
+  "nasab": "Al Anthakiy Al Farra'",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 16,
+    "tirmidzi": 0,
+    "nasai": 11,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

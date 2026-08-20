@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7783",
+  "name_en": "Rawi terputus",
+  "name_id": "Rawi terputus",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "1462",
+  "book_counts": {
+    "bukhari": 18,
+    "muslim": 8,
+    "abudaud": 81,
+    "tirmidzi": 168,
+    "nasai": 98,
+    "ibnumajah": 99,
+    "ahmad": 580,
+    "malik": 189,
+    "darimi": 221
+  }
+}

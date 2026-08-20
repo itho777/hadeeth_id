@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4775",
+  "name_en": "Abdullah bin Hafsh",
+  "name_id": "Abdullah bin Hafsh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

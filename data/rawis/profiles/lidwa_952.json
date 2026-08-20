@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_952",
+  "name_en": "Ishaq bin 'Abdullah bin Abi Thalhah Zaid bin Sahal ",
+  "name_id": "Ishaq bin 'Abdullah bin Abi Thalhah Zaid bin Sahal ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Anshariy An Najariy",
+  "nasab": "Al Anshariy An Najariy",
+  "laqob": "-",
+  "hadith_count": "249",
+  "book_counts": {
+    "bukhari": 58,
+    "muslim": 33,
+    "abudaud": 13,
+    "tirmidzi": 12,
+    "nasai": 20,
+    "ibnumajah": 9,
+    "ahmad": 73,
+    "malik": 20,
+    "darimi": 11
+  }
+}

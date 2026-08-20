@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_419",
+  "name_en": "Ahmad bin Ash Shabbah bin Abu Suraij",
+  "name_id": "Ahmad bin Ash Shabbah bin Abu Suraij",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "Rayi",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ja'far",
+  "parents": "An Nahsyaliy Al Muqri'iy",
+  "nasab": "An Nahsyaliy Al Muqri'iy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3298",
+  "name_en": "Sa'id bin Al Marzuban",
+  "name_id": "Sa'id bin Al Marzuban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Sa'ad",
+  "parents": "Al Biqal Al 'Abasiy",
+  "nasab": "Al Biqal Al 'Abasiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

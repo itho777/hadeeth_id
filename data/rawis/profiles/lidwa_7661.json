@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7661",
+  "name_en": "Mulazimbin 'Amru bin 'Abdullah ",
+  "name_id": "Mulazimbin 'Amru bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Yamamah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Hanafiy As Suhaimiy",
+  "nasab": "Al Hanafiy As Suhaimiy",
+  "laqob": "Luzaim",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 4,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

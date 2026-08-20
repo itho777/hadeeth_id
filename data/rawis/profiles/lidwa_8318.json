@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8318",
+  "name_en": "Yahya bin 'Umarah bin Abi Hasan",
+  "name_id": "Yahya bin 'Umarah bin Abi Hasan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Maziniy Al Anshariy",
+  "nasab": "Al Maziniy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "102",
+  "book_counts": {
+    "bukhari": 17,
+    "muslim": 11,
+    "abudaud": 8,
+    "tirmidzi": 7,
+    "nasai": 13,
+    "ibnumajah": 7,
+    "ahmad": 30,
+    "malik": 5,
+    "darimi": 4
+  }
+}

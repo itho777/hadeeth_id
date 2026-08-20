@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6012",
+  "name_en": "Umar bin Maimun bin Bahr",
+  "name_id": "Umar bin Maimun bin Bahr",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "171 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Balkhiy",
+  "nasab": "Al Balkhiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

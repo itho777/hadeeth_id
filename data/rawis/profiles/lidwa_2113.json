@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2113",
+  "name_en": "Jartsum",
+  "name_id": "Jartsum",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "75 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "69",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 7,
+    "abudaud": 9,
+    "tirmidzi": 8,
+    "nasai": 8,
+    "ibnumajah": 5,
+    "ahmad": 21,
+    "malik": 1,
+    "darimi": 4
+  }
+}

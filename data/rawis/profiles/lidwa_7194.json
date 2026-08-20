@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7194",
+  "name_en": "Muhammad bin 'Ali bin Yazid bion Rukanah",
+  "name_id": "Muhammad bin 'Ali bin Yazid bion Rukanah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hijaz",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al Muthallibiy",
+  "nasab": "Al Qurasyiy Al Muthallibiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

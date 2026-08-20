@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3802",
+  "name_en": "Syu'aib bin Ayyub bin Ruzoiq",
+  "name_id": "Syu'aib bin Ayyub bin Ruzoiq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "261 H",
+  "city_of_death": "Hait",
+  "residence": "Shubhan",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Wasithiy Ash Sharifainiy",
+  "nasab": "Al Wasithiy Ash Sharifainiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1263",
+  "name_en": "Al Hasan bin Daud bin Muhammad bin Al Munkadir",
+  "name_id": "Al Hasan bin Daud bin Muhammad bin Al Munkadir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "247 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "At Taymiy Al Munkadiriy",
+  "nasab": "At Taymiy Al Munkadiriy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

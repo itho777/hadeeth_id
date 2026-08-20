@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2453",
+  "name_en": "Hafshah binti Sirin",
+  "name_id": "Hafshah binti Sirin",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Ummu Al Hudzail",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "138",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 15,
+    "abudaud": 9,
+    "tirmidzi": 7,
+    "nasai": 10,
+    "ibnumajah": 9,
+    "ahmad": 55,
+    "malik": 0,
+    "darimi": 8
+  }
+}

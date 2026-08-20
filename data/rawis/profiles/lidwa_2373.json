@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2373",
+  "name_en": "Hassan bin Tsabit bin Al Mundzir",
+  "name_id": "Hassan bin Tsabit bin Al Mundzir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "54 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Sya'ir Rasululloh SAW ",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

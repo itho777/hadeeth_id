@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8549",
+  "name_en": "Ya'laa bin 'Ubaid bin Umayyah",
+  "name_id": "Ya'laa bin 'Ubaid bin Umayyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "209 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Yusuf",
+  "parents": "Ath Thanafisiy Al Ayadiy",
+  "nasab": "Ath Thanafisiy Al Ayadiy",
+  "laqob": "-",
+  "hadith_count": "259",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 2,
+    "abudaud": 6,
+    "tirmidzi": 6,
+    "nasai": 15,
+    "ibnumajah": 22,
+    "ahmad": 123,
+    "malik": 0,
+    "darimi": 79
+  }
+}

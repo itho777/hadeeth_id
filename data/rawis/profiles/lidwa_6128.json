@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6128",
+  "name_en": "Amru bin Zurarah bin Waqid",
+  "name_id": "Amru bin Zurarah bin Waqid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "238 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Kilabiy An Naysaburiy",
+  "nasab": "Al Kilabiy An Naysaburiy",
+  "laqob": "-",
+  "hadith_count": "45",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 6,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 19,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 6
+  }
+}

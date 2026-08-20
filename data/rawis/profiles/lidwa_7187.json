@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7187",
+  "name_en": "Muhammad bin 'Ali bin Al Husain bin 'Ali bin Abi Thalib",
+  "name_id": "Muhammad bin 'Ali bin Al Husain bin 'Ali bin Abi Thalib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "114 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "Al Baqir",
+  "hadith_count": "244",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 19,
+    "abudaud": 17,
+    "tirmidzi": 23,
+    "nasai": 56,
+    "ibnumajah": 24,
+    "ahmad": 65,
+    "malik": 15,
+    "darimi": 13
+  }
+}

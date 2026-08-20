@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5511",
+  "name_en": "Utsman bin Hayyan bin Ma'bad",
+  "name_id": "Utsman bin Hayyan bin Ma'bad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "150 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "AbuAl Mughra'",
+  "parents": "Al Muzaniy Ad Damasyqiy",
+  "nasab": "Al Muzaniy Ad Damasyqiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

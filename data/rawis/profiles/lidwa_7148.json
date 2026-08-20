@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7148",
+  "name_en": "Muhammad bin 'Ubaid bin Abi Umayyah",
+  "name_id": "Muhammad bin 'Ubaid bin Abi Umayyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "204 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ath Thanafisiy",
+  "nasab": "Ath Thanafisiy",
+  "laqob": "Al Ahdab",
+  "hadith_count": "268",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 3,
+    "abudaud": 9,
+    "tirmidzi": 4,
+    "nasai": 7,
+    "ibnumajah": 14,
+    "ahmad": 224,
+    "malik": 0,
+    "darimi": 1
+  }
+}

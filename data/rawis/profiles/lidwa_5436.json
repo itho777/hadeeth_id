@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5436",
+  "name_en": "\"Ubaidullah bin Miqsam, maula Ibnu Abi Namar\"",
+  "name_id": "\"Ubaidullah bin Miqsam, maula Ibnu Abi Namar\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 6,
+    "abudaud": 5,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 4,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

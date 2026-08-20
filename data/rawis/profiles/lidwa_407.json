@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_407",
+  "name_en": "Ahmad bin Ibrahim bin Katsir",
+  "name_id": "Ahmad bin Ibrahim bin Katsir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "246 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "An Nukriy Ad Dawraqiy",
+  "nasab": "An Nukriy Ad Dawraqiy",
+  "laqob": "-",
+  "hadith_count": "41",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 9,
+    "abudaud": 18,
+    "tirmidzi": 12,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

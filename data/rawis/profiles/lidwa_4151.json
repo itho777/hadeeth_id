@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4151",
+  "name_en": "Abbad bin Ya'qub",
+  "name_id": "Abbad bin Ya'qub",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Ar Ruwajaniy Al Asadiy",
+  "nasab": "Ar Ruwajaniy Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

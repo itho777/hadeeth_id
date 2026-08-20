@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1823",
+  "name_en": "Badzan",
+  "name_id": "Badzan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Shalih",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 5,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

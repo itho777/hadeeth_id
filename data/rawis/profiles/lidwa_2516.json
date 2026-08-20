@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2516",
+  "name_en": "Hamzah bin 'Abdi Kulal",
+  "name_id": "Hamzah bin 'Abdi Kulal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Ar Ru'ainiy Al Mash",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

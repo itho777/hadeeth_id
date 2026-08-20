@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3937",
+  "name_en": "Shafwan bin Al Mu'aththal bin Ribi'ah bin Khuza'iy bin Muharib",
+  "name_id": "Shafwan bin Al Mu'aththal bin Ribi'ah bin Khuza'iy bin Muharib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "19 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu 'Amru",
+  "parents": "As Salmiy Adz Dzakwaniy",
+  "nasab": "As Salmiy Adz Dzakwaniy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

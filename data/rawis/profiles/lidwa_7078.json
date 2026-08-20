@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7078",
+  "name_en": "Muhammad bin 'Abdur Rahim bin Abi Zuhair",
+  "name_id": "Muhammad bin 'Abdur Rahim bin Abi Zuhair",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "255 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Yahya",
+  "parents": "Al 'Adawiy Al Bazzaz",
+  "nasab": "Al 'Adawiy Al Bazzaz",
+  "laqob": "Sha'iqah",
+  "hadith_count": "51",
+  "book_counts": {
+    "bukhari": 30,
+    "muslim": 0,
+    "abudaud": 10,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

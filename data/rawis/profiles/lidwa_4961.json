@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4961",
+  "name_en": "Abdullah bin 'Ali",
+  "name_id": "Abdullah bin 'Ali",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ayyub",
+  "parents": "Al Afriqiy",
+  "nasab": "Al Afriqiy",
+  "laqob": "Al Azraq",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

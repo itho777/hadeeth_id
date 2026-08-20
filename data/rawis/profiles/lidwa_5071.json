@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5071",
+  "name_en": "Abdullah bin Muhairiz bin Janadah",
+  "name_id": "Abdullah bin Muhairiz bin Janadah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "99 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Muhairiz",
+  "parents": "Al Jamhiy Al Makkiy",
+  "nasab": "Al Jamhiy Al Makkiy",
+  "laqob": "-",
+  "hadith_count": "58",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 4,
+    "abudaud": 6,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 6,
+    "ahmad": 20,
+    "malik": 2,
+    "darimi": 7
+  }
+}

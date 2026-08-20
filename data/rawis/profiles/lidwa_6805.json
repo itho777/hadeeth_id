@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6805",
+  "name_en": "Muhammad bin Idris bin Al 'Abbas bin 'Utsman bin Syafi'",
+  "name_id": "Muhammad bin Idris bin Al 'Abbas bin 'Utsman bin Syafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "204 H",
+  "city_of_death": "Maru ",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Asy Syafi'iy Al Muthallibiy",
+  "nasab": "Asy Syafi'iy Al Muthallibiy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 2
+  }
+}

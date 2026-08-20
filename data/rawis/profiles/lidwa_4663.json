@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4663",
+  "name_en": "Abdullah bin Unais",
+  "name_id": "Abdullah bin Unais",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "54 H",
+  "city_of_death": "Syam",
+  "residence": "Madinah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Juhaniy",
+  "nasab": "Al Juhaniy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

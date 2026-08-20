@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3023",
+  "name_en": "Zakariya bin Yahya bin Shalih bin Sulaiman",
+  "name_id": "Zakariya bin Yahya bin Shalih bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "232 H",
+  "city_of_death": "Baghlan",
+  "residence": "Himash",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Lu'lu'iy Al Balkhiy",
+  "nasab": "Al Lu'lu'iy Al Balkhiy",
+  "laqob": "Ibnu Abi Zakariya",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

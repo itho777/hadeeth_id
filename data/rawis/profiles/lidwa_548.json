@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_548",
+  "name_en": "Aslam maula Rasululloh SAW ",
+  "name_id": "Aslam maula Rasululloh SAW ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Rafi'",
+  "parents": "Al Qibthiy",
+  "nasab": "Al Qibthiy",
+  "laqob": "Maula Rasululloh SAW ",
+  "hadith_count": "90",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 4,
+    "abudaud": 9,
+    "tirmidzi": 7,
+    "nasai": 4,
+    "ibnumajah": 14,
+    "ahmad": 43,
+    "malik": 0,
+    "darimi": 4
+  }
+}

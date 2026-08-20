@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5776",
+  "name_en": "Ali bin Sahal bin Qadim",
+  "name_id": "Ali bin Sahal bin Qadim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "261 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Harsyiy Ar Ramliy",
+  "nasab": "Al Harsyiy Ar Ramliy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 9,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

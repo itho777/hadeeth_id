@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8268",
+  "name_en": "Yahya bin Sa'id bin Abban bin Sa'id bin Al 'Ash bin Umayyah",
+  "name_id": "Yahya bin Sa'id bin Abban bin Sa'id bin Al 'Ash bin Umayyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "194 H",
+  "city_of_death": "Baghdad",
+  "residence": "Kufah",
+  "kunyah": "Abu Ayyub",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "Jamal",
+  "hadith_count": "70",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 12,
+    "abudaud": 2,
+    "tirmidzi": 10,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 29,
+    "malik": 0,
+    "darimi": 4
+  }
+}

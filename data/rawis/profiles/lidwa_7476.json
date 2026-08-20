@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7476",
+  "name_en": "Muslim bin 'Imran",
+  "name_id": "Muslim bin 'Imran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Kufiy",
+  "nasab": "Al Kufiy",
+  "laqob": "Al Bathin",
+  "hadith_count": "54",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 5,
+    "abudaud": 5,
+    "tirmidzi": 5,
+    "nasai": 7,
+    "ibnumajah": 4,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 4
+  }
+}

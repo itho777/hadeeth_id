@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_461",
+  "name_en": "Ahmad bin 'Abdullah bin 'Ali bin Suwaid bin Manjuf",
+  "name_id": "Ahmad bin 'Abdullah bin 'Ali bin Suwaid bin Manjuf",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "252 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "As Saduudiy Al Manjufiy",
+  "nasab": "As Saduudiy Al Manjufiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

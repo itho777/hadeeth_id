@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_864",
+  "name_en": "Ibrahim bin 'Umar bin Mutharrif",
+  "name_id": "Ibrahim bin 'Umar bin Mutharrif",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "212 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Hasyimiy Al Makkiy",
+  "nasab": "Al Hasyimiy Al Makkiy",
+  "laqob": "Ibnu Abi Al Wazir",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

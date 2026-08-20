@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2576",
+  "name_en": "Hawa'",
+  "name_id": "Hawa'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Bujaid",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 2,
+    "darimi": 0
+  }
+}

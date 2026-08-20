@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3189",
+  "name_en": "Salim bin Sarj",
+  "name_id": "Salim bin Sarj",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu An Nu'man",
+  "parents": "Al Juhaniy",
+  "nasab": "Al Juhaniy",
+  "laqob": "Ibnu Kharbudz",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

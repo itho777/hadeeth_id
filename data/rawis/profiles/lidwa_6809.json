@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6809",
+  "name_en": "Muhammad bin Ishaq bin Muhammad bin 'Abdur Rahman",
+  "name_id": "Muhammad bin Ishaq bin Muhammad bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "236 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Musayyabiy Al Makhzumiy",
+  "nasab": "Al Musayyabiy Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 9,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

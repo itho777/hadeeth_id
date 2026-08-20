@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2641",
+  "name_en": "Khalid bin Dzakwan",
+  "name_id": "Khalid bin Dzakwan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

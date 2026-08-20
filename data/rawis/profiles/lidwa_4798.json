@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4798",
+  "name_en": "Abdullah bin Dzakwan Abu Az Zanad",
+  "name_id": "Abdullah bin Dzakwan Abu Az Zanad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "130 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Qurasyiy ",
+  "nasab": "Al Qurasyiy ",
+  "laqob": "Abu Az Zannad",
+  "hadith_count": "805",
+  "book_counts": {
+    "bukhari": 156,
+    "muslim": 112,
+    "abudaud": 47,
+    "tirmidzi": 37,
+    "nasai": 61,
+    "ibnumajah": 31,
+    "ahmad": 273,
+    "malik": 65,
+    "darimi": 23
+  }
+}

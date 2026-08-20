@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8101",
+  "name_en": "Hind binti Abi Umayyah bin Al Mughirah",
+  "name_id": "Hind binti Abi Umayyah bin Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "6",
+  "died_ah": "62 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Salamah",
+  "parents": "Al Makhzumiyyah",
+  "nasab": "Al Makhzumiyyah",
+  "laqob": "Ummu Al Mu'minin",
+  "hadith_count": "622",
+  "book_counts": {
+    "bukhari": 49,
+    "muslim": 43,
+    "abudaud": 53,
+    "tirmidzi": 44,
+    "nasai": 69,
+    "ibnumajah": 55,
+    "ahmad": 274,
+    "malik": 15,
+    "darimi": 20
+  }
+}

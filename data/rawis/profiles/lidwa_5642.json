@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5642",
+  "name_en": "Athaf bin Khalid bin 'Abdullah",
+  "name_id": "Athaf bin Khalid bin 'Abdullah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Shafwan",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 0
+  }
+}

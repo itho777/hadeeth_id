@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7582",
+  "name_en": "Mu'awiyah bin Suwaid bin Muqrin",
+  "name_id": "Mu'awiyah bin Suwaid bin Muqrin",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Muzaniy",
+  "nasab": "Al Muzaniy",
+  "laqob": "-",
+  "hadith_count": "28",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

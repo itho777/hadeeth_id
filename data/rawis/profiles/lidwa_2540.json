@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2540",
+  "name_en": "Humaid bin 'Abdur Rahman",
+  "name_id": "Humaid bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 8,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 21,
+    "malik": 0,
+    "darimi": 5
+  }
+}

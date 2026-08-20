@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6618",
+  "name_en": "Kinnaz bin Al Hushain bin Yarbu'",
+  "name_id": "Kinnaz bin Al Hushain bin Yarbu'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "12 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Mirtsad",
+  "parents": "Al Ghanawiy",
+  "nasab": "Al Ghanawiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

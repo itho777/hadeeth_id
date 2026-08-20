@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_729",
+  "name_en": "Aus bin Khalid ",
+  "name_id": "Aus bin Khalid ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Khalid",
+  "parents": "Al Hijaziy ",
+  "nasab": "Al Hijaziy ",
+  "laqob": "Ibnu Abi Aus",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

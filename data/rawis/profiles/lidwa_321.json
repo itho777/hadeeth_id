@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_321",
+  "name_en": "Abu Laila bin 'Abdullah bin 'Abdur Rahman bin Sahal",
+  "name_id": "Abu Laila bin 'Abdullah bin 'Abdur Rahman bin Sahal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Laila",
+  "parents": "Al Ansharit Al Haritsiy",
+  "nasab": "Al Ansharit Al Haritsiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 1,
+    "darimi": 0
+  }
+}

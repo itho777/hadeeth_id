@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1251",
+  "name_en": "Al Hasan bin Al Hasan bin 'Ali bin Abi Thalib",
+  "name_id": "Al Hasan bin Al Hasan bin 'Ali bin Abi Thalib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "97 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qurasyiy Al Hasyimiy",
+  "nasab": "Al Qurasyiy Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7716",
+  "name_en": "Musa bin Anas bin Malik",
+  "name_id": "Musa bin Anas bin Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 5,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_339",
+  "name_en": "Abu Muslim maula Zaid bin Shuwhan",
+  "name_id": "Abu Muslim maula Zaid bin Shuwhan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Muslim",
+  "parents": "Al 'Abdiy",
+  "nasab": "Al 'Abdiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

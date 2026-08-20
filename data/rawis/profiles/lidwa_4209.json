@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4209",
+  "name_en": "Abdul A'laa bin Mushir bin 'Abdul A'laa bin Muslim",
+  "name_id": "Abdul A'laa bin Mushir bin 'Abdul A'laa bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "218 H",
+  "city_of_death": "Baghdad",
+  "residence": "Syam",
+  "kunyah": "Abu Mushir",
+  "parents": "Al Ghassaniy",
+  "nasab": "Al Ghassaniy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

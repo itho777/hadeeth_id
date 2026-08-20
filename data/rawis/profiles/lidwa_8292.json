@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8292",
+  "name_en": "Yahya bin 'Abdul 'Aziz",
+  "name_id": "Yahya bin 'Abdul 'Aziz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdul 'Aziz",
+  "parents": "Al Urduniy",
+  "nasab": "Al Urduniy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

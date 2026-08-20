@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8145",
+  "name_en": "Wabarah bin 'Abdur Rahman",
+  "name_id": "Wabarah bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "116 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Khuzaimah",
+  "parents": "Al Musaliy",
+  "nasab": "Al Musaliy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

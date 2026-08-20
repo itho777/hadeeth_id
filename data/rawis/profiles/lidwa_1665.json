@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1665",
+  "name_en": "Al Mughirah bin Syu'bah bin Abi 'Amir",
+  "name_id": "Al Mughirah bin Syu'bah bin Abi 'Amir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "50 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Isa",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "276",
+  "book_counts": {
+    "bukhari": 35,
+    "muslim": 31,
+    "abudaud": 22,
+    "tirmidzi": 23,
+    "nasai": 24,
+    "ibnumajah": 21,
+    "ahmad": 103,
+    "malik": 2,
+    "darimi": 15
+  }
+}

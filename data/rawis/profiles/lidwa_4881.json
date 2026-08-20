@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4881",
+  "name_en": "Abdullah bin 'Amir bin Yazid",
+  "name_id": "Abdullah bin 'Amir bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "118 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Imran",
+  "parents": "Al Yahshabiy Ad Damsyiqiy",
+  "nasab": "Al Yahshabiy Ad Damsyiqiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

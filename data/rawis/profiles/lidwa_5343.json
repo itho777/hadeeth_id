@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5343",
+  "name_en": "Ubaid bin Mihran",
+  "name_id": "Ubaid bin Mihran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Kufiy",
+  "nasab": "Al Kufiy",
+  "laqob": "Al Maktab",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

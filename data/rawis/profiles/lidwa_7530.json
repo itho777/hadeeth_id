@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7530",
+  "name_en": "Mutharrif bin Tharif",
+  "name_id": "Mutharrif bin Tharif",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "141 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Haritsiy",
+  "nasab": "Al Haritsiy",
+  "laqob": "-",
+  "hadith_count": "97",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 9,
+    "abudaud": 11,
+    "tirmidzi": 5,
+    "nasai": 12,
+    "ibnumajah": 4,
+    "ahmad": 36,
+    "malik": 0,
+    "darimi": 10
+  }
+}

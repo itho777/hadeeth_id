@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8605",
+  "name_en": "Yunus bin Al Qasim",
+  "name_id": "Yunus bin Al Qasim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Yamamah ",
+  "kunyah": "Abu 'Umar",
+  "parents": "Al Hanafiy",
+  "nasab": "Al Hanafiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4040",
+  "name_en": "Zhuhair bin Rafi' bin 'Adiy bin Zaid bin Jasym bin Haritsah",
+  "name_id": "Zhuhair bin Rafi' bin 'Adiy bin Zaid bin Jasym bin Haritsah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy Al Ausiy",
+  "nasab": "Al Anshariy Al Ausiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "rawi_al_tirmidhi",
+  "name_en": "Imam al-Tirmidhi",
+  "name_id": "Imam at-Tirmidhi",
+  "name_ar": "أبو عيسى الترمذي",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz",
+  "died_ah": "279",
+  "died_ce": "892",
+  "hadith_count": "3956",
+  "city_of_death": "Termez",
+  "bio_en": "Compiler of Jami' at-Tirmidhi, pioneer of Hadith grading terminology (Sahih, Hasan, Gharib).",
+  "books": [
+    "Jami' at-Tirmidhi"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

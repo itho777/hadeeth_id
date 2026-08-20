@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_801",
+  "name_en": "Ibrahim bin Al Hasan ",
+  "name_id": "Ibrahim bin Al Hasan ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Bahiliy Al Muqriy",
+  "nasab": "Al Bahiliy Al Muqriy",
+  "laqob": "Al 'Allaaf",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

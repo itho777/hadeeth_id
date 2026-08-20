@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7317",
+  "name_en": "Muhammad bin Yahya bin Abi 'Umar",
+  "name_id": "Muhammad bin Yahya bin Abi 'Umar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "243 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Adaniy",
+  "nasab": "Al 'Adaniy",
+  "laqob": "-",
+  "hadith_count": "483",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 285,
+    "abudaud": 0,
+    "tirmidzi": 180,
+    "nasai": 0,
+    "ibnumajah": 17,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

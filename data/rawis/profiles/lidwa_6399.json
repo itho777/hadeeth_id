@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6399",
+  "name_en": "Firas bin Yahya",
+  "name_id": "Firas bin Yahya",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "129 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Hamdaniy Al Maktab",
+  "nasab": "Al Hamdaniy Al Maktab",
+  "laqob": "-",
+  "hadith_count": "74",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 5,
+    "abudaud": 5,
+    "tirmidzi": 5,
+    "nasai": 6,
+    "ibnumajah": 6,
+    "ahmad": 30,
+    "malik": 0,
+    "darimi": 6
+  }
+}

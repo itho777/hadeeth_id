@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_645",
+  "name_en": "Ummu 'Abdul Malik bin Abu Mahdzurah",
+  "name_id": "Ummu 'Abdul Malik bin Abu Mahdzurah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Ummu 'Abdul Malik",
+  "parents": "Al Makkiyah",
+  "nasab": "Al Makkiyah",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6382",
+  "name_en": "Fakhitah binti Abi Thalib",
+  "name_id": "Fakhitah binti Abi Thalib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Hani'",
+  "parents": "Al Hasyimiyyah",
+  "nasab": "Al Hasyimiyyah",
+  "laqob": "-",
+  "hadith_count": "87",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 6,
+    "abudaud": 5,
+    "tirmidzi": 9,
+    "nasai": 4,
+    "ibnumajah": 10,
+    "ahmad": 39,
+    "malik": 2,
+    "darimi": 5
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6120",
+  "name_en": "Amru bin Khalid bin Farrukh bin Sa'id",
+  "name_id": "Amru bin Khalid bin Farrukh bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "229 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Anu Al hasan",
+  "parents": "At tamimiy Al Hanzhaliy",
+  "nasab": "At tamimiy Al Hanzhaliy",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

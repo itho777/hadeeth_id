@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5772",
+  "name_en": "Ali bin Sa'id biin Jarir",
+  "name_id": "Ali bin Sa'id biin Jarir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "257 H",
+  "city_of_death": "-",
+  "residence": "Nihawand",
+  "kunyah": "Abu Al Hasan",
+  "parents": "An Nasa'iy",
+  "nasab": "An Nasa'iy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

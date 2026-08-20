@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4533",
+  "name_en": "Abdur Razzaq bin Hammam bin Nafi'",
+  "name_id": "Abdur Razzaq bin Hammam bin Nafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "211 H",
+  "city_of_death": "Yaman",
+  "residence": "Yaman",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Humairiy Ash Shan'aniy",
+  "nasab": "Al Humairiy Ash Shan'aniy",
+  "laqob": "-",
+  "hadith_count": "2651",
+  "book_counts": {
+    "bukhari": 120,
+    "muslim": 399,
+    "abudaud": 172,
+    "tirmidzi": 131,
+    "nasai": 99,
+    "ibnumajah": 76,
+    "ahmad": 1646,
+    "malik": 0,
+    "darimi": 8
+  }
+}

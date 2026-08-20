@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2905",
+  "name_en": "Rabi'ah bin Yazid",
+  "name_id": "Rabi'ah bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "121 H",
+  "city_of_death": "Ifriqiyah",
+  "residence": "Syam",
+  "kunyah": "Abu Syu'aib",
+  "parents": "Ad Dimasyqi Al Iyadi",
+  "nasab": "Ad Dimasyqi Al Iyadi",
+  "laqob": "Al Qashir",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 10,
+    "abudaud": 7,
+    "tirmidzi": 7,
+    "nasai": 7,
+    "ibnumajah": 6,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 5
+  }
+}

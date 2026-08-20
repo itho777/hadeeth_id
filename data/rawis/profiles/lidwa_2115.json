@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2115",
+  "name_en": "Jarhad bin Razah bin 'Adiy",
+  "name_id": "Jarhad bin Razah bin 'Adiy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "61 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

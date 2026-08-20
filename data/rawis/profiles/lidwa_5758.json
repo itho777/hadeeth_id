@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5758",
+  "name_en": "Ali bin Harb bin Muhammad",
+  "name_id": "Ali bin Harb bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "265 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Ath Tha'iy Al Maushuliy",
+  "nasab": "Ath Tha'iy Al Maushuliy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8213",
+  "name_en": "Yahya bin Ayyub",
+  "name_id": "Yahya bin Ayyub",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "168 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "Al Ghafiqiy",
+  "nasab": "Al Ghafiqiy",
+  "laqob": "-",
+  "hadith_count": "124",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 7,
+    "abudaud": 24,
+    "tirmidzi": 18,
+    "nasai": 9,
+    "ibnumajah": 12,
+    "ahmad": 36,
+    "malik": 0,
+    "darimi": 5
+  }
+}

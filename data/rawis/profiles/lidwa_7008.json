@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7008",
+  "name_en": "Muhammad bin Sulaiman bin Hisyam",
+  "name_id": "Muhammad bin Sulaiman bin Hisyam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "265 H",
+  "city_of_death": "Karakh",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Yasykuriy Asy Syathawiy",
+  "nasab": "Al Yasykuriy Asy Syathawiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

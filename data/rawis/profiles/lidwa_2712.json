@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2712",
+  "name_en": "Khuzaiman bin Jaza'",
+  "name_id": "Khuzaiman bin Jaza'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

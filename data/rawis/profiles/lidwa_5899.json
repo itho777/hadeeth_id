@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5899",
+  "name_en": "Umar bin Abi Salamah 'Abdullah bin 'Abdu Al Asad",
+  "name_id": "Umar bin Abi Salamah 'Abdullah bin 'Abdu Al Asad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "83 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Hafsh",
+  "parents": "Al Makhzumiy Al Qurasiy",
+  "nasab": "Al Makhzumiy Al Qurasiy",
+  "laqob": "Rabibu (anak tiri lak laki) Nabi SAW",
+  "hadith_count": "43",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 6,
+    "abudaud": 3,
+    "tirmidzi": 5,
+    "nasai": 2,
+    "ibnumajah": 4,
+    "ahmad": 15,
+    "malik": 1,
+    "darimi": 2
+  }
+}

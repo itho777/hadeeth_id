@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5701",
+  "name_en": "Ikrimah bin 'Abdur Rahman bin Al Harits bin Hisyam bin Al Mughirah",
+  "name_id": "Ikrimah bin 'Abdur Rahman bin Al Harits bin Hisyam bin Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "103 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Mkhzumiy Al Qurasyiy",
+  "nasab": "Al Mkhzumiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

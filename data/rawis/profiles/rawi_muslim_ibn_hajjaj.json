@@ -1,0 +1,28 @@
+{
+  "id": "rawi_muslim_ibn_hajjaj",
+  "name_en": "Imam Muslim ibn al-Hajjaj",
+  "name_id": "Imam Muslim ibn al-Hajjaj",
+  "name_ar": "مسلم بن الحجاج",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Amir al-Mu'minin fi al-Hadith",
+  "died_ah": "261",
+  "died_ce": "875",
+  "hadith_count": "7500",
+  "city_of_death": "Nishapur",
+  "bio_en": "Author of Sahih Muslim, renowned for immaculate sanad arrangement.",
+  "books": [
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

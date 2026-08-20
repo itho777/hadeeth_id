@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5790",
+  "name_en": "Ali bin 'Abdullah ",
+  "name_id": "Ali bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Bariqiy Al Azdiy",
+  "nasab": "Al Bariqiy Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7706",
+  "name_en": "Muwarriq bin Misymaraj",
+  "name_id": "Muwarriq bin Misymaraj",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "105 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Mu'tamir",
+  "parents": "Al 'Ijliy",
+  "nasab": "Al 'Ijliy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4679",
+  "name_en": "Abdullah bin Al Jarrah bin Sa'id",
+  "name_id": "Abdullah bin Al Jarrah bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "237 H",
+  "city_of_death": "Qazwain",
+  "residence": "Himsh",
+  "kunyah": "Abu Muhammad",
+  "parents": "At Tamimiy Al Quhistaniy",
+  "nasab": "At Tamimiy Al Quhistaniy",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 10,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 9,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

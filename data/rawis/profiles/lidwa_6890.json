@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6890",
+  "name_en": "Muhammad bin Tasbit ",
+  "name_id": "Muhammad bin Tasbit ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Abdiy",
+  "nasab": "Al 'Abdiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

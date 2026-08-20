@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7156",
+  "name_en": "Muhammad bin 'Ubaidillah bin Abi Daud bin Yazid",
+  "name_id": "Muhammad bin 'Ubaidillah bin Abi Daud bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "272 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Baghdadiy",
+  "nasab": "Al Baghdadiy",
+  "laqob": "Ibnu Al Munadiy",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

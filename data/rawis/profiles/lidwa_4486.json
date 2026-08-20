@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4486",
+  "name_en": "Abdur Rahman bin Muthi' bin Al Aswad",
+  "name_id": "Abdur Rahman bin Muthi' bin Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Adawiy",
+  "nasab": "Al 'Adawiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

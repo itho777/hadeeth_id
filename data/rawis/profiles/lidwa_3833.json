@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3833",
+  "name_en": "Syihab bin Khirasy vbin Hawsyab",
+  "name_id": "Syihab bin Khirasy vbin Hawsyab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "Ramalah",
+  "residence": "Syam",
+  "kunyah": "Abu Ash Shalti",
+  "parents": "Asy Syaibani Al Hawsyabiy",
+  "nasab": "Asy Syaibani Al Hawsyabiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

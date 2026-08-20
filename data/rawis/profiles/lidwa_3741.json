@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3741",
+  "name_en": "Syababah bin Sawwar",
+  "name_id": "Syababah bin Sawwar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "206 H",
+  "city_of_death": "Mada'in",
+  "residence": "Mada'in",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Fazariy",
+  "nasab": "Al Fazariy",
+  "laqob": "-",
+  "hadith_count": "116",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 37,
+    "abudaud": 7,
+    "tirmidzi": 14,
+    "nasai": 7,
+    "ibnumajah": 27,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 1
+  }
+}

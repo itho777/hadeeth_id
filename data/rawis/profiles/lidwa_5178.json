@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5178",
+  "name_en": "Abdul Mu'mion bin Khalid",
+  "name_id": "Abdul Mu'mion bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Khalid",
+  "parents": "Al Hanafiy Al Marwaziy",
+  "nasab": "Al Hanafiy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

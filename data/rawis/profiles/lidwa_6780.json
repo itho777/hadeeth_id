@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6780",
+  "name_en": "Muhammad bin Abi Yahya ",
+  "name_id": "Muhammad bin Abi Yahya ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "147 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Aslamiy",
+  "nasab": "Al Aslamiy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

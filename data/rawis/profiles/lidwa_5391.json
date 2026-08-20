@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5391",
+  "name_en": "Ubaidullah bin Salman",
+  "name_id": "Ubaidullah bin Salman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Juhaniy",
+  "nasab": "Al Juhaniy",
+  "laqob": "Al Aghar",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 1,
+    "darimi": 0
+  }
+}

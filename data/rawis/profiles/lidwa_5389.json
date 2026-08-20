@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5389",
+  "name_en": "Ubaidullah bin Sa'id bin Muslim",
+  "name_id": "Ubaidullah bin Sa'id bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muslim",
+  "parents": "Al Ju'fiy",
+  "nasab": "Al Ju'fiy",
+  "laqob": "Qa'id Al A'mas",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

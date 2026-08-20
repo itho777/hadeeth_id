@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3754",
+  "name_en": "Syabib bin Nu'aim",
+  "name_id": "Syabib bin Nu'aim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Rauh",
+  "parents": "Al Wihazhiy Al Himshiy",
+  "nasab": "Al Wihazhiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

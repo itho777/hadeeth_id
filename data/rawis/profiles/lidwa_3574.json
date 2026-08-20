@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3574",
+  "name_en": "Sulaiman bin Bilal",
+  "name_id": "Sulaiman bin Bilal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "172 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "At Taymiy Al Qurasyiy",
+  "nasab": "At Taymiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "319",
+  "book_counts": {
+    "bukhari": 107,
+    "muslim": 76,
+    "abudaud": 27,
+    "tirmidzi": 9,
+    "nasai": 13,
+    "ibnumajah": 12,
+    "ahmad": 65,
+    "malik": 0,
+    "darimi": 10
+  }
+}

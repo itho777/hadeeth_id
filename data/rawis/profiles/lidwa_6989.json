@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6989",
+  "name_en": "Muhammad bin Sa'id bin Sabiq",
+  "name_id": "Muhammad bin Sa'id bin Sabiq",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "12",
+  "died_ah": "216 H",
+  "city_of_death": "Qirqisiya",
+  "residence": "Qirqisiya",
+  "kunyah": "Abu Sa'id",
+  "parents": "Ar Raziy",
+  "nasab": "Ar Raziy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

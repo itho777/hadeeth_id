@@ -1,0 +1,28 @@
+{
+  "id": "rawi_syafii",
+  "name_en": "Imam as-Syafi'i",
+  "name_id": "Imam as-Syafi'i",
+  "name_ar": "الشافعي",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Mujtahid",
+  "died_ah": "204",
+  "died_ce": "820",
+  "hadith_count": "2500",
+  "city_of_death": "Fustat",
+  "bio_en": "Founder of Shafi'i Madhhab and architect of Islamic Jurisprudence (Usul al-Fiqh).",
+  "books": [
+    "Musnad as-Syafi'i"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

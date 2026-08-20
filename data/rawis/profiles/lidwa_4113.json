@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4113",
+  "name_en": "Amir bin 'Amru",
+  "name_id": "Amir bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Habbah",
+  "parents": "Al Anshariy Al Badariy",
+  "nasab": "Al Anshariy Al Badariy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

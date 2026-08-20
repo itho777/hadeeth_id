@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4111",
+  "name_en": "Amir bin 'Abdul Wahid",
+  "name_id": "Amir bin 'Abdul Wahid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "Al Ahwal",
+  "hadith_count": "45",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 4,
+    "tirmidzi": 6,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 20,
+    "malik": 0,
+    "darimi": 6
+  }
+}

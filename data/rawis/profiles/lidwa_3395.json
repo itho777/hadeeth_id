@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3395",
+  "name_en": "Sa'id bin Marwan bin 'Ali",
+  "name_id": "Sa'id bin Marwan bin 'Ali",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "252 H",
+  "city_of_death": "Nihawand",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Baghdadi An Naisaburiy",
+  "nasab": "Al Baghdadi An Naisaburiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7408",
+  "name_en": "Marwan bin Mu'awiyah bin Al Harits bin Asma' bin Kharijah",
+  "name_id": "Marwan bin Mu'awiyah bin Al Harits bin Asma' bin Kharijah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "193 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Fazariy Al Kufiy",
+  "nasab": "Al Fazariy Al Kufiy",
+  "laqob": "-",
+  "hadith_count": "158",
+  "book_counts": {
+    "bukhari": 16,
+    "muslim": 48,
+    "abudaud": 15,
+    "tirmidzi": 13,
+    "nasai": 11,
+    "ibnumajah": 18,
+    "ahmad": 34,
+    "malik": 0,
+    "darimi": 3
+  }
+}

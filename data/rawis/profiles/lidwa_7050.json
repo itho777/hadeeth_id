@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7050",
+  "name_en": "Muhammad bin 'Abdul A'laa",
+  "name_id": "Muhammad bin 'Abdul A'laa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "245 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ash Shan'aniy Al Qaisiy",
+  "nasab": "Ash Shan'aniy Al Qaisiy",
+  "laqob": "-",
+  "hadith_count": "233",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 33,
+    "abudaud": 0,
+    "tirmidzi": 29,
+    "nasai": 162,
+    "ibnumajah": 8,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

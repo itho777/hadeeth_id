@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8214",
+  "name_en": "Yahya bin Ayyub bin Abi Zur'ah bin 'Amru bin Jarir",
+  "name_id": "Yahya bin Ayyub bin Abi Zur'ah bin 'Amru bin Jarir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Bajaliy",
+  "nasab": "Al Bajaliy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 1
+  }
+}

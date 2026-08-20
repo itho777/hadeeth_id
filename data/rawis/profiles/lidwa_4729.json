@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4729",
+  "name_en": "Abdullah bin Al Wadldloh",
+  "name_id": "Abdullah bin Al Wadldloh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Audiy",
+  "nasab": "Al Audiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

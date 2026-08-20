@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6238",
+  "name_en": "Umair bin Hani'",
+  "name_id": "Umair bin Hani'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "127 H",
+  "city_of_death": "Khurasan",
+  "residence": "Syam",
+  "kunyah": "Abu Al Walid",
+  "parents": "Al 'Ansiy Ad Damsyqiy",
+  "nasab": "Al 'Ansiy Ad Damsyqiy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

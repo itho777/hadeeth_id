@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4544",
+  "name_en": "Abdus Salam bin Muthahhar bin Hassam bin Mishak",
+  "name_id": "Abdus Salam bin Muthahhar bin Hassam bin Mishak",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "224 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Zhafar",
+  "parents": "Al Azdiy",
+  "nasab": "Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 8,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1915",
+  "name_en": "Basyir bin Yasaar",
+  "name_id": "Basyir bin Yasaar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Kaisan",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 6,
+    "abudaud": 8,
+    "tirmidzi": 2,
+    "nasai": 13,
+    "ibnumajah": 1,
+    "ahmad": 17,
+    "malik": 3,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4028",
+  "name_en": "Thalhah bin Yazid",
+  "name_id": "Thalhah bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hamzah",
+  "parents": "Al Ayliy Al Anshariy",
+  "nasab": "Al Ayliy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 1
+  }
+}

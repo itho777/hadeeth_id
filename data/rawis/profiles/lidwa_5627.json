@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5627",
+  "name_en": "Atha' bin Abi Muslim",
+  "name_id": "Atha' bin Abi Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "135 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ayyub",
+  "parents": "Al Khurasaniy",
+  "nasab": "Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "43",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 8,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 8,
+    "ahmad": 17,
+    "malik": 4,
+    "darimi": 1
+  }
+}

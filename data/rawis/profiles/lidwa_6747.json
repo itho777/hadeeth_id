@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6747",
+  "name_en": "Muhammad bin Adam bin Sulaiman",
+  "name_id": "Muhammad bin Adam bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Juhaniy Al Mushaishiy",
+  "nasab": "Al Juhaniy Al Mushaishiy",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 35,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

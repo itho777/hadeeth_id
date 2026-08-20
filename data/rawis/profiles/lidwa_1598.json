@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1598",
+  "name_en": "Al Qasim bin Muhammad bin Abi Bakar Ash Shiddiq",
+  "name_id": "Al Qasim bin Muhammad bin Abi Bakar Ash Shiddiq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "106 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "623",
+  "book_counts": {
+    "bukhari": 88,
+    "muslim": 63,
+    "abudaud": 41,
+    "tirmidzi": 22,
+    "nasai": 76,
+    "ibnumajah": 34,
+    "ahmad": 198,
+    "malik": 61,
+    "darimi": 40
+  }
+}

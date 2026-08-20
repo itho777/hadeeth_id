@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5579",
+  "name_en": "Adiy bin 'Adiy bin 'Umayrah",
+  "name_id": "Adiy bin 'Adiy bin 'Umayrah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "120 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Farwah",
+  "parents": "Al Kindiy Al Jazariy ",
+  "nasab": "Al Kindiy Al Jazariy ",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1806",
+  "name_en": "Al Walid bin Mazyad",
+  "name_id": "Al Walid bin Mazyad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "183 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

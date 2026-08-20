@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3339",
+  "name_en": "Sa'id bin Salamah bin Abi Al Husaam",
+  "name_id": "Sa'id bin Salamah bin Abi Al Husaam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al 'Adawiy As Sadusiy",
+  "nasab": "Al 'Adawiy As Sadusiy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

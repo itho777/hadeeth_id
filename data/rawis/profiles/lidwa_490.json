@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_490",
+  "name_en": "Ahmad bin Muhammad bin Musa",
+  "name_id": "Ahmad bin Muhammad bin Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "238 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "As Simsar Al Marwaziy",
+  "nasab": "As Simsar Al Marwaziy",
+  "laqob": "Murdawaih",
+  "hadith_count": "57",
+  "book_counts": {
+    "bukhari": 21,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 36,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

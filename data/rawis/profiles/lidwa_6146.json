@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6146",
+  "name_en": "Amru bin 'Ashim bin 'Ubaidillah bin Al Wazi'",
+  "name_id": "Amru bin 'Ashim bin 'Ubaidillah bin Al Wazi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "213 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Kilabiy Al Qaisiy",
+  "nasab": "Al Kilabiy Al Qaisiy",
+  "laqob": "-",
+  "hadith_count": "56",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 7,
+    "abudaud": 3,
+    "tirmidzi": 13,
+    "nasai": 7,
+    "ibnumajah": 3,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 12
+  }
+}

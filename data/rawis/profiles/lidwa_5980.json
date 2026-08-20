@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5980",
+  "name_en": "Umar bin 'Abdullah bin 'Uerwah bin Az Zubair bin Al 'Awwam",
+  "name_id": "Umar bin 'Abdullah bin 'Uerwah bin Az Zubair bin Al 'Awwam",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

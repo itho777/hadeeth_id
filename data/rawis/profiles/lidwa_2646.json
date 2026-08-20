@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2646",
+  "name_en": "Khalid bin Ziyad bin Jarwa",
+  "name_id": "Khalid bin Ziyad bin Jarwa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "ABu 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Shahibi As Sabiriy",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

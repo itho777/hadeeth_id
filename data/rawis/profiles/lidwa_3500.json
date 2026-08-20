@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3500",
+  "name_en": "Salamah bin Raja'",
+  "name_id": "Salamah bin Raja'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "At Tamimiy",
+  "nasab": "At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

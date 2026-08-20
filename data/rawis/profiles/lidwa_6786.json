@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6786",
+  "name_en": "Muhammad bin Ahmad bin Nafi'",
+  "name_id": "Muhammad bin Ahmad bin Nafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al 'Abdiy Al Qaisiy",
+  "nasab": "Al 'Abdiy Al Qaisiy",
+  "laqob": "-",
+  "hadith_count": "64",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 48,
+    "abudaud": 1,
+    "tirmidzi": 7,
+    "nasai": 8,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

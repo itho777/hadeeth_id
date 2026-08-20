@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2457",
+  "name_en": "Hafshah binti 'Umar bin Al Khaththab",
+  "name_id": "Hafshah binti 'Umar bin Al Khaththab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "41 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Ummu Al Mu'minin",
+  "hadith_count": "147",
+  "book_counts": {
+    "bukhari": 16,
+    "muslim": 14,
+    "abudaud": 6,
+    "tirmidzi": 3,
+    "nasai": 40,
+    "ibnumajah": 7,
+    "ahmad": 48,
+    "malik": 9,
+    "darimi": 4
+  }
+}

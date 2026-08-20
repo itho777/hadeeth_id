@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4822",
+  "name_en": "Abdullah bin Salim",
+  "name_id": "Abdullah bin Salim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "235 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Az Zubaidiy Al Qazzaz",
+  "nasab": "Az Zubaidiy Al Qazzaz",
+  "laqob": "Al Mafluj",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

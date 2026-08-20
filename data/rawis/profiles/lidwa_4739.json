@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4739",
+  "name_en": "Abdullah bin Barrad bin Yusuf bin Abi Bardah bin Abi Musa",
+  "name_id": "Abdullah bin Barrad bin Yusuf bin Abi Bardah bin Abi Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "234 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Amir",
+  "parents": "Al Asy'ariy",
+  "nasab": "Al Asy'ariy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 24,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

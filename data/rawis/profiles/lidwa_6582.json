@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6582",
+  "name_en": "\"Katsir, maula 'Uqbah bin 'Amir\"",
+  "name_id": "\"Katsir, maula 'Uqbah bin 'Amir\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Al Haitsam",
+  "parents": "Al Mishriy",
+  "nasab": "Al Mishriy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

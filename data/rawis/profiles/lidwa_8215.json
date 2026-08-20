@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8215",
+  "name_en": "Yahya bin Ishaq",
+  "name_id": "Yahya bin Ishaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "210 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Zakariya'",
+  "parents": "Al Bajali As Silahiniy",
+  "nasab": "Al Bajali As Silahiniy",
+  "laqob": "-",
+  "hadith_count": "206",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 193,
+    "malik": 0,
+    "darimi": 1
+  }
+}

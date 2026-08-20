@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1667",
+  "name_en": "Al Mughirah bin 'Abdur Rahman bin 'Abdullah bin Khalid bin Khizam ",
+  "name_id": "Al Mughirah bin 'Abdur Rahman bin 'Abdullah bin Khalid bin Khizam ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Qushay",
+  "hadith_count": "75",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 36,
+    "abudaud": 2,
+    "tirmidzi": 5,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 18,
+    "malik": 0,
+    "darimi": 0
+  }
+}

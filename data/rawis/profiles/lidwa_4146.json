@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4146",
+  "name_en": "Abbad bin Laits",
+  "name_id": "Abbad bin Laits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Karabisiy Al Qaisiy",
+  "nasab": "Al Karabisiy Al Qaisiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

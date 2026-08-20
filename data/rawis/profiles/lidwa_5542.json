@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5542",
+  "name_en": "Utsman bin 'Atha' bin Abi Muslim",
+  "name_id": "Utsman bin 'Atha' bin Abi Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "155 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Mas'ud",
+  "parents": "Al Khurasaniy Al Maqdisiy",
+  "nasab": "Al Khurasaniy Al Maqdisiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

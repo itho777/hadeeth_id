@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3635",
+  "name_en": "Sulaiman bin Yasiir",
+  "name_id": "Sulaiman bin Yasiir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ash Shabbah",
+  "parents": "An Nakha'iy",
+  "nasab": "An Nakha'iy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7012",
+  "name_en": "Muhammad bin Sawa' bin 'Anbar",
+  "name_id": "Muhammad bin Sawa' bin 'Anbar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "187 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Khaththab",
+  "parents": "As Sadusiy Al 'Anbariy",
+  "nasab": "As Sadusiy Al 'Anbariy",
+  "laqob": "Adl Dlurair",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 7,
+    "ibnumajah": 3,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

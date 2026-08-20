@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5756",
+  "name_en": "Ali bin Ja'far bin Muhammad",
+  "name_id": "Ali bin Ja'far bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "210 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Hasyimiy Al 'Alawiy",
+  "nasab": "Al Hasyimiy Al 'Alawiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

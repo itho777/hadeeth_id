@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_871",
+  "name_en": "Ibrahim bin Muhammad bin Al Harits bin Asma' bin Kharijah",
+  "name_id": "Ibrahim bin Muhammad bin Al Harits bin Asma' bin Kharijah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "185 H",
+  "city_of_death": "Mushayshah",
+  "residence": "Syam",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Fazariy",
+  "nasab": "Al Fazariy",
+  "laqob": "-",
+  "hadith_count": "118",
+  "book_counts": {
+    "bukhari": 18,
+    "muslim": 5,
+    "abudaud": 19,
+    "tirmidzi": 3,
+    "nasai": 14,
+    "ibnumajah": 2,
+    "ahmad": 39,
+    "malik": 0,
+    "darimi": 18
+  }
+}

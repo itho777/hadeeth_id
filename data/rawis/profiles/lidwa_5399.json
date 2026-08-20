@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5399",
+  "name_en": "Ubaidullah bin 'Abdur Rahman bin Rafi'",
+  "name_id": "Ubaidullah bin 'Abdur Rahman bin Rafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "7",
+  "died_ah": "111 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 1
+  }
+}

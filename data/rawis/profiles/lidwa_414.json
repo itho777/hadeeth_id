@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_414",
+  "name_en": "Ahmad bin Isykab",
+  "name_id": "Ahmad bin Isykab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "217 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ash Shifar Al Hadlramiy",
+  "nasab": "Ash Shifar Al Hadlramiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5885",
+  "name_en": "Umarah bin 'Umair ",
+  "name_id": "Umarah bin 'Umair ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "82 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "132",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 11,
+    "abudaud": 9,
+    "tirmidzi": 8,
+    "nasai": 22,
+    "ibnumajah": 6,
+    "ahmad": 56,
+    "malik": 0,
+    "darimi": 11
+  }
+}

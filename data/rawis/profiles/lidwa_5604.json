@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5604",
+  "name_en": "Urwah bin Mudhorrasi bin Aus bin Haritsah bin Laam",
+  "name_id": "Urwah bin Mudhorrasi bin Aus bin Haritsah bin Laam",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Ath Tha'iy",
+  "nasab": "Ath Tha'iy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 1
+  }
+}

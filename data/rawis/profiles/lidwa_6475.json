@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6475",
+  "name_en": "Qurrah bin 'AbdurRahman bin Hayuwail",
+  "name_id": "Qurrah bin 'AbdurRahman bin Hayuwail",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "147 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "Al Kat'iy Al Ma'afiriy",
+  "nasab": "Al Kat'iy Al Ma'afiriy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7390",
+  "name_en": "Marhum bin 'Abdul 'Aziz bin Mihran",
+  "name_id": "Marhum bin 'Abdul 'Aziz bin Mihran",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "188 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al 'Aththar Al Umawiy",
+  "nasab": "Al 'Aththar Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

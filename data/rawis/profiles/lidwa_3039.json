@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3039",
+  "name_en": "Zuhair bin 'Utsman",
+  "name_id": "Zuhair bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Ats Tasqafiy",
+  "nasab": "Ats Tasqafiy",
+  "laqob": "Al A'war",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

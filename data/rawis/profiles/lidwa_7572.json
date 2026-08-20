@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7572",
+  "name_en": "Mu'awiyah bin Abi Muzarrid 'Abdur Rahman binYasar",
+  "name_id": "Mu'awiyah bin Abi Muzarrid 'Abdur Rahman binYasar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

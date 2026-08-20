@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4261",
+  "name_en": "Abdur Rahman bin Abzaa",
+  "name_id": "Abdur Rahman bin Abzaa",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Khuza'iy",
+  "nasab": "Al Khuza'iy",
+  "laqob": "-",
+  "hadith_count": "94",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 1,
+    "abudaud": 10,
+    "tirmidzi": 4,
+    "nasai": 29,
+    "ibnumajah": 4,
+    "ahmad": 36,
+    "malik": 0,
+    "darimi": 2
+  }
+}

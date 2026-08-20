@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_821",
+  "name_en": "Ibrahim bin Salim bin Abi Umayah ",
+  "name_id": "Ibrahim bin Salim bin Abi Umayah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "153 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ishaq",
+  "parents": "AlQurasyiy At Taymiy",
+  "nasab": "AlQurasyiy At Taymiy",
+  "laqob": "Burdan",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

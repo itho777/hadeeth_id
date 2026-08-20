@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3779",
+  "name_en": "Syurahbil bin 'Abdullah bin Al Mutha'",
+  "name_id": "Syurahbil bin 'Abdullah bin Al Mutha'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "18 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Ghawtsiy",
+  "nasab": "Al Ghawtsiy",
+  "laqob": "Syurahbil Ibnu Hasanah",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

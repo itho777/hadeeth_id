@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2079",
+  "name_en": "Jami' bin Abi Rasyid",
+  "name_id": "Jami' bin Abi Rasyid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

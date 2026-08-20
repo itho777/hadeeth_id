@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4716",
+  "name_en": "Abdullah bin Al Mubarak bin Wadlih",
+  "name_id": "Abdullah bin Al Mubarak bin Wadlih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "181 H",
+  "city_of_death": "Herrat",
+  "residence": "Himash",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Hanzhaliy Al Marwaziy",
+  "nasab": "Al Hanzhaliy Al Marwaziy",
+  "laqob": "Abdan",
+  "hadith_count": "1206",
+  "book_counts": {
+    "bukhari": 241,
+    "muslim": 44,
+    "abudaud": 60,
+    "tirmidzi": 149,
+    "nasai": 290,
+    "ibnumajah": 30,
+    "ahmad": 358,
+    "malik": 0,
+    "darimi": 34
+  }
+}

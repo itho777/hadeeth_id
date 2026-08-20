@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7353",
+  "name_en": "Mahmud bin Labid bin 'Uqbah bin Rafi'",
+  "name_id": "Mahmud bin Labid bin 'Uqbah bin Rafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "96 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Nu'aim",
+  "parents": "Al Anshariy Al Asyhaliy",
+  "nasab": "Al Anshariy Al Asyhaliy",
+  "laqob": "-",
+  "hadith_count": "58",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 4,
+    "nasai": 3,
+    "ibnumajah": 6,
+    "ahmad": 35,
+    "malik": 1,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_555",
+  "name_en": "Asma' binti Sa'id bin Zaid",
+  "name_id": "Asma' binti Sa'id bin Zaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al 'Adawiyah",
+  "nasab": "Al 'Adawiyah",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

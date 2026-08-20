@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4827",
+  "name_en": "Abdullah bin Sarjis",
+  "name_id": "Abdullah bin Sarjis",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Muzaniy",
+  "nasab": "Al Muzaniy",
+  "laqob": "-",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 4,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 1
+  }
+}

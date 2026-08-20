@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5360",
+  "name_en": "Ubaidullah bin Abi Bakar bin Anas bi Malik",
+  "name_id": "Ubaidullah bin Abi Bakar bin Anas bi Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu Mu'adz",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "45",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 6,
+    "abudaud": 2,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7844",
+  "name_en": "\"Nafi' bin bin Abi Nafi',maula Abi Ahmad\"",
+  "name_id": "\"Nafi' bin bin Abi Nafi',maula Abi Ahmad\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Bazzaz",
+  "nasab": "Al Bazzaz",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

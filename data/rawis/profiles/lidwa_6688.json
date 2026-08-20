@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6688",
+  "name_en": "Malik bin Qais",
+  "name_id": "Malik bin Qais",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru ",
+  "kunyah": "Abu Sharmah",
+  "parents": "Al Maziniy Al Anshariy",
+  "nasab": "Al Maziniy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

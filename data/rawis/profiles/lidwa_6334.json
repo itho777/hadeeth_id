@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6334",
+  "name_en": "Isa bin Musa",
+  "name_id": "Isa bin Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "187 H",
+  "city_of_death": "Sijistan",
+  "residence": "Bukhara",
+  "kunyah": "Abu Muhammad",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "Ghanjar Al Azraq",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6864",
+  "name_en": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair",
+  "name_id": "Muhammad bin Al Munkadir bin 'Abdullah bin Al Hudair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "131 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "318",
+  "book_counts": {
+    "bukhari": 57,
+    "muslim": 32,
+    "abudaud": 26,
+    "tirmidzi": 35,
+    "nasai": 24,
+    "ibnumajah": 27,
+    "ahmad": 97,
+    "malik": 8,
+    "darimi": 12
+  }
+}

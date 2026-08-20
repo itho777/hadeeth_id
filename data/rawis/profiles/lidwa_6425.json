@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6425",
+  "name_en": "Fudloil bin 'Amru",
+  "name_id": "Fudloil bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "110 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu An Nadlor",
+  "parents": "Al Fuqaimiy At Tamimiy",
+  "nasab": "Al Fuqaimiy At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 2
+  }
+}

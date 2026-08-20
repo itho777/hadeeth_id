@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1109",
+  "name_en": "Ibnu 'Abdullah bin Sufyan bin 'Abdullah bin Rabi'ah bin Al Harits",
+  "name_id": "Ibnu 'Abdullah bin Sufyan bin 'Abdullah bin Rabi'ah bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "Ibnu 'Abdullah bin Sufyan",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 1,
+    "darimi": 0
+  }
+}

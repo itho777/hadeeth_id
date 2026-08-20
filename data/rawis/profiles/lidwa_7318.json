@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7318",
+  "name_en": "Muhammad bin Yahya bin Ayyub bin Ibrahim",
+  "name_id": "Muhammad bin Yahya bin Ayyub bin Ibrahim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Yahya",
+  "parents": "Ats Tsaqafiy Al Qashriy",
+  "nasab": "Ats Tsaqafiy Al Qashriy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 9,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

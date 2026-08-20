@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7557",
+  "name_en": "Mu'adz bin 'Abdullah bin Khubaib",
+  "name_id": "Mu'adz bin 'Abdullah bin Khubaib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "118 H",
+  "city_of_death": "-",
+  "residence": "Madinah ",
+  "kunyah": "-",
+  "parents": "Al Juhaniy",
+  "nasab": "Al Juhaniy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

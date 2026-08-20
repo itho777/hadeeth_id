@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5817",
+  "name_en": "Ali bin Ma'bad bin Syaddad",
+  "name_id": "Ali bin Ma'bad bin Syaddad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "218 H",
+  "city_of_death": "Maru",
+  "residence": "Jazirah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al 'Abdiy Ar Raqqiy",
+  "nasab": "Al 'Abdiy Ar Raqqiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

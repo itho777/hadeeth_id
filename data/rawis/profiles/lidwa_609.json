@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_609",
+  "name_en": "Ummu Al 'Alaa' binti Al Harits bin Tsabit",
+  "name_id": "Ummu Al 'Alaa' binti Al Harits bin Tsabit",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Al 'Alaa'",
+  "parents": "Al Anshariyyah",
+  "nasab": "Al Anshariyyah",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

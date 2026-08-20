@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1951",
+  "name_en": "Bukair bin 'Abdullah bin Al Asyajj",
+  "name_id": "Bukair bin 'Abdullah bin Al Asyajj",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "122 H",
+  "city_of_death": "Madinah",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "268",
+  "book_counts": {
+    "bukhari": 20,
+    "muslim": 55,
+    "abudaud": 31,
+    "tirmidzi": 7,
+    "nasai": 54,
+    "ibnumajah": 8,
+    "ahmad": 81,
+    "malik": 2,
+    "darimi": 10
+  }
+}

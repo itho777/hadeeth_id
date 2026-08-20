@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_993",
+  "name_en": "Isma'il bin Ibrahim ",
+  "name_id": "Isma'il bin Ibrahim ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "194 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ibrahim",
+  "parents": "Al Karabisiy",
+  "nasab": "Al Karabisiy",
+  "laqob": "Shahibu Al Qawhiy",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

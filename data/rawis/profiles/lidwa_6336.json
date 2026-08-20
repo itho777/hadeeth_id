@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6336",
+  "name_en": "Isa bin Maisarah",
+  "name_id": "Isa bin Maisarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "10",
+  "died_ah": "151 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Musa",
+  "parents": "Al Hannath Al Ghifariy",
+  "nasab": "Al Hannath Al Ghifariy",
+  "laqob": "Ibnu Abi 'Isa",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

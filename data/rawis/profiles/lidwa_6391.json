@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6391",
+  "name_en": "Fathimah binti Qais bin Khalid",
+  "name_id": "Fathimah binti Qais bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiyyah Al Fahriyyah",
+  "nasab": "Al Qurasyiyyah Al Fahriyyah",
+  "laqob": "-",
+  "hadith_count": "86",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 16,
+    "abudaud": 5,
+    "tirmidzi": 5,
+    "nasai": 17,
+    "ibnumajah": 8,
+    "ahmad": 30,
+    "malik": 1,
+    "darimi": 4
+  }
+}

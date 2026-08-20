@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5482",
+  "name_en": "Utsman",
+  "name_id": "Utsman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu Salamah",
+  "parents": "Al 'Adawiy",
+  "nasab": "Al 'Adawiy",
+  "laqob": "Asy Syahham",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

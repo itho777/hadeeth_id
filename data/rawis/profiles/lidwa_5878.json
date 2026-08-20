@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5878",
+  "name_en": "Umarah bin Sa'id",
+  "name_id": "Umarah bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Az Zurqiy Al Anshariy",
+  "nasab": "Az Zurqiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

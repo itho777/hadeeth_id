@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_576",
+  "name_en": "Asy'ats bin Sawwar ",
+  "name_id": "Asy'ats bin Sawwar ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "136 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Kindiy As Saajiy",
+  "nasab": "Al Kindiy As Saajiy",
+  "laqob": "Al Afriq",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 9,
+    "nasai": 2,
+    "ibnumajah": 5,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 34
+  }
+}

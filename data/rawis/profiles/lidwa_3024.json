@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3024",
+  "name_en": "Zakariya bin Yahya bin Shubaih bin Rasyid",
+  "name_id": "Zakariya bin Yahya bin Shubaih bin Rasyid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "235 H",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Wasithiy",
+  "nasab": "Al Wasithiy",
+  "laqob": "Rahmawaih",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

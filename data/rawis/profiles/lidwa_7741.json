@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7741",
+  "name_en": "Musa bin Sahal bin Qadim",
+  "name_id": "Musa bin Sahal bin Qadim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "262 H",
+  "city_of_death": "Ramalah",
+  "residence": "Syam",
+  "kunyah": "Abu 'Imran",
+  "parents": "Ar Ramliy An Nasa'iy",
+  "nasab": "Ar Ramliy An Nasa'iy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

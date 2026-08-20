@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5611",
+  "name_en": "Azrah bin Tsabit binAbi Zaid",
+  "name_id": "Azrah bin Tsabit binAbi Zaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Anshariy ",
+  "nasab": "Al Anshariy ",
+  "laqob": "-",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 4,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 1
+  }
+}

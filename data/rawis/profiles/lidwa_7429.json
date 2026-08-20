@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7429",
+  "name_en": "Masruq bin Aus",
+  "name_id": "Masruq bin Aus",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "At Tamimiy Al Yarbu'iy",
+  "nasab": "At Tamimiy Al Yarbu'iy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

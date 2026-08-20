@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2711",
+  "name_en": "Khuzaimah bin Tsabit bin Al Fakih",
+  "name_id": "Khuzaimah bin Tsabit bin Al Fakih",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "37 H",
+  "city_of_death": "Sharifain",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Umarah",
+  "parents": "Al Anshari Al Khatmi",
+  "nasab": "Al Anshari Al Khatmi",
+  "laqob": "Dzu Asy Syahadatain",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 30,
+    "malik": 0,
+    "darimi": 4
+  }
+}

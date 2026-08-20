@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5006",
+  "name_en": "Abdullah bin Farrukh",
+  "name_id": "Abdullah bin Farrukh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "175 H",
+  "city_of_death": "Maru",
+  "residence": "Maghribi",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Khurasaniy",
+  "nasab": "Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

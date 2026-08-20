@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8095",
+  "name_en": "Hammam bin Munabbih bin Kamil bin Syaikh",
+  "name_id": "Hammam bin Munabbih bin Kamil bin Syaikh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Yaman",
+  "kunyah": "Abu 'Uqbah",
+  "parents": "Ash Shan'aniy Al Abnawiy",
+  "nasab": "Ash Shan'aniy Al Abnawiy",
+  "laqob": "-",
+  "hadith_count": "347",
+  "book_counts": {
+    "bukhari": 69,
+    "muslim": 83,
+    "abudaud": 13,
+    "tirmidzi": 12,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 163,
+    "malik": 0,
+    "darimi": 2
+  }
+}

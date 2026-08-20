@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4818",
+  "name_en": "Abdullah bin Zaid bin 'Ashim bin Ka'ab",
+  "name_id": "Abdullah bin Zaid bin 'Ashim bin Ka'ab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "63 H",
+  "city_of_death": "Harrah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Anshariy Al Maziniy",
+  "nasab": "Al Anshariy Al Maziniy",
+  "laqob": "-",
+  "hadith_count": "131",
+  "book_counts": {
+    "bukhari": 29,
+    "muslim": 13,
+    "abudaud": 10,
+    "tirmidzi": 6,
+    "nasai": 15,
+    "ibnumajah": 6,
+    "ahmad": 44,
+    "malik": 3,
+    "darimi": 5
+  }
+}

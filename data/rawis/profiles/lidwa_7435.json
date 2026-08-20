@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7435",
+  "name_en": "Mas'ud bin Al Hakam",
+  "name_id": "Mas'ud bin Al Hakam",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Mas'ud",
+  "parents": "Al Anshariy Az Zurqiy",
+  "nasab": "Al Anshariy Az Zurqiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

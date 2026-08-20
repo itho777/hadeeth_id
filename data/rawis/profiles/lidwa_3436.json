@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3436",
+  "name_en": "Sufyan bin Sa'id bin Masruq",
+  "name_id": "Sufyan bin Sa'id bin Masruq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "161 H",
+  "city_of_death": "Bashrah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ats Tsauriy",
+  "nasab": "Ats Tsauriy",
+  "laqob": "-",
+  "hadith_count": "3613",
+  "book_counts": {
+    "bukhari": 353,
+    "muslim": 235,
+    "abudaud": 247,
+    "tirmidzi": 348,
+    "nasai": 315,
+    "ibnumajah": 215,
+    "ahmad": 1626,
+    "malik": 0,
+    "darimi": 274
+  }
+}

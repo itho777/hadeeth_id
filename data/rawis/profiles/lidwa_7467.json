@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7467",
+  "name_en": "Muslim bin Salim",
+  "name_id": "Muslim bin Salim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Farwah",
+  "parents": "An Nahdiy Al Juhaniy",
+  "nasab": "An Nahdiy Al Juhaniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

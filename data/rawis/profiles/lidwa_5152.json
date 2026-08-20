@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5152",
+  "name_en": "Abdullah bin Yahya bin Abi Katsir",
+  "name_id": "Abdullah bin Yahya bin Abi Katsir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Yamamah ",
+  "kunyah": "-",
+  "parents": "Al Yamamiy",
+  "nasab": "Al Yamamiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

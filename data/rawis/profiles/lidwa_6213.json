@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6213",
+  "name_en": "Amru bin Hisyam",
+  "name_id": "Amru bin Hisyam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "245 H",
+  "city_of_death": "Kufah",
+  "residence": "Jazirah",
+  "kunyah": "Abu Umayyah",
+  "parents": "Al Harraniy",
+  "nasab": "Al Harraniy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 10,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

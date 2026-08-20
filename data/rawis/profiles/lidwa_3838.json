@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3838",
+  "name_en": "Syaiban bin Umayyah",
+  "name_id": "Syaiban bin Umayyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Hudzaifah",
+  "parents": "Al Qutbaniy",
+  "nasab": "Al Qutbaniy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4838",
+  "name_en": "Abdullah bin Sufyan",
+  "name_id": "Abdullah bin Sufyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hijaz",
+  "kunyah": "Abu Salamah",
+  "parents": "Al Qurasyiy Al Makhzumiy",
+  "nasab": "Al Qurasyiy Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 1,
+    "darimi": 0
+  }
+}

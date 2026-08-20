@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_459",
+  "name_en": "Ahmad bin 'Abdullah bin Ayyub",
+  "name_id": "Ahmad bin 'Abdullah bin Ayyub",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "232 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Al Walid",
+  "parents": "Al Hanafiy Al Harawiy",
+  "nasab": "Al Hanafiy Al Harawiy",
+  "laqob": "Abnu Abi Raja'",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

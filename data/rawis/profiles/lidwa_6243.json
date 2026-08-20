@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6243",
+  "name_en": "Anbasah bin Abi Sufyan",
+  "name_id": "Anbasah bin Abi Sufyan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Walid",
+  "parents": "Al Qurasayiy Al Umawiy",
+  "nasab": "Al Qurasayiy Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 13,
+    "ibnumajah": 3,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 1
+  }
+}

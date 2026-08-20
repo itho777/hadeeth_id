@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_586",
+  "name_en": "Ashbagh bin Al Faraj bin Sa'id",
+  "name_id": "Ashbagh bin Al Faraj bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "225 H",
+  "city_of_death": "Halab",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Umawiy Al Mishriy",
+  "nasab": "Al Umawiy Al Mishriy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "rawi_sufyan_al_thawri",
+  "name_en": "Sufyan bin 'Uyaynah",
+  "name_id": "Sufyan bin Uyainah",
+  "name_ar": "سفيان بن عيينة",
+  "is_sahabi": "false",
+  "generation": "Tabi' al-Tabi'in",
+  "grade": "Thiqah Hafiz",
+  "died_ah": "198",
+  "died_ce": "814",
+  "hadith_count": "1250",
+  "city_of_death": "Makkah",
+  "bio_en": "Master Hadith scholar of Makkah and direct teacher of Imam al-Shafi'i.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 353,
+    "muslim": 235,
+    "abudaud": 247,
+    "tirmidzi": 348,
+    "nasai": 315,
+    "ibnumajah": 215,
+    "ahmad": 1626,
+    "malik": 0,
+    "darimi": 274
+  }
+}

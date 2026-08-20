@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7436",
+  "name_en": "Mas'ud bin Al Hakam bin Ar Rabi'",
+  "name_id": "Mas'ud bin Al Hakam bin Ar Rabi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Harun",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 1,
+    "darimi": 0
+  }
+}

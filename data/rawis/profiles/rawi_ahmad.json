@@ -1,0 +1,28 @@
+{
+  "id": "rawi_ahmad",
+  "name_en": "Imam Ahmad bin Hanbal",
+  "name_id": "Imam Ahmad bin Hanbal",
+  "name_ar": "أحمد بن حنبل",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Ahl al-Sunnah",
+  "died_ah": "241",
+  "died_ce": "855",
+  "hadith_count": "28000",
+  "city_of_death": "Baghdad",
+  "bio_en": "Founder of Hanbali Madhhab and compiler of the massive Musnad Ahmad.",
+  "books": [
+    "Musnad Ahmad"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

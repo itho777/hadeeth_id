@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_900",
+  "name_en": "Ibrahim bin Yazid ",
+  "name_id": "Ibrahim bin Yazid ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "10",
+  "died_ah": "151 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Isma'il",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "Al Khawziy",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

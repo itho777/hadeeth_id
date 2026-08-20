@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2497",
+  "name_en": "Hammad bin Mas'adah",
+  "name_id": "Hammad bin Mas'adah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "202 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "43",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 7,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 8,
+    "ibnumajah": 3,
+    "ahmad": 18,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3812",
+  "name_en": "Syu'aib bin Syu'aib bin Ishaq bin 'Abdur Rahman",
+  "name_id": "Syu'aib bin Syu'aib bin Ishaq bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "264 H",
+  "city_of_death": "-",
+  "residence": "Dujail",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qurasyi Al Umawiy",
+  "nasab": "Al Qurasyi Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 6,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5788",
+  "name_en": "Ali bin 'Abdul Hamid bin Mush'ab",
+  "name_id": "Ali bin 'Abdul Hamid bin Mush'ab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "222 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Ma'aniy Al Azdiy",
+  "nasab": "Al Ma'aniy Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

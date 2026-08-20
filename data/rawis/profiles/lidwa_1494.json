@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1494",
+  "name_en": "Adl Dlahhaak bin Makhlad bin Adl Dlahhaak bin Muslim",
+  "name_id": "Adl Dlahhaak bin Makhlad bin Adl Dlahhaak bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "212 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Ashim",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "417",
+  "book_counts": {
+    "bukhari": 78,
+    "muslim": 57,
+    "abudaud": 50,
+    "tirmidzi": 32,
+    "nasai": 20,
+    "ibnumajah": 40,
+    "ahmad": 58,
+    "malik": 0,
+    "darimi": 82
+  }
+}

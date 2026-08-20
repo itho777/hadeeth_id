@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5939",
+  "name_en": "Umar bin Hamzah bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_id": "Umar bin Hamzah bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al 'Adawiy Al 'Umariy",
+  "nasab": "Al 'Adawiy Al 'Umariy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 7,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

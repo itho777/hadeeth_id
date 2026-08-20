@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_539",
+  "name_en": "Asbath bin Nashir",
+  "name_id": "Asbath bin Nashir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Yusuf",
+  "parents": "Al Hamdaaniy",
+  "nasab": "Al Hamdaaniy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 8,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

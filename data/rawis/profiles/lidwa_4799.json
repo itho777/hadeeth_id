@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4799",
+  "name_en": "Abdullah bin Rasyid",
+  "name_id": "Abdullah bin Rasyid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Adl Dlahhak",
+  "parents": "Az Zurfiy",
+  "nasab": "Az Zurfiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

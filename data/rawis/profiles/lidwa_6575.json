@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6575",
+  "name_en": "Katsir bin Mudrik",
+  "name_id": "Katsir bin Mudrik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Mudrik",
+  "parents": "Al Asyja'iy",
+  "nasab": "Al Asyja'iy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1736",
+  "name_en": "An Nu'man bin Salim",
+  "name_id": "An Nu'man bin Salim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Tha'if",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "43",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 6,
+    "ibnumajah": 3,
+    "ahmad": 24,
+    "malik": 0,
+    "darimi": 4
+  }
+}

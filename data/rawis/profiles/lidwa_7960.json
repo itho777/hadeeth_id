@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7960",
+  "name_en": "Naufal bin 'Abdul Malik bin Al Mughirah",
+  "name_id": "Naufal bin 'Abdul Malik bin Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al Hasyimiy",
+  "nasab": "Al Qurasyiy Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

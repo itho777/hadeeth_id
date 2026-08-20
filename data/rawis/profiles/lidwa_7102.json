@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7102",
+  "name_en": "Muhammad bin 'Abdullah bin Al Mubarak",
+  "name_id": "Muhammad bin 'Abdullah bin Al Mubarak",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "9",
+  "died_ah": "255 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Makhramiy Al Mada'iniy",
+  "nasab": "Al Makhramiy Al Mada'iniy",
+  "laqob": "-",
+  "hadith_count": "76",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 0,
+    "nasai": 65,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

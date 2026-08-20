@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7745",
+  "name_en": "Musa bin 'Amir bin 'Umarah",
+  "name_id": "Musa bin 'Amir bin 'Umarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "255 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Amir",
+  "parents": "Al Murriy Al Khuraimiy",
+  "nasab": "Al Murriy Al Khuraimiy",
+  "laqob": "Ibnu Abi Al Haidzam",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

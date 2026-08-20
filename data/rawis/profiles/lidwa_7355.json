@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7355",
+  "name_en": "Mukhariq bin Khalifah bin Jabir",
+  "name_id": "Mukhariq bin Khalifah bin Jabir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Ahmasiy",
+  "nasab": "Al Ahmasiy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 0
+  }
+}

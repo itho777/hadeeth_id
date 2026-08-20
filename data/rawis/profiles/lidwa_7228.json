@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7228",
+  "name_en": "Muhammad bin 'Auf bin Sufyan",
+  "name_id": "Muhammad bin 'Auf bin Sufyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "272 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ja'far",
+  "parents": "Ath Tha'iy Al Himshiy",
+  "nasab": "Ath Tha'iy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 29,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

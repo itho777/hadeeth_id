@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3357",
+  "name_en": "Sa'id bin 'Abdur Rahman bin 'Abdullah ",
+  "name_id": "Sa'id bin 'Abdur Rahman bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "156 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Syaibah",
+  "parents": "Az Zubaidiy",
+  "nasab": "Az Zubaidiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

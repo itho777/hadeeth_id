@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3286",
+  "name_en": "Sa'id bin Abi Hind",
+  "name_id": "Sa'id bin Abi Hind",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "116 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Fazariy",
+  "nasab": "Al Fazariy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 5,
+    "ibnumajah": 5,
+    "ahmad": 18,
+    "malik": 1,
+    "darimi": 3
+  }
+}

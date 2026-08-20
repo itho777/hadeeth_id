@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3361",
+  "name_en": "Sa'id bin 'Abdur Rahman bin Yazid bin Ruqaisy",
+  "name_id": "Sa'id bin 'Abdur Rahman bin Yazid bin Ruqaisy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 1,
+    "darimi": 0
+  }
+}

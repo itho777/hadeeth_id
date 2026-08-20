@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3792",
+  "name_en": "Syarik bin 'Abdullah bin Abi Syarik",
+  "name_id": "Syarik bin 'Abdullah bin Abi Syarik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "177 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "An Nakha'iy",
+  "nasab": "An Nakha'iy",
+  "laqob": "Qadliy",
+  "hadith_count": "735",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 7,
+    "abudaud": 58,
+    "tirmidzi": 64,
+    "nasai": 38,
+    "ibnumajah": 76,
+    "ahmad": 435,
+    "malik": 0,
+    "darimi": 56
+  }
+}

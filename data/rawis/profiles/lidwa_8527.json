@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8527",
+  "name_en": "Ya'qub bin 'Abdur Rahman bin Muhammad bin 'Abdullah bin 'Abdul Qariy",
+  "name_id": "Ya'qub bin 'Abdur Rahman bin Muhammad bin 'Abdullah bin 'Abdul Qariy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "181 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "Al Madaniy Al Qariy",
+  "nasab": "Al Madaniy Al Qariy",
+  "laqob": "-",
+  "hadith_count": "137",
+  "book_counts": {
+    "bukhari": 26,
+    "muslim": 48,
+    "abudaud": 14,
+    "tirmidzi": 7,
+    "nasai": 10,
+    "ibnumajah": 0,
+    "ahmad": 31,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6207",
+  "name_en": "Amru bin Maimun",
+  "name_id": "Amru bin Maimun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "74 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Audiy",
+  "nasab": "Al Audiy",
+  "laqob": "-",
+  "hadith_count": "132",
+  "book_counts": {
+    "bukhari": 21,
+    "muslim": 10,
+    "abudaud": 7,
+    "tirmidzi": 11,
+    "nasai": 13,
+    "ibnumajah": 10,
+    "ahmad": 57,
+    "malik": 0,
+    "darimi": 3
+  }
+}

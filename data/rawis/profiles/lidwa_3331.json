@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3331",
+  "name_en": "Sa'id bin Zaid 'Amru bin Nufail",
+  "name_id": "Sa'id bin Zaid 'Amru bin Nufail",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "51 H",
+  "city_of_death": "Madinah",
+  "residence": "Kufah",
+  "kunyah": "Abu Al A'war",
+  "parents": "Al 'Adawi Al Madaniy ",
+  "nasab": "Al 'Adawi Al Madaniy ",
+  "laqob": "-",
+  "hadith_count": "76",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 11,
+    "abudaud": 6,
+    "tirmidzi": 9,
+    "nasai": 4,
+    "ibnumajah": 5,
+    "ahmad": 32,
+    "malik": 0,
+    "darimi": 1
+  }
+}

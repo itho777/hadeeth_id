@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1045",
+  "name_en": "Isma'il bin 'Ubaidillah bin Abi Al Muhajir",
+  "name_id": "Isma'il bin 'Ubaidillah bin Abi Al Muhajir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "131 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdul Hamid",
+  "parents": "Al Makhzumiy",
+  "nasab": "Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 2
+  }
+}

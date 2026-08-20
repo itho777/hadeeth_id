@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4153",
+  "name_en": "Ubadah bin Ash Shamit bin Qais",
+  "name_id": "Ubadah bin Ash Shamit bin Qais",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "34 H",
+  "city_of_death": "Fisa",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Wlid",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "269",
+  "book_counts": {
+    "bukhari": 20,
+    "muslim": 18,
+    "abudaud": 16,
+    "tirmidzi": 18,
+    "nasai": 26,
+    "ibnumajah": 28,
+    "ahmad": 123,
+    "malik": 3,
+    "darimi": 17
+  }
+}

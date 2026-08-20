@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_416",
+  "name_en": "Ahmad bin Al Hajjaj",
+  "name_id": "Ahmad bin Al Hajjaj",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "222 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al 'Abas",
+  "parents": "Al Bakriy Al Marwaziy",
+  "nasab": "Al Bakriy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 6
+  }
+}

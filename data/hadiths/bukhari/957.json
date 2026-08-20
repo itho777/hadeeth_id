@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 957,
+  "arabicnumber": 957,
+  "text": "Telah menceritakan kepada kami [Ibrahim bin Al Mundzir] berkata, telah menceritakan kepada kami [Anas bin 'Iyadl] dari ['Ubaidullah] dari [Nafi'] dari ['Abdullah bin 'Umar] bahwa Rasulullah shallallahu 'alaihi wasallam melaksanakan shalat 'Idul Adlha dan 'Idul Fitri kemudian berkhutbah setelah shalat",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Abdullah bin Umar bin al-Khattab",
+      "name_ar": "عبد الله بن عمر بن الخطاب",
+      "rawi_id": "rawi_ibn_umar"
+    },
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7263",
+  "name_en": "Muhammad bin Marwan bin Qudamah",
+  "name_id": "Muhammad bin Marwan bin Qudamah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al 'Aqiliy Al 'Ijliy",
+  "nasab": "Al 'Aqiliy Al 'Ijliy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

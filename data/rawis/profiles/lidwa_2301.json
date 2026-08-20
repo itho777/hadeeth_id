@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2301",
+  "name_en": "Hajjaj bin 'Amru bin Ghaziyyah",
+  "name_id": "Hajjaj bin 'Amru bin Ghaziyyah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 1,
+    "malik": 1,
+    "darimi": 1
+  }
+}

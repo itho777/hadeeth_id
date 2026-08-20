@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3670",
+  "name_en": "Sahal bin Hammad",
+  "name_id": "Sahal bin Hammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "208 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Ittab",
+  "parents": "Al 'Anqaziy Ad Dilaliy",
+  "nasab": "Al 'Anqaziy Ad Dilaliy",
+  "laqob": "Suhail",
+  "hadith_count": "46",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 4,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 32
+  }
+}

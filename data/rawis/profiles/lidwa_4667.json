@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4667",
+  "name_en": "Abdullah bin Idris bin Yazid bin 'Abdur Rahman bin Al Aswad",
+  "name_id": "Abdullah bin Idris bin Yazid bin 'Abdur Rahman bin Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "192 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Awdiy Az Zi'afiriy",
+  "nasab": "Al Awdiy Az Zi'afiriy",
+  "laqob": "-",
+  "hadith_count": "270",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 61,
+    "abudaud": 33,
+    "tirmidzi": 20,
+    "nasai": 34,
+    "ibnumajah": 42,
+    "ahmad": 49,
+    "malik": 0,
+    "darimi": 21
+  }
+}

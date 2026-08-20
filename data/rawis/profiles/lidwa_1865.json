@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1865",
+  "name_en": "Bisyir bin Al Hakam bin Habib bion Mihran",
+  "name_id": "Bisyir bin Al Hakam bin Habib bion Mihran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "238 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 6,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 14
+  }
+}

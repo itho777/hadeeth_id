@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2714",
+  "name_en": "Khusyaisy bin Ashram bin Al Aswad",
+  "name_id": "Khusyaisy bin Ashram bin Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "253 H",
+  "city_of_death": "Maru",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Ashim",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Hafdizh",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 0,
+    "nasai": 12,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

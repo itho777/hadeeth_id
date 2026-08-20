@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4651",
+  "name_en": "Abdullah bin Abi Lubaid",
+  "name_id": "Abdullah bin Abi Lubaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Mughirah",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 0
+  }
+}

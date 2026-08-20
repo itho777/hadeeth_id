@@ -1,0 +1,31 @@
+{
+  "id": "rawi_ibnuhibban",
+  "name_ar": "أبو حاتم محمد بن حبان بن أحمد التميمي البستي",
+  "name_en": "Imam Muhammad bin Hibban at-Tamimi al-Busti",
+  "name_id": "Imam Muhammad bin Hibban at-Tamimi al-Busti",
+  "kunya": "Abu Hatim",
+  "laqab": "Al-Busti, Al-Hafizh",
+  "birth_year_ah": 270,
+  "death_year_ah": 354,
+  "birth_city": "Bust (kini Lashkar Gah)",
+  "death_city": "Bust, Afghanistan",
+  "region": "Bust (Busti), Afghanistan",
+  "madhab": "Syafi'i",
+  "bio_id": "Imam Ibnu Hibban adalah ulama besar yang lahir di kota Bust (kini Lashkar Gah, Afghanistan) sekitar tahun 270 H / 884 M. Nama lengkapnya: Abu Hatim Muhammad bin Hibban bin Ahmad bin Hibban bin Mu'adz bin Ma'bad at-Tamimi al-Busti. Beliau adalah seorang polymath sejati — selain menguasai ilmu hadis, beliau juga mendalami fikih, tafsir, sejarah, bahasa Arab, astronomi, dan kedokteran. Beliau adalah murid dari Imam Ibnu Khuzaimah. Kitab hadis paling terkenal beliau berjudul Al-Musnad Ash-Shahih 'ala At-Taqasim wa Al-Anwa' (lebih dikenal sebagai Shahih Ibnu Hibban). Berbeda dari Shahih Bukhari atau Muslim yang disusun berdasarkan bab fikih, kitab ini menggunakan sistem taqasim dan anwa'. Ulama Al-Amir 'Ala'uddin Al-Farisi kemudian menyusun ulang dalam Al-Ihsan fi Taqrib Shahih Ibnu Hibban untuk kemudahan akses. Beliau juga menulis Al-Tsiqat (ensiklopedia perawi terpercaya) dan Al-Majruhin (kitab perawi bermasalah). Beliau wafat di Bust pada 354 H / 965 M.",
+  "bio_en": "Imam Ibn Hibban was a major scholar born in Bust (modern Lashkar Gah, Afghanistan) around 270 AH / 884 CE. A true polymath, he mastered hadith, fiqh, tafsir, history, Arabic language, astronomy, and medicine. He was a student of Imam Ibn Khuzaimah. His most famous work is Al-Musnad al-Sahih (known as Sahih Ibn Hibban), organized by an unusual taqasim/anwa' system. He also wrote Al-Thiqat (trustworthy narrators) and Al-Majruhin (criticized narrators). He passed away in Bust in 354 AH / 965 CE.",
+  "known_books": [
+    "صحيح ابن حبان (المسند الصحيح على التقاسيم والأنواع)",
+    "الثقات",
+    "المجروحين"
+  ],
+  "teachers": [
+    "Ibn Khuzaimah",
+    "Ibn Khuzaymah an-Naisaburi"
+  ],
+  "students": [
+    "Al-Hakim an-Naisaburi"
+  ],
+  "source": "mjna",
+  "source_url": "https://www.mjna.or.id/ibnuhibban",
+  "profile_id": "mjna_002"
+}

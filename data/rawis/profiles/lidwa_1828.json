@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1828",
+  "name_en": "Bahir bin Sa'ad",
+  "name_id": "Bahir bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Khalid",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "98",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 10,
+    "tirmidzi": 9,
+    "nasai": 18,
+    "ibnumajah": 6,
+    "ahmad": 48,
+    "malik": 0,
+    "darimi": 7
+  }
+}

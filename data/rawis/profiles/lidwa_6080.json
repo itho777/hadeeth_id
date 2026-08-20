@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6080",
+  "name_en": "Amru bin Al Harits bin Ya'qub",
+  "name_id": "Amru bin Al Harits bin Ya'qub",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "149 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Umayyah",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "421",
+  "book_counts": {
+    "bukhari": 45,
+    "muslim": 119,
+    "abudaud": 57,
+    "tirmidzi": 19,
+    "nasai": 63,
+    "ibnumajah": 18,
+    "ahmad": 91,
+    "malik": 1,
+    "darimi": 8
+  }
+}

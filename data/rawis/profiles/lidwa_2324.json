@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2324",
+  "name_en": "Hudzaifah bin Al Yaman",
+  "name_id": "Hudzaifah bin Al Yaman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "36 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "451",
+  "book_counts": {
+    "bukhari": 52,
+    "muslim": 43,
+    "abudaud": 29,
+    "tirmidzi": 24,
+    "nasai": 29,
+    "ibnumajah": 35,
+    "ahmad": 223,
+    "malik": 0,
+    "darimi": 16
+  }
+}

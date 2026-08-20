@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5804",
+  "name_en": "Ali bin 'Ayyasy bin Muslim",
+  "name_id": "Ali bin 'Ayyasy bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "219 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Alhaniy",
+  "nasab": "Al Alhaniy",
+  "laqob": "Al Bakka'",
+  "hadith_count": "60",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 2,
+    "nasai": 12,
+    "ibnumajah": 2,
+    "ahmad": 33,
+    "malik": 0,
+    "darimi": 0
+  }
+}

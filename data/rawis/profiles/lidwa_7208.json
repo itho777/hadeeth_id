@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7208",
+  "name_en": "Muhammad bin 'Umar bin Hayyaj",
+  "name_id": "Muhammad bin 'Umar bin Hayyaj",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "255 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Hamdaniy Ash Sha'idiy",
+  "nasab": "Al Hamdaniy Ash Sha'idiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

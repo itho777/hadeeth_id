@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7513",
+  "name_en": "Mush'ab bin Tsabit bin 'Abdullah ",
+  "name_id": "Mush'ab bin Tsabit bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "157 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al Asadiy",
+  "nasab": "Al Qurasyiy Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

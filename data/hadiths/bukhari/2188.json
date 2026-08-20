@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 2188,
+  "arabicnumber": 2188,
+  "text": "Telah menceritakan kepada kami ['Abdullah bin Maslamah] telah menceritakan kepada kami [Malik] dari [Nafi'] dari [Ibnu 'Umar] dari [Zaid bin Tsabit radliallahu 'anhum] bahwa Rasulullah shallallahu 'alaihi wasallam memberi kelonggaran bagi pemilik 'Ariyyah untuk menjualnya dengan taksiran",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6849",
+  "name_en": "Muhammad bin Ash Shalti bin Al Hajjaj",
+  "name_id": "Muhammad bin Ash Shalti bin Al Hajjaj",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "218 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "Al Asham",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 17
+  }
+}

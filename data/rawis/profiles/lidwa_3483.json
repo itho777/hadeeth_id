@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3483",
+  "name_en": "\"Salman,maula 'Izzah\"",
+  "name_id": "\"Salman,maula 'Izzah\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "101 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hazom",
+  "parents": "Al Asyja'iy",
+  "nasab": "Al Asyja'iy",
+  "laqob": "-",
+  "hadith_count": "200",
+  "book_counts": {
+    "bukhari": 27,
+    "muslim": 53,
+    "abudaud": 9,
+    "tirmidzi": 16,
+    "nasai": 13,
+    "ibnumajah": 19,
+    "ahmad": 59,
+    "malik": 0,
+    "darimi": 4
+  }
+}

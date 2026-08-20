@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3512",
+  "name_en": "Salamah bin 'Alqamah",
+  "name_id": "Salamah bin 'Alqamah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "139 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bisyir",
+  "parents": "At Tamimiy",
+  "nasab": "At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

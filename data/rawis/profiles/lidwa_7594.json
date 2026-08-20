@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7594",
+  "name_en": "Mu'awiyah bin Hisyam",
+  "name_id": "Mu'awiyah bin Hisyam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "204 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Qashshar",
+  "nasab": "Al Qashshar",
+  "laqob": "-",
+  "hadith_count": "79",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 11,
+    "tirmidzi": 11,
+    "nasai": 6,
+    "ibnumajah": 14,
+    "ahmad": 31,
+    "malik": 0,
+    "darimi": 2
+  }
+}

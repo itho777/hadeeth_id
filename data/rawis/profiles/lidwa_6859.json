@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6859",
+  "name_en": "Muhammad bin Al Mubarak bin Ya'laa",
+  "name_id": "Muhammad bin Al Mubarak bin Ya'laa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "215 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ash Shuwriy Al Qurasyiy",
+  "nasab": "Ash Shuwriy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 7,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 23
+  }
+}

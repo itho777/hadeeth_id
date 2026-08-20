@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7163",
+  "name_en": "Muhammad bin 'Utsman",
+  "name_id": "Muhammad bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "224 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "At Tanukhiy Ad Damasyqiy",
+  "nasab": "At Tanukhiy Ad Damasyqiy",
+  "laqob": "Abu Al Jamahir",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 8,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

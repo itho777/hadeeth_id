@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2871",
+  "name_en": "Rafi' bin 'Amru",
+  "name_id": "Rafi' bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Jubair",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

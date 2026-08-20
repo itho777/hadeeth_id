@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6167",
+  "name_en": "Amru bin 'Utsman bin 'Affan",
+  "name_id": "Amru bin 'Utsman bin 'Affan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 9,
+    "malik": 1,
+    "darimi": 2
+  }
+}

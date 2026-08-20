@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3711",
+  "name_en": "Suwaid bin Sa'id bin Sahal",
+  "name_id": "Suwaid bin Sa'id bin Sahal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "240 H",
+  "city_of_death": "-",
+  "residence": "Haditsah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Harawiy Al Hdatsaniy",
+  "nasab": "Al Harawiy Al Hdatsaniy",
+  "laqob": "-",
+  "hadith_count": "160",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 53,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 85,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 0
+  }
+}

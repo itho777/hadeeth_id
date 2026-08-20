@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6458",
+  "name_en": "Qatadah bin Da'amah bin Qatadah",
+  "name_id": "Qatadah bin Da'amah bin Qatadah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "117 H",
+  "city_of_death": "Hait",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Khaththab",
+  "parents": "As Sadusiy",
+  "nasab": "As Sadusiy",
+  "laqob": "-",
+  "hadith_count": "3042",
+  "book_counts": {
+    "bukhari": 273,
+    "muslim": 247,
+    "abudaud": 217,
+    "tirmidzi": 210,
+    "nasai": 282,
+    "ibnumajah": 154,
+    "ahmad": 1532,
+    "malik": 0,
+    "darimi": 127
+  }
+}

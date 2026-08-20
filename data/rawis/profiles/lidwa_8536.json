@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8536",
+  "name_en": "Ya'qub bin Mujahid",
+  "name_id": "Ya'qub bin Mujahid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "150 H",
+  "city_of_death": "Iskandariyah",
+  "residence": "Madinah",
+  "kunyah": "Abu Hazrah",
+  "parents": "Al Makhzumiy",
+  "nasab": "Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

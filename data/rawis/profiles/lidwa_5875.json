@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5875",
+  "name_en": "Umarah bin Ruwaibah",
+  "name_id": "Umarah bin Ruwaibah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Zuhair",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 2
+  }
+}

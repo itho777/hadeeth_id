@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6198",
+  "name_en": "Amru bin Mirtsad",
+  "name_id": "Amru bin Mirtsad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Asma'",
+  "parents": "Ar Rahabiy Ad Damasyqiy",
+  "nasab": "Ar Rahabiy Ad Damasyqiy",
+  "laqob": "-",
+  "hadith_count": "83",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 10,
+    "abudaud": 5,
+    "tirmidzi": 10,
+    "nasai": 3,
+    "ibnumajah": 8,
+    "ahmad": 40,
+    "malik": 0,
+    "darimi": 7
+  }
+}

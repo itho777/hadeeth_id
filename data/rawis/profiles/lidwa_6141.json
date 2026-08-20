@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6141",
+  "name_en": "Amru bin Sya'sa",
+  "name_id": "Amru bin Sya'sa",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hijaz",
+  "kunyah": "-",
+  "parents": "Al Asadiy Al Aslamiy",
+  "nasab": "Al Asadiy Al Aslamiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

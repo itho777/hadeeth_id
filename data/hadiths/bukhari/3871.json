@@ -1,0 +1,32 @@
+{
+  "hadithnumber": 3871,
+  "arabicnumber": 3871,
+  "text": "Telah menceritakan kepada kami ['Umar bin Hafsh] telah menceritakan kepada kami [bapakku] telah menceritakan kepada kami [Al A'masy] telah menceritakan kepada kami [Ibrahim] dari [Abu Ma'mar] dari [Abdullah] radliallahu 'anhu berkata; \"Bulan pernah terbelah",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "'Umar bin Hafsh",
+      "name_ar": "'Umar bin Hafsh"
+    },
+    {
+      "name_id": "bapakku",
+      "name_ar": "bapakku"
+    },
+    {
+      "name_id": "Al A'masy",
+      "name_ar": "Al A'masy"
+    },
+    {
+      "name_id": "Ibrahim",
+      "name_ar": "Ibrahim"
+    },
+    {
+      "name_id": "Abu Ma'mar",
+      "name_ar": "معمر"
+    },
+    {
+      "name_id": "Abdullah",
+      "name_ar": "Abdullah"
+    }
+  ]
+}

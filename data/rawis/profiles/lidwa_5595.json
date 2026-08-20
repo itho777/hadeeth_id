@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5595",
+  "name_en": "Urwah bin Al Mughirah bin Syu'bah",
+  "name_id": "Urwah bin Al Mughirah bin Syu'bah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ya'fur",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 7,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 3
+  }
+}

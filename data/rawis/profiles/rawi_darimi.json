@@ -1,0 +1,28 @@
+{
+  "id": "rawi_darimi",
+  "name_en": "Imam ad-Darimi",
+  "name_id": "Imam ad-Darimi",
+  "name_ar": "الدارمي",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz",
+  "died_ah": "255",
+  "died_ce": "869",
+  "hadith_count": "3500",
+  "city_of_death": "Samarqand",
+  "bio_en": "Compiler of Sunan ad-Darimi, highly respected scholar of Khorasan.",
+  "books": [
+    "Sunan ad-Darimi"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

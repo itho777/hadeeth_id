@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2552",
+  "name_en": "Humaid bin Hani'",
+  "name_id": "Humaid bin Hani'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "142 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Hani'",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "66",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 10,
+    "abudaud": 6,
+    "tirmidzi": 8,
+    "nasai": 5,
+    "ibnumajah": 4,
+    "ahmad": 32,
+    "malik": 0,
+    "darimi": 1
+  }
+}

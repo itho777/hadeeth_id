@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7850",
+  "name_en": "\"Nafi' bin 'Abbas bin 'Ayyasy, maula 'Aqilah Al Ghifariyah\"",
+  "name_id": "\"Nafi' bin 'Abbas bin 'Ayyasy, maula 'Aqilah Al Ghifariyah\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "\"Al Aqra', Maula Abi Qatadah\"",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 6,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 2,
+    "darimi": 1
+  }
+}

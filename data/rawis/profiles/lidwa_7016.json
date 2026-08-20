@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7016",
+  "name_en": "\"Muhammad bin Sirin, maula Anas bin Malik\"",
+  "name_id": "\"Muhammad bin Sirin, maula Anas bin Malik\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "110 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "874",
+  "book_counts": {
+    "bukhari": 98,
+    "muslim": 88,
+    "abudaud": 52,
+    "tirmidzi": 45,
+    "nasai": 95,
+    "ibnumajah": 41,
+    "ahmad": 358,
+    "malik": 6,
+    "darimi": 91
+  }
+}

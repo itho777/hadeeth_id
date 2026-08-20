@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2945",
+  "name_en": "Rifa'ah bin Yatsribiy",
+  "name_id": "Rifa'ah bin Yatsribiy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "Ifriqiyah",
+  "residence": "Maru",
+  "kunyah": "Abu Rimtsah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 1,
+    "nasai": 5,
+    "ibnumajah": 0,
+    "ahmad": 23,
+    "malik": 0,
+    "darimi": 2
+  }
+}

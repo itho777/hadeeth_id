@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6342",
+  "name_en": "Isa bin Yunus bin Abban",
+  "name_id": "Isa bin Yunus bin Abban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "264 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Musa",
+  "parents": "Al Fakhuriy Ar Ramliy",
+  "nasab": "Al Fakhuriy Ar Ramliy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

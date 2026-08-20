@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7465",
+  "name_en": "Muslim bin Khalid",
+  "name_id": "Muslim bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "180 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Khalid",
+  "parents": "Al Qurasiy Al Makhzumiy",
+  "nasab": "Al Qurasiy Al Makhzumiy",
+  "laqob": "Az Zanjiy",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 7,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 1
+  }
+}

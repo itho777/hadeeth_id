@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6728",
+  "name_en": "Mahbub bin Muhriz",
+  "name_id": "Mahbub bin Muhriz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhriz",
+  "parents": "At Tamimiy Al 'Aththar",
+  "nasab": "At Tamimiy Al 'Aththar",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_482",
+  "name_en": "Ahmad bin Muhammad bin Ayyub",
+  "name_id": "Ahmad bin Muhammad bin Ayyub",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "228 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Wiraqiy",
+  "nasab": "Al Wiraqiy",
+  "laqob": "Shahibul Maghaziy",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

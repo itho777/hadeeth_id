@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5664",
+  "name_en": "Uqbah bin Al Harits bin 'Amir bin Nawfal bin 'Abdi Manaf",
+  "name_id": "Uqbah bin Al Harits bin 'Amir bin Nawfal bin 'Abdi Manaf",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Suru'ah",
+  "parents": "An Naufaliy",
+  "nasab": "An Naufaliy",
+  "laqob": "-",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 1
+  }
+}

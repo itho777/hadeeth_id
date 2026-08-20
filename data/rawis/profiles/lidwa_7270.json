@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7270",
+  "name_en": "Muhammad bin Muslim bin Tadrus",
+  "name_id": "Muhammad bin Muslim bin Tadrus",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "126 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Az Zubair",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "1291",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 214,
+    "abudaud": 99,
+    "tirmidzi": 73,
+    "nasai": 132,
+    "ibnumajah": 95,
+    "ahmad": 615,
+    "malik": 15,
+    "darimi": 41
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8551",
+  "name_en": "Ya'laa bin Murrah bin Wahab",
+  "name_id": "Ya'laa bin Murrah bin Wahab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Marazim",
+  "parents": "Ats Tsaqafiy ",
+  "nasab": "Ats Tsaqafiy ",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 26,
+    "malik": 0,
+    "darimi": 1
+  }
+}

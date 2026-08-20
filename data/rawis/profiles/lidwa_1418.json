@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1418",
+  "name_en": "Ar Rabi' bin nafi'",
+  "name_id": "Ar Rabi' bin nafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "241 H",
+  "city_of_death": "Thabariyah",
+  "residence": "Thabariyah",
+  "kunyah": "Abu Taubah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "58",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 7,
+    "abudaud": 42,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2840",
+  "name_en": "Dzakwan",
+  "name_id": "Dzakwan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "101 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Shalih",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "1414",
+  "book_counts": {
+    "bukhari": 115,
+    "muslim": 196,
+    "abudaud": 109,
+    "tirmidzi": 134,
+    "nasai": 74,
+    "ibnumajah": 136,
+    "ahmad": 584,
+    "malik": 27,
+    "darimi": 39
+  }
+}

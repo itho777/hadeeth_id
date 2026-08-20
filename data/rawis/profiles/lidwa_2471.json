@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2471",
+  "name_en": "Hakim bin Saif bin Hakim",
+  "name_id": "Hakim bin Saif bin Hakim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "238 H",
+  "city_of_death": "Riqqah",
+  "residence": "Syam",
+  "kunyah": "Abu 'Amru",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_591",
+  "name_en": "Aflat bin Khalifah",
+  "name_id": "Aflat bin Khalifah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hassan",
+  "parents": "Al 'Amiriy",
+  "nasab": "Al 'Amiriy",
+  "laqob": "Fulait",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

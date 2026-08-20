@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5474",
+  "name_en": "Utbah bin Ghazwan bin Jabir",
+  "name_id": "Utbah bin Ghazwan bin Jabir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "17 H",
+  "city_of_death": "Tharful Qudum",
+  "residence": "-",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Maziniy",
+  "nasab": "Al Maziniy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

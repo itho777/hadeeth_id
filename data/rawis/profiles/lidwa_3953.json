@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3953",
+  "name_en": "Shafiyah binti Huyyay bin Akhthab",
+  "name_id": "Shafiyah binti Huyyay bin Akhthab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "50 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "An Nadloriyyah",
+  "nasab": "An Nadloriyyah",
+  "laqob": "Ummu Al Mu'minin",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 2
+  }
+}

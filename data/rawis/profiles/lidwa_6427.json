@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6427",
+  "name_en": "Fudloil bin Ghazwan bin Jarir",
+  "name_id": "Fudloil bin Ghazwan bin Jarir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "Adl Dlabbiy",
+  "nasab": "Adl Dlabbiy",
+  "laqob": "-",
+  "hadith_count": "61",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 16,
+    "abudaud": 4,
+    "tirmidzi": 6,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 2
+  }
+}

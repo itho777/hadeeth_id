@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3513",
+  "name_en": "Salamah bin 'Amru bin Al Akwa'",
+  "name_id": "Salamah bin 'Amru bin Al Akwa'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "74 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muslim",
+  "parents": "Al Aslamiy",
+  "nasab": "Al Aslamiy",
+  "laqob": "-",
+  "hadith_count": "181",
+  "book_counts": {
+    "bukhari": 40,
+    "muslim": 30,
+    "abudaud": 14,
+    "tirmidzi": 6,
+    "nasai": 8,
+    "ibnumajah": 11,
+    "ahmad": 64,
+    "malik": 0,
+    "darimi": 8
+  }
+}

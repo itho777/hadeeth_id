@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4198",
+  "name_en": "Abd bin Sa'ad",
+  "name_id": "Abd bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Jadaliy",
+  "nasab": "Al Jadaliy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 0
+  }
+}

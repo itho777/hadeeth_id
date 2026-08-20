@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5296",
+  "name_en": "Abdu Rabbih bin Sa'id bin Qais bin 'Amru",
+  "name_id": "Abdu Rabbih bin Sa'id bin Qais bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "139 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy An Najariy",
+  "nasab": "Al Anshariy An Najariy",
+  "laqob": "-",
+  "hadith_count": "61",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 10,
+    "abudaud": 6,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 5,
+    "ahmad": 23,
+    "malik": 5,
+    "darimi": 1
+  }
+}

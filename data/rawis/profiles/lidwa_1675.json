@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1675",
+  "name_en": "Al Mughirah bin Miqsam",
+  "name_id": "Al Mughirah bin Miqsam",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "136 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hisyam",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "197",
+  "book_counts": {
+    "bukhari": 19,
+    "muslim": 16,
+    "abudaud": 15,
+    "tirmidzi": 4,
+    "nasai": 27,
+    "ibnumajah": 9,
+    "ahmad": 58,
+    "malik": 0,
+    "darimi": 49
+  }
+}

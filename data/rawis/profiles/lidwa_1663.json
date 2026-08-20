@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1663",
+  "name_en": "Al Mughirah bin Salamah ",
+  "name_id": "Al Mughirah bin Salamah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "200 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hisyam",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 19,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 15,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

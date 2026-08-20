@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8055",
+  "name_en": "Hisyam bin 'Urwah bin Az Zubair bin Al 'Awwam",
+  "name_id": "Hisyam bin 'Urwah bin Az Zubair bin Al 'Awwam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "145 H",
+  "city_of_death": "Baghdad",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Mundzir",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "1584",
+  "book_counts": {
+    "bukhari": 349,
+    "muslim": 185,
+    "abudaud": 108,
+    "tirmidzi": 76,
+    "nasai": 122,
+    "ibnumajah": 101,
+    "ahmad": 465,
+    "malik": 122,
+    "darimi": 56
+  }
+}

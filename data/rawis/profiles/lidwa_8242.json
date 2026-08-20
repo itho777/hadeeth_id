@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8242",
+  "name_en": "Yahya bin Jabir bin Hasaan",
+  "name_id": "Yahya bin Jabir bin Hasaan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "126 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Amru",
+  "parents": "Ath Tha'iy Al Himshiy",
+  "nasab": "Ath Tha'iy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

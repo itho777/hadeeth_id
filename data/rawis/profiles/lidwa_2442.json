@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2442",
+  "name_en": "Hafsh bin 'Umar bin 'Abdul 'Aziz bin Shuhaib",
+  "name_id": "Hafsh bin 'Umar bin 'Abdul 'Aziz bin Shuhaib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "246 H",
+  "city_of_death": "-",
+  "residence": "Rashafatu Hisyam",
+  "kunyah": "Abu 'Umar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Adl Dlurair",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

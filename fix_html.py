@@ -1,16 +1,12 @@
-import sys
-with open(r'g:\Box\AntigravitySync\.gemini\antigravity\scratch\hadeeth_id\profile-detail.html', 'r', encoding='utf-8') as f:
-    text = f.read()
-
-script_start = text.find('<script>\n  const supabaseUrl')
-script_end = text.find('</script>', script_start) + 9
-
-new_script = '<script src="js/api.js?v=2026081411"></script>\n<script src="js/app.js?v=2026081411"></script>\n'
-
-if script_start != -1:
-    new_text = text[:script_start] + new_script + text[script_end:]
-    with open(r'g:\Box\AntigravitySync\.gemini\antigravity\scratch\hadeeth_id\profile-detail.html', 'w', encoding='utf-8') as f:
-        f.write(new_text)
-    print('Replaced inline script with api.js and app.js')
-else:
-    print('Could not find script block')
+import re
+text = open('index.html', encoding='utf-8').read()
+m = re.search(r'<a href="hadith-list\.html\?book=malik".*?</a>', text, re.DOTALL)
+if m:
+    malik = m.group(0)
+    syafii = malik.replace('malik', 'syafii').replace('Muwatta Malik', "Musnad Syafi'i").replace("Muwatha' Malik", "Musnad Syafi'i")
+    syafii = syafii.replace('1,595 Ahadith', '1,800 Ahadith').replace('1.595 Hadits', '1.800 Hadits')
+    syafii = syafii.replace('Compiled by Imam Malik, one of the earliest and most respected collections.', "The famous collection attributed to Imam Al-Shafi'i.")
+    syafii = syafii.replace('Disusun oleh Imam Malik, salah satu koleksi paling awal dan dihormati.', "Koleksi hadits musnad dari Imam As-Syafi'i.")
+    text = text.replace(malik, malik + '\n' + syafii)
+    open('index.html', 'w', encoding='utf-8').write(text)
+    print('Success')

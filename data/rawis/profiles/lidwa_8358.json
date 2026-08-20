@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8358",
+  "name_en": "Yahya bin Ya'laa bin Harmalah",
+  "name_id": "Yahya bin Ya'laa bin Harmalah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "180 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Muhayyah",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 4,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

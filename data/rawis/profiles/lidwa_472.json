@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_472",
+  "name_en": "Ahmad bin 'Utsman bin Hakim",
+  "name_id": "Ahmad bin 'Utsman bin Hakim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "261 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Awdiy",
+  "nasab": "Al Awdiy",
+  "laqob": "-",
+  "hadith_count": "34",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 5,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 14,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

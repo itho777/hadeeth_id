@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5938",
+  "name_en": "Umar bin Hafsh bin Ghiyats",
+  "name_id": "Umar bin Hafsh bin Ghiyats",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "222 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Hafsh",
+  "parents": "An Nakha'iy",
+  "nasab": "An Nakha'iy",
+  "laqob": "-",
+  "hadith_count": "117",
+  "book_counts": {
+    "bukhari": 89,
+    "muslim": 14,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 5,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 2
+  }
+}

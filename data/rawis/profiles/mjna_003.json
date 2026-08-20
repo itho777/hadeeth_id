@@ -1,0 +1,33 @@
+{
+  "id": "rawi_alhakim",
+  "name_ar": "أبو عبد الله محمد بن عبد الله الحاكم النيسابوري",
+  "name_en": "Imam Abu Abdullah Al-Hakim an-Naisaburi",
+  "name_id": "Imam Abu Abdillah Al-Hakim an-Naisaburi",
+  "kunya": "Abu Abdullah",
+  "laqab": "Al-Hakim, Ibn al-Bayyi",
+  "birth_year_ah": 321,
+  "death_year_ah": 405,
+  "birth_city": "Naisabur (Nishapur)",
+  "death_city": "Naisabur (Nishapur)",
+  "region": "Khurasan, Persia (kini Iran timur laut)",
+  "madhab": "Syafi'i / Asy'ari",
+  "bio_id": "Imam Al-Hakim An-Naisaburi adalah salah satu ulama hadis paling produktif sepanjang sejarah Islam. Lahir di Naisabur pada 3 Rabiul Awal 321 H / 933 M, beliau mulai menuntut ilmu sejak usia 9 tahun. Nama lengkapnya: Abu Abdullah Muhammad bin Abdullah bin Muhammad bin Hamduyah bin Nu'aim al-Dhabbi al-Thahmani al-Naisaburi, juga dikenal sebagai Ibn al-Baiyi'. Beliau melakukan rihlah ke Khurasan, Irak, Hijaz, dan Transoxiana, belajar dari ribuan guru. Beliau pernah menjabat sebagai hakim (qadhi) di Naisabur. Karya monumentalnya, Al-Mustadrak 'ala ash-Shahihain, disusun sekitar tahun 393 H dengan tujuan menghimpun hadis yang memenuhi kriteria Bukhari-Muslim namun tidak tercantum di dalamnya. Kitab ini terdiri dari 5 jilid dengan sekitar 9.000 hadis. Para ulama, termasuk Imam Adz-Dzahabi, mencatat bahwa sebagian hadis tidak memenuhi standar yang diklaim — karena ditulis di akhir hayat beliau. Adz-Dzahabi menyusun Talkhis al-Mustadrak sebagai ringkasan dan koreksi. Beliau wafat di Naisabur pada Safar 405 H / 1014 M dalam usia sekitar 84 tahun.",
+  "bio_en": "Imam al-Hakim al-Naisaburi was one of the most prolific hadith scholars in Islamic history. Born in Nishapur in 321 AH / 933 CE, he began studying at age 9 and traveled extensively across the Islamic world. He served as qadhi (judge) in Nishapur. His monumental work, Al-Mustadrak ala al-Sahihayn, was compiled around 393 AH to collect hadith meeting Bukhari and Muslim's criteria but absent from their collections. The work spans 5 volumes with ~9,000 hadiths. Scholars including Adh-Dhahabi noted that some hadiths were graded too leniently, possibly due to composition at an advanced age. Adh-Dhahabi compiled Talkhis al-Mustadrak as a summary and correction. He passed away in 405 AH / 1014 CE.",
+  "known_books": [
+    "المستدرك على الصحيحين",
+    "المدخل إلى الصحيح",
+    "معرفة علوم الحديث"
+  ],
+  "teachers": [
+    "Ibn Khuzaimah",
+    "Ibn Hibban",
+    "Yahya bin Mansur al-Qadhi"
+  ],
+  "students": [
+    "Al-Bayhaqi",
+    "Abu Bakr al-Baihaqi"
+  ],
+  "source": "mjna",
+  "source_url": "https://www.mjna.or.id/mustadrak",
+  "profile_id": "mjna_003"
+}

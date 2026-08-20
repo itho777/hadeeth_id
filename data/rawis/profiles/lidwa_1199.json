@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1199",
+  "name_en": "Al Harits bin 'Abdur Rahman bin 'Abdullah ",
+  "name_id": "Al Harits bin 'Abdur Rahman bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "146 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Ad Dausiy",
+  "nasab": "Ad Dausiy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 5,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

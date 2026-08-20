@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5800",
+  "name_en": "Ali bin 'Ali bin Najjad",
+  "name_id": "Ali bin 'Ali bin Najjad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Isma'il",
+  "parents": "Ar Rifa'iy Al Yasykuriy",
+  "nasab": "Ar Rifa'iy Al Yasykuriy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 2
+  }
+}

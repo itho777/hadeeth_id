@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3217",
+  "name_en": "Suraqah bin Malik bin Ja'tsam bin Malik",
+  "name_id": "Suraqah bin Malik bin Ja'tsam bin Malik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "24 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Sufyan",
+  "parents": "Al Kinaniy Al Mudlijiy",
+  "nasab": "Al Kinaniy Al Mudlijiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 4,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

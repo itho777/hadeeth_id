@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6909",
+  "name_en": "Muhammad bin Jahdlom bin 'Abdullah ",
+  "name_id": "Muhammad bin Jahdlom bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Ats Tsaqafiy Al Khurasaniy",
+  "nasab": "Ats Tsaqafiy Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

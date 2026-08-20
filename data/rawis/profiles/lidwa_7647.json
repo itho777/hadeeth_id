@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7647",
+  "name_en": "Mu'aiqib bin Abi Fathimah",
+  "name_id": "Mu'aiqib bin Abi Fathimah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "40 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Ad Dausiy",
+  "nasab": "Ad Dausiy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3476",
+  "name_en": "Salman bin Al Islam",
+  "name_id": "Salman bin Al Islam",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "33 H",
+  "city_of_death": "Mada'in",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Farisiy",
+  "nasab": "Al Farisiy",
+  "laqob": "Salman Al Khair",
+  "hadith_count": "82",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 6,
+    "abudaud": 4,
+    "tirmidzi": 9,
+    "nasai": 5,
+    "ibnumajah": 11,
+    "ahmad": 33,
+    "malik": 0,
+    "darimi": 7
+  }
+}

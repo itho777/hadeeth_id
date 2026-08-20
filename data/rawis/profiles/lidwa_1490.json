@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1490",
+  "name_en": "Adl Dlahhaak bin 'Utsman bin 'Abdullah bin Khalid",
+  "name_id": "Adl Dlahhaak bin 'Utsman bin 'Abdullah bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "153 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "97",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 34,
+    "abudaud": 6,
+    "tirmidzi": 8,
+    "nasai": 7,
+    "ibnumajah": 11,
+    "ahmad": 29,
+    "malik": 0,
+    "darimi": 2
+  }
+}

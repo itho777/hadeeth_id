@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1256",
+  "name_en": "Al Hasan bin Bisyir bin Salmi",
+  "name_id": "Al Hasan bin Bisyir bin Salmi",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "221 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Bajaliy Al Hamdaniy",
+  "nasab": "Al Bajaliy Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 4
+  }
+}

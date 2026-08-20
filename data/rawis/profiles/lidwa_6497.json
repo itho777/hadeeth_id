@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6497",
+  "name_en": "Qathan bin Nusair",
+  "name_id": "Qathan bin Nusair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abbad",
+  "parents": "Al Ghabariy",
+  "nasab": "Al Ghabariy",
+  "laqob": "Adz Dzira/Adz Dzari'",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6936",
+  "name_en": "Muhammad bin Khazim",
+  "name_id": "Muhammad bin Khazim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "195 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Mu'awiyah",
+  "parents": "At Tamimiy As Sa'adiy",
+  "nasab": "At Tamimiy As Sa'adiy",
+  "laqob": "Adl Dluraior",
+  "hadith_count": "1244",
+  "book_counts": {
+    "bukhari": 50,
+    "muslim": 259,
+    "abudaud": 90,
+    "tirmidzi": 127,
+    "nasai": 69,
+    "ibnumajah": 156,
+    "ahmad": 483,
+    "malik": 0,
+    "darimi": 10
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8192",
+  "name_en": "\"Yahya bin Adam bin Sulaiman, maula keluarga Abi Mu'ith\"",
+  "name_id": "\"Yahya bin Adam bin Sulaiman, maula keluarga Abi Mu'ith\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "203 H",
+  "city_of_death": "Falisthina",
+  "residence": "Kufah",
+  "kunyah": "Abu Zakariya",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "486",
+  "book_counts": {
+    "bukhari": 17,
+    "muslim": 40,
+    "abudaud": 27,
+    "tirmidzi": 29,
+    "nasai": 48,
+    "ibnumajah": 22,
+    "ahmad": 300,
+    "malik": 0,
+    "darimi": 3
+  }
+}

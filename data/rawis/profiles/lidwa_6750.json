@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6750",
+  "name_en": "Muhammad bin Aban bin Wazir",
+  "name_id": "Muhammad bin Aban bin Wazir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "244 H",
+  "city_of_death": "Balakh",
+  "residence": "Himsh",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Mustamaliy Al Nalkhiy",
+  "nasab": "Al Mustamaliy Al Nalkhiy",
+  "laqob": "Hamdawaih",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 13,
+    "nasai": 5,
+    "ibnumajah": 2,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

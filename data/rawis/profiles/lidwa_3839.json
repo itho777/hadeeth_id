@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3839",
+  "name_en": "Syaiban bin 'Abdur Rahman",
+  "name_id": "Syaiban bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "164 H",
+  "city_of_death": "Baghdad",
+  "residence": "Kufah",
+  "kunyah": "Abu Mu'awiyah",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "An Nahwaa Al Mu'addib",
+  "hadith_count": "393",
+  "book_counts": {
+    "bukhari": 60,
+    "muslim": 49,
+    "abudaud": 14,
+    "tirmidzi": 23,
+    "nasai": 9,
+    "ibnumajah": 18,
+    "ahmad": 216,
+    "malik": 0,
+    "darimi": 4
+  }
+}

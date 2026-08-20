@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7620",
+  "name_en": "Ma'qil bin Sinan bin Muthahhar",
+  "name_id": "Ma'qil bin Sinan bin Muthahhar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "63 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Asyja'iy",
+  "nasab": "Al Asyja'iy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

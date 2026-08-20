@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7775",
+  "name_en": "Musa bin Nafi'",
+  "name_id": "Musa bin Nafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Syihab",
+  "parents": "Al Hannath Al Asadiy",
+  "nasab": "Al Hannath Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

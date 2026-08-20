@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5575",
+  "name_en": "Adiy bin Hatimbin 'Abdullah ",
+  "name_id": "Adiy bin Hatimbin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "68 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Tharif",
+  "parents": "Ath Tha'iy",
+  "nasab": "Ath Tha'iy",
+  "laqob": "-",
+  "hadith_count": "159",
+  "book_counts": {
+    "bukhari": 22,
+    "muslim": 18,
+    "abudaud": 11,
+    "tirmidzi": 13,
+    "nasai": 29,
+    "ibnumajah": 10,
+    "ahmad": 51,
+    "malik": 0,
+    "darimi": 5
+  }
+}

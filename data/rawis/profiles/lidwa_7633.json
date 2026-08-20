@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7633",
+  "name_en": "Ma'mar bin Raosyid",
+  "name_id": "Ma'mar bin Raosyid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "154 H",
+  "city_of_death": "-",
+  "residence": "Yaman",
+  "kunyah": "Abu 'Urwah",
+  "parents": "Al Azdiy Al Bashriy",
+  "nasab": "Al Azdiy Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "2318",
+  "book_counts": {
+    "bukhari": 263,
+    "muslim": 300,
+    "abudaud": 170,
+    "tirmidzi": 146,
+    "nasai": 163,
+    "ibnumajah": 71,
+    "ahmad": 1169,
+    "malik": 0,
+    "darimi": 36
+  }
+}

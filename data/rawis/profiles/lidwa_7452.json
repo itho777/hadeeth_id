@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7452",
+  "name_en": "Muslim bin Abi Maryam Yasar",
+  "name_id": "Muslim bin Abi Maryam Yasar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "As Saluliy",
+  "nasab": "As Saluliy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 3,
+    "darimi": 0
+  }
+}

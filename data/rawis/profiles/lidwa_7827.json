@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7827",
+  "name_en": "Maimunah binti Sa'ad",
+  "name_id": "Maimunah binti Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Madaniyyah",
+  "nasab": "Al Madaniyyah",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

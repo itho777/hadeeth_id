@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8444",
+  "name_en": "Yazid bin 'Abdur Rahman bin Al Aswad",
+  "name_id": "Yazid bin 'Abdur Rahman bin Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Daud",
+  "parents": "Az Za'afiriy Al Audiy",
+  "nasab": "Az Za'afiriy Al Audiy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

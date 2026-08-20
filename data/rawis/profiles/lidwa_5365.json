@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5365",
+  "name_en": "Ubaidullah bin Abi Ziyad",
+  "name_id": "Ubaidullah bin Abi Ziyad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "150 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Al Hushain",
+  "parents": "Al Qaddah",
+  "nasab": "Al Qaddah",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 3
+  }
+}

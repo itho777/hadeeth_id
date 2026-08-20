@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1848",
+  "name_en": "\"Busr bibn Sa'id, maula Ibnu Al Hadlramiy\"",
+  "name_id": "\"Busr bibn Sa'id, maula Ibnu Al Hadlramiy\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "100 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "133",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 25,
+    "abudaud": 12,
+    "tirmidzi": 9,
+    "nasai": 18,
+    "ibnumajah": 6,
+    "ahmad": 41,
+    "malik": 4,
+    "darimi": 5
+  }
+}

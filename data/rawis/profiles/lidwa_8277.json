@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8277",
+  "name_en": "Yahya bin Sulaiman bin Yahya bin Sa'id",
+  "name_id": "Yahya bin Sulaiman bin Yahya bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "237 H",
+  "city_of_death": "Maru",
+  "residence": "Maru",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Ju'fiy Al Kufiy",
+  "nasab": "Al Ju'fiy Al Kufiy",
+  "laqob": "-",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 41,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

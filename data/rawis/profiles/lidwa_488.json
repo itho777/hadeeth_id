@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_488",
+  "name_en": "Ahmad bin Muhammad bin Hambal bi Hilal bin Asad",
+  "name_id": "Ahmad bin Muhammad bin Hambal bi Hilal bin Asad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "241 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Asy Syaibaniy Al Marwaziy",
+  "nasab": "Asy Syaibaniy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "264",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 19,
+    "abudaud": 225,
+    "tirmidzi": 4,
+    "nasai": 10,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

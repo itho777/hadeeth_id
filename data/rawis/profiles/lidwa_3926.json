@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3926",
+  "name_en": "Shadaqah bin 'Abdullah ",
+  "name_id": "Shadaqah bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "166 H",
+  "city_of_death": "-",
+  "residence": "Dujail",
+  "kunyah": "Abu Mu'awiyah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "As Samin",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

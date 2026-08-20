@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8304",
+  "name_en": "Yahya bin 'Abdul Malik bin Humaid bin Abi Ghaniyyah",
+  "name_id": "Yahya bin 'Abdul Malik bin Humaid bin Abi Ghaniyyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "187 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Zakariya",
+  "parents": "Al Khuza'iy",
+  "nasab": "Al Khuza'iy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

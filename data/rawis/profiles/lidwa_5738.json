@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5738",
+  "name_en": "Ali bin Al Husain bin bin Ibrahim",
+  "name_id": "Ali bin Al Husain bin bin Ibrahim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "261 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al 'Amiriy",
+  "nasab": "Al 'Amiriy",
+  "laqob": "Ibnu Isykab",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

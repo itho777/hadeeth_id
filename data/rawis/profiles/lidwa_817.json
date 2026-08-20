@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_817",
+  "name_en": "Ibrahim bin Khalid bin Abi Al Yaman",
+  "name_id": "Ibrahim bin Khalid bin Abi Al Yaman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "240 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Tsaur",
+  "parents": "Al Kalbiy",
+  "nasab": "Al Kalbiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

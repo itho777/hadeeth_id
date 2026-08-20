@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1380",
+  "name_en": "Al Hakam bin Musa bin Abi Zuhair",
+  "name_id": "Al Hakam bin Musa bin Abi Zuhair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "232 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Shalih",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "69",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 18,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 33,
+    "malik": 0,
+    "darimi": 16
+  }
+}

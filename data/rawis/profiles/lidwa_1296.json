@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1296",
+  "name_en": "Al Hasan bin Muhammad bin Ash Shabah",
+  "name_id": "Al Hasan bin Muhammad bin Ash Shabah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "260 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Ali",
+  "parents": "Az Za'farani",
+  "nasab": "Az Za'farani",
+  "laqob": "-",
+  "hadith_count": "53",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 12,
+    "nasai": 18,
+    "ibnumajah": 6,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

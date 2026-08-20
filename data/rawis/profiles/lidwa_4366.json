@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4366",
+  "name_en": "Abdur Rahman bin Zaid bin Aslam",
+  "name_id": "Abdur Rahman bin Zaid bin Aslam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "182 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al 'Adawiy",
+  "nasab": "Al 'Adawiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 8,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

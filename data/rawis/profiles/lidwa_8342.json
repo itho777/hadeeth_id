@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8342",
+  "name_en": "Yahya bin Musa bin 'Abdui Rabbihi bin Salim",
+  "name_id": "Yahya bin Musa bin 'Abdui Rabbihi bin Salim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "240 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Zakariya",
+  "parents": "Al Haddaniy Al Balkhiy",
+  "nasab": "Al Haddaniy Al Balkhiy",
+  "laqob": "Khittun",
+  "hadith_count": "103",
+  "book_counts": {
+    "bukhari": 24,
+    "muslim": 0,
+    "abudaud": 11,
+    "tirmidzi": 58,
+    "nasai": 7,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 3
+  }
+}

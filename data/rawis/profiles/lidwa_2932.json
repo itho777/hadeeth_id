@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2932",
+  "name_en": "Risydin bin Sa'ad Muflih",
+  "name_id": "Risydin bin Sa'ad Muflih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "188 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Al Hajjaj",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "81",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 18,
+    "nasai": 0,
+    "ibnumajah": 7,
+    "ahmad": 56,
+    "malik": 0,
+    "darimi": 0
+  }
+}

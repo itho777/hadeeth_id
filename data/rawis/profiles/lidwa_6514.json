@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6514",
+  "name_en": "Qais bin Ar Rabi'",
+  "name_id": "Qais bin Ar Rabi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 8,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 1
+  }
+}

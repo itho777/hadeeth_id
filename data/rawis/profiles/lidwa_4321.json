@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4321",
+  "name_en": "Abdur Rahman bin Basyar bin Al Hakam",
+  "name_id": "Abdur Rahman bin Basyar bin Al Hakam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "260 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al 'Abdiy An Naysaburiy",
+  "nasab": "Al 'Abdiy An Naysaburiy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 18,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

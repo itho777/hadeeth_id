@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5653",
+  "name_en": "Affan bin Muslim bin 'Abdullah ",
+  "name_id": "Affan bin Muslim bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "219 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "AlSh Shaffar",
+  "hadith_count": "2202",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 54,
+    "abudaud": 11,
+    "tirmidzi": 18,
+    "nasai": 24,
+    "ibnumajah": 29,
+    "ahmad": 2002,
+    "malik": 0,
+    "darimi": 52
+  }
+}

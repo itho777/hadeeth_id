@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4616",
+  "name_en": "Abdullah ",
+  "name_id": "Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Ash Shunabihiy",
+  "nasab": "Ash Shunabihiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 2,
+    "darimi": 0
+  }
+}

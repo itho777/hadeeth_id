@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8538",
+  "name_en": "Ya'qub bin Muhammad bin Thahla'",
+  "name_id": "Ya'qub bin Muhammad bin Thahla'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "162 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Yusuf",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

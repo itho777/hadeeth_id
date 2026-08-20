@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7048",
+  "name_en": "Muhammad bin 'Ubadah bin Al Mukhtariy",
+  "name_id": "Muhammad bin 'Ubadah bin Al Mukhtariy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 6,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

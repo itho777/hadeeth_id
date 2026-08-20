@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4018",
+  "name_en": "Thalhah bin 'Ubaidillah bin 'Utsman",
+  "name_id": "Thalhah bin 'Ubaidillah bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "36 H",
+  "city_of_death": "Bashrah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qurasyiy At Taymiy",
+  "nasab": "Al Qurasyiy At Taymiy",
+  "laqob": "Al Khairu Al Fayyadl",
+  "hadith_count": "81",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 6,
+    "abudaud": 5,
+    "tirmidzi": 7,
+    "nasai": 9,
+    "ibnumajah": 8,
+    "ahmad": 32,
+    "malik": 1,
+    "darimi": 3
+  }
+}

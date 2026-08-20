@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5073",
+  "name_en": "Abdullah bin Murrah",
+  "name_id": "Abdullah bin Murrah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "100 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Hamdaniy Al Kharifiy",
+  "nasab": "Al Hamdaniy Al Kharifiy",
+  "laqob": "-",
+  "hadith_count": "86",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 11,
+    "abudaud": 5,
+    "tirmidzi": 6,
+    "nasai": 9,
+    "ibnumajah": 8,
+    "ahmad": 30,
+    "malik": 0,
+    "darimi": 5
+  }
+}

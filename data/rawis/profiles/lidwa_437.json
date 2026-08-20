@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_437",
+  "name_en": "Ahmad bin Harb bin Muhammad",
+  "name_id": "Ahmad bin Harb bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "263 H",
+  "city_of_death": "Adzanah",
+  "residence": "Maushul",
+  "kunyah": "Abu 'Ali Abwab",
+  "parents": "Ath Tha'iy",
+  "nasab": "Ath Tha'iy",
+  "laqob": "-",
+  "hadith_count": "34",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 34,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5508",
+  "name_en": "Utsman bin Hakim bin Dzubyan",
+  "name_id": "Utsman bin Hakim bin Dzubyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "219 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Awdiy",
+  "nasab": "Al Awdiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

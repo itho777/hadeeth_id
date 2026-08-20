@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1512",
+  "name_en": "Al 'Alaa' bin Al Harits bin 'Abdul Warits",
+  "name_id": "Al 'Alaa' bin Al Harits bin 'Abdul Warits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "136 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Wahab",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 11,
+    "tirmidzi": 3,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 5
+  }
+}

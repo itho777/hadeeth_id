@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5819",
+  "name_en": "Ali bin Maymun",
+  "name_id": "Ali bin Maymun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "246 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Ar Raqqiy",
+  "nasab": "Ar Raqqiy",
+  "laqob": "Al 'Aththar",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 9,
+    "ibnumajah": 17,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

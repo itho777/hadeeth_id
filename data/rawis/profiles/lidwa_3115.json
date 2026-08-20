@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3115",
+  "name_en": "Zaid bin Abi Unaisah",
+  "name_id": "Zaid bin Abi Unaisah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "125 H",
+  "city_of_death": "Ruha",
+  "residence": "Jazirah",
+  "kunyah": "Abu Usamah",
+  "parents": "Al Jazariy",
+  "nasab": "Al Jazariy",
+  "laqob": "-",
+  "hadith_count": "71",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 17,
+    "abudaud": 7,
+    "tirmidzi": 6,
+    "nasai": 21,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 1,
+    "darimi": 6
+  }
+}

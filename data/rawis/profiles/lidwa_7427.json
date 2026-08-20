@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7427",
+  "name_en": "Masarrah bin Ma'bad",
+  "name_id": "Masarrah bin Ma'bad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Lakhmiy Al Falasthiniy",
+  "nasab": "Al Lakhmiy Al Falasthiniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

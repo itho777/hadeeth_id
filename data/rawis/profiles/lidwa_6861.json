@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6861",
+  "name_en": "Muhammad bin Al Mutsannaa bin 'Ubaid",
+  "name_id": "Muhammad bin Al Mutsannaa bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "252 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Musa",
+  "parents": "Al 'Anaziy",
+  "nasab": "Al 'Anaziy",
+  "laqob": "Az Zaman",
+  "hadith_count": "1261",
+  "book_counts": {
+    "bukhari": 106,
+    "muslim": 720,
+    "abudaud": 106,
+    "tirmidzi": 76,
+    "nasai": 196,
+    "ibnumajah": 49,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

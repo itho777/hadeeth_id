@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3671",
+  "name_en": "Sahal bin Hunaif bin Wahib",
+  "name_id": "Sahal bin Hunaif bin Wahib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "38 H",
+  "city_of_death": "Kufah",
+  "residence": "Madinah",
+  "kunyah": "Abu Tsabit",
+  "parents": "Al Anshariy Al Ausiy",
+  "nasab": "Al Anshariy Al Ausiy",
+  "laqob": "-",
+  "hadith_count": "50",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 9,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 14,
+    "malik": 1,
+    "darimi": 4
+  }
+}

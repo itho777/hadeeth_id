@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5395",
+  "name_en": "Ubaidullah bin Syumaith bin 'Ajlan",
+  "name_id": "Ubaidullah bin Syumaith bin 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "181 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "As Syaibaniy At Tamimiy",
+  "nasab": "As Syaibaniy At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

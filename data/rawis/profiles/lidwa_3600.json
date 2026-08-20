@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3600",
+  "name_en": "Sulaiman bin Shurad",
+  "name_id": "Sulaiman bin Shurad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "65 H",
+  "city_of_death": "Amman",
+  "residence": "Kufah",
+  "kunyah": "Abu Mutharrif",
+  "parents": "Al Khaza'iy",
+  "nasab": "Al Khaza'iy",
+  "laqob": "-",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 0
+  }
+}

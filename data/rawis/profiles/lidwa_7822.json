@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7822",
+  "name_en": "Maimun bin Mihran",
+  "name_id": "Maimun bin Mihran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "117 H",
+  "city_of_death": "Jazirah",
+  "residence": "Jazirah",
+  "kunyah": "Abu Ayyub",
+  "parents": "Ar Raqqiy",
+  "nasab": "Ar Raqqiy",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 6,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 8,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 7
+  }
+}

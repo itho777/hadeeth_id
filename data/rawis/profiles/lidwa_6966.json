@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6966",
+  "name_en": "Muhammad bin Rifa'ah bin Tsa'labah bin Abi Malik",
+  "name_id": "Muhammad bin Rifa'ah bin Tsa'labah bin Abi Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurazhiy",
+  "nasab": "Al Qurazhiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4705",
+  "name_en": "\"Abdullah bin As Sa'ib, maula Hisyam bin Zahrah\"",
+  "name_id": "\"Abdullah bin As Sa'ib, maula Hisyam bin Zahrah\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu As Sa'ib",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 2,
+    "ahmad": 6,
+    "malik": 2,
+    "darimi": 0
+  }
+}

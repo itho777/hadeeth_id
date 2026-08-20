@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2291",
+  "name_en": "Hajjaj bin Al Minhal",
+  "name_id": "Hajjaj bin Al Minhal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "217 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "ABuMuhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "185",
+  "book_counts": {
+    "bukhari": 60,
+    "muslim": 1,
+    "abudaud": 7,
+    "tirmidzi": 6,
+    "nasai": 7,
+    "ibnumajah": 6,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 98
+  }
+}

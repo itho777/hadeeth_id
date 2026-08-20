@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8341",
+  "name_en": "Yahya bin Ma'in bin 'Aun",
+  "name_id": "Yahya bin Ma'in bin 'Aun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "233 H",
+  "city_of_death": "Madinah",
+  "residence": "Baghdad",
+  "kunyah": "Abu Zakariya",
+  "parents": "Al Ghathafaniy",
+  "nasab": "Al Ghathafaniy",
+  "laqob": "-",
+  "hadith_count": "58",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 3,
+    "abudaud": 28,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 0
+  }
+}

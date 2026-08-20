@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4378",
+  "name_en": "Abdur Rahman bin Sa'id bin Wahab",
+  "name_id": "Abdur Rahman bin Sa'id bin Wahab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Hamdaniy Al Khaywaniy",
+  "nasab": "Al Hamdaniy Al Khaywaniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

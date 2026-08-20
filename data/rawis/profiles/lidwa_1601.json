@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1601",
+  "name_en": "Al Qasim bin Mukhaimarah",
+  "name_id": "Al Qasim bin Mukhaimarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "100 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Urwah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 5,
+    "ibnumajah": 4,
+    "ahmad": 21,
+    "malik": 0,
+    "darimi": 3
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6252",
+  "name_en": "Anbasah bin 'Abdul Wahid bin Umayyah",
+  "name_id": "Anbasah bin 'Abdul Wahid bin Umayyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Khalid",
+  "parents": "Al Qurasyiy Al Umawiy",
+  "nasab": "Al Qurasyiy Al Umawiy",
+  "laqob": "Al A'war",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

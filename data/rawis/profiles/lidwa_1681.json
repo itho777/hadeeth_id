@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1681",
+  "name_en": "Al Mufadlol bin Fadlolah bin 'Ubaid",
+  "name_id": "Al Mufadlol bin Fadlolah bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "181 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Mu'awiyah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 3,
+    "abudaud": 9,
+    "tirmidzi": 1,
+    "nasai": 9,
+    "ibnumajah": 1,
+    "ahmad": 18,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2065",
+  "name_en": "Jabir bin Samrah bin Janadah",
+  "name_id": "Jabir bin Samrah bin Janadah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "74 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "429",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 51,
+    "abudaud": 25,
+    "tirmidzi": 22,
+    "nasai": 22,
+    "ibnumajah": 12,
+    "ahmad": 283,
+    "malik": 0,
+    "darimi": 7
+  }
+}

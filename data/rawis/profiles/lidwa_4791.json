@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4791",
+  "name_en": "Abdullah bin Khubaib",
+  "name_id": "Abdullah bin Khubaib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Juhaniy Al Anshariy",
+  "nasab": "Al Juhaniy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

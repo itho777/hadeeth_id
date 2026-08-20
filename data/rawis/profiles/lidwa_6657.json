@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6657",
+  "name_en": "Malik bin Abi 'Amir ",
+  "name_id": "Malik bin Abi 'Amir ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "74 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Anas",
+  "parents": "Al Ashbahiy",
+  "nasab": "Al Ashbahiy",
+  "laqob": "Kakek Malik Al Imam",
+  "hadith_count": "57",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 6,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 10,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 12,
+    "darimi": 2
+  }
+}

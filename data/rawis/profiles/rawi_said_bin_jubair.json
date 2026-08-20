@@ -1,0 +1,29 @@
+{
+  "id": "rawi_said_bin_jubair",
+  "name_en": "Sa'id bin Jubair",
+  "name_id": "Sa'id bin Jubair",
+  "name_ar": "سعيد بن جبير",
+  "is_sahabi": "false",
+  "generation": "Tabi'i",
+  "grade": "Thiqah Imam",
+  "died_ah": "95",
+  "died_ce": "714",
+  "hadith_count": "750",
+  "city_of_death": "Kufah",
+  "bio_en": "Top student of Ibn 'Abbas and prominent Tabi'i scholar of Kufah.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 147,
+    "muslim": 78,
+    "abudaud": 77,
+    "tirmidzi": 64,
+    "nasai": 122,
+    "ibnumajah": 50,
+    "ahmad": 349,
+    "malik": 4,
+    "darimi": 70
+  }
+}

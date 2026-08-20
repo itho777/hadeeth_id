@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5481",
+  "name_en": "Atstsam bin 'Ali bin Hujair",
+  "name_id": "Atstsam bin 'Ali bin Hujair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "195 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al 'Amiriy Al Kilabiy",
+  "nasab": "Al 'Amiriy Al Kilabiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3567",
+  "name_en": "Sulaiman bin Al Asy'ats bin Sayddad",
+  "name_id": "Sulaiman bin Al Asy'ats bin Sayddad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "275 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Daud",
+  "parents": "Al Azdiy As Sajastaniy",
+  "nasab": "Al Azdiy As Sajastaniy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

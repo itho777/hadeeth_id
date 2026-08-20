@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7444",
+  "name_en": "Mas'ud bin Washil",
+  "name_id": "Mas'ud bin Washil",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al 'Aqdiy",
+  "nasab": "Al 'Aqdiy",
+  "laqob": "Al Azraq",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

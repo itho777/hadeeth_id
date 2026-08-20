@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="HADEETH.ID — Administration Console & Sync Management."/>
+  <meta name="description" content="HADEETH.ID Ã¢â‚¬â€ Administration Console & Sync Management."/>
   <title>Admin Console - HADEETH.ID</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -42,14 +42,32 @@
       <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
     </a>
     <nav class="hidden md:flex items-center gap-stack-lg">
-      <a href="books.html"   class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1" data-i18n="nav_books">Books</a>
-      <a href="scholars.html" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1" data-i18n="nav_scholars">Scholars</a>
-      <a href="admin.html"   class="text-primary dark:text-white font-bold border-b-2 border-primary dark:border-[#10b981] py-1" data-i18n="nav_admin">Admin</a>
+      <a href="books.html"   data-nav-page="books.html" data-i18n="nav_books" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Books</a>
+      <a href="topics.html"   data-nav-page="topics.html" data-i18n="nav_topics" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Topics</a>
+      <a href="scholars.html" data-nav-page="scholars.html" data-i18n="nav_scholars" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Scholars</a>
+      <a href="admin.html"   data-nav-page="admin.html" data-i18n="nav_admin" class="text-primary dark:text-white font-bold border-b-2 border-primary dark:border-[#10b981] py-1">Admin</a>
     </nav>
-    <div class="flex items-center gap-stack-sm text-on-surface-variant dark:text-gray-400">
-      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full">
+    <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
+      <!-- Language Switcher -->
+      <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
+        <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
+        <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
+      </div>
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Toggle theme">
         <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
       </button>
+      <button id="mobile-menu-btn" class="p-2 md:hidden hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors">
+        <span class="material-symbols-outlined" data-menu-icon>menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-manuscript-paper dark:bg-[#10141a] border-t border-outline-variant dark:border-[#1e293b]">
+    <div class="flex flex-col px-margin-main py-2 gap-1">
+      <a href="books.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_books">Books</a>
+      <a href="topics.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_topics">Topics</a>
+      <a href="scholars.html" class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_scholars">Scholars</a>
+      <a href="admin.html"   class="py-2 text-primary dark:text-white font-bold" data-i18n="nav_admin">Admin</a>
     </div>
   </div>
 </header>
@@ -82,7 +100,7 @@
       </div>
       <div class="flex flex-col gap-1 text-xs">
         <label class="font-semibold text-primary dark:text-white">Password</label>
-        <input type="password" placeholder="••••••••" class="w-full bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+        <input type="password" placeholder="Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢" class="w-full bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
       </div>
       <button type="submit" class="w-full bg-primary dark:bg-[#10b981] text-white dark:text-black font-semibold py-2.5 rounded-lg text-sm hover:opacity-90 transition-opacity">
         Sign In to Portal
@@ -164,7 +182,7 @@
         <button onclick="clearHOTD()" class="border border-outline-variant dark:border-[#334155] text-on-surface-variant dark:text-gray-400 py-2 px-4 rounded-lg text-sm hover:bg-surface-container-low dark:hover:bg-[#334155] transition-colors">
           Reset to Default
         </button>
-        <span id="hotd-status" class="text-xs text-emerald-500 hidden">✓ Saved!</span>
+        <span id="hotd-status" class="text-xs text-emerald-500 hidden">Ã¢Å“â€œ Saved!</span>
       </div>
 
       <div id="hotd-current" class="text-xs text-outline dark:text-gray-400 bg-surface-container-low dark:bg-[#0f172a] rounded-lg p-3 border border-outline-variant/20 dark:border-[#334155]">
@@ -215,10 +233,18 @@
 </script>
 
 
-<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 text-xs w-full py-8 px-margin-main flex justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-16">
-  <div><span data-i18n="footer_text">© 2026 HADEETH.ID - Digital Manuscript Preservation</span></div>
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
+  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2026 HADEETH.ID - Digital Manuscript Preservation</span></div>
+  <div class="flex flex-wrap gap-4 items-center justify-center">
+    <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
+    <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
+    <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
+  </div>
 </footer>
 
-<script src="js/app.js?v=2026081706"></script>
+<script src="js/app.js?v=2026082009"></script>
 </body>
 </html>
+
+
+

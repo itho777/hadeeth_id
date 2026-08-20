@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6833",
+  "name_en": "Muhammad bin Al Hasan bin Tasnim",
+  "name_id": "Muhammad bin Al Hasan bin Tasnim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "256 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Azdiy Al 'Atakiy",
+  "nasab": "Al Azdiy Al 'Atakiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

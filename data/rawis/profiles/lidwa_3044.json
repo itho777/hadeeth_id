@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3044",
+  "name_en": "Zuhair bin Mu'awiyah bin Hudaij",
+  "name_id": "Zuhair bin Mu'awiyah bin Hudaij",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "173 H",
+  "city_of_death": "Jazirah",
+  "residence": "Kufah",
+  "kunyah": "Abu Khaitsamah",
+  "parents": "Al Ja'fiy",
+  "nasab": "Al Ja'fiy",
+  "laqob": "-",
+  "hadith_count": "604",
+  "book_counts": {
+    "bukhari": 66,
+    "muslim": 89,
+    "abudaud": 108,
+    "tirmidzi": 15,
+    "nasai": 41,
+    "ibnumajah": 11,
+    "ahmad": 243,
+    "malik": 0,
+    "darimi": 31
+  }
+}

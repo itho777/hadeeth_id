@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8159",
+  "name_en": "Waqdan",
+  "name_id": "Waqdan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ya'fur",
+  "parents": "Al 'Abdiy",
+  "nasab": "Al 'Abdiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 4,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 2
+  }
+}

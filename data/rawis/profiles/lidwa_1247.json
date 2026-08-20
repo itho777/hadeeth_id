@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1247",
+  "name_en": "Al Hasan bin Ishaq bin Ziyad",
+  "name_id": "Al Hasan bin Ishaq bin Ziyad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "241 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Laitsiy Al Marwaziy",
+  "nasab": "Al Laitsiy Al Marwaziy",
+  "laqob": "Hasnawih",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

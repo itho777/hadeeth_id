@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4836",
+  "name_en": "Abdullah bin Sa'id bin Hushain",
+  "name_id": "Abdullah bin Sa'id bin Hushain",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "257 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Kindiy",
+  "nasab": "Al Kindiy",
+  "laqob": "Al Asyajj",
+  "hadith_count": "219",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 62,
+    "abudaud": 11,
+    "tirmidzi": 44,
+    "nasai": 4,
+    "ibnumajah": 44,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 52
+  }
+}

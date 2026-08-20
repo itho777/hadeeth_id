@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2247",
+  "name_en": "Habib bin Habib Ibrahim",
+  "name_id": "Habib bin Habib Ibrahim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "11",
+  "died_ah": "218 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Katibu Malik",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "hadithnumber": 1132.2,
+  "arabicnumber": 1132.2,
+  "text": "Telah menceritakan kepada saya ['Abdan] berkata, telah mengabarkan kepada saya [Bapakku] dari [Syu'bah] dari [Asy'ats]; Aku mendengar [Bapakku] berkata; Aku mendengar [Masruq] berkata; \"Aku pernah bertanya kepada ['Aisyah radliallahu 'anha], amal apakah yang paling disukai oleh Nabi shallallahu 'alaihi wasallam? 'Aisyah radliallahu 'anha menjawab: \"Amal yang ditekuni secara terus menerus\". Aku bertanya lagi: \"Kapan Beliau bangun malam?\" 'Aisyah radliallahu 'anha menjawab: \"Beliau bangun malam bila mendengar suara kokok ayam\". Telah menceritakan kepada kami [Muhammad bin Salam] berkata, telah mengabarkan kepada kami [Abu Al Ahwash] dari [Al 'Asy'ats] berkata: \"Jika Beliau mendengar suara kokok ayam Beliau bangun lalu shalat\n\n*(Catatan: Teks terjemahan ini disamakan dengan Hadits No. 1132 karena memiliki redaksi matan/sanad yang berkaitan).*",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "'Abdan",
+      "name_ar": "'Abdan"
+    },
+    {
+      "name_id": "Bapakku",
+      "name_ar": "Bapakku"
+    },
+    {
+      "name_id": "Syu'bah",
+      "name_ar": "Syu'bah"
+    },
+    {
+      "name_id": "Asy'ats",
+      "name_ar": "Asy'ats"
+    },
+    {
+      "name_id": "Bapakku",
+      "name_ar": "Bapakku"
+    },
+    {
+      "name_id": "Masruq",
+      "name_ar": "Masruq"
+    },
+    {
+      "name_id": "'Aisyah radliallahu 'anha",
+      "name_ar": "عائشة"
+    },
+    {
+      "name_id": "Muhammad bin Salam",
+      "name_ar": "Muhammad bin Salam"
+    },
+    {
+      "name_id": "Abu Al Ahwash",
+      "name_ar": "Abu Al Ahwash"
+    },
+    {
+      "name_id": "Al 'Asy'ats",
+      "name_ar": "Al 'Asy'ats"
+    }
+  ]
+}

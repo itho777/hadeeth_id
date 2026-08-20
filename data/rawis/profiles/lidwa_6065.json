@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6065",
+  "name_en": "Amru bin Abi Sufyan bin Asid bin Jariyah",
+  "name_id": "Amru bin Abi Sufyan bin Asid bin Jariyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 2
+  }
+}

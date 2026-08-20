@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1124",
+  "name_en": "Ibnatu (putri) Al Harits bin 'Amir bin Naufal ",
+  "name_id": "Ibnatu (putri) Al Harits bin 'Amir bin Naufal ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "An Naufaliyyah",
+  "nasab": "An Naufaliyyah",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

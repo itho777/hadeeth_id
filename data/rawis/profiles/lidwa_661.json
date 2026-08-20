@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_661",
+  "name_en": "Ummu Kurzi",
+  "name_id": "Ummu Kurzi",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Ummu Kurzi",
+  "parents": "Al K'abiyyah Al Khaza'iyah",
+  "nasab": "Al K'abiyyah Al Khaza'iyah",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 3
+  }
+}

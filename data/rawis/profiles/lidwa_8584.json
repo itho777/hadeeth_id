@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8584",
+  "name_en": "Yusuf bin Mahak bin Bahzad",
+  "name_id": "Yusuf bin Mahak bin Bahzad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "110 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Farisiy",
+  "nasab": "Al Farisiy",
+  "laqob": "-",
+  "hadith_count": "64",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 2,
+    "abudaud": 9,
+    "tirmidzi": 6,
+    "nasai": 2,
+    "ibnumajah": 7,
+    "ahmad": 26,
+    "malik": 0,
+    "darimi": 6
+  }
+}

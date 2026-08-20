@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7362",
+  "name_en": "Makhramah bin Sulaiman",
+  "name_id": "Makhramah bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "130 H",
+  "city_of_death": "Quba'",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Asadiy Al Walibiy",
+  "nasab": "Al Asadiy Al Walibiy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 3,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 1,
+    "darimi": 0
+  }
+}

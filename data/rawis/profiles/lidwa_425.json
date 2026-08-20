@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_425",
+  "name_en": "Ahmad bin An Nadlir bin 'Abdul Wahhab",
+  "name_id": "Ahmad bin An Nadlir bin 'Abdul Wahhab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "An Naysaburiy",
+  "nasab": "An Naysaburiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

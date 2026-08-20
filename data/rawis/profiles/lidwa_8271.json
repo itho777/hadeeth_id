@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8271",
+  "name_en": "Yahya bin Sa'id bin Farrukh",
+  "name_id": "Yahya bin Sa'id bin Farrukh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "198 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Qaththan At Tamimiy",
+  "nasab": "Al Qaththan At Tamimiy",
+  "laqob": "Al Ahwal",
+  "hadith_count": "2643",
+  "book_counts": {
+    "bukhari": 298,
+    "muslim": 214,
+    "abudaud": 231,
+    "tirmidzi": 108,
+    "nasai": 341,
+    "ibnumajah": 79,
+    "ahmad": 1339,
+    "malik": 0,
+    "darimi": 33
+  }
+}

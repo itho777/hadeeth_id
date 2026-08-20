@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4331",
+  "name_en": "Abdur Rahman bin Jabir bin 'Abdullah ",
+  "name_id": "Abdur Rahman bin Jabir bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Atik",
+  "parents": "Al Anshariy As Salmiy",
+  "nasab": "Al Anshariy As Salmiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 1
+  }
+}

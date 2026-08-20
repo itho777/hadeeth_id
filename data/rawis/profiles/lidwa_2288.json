@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2288",
+  "name_en": "Hajjaj bin Arthah bin Tsaur",
+  "name_id": "Hajjaj bin Arthah bin Tsaur",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "145 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Artha'ah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "338",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 9,
+    "tirmidzi": 38,
+    "nasai": 6,
+    "ibnumajah": 43,
+    "ahmad": 215,
+    "malik": 0,
+    "darimi": 26
+  }
+}

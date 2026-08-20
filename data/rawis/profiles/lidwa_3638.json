@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3638",
+  "name_en": "Simak bin Harb bin Aus",
+  "name_id": "Simak bin Harb bin Aus",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "123 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Al Mughirah",
+  "parents": "Adz Dzahaliy Al Bakriy",
+  "nasab": "Adz Dzahaliy Al Bakriy",
+  "laqob": "-",
+  "hadith_count": "768",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 62,
+    "abudaud": 58,
+    "tirmidzi": 69,
+    "nasai": 42,
+    "ibnumajah": 44,
+    "ahmad": 470,
+    "malik": 0,
+    "darimi": 22
+  }
+}

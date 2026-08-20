@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3422",
+  "name_en": "\"Sa'id, maula Al Mughirah bin Syu'bah\"",
+  "name_id": "\"Sa'id, maula Al Mughirah bin Syu'bah\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "At Tabban",
+  "nasab": "At Tabban",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 1
+  }
+}

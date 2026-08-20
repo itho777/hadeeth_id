@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4064",
+  "name_en": "Ashim bin Sulaiman",
+  "name_id": "Ashim bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "142 H",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "Al Ahwal",
+  "hadith_count": "448",
+  "book_counts": {
+    "bukhari": 56,
+    "muslim": 60,
+    "abudaud": 29,
+    "tirmidzi": 26,
+    "nasai": 37,
+    "ibnumajah": 28,
+    "ahmad": 182,
+    "malik": 0,
+    "darimi": 30
+  }
+}

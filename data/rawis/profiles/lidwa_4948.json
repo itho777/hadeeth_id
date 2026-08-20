@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4948",
+  "name_en": "Abdullah bin 'Adiy bin Hamra'",
+  "name_id": "Abdullah bin 'Adiy bin Hamra'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hijaz",
+  "kunyah": "Abu 'Umar",
+  "parents": "Az Zuhriy",
+  "nasab": "Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

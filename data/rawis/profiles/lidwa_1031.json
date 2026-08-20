@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1031",
+  "name_en": "Isma'il bin 'Abdur Rahman bin Abi Karimah",
+  "name_id": "Isma'il bin 'Abdur Rahman bin Abi Karimah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "127 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "As Suddiy Al Kabir",
+  "hadith_count": "71",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 6,
+    "abudaud": 6,
+    "tirmidzi": 14,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 33,
+    "malik": 0,
+    "darimi": 6
+  }
+}

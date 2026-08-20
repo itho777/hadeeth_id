@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7570",
+  "name_en": "Mu'awiyah bin Abi Sufyan Shakhr bin Harb bin Umayyah",
+  "name_id": "Mu'awiyah bin Abi Sufyan Shakhr bin Harb bin Umayyah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "60 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al Umawiy",
+  "nasab": "Al Qurasyiy Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "243",
+  "book_counts": {
+    "bukhari": 18,
+    "muslim": 16,
+    "abudaud": 21,
+    "tirmidzi": 8,
+    "nasai": 31,
+    "ibnumajah": 16,
+    "ahmad": 113,
+    "malik": 7,
+    "darimi": 13
+  }
+}

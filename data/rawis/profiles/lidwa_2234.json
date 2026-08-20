@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2234",
+  "name_en": "Hibban bin Musa bin Sawwar",
+  "name_id": "Hibban bin Musa bin Sawwar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "233 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "59",
+  "book_counts": {
+    "bukhari": 21,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 37,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

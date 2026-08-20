@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8474",
+  "name_en": "Yazid bin Malik bin 'Abdullah ",
+  "name_id": "Yazid bin Malik bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Ju'fiy",
+  "nasab": "Al Ju'fiy",
+  "laqob": "Ayah Sabrah",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

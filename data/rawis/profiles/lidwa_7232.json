@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7232",
+  "name_en": "Muhammad bin 'Isa bin Najih",
+  "name_id": "Muhammad bin 'Isa bin Najih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "224 H",
+  "city_of_death": "Thabariyah",
+  "residence": "Thabariyah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Baghdadiy",
+  "nasab": "Al Baghdadiy",
+  "laqob": "Ibnu Ath Thabba'",
+  "hadith_count": "153",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 70,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 75
+  }
+}

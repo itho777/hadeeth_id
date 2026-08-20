@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5562",
+  "name_en": "Utsman bin Nahik",
+  "name_id": "Utsman bin Nahik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Nahik",
+  "parents": "Al Azdiy Al Farahidiy",
+  "nasab": "Al Azdiy Al Farahidiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

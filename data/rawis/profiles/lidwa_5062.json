@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5062",
+  "name_en": "Abdullah bin Muhammad bin 'Aqil bin Abi Thalib",
+  "name_id": "Abdullah bin Muhammad bin 'Aqil bin Abi Thalib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "142 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qurasyiy Al Hasyimiy",
+  "nasab": "Al Qurasyiy Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "186",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 10,
+    "tirmidzi": 17,
+    "nasai": 0,
+    "ibnumajah": 28,
+    "ahmad": 126,
+    "malik": 0,
+    "darimi": 5
+  }
+}

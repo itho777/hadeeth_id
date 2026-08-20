@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7928",
+  "name_en": "Nufai' bin Al Harits",
+  "name_id": "Nufai' bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Daud",
+  "parents": "Al Hamdaniy",
+  "nasab": "Al Hamdaniy",
+  "laqob": "Al A'maa",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 6,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 1
+  }
+}

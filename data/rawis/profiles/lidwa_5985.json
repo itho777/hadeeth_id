@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5985",
+  "name_en": "Umar bin 'Ubaid bin Abi Umayyah ",
+  "name_id": "Umar bin 'Ubaid bin Abi Umayyah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "185 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Hafsh",
+  "parents": "Ath Thanafisiy Al Hanafiy",
+  "nasab": "Ath Thanafisiy Al Hanafiy",
+  "laqob": "-",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 10,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 0
+  }
+}

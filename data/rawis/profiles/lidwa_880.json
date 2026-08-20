@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_880",
+  "name_en": "Ibrahim bin Muhammad bin 'Ar'arah bin Al Barundi",
+  "name_id": "Ibrahim bin Muhammad bin 'Ar'arah bin Al Barundi",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "231 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ishaq",
+  "parents": "As Samiy Al Bashriy",
+  "nasab": "As Samiy Al Bashriy",
+  "laqob": "Ibnu 'Ar'arah",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 7,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

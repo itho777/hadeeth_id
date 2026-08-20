@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7877",
+  "name_en": "Najih bin 'Abdur Rahman",
+  "name_id": "Najih bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "170 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ma'syar",
+  "parents": "As Sindiy",
+  "nasab": "As Sindiy",
+  "laqob": "-",
+  "hadith_count": "33",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 0
+  }
+}

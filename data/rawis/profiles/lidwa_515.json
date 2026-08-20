@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_515",
+  "name_en": "Arthah bin Al Mundzir bin Al Aswad",
+  "name_id": "Arthah bin Al Mundzir bin Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "163 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Adiy",
+  "parents": "Al Alhaaniy As Sukuni",
+  "nasab": "Al Alhaaniy As Sukuni",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

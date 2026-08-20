@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4232",
+  "name_en": "Abdul Hamid bin Humaid bin Nashr",
+  "name_id": "Abdul Hamid bin Humaid bin Nashr",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "249 H",
+  "city_of_death": "Karbala",
+  "residence": "Himsh",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Kaisysyiy",
+  "nasab": "Al Kaisysyiy",
+  "laqob": "Abdu",
+  "hadith_count": "466",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 307,
+    "abudaud": 0,
+    "tirmidzi": 158,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

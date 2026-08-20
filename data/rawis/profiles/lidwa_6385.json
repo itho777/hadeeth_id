@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6385",
+  "name_en": "Fathimah binti Al Husain bin 'Ali bin Abi Thalib",
+  "name_id": "Fathimah binti Al Husain bin 'Ali bin Abi Thalib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "111 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Hasyimiyyah",
+  "nasab": "Al Hasyimiyyah",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

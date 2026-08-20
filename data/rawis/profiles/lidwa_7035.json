@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7035",
+  "name_en": "Muhammad bin Thalhah bin 'Abdur Rahman",
+  "name_id": "Muhammad bin Thalhah bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "180 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "Ibnu Ath Thawil",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

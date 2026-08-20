@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7069",
+  "name_en": "Muhammad bin 'Abdur Rahman bin Thalhah",
+  "name_id": "Muhammad bin 'Abdur Rahman bin Thalhah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Abdariy Al Hajjiy",
+  "nasab": "Al 'Abdariy Al Hajjiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

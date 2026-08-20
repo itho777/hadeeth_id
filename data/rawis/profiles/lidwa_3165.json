@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3165",
+  "name_en": "Zainab binti Abi Salamah bin 'Abdul Aswad",
+  "name_id": "Zainab binti Abi Salamah bin 'Abdul Aswad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "73 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Makhzumiyyah",
+  "nasab": "Al Makhzumiyyah",
+  "laqob": "-",
+  "hadith_count": "177",
+  "book_counts": {
+    "bukhari": 46,
+    "muslim": 25,
+    "abudaud": 13,
+    "tirmidzi": 6,
+    "nasai": 26,
+    "ibnumajah": 14,
+    "ahmad": 37,
+    "malik": 7,
+    "darimi": 3
+  }
+}

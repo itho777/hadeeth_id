@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3807",
+  "name_en": "Syu'aib bin Harb",
+  "name_id": "Syu'aib bin Harb",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "197 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Shalih",
+  "parents": "Al Mada'ini Al Baghdadiy",
+  "nasab": "Al Mada'ini Al Baghdadiy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

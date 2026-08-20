@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5821",
+  "name_en": "Ali bin Nashr bin 'Ali bin Shuhban",
+  "name_id": "Ali bin Nashr bin 'Ali bin Shuhban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "187 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Jahdlomiy Al Azdiy",
+  "nasab": "Al Jahdlomiy Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 13,
+    "abudaud": 7,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 8,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

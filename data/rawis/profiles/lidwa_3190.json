@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3190",
+  "name_en": "Salim bin Syawal",
+  "name_id": "Salim bin Syawal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al Umawiy",
+  "nasab": "Al Qurasyiy Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

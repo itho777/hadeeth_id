@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5760",
+  "name_en": "Ali bin Hafsh",
+  "name_id": "Ali bin Hafsh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Mada'iniy",
+  "nasab": "Al Mada'iniy",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 38,
+    "malik": 0,
+    "darimi": 0
+  }
+}

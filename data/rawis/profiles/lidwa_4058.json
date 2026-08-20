@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4058",
+  "name_en": "Ashim bin An Nadlor bin Al Muntasyir",
+  "name_id": "Ashim bin An Nadlor bin Al Muntasyir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu 'Umar",
+  "parents": "At Taymiyyah",
+  "nasab": "At Taymiyyah",
+  "laqob": "Al Ahwal",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 12,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3993",
+  "name_en": "Thariq bin 'Abdur Rahman",
+  "name_id": "Thariq bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Bajaliy Al Ahmasiy",
+  "nasab": "Al Bajaliy Al Ahmasiy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 5,
+    "ibnumajah": 3,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 2
+  }
+}

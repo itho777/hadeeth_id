@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_431",
+  "name_en": "Ahmad bin Ja'far",
+  "name_id": "Ahmad bin Ja'far",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Ma'qiriy",
+  "nasab": "Al Ma'qiriy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

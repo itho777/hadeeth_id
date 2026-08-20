@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6832",
+  "name_en": "Muhammad bin Al Hasan bin Az Zubair",
+  "name_id": "Muhammad bin Al Hasan bin Az Zubair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "200 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "At Tall",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

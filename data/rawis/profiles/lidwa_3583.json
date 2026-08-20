@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3583",
+  "name_en": "Sulaiman bin Daud",
+  "name_id": "Sulaiman bin Daud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "234 H",
+  "city_of_death": "Bashrah",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ar Rabi'",
+  "parents": "Az Zuhraniy Al 'Atakiy",
+  "nasab": "Az Zuhraniy Al 'Atakiy",
+  "laqob": "-",
+  "hadith_count": "205",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 139,
+    "abudaud": 27,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 23,
+    "malik": 0,
+    "darimi": 4
+  }
+}

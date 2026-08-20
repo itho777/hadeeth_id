@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8228",
+  "name_en": "Yahya bin Al Fadlol",
+  "name_id": "Yahya bin Al Fadlol",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Samira",
+  "kunyah": "-",
+  "parents": "As Sijistaniy",
+  "nasab": "As Sijistaniy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4735",
+  "name_en": "Abdullah bin Bahir bin Raisan",
+  "name_id": "Abdullah bin Bahir bin Raisan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Wa'il",
+  "parents": "Ash Shan'aniy Al Muradiy",
+  "nasab": "Ash Shan'aniy Al Muradiy",
+  "laqob": "Al Qash",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

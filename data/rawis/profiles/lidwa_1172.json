@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1172",
+  "name_en": "Al Julah",
+  "name_id": "Al Julah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "120 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Katsir",
+  "parents": "Al Umawwiy",
+  "nasab": "Al Umawwiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

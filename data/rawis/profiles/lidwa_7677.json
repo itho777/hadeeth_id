@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7677",
+  "name_en": "Manshur bin Sa'ad",
+  "name_id": "Manshur bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "Shahibu Al Lu'lu'",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

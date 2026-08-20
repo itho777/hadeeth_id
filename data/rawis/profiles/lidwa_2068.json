@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2068",
+  "name_en": "Jabir bin Thariq bin 'Auf",
+  "name_id": "Jabir bin Thariq bin 'Auf",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Hakim",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

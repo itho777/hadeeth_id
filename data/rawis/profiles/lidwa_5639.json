@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5639",
+  "name_en": "Atha' bin Yazid",
+  "name_id": "Atha' bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "107 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Laitsiy Al Janda'iy",
+  "nasab": "Al Laitsiy Al Janda'iy",
+  "laqob": "-",
+  "hadith_count": "155",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 15,
+    "abudaud": 14,
+    "tirmidzi": 5,
+    "nasai": 22,
+    "ibnumajah": 9,
+    "ahmad": 53,
+    "malik": 5,
+    "darimi": 7
+  }
+}

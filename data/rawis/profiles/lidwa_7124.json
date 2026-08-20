@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7124",
+  "name_en": "Muhammad bin 'Abdullah bin 'Ulatsah",
+  "name_id": "Muhammad bin 'Abdullah bin 'Ulatsah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "168 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Al yasir",
+  "parents": "Al 'Aqiliy Al Harraniy",
+  "nasab": "Al 'Aqiliy Al Harraniy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

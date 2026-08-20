@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_492",
+  "name_en": "Ahmad bin Muhammad bin Yahya bin Sa'id",
+  "name_id": "Ahmad bin Muhammad bin Yahya bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "258 H",
+  "city_of_death": "Rashafatu Hisyam",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Qaththan",
+  "nasab": "Al Qaththan",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

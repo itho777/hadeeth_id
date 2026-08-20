@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_558",
+  "name_en": "Asma' binti 'Umais",
+  "name_id": "Asma' binti 'Umais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Khasy'amiyyah",
+  "nasab": "Al Khasy'amiyyah",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 12,
+    "malik": 2,
+    "darimi": 0
+  }
+}

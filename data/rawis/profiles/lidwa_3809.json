@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3809",
+  "name_en": "Syu'aib bin Ruzaiq",
+  "name_id": "Syu'aib bin Ruzaiq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Syaibah",
+  "parents": "Al Maqdisiy",
+  "nasab": "Al Maqdisiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

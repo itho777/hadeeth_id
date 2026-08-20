@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_331",
+  "name_en": "Abu Murayyah 'Abdullah bin 'Amru",
+  "name_id": "Abu Murayyah 'Abdullah bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al 'Ajaliy At Taymiy",
+  "nasab": "Al 'Ajaliy At Taymiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

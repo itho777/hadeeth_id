@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3610",
+  "name_en": "Sulaiman bin 'Ubaidillah bin 'Amru",
+  "name_id": "Sulaiman bin 'Ubaidillah bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "246 H",
+  "city_of_death": "-",
+  "residence": "bashrah",
+  "kunyah": "Au Ayyub",
+  "parents": "Al Ghaylaniy Al Maziniy",
+  "nasab": "Al Ghaylaniy Al Maziniy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 5,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

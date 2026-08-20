@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2151",
+  "name_en": "Ja'far bin Sulaiman",
+  "name_id": "Ja'far bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "178 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sulaiman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "113",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 15,
+    "abudaud": 15,
+    "tirmidzi": 27,
+    "nasai": 10,
+    "ibnumajah": 7,
+    "ahmad": 34,
+    "malik": 0,
+    "darimi": 5
+  }
+}

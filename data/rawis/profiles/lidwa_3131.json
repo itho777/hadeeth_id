@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3131",
+  "name_en": "Zaid bin Tsabit bin Adl Dlahhak",
+  "name_id": "Zaid bin Tsabit bin Adl Dlahhak",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "45 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Anshariy An Najjariy",
+  "nasab": "Al Anshariy An Najjariy",
+  "laqob": "-",
+  "hadith_count": "287",
+  "book_counts": {
+    "bukhari": 27,
+    "muslim": 13,
+    "abudaud": 19,
+    "tirmidzi": 16,
+    "nasai": 34,
+    "ibnumajah": 10,
+    "ahmad": 101,
+    "malik": 24,
+    "darimi": 43
+  }
+}

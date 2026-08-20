@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8114",
+  "name_en": "Wabishah bin Ma'bad bin 'Utbah ",
+  "name_id": "Wabishah bin Ma'bad bin 'Utbah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Salim",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 3
+  }
+}

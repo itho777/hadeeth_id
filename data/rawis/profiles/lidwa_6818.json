@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6818",
+  "name_en": "Muhammad bin Isma'il bin Al Bakhtariy",
+  "name_id": "Muhammad bin Isma'il bin Al Bakhtariy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "258 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Hassaniy Al Wasithiy",
+  "nasab": "Al Hassaniy Al Wasithiy",
+  "laqob": "Adl Dlurair",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

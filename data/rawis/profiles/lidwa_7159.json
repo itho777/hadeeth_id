@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7159",
+  "name_en": "Muhammad bin 'Ubaidillah bin Sa'id",
+  "name_id": "Muhammad bin 'Ubaidillah bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "10",
+  "died_ah": "110 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Aun",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "Al A'war",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 4,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 1
+  }
+}

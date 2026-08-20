@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_746",
+  "name_en": "Ayyub bin Abi Tamimah Kaysan",
+  "name_id": "Ayyub bin Abi Tamimah Kaysan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "131 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "As Sikhtiyaniiy",
+  "nasab": "As Sikhtiyaniiy",
+  "laqob": "-",
+  "hadith_count": "1493",
+  "book_counts": {
+    "bukhari": 239,
+    "muslim": 186,
+    "abudaud": 134,
+    "tirmidzi": 105,
+    "nasai": 160,
+    "ibnumajah": 55,
+    "ahmad": 537,
+    "malik": 7,
+    "darimi": 70
+  }
+}

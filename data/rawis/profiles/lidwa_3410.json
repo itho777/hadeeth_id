@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3410",
+  "name_en": "Sa'id bin Yahya bin Sa'id Aban bin Sa'id bin Al 'Ash",
+  "name_id": "Sa'id bin Yahya bin Sa'id Aban bin Sa'id bin Al 'Ash",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "249 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Umawiy Al Qurasyiy",
+  "nasab": "Al Umawiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 10,
+    "abudaud": 1,
+    "tirmidzi": 9,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

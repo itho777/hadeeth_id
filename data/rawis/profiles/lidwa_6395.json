@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6395",
+  "name_en": "Furat bin Abi 'Abdur Rahman",
+  "name_id": "Furat bin Abi 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qazzaz AT Tmimiy",
+  "nasab": "Al Qazzaz AT Tmimiy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

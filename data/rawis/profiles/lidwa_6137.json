@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6137",
+  "name_en": "Amru bin Salamah bin Qais",
+  "name_id": "Amru bin Salamah bin Qais",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Yazid",
+  "parents": "Al Jarmiy",
+  "nasab": "Al Jarmiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

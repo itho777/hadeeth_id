@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1716",
+  "name_en": "An Nadlir bin Syumail",
+  "name_id": "An Nadlir bin Syumail",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "203 H",
+  "city_of_death": "Kafar Jadiya",
+  "residence": "Himsh",
+  "kunyah": "Abu Al Hasan",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "153",
+  "book_counts": {
+    "bukhari": 37,
+    "muslim": 31,
+    "abudaud": 3,
+    "tirmidzi": 15,
+    "nasai": 43,
+    "ibnumajah": 10,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 6
+  }
+}

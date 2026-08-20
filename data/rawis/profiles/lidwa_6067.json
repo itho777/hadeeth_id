@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6067",
+  "name_en": "Amru bin Abi Salamah",
+  "name_id": "Amru bin Abi Salamah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "213 H",
+  "city_of_death": "Tal 'Abdiy",
+  "residence": "Maru",
+  "kunyah": "Abu Hafsh",
+  "parents": "Ad Damasqiy At Tunisiy",
+  "nasab": "Ad Damasqiy At Tunisiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 6,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

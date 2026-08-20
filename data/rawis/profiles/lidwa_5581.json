@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5581",
+  "name_en": "Udaysah binti Uhban bin Shayfiy",
+  "name_id": "Udaysah binti Uhban bin Shayfiy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Ghifariyah",
+  "nasab": "Al Ghifariyah",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

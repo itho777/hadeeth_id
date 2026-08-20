@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6795",
+  "name_en": "Muhammad bin Ibrahim bin Abi 'Adiy",
+  "name_id": "Muhammad bin Ibrahim bin Abi 'Adiy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "194 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amru",
+  "parents": "As Sulamiy",
+  "nasab": "As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "471",
+  "book_counts": {
+    "bukhari": 37,
+    "muslim": 82,
+    "abudaud": 23,
+    "tirmidzi": 39,
+    "nasai": 36,
+    "ibnumajah": 34,
+    "ahmad": 220,
+    "malik": 0,
+    "darimi": 0
+  }
+}

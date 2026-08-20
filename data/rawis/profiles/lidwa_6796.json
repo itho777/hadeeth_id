@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6796",
+  "name_en": "Muhammad bin Ibrahim bin Al Harits bin Khalid",
+  "name_id": "Muhammad bin Ibrahim bin Al Harits bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "120 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "At Taymiy Al Qurasyiy",
+  "nasab": "At Taymiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "290",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 22,
+    "abudaud": 30,
+    "tirmidzi": 19,
+    "nasai": 31,
+    "ibnumajah": 22,
+    "ahmad": 110,
+    "malik": 16,
+    "darimi": 15
+  }
+}

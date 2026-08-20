@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_495",
+  "name_en": "Ahmad bin Naashih",
+  "name_id": "Ahmad bin Naashih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Mushayshiyah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Mushayshiy",
+  "nasab": "Al Mushayshiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

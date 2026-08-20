@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3287",
+  "name_en": "Sa'id bin Abyadl bin Hammal",
+  "name_id": "Sa'id bin Abyadl bin Hammal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Yaman",
+  "kunyah": "Abu Hani'",
+  "parents": "Al Mu'aribiy",
+  "nasab": "Al Mu'aribiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

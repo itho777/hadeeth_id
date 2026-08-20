@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8247",
+  "name_en": "Yahya bin Habib bin 'Arabiy",
+  "name_id": "Yahya bin Habib bin 'Arabiy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "248 H",
+  "city_of_death": "-",
+  "residence": "Bashrah/Bashriy",
+  "kunyah": "Abu Zakariya'",
+  "parents": "Al Haritsiy",
+  "nasab": "Al Haritsiy",
+  "laqob": "-",
+  "hadith_count": "132",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 83,
+    "abudaud": 7,
+    "tirmidzi": 5,
+    "nasai": 33,
+    "ibnumajah": 3,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

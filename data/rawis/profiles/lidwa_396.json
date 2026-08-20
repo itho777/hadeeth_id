@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_396",
+  "name_en": "Ubay bin Ka'ab bin Qais",
+  "name_id": "Ubay bin Ka'ab bin Qais",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "32 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Mundzir ",
+  "parents": "Al Anshariy Al Khazrajiy",
+  "nasab": "Al Anshariy Al Khazrajiy",
+  "laqob": "-",
+  "hadith_count": "307",
+  "book_counts": {
+    "bukhari": 22,
+    "muslim": 20,
+    "abudaud": 29,
+    "tirmidzi": 25,
+    "nasai": 12,
+    "ibnumajah": 22,
+    "ahmad": 163,
+    "malik": 3,
+    "darimi": 11
+  }
+}

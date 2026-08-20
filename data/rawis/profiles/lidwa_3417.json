@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3417",
+  "name_en": "Sa'id bin Yazid bin Maslamah",
+  "name_id": "Sa'id bin Yazid bin Maslamah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Maslamah",
+  "parents": "Al Azdiy",
+  "nasab": "Al Azdiy",
+  "laqob": "Al Qashir",
+  "hadith_count": "43",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 9,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 5
+  }
+}

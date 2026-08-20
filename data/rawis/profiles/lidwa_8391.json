@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8391",
+  "name_en": "Yazid bin Al Ashamm bin 'Ubaid",
+  "name_id": "Yazid bin Al Ashamm bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "103 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Auf",
+  "parents": "Al Bukka'iy",
+  "nasab": "Al Bukka'iy",
+  "laqob": "-",
+  "hadith_count": "81",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 18,
+    "abudaud": 5,
+    "tirmidzi": 4,
+    "nasai": 3,
+    "ibnumajah": 6,
+    "ahmad": 40,
+    "malik": 0,
+    "darimi": 5
+  }
+}

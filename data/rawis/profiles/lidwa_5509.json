@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5509",
+  "name_en": "Utsman bin Hakim bin 'Abbad",
+  "name_id": "Utsman bin Hakim bin 'Abbad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "138 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Sahal",
+  "parents": "Al Ausiy Al Madani",
+  "nasab": "Al Ausiy Al Madani",
+  "laqob": "-",
+  "hadith_count": "57",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 10,
+    "abudaud": 7,
+    "tirmidzi": 1,
+    "nasai": 6,
+    "ibnumajah": 3,
+    "ahmad": 28,
+    "malik": 0,
+    "darimi": 2
+  }
+}

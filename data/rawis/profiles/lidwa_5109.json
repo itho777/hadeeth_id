@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5109",
+  "name_en": "Abdullah bin Munir",
+  "name_id": "Abdullah bin Munir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "243 H",
+  "city_of_death": "Fariyab",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Marwaziy",
+  "nasab": "Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 5,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

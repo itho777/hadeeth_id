@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7963",
+  "name_en": "Naufal bin Mu'awiyah bin 'Urwah",
+  "name_id": "Naufal bin Mu'awiyah bin 'Urwah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Mu'awiyah",
+  "parents": "Al Kinaniy Ad Diyliy",
+  "nasab": "Al Kinaniy Ad Diyliy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

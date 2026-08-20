@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5716",
+  "name_en": "Alqamah bin Martsad",
+  "name_id": "Alqamah bin Martsad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Harits",
+  "parents": "Al Hadlramiy",
+  "nasab": "Al Hadlramiy",
+  "laqob": "-",
+  "hadith_count": "127",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 16,
+    "abudaud": 9,
+    "tirmidzi": 14,
+    "nasai": 12,
+    "ibnumajah": 13,
+    "ahmad": 52,
+    "malik": 0,
+    "darimi": 7
+  }
+}

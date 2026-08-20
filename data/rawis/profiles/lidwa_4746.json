@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4746",
+  "name_en": "Abdullah bin Bakar bin Habib",
+  "name_id": "Abdullah bin Bakar bin Habib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "208 H",
+  "city_of_death": "Baghdad",
+  "residence": "Bashrah",
+  "kunyah": "Abu Wahab",
+  "parents": "As Sahmiy Al Bahiliy",
+  "nasab": "As Sahmiy Al Bahiliy",
+  "laqob": "-",
+  "hadith_count": "72",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 56,
+    "malik": 0,
+    "darimi": 0
+  }
+}

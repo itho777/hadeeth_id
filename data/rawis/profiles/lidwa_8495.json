@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8495",
+  "name_en": "\"Yazid, maula Al Munba'its\"",
+  "name_id": "\"Yazid, maula Al Munba'its\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 1,
+    "darimi": 0
+  }
+}

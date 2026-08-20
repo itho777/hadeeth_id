@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4909",
+  "name_en": "Abdullah bin 'Abdush Shamad bin Abu Khidasy",
+  "name_id": "Abdullah bin 'Abdush Shamad bin Abu Khidasy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "255 H",
+  "city_of_death": "-",
+  "residence": "Maushul",
+  "kunyah": "-",
+  "parents": "Al Asadiy Al Mawshuliy",
+  "nasab": "Al Asadiy Al Mawshuliy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

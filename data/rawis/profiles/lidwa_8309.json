@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8309",
+  "name_en": "Yahya bin 'Atiq",
+  "name_id": "Yahya bin 'Atiq",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Ath Thaffawiy",
+  "nasab": "Ath Thaffawiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

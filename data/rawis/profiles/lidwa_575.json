@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_575",
+  "name_en": "Asy'ats bin Sa'id ",
+  "name_id": "Asy'ats bin Sa'id ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Ar Rabi'",
+  "parents": "As Samman Al Bashriy",
+  "nasab": "As Samman Al Bashriy",
+  "laqob": "As Samman",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

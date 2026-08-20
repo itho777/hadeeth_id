@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5594",
+  "name_en": "Urwah bin Az Zubair bin Al 'Awwam bin Khuwailid bin Asad bin 'Abdul 'Izzi bin Qu",
+  "name_id": "Urwah bin Az Zubair bin Al 'Awwam bin Khuwailid bin Asad bin 'Abdul 'Izzi bin Qu",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "93 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "2869",
+  "book_counts": {
+    "bukhari": 629,
+    "muslim": 328,
+    "abudaud": 210,
+    "tirmidzi": 131,
+    "nasai": 270,
+    "ibnumajah": 165,
+    "ahmad": 890,
+    "malik": 149,
+    "darimi": 97
+  }
+}

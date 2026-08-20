@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5264",
+  "name_en": "Abdul Wahid bin Ghiyats ",
+  "name_id": "Abdul Wahid bin Ghiyats ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "240 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bahar",
+  "parents": "Al Murbadiy Ash Shairifiy",
+  "nasab": "Al Murbadiy Ash Shairifiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

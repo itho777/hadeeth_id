@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5058",
+  "name_en": "Abdullah bin Muhammad bin 'Abdur Rahman bin Al Musawwir",
+  "name_id": "Abdullah bin Muhammad bin 'Abdur Rahman bin Al Musawwir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "256 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Az Zuhriy",
+  "nasab": "Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 7,
+    "tirmidzi": 1,
+    "nasai": 28,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

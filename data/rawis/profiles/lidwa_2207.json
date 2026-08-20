@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2207",
+  "name_en": "Hatim bin Abi Shaghirah",
+  "name_id": "Hatim bin Abi Shaghirah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Yunus",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 6,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 8,
+    "ibnumajah": 2,
+    "ahmad": 18,
+    "malik": 0,
+    "darimi": 2
+  }
+}

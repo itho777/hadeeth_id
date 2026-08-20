@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3349",
+  "name_en": "Sa'id bin 'Amir",
+  "name_id": "Sa'id bin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "208 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Adl Dlab'iy",
+  "nasab": "Adl Dlab'iy",
+  "laqob": "-",
+  "hadith_count": "109",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 4,
+    "abudaud": 4,
+    "tirmidzi": 6,
+    "nasai": 5,
+    "ibnumajah": 3,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 77
+  }
+}

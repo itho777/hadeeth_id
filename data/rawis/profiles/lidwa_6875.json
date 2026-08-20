@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6875",
+  "name_en": "Muhammad bin Al Walid bin 'Amir",
+  "name_id": "Muhammad bin Al Walid bin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "147 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Hudzail",
+  "parents": "Az Zubaidiy Al Himshiy",
+  "nasab": "Az Zubaidiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "117",
+  "book_counts": {
+    "bukhari": 21,
+    "muslim": 15,
+    "abudaud": 24,
+    "tirmidzi": 0,
+    "nasai": 36,
+    "ibnumajah": 4,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 3
+  }
+}

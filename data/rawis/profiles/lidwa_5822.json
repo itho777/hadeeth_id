@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5822",
+  "name_en": "Ali bin Nadlor bin 'Ali bin Nadlor",
+  "name_id": "Ali bin Nadlor bin 'Ali bin Nadlor",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Jahdlomiy ",
+  "nasab": "Al Jahdlomiy ",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 4,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

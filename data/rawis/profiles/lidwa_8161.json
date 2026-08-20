@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8161",
+  "name_en": "Waki' bin 'Udus",
+  "name_id": "Waki' bin 'Udus",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Tha'if",
+  "kunyah": "Abu Mush'ab",
+  "parents": "Al 'Uqailiy",
+  "nasab": "Al 'Uqailiy",
+  "laqob": "-",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 4,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 2
+  }
+}

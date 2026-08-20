@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_170",
+  "name_en": "Abu Khuzamah bin Ya'mar",
+  "name_id": "Abu Khuzamah bin Ya'mar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Khuzamah ",
+  "parents": "As Sa'adiy",
+  "nasab": "As Sa'adiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

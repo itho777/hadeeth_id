@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5811",
+  "name_en": "Ali bin Muhammad bin Ishaq",
+  "name_id": "Ali bin Muhammad bin Ishaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "233 H",
+  "city_of_death": "-",
+  "residence": "Qirqisiya",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Ath Thanafisiy Al Kufiy",
+  "nasab": "Ath Thanafisiy Al Kufiy",
+  "laqob": "-",
+  "hadith_count": "507",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 507,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

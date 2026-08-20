@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6495",
+  "name_en": "Qathan bin Qabishah bin Al Mukhariq",
+  "name_id": "Qathan bin Qabishah bin Al Mukhariq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sahlah",
+  "parents": "Al Hilaliy",
+  "nasab": "Al Hilaliy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

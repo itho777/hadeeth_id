@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_290",
+  "name_en": "Abu 'Amru bin Al 'Alaa' bin 'Ammar bin Al 'Ariyan",
+  "name_id": "Abu 'Amru bin Al 'Alaa' bin 'Ammar bin Al 'Ariyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "154 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Maaziniy",
+  "nasab": "Al Maaziniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

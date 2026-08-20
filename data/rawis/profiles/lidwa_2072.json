@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2072",
+  "name_en": "Jabir bin Nuh",
+  "name_id": "Jabir bin Nuh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "203 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Basyir",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

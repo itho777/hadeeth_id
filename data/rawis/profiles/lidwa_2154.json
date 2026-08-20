@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2154",
+  "name_en": "Ja'far bin 'Abdullah bin Al Hakam",
+  "name_id": "Ja'far bin 'Abdullah bin Al Hakam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdul Hamid",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 7,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 4,
+    "ahmad": 20,
+    "malik": 0,
+    "darimi": 2
+  }
+}

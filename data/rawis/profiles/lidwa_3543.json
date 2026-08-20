@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3543",
+  "name_en": "Sulaim bin Jubair",
+  "name_id": "Sulaim bin Jubair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "123 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Yunus",
+  "parents": "Ad Dausiy",
+  "nasab": "Ad Dausiy",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 14,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4445",
+  "name_en": "Abdur Rahman bin 'Usailah",
+  "name_id": "Abdur Rahman bin 'Usailah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ash Shanabihiy Al Muradiy",
+  "nasab": "Ash Shanabihiy Al Muradiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 9,
+    "malik": 1,
+    "darimi": 1
+  }
+}

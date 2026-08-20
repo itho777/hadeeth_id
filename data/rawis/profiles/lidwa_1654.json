@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1654",
+  "name_en": "Al Mughirah bin An Nu'man",
+  "name_id": "Al Mughirah bin An Nu'man",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

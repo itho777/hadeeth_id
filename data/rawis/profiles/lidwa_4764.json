@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4764",
+  "name_en": "Abdullah bin Ja'far bin Ghaylan",
+  "name_id": "Abdullah bin Ja'far bin Ghaylan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "220 H",
+  "city_of_death": "Riqqah",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdur Rahman ",
+  "parents": "Al Qurasyiy Ar Raqqiy",
+  "nasab": "Al Qurasyiy Ar Raqqiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 6
+  }
+}

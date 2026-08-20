@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4905",
+  "name_en": "Abdullah bin 'Abdur Rahman bin Ma'mar",
+  "name_id": "Abdullah bin 'Abdur Rahman bin Ma'mar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "134 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Thawalah",
+  "parents": "Al Anshariy Aln Najjariy",
+  "nasab": "Al Anshariy Aln Najjariy",
+  "laqob": "-",
+  "hadith_count": "49",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 6,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 24,
+    "malik": 3,
+    "darimi": 3
+  }
+}

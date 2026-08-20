@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2531",
+  "name_en": "Humaid bin Abi Humaid",
+  "name_id": "Humaid bin Abi Humaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "142 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Uibaidah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Ath Thawil",
+  "hadith_count": "813",
+  "book_counts": {
+    "bukhari": 118,
+    "muslim": 29,
+    "abudaud": 47,
+    "tirmidzi": 52,
+    "nasai": 73,
+    "ibnumajah": 36,
+    "ahmad": 418,
+    "malik": 8,
+    "darimi": 32
+  }
+}

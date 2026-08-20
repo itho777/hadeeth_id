@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8115",
+  "name_en": "Watsilah bin Al Asqa' bin ka'ab bin 'Amir",
+  "name_id": "Watsilah bin Al Asqa' bin ka'ab bin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "85 H",
+  "city_of_death": "Dujail",
+  "residence": "Syam",
+  "kunyah": "Abu Al Asqa'",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "60",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 8,
+    "tirmidzi": 5,
+    "nasai": 1,
+    "ibnumajah": 9,
+    "ahmad": 30,
+    "malik": 0,
+    "darimi": 3
+  }
+}

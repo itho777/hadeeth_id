@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5459",
+  "name_en": "Itban bin Malik nom 'Amru bin Al 'Ajlan",
+  "name_id": "Itban bin Malik nom 'Amru bin Al 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy As Salimiy",
+  "nasab": "Al Anshariy As Salimiy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 1,
+    "darimi": 0
+  }
+}

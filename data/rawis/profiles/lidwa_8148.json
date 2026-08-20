@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8148",
+  "name_en": "Warrad",
+  "name_id": "Warrad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Ats Tsqaqafiy",
+  "nasab": "Ats Tsqaqafiy",
+  "laqob": "Kaatibu (sekretaris) Al Mughirah",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 6,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 3
+  }
+}

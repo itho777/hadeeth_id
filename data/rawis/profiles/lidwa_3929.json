@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3929",
+  "name_en": "Shadiy bin 'Ajlan",
+  "name_id": "Shadiy bin 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "86 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu Umamah",
+  "parents": "Al Bahiliy",
+  "nasab": "Al Bahiliy",
+  "laqob": "-",
+  "hadith_count": "325",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 6,
+    "abudaud": 20,
+    "tirmidzi": 37,
+    "nasai": 8,
+    "ibnumajah": 44,
+    "ahmad": 189,
+    "malik": 0,
+    "darimi": 17
+  }
+}

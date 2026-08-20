@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 3463,
+  "arabicnumber": 3463,
+  "text": "Telah bercerita kepada kami [Shadaqah] telah bercerita kepada kami [Ibnu 'Uyainah] telah bercerita kepada kami [Abu Musa] dari [Al Hasan] bahwa dia mendengar [Abu Bakrah]; Aku mendengar Nabi shallallahu 'alaihi wasallam di atas mimbar bersabda, ketika itu Al Hasan ada disamping beliau. Sesekali beliau melihat ke arah orang banyak dan sesekali melihat kepadanya: \"Sesungguhnya anakku ini adalah sayyid (pemimpin) dan dengan perantaraannya Allah akan mendamaikan dua kelompok besar kaum Muslimin \".",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Ali bin Abi Thalib",
+      "name_ar": "علي بن أبي طالب بن عبد المطلب",
+      "rawi_id": "rawi_ali_ibn_abi_talib"
+    },
+    {
+      "name_id": "Muslim bin al-Hajjaj al-Qusyairi an-Nisaburi",
+      "name_ar": "مسلم بن الحجاج القشيري النيسابوري",
+      "rawi_id": "rawi_muslim_ibn_hajjaj"
+    },
+    {
+      "name_id": "Muhammad bin Isa at-Tirmidzi",
+      "name_ar": "محمد بن عيسى الترمذي",
+      "rawi_id": "rawi_al_tirmidhi"
+    }
+  ]
+}

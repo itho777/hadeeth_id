@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2996",
+  "name_en": "Zurra bin Hubaisy",
+  "name_id": "Zurra bin Hubaisy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "81 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Maryam",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "193",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 8,
+    "abudaud": 7,
+    "tirmidzi": 24,
+    "nasai": 13,
+    "ibnumajah": 16,
+    "ahmad": 116,
+    "malik": 0,
+    "darimi": 4
+  }
+}

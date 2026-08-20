@@ -1,0 +1,29 @@
+{
+  "id": "rawi_anas_bin_malik",
+  "name_en": "Anas bin Malik",
+  "name_id": "Anas bin Malik al-Anshari",
+  "name_ar": "أنس بن مالك",
+  "is_sahabi": "true",
+  "generation": "Sahabi (Companion)",
+  "grade": "Sahabi Adl",
+  "died_ah": "93",
+  "died_ce": "712",
+  "hadith_count": "2286",
+  "city_of_death": "Basra",
+  "bio_en": "Personal servant of Prophet Muhammad ï·º in Madinah for ten years.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 829,
+    "muslim": 485,
+    "abudaud": 257,
+    "tirmidzi": 367,
+    "nasai": 366,
+    "ibnumajah": 279,
+    "ahmad": 2189,
+    "malik": 35,
+    "darimi": 157
+  }
+}

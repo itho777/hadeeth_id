@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7777",
+  "name_en": "Musa bin Harun bin Basyir",
+  "name_id": "Musa bin Harun bin Basyir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "9",
+  "died_ah": "224 H",
+  "city_of_death": "Fuyum",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Umar",
+  "parents": "Al Qaisiy Al Burdiy",
+  "nasab": "Al Qaisiy Al Burdiy",
+  "laqob": "Al Baniy",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

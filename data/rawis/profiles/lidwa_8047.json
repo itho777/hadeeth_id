@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8047",
+  "name_en": "Hisyam bin Sa'ad",
+  "name_id": "Hisyam bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "160 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abbad",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "111",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 11,
+    "abudaud": 24,
+    "tirmidzi": 12,
+    "nasai": 1,
+    "ibnumajah": 11,
+    "ahmad": 48,
+    "malik": 0,
+    "darimi": 2
+  }
+}

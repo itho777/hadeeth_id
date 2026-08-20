@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_564",
+  "name_en": "Usaid bin Hudloir bin Simak bin 'Atik",
+  "name_id": "Usaid bin Hudloir bin Simak bin 'Atik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "20 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Anshariy Al Asyhaliy",
+  "nasab": "Al Anshariy Al Asyhaliy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

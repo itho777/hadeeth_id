@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6623",
+  "name_en": "Kahmas bi Al Minhal",
+  "name_id": "Kahmas bi Al Minhal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "As Sadusiy Al Lu'lu'iy",
+  "nasab": "As Sadusiy Al Lu'lu'iy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

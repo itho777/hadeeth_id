@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2681",
+  "name_en": "Khalid bin Ma'dan bin Abi Karb",
+  "name_id": "Khalid bin Ma'dan bin Abi Karb",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "104 H",
+  "city_of_death": "Thursus",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "179",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 1,
+    "abudaud": 20,
+    "tirmidzi": 13,
+    "nasai": 24,
+    "ibnumajah": 19,
+    "ahmad": 78,
+    "malik": 1,
+    "darimi": 18
+  }
+}

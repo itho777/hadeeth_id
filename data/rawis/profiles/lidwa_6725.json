@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6725",
+  "name_en": "Muharib bin Ditsar",
+  "name_id": "Muharib bin Ditsar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "116 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Mutharrif",
+  "parents": "As Sadusiy",
+  "nasab": "As Sadusiy",
+  "laqob": "-",
+  "hadith_count": "95",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 13,
+    "abudaud": 10,
+    "tirmidzi": 4,
+    "nasai": 15,
+    "ibnumajah": 7,
+    "ahmad": 29,
+    "malik": 0,
+    "darimi": 4
+  }
+}

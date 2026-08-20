@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5551",
+  "name_en": "Utsman bin Muhammad bin Ibrahim bin 'Utsman",
+  "name_id": "Utsman bin Muhammad bin Ibrahim bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "239 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "AbuAl Hasan",
+  "parents": "Al 'Abasiy",
+  "nasab": "Al 'Abasiy",
+  "laqob": "Ibnu Abi Syaibah",
+  "hadith_count": "612",
+  "book_counts": {
+    "bukhari": 61,
+    "muslim": 117,
+    "abudaud": 311,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 46,
+    "ahmad": 49,
+    "malik": 0,
+    "darimi": 28
+  }
+}

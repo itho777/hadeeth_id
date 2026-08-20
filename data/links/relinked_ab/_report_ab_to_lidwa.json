@@ -1,0 +1,51 @@
+{
+  "bukhari": {
+    "book": "bukhari",
+    "total_ahmedbaset": 7277,
+    "matched": 7166,
+    "unmatched": 111,
+    "match_rate": 0.9847464614538959
+  },
+  "muslim": {
+    "book": "muslim",
+    "total_ahmedbaset": 7459,
+    "matched": 6488,
+    "unmatched": 971,
+    "match_rate": 0.8698216919158064
+  },
+  "abudawud": {
+    "book": "abudawud",
+    "total_ahmedbaset": 5276,
+    "matched": 5038,
+    "unmatched": 238,
+    "match_rate": 0.9548900682335102
+  },
+  "tirmidhi": {
+    "book": "tirmidhi",
+    "total_ahmedbaset": 4053,
+    "matched": 4020,
+    "unmatched": 33,
+    "match_rate": 0.9918578830495929
+  },
+  "nasai": {
+    "book": "nasai",
+    "total_ahmedbaset": 5768,
+    "matched": 5744,
+    "unmatched": 24,
+    "match_rate": 0.9958391123439667
+  },
+  "ibnmajah": {
+    "book": "ibnmajah",
+    "total_ahmedbaset": 4345,
+    "matched": 4344,
+    "unmatched": 1,
+    "match_rate": 0.9997698504027618
+  },
+  "malik": {
+    "book": "malik",
+    "total_ahmedbaset": 1860,
+    "matched": 1581,
+    "unmatched": 279,
+    "match_rate": 0.85
+  }
+}

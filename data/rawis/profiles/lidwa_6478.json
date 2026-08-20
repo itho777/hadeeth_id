@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6478",
+  "name_en": "Qurazhah bin Ka'ab bin Tsa'labah",
+  "name_id": "Qurazhah bin Ka'ab bin Tsa'labah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Anshariy Al Khazrajiy",
+  "nasab": "Al Anshariy Al Khazrajiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6979",
+  "name_en": "Muhammad bin Sabiq",
+  "name_id": "Muhammad bin Sabiq",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "213 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Bazzaz At Tamimiy",
+  "nasab": "Al Bazzaz At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "33",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 0
+  }
+}

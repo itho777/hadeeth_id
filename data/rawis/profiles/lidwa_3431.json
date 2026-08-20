@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3431",
+  "name_en": "Sufyan bin Husain bin Al Hasan",
+  "name_id": "Sufyan bin Husain bin Al Hasan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Rayi",
+  "residence": "Hait",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Wasithiy",
+  "nasab": "Al Wasithiy",
+  "laqob": "-",
+  "hadith_count": "64",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 9,
+    "tirmidzi": 5,
+    "nasai": 8,
+    "ibnumajah": 3,
+    "ahmad": 33,
+    "malik": 0,
+    "darimi": 4
+  }
+}

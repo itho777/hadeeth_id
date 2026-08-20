@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1397",
+  "name_en": "Ar Rabab binti Shulai'",
+  "name_id": "Ar Rabab binti Shulai'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ar Ra'ih",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "33",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 4,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 20,
+    "malik": 0,
+    "darimi": 3
+  }
+}

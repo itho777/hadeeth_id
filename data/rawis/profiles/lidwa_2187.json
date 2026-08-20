@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2187",
+  "name_en": "Jundub bin Junadah",
+  "name_id": "Jundub bin Junadah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "32 H",
+  "city_of_death": "Ribdzah",
+  "residence": "Madinah",
+  "kunyah": "Abu Dzar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "543",
+  "book_counts": {
+    "bukhari": 38,
+    "muslim": 57,
+    "abudaud": 32,
+    "tirmidzi": 32,
+    "nasai": 46,
+    "ibnumajah": 37,
+    "ahmad": 273,
+    "malik": 2,
+    "darimi": 26
+  }
+}

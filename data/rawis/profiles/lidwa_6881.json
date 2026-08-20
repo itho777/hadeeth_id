@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6881",
+  "name_en": "Muhammad bin Bisyir bin Al Furafashah",
+  "name_id": "Muhammad bin Bisyir bin Al Furafashah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "203 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Abdiy",
+  "nasab": "Al 'Abdiy",
+  "laqob": "-",
+  "hadith_count": "244",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 83,
+    "abudaud": 13,
+    "tirmidzi": 7,
+    "nasai": 17,
+    "ibnumajah": 46,
+    "ahmad": 68,
+    "malik": 0,
+    "darimi": 2
+  }
+}

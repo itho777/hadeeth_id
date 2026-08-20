@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7401",
+  "name_en": "Marwan bin Khafan",
+  "name_id": "Marwan bin Khafan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Khalaf",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "Al Ashfar",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

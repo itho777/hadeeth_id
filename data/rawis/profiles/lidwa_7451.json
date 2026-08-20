@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7451",
+  "name_en": "Muslim bin Abi 'Aqrab",
+  "name_id": "Muslim bin Abi 'Aqrab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Naufal",
+  "parents": "Al Bakriy Al Kindiy",
+  "nasab": "Al Bakriy Al Kindiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

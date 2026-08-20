@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5351",
+  "name_en": "Ubaid bin Yahya",
+  "name_id": "Ubaid bin Yahya",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Riqqah",
+  "residence": "Kufah",
+  "kunyah": "Abu Sulaim",
+  "parents": "Al Aadiy Ar Raqqiy",
+  "nasab": "Al Aadiy Ar Raqqiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

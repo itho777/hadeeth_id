@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6764",
+  "name_en": "Muhammad bin Abi Harmalah ",
+  "name_id": "Muhammad bin Abi Harmalah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Qurasyiy ",
+  "nasab": "Al Qurasyiy ",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 6,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 5,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 1,
+    "darimi": 0
+  }
+}

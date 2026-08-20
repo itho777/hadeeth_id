@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2969",
+  "name_en": "Rauh bin 'Ubadah bin Al 'Alaa'",
+  "name_id": "Rauh bin 'Ubadah bin Al 'Alaa'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "205 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qaisi",
+  "nasab": "Al Qaisi",
+  "laqob": "-",
+  "hadith_count": "901",
+  "book_counts": {
+    "bukhari": 40,
+    "muslim": 77,
+    "abudaud": 17,
+    "tirmidzi": 33,
+    "nasai": 4,
+    "ibnumajah": 13,
+    "ahmad": 709,
+    "malik": 0,
+    "darimi": 8
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1198",
+  "name_en": "Al Harits bin 'Abdur Rahman",
+  "name_id": "Al Harits bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al 'Amiriy",
+  "nasab": "Al Qurasyiy Al 'Amiriy",
+  "laqob": "-",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 28,
+    "malik": 0,
+    "darimi": 1
+  }
+}

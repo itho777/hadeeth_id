@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7769",
+  "name_en": "Musa bin Marwan",
+  "name_id": "Musa bin Marwan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "10",
+  "died_ah": "246 H",
+  "city_of_death": "Raqqah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Imran",
+  "parents": "At Tammar Al Baghdadiy",
+  "nasab": "At Tammar Al Baghdadiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 8,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

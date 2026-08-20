@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3598",
+  "name_en": "Sulaiman bin Saif bin Yahya",
+  "name_id": "Sulaiman bin Saif bin Yahya",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "272 H",
+  "city_of_death": "Harran",
+  "residence": "Jazirah",
+  "kunyah": "Abu Daud",
+  "parents": "Ath Tha'iy Al Hiraniy",
+  "nasab": "Ath Tha'iy Al Hiraniy",
+  "laqob": "-",
+  "hadith_count": "58",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 58,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

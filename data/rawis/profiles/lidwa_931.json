@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_931",
+  "name_en": "Ishaq bin Isma'il bin Al 'Alaa'",
+  "name_id": "Ishaq bin Isma'il bin Al 'Alaa'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "258 H",
+  "city_of_death": "Aylah",
+  "residence": "Syam",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Al Ayliy",
+  "nasab": "Al Ayliy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7425",
+  "name_en": "Mishaj bin Musa",
+  "name_id": "Mishaj bin Musa",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Musa",
+  "parents": "Adl Dlabiy",
+  "nasab": "Adl Dlabiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

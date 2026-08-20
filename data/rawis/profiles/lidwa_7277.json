@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7277",
+  "name_en": "Muhammad bin Mushaffaa bin Bahlul",
+  "name_id": "Muhammad bin Mushaffaa bin Bahlul",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "246 H",
+  "city_of_death": "Makkah ",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Qurasyiy Al Himshiy",
+  "nasab": "Al Qurasyiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "50",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 17,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 28,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

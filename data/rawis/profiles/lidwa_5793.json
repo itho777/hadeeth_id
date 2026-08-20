@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5793",
+  "name_en": "Ali bin 'Abdullah bin 'Abbas",
+  "name_id": "Ali bin 'Abdullah bin 'Abbas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "118 H",
+  "city_of_death": "Syam",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "As Sajjad",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

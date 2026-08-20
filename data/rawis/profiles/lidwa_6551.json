@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6551",
+  "name_en": "Katsir bin Isma'il",
+  "name_id": "Katsir bin Isma'il",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Isma'il",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "An Nawa'",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

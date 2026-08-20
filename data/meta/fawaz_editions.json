@@ -967,5 +967,40 @@
         "linkmin": ""
       }
     ]
+  },
+  "riyad": {
+    "collection": [
+      {
+        "name": "ara-riyad",
+        "language": "Arabic",
+        "direction": "rtl"
+      },
+      {
+        "name": "eng-riyad",
+        "language": "English",
+        "direction": "ltr"
+      },
+      {
+        "name": "ind-riyad",
+        "language": "Indonesian",
+        "direction": "ltr",
+        "author": "IrsyadulIbad"
+      }
+    ]
+  },
+  "syafii": {
+    "collection": [
+      {
+        "name": "ara-syafii",
+        "language": "Arabic",
+        "direction": "rtl"
+      },
+      {
+        "name": "ind-syafii",
+        "language": "Indonesian",
+        "direction": "ltr",
+        "author": "IrsyadulIbad"
+      }
+    ]
   }
 }

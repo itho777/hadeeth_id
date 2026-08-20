@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3633",
+  "name_en": "Sulaiman bin Yazid",
+  "name_id": "Sulaiman bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Mutsannaa",
+  "parents": "Al Khaza'iy Al Kalbiy",
+  "nasab": "Al Khaza'iy Al Kalbiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

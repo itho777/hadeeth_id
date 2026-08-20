@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7224",
+  "name_en": "Muhammad bin 'Amru bin 'Atha' bin 'Abbas bin 'Alqamah ",
+  "name_id": "Muhammad bin 'Amru bin 'Atha' bin 'Abbas bin 'Alqamah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Amiriy Al Qurasiy",
+  "nasab": "Al 'Amiriy Al Qurasiy",
+  "laqob": "Ibnu 'Atha'",
+  "hadith_count": "74",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 6,
+    "abudaud": 10,
+    "tirmidzi": 4,
+    "nasai": 5,
+    "ibnumajah": 11,
+    "ahmad": 32,
+    "malik": 1,
+    "darimi": 4
+  }
+}

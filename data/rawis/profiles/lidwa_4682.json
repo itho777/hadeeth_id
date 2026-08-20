@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4682",
+  "name_en": "Abdullah bin Al Harits",
+  "name_id": "Abdullah bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Walid",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 5,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 1
+  }
+}

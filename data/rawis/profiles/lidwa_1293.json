@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1293",
+  "name_en": "Al Hasan bin 'Isa bin Masirjis",
+  "name_id": "Al Hasan bin 'Isa bin Masirjis",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "240 H",
+  "city_of_death": "-",
+  "residence": "Nihawand",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Masirjisiy ",
+  "nasab": "Al Masirjisiy ",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

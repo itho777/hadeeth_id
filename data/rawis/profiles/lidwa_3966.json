@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3966",
+  "name_en": "Shaifiy bin Ziyad",
+  "name_id": "Shaifiy bin Ziyad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ziyad",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 1,
+    "darimi": 0
+  }
+}

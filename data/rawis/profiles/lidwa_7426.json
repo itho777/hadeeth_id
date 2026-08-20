@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7426",
+  "name_en": "Musaddad bin Musarhad bin Musarbal bin Mustawrad",
+  "name_id": "Musaddad bin Musarhad bin Musarbal bin Mustawrad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi’ul Atba’",
+  "grade": "6",
+  "died_ah": "228 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "1002",
+  "book_counts": {
+    "bukhari": 395,
+    "muslim": 0,
+    "abudaud": 577,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 27
+  }
+}

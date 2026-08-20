@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6144",
+  "name_en": "Amru bin Syu'aib bin Muhammad bin 'Abdullah bin 'Amru ",
+  "name_id": "Amru bin Syu'aib bin Muhammad bin 'Abdullah bin 'Amru ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "118 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Ibrahim",
+  "parents": "Al Qurasyiy As Sahmiy",
+  "nasab": "Al Qurasyiy As Sahmiy",
+  "laqob": "-",
+  "hadith_count": "499",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 79,
+    "tirmidzi": 39,
+    "nasai": 57,
+    "ibnumajah": 70,
+    "ahmad": 240,
+    "malik": 5,
+    "darimi": 9
+  }
+}

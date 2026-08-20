@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4974",
+  "name_en": "Abdullah bin 'Imran bin Ruzain",
+  "name_id": "Abdullah bin 'Imran bin Ruzain",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "245 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Al Qasim",
+  "parents": "Al Makhzumiy Al 'Abidiy",
+  "nasab": "Al Makhzumiy Al 'Abidiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

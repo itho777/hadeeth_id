@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_408",
+  "name_en": "Ahmad bin Ibrahim bin Muhammad bin 'Abdullah bin Bakkar",
+  "name_id": "Ahmad bin Ibrahim bin Muhammad bin 'Abdullah bin Bakkar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "289 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdul Malik",
+  "parents": "Al Basriy Ad Damsyiqiy",
+  "nasab": "Al Basriy Ad Damsyiqiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

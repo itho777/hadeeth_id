@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4462",
+  "name_en": "Abdur Rahman bin 'Ayyasy",
+  "name_id": "Abdur Rahman bin 'Ayyasy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "As Sam'iy Al Quba'iy",
+  "nasab": "As Sam'iy Al Quba'iy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 3
+  }
+}

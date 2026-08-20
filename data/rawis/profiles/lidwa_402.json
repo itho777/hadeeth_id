@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_402",
+  "name_en": "Ahmad bin Abu Bakar Al Qasim bin Al Harits bin Zurarah bin Mush'ab bin 'Abdur Ra",
+  "name_id": "Ahmad bin Abu Bakar Al Qasim bin Al Harits bin Zurarah bin Mush'ab bin 'Abdur Ra",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "242 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Mush'ab",
+  "parents": "Az Zuhriy",
+  "nasab": "Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 8,
+    "nasai": 2,
+    "ibnumajah": 20,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

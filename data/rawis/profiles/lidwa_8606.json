@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8606",
+  "name_en": "Yunus bin Bukair bin Washil",
+  "name_id": "Yunus bin Bukair bin Washil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "199 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Jammal Asy Syaibaniy",
+  "nasab": "Al Jammal Asy Syaibaniy",
+  "laqob": "-",
+  "hadith_count": "46",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 7,
+    "tirmidzi": 18,
+    "nasai": 0,
+    "ibnumajah": 12,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 6
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3238",
+  "name_en": "Sa'ad bin Iyas",
+  "name_id": "Sa'ad bin Iyas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "96 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Amr",
+  "parents": "Asy Syaibaniy",
+  "nasab": "Asy Syaibaniy",
+  "laqob": "-",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 7,
+    "abudaud": 2,
+    "tirmidzi": 6,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 5
+  }
+}

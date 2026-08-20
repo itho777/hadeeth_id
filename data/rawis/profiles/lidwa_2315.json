@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2315",
+  "name_en": "Hujayyah bin 'Adiy",
+  "name_id": "Hujayyah bin 'Adiy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Az Za'ra'",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 2
+  }
+}

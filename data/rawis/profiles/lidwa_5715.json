@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5715",
+  "name_en": "Alqamah bin Qays bin 'Abdullah bin Malik bin 'Alqamah",
+  "name_id": "Alqamah bin Qays bin 'Abdullah bin Malik bin 'Alqamah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "62 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Syabul",
+  "parents": "An Nakha'iy",
+  "nasab": "An Nakha'iy",
+  "laqob": "-",
+  "hadith_count": "333",
+  "book_counts": {
+    "bukhari": 52,
+    "muslim": 35,
+    "abudaud": 23,
+    "tirmidzi": 28,
+    "nasai": 47,
+    "ibnumajah": 22,
+    "ahmad": 108,
+    "malik": 0,
+    "darimi": 18
+  }
+}

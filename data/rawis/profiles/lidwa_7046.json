@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7046",
+  "name_en": "Muhammad bin 'Abbad bin Ja'far bin Rifa'ah",
+  "name_id": "Muhammad bin 'Abbad bin Ja'far bin Rifa'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Makhzumiy",
+  "nasab": "Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 4,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5584",
+  "name_en": "Ar'arah bin Al Birindi bin An Nu'man",
+  "name_id": "Ar'arah bin Al Birindi bin An Nu'man",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "192 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amru",
+  "parents": "As Samiy An Najiy",
+  "nasab": "As Samiy An Najiy",
+  "laqob": "Kazman",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

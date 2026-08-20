@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_962",
+  "name_en": "Ishaq bin 'Isa vbin Najih",
+  "name_id": "Ishaq bin 'Isa vbin Najih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "215 H",
+  "city_of_death": "Adzanah",
+  "residence": "Adzanah",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Al Baghdadiy",
+  "nasab": "Al Baghdadiy",
+  "laqob": "Abu Ath Thabaa'",
+  "hadith_count": "316",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 8,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 279,
+    "malik": 0,
+    "darimi": 22
+  }
+}

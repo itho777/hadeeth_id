@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7282",
+  "name_en": "Muhammad bin Ma'dan bin 'Isa",
+  "name_id": "Muhammad bin Ma'dan bin 'Isa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "260 H",
+  "city_of_death": "Harran",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Harraniy",
+  "nasab": "Al Harraniy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 9,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

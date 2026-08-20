@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1374",
+  "name_en": "Al Hakam bin 'Amru bin Mujda'",
+  "name_id": "Al Hakam bin 'Amru bin Mujda'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "50 H",
+  "city_of_death": "Kafar Jadiya",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Ghifari",
+  "nasab": "Al Ghifari",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 0
+  }
+}

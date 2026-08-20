@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_521",
+  "name_en": "Azhar bin Jamil bin Junnah",
+  "name_id": "Azhar bin Jamil bin Junnah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "251 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Hasyimiy Asy Syaththiy",
+  "nasab": "Al Hasyimiy Asy Syaththiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1284",
+  "name_en": "Al Hasan bin 'Ali bin Muhammad",
+  "name_id": "Al Hasan bin 'Ali bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "242 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Khallal Al Hulwaniy",
+  "nasab": "Al Khallal Al Hulwaniy",
+  "laqob": "-",
+  "hadith_count": "348",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 101,
+    "abudaud": 132,
+    "tirmidzi": 88,
+    "nasai": 0,
+    "ibnumajah": 24,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

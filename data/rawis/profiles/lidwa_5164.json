@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5164",
+  "name_en": "Abdullah bin Yazid bin Zaid",
+  "name_id": "Abdullah bin Yazid bin Zaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Musa",
+  "parents": "Al Khathamiy Al Anshariy",
+  "nasab": "Al Khathamiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "69",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 8,
+    "abudaud": 4,
+    "tirmidzi": 6,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 24,
+    "malik": 1,
+    "darimi": 6
+  }
+}

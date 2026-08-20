@@ -1,0 +1,29 @@
+{
+  "id": "rawi_salim",
+  "name_en": "Salim bin 'Abdullah",
+  "name_id": "Salim bin Abdullah bin Umar",
+  "name_ar": "سالم بن عبد الله",
+  "is_sahabi": "false",
+  "generation": "Tabi'i",
+  "grade": "Thiqah Faqih",
+  "died_ah": "106",
+  "died_ce": "725",
+  "hadith_count": "950",
+  "city_of_death": "Madinah",
+  "bio_en": "One of the Seven Fuqaha of Madinah and grandson of 'Umar bin al-Khattab.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 176,
+    "muslim": 112,
+    "abudaud": 54,
+    "tirmidzi": 63,
+    "nasai": 118,
+    "ibnumajah": 54,
+    "ahmad": 339,
+    "malik": 40,
+    "darimi": 35
+  }
+}

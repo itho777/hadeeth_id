@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_433",
+  "name_en": "Ahmad bin Janaab bin Al Mughirah",
+  "name_id": "Ahmad bin Janaab bin Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "230 H",
+  "city_of_death": "-",
+  "residence": "Mishishah",
+  "kunyah": "Abu Al Walid",
+  "parents": "Al Hadatsiy",
+  "nasab": "Al Hadatsiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

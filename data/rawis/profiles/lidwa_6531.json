@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6531",
+  "name_en": "Qais bin 'Abbad",
+  "name_id": "Qais bin 'Abbad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "80 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Adl Dluba'iy Alk Qaisiy",
+  "nasab": "Adl Dluba'iy Alk Qaisiy",
+  "laqob": "-",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 5,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 1
+  }
+}

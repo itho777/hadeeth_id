@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3875",
+  "name_en": "Shalih bin Rustum",
+  "name_id": "Shalih bin Rustum",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "152 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Muzaniy",
+  "nasab": "Al Muzaniy",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 1
+  }
+}

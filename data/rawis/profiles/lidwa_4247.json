@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4247",
+  "name_en": "Abdul Hamid bin Muhammad bin Al Mistam",
+  "name_id": "Abdul Hamid bin Muhammad bin Al Mistam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "266 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Umar",
+  "parents": "Al Hiraniy",
+  "nasab": "Al Hiraniy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 15,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

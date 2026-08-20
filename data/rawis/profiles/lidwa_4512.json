@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4512",
+  "name_en": "Abdur Rahman bin Wa'lah",
+  "name_id": "Abdur Rahman bin Wa'lah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "As Saba'iy",
+  "nasab": "As Saba'iy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 2,
+    "darimi": 4
+  }
+}

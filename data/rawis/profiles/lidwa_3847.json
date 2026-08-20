@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3847",
+  "name_en": "Sha'id bin 'Ubaid",
+  "name_id": "Sha'id bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Bajaliy Al Jazariy",
+  "nasab": "Al Bajaliy Al Jazariy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

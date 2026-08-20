@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1500",
+  "name_en": "Ath Thufail bin Ubay bin Ka'ab",
+  "name_id": "Ath Thufail bin Ubay bin Ka'ab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Bathan",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 18,
+    "malik": 1,
+    "darimi": 1
+  }
+}

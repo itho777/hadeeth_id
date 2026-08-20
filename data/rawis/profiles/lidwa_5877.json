@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5877",
+  "name_en": "Umarah bin Za'karah",
+  "name_id": "Umarah bin Za'karah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Adiy",
+  "parents": "Al Kindi Al Himshiy",
+  "nasab": "Al Kindi Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

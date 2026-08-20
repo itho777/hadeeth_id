@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6189",
+  "name_en": "Amru bin Malik ",
+  "name_id": "Amru bin Malik ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "103 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Janbiy Al Hamdaniy",
+  "nasab": "Al Janbiy Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "34",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 6,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 20,
+    "malik": 0,
+    "darimi": 1
+  }
+}

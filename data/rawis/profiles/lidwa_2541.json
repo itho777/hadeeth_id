@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2541",
+  "name_en": "Humaid bin 'Abdur Rahman bin Humaid bin 'Abdur Rahman",
+  "name_id": "Humaid bin 'Abdur Rahman bin Humaid bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "189 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Ali",
+  "parents": "Ar Ru`asi",
+  "nasab": "Ar Ru`asi",
+  "laqob": "Abu 'Auf",
+  "hadith_count": "34",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 6,
+    "abudaud": 2,
+    "tirmidzi": 5,
+    "nasai": 5,
+    "ibnumajah": 3,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6955",
+  "name_en": "Muhammad bin Daud bin Rizqi",
+  "name_id": "Muhammad bin Daud bin Rizqi",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "12",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Mahriy Al Iskandaraniy",
+  "nasab": "Al Mahriy Al Iskandaraniy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

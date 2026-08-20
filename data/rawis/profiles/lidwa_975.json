@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_975",
+  "name_en": "Ishaq bin Yahya bin Thalhah bin 'Ubaidilloh ",
+  "name_id": "Ishaq bin Yahya bin Thalhah bin 'Ubaidilloh ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "164 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

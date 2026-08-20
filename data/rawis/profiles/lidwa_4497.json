@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4497",
+  "name_en": "Abdur Rahman bin Maisarah",
+  "name_id": "Abdur Rahman bin Maisarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Salamah",
+  "parents": "Al Hadlramiy Al Himshiy",
+  "nasab": "Al Hadlramiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 1
+  }
+}

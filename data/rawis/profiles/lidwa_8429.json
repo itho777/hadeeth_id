@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8429",
+  "name_en": "Yazid bin Syuraih",
+  "name_id": "Yazid bin Syuraih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Hadlramiy Al Himshiy",
+  "nasab": "Al Hadlramiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

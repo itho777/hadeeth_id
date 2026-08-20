@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6622",
+  "name_en": "Kahmas bi Al Hasan",
+  "name_id": "Kahmas bi Al Hasan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "149 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Qaisiy At Tamimiy",
+  "nasab": "Al Qaisiy At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "68",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 9,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 8,
+    "ibnumajah": 5,
+    "ahmad": 30,
+    "malik": 0,
+    "darimi": 5
+  }
+}

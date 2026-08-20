@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1936",
+  "name_en": "Bakar bin 'Amru",
+  "name_id": "Bakar bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "108 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ash Shiddiq",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "56",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 4,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 1,
+    "ibnumajah": 5,
+    "ahmad": 34,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8077",
+  "name_en": "Hilal bin Khabab",
+  "name_id": "Hilal bin Khabab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "144 H",
+  "city_of_death": "Mada'in",
+  "residence": "Mada'in",
+  "kunyah": "Abu Al 'Alaa'",
+  "parents": "Al 'Abdiy Al Bashriy",
+  "nasab": "Al 'Abdiy Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 20,
+    "malik": 0,
+    "darimi": 3
+  }
+}

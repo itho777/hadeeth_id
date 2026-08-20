@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7950",
+  "name_en": "Nuh bin Habib",
+  "name_id": "Nuh bin Habib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "242 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qumasiy",
+  "nasab": "Al Qumasiy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 12,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7857",
+  "name_en": "Nafi' bin 'Umar bin 'Abdullah bin Jamil bin 'Amir",
+  "name_id": "Nafi' bin 'Umar bin 'Abdullah bin Jamil bin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "169 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Jumahiy Al Qurasyiy",
+  "nasab": "Al Jumahiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "61",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 3,
+    "abudaud": 5,
+    "tirmidzi": 4,
+    "nasai": 5,
+    "ibnumajah": 3,
+    "ahmad": 26,
+    "malik": 0,
+    "darimi": 2
+  }
+}

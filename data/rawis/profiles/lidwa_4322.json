@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4322",
+  "name_en": "Abdur Rahman bin Basyar bin Mas'ud",
+  "name_id": "Abdur Rahman bin Basyar bin Mas'ud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Bisyir",
+  "parents": "Al Anshariy ",
+  "nasab": "Al Anshariy ",
+  "laqob": "Al Azraq",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 2
+  }
+}

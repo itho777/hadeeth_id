@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3397",
+  "name_en": "Sa'id bin Masruq",
+  "name_id": "Sa'id bin Masruq",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "127 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Sufyan",
+  "parents": "Ats Tsauriy",
+  "nasab": "Ats Tsauriy",
+  "laqob": "-",
+  "hadith_count": "90",
+  "book_counts": {
+    "bukhari": 16,
+    "muslim": 10,
+    "abudaud": 4,
+    "tirmidzi": 8,
+    "nasai": 13,
+    "ibnumajah": 6,
+    "ahmad": 29,
+    "malik": 0,
+    "darimi": 4
+  }
+}

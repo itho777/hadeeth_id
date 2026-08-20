@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7134",
+  "name_en": "Muhammad bin 'Abdullah bin Maimun",
+  "name_id": "Muhammad bin 'Abdullah bin Maimun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Tha'if",
+  "kunyah": "-",
+  "parents": "Ath Tha'ifiy",
+  "nasab": "Ath Tha'ifiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

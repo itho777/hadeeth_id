@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1359",
+  "name_en": "Al Hakam bin Al Mubarak",
+  "name_id": "Al Hakam bin Al Mubarak",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "213 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Shalih",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "51",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 50
+  }
+}

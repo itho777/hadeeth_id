@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6175",
+  "name_en": "Amru bin 'Auf",
+  "name_id": "Amru bin 'Auf",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "Umair",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

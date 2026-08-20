@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5704",
+  "name_en": "Alaa' bin Al Musayyab bin Rafi'",
+  "name_id": "Alaa' bin Al Musayyab bin Rafi'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Asadiy Al Kahiliy",
+  "nasab": "Al Asadiy Al Kahiliy",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 2,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 4
+  }
+}

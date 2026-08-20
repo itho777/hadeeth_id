@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4903",
+  "name_en": "Abdullah bin 'Abdur Rahman bin 'Auf",
+  "name_id": "Abdullah bin 'Abdur Rahman bin 'Auf",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "94 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Salamah",
+  "parents": "Az Zuhriy",
+  "nasab": "Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "2183",
+  "book_counts": {
+    "bukhari": 286,
+    "muslim": 214,
+    "abudaud": 159,
+    "tirmidzi": 134,
+    "nasai": 256,
+    "ibnumajah": 141,
+    "ahmad": 867,
+    "malik": 36,
+    "darimi": 90
+  }
+}

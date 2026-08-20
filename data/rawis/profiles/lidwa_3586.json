@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3586",
+  "name_en": "Sulaiman bin Daud bin Hammad bin Sa'ad",
+  "name_id": "Sulaiman bin Daud bin Hammad bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "253 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Ar Rabi'",
+  "parents": "Al Mahri",
+  "nasab": "Al Mahri",
+  "laqob": "-",
+  "hadith_count": "84",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 51,
+    "tirmidzi": 0,
+    "nasai": 33,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

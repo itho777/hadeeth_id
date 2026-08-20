@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6441",
+  "name_en": "Qabus bin Abi Al Mukhariq",
+  "name_id": "Qabus bin Abi Al Mukhariq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Asy Syaibaniy",
+  "nasab": "Asy Syaibaniy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7340",
+  "name_en": "Muhammad bin Ya'laa",
+  "name_id": "Muhammad bin Ya'laa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "205 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Ali",
+  "parents": "As Sulamiy",
+  "nasab": "As Sulamiy",
+  "laqob": "Zunbur",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

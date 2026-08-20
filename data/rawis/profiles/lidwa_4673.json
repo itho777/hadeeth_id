@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4673",
+  "name_en": "Abdullah bin Al Adra' bin Al Az'ar bin Zaid bin Al 'Aththaf",
+  "name_id": "Abdullah bin Al Adra' bin Al Az'ar bin Zaid bin Al 'Aththaf",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Fi Thariqi (Jalan menuju) Makk",
+  "kunyah": "-",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "Ibnu Abi Habibah",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

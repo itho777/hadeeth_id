@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3297",
+  "name_en": "Sa'id bin Al 'Ash bin Abi Uhayhah",
+  "name_id": "Sa'id bin Al 'Ash bin Abi Uhayhah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "58 H",
+  "city_of_death": "Arishah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Qurasyiy Al Umawiy",
+  "nasab": "Al Qurasyiy Al Umawiy",
+  "laqob": "Ukkatu Al 'Asal",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

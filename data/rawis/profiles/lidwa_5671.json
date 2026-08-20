@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5671",
+  "name_en": "Uqbah bin Shuhban",
+  "name_id": "Uqbah bin Shuhban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "82 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Hadaniy Al Azdiy",
+  "nasab": "Al Hadaniy Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

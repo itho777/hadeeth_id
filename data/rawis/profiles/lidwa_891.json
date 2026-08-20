@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_891",
+  "name_en": "Ibrahim bin Maysarah",
+  "name_id": "Ibrahim bin Maysarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Ath Tha'ifiy",
+  "nasab": "Ath Tha'ifiy",
+  "laqob": "-",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 5,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 3,
+    "ahmad": 18,
+    "malik": 0,
+    "darimi": 4
+  }
+}

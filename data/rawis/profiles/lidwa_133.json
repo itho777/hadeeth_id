@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_133",
+  "name_en": "Abu Bakar bin Muhammad bin 'Amru bin Hazm",
+  "name_id": "Abu Bakar bin Muhammad bin 'Amru bin Hazm",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "120 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Anshariy An Najariy",
+  "nasab": "Al Anshariy An Najariy",
+  "laqob": "-",
+  "hadith_count": "174",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 18,
+    "abudaud": 9,
+    "tirmidzi": 9,
+    "nasai": 23,
+    "ibnumajah": 14,
+    "ahmad": 49,
+    "malik": 21,
+    "darimi": 21
+  }
+}

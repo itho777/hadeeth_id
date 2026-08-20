@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2789",
+  "name_en": "Daud bin 'Abdur Rahman",
+  "name_id": "Daud bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "174 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Sulaiman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 6,
+    "tirmidzi": 5,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 2
+  }
+}

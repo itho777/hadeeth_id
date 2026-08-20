@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5531",
+  "name_en": "Utsman bin 'Abdur Rahman bin Muslim",
+  "name_id": "Utsman bin 'Abdur Rahman bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "202 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Ath Thara'ifiy Al Hiraniy",
+  "nasab": "Ath Thara'ifiy Al Hiraniy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

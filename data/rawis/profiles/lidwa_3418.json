@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3418",
+  "name_en": "Sa'id bin Yasar",
+  "name_id": "Sa'id bin Yasar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "117 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Habbab",
+  "parents": "Ath Thaliqaniy",
+  "nasab": "Ath Thaliqaniy",
+  "laqob": "-",
+  "hadith_count": "93",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 11,
+    "abudaud": 5,
+    "tirmidzi": 2,
+    "nasai": 7,
+    "ibnumajah": 6,
+    "ahmad": 41,
+    "malik": 7,
+    "darimi": 6
+  }
+}

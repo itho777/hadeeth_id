@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1780",
+  "name_en": "Al Walid bin Syuja' bin Al Walid",
+  "name_id": "Al Walid bin Syuja' bin Al Walid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "243 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hammam",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 9,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 11
+  }
+}

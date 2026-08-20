@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6051",
+  "name_en": "Imran bin Musa bin Hibban",
+  "name_id": "Imran bin Musa bin Hibban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Qazzaz Al Laitsiy",
+  "nasab": "Al Qazzaz Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 21,
+    "ibnumajah": 10,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

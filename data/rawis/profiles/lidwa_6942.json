@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6942",
+  "name_en": "Muhammad bin Khalid bin Khidasy bin 'Ajlan",
+  "name_id": "Muhammad bin Khalid bin Khidasy bin 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Mahlabiy Al Bashriy",
+  "nasab": "Al Mahlabiy Al Bashriy",
+  "laqob": "Adl Dluraior",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 7,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

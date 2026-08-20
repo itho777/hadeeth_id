@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2547",
+  "name_en": "Humaid bin Qais",
+  "name_id": "Humaid bin Qais",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "130 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Shafwan",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al A'raj",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 7,
+    "tirmidzi": 1,
+    "nasai": 5,
+    "ibnumajah": 2,
+    "ahmad": 9,
+    "malik": 12,
+    "darimi": 2
+  }
+}

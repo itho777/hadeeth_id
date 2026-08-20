@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 546,
+  "arabicnumber": 546,
+  "text": "Telah menceritakan kepada kami [Abu Nu'aim] berkata, telah mengabarkan kepada kami [Ibnu 'Uyainah] dari [Az Zuhri] dari ['Urwah] dari ['Aisyah] berkata, \"Nabi shallallahu 'alaihi wasallam melaksanakan shalat 'Ashar sementara matahari muncul dari dalam kamarku dan belum nampak bayang-bayang.\" [Malik] dan [Yahya bin Sa'id] dan [Syu'aib] dan [Ibnu Abu Hafsh] menyebutkan, \"Sementara matahari belum lagi nampak bayangannya",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Aisyah binti Abu Bakar ash-Shiddiq",
+      "name_ar": "عائشة بنت أبي بكر الصديق",
+      "rawi_id": "rawi_aisha_bint_abi_bakr"
+    },
+    {
+      "name_id": "Urwah bin az-Zubair bin al-Awwam",
+      "name_ar": "عروة بن الزبير بن العوام",
+      "rawi_id": "rawi_urwah_ibn_zubayr"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    }
+  ]
+}

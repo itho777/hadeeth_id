@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4342",
+  "name_en": "Abdur Rahman bin Harmalah bin 'Amru bin Sannah",
+  "name_id": "Abdur Rahman bin Harmalah bin 'Amru bin Sannah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "145 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Harmalah",
+  "parents": "Al Aslamiy",
+  "nasab": "Al Aslamiy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 21,
+    "malik": 7,
+    "darimi": 2
+  }
+}

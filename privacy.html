@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="HADEETH.ID Privacy Policy — How we handle your data when you use our Hadith reference platform."/>
+  <meta name="description" content="HADEETH.ID Privacy Policy Ã¢â‚¬â€ How we handle your data when you use our Hadith reference platform."/>
   <title>Privacy Policy - HADEETH.ID</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -39,15 +39,38 @@
 
 <!-- TOP APP BAR -->
 <header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
-  <div class="flex justify-between items-center w-full px-margin-main max-w-[1100px] mx-auto h-16">
+  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
     <a href="index.html" class="flex items-center gap-2">
       <div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-[#0a1120] border border-outline-variant/30"><img src="assets/logo_light.jpg" alt="hadeeth.id logo" class="logo-light w-full h-full object-cover rounded-lg scale-125"/><img src="assets/logo_dark.jpg" alt="hadeeth.id logo" class="logo-dark w-full h-full object-cover rounded-lg scale-125"/></div>
       <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
     </a>
-    <div class="flex items-center gap-2">
-      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full">
-        <span class="material-symbols-outlined text-on-surface-variant dark:text-gray-400" data-theme-icon>dark_mode</span>
+    <nav class="hidden md:flex items-center gap-stack-lg">
+      <a href="books.html"   data-nav-page="books.html" data-i18n="nav_books" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Books</a>
+      <a href="topics.html"   data-nav-page="topics.html" data-i18n="nav_topics" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Topics</a>
+      <a href="scholars.html" data-nav-page="scholars.html" data-i18n="nav_scholars" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Scholars</a>
+      <a href="admin.html"   data-nav-page="admin.html" data-i18n="nav_admin" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Admin</a>
+    </nav>
+    <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
+      <!-- Language Switcher -->
+      <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
+        <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
+        <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
+      </div>
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Toggle theme">
+        <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
       </button>
+      <button id="mobile-menu-btn" class="p-2 md:hidden hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors">
+        <span class="material-symbols-outlined" data-menu-icon>menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-manuscript-paper dark:bg-[#10141a] border-t border-outline-variant dark:border-[#1e293b]">
+    <div class="flex flex-col px-margin-main py-2 gap-1">
+      <a href="books.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_books">Books</a>
+      <a href="topics.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_topics">Topics</a>
+      <a href="scholars.html" class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_scholars">Scholars</a>
+      <a href="admin.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_admin">Admin</a>
     </div>
   </div>
 </header>
@@ -103,19 +126,19 @@
       site data. The following keys may be stored:
     </p>
     <ul>
-      <li><code>hadeeth_lang</code> — your selected interface language (EN or ID)</li>
-      <li><code>hadeeth_theme</code> — your selected colour theme (dark or light)</li>
-      <li><code>hadeeth_last_read</code> — the last hadith you viewed (book ID and hadith number)</li>
-      <li><code>hadeeth_hotd</code> — Hadith of the Day setting (if manually changed via the Admin panel)</li>
-      <li><code>dataset_version</code> — your preferred dataset version (Primary / Lidwa / AhmedBaset)</li>
+      <li><code>hadeeth_lang</code> Ã¢â‚¬â€ your selected interface language (EN or ID)</li>
+      <li><code>hadeeth_theme</code> Ã¢â‚¬â€ your selected colour theme (dark or light)</li>
+      <li><code>hadeeth_last_read</code> Ã¢â‚¬â€ the last hadith you viewed (book ID and hadith number)</li>
+      <li><code>hadeeth_hotd</code> Ã¢â‚¬â€ Hadith of the Day setting (if manually changed via the Admin panel)</li>
+      <li><code>dataset_version</code> Ã¢â‚¬â€ your preferred dataset version (Primary / Lidwa / AhmedBaset)</li>
     </ul>
 
     <h3>5. Third-Party Services</h3>
     <p>We use the following third-party services that may process data on your behalf:</p>
     <ul>
-      <li><strong>Cloudflare Pages</strong> — Website hosting and CDN. Cloudflare may log IP addresses for security purposes. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener" class="text-secondary dark:text-[#10b981] underline">Cloudflare Privacy Policy</a>.</li>
-      <li><strong>Google Fonts</strong> — We load fonts from Google's servers. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-secondary dark:text-[#10b981] underline">Google Privacy Policy</a>.</li>
-      <li><strong>Algolia</strong> (if enabled) — Search functionality. See <a href="https://www.algolia.com/policies/privacy/" target="_blank" rel="noopener" class="text-secondary dark:text-[#10b981] underline">Algolia Privacy Policy</a>.</li>
+      <li><strong>Cloudflare Pages</strong> Ã¢â‚¬â€ Website hosting and CDN. Cloudflare may log IP addresses for security purposes. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener" class="text-secondary dark:text-[#10b981] underline">Cloudflare Privacy Policy</a>.</li>
+      <li><strong>Google Fonts</strong> Ã¢â‚¬â€ We load fonts from Google's servers. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-secondary dark:text-[#10b981] underline">Google Privacy Policy</a>.</li>
+      <li><strong>Algolia</strong> (if enabled) Ã¢â‚¬â€ Search functionality. See <a href="https://www.algolia.com/policies/privacy/" target="_blank" rel="noopener" class="text-secondary dark:text-[#10b981] underline">Algolia Privacy Policy</a>.</li>
     </ul>
 
     <h3>6. Children's Privacy</h3>
@@ -151,12 +174,12 @@
 
 </main>
 
-<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 text-xs w-full py-8 px-margin-main flex flex-col md:flex-row justify-between items-center max-w-[760px] mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-16">
-  <div><span>© 2026 HADEETH.ID - Digital Manuscript Preservation</span></div>
-  <div class="flex gap-4 mt-2 md:mt-0">
-    <a href="index.html" class="hover:underline">Home</a>
-    <a href="docs.html" class="hover:underline">Data Sources</a>
-    <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:underline">tafseer.id</a>
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
+  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2026 HADEETH.ID - Digital Manuscript Preservation</span></div>
+  <div class="flex flex-wrap gap-4 items-center justify-center">
+    <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
+    <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
+    <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
   </div>
 </footer>
 
@@ -180,3 +203,6 @@
 </script>
 </body>
 </html>
+
+
+

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_467",
+  "name_en": "Ahmad bin 'Abdul Wahid bin Waqid",
+  "name_id": "Ahmad bin 'Abdul Wahid bin Waqid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "254 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "At Tamimiy Ad Damasyqiy",
+  "nasab": "At Tamimiy Ad Damasyqiy",
+  "laqob": "Abu 'Abuud",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7859",
+  "name_en": "Nafi' bin Malik bin Abin 'Amir",
+  "name_id": "Nafi' bin Malik bin Abin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Suhail",
+  "parents": "Al Ashbahiy",
+  "nasab": "Al Ashbahiy",
+  "laqob": "-",
+  "hadith_count": "55",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 4,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 10,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 12,
+    "darimi": 3
+  }
+}

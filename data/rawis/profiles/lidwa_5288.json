@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5288",
+  "name_en": "Abdah bin Sulaiman",
+  "name_id": "Abdah bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "187 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Kilabiy",
+  "nasab": "Al Kilabiy",
+  "laqob": "-",
+  "hadith_count": "344",
+  "book_counts": {
+    "bukhari": 44,
+    "muslim": 67,
+    "abudaud": 26,
+    "tirmidzi": 68,
+    "nasai": 40,
+    "ibnumajah": 50,
+    "ahmad": 40,
+    "malik": 0,
+    "darimi": 9
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7673",
+  "name_en": "Manshur bin Al Mu'tamir",
+  "name_id": "Manshur bin Al Mu'tamir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "11",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Ittab",
+  "parents": "As Sulamiy",
+  "nasab": "As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "1104",
+  "book_counts": {
+    "bukhari": 160,
+    "muslim": 99,
+    "abudaud": 80,
+    "tirmidzi": 62,
+    "nasai": 164,
+    "ibnumajah": 56,
+    "ahmad": 418,
+    "malik": 0,
+    "darimi": 65
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3092",
+  "name_en": "Ziyad bin 'Abdullah bin Ath Thufail",
+  "name_id": "Ziyad bin 'Abdullah bin Ath Thufail",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "183 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Baka'iy Al 'Amiriy",
+  "nasab": "Al Baka'iy Al 'Amiriy",
+  "laqob": "-",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 6,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 0
+  }
+}

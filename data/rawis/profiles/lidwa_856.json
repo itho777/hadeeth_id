@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_856",
+  "name_en": "Ibrahim bin 'Utsman bin Khawasitiy",
+  "name_id": "Ibrahim bin 'Utsman bin Khawasitiy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "10",
+  "died_ah": "169 H",
+  "city_of_death": "-",
+  "residence": "Hait ",
+  "kunyah": "Abu Syaibah",
+  "parents": "Al 'Abasiy",
+  "nasab": "Al 'Abasiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

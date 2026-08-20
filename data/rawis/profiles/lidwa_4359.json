@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4359",
+  "name_en": "Abdur Rahman bin Rafi'",
+  "name_id": "Abdur Rahman bin Rafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "113 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Al Jahm",
+  "parents": "At Tanukhiy",
+  "nasab": "At Tanukhiy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 2
+  }
+}

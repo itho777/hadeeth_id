@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6236",
+  "name_en": "Umair bin Qatadah bin Sa'ad",
+  "name_id": "Umair bin Qatadah bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Laitsiy Al Junda'iy",
+  "nasab": "Al Laitsiy Al Junda'iy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

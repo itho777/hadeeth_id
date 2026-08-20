@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8202",
+  "name_en": "Yahya bin Abi Zakariya",
+  "name_id": "Yahya bin Abi Zakariya",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "190 H",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Marwan",
+  "parents": "Al Ghassaniy",
+  "nasab": "Al Ghassaniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

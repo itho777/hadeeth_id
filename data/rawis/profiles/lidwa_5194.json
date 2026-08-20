@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5194",
+  "name_en": "Abdul Malik bin Abi Karimah",
+  "name_id": "Abdul Malik bin Abi Karimah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "204 H",
+  "city_of_death": "-",
+  "residence": "Maghribi",
+  "kunyah": "AbuZaid",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

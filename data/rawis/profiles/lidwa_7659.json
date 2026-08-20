@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7659",
+  "name_en": "Makhul",
+  "name_id": "Makhul",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan biasa",
+  "grade": "6",
+  "died_ah": "113 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Asy Syamiy",
+  "nasab": "Asy Syamiy",
+  "laqob": "-",
+  "hadith_count": "181",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 27,
+    "tirmidzi": 15,
+    "nasai": 14,
+    "ibnumajah": 19,
+    "ahmad": 76,
+    "malik": 0,
+    "darimi": 26
+  }
+}

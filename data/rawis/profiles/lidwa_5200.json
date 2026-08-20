@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5200",
+  "name_en": "Abdul Malik bin Al Hasan bin Abi Hakim",
+  "name_id": "Abdul Malik bin Al Hasan bin Abi Hakim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Marwan",
+  "parents": "Al Jariy",
+  "nasab": "Al Jariy",
+  "laqob": "Al Ahwal",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

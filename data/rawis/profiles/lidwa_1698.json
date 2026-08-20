@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1698",
+  "name_en": "Al Mundzir bin Malik bin Qath'ah",
+  "name_id": "Al Mundzir bin Malik bin Qath'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "108 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Nadlrah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "381",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 64,
+    "abudaud": 22,
+    "tirmidzi": 25,
+    "nasai": 22,
+    "ibnumajah": 29,
+    "ahmad": 201,
+    "malik": 0,
+    "darimi": 17
+  }
+}

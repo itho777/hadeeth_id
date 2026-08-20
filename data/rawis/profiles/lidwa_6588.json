@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6588",
+  "name_en": "\"Kuraib bin Abi Muslim, maula Ibnu 'Abbas\"",
+  "name_id": "\"Kuraib bin Abi Muslim, maula Ibnu 'Abbas\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "98 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Rusydain",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "231",
+  "book_counts": {
+    "bukhari": 45,
+    "muslim": 33,
+    "abudaud": 23,
+    "tirmidzi": 11,
+    "nasai": 26,
+    "ibnumajah": 16,
+    "ahmad": 63,
+    "malik": 4,
+    "darimi": 10
+  }
+}

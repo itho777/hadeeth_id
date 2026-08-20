@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5536",
+  "name_en": "Utsman bin 'Abdullah bin Muhammad",
+  "name_id": "Utsman bin 'Abdullah bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "281 H",
+  "city_of_death": "Anthakiyah",
+  "residence": "Syam",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Bashriy Al Anthakiy",
+  "nasab": "Al Bashriy Al Anthakiy",
+  "laqob": "Ibnu Kharzadz",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 10,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

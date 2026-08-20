@@ -1,0 +1,14 @@
+Lidwa ID for Darimi 1638: 1638
+Indo: Telah menceritakan kepada kami [Utsman bin Muhammad] telah menceritakan kepada kami ['Abdah bin Hisy...
+Arab:  حَدَّثَنَا عُثْمَانُ بْنُ مُحَمَّدٍ حَدَّثَنَا عَبْدَةُ عَنْ هِشَامِ بْنِ عُرْوَةَ عَنْ أَبِيهِ عَن...
+
+--- Sanad Data ---
+
+Jalur 1:
+Skema: Mutashil, Kedudukan: Marfu'
+  [1] ID 5913: Umar bin Al Khaththab bin Nufail ( Shahabat )
+  [2] ID 4072: Ashim bin 'Umar bin Al Khaththab ( Tabi'in kalangan tua )
+  [3] ID 5594: Urwah bin Az Zubair bin Al 'Awwam bin Khuwailid bin Asad bin 'Abdul 'Izzi bin Qu ( Tabi'in kalangan pertengahan )
+  [4] ID 8055: Hisyam bin 'Urwah bin Az Zubair bin Al 'Awwam ( Tabi'ul Atba' kalangan tua )
+  [5] ID 5288: Abdah bin Sulaiman ( Tabi'ut Tabi'in kalangan pertengahan )
+  [6] ID 5551: Utsman bin Muhammad bin Ibrahim bin 'Utsman ( Tabi'ul Atba' kalangan tua )

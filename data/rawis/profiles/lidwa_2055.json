@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2055",
+  "name_en": "Tsauban bin Bajdad",
+  "name_id": "Tsauban bin Bajdad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "54 H",
+  "city_of_death": "Halwan",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "181",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 14,
+    "abudaud": 16,
+    "tirmidzi": 19,
+    "nasai": 5,
+    "ibnumajah": 22,
+    "ahmad": 92,
+    "malik": 0,
+    "darimi": 13
+  }
+}

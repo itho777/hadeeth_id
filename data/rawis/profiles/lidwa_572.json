@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_572",
+  "name_en": "Asy'ats bin Abu Asy Sya'tsa' Sulaim bin Aswad",
+  "name_id": "Asy'ats bin Abu Asy Sya'tsa' Sulaim bin Aswad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "125 H",
+  "city_of_death": "Kufah",
+  "residence": "Kuifah",
+  "kunyah": "-",
+  "parents": "Al Muharibiy",
+  "nasab": "Al Muharibiy",
+  "laqob": "-",
+  "hadith_count": "137",
+  "book_counts": {
+    "bukhari": 27,
+    "muslim": 12,
+    "abudaud": 7,
+    "tirmidzi": 5,
+    "nasai": 22,
+    "ibnumajah": 6,
+    "ahmad": 51,
+    "malik": 0,
+    "darimi": 7
+  }
+}

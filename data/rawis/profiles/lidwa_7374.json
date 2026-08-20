@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7374",
+  "name_en": "Mukhawwal bin Raosyid",
+  "name_id": "Mukhawwal bin Raosyid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Raosyid",
+  "parents": "Al Hannath An Nahdiy",
+  "nasab": "Al Hannath An Nahdiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1082",
+  "name_en": "Iyas bin Mu'awiyah bin Qurrah",
+  "name_id": "Iyas bin Mu'awiyah bin Qurrah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "122 H",
+  "city_of_death": "Thaus",
+  "residence": "Bashrah",
+  "kunyah": "Abu Watsilah",
+  "parents": "Al Muzaniy",
+  "nasab": "Al Muzaniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

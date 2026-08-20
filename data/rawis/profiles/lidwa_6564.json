@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6564",
+  "name_en": "Katsir bin Syinzhir",
+  "name_id": "Katsir bin Syinzhir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Qurrah",
+  "parents": "Al Maziniy",
+  "nasab": "Al Maziniy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 6
+  }
+}

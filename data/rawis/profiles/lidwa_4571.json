@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4571",
+  "name_en": "Abdul 'Aziz bin Rufai'",
+  "name_id": "Abdul 'Aziz bin Rufai'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "130 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Asadiy Ath Tha'ifiy",
+  "nasab": "Al Asadiy Ath Tha'ifiy",
+  "laqob": "-",
+  "hadith_count": "65",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 9,
+    "abudaud": 8,
+    "tirmidzi": 4,
+    "nasai": 7,
+    "ibnumajah": 2,
+    "ahmad": 23,
+    "malik": 0,
+    "darimi": 3
+  }
+}

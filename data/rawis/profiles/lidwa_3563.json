@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3563",
+  "name_en": "Sulaiman bin Abi Muslim",
+  "name_id": "Sulaiman bin Abi Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Makkiy",
+  "nasab": "Al Makkiy",
+  "laqob": "Al Ahwal",
+  "hadith_count": "46",
+  "book_counts": {
+    "bukhari": 16,
+    "muslim": 6,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 6,
+    "ibnumajah": 2,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 3
+  }
+}

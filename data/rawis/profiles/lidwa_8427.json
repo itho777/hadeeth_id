@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8427",
+  "name_en": "Yazid bin Sinan bin Yazid",
+  "name_id": "Yazid bin Sinan bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "264 H",
+  "city_of_death": "Maru",
+  "residence": "Bashrah",
+  "kunyah": "Abu Khalid",
+  "parents": "Al Umawiy Al Qazzaz",
+  "nasab": "Al Umawiy Al Qazzaz",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

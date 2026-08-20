@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5211",
+  "name_en": "Abdul Malik bin Humaid bin Abi Ghaniyyah",
+  "name_id": "Abdul Malik bin Humaid bin Abi Ghaniyyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Khaza'iy",
+  "nasab": "Al Khaza'iy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

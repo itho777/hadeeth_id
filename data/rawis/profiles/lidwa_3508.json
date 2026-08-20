@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3508",
+  "name_en": "Salamah bin Shuhaib",
+  "name_id": "Salamah bin Shuhaib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hudzaifah",
+  "parents": "Al Hamdaniy Al Arhabiy",
+  "nasab": "Al Hamdaniy Al Arhabiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

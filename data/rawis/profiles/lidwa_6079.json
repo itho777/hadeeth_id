@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6079",
+  "name_en": "Amru bin Al Harits bin Abi Dlirar",
+  "name_id": "Amru bin Al Harits bin Abi Dlirar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Khuza'iy Al Mushthaliqiy",
+  "nasab": "Al Khuza'iy Al Mushthaliqiy",
+  "laqob": "Akhu (saudara laki laki) Juwairiyyah",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

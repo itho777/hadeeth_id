@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6901",
+  "name_en": "Muhammad bin Juhadah",
+  "name_id": "Muhammad bin Juhadah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "131 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Audiy",
+  "nasab": "Al Audiy",
+  "laqob": "-",
+  "hadith_count": "61",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 2,
+    "abudaud": 9,
+    "tirmidzi": 6,
+    "nasai": 5,
+    "ibnumajah": 6,
+    "ahmad": 26,
+    "malik": 0,
+    "darimi": 3
+  }
+}

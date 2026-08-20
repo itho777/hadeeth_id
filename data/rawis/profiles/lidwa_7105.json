@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7105",
+  "name_en": "Muhammad bin 'Abdullah bin Bazi'",
+  "name_id": "Muhammad bin 'Abdullah bin Bazi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "247 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 5,
+    "abudaud": 0,
+    "tirmidzi": 8,
+    "nasai": 22,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

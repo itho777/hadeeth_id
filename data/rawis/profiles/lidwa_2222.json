@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2222",
+  "name_en": "Haritsah bin Wahab",
+  "name_id": "Haritsah bin Wahab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 6,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

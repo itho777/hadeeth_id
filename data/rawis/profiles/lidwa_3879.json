@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3879",
+  "name_en": "Shalih bin Shalih bin Muslim bin Hayyan",
+  "name_id": "Shalih bin Shalih bin Muslim bin Hayyan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "153 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Ats Tsauriy Al Hamdaniy",
+  "nasab": "Ats Tsauriy Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 5
+  }
+}

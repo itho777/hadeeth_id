@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3166",
+  "name_en": "Zainab binti Jahsy",
+  "name_id": "Zainab binti Jahsy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "20 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Asadiyyah",
+  "nasab": "Al Asadiyyah",
+  "laqob": "Ummu Al Mu'minin",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 4,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 8,
+    "malik": 1,
+    "darimi": 0
+  }
+}

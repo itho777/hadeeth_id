@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8279",
+  "name_en": "Yahya bin Shabih",
+  "name_id": "Yahya bin Shabih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Khurasaniy",
+  "nasab": "Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

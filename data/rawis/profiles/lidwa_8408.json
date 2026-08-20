@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8408",
+  "name_en": "Yazid bin Humaid",
+  "name_id": "Yazid bin Humaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "128 H",
+  "city_of_death": "Sijistan",
+  "residence": "Bashrah",
+  "kunyah": "Abu At Tayyah",
+  "parents": "Adl Dluba'iy",
+  "nasab": "Adl Dluba'iy",
+  "laqob": "-",
+  "hadith_count": "139",
+  "book_counts": {
+    "bukhari": 30,
+    "muslim": 19,
+    "abudaud": 5,
+    "tirmidzi": 6,
+    "nasai": 8,
+    "ibnumajah": 9,
+    "ahmad": 59,
+    "malik": 0,
+    "darimi": 3
+  }
+}

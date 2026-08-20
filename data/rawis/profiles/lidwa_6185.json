@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6185",
+  "name_en": "Amru bin Qais",
+  "name_id": "Amru bin Qais",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "Samira'",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Mula'iy",
+  "nasab": "Al Mula'iy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 5,
+    "nasai": 6,
+    "ibnumajah": 3,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 3
+  }
+}

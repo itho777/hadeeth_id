@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2766",
+  "name_en": "Daud bin Abi Al Furat 'Amru bin Al Furat",
+  "name_id": "Daud bin Abi Al Furat 'Amru bin Al Furat",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amru",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 21,
+    "malik": 0,
+    "darimi": 0
+  }
+}

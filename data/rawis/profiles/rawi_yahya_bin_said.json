@@ -1,0 +1,29 @@
+{
+  "id": "rawi_yahya_bin_said",
+  "name_en": "Yahya bin Sa'id al-Ansari",
+  "name_id": "Yahya bin Sa'id al-Anshari",
+  "name_ar": "يحيى بن سعيد الأنصاري",
+  "is_sahabi": "false",
+  "generation": "Tabi'i",
+  "grade": "Thiqah Thabt",
+  "died_ah": "143",
+  "died_ce": "760",
+  "hadith_count": "820",
+  "city_of_death": "Madinah / Iraq",
+  "bio_en": "Judge of Madinah and central rawi of the famous 'Innama al-A'malu bi al-Niyyat' Hadith.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 125,
+    "muslim": 76,
+    "abudaud": 49,
+    "tirmidzi": 39,
+    "nasai": 149,
+    "ibnumajah": 43,
+    "ahmad": 181,
+    "malik": 218,
+    "darimi": 53
+  }
+}

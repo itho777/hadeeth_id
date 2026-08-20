@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_525",
+  "name_en": "Azhar bin 'Abdullah bin Jami'",
+  "name_id": "Azhar bin 'Abdullah bin Jami'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Hiraziy Al himshiy",
+  "nasab": "Al Hiraziy Al himshiy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

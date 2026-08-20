@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_786",
+  "name_en": "Ibrahim bin Abi Musa 'Abdullah bin Qais ",
+  "name_id": "Ibrahim bin Abi Musa 'Abdullah bin Qais ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Asy'ariy",
+  "nasab": "Al Asy'ariy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

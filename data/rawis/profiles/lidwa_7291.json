@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7291",
+  "name_en": "Muhammad bin Muhajir bin Abi Muslim",
+  "name_id": "Muhammad bin Muhajir bin Abi Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "170 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Anshariy Al Asyhaliy",
+  "nasab": "Al Anshariy Al Asyhaliy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 8,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

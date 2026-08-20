@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1742",
+  "name_en": "An Nu'man bin Muqarrin bin 'A'idz",
+  "name_id": "An Nu'man bin Muqarrin bin 'A'idz",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "21 H",
+  "city_of_death": "Najed",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amru",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

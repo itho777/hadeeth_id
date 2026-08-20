@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6603",
+  "name_en": "Ka'ab bin Malik bin Abi Ka'ab 'Amru",
+  "name_id": "Ka'ab bin Malik bin Abi Ka'ab 'Amru",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "51 H",
+  "city_of_death": "Syam",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Anshariy As Sulamiy",
+  "nasab": "Al Anshariy As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "130",
+  "book_counts": {
+    "bukhari": 27,
+    "muslim": 9,
+    "abudaud": 14,
+    "tirmidzi": 4,
+    "nasai": 13,
+    "ibnumajah": 6,
+    "ahmad": 48,
+    "malik": 1,
+    "darimi": 8
+  }
+}

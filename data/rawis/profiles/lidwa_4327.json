@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4327",
+  "name_en": "Abdur Rahman bin Tsabit bin Tsauban",
+  "name_id": "Abdur Rahman bin Tsabit bin Tsauban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "165 H",
+  "city_of_death": "Baghdad",
+  "residence": "Dujail",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Anasiy",
+  "nasab": "Al 'Anasiy",
+  "laqob": "-",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 9,
+    "tirmidzi": 5,
+    "nasai": 0,
+    "ibnumajah": 6,
+    "ahmad": 25,
+    "malik": 0,
+    "darimi": 3
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7589",
+  "name_en": "Mu'awiyah bin 'Amru bin Al Mahlab",
+  "name_id": "Mu'awiyah bin 'Amru bin Al Mahlab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "214 H",
+  "city_of_death": "Baghdad",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Ma'aniy Al Azdiy",
+  "nasab": "Al Ma'aniy Al Azdiy",
+  "laqob": "Ibnu Al Kirmaniy",
+  "hadith_count": "189",
+  "book_counts": {
+    "bukhari": 18,
+    "muslim": 5,
+    "abudaud": 3,
+    "tirmidzi": 6,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 151,
+    "malik": 0,
+    "darimi": 1
+  }
+}

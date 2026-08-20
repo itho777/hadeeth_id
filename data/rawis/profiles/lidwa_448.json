@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_448",
+  "name_en": "Ahmad bin Sulaiman bin 'Abdul Malik",
+  "name_id": "Ahmad bin Sulaiman bin 'Abdul Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "261 H",
+  "city_of_death": "Ar Raha",
+  "residence": "Jazirah",
+  "kunyah": "Abu Al Husain",
+  "parents": "Ar Ruhaawiy",
+  "nasab": "Ar Ruhaawiy",
+  "laqob": "-",
+  "hadith_count": "104",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 104,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

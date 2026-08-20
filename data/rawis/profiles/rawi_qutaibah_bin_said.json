@@ -1,0 +1,29 @@
+{
+  "id": "rawi_qutaibah_bin_said",
+  "name_en": "Qutaibah bin Sa'id",
+  "name_id": "Qutaibah bin Sa'id",
+  "name_ar": "قتيبة بن سعيد",
+  "is_sahabi": "false",
+  "generation": "Tabi' al-Tabi'in",
+  "grade": "Thiqah Thabt",
+  "died_ah": "240",
+  "died_ce": "855",
+  "hadith_count": "1280",
+  "city_of_death": "Baghlan / Kufah",
+  "bio_en": "Major direct sheikh of Bukhari, Muslim, Abu Dawood, and Tirmidhi.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 324,
+    "muslim": 666,
+    "abudaud": 191,
+    "tirmidzi": 601,
+    "nasai": 682,
+    "ibnumajah": 4,
+    "ahmad": 212,
+    "malik": 0,
+    "darimi": 0
+  }
+}

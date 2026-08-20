@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3041",
+  "name_en": "Zuhair bin Muhammad",
+  "name_id": "Zuhair bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "162 H",
+  "city_of_death": "-",
+  "residence": "SYam",
+  "kunyah": "Abu Al Mundzir",
+  "parents": "At Tamimiy Al Khurasaniy",
+  "nasab": "At Tamimiy Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "127",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 2,
+    "abudaud": 8,
+    "tirmidzi": 9,
+    "nasai": 0,
+    "ibnumajah": 15,
+    "ahmad": 90,
+    "malik": 0,
+    "darimi": 1
+  }
+}

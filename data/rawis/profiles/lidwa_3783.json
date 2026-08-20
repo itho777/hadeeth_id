@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3783",
+  "name_en": "Syuraih bin Al Harits bin Qais",
+  "name_id": "Syuraih bin Al Harits bin Qais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "78 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Umayyah",
+  "parents": "Al Kindiy",
+  "nasab": "Al Kindiy",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 19
+  }
+}

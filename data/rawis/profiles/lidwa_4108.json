@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4108",
+  "name_en": "Amir bin 'Abdullah bin Qais",
+  "name_id": "Amir bin 'Abdullah bin Qais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "104 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Burdah",
+  "parents": "Al Asy'ariy",
+  "nasab": "Al Asy'ariy",
+  "laqob": "Ibnu Abi Musa Al Asy'ariy",
+  "hadith_count": "401",
+  "book_counts": {
+    "bukhari": 89,
+    "muslim": 66,
+    "abudaud": 32,
+    "tirmidzi": 22,
+    "nasai": 27,
+    "ibnumajah": 25,
+    "ahmad": 123,
+    "malik": 0,
+    "darimi": 17
+  }
+}

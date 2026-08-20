@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8200",
+  "name_en": "Yahya bin Abi Bukair Nusr",
+  "name_id": "Yahya bin Abi Bukair Nusr",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "208 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Zakariya",
+  "parents": "Al Karmaniy Al Asadiy",
+  "nasab": "Al Karmaniy Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "113",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 10,
+    "abudaud": 6,
+    "tirmidzi": 3,
+    "nasai": 4,
+    "ibnumajah": 12,
+    "ahmad": 71,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7262",
+  "name_en": "Muhammad bin Muhammad bin Mush'ab",
+  "name_id": "Muhammad bin Muhammad bin Mush'ab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ash Shuriy",
+  "nasab": "Ash Shuriy",
+  "laqob": "Wahsyiy",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

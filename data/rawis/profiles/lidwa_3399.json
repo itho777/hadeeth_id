@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3399",
+  "name_en": "Sa'id bin Maslamah bin Hisyam bin 'Abdul Malik",
+  "name_id": "Sa'id bin Maslamah bin Hisyam bin 'Abdul Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al Umawiy",
+  "nasab": "Al Qurasyiy Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

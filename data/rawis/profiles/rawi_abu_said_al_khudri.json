@@ -1,0 +1,29 @@
+{
+  "id": "rawi_abu_said_al_khudri",
+  "name_en": "Abu Sa'id al-Khudri",
+  "name_id": "Abu Sa'id al-Khudri",
+  "name_ar": "أبو سعيد الخدري",
+  "is_sahabi": "true",
+  "generation": "Sahabi (Companion)",
+  "grade": "Sahabi Adl",
+  "died_ah": "74",
+  "died_ce": "693",
+  "hadith_count": "1170",
+  "city_of_death": "Madinah",
+  "bio_en": "Prominent young Companion who participated in major battles and transmitted core Hadiths.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 196,
+    "muslim": 208,
+    "abudaud": 128,
+    "tirmidzi": 154,
+    "nasai": 143,
+    "ibnumajah": 158,
+    "ahmad": 986,
+    "malik": 24,
+    "darimi": 69
+  }
+}

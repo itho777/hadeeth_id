@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2244",
+  "name_en": "Habib bin Abi Tsabit Qais bin Dinar",
+  "name_id": "Habib bin Abi Tsabit Qais bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "119 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Yahya",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "262",
+  "book_counts": {
+    "bukhari": 16,
+    "muslim": 17,
+    "abudaud": 21,
+    "tirmidzi": 24,
+    "nasai": 28,
+    "ibnumajah": 24,
+    "ahmad": 126,
+    "malik": 0,
+    "darimi": 6
+  }
+}

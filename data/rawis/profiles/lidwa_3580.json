@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3580",
+  "name_en": "Sulaiman bin Hayyan",
+  "name_id": "Sulaiman bin Hayyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "189 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Khalid",
+  "parents": "Al Azdiy",
+  "nasab": "Al Azdiy",
+  "laqob": "Al Ahmar",
+  "hadith_count": "188",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 38,
+    "abudaud": 20,
+    "tirmidzi": 21,
+    "nasai": 11,
+    "ibnumajah": 47,
+    "ahmad": 33,
+    "malik": 0,
+    "darimi": 10
+  }
+}

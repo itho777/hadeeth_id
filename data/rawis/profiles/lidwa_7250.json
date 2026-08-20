@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7250",
+  "name_en": "Muhammad bin Katsir bin Abi 'Atha'",
+  "name_id": "Muhammad bin Katsir bin Abi 'Atha'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "216 H",
+  "city_of_death": "-",
+  "residence": "Mashishah",
+  "kunyah": "Abu Yusuf",
+  "parents": "Ats Tsaqafiy Ash Shan'aniy",
+  "nasab": "Ats Tsaqafiy Ash Shan'aniy",
+  "laqob": "-",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 23
+  }
+}

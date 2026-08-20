@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5792",
+  "name_en": "Ali bin 'Abdullah bin Ja'far bin Najih",
+  "name_id": "Ali bin 'Abdullah bin Ja'far bin Najih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "234 H",
+  "city_of_death": "Rashafatu Hisyam",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "Ibnu Al Madiniy",
+  "hadith_count": "393",
+  "book_counts": {
+    "bukhari": 308,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 9,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 66,
+    "malik": 0,
+    "darimi": 5
+  }
+}

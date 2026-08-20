@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4762",
+  "name_en": "Abdullah bin Ja'far bin Abi Thalib",
+  "name_id": "Abdullah bin Ja'far bin Abi Thalib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "80 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Madinah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "Quthbu As Sakha'",
+  "hadith_count": "75",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 7,
+    "abudaud": 8,
+    "tirmidzi": 4,
+    "nasai": 7,
+    "ibnumajah": 11,
+    "ahmad": 28,
+    "malik": 0,
+    "darimi": 5
+  }
+}

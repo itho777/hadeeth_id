@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1054",
+  "name_en": "Isma'il bin Muhammad bin Jabalah",
+  "name_id": "Isma'il bin Muhammad bin Jabalah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ibrahim",
+  "parents": "As Siraj",
+  "nasab": "As Siraj",
+  "laqob": "Al Mu'aqqib",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

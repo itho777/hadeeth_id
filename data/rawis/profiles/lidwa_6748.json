@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6748",
+  "name_en": "Muhammad bin Aban bin Shalih bin 'Umair bin 'Ubaid",
+  "name_id": "Muhammad bin Aban bin Shalih bin 'Umair bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "175 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Idris",
+  "parents": "Al Ju'fiy",
+  "nasab": "Al Ju'fiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

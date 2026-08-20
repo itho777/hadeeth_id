@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7417",
+  "name_en": "Musafi' bin 'Abdullah bin Syaibah",
+  "name_id": "Musafi' bin 'Abdullah bin Syaibah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Sulaiman",
+  "parents": "Al 'Abdariy Al Hajabiy",
+  "nasab": "Al 'Abdariy Al Hajabiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

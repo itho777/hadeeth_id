@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5553",
+  "name_en": "Utsman bin Muhammad bin Sa'id",
+  "name_id": "Utsman bin Muhammad bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Qasim",
+  "parents": "Ar Raziy Ad Dasytakiy",
+  "nasab": "Ar Raziy Ad Dasytakiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

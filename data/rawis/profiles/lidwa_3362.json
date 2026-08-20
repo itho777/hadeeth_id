@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3362",
+  "name_en": "Sa'id bin 'Abdul 'Aziz bin Abi Yahya",
+  "name_id": "Sa'id bin 'Abdul 'Aziz bin Abi Yahya",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Muhammad",
+  "parents": "At Tanukhiy",
+  "nasab": "At Tanukhiy",
+  "laqob": "-",
+  "hadith_count": "68",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 5,
+    "abudaud": 13,
+    "tirmidzi": 2,
+    "nasai": 11,
+    "ibnumajah": 3,
+    "ahmad": 24,
+    "malik": 0,
+    "darimi": 10
+  }
+}

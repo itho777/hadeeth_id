@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1131",
+  "name_en": "Nama tidak diketahui",
+  "name_id": "Nama tidak diketahui",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "-",
+  "grade": "13",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "1604",
+  "book_counts": {
+    "bukhari": 26,
+    "muslim": 25,
+    "abudaud": 228,
+    "tirmidzi": 56,
+    "nasai": 110,
+    "ibnumajah": 34,
+    "ahmad": 1025,
+    "malik": 31,
+    "darimi": 69
+  }
+}

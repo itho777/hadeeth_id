@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_768",
+  "name_en": "Ayyub bin 'Utbah",
+  "name_id": "Ayyub bin 'Utbah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "160 H",
+  "city_of_death": "-",
+  "residence": "Yamamah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Yamamiy",
+  "nasab": "Al Yamamiy",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_853",
+  "name_en": "Ibrahim bin 'Abdullah bin Ma'bad bin 'Abbas",
+  "name_id": "Ibrahim bin 'Abdullah bin Ma'bad bin 'Abbas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Hasyimiy Al Qurasyioy",
+  "nasab": "Al Hasyimiy Al Qurasyioy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 2
+  }
+}

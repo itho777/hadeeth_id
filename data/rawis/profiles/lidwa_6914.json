@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6914",
+  "name_en": "Muhammad bin Hatim bin Yunus",
+  "name_id": "Muhammad bin Hatim bin Yunus",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "225 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Jarjara'iy Al Mushaishiy",
+  "nasab": "Al Jarjara'iy Al Mushaishiy",
+  "laqob": "Hubbaa",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2103",
+  "name_en": "Judamah binti Wahab",
+  "name_id": "Judamah binti Wahab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 1,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_542",
+  "name_en": "As'ad bin Zurarah bin 'Adas bin 'Uibaid bin Tsa'labah",
+  "name_id": "As'ad bin Zurarah bin 'Adas bin 'Uibaid bin Tsa'labah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "1 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Umamah",
+  "parents": "Al Anshariy Al Khazrajiy",
+  "nasab": "Al Anshariy Al Khazrajiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

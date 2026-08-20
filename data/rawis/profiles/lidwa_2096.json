@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2096",
+  "name_en": "Jubair bin Muth'im bin 'Adiy",
+  "name_id": "Jubair bin Muth'im bin 'Adiy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "59 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "127",
+  "book_counts": {
+    "bukhari": 19,
+    "muslim": 10,
+    "abudaud": 12,
+    "tirmidzi": 6,
+    "nasai": 9,
+    "ibnumajah": 7,
+    "ahmad": 56,
+    "malik": 1,
+    "darimi": 7
+  }
+}

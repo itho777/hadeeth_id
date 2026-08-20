@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8585",
+  "name_en": "Yusuf bin Muhammad",
+  "name_id": "Yusuf bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Al 'Ashfariy Al Khurasaniy",
+  "nasab": "Al 'Ashfariy Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

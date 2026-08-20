@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5051",
+  "name_en": "Abdullah bin Muhammad bin Asma' bin 'Abdi Mukhariq",
+  "name_id": "Abdullah bin Muhammad bin Asma' bin 'Abdi Mukhariq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "231 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Adl Dluba'iy",
+  "nasab": "Adl Dluba'iy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 17,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 7,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

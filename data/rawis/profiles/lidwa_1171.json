@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1171",
+  "name_en": "Al Jarrah bin Malih bin 'Adiy",
+  "name_id": "Al Jarrah bin Malih bin 'Adiy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "175 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Waki'",
+  "parents": "Ar Ru'asiy",
+  "nasab": "Ar Ru'asiy",
+  "laqob": "-",
+  "hadith_count": "49",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 35,
+    "malik": 0,
+    "darimi": 2
+  }
+}

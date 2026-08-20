@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_466",
+  "name_en": "Ahmad bin 'Abdul Malik bin Waaqid",
+  "name_id": "Ahmad bin 'Abdul Malik bin Waaqid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "221 H",
+  "city_of_death": "Baghdad",
+  "residence": "Jazirah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "69",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 61,
+    "malik": 0,
+    "darimi": 0
+  }
+}

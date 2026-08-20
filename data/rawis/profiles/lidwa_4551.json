@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4551",
+  "name_en": "Abdul 'Aziz bin Abi Ash Shu'bah",
+  "name_id": "Abdul 'Aziz bin Abi Ash Shu'bah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru ",
+  "kunyah": "Abu Ash Sha'bah",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

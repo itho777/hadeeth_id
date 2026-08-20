@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_666",
+  "name_en": "Ummu Malik",
+  "name_id": "Ummu Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Ummu Malik",
+  "parents": "Al Bahziyyah",
+  "nasab": "Al Bahziyyah",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

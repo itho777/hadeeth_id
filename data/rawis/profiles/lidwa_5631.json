@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5631",
+  "name_en": "Atha' bin Dinar",
+  "name_id": "Atha' bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "126 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Az Zayyat",
+  "parents": "Al Hudzaliy ",
+  "nasab": "Al Hudzaliy ",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6650",
+  "name_en": "Mu'ammal bin Ihab bin 'Abdul 'Aziz",
+  "name_id": "Mu'ammal bin Ihab bin 'Abdul 'Aziz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "254 H",
+  "city_of_death": "Ramalah",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Ar Rib'iy Al 'Ijliy",
+  "nasab": "Ar Rib'iy Al 'Ijliy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

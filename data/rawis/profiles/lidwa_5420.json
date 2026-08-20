@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5420",
+  "name_en": "Ubaidullah bin 'Umar ",
+  "name_id": "Ubaidullah bin 'Umar ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy As Sa'idiy",
+  "nasab": "Al Qurasyiy As Sa'idiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

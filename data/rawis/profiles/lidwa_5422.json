@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5422",
+  "name_en": "Ubaidullah bin 'Umar bin Maysarah",
+  "name_id": "Ubaidullah bin 'Umar bin Maysarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "235 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Qawaririy Al Bashriy",
+  "nasab": "Al Qawaririy Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "149",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 40,
+    "abudaud": 47,
+    "tirmidzi": 0,
+    "nasai": 6,
+    "ibnumajah": 0,
+    "ahmad": 53,
+    "malik": 0,
+    "darimi": 2
+  }
+}

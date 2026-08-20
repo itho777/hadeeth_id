@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4059",
+  "name_en": "Ashim bin Bahdalah Abi An Najud",
+  "name_id": "Ashim bin Bahdalah Abi An Najud",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "128 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Asadiyyah",
+  "nasab": "Al Asadiyyah",
+  "laqob": "Al Muqri'iy",
+  "hadith_count": "385",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 1,
+    "abudaud": 20,
+    "tirmidzi": 33,
+    "nasai": 29,
+    "ibnumajah": 29,
+    "ahmad": 246,
+    "malik": 0,
+    "darimi": 23
+  }
+}

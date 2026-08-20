@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6038",
+  "name_en": "Imran bin Khalid bin Yazid",
+  "name_id": "Imran bin Khalid bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "244 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Umar",
+  "parents": "Ath Tha'iy Ad Damsqiy",
+  "nasab": "Ath Tha'iy Ad Damsqiy",
+  "laqob": "-",
+  "hadith_count": "28",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 28,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

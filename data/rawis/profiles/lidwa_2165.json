@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2165",
+  "name_en": "Ja'far bin Musafir bin Rasyid",
+  "name_id": "Ja'far bin Musafir bin Rasyid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "254 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Shalih",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 19,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 7,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6350",
+  "name_en": "Ghalib bin Khaththaf",
+  "name_id": "Ghalib bin Khaththaf",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu Sulaiman",
+  "parents": "Al Qaththan",
+  "nasab": "Al Qaththan",
+  "laqob": "Ibnu Abi Ghaylan",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

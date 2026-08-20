@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_534",
+  "name_en": "Usamah bin Syarik ",
+  "name_id": "Usamah bin Syarik ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Ats Tsa'labiy Adz Dzabiyaaniy",
+  "nasab": "Ats Tsa'labiy Adz Dzabiyaaniy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

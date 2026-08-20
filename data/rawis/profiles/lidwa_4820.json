@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4820",
+  "name_en": "Abdullah bin Zaid bin 'Amru bin Nabil",
+  "name_id": "Abdullah bin Zaid bin 'Amru bin Nabil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "104 H",
+  "city_of_death": "Syam",
+  "residence": "Bashrah",
+  "kunyah": "Abu Qilabah",
+  "parents": "Al Jarmiy",
+  "nasab": "Al Jarmiy",
+  "laqob": "-",
+  "hadith_count": "539",
+  "book_counts": {
+    "bukhari": 73,
+    "muslim": 46,
+    "abudaud": 41,
+    "tirmidzi": 40,
+    "nasai": 62,
+    "ibnumajah": 27,
+    "ahmad": 203,
+    "malik": 0,
+    "darimi": 47
+  }
+}

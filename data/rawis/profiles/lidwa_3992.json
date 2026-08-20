@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3992",
+  "name_en": "Thariq bin Syihab bin 'Abdu Syams bin Hilal bin Salamah bin 'Auf",
+  "name_id": "Thariq bin Syihab bin 'Abdu Syams bin Hilal bin Salamah bin 'Auf",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "82 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Bajaliy Al Ahmasiy",
+  "nasab": "Al Bajaliy Al Ahmasiy",
+  "laqob": "-",
+  "hadith_count": "84",
+  "book_counts": {
+    "bukhari": 17,
+    "muslim": 8,
+    "abudaud": 4,
+    "tirmidzi": 5,
+    "nasai": 8,
+    "ibnumajah": 3,
+    "ahmad": 37,
+    "malik": 0,
+    "darimi": 2
+  }
+}

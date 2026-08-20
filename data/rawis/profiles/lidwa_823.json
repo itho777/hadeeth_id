@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_823",
+  "name_en": "Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
+  "name_id": "Ibrahim bin Sa'ad bin Ibrahim bin 'Abdur Rahman bin 'Auf",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "185 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Az Zuhriy Al Qurasyiy",
+  "nasab": "Az Zuhriy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "935",
+  "book_counts": {
+    "bukhari": 161,
+    "muslim": 109,
+    "abudaud": 50,
+    "tirmidzi": 18,
+    "nasai": 58,
+    "ibnumajah": 30,
+    "ahmad": 496,
+    "malik": 0,
+    "darimi": 13
+  }
+}

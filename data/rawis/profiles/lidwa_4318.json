@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4318",
+  "name_en": "Abdur Rahman bin Bujaid bin Wahab",
+  "name_id": "Abdur Rahman bin Bujaid bin Wahab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy Al Haritsiy",
+  "nasab": "Al Anshariy Al Haritsiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 1,
+    "darimi": 0
+  }
+}

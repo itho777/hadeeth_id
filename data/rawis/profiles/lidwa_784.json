@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_784",
+  "name_en": "Ibrahim bin Abi 'Ablah Syamri bin Yaqzhan bin 'Amir bin 'Abdullah ",
+  "name_id": "Ibrahim bin Abi 'Ablah Syamri bin Yaqzhan bin 'Amir bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "152 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Isma'il",
+  "parents": "Al 'Uqayliy",
+  "nasab": "Al 'Uqayliy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 7,
+    "malik": 2,
+    "darimi": 0
+  }
+}

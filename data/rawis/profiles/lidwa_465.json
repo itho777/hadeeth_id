@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_465",
+  "name_en": "Ahmad bin 'Abdullah bin Yunus bin 'Abdullah bin Qais",
+  "name_id": "Ahmad bin 'Abdullah bin Yunus bin 'Abdullah bin Qais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "227 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "At Tamimiy Al Yarbuu'iy",
+  "nasab": "At Tamimiy Al Yarbuu'iy",
+  "laqob": "-",
+  "hadith_count": "280",
+  "book_counts": {
+    "bukhari": 70,
+    "muslim": 54,
+    "abudaud": 88,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 59
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7546",
+  "name_en": "Mu'adz bin Al 'Alaa' bin 'Ammar",
+  "name_id": "Mu'adz bin Al 'Alaa' bin 'Ammar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ghassan",
+  "parents": "Al Maziniy",
+  "nasab": "Al Maziniy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

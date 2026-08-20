@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6876",
+  "name_en": "Muhammad bin Al Walid bin 'Abdul Hamid",
+  "name_id": "Muhammad bin Al Walid bin 'Abdul Hamid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Qurasyiy Al Bashriy",
+  "nasab": "Al Qurasyiy Al Bashriy",
+  "laqob": "Hamdan",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 11,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 11,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

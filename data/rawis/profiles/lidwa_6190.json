@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6190",
+  "name_en": "Amru bin Malik ",
+  "name_id": "Amru bin Malik ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Ar Rasibiy Al Ghubariy",
+  "nasab": "Ar Rasibiy Al Ghubariy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

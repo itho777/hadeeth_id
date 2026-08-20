@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3976",
+  "name_en": "Dluraib bin Nuqair",
+  "name_id": "Dluraib bin Nuqair",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "AbuAs Sulail",
+  "parents": "Al Qaisiy Al Jaririy",
+  "nasab": "Al Qaisiy Al Jaririy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 2
+  }
+}

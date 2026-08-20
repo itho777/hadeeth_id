@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5470",
+  "name_en": "Utbah bin 'Abdullah bin 'Utbah",
+  "name_id": "Utbah bin 'Abdullah bin 'Utbah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "244 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Yahmadiy Al Azdiy",
+  "nasab": "Al Yahmadiy Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 9,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

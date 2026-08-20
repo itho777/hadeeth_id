@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8160",
+  "name_en": "Waki' bin Al Jarrah bin Malih",
+  "name_id": "Waki' bin Al Jarrah bin Malih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "196 H",
+  "city_of_death": "Ainul Wardah",
+  "residence": "Kufah",
+  "kunyah": "Abu Sufyan",
+  "parents": "Ar Ru'asiy",
+  "nasab": "Ar Ru'asiy",
+  "laqob": "-",
+  "hadith_count": "3104",
+  "book_counts": {
+    "bukhari": 53,
+    "muslim": 333,
+    "abudaud": 123,
+    "tirmidzi": 212,
+    "nasai": 98,
+    "ibnumajah": 454,
+    "ahmad": 1822,
+    "malik": 0,
+    "darimi": 9
+  }
+}

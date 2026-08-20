@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6219",
+  "name_en": "Amru bin Yahya bin Sa'id bin 'Amru bin Sa'id bin Al 'Ash",
+  "name_id": "Amru bin Yahya bin Sa'id bin 'Amru bin Sa'id bin Al 'Ash",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Umayyah",
+  "parents": "Al Umawiy As Sa'idiy",
+  "nasab": "Al Umawiy As Sa'idiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

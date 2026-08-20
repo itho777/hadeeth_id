@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2122",
+  "name_en": "Jarir bin 'Abdul Hamid bin Qarth",
+  "name_id": "Jarir bin 'Abdul Hamid bin Qarth",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "188 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "808",
+  "book_counts": {
+    "bukhari": 127,
+    "muslim": 294,
+    "abudaud": 101,
+    "tirmidzi": 25,
+    "nasai": 118,
+    "ibnumajah": 29,
+    "ahmad": 78,
+    "malik": 0,
+    "darimi": 36
+  }
+}

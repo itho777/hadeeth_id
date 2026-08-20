@@ -1,0 +1,32 @@
+{
+  "hadithnumber": 3581,
+  "arabicnumber": 3581,
+  "text": "Telah menceritakan kepada kami ['Utsman bin Shalih] telah menceritakan kepada kami [Bakr bin Mudlar] berkata, telah menceritakan kepadaku [Ja'far bin Rabi'ah] dari ['Irak bin Malik] dari ['Ubaidullah bin Abdullah bin 'Utbah bi Mas'ud] dari [Abdullah bin 'Abbas] radliallahu 'anhuma, bahwa bulan pernah terbelah pada zaman Rasulullah shallallahu 'alaihi wasallam.",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "'Utsman bin Shalih",
+      "name_ar": "'Utsman bin Shalih"
+    },
+    {
+      "name_id": "Bakr bin Mudlar",
+      "name_ar": "Bakr bin Mudlar"
+    },
+    {
+      "name_id": "Ja'far bin Rabi'ah",
+      "name_ar": "Ja'far bin Rabi'ah"
+    },
+    {
+      "name_id": "'Irak bin Malik",
+      "name_ar": "'Irak bin Malik"
+    },
+    {
+      "name_id": "'Ubaidullah bin Abdullah bin 'Utbah bi Mas'ud",
+      "name_ar": "'Ubaidullah bin Abdullah bin 'Utbah bi Mas'ud"
+    },
+    {
+      "name_id": "Abdullah bin 'Abbas",
+      "name_ar": "Abdullah bin 'Abbas"
+    }
+  ]
+}

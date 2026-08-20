@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_483",
+  "name_en": "Ahmad bin Muhammad bin Ibrahim",
+  "name_id": "Ahmad bin Muhammad bin Ibrahim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "278 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Abaliy",
+  "nasab": "Al Abaliy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

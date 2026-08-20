@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6841",
+  "name_en": "Muhammad bin Al Khalil bin Hammad",
+  "name_id": "Muhammad bin Al Khalil bin Hammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Khasyaniy Al Balathiy",
+  "nasab": "Al Khasyaniy Al Balathiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

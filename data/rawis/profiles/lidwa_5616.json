@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5616",
+  "name_en": "Isham bin Khalid",
+  "name_id": "Isham bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "214 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Hadlramiy",
+  "nasab": "Al Hadlramiy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 25,
+    "malik": 0,
+    "darimi": 0
+  }
+}

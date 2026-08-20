@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6889",
+  "name_en": "Muhammad bin Tasbit ",
+  "name_id": "Muhammad bin Tasbit ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

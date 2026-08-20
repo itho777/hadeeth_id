@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5253",
+  "name_en": "Abdul Mun'im bin Nu'aim",
+  "name_id": "Abdul Mun'im bin Nu'aim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Aswariy",
+  "nasab": "Al Aswariy",
+  "laqob": "Shahibu As Siqa'",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

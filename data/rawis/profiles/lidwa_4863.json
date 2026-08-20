@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4863",
+  "name_en": "Abdullah bin Syawdzab",
+  "name_id": "Abdullah bin Syawdzab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "156 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Khurasaniy",
+  "nasab": "Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 3
+  }
+}

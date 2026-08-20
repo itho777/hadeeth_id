@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1055",
+  "name_en": "Isma'il bin Muhammad bin Juhadah",
+  "name_id": "Isma'il bin Muhammad bin Juhadah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Yamiy Al 'Aththar",
+  "nasab": "Al Yamiy Al 'Aththar",
+  "laqob": "Al Makfuf",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

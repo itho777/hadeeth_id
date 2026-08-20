@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5151",
+  "name_en": "Abdullah bin Yahya",
+  "name_id": "Abdullah bin Yahya",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "212 H",
+  "city_of_death": "Barlas",
+  "residence": "Maru",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Mu'afiriy Al Burullusiy",
+  "nasab": "Al Mu'afiriy Al Burullusiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

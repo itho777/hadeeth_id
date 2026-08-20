@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_530",
+  "name_en": "Usamah bin Zaid ",
+  "name_id": "Usamah bin Zaid ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "153 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Zaid",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "170",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 25,
+    "abudaud": 28,
+    "tirmidzi": 10,
+    "nasai": 4,
+    "ibnumajah": 20,
+    "ahmad": 77,
+    "malik": 0,
+    "darimi": 5
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1753",
+  "name_en": "Al Haitsam bin Humaid",
+  "name_id": "Al Haitsam bin Humaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ahmad ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 9,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 2
+  }
+}

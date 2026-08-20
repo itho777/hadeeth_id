@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8109",
+  "name_en": "Hayyaj bin Bistham",
+  "name_id": "Hayyaj bin Bistham",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "177 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Khalid",
+  "parents": "At Tamimiy Al Burjumiy",
+  "nasab": "At Tamimiy Al Burjumiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5683",
+  "name_en": "Uqbah bin Mukram bin Aflah",
+  "name_id": "Uqbah bin Mukram bin Aflah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "243 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdul malik",
+  "parents": "Al 'Ammiy",
+  "nasab": "Al 'Ammiy",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 18,
+    "abudaud": 9,
+    "tirmidzi": 10,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

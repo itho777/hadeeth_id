@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2759",
+  "name_en": "Khaitsamah bin 'Abdur Rahman bin Abi Sabrah",
+  "name_id": "Khaitsamah bin 'Abdur Rahman bin Abi Sabrah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "85 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Bakar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "69",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 8,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 5,
+    "ibnumajah": 3,
+    "ahmad": 33,
+    "malik": 0,
+    "darimi": 3
+  }
+}

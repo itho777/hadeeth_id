@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3379",
+  "name_en": "Sa'id bin 'Amru bin Asywa'",
+  "name_id": "Sa'id bin 'Amru bin Asywa'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "120 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Alk Hamdaniy",
+  "nasab": "Alk Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

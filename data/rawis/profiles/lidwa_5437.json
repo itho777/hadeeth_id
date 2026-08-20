@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5437",
+  "name_en": "Ubaidullah bin Musa bin Abi Al Mukhtar Badzam",
+  "name_id": "Ubaidullah bin Musa bin Abi Al Mukhtar Badzam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "213 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al 'Abasiy",
+  "nasab": "Al 'Abasiy",
+  "laqob": "-",
+  "hadith_count": "290",
+  "book_counts": {
+    "bukhari": 52,
+    "muslim": 31,
+    "abudaud": 14,
+    "tirmidzi": 39,
+    "nasai": 28,
+    "ibnumajah": 41,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 82
+  }
+}

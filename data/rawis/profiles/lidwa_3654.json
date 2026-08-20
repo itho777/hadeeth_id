@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3654",
+  "name_en": "Sinan bin Rabi'ah",
+  "name_id": "Sinan bin Rabi'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Rabi'ah",
+  "parents": "Al Bahiliy",
+  "nasab": "Al Bahiliy",
+  "laqob": "Shahibu As Sabiriy",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

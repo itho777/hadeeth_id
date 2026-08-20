@@ -1,0 +1,28 @@
+{
+  "hadithnumber": 1831,
+  "arabicnumber": 1831,
+  "text": "Telah menceritakan kepada kami [Isma'il] berkata, telah menceritakan kepadaku [Malik] dari [Ibnu Syihab] dari ['Urwah bin Az Zubair] dari ['Aisyah radliallahu 'anha] isteri Nabi shallallahu 'alaihi wasallam bahwa Rasulullah shallallahu 'alaihi wasallam bersabda: \"Cecak itu kecil bahayanya\". Dan aku tidak mendengar Beliau memerintahkan untuk membunuhnya\". Berkata, Abu 'Abdullah Al Bukhariy: \"Yang kami inginkan dengan keterangan ini adalah bahwa Mina termasuk tanah haram (suci) dan mereka (para shahabat) tidak memandang membunuh ular itu berdosa",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Urwah bin az-Zubair bin al-Awwam",
+      "name_ar": "عروة بن الزبير بن العوام",
+      "rawi_id": "rawi_urwah_ibn_zubayr"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    },
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    }
+  ]
+}

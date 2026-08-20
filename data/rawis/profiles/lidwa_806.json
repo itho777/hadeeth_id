@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_806",
+  "name_en": "Ibrahim bin Al Mukhtar ",
+  "name_id": "Ibrahim bin Al Mukhtar ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "180 H",
+  "city_of_death": "-",
+  "residence": "Rayi",
+  "kunyah": "Abu Isma'il",
+  "parents": "At Tamimi Al Khiwariy",
+  "nasab": "At Tamimi Al Khiwariy",
+  "laqob": "Habwaih",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 3
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5223",
+  "name_en": "Abdul Malik bin 'Abdul 'Aziz bin Juraij",
+  "name_id": "Abdul Malik bin 'Abdul 'Aziz bin Juraij",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "150 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Al Walid",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "1692",
+  "book_counts": {
+    "bukhari": 190,
+    "muslim": 265,
+    "abudaud": 146,
+    "tirmidzi": 63,
+    "nasai": 221,
+    "ibnumajah": 73,
+    "ahmad": 658,
+    "malik": 0,
+    "darimi": 76
+  }
+}

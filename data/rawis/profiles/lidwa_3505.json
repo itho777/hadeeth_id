@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3505",
+  "name_en": "Salamah bin Syabib",
+  "name_id": "Salamah bin Syabib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "247 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "An Naisaburiy As Sam'iy",
+  "nasab": "An Naisaburiy As Sam'iy",
+  "laqob": "-",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 40,
+    "abudaud": 10,
+    "tirmidzi": 16,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

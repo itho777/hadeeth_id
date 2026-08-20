@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_560",
+  "name_en": "Asma' binti Yazid bin As Sakan",
+  "name_id": "Asma' binti Yazid bin As Sakan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Salamah",
+  "parents": "Al Anshariyyah Al Asyhaliayah",
+  "nasab": "Al Anshariyyah Al Asyhaliayah",
+  "laqob": "-",
+  "hadith_count": "76",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 8,
+    "nasai": 1,
+    "ibnumajah": 7,
+    "ahmad": 51,
+    "malik": 0,
+    "darimi": 2
+  }
+}

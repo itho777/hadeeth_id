@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2941",
+  "name_en": "Rifa'ah bin Rafi' bin Khudaij",
+  "name_id": "Rifa'ah bin Rafi' bin Khudaij",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Khudaij",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

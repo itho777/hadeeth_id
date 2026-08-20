@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6556",
+  "name_en": "Katsir bin Al Muthallib bin Abi Wida'ah",
+  "name_id": "Katsir bin Al Muthallib bin Abi Wida'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Qurasyiy As Sahmiy",
+  "nasab": "Al Qurasyiy As Sahmiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

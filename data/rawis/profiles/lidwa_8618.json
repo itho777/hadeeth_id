@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8618",
+  "name_en": "Yunus bin Maisarah bin Halbas",
+  "name_id": "Yunus bin Maisarah bin Halbas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Ubaid",
+  "parents": "Ad Damasyqiy",
+  "nasab": "Ad Damasyqiy",
+  "laqob": "Al A'maa",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 8,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 1
+  }
+}

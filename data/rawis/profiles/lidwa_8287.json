@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8287",
+  "name_en": "Yahya bin 'Abdul Hamid bin 'Abdullah ",
+  "name_id": "Yahya bin 'Abdul Hamid bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "228 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Zakariya",
+  "parents": "Al Hammaniy",
+  "nasab": "Al Hammaniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

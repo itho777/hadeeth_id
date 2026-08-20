@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7238",
+  "name_en": "Muhammad bin Fulaih bin Sulaiman",
+  "name_id": "Muhammad bin Fulaih bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "197 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Aslamiy atau Al Khuza'iy",
+  "nasab": "Al Aslamiy atau Al Khuza'iy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 16,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_738",
+  "name_en": "Ayqa' bin 'Abd",
+  "name_id": "Ayqa' bin 'Abd",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Kalaa'iy Al Himshiy",
+  "nasab": "Al Kalaa'iy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

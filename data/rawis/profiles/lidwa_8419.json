@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8419",
+  "name_en": "Yazid bin Ziyad",
+  "name_id": "Yazid bin Ziyad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Qurasyi Ad Damasyqiy",
+  "nasab": "Al Qurasyi Ad Damasyqiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 2,
+    "darimi": 0
+  }
+}

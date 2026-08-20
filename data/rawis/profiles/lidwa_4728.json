@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4728",
+  "name_en": "Abdullah bin Al Haitsam bin 'Utsman",
+  "name_id": "Abdullah bin Al Haitsam bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "261 H",
+  "city_of_death": "-",
+  "residence": "Riqqah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al 'Abdiy Al Bashriy",
+  "nasab": "Al 'Abdiy Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

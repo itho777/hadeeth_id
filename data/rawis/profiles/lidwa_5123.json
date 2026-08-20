@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5123",
+  "name_en": "Abdullah bin Nafi' bin Abi Nafi'",
+  "name_id": "Abdullah bin Nafi' bin Abi Nafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "206 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Ash Sha'igh Al Makhzumiy",
+  "nasab": "Ash Sha'igh Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 7,
+    "tirmidzi": 10,
+    "nasai": 3,
+    "ibnumajah": 9,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

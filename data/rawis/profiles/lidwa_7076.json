@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7076",
+  "name_en": "Muhammad bin 'Abdur Rahman bin Naufal bin Al Aswad",
+  "name_id": "Muhammad bin 'Abdur Rahman bin Naufal bin Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "9",
+  "died_ah": "131 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Aswad",
+  "parents": "Al Asadiy Al Qurasyiy",
+  "nasab": "Al Asadiy Al Qurasyiy",
+  "laqob": "Yatimu 'Urwah",
+  "hadith_count": "130",
+  "book_counts": {
+    "bukhari": 24,
+    "muslim": 14,
+    "abudaud": 6,
+    "tirmidzi": 3,
+    "nasai": 11,
+    "ibnumajah": 9,
+    "ahmad": 54,
+    "malik": 5,
+    "darimi": 4
+  }
+}

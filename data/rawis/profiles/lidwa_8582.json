@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8582",
+  "name_en": "Yusuf bin 'Isa bin Dinar",
+  "name_id": "Yusuf bin 'Isa bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "249 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Az Zuhriy Al Marwaziy",
+  "nasab": "Az Zuhriy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "41",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 25,
+    "nasai": 8,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

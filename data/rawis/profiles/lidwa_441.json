@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_441",
+  "name_en": "Ahmad bin Khalid",
+  "name_id": "Ahmad bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "214 H",
+  "city_of_death": "Syam",
+  "residence": "-",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Wahabiy Al Himshiy",
+  "nasab": "Al Wahabiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 5,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 19
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2567",
+  "name_en": "Hanzhalah bin Abi Sufyan bin 'Abdur Rahman bin Shafwan bin Umayah",
+  "name_id": "Hanzhalah bin Abi Sufyan bin 'Abdur Rahman bin Shafwan bin Umayah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "151 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "83",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 11,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 15,
+    "ibnumajah": 1,
+    "ahmad": 34,
+    "malik": 0,
+    "darimi": 1
+  }
+}

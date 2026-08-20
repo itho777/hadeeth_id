@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_735",
+  "name_en": "Awsath bin Isma'il biin Awsath",
+  "name_id": "Awsath bin Isma'il biin Awsath",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "79 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Isma'il",
+  "parents": "Al Bajaliy",
+  "nasab": "Al Bajaliy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

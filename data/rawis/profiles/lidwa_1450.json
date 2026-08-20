@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1450",
+  "name_en": "As Saa'ib bin Yazid bin Sa'id bin Tsumaamah bin Al Aswad",
+  "name_id": "As Saa'ib bin Yazid bin Sa'id bin Tsumaamah bin Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "91 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "135",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 13,
+    "abudaud": 9,
+    "tirmidzi": 12,
+    "nasai": 15,
+    "ibnumajah": 7,
+    "ahmad": 38,
+    "malik": 8,
+    "darimi": 8
+  }
+}

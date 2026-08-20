@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8085",
+  "name_en": "Hilal bin 'Ali bin Usamah",
+  "name_id": "Hilal bin 'Ali bin Usamah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al 'Amiriy",
+  "nasab": "Al 'Amiriy",
+  "laqob": "Ibnu Abi Maimunah",
+  "hadith_count": "107",
+  "book_counts": {
+    "bukhari": 34,
+    "muslim": 4,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 4,
+    "ibnumajah": 5,
+    "ahmad": 47,
+    "malik": 1,
+    "darimi": 4
+  }
+}

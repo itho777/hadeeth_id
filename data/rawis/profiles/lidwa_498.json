@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_498",
+  "name_en": "Ahmad bin aha bin Zakariya",
+  "name_id": "Ahmad bin aha bin Zakariya",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "264 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Awdiy",
+  "nasab": "Al Awdiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 13,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

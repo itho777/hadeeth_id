@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5107",
+  "name_en": "Abdullah bin Maladz",
+  "name_id": "Abdullah bin Maladz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Asy'ariy Ad Damsyiqiy",
+  "nasab": "Al Asy'ariy Ad Damsyiqiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

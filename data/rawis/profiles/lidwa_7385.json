@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7385",
+  "name_en": "Martsad bin 'Abdullah ",
+  "name_id": "Martsad bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "90 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Al Khair",
+  "parents": "Al Yazaniy",
+  "nasab": "Al Yazaniy",
+  "laqob": "-",
+  "hadith_count": "156",
+  "book_counts": {
+    "bukhari": 27,
+    "muslim": 15,
+    "abudaud": 12,
+    "tirmidzi": 7,
+    "nasai": 12,
+    "ibnumajah": 9,
+    "ahmad": 67,
+    "malik": 0,
+    "darimi": 7
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8613",
+  "name_en": "Yunus bin 'Abdul A'laa bin Musa",
+  "name_id": "Yunus bin 'Abdul A'laa bin Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "264 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Musa",
+  "parents": "Ash Shadafiy",
+  "nasab": "Ash Shadafiy",
+  "laqob": "-",
+  "hadith_count": "80",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 19,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 45,
+    "ibnumajah": 16,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

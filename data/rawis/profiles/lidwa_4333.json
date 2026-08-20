@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4333",
+  "name_en": "Abdur Rahman bin Jabar bin 'Amru",
+  "name_id": "Abdur Rahman bin Jabar bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "34 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abas",
+  "parents": "Al Haritsiy Al Anshariy",
+  "nasab": "Al Haritsiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5143",
+  "name_en": "Abdullah bin Waqid bin 'Abdullah bin 'Umar",
+  "name_id": "Abdullah bin Waqid bin 'Abdullah bin 'Umar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "119 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al 'Adawiy Al 'Umariy",
+  "nasab": "Al 'Adawiy Al 'Umariy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 1,
+    "darimi": 0
+  }
+}

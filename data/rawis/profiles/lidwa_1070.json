@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1070",
+  "name_en": "Iyas bin Al Harits bin Mu'aiqib bin Abi Fathimah",
+  "name_id": "Iyas bin Al Harits bin Mu'aiqib bin Abi Fathimah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hijaz",
+  "kunyah": "-",
+  "parents": "Ad Dausiy",
+  "nasab": "Ad Dausiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

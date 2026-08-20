@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4051",
+  "name_en": "Aisyah binti Thalhah bin 'Ubaidillah",
+  "name_id": "Aisyah binti Thalhah bin 'Ubaidillah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu 'Imran",
+  "parents": "At Taymiyyah",
+  "nasab": "At Taymiyyah",
+  "laqob": "-",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 5,
+    "abudaud": 5,
+    "tirmidzi": 4,
+    "nasai": 8,
+    "ibnumajah": 3,
+    "ahmad": 17,
+    "malik": 1,
+    "darimi": 0
+  }
+}

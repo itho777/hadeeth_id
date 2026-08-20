@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7497",
+  "name_en": "Maslamah bin 'Ali bin Khalaf",
+  "name_id": "Maslamah bin 'Ali bin Khalaf",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "Maru",
+  "residence": "Syam",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Khasyaniy Al Balathiy",
+  "nasab": "Al Khasyaniy Al Balathiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

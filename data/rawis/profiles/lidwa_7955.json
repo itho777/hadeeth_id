@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7955",
+  "name_en": "Nuh bin Qais bin Rabah",
+  "name_id": "Nuh bin Qais bin Rabah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "7",
+  "died_ah": "183 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Rauh",
+  "parents": "Al Azdiy Al Huddaniy",
+  "nasab": "Al Azdiy Al Huddaniy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

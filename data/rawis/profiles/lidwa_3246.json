@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3246",
+  "name_en": "Sa'ad bin Sinan",
+  "name_id": "Sa'ad bin Sinan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "Al Kindiy",
+  "nasab": "Al Kindiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 5,
+    "nasai": 0,
+    "ibnumajah": 8,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

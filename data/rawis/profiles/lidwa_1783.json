@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1783",
+  "name_en": "Al Walid bin 'Ubadah bin Ash Shamit",
+  "name_id": "Al Walid bin 'Ubadah bin Ash Shamit",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu 'Ubadah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 1,
+    "darimi": 0
+  }
+}

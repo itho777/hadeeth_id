@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7213",
+  "name_en": "Muhammad bin 'Amru",
+  "name_id": "Muhammad bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan biasa",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru ",
+  "kunyah": "-",
+  "parents": "Akl Yafi'iy Ar Ru'ainiy",
+  "nasab": "Akl Yafi'iy Ar Ru'ainiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1877",
+  "name_en": "Bisyir bin Syu'aib bin Abi Hamzah Dinar",
+  "name_id": "Bisyir bin Syu'aib bin Abi Hamzah Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "213 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Qasim",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 10,
+    "ibnumajah": 0,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 0
+  }
+}

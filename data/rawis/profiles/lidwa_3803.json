@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3803",
+  "name_en": "Syu'aib bin Ishaq bin 'Abdur Rahman",
+  "name_id": "Syu'aib bin Ishaq bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "189 H",
+  "city_of_death": "-",
+  "residence": "Dujail",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Umaeiy Ad Damsyiqiy",
+  "nasab": "Al Umaeiy Ad Damsyiqiy",
+  "laqob": "-",
+  "hadith_count": "53",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 10,
+    "abudaud": 8,
+    "tirmidzi": 0,
+    "nasai": 19,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 8
+  }
+}

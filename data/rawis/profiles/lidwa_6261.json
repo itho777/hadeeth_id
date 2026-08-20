@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6261",
+  "name_en": "Aun bin Abu Juhaifah Wahab bin 'Abdullah",
+  "name_id": "Aun bin Abu Juhaifah Wahab bin 'Abdullah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "116 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "As Suwa'iy",
+  "nasab": "As Suwa'iy",
+  "laqob": "-",
+  "hadith_count": "64",
+  "book_counts": {
+    "bukhari": 17,
+    "muslim": 6,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 6,
+    "ibnumajah": 3,
+    "ahmad": 23,
+    "malik": 0,
+    "darimi": 2
+  }
+}

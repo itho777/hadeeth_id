@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7344",
+  "name_en": "Muhammad bin Yusuf bin 'Abdullah bin Yazid",
+  "name_id": "Muhammad bin Yusuf bin 'Abdullah bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Kindiy",
+  "nasab": "Al Kindiy",
+  "laqob": "Al A'raj",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 1,
+    "darimi": 0
+  }
+}

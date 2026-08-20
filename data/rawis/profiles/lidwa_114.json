@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_114",
+  "name_en": "Abu Bakar bin An Nadlir bin Abu An Nadlir bin Hasyim",
+  "name_id": "Abu Bakar bin An Nadlir bin Abu An Nadlir bin Hasyim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "245 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Baghdadiy",
+  "nasab": "Al Baghdadiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 12,
+    "abudaud": 0,
+    "tirmidzi": 6,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7660",
+  "name_en": "Makkiy bin Ibrahim bin Basyir bin Farqad",
+  "name_id": "Makkiy bin Ibrahim bin Basyir bin Farqad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "215 H",
+  "city_of_death": "Balakh",
+  "residence": "Himsh",
+  "kunyah": "Abu As Sakan",
+  "parents": "Al Balkhiy At Tamimiy",
+  "nasab": "Al Balkhiy At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "77",
+  "book_counts": {
+    "bukhari": 33,
+    "muslim": 2,
+    "abudaud": 5,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 32,
+    "malik": 0,
+    "darimi": 3
+  }
+}

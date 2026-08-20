@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8392",
+  "name_en": "Yazid bin Al Bara' bin 'Azib",
+  "name_id": "Yazid bin Al Bara' bin 'Azib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Anshaiy Al Haritsiy",
+  "nasab": "Al Anshaiy Al Haritsiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

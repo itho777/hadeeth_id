@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8000",
+  "name_en": "Hasyim bin Hasyim bin 'Utbah bin Abi Waqash",
+  "name_id": "Hasyim bin Hasyim bin 'Utbah bin Abi Waqash",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Az Zuhriy",
+  "nasab": "Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 1,
+    "darimi": 0
+  }
+}

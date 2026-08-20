@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_463",
+  "name_en": "Ahmad bin 'Abdullah bin maymun bin Al 'Abbas",
+  "name_id": "Ahmad bin 'Abdullah bin maymun bin Al 'Abbas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "246 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Ghathfaaniy Ad Damasyqiy",
+  "nasab": "Al Ghathfaaniy Ad Damasyqiy",
+  "laqob": "Ibnu Abi Al Hawariy",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "rawi_aisha_bint_abi_bakr",
+  "name_en": "'Aisha bint Abi Bakr",
+  "name_id": "Aisyah binti Abu Bakar ash-Shiddiq",
+  "name_ar": "عائشة بنت أبي بكر",
+  "is_sahabi": "true",
+  "generation": "Sahabi (Companion)",
+  "grade": "Sahabi Adl",
+  "died_ah": "58",
+  "died_ce": "678",
+  "hadith_count": "2420",
+  "city_of_death": "Madinah",
+  "bio_en": "Mother of the Believers, jurisprudence scholar, and major transmitter of prophetic traditions.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 849,
+    "muslim": 630,
+    "abudaud": 429,
+    "tirmidzi": 288,
+    "nasai": 664,
+    "ibnumajah": 386,
+    "ahmad": 2395,
+    "malik": 128,
+    "darimi": 195
+  }
+}

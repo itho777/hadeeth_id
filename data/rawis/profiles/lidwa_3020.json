@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3020",
+  "name_en": "Zakariya bin Yahya bin Iyas",
+  "name_id": "Zakariya bin Yahya bin Iyas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan biasa",
+  "grade": "2",
+  "died_ah": "289 H",
+  "city_of_death": "Dujail",
+  "residence": "Samira'",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "As Sajziy",
+  "nasab": "As Sajziy",
+  "laqob": "-",
+  "hadith_count": "34",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 34,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

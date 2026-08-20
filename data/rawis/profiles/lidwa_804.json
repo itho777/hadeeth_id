@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_804",
+  "name_en": "Ibrahim bin Al 'Alaa' bin Adl Dlahhaak ",
+  "name_id": "Ibrahim bin Al 'Alaa' bin Adl Dlahhaak ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "235 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ishaq",
+  "parents": "Az Zubaidiy Al Himshiy",
+  "nasab": "Az Zubaidiy Al Himshiy",
+  "laqob": "Ibnu Zabriq",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6096",
+  "name_en": "Amru bin Al Haitsam bin Qathan",
+  "name_id": "Amru bin Al Haitsam bin Qathan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "198 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Qathan",
+  "parents": "Az Zubaidiy Al Qutha'iy",
+  "nasab": "Az Zubaidiy Al Qutha'iy",
+  "laqob": "-",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 59,
+    "malik": 0,
+    "darimi": 1
+  }
+}

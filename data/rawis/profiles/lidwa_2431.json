@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2431",
+  "name_en": "Hafsh bin 'Abdullah bin Rasyid",
+  "name_id": "Hafsh bin 'Abdullah bin Rasyid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "209 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Amru",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 0,
+    "nasai": 21,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

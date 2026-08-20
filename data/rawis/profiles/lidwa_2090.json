@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2090",
+  "name_en": "Jabalah bin Suhaim",
+  "name_id": "Jabalah bin Suhaim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "125 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Suwairah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "43",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 7,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 20,
+    "malik": 0,
+    "darimi": 1
+  }
+}

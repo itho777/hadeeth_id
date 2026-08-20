@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6760",
+  "name_en": "Muhammad bin Abi Bakar bin 'Ali bin 'Atha' bin Miqdam",
+  "name_id": "Muhammad bin Abi Bakar bin 'Ali bin 'Atha' bin Miqdam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "234 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Muqaddamiy Ats Tsaqafiy",
+  "nasab": "Al Muqaddamiy Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "109",
+  "book_counts": {
+    "bukhari": 29,
+    "muslim": 29,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 50,
+    "malik": 0,
+    "darimi": 0
+  }
+}

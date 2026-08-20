@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1961",
+  "name_en": "Bilal bin Al Harits",
+  "name_id": "Bilal bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "60 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 3,
+    "malik": 1,
+    "darimi": 1
+  }
+}

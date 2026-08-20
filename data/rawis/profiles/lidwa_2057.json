@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2057",
+  "name_en": "Tsaur bin Zaid",
+  "name_id": "Tsaur bin Zaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "135 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "63",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 9,
+    "abudaud": 5,
+    "tirmidzi": 4,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 13,
+    "malik": 11,
+    "darimi": 0
+  }
+}

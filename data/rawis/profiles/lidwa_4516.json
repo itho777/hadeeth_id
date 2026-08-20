@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4516",
+  "name_en": "Abdur Rahman bin Yazid bin Jariyah",
+  "name_id": "Abdur Rahman bin Yazid bin Jariyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "98 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Anshariy ",
+  "nasab": "Al Anshariy ",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 11,
+    "malik": 2,
+    "darimi": 2
+  }
+}

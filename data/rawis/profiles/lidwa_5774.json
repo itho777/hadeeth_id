@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5774",
+  "name_en": "Ali bin Salamah bin 'Uqbah",
+  "name_id": "Ali bin Salamah bin 'Uqbah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "252 H",
+  "city_of_death": "-",
+  "residence": "Nihawand",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Qurasyiy Al Labqiy",
+  "nasab": "Al Qurasyiy Al Labqiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

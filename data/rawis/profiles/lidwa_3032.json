@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3032",
+  "name_en": "Zahdam bin Mudlorrib",
+  "name_id": "Zahdam bin Mudlorrib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muslim",
+  "parents": "Al Jarmiy",
+  "nasab": "Al Jarmiy",
+  "laqob": "-",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 2
+  }
+}

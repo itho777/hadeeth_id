@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4622",
+  "name_en": "Abdullah bin Abi Awfaa 'Alqamah bin Khalid",
+  "name_id": "Abdullah bin Abi Awfaa 'Alqamah bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "87 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Ibrahim",
+  "parents": "Al Aslamiy Al Madaniy",
+  "nasab": "Al Aslamiy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "185",
+  "book_counts": {
+    "bukhari": 45,
+    "muslim": 17,
+    "abudaud": 12,
+    "tirmidzi": 7,
+    "nasai": 13,
+    "ibnumajah": 17,
+    "ahmad": 69,
+    "malik": 0,
+    "darimi": 5
+  }
+}

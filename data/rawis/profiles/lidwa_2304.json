@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2304",
+  "name_en": "Hajjaj bin Muhammad",
+  "name_id": "Hajjaj bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "206 H",
+  "city_of_death": "Baghdad",
+  "residence": "Syam",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al A'war",
+  "hadith_count": "844",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 44,
+    "abudaud": 34,
+    "tirmidzi": 9,
+    "nasai": 105,
+    "ibnumajah": 5,
+    "ahmad": 630,
+    "malik": 0,
+    "darimi": 4
+  }
+}

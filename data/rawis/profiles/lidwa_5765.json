@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5765",
+  "name_en": "Ali bin Daud ",
+  "name_id": "Ali bin Daud ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "108 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Mutawakkil",
+  "parents": "An Najiy As Sajiy",
+  "nasab": "An Najiy As Sajiy",
+  "laqob": "-",
+  "hadith_count": "82",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 8,
+    "abudaud": 7,
+    "tirmidzi": 7,
+    "nasai": 10,
+    "ibnumajah": 4,
+    "ahmad": 34,
+    "malik": 0,
+    "darimi": 3
+  }
+}

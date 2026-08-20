@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_543",
+  "name_en": "As'ad bin Sahal bin Hunaif",
+  "name_id": "As'ad bin Sahal bin Hunaif",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "100 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Umamah",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "106",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 10,
+    "abudaud": 12,
+    "tirmidzi": 4,
+    "nasai": 17,
+    "ibnumajah": 8,
+    "ahmad": 31,
+    "malik": 6,
+    "darimi": 4
+  }
+}

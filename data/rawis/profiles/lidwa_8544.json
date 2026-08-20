@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8544",
+  "name_en": "Ya'laa bin Al Harits bin Harb",
+  "name_id": "Ya'laa bin Al Harits bin Harb",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "168 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Harb",
+  "parents": "Al Muharibiy",
+  "nasab": "Al Muharibiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

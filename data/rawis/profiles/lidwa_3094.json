@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3094",
+  "name_en": "Ziyad bin 'Abdullah bin 'Ulaatsah",
+  "name_id": "Ziyad bin 'Abdullah bin 'Ulaatsah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Sahal",
+  "parents": "Al 'Aqiliy Al Hiraniy",
+  "nasab": "Al 'Aqiliy Al Hiraniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

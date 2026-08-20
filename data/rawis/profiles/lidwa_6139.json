@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6139",
+  "name_en": "Amru bin Sulaim biu Khaldah bin Makhlad bin 'Amir bin Zuraiq",
+  "name_id": "Amru bin Sulaim biu Khaldah bin Makhlad bin 'Amir bin Zuraiq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "104 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshari Az Zuraqi",
+  "nasab": "Al Anshari Az Zuraqi",
+  "laqob": "-",
+  "hadith_count": "62",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 7,
+    "abudaud": 7,
+    "tirmidzi": 2,
+    "nasai": 8,
+    "ibnumajah": 2,
+    "ahmad": 22,
+    "malik": 4,
+    "darimi": 3
+  }
+}

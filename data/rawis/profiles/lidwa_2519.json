@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2519",
+  "name_en": "Hamzah bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_id": "Hamzah bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Umarah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "59",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 10,
+    "abudaud": 3,
+    "tirmidzi": 4,
+    "nasai": 7,
+    "ibnumajah": 1,
+    "ahmad": 19,
+    "malik": 1,
+    "darimi": 1
+  }
+}

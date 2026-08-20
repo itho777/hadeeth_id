@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6806",
+  "name_en": "Muhammad bin Idris bin Al Mundzir",
+  "name_id": "Muhammad bin Idris bin Al Mundzir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "277 H",
+  "city_of_death": "Rayi",
+  "residence": "Rayi ",
+  "kunyah": "Abu Hatim",
+  "parents": "Abdullah Raziy Al Hanzhaliy",
+  "nasab": "Abdullah Raziy Al Hanzhaliy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

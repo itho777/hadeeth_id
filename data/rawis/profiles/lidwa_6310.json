@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6310",
+  "name_en": "Isa bin Sinan",
+  "name_id": "Isa bin Sinan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu Sinan",
+  "parents": "Al Qasmaliy Al Hanafiy",
+  "nasab": "Al Qasmaliy Al Hanafiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

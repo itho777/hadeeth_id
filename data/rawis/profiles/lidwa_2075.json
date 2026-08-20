@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2075",
+  "name_en": "Jabir bin Yazid bin Al Harits",
+  "name_id": "Jabir bin Yazid bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "128 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "124",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 6,
+    "nasai": 0,
+    "ibnumajah": 16,
+    "ahmad": 97,
+    "malik": 0,
+    "darimi": 3
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1254",
+  "name_en": "Al Hasan bin Ash Shabbah",
+  "name_id": "Al Hasan bin Ash Shabbah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "249 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Bazzar Al Wasithiy",
+  "nasab": "Al Bazzar Al Wasithiy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 11,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6865",
+  "name_en": "Muhammad bin Al Minhal",
+  "name_id": "Muhammad bin Al Minhal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "231 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "At Tamimiy Al Mujasyi'iy",
+  "nasab": "At Tamimiy Al Mujasyi'iy",
+  "laqob": "Adl Dlurair",
+  "hadith_count": "34",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 11,
+    "abudaud": 10,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 7
+  }
+}

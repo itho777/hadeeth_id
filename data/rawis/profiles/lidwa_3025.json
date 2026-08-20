@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3025",
+  "name_en": "Zakariya bin Yahya bin 'Abdullah bin Abi Sa'id",
+  "name_id": "Zakariya bin Yahya bin 'Abdullah bin Abi Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ar Riqasyiy Al Jazariy",
+  "nasab": "Ar Riqasyiy Al Jazariy",
+  "laqob": "Al Muqriy",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

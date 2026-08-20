@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4574",
+  "name_en": "Abdul 'Aziz bin Shuhaib",
+  "name_id": "Abdul 'Aziz bin Shuhaib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "130 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hamzah",
+  "parents": "Al Bananiy",
+  "nasab": "Al Bananiy",
+  "laqob": "Ibnu Al 'Abdi",
+  "hadith_count": "207",
+  "book_counts": {
+    "bukhari": 54,
+    "muslim": 33,
+    "abudaud": 13,
+    "tirmidzi": 9,
+    "nasai": 22,
+    "ibnumajah": 11,
+    "ahmad": 62,
+    "malik": 0,
+    "darimi": 3
+  }
+}

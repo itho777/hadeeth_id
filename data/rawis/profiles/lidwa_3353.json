@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3353",
+  "name_en": "Sa'id bin 'Abdur Rahman bin Abzaa",
+  "name_id": "Sa'id bin 'Abdur Rahman bin Abzaa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Khaza'iy",
+  "nasab": "Al Khaza'iy",
+  "laqob": "-",
+  "hadith_count": "63",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 1,
+    "abudaud": 5,
+    "tirmidzi": 2,
+    "nasai": 24,
+    "ibnumajah": 3,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 1
+  }
+}

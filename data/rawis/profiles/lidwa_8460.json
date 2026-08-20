@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8460",
+  "name_en": "Yazid bin 'Ubaid",
+  "name_id": "Yazid bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "130 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Wajzah",
+  "parents": "As Sa'adiy Asy Sya'ir",
+  "nasab": "As Sa'adiy Asy Sya'ir",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

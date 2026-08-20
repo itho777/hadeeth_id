@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8364",
+  "name_en": "Yazid bin Aban",
+  "name_id": "Yazid bin Aban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu 'Amru",
+  "parents": "Ar Raqasyiy",
+  "nasab": "Ar Raqasyiy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 5,
+    "nasai": 0,
+    "ibnumajah": 15,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

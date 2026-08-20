@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3578",
+  "name_en": "Sulaiman bin Habib",
+  "name_id": "Sulaiman bin Habib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "126 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu Ayyub",
+  "parents": "Al Muharibiy Ad Damsyiqiy",
+  "nasab": "Al Muharibiy Ad Damsyiqiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1581",
+  "name_en": "Al Qasim bin 'Abdur Rahman",
+  "name_id": "Al Qasim bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "112 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "109",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 8,
+    "tirmidzi": 13,
+    "nasai": 4,
+    "ibnumajah": 16,
+    "ahmad": 59,
+    "malik": 0,
+    "darimi": 9
+  }
+}

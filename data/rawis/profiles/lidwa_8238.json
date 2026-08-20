@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8238",
+  "name_en": "Yahya bin Bisyir",
+  "name_id": "Yahya bin Bisyir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "232 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Zakariya",
+  "parents": "Al Fulas Al Balkhiy",
+  "nasab": "Al Fulas Al Balkhiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

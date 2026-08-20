@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5157",
+  "name_en": "Abdullah bin Yazid",
+  "name_id": "Abdullah bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "213 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al 'Adawiy Al 'Umariy",
+  "nasab": "Al 'Adawiy Al 'Umariy",
+  "laqob": "Al Muqri' Al Qashir",
+  "hadith_count": "321",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 13,
+    "abudaud": 28,
+    "tirmidzi": 15,
+    "nasai": 23,
+    "ibnumajah": 5,
+    "ahmad": 189,
+    "malik": 0,
+    "darimi": 34
+  }
+}

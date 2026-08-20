@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4185",
+  "name_en": "Abbas bin Muhammad bin Hatim bin Waqid",
+  "name_id": "Abbas bin Muhammad bin Hatim bin Waqid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "271 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "Ad Dawriy Al Khawarazamiy",
+  "nasab": "Ad Dawriy Al Khawarazamiy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 25,
+    "nasai": 8,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

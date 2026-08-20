@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3142",
+  "name_en": "Zaid bin Sahal bin Al Aswad",
+  "name_id": "Zaid bin Sahal bin Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "51 H",
+  "city_of_death": "Syam",
+  "residence": "Madinah",
+  "kunyah": "Abu Thalhah",
+  "parents": "Al Anshariy An Najjariy",
+  "nasab": "Al Anshariy An Najjariy",
+  "laqob": "-",
+  "hadith_count": "71",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 7,
+    "abudaud": 4,
+    "tirmidzi": 8,
+    "nasai": 9,
+    "ibnumajah": 2,
+    "ahmad": 26,
+    "malik": 3,
+    "darimi": 2
+  }
+}

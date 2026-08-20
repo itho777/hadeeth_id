@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6142",
+  "name_en": "Amru bin Syurahbil",
+  "name_id": "Amru bin Syurahbil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "63 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Maisarah",
+  "parents": "Al Hamdaniy",
+  "nasab": "Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 5,
+    "nasai": 12,
+    "ibnumajah": 0,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 2
+  }
+}

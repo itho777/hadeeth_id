@@ -1,0 +1,32 @@
+{
+  "hadithnumber": 3080,
+  "arabicnumber": 3080,
+  "text": "Telah bercerita kepada kami ['Ali bin 'Abdullah] telah bercerita kepada kami [Sufyan], berkata ['Amru] dan [Ibnu Juraij] aku mendengar ['Atha'] berkata; \"Aku pergi bersama 'Ubaid bin 'Umair menemui ['Aisyah] radliallahu 'anhu yang ketika itu sedang berada di bukit, lalu dia berkata kepada kami; \"Hijrah telah terputus (kewajibannya) sejak Allah memberikan kemenangan kepada Nabi Shallallahu'alaihiwasallam atas kota Makkah",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "'Ali bin 'Abdullah",
+      "name_ar": "'Ali bin 'Abdullah"
+    },
+    {
+      "name_id": "Sufyan",
+      "name_ar": "Sufyan"
+    },
+    {
+      "name_id": "'Amru",
+      "name_ar": "'Amru"
+    },
+    {
+      "name_id": "Ibnu Juraij",
+      "name_ar": "Ibnu Juraij"
+    },
+    {
+      "name_id": "'Atha'",
+      "name_ar": "'Atha'"
+    },
+    {
+      "name_id": "'Aisyah",
+      "name_ar": "عائشة"
+    }
+  ]
+}

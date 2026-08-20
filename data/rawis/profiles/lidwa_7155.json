@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7155",
+  "name_en": "Muhammad bin 'Ubaid bin Maimun",
+  "name_id": "Muhammad bin 'Ubaid bin Maimun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "At Taban At Taymiy",
+  "nasab": "At Taban At Taymiy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 6,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

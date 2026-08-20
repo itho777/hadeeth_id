@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6879",
+  "name_en": "Muhammad bin Basysyar bin 'Utsman",
+  "name_id": "Muhammad bin Basysyar bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "252 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al 'Abdiy",
+  "nasab": "Al 'Abdiy",
+  "laqob": "Bindar",
+  "hadith_count": "1522",
+  "book_counts": {
+    "bukhari": 192,
+    "muslim": 380,
+    "abudaud": 75,
+    "tirmidzi": 442,
+    "nasai": 189,
+    "ibnumajah": 232,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 6
+  }
+}

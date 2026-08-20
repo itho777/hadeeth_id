@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6093",
+  "name_en": "Amru bin Al Muhajir bin Abi Muslim",
+  "name_id": "Amru bin Al Muhajir bin Abi Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "139 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Ubaid",
+  "parents": "Al Anshariy Ad Damasyqiy",
+  "nasab": "Al Anshariy Ad Damasyqiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_503",
+  "name_en": "Ahmar bin Jaza'",
+  "name_id": "Ahmar bin Jaza'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "As Sadusiy Ar Rub'iy",
+  "nasab": "As Sadusiy Ar Rub'iy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

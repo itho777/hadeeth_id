@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3",
+  "name_en": "Adam bin Sulaiman",
+  "name_id": "Adam bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Quraisyiy Al Madiniy",
+  "nasab": "Al Quraisyiy Al Madiniy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

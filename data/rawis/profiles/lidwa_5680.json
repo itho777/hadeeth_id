@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5680",
+  "name_en": "Uqbah bin 'Amru bin Tsa'labah",
+  "name_id": "Uqbah bin 'Amru bin Tsa'labah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "40 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Mas'ud",
+  "parents": "Al Anshariy Al Badriy",
+  "nasab": "Al Anshariy Al Badriy",
+  "laqob": "-",
+  "hadith_count": "233",
+  "book_counts": {
+    "bukhari": 45,
+    "muslim": 30,
+    "abudaud": 18,
+    "tirmidzi": 13,
+    "nasai": 22,
+    "ibnumajah": 17,
+    "ahmad": 71,
+    "malik": 3,
+    "darimi": 14
+  }
+}

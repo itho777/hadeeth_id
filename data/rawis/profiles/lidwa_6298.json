@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6298",
+  "name_en": "Isa bin Ibrahim bin 'Isa",
+  "name_id": "Isa bin Ibrahim bin 'Isa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "261 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Musa",
+  "parents": "Al Matsrudiy Al ghafiqiy",
+  "nasab": "Al Matsrudiy Al ghafiqiy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 9,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

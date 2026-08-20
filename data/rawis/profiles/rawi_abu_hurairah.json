@@ -1,0 +1,29 @@
+{
+  "id": "rawi_abu_hurairah",
+  "name_en": "Abu Hurairah",
+  "name_id": "Abu Hurairah radliallahu 'anhu",
+  "name_ar": "أبو هريرة",
+  "is_sahabi": "true",
+  "generation": "Sahabi (Companion)",
+  "grade": "Sahabi Adl",
+  "died_ah": "57",
+  "died_ce": "678",
+  "hadith_count": "5374",
+  "city_of_death": "Madinah",
+  "bio_en": "Top companion transmitter of Hadith with over 5,300 reported traditions.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 1039,
+    "muslim": 1009,
+    "abudaud": 544,
+    "tirmidzi": 598,
+    "nasai": 644,
+    "ibnumajah": 631,
+    "ahmad": 3842,
+    "malik": 171,
+    "darimi": 265
+  }
+}

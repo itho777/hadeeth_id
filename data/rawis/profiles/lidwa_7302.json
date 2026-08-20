@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7302",
+  "name_en": "Muhammad bin Maimun",
+  "name_id": "Muhammad bin Maimun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Hamzah",
+  "parents": "As Sakriy Al Marwaziy",
+  "nasab": "As Sakriy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "52",
+  "book_counts": {
+    "bukhari": 29,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 9,
+    "ibnumajah": 3,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

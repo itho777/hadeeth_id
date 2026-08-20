@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_474",
+  "name_en": "Ahmad bin 'Ali bin Sa'id",
+  "name_id": "Ahmad bin 'Ali bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan biasa",
+  "grade": "2",
+  "died_ah": "292 H",
+  "city_of_death": "Dujail",
+  "residence": "Syam",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Umawiy Al Marwaziy",
+  "nasab": "Al Umawiy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 26,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

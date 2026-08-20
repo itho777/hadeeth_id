@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_429",
+  "name_en": "Ahmad bin Bakkar bin Abu Maymunah",
+  "name_id": "Ahmad bin Bakkar bin Abu Maymunah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "244 H",
+  "city_of_death": "Hiran",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Umawiy Al Hiraniy",
+  "nasab": "Al Umawiy Al Hiraniy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

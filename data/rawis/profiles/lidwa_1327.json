@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1327",
+  "name_en": "Al Husain bin Dzakwan",
+  "name_id": "Al Husain bin Dzakwan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "145 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Al Muktib Al Mu'allim",
+  "parents": "Al 'Audzi",
+  "nasab": "Al 'Audzi",
+  "laqob": "-",
+  "hadith_count": "176",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 14,
+    "abudaud": 24,
+    "tirmidzi": 9,
+    "nasai": 23,
+    "ibnumajah": 17,
+    "ahmad": 62,
+    "malik": 0,
+    "darimi": 2
+  }
+}

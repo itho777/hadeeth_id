@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3607",
+  "name_en": "Sulaiman bin 'Abdur Rahman bin Isa bin Maimun",
+  "name_id": "Sulaiman bin 'Abdur Rahman bin Isa bin Maimun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "233 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ayyub",
+  "parents": "At Tamimiy",
+  "nasab": "At Tamimiy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 0,
+    "abudaud": 10,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6401",
+  "name_en": "Faraj bin Fadlolah bin An Nu'man",
+  "name_id": "Faraj bin Fadlolah bin An Nu'man",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "177 H",
+  "city_of_death": "Baghdad",
+  "residence": "Syam",
+  "kunyah": "Abu Fadlolah",
+  "parents": "At Tanukhiy Al Qudlo'iy",
+  "nasab": "At Tanukhiy Al Qudlo'iy",
+  "laqob": "-",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 24,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5828",
+  "name_en": "Ali bin Yazid bin Abi Hilal",
+  "name_id": "Ali bin Yazid bin Abi Hilal",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdul Malik",
+  "parents": "Al Alhaniy Ad Damasyqiy",
+  "nasab": "Al Alhaniy Ad Damasyqiy",
+  "laqob": "-",
+  "hadith_count": "55",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 7,
+    "nasai": 0,
+    "ibnumajah": 7,
+    "ahmad": 40,
+    "malik": 0,
+    "darimi": 1
+  }
+}

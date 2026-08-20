@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3731",
+  "name_en": "Siydan bin Mudlorib",
+  "name_id": "Siydan bin Mudlorib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "224 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "AbuMuhammad",
+  "parents": "Al Bahiliy",
+  "nasab": "Al Bahiliy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

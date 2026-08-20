@@ -1,0 +1,28 @@
+{
+  "id": "rawi_ibn_hibban",
+  "name_en": "Imam Ibn Hibban",
+  "name_id": "Imam Ibnu Hibban",
+  "name_ar": "ابن حبان",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz",
+  "died_ah": "354",
+  "died_ce": "965",
+  "hadith_count": "7491",
+  "city_of_death": "Bust",
+  "bio_en": "Author of Sahih Ibn Hibban, highly regarded for his strict conditions of authenticity.",
+  "books": [
+    "Shahih Ibn Hibban"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

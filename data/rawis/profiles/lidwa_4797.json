@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4797",
+  "name_en": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
+  "name_id": "\"Abdullah bin Dinar, maula Ibnu 'Umar\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "127 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al 'Adawiy Al Madaniy",
+  "nasab": "Al 'Adawiy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "499",
+  "book_counts": {
+    "bukhari": 93,
+    "muslim": 45,
+    "abudaud": 18,
+    "tirmidzi": 31,
+    "nasai": 34,
+    "ibnumajah": 16,
+    "ahmad": 202,
+    "malik": 46,
+    "darimi": 14
+  }
+}

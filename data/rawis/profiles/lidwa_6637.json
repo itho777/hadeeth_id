@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6637",
+  "name_en": "Lahi'ah bin 'Uqbah bin Far'an",
+  "name_id": "Lahi'ah bin 'Uqbah bin Far'an",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "7",
+  "died_ah": "100 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Ikrimah",
+  "parents": "Al Hadlramiy Al U'duliy",
+  "nasab": "Al Hadlramiy Al U'duliy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

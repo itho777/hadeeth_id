@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2009",
+  "name_en": "Tsabit bin Aslam",
+  "name_id": "Tsabit bin Aslam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "127 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "1063",
+  "book_counts": {
+    "bukhari": 74,
+    "muslim": 142,
+    "abudaud": 84,
+    "tirmidzi": 71,
+    "nasai": 59,
+    "ibnumajah": 43,
+    "ahmad": 559,
+    "malik": 0,
+    "darimi": 31
+  }
+}

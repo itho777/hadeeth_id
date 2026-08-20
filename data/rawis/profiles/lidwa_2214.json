@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2214",
+  "name_en": "Hatim bin Wardan bin Mihran",
+  "name_id": "Hatim bin Wardan bin Mihran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "184 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Shalih",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

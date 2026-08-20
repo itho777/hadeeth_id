@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2492",
+  "name_en": "Hammad bin Salamah bin Dinar",
+  "name_id": "Hammad bin Salamah bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Salamah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Khazzaz",
+  "hadith_count": "2345",
+  "book_counts": {
+    "bukhari": 19,
+    "muslim": 105,
+    "abudaud": 265,
+    "tirmidzi": 81,
+    "nasai": 94,
+    "ibnumajah": 80,
+    "ahmad": 1542,
+    "malik": 0,
+    "darimi": 159
+  }
+}

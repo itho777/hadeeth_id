@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5974",
+  "name_en": "Umar bin 'Abdul 'Aziz bin Marwan bin Al Hakam",
+  "name_id": "Umar bin 'Abdul 'Aziz bin Marwan bin Al Hakam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "101 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Hafsh",
+  "parents": "Al Umawiy Al Madaniy",
+  "nasab": "Al Umawiy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "89",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 6,
+    "abudaud": 7,
+    "tirmidzi": 3,
+    "nasai": 12,
+    "ibnumajah": 4,
+    "ahmad": 19,
+    "malik": 17,
+    "darimi": 20
+  }
+}

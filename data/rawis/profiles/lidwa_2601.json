@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2601",
+  "name_en": "Huyyay bin Yu'min bin Jubail",
+  "name_id": "Huyyay bin Yu'min bin Jubail",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "118 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Isyanah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 0
+  }
+}

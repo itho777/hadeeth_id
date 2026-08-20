@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1751",
+  "name_en": "Al Haitsam bin Jamil",
+  "name_id": "Al Haitsam bin Jamil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "213 H",
+  "city_of_death": "-",
+  "residence": "Anthakiyah",
+  "kunyah": "Abu Sahal",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 8,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 4
+  }
+}

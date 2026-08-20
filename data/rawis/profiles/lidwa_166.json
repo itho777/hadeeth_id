@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_166",
+  "name_en": "Abu Hayyah bin Qais",
+  "name_id": "Abu Hayyah bin Qais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hayyah ",
+  "parents": "Al Wadi'iy Al Kharifiy",
+  "nasab": "Al Wadi'iy Al Kharifiy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_837",
+  "name_en": "Ibrahim bin 'Abdur Rahman bin Isma'il",
+  "name_id": "Ibrahim bin 'Abdur Rahman bin Isma'il",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Isma'il",
+  "parents": "As Saksakiy",
+  "nasab": "As Saksakiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

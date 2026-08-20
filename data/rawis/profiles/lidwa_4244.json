@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4244",
+  "name_en": "Abdul Hamid bin 'Abdullah bin 'Abdullah bin Uwais",
+  "name_id": "Abdul Hamid bin 'Abdullah bin 'Abdullah bin Uwais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "202 H",
+  "city_of_death": "Baghdad",
+  "residence": "Madinah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Ashbahiy",
+  "nasab": "Al Ashbahiy",
+  "laqob": "Ibnu Abi Aus Al A'syaa",
+  "hadith_count": "47",
+  "book_counts": {
+    "bukhari": 39,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

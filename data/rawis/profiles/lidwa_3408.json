@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3408",
+  "name_en": "Sa'id bin Yahmad",
+  "name_id": "Sa'id bin Yahmad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "112 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu As Safar",
+  "parents": "Al Hamdaniy Ats Tsauriy",
+  "nasab": "Al Hamdaniy Ats Tsauriy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

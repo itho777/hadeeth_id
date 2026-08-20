@@ -1,0 +1,26 @@
+import sqlite3
+conn = sqlite3.connect('scratch/lidwa_plaintext.db')
+cursor = conn.cursor()
+
+def get_id(name):
+    cursor.execute("SELECT Kode_Rawi, Nama, bukhari FROM perawi_daftar WHERE Nama LIKE ? ORDER BY bukhari DESC LIMIT 1", ('%' + name + '%',))
+    return cursor.fetchone()
+
+print('Masud:', get_id("Mas'ud"))
+print('Abu Said:', get_id("Sa'ad bin Malik bin Sinan"))
+print('Abbas:', get_id("bin 'Abbas bin 'Abdul"))
+print('Ibn Umar:', get_id("Abdullah bin 'Umar bin Al Khaththab"))
+print('Malik:', get_id("Malik bin Anas bin Malik bin Abi 'Amir"))
+print('Umar:', get_id("'Umar bin Al Khaththab"))
+print('Jabir:', get_id("Jabir bin 'Abdullah bin 'Amru"))
+print('Urwah:', get_id("'Urwah bin Az Zubair"))
+print('Thawri:', get_id("Sufyan bin Sa'id bin Masruq"))
+print('Jubair:', get_id("Sa'id bin Jubair"))
+print('Qutaibah:', get_id("Qutaibah bin Sa'id"))
+print('Salim:', get_id("Salim bin 'Abdullah bin 'Umar"))
+print('Dinar:', get_id("Abdullah bin Dinar"))
+print('Ismail:', get_id("Isma'il bin Ja'far"))
+print('Yahya:', get_id("Yahya bin Sa'id bin Qais"))
+print('Al-Zuhri:', get_id("Muhammad bin Muslim bin 'Ubaidillah"))
+print('Atho:', get_id("Atha' bin Yasar"))
+print('Hilal:', get_id("Hilal bin 'Ali"))

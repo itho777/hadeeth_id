@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3016",
+  "name_en": "Zakariya bin 'Adiy bin Ash Shalt",
+  "name_id": "Zakariya bin 'Adiy bin Ash Shalt",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "211 H",
+  "city_of_death": "Baghdad",
+  "residence": "Kufah",
+  "kunyah": "Abu Yahya",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "97",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 14,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 44,
+    "malik": 0,
+    "darimi": 28
+  }
+}

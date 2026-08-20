@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_409",
+  "name_en": "Amad bin Ishaq bin Al Hushain bin Jabir bin Jandal",
+  "name_id": "Amad bin Ishaq bin Al Hushain bin Jabir bin Jandal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "242 H",
+  "city_of_death": "-",
+  "residence": "Bukhara",
+  "kunyah": "Abu Ishaq",
+  "parents": "As Sulamiy As Suramariy",
+  "nasab": "As Sulamiy As Suramariy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

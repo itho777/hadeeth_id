@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1434",
+  "name_en": "Az Zubair bin Sa'id bin Sulaiman ",
+  "name_id": "Az Zubair bin Sa'id bin Sulaiman ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Mada'in",
+  "kunyah": "Abu Al Qasim",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

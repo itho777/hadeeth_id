@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_765",
+  "name_en": "Ayyub bin 'A'idz bin Midlaj",
+  "name_id": "Ayyub bin 'A'idz bin Midlaj",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Ath Tha'iy Al Bahtariy",
+  "nasab": "Ath Tha'iy Al Bahtariy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5991",
+  "name_en": "Umar bin 'Ali bvin 'Atha' bin Muqaddam",
+  "name_id": "Umar bin 'Ali bvin 'Atha' bin Muqaddam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "190 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Muqaddamiy",
+  "nasab": "Al Muqaddamiy",
+  "laqob": "-",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 7,
+    "nasai": 5,
+    "ibnumajah": 6,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

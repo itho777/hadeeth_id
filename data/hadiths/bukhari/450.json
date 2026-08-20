@@ -1,0 +1,36 @@
+{
+  "hadithnumber": 450,
+  "arabicnumber": 450,
+  "text": "Telah menceritakan kepada kami [Yahya bin Sulaiman] telah menceritakan kepadaku [Ibnu Wahb] telah mengabarkan kepadaku ['Amru] bahwa [Bukair] menceritakan kepadanya, bahwa ['Ashim bin 'Umar bin Qatadah] menceritakan kepadanya, bahwa dia mendengar ['Ubaidullah Al Khaulani] mendengar ['Utsman bin 'Affan] berkata di tengah pembicaraan orang-orang sekitar masalah pembangunan masjid Rasulullah shallallahu 'alaihi wasallam, ia katakan, \"Sungguh, kalian telah banyak berbicara, padahal aku mendengar Nabi shallallahu 'alaihi wasallam bersabda: \"Siapa yang membangun masjid -Bukair berkata, \"Menurutku beliau mengatakan- karena mengharapkah ridla Allah, maka Allah akan membangun untuknya yang seperti itu di surga",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Yahya bin Sulaiman",
+      "name_ar": "Yahya bin Sulaiman"
+    },
+    {
+      "name_id": "Ibnu Wahb",
+      "name_ar": "Ibnu Wahb"
+    },
+    {
+      "name_id": "'Amru",
+      "name_ar": "'Amru"
+    },
+    {
+      "name_id": "Bukair",
+      "name_ar": "Bukair"
+    },
+    {
+      "name_id": "'Ashim bin 'Umar bin Qatadah",
+      "name_ar": "'Ashim bin 'Umar bin Qatadah"
+    },
+    {
+      "name_id": "'Ubaidullah Al Khaulani",
+      "name_ar": "'Ubaidullah Al Khaulani"
+    },
+    {
+      "name_id": "'Utsman bin 'Affan",
+      "name_ar": "'Utsman bin 'Affan"
+    }
+  ]
+}

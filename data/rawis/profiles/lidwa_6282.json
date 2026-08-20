@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6282",
+  "name_en": "Iyadl bin 'Abdullah bin Sa'ad bin Abi Sarah",
+  "name_id": "Iyadl bin 'Abdullah bin Sa'ad bin Abi Sarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "Al 'Amiriy Al Qurasyiy",
+  "nasab": "Al 'Amiriy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "68",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 9,
+    "abudaud": 6,
+    "tirmidzi": 3,
+    "nasai": 12,
+    "ibnumajah": 6,
+    "ahmad": 17,
+    "malik": 1,
+    "darimi": 5
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6807",
+  "name_en": "Muhammad bin Ishaq bin Ja'far",
+  "name_id": "Muhammad bin Ishaq bin Ja'far",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "270 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Bakar",
+  "parents": "Ash Shaghaniy",
+  "nasab": "Ash Shaghaniy",
+  "laqob": "-",
+  "hadith_count": "53",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 35,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 13,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

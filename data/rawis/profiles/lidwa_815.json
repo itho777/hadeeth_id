@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_815",
+  "name_en": "Ibrahim bin Hamzah bin Muhammad",
+  "name_id": "Ibrahim bin Hamzah bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "230 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ishaq ",
+  "parents": "Az Zubaidiy ",
+  "nasab": "Az Zubaidiy ",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 20,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

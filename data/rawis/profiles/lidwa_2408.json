@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2408",
+  "name_en": "Hushain bin Numair",
+  "name_id": "Hushain bin Numair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Muhshan",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Adl Dlurair",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

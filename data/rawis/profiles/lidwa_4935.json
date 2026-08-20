@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4935",
+  "name_en": "Abdullah bin 'Ubaidah bin Nasyith",
+  "name_id": "Abdullah bin 'Ubaidah bin Nasyith",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "130 H",
+  "city_of_death": "-",
+  "residence": "Ribdzah",
+  "kunyah": "-",
+  "parents": "Ar Ribdziy",
+  "nasab": "Ar Ribdziy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

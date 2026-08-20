@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3290",
+  "name_en": "Sa'id bin Iyas",
+  "name_id": "Sa'id bin Iyas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "144 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Mas'ud",
+  "parents": "Al Jurairiy",
+  "nasab": "Al Jurairiy",
+  "laqob": "-",
+  "hadith_count": "291",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 38,
+    "abudaud": 25,
+    "tirmidzi": 24,
+    "nasai": 19,
+    "ibnumajah": 14,
+    "ahmad": 147,
+    "malik": 0,
+    "darimi": 15
+  }
+}

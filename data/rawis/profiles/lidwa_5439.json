@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5439",
+  "name_en": "Ubaidullah bin Yazid bin Ibrahim",
+  "name_id": "Ubaidullah bin Yazid bin Ibrahim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "-",
+  "parents": "Al Qurdawaniy Al Hiraniy",
+  "nasab": "Al Qurdawaniy Al Hiraniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

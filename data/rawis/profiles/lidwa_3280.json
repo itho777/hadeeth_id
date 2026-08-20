@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3280",
+  "name_en": "Sa'id bin Abi Sa'id Kaisan",
+  "name_id": "Sa'id bin Abi Sa'id Kaisan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "123 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Sa'ad",
+  "parents": "Al Maqburiy",
+  "nasab": "Al Maqburiy",
+  "laqob": "-",
+  "hadith_count": "614",
+  "book_counts": {
+    "bukhari": 95,
+    "muslim": 33,
+    "abudaud": 51,
+    "tirmidzi": 55,
+    "nasai": 53,
+    "ibnumajah": 49,
+    "ahmad": 250,
+    "malik": 9,
+    "darimi": 19
+  }
+}

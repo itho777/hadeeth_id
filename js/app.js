@@ -67,6 +67,7 @@ function escapeHtml(str) {
 const UI_I18N = {
   en: {
     nav_books: "Books",
+    nav_topics: "Topics",
     nav_scholars: "Scholars",
     nav_admin: "Admin",
     hero_title: "Discover Authentic Sources",
@@ -105,6 +106,7 @@ const UI_I18N = {
   },
   id: {
     nav_books: "Kitab",
+    nav_topics: "Topik",
     nav_scholars: "Perawi & Ulama",
     nav_admin: "Admin",
     hero_title: "Telusuri Sumber-sumber Shahih",
@@ -204,171 +206,93 @@ window.LangSystem = LangSystem;
 // All datasets are served as linked systems (gaps filled with noted sources).
 // ============================================================
 const BOOK_DATASETS = {
-  // Books with all 3 datasets (Kutub Tis'ah + Nawawi)
+  // 9 Books (Kutubut Tis'ah)
   bukhari: [
-    { id: 'fawazahmed',
-      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
-      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
-      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
-      note: null, noteId: null },
-    { id: 'native_ahmedbaset',
-      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
-      sources: 'Arabic + EN: AhmedBaset native (7,277 hadiths, 97 kitab)',
-      sourcesId: 'Arab + EN: AhmedBaset native (7.277 hadits, 97 kitab)',
-      note: 'ID translation sourced from Lidwa/Irsyad, matched by using Arabic Hadith text matching algorithm', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, berdasarkan algoritma kecocokan text Arab dalam hadits' },
-    { id: 'native_lidwa',
-      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
-      sources: 'AR/EN/ID/UR/FR: Lidwa SQL (7,589 entries, 98 kitab groupings)',
-      sourcesId: 'AR/EN/ID/UR/FR: SQL Lidwa (7.589 entri, 98 pengelompokan kitab)',
-      note: null, noteId: null }
+    { id: 'fawazahmed', label: 'International Numbering (Main)', labelId: 'Penomoran Internasional (Utama)' },
+    { id: 'native_lidwa', label: 'Lidwa Numbering', labelId: 'Penomoran Lidwa' }
   ],
   muslim: [
-    { id: 'fawazahmed',
-      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
-      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
-      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
-      note: 'Last ~112 hadiths: known upstream duplication in Arabic text', noteId: '~112 hadits terakhir: duplikasi teks Arab dari sumber upstream' },
-    { id: 'native_ahmedbaset',
-      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
-      sources: 'Arabic + EN: AhmedBaset native (7,459 hadiths, 56 kitab)',
-      sourcesId: 'Arab + EN: AhmedBaset native (7.459 hadits, 56 kitab)',
-      note: 'ID translation sourced from Lidwa/Irsyad, matched by using Arabic Hadith text matching algorithm', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, berdasarkan algoritma kecocokan text Arab dalam hadits' },
-    { id: 'native_lidwa',
-      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
-      sources: 'AR/EN/ID: Lidwa SQL — 5,362 entries (groups variant narrations)',
-      sourcesId: 'AR/EN/ID: SQL Lidwa — 5.362 entri (mengelompokkan variasi riwayat)',
-      note: 'Darussalam numbers 5,363–7,563 have no Lidwa equivalent', noteId: 'Nomor Darussalam 5.363–7.563 tidak memiliki padanan Lidwa' }
-  ],
-  abudawud: [
-    { id: 'fawazahmed',
-      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
-      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
-      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
-      note: null, noteId: null },
-    { id: 'native_ahmedbaset',
-      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
-      sources: 'Arabic + EN: AhmedBaset native (5,274 hadiths, 43 kitab)',
-      sourcesId: 'Arab + EN: AhmedBaset native (5.274 hadits, 43 kitab)',
-      note: 'ID translation sourced from Lidwa/Irsyad, matched by using Arabic Hadith text matching algorithm', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, berdasarkan algoritma kecocokan text Arab dalam hadits' },
-    { id: 'native_lidwa',
-      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
-      sources: 'AR/EN/ID: Lidwa SQL (5,274 entries, 43 kitab)',
-      sourcesId: 'AR/EN/ID: SQL Lidwa (5.274 entri, 43 kitab)',
-      note: null, noteId: null }
-  ],
-  tirmidhi: [
-    { id: 'fawazahmed',
-      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
-      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
-      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
-      note: null, noteId: null },
-    { id: 'native_ahmedbaset',
-      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
-      sources: 'Arabic + EN: AhmedBaset native (3,956 hadiths, 49 kitab)',
-      sourcesId: 'Arab + EN: AhmedBaset native (3.956 hadits, 49 kitab)',
-      note: 'ID translation sourced from Lidwa/Irsyad, matched by using Arabic Hadith text matching algorithm', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, berdasarkan algoritma kecocokan text Arab dalam hadits' },
-    { id: 'native_lidwa',
-      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
-      sources: 'AR/EN/ID: Lidwa SQL (3,956 entries, 49 kitab)',
-      sourcesId: 'AR/EN/ID: SQL Lidwa (3.956 entri, 49 kitab)',
-      note: null, noteId: null }
+    { id: 'fawazahmed', label: 'International Numbering (Main)', labelId: 'Penomoran Internasional (Utama)' },
+    { id: 'native_lidwa', label: 'Lidwa Numbering', labelId: 'Penomoran Lidwa' }
   ],
   nasai: [
-    { id: 'fawazahmed',
-      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
-      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
-      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
-      note: null, noteId: null },
-    { id: 'native_ahmedbaset',
-      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
-      sources: 'Arabic + EN: AhmedBaset native (5,758 hadiths, 51 kitab)',
-      sourcesId: 'Arab + EN: AhmedBaset native (5.758 hadits, 51 kitab)',
-      note: 'ID translation sourced from Lidwa/Irsyad, matched by using Arabic Hadith text matching algorithm', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, berdasarkan algoritma kecocokan text Arab dalam hadits' },
-    { id: 'native_lidwa',
-      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
-      sources: 'AR/EN/ID: Lidwa SQL (5,758 entries, 51 kitab)',
-      sourcesId: 'AR/EN/ID: SQL Lidwa (5.758 entri, 51 kitab)',
-      note: null, noteId: null }
+    { id: 'fawazahmed', label: 'International Numbering (Main)', labelId: 'Penomoran Internasional (Utama)' },
+    { id: 'native_lidwa', label: 'Lidwa Numbering', labelId: 'Penomoran Lidwa' }
+  ],
+  abudawud: [
+    { id: 'fawazahmed', label: 'International Numbering (Main)', labelId: 'Penomoran Internasional (Utama)' },
+    { id: 'native_lidwa', label: 'Lidwa Numbering', labelId: 'Penomoran Lidwa' }
+  ],
+  tirmidhi: [
+    { id: 'fawazahmed', label: 'International Numbering (Main)', labelId: 'Penomoran Internasional (Utama)' },
+    { id: 'native_lidwa', label: 'Lidwa Numbering', labelId: 'Penomoran Lidwa' }
   ],
   ibnmajah: [
-    { id: 'fawazahmed',
-      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
-      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
-      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
-      note: null, noteId: null },
-    { id: 'native_ahmedbaset',
-      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
-      sources: 'Arabic + EN: AhmedBaset native (4,341 hadiths, 37 kitab)',
-      sourcesId: 'Arab + EN: AhmedBaset native (4.341 hadits, 37 kitab)',
-      note: 'ID translation sourced from Lidwa/Irsyad, matched by using Arabic Hadith text matching algorithm', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, berdasarkan algoritma kecocokan text Arab dalam hadits' },
-    { id: 'native_lidwa',
-      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
-      sources: 'AR/EN/ID: Lidwa SQL (4,341 entries, 37 kitab)',
-      sourcesId: 'AR/EN/ID: SQL Lidwa (4.341 entri, 37 kitab)',
-      note: null, noteId: null }
+    { id: 'fawazahmed', label: 'International Numbering (Main)', labelId: 'Penomoran Internasional (Utama)' },
+    { id: 'native_lidwa', label: 'Lidwa Numbering', labelId: 'Penomoran Lidwa' }
   ],
   malik: [
-    { id: 'fawazahmed',
-      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
-      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
-      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
-      note: null, noteId: null },
-    { id: 'native_ahmedbaset',
-      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
-      sources: 'Arabic + EN: AhmedBaset native (1,858 hadiths, 61 kitab)',
-      sourcesId: 'Arab + EN: AhmedBaset native (1.858 hadits, 61 kitab)',
-      note: 'ID translation sourced from Lidwa/Irsyad, matched by using Arabic Hadith text matching algorithm', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, berdasarkan algoritma kecocokan text Arab dalam hadits' },
-    { id: 'native_lidwa',
-      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
-      sources: 'AR/EN/ID: Lidwa SQL (1,720 entries — some hadiths grouped)',
-      sourcesId: 'AR/EN/ID: SQL Lidwa (1.720 entri — beberapa hadits dikelompokkan)',
-      note: null, noteId: null }
-  ],
-  darimi: [
-    { id: 'fawazahmed',
-      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
-      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
-      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
-      note: null, noteId: null },
-    { id: 'native_ahmedbaset',
-      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
-      sources: 'Arabic + EN: AhmedBaset native (3,367 hadiths, 24 kitab)',
-      sourcesId: 'Arab + EN: AhmedBaset native (3.367 hadits, 24 kitab)',
-      note: 'ID translation sourced from Lidwa/Irsyad, matched by using Arabic Hadith text matching algorithm', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, berdasarkan algoritma kecocokan text Arab dalam hadits' },
-    { id: 'native_lidwa',
-      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
-      sources: 'AR/EN/ID: Lidwa SQL (3,367 entries, 24 kitab)',
-      sourcesId: 'AR/EN/ID: SQL Lidwa (3.367 entri, 24 kitab)',
-      note: null, noteId: null }
+    { id: 'fawazahmed', label: 'International Numbering (Main)', labelId: 'Penomoran Internasional (Utama)' },
+    { id: 'native_lidwa', label: 'Lidwa Numbering', labelId: 'Penomoran Lidwa' }
   ],
   ahmad: [
-    { id: 'fawazahmed',
-      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
-      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (matched by number — not native to fawazahmed0)',
-      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
-      note: null, noteId: null },
-    { id: 'native_ahmedbaset',
-      label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset',
-      sources: 'Arabic + EN: AhmedBaset native (27,647 hadiths, 90 musnad sections)',
-      sourcesId: 'Arab + EN: AhmedBaset native (27.647 hadits, 90 bagian musnad)',
-      note: 'ID translation sourced from Lidwa/Irsyad, matched by using Arabic Hadith text matching algorithm', noteId: 'Terjemahan ID bersumber dari Lidwa/Irsyad, berdasarkan algoritma kecocokan text Arab dalam hadits' },
-    { id: 'native_lidwa',
-      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
-      sources: 'AR/EN/ID: Lidwa SQL (27,519 entries, musnad arrangement)',
-      sourcesId: 'AR/EN/ID: SQL Lidwa (27.519 entri, susunan musnad)',
-      note: null, noteId: null }
+    { id: 'native_lidwa', label: 'Lidwa Numbering (Main)', labelId: 'Penomoran Lidwa (Utama)' },
+    { id: 'native_ahmedbaset', label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset' }
+  ],
+  darimi: [
+    { id: 'native_lidwa', label: 'Lidwa Numbering (Main)', labelId: 'Penomoran Lidwa (Utama)' },
+    { id: 'native_ahmedbaset', label: 'AhmedBaset Edition', labelId: 'Edisi AhmedBaset' }
+  ],
+
+  // 8 Books (AhmedBaset as Main)
+  riyad: [
+    { id: 'native_ahmedbaset', label: 'AhmedBaset Edition (Main)', labelId: 'Edisi AhmedBaset (Utama)' }
+  ],
+  shamail: [
+    { id: 'native_ahmedbaset', label: 'AhmedBaset Edition (Main)', labelId: 'Edisi AhmedBaset (Utama)' }
+  ],
+  bulugh: [
+    { id: 'native_ahmedbaset', label: 'AhmedBaset Edition (Main)', labelId: 'Edisi AhmedBaset (Utama)' }
+  ],
+  adab: [
+    { id: 'native_ahmedbaset', label: 'AhmedBaset Edition (Main)', labelId: 'Edisi AhmedBaset (Utama)' }
+  ],
+  mishkat: [
+    { id: 'native_ahmedbaset', label: 'AhmedBaset Edition (Main)', labelId: 'Edisi AhmedBaset (Utama)' }
   ],
   nawawi: [
-    { id: 'fawazahmed',
-      label: 'Fawazahmed0 Edition', labelId: 'Edisi Fawazahmed0',
-      sources: 'Arabic + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (42 hadiths, matched by number — not native to fawazahmed0)',
-      sourcesId: 'Arab + EN: fawazahmed0 CDN · ID: Lidwa/Irsyad (42 hadits, dicocokkan berdasarkan nomor — bukan bawaan fawazahmed0)',
-      note: null, noteId: null },
-    { id: 'native_lidwa',
-      label: 'Lidwa Edition', labelId: 'Edisi Lidwa',
-      sources: 'AR/EN/ID: Lidwa SQL (42 entries)',
-      sourcesId: 'AR/EN/ID: SQL Lidwa (42 entri)',
-      note: null, noteId: null }
+    { id: 'native_ahmedbaset', label: 'AhmedBaset Edition (Main)', labelId: 'Edisi AhmedBaset (Utama)' },
+    { id: 'fawazahmed', label: 'Fawaz Edition', labelId: 'Edisi Fawaz' }
+  ],
+  qudsi: [
+    { id: 'native_ahmedbaset', label: 'AhmedBaset Edition (Main)', labelId: 'Edisi AhmedBaset (Utama)' },
+    { id: 'fawazahmed', label: 'Fawaz Edition', labelId: 'Edisi Fawaz' }
+  ],
+  dehlawi: [
+    { id: 'native_ahmedbaset', label: 'AhmedBaset Edition (Main)', labelId: 'Edisi AhmedBaset (Utama)' },
+    { id: 'fawazahmed', label: 'Fawaz Edition', labelId: 'Edisi Fawaz' }
+  ],
+
+  // IrsyadulIbad
+  syafii: [
+    { id: 'native_irsyad', label: 'IrsyadulIbad (Main)', labelId: 'IrsyadulIbad (Utama)' }
+  ],
+  riyad_arab: [
+    { id: 'native_irsyad', label: 'IrsyadulIbad (850 Hadith)', labelId: 'IrsyadulIbad (850 Hadits)' }
+  ],
+
+  // MJNA
+  ibnukhuzaimah: [
+    { id: 'native_mjna', label: 'MJNA Edition (Main)', labelId: 'Edisi MJNA (Utama)' }
+  ],
+  ibnuhibban: [
+    { id: 'native_mjna', label: 'MJNA Edition (Main)', labelId: 'Edisi MJNA (Utama)' }
+  ],
+  mustadrak: [
+    { id: 'native_mjna', label: 'MJNA Edition (Main)', labelId: 'Edisi MJNA (Utama)' }
+  ],
+  daruquthni: [
+    { id: 'native_mjna', label: 'MJNA Edition (Main)', labelId: 'Edisi MJNA (Utama)' }
   ]
 };
 
@@ -410,21 +334,22 @@ function renderDatasetBanner(bookId, containerId, forceDataset) {
 
   // Validate: if the selected dataset doesn't exist for this book, fall back to primary
   const activeDs = dsConfig.find(d => d.id === currentDs) || dsConfig[0];
-  const activeLabel = isId ? activeDs.labelId : activeDs.label;
-  const activeSources = isId ? activeDs.sourcesId : activeDs.sources;
-  const activeNote = isId ? activeDs.noteId : activeDs.note;
+  
+  
+  
 
+  const activeNote = activeDs.note;
   const pillsHtml = dsConfig.map(ds => {
-    const label = isId ? ds.labelId : ds.label;
+    
     if (ds.id === activeDs.id) {
       return `<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold bg-secondary dark:bg-[#10b981] text-white dark:text-black select-none">
-        <span class="material-symbols-outlined text-[13px]" style="font-size:13px">check_circle</span>${escapeHtml(label)}
+        <span class="material-symbols-outlined text-[13px]" style="font-size:13px">check_circle</span><span data-lang-en>${escapeHtml(ds.label)}</span><span data-lang-id style="display:none">${escapeHtml(ds.labelId)}</span>
       </span>`;
     }
     return `<button
         onclick="window.__switchDataset('${ds.id}')"
         class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold border border-outline-variant/40 dark:border-[#334155] text-on-surface-variant dark:text-gray-400 hover:border-secondary dark:hover:border-[#10b981] hover:text-secondary dark:hover:text-[#10b981] bg-surface-container-low dark:bg-[#0f172a] transition-all cursor-pointer">
-        <span class="material-symbols-outlined text-[13px]" style="font-size:13px">swap_horiz</span>${escapeHtml(label)}
+        <span class="material-symbols-outlined text-[13px]" style="font-size:13px">swap_horiz</span><span data-lang-en>${escapeHtml(ds.label)}</span><span data-lang-id style="display:none">${escapeHtml(ds.labelId)}</span>
       </button>`;
   }).join('');
 
@@ -439,13 +364,55 @@ function renderDatasetBanner(bookId, containerId, forceDataset) {
           ${pillsHtml}
         </div>
         <div class="text-[11px] text-outline dark:text-gray-500 leading-snug">
-          <span class="font-semibold text-on-surface-variant dark:text-gray-400">${escapeHtml(activeSources)}</span>
-          ${activeNote ? `<span class="block mt-0.5 text-secondary/80 dark:text-[#10b981]/70">⚠ ${escapeHtml(activeNote)}</span>` : ''}
+          <span class="font-semibold text-on-surface-variant dark:text-gray-400"><span data-lang-en>${escapeHtml(activeDs.sources)}</span><span data-lang-id style="display:none">${escapeHtml(activeDs.sourcesId)}</span></span>
+          ${activeNote ? `<span class="block mt-0.5 text-secondary/80 dark:text-[#10b981]/70">⚠ <span data-lang-en>${escapeHtml(activeDs.note)}</span><span data-lang-id style="display:none">${escapeHtml(activeDs.noteId)}</span></span>` : ''}
         </div>
       </div>
     </div>
   `;
 }
+
+window.setupReadMore = function() {
+  const containers = document.querySelectorAll('.hadith-text-container:not(.read-more-initialized)');
+  containers.forEach(container => {
+    container.classList.add('read-more-initialized');
+    const inner = container.querySelector('.hadith-text-inner');
+    const overlay = container.querySelector('.read-more-overlay');
+    const btn = container.querySelector('.read-more-btn');
+    if (!inner || !overlay || !btn) return;
+
+    // Wait a brief moment for styles to apply if just inserted
+    setTimeout(() => {
+      // Assuming 10 lines is roughly 350-400px depending on language/text size. Let's use 380px.
+      if (inner.scrollHeight > 400) {
+        overlay.classList.remove('hidden');
+        btn.classList.remove('hidden');
+
+        btn.addEventListener('click', () => {
+          if (inner.style.maxHeight === '380px') {
+            inner.style.maxHeight = inner.scrollHeight + 'px';
+            overlay.classList.add('hidden');
+            const isId = window.LangSystem && window.LangSystem.isIdMode();
+            btn.innerHTML = `<span data-lang-en style="${isId?'display:none':''}">Show less</span><span data-lang-id style="${isId?'':'display:none'}">Sembunyikan</span> <span class="material-symbols-outlined text-[14px]">expand_less</span>`;
+          } else {
+            inner.style.maxHeight = '380px';
+            overlay.classList.remove('hidden');
+            const isId = window.LangSystem && window.LangSystem.isIdMode();
+            btn.innerHTML = `<span data-lang-en style="${isId?'display:none':''}">Read more</span><span data-lang-id style="${isId?'':'display:none'}">Selengkapnya</span> <span class="material-symbols-outlined text-[14px]">expand_more</span>`;
+            
+            // Scroll back into view if it was scrolled past
+            const rect = container.getBoundingClientRect();
+            if (rect.top < 0) {
+              window.scrollBy({ top: rect.top - 80, behavior: 'smooth' });
+            }
+          }
+        });
+      } else {
+        inner.style.maxHeight = 'none';
+      }
+    }, 50);
+  });
+};
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -500,12 +467,13 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderBookCards(books, container) {
     container.innerHTML = books.map(book => {
       let dataType = 'other';
-      if (['bukhari', 'muslim', 'tirmidhi'].includes(book.id)) dataType = 'jami';
-      else if (['abudawud', 'nasai', 'ibnmajah', 'darimi'].includes(book.id)) dataType = 'sunan';
-      else if (book.id === 'ahmad') dataType = 'musnad';
+      if (['bukhari', 'muslim', 'tirmidhi', 'ibnukhuzaimah', 'ibnuhibban'].includes(book.id)) dataType = 'jami';
+      else if (['abudawud', 'nasai', 'ibnmajah', 'darimi', 'daruquthni'].includes(book.id)) dataType = 'sunan';
+      else if (['ahmad', 'syafii'].includes(book.id)) dataType = 'musnad';
       else if (book.id === 'malik') dataType = 'mushannaf';
       else if (book.id === 'tabarani') dataType = 'mujam';
-      else if (['nawawi', 'qudsi', 'shah', 'adab', 'bulugh', 'mishkat', 'riyad', 'shamail'].includes(book.id)) dataType = 'jawami';
+      else if (book.id === 'mustadrak') dataType = 'mustadrak';
+      else if (['nawawi', 'qudsi', 'shah', 'adab', 'bulugh', 'mishkat', 'riyad', 'riyad_arab', 'shamail'].includes(book.id)) dataType = 'jawami';
       
       const typeLabels = {
         'jami': "Jami'",
@@ -514,6 +482,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'mushannaf': "Mushannaf",
         'jawami': "Jawami'",
         'mujam': "Mu'jam",
+        'mustadrak': "Mustadrak",
         'other': "Kitab"
       };
       const badgeText = typeLabels[dataType] || "Kitab";
@@ -630,6 +599,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('hadith-cards-container')) {
     loadHadithList();
   }
+  if (document.getElementById('topic-hadith-cards-container')) {
+    loadTopicHadiths();
+  }
   if (document.getElementById('profile-header-name-en')) {
     loadProfileDetail();
   }
@@ -675,10 +647,9 @@ async function loadHOTD() {
     if (raw) hotdConfig = JSON.parse(raw);
   } catch (e) {}
 
-  // User specifically requested a Hajj hadith as the default HOTD
-  // Bukhari 7038: "My mother vowed to perform the Hajj but she died before performing it..."
+  // Default HOTD: Bukhari #1 (Umar narration on intentions)
   const bookId = (hotdConfig && hotdConfig.bookId) || 'bukhari';
-  const hadithId = (hotdConfig && hotdConfig.hadithId) || '7038';
+  const hadithId = (hotdConfig && hotdConfig.hadithId) || '1';
 
   const bookNames = {
     bukhari: 'Sahih al-Bukhari', muslim: 'Sahih Muslim',
@@ -700,9 +671,22 @@ async function loadHOTD() {
   const hotdLink = document.getElementById('hotd-read-link');
 
   try {
-    // Fetch unified hadith record from the new consolidated API
-    const h = await window.HadeethAPI.getHadith(bookId, hadithId);
-    if (!h) return;
+    // Fetch with timeout to avoid indefinite skeleton on local dev
+    const h = await Promise.race([
+      window.HadeethAPI.getHadith(bookId, hadithId),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('HOTD timeout')), 8000))
+    ]).catch(() => null);
+    if (!h) {
+      // Show friendly fallback message instead of skeleton
+      const hotdBookLabel = document.getElementById('hotd-book-label');
+      if (hotdBookLabel) hotdBookLabel.textContent = 'Hadith of the Day';
+      const hotdArabic = document.getElementById('hotd-arabic');
+      if (hotdArabic) {
+        hotdArabic.textContent = 'Loading requires server Range support. Deploy to GitHub Pages to view Hadith of the Day.';
+        hotdArabic.classList.remove('animate-pulse', 'text-transparent', 'bg-surface-container-high');
+      }
+      return;
+    }
     
     if (hotdBookLabel) hotdBookLabel.textContent = `${bookName} ${h.hadith_number || h.id}`;
     if (hotdLink) hotdLink.href = `hadith.html?book=${bookId}&id=${h.hadith_number || h.id}`;
@@ -955,13 +939,13 @@ async function loadHadithDetail() {
   // Active dataset mapping
   const activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
   let dsPrefix = 'fawaz';
-  let activeDsLabel = 'Fawazahmed0 Edition';
-  let activeDsLabelId = 'Edisi Fawazahmed0';
+  let activeDsLabel = 'International Numbering';
+  let activeDsLabelId = 'Penomoran Internasional';
 
   if (activeDataset === 'native_lidwa') {
     dsPrefix = 'lidwa';
-    activeDsLabel = 'Lidwa Edition';
-    activeDsLabelId = 'Edisi Lidwa';
+    activeDsLabel = 'Lidwa Numbering';
+    activeDsLabelId = 'Penomoran Lidwa';
   } else if (activeDataset === 'native_ahmedbaset') {
     dsPrefix = 'ab';
     activeDsLabel = 'AhmedBaset Edition';
@@ -978,10 +962,11 @@ async function loadHadithDetail() {
 
   // Extract variables
   const bookName = (bookId === 'nawawi' ? 'Forty Nawawi' : bookId.toUpperCase());
-  const titleTextEn = `Hadith #${data.hadith_number}`;
-  const titleTextId = `Hadits #${data.hadith_number}`;
+  const displayNum = (localStorage.getItem('numbering_system') === 'lidwa' && data.lidwa_id) ? data.lidwa_id : data.hadith_number;
+  const titleTextEn = `Hadith #${displayNum}`;
+  const titleTextId = `Hadits #${displayNum}`;
   
-  document.title = `${bookName} Hadith #${data.hadith_number} (${activeDsLabel}) - HADEETH.ID`;
+  document.title = `${bookName} Hadith #${displayNum} - HADEETH.ID`;
   
   if (window.LastReadTracker) window.LastReadTracker.save(bookId, data.hadith_number, bookName, `${bookName} Hadith #${data.hadith_number}`);
 
@@ -1002,6 +987,7 @@ async function loadHadithDetail() {
   // Next / Prev buttons
   const prevBtn = document.getElementById('prev-hadith-btn');
   const nextBtn = document.getElementById('next-hadith-btn');
+  const isnadBtn = document.getElementById('view-isnad-btn');
   const currentNum = parseInt(hadithId) || 1;
   if (prevBtn) {
     if (currentNum > 1) {
@@ -1015,6 +1001,14 @@ async function loadHadithDetail() {
   if (nextBtn) {
     nextBtn.href = `hadith.html?book=${bookId}&id=${currentNum + 1}`;
   }
+  if (isnadBtn) {
+    if (data.rawis && data.rawis.length > 0) {
+      isnadBtn.href = `sanad.html?book=${bookId}&id=${hadithId}`;
+      isnadBtn.style.display = 'flex';
+    } else {
+      isnadBtn.style.display = 'none';
+    }
+  }
 
   // Populate Text
   const arabicElem = document.querySelector('[data-arabic-text]');
@@ -1022,6 +1016,17 @@ async function loadHadithDetail() {
   const indonesianElem = document.querySelector('[data-indonesian-text]');
   
   if (arabicElem) arabicElem.innerText = data.text_ar || 'Not Available';
+
+  // Populate Grade
+  const gradeElem = document.querySelector('[data-hadith-grade]');
+  if (gradeElem) {
+      if (data.grade) {
+          gradeElem.innerText = data.grade;
+          gradeElem.style.display = 'inline-block';
+      } else {
+          gradeElem.style.display = 'none';
+      }
+  }
   
   // Restore dynamic translation options
   const baseUrl = window.__HADEETH_BASE__ ? window.__HADEETH_BASE__ + '/data' : window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
@@ -1037,7 +1042,7 @@ async function loadHadithDetail() {
 
   const fawazId = activeDataset === 'fawazahmed' ? hadithId : (Object.keys(linkGraph.fawaz_to_lidwa || {}).find(k => linkGraph.fawaz_to_lidwa[k] == hadithId) || hadithId);
   const lidwaId = activeDataset === 'native_lidwa' ? hadithId : (linkGraph.fawaz_to_lidwa ? (linkGraph.fawaz_to_lidwa[fawazId] || null) : null);
-  const abId = activeDataset === 'native_ahmedbaset' ? hadithId : (linkGraph.fawaz_to_ab ? (linkGraph.fawaz_to_ab[fawazId] || null) : null);
+  const abId = activeDataset === 'native_ahmedbaset' ? hadithId : (linkGraph.fawaz_to_ab ? linkGraph.fawaz_to_ab[fawazId] : (linkGraph[fawazId] ? linkGraph[fawazId].ahmedbaset_id : null));
 
   const translationOptions = [];
   
@@ -1046,7 +1051,8 @@ async function loadHadithDetail() {
       const editions = fawazEditions[bookId].collection || [];
       editions.forEach(ed => {
           if (ed.name.startsWith('ara-')) return; 
-          if (ed.name.startsWith('ind-')) return; // We use Lidwa for ID
+          const core9 = ['bukhari', 'muslim', 'abudawud', 'tirmidhi', 'nasai', 'ibnmajah', 'malik', 'ahmad', 'darimi'];
+          if (core9.includes(bookId) && ed.name.startsWith('ind-')) return; // We use Lidwa for ID for 9 core books
           const langCode = ed.language.toUpperCase();
           const author = ed.author !== 'Unknown' ? ed.author : 'Fawazahmed0';
           translationOptions.push({
@@ -1060,55 +1066,154 @@ async function loadHadithDetail() {
       });
   }
   
-  // Inject Lidwa translation via Master Link Engine for Indonesian fallback
-  if (lidwaId || activeDataset === 'native_lidwa') {
+  // Inject Lidwa translation — only for books where Lidwa data is known to exist
+  const lidwaBooks = ['bukhari', 'muslim', 'tirmidhi', 'abudawud', 'nasai', 'ibnmajah', 'malik', 'ahmad', 'darimi', 'riyad', 'nawawi', 'syafii'];
+  const hasLidwaSource = lidwaBooks.includes(bookId);
+  const hasLidwaIdText = !!(data && data.translations && data.translations.id && data.translations.id.find(x => x.source === 'lidwa'));
+  const hasLidwaEnText = !!(data && data.translations && data.translations.en && data.translations.en.find(x => x.source === 'lidwa'));
+  // Also check direct text_id on native_lidwa dataset
+  const hasLidwaId2 = !!(activeDataset === 'native_lidwa' && data && data.text_id);
+  const hasLidwaEn2 = !!(activeDataset === 'native_lidwa' && data && data.text_en);
+
+  if ((lidwaId || activeDataset === 'native_lidwa') && hasLidwaSource) {
+      if (hasLidwaIdText || hasLidwaId2 || lidwaId) {
+          translationOptions.push({
+              id: 'lidwa-id',
+              label: `ID - Lidwa`,
+              lang: 'Indonesian',
+              source: 'lidwa_id',
+              hid: lidwaId || hadithId,
+              file: `${baseUrl}/sources/lidwa/${bookId}.json`
+          });
+      }
+      if (hasLidwaEnText || hasLidwaEn2) {
+          translationOptions.push({
+              id: 'lidwa-en',
+              label: `EN - Lidwa`,
+              lang: 'English',
+              source: 'lidwa_en',
+              hid: lidwaId || hadithId,
+              file: `${baseUrl}/sources/lidwa/${bookId}.json`
+          });
+      }
+  }
+
+  // Inject AhmedBaset translation — only for the 9 core books that AB covers
+  const abBookMap = { 
+      ahmad: 'the_9_books/ahmed',
+      bukhari: 'the_9_books/bukhari',
+      muslim: 'the_9_books/muslim',
+      abudawud: 'the_9_books/abudawud',
+      tirmidhi: 'the_9_books/tirmidhi',
+      nasai: 'the_9_books/nasai',
+      ibnmajah: 'the_9_books/ibnmajah',
+      malik: 'the_9_books/malik',
+      darimi: 'the_9_books/darimi',
+      nawawi: 'forties/nawawi40',
+      qudsi: 'forties/qudsi40',
+      dehlawi: 'forties/shahwaliullah40',
+      riyad: 'other_books/riyad_assalihin',
+      shamail: 'other_books/shamail_muhammadiyah',
+      bulugh: 'other_books/bulugh_almaram',
+      adab: 'other_books/aladab_almufrad',
+      mishkat: 'other_books/mishkat_almasabih'
+    };
+  const abBook = abBookMap[bookId] || bookId;
+  const abCoreBooks = ['bukhari', 'muslim', 'tirmidhi', 'abudawud', 'nasai', 'ibnmajah', 'malik', 'ahmad', 'darimi'];
+  const hasAbText = !!(data && data.translations && data.translations.en && data.translations.en.find(x => x.source === 'ab' || x.source === 'ahmedbaset'));
+  const hasAbDirect = !!(data && data.text_en && activeDataset === 'native_ahmedbaset');
+  if (abCoreBooks.includes(bookId) && (hasAbText || hasAbDirect || abId || activeDataset === 'native_ahmedbaset')) {
       translationOptions.push({
-          id: 'lidwa-id',
-          label: `ID - Kemenag (Lidwa)`,
-          lang: 'Indonesian',
-          source: 'lidwa',
-          hid: lidwaId || hadithId,
-          file: `${baseUrl}/sources/lidwa/${bookId}.json`
+          id: 'ab-en',
+          label: `EN - AhmedBaset`,
+          lang: 'English',
+          source: 'ab',
+          hid: abId || fawazId || hadithId,
+          file: `${baseUrl}/sources/ahmedbaset/by_book/${abBook}.json`
       });
   }
 
-  // Inject AhmedBaset translation if Fawaz lacks English
-  const abBookMap = { ahmad: 'ahmed' };
-  const abBook = abBookMap[bookId] || bookId;
-  const hasEnglish = translationOptions.some(o => o.lang.toLowerCase() === 'english');
-  if ((!hasEnglish && abId) || activeDataset === 'native_ahmedbaset') {
+  // Inject MJNA.or.id translation — only for MJNA books
+  const mjnaBooksList = ['ibnukhuzaimah', 'ibnuhibban', 'mustadrak', 'daruquthni'];
+  const isMjnaBook = mjnaBooksList.includes(bookId);
+  const hasMjnaIdText = !!(data && data.translations && data.translations.id && data.translations.id.find(x => x.source === 'mjna'));
+  const hasMjnaArText = !!(data && data.translations && data.translations.ar && data.translations.ar.find(x => x.source === 'mjna'));
+
+  if (isMjnaBook && hasMjnaIdText) {
       translationOptions.push({
-          id: 'ab-en',
-          label: `EN - AhmedBaset${!hasEnglish ? ' (Fallback)' : ''}`,
-          lang: 'English',
-          source: 'ab',
-          hid: abId || hadithId,
-          file: `${baseUrl}/sources/ahmedbaset/by_book/the_9_books/${abBook}.json`
+          id: 'mjna-id',
+          label: 'ID - MJNA.or.id',
+          lang: 'Indonesian',
+          source: 'mjna_id',
+          hid: hadithId,
+          file: null  // served directly from data.translations
       });
+  }
+  if (isMjnaBook && hasMjnaArText) {
+      // Arabic from MJNA is already shown as main text, but expose via dropdown too
+      // (only show if user might want to compare / copy)
   }
 
   async function fetchTranslationText(opt) {
-      // Since we are using the new consolidated API, the 'data' object ALREADY contains
-      // the AhmedBaset English translation (as data.text_en) and Lidwa Indonesian (as data.text_id).
-      if (opt.source === 'lidwa' && data.text_id) return data.text_id;
+      // First try to use the consolidated API translations if available
+      if (data && data.translations) {
+          // MJNA.or.id source
+          if (opt.source === 'mjna_id' && data.translations.id) {
+              const t = data.translations.id.find(x => x.source === 'mjna');
+              if (t) return t.text;
+          }
+          if (opt.source === 'lidwa_id' && data.translations.id) {
+              const t = data.translations.id.find(x => x.source === 'lidwa');
+              if (t) return t.text;
+          }
+          if (opt.source === 'lidwa_en' && data.translations.en) {
+              const t = data.translations.en.find(x => x.source === 'lidwa');
+              if (t) return t.text;
+          }
+          if (opt.source === 'ab' && data.translations.en) {
+              const t = data.translations.en.find(x => x.source === 'ab' || x.source === 'ahmedbaset');
+              if (t) return t.text;
+          }
+      }
+      
+      // Also fallback to properties if injected directly
+      if (opt.source === 'lidwa_id' && data.text_id) return data.text_id;
+      if (opt.source === 'lidwa_en' && data.text_en_lidwa) return data.text_en_lidwa;
       if (opt.source === 'ab' && data.text_en) return data.text_en;
       
-      // For Fawaz translations (like Spanish, French, or Fawaz's English), we still fetch the raw baseline file.
+      // Fallback: Fetch the file directly
       try {
-          const resp = await fetch(opt.file);
-          if (!resp.ok) return null;
-          const json_data = await resp.json();
           let text = '';
-          
           if (opt.source === 'fawaz') {
-              const found = (json_data.hadiths || []).find(h => (h.hadithnumber ?? h.id) == opt.hid);
-              if (found) text = found.text;
+              const langCode = opt.file.split('/').pop().split('-')[0]; // extract fra, ind, etc from fra-bukhari.json
+              const bookCode = opt.file.split('-')[1].split('.')[0];
+              const edition = await window.HadeethAPI.getEdition(langCode, bookCode).catch(()=>null);
+              if (edition) {
+                  const found = edition.hadiths.find(h => (h.hadithnumber ?? h.id) == opt.hid);
+                  if (found) text = found.text;
+              }
+          } else if (opt.source.startsWith('lidwa')) {
+              const bookCode = opt.file.split('/').pop().split('.')[0];
+              const lidwaData = await window.HadeethAPI.getHadith(bookCode, opt.hid, 'lidwa');
+              if (lidwaData) {
+                  if (opt.source === 'lidwa_id') text = lidwaData.text_id;
+                  if (opt.source === 'lidwa_en') text = lidwaData.text_en;
+              }
+          } else {
+              const resp = await fetch(opt.file);
+              if (!resp.ok) return null;
+              const json_data = await resp.json();
+              if (opt.source === 'ab') {
+                  const found = (Array.isArray(json_data) ? json_data : (json_data.hadiths || [])).find(h => h.idInBook == opt.hid);
+                  if (found && found.english) text = (found.english.narrator ? found.english.narrator + ' ' : '') + found.english.text;
+              }
           }
+
           return text;
       } catch(e) {
           console.warn('Failed to fetch', opt, e);
-          return null;
       }
+      return null;
   }
 
   // Populate Dropdowns
@@ -1128,8 +1233,18 @@ async function loadHadithDetail() {
          const defaultEn = translationOptions.find(o => o.id.includes('eng-bukhari') || (o.lang==='English' && (o.source==='fawaz' || o.source==='ab'))) || translationOptions[0];
          if (defaultEn) selectElem.value = defaultEn.id;
       } else {
-         const defaultId = translationOptions.find(o => o.id === 'lidwa-id') || translationOptions[0];
+         const defaultId = translationOptions.find(o => o.id === 'mjna-id') || translationOptions.find(o => o.id === 'lidwa-id') || translationOptions[0];
          if (defaultId) selectElem.value = defaultId.id;
+      }
+      
+      // Update the header span dynamically
+      const spanTitle = selectElem.parentElement.querySelector('span');
+      if (spanTitle && selectElem.selectedIndex >= 0) {
+          const opt = selectElem.options[selectElem.selectedIndex];
+          if (opt) {
+              const langName = opt.text.split(' - ')[0];
+              spanTitle.innerText = langName + " TRANSLATION";
+          }
       }
   });
 
@@ -1165,13 +1280,64 @@ async function loadHadithDetail() {
       updateTranslationBox(langSelects[1], indonesianElem);
   } else if (indonesianElem) {
       if (data.text_id) indonesianElem.innerHTML = data.text_id;
+      else if (data.translations && data.translations.id) {
+          const mjnaT = data.translations.id.find(x => x.source === 'mjna');
+          if (mjnaT) indonesianElem.innerHTML = mjnaT.text;
+      }
   }
+
+  // Probe each option and remove from dropdown if translation is not available
+  (async () => {
+    for (const selectElem of Array.from(langSelects)) {
+      const toRemove = [];
+      for (const opt of translationOptions) {
+        const optElem = selectElem.querySelector(`option[value="${opt.id}"]`);
+        if (!optElem) continue;
+        // Quick pre-check: if we already know the text is in data, keep it
+        const knownAvailable = (opt.source === 'mjna_id' && hasMjnaIdText)
+          || (opt.source === 'lidwa_id' && (hasLidwaIdText || hasLidwaId2))
+          || (opt.source === 'lidwa_en' && (hasLidwaEnText || hasLidwaEn2))
+          || (opt.source === 'ab' && (hasAbText || hasAbDirect))
+          || (opt.source === 'fawaz');
+        if (knownAvailable) continue;
+        // Otherwise probe by fetching
+        try {
+          const txt = await fetchTranslationText(opt);
+          if (!txt) toRemove.push(opt.id);
+        } catch(e) {
+          toRemove.push(opt.id);
+        }
+      }
+      toRemove.forEach(id => {
+        const optElem = selectElem.querySelector(`option[value="${id}"]`);
+        if (optElem) optElem.remove();
+      });
+      // If selected option was removed, reset to first available
+      if (!selectElem.value && selectElem.options.length > 0) {
+        selectElem.value = selectElem.options[0].value;
+        const cardBox = selectElem.closest('.p-5');
+        const targetP = cardBox ? cardBox.querySelector('p') : null;
+        if (targetP) updateTranslationBox(selectElem, targetP);
+      }
+    }
+  })();
 
   // Listeners
   langSelects.forEach(selectElem => {
     selectElem.addEventListener('change', () => {
       const cardBox = selectElem.closest('.p-5');
       const targetP = cardBox ? cardBox.querySelector('p') : null;
+      
+      // Update title dynamically on change
+      const spanTitle = selectElem.parentElement.querySelector('span');
+      if (spanTitle && selectElem.selectedIndex >= 0) {
+          const opt = selectElem.options[selectElem.selectedIndex];
+          if (opt) {
+              const langName = opt.text.split(' - ')[0];
+              spanTitle.innerText = langName + " TRANSLATION";
+          }
+      }
+      
       if (targetP) {
           updateTranslationBox(selectElem, targetP);
       }
@@ -1217,15 +1383,15 @@ async function loadHadithDetail() {
           // We display from Lowest to Highest -> Prophet.
           const reversedRawis = [...data.rawis].reverse();
           
-          const namesEn = reversedRawis.map(r => r.name_en || r.ar);
-          const namesId = reversedRawis.map(r => r.name_id || r.ar);
+          const namesEn = reversedRawis.map(r => r.name_en || r.name || r.ar || r.id);
+          const namesId = reversedRawis.map(r => r.name_id || r.name || r.ar || r.id);
           
           previewStrEn = namesEn.join(' → ') + ' → Prophet ﷺ';
           previewStrId = namesId.join(' → ') + ' → Rasulullah ﷺ';
           
           // The narrator closest to the Prophet (Sahabi) is the first element in Lidwa's rawis array
-          narratorEn = data.rawis[0].name_en || data.rawis[0].ar;
-          narratorId = data.rawis[0].name_id || data.rawis[0].ar;
+          narratorEn = data.rawis[0].name_en || data.rawis[0].name || data.rawis[0].ar || "Unknown Transmitter";
+          narratorId = data.rawis[0].name_id || data.rawis[0].name || data.rawis[0].ar || "Perawi Tidak Diketahui";
       }
       
       if (sanadPreviewEn) sanadPreviewEn.innerText = previewStrEn;
@@ -1479,7 +1645,7 @@ async function loadHadithList() {
   }
 
   // Render dataset banner on hadith-list page
-  renderDatasetBanner(bookId, 'dataset-banner-list', activeDataset);
+  renderDatasetBanner(bookId, 'dataset-banner-list', datasetParam);
 
   // Local state
   let allHadiths = [];
@@ -1493,10 +1659,28 @@ async function loadHadithList() {
   // BRANCH B — AhmedBaset native hadith loading
   // ================================================================
   if (activeDataset === 'native_ahmedbaset') {
-    const abBookMap = { ahmad: 'ahmed' };
+    const abBookMap = { 
+      ahmad: 'the_9_books/ahmed',
+      bukhari: 'the_9_books/bukhari',
+      muslim: 'the_9_books/muslim',
+      abudawud: 'the_9_books/abudawud',
+      tirmidhi: 'the_9_books/tirmidhi',
+      nasai: 'the_9_books/nasai',
+      ibnmajah: 'the_9_books/ibnmajah',
+      malik: 'the_9_books/malik',
+      darimi: 'the_9_books/darimi',
+      nawawi: 'forties/nawawi40',
+      qudsi: 'forties/qudsi40',
+      dehlawi: 'forties/shahwaliullah40',
+      riyad: 'other_books/riyad_assalihin',
+      shamail: 'other_books/shamail_muhammadiyah',
+      bulugh: 'other_books/bulugh_almaram',
+      adab: 'other_books/aladab_almufrad',
+      mishkat: 'other_books/mishkat_almasabih'
+    };
     const abBook = abBookMap[bookId] || bookId;
     try {
-      const resp = await fetch(`data/sources/ahmedbaset/by_chapter/the_9_books/${abBook}/${chapterId}.json`);
+      const resp = await fetch(`data/sources/ahmedbaset/by_chapter/${abBook}/${chapterId}.json`);
       if (resp.ok) {
         const abChapter = await resp.json();
         const chapTitleEn = abChapter.chapter?.english || `Chapter ${chapterId}`;
@@ -1519,9 +1703,9 @@ async function loadHadithList() {
         try {
           const baseUrl = window.__HADEETH_BASE__ ? window.__HADEETH_BASE__ + '/data' : window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
           
-          const [linkResp, lidwaResp] = await Promise.all([
+          const [linkResp, lidwaData] = await Promise.all([
             fetch(`${baseUrl}/links/${bookId}.json`).catch(() => null),
-            fetch(`${baseUrl}/sources/lidwa/${bookId}.json`).catch(() => null)
+            window.HadeethAPI.fetchNdjsonFull('sources/lidwa', bookId).catch(() => null)
           ]);
 
           if (linkResp && linkResp.ok) {
@@ -1535,8 +1719,7 @@ async function loadHadithList() {
             }
           }
 
-          if (lidwaResp && lidwaResp.ok) {
-            const lidwaData = await lidwaResp.json();
+          if (lidwaData) {
             (Array.isArray(lidwaData) ? lidwaData : (lidwaData.hadiths || [])).forEach(h => {
               const num = h.hadith_number ?? h.hadithnumber ?? h.id;
               if (num !== undefined && h.text_id) lidwaIdMap[String(num)] = h.text_id;
@@ -1577,13 +1760,25 @@ async function loadHadithList() {
     }
 
   // ================================================================
-  // BRANCH C — Lidwa / Irsyad native hadith loading
+  // BRANCH C — Native source hadith loading (Lidwa / MJNA.or.id)
   // ================================================================
-  } else if (activeDataset === 'native_lidwa') {
+  } else if (activeDataset === 'native_lidwa' || activeDataset === 'native_mjna' || activeDataset === 'native_irsyad') {
     try {
-      const resp = await fetch(`data/sources/lidwa/${bookId}.json`);
-      if (resp.ok) {
-        const lidwaAll = await resp.json();
+      const mjnaBooks = ['ibnukhuzaimah', 'ibnuhibban', 'mustadrak', 'daruquthni'];
+      const irsyadBooks = ['syafii', 'riyad_arab'];
+      const isMjnaBook = mjnaBooks.includes(bookId);
+      const isIrsyadBook = irsyadBooks.includes(bookId);
+      let nativeSourceDir = 'sources/lidwa';
+      let nativeSourceLabel = 'Lidwa';
+      if (isMjnaBook) {
+        nativeSourceDir = 'sources/mjna';
+        nativeSourceLabel = 'MJNA.or.id';
+      } else if (isIrsyadBook) {
+        nativeSourceDir = 'sources/irsyadulibad';
+        nativeSourceLabel = 'IrsyadulIbad';
+      }
+      const lidwaAll = await window.HadeethAPI.fetchNdjsonFull(nativeSourceDir, bookId).catch(() => null);
+      if (lidwaAll) {
         const chNum = parseInt(chapterId);
         
         let chapTitleId = `Kitab ${chapterId}`;
@@ -1596,7 +1791,12 @@ async function loadHadithList() {
           const idxResp = await fetch(`data/lidwa-chapters/${bookId}.json`);
           if (idxResp.ok) {
             const idx = await idxResp.json();
-            const ch = (idx.chapters || []).find(c => c.chapter_number === chNum);
+            const ch = (idx.chapters || []).find(c =>
+              c.chapter_number === chNum ||
+              c.chapter_number === String(chNum) ||
+              String(c.chapter_id) === String(chNum) ||
+              String(c.chapter_id) === String(chapterId)
+            );
             if (ch) {
               chapTitleId = ch.title_id || chapTitleId;
               chapTitleEn = ch.title_en || chapTitleEn;
@@ -1627,28 +1827,46 @@ async function loadHadithList() {
 
         if (chTitleEn) chTitleEn.innerText = chapTitleEn;
         if (chTitleId) chTitleId.innerText = chapTitleId;
-        if (chTitleAr) chTitleAr.innerText = chapTitleAr;
+        // For MJNA books: if chapter has no separate Arabic title, show book-level Arabic title
+        let arToShow = chapTitleAr;
+        if (!arToShow && isMjnaBook) {
+          const mjnaArFallbacks = {
+            ibnukhuzaimah: 'صحيح ابن خزيمة',
+            ibnuhibban: 'صحيح ابن حبان',
+            mustadrak: 'المستدرك على الصحيحين',
+            daruquthni: 'سنن الدارقطني',
+          };
+          arToShow = mjnaArFallbacks[bookId] || '';
+        }
+        if (chTitleAr) chTitleAr.innerText = arToShow;
         const bcCurEn2 = document.querySelector('[data-list-breadcrumb-current-en]');
         const bcCurId2 = document.querySelector('[data-list-breadcrumb-current-id]');
         if (bcCurEn2) bcCurEn2.innerText = chapTitleEn;
         if (bcCurId2) bcCurId2.innerText = chapTitleId;
         const chMetaEn2 = document.querySelector('[data-list-chapter-meta-en]');
         const chMetaId2 = document.querySelector('[data-list-chapter-meta-id]');
-        if (chMetaEn2) chMetaEn2.innerText = `Lidwa Kitab ${chapterId}`;
-        if (chMetaId2) chMetaId2.innerText = `Lidwa Kitab ${chapterId}`;
+        if (chMetaEn2) chMetaEn2.innerText = `${nativeSourceLabel} Kitab ${chapterId}`;
+        if (chMetaId2) chMetaId2.innerText = `${nativeSourceLabel} Kitab ${chapterId}`;
 
         allHadiths = chapHadiths.map(h => {
+          // text_id: for MJNA books (after NDJSON rebuild) it's in translations.id[].text
+          // for core Lidwa books it's in h.text_id directly
+          const mjnaIdTx = h.translations && h.translations.id && h.translations.id.length > 0
+            ? h.translations.id[0].text : null;
+          const textId = mjnaIdTx || h.text_id || '';
+          const textEn = (h.translations && h.translations.en && h.translations.en[0] && h.translations.en[0].text)
+            || h.text_en || '';
           return {
           hadith_number: h.hadith_number,
           text_ar: h.text_ar || '',
-          text_en: h.text_en || '',
-          text_id: h.text_id || '',
+          text_en: textEn,
+          text_id: textId,
           text_ur: h.text_ur || '',
           text_fr: h.text_fr || '',
           grade: h.grade || '',
           grade_by: h.grade_by || '',
           book_id: bookId,
-          _source: 'lidwa',
+          _source: isMjnaBook ? 'mjna' : 'lidwa',
           _lidwaRef: h.usc_msa_ref || ''
         };
         });
@@ -1660,9 +1878,9 @@ async function loadHadithList() {
         const countEl2 = document.querySelector('[data-list-count-meta-en]');
         const countIdEl2 = document.querySelector('[data-list-count-meta-id]');
         const countFallback2 = document.querySelector('[data-list-count-meta]');
-        if (countEl2) countEl2.innerText = `Lidwa Hadith ${rangeStr} • ${total} Hadiths in ${bookName} Kitab ${chapterId}`;
-        if (countIdEl2) countIdEl2.innerText = `Lidwa Hadits ${rangeStr} • ${total} Hadits dalam ${bookName} Kitab ${chapterId}`;
-        if (countFallback2 && !countEl2) countFallback2.innerText = `${total} Hadits — Lidwa Kitab ${chapterId}`;
+        if (countEl2) countEl2.innerText = `${nativeSourceLabel} Hadith ${rangeStr} • ${total} Hadiths in ${bookName} Kitab ${chapterId}`;
+        if (countIdEl2) countIdEl2.innerText = `${nativeSourceLabel} Hadits ${rangeStr} • ${total} Hadits dalam ${bookName} Kitab ${chapterId}`;
+        if (countFallback2 && !countEl2) countFallback2.innerText = `${total} Hadits — ${nativeSourceLabel} Kitab ${chapterId}`;
       }
     } catch(e) {
       console.warn('Lidwa hadith load error:', e);
@@ -1690,19 +1908,36 @@ async function loadHadithList() {
             return window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
           })();
       
-      const abBookMap = { ahmad: 'ahmed' };
+      const abBookMap = { 
+      ahmad: 'the_9_books/ahmed',
+      bukhari: 'the_9_books/bukhari',
+      muslim: 'the_9_books/muslim',
+      abudawud: 'the_9_books/abudawud',
+      tirmidhi: 'the_9_books/tirmidhi',
+      nasai: 'the_9_books/nasai',
+      ibnmajah: 'the_9_books/ibnmajah',
+      malik: 'the_9_books/malik',
+      darimi: 'the_9_books/darimi',
+      nawawi: 'forties/nawawi40',
+      qudsi: 'forties/qudsi40',
+      dehlawi: 'forties/shahwaliullah40',
+      riyad: 'other_books/riyad_assalihin',
+      shamail: 'other_books/shamail_muhammadiyah',
+      bulugh: 'other_books/bulugh_almaram',
+      adab: 'other_books/aladab_almufrad',
+      mishkat: 'other_books/mishkat_almasabih'
+    };
       const abBook = abBookMap[bookId] || bookId;
 
-      const [lidwaResp, linkResp, abResp] = await Promise.all([
-          fetch(`${baseUrl}/sources/lidwa/${bookId}.json`).catch(() => null),
+      const [lidwaData, linkResp, abResp] = await Promise.all([
+          window.HadeethAPI.fetchNdjsonFull('sources/lidwa', bookId).catch(() => null),
           fetch(`${baseUrl}/links/${bookId}.json`).catch(() => null),
-          fetch(`${baseUrl}/sources/ahmedbaset/by_book/the_9_books/${abBook}.json`).catch(() => null)
+          fetch(`${baseUrl}/sources/ahmedbaset/by_book/${abBook}.json`).catch(() => null)
       ]);
 
       if (linkResp && linkResp.ok) linkGraph = await linkResp.json();
 
-      if (lidwaResp && lidwaResp.ok) {
-        const lidwaData = await lidwaResp.json();
+      if (lidwaData) {
         // Build map: hadith_number  text_id
         (Array.isArray(lidwaData) ? lidwaData : (lidwaData.hadiths || [])).forEach(h => {
           const num = h.hadith_number ?? h.hadithnumber ?? h.id;
@@ -1747,8 +1982,8 @@ async function loadHadithList() {
         }
 
         let targetAbId = null;
-        if (linkGraph && linkGraph.fawaz_to_ab && linkGraph.fawaz_to_ab[num]) {
-            targetAbId = linkGraph.fawaz_to_ab[num];
+        if (linkGraph && ((linkGraph.fawaz_to_ab && linkGraph.fawaz_to_ab[num]) || (linkGraph[num] && linkGraph[num].ahmedbaset_id))) {
+            targetAbId = linkGraph.fawaz_to_ab ? linkGraph.fawaz_to_ab[num] : (linkGraph[num] ? linkGraph[num].ahmedbaset_id : null);
         }
 
         let idText = lidwaIdMap[targetLidwaId] || '';
@@ -1820,6 +2055,7 @@ async function loadHadithList() {
     let html = '';
     pageItems.forEach((item, idx) => {
       const num = item.hadith_number || (startIdx + idx + 1);
+      const displayNum = (localStorage.getItem('numbering_system') === 'lidwa' && item.lidwa_id) ? item.lidwa_id : num;
       const enText = item.text_en || '';
       const arText = item.text_ar || '';
       const hasId = !!item.text_id;
@@ -1841,14 +2077,14 @@ async function loadHadithList() {
 
       // Primary/fawazahmed: subtle blue attribution (ID exists but comes from Lidwa)
       const primaryIdSourceNote = `<div class="mt-2 px-3 py-2 rounded-lg border border-blue-500/20 bg-blue-500/5 text-[11px] text-blue-600 dark:text-blue-400 leading-snug">
-        <strong class="font-semibold">Info Sumber:</strong> Teks terjemahan Indonesia ini diintegrasikan dari <strong>Lidwa / Irsyad</strong> (dicocokkan berdasarkan nomor hadits).
+        <strong class="font-semibold">Info Sumber:</strong> Teks terjemahan Indonesia ini diintegrasikan dari <strong>Lidwa / Irsyad</strong> (dicocokkan berdasarkan tabel relasi/mapping metadata).
       </div>`;
 
       // AhmedBaset: amber warning (may not align to AhmedBaset narration variant)
       const abIdSourceNote = hasId
         ? `<div class="mt-2 px-3 py-2 rounded-lg border border-amber-500/30 bg-amber-500/5 text-[11px] text-amber-600 dark:text-amber-400 leading-snug">
         <strong class="font-semibold">Note — Indonesian translation source:</strong> AhmedBaset does not include Indonesian translations.
-        The text below is sourced from <strong>Lidwa / Irsyad</strong>, matched by using Arabic Hadith text matching algoritm.
+        The text below is sourced from <strong>Lidwa / Irsyad</strong>, matched using the relational metadata map.
       </div>`
         : `<div class="mt-2 px-3 py-2 rounded-lg border border-amber-500/30 bg-amber-500/5 text-[11px] text-amber-600 dark:text-amber-400 leading-snug">
         <strong class="font-semibold">Note:</strong> AhmedBaset has no Indonesian translation, and no Lidwa match was found for this hadith number.
@@ -1905,8 +2141,16 @@ async function loadHadithList() {
             </button>
           </div>
 
-          ${arText ? `<p class="font-arabic-body text-2xl text-primary dark:text-white text-right leading-loose" dir="rtl">${escapeHtml(arText)}</p>` : ''}
-          ${displayText}
+          <div class="hadith-text-container relative">
+            <div class="hadith-text-inner transition-all duration-300 overflow-hidden" style="max-height: 380px;">
+              ${arText ? `<p class="font-arabic-body text-2xl text-primary dark:text-white text-right leading-loose" dir="rtl">${escapeHtml(arText)}</p>` : ''}
+              ${displayText}
+            </div>
+            <div class="read-more-overlay absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-surface dark:from-[#1e293b] to-transparent pointer-events-none hidden"></div>
+            <button class="read-more-btn hidden text-secondary dark:text-[#10b981] font-semibold text-xs mt-2 hover:underline flex items-center gap-1 cursor-pointer">
+              <span data-lang-en>Read more</span><span data-lang-id>Selengkapnya</span> <span class="material-symbols-outlined text-[14px]">expand_more</span>
+            </button>
+          </div>
 
           <div class="flex justify-between items-center pt-3 border-t border-outline-variant/10 dark:border-[#334155] text-xs">
             <a href="${isnadLink}" class="text-secondary dark:text-[#10b981] font-semibold hover:underline flex items-center gap-1">
@@ -1924,16 +2168,26 @@ async function loadHadithList() {
     });
 
     let transparencyFooter = '';
-    const validBooksWithNote = ['bukhari', 'muslim'];
+    const validBooksWithNote = ['bukhari', 'muslim', 'syafii', 'ibnukhuzaimah', 'ibnuhibban', 'mustadrak', 'daruquthni'];
     
     if (validBooksWithNote.includes(bookId)) {
       const bookNames = {
         'bukhari': 'Sahih al-Bukhari (7,589 hadiths)',
-        'muslim': 'Sahih Muslim (7,563 hadiths)'
+        'muslim': 'Sahih Muslim (7,563 hadiths)',
+        'syafii': 'Musnad Syafi\'i (1,800 hadiths)',
+        'ibnukhuzaimah': 'Shahih Ibnu Khuzaimah (1808)',
+        'ibnuhibban': 'Shahih Ibnu Hibban (2769)',
+        'mustadrak': 'Mustadrak Al-Hakim (673)',
+        'daruquthni': 'Sunan Daruquthni (4790)'
       };
       const bookNamesId = {
         'bukhari': 'Shahih Bukhari (7.589 hadits)',
-        'muslim': 'Shahih Muslim (7.563 hadits)'
+        'muslim': 'Shahih Muslim (7.563 hadits)',
+        'syafii': 'Musnad Syafi\'i (1.800 hadits)',
+        'ibnukhuzaimah': 'Shahih Ibnu Khuzaimah (1808)',
+        'ibnuhibban': 'Shahih Ibnu Hibban (2769)',
+        'mustadrak': 'Mustadrak Al-Hakim (673)',
+        'daruquthni': 'Sunan Daruquthni (4790)'
       };
       
       transparencyFooter = `
@@ -1954,6 +2208,7 @@ async function loadHadithList() {
 
     container.innerHTML = html;
     LangSystem.apply(LangSystem.get());
+    if (window.setupReadMore) window.setupReadMore();
 
     // Update Pagination UI
     const isId = (window.LangSystem && window.LangSystem.isIdMode());
@@ -2106,8 +2361,7 @@ async function loadChaptersList() {
       authenticity: '⭐️ 100% Sahih',
       datasetInfo: {
         primary:           { kitab: '📚 97 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
-        native_ahmedbaset: { kitab: '📚 97 Kitab', hadith: '📖 7.277 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–7277)' },
-        native_lidwa:      { kitab: '📚 98 Kitab', hadith: '📖 7.008 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–7008)' }
+        native_lidwa:      { kitab: '📚 77 Kitab', hadith: '📖 7.008 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–7008)' }
       }
     },
     muslim: {
@@ -2124,7 +2378,6 @@ async function loadChaptersList() {
       authenticity: '⭐️ 100% Sahih',
       datasetInfo: {
         primary:           { kitab: '📚 57 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
-        native_ahmedbaset: { kitab: '📚 56 Kitab', hadith: '📖 7.459 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–7459)' },
         native_lidwa:      { kitab: '📚 —', hadith: '📖 5.362 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa (1–5362) · tidak ada pembagian kitab dari sumber Lidwa' }
       }
     },
@@ -2142,7 +2395,6 @@ async function loadChaptersList() {
       authenticity: "⭐️ Jami' Tergrading",
       datasetInfo: {
         primary:           { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–3956)' },
-        native_ahmedbaset: { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–3956)' },
         native_lidwa:      { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–3956)' }
       }
     },
@@ -2160,7 +2412,6 @@ async function loadChaptersList() {
       authenticity: '⭐️ Korpus Sunan',
       datasetInfo: {
         primary:           { kitab: '📚 43 Kitab', hadith: '📖 5.274 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–5274)' },
-        native_ahmedbaset: { kitab: '📚 43 Kitab', hadith: '📖 5.274 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–5274)' },
         native_lidwa:      { kitab: '📚 43 Kitab', hadith: '📖 5.274 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5274)' }
       }
     },
@@ -2178,7 +2429,6 @@ async function loadChaptersList() {
       authenticity: '⭐️ Otentisitas Tinggi',
       datasetInfo: {
         primary:           { kitab: '📚 52 Kitab', hadith: '📖 5.758 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–5758)' },
-        native_ahmedbaset: { kitab: '📚 51 Kitab', hadith: '📖 5.758 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–5758)' },
         native_lidwa:      { kitab: '📚 51 Kitab', hadith: '📖 5.662 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5662)' }
       }
     },
@@ -2196,7 +2446,6 @@ async function loadChaptersList() {
       authenticity: '⭐️ Korpus Sunan',
       datasetInfo: {
         primary:           { kitab: '📚 37 Kitab', hadith: '📖 4.341 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–4341)' },
-        native_ahmedbaset: { kitab: '📚 37 Kitab', hadith: '📖 4.341 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–4341)' },
         native_lidwa:      { kitab: '📚 37 Kitab', hadith: '📖 4.341 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–4341)' }
       }
     },
@@ -2214,7 +2463,6 @@ async function loadChaptersList() {
       authenticity: '⭐️ Imam Hijaz',
       datasetInfo: {
         primary:           { kitab: '📚 56 Kitab', hadith: '📖 1.858 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–1858)' },
-        native_ahmedbaset: { kitab: '📚 61 Kitab', hadith: '📖 1.858 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–1858) · 61 kitab (5 lebih banyak dari DB primer)' },
         native_lidwa:      { kitab: '📚 56 Kitab', hadith: '📖 1.594 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–1594) · beberapa hadits dikelompokkan' }
       }
     },
@@ -2232,7 +2480,6 @@ async function loadChaptersList() {
       authenticity: '⭐️ Korpus Ensiklopedis',
       datasetInfo: {
         primary:           { kitab: '📚 7 Bagian Musnad', hadith: '📖 27.647 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–27647)' },
-        native_ahmedbaset: { kitab: '📚 8 Bagian Musnad', hadith: '📖 27.647 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–27647) · 8 bagian musnad' },
         native_lidwa:      { kitab: '📚 Susunan Musnad', hadith: '📖 26.363 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–26363) · susunan musnad' }
       }
     },
@@ -2250,7 +2497,6 @@ async function loadChaptersList() {
       authenticity: '⭐️ Korpus Sunan',
       datasetInfo: {
         primary:           { kitab: '📚 24 Kitab', hadith: '📖 3.367 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–3367)' },
-        native_ahmedbaset: { kitab: '📚 24 Kitab', hadith: '📖 3.367 Hadits (AhmedBaset)', numbering: 'Penomoran: AhmedBaset idInBook (1–3367)' },
         native_lidwa:      { kitab: '📚 24 Kitab', hadith: '📖 3.367 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–3367)' }
       }
     },
@@ -2355,7 +2601,7 @@ async function loadChaptersList() {
   // Validate dataset availability for this book
   const dsConfig = BOOK_DATASETS[bookId] || [];
   const validDs = dsConfig.find(d => d.id === activeDataset);
-  const resolvedDataset = validDs ? activeDataset : 'primary';
+  const resolvedDataset = validDs ? activeDataset : (dsConfig.length > 0 ? dsConfig[0].id : 'fawazahmed');
 
   // Apply dataset-specific counts to info card
   const dsInfo = (meta.datasetInfo || {})[resolvedDataset] || (meta.datasetInfo || {}).fawazahmed || {};
@@ -2483,17 +2729,36 @@ async function loadChaptersList() {
     });
     container.innerHTML = html;
     LangSystem.apply(LangSystem.get());
+    if (window.setupReadMore) window.setupReadMore();
 
   // ================================================================
   // BRANCH B — AhmedBaset (native Arabic + EN, no ID)
   // Reads from data/sources/ahmedbaset/by_book/the_9_books/<book>.json
   // ================================================================
   } else if (resolvedDataset === 'native_ahmedbaset') {
-    const abBookMap = { ahmad: 'ahmed' };
+    const abBookMap = { 
+      ahmad: 'the_9_books/ahmed',
+      bukhari: 'the_9_books/bukhari',
+      muslim: 'the_9_books/muslim',
+      abudawud: 'the_9_books/abudawud',
+      tirmidhi: 'the_9_books/tirmidhi',
+      nasai: 'the_9_books/nasai',
+      ibnmajah: 'the_9_books/ibnmajah',
+      malik: 'the_9_books/malik',
+      darimi: 'the_9_books/darimi',
+      nawawi: 'forties/nawawi40',
+      qudsi: 'forties/qudsi40',
+      dehlawi: 'forties/shahwaliullah40',
+      riyad: 'other_books/riyad_assalihin',
+      shamail: 'other_books/shamail_muhammadiyah',
+      bulugh: 'other_books/bulugh_almaram',
+      adab: 'other_books/aladab_almufrad',
+      mishkat: 'other_books/mishkat_almasabih'
+    };
     const abBook = abBookMap[bookId] || bookId;
     let abData = null;
     try {
-      const resp = await fetch(`data/sources/ahmedbaset/by_book/the_9_books/${abBook}.json`);
+      const resp = await fetch(`data/sources/ahmedbaset/by_book/${abBook}.json`);
       if (resp.ok) abData = await resp.json();
     } catch(e) { console.warn('AhmedBaset fetch error:', e); }
 
@@ -2535,20 +2800,20 @@ async function loadChaptersList() {
     LangSystem.apply(LangSystem.get());
 
   // ================================================================
-  // BRANCH C — Lidwa / Irsyad (native ID + AR, EN from AhmedBaset where matched)
+  // BRANCH C — Native source loading (Lidwa for 9 books, MJNA.or.id for additional books)
   // Reads from data/lidwa-chapters/<book>.json (pre-built index)
   // ================================================================
-  } else if (resolvedDataset === 'native_lidwa') {
+  } else if (resolvedDataset === 'native_lidwa' || resolvedDataset === 'native_mjna' || resolvedDataset === 'native_irsyad') {
     let lidwaIndex = null;
     try {
       const resp = await fetch(`data/lidwa-chapters/${bookId}.json`);
       if (resp.ok) lidwaIndex = await resp.json();
-    } catch(e) { console.warn('Lidwa chapter index fetch error:', e); }
+    } catch(e) { console.warn('Chapter index fetch error:', e); }
 
     if (!lidwaIndex || !lidwaIndex.chapters || lidwaIndex.chapters.length === 0) {
       container.innerHTML = `<div class="col-span-2 py-12 text-center text-outline dark:text-gray-400">
         <span class="material-symbols-outlined text-4xl block mb-2">info</span>
-        <p>Lidwa chapter data not available for <strong>${bookId}</strong>.</p>
+        <p>Chapter data not available for <strong>${bookId}</strong>.</p>
       </div>`;
     } else {
       const enSource = lidwaIndex.title_en_source || 'AhmedBaset';
@@ -2571,7 +2836,7 @@ async function loadChaptersList() {
             <div class="flex gap-4 items-center">
               <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center flex-shrink-0">${chNum === 0 || chNum === '0' ? 'M' : chNum}</div>
               <div class="flex flex-col gap-0.5">
-                <span class="text-xs text-outline dark:text-gray-400 font-semibold">Lidwa ${hadithRange}${hadithCount ? ` &bull; ${hadithCount} hadits` : ''}</span>
+                <span class="text-xs text-outline dark:text-gray-400 font-semibold">${idSource} ${hadithRange}${hadithCount ? ` &bull; ${hadithCount} hadits` : ''}</span>
                 <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]" data-lang-en>${escapeHtml(titleEn)}</h3>
                 <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]" data-lang-id style="display:none">${escapeHtml(titleId)}</h3>
                 ${titleAr ? `<span class="text-xs text-on-surface-variant dark:text-gray-400 font-arabic-body" dir="rtl">${escapeHtml(titleAr)}</span>` : ''}
@@ -2694,7 +2959,7 @@ async function loadHadithCardsList() {
 
   const langSelectVal = document.getElementById('default-lang-select')?.value || (isIdLang ? 'id' : 'en');
 
-  // Fetch English + Arabic from fawazahmed0 CDN; Indonesian from Lidwa source directly
+  // Fetch English + Arabic from fawazahmed0 CDN; Indonesian from source data (Lidwa / IrsyadulIbad / MJNA.or.id)
   const baseUrl = window.__HADEETH_BASE__
     ? window.__HADEETH_BASE__ + '/data'
     : (() => {
@@ -2714,12 +2979,11 @@ async function loadHadithCardsList() {
     linkGraph = await linkResp.json();
   }
 
-  // Load Indonesian live from Lidwa/Irsyad source data
+  // Load Indonesian from native source data (Lidwa / IrsyadulIbad / MJNA.or.id / etc.)
   let indMap = {};
   try {
-    const lResp = await fetch(`${baseUrl}/sources/lidwa/${bookId}.json`);
-    if (lResp.ok) {
-      const lData = await lResp.json();
+    const lData = await window.HadeethAPI.fetchNdjsonFull('sources/lidwa', bookId).catch(() => null);
+    if (lData) {
       const lidwaById = {};
       (Array.isArray(lData) ? lData : (lData.hadiths || [])).forEach(h => {
         const num = h.hadith_number ?? h.hadithnumber ?? h.id;
@@ -2814,7 +3078,7 @@ async function loadHadithCardsList() {
       <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4 shadow-sm hadith-accent border-l-primary dark:border-l-[#10b981]">
         <div class="flex justify-between items-center border-b border-outline-variant/10 dark:border-[#334155] pb-3">
           <div class="flex items-center gap-2">
-            <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded">${isIdLang ? `Hadits #${num}` : `Hadith #${num}`}</span>
+            <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded">${isIdLang ? `Hadits #${displayNum}` : `Hadith #${displayNum}`}</span>
             <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2 py-0.5 rounded">${isIdLang ? 'Shahih' : 'Sahih'}</span>
           </div>
           <button type="button" data-copy-share-btn data-book="${bookId}" data-id="${num}" data-hadith-title="${escapeHtml(bookName)} #${num}" class="border border-outline-variant/30 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] text-xs font-semibold text-primary dark:text-white px-3 py-1 rounded-lg transition-colors flex items-center gap-1.5 cursor-pointer">
@@ -2822,8 +3086,16 @@ async function loadHadithCardsList() {
             <span>${isIdLang ? 'Salin / Bagikan' : 'Copy / Share'}</span>
           </button>
         </div>
-        ${araText ? `<p class="font-arabic-body text-xl text-primary dark:text-white text-right leading-loose" dir="rtl">${escapeHtml(araText)}</p>` : ''}
-        ${transHtml}
+        <div class="hadith-text-container relative">
+          <div class="hadith-text-inner transition-all duration-300 overflow-hidden" style="max-height: 380px;">
+            ${araText ? `<p class="font-arabic-body text-xl text-primary dark:text-white text-right leading-loose" dir="rtl">${escapeHtml(araText)}</p>` : ''}
+            ${transHtml}
+          </div>
+          <div class="read-more-overlay absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-surface dark:from-[#1e293b] to-transparent pointer-events-none hidden"></div>
+          <button class="read-more-btn hidden text-secondary dark:text-[#10b981] font-semibold text-xs mt-2 hover:underline flex items-center gap-1 cursor-pointer">
+            <span data-lang-en>Read more</span><span data-lang-id>Selengkapnya</span> <span class="material-symbols-outlined text-[14px]">expand_more</span>
+          </button>
+        </div>
         <div class="flex justify-between items-center pt-3 border-t border-outline-variant/10 dark:border-[#334155]">
           <a href="hadith.html?book=${bookId}&id=${num}" class="text-xs font-bold text-primary dark:text-[#10b981] hover:underline flex items-center gap-1">
             ${isIdLang ? 'Hadits Selengkapnya & Pensyarahan &rarr;' : 'Full Hadith & Commentary &rarr;'}
@@ -2838,6 +3110,7 @@ async function loadHadithCardsList() {
 
   container.innerHTML = html;
   LangSystem.apply(LangSystem.get());
+  if (window.setupReadMore) window.setupReadMore();
 
   const langSelect = document.getElementById('default-lang-select');
   if (langSelect && !langSelect._langSelectBound) {
@@ -2935,6 +3208,40 @@ async function loadSanadChain() {
   try {
     const rawisDict = await window.HadeethAPI.getActiveRawis();
     data = await window.HadeethAPI.getHadith(bookId, hadithNum, dsPrefix);
+
+    if (data) {
+      let gradeEn = data.grade_en || data.grade || '';
+      let gradeId = data.grade_id || '';
+      let elevation = data.elevation || '';
+
+      if ((!gradeEn && !gradeId) || !elevation) {
+        if (data.related && data.related.length > 0) {
+          for (const relStr of data.related) {
+            const parts = relStr.split(':');
+            if (parts.length === 2) {
+              try {
+                const relData = await window.HadeethAPI.getHadith(parts[0], parts[1], dsPrefix);
+                if (relData) {
+                  if ((!gradeEn && !gradeId) && (relData.grade_en || relData.grade_id || relData.grade)) {
+                    data.grade_en = relData.grade_en || relData.grade || '';
+                    data.grade_id = relData.grade_id || '';
+                    data._hasGradeFallback = true;
+                  }
+                  if (!elevation && relData.elevation) {
+                    data.elevation = relData.elevation;
+                    data._hasElevationFallback = true;
+                  }
+                }
+              } catch(e) {}
+              gradeEn = data.grade_en || data.grade || '';
+              gradeId = data.grade_id || '';
+              elevation = data.elevation || '';
+              if ((gradeEn || gradeId) && elevation) break;
+            }
+          }
+        }
+      }
+    }
     
     // Final Node: Collector & Author metadata
     const authorNamesEn = {
@@ -3030,7 +3337,10 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
   
   narrators = filteredRawiList.map((rawItem, idx) => {
     const isObj = typeof rawItem === 'object' && rawItem !== null;
-    const rId = isObj ? rawItem.id : rawItem;
+    let rId = isObj ? rawItem.id : rawItem;
+    if (typeof rId === 'number' || (typeof rId === 'string' && /^\d+$/.test(rId))) {
+        rId = 'lidwa_' + rId;
+    }
     
     const rawiData = rawisDict[rId] || {};
     const isFirst = idx === 0 || (rawiData.grade && rawiData.grade.toLowerCase().includes('sahab'));
@@ -3203,14 +3513,34 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
   const statusEl = document.getElementById('sanad-status-text');
   const elevatedEl = document.getElementById('sanad-elevated-text');
   
-  if (statusEl) statusEl.innerHTML = `<span data-lang-en>Connected (Muttasil)</span><span data-lang-id style="display:none">Bersambung (Muttashil)</span>`;
-  if (elevatedEl) {
-    if (data) {
-      const gradeEn = data.grade_en || data.grade || 'Sahih';
-      const gradeId = data.grade_id || 'Shahih';
-      elevatedEl.innerHTML = `<span data-lang-en>${escapeHtml(gradeEn)}</span><span data-lang-id style="display:none">${escapeHtml(gradeId)}</span>`;
+  if (statusEl) {
+    if (data && data.status) {
+        statusEl.innerHTML = `<span data-lang-en>${escapeHtml(data.status)}</span><span data-lang-id style="display:none">${escapeHtml(data.status)}</span>`;
     } else {
-      elevatedEl.innerHTML = `<span data-lang-en>Sahih</span><span data-lang-id style="display:none">Shahih</span>`;
+        statusEl.innerHTML = `<span data-lang-en>N/A (Not in dataset)</span><span data-lang-id style="display:none">N/A (Tidak tercatat)</span>`;
+    }
+}
+  
+  if (data) {
+    let gradeEn = data.grade_en || data.grade || 'Sahih';
+    let gradeId = data.grade_id || 'Shahih';
+    let elevation = data.elevation || '-';
+
+    const gradeEl = document.getElementById('sanad-grade-text');
+
+    if (elevatedEl) {
+      let extEn = data._hasElevationFallback ? ' <em class="text-[10px] font-normal opacity-75">(from linked hadith)</em>' : '';
+      let extId = data._hasElevationFallback ? ' <em class="text-[10px] font-normal opacity-75">(dari hadits terkait)</em>' : '';
+      elevatedEl.innerHTML = `<span data-lang-en>${escapeHtml(elevation)}${extEn}</span><span data-lang-id style="display:none">${escapeHtml(elevation)}${extId}</span>`;
+    }
+
+    if (gradeEl) {
+      let extEn = data._hasGradeFallback ? ' <em class="text-[10px] font-normal opacity-75">(from linked hadith)</em>' : '';
+      let extId = data._hasGradeFallback ? ' <em class="text-[10px] font-normal opacity-75">(dari hadits terkait)</em>' : '';
+      const enText = gradeEn || gradeId;
+      const idText = gradeId || gradeEn;
+      
+      gradeEl.innerHTML = `<span data-lang-en>${escapeHtml(enText)}${extEn}</span><span data-lang-id style="display:none">${escapeHtml(idText)}${extId}</span>`;
     }
   }
   
@@ -3377,10 +3707,29 @@ function renderSyarahUI() {
     tabsContainer.innerHTML = tabsHtml;
   }
 
-  if (langSelect && langSelect.value !== lang) langSelect.value = lang;
+  let textExp = '';
+  let benefits = [];
+  let availableLang = lang;
 
-  let textExp = data[`explanation_${lang}`] || data[`explanation_en`] || '';
-  let benefits = data[`benefits_${lang}`] || data[`benefits_en`] || [];
+  if (data[`explanation_${lang}`] || data[`syarah_${lang}`]) {
+    textExp = data[`explanation_${lang}`] || data[`syarah_${lang}`];
+    benefits = data[`benefits_${lang}`] || [];
+  } else if (lang === 'id' && (data['explanation_en'] || data['syarah_en'])) {
+    textExp = data['explanation_en'] || data['syarah_en'];
+    benefits = data['benefits_en'] || [];
+    availableLang = 'en';
+  } else if (data['syarah_ar']) {
+    textExp = data['syarah_ar'];
+    availableLang = 'ar';
+  } else if (data['explanation_en'] || data['syarah_en']) {
+    textExp = data['explanation_en'] || data['syarah_en'];
+    benefits = data['benefits_en'] || [];
+    availableLang = 'en';
+  }
+
+  if (langSelect && langSelect.value !== availableLang) {
+    langSelect.value = availableLang;
+  }
 
   if (!textExp) {
     textExp = lang === 'id' ? '<span class="text-outline dark:text-gray-400 italic">Syarah (Penjelasan Hadits) belum tersedia untuk hadits ini dalam bahasa ini.</span>' : '<span class="text-outline dark:text-gray-400 italic">Syarah (Commentary) is not yet available for this Hadith in this language.</span>';
@@ -3472,4 +3821,261 @@ async function loadProfileDetail() {
   if (nameEnEl && rawiData) nameEnEl.innerText = rawiData.en || rawiData.name_en || 'Transmitter';
   if (nameIdEl && rawiData) nameIdEl.innerText = rawiData.id || rawiData.name_ar || rawiData.name_en || 'Perawi';
   if (gradeEl && rawiData) gradeEl.innerText = rawiData.grade || 'Unknown';
+}
+
+
+async function loadTopicHadiths() {
+  const container = document.getElementById('topic-hadith-cards-container');
+  if (!container) return;
+
+  const params = new URLSearchParams(window.location.search);
+  const bookId = params.get('book') || 'bukhari';
+  const topicId = params.get('topic') || '1';
+
+  const bookNames = {
+    bukhari: 'Sahih al-Bukhari',
+    nawawi: 'Forty Nawawi',
+    muslim: 'Sahih Muslim',
+    abudawud: 'Sunan Abu Dawood',
+    tirmidhi: "Jami' al-Tirmidhi",
+    nasai: "Sunan an-Nasa'i",
+    ibnmajah: 'Sunan Ibn Majah',
+    malik: 'Muwatta Malik',
+    ahmad: 'Musnad Ahmad',
+    darimi: 'Sunan ad-Darimi'
+  };
+  const bookName = bookNames[bookId.toLowerCase()] || bookId.toUpperCase();
+
+  const pageSizeSelect = document.getElementById('page-size-select');
+  const prevBtn = document.getElementById('prev-page-btn');
+  const nextBtn = document.getElementById('next-page-btn');
+  const pageIndicator = document.getElementById('page-indicator');
+  const langSelect = document.getElementById('default-lang-select');
+  
+  if (langSelect && !langSelect.hasAttribute('data-synced-initially')) {
+    langSelect.value = LangSystem.get() === 'id' ? 'id' : 'en';
+    langSelect.setAttribute('data-synced-initially', 'true');
+  }
+
+  // Load Topic Metadata
+  let topicNameEn = '';
+  let topicNameId = '';
+  try {
+      const topicRes = await fetch('data/api/topics_metadata.ndjson');
+      const topicText = await topicRes.text();
+      const topics = topicText.trim().split('\n').filter(l => l.trim()).map(line => JSON.parse(line));
+      const topic = topics.find(t => t.id == topicId);
+      if (topic) {
+          topicNameEn = topic.name_en;
+          topicNameId = topic.name_id;
+      }
+  } catch (e) {}
+
+  document.querySelector('[data-list-breadcrumb-book]').innerText = bookName;
+  document.querySelector('[data-list-breadcrumb-book]').href = `topics-in-kitab.html?topic=${topicId}`;
+  
+  const bcEn = document.querySelector('[data-list-breadcrumb-current-en]');
+  const bcId = document.querySelector('[data-list-breadcrumb-current-id]');
+  if (bcEn) bcEn.innerText = topicNameEn;
+  if (bcId) bcId.innerText = topicNameId;
+
+  document.querySelector('[data-list-book-badge]').innerText = bookName;
+  const chMetaEn = document.querySelector('[data-list-chapter-meta-en]');
+  const chMetaId = document.querySelector('[data-list-chapter-meta-id]');
+  if (chMetaEn) chMetaEn.innerText = `Topic: ${topicNameEn}`;
+  if (chMetaId) chMetaId.innerText = `Topik: ${topicNameId}`;
+
+  const countMetaEn = document.querySelector('[data-list-count-meta-en]');
+  const countMetaId = document.querySelector('[data-list-count-meta-id]');
+  
+  document.querySelector('[data-list-chapter-title-en]').innerText = topicNameEn;
+  document.querySelector('[data-list-chapter-title-id]').innerText = topicNameId;
+  document.querySelector('[data-list-chapter-title-ar]').innerText = '';
+
+  let allHadiths = [];
+  let filteredHadiths = [];
+  let currentPage = 1;
+  let pageSize = parseInt(pageSizeSelect ? pageSizeSelect.value : '10') || 10;
+  let currentLang = langSelect ? langSelect.value : 'id';
+  
+  try {
+      const fullNdjson = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
+      allHadiths = fullNdjson.filter(h => h.tags && h.tags.includes(topicNameEn));
+      filteredHadiths = [...allHadiths];
+  } catch (e) {
+      container.innerHTML = `<div class="p-6 text-red-500">Error loading topic data. Please build NDJSON database first.</div>`;
+      return;
+  }
+
+  if (countMetaEn) countMetaEn.innerText = `${filteredHadiths.length} Hadiths found in ${bookName} for topic ${topicNameEn}`;
+  if (countMetaId) countMetaId.innerText = `${filteredHadiths.length} Hadits ditemukan dalam ${bookName} untuk topik ${topicNameId}`;
+
+  function updateTopicPaginationUI() {
+    const totalPages = Math.ceil(filteredHadiths.length / pageSize) || 1;
+    if (currentPage > totalPages) currentPage = totalPages;
+    const startIdx = (currentPage - 1) * pageSize;
+    const endIdx = Math.min(startIdx + pageSize, filteredHadiths.length);
+    const pageData = filteredHadiths.slice(startIdx, endIdx);
+
+    let html = '';
+    if (pageData.length === 0) {
+      html = `<div class="bg-surface dark:bg-[#1e293b] p-8 text-center rounded-xl border border-outline-variant/30 text-on-surface-variant dark:text-gray-400"><span class="material-symbols-outlined text-4xl mb-3 opacity-50 block">search_off</span>No ahadith found for this topic.</div>`;
+    }
+
+    pageData.forEach(item => {
+      const num = item.id || item.hadith_number;
+      const displayNum = (localStorage.getItem('numbering_system') === 'lidwa' && item.lidwa_id) ? item.lidwa_id : num;
+      
+      let arText = item.text_ar || '';
+      if (!arText && item.translations && item.translations.ar && item.translations.ar.length > 0) {
+          arText = item.translations.ar[0].text;
+      }
+      
+      let enText = item.text_en;
+      if (!enText && item.translations && item.translations.en && item.translations.en.length > 0) {
+          enText = item.translations.en[0].text;
+      }
+      
+      let idText = item.text_id;
+      if (!idText && item.translations && item.translations.id && item.translations.id.length > 0) {
+          idText = item.translations.id[0].text;
+      }
+
+      let gradeEn = item.grade || item.grade_en || '';
+      if (!gradeEn && item.gradings && item.gradings.length > 0) {
+          gradeEn = item.gradings[0].grade;
+      }
+      const gradeId = item.grade_id || gradeEn;
+
+      const detailLink = `hadith.html?book=${bookId}&id=${num}`;
+      
+      let displayText = `
+          <div class="flex flex-col gap-3 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
+            <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${idText ? idText : '<span class="text-outline italic">Tidak tersedia terjemahan bahasa Indonesia untuk hadits ini.</span>'}</p>
+            <p class="text-xs text-outline dark:text-gray-400 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${enText ? enText : '<span class="text-outline italic">English translation unavailable.</span>'}</p>
+            <p class="text-[11px] text-blue-500/70 mt-1 italic">Source: unified NDJSON engine</p>
+          </div>
+      `;
+
+      html += `
+        <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4 shadow-sm hover:border-secondary/40 transition-all">
+          <div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-3">
+            <div class="flex items-center gap-2">
+              <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded uppercase">${bookName} #${num}</span>
+              <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2.5 py-0.5 rounded">
+                <span data-lang-en>${gradeEn}</span>
+                <span data-lang-id style="display:none">${gradeId}</span>
+              </span>
+            </div>
+            <button data-copy-hadith data-copy-share-btn data-hadith-title="${bookName} #${num}" data-copy-hadith-ar="${arText}" data-copy-hadith-text-id="${idText}" data-copy-hadith-text-en="${enText}" data-share-url="${window.location.origin + window.location.pathname.replace('topic-hadiths.html', '')}${detailLink}" class="btn-copy-share text-xs font-semibold px-2.5 py-1 rounded border border-outline-variant/40 dark:border-[#334155] text-primary dark:text-white hover:bg-surface-container-low dark:hover:bg-[#334155] transition-all flex items-center gap-1.5 cursor-pointer">
+              <span class="material-symbols-outlined text-[14px]">share</span>
+              <span data-lang-en>Copy / Share</span><span data-lang-id>Salin / Bagikan</span>
+            </button>
+          </div>
+          <div class="hadith-text-container relative">
+            <div class="hadith-text-inner transition-all duration-300 overflow-hidden" style="max-height: 380px;">
+              ${arText ? `<p class="font-arabic-body text-2xl text-primary dark:text-white text-right leading-loose" dir="rtl">${arText}</p>` : ''}
+              ${displayText}
+            </div>
+            <div class="read-more-overlay absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-surface dark:from-[#1e293b] to-transparent pointer-events-none hidden"></div>
+            <button class="read-more-btn hidden text-secondary dark:text-[#10b981] font-semibold text-xs mt-2 hover:underline flex items-center gap-1 cursor-pointer">
+              <span data-lang-en>Read more</span><span data-lang-id>Selengkapnya</span> <span class="material-symbols-outlined text-[14px]">expand_more</span>
+            </button>
+          </div>
+          <div class="flex justify-between items-center pt-3 border-t border-outline-variant/10 dark:border-[#334155] text-xs">
+            <a href="sanad.html?book=${bookId}&id=${num}" class="text-secondary dark:text-[#10b981] font-semibold hover:underline flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">account_tree</span>
+              <span data-lang-en>Inspect Sanad Chain</span><span data-lang-id>Telusuri Sanad</span>
+            </a>
+            <div class="flex items-center gap-2">
+              <a href="${detailLink}" class="text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors">
+                <span data-lang-en>Full Hadith & Commentary &rarr;</span><span data-lang-id>Hadits Selengkapnya & Pensyarahan &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+
+    container.innerHTML = html;
+    if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+    if (window.setupReadMore) window.setupReadMore();
+
+    if (pageIndicator) {
+      const isId = (window.LangSystem && window.LangSystem.isIdMode());
+      pageIndicator.innerText = isId
+        ? `Menampilkan ${startIdx + 1}-${endIdx} dari ${filteredHadiths.length} Hadits (Hal ${currentPage} dari ${totalPages})`
+        : `Showing ${startIdx + 1}-${endIdx} of ${filteredHadiths.length} Ahadith (Page ${currentPage} of ${totalPages})`;
+    }
+    if (prevBtn) prevBtn.disabled = (currentPage <= 1);
+    if (nextBtn) nextBtn.disabled = (currentPage >= totalPages);
+
+    const jumpInput = document.getElementById('jump-page-input');
+    if (jumpInput) {
+      jumpInput.min = 1;
+      jumpInput.max = totalPages;
+      jumpInput.value = currentPage;
+      jumpInput.placeholder = currentPage;
+    }
+  }
+
+  if (pageSizeSelect) {
+    pageSizeSelect.addEventListener('change', (e) => {
+      pageSize = parseInt(e.target.value) || 10;
+      currentPage = 1;
+      updateTopicPaginationUI();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        updateTopicPaginationUI();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const totalPages = Math.ceil(filteredHadiths.length / pageSize) || 1;
+      if (currentPage < totalPages) {
+        currentPage++;
+        updateTopicPaginationUI();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+  }
+
+  document.getElementById('jump-page-btn')?.addEventListener('click', () => {
+    const val = parseInt(document.getElementById('jump-page-input')?.value);
+    const totalPages = Math.ceil(filteredHadiths.length / pageSize) || 1;
+    if (val >= 1 && val <= totalPages) {
+      currentPage = val;
+      updateTopicPaginationUI();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+
+  const searchInput = document.getElementById('topic-search-input');
+  if (searchInput) {
+      searchInput.addEventListener('input', () => {
+          const q = searchInput.value.toLowerCase();
+          if (!q) {
+              filteredHadiths = [...allHadiths];
+          } else {
+              filteredHadiths = allHadiths.filter(h => {
+                  return (h.text_en && h.text_en.toLowerCase().includes(q)) ||
+                         (h.text_id && h.text_id.toLowerCase().includes(q)) ||
+                         (h.text_ar && h.text_ar.includes(q)) ||
+                         (String(h.hadith_number).includes(q));
+              });
+          }
+          currentPage = 1;
+          updateTopicPaginationUI();
+      });
+  }
+
+  updateTopicPaginationUI();
 }

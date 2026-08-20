@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_791",
+  "name_en": "Ibrahim bin Ishaq bin 'Isa",
+  "name_id": "Ibrahim bin Ishaq bin 'Isa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "215 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Banaani Ath Thaliqaniy",
+  "nasab": "Al Banaani Ath Thaliqaniy",
+  "laqob": "-",
+  "hadith_count": "63",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 56,
+    "malik": 0,
+    "darimi": 5
+  }
+}

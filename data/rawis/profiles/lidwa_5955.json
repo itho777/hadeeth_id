@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5955",
+  "name_en": "Umar bin Sa'id bin Abi Husain",
+  "name_id": "Umar bin Sa'id bin Abi Husain",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "An Naufaliy",
+  "nasab": "An Naufaliy",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 16,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 4,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 1
+  }
+}

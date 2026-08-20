@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7403",
+  "name_en": "Marwan bin Salim",
+  "name_id": "Marwan bin Salim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Ghifariy Asy Syamiy",
+  "nasab": "Al Ghifariy Asy Syamiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

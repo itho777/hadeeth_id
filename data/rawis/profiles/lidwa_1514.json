@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1514",
+  "name_en": "Al 'Alaa' bin Al Hadlramiy 'Abdullah ",
+  "name_id": "Al 'Alaa' bin Al Hadlramiy 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "21 H",
+  "city_of_death": "Najran",
+  "residence": "Bahrain ",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7558",
+  "name_en": "Mu'adz bin Fadlolah",
+  "name_id": "Mu'adz bin Fadlolah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bahsrah",
+  "kunyah": "Abu Zaid",
+  "parents": "Az Zuhraniy",
+  "nasab": "Az Zuhraniy",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 27,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

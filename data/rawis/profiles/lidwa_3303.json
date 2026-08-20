@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3303",
+  "name_en": "Sa'id bin An Nadlor",
+  "name_id": "Sa'id bin An Nadlor",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "234 H",
+  "city_of_death": "Amal Jaihun",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Baghdadiy Al Aamaliy",
+  "nasab": "Al Baghdadiy Al Aamaliy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

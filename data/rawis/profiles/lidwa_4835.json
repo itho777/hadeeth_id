@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4835",
+  "name_en": "Abdullah bin Sa'id bin Jubair",
+  "name_id": "Abdullah bin Sa'id bin Jubair",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Walibiy Al Asdiy",
+  "nasab": "Al Walibiy Al Asdiy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

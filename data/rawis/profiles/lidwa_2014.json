@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2014",
+  "name_en": "Tsabit bin Adl Dlahhak n'bin Khalifah",
+  "name_id": "Tsabit bin Adl Dlahhak n'bin Khalifah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "64 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Zaid",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 5,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 9,
+    "malik": 1,
+    "darimi": 2
+  }
+}

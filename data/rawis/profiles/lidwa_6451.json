@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6451",
+  "name_en": "Qabishah bin Jabir bin Wahab",
+  "name_id": "Qabishah bin Jabir bin Wahab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "69 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al 'Alaa'",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

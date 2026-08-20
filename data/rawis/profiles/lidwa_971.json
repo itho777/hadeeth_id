@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_971",
+  "name_en": "Ishaq bin Musa bin 'Abdullah ",
+  "name_id": "Ishaq bin Musa bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "244 H",
+  "city_of_death": "Halwan",
+  "residence": "Madinah",
+  "kunyah": "Abu Musa",
+  "parents": "Al Khathamiy",
+  "nasab": "Al Khathamiy",
+  "laqob": "-",
+  "hadith_count": "114",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 14,
+    "abudaud": 0,
+    "tirmidzi": 94,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

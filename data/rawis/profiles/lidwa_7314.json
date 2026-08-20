@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7314",
+  "name_en": "Muhammad bin Wahab bin 'Umar bin Abi Karimah",
+  "name_id": "Muhammad bin Wahab bin 'Umar bin Abi Karimah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "243 H",
+  "city_of_death": "Kasya",
+  "residence": "Jazirah",
+  "kunyah": "Abu Al Mu'afiy",
+  "parents": "Al Harraniy",
+  "nasab": "Al Harraniy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 13,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

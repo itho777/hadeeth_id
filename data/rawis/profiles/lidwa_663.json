@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_663",
+  "name_en": "Ummu Kalktsum binti 'Uqbah bin Abi Mu'aith",
+  "name_id": "Ummu Kalktsum binti 'Uqbah bin Abi Mu'aith",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Kaltsum",
+  "parents": "Al Umawiyyah",
+  "nasab": "Al Umawiyyah",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7278",
+  "name_en": "Muhammad bin Mutharrif bin Daud",
+  "name_id": "Muhammad bin Mutharrif bin Daud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ghassan",
+  "parents": "At Taymiy Al Laitsiy",
+  "nasab": "At Taymiy Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 27,
+    "muslim": 9,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 2
+  }
+}

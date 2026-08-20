@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8256",
+  "name_en": "Yahya bin Khallad bin Rafi' bin Malik bin Al 'Ajlan",
+  "name_id": "Yahya bin Khallad bin Rafi' bin Malik bin Al 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "71 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy Az Zuraqiy",
+  "nasab": "Al Anshariy Az Zuraqiy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 6,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 1,
+    "darimi": 1
+  }
+}

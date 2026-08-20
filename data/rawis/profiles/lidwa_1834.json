@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1834",
+  "name_en": "Burd bin Sinan",
+  "name_id": "Burd bin Sinan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "135 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al 'Alaa'",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 2,
+    "nasai": 6,
+    "ibnumajah": 3,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 4
+  }
+}

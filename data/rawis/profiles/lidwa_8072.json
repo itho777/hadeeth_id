@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8072",
+  "name_en": "Hilal bin Al 'Alaa' bin Hilal",
+  "name_id": "Hilal bin Al 'Alaa' bin Hilal",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "280 H",
+  "city_of_death": "Raqqah",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Umar",
+  "parents": "Al Bahiliy Ar Raqqiy",
+  "nasab": "Al Bahiliy Ar Raqqiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 20,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

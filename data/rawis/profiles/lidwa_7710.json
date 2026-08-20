@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7710",
+  "name_en": "Musa bin Abi 'Aisyah",
+  "name_id": "Musa bin Abi 'Aisyah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Makhzumiy Al Hamdaniy",
+  "nasab": "Al Makhzumiy Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 4,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 7,
+    "ibnumajah": 3,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 1
+  }
+}

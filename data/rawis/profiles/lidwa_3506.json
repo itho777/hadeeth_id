@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3506",
+  "name_en": "Salamah bin Shakhr bin Salman",
+  "name_id": "Salamah bin Shakhr bin Salman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy Al Bayadliy",
+  "nasab": "Al Anshariy Al Bayadliy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

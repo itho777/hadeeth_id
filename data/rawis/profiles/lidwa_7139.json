@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7139",
+  "name_en": "Muhammad bin 'Abdul Malik bin Abi Asy Syawarib",
+  "name_id": "Muhammad bin 'Abdul Malik bin Abi Asy Syawarib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "244 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Ubaidillah",
+  "parents": "Al Qurasyiy Al Umawiy",
+  "nasab": "Al Qurasyiy Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "61",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 8,
+    "abudaud": 0,
+    "tirmidzi": 19,
+    "nasai": 2,
+    "ibnumajah": 32,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

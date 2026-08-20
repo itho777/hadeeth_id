@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7562",
+  "name_en": "Mu'adz bin Hani'",
+  "name_id": "Mu'adz bin Hani'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "209 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hani'",
+  "parents": "Al_Qaisiy atau Al 'Isiy",
+  "nasab": "Al_Qaisiy atau Al 'Isiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 7
+  }
+}

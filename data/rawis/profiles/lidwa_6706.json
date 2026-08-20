@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6706",
+  "name_en": "Mubarak bin Fadlolah bin Abi Umayyah",
+  "name_id": "Mubarak bin Fadlolah bin Abi Umayyah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "166 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Fadlolah",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "83",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 67,
+    "malik": 0,
+    "darimi": 4
+  }
+}

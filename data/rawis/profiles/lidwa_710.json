@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_710",
+  "name_en": "Umaymah binti Ruqaiqah",
+  "name_id": "Umaymah binti Ruqaiqah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "At Taymiyyah",
+  "nasab": "At Taymiyyah",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 1,
+    "darimi": 0
+  }
+}

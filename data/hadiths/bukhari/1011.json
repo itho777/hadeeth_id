@@ -1,0 +1,32 @@
+{
+  "hadithnumber": 1011,
+  "arabicnumber": 1011,
+  "text": "Telah menceritakan kepada kami [Ishaq] berkata, telah menceritakan kepada kami [Wahb bin Jarir] berkata, telah mengabarkan kepada kami [Syu'bah] dari [Muhammad bin Abu Bakar] dari ['Abbad bin Tamim] dari ['Abdullah bin Zaid], bahwa Nabi shallallahu 'alaihi wasallam pernah berdoa meminta hujan dengan membalik selendangnya",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Ishaq",
+      "name_ar": "Ishaq"
+    },
+    {
+      "name_id": "Wahb bin Jarir",
+      "name_ar": "Wahb bin Jarir"
+    },
+    {
+      "name_id": "Syu'bah",
+      "name_ar": "Syu'bah"
+    },
+    {
+      "name_id": "Muhammad bin Abu Bakar",
+      "name_ar": "Muhammad bin Abu Bakar"
+    },
+    {
+      "name_id": "'Abbad bin Tamim",
+      "name_ar": "'Abbad bin Tamim"
+    },
+    {
+      "name_id": "'Abdullah bin Zaid",
+      "name_ar": "'Abdullah bin Zaid"
+    }
+  ]
+}

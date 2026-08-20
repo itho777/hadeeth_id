@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8274",
+  "name_en": "Yahya bin Sulaim",
+  "name_id": "Yahya bin Sulaim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "193 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Muhammad",
+  "parents": "Ath Tha'ifiy Al Qurasyiy",
+  "nasab": "Ath Tha'ifiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 6,
+    "tirmidzi": 8,
+    "nasai": 2,
+    "ibnumajah": 16,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 3
+  }
+}

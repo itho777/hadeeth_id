@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4432",
+  "name_en": "Abdur Rahman bin 'Abdul Malik bin Syaibah",
+  "name_id": "Abdur Rahman bin 'Abdul Malik bin Syaibah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Hizamiy",
+  "nasab": "Al Hizamiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

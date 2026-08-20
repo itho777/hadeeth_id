@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5625",
+  "name_en": "Atha' bin Abi Rabbah Aslam",
+  "name_id": "Atha' bin Abi Rabbah Aslam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "114 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "1050",
+  "book_counts": {
+    "bukhari": 120,
+    "muslim": 104,
+    "abudaud": 87,
+    "tirmidzi": 47,
+    "nasai": 166,
+    "ibnumajah": 67,
+    "ahmad": 340,
+    "malik": 6,
+    "darimi": 113
+  }
+}

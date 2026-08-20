@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4752",
+  "name_en": "Abdullah bin Tsa'labah bin Shu'air",
+  "name_id": "Abdullah bin Tsa'labah bin Shu'air",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "87 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al 'Udzriy Al Qadlo'iy ",
+  "nasab": "Al 'Udzriy Al Qadlo'iy ",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

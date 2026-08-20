@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7739",
+  "name_en": "Musa bin Salamah bin Al Muhabbaq",
+  "name_id": "Musa bin Salamah bin Al Muhabbaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Hudzaliy",
+  "nasab": "Al Hudzaliy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 0
+  }
+}

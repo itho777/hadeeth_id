@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5060",
+  "name_en": "Abdullah bin Muhammad bin 'Abdullah bin Ja'far bin Al Yaman",
+  "name_id": "Abdullah bin Muhammad bin 'Abdullah bin Ja'far bin Al Yaman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "229 H",
+  "city_of_death": "Bukhara",
+  "residence": "Bukhara",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Ju'fiy",
+  "nasab": "Al Ju'fiy",
+  "laqob": "Al Musnadiy",
+  "hadith_count": "201",
+  "book_counts": {
+    "bukhari": 200,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6464",
+  "name_en": "Qudamah bin 'Abdullah bin 'Abdah",
+  "name_id": "Qudamah bin 'Abdullah bin 'Abdah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Rauh",
+  "parents": "Al Bakriy Al 'Amiriy",
+  "nasab": "Al Bakriy Al 'Amiriy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7701",
+  "name_en": "Mahdiy bin Maimun",
+  "name_id": "Mahdiy bin Maimun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "171 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Azdiy Al Mu'awwaliy",
+  "nasab": "Al Azdiy Al Mu'awwaliy",
+  "laqob": "-",
+  "hadith_count": "87",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 16,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 43,
+    "malik": 0,
+    "darimi": 5
+  }
+}

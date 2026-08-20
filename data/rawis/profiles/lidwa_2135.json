@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2135",
+  "name_en": "Ja'far bin Abi Thalib bin 'Abdul Muthallib bin Hasyim",
+  "name_id": "Ja'far bin Abi Thalib bin 'Abdul Muthallib bin Hasyim",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "8 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Masakin",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Dzu Al Janahain",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6883",
+  "name_en": "Muhammad bin Bakkaar bin Ar Rayyan",
+  "name_id": "Muhammad bin Bakkaar bin Ar Rayyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "238 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Hasyimiy Ar Rishafiy",
+  "nasab": "Al Hasyimiy Ar Rishafiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 6,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 0
+  }
+}

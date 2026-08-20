@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2625",
+  "name_en": "Khalid bin Al Harits",
+  "name_id": "Khalid bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "186 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "418",
+  "book_counts": {
+    "bukhari": 20,
+    "muslim": 77,
+    "abudaud": 18,
+    "tirmidzi": 16,
+    "nasai": 251,
+    "ibnumajah": 23,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 1
+  }
+}

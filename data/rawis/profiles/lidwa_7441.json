@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7441",
+  "name_en": "Mas'ud bin Malik",
+  "name_id": "Mas'ud bin Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "85 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Razin/Abu Ruzain",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "34",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 1
+  }
+}

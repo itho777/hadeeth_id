@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3697",
+  "name_en": "Sawadah bin 'Ashim",
+  "name_id": "Sawadah bin 'Ashim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hajib",
+  "parents": "Al 'Anaziy",
+  "nasab": "Al 'Anaziy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

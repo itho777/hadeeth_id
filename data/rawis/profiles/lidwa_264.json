@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_264",
+  "name_en": "Abu 'Ubaidah bin 'Abdullah bin Zam'ah",
+  "name_id": "Abu 'Ubaidah bin 'Abdullah bin Zam'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu 'Ubaidah",
+  "parents": "Al Asadiy Al Qurasyiy",
+  "nasab": "Al Asadiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

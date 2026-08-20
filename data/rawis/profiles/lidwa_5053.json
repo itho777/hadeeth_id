@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5053",
+  "name_en": "Abdullah bin Muhammad bin Al Hajjaj",
+  "name_id": "Abdullah bin Muhammad bin Al Hajjaj",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "255 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Yahya",
+  "parents": "Ash Shawwaf",
+  "nasab": "Ash Shawwaf",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

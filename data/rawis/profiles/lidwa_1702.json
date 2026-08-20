@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1702",
+  "name_en": "Al Minhal bin 'Amru",
+  "name_id": "Al Minhal bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "57",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 6,
+    "nasai": 5,
+    "ibnumajah": 9,
+    "ahmad": 28,
+    "malik": 0,
+    "darimi": 1
+  }
+}

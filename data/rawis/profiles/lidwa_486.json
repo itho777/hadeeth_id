@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_486",
+  "name_en": "Ahmad bin Muhammad bin Tsabit",
+  "name_id": "Ahmad bin Muhammad bin Tsabit",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "230 H",
+  "city_of_death": "Thabariyah",
+  "residence": "Himsh",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Khaza'iy Al Makhuwaniy",
+  "nasab": "Al Khaza'iy Al Makhuwaniy",
+  "laqob": "Ibnu Syabbuwaih",
+  "hadith_count": "41",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 41,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

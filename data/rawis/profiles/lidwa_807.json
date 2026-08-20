@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_807",
+  "name_en": "Ibrahim bin Al Mustamir",
+  "name_id": "Ibrahim bin Al Mustamir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Hadzali An Naajiy",
+  "nasab": "Al Hadzali An Naajiy",
+  "laqob": "Shahibul Ma'ruf",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

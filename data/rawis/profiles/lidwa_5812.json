@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5812",
+  "name_en": "Ali bin Muhammad bin 'Ali",
+  "name_id": "Ali bin Muhammad bin 'Ali",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Mashishah",
+  "kunyah": "-",
+  "parents": "Al Mashishiy",
+  "nasab": "Al Mashishiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 7,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

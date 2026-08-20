@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2349",
+  "name_en": "Haramiy bin 'Imarah bin Abi Hafshah",
+  "name_id": "Haramiy bin 'Imarah bin Abi Hafshah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "201 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Rauh",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "31",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 5,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 1
+  }
+}

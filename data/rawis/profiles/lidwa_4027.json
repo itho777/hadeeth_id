@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4027",
+  "name_en": "Thalhah bin Yahya bin Thalhah bin 'Ubaidillah",
+  "name_id": "Thalhah bin Yahya bin Thalhah bin 'Ubaidillah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "148 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "At Taymiy Al Madaniy",
+  "nasab": "At Taymiy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "58",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 9,
+    "abudaud": 5,
+    "tirmidzi": 5,
+    "nasai": 12,
+    "ibnumajah": 5,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 0
+  }
+}

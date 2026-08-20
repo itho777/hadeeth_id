@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7407",
+  "name_en": "Marwan bin Muhammad bin Hassan",
+  "name_id": "Marwan bin Muhammad bin Hassan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "210 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Asadiy Ath Thathiriy",
+  "nasab": "Al Asadiy Ath Thathiriy",
+  "laqob": "-",
+  "hadith_count": "69",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 13,
+    "tirmidzi": 0,
+    "nasai": 8,
+    "ibnumajah": 15,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 29
+  }
+}

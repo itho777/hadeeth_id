@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5270",
+  "name_en": "Abdul Warits bin Sa'id bin Dzakwan",
+  "name_id": "Abdul Warits bin Sa'id bin Dzakwan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "180 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Ubaidah",
+  "parents": "Al 'Anbariy At Tanuriy",
+  "nasab": "Al 'Anbariy At Tanuriy",
+  "laqob": "-",
+  "hadith_count": "433",
+  "book_counts": {
+    "bukhari": 101,
+    "muslim": 53,
+    "abudaud": 61,
+    "tirmidzi": 24,
+    "nasai": 41,
+    "ibnumajah": 22,
+    "ahmad": 126,
+    "malik": 0,
+    "darimi": 5
+  }
+}

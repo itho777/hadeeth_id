@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2172",
+  "name_en": "Jumai' bin 'Umair bin 'Affaaq",
+  "name_id": "Jumai' bin 'Umair bin 'Affaaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Aswad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4393",
+  "name_en": "Abdur Rahman bin Syaibah bin 'Utsman",
+  "name_id": "Abdur Rahman bin Syaibah bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al 'Abdariy Al Hajabiy",
+  "nasab": "Al 'Abdariy Al Hajabiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

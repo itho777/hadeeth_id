@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4880",
+  "name_en": "Abdullah bin 'Amir bin Zurarah",
+  "name_id": "Abdullah bin 'Amir bin Zurarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "237 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Hadlramiy",
+  "nasab": "Al Hadlramiy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 21,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

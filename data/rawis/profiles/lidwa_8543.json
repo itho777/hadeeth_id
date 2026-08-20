@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8543",
+  "name_en": "Ya'laa bin Umayyah bin Abi 'Ubaidah",
+  "name_id": "Ya'laa bin Umayyah bin Abi 'Ubaidah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Khalaf",
+  "parents": "At Tamimiy",
+  "nasab": "At Tamimiy",
+  "laqob": "Ibnu Munyah",
+  "hadith_count": "81",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 10,
+    "abudaud": 9,
+    "tirmidzi": 4,
+    "nasai": 16,
+    "ibnumajah": 3,
+    "ahmad": 26,
+    "malik": 0,
+    "darimi": 2
+  }
+}

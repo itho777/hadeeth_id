@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5319",
+  "name_en": "Ubaid bin As Sabbaq",
+  "name_id": "Ubaid bin As Sabbaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah ",
+  "kunyah": "Abu Sa'id",
+  "parents": "Ats Tsqafiy",
+  "nasab": "Ats Tsqafiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 7,
+    "malik": 1,
+    "darimi": 1
+  }
+}

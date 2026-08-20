@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8232",
+  "name_en": "Yahya bin Al Miqdam bin Ma'di Karib",
+  "name_id": "Yahya bin Al Miqdam bin Ma'di Karib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Kindi Al Himshiy",
+  "nasab": "Al Kindi Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5465",
+  "name_en": "Utbah bin Hammad bin Khulkaid",
+  "name_id": "Utbah bin Hammad bin Khulkaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Khulaid",
+  "parents": "Al Hakamiy Ad Damsyiqiy",
+  "nasab": "Al Hakamiy Ad Damsyiqiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

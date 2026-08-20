@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3219",
+  "name_en": "Suraij bin An Nu'man bin Marwan",
+  "name_id": "Suraij bin An Nu'man bin Marwan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "217 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Husain",
+  "parents": "Al Jawhariy",
+  "nasab": "Al Jawhariy",
+  "laqob": "Al Lu'lui'iy",
+  "hadith_count": "282",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 270,
+    "malik": 0,
+    "darimi": 0
+  }
+}

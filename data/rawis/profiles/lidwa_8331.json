@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8331",
+  "name_en": "Yahya bin Muhammad bin As Sakan bin Habib",
+  "name_id": "Yahya bin Muhammad bin As Sakan bin Habib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Ubaidillah",
+  "parents": "Al Qurasyioy Al Bazzar",
+  "nasab": "Al Qurasyioy Al Bazzar",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3181",
+  "name_en": "Salim bin Abi Umayah",
+  "name_id": "Salim bin Abi Umayah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "129 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu An Nadlor",
+  "parents": "Al Qurasyiy At Taymiy",
+  "nasab": "Al Qurasyiy At Taymiy",
+  "laqob": "-",
+  "hadith_count": "193",
+  "book_counts": {
+    "bukhari": 39,
+    "muslim": 23,
+    "abudaud": 17,
+    "tirmidzi": 12,
+    "nasai": 13,
+    "ibnumajah": 6,
+    "ahmad": 54,
+    "malik": 22,
+    "darimi": 7
+  }
+}

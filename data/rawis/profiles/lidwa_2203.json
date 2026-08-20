@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2203",
+  "name_en": "Juwairiyah binti Al Harits bin Abi Dlirar",
+  "name_id": "Juwairiyah binti Al Harits bin Abi Dlirar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "50 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Ummu Al Mu'minin",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

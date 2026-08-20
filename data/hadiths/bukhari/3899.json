@@ -1,0 +1,32 @@
+{
+  "hadithnumber": 3899,
+  "arabicnumber": 3899,
+  "text": "Telah menceritakan kepadaku [Ishaq bin Yazid ad Damasyqi] telah menceritakan kepada kami [Yahya bin Hamzah] berkata, telah menceritakan kepadaku [Abu 'Amru Al Auza'i] dari ['Abdah bin Abu Lubabah] dari [Mujahid bin Jabr Al Makki] bahwa ['Abdullah bin 'Umar] radliallahu 'anhuma pernah berkata; \"Tidak ada hijrah setelah kemenangan (penaklukan kota Makah)",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Ishaq bin Yazid ad Damasyqi",
+      "name_ar": "Ishaq bin Yazid ad Damasyqi"
+    },
+    {
+      "name_id": "Yahya bin Hamzah",
+      "name_ar": "Yahya bin Hamzah"
+    },
+    {
+      "name_id": "Abu 'Amru Al Auza'i",
+      "name_ar": "Abu 'Amru Al Auza'i"
+    },
+    {
+      "name_id": "'Abdah bin Abu Lubabah",
+      "name_ar": "'Abdah bin Abu Lubabah"
+    },
+    {
+      "name_id": "Mujahid bin Jabr Al Makki",
+      "name_ar": "Mujahid bin Jabr Al Makki"
+    },
+    {
+      "name_id": "'Abdullah bin 'Umar",
+      "name_ar": "'Abdullah bin 'Umar"
+    }
+  ]
+}

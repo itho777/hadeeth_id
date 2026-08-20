@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1016",
+  "name_en": "Isma'il bin Khalifah",
+  "name_id": "Isma'il bin Khalifah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "169 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Isra'il",
+  "parents": "Al 'Abasiy Al Mala'iy",
+  "nasab": "Al 'Abasiy Al Mala'iy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 1
+  }
+}

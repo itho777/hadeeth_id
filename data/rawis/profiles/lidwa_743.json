@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_743",
+  "name_en": "Ayman bin Nabil",
+  "name_id": "Ayman bin Nabil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Imrah",
+  "parents": "Al Habasyiy",
+  "nasab": "Al Habasyiy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 1
+  }
+}

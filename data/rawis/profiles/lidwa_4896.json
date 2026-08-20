@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4896",
+  "name_en": "Abdullah bin 'Abdur Rahman bin Abi Sha'sha'ah",
+  "name_id": "Abdullah bin 'Abdur Rahman bin Abi Sha'sha'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy Al Maziniy",
+  "nasab": "Al Anshariy Al Maziniy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 13,
+    "malik": 4,
+    "darimi": 0
+  }
+}

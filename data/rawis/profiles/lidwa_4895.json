@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4895",
+  "name_en": "Abdullah bin 'Abdur Rahman bin Abi Husain",
+  "name_id": "Abdullah bin 'Abdur Rahman bin Abi Husain",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "An Naufaliy",
+  "nasab": "An Naufaliy",
+  "laqob": "-",
+  "hadith_count": "45",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 4,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 4,
+    "ahmad": 21,
+    "malik": 1,
+    "darimi": 2
+  }
+}

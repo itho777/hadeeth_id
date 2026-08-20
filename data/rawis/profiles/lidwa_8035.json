@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8035",
+  "name_en": "Hisyam bin Abi 'Abdullah Sanbar",
+  "name_id": "Hisyam bin Abi 'Abdullah Sanbar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "154 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "Ad Dastuwa'i Ar Rib'i",
+  "nasab": "Ad Dastuwa'i Ar Rib'i",
+  "laqob": "-",
+  "hadith_count": "862",
+  "book_counts": {
+    "bukhari": 82,
+    "muslim": 112,
+    "abudaud": 69,
+    "tirmidzi": 49,
+    "nasai": 100,
+    "ibnumajah": 31,
+    "ahmad": 362,
+    "malik": 0,
+    "darimi": 57
+  }
+}

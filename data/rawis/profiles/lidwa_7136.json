@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7136",
+  "name_en": "Muhammad bin 'Abdullah bin Numair",
+  "name_id": "Muhammad bin 'Abdullah bin Numair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "234 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Hamdaniy Al Kharifiy",
+  "nasab": "Al Hamdaniy Al Kharifiy",
+  "laqob": "-",
+  "hadith_count": "592",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 446,
+    "abudaud": 5,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 108,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 3
+  }
+}

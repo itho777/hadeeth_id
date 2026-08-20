@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2551",
+  "name_en": "Humaid bin Nafi'",
+  "name_id": "Humaid bin Nafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Aflah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Shafira",
+  "hadith_count": "47",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 9,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 12,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 3,
+    "darimi": 1
+  }
+}

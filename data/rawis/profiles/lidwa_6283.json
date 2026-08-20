@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6283",
+  "name_en": "Iyadl bin 'Abdullah bvin 'Abdur Rahman",
+  "name_id": "Iyadl bin 'Abdullah bvin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "Al Fihriy Al Madaniy",
+  "nasab": "Al Fihriy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

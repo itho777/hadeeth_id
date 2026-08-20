@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3859",
+  "name_en": "Shalih bin Ibrahim bin 'Abdur Rahman",
+  "name_id": "Shalih bin Ibrahim bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Imran",
+  "parents": "Al Qurasyiy Az Zuhriy",
+  "nasab": "Al Qurasyiy Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 1
+  }
+}

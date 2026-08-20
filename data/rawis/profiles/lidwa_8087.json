@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8087",
+  "name_en": "Hilal bin Miqlash",
+  "name_id": "Hilal bin Miqlash",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Umar",
+  "parents": "Al Wazzan Al Juhaniy",
+  "nasab": "Al Wazzan Al Juhaniy",
+  "laqob": "Ibnu Abi Humaid",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

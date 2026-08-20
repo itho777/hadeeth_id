@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2235",
+  "name_en": "Hibban bin Hilal",
+  "name_id": "Hibban bin Hilal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "216 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Habib ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "80",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 24,
+    "abudaud": 2,
+    "tirmidzi": 13,
+    "nasai": 20,
+    "ibnumajah": 5,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

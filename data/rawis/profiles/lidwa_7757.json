@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7757",
+  "name_en": "Musa bin 'Ali bin Rabah",
+  "name_id": "Musa bin 'Ali bin Rabah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "163 H",
+  "city_of_death": "Iskandariyah",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Lakhmiy",
+  "nasab": "Al Lakhmiy",
+  "laqob": "-",
+  "hadith_count": "57",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 5,
+    "tirmidzi": 4,
+    "nasai": 6,
+    "ibnumajah": 4,
+    "ahmad": 29,
+    "malik": 0,
+    "darimi": 5
+  }
+}

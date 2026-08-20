@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5000",
+  "name_en": "Abdullah bin 'Isa bin Khalid",
+  "name_id": "Abdullah bin 'Isa bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu Khalaf",
+  "parents": "Al Khazzaz",
+  "nasab": "Al Khazzaz",
+  "laqob": "Shahibu Al Harir",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

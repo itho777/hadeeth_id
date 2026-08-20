@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2358",
+  "name_en": "Hariz bin 'Utsman bin Jabar",
+  "name_id": "Hariz bin 'Utsman bin Jabar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "163 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Utsman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "60",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 39,
+    "malik": 0,
+    "darimi": 7
+  }
+}

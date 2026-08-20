@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3088",
+  "name_en": "Ziyad bin Shaifiy bin Shuhaib",
+  "name_id": "Ziyad bin Shaifiy bin Shuhaib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy At Taymiy",
+  "nasab": "Al Qurasyiy At Taymiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

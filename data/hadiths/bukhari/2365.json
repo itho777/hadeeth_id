@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 2365,
+  "arabicnumber": 2365,
+  "text": "Telah menceritakan kepada kami [Isma'il] berkata, telah menceritakan kepadaku [Malik] dari [Nafi'] dari ['Abdullah bin 'Umar radliallahu 'anhuma] bahwa Rasulullah shallallahu 'alaihi wasallam bersabda: \"Ada seorang wanita disiksa disebabkan mengurung seekor kucing hingga mati kelaparan lalu wanita itupun masuk neraka\". Nafi' berkata; Beliau berkata: \"Sungguh Allah Maha Mengetahui bahwa kamu tidak memberinya makan dan minum ketika engkau mengurungnya dan tidak membiarkannya berkeliaran sehingga dia dapat memakan serangga tanah",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    }
+  ]
+}

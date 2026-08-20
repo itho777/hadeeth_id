@@ -1,0 +1,72 @@
+[
+  {
+    "tag_id": 1,
+    "name_id": "Iman",
+    "name_en": "Faith"
+  },
+  {
+    "tag_id": 2,
+    "name_id": "Ilmu",
+    "name_en": "Knowledge"
+  },
+  {
+    "tag_id": 3,
+    "name_id": "Ummat-ummat terdahulu",
+    "name_en": "Preceding Nations"
+  },
+  {
+    "tag_id": 4,
+    "name_id": "Siroh (perjalanan hidup)",
+    "name_en": "Prophetic Biography (Seerah)"
+  },
+  {
+    "tag_id": 5,
+    "name_id": "Al Qur'an",
+    "name_en": "The Quran"
+  },
+  {
+    "tag_id": 6,
+    "name_id": "Akhlaq dan adab",
+    "name_en": "Morals and Manners"
+  },
+  {
+    "tag_id": 7,
+    "name_id": "Ibadat",
+    "name_en": "Acts of Worship"
+  },
+  {
+    "tag_id": 8,
+    "name_id": "Minuman dan makanan",
+    "name_en": "Food and Drink"
+  },
+  {
+    "tag_id": 9,
+    "name_id": "Pakaian dan perhiasan",
+    "name_en": "Clothing and Adornment"
+  },
+  {
+    "tag_id": 10,
+    "name_id": "Masalah kepribadian individu",
+    "name_en": "Personal Affairs"
+  },
+  {
+    "tag_id": 11,
+    "name_id": "Mu'amalat",
+    "name_en": "Transactions and Trade"
+  },
+  {
+    "tag_id": 12,
+    "name_id": "Keputusan, hakim dan hukum-hukum",
+    "name_en": "Judgments and Rulings"
+  },
+  {
+    "tag_id": 13,
+    "name_id": "Kriminalitas",
+    "name_en": "Crimes and Penalties"
+  },
+  {
+    "tag_id": 14,
+    "name_id": "Jihad",
+    "name_en": "Jihad"
+  }
+]

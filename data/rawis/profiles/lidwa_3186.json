@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3186",
+  "name_en": "Salim bin Dinar",
+  "name_id": "Salim bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Jumai'",
+  "parents": "At Tamimiy Al Qazzaz",
+  "nasab": "At Tamimiy Al Qazzaz",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

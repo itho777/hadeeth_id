@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8107",
+  "name_en": "Hawdzah bin Khalifah bin 'Abdullah ",
+  "name_id": "Hawdzah bin Khalifah bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "216 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Asyhab",
+  "parents": "Ats Tsaqafiy Al Bakrawiy",
+  "nasab": "Ats Tsaqafiy Al Bakrawiy",
+  "laqob": "Al Asham",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 31,
+    "malik": 0,
+    "darimi": 0
+  }
+}

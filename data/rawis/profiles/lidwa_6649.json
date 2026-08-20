@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6649",
+  "name_en": "Mu'ammal bin Isma'il",
+  "name_id": "Mu'ammal bin Isma'il",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "206 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al 'Adawiy",
+  "nasab": "Al 'Adawiy",
+  "laqob": "-",
+  "hadith_count": "152",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 10,
+    "nasai": 2,
+    "ibnumajah": 4,
+    "ahmad": 132,
+    "malik": 0,
+    "darimi": 2
+  }
+}

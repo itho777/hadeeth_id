@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1239",
+  "name_en": "Al Hasan bin Abi Al Hasan Yasar",
+  "name_id": "Al Hasan bin Abi Al Hasan Yasar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "110 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "1105",
+  "book_counts": {
+    "bukhari": 40,
+    "muslim": 26,
+    "abudaud": 92,
+    "tirmidzi": 82,
+    "nasai": 99,
+    "ibnumajah": 74,
+    "ahmad": 515,
+    "malik": 1,
+    "darimi": 176
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3891",
+  "name_en": "Shalih bin Kaisan",
+  "name_id": "Shalih bin Kaisan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "324",
+  "book_counts": {
+    "bukhari": 89,
+    "muslim": 72,
+    "abudaud": 14,
+    "tirmidzi": 7,
+    "nasai": 33,
+    "ibnumajah": 2,
+    "ahmad": 102,
+    "malik": 3,
+    "darimi": 2
+  }
+}

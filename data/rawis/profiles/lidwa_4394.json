@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4394",
+  "name_en": "Abdur Rahman bin Shalih",
+  "name_id": "Abdur Rahman bin Shalih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "235 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Azdiy Al ''Atakiy",
+  "nasab": "Al Azdiy Al ''Atakiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

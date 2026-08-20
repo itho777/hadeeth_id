@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3714",
+  "name_en": "Suwaid bin Ghaflah 'Awsajah",
+  "name_id": "Suwaid bin Ghaflah 'Awsajah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "80 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Umayyah",
+  "parents": "Al Ja'fiy",
+  "nasab": "Al Ja'fiy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 4,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 6,
+    "ibnumajah": 3,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6353",
+  "name_en": "Ghalib bin Mihran",
+  "name_id": "Ghalib bin Mihran",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu 'Affan",
+  "parents": "At Tammar Al 'Abdiy",
+  "nasab": "At Tammar Al 'Abdiy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

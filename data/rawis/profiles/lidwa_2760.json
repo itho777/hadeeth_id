@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2760",
+  "name_en": "Khair bin Nu'aim bin Murrah",
+  "name_id": "Khair bin Nu'aim bin Murrah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "137 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Nu'aim",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

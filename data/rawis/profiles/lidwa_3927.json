@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3927",
+  "name_en": "Shadaqah bin Musa",
+  "name_id": "Shadaqah bin Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Mughirah",
+  "parents": "Ad Daqiqiy As Salmiy",
+  "nasab": "Ad Daqiqiy As Salmiy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 5,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

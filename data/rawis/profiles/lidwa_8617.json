@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8617",
+  "name_en": "Yunus bin Muhammad bin Muslim",
+  "name_id": "Yunus bin Muhammad bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "207 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Mu'addib",
+  "hadith_count": "623",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 18,
+    "abudaud": 4,
+    "tirmidzi": 12,
+    "nasai": 11,
+    "ibnumajah": 17,
+    "ahmad": 550,
+    "malik": 0,
+    "darimi": 2
+  }
+}

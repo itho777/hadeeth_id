@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8356",
+  "name_en": "Yahya bin Ya'laa",
+  "name_id": "Yahya bin Ya'laa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Zakariya",
+  "parents": "Al Aslamiy Al Qathwaniy",
+  "nasab": "Al Aslamiy Al Qathwaniy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

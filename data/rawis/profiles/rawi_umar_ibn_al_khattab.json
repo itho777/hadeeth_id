@@ -1,0 +1,29 @@
+{
+  "id": "rawi_umar_ibn_al_khattab",
+  "name_en": "'Umar bin Al-Khattab",
+  "name_id": "Umar bin al-Khaththab",
+  "name_ar": "عمر بن الخطاب",
+  "is_sahabi": "true",
+  "generation": "Sahabi (Companion)",
+  "grade": "Sahabi Adl",
+  "died_ah": "23",
+  "died_ce": "644",
+  "hadith_count": "537",
+  "city_of_death": "Madinah",
+  "bio_en": "Second Caliph of Islam, renowned for his justice and massive transmission of Hadiths.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 137,
+    "muslim": 73,
+    "abudaud": 76,
+    "tirmidzi": 78,
+    "nasai": 97,
+    "ibnumajah": 78,
+    "ahmad": 332,
+    "malik": 181,
+    "darimi": 106
+  }
+}

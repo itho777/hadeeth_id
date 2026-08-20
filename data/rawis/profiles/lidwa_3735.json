@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3735",
+  "name_en": "Sayf bijn Sulaiman",
+  "name_id": "Sayf bijn Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "156 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sulaiman",
+  "parents": "Al Makhzumiy Al Makkiy",
+  "nasab": "Al Makhzumiy Al Makkiy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 5,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

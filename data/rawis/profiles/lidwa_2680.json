@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2680",
+  "name_en": "Khalid bin Makhlad",
+  "name_id": "Khalid bin Makhlad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "213 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Haitsam",
+  "parents": "Al Qathwani Al Bajali",
+  "nasab": "Al Qathwani Al Bajali",
+  "laqob": "-",
+  "hadith_count": "145",
+  "book_counts": {
+    "bukhari": 31,
+    "muslim": 28,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 4,
+    "ibnumajah": 19,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 58
+  }
+}

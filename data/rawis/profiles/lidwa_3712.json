@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3712",
+  "name_en": "Suwaid bin 'Abdul 'Aziz bin Numair",
+  "name_id": "Suwaid bin 'Abdul 'Aziz bin Numair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "194 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "As Salmiy Ad Damsiqiy",
+  "nasab": "As Salmiy Ad Damsiqiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

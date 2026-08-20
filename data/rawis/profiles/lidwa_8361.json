@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8361",
+  "name_en": "Yahya bin Yusuf bin Abi Karimah",
+  "name_id": "Yahya bin Yusuf bin Abi Karimah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "225 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Yusuf",
+  "parents": "Az Zimmiy Al Khurasaniy",
+  "nasab": "Az Zimmiy Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

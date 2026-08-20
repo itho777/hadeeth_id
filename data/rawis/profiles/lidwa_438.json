@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_438",
+  "name_en": "Ahmad bin Hafsh bin 'Abdullah bin Rasyid",
+  "name_id": "Ahmad bin Hafsh bin 'Abdullah bin Rasyid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "258 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Ali",
+  "parents": "As Sulamiy An Naysaburiy",
+  "nasab": "As Sulamiy An Naysaburiy",
+  "laqob": "Ibnu Abu 'Amru",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 0,
+    "nasai": 21,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

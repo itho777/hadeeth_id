@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1979",
+  "name_en": "Bur bin Ashram",
+  "name_id": "Bur bin Ashram",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "223 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Bakar ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

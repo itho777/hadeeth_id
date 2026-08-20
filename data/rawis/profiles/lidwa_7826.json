@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7826",
+  "name_en": "Maimunah binti Al Walid bin Al Harits",
+  "name_id": "Maimunah binti Al Walid bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariyyah",
+  "nasab": "Al Anshariyyah",
+  "laqob": "Ummu Ibnu Abi Mulaikah",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

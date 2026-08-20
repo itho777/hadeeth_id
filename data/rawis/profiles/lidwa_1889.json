@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1889",
+  "name_en": "Bisyir bin Mu'adz",
+  "name_id": "Bisyir bin Mu'adz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "245 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sahal",
+  "parents": "Al 'Aqadiy",
+  "nasab": "Al 'Aqadiy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 12,
+    "nasai": 1,
+    "ibnumajah": 8,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

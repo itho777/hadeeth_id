@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4348",
+  "name_en": "Abdur Rahman bin Humaid bin 'Abdur Rahman bin 'Auf",
+  "name_id": "Abdur Rahman bin Humaid bin 'Abdur Rahman bin 'Auf",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "138 H",
+  "city_of_death": "Iraq",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Az Zuhriy",
+  "nasab": "Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 7,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 2
+  }
+}

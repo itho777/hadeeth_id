@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7996",
+  "name_en": "Hasyim bin Al Qasim bin Muslim bin Miqsam",
+  "name_id": "Hasyim bin Al Qasim bin Muslim bin Miqsam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "207 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu AN Nadlor",
+  "parents": "Al Laitsiy Al Khurasaniy",
+  "nasab": "Al Laitsiy Al Khurasaniy",
+  "laqob": "Qaishar",
+  "hadith_count": "828",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 31,
+    "abudaud": 17,
+    "tirmidzi": 13,
+    "nasai": 6,
+    "ibnumajah": 9,
+    "ahmad": 709,
+    "malik": 0,
+    "darimi": 33
+  }
+}

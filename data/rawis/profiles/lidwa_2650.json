@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2650",
+  "name_en": "Khalid bin Zaid bin Kulaib",
+  "name_id": "Khalid bin Zaid bin Kulaib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "50 H",
+  "city_of_death": "Negeri Rumawi",
+  "residence": "Madinah",
+  "kunyah": "Abu Ayyub",
+  "parents": "Al Anshari",
+  "nasab": "Al Anshari",
+  "laqob": "-",
+  "hadith_count": "213",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 18,
+    "abudaud": 12,
+    "tirmidzi": 15,
+    "nasai": 19,
+    "ibnumajah": 16,
+    "ahmad": 99,
+    "malik": 8,
+    "darimi": 12
+  }
+}

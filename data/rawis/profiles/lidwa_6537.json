@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6537",
+  "name_en": "Qais bin Makhramah bin Al Muthallib",
+  "name_id": "Qais bin Makhramah bin Al Muthallib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qurasyiy l Muthallibiy",
+  "nasab": "Al Qurasyiy l Muthallibiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

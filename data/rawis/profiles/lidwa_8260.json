@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8260",
+  "name_en": "Yahya bin Dinar",
+  "name_id": "Yahya bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "122 H",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Hasyim",
+  "parents": "Ar Rummaniy",
+  "nasab": "Ar Rummaniy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 1,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 5
+  }
+}

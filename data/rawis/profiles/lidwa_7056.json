@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7056",
+  "name_en": "Muhammad bin 'Abdur Rahman bin Abi Bakar",
+  "name_id": "Muhammad bin 'Abdur Rahman bin Abi Bakar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Ats Tsaurain",
+  "parents": "Al Qurasyiy Al Jumahiy",
+  "nasab": "Al Qurasyiy Al Jumahiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "rawi_ismail_bin_jafar",
+  "name_en": "Isma'il bin Ja'far",
+  "name_id": "Ismail bin Ja'far al-Madani",
+  "name_ar": "إسماعيل بن جعفر",
+  "is_sahabi": "false",
+  "generation": "Tabi' al-Tabi'in",
+  "grade": "Thiqah Thabt",
+  "died_ah": "180",
+  "died_ce": "796",
+  "hadith_count": "400",
+  "city_of_death": "Baghdad",
+  "bio_en": "Madinan Quran reciter and Hadith transmitter who settled in Baghdad.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 42,
+    "muslim": 107,
+    "abudaud": 21,
+    "tirmidzi": 37,
+    "nasai": 47,
+    "ibnumajah": 1,
+    "ahmad": 82,
+    "malik": 0,
+    "darimi": 11
+  }
+}

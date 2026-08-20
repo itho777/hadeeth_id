@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7602",
+  "name_en": "Ma'bad bin Ka'ab bin MAlik",
+  "name_id": "Ma'bad bin Ka'ab bin MAlik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy As Sulamiy",
+  "nasab": "Al Anshariy As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 12,
+    "malik": 2,
+    "darimi": 2
+  }
+}

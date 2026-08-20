@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2665",
+  "name_en": "Khalid bin 'Abdullah bin Yazid bin Asad",
+  "name_id": "Khalid bin 'Abdullah bin Yazid bin Asad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "260 H",
+  "city_of_death": "-",
+  "residence": "Dujail",
+  "kunyah": "Abu Al Qasim",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

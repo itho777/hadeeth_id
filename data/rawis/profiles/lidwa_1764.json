@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1764",
+  "name_en": "Al Walid bin Abi Al Walid 'Utsman",
+  "name_id": "Al Walid bin Abi Al Walid 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

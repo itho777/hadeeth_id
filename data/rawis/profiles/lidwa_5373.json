@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5373",
+  "name_en": "Ubaidullah bin Al 'Abbas bin 'Abdul Muthallib",
+  "name_id": "Ubaidullah bin Al 'Abbas bin 'Abdul Muthallib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "58 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Hasimiy",
+  "nasab": "Al Hasimiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

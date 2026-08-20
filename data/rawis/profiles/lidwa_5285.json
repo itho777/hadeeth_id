@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5285",
+  "name_en": "Abdah bin Abi Lubabah",
+  "name_id": "Abdah bin Abi Lubabah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Qasim",
+  "parents": "Al Ghadliriy Al Asadiy",
+  "nasab": "Al Ghadliriy Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 8,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 4
+  }
+}

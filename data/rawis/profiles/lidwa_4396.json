@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4396",
+  "name_en": "Abdur Rahman bin Shakhr",
+  "name_id": "Abdur Rahman bin Shakhr",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "57 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Hurairah",
+  "parents": "Ad Dawsiy Al Yamaniy",
+  "nasab": "Ad Dawsiy Al Yamaniy",
+  "laqob": "-",
+  "hadith_count": "8743",
+  "book_counts": {
+    "bukhari": 1039,
+    "muslim": 1009,
+    "abudaud": 544,
+    "tirmidzi": 598,
+    "nasai": 644,
+    "ibnumajah": 631,
+    "ahmad": 3842,
+    "malik": 171,
+    "darimi": 265
+  }
+}

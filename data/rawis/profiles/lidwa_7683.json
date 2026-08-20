@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7683",
+  "name_en": "Manshur bin Wardan",
+  "name_id": "Manshur bin Wardan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "AbuMuhammad",
+  "parents": "Al Asadiy Al 'Aththar",
+  "nasab": "Al Asadiy Al 'Aththar",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

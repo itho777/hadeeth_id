@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4424",
+  "name_en": "\"Abdur Rahman bin 'Abdullah bin 'Ubaid, maula Bani Hasyim\"",
+  "name_id": "\"Abdur Rahman bin 'Abdullah bin 'Ubaid, maula Bani Hasyim\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "197 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "262",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 255,
+    "malik": 0,
+    "darimi": 0
+  }
+}

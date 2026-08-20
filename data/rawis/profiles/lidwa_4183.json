@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4183",
+  "name_en": "Abbas bin 'Utsman bin Muhammad",
+  "name_id": "Abbas bin 'Utsman bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "239 H ",
+  "city_of_death": "-",
+  "residence": "Dujail",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "Al Bajaliy Ar Rahibiy",
+  "nasab": "Al Bajaliy Ar Rahibiy",
+  "laqob": "Al Mu'alim",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 19,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2395",
+  "name_en": "Hushain bin 'Abdur Rahman",
+  "name_id": "Hushain bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "136 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Hudzail",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "245",
+  "book_counts": {
+    "bukhari": 50,
+    "muslim": 28,
+    "abudaud": 20,
+    "tirmidzi": 13,
+    "nasai": 27,
+    "ibnumajah": 10,
+    "ahmad": 82,
+    "malik": 0,
+    "darimi": 15
+  }
+}

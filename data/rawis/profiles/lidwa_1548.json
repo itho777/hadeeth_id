@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1548",
+  "name_en": "Al Fadlol bin Dukain bin Hammad bin Zuhair ",
+  "name_id": "Al Fadlol bin Dukain bin Hammad bin Zuhair ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "218 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Nu'aim",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "684",
+  "book_counts": {
+    "bukhari": 187,
+    "muslim": 14,
+    "abudaud": 19,
+    "tirmidzi": 23,
+    "nasai": 50,
+    "ibnumajah": 19,
+    "ahmad": 188,
+    "malik": 0,
+    "darimi": 184
+  }
+}

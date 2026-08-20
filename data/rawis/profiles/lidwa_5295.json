@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5295",
+  "name_en": "Abdu Rabbih bin Khalid bin 'Abdul Malik",
+  "name_id": "Abdu Rabbih bin Khalid bin 'Abdul Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "242 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Mughallis",
+  "parents": "An Numairiy",
+  "nasab": "An Numairiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 6,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

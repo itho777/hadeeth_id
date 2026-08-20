@@ -1,0 +1,18 @@
+{
+  "hadithnumber": 3838,
+  "arabicnumber": 3838,
+  "text": "Telah menceritakan kepadaku ['Amru bin 'Abbas] telah menceritakan kepada kami ['Abdurrahman] telah menceritakan kepada kami [Sufyan] dari [Abu Ishaq] dari ['Amru bin Maimun] berkata, ['Umar] radliallahu 'anhu berkata; \"Sesungguhnya orang-orang musyrik (ketika berhaji) tidak bertolak dari Jam'un hingga matahari terbit dari balik gunung Tsabir. Kemudian Nabi shallallahu 'alaihi wasallam menyelisih mereka dengan bertolak sebelum matahari terbit",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Sufyan bin Sa'id ats-Tsauri al-Kufi",
+      "name_ar": "سفيان بن سعيد الثوري الكوفي",
+      "rawi_id": "rawi_sufyan_al_thawri"
+    },
+    {
+      "name_id": "Abdurrahman bin Shakhr ad-Dawsi",
+      "name_ar": "عبد الرحمن بن صخر الدوسي",
+      "rawi_id": "rawi_abu_hurairah"
+    }
+  ]
+}

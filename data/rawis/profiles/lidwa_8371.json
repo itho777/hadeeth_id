@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8371",
+  "name_en": "Yazid bin Abi Sufyan bin Shakhr bin Harb",
+  "name_id": "Yazid bin Abi Sufyan bin Shakhr bin Harb",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "19 H",
+  "city_of_death": "Dujail",
+  "residence": "Syam",
+  "kunyah": "Abu Khalid",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "Yazidu Al Khair",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

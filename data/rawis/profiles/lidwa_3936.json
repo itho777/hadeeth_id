@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3936",
+  "name_en": "Shafwan bin Umatyah bin Khalaf",
+  "name_id": "Shafwan bin Umatyah bin Khalaf",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "41 H ",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Wahab",
+  "parents": "Al Jamhiy Al Qurasyiy",
+  "nasab": "Al Jamhiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 7,
+    "ibnumajah": 2,
+    "ahmad": 20,
+    "malik": 0,
+    "darimi": 2
+  }
+}

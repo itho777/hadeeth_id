@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/api.js"></script>
+    <script>
+        window.HadeethAPI = new window.HadeethAPIClient();
+        async function test() {
+            try {
+                console.log("Fetching HOTD...");
+                const h = await window.HadeethAPI.getHadith('bukhari', '7038');
+                console.log("Success:", h ? h.hadith_number : 'null');
+                document.body.innerHTML = h ? h.text_en : "Failed";
+            } catch (e) {
+                console.error(e);
+                document.body.innerHTML = "Error: " + e.message;
+            }
+        }
+        test();
+    </script>
+</head>
+<body>Loading...</body>
+</html>
+
+
+

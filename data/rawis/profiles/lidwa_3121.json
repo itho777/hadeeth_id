@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3121",
+  "name_en": "Zaid bin Arqam bin Zaid",
+  "name_id": "Zaid bin Arqam bin Zaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "68 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Anshariy Al Khazrajiy",
+  "nasab": "Al Anshariy Al Khazrajiy",
+  "laqob": "-",
+  "hadith_count": "170",
+  "book_counts": {
+    "bukhari": 16,
+    "muslim": 14,
+    "abudaud": 12,
+    "tirmidzi": 18,
+    "nasai": 15,
+    "ibnumajah": 8,
+    "ahmad": 82,
+    "malik": 0,
+    "darimi": 5
+  }
+}

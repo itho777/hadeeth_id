@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8052",
+  "name_en": "Hisyam bin 'Amir bin Umayyah",
+  "name_id": "Hisyam bin 'Amir bin Umayyah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Anshariy An Najariy",
+  "nasab": "Al Anshariy An Najariy",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 6,
+    "ibnumajah": 1,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 0
+  }
+}

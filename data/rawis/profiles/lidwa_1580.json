@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1580",
+  "name_en": "Al Qasim bin 'Abbas bin Muhammad",
+  "name_id": "Al Qasim bin 'Abbas bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "130 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8227",
+  "name_en": "Yahya bin Al 'Alaa'",
+  "name_id": "Yahya bin Al 'Alaa'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "12",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Rayi",
+  "kunyah": "Abu Salamah",
+  "parents": "Al Bajaliy",
+  "nasab": "Al Bajaliy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2293",
+  "name_en": "Hajjaj bin Hajjaj",
+  "name_id": "Hajjaj bin Hajjaj",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "131 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Ahwal",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 7,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7092",
+  "name_en": "Muhammad bin 'Abdullah bin Abi Qudamah",
+  "name_id": "Muhammad bin 'Abdullah bin Abi Qudamah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Qudamah",
+  "parents": "Ad Du'liy Al Hanafiy",
+  "nasab": "Ad Du'liy Al Hanafiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

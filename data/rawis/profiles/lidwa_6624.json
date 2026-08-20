@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6624",
+  "name_en": "Kaisan",
+  "name_id": "Kaisan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "100 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Maqburiy",
+  "nasab": "Al Maqburiy",
+  "laqob": "Shahibu Al 'Uba'",
+  "hadith_count": "142",
+  "book_counts": {
+    "bukhari": 33,
+    "muslim": 14,
+    "abudaud": 15,
+    "tirmidzi": 11,
+    "nasai": 8,
+    "ibnumajah": 8,
+    "ahmad": 47,
+    "malik": 2,
+    "darimi": 4
+  }
+}

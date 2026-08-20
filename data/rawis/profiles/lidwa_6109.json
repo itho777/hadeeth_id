@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6109",
+  "name_en": "Amru bin Huraits bin 'Amru bin 'Utsman",
+  "name_id": "Amru bin Huraits bin 'Amru bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "85 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Madinah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Qurasyiy Al Makhzumiy",
+  "nasab": "Al Qurasyiy Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "51",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 11,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 8,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 2
+  }
+}

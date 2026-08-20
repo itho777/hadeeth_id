@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6827",
+  "name_en": "Muhammad bin Al Harits bin Raosyid bin Thariq",
+  "name_id": "Muhammad bin Al Harits bin Raosyid bin Thariq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "241 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Qurasyiy Al Umawiy",
+  "nasab": "Al Qurasyiy Al Umawiy",
+  "laqob": "Shadrah",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 6,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1195",
+  "name_en": "Al Harits bin Suwaid",
+  "name_id": "Al Harits bin Suwaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Aisyah RAh ",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 1
+  }
+}

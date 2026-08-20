@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3524",
+  "name_en": "Salamah bin Wardan",
+  "name_id": "Salamah bin Wardan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "106 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ya'laa",
+  "parents": "Al_Laitsiy Al Junda'iy",
+  "nasab": "Al_Laitsiy Al Junda'iy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

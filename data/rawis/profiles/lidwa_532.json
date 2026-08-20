@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_532",
+  "name_en": "Usamah bin Zaid bin Haritsah bin Syurahbil ",
+  "name_id": "Usamah bin Zaid bin Haritsah bin Syurahbil ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "54 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Kalibiy",
+  "nasab": "Al Kalibiy",
+  "laqob": "Hubbu (cinta) Rasulilloh SAW ",
+  "hadith_count": "239",
+  "book_counts": {
+    "bukhari": 47,
+    "muslim": 35,
+    "abudaud": 12,
+    "tirmidzi": 8,
+    "nasai": 21,
+    "ibnumajah": 13,
+    "ahmad": 92,
+    "malik": 4,
+    "darimi": 7
+  }
+}

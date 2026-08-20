@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1685",
+  "name_en": "Al Miqdam bin Syuraih bin Hani'",
+  "name_id": "Al Miqdam bin Syuraih bin Hani'",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "65",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 6,
+    "abudaud": 6,
+    "tirmidzi": 2,
+    "nasai": 12,
+    "ibnumajah": 5,
+    "ahmad": 33,
+    "malik": 0,
+    "darimi": 1
+  }
+}

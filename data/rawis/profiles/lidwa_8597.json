@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8597",
+  "name_en": "Yusuf bin Ya'qub",
+  "name_id": "Yusuf bin Ya'qub",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "231 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Ash Shaffar",
+  "nasab": "Ash Shaffar",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

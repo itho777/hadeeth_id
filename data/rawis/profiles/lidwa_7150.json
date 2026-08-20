@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7150",
+  "name_en": "Muhammad bin 'Ubaid bin Hisab",
+  "name_id": "Muhammad bin 'Ubaid bin Hisab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "238 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Ghubariy",
+  "nasab": "Al Ghubariy",
+  "laqob": "-",
+  "hadith_count": "66",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 18,
+    "abudaud": 44,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

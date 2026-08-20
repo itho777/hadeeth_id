@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8222",
+  "name_en": "Yahya bin Al Harits",
+  "name_id": "Yahya bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "145 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Amru",
+  "parents": "Adz Dzamariy Al Ghassaniy",
+  "nasab": "Adz Dzamariy Al Ghassaniy",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 10
+  }
+}

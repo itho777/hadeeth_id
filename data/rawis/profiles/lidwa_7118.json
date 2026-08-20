@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7118",
+  "name_en": "Muhammad bin 'Abdullah bin 'Abdur Rahman bin Abi Sha'sha'ah",
+  "name_id": "Muhammad bin 'Abdullah bin 'Abdur Rahman bin Abi Sha'sha'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "139 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Anshariy An Najjariy",
+  "nasab": "Al Anshariy An Najjariy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 2,
+    "darimi": 0
+  }
+}

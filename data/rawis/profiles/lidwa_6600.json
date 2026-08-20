@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6600",
+  "name_en": "Ka'ab bin 'Amru bin 'Abbad",
+  "name_id": "Ka'ab bin 'Amru bin 'Abbad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "55 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Yusur",
+  "parents": "Al Anshariy As Sulamiy",
+  "nasab": "Al Anshariy As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

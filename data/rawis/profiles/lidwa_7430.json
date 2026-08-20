@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7430",
+  "name_en": "Masruq bin Al Ajda' bin Malik bin Umayyah",
+  "name_id": "Masruq bin Al Ajda' bin Malik bin Umayyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "63 H",
+  "city_of_death": "Hait",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Aisyah ",
+  "parents": "Al Hamdaniy Al Wadi'iy",
+  "nasab": "Al Hamdaniy Al Wadi'iy",
+  "laqob": "-",
+  "hadith_count": "512",
+  "book_counts": {
+    "bukhari": 110,
+    "muslim": 65,
+    "abudaud": 24,
+    "tirmidzi": 27,
+    "nasai": 52,
+    "ibnumajah": 39,
+    "ahmad": 162,
+    "malik": 0,
+    "darimi": 33
+  }
+}

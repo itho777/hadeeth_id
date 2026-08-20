@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2026",
+  "name_en": "Tsabit bin Qais bin Syammas",
+  "name_id": "Tsabit bin Qais bin Syammas",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "12 H",
+  "city_of_death": "Yamamah",
+  "residence": "Madinah ",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

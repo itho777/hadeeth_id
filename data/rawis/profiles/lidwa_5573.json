@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5573",
+  "name_en": "Adiy bin Tsabit",
+  "name_id": "Adiy bin Tsabit",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "116 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "205",
+  "book_counts": {
+    "bukhari": 38,
+    "muslim": 24,
+    "abudaud": 13,
+    "tirmidzi": 13,
+    "nasai": 15,
+    "ibnumajah": 14,
+    "ahmad": 78,
+    "malik": 2,
+    "darimi": 8
+  }
+}

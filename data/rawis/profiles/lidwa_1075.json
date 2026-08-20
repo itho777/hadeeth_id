@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1075",
+  "name_en": "Iyas bin Salamah bin Al Akwa'",
+  "name_id": "Iyas bin Salamah bin Al Akwa'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "119 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Salamah",
+  "parents": "Al Aslamiy",
+  "nasab": "Al Aslamiy",
+  "laqob": "-",
+  "hadith_count": "72",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 13,
+    "abudaud": 9,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 6,
+    "ahmad": 32,
+    "malik": 0,
+    "darimi": 5
+  }
+}

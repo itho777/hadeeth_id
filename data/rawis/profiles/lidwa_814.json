@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_814",
+  "name_en": "Ibrahim bin Hamzah bin Sulaiman bin Abi Yahya ",
+  "name_id": "Ibrahim bin Hamzah bin Sulaiman bin Abi Yahya ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ishaq",
+  "parents": "Ar Ramliy",
+  "nasab": "Ar Ramliy",
+  "laqob": "Al Bazaaz",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

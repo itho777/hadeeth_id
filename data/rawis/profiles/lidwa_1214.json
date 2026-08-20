@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1214",
+  "name_en": "Al Harits bin Fudloil",
+  "name_id": "Al Harits bin Fudloil",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Khathmiy Al Anshariy",
+  "nasab": "Al Khathmiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1840",
+  "name_en": "Buraid bin 'Abdullah bin Abi Burdah bin Abi Musa",
+  "name_id": "Buraid bin 'Abdullah bin Abi Burdah bin Abi Musa",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Burdah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "139",
+  "book_counts": {
+    "bukhari": 58,
+    "muslim": 33,
+    "abudaud": 7,
+    "tirmidzi": 9,
+    "nasai": 4,
+    "ibnumajah": 6,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 0
+  }
+}

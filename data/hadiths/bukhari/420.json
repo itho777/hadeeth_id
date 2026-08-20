@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 420,
+  "arabicnumber": 420,
+  "text": "Telah menceritakan kepada kami ['Abdullah bin Yusuf] berkata, telah mengabarkan kepada kami [Malik] dari [Nafi'] dari ['Abdullah bin 'Umar], bahwa Rasulullah shallallahu 'alaihi wasallam pernah mempertandingkan antara kudan yang dipersiapkan untuk pacuan yang jaraknya dimulai dari Al Hafya' sampai Tsaniyatul Wada', dan kuda yang tidak disiapkanuntuk pacuan yang dimulai dari Al Hafya' hingga Masjid Bani Zuraiq.\" 'Abdullah bin 'Umar adalah termasuk orang yang mengikuti pacuan tersebut",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Abdullah bin Umar bin al-Khattab",
+      "name_ar": "عبد الله بن عمر بن الخطاب",
+      "rawi_id": "rawi_ibn_umar"
+    },
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    }
+  ]
+}

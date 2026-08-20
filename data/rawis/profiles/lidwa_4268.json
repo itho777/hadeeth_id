@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4268",
+  "name_en": "Abdur Rahman bin Abi Bakar Ash Shiddiq",
+  "name_id": "Abdur Rahman bin Abi Bakar Ash Shiddiq",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "53 H",
+  "city_of_death": "Jauzijan",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "33",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 2
+  }
+}

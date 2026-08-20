@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4668",
+  "name_en": "Abdullah bin Ishaq",
+  "name_id": "Abdullah bin Ishaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "257 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Jawhariy Al Mustamaliy",
+  "nasab": "Al Jawhariy Al Mustamaliy",
+  "laqob": "Bad'ah",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3036",
+  "name_en": "Zuhair bin Harb bin Syaddad",
+  "name_id": "Zuhair bin Harb bin Syaddad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "234 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Khaitsamah",
+  "parents": "Al Harasyiy An Nasa'iy",
+  "nasab": "Al Harasyiy An Nasa'iy",
+  "laqob": "-",
+  "hadith_count": "843",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 749,
+    "abudaud": 43,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 35,
+    "malik": 0,
+    "darimi": 1
+  }
+}

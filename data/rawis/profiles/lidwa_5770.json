@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5770",
+  "name_en": "Ali bin Zaid bin 'Abdullah bin Jud'an",
+  "name_id": "Ali bin Zaid bin 'Abdullah bin Jud'an",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "131 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "338",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 12,
+    "tirmidzi": 26,
+    "nasai": 2,
+    "ibnumajah": 24,
+    "ahmad": 263,
+    "malik": 0,
+    "darimi": 10
+  }
+}

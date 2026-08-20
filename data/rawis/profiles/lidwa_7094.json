@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7094",
+  "name_en": "Muhammad bin 'Abdullah bin Abi Ya'qub",
+  "name_id": "Muhammad bin 'Abdullah bin Abi Ya'qub",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "At Tamimiy Adl Dlabbiy",
+  "nasab": "At Tamimiy Adl Dlabbiy",
+  "laqob": "-",
+  "hadith_count": "40",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 3,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 6,
+    "ibnumajah": 2,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 2
+  }
+}

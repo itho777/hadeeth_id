@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6785",
+  "name_en": "Muhammad bin Ahmad bin Muhammad bin Al Hajjaj",
+  "name_id": "Muhammad bin Ahmad bin Muhammad bin Al Hajjaj",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "246 H",
+  "city_of_death": "Raqqah",
+  "residence": "Jazirah",
+  "kunyah": "Abu Yusuf",
+  "parents": "Al Qurasyiy Al Kuraiziy",
+  "nasab": "Al Qurasyiy Al Kuraiziy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 7,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

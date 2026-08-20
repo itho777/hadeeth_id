@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6997",
+  "name_en": "Muhammad bin Salamah bin 'Abdullah ",
+  "name_id": "Muhammad bin Salamah bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "192 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Bahiliy Al Harraniy",
+  "nasab": "Al Bahiliy Al Harraniy",
+  "laqob": "-",
+  "hadith_count": "138",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 52,
+    "tirmidzi": 4,
+    "nasai": 18,
+    "ibnumajah": 14,
+    "ahmad": 43,
+    "malik": 0,
+    "darimi": 6
+  }
+}

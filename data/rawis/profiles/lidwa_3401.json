@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3401",
+  "name_en": "Sa'id bin Manshur bin Syu'bah",
+  "name_id": "Sa'id bin Manshur bin Syu'bah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "227 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Khurasaniy Al Marwaziy ",
+  "nasab": "Al Khurasaniy Al Marwaziy ",
+  "laqob": "-",
+  "hadith_count": "148",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 60,
+    "abudaud": 50,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 11
+  }
+}

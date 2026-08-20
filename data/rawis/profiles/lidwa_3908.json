@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3908",
+  "name_en": "\"Shuhar bin 'Abbas, disebut juga 'Ayyasy bin Shakhr\"",
+  "name_id": "\"Shuhar bin 'Abbas, disebut juga 'Ayyasy bin Shakhr\"",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Aba 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

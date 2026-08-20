@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8183",
+  "name_en": "Wahab bin Munabbih bin Kamil",
+  "name_id": "Wahab bin Munabbih bin Kamil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "110 H",
+  "city_of_death": "Shiffin",
+  "residence": "Yaman",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ash Shan'aniy Al Abnariy",
+  "nasab": "Ash Shan'aniy Al Abnariy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 8,
+    "tirmidzi": 5,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 9
+  }
+}

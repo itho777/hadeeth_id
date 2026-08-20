@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4379",
+  "name_en": "Abdur Rahman bin Sa'id bin Yarbugh'''",
+  "name_id": "Abdur Rahman bin Sa'id bin Yarbugh'''",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "109 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "AbuMuhammad",
+  "parents": "Al Makhzumiy",
+  "nasab": "Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 1,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_876",
+  "name_en": "Ibrahim bin Muhammad bin Sa'ad bin Abi Waqash",
+  "name_id": "Ibrahim bin Muhammad bin Sa'ad bin Abi Waqash",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Az Zuhriy",
+  "nasab": "Al Qurasyiy Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

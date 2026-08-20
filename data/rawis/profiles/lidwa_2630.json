@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2630",
+  "name_en": "Khalid bin Al Walid bin Al Mughirah",
+  "name_id": "Khalid bin Al Walid bin Al Mughirah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "21 H",
+  "city_of_death": "Halwan",
+  "residence": "Madinah",
+  "kunyah": "Abu Sulaiman ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Saifulloh",
+  "hadith_count": "32",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 2,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 12,
+    "malik": 1,
+    "darimi": 1
+  }
+}

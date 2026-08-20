@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7624",
+  "name_en": "Ma'qil bin Yasar bin 'Abdullah ",
+  "name_id": "Ma'qil bin Yasar bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Muzaniy",
+  "nasab": "Al Muzaniy",
+  "laqob": "-",
+  "hadith_count": "53",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 7,
+    "abudaud": 5,
+    "tirmidzi": 4,
+    "nasai": 1,
+    "ibnumajah": 5,
+    "ahmad": 24,
+    "malik": 0,
+    "darimi": 3
+  }
+}

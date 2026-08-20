@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2059",
+  "name_en": "Tsuwair bin Abi Fakhitah Sa'id bin 'Alaaqah",
+  "name_id": "Tsuwair bin Abi Fakhitah Sa'id bin 'Alaaqah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Jahm",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 7,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 1
+  }
+}

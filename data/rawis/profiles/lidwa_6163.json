@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6163",
+  "name_en": "Amru bin 'Utsman bin Sa'id",
+  "name_id": "Amru bin 'Utsman bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Hafsh",
+  "parents": "Al Qurasyiy Al Himshiy",
+  "nasab": "Al Qurasyiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "116",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 36,
+    "tirmidzi": 0,
+    "nasai": 65,
+    "ibnumajah": 15,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

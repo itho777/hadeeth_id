@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6665",
+  "name_en": "Malik bin Al Huwairits",
+  "name_id": "Malik bin Al Huwairits",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "74 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sulaiman",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "62",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 4,
+    "abudaud": 6,
+    "tirmidzi": 3,
+    "nasai": 14,
+    "ibnumajah": 2,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 2
+  }
+}

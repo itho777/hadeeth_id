@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7882",
+  "name_en": "Nusaibah binti Ka'ab",
+  "name_id": "Nusaibah binti Ka'ab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "9",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Ummu 'Athiyyah",
+  "parents": "Al Anshariyyah Al Madaniyyah",
+  "nasab": "Al Anshariyyah Al Madaniyyah",
+  "laqob": "-",
+  "hadith_count": "119",
+  "book_counts": {
+    "bukhari": 31,
+    "muslim": 17,
+    "abudaud": 10,
+    "tirmidzi": 3,
+    "nasai": 19,
+    "ibnumajah": 7,
+    "ahmad": 26,
+    "malik": 1,
+    "darimi": 5
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6808",
+  "name_en": "Muhammad bin Ishaq bin 'Aun",
+  "name_id": "Muhammad bin Ishaq bin 'Aun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "264 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Bakka'iy Al 'Amiriy",
+  "nasab": "Al Bakka'iy Al 'Amiriy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

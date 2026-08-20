@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7982",
+  "name_en": "Harun bin 'Abbad",
+  "name_id": "Harun bin 'Abbad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Musa",
+  "parents": "Al Azdiy Al Mashishiy",
+  "nasab": "Al Azdiy Al Mashishiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

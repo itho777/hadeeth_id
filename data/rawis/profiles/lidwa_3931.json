@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3931",
+  "name_en": "Sha'bi bin Jatstsamah bin Qais bin 'Abdullah Ya'mar",
+  "name_id": "Sha'bi bin Jatstsamah bin Qais bin 'Abdullah Ya'mar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Laitsiy Al Widaniy",
+  "nasab": "Al Laitsiy Al Widaniy",
+  "laqob": "-",
+  "hadith_count": "64",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 43,
+    "malik": 1,
+    "darimi": 2
+  }
+}

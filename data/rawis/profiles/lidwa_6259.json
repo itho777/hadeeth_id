@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6259",
+  "name_en": "Auf bin Malik bin Abi 'Auf",
+  "name_id": "Auf bin Malik bin Abi 'Auf",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "73 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Asyja'iy Al Ghathafaniy",
+  "nasab": "Al Asyja'iy Al Ghathafaniy",
+  "laqob": "-",
+  "hadith_count": "76",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 7,
+    "abudaud": 12,
+    "tirmidzi": 2,
+    "nasai": 7,
+    "ibnumajah": 8,
+    "ahmad": 39,
+    "malik": 0,
+    "darimi": 0
+  }
+}

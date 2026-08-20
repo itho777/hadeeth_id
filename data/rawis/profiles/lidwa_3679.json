@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3679",
+  "name_en": "Sahal bin Mu'adz bin Anas",
+  "name_id": "Sahal bin Mu'adz bin Anas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "-",
+  "parents": "Al Juhaniy Asy Syammiy",
+  "nasab": "Al Juhaniy Asy Syammiy",
+  "laqob": "-",
+  "hadith_count": "70",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 9,
+    "tirmidzi": 7,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 47,
+    "malik": 0,
+    "darimi": 2
+  }
+}

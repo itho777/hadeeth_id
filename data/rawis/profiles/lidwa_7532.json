@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7532",
+  "name_en": "Mutharrif bin 'Abdullah bin Mutharrif",
+  "name_id": "Mutharrif bin 'Abdullah bin Mutharrif",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "220 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Ayyub",
+  "parents": "Al Yasariy Al Hilaliy",
+  "nasab": "Al Yasariy Al Hilaliy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

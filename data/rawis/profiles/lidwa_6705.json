@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6705",
+  "name_en": "Mubarak bin Sa'id binm Masruq",
+  "name_id": "Mubarak bin Sa'id binm Masruq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "180 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Ats Tsauriy Al Kufiy",
+  "nasab": "Ats Tsauriy Al Kufiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 2
+  }
+}

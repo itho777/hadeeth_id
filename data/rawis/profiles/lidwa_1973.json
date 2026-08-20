@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1973",
+  "name_en": "Bahza bin Asad",
+  "name_id": "Bahza bin Asad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "197 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Aswad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "623",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 68,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 28,
+    "ibnumajah": 2,
+    "ahmad": 515,
+    "malik": 0,
+    "darimi": 0
+  }
+}

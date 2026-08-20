@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3223",
+  "name_en": "Sa'ad",
+  "name_id": "Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Murawih",
+  "parents": "Al Laitsiy Al Ghifariy",
+  "nasab": "Al Laitsiy Al Ghifariy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

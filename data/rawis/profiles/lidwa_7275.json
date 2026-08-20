@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7275",
+  "name_en": "Muhammad bin Maslamah bin Salamah",
+  "name_id": "Muhammad bin Maslamah bin Salamah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "7",
+  "died_ah": "43 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Anshariy Al Haritsiy",
+  "nasab": "Al Anshariy Al Haritsiy",
+  "laqob": "-",
+  "hadith_count": "28",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 4,
+    "ahmad": 10,
+    "malik": 2,
+    "darimi": 1
+  }
+}

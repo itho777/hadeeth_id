@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_423",
+  "name_en": "Ahmad bin Al Miqdam bin Sulaiman bin Al Asy'ats bin Aslam",
+  "name_id": "Ahmad bin Al Miqdam bin Sulaiman bin Al Asy'ats bin Aslam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "253 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al 'Ajaliy ",
+  "nasab": "Al 'Ajaliy ",
+  "laqob": "-",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 4,
+    "nasai": 20,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

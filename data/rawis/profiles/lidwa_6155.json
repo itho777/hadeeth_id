@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6155",
+  "name_en": "Amru bin 'Abdullah bin 'Ubaid",
+  "name_id": "Amru bin 'Abdullah bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "128 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Ishaq",
+  "parents": "As Suba'iy Al Hamdaniy",
+  "nasab": "As Suba'iy Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "1572",
+  "book_counts": {
+    "bukhari": 158,
+    "muslim": 79,
+    "abudaud": 91,
+    "tirmidzi": 145,
+    "nasai": 149,
+    "ibnumajah": 106,
+    "ahmad": 765,
+    "malik": 0,
+    "darimi": 79
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5049",
+  "name_en": "Abdullah bin Muhammad bin Abi Syaibah Ibrahim bin 'Utsman",
+  "name_id": "Abdullah bin Muhammad bin Abi Syaibah Ibrahim bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "235 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al 'Abasiy",
+  "nasab": "Al 'Abasiy",
+  "laqob": "-",
+  "hadith_count": "2636",
+  "book_counts": {
+    "bukhari": 19,
+    "muslim": 1301,
+    "abudaud": 60,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1098,
+    "ahmad": 123,
+    "malik": 0,
+    "darimi": 33
+  }
+}

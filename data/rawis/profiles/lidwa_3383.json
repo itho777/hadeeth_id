@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3383",
+  "name_en": "Sa'id bin 'Amru bin Sahal bin Ishaq",
+  "name_id": "Sa'id bin 'Amru bin Sahal bin Ishaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "230 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Kindiy Al Asy'atsiy",
+  "nasab": "Al Kindiy Al Asy'atsiy",
+  "laqob": "-",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 26,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

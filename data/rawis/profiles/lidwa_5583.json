@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5583",
+  "name_en": "Irbadl bin Sariyah",
+  "name_id": "Irbadl bin Sariyah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "75 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Najih",
+  "parents": "As Sulamiy Al Himshiy",
+  "nasab": "As Sulamiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "41",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 5,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 2
+  }
+}

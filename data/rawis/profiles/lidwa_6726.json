@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6726",
+  "name_en": "Muhadlir bin Al Muwarri'",
+  "name_id": "Muhadlir bin Al Muwarri'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "206 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Muwarri'",
+  "parents": "Al Yamiy Al Hamdaniy",
+  "nasab": "Al Yamiy Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

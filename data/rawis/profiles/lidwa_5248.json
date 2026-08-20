@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5248",
+  "name_en": "Abdul Malik bin Maysarah",
+  "name_id": "Abdul Malik bin Maysarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "AbuZaid",
+  "parents": "Al 'Amiriy",
+  "nasab": "Al 'Amiriy",
+  "laqob": "Az Zarrad",
+  "hadith_count": "61",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 3,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 31,
+    "malik": 0,
+    "darimi": 5
+  }
+}

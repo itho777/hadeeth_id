@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8166",
+  "name_en": "Wahab bin Baqiyyah bin 'Utsman",
+  "name_id": "Wahab bin Baqiyyah bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "239 H",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Wasithiy",
+  "nasab": "Al Wasithiy",
+  "laqob": "Wahban",
+  "hadith_count": "62",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 45,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 0
+  }
+}

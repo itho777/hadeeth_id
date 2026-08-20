@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7399",
+  "name_en": "Marwan bin Al Hakam bin Abi Al 'Ash binUmayyah",
+  "name_id": "Marwan bin Al Hakam bin Abi Al 'Ash binUmayyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "65 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdul Malik",
+  "parents": "Al Umawiy Al Madaniy",
+  "nasab": "Al Umawiy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "80",
+  "book_counts": {
+    "bukhari": 20,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 2,
+    "nasai": 10,
+    "ibnumajah": 2,
+    "ahmad": 25,
+    "malik": 7,
+    "darimi": 7
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6634",
+  "name_en": "Laqith bin Shabirah bin 'Abdullah bin Al Muntafiq bin 'Amir",
+  "name_id": "Laqith bin Shabirah bin 'Abdullah bin Al Muntafiq bin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Tha'if",
+  "kunyah": "Abu Razin",
+  "parents": "Al 'Aqiliy",
+  "nasab": "Al 'Aqiliy",
+  "laqob": "-",
+  "hadith_count": "59",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 7,
+    "tirmidzi": 6,
+    "nasai": 5,
+    "ibnumajah": 7,
+    "ahmad": 31,
+    "malik": 0,
+    "darimi": 3
+  }
+}

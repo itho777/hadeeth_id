@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1609",
+  "name_en": "Al Qasim bin Yazid",
+  "name_id": "Al Qasim bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "193 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Yazid",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 11,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

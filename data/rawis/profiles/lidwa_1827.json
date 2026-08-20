@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1827",
+  "name_en": "Bahar bin Marrar bin 'Abdur Rahman bin Abi Bakrah",
+  "name_id": "Bahar bin Marrar bin 'Abdur Rahman bin Abi Bakrah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "138 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Mu'adz",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

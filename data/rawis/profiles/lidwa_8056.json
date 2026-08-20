@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8056",
+  "name_en": "Hisyam bin 'Ammar bin Nushair bin Maisarah bin Aban",
+  "name_id": "Hisyam bin 'Ammar bin Nushair bin Maisarah bin Aban",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "245 H",
+  "city_of_death": "Dujail",
+  "residence": "Syam",
+  "kunyah": "Abu Al Walid",
+  "parents": "As Sulamiy",
+  "nasab": "As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "364",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 17,
+    "tirmidzi": 1,
+    "nasai": 14,
+    "ibnumajah": 328,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

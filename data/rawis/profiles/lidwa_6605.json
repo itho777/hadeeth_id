@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6605",
+  "name_en": "Kultsum binti 'Amru ",
+  "name_id": "Kultsum binti 'Amru ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "7",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Ummu Kultsum",
+  "parents": "Al Qurasyiyyah",
+  "nasab": "Al Qurasyiyyah",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

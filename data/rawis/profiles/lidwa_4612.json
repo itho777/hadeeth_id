@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4612",
+  "name_en": "Abdul Karim bin Malik",
+  "name_id": "Abdul Karim bin Malik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "127 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Jazari Al Hadlramiy",
+  "nasab": "Al Jazari Al Hadlramiy",
+  "laqob": "-",
+  "hadith_count": "118",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 6,
+    "abudaud": 6,
+    "tirmidzi": 6,
+    "nasai": 9,
+    "ibnumajah": 15,
+    "ahmad": 55,
+    "malik": 1,
+    "darimi": 13
+  }
+}

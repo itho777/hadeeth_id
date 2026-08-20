@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1933",
+  "name_en": "Bakar bin 'Abdullah",
+  "name_id": "Bakar bin 'Abdullah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "106 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah",
+  "parents": "Al Muzani Al Bashri",
+  "nasab": "Al Muzani Al Bashri",
+  "laqob": "-",
+  "hadith_count": "97",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 10,
+    "abudaud": 10,
+    "tirmidzi": 5,
+    "nasai": 8,
+    "ibnumajah": 5,
+    "ahmad": 38,
+    "malik": 0,
+    "darimi": 9
+  }
+}

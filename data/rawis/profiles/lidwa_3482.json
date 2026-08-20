@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3482",
+  "name_en": "\"Salman,maula Juhainah\"",
+  "name_id": "\"Salman,maula Juhainah\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Juhaniy",
+  "nasab": "Al Juhaniy",
+  "laqob": "Al Aghar",
+  "hadith_count": "59",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 8,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 26,
+    "malik": 2,
+    "darimi": 3
+  }
+}

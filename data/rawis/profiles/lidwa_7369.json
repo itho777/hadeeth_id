@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7369",
+  "name_en": "Makhlad bin Malik bin Jabir",
+  "name_id": "Makhlad bin Malik bin Jabir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "241 H",
+  "city_of_death": "Nihawand",
+  "residence": "Himsh",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Jammal Ar Raziy",
+  "nasab": "Al Jammal Ar Raziy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 9
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3474",
+  "name_en": "Salm bin Qutaibah",
+  "name_id": "Salm bin Qutaibah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "200 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Qutaibah",
+  "parents": "Asy Sya'iyriy Al Khurasaniy",
+  "nasab": "Asy Sya'iyriy Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "44",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 13,
+    "nasai": 4,
+    "ibnumajah": 9,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

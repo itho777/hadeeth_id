@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2483",
+  "name_en": "Hammad bin Abi Sulaiman Muslim",
+  "name_id": "Hammad bin Abi Sulaiman Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "120 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Isma'il",
+  "parents": "Al Kufi Al Asy'ari",
+  "nasab": "Al Kufi Al Asy'ari",
+  "laqob": "-",
+  "hadith_count": "106",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 11,
+    "ibnumajah": 2,
+    "ahmad": 56,
+    "malik": 0,
+    "darimi": 30
+  }
+}

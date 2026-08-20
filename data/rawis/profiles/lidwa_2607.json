@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2607",
+  "name_en": "Kharijah bin Zaid bin Tsabit",
+  "name_id": "Kharijah bin Zaid bin Tsabit",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "100 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Zaid",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "59",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 1,
+    "abudaud": 6,
+    "tirmidzi": 4,
+    "nasai": 7,
+    "ibnumajah": 3,
+    "ahmad": 21,
+    "malik": 3,
+    "darimi": 5
+  }
+}

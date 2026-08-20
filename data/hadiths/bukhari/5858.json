@@ -1,0 +1,18 @@
+{
+  "hadithnumber": 5858,
+  "arabicnumber": 5858,
+  "text": "Telah menceritakan kepadaku [Muhammad] telah mengabarkan kepada kami [Abdullah] telah mengabarkan kepada kami [Isa bin Thuhman] dia berkata; [Anas bin Malik] keluar menemui kami dengan mengenakan sandal yang memiliki dua utas tali, lantas Tsabit Al Bunani mengatakan; \"Ini adalah sandal Nabi shallallahu 'alaihi wasallam",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Abdullah bin Umar bin al-Khattab",
+      "name_ar": "عبد الله بن عمر بن الخطاب",
+      "rawi_id": "rawi_ibn_umar"
+    },
+    {
+      "name_id": "Muhammad bin Isa at-Tirmidzi",
+      "name_ar": "محمد بن عيسى الترمذي",
+      "rawi_id": "rawi_al_tirmidhi"
+    }
+  ]
+}

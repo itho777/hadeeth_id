@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1919",
+  "name_en": "Baqiyyah bin Al Walid bin Sha'id",
+  "name_id": "Baqiyyah bin Al Walid bin Sha'id",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "197 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Yahmad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "238",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 47,
+    "tirmidzi": 8,
+    "nasai": 52,
+    "ibnumajah": 37,
+    "ahmad": 77,
+    "malik": 0,
+    "darimi": 15
+  }
+}

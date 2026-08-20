@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6761",
+  "name_en": "Muhammad bin Abi Bakar bin 'Auf bin Rabah",
+  "name_id": "Muhammad bin Abi Bakar bin 'Auf bin Rabah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 1,
+    "darimi": 1
+  }
+}

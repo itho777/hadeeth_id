@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3634",
+  "name_en": "Sulaiman bin Yasar",
+  "name_id": "Sulaiman bin Yasar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "110 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ayyub",
+  "parents": "Al Hilaliy",
+  "nasab": "Al Hilaliy",
+  "laqob": "-",
+  "hadith_count": "294",
+  "book_counts": {
+    "bukhari": 18,
+    "muslim": 22,
+    "abudaud": 20,
+    "tirmidzi": 13,
+    "nasai": 59,
+    "ibnumajah": 15,
+    "ahmad": 85,
+    "malik": 44,
+    "darimi": 18
+  }
+}

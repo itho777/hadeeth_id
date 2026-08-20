@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7218",
+  "name_en": "Muhammad bin 'Amru bin Bakar bin Salim",
+  "name_id": "Muhammad bin 'Amru bin Bakar bin Salim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "240 H",
+  "city_of_death": "-",
+  "residence": "Rayi",
+  "kunyah": "Abu Ghassan",
+  "parents": "At Tamimiy Al 'Adawiy",
+  "nasab": "At Tamimiy Al 'Adawiy",
+  "laqob": "Zunaij",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 12,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

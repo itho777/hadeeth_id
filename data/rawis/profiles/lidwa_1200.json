@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1200",
+  "name_en": "Al Harits bin 'Abdullah ",
+  "name_id": "Al Harits bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Zuhair",
+  "parents": "Al Hamdaniy Al Khariqiy",
+  "nasab": "Al Hamdaniy Al Khariqiy",
+  "laqob": "Al A'war",
+  "hadith_count": "103",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 21,
+    "nasai": 3,
+    "ibnumajah": 17,
+    "ahmad": 44,
+    "malik": 0,
+    "darimi": 13
+  }
+}

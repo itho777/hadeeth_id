@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3559",
+  "name_en": "Sulaiman bin Abi Sulaiman Fairuz",
+  "name_id": "Sulaiman bin Abi Sulaiman Fairuz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "138 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Asy Syaibaniy",
+  "nasab": "Asy Syaibaniy",
+  "laqob": "-",
+  "hadith_count": "208",
+  "book_counts": {
+    "bukhari": 45,
+    "muslim": 34,
+    "abudaud": 17,
+    "tirmidzi": 8,
+    "nasai": 15,
+    "ibnumajah": 11,
+    "ahmad": 58,
+    "malik": 0,
+    "darimi": 20
+  }
+}

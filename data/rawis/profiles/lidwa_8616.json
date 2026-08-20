@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8616",
+  "name_en": "Yunus bin 'Ubaid bin Dinar",
+  "name_id": "Yunus bin 'Ubaid bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "139 H",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu 'Ubaid",
+  "parents": "Al 'Abdiy",
+  "nasab": "Al 'Abdiy",
+  "laqob": "-",
+  "hadith_count": "325",
+  "book_counts": {
+    "bukhari": 23,
+    "muslim": 19,
+    "abudaud": 29,
+    "tirmidzi": 13,
+    "nasai": 36,
+    "ibnumajah": 16,
+    "ahmad": 141,
+    "malik": 0,
+    "darimi": 48
+  }
+}

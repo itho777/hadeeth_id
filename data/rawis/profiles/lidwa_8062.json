@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8062",
+  "name_en": "Husyaim bin Basyir bin Al Qasim bin Dinar",
+  "name_id": "Husyaim bin Basyir bin Al Qasim bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "183 H",
+  "city_of_death": "Baghdad",
+  "residence": "Hait",
+  "kunyah": "Abu Mu'awiyah",
+  "parents": "As Sulamiy",
+  "nasab": "As Sulamiy",
+  "laqob": "Ibnu Abi Khazim",
+  "hadith_count": "766",
+  "book_counts": {
+    "bukhari": 52,
+    "muslim": 87,
+    "abudaud": 73,
+    "tirmidzi": 58,
+    "nasai": 71,
+    "ibnumajah": 38,
+    "ahmad": 343,
+    "malik": 0,
+    "darimi": 44
+  }
+}

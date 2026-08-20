@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4740",
+  "name_en": "Abdullah bin Al Buraidah bin Al Hushaib",
+  "name_id": "Abdullah bin Al Buraidah bin Al Hushaib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "115 H",
+  "city_of_death": "Kufr Jadiya",
+  "residence": "Himsh",
+  "kunyah": "Abu Sahal",
+  "parents": "Al Aslamiy Al Marwaziy",
+  "nasab": "Al Aslamiy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "353",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 18,
+    "abudaud": 46,
+    "tirmidzi": 30,
+    "nasai": 43,
+    "ibnumajah": 26,
+    "ahmad": 153,
+    "malik": 0,
+    "darimi": 12
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3127",
+  "name_en": "Zaid bin Al Hawariy",
+  "name_id": "Zaid bin Al Hawariy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Hawariy",
+  "parents": "Al 'Amiy",
+  "nasab": "Al 'Amiy",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 6,
+    "nasai": 0,
+    "ibnumajah": 10,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 1
+  }
+}

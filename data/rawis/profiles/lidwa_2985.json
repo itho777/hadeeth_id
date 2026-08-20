@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2985",
+  "name_en": "Zadzan",
+  "name_id": "Zadzan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "82 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Umar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Bazzar wa Al Dlurair",
+  "hadith_count": "51",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 5,
+    "tirmidzi": 5,
+    "nasai": 3,
+    "ibnumajah": 5,
+    "ahmad": 26,
+    "malik": 0,
+    "darimi": 4
+  }
+}

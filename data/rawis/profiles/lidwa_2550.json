@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2550",
+  "name_en": "Humaid bin Mas'adah bin Al Mubarak",
+  "name_id": "Humaid bin Mas'adah bin Al Mubarak",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "244 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Ali",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "127",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 7,
+    "abudaud": 14,
+    "tirmidzi": 28,
+    "nasai": 57,
+    "ibnumajah": 21,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

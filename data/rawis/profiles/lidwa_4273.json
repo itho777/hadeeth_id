@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4273",
+  "name_en": "Abdur Rahman bin Abi Al Bailamaniy",
+  "name_id": "Abdur Rahman bin Abi Al Bailamaniy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "-",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 6,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 1
+  }
+}

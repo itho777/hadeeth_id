@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_805",
+  "name_en": "Ibrahim bin Al Fadlol",
+  "name_id": "Ibrahim bin Al Fadlol",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Makhzumiy",
+  "nasab": "Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

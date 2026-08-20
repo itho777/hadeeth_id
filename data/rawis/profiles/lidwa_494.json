@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_494",
+  "name_en": "Ahmad bin Mani' bin 'Abdur Rahman",
+  "name_id": "Ahmad bin Mani' bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "244 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Baghawiy",
+  "nasab": "Al Baghawiy",
+  "laqob": "Al Asham",
+  "hadith_count": "279",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 14,
+    "tirmidzi": 249,
+    "nasai": 5,
+    "ibnumajah": 8,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 5634,
+  "arabicnumber": 5634,
+  "text": "Telah menceritakan kepada kami [Isma'il] dia berkata; telah menceritakan kepadaku [Malik bin Anas] dari [Nafi'] dari [Zaid bin Abdullah bin Umar] dari [Abdullah bin Abdurrahman bin Abu Bakr As Siddik] dari [Ummu Salamah isteri Nabi shallallahu 'alaihi wasallam] bahwa Rasulullah shallallahu 'alaihi wasallam bersabda: \"Orang yang minum dari bejana yang terbuat dari perak, hanyasanya ia menuangkan neraka Jahannam ke dalam perutnya",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Malik bin Anas bin Malik al-Ashbahi",
+      "name_ar": "مالك بن أنس بن مالك الأصبحي",
+      "rawi_id": "rawi_malik_ibn_anas"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    }
+  ]
+}

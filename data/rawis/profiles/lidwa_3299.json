@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3299",
+  "name_en": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru",
+  "name_id": "Sa'id bin Al Musayyab bin Hazan bin Abi Wahab bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "93 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "1231",
+  "book_counts": {
+    "bukhari": 199,
+    "muslim": 143,
+    "abudaud": 72,
+    "tirmidzi": 65,
+    "nasai": 151,
+    "ibnumajah": 97,
+    "ahmad": 317,
+    "malik": 120,
+    "darimi": 67
+  }
+}

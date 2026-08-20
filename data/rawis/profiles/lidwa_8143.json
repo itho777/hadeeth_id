@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8143",
+  "name_en": "Wahib bin 'Abdullah ",
+  "name_id": "Wahib bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "37 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Ma'afiriy Al Ka'abiy",
+  "nasab": "Al Ma'afiriy Al Ka'abiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

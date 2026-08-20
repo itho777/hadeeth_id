@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 1697,
+  "arabicnumber": 1697,
+  "text": "Telah menceritakan kepada kami [Musaddad] telah menceritakan kepada kami [Yahya] dari ['Ubaidullah] berkata, telah mengabarkan kepada saya [Nafi'] dari [Ibnu 'Umar] dari [Hafshoh radliallahu 'anhu] berkata; Aku berkata: \"Wahai Rasulullah, apa yang telah diperbuat oleh orang-orang itu mereka bertahallul sedangkan anda tidak?\". Beliau berkata: \"Aku telah mengikat rambutku, telah aku tandai hewan qurbanku, maka tidak halal bagiku segala sesuatu hingga aku menyelesaikan seluruh manasik hajji",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    }
+  ]
+}

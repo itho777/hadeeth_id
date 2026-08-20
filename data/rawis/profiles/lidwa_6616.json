@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6616",
+  "name_en": "Kulaib bin Wa'il bin Habbar",
+  "name_id": "Kulaib bin Wa'il bin Habbar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "At Taymiy Al Madaniy",
+  "nasab": "At Taymiy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

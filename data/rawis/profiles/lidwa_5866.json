@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5866",
+  "name_en": "Umarah bin Al Qa'qa' bin Syubrumah",
+  "name_id": "Umarah bin Al Qa'qa' bin Syubrumah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Adl Dlabbiy",
+  "nasab": "Adl Dlabbiy",
+  "laqob": "-",
+  "hadith_count": "108",
+  "book_counts": {
+    "bukhari": 23,
+    "muslim": 26,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 8,
+    "ibnumajah": 10,
+    "ahmad": 31,
+    "malik": 0,
+    "darimi": 3
+  }
+}

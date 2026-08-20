@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3199",
+  "name_en": "Salim bin 'Ajlan",
+  "name_id": "Salim bin 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "132 H",
+  "city_of_death": "Habasyah",
+  "residence": "Jazirah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "Al Afthas",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

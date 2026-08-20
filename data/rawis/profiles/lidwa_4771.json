@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4771",
+  "name_en": "Abdullah bin Habib bin Rabi'ah",
+  "name_id": "Abdullah bin Habib bin Rabi'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "72 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdur Rahman ",
+  "parents": "As Sulami",
+  "nasab": "As Sulami",
+  "laqob": "Al Qari'",
+  "hadith_count": "135",
+  "book_counts": {
+    "bukhari": 21,
+    "muslim": 9,
+    "abudaud": 6,
+    "tirmidzi": 14,
+    "nasai": 7,
+    "ibnumajah": 8,
+    "ahmad": 66,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1994",
+  "name_en": "Tamim bin Aus bin Kharijah bin Saud",
+  "name_id": "Tamim bin Aus bin Kharijah bin Saud",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "40 H",
+  "city_of_death": "Syam",
+  "residence": "Madinah",
+  "kunyah": "Abu Ruqayyah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "36",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 4,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 9
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7779",
+  "name_en": "Musa bin Wardan",
+  "name_id": "Musa bin Wardan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "117 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Umar",
+  "parents": "Al Qurasyiy Al 'Amiriy",
+  "nasab": "Al Qurasyiy Al 'Amiriy",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 0
+  }
+}

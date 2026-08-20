@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4701",
+  "name_en": "Abdullah bin As Sa'ib bin Abi As Sa'ib",
+  "name_id": "Abdullah bin As Sa'ib bin Abi As Sa'ib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu As Sa'ib",
+  "parents": "Al Qurasyiy Al Makhzumiy",
+  "nasab": "Al Qurasyiy Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 5,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

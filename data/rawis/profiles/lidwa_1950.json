@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1950",
+  "name_en": "Bukair bin 'Abdullah bin Abi Maryam",
+  "name_id": "Bukair bin 'Abdullah bin Abi Maryam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "156 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Bakar ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 35,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4436",
+  "name_en": "Abdur Rahman bin 'Ubaid bin Nisthas bin Abi Shafiyah",
+  "name_id": "Abdur Rahman bin 'Ubaid bin Nisthas bin Abi Shafiyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ya'fur",
+  "parents": "Ats Tsa'labiy Al Bika'iy",
+  "nasab": "Ats Tsa'labiy Al Bika'iy",
+  "laqob": "Ash Shaghir",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7379",
+  "name_en": "Murah bin Syarahil",
+  "name_id": "Murah bin Syarahil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "76 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Isma'il",
+  "parents": "Al Hamdaniy As Saksakiy",
+  "nasab": "Al Hamdaniy As Saksakiy",
+  "laqob": "Ath Thayyib",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 10,
+    "nasai": 2,
+    "ibnumajah": 5,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 3
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_750",
+  "name_en": "Ayyub bin Basyir bin Sa'ad bin An Nu'man",
+  "name_id": "Ayyub bin Basyir bin Sa'ad bin An Nu'man",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "65 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Sulaiman",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3128",
+  "name_en": "Zaid bin Al Khaththab bin Nufail",
+  "name_id": "Zaid bin Al Khaththab bin Nufail",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "12 H",
+  "city_of_death": "Yamamah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al 'Adawiy Al Qurasyiy",
+  "nasab": "Al 'Adawiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

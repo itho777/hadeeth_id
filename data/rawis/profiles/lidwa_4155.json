@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4155",
+  "name_en": "Ubadah bin Al Walid bin 'Ubadah bin Ash Shamit",
+  "name_id": "Ubadah bin Al Walid bin 'Ubadah bin Ash Shamit",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ash Shamit",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 7,
+    "ibnumajah": 2,
+    "ahmad": 6,
+    "malik": 1,
+    "darimi": 0
+  }
+}

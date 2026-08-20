@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_49",
+  "name_en": "Abu Al Hasan",
+  "name_id": "Abu Al Hasan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "Maula Bani Nawfal",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

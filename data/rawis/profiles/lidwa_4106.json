@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4106",
+  "name_en": "Amir bin 'Abdullah bin Al Jarrah",
+  "name_id": "Amir bin 'Abdullah bin Al Jarrah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "18 H",
+  "city_of_death": "Syam",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Ubaidah",
+  "parents": "Al Qurasyiy Al Fahmiy",
+  "nasab": "Al Qurasyiy Al Fahmiy",
+  "laqob": "Aminu Al Ummah",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 11,
+    "malik": 1,
+    "darimi": 4
+  }
+}

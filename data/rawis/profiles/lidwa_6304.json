@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6304",
+  "name_en": "Isa bin Hafsh bin 'Ashim nom 'Umar bin Al Khaththab",
+  "name_id": "Isa bin Hafsh bin 'Ashim nom 'Umar bin Al Khaththab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "157 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Ziyad",
+  "parents": "Ak 'Adawiy",
+  "nasab": "Ak 'Adawiy",
+  "laqob": "Rabah",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

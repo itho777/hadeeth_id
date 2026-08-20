@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4399",
+  "name_en": "Abdur Rahman bin Shafwan bin Qudamah",
+  "name_id": "Abdur Rahman bin Shafwan bin Qudamah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Jamhiy",
+  "nasab": "Al Jamhiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1560",
+  "name_en": "Al Fadlol bin Musa",
+  "name_id": "Al Fadlol bin Musa",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "192 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "117",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 8,
+    "abudaud": 8,
+    "tirmidzi": 39,
+    "nasai": 41,
+    "ibnumajah": 6,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

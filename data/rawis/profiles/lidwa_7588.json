@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7588",
+  "name_en": "Mu'awiyah bin 'Ammar bin Abi Mu'awiyah",
+  "name_id": "Mu'awiyah bin 'Ammar bin Abi Mu'awiyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Ad Duhniy Al Bajaliy",
+  "nasab": "Ad Duhniy Al Bajaliy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

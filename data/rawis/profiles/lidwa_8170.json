@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8170",
+  "name_en": "Wahab bin Hudzaifah",
+  "name_id": "Wahab bin Hudzaifah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah ",
+  "kunyah": "-",
+  "parents": "Al Ghifariy",
+  "nasab": "Al Ghifariy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7998",
+  "name_en": "Hasyim bin Bilal",
+  "name_id": "Hasyim bin Bilal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu 'Aqil",
+  "parents": "Ad Damsyqiy",
+  "nasab": "Ad Damsyqiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7547",
+  "name_en": "Mu'adz bin Jabal bin 'Amru bin Aus",
+  "name_id": "Mu'adz bin Jabal bin 'Amru bin Aus",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "4",
+  "died_ah": "18 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Anshariy Al Khazrajiy",
+  "nasab": "Al Anshariy Al Khazrajiy",
+  "laqob": "-",
+  "hadith_count": "262",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 7,
+    "abudaud": 25,
+    "tirmidzi": 25,
+    "nasai": 13,
+    "ibnumajah": 22,
+    "ahmad": 139,
+    "malik": 5,
+    "darimi": 16
+  }
+}

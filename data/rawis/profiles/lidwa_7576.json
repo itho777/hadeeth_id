@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7576",
+  "name_en": "Mu'awiyah bin Hudaij bin Jufnah",
+  "name_id": "Mu'awiyah bin Hudaij bin Jufnah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "52 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "At Tajibiy Al Kindiy",
+  "nasab": "At Tajibiy Al Kindiy",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 2
+  }
+}

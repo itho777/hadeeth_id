@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_878",
+  "name_en": "Ibrahim bin Muhammad bin 'Abdullah ",
+  "name_id": "Ibrahim bin Muhammad bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "250 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Mam'ariy At Taymiy",
+  "nasab": "Al Mam'ariy At Taymiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 7,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

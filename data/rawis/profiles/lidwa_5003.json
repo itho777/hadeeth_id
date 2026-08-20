@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5003",
+  "name_en": "Abdullah bin Ghalib",
+  "name_id": "Abdullah bin Ghalib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "83 H",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu Quraysy",
+  "parents": "Al Hidaniy",
+  "nasab": "Al Hidaniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

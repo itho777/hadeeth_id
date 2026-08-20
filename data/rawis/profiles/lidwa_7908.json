@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7908",
+  "name_en": "Nadllah bin 'Ubaid",
+  "name_id": "Nadllah bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "9",
+  "died_ah": "64 H",
+  "city_of_death": "Himsh",
+  "residence": "Bashrah",
+  "kunyah": "Abu Barzah",
+  "parents": "Al Aslamiy ",
+  "nasab": "Al Aslamiy ",
+  "laqob": "-",
+  "hadith_count": "104",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 10,
+    "abudaud": 8,
+    "tirmidzi": 3,
+    "nasai": 12,
+    "ibnumajah": 6,
+    "ahmad": 52,
+    "malik": 0,
+    "darimi": 4
+  }
+}

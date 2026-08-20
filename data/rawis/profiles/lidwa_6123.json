@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6123",
+  "name_en": "Amru bin Dinar Al Atsram",
+  "name_id": "Amru bin Dinar Al Atsram",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "126 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Jumahiy",
+  "nasab": "Al Jumahiy",
+  "laqob": "Al Atsram",
+  "hadith_count": "937",
+  "book_counts": {
+    "bukhari": 201,
+    "muslim": 125,
+    "abudaud": 55,
+    "tirmidzi": 58,
+    "nasai": 132,
+    "ibnumajah": 59,
+    "ahmad": 254,
+    "malik": 0,
+    "darimi": 53
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_550",
+  "name_en": "Asma' bin Al Hakam",
+  "name_id": "Asma' bin Al Hakam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "66 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hassaan",
+  "parents": "Al Fazaariy",
+  "nasab": "Al Fazaariy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

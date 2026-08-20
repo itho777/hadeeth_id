@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7272",
+  "name_en": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+  "name_id": "Muhammad bin Muslim bin 'Ubaidillah bin 'Abdullah bin Syihab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "124 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Qurasyiy Az Zuhriy",
+  "nasab": "Al Qurasyiy Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "5730",
+  "book_counts": {
+    "bukhari": 1181,
+    "muslim": 606,
+    "abudaud": 404,
+    "tirmidzi": 280,
+    "nasai": 699,
+    "ibnumajah": 296,
+    "ahmad": 1721,
+    "malik": 269,
+    "darimi": 274
+  }
+}

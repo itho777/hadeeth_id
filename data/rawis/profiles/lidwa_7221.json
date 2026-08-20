@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7221",
+  "name_en": "Muhammad bin 'Amru bin Halhalah",
+  "name_id": "Muhammad bin 'Amru bin Halhalah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Ad Diyliy",
+  "nasab": "Ad Diyliy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 5,
+    "abudaud": 6,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 14,
+    "malik": 3,
+    "darimi": 0
+  }
+}

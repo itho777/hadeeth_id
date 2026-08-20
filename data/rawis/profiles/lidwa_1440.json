@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1440",
+  "name_en": "Az Zubair bin 'Adiy",
+  "name_id": "Az Zubair bin 'Adiy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "131 H",
+  "city_of_death": "Rayi",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Adiy",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 4,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 7,
+    "ibnumajah": 1,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

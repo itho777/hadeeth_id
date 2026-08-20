@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8208",
+  "name_en": "Yahya bin Abi Katsir Shalih bin Al Mutawakkil",
+  "name_id": "Yahya bin Abi Katsir Shalih bin Al Mutawakkil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Yamamah",
+  "kunyah": "Abu Nashr",
+  "parents": "Ath Tha'iy Al Bashriy",
+  "nasab": "Ath Tha'iy Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "1135",
+  "book_counts": {
+    "bukhari": 136,
+    "muslim": 102,
+    "abudaud": 73,
+    "tirmidzi": 64,
+    "nasai": 140,
+    "ibnumajah": 64,
+    "ahmad": 494,
+    "malik": 0,
+    "darimi": 62
+  }
+}

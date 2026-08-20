@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1274",
+  "name_en": "Al Hasan bin 'Abdullah ",
+  "name_id": "Al Hasan bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al 'Uraniy Al Bajaliy",
+  "nasab": "Al 'Uraniy Al Bajaliy",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 0
+  }
+}

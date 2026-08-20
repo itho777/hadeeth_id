@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7455",
+  "name_en": "Muslim bin Ibrahim",
+  "name_id": "Muslim bin Ibrahim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "222 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Azdiy Al Farahidiy",
+  "nasab": "Al Azdiy Al Farahidiy",
+  "laqob": "Asy Syahham",
+  "hadith_count": "270",
+  "book_counts": {
+    "bukhari": 87,
+    "muslim": 2,
+    "abudaud": 113,
+    "tirmidzi": 6,
+    "nasai": 5,
+    "ibnumajah": 4,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 53
+  }
+}

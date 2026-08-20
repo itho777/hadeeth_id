@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7172",
+  "name_en": "Muhammad bin 'Ajlan",
+  "name_id": "Muhammad bin 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "10",
+  "died_ah": "148 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "415",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 15,
+    "abudaud": 50,
+    "tirmidzi": 42,
+    "nasai": 61,
+    "ibnumajah": 47,
+    "ahmad": 177,
+    "malik": 0,
+    "darimi": 19
+  }
+}

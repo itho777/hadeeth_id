@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5501",
+  "name_en": "Utsman bin Al Haitsam bin Jahm",
+  "name_id": "Utsman bin Al Haitsam bin Jahm",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "220 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al 'Abdiy Al 'Ashriy",
+  "nasab": "Al 'Abdiy Al 'Ashriy",
+  "laqob": "Al Asyajj",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

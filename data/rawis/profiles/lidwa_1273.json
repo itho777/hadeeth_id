@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1273",
+  "name_en": "Al Hasan bin 'Abdul 'Aziz bin Al Wazir",
+  "name_id": "Al Hasan bin 'Abdul 'Aziz bin Al Wazir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "257 H",
+  "city_of_death": "Iraq",
+  "residence": "Maru",
+  "kunyah": "Abu 'Ali",
+  "parents": "Al Jadzamiy Al Jarawiy",
+  "nasab": "Al Jadzamiy Al Jarawiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

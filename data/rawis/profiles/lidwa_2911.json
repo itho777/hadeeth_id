@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2911",
+  "name_en": "Raja' bin Haywah bin Jarwal",
+  "name_id": "Raja' bin Haywah bin Jarwal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "112 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Miqdam",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 1
+  }
+}

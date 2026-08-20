@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3668",
+  "name_en": "Sahal bin Bakkar bin Basyar",
+  "name_id": "Sahal bin Bakkar bin Basyar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "227 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bisyir",
+  "parents": "Ad darimiy",
+  "nasab": "Ad darimiy",
+  "laqob": "Al Makfuf",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

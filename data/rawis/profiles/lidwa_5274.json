@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5274",
+  "name_en": "Abdul Wahhab bin Adl Dlahhak",
+  "name_id": "Abdul Wahhab bin Adl Dlahhak",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "10",
+  "died_ah": "245 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abi Al harits",
+  "parents": "As Salmiy Al' 'Urdliy",
+  "nasab": "As Salmiy Al' 'Urdliy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 7,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

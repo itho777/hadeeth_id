@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1343",
+  "name_en": "Al Husain bin 'Isa bin Himran",
+  "name_id": "Al Husain bin 'Isa bin Himran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "247 H",
+  "city_of_death": "Nihawand",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Ali",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 6,
+    "tirmidzi": 0,
+    "nasai": 11,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

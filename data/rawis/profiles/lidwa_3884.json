@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3884",
+  "name_en": "Shalih bin 'Abdullah bin Dzakwan",
+  "name_id": "Shalih bin 'Abdullah bin Dzakwan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "239 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Bahiliy At Tirmidziy",
+  "nasab": "Al Bahiliy At Tirmidziy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 14,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 2
+  }
+}

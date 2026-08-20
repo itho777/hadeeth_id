@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2738",
+  "name_en": "Khalaf bin Hisyam bin Tsa'lab",
+  "name_id": "Khalaf bin Hisyam bin Tsa'lab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "229 H",
+  "city_of_death": "Baghdad",
+  "residence": "Baghdad",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "50",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 30,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 0
+  }
+}

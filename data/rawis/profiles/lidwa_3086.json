@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3086",
+  "name_en": "Ziyad bin Sa'ad bion 'Abdur Rahman",
+  "name_id": "Ziyad bin Sa'ad bion 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Khurasaniy",
+  "nasab": "Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "72",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 11,
+    "abudaud": 10,
+    "tirmidzi": 5,
+    "nasai": 10,
+    "ibnumajah": 1,
+    "ahmad": 23,
+    "malik": 4,
+    "darimi": 3
+  }
+}

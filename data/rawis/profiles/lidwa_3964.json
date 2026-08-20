@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3964",
+  "name_en": "Shuhaib bin Sinan",
+  "name_id": "Shuhaib bin Sinan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "38 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Yahya",
+  "parents": "Ar Ruumiy An Namariy",
+  "nasab": "Ar Ruumiy An Namariy",
+  "laqob": "-",
+  "hadith_count": "43",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 5,
+    "nasai": 4,
+    "ibnumajah": 6,
+    "ahmad": 20,
+    "malik": 0,
+    "darimi": 3
+  }
+}

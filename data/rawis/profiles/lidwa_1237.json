@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1237",
+  "name_en": "Al Hajjaj bin Yusuf bin Abi 'Uqail",
+  "name_id": "Al Hajjaj bin Yusuf bin Abi 'Uqail",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "10",
+  "died_ah": "95 H",
+  "city_of_death": "Hait",
+  "residence": "Iraq",
+  "kunyah": "-",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1302",
+  "name_en": "Al Hasan bin Muslim bin Yannaaq",
+  "name_id": "Al Hasan bin Muslim bin Yannaaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "74",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 9,
+    "abudaud": 6,
+    "tirmidzi": 0,
+    "nasai": 9,
+    "ibnumajah": 4,
+    "ahmad": 30,
+    "malik": 0,
+    "darimi": 2
+  }
+}

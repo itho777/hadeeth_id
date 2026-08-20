@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4860",
+  "name_en": "Abdullah bin Syu'aib bin Al Habhaab",
+  "name_id": "Abdullah bin Syu'aib bin Al Habhaab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Azdiy Al Mu'awaliy",
+  "nasab": "Al Azdiy Al Mu'awaliy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

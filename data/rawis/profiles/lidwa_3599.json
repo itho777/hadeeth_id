@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3599",
+  "name_en": "Sulaiman bin Shalih",
+  "name_id": "Sulaiman bin Shalih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Shalih",
+  "parents": "Al Laitsiy Al Marwaziy",
+  "nasab": "Al Laitsiy Al Marwaziy",
+  "laqob": "Salamawaih",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

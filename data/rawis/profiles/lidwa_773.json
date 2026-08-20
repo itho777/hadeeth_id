@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_773",
+  "name_en": "Ayyub bin Musa",
+  "name_id": "Ayyub bin Musa",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Ka'ab",
+  "parents": "As Sa'adiy Al Balqawiy",
+  "nasab": "As Sa'adiy Al Balqawiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

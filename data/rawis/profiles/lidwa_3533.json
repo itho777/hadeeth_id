@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3533",
+  "name_en": "\"Salmaa, maulah Nabi SAW \"",
+  "name_id": "\"Salmaa, maulah Nabi SAW \"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Rafi'",
+  "parents": "Al Madaniyyah",
+  "nasab": "Al Madaniyyah",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

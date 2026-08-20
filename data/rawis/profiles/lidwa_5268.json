@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5268",
+  "name_en": "Abdul Wahid bin Washil",
+  "name_id": "Abdul Wahid bin Washil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "190 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Ubaidah",
+  "parents": "Al Haddad As Sadusiy",
+  "nasab": "Al Haddad As Sadusiy",
+  "laqob": "-",
+  "hadith_count": "56",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 0,
+    "ahmad": 47,
+    "malik": 0,
+    "darimi": 0
+  }
+}

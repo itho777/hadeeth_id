@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8126",
+  "name_en": "Waqid bin 'Amru bin Sa'ad",
+  "name_id": "Waqid bin 'Amru bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "9",
+  "died_ah": "120 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Anshariy Al Asyhaliy",
+  "nasab": "Al Anshariy Al Asyhaliy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 2,
+    "darimi": 0
+  }
+}

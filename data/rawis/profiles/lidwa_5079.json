@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5079",
+  "name_en": "Abdullah bin Mas'ud bin Ghafil bin Habib",
+  "name_id": "Abdullah bin Mas'ud bin Ghafil bin Habib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "32 H",
+  "city_of_death": "Madinah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Hadzliy Al Madaniy",
+  "nasab": "Al Hadzliy Al Madaniy",
+  "laqob": "Ibnu Ummi 'Abd",
+  "hadith_count": "2022",
+  "book_counts": {
+    "bukhari": 264,
+    "muslim": 167,
+    "abudaud": 101,
+    "tirmidzi": 144,
+    "nasai": 167,
+    "ibnumajah": 131,
+    "ahmad": 874,
+    "malik": 3,
+    "darimi": 171
+  }
+}

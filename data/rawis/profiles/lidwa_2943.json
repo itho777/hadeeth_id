@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2943",
+  "name_en": "Rifa'ah bin Syaddad bin 'Abdullah",
+  "name_id": "Rifa'ah bin Syaddad bin 'Abdullah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "66 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Ashim",
+  "parents": "Al Qityani Al Bajali",
+  "nasab": "Al Qityani Al Bajali",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "rawi_ibn_hajar",
+  "name_en": "Ibn Hajar al-Asqalani",
+  "name_id": "Ibnu Hajar al-Asqalani",
+  "name_ar": "ابن حجر العسقلاني",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Hafiz / Amir al-Mu'minin fi al-Hadith",
+  "died_ah": "852",
+  "died_ce": "1449",
+  "hadith_count": "1596",
+  "city_of_death": "Cairo",
+  "bio_en": "The greatest Hadith commentator, author of Fath al-Bari and Bulugh al-Maram.",
+  "books": [
+    "Bulugh al-Maram"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5585",
+  "name_en": "Arfajah bin Asad bin Kuraib",
+  "name_id": "Arfajah bin Asad bin Kuraib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "At Tamimiy Al 'Utharidiy",
+  "nasab": "At Tamimiy Al 'Utharidiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

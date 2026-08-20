@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2752",
+  "name_en": "Khawlah binti Hakim bin Umayah",
+  "name_id": "Khawlah binti Hakim bin Umayah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Ummu Syarik",
+  "parents": "As Sulamiyah",
+  "nasab": "As Sulamiyah",
+  "laqob": "Khuwailah",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 2
+  }
+}

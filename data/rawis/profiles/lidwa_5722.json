@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5722",
+  "name_en": "Ali bin Abi Thalib bin 'Abdu Al Muthallib bin Hasyim bin 'Abdi Manaf",
+  "name_id": "Ali bin Abi Thalib bin 'Abdu Al Muthallib bin Hasyim bin 'Abdi Manaf",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "40 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "Abu Turab",
+  "hadith_count": "1598",
+  "book_counts": {
+    "bukhari": 96,
+    "muslim": 67,
+    "abudaud": 110,
+    "tirmidzi": 142,
+    "nasai": 137,
+    "ibnumajah": 109,
+    "ahmad": 804,
+    "malik": 15,
+    "darimi": 118
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_725",
+  "name_en": "Uhban bin Shayfiy",
+  "name_id": "Uhban bin Shayfiy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muslim",
+  "parents": "Al Ghifariy",
+  "nasab": "Al Ghifariy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3182",
+  "name_en": "Salim bin Abi Al Ja'di Rafi'",
+  "name_id": "Salim bin Abi Al Ja'di Rafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "97 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Ghathafaniy Al Asyja'iy",
+  "nasab": "Al Ghathafaniy Al Asyja'iy",
+  "laqob": "-",
+  "hadith_count": "297",
+  "book_counts": {
+    "bukhari": 37,
+    "muslim": 25,
+    "abudaud": 16,
+    "tirmidzi": 16,
+    "nasai": 22,
+    "ibnumajah": 21,
+    "ahmad": 137,
+    "malik": 0,
+    "darimi": 23
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5023",
+  "name_en": "Abdullah bin Katsir",
+  "name_id": "Abdullah bin Katsir",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "120 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Ma'bad",
+  "parents": "Ad Dariy Al Qari'",
+  "nasab": "Ad Dariy Al Qari'",
+  "laqob": "-",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

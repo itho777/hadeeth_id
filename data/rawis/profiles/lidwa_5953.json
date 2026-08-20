@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5953",
+  "name_en": "Umar bin Sa'ad bin 'Ubaid",
+  "name_id": "Umar bin Sa'ad bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "203 H",
+  "city_of_death": "-",
+  "residence": "Kuafh",
+  "kunyah": "Abu Daud",
+  "parents": "Al Hafariy",
+  "nasab": "Al Hafariy",
+  "laqob": "-",
+  "hadith_count": "72",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 8,
+    "abudaud": 4,
+    "tirmidzi": 12,
+    "nasai": 20,
+    "ibnumajah": 4,
+    "ahmad": 24,
+    "malik": 0,
+    "darimi": 0
+  }
+}

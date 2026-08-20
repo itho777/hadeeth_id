@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4252",
+  "name_en": "Abdul Khaliq bin Salamah",
+  "name_id": "Abdul Khaliq bin Salamah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "AbuRauh",
+  "parents": "As Syaibaniy",
+  "nasab": "As Syaibaniy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

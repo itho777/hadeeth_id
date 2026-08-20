@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_997",
+  "name_en": "Isma'il bin Ibrahim bin Bassam",
+  "name_id": "Isma'il bin Ibrahim bin Bassam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "236 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Ibrahim",
+  "parents": "At Turjumaniy Al Baghdadiy",
+  "nasab": "At Turjumaniy Al Baghdadiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 3
+  }
+}

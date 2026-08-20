@@ -1,0 +1,33 @@
+{
+  "id": "rawi_ibnukhuzaimah",
+  "name_ar": "أبو بكر محمد بن إسحاق بن خزيمة النيسابوري الشافعي",
+  "name_en": "Imam Muhammad bin Ishaq Ibn Khuzaimah an-Naisaburi",
+  "name_id": "Imam Muhammad bin Ishaq Ibnu Khuzaimah an-Naisaburi",
+  "kunya": "Abu Bakar",
+  "laqab": "Imamul A'immah, Al-Hafizh, Al-Hujjah, Syaikhul Islam",
+  "birth_year_ah": 223,
+  "death_year_ah": 311,
+  "birth_city": "Naisabur (Nishapur)",
+  "death_city": "Naisabur (Nishapur)",
+  "region": "Khurasan, Persia (kini Iran timur laut)",
+  "madhab": "Syafi'i",
+  "bio_id": "Imam Ibnu Khuzaimah adalah ulama besar ahli hadis dan fikih yang lahir di Naisabur pada tahun 223 H / 838 M. Nama lengkapnya: Abu Bakar Muhammad bin Ishaq bin Khuzaimah bin al-Mughirah bin Shalih bin Bakr as-Sulami an-Naisaburi asy-Syafi'i. Beliau tumbuh dalam lingkungan religius dan atas anjuran ayahnya terlebih dahulu menghafal Al-Qur'an sebelum melakukan rihlah (perjalanan ilmiah) ke berbagai pusat keilmuan Islam: Marw, Rayy, Syam, Mesir, Wasith, Baghdad, Bashrah, dan Kufah. Beliau berguru kepada para ulama terkemuka, termasuk Imam Bukhari dan Imam Muslim, dan diakui sebagai salah satu murid terbaik keduanya. Di antara murid-murid beliau adalah Abu Abdillah al-Hakim (penulis al-Mustadrak) dan Imam Ad-Daruquthni. Beliau sangat produktif dengan lebih dari 140 karya. Karya paling terkenal adalah Shahih Ibnu Khuzaimah — sering disebut kitab shahih ketiga setelah Shahih Bukhari dan Shahih Muslim. Beliau wafat di Naisabur pada malam Sabtu, 2 Dzulqa'dah 311 H / 924 M dalam usia sekitar 89 tahun.",
+  "bio_en": "Imam Ibn Khuzaimah was a major scholar of hadith and fiqh born in Nishapur in 223 AH / 838 CE. His full name: Abu Bakr Muhammad ibn Ishaq ibn Khuzaimah ibn al-Mughirah al-Naisaburi al-Shafi'i. He memorized the Quran before embarking on scholarly travels across the Islamic world, studying under Imam al-Bukhari and Imam Muslim among others. His students included Imam al-Hakim and Imam al-Daruquthni. His most celebrated work is Sahih Ibn Khuzaimah — often ranked third after Sahih al-Bukhari and Sahih Muslim. He passed away in Nishapur in 311 AH / 924 CE at the age of approximately 89.",
+  "known_books": [
+    "صحيح ابن خزيمة",
+    "كتاب التوحيد وإثبات صفات الرب"
+  ],
+  "teachers": [
+    "Imam al-Bukhari",
+    "Imam Muslim",
+    "Ali bin Hajar al-Asqalani"
+  ],
+  "students": [
+    "Al-Hakim an-Naisaburi",
+    "Ad-Daruquthni",
+    "Ibn Hibban"
+  ],
+  "source": "mjna",
+  "source_url": "https://www.mjna.or.id/ibnukhuzaimah",
+  "profile_id": "mjna_001"
+}

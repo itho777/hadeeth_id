@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2682",
+  "name_en": "Khalid bin Mihran",
+  "name_id": "Khalid bin Mihran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "141 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Manazil",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Hadza'i",
+  "hadith_count": "496",
+  "book_counts": {
+    "bukhari": 85,
+    "muslim": 48,
+    "abudaud": 52,
+    "tirmidzi": 32,
+    "nasai": 38,
+    "ibnumajah": 33,
+    "ahmad": 180,
+    "malik": 0,
+    "darimi": 28
+  }
+}

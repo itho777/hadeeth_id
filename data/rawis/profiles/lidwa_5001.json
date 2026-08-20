@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5001",
+  "name_en": "Abdullah bin 'Isa bin 'Abdur Rahman bin Abi Laila",
+  "name_id": "Abdullah bin 'Isa bin 'Abdur Rahman bin Abi Laila",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "135 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "48",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 2,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 6,
+    "ahmad": 26,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7463",
+  "name_en": "Muslim bin Jundab",
+  "name_id": "Muslim bin Jundab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "9",
+  "died_ah": "106 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Hudzaliy",
+  "nasab": "Al Hudzaliy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 4,
+    "malik": 1,
+    "darimi": 1
+  }
+}

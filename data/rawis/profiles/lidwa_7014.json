@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7014",
+  "name_en": "Muhammad bin Suwqah",
+  "name_id": "Muhammad bin Suwqah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Ghainawiy",
+  "nasab": "Al Ghainawiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 6,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 1
+  }
+}

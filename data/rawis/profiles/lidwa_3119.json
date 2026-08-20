@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3119",
+  "name_en": "Zaid bin Akhzam",
+  "name_id": "Zaid bin Akhzam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "257 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Thalib",
+  "parents": "Ath Tha'iy An Nabhaniy",
+  "nasab": "Ath Tha'iy An Nabhaniy",
+  "laqob": "-",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 10,
+    "nasai": 2,
+    "ibnumajah": 11,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

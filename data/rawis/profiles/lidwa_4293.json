@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4293",
+  "name_en": "Abdur Rahman bin Ibrahimbin 'Amru binMaimun",
+  "name_id": "Abdur Rahman bin Ibrahimbin 'Amru binMaimun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "245 H",
+  "city_of_death": "Thaliqan",
+  "residence": "Syam",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Qurasyiy Al Umawiy",
+  "nasab": "Al Qurasyiy Al Umawiy",
+  "laqob": "Duhaim bin Al Yatim",
+  "hadith_count": "113",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 10,
+    "tirmidzi": 0,
+    "nasai": 8,
+    "ibnumajah": 91,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 2
+  }
+}

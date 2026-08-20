@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_477",
+  "name_en": "Ahmad bin 'Amru bin 'Abdullah bin 'Amru As Sarh",
+  "name_id": "Ahmad bin 'Amru bin 'Abdullah bin 'Amru As Sarh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Ath Thahir",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "402",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 233,
+    "abudaud": 95,
+    "tirmidzi": 0,
+    "nasai": 48,
+    "ibnumajah": 26,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

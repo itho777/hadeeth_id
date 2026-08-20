@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7038",
+  "name_en": "Muhammad bin Thalhah bin Musharif",
+  "name_id": "Muhammad bin Thalhah bin Musharif",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Yamiy",
+  "nasab": "Al Yamiy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 21,
+    "malik": 0,
+    "darimi": 3
+  }
+}

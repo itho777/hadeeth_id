@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_798",
+  "name_en": "Ibrahim bin Al Harits bin Isma'il",
+  "name_id": "Ibrahim bin Al Harits bin Isma'il",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "265 H",
+  "city_of_death": "Nihawand",
+  "residence": "Himsh",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Baghdadiy",
+  "nasab": "Al Baghdadiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

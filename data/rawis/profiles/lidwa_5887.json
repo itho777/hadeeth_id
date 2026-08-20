@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5887",
+  "name_en": "Umarah bin Ghaziyah bin Al Harits",
+  "name_id": "Umarah bin Ghaziyah bin Al Harits",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "140 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Maziniy Al Anshariy",
+  "nasab": "Al Maziniy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "62",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 12,
+    "abudaud": 9,
+    "tirmidzi": 7,
+    "nasai": 9,
+    "ibnumajah": 6,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 1
+  }
+}

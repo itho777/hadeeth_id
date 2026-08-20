@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4099",
+  "name_en": "Amir bin Syarahil",
+  "name_id": "Amir bin Syarahil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "104 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Asy Sya'biy Al Humairiy",
+  "nasab": "Asy Sya'biy Al Humairiy",
+  "laqob": "-",
+  "hadith_count": "1045",
+  "book_counts": {
+    "bukhari": 110,
+    "muslim": 87,
+    "abudaud": 72,
+    "tirmidzi": 65,
+    "nasai": 111,
+    "ibnumajah": 60,
+    "ahmad": 367,
+    "malik": 0,
+    "darimi": 173
+  }
+}

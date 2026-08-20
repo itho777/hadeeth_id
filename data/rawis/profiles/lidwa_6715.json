@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6715",
+  "name_en": "Mujahid bin Jabar",
+  "name_id": "Mujahid bin Jabar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "102 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Al Hajjaj",
+  "parents": "Al makhzumiy",
+  "nasab": "Al makhzumiy",
+  "laqob": "-",
+  "hadith_count": "716",
+  "book_counts": {
+    "bukhari": 96,
+    "muslim": 38,
+    "abudaud": 60,
+    "tirmidzi": 48,
+    "nasai": 81,
+    "ibnumajah": 45,
+    "ahmad": 295,
+    "malik": 4,
+    "darimi": 49
+  }
+}

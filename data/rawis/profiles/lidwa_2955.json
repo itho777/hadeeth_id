@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2955",
+  "name_en": "Ramlah binti Abi Sufyan Shakhr bin Harb bin Umayah",
+  "name_id": "Ramlah binti Abi Sufyan Shakhr bin Harb bin Umayah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "49 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Habibah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Ummu Al Mu'minion",
+  "hadith_count": "144",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 12,
+    "abudaud": 8,
+    "tirmidzi": 6,
+    "nasai": 36,
+    "ibnumajah": 10,
+    "ahmad": 50,
+    "malik": 1,
+    "darimi": 7
+  }
+}

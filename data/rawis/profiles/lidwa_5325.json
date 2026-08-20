@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5325",
+  "name_en": "Ubaid bin Jabar",
+  "name_id": "Ubaid bin Jabar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "74 H",
+  "city_of_death": "Iskandariyah",
+  "residence": "Maru",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Ghifariy Al Quthbiy",
+  "nasab": "Al Ghifariy Al Quthbiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

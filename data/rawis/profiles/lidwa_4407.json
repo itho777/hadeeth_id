@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4407",
+  "name_en": "Abdur Rahman bin 'Abd",
+  "name_id": "Abdur Rahman bin 'Abd",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "88 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qariy",
+  "nasab": "Al Qariy",
+  "laqob": "-",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 5,
+    "ibnumajah": 2,
+    "ahmad": 8,
+    "malik": 6,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_439",
+  "name_en": "Ahmad bin Humaid",
+  "name_id": "Ahmad bin Humaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "220 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Ath Thariytsatsiy",
+  "nasab": "Ath Thariytsatsiy",
+  "laqob": "Edaaru Ummi Salamah",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 10
+  }
+}

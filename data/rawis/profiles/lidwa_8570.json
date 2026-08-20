@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8570",
+  "name_en": "Yusuf bin Al Manazil",
+  "name_id": "Yusuf bin Al Manazil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "213 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ya'qub",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

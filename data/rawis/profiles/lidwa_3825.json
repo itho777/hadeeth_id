@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3825",
+  "name_en": "Syaqiq bin Salamah",
+  "name_id": "Syaqiq bin Salamah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "82 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Wa'il",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "780",
+  "book_counts": {
+    "bukhari": 157,
+    "muslim": 76,
+    "abudaud": 37,
+    "tirmidzi": 43,
+    "nasai": 75,
+    "ibnumajah": 47,
+    "ahmad": 311,
+    "malik": 0,
+    "darimi": 34
+  }
+}

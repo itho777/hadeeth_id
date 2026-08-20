@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_953",
+  "name_en": "Ishaq bin 'Abdullah bin Abi Farwah ",
+  "name_id": "Ishaq bin 'Abdullah bin Abi Farwah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "10",
+  "died_ah": "144 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Sulaiman",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 10,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

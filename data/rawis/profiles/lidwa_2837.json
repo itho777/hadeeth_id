@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2837",
+  "name_en": "Dzarr bin 'Abdullah bin Zurarah",
+  "name_id": "Dzarr bin 'Abdullah bin Zurarah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Umar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "66",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 1,
+    "abudaud": 4,
+    "tirmidzi": 5,
+    "nasai": 14,
+    "ibnumajah": 3,
+    "ahmad": 29,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3727",
+  "name_en": "Sayyar bin Hatim",
+  "name_id": "Sayyar bin Hatim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "200 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Salamah",
+  "parents": "Al 'Anbariy",
+  "nasab": "Al 'Anbariy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 6,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

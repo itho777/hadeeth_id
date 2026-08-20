@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5002",
+  "name_en": "Abdullah bin Ghabir",
+  "name_id": "Abdullah bin Ghabir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Amir",
+  "parents": "Al Alhaniy Al Himshiy",
+  "nasab": "Al Alhaniy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

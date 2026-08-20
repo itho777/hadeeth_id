@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5764",
+  "name_en": "Ali bin Khasyram bin 'Abdur Rahman",
+  "name_id": "Ali bin Khasyram bin 'Abdur Rahman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "257 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Marwaziy",
+  "nasab": "Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "88",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 50,
+    "abudaud": 0,
+    "tirmidzi": 26,
+    "nasai": 12,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

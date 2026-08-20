@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5486",
+  "name_en": "Utsman bin Abi Al 'Ash",
+  "name_id": "Utsman bin Abi Al 'Ash",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "51 H",
+  "city_of_death": "Bashrah",
+  "residence": "Tha'if",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ats Tsaqafiy",
+  "nasab": "Ats Tsaqafiy",
+  "laqob": "-",
+  "hadith_count": "54",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 4,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 7,
+    "ahmad": 29,
+    "malik": 1,
+    "darimi": 2
+  }
+}

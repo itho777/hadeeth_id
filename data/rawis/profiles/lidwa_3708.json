@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3708",
+  "name_en": "Suwaid bin Hujair bin Bayan",
+  "name_id": "Suwaid bin Hujair bin Bayan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Qaza'ah",
+  "parents": "Al Bahili",
+  "nasab": "Al Bahili",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2189",
+  "name_en": "Jundub bin 'Abdullah bin Sufyan",
+  "name_id": "Jundub bin 'Abdullah bin Sufyan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "64 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "82",
+  "book_counts": {
+    "bukhari": 20,
+    "muslim": 18,
+    "abudaud": 2,
+    "tirmidzi": 4,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 3
+  }
+}

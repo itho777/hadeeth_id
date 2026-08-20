@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7469",
+  "name_en": "Muslim bin Shubaih",
+  "name_id": "Muslim bin Shubaih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "100 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Adl Dluhaa",
+  "parents": "Al 'Aththar Al Hamdaniy",
+  "nasab": "Al 'Aththar Al Hamdaniy",
+  "laqob": "-",
+  "hadith_count": "222",
+  "book_counts": {
+    "bukhari": 57,
+    "muslim": 32,
+    "abudaud": 11,
+    "tirmidzi": 5,
+    "nasai": 17,
+    "ibnumajah": 12,
+    "ahmad": 77,
+    "malik": 0,
+    "darimi": 11
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3614",
+  "name_en": "Sulaiman bin 'Ali",
+  "name_id": "Sulaiman bin 'Ali",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Ukasyah",
+  "parents": "Ar Rib'iy Al Azdiy ",
+  "nasab": "Ar Rib'iy Al Azdiy ",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

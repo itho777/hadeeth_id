@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4732",
+  "name_en": "Abdullah bin Al Walid bin Maimun",
+  "name_id": "Abdullah bin Al Walid bin Maimun",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al 'Adaniy Al Umawiy",
+  "nasab": "Al 'Adaniy Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "71",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 59,
+    "malik": 0,
+    "darimi": 0
+  }
+}

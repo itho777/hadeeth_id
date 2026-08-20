@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2226",
+  "name_en": "Hamid bin 'Umar bin Hafsh bin 'Umar bin 'Ubaidillah bin Abi BaKROH",
+  "name_id": "Hamid bin 'Umar bin Hafsh bin 'Umar bin 'Ubaidillah bin Abi BaKROH",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "233 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 22,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

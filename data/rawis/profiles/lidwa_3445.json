@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3445",
+  "name_en": "Sufyan bin Hani' bin Jabar",
+  "name_id": "Sufyan bin Hani' bin Jabar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Iskandariyah",
+  "residence": "Maru",
+  "kunyah": "Abu Salim",
+  "parents": "Al Jaisyaniy",
+  "nasab": "Al Jaisyaniy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

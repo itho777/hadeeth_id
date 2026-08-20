@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1543",
+  "name_en": "Al Fadlol bin Al 'Abbas bin 'Abdul Muthalib bin Hasyim ",
+  "name_id": "Al Fadlol bin Al 'Abbas bin 'Abdul Muthalib bin Hasyim ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "15 H",
+  "city_of_death": "Syam",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "84",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 5,
+    "abudaud": 3,
+    "tirmidzi": 3,
+    "nasai": 15,
+    "ibnumajah": 2,
+    "ahmad": 45,
+    "malik": 0,
+    "darimi": 5
+  }
+}

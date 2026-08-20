@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5413",
+  "name_en": "Ubaidullah bin 'Ubaid",
+  "name_id": "Ubaidullah bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Wahab",
+  "parents": "Al Kala'iy Ad Damsyiqiy",
+  "nasab": "Al Kala'iy Ad Damsyiqiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 2
+  }
+}

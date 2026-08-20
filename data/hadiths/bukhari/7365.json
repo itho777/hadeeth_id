@@ -1,0 +1,44 @@
+{
+  "hadithnumber": 7365,
+  "arabicnumber": 7365,
+  "text": "Telah menceritakan kepada kami [Ishaq] telah mengabarkan kepada kami [Abdushshamad] telah menceritakan kepada kami [Hammam] telah menceritakan kepada kami [Abu 'Imran Al Jauni] dari [Jundab bin Abdullah] bahwa Rasulullah Shallallahu'alaihiwasallam bersabda: \"Bacalah alquran, selama menjadikan hati kalian bersatu padu, namun jika kalian berselisih, tinggalkanlah.\" Abu Abdullah berkata, [Yazid bin harun] berkata dari [Harun Al Al'war] telah menceritakan kepada kami [Abu Imran] dari [Jundab] dari Nabi shallallahu 'alaihi wasallam",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Ishaq",
+      "name_ar": "Ishaq"
+    },
+    {
+      "name_id": "Abdushshamad",
+      "name_ar": "Abdushshamad"
+    },
+    {
+      "name_id": "Hammam",
+      "name_ar": "Hammam"
+    },
+    {
+      "name_id": "Abu 'Imran Al Jauni",
+      "name_ar": "Abu 'Imran Al Jauni"
+    },
+    {
+      "name_id": "Jundab bin Abdullah",
+      "name_ar": "Jundab bin Abdullah"
+    },
+    {
+      "name_id": "Yazid bin harun",
+      "name_ar": "Yazid bin harun"
+    },
+    {
+      "name_id": "Harun Al Al'war",
+      "name_ar": "Harun Al Al'war"
+    },
+    {
+      "name_id": "Abu Imran",
+      "name_ar": "Abu Imran"
+    },
+    {
+      "name_id": "Jundab",
+      "name_ar": "Jundab"
+    }
+  ]
+}

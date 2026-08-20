@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1634",
+  "name_en": "Al Miswar bin Makhramah bin Naufal",
+  "name_id": "Al Miswar bin Makhramah bin Naufal",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "64 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Az Zuhriy",
+  "nasab": "Az Zuhriy",
+  "laqob": "-",
+  "hadith_count": "102",
+  "book_counts": {
+    "bukhari": 35,
+    "muslim": 10,
+    "abudaud": 10,
+    "tirmidzi": 4,
+    "nasai": 6,
+    "ibnumajah": 7,
+    "ahmad": 27,
+    "malik": 3,
+    "darimi": 0
+  }
+}

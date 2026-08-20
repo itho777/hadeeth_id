@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5147",
+  "name_en": "Abdullah bin Wahab bin Muslim",
+  "name_id": "Abdullah bin Wahab bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "197 H",
+  "city_of_death": "Maru",
+  "residence": "Maru",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "1446",
+  "book_counts": {
+    "bukhari": 136,
+    "muslim": 544,
+    "abudaud": 266,
+    "tirmidzi": 26,
+    "nasai": 220,
+    "ibnumajah": 104,
+    "ahmad": 138,
+    "malik": 0,
+    "darimi": 12
+  }
+}

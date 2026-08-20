@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3232",
+  "name_en": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah",
+  "name_id": "Sa'ad bin Abi Waqash Malik bin Uhaib bin 'Abdu Manaf bin Zuhrah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "55 H",
+  "city_of_death": "Madinah",
+  "residence": "Kufah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Az Zuhriy Al Qurasyiy",
+  "nasab": "Az Zuhriy Al Qurasyiy",
+  "laqob": "Farisu Al Islam",
+  "hadith_count": "479",
+  "book_counts": {
+    "bukhari": 59,
+    "muslim": 58,
+    "abudaud": 32,
+    "tirmidzi": 33,
+    "nasai": 46,
+    "ibnumajah": 26,
+    "ahmad": 194,
+    "malik": 10,
+    "darimi": 21
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7636",
+  "name_en": "Ma'mar bin 'Abdullah bin Nafi' bin Abi Ma'mar Nadlolah",
+  "name_id": "Ma'mar bin 'Abdullah bin Nafi' bin Abi Ma'mar Nadlolah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurasiy Al 'Adawiy",
+  "nasab": "Al Qurasiy Al 'Adawiy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 1
+  }
+}

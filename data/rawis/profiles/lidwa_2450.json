@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2450",
+  "name_en": "Hafsh bin Maysarah",
+  "name_id": "Hafsh bin Maysarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "181 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Umar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "46",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 22,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

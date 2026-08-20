@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_747",
+  "name_en": "Ayyub bin Abi Miskin",
+  "name_id": "Ayyub bin Abi Miskin",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "140 H",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Al 'Alaa'",
+  "parents": "At Tamiymi Al Qashshab",
+  "nasab": "At Tamiymi Al Qashshab",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 0
+  }
+}

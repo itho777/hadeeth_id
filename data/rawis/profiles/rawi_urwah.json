@@ -1,0 +1,29 @@
+{
+  "id": "rawi_urwah",
+  "name_en": "'Urwah bin al-Zubayr",
+  "name_id": "Urwah bin az-Zubair",
+  "name_ar": "عروة بن الزبير",
+  "is_sahabi": "false",
+  "generation": "Tabi'i",
+  "grade": "Thiqah Faqih",
+  "died_ah": "94",
+  "died_ce": "713",
+  "hadith_count": "1300",
+  "city_of_death": "Madinah",
+  "bio_en": "Nephew of 'Aisha bint Abi Bakr, founder of Maghazi literature and legal scholar.",
+  "books": [
+    "Sahih al-Bukhari",
+    "Sahih Muslim"
+  ],
+  "book_counts": {
+    "bukhari": 629,
+    "muslim": 328,
+    "abudaud": 210,
+    "tirmidzi": 131,
+    "nasai": 270,
+    "ibnumajah": 165,
+    "ahmad": 890,
+    "malik": 149,
+    "darimi": 97
+  }
+}

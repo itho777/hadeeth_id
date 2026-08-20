@@ -1,0 +1,44 @@
+{
+  "hadithnumber": 7360,
+  "arabicnumber": 7360,
+  "text": "Telah menceritakan kepadaku [Ubaidullah bin Sa'd bin Ibrahim] telah menceritakan kepada kami [Ayahku] dan [pamanku] berkata telah menceritakan kepada kami [Ayahku] dari [Ayahnya] telah menceritakan kepadaku [Muhammad bin Jubair] bahwa bapaknya [Jubair bin Muth'im] mengabarkan kepadanya, bahwa seorang wanita menemui Rasulullah Shallallahu'alaihiwasallam dan mengajak beliau bicara tentang sesuatu. Lantas si wanita tadi berkata, 'Menurut anda bagaimana ya rasulullah sekiranya aku datang lagi namun tidak bertemu dengan baginda? ' Nabi menjawab: \"Kalaulah engkau tidak menemuiku, temuilah Abu Bakar.\" [Al Humaidi] menambahkan untuk kami dari [Ibrahim bin sa'd] yang wanita maksudkan, adalah, sekiranya ia temukan nabi telah wafat",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Ubaidullah bin Sa'd bin Ibrahim",
+      "name_ar": "Ubaidullah bin Sa'd bin Ibrahim"
+    },
+    {
+      "name_id": "Ayahku",
+      "name_ar": "Ayahku"
+    },
+    {
+      "name_id": "pamanku",
+      "name_ar": "pamanku"
+    },
+    {
+      "name_id": "Ayahku",
+      "name_ar": "Ayahku"
+    },
+    {
+      "name_id": "Ayahnya",
+      "name_ar": "Ayahnya"
+    },
+    {
+      "name_id": "Muhammad bin Jubair",
+      "name_ar": "Muhammad bin Jubair"
+    },
+    {
+      "name_id": "Jubair bin Muth'im",
+      "name_ar": "Jubair bin Muth'im"
+    },
+    {
+      "name_id": "Al Humaidi",
+      "name_ar": "Al Humaidi"
+    },
+    {
+      "name_id": "Ibrahim bin sa'd",
+      "name_ar": "Ibrahim bin sa'd"
+    }
+  ]
+}

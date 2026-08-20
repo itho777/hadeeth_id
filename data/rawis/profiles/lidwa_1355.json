@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1355",
+  "name_en": "Al Husain bin Waqid",
+  "name_id": "Al Husain bin Waqid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "159 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Ali",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "139",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 3,
+    "abudaud": 29,
+    "tirmidzi": 15,
+    "nasai": 26,
+    "ibnumajah": 7,
+    "ahmad": 56,
+    "malik": 0,
+    "darimi": 2
+  }
+}

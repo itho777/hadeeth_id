@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5461",
+  "name_en": "Utbah bin Abi Hakim",
+  "name_id": "Utbah bin Abi Hakim",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "147 H",
+  "city_of_death": "Shana'a",
+  "residence": "Syam",
+  "kunyah": "Abu Al 'Abbas",
+  "parents": "Al Hamdaniy Ays Syu'baniy",
+  "nasab": "Al Hamdaniy Ays Syu'baniy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 1
+  }
+}

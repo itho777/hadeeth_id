@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8046",
+  "name_en": "Hisyam bin Zaid bin Anas bin Malik",
+  "name_id": "Hisyam bin Zaid bin Anas bin Malik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "68",
+  "book_counts": {
+    "bukhari": 18,
+    "muslim": 10,
+    "abudaud": 6,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 4,
+    "ahmad": 25,
+    "malik": 0,
+    "darimi": 1
+  }
+}

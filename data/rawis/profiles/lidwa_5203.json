@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5203",
+  "name_en": "Abdul Malik bin Ash Shabbah",
+  "name_id": "Abdul Malik bin Ash Shabbah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "4",
+  "died_ah": "200 H",
+  "city_of_death": "-",
+  "residence": "Bashrah ",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Mismai'iy Ash Shan'aniy",
+  "nasab": "Al Mismai'iy Ash Shan'aniy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 4,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

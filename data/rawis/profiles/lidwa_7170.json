@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7170",
+  "name_en": "Muhammad bin 'Utsman bin Karamah",
+  "name_id": "Muhammad bin 'Utsman bin Karamah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "256 H",
+  "city_of_death": "Baghdad",
+  "residence": "Kufah",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al 'Ijliy",
+  "nasab": "Al 'Ijliy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

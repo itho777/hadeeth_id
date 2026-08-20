@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6995",
+  "name_en": "Muhammad bin Salam bin Al Faraj",
+  "name_id": "Muhammad bin Salam bin Al Faraj",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "227 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Baikandiy As Sulamiy",
+  "nasab": "Al Baikandiy As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "125",
+  "book_counts": {
+    "bukhari": 125,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

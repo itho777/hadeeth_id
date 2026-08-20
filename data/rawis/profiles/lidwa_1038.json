@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1038",
+  "name_en": "Isma'il bin 'Abdullah bin Zurarah",
+  "name_id": "Isma'il bin 'Abdullah bin Zurarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "229 H",
+  "city_of_death": "Bashrah",
+  "residence": "Jazirah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Ar Ruqqiy",
+  "nasab": "Ar Ruqqiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

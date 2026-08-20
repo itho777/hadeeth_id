@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3682",
+  "name_en": "Sahlah binti Suhail bin 'Amru",
+  "name_id": "Sahlah binti Suhail bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Qurasyiyyah Al 'Amiriyyah",
+  "nasab": "Al Qurasyiyyah Al 'Amiriyyah",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

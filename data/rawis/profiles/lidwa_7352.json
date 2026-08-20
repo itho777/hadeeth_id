@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7352",
+  "name_en": "Mahmud bin Ghailan",
+  "name_id": "Mahmud bin Ghailan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "239 H",
+  "city_of_death": "Kufur Jadiya",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ahmad",
+  "parents": "Al 'Adawiy Al Marwaziy",
+  "nasab": "Al 'Adawiy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "430",
+  "book_counts": {
+    "bukhari": 47,
+    "muslim": 6,
+    "abudaud": 0,
+    "tirmidzi": 292,
+    "nasai": 75,
+    "ibnumajah": 8,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

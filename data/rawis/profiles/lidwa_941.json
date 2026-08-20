@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_941",
+  "name_en": "Ishaq bin Rasyid ",
+  "name_id": "Ishaq bin Rasyid ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Samira'",
+  "residence": "Jazirah",
+  "kunyah": "Abu Sulaiman",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7183",
+  "name_en": "Muhammad bin 'Ali ",
+  "name_id": "Muhammad bin 'Ali ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "222 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Hasyim",
+  "parents": "Al Asadiy Al Maushuliy",
+  "nasab": "Al Asadiy Al Maushuliy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

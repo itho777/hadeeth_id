@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6682",
+  "name_en": "Malik bin 'Abdullah bin Sinan",
+  "name_id": "Malik bin 'Abdullah bin Sinan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Khasy'amiy",
+  "nasab": "Al Khasy'amiy",
+  "laqob": "Maliku As Saraya ",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

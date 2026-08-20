@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5364",
+  "name_en": "\"Ubaidullah bin Abi Rafi', maula Nabi SAW \"",
+  "name_id": "\"Ubaidullah bin Abi Rafi', maula Nabi SAW \"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Madaniy",
+  "nasab": "Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "77",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 4,
+    "abudaud": 11,
+    "tirmidzi": 12,
+    "nasai": 5,
+    "ibnumajah": 10,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 4
+  }
+}

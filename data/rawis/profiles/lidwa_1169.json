@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1169",
+  "name_en": "Al Jarrah bin Makhlad",
+  "name_id": "Al Jarrah bin Makhlad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al 'Ajaliy Al Qazaz",
+  "nasab": "Al 'Ajaliy Al Qazaz",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

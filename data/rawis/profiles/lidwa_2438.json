@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2438",
+  "name_en": "Hafsh bin 'Umar bin Al Harits bin Sakhbarah",
+  "name_id": "Hafsh bin 'Umar bin Al Harits bin Sakhbarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "225 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Umar",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Hawdliy",
+  "hadith_count": "169",
+  "book_counts": {
+    "bukhari": 63,
+    "muslim": 0,
+    "abudaud": 102,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

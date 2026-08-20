@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3194",
+  "name_en": "Salim bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_id": "Salim bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "106 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Umar",
+  "parents": "Al 'Adawiy Al Qurasyiy",
+  "nasab": "Al 'Adawiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "991",
+  "book_counts": {
+    "bukhari": 176,
+    "muslim": 112,
+    "abudaud": 54,
+    "tirmidzi": 63,
+    "nasai": 118,
+    "ibnumajah": 54,
+    "ahmad": 339,
+    "malik": 40,
+    "darimi": 35
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6492",
+  "name_en": "Quthbah bin 'Adul 'Aziz bin Siyah",
+  "name_id": "Quthbah bin 'Adul 'Aziz bin Siyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Asadiy Al Hammaniy",
+  "nasab": "Al Asadiy Al Hammaniy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2596",
+  "name_en": "Haywah bin Suraih bin Shafwan",
+  "name_id": "Haywah bin Suraih bin Shafwan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "158 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Zur'ah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "212",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 24,
+    "abudaud": 29,
+    "tirmidzi": 17,
+    "nasai": 15,
+    "ibnumajah": 6,
+    "ahmad": 94,
+    "malik": 0,
+    "darimi": 14
+  }
+}

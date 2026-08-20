@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3615",
+  "name_en": "Sulaiman bin 'Ali bin 'Abdullah bin 'Abbas",
+  "name_id": "Sulaiman bin 'Ali bin 'Abdullah bin 'Abbas",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "6",
+  "died_ah": "142 H",
+  "city_of_death": "Bashrah",
+  "residence": "Madinah",
+  "kunyah": "Abu Ayyub",
+  "parents": " Al Hasyimiy",
+  "nasab": " Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

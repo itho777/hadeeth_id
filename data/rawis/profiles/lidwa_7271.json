@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7271",
+  "name_en": "Muhammad bin Muslim bin Sawsan",
+  "name_id": "Muhammad bin Muslim bin Sawsan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Ath Tha'ifiy",
+  "nasab": "Ath Tha'ifiy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 1,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 5,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6931",
+  "name_en": "Muhammad bin Himyar bin Unais",
+  "name_id": "Muhammad bin Himyar bin Unais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "8",
+  "died_ah": "200 H",
+  "city_of_death": "Halwan",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdul Hamid",
+  "parents": "Al Qudlo'iy As Salihiy",
+  "nasab": "Al Qudlo'iy As Salihiy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 7,
+    "ibnumajah": 2,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_802",
+  "name_en": "Ibrahim bin Al Hasan bin Al Haytsam ",
+  "name_id": "Ibrahim bin Al Hasan bin Al Haytsam ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Mushayshah",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Khasy'amiy",
+  "nasab": "Al Khasy'amiy",
+  "laqob": "Al Muqasimiy",
+  "hadith_count": "53",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 11,
+    "tirmidzi": 0,
+    "nasai": 42,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

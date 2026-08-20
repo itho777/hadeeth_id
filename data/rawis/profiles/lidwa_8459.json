@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8459",
+  "name_en": "Yazid bin 'Abdu Rabbih",
+  "name_id": "Yazid bin 'Abdu Rabbih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "224 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Fadlol",
+  "parents": "Az Zubaidiy Al Himshiy",
+  "nasab": "Az Zubaidiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 35,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5492",
+  "name_en": "Utsman bin Abi Kharasyah",
+  "name_id": "Utsman bin Abi Kharasyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al 'Amiriy",
+  "nasab": "Al Qurasyiy Al 'Amiriy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 1,
+    "darimi": 0
+  }
+}

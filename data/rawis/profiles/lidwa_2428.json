@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2428",
+  "name_en": "Hafsh bin 'Ashim bin 'Umar bin Al Khaththab",
+  "name_id": "Hafsh bin 'Ashim bin 'Umar bin Al Khaththab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "87",
+  "book_counts": {
+    "bukhari": 21,
+    "muslim": 13,
+    "abudaud": 5,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 7,
+    "ahmad": 29,
+    "malik": 2,
+    "darimi": 3
+  }
+}

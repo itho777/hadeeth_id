@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5778",
+  "name_en": "Ali bin Syu'aib bin 'Adiy bin Hammam",
+  "name_id": "Ali bin Syu'aib bin 'Adiy bin Hammam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "253 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Hasan",
+  "parents": "As Simsar Al Bazzar",
+  "nasab": "As Simsar Al Bazzar",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

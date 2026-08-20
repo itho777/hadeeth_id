@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2251",
+  "name_en": "Habib bin Qaribah",
+  "name_id": "Habib bin Qaribah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "130 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Mu'allim",
+  "hadith_count": "43",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 3,
+    "abudaud": 11,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 1
+  }
+}

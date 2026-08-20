@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1699",
+  "name_en": "Al Mundzir bin Ya'laa",
+  "name_id": "Al Mundzir bin Ya'laa",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ya'laa",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 1,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 1
+  }
+}

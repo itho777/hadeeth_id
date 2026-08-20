@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1718",
+  "name_en": "An Nadlir bin 'Abdul Jabbar bin Nashir",
+  "name_id": "An Nadlir bin 'Abdul Jabbar bin Nashir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "219 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Al Aswad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

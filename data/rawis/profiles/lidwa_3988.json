@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3988",
+  "name_en": "Thariq bin Asyyam bin Mas'ud",
+  "name_id": "Thariq bin Asyyam bin Mas'ud",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Al Asyja'iy",
+  "nasab": "Al Asyja'iy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 4,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3405",
+  "name_en": "Sa'id bin Nushair",
+  "name_id": "Sa'id bin Nushair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Baghdadi Al Warraq",
+  "nasab": "Al Baghdadi Al Warraq",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

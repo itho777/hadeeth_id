@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1145",
+  "name_en": "Al Aswad bin Hilal",
+  "name_id": "Al Aswad bin Hilal",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "84 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Salam",
+  "parents": "Al Muharibiy",
+  "nasab": "Al Muharibiy",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 11,
+    "ibnumajah": 0,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 0
+  }
+}

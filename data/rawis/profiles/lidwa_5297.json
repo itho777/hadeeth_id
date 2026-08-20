@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5297",
+  "name_en": "Abdu Rabbih bin 'Ubaid",
+  "name_id": "Abdu Rabbih bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Ka'ab",
+  "parents": "Al Azdiy Al Jarmuziy",
+  "nasab": "Al Azdiy Al Jarmuziy",
+  "laqob": "Shahibu Al Harir",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

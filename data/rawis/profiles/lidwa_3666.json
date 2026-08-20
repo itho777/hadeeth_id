@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3666",
+  "name_en": "Sahal bin Abi Sahal Zanjalah",
+  "name_id": "Sahal bin Abi Sahal Zanjalah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Rayi",
+  "kunyah": "Abu 'amru",
+  "parents": "Al Khayyath",
+  "nasab": "Al Khayyath",
+  "laqob": "Ibnu Ash Shaghadiy",
+  "hadith_count": "43",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 43,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6996",
+  "name_en": "Muhammad bin Salamah bin 'Abdullah ",
+  "name_id": "Muhammad bin Salamah bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "248 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Al Harits",
+  "parents": "Al Muradiy Al Jamaliy",
+  "nasab": "Al Muradiy Al Jamaliy",
+  "laqob": "-",
+  "hadith_count": "150",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 13,
+    "abudaud": 23,
+    "tirmidzi": 0,
+    "nasai": 112,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

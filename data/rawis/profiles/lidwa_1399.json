@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1399",
+  "name_en": "Ar Rabi' bin Anas ",
+  "name_id": "Ar Rabi' bin Anas ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "139 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "30",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 19,
+    "malik": 0,
+    "darimi": 2
+  }
+}

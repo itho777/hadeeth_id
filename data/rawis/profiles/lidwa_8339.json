@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8339",
+  "name_en": "Yahya bin Muslim",
+  "name_id": "Yahya bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "130 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sulaim",
+  "parents": "Al Haddaniy",
+  "nasab": "Al Haddaniy",
+  "laqob": "Al Bakka'",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

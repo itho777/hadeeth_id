@@ -1,0 +1,28 @@
+{
+  "id": "rawi_tabarani",
+  "name_en": "Imam at-Tabarani",
+  "name_id": "Imam at-Thabarani",
+  "name_ar": "الطبراني",
+  "is_sahabi": "false",
+  "generation": "Collector",
+  "grade": "Imam Hafiz",
+  "died_ah": "360",
+  "died_ce": "971",
+  "hadith_count": "25000",
+  "city_of_death": "Isfahan",
+  "bio_en": "Compiler of the three massive Mu'jam collections of Hadith.",
+  "books": [
+    "Al-Mujam al-Kabir"
+  ],
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

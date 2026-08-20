@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5031",
+  "name_en": "\"Abdullah bin Kaysan, maula Asma' binti Abi Bakar\"",
+  "name_id": "\"Abdullah bin Kaysan, maula Asma' binti Abi Bakar\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'umar",
+  "parents": "Al Qurasyiy At Taymiy",
+  "nasab": "Al Qurasyiy At Taymiy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

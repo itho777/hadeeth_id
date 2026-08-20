@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3683",
+  "name_en": "Sahlah binti Milhan bin Khalid",
+  "name_id": "Sahlah binti Milhan bin Khalid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Ummu Sulaim",
+  "parents": "Al Anshariyyah",
+  "nasab": "Al Anshariyyah",
+  "laqob": "Ar Rumaisha'",
+  "hadith_count": "19",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 1
+  }
+}

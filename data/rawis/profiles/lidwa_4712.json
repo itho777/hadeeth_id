@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4712",
+  "name_en": "Abdullah bin Al Fadlol bin Al 'Abbas bin Rabi'ah",
+  "name_id": "Abdullah bin Al Fadlol bin Al 'Abbas bin Rabi'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "49",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 4,
+    "abudaud": 5,
+    "tirmidzi": 3,
+    "nasai": 5,
+    "ibnumajah": 4,
+    "ahmad": 20,
+    "malik": 2,
+    "darimi": 2
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7256",
+  "name_en": "Muhammad bin Muhabbab bin Ishaq",
+  "name_id": "Muhammad bin Muhabbab bin Ishaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "221 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hammam",
+  "parents": "Al Qurasyiy Ad Dallal",
+  "nasab": "Al Qurasyiy Ad Dallal",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

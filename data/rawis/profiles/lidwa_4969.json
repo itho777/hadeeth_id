@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4969",
+  "name_en": "Abdullah bin 'Umar bin 'Ali bin 'Adiy",
+  "name_id": "Abdullah bin 'Umar bin 'Ali bin 'Adiy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al 'Absyamiy Al 'Abaliy",
+  "nasab": "Al 'Absyamiy Al 'Abaliy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

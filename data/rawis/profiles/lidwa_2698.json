@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2698",
+  "name_en": "Khabbab bin Al Aratt bin Jandalah bin Sa'ad",
+  "name_id": "Khabbab bin Al Aratt bin Jandalah bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "37 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "82",
+  "book_counts": {
+    "bukhari": 26,
+    "muslim": 5,
+    "abudaud": 4,
+    "tirmidzi": 5,
+    "nasai": 5,
+    "ibnumajah": 6,
+    "ahmad": 30,
+    "malik": 0,
+    "darimi": 1
+  }
+}

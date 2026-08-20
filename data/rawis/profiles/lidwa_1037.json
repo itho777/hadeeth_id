@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1037",
+  "name_en": "Isma'il bin 'Abdullah bin Khalid bin Yazid",
+  "name_id": "Isma'il bin 'Abdullah bin Khalid bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "As Sukriy Al 'Abdariy",
+  "nasab": "As Sukriy Al 'Abdariy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 6,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

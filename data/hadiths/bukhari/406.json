@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 406,
+  "arabicnumber": 406,
+  "text": "Telah menceritakan kepada kami ['Abdullah bin Yusuf] berkata, telah mengabarkan kepada kami [Malik] dari [Nafi'] dari ['Abdullah bin 'Umar], bahwa Rasulullah shallallahu 'alaihi wasallam melihat ludah di dinding kiblat, lalu beliau menggosoknya kemudian menghadap ke arah orang banyak seraya bersabda: \"Jika seseorang dari kalian berdiri shalat janganlah dia meludah ke arah depannya, karena Allah berada di hadapannya ketika dia shalat",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Abdullah bin Umar bin al-Khattab",
+      "name_ar": "عبد الله بن عمر بن الخطاب",
+      "rawi_id": "rawi_ibn_umar"
+    },
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    }
+  ]
+}

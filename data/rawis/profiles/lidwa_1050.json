@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1050",
+  "name_en": "Isma'il bin 'Ayyasy bin Sulaim ",
+  "name_id": "Isma'il bin 'Ayyasy bin Sulaim ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "181 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Utbah",
+  "parents": "Al 'Anasiy Al Himshiy",
+  "nasab": "Al 'Anasiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "206",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 28,
+    "tirmidzi": 22,
+    "nasai": 1,
+    "ibnumajah": 46,
+    "ahmad": 109,
+    "malik": 0,
+    "darimi": 0
+  }
+}

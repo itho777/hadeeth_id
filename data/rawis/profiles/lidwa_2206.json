@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2206",
+  "name_en": "Habis bin Sa'ad",
+  "name_id": "Habis bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "37 H",
+  "city_of_death": "Sharifain",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

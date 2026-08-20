@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7737",
+  "name_en": "Musa bin Sa'id bin An Nu'man",
+  "name_id": "Musa bin Sa'id bin An Nu'man",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Thabariyah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Baghawiy",
+  "nasab": "Al Baghawiy",
+  "laqob": "Ad Dandaniy",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

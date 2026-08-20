@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5543",
+  "name_en": "Utsman bin 'Affan bin Abi Al 'Ash bin Umayyah",
+  "name_id": "Utsman bin 'Affan bin Abi Al 'Ash bin Umayyah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "35 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al Qurasyiy Al Umawiy",
+  "nasab": "Al Qurasyiy Al Umawiy",
+  "laqob": "Dzu An Nurain",
+  "hadith_count": "354",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 31,
+    "abudaud": 15,
+    "tirmidzi": 19,
+    "nasai": 27,
+    "ibnumajah": 23,
+    "ahmad": 150,
+    "malik": 41,
+    "darimi": 23
+  }
+}

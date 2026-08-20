@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1206",
+  "name_en": "Al Harits bin 'Ubaidah",
+  "name_id": "Al Harits bin 'Ubaidah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "186 H",
+  "city_of_death": "-",
+  "residence": "Halwan",
+  "kunyah": "Abu Wahab",
+  "parents": "Al Himshiy Al Kilaa'iy",
+  "nasab": "Al Himshiy Al Kilaa'iy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

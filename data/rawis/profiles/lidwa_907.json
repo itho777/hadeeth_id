@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_907",
+  "name_en": "Idris bin Sinan",
+  "name_id": "Idris bin Sinan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Ilyas",
+  "parents": "Al Yamani Ash Shan'aniy",
+  "nasab": "Al Yamani Ash Shan'aniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

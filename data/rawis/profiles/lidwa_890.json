@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_890",
+  "name_en": "Ibrahim bin Musa bin Yazid bin Zadzan",
+  "name_id": "Ibrahim bin Musa bin Yazid bin Zadzan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "220 H",
+  "city_of_death": "-",
+  "residence": "Rayi",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Fara' At Taymiy",
+  "nasab": "Al Fara' At Taymiy",
+  "laqob": "Ash Shaghir",
+  "hadith_count": "173",
+  "book_counts": {
+    "bukhari": 83,
+    "muslim": 12,
+    "abudaud": 60,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 13
+  }
+}

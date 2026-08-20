@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4026",
+  "name_en": "Thalhah bin Yahya bin An Nu'man bin Abi 'Ayyasy",
+  "name_id": "Thalhah bin Yahya bin An Nu'man bin Abi 'Ayyasy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "Madinah",
+  "residence": "Baghdad",
+  "kunyah": "-",
+  "parents": "Az Zurqiy Al Anshariy",
+  "nasab": "Az Zurqiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

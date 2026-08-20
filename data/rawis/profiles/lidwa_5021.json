@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5021",
+  "name_en": "Abdullah bin Qais bin Sulaim bin Hadldlor",
+  "name_id": "Abdullah bin Qais bin Sulaim bin Hadldlor",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "50 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Musa",
+  "parents": "Al Asy'ariy Al Madaniy",
+  "nasab": "Al Asy'ariy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "747",
+  "book_counts": {
+    "bukhari": 149,
+    "muslim": 101,
+    "abudaud": 49,
+    "tirmidzi": 38,
+    "nasai": 53,
+    "ibnumajah": 47,
+    "ahmad": 277,
+    "malik": 4,
+    "darimi": 29
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3146",
+  "name_en": "Zaid bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_id": "Zaid bin 'Abdullah bin 'Umar bin Al Khaththab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Kufah",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al 'Adawiy Al Qurasyiy",
+  "nasab": "Al 'Adawiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 1,
+    "darimi": 1
+  }
+}

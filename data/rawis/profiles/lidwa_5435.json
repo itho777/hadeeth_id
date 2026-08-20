@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5435",
+  "name_en": "Ubaidullah bin Mu'adz bin Mu'adz",
+  "name_id": "Ubaidullah bin Mu'adz bin Mu'adz",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "237 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amru",
+  "parents": "Al 'Anbariy",
+  "nasab": "Al 'Anbariy",
+  "laqob": "-",
+  "hadith_count": "243",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 174,
+    "abudaud": 55,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7445",
+  "name_en": "Miskin bin Bukair",
+  "name_id": "Miskin bin Bukair",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "198 H",
+  "city_of_death": "Harran",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Hadzdza'",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 6,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 2
+  }
+}

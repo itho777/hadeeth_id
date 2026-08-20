@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4425",
+  "name_en": "Abdur Rahman bin 'Abdullah bin 'Utbah bin 'Abdullah bin Mas'ud",
+  "name_id": "Abdur Rahman bin 'Abdullah bin 'Utbah bin 'Abdullah bin Mas'ud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "160 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Mas'udiy",
+  "nasab": "Al Mas'udiy",
+  "laqob": "-",
+  "hadith_count": "162",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 10,
+    "tirmidzi": 14,
+    "nasai": 6,
+    "ibnumajah": 10,
+    "ahmad": 109,
+    "malik": 0,
+    "darimi": 12
+  }
+}

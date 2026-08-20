@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5289",
+  "name_en": "Abdah bin 'Abdur Rahim bin Hassan",
+  "name_id": "Abdah bin 'Abdur Rahim bin Hassan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "244 H",
+  "city_of_death": "Dujail",
+  "residence": "Dujail",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Marwaziy",
+  "nasab": "Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 12,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7563",
+  "name_en": "Mu'adz bin Hisyam bin Abi 'Abdullah ",
+  "name_id": "Mu'adz bin Hisyam bin Abi 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "200 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ad Dustuwa'iy",
+  "nasab": "Ad Dustuwa'iy",
+  "laqob": "-",
+  "hadith_count": "223",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 75,
+    "abudaud": 20,
+    "tirmidzi": 25,
+    "nasai": 39,
+    "ibnumajah": 6,
+    "ahmad": 40,
+    "malik": 0,
+    "darimi": 7
+  }
+}

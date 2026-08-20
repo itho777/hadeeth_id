@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5548",
+  "name_en": "Utsman bin Ghiyats",
+  "name_id": "Utsman bin Ghiyats",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Ar Rasibiy Atau Az Zuhraniy",
+  "nasab": "Ar Rasibiy Atau Az Zuhraniy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 0
+  }
+}

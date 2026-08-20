@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1154",
+  "name_en": "Al Bakhtariy bin 'Ubaid bin Salman",
+  "name_id": "Al Bakhtariy bin 'Ubaid bin Salman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "10",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Kalbiy Ath Thabakhiy",
+  "nasab": "Al Kalbiy Ath Thabakhiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

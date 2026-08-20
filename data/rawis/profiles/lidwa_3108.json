@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3108",
+  "name_en": "Ziyad bin Yahya bin Ziyad bin Hassan",
+  "name_id": "Ziyad bin Yahya bin Ziyad bin Hassan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "254 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Khaththab",
+  "parents": "Al Hassaniy An Nakriy",
+  "nasab": "Al Hassaniy An Nakriy",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 4,
+    "abudaud": 3,
+    "tirmidzi": 6,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

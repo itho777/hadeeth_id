@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 2971,
+  "arabicnumber": 2971,
+  "text": "Telah bercerita kepada kami [Isma'il] berkata telah bercerita kepadaku [Malik] dari [Nafi'] dari ['Abdullah bin 'Umar radliallahu 'anhuma] bahwa 'Umar bin Al Khaththab menshadaqahkan kuda fi sabilillah kemudian dia mendapatkan kuda itu dijual. Kemudian dia hendak membelinya. Lalu dia bertanya kepada Rasulullah shallallahu 'alaihi wasallam. Maka Beliau berkata: \"Jangan kamu beli dan jangan kamu ambil kembali shadaqah kamu",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Nafi' al-Madani (Maula Ibnu Umar)",
+      "name_ar": "نافع المدني مولى ابن عمر",
+      "rawi_id": "rawi_nafi_mawla_ibn_umar"
+    },
+    {
+      "name_id": "Anas bin Malik al-Anshari",
+      "name_ar": "أنس بن مالك الأنصاري",
+      "rawi_id": "rawi_anas_bin_malik"
+    },
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    }
+  ]
+}

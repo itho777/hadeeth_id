@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5628",
+  "name_en": "Atha' bin Abi Maymaunah Munai'",
+  "name_id": "Atha' bin Abi Maymaunah Munai'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "131 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Mu'adz",
+  "parents": "Al Bashriy",
+  "nasab": "Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "35",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 5,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 3,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 3
+  }
+}

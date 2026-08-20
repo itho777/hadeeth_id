@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1040",
+  "name_en": "Isma'il bin 'Abdullah bin 'Abdullah bin Uwais",
+  "name_id": "Isma'il bin 'Abdullah bin 'Abdullah bin Uwais",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Ashbahiy",
+  "nasab": "Al Ashbahiy",
+  "laqob": "Ibnu Abi Uwais",
+  "hadith_count": "247",
+  "book_counts": {
+    "bukhari": 229,
+    "muslim": 7,
+    "abudaud": 1,
+    "tirmidzi": 5,
+    "nasai": 0,
+    "ibnumajah": 4,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

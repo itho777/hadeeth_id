@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_455",
+  "name_en": "Ahmad bin 'Abdur Raman bin Bakkaar",
+  "name_id": "Ahmad bin 'Abdur Raman bin Bakkaar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "248 H",
+  "city_of_death": "Rashafatu Hisyam",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Walid",
+  "parents": "Al Basriy Ad Damasyqiy",
+  "nasab": "Al Basriy Ad Damasyqiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 6,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

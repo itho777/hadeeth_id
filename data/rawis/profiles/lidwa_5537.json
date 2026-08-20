@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5537",
+  "name_en": "Utsman bin 'Abdullah bin Mawhab",
+  "name_id": "Utsman bin 'Abdullah bin Mawhab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "160 H",
+  "city_of_death": "-",
+  "residence": "Madinah ",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "Al A'raj",
+  "hadith_count": "37",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 3,
+    "nasai": 6,
+    "ibnumajah": 2,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 3
+  }
+}

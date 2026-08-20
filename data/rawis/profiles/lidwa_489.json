@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_489",
+  "name_en": "Ahmad bin Muhammad bin 'Ubaidullah bin Abu Raja'",
+  "name_id": "Ahmad bin Muhammad bin 'Ubaidullah bin Abu Raja'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Thabariyah",
+  "kunyah": "Abu Ja'far",
+  "parents": "As Syughriy Al Mushayshiy",
+  "nasab": "As Syughriy Al Mushayshiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

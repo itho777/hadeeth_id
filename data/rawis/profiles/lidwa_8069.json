@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8069",
+  "name_en": "Hilal bin Abi Hilal",
+  "name_id": "Hilal bin Abi Hilal",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Zhilal",
+  "parents": "Al Qasmaliy",
+  "nasab": "Al Qasmaliy",
+  "laqob": "Al A'maa",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

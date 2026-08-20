@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5719",
+  "name_en": "Alqamah bin Waqash bin Mihshan",
+  "name_id": "Alqamah bin Waqash bin Mihshan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "-",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Laitsiy Al 'Atwariy",
+  "nasab": "Al Laitsiy Al 'Atwariy",
+  "laqob": "-",
+  "hadith_count": "47",
+  "book_counts": {
+    "bukhari": 20,
+    "muslim": 3,
+    "abudaud": 4,
+    "tirmidzi": 3,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

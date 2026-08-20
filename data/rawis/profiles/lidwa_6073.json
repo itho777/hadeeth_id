@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6073",
+  "name_en": "Amru bin Umayyah bin Khuwailid",
+  "name_id": "Amru bin Umayyah bin Khuwailid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Umayyah",
+  "parents": "Adl Dlamriy",
+  "nasab": "Adl Dlamriy",
+  "laqob": "-",
+  "hadith_count": "52",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 7,
+    "ibnumajah": 2,
+    "ahmad": 28,
+    "malik": 0,
+    "darimi": 3
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1158",
+  "name_en": "Al Bara' bin 'Abdullah bin Yazid",
+  "name_id": "Al Bara' bin 'Abdullah bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Yazid",
+  "parents": "Al Ghanawiy Al Bashriy",
+  "nasab": "Al Ghanawiy Al Bashriy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}

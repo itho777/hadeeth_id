@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6674",
+  "name_en": "Malik bin Rabi'ah bin Al Badan",
+  "name_id": "Malik bin Rabi'ah bin Al Badan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "60 H",
+  "city_of_death": "Madinah ",
+  "residence": "Madinah",
+  "kunyah": "Abu Usaid",
+  "parents": "As Saa'idiy Al Anshariy",
+  "nasab": "As Saa'idiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "39",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 4,
+    "abudaud": 5,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 3
+  }
+}

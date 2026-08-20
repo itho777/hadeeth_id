@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7185",
+  "name_en": "Muhammad bin 'Ali bin Thalib",
+  "name_id": "Muhammad bin 'Ali bin Thalib",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "9",
+  "died_ah": "80 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Qasim",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "Ibnu Al Hanafiyah",
+  "hadith_count": "69",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 7,
+    "abudaud": 4,
+    "tirmidzi": 4,
+    "nasai": 8,
+    "ibnumajah": 5,
+    "ahmad": 27,
+    "malik": 1,
+    "darimi": 4
+  }
+}

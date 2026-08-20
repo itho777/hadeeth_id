@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6083",
+  "name_en": "Amru bin Ar Rabi' bin Thariq bin Qurrah bin Nahik bin Mujahid",
+  "name_id": "Amru bin Ar Rabi' bin Thariq bin Qurrah bin Nahik bin Mujahid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "219 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hafsh",
+  "parents": "Al Hilaliy",
+  "nasab": "Al Hilaliy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

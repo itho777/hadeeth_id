@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_794",
+  "name_en": "Ibrahim bin Isma'il bin Abi Habibah",
+  "name_id": "Ibrahim bin Isma'il bin Abi Habibah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "165 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Isma'il",
+  "parents": "Al Anshariy Al Asyhaliy",
+  "nasab": "Al Anshariy Al Asyhaliy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 5,
+    "malik": 0,
+    "darimi": 1
+  }
+}

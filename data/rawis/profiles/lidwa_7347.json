@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7347",
+  "name_en": "Mahmud bin Ar Rabi' bin Suraqah bin 'Amru",
+  "name_id": "Mahmud bin Ar Rabi' bin Suraqah bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "99 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Anshariy Al Khazrajiy",
+  "nasab": "Al Anshariy Al Khazrajiy",
+  "laqob": "-",
+  "hadith_count": "52",
+  "book_counts": {
+    "bukhari": 15,
+    "muslim": 5,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 3,
+    "ahmad": 17,
+    "malik": 1,
+    "darimi": 1
+  }
+}

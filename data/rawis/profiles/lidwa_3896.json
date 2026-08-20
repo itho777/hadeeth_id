@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3896",
+  "name_en": "Shalih bin Mihran",
+  "name_id": "Shalih bin Mihran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Ashpahan",
+  "kunyah": "Abu Sufyan",
+  "parents": "As Syaibani Al Khrasaniy",
+  "nasab": "As Syaibani Al Khrasaniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4072",
+  "name_en": "Ashim bin 'Umar bin Al Khaththab",
+  "name_id": "Ashim bin 'Umar bin Al Khaththab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "70 H",
+  "city_of_death": "Rabdzah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Umar",
+  "parents": "Al 'Adawiy Al Qurasyiy",
+  "nasab": "Al 'Adawiy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 8,
+    "malik": 0,
+    "darimi": 1
+  }
+}

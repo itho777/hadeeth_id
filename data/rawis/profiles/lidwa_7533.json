@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7533",
+  "name_en": "Mutharrif bin Mazin",
+  "name_id": "Mutharrif bin Mazin",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "191 H",
+  "city_of_death": "Raqqah",
+  "residence": "Yamna",
+  "kunyah": "-",
+  "parents": "Al Kinaniy Ash Shan'aniy",
+  "nasab": "Al Kinaniy Ash Shan'aniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

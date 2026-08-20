@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6632",
+  "name_en": "Luqman bin 'Amir",
+  "name_id": "Luqman bin 'Amir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Amir",
+  "parents": "Al Washabiy Al Himshiy",
+  "nasab": "Al Washabiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "13",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

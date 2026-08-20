@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6943",
+  "name_en": "Muhammad bin Khalid bin Khaliy",
+  "name_id": "Muhammad bin Khalid bin Khaliy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Al Husain",
+  "parents": "Al Kala'iy Al Himshiy",
+  "nasab": "Al Kala'iy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 9,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

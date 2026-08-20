@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1686",
+  "name_en": "Al Miqdam bin Ma'diy",
+  "name_id": "Al Miqdam bin Ma'diy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "87 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu Karimah",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "80",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 15,
+    "tirmidzi": 4,
+    "nasai": 5,
+    "ibnumajah": 13,
+    "ahmad": 39,
+    "malik": 0,
+    "darimi": 2
+  }
+}

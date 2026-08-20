@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8302",
+  "name_en": "Yahya bin 'Abdullah bin Muhammad bin Shaifiy",
+  "name_id": "Yahya bin 'Abdullah bin Muhammad bin Shaifiy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Makhzumiy",
+  "nasab": "Al Makhzumiy",
+  "laqob": "-",
+  "hadith_count": "23",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 3,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 2
+  }
+}

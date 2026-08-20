@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6026",
+  "name_en": "Imran bin Abi 'Atha'",
+  "name_id": "Imran bin Abi 'Atha'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Hamzah",
+  "parents": "Al Asadiy Al Qashshab",
+  "nasab": "Al Asadiy Al Qashshab",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

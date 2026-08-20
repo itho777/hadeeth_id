@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8264",
+  "name_en": "Yahya bin Zakariya bin Abi Za'idah",
+  "name_id": "Yahya bin Zakariya bin Abi Za'idah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "183 H",
+  "city_of_death": "Mada'in",
+  "residence": "Kufah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Hamdaniy Al Wadi'iy",
+  "nasab": "Al Hamdaniy Al Wadi'iy",
+  "laqob": "-",
+  "hadith_count": "214",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 36,
+    "abudaud": 29,
+    "tirmidzi": 19,
+    "nasai": 17,
+    "ibnumajah": 19,
+    "ahmad": 79,
+    "malik": 0,
+    "darimi": 7
+  }
+}

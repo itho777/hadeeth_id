@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5468",
+  "name_en": "Utbah bin 'Abd",
+  "name_id": "Utbah bin 'Abd",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "87 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Al Walid",
+  "parents": "As Sulamiy",
+  "nasab": "As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 18,
+    "malik": 0,
+    "darimi": 2
+  }
+}

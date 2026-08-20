@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_501",
+  "name_en": "Ahmad bin Ya'qub",
+  "name_id": "Ahmad bin Ya'qub",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Al Mas'udiy",
+  "nasab": "Al Mas'udiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 1
+  }
+}

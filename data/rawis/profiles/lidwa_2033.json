@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2033",
+  "name_en": "Tsabit bin Yazid",
+  "name_id": "Tsabit bin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "169 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Zaid",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Ahwal",
+  "hadith_count": "49",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 28,
+    "malik": 0,
+    "darimi": 10
+  }
+}

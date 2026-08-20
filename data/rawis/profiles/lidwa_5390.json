@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5390",
+  "name_en": "Ubaidullah bin Sa'id binYahya",
+  "name_id": "Ubaidullah bin Sa'id binYahya",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "241 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Qudamah",
+  "parents": "Al Yasykuriy As Sarakhsiy",
+  "nasab": "Al Yasykuriy As Sarakhsiy",
+  "laqob": "-",
+  "hadith_count": "174",
+  "book_counts": {
+    "bukhari": 11,
+    "muslim": 51,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 108,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5257",
+  "name_en": "Abdul Wahid bin Abi Musa",
+  "name_id": "Abdul Wahid bin Abi Musa",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Iskandariyah",
+  "residence": "Maru",
+  "kunyah": "Abu Ma'an",
+  "parents": "Al Khawlaniy Al Iskandaraniy",
+  "nasab": "Al Khawlaniy Al Iskandaraniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

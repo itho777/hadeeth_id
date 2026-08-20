@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4837",
+  "name_en": "Abdullah bin Sa'id bin 'Abdul Malik bin Marwan",
+  "name_id": "Abdullah bin Sa'id bin 'Abdul Malik bin Marwan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Shafwan",
+  "parents": "Al Umawiy Ad Damsyiqiy",
+  "nasab": "Al Umawiy Ad Damsyiqiy",
+  "laqob": "-",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 5,
+    "abudaud": 2,
+    "tirmidzi": 4,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1190",
+  "name_en": "Al Harits bin Rib'iy",
+  "name_id": "Al Harits bin Rib'iy",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "54 H",
+  "city_of_death": "Kufah",
+  "residence": "Madinah",
+  "kunyah": "Abu Qatadah",
+  "parents": "Al Anshari As Sulami",
+  "nasab": "Al Anshari As Sulami",
+  "laqob": "-",
+  "hadith_count": "366",
+  "book_counts": {
+    "bukhari": 47,
+    "muslim": 37,
+    "abudaud": 25,
+    "tirmidzi": 21,
+    "nasai": 47,
+    "ibnumajah": 25,
+    "ahmad": 130,
+    "malik": 9,
+    "darimi": 25
+  }
+}

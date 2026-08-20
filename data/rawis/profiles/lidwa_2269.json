@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2269",
+  "name_en": "Habib bin 'Ubaid",
+  "name_id": "Habib bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Hafsh",
+  "parents": "Ar Rahabiy",
+  "nasab": "Ar Rahabiy",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_479",
+  "name_en": "Ahmad bin 'Isa bin Hassan",
+  "name_id": "Ahmad bin 'Isa bin Hassan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "243 H",
+  "city_of_death": "Rashafatu Hisyam",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Askariy At Tistariy",
+  "nasab": "Al 'Askariy At Tistariy",
+  "laqob": "-",
+  "hadith_count": "55",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 34,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 7,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 2
+  }
+}

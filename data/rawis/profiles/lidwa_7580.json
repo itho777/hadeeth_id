@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7580",
+  "name_en": "Mu'awiyah bin Salam bin Abi Salam Mamthur",
+  "name_id": "Mu'awiyah bin Salam bin Abi Salam Mamthur",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Salam",
+  "parents": "Al Habsyiy Al Alhaniy",
+  "nasab": "Al Habsyiy Al Alhaniy",
+  "laqob": "-",
+  "hadith_count": "68",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 21,
+    "abudaud": 9,
+    "tirmidzi": 1,
+    "nasai": 15,
+    "ibnumajah": 3,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 2
+  }
+}

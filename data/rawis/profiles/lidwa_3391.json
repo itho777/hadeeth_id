@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3391",
+  "name_en": "Sa'id bin Katsir bin 'Ufair bin Muslimbin Yazid",
+  "name_id": "Sa'id bin Katsir bin 'Ufair bin Muslimbin Yazid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "226 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "52",
+  "book_counts": {
+    "bukhari": 47,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

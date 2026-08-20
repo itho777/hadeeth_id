@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1372",
+  "name_en": "Al Hakam bin 'Utaibah",
+  "name_id": "Al Hakam bin 'Utaibah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "113 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "565",
+  "book_counts": {
+    "bukhari": 54,
+    "muslim": 42,
+    "abudaud": 40,
+    "tirmidzi": 26,
+    "nasai": 68,
+    "ibnumajah": 34,
+    "ahmad": 247,
+    "malik": 0,
+    "darimi": 54
+  }
+}

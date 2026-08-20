@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3499",
+  "name_en": "Salamah bin Dinar",
+  "name_id": "Salamah bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "135 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Hazim",
+  "parents": "At Tammar",
+  "nasab": "At Tammar",
+  "laqob": "Al A'raj",
+  "hadith_count": "352",
+  "book_counts": {
+    "bukhari": 121,
+    "muslim": 40,
+    "abudaud": 17,
+    "tirmidzi": 13,
+    "nasai": 17,
+    "ibnumajah": 28,
+    "ahmad": 93,
+    "malik": 9,
+    "darimi": 14
+  }
+}

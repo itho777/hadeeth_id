@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_848",
+  "name_en": "Ibrahim bin 'Abdullah bin Hatim",
+  "name_id": "Ibrahim bin 'Abdullah bin Hatim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "244 H",
+  "city_of_death": "Rashafatu Hisyam",
+  "residence": "Baghdad",
+  "kunyah": "Abu Ishaq",
+  "parents": "Al Harawiy Al Khalaal",
+  "nasab": "Al Harawiy Al Khalaal",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 9,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

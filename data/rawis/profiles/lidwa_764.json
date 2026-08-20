@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_764",
+  "name_en": "Ayyub bin Suwaid",
+  "name_id": "Ayyub bin Suwaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "202 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Mas'ud",
+  "parents": "Ar Ramliy Al Humairiy",
+  "nasab": "Ar Ramliy Al Humairiy",
+  "laqob": "-",
+  "hadith_count": "7",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

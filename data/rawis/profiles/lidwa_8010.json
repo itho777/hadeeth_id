@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8010",
+  "name_en": "Hani' bin Niyar bin 'Amru",
+  "name_id": "Hani' bin Niyar bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "9",
+  "died_ah": "41 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Burdah",
+  "parents": "Al Balwiy",
+  "nasab": "Al Balwiy",
+  "laqob": "-",
+  "hadith_count": "29",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 15,
+    "malik": 1,
+    "darimi": 2
+  }
+}

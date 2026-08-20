@@ -1,0 +1,32 @@
+{
+  "hadithnumber": 158,
+  "arabicnumber": 158,
+  "text": "Telah menceritakan kepada kami [Husain bin 'Isa] berkata, telah menceritakan kepada kami [Yunus bin Muhammad] berkata, telah menceritakan kepada kami [Fulaih bin Sulaiman] dari ['Abdullah bin Abu Bakar bin 'Amru bin Hazm] dari ['Abbad bin Tamim] dari ['Abdullah bin Zaid], bahwa Nabi shallallahu 'alaihi wasallam berwudlu dua kali dua kali",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Husain bin 'Isa",
+      "name_ar": "Husain bin 'Isa"
+    },
+    {
+      "name_id": "Yunus bin Muhammad",
+      "name_ar": "Yunus bin Muhammad"
+    },
+    {
+      "name_id": "Fulaih bin Sulaiman",
+      "name_ar": "Fulaih bin Sulaiman"
+    },
+    {
+      "name_id": "'Abdullah bin Abu Bakar bin 'Amru bin Hazm",
+      "name_ar": "'Abdullah bin Abu Bakar bin 'Amru bin Hazm"
+    },
+    {
+      "name_id": "'Abbad bin Tamim",
+      "name_ar": "'Abbad bin Tamim"
+    },
+    {
+      "name_id": "'Abdullah bin Zaid",
+      "name_ar": "'Abdullah bin Zaid"
+    }
+  ]
+}

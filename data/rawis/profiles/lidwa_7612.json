@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7612",
+  "name_en": "Ma'rur bin Suwaid",
+  "name_id": "Ma'rur bin Suwaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Umayyah",
+  "parents": "Al Asadiy",
+  "nasab": "Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "55",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 8,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 2,
+    "ibnumajah": 3,
+    "ahmad": 29,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7912",
+  "name_en": "Nu'aim bin Hammad bin Mu'awiyah",
+  "name_id": "Nu'aim bin Hammad bin Mu'awiyah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "228 H",
+  "city_of_death": "Baghdad ",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Khuza'iy Al Marwaziy",
+  "nasab": "Al Khuza'iy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "26",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 17
+  }
+}

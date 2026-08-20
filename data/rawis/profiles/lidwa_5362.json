@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5362",
+  "name_en": "Ubaidullah bin Abi Ja'far",
+  "name_id": "Ubaidullah bin Abi Ja'far",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "135 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Qurasiy Al Umawiy",
+  "nasab": "Al Qurasiy Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "70",
+  "book_counts": {
+    "bukhari": 8,
+    "muslim": 8,
+    "abudaud": 9,
+    "tirmidzi": 3,
+    "nasai": 9,
+    "ibnumajah": 5,
+    "ahmad": 26,
+    "malik": 0,
+    "darimi": 2
+  }
+}

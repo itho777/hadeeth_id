@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8153",
+  "name_en": "\"Wadldloh bin 'Abdullah, maula Yazid bin 'Atha'\"",
+  "name_id": "\"Wadldloh bin 'Abdullah, maula Yazid bin 'Atha'\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "7",
+  "died_ah": "176 H",
+  "city_of_death": "Bashrah ",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Awanah",
+  "parents": "Al Yasykuriy Al Wasithiy",
+  "nasab": "Al Yasykuriy Al Wasithiy",
+  "laqob": "-",
+  "hadith_count": "826",
+  "book_counts": {
+    "bukhari": 120,
+    "muslim": 103,
+    "abudaud": 71,
+    "tirmidzi": 70,
+    "nasai": 71,
+    "ibnumajah": 21,
+    "ahmad": 311,
+    "malik": 0,
+    "darimi": 59
+  }
+}

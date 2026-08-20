@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8194",
+  "name_en": "Yahya bin Abi Ishaq",
+  "name_id": "Yahya bin Abi Ishaq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "136 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "-",
+  "parents": "Al Hadlramiy",
+  "nasab": "Al Hadlramiy",
+  "laqob": "An Nahwiy",
+  "hadith_count": "56",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 8,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 12,
+    "ibnumajah": 4,
+    "ahmad": 17,
+    "malik": 0,
+    "darimi": 3
+  }
+}

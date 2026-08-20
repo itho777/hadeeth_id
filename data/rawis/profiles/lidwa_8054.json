@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8054",
+  "name_en": "Hisyam bin 'Abdul Mallik bin 'Imran",
+  "name_id": "Hisyam bin 'Abdul Mallik bin 'Imran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "2",
+  "died_ah": "251 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Taqiy",
+  "parents": "Al Yazaniy Al Himshiy",
+  "nasab": "Al Yazaniy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

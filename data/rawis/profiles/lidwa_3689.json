@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3689",
+  "name_en": "Suhail bin Wahab bin Rabi'ah bin Bilal bin Malik",
+  "name_id": "Suhail bin Wahab bin Rabi'ah bin Bilal bin Malik",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "9 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al Qahriy",
+  "nasab": "Al Qurasyiy Al Qahriy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

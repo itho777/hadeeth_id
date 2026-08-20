@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3426",
+  "name_en": "Sufyan bin Abi Zuhair",
+  "name_id": "Sufyan bin Abi Zuhair",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Azdi Asy Syana'iy",
+  "nasab": "Al Azdi Asy Syana'iy",
+  "laqob": "-",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 3,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 2,
+    "darimi": 1
+  }
+}

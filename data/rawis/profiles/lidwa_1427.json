@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1427",
+  "name_en": "Az Zubair bin Al 'Awwam bin Khuwailid",
+  "name_id": "Az Zubair bin Al 'Awwam bin Khuwailid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "36 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "94",
+  "book_counts": {
+    "bukhari": 16,
+    "muslim": 2,
+    "abudaud": 3,
+    "tirmidzi": 13,
+    "nasai": 5,
+    "ibnumajah": 6,
+    "ahmad": 44,
+    "malik": 2,
+    "darimi": 3
+  }
+}

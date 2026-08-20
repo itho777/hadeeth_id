@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5064",
+  "name_en": "Abdullah bin Muhammad bin 'Ali bin Nufail",
+  "name_id": "Abdullah bin Muhammad bin 'Ali bin Nufail",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "234 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Ja'far",
+  "parents": "An Nufailiy Al Qudlo'iy",
+  "nasab": "An Nufailiy Al Qudlo'iy",
+  "laqob": "-",
+  "hadith_count": "150",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 141,
+    "tirmidzi": 1,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

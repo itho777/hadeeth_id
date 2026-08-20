@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_181",
+  "name_en": "Abu Zur'ah bin 'Amru bin Jarir bin 'Abdullah ",
+  "name_id": "Abu Zur'ah bin 'Amru bin Jarir bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Zur'ah",
+  "parents": "Al Bajaliy ",
+  "nasab": "Al Bajaliy ",
+  "laqob": "-",
+  "hadith_count": "227",
+  "book_counts": {
+    "bukhari": 35,
+    "muslim": 38,
+    "abudaud": 17,
+    "tirmidzi": 11,
+    "nasai": 25,
+    "ibnumajah": 21,
+    "ahmad": 73,
+    "malik": 0,
+    "darimi": 7
+  }
+}

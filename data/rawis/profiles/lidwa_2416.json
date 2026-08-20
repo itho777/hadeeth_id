@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2416",
+  "name_en": "Hafsh",
+  "name_id": "Hafsh",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Bashir",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al A'maa",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 1
+  }
+}

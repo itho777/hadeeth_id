@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_444",
+  "name_en": "Ahmad bin Sa'id bin Ibrahim",
+  "name_id": "Ahmad bin Sa'id bin Ibrahim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "246 H",
+  "city_of_death": "Qum",
+  "residence": "Himsh",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ar Ribaathiy Al Naisaburiy",
+  "nasab": "Ar Ribaathiy Al Naisaburiy",
+  "laqob": "Al Asyqar",
+  "hadith_count": "21",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 5,
+    "nasai": 10,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

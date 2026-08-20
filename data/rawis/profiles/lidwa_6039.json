@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6039",
+  "name_en": "Imran bin Daud",
+  "name_id": "Imran bin Daud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al 'Awwam",
+  "parents": "Al 'Ammiy",
+  "nasab": "Al 'Ammiy",
+  "laqob": "Al Qaththan",
+  "hadith_count": "60",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 10,
+    "tirmidzi": 12,
+    "nasai": 4,
+    "ibnumajah": 4,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 0
+  }
+}

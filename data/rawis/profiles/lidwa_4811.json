@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4811",
+  "name_en": "Abdullah bin Zam'ah bin Al Aswad",
+  "name_id": "Abdullah bin Zam'ah bin Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "35 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy Al Asadiy",
+  "nasab": "Al Qurasyiy Al Asadiy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 1,
+    "abudaud": 3,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

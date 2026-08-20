@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6677",
+  "name_en": "Malik bin Sha'sha'ah bin Wahab",
+  "name_id": "Malik bin Sha'sha'ah bin Wahab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy Al Maziniy",
+  "nasab": "Al Anshariy Al Maziniy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 5,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

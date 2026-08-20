@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3255",
+  "name_en": "\"Sa'ad bin 'Ubaid, maula 'Abdur Rahman Azhar\"",
+  "name_id": "\"Sa'ad bin 'Ubaid, maula 'Abdur Rahman Azhar\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "98 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Ubaid",
+  "parents": "Az Zuhriy Al Qurasyiy",
+  "nasab": "Az Zuhriy Al Qurasyiy",
+  "laqob": "-",
+  "hadith_count": "51",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 9,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 19,
+    "malik": 2,
+    "darimi": 1
+  }
+}

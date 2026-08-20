@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2119",
+  "name_en": "Jarir bin Hazim bin Zaid",
+  "name_id": "Jarir bin Hazim bin Zaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "170 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu An Nadlor",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "367",
+  "book_counts": {
+    "bukhari": 53,
+    "muslim": 46,
+    "abudaud": 36,
+    "tirmidzi": 18,
+    "nasai": 21,
+    "ibnumajah": 19,
+    "ahmad": 164,
+    "malik": 0,
+    "darimi": 10
+  }
+}

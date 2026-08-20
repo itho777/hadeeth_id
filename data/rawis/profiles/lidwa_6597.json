@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6597",
+  "name_en": "Ka'ab bin 'Ujrah",
+  "name_id": "Ka'ab bin 'Ujrah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "51 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "96",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 12,
+    "abudaud": 8,
+    "tirmidzi": 10,
+    "nasai": 11,
+    "ibnumajah": 7,
+    "ahmad": 27,
+    "malik": 3,
+    "darimi": 4
+  }
+}

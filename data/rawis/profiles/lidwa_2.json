@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2",
+  "name_en": "Adam bin Abu Iyas",
+  "name_id": "Adam bin Abu Iyas",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "220 H",
+  "city_of_death": "Abdasa",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al 'Asqalaniy Al Khirasaniy",
+  "nasab": "Al 'Asqalaniy Al Khirasaniy",
+  "laqob": "-",
+  "hadith_count": "201",
+  "book_counts": {
+    "bukhari": 194,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

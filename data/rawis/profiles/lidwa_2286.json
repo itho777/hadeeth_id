@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2286",
+  "name_en": "Hajjaj bin Abi Zainab",
+  "name_id": "Hajjaj bin Abi Zainab",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Yusuf",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Ash Shaiqal",
+  "hadith_count": "8",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 4,
+    "malik": 0,
+    "darimi": 0
+  }
+}

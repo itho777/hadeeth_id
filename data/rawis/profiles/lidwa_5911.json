@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5911",
+  "name_en": "Umar bin Al Khaththab",
+  "name_id": "Umar bin Al Khaththab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "264 H",
+  "city_of_death": "Kabul",
+  "residence": "Ahwaz",
+  "kunyah": "Abu Hafsh",
+  "parents": "Al Majastaniy Al Qusyairiy",
+  "nasab": "Al Majastaniy Al Qusyairiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

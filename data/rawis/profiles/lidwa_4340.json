@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4340",
+  "name_en": "Abdur Rahman bin Hujairah",
+  "name_id": "Abdur Rahman bin Hujairah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "83 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Khawlaniy",
+  "nasab": "Al Khawlaniy",
+  "laqob": "-",
+  "hadith_count": "18",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 11,
+    "malik": 0,
+    "darimi": 0
+  }
+}

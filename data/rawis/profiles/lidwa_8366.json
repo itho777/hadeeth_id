@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8366",
+  "name_en": "Yazid bin Abi Habib Suwaid",
+  "name_id": "Yazid bin Abi Habib Suwaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "128 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Raja'",
+  "parents": "Al Azdiy",
+  "nasab": "Al Azdiy",
+  "laqob": "-",
+  "hadith_count": "479",
+  "book_counts": {
+    "bukhari": 39,
+    "muslim": 38,
+    "abudaud": 41,
+    "tirmidzi": 26,
+    "nasai": 52,
+    "ibnumajah": 43,
+    "ahmad": 216,
+    "malik": 0,
+    "darimi": 24
+  }
+}

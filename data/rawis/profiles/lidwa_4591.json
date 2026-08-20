@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4591",
+  "name_en": "Abdul 'Aziz bin Muhammad bin 'Ubaid bin Abi 'Ubaid",
+  "name_id": "Abdul 'Aziz bin Muhammad bin 'Ubaid bin Abi 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "187 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Muhammad",
+  "parents": "Ad Darawardiy",
+  "nasab": "Ad Darawardiy",
+  "laqob": "-",
+  "hadith_count": "394",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 77,
+    "abudaud": 53,
+    "tirmidzi": 70,
+    "nasai": 21,
+    "ibnumajah": 45,
+    "ahmad": 82,
+    "malik": 0,
+    "darimi": 32
+  }
+}

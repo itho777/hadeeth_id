@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_950",
+  "name_en": "Ishaq bin Thalhah bin 'Ubaidullah",
+  "name_id": "Ishaq bin Thalhah bin 'Ubaidullah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "56 H",
+  "city_of_death": "Rayi",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

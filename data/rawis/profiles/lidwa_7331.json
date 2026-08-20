@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7331",
+  "name_en": "Muhammad bin Yazid ",
+  "name_id": "Muhammad bin Yazid ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "188 H",
+  "city_of_death": "Hait",
+  "residence": "Hait",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Kala'iy Al Wasithiy",
+  "nasab": "Al Kala'iy Al Wasithiy",
+  "laqob": "-",
+  "hadith_count": "60",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 7,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 47,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3617",
+  "name_en": "Sulaiman bin 'Amru bin 'Abd",
+  "name_id": "Sulaiman bin 'Amru bin 'Abd",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Al Haitsam",
+  "parents": "Al Laitsi Al 'Atawariy",
+  "nasab": "Al Laitsi Al 'Atawariy",
+  "laqob": "-",
+  "hadith_count": "92",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 22,
+    "nasai": 3,
+    "ibnumajah": 4,
+    "ahmad": 57,
+    "malik": 0,
+    "darimi": 4
+  }
+}

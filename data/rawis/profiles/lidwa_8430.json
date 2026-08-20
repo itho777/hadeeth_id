@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8430",
+  "name_en": "Yazid bin Syarik binThariq",
+  "name_id": "Yazid bin Syarik binThariq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Ibrahim",
+  "parents": "At Taymiy",
+  "nasab": "At Taymiy",
+  "laqob": "-",
+  "hadith_count": "66",
+  "book_counts": {
+    "bukhari": 12,
+    "muslim": 15,
+    "abudaud": 3,
+    "tirmidzi": 4,
+    "nasai": 5,
+    "ibnumajah": 3,
+    "ahmad": 22,
+    "malik": 0,
+    "darimi": 2
+  }
+}

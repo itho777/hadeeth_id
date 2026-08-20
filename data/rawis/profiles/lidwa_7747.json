@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7747",
+  "name_en": "Musa bin 'Abdur Rahman bin Ziyad",
+  "name_id": "Musa bin 'Abdur Rahman bin Ziyad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Halabiy Al Anthakiy",
+  "nasab": "Al Halabiy Al Anthakiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

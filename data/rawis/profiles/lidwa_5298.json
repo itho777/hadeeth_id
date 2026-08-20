@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5298",
+  "name_en": "Abdu Rabbih bin Nafi'",
+  "name_id": "Abdu Rabbih bin Nafi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "171 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Syihab",
+  "parents": "Al Hannath Al Kinaniy",
+  "nasab": "Al Hannath Al Kinaniy",
+  "laqob": "-",
+  "hadith_count": "45",
+  "book_counts": {
+    "bukhari": 10,
+    "muslim": 1,
+    "abudaud": 8,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 17
+  }
+}

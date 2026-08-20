@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7625",
+  "name_en": "Mu'allaa bin Asad",
+  "name_id": "Mu'allaa bin Asad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "218 H",
+  "city_of_death": "Bashrah",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Haitsam",
+  "parents": "Al 'Ammiy",
+  "nasab": "Al 'Ammiy",
+  "laqob": "-",
+  "hadith_count": "76",
+  "book_counts": {
+    "bukhari": 36,
+    "muslim": 7,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 4,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 25
+  }
+}

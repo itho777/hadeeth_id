@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6158",
+  "name_en": "Amru bin 'Abasah bin 'Amir ",
+  "name_id": "Amru bin 'Abasah bin 'Amir ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "Halwan",
+  "residence": "Syam",
+  "kunyah": "Abu Najih",
+  "parents": "As Sulamiy",
+  "nasab": "As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "56",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 5,
+    "tirmidzi": 5,
+    "nasai": 7,
+    "ibnumajah": 5,
+    "ahmad": 33,
+    "malik": 0,
+    "darimi": 0
+  }
+}

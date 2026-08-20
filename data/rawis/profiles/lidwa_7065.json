@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7065",
+  "name_en": "Muhammad bin 'Abdur Rahman bin Haritsah bin An Nu'man",
+  "name_id": "Muhammad bin 'Abdur Rahman bin Haritsah bin An Nu'man",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "Al Anshariy An Najariy",
+  "nasab": "Al Anshariy An Najariy",
+  "laqob": "Abu Ar Rijal",
+  "hadith_count": "45",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 6,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 3,
+    "ibnumajah": 1,
+    "ahmad": 25,
+    "malik": 7,
+    "darimi": 1
+  }
+}

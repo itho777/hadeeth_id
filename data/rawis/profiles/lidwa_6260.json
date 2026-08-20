@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6260",
+  "name_en": "Auf bin Malik bin Nadlolah",
+  "name_id": "Auf bin Malik bin Nadlolah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Al Ahwash",
+  "parents": "Al Jasymiy",
+  "nasab": "Al Jasymiy",
+  "laqob": "-",
+  "hadith_count": "189",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 13,
+    "abudaud": 7,
+    "tirmidzi": 9,
+    "nasai": 18,
+    "ibnumajah": 16,
+    "ahmad": 109,
+    "malik": 0,
+    "darimi": 17
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3940",
+  "name_en": "Shafwan bin 'Abdullah bin Shafwan bin Umayyah",
+  "name_id": "Shafwan bin 'Abdullah bin Shafwan bin Umayyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Qurasyiy AlK Jamhiy",
+  "nasab": "Al Qurasyiy AlK Jamhiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 3,
+    "ahmad": 8,
+    "malik": 2,
+    "darimi": 2
+  }
+}

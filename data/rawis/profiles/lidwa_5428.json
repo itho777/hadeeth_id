@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5428",
+  "name_en": "Ubaidullah bin Ka'ab bin Malik",
+  "name_id": "Ubaidullah bin Ka'ab bin Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Fadlolah",
+  "parents": "Al Amshariy As Sulamiy",
+  "nasab": "Al Amshariy As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "11",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3774",
+  "name_en": "Syurahbil bin As Simthi bin Al Aswad",
+  "name_id": "Syurahbil bin As Simthi bin Al Aswad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "36 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Yazid",
+  "parents": "Al Kindiy Asy Syamiy",
+  "nasab": "Al Kindiy Asy Syamiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 6,
+    "ibnumajah": 2,
+    "ahmad": 10,
+    "malik": 0,
+    "darimi": 1
+  }
+}

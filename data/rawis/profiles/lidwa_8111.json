@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8111",
+  "name_en": "Wa'il bin Hajar bin Sa'ad",
+  "name_id": "Wa'il bin Hajar bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Hunaidah",
+  "parents": "Al Kindiy Al Hadlramiy",
+  "nasab": "Al Kindiy Al Hadlramiy",
+  "laqob": "-",
+  "hadith_count": "123",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 9,
+    "abudaud": 21,
+    "tirmidzi": 9,
+    "nasai": 23,
+    "ibnumajah": 10,
+    "ahmad": 42,
+    "malik": 0,
+    "darimi": 9
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6197",
+  "name_en": "Amru bin Murrah bin 'Abdullah bin Thariq",
+  "name_id": "Amru bin Murrah bin 'Abdullah bin Thariq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "118 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Jamaliy Al Muradiy",
+  "nasab": "Al Jamaliy Al Muradiy",
+  "laqob": "-",
+  "hadith_count": "396",
+  "book_counts": {
+    "bukhari": 51,
+    "muslim": 37,
+    "abudaud": 27,
+    "tirmidzi": 26,
+    "nasai": 36,
+    "ibnumajah": 26,
+    "ahmad": 175,
+    "malik": 0,
+    "darimi": 18
+  }
+}

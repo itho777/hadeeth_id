@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3329",
+  "name_en": "Sa'id bin Zaid bin Dirham",
+  "name_id": "Sa'id bin Zaid bin Dirham",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Al Hasan",
+  "parents": "Al Azdiy Al Juhdlomiy",
+  "nasab": "Al Azdiy Al Juhdlomiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 3,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 3
+  }
+}

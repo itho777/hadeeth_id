@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6256",
+  "name_en": "Auf bin Abi Jamilah",
+  "name_id": "Auf bin Abi Jamilah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "146 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sahal",
+  "parents": "Al 'Abdiy Al Hajriy",
+  "nasab": "Al 'Abdiy Al Hajriy",
+  "laqob": "Al A'rabiy",
+  "hadith_count": "202",
+  "book_counts": {
+    "bukhari": 25,
+    "muslim": 1,
+    "abudaud": 14,
+    "tirmidzi": 14,
+    "nasai": 16,
+    "ibnumajah": 11,
+    "ahmad": 110,
+    "malik": 0,
+    "darimi": 11
+  }
+}

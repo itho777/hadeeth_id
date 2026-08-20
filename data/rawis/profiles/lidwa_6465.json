@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6465",
+  "name_en": "Qudamah bin 'Abdullah bin 'Ammar",
+  "name_id": "Qudamah bin 'Abdullah bin 'Ammar",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hijaz",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Kilabiy Al 'Amiriy",
+  "nasab": "Al Kilabiy Al 'Amiriy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 1
+  }
+}

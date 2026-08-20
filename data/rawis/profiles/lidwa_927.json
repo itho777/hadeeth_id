@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_927",
+  "name_en": "Ishaq bin Ibrahim bin Makhlad",
+  "name_id": "Ishaq bin Ibrahim bin Makhlad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "238 H",
+  "city_of_death": "Nihawand",
+  "residence": "Himsh",
+  "kunyah": "Abu Ya'qub",
+  "parents": "Al Hanzhaliy Al Marwaziy",
+  "nasab": "Al Hanzhaliy Al Marwaziy",
+  "laqob": "Ibnu Rahawaih",
+  "hadith_count": "1115",
+  "book_counts": {
+    "bukhari": 103,
+    "muslim": 618,
+    "abudaud": 5,
+    "tirmidzi": 1,
+    "nasai": 348,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 33
+  }
+}

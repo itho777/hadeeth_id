@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5290",
+  "name_en": "Abdah bin 'Abdullah bin 'Abdah",
+  "name_id": "Abdah bin 'Abdullah bin 'Abdah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "258 H",
+  "city_of_death": "Ahwaz",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sahal",
+  "parents": "Ash Shafar Al Khuza'iy",
+  "nasab": "Ash Shafar Al Khuza'iy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 8,
+    "nasai": 13,
+    "ibnumajah": 6,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

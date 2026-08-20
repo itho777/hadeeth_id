@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1868",
+  "name_en": "Bisyir bin Al Mufadldlol Laahiq",
+  "name_id": "Bisyir bin Al Mufadldlol Laahiq",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "2",
+  "died_ah": "187 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Isma'il",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "221",
+  "book_counts": {
+    "bukhari": 31,
+    "muslim": 37,
+    "abudaud": 37,
+    "tirmidzi": 27,
+    "nasai": 48,
+    "ibnumajah": 8,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 6
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3364",
+  "name_en": "Sa'id bin 'Abdullah ",
+  "name_id": "Sa'id bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "97 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Utsman",
+  "parents": "Al 'Amiriy Al Qurasyiy",
+  "nasab": "Al 'Amiriy Al Qurasyiy",
+  "laqob": "Ibnu Marjanah",
+  "hadith_count": "15",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 5,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

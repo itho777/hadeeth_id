@@ -1,0 +1,23 @@
+{
+  "hadithnumber": 1997,
+  "arabicnumber": 1997,
+  "text": "Telah menceritakan kepada kami [Muhammad bin Basysyar] telah menceritakan kepada kami [Ghundar] telah menceritakan kepada kami [Syu'bah] aku mendengar ['Abdullah bin 'Isa bin Abu Laila] dari [Az Zuhriy] dari ['Urwah] dari ['Aisyah] dan dari [Salim] dari [Ibnu 'Umar radliallahu 'anhuma] keduanya berkata: \"Tidak diperkenankan untuk berpuasa pada hari tasyriq kecuali bagi siapa yang tidak mendapatkan hewan korban (Al Hadyu) ketika menunaikan haji",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Aisyah binti Abu Bakar ash-Shiddiq",
+      "name_ar": "عائشة بنت أبي بكر الصديق",
+      "rawi_id": "rawi_aisha_bint_abi_bakr"
+    },
+    {
+      "name_id": "Urwah bin az-Zubair bin al-Awwam",
+      "name_ar": "عروة بن الزبير بن العوام",
+      "rawi_id": "rawi_urwah_ibn_zubayr"
+    },
+    {
+      "name_id": "Muhammad bin Muslim bin Ubaidillah az-Zuhri",
+      "name_ar": "محمد بن مسلم بن عبيد الله الزهري",
+      "rawi_id": "rawi_ibn_shihab_al_zuhri"
+    }
+  ]
+}

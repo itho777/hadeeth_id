@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4867",
+  "name_en": "Abdullah bin Shafwan bin Umayyah bin Khalaf",
+  "name_id": "Abdullah bin Shafwan bin Umayyah bin Khalaf",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "73 H",
+  "city_of_death": "Marur Rawdz",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Shafwan",
+  "parents": "Al Jamhiy",
+  "nasab": "Al Jamhiy",
+  "laqob": "-",
+  "hadith_count": "9",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

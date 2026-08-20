@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6072",
+  "name_en": "Amru bin Akhthab bin Rifa'ah",
+  "name_id": "Amru bin Akhthab bin Rifa'ah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Zaid",
+  "parents": "Al Anshariy",
+  "nasab": "Al Anshariy",
+  "laqob": "Al A'raj",
+  "hadith_count": "17",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7771",
+  "name_en": "Musa bin Muslim",
+  "name_id": "Musa bin Muslim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Isa",
+  "parents": "Al Hizamiy Ath Thahhan",
+  "nasab": "Al Hizamiy Ath Thahhan",
+  "laqob": "Musa Ash Shaghir",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

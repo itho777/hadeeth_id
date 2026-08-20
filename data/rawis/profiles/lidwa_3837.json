@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3837",
+  "name_en": "Syahar bin Hawsyab",
+  "name_id": "Syahar bin Hawsyab",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "100 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Asy'ariy Al Himshiy",
+  "nasab": "Al Asy'ariy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "288",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 12,
+    "tirmidzi": 26,
+    "nasai": 3,
+    "ibnumajah": 26,
+    "ahmad": 205,
+    "malik": 0,
+    "darimi": 15
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2138",
+  "name_en": "Ja'far bin Iyas bin Abi Wahsyiyah",
+  "name_id": "Ja'far bin Iyas bin Abi Wahsyiyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "125 H",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Bisyir",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "285",
+  "book_counts": {
+    "bukhari": 51,
+    "muslim": 21,
+    "abudaud": 22,
+    "tirmidzi": 14,
+    "nasai": 34,
+    "ibnumajah": 9,
+    "ahmad": 117,
+    "malik": 0,
+    "darimi": 17
+  }
+}

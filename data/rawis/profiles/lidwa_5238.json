@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5238",
+  "name_en": "Abdul Malik bin Muhammad",
+  "name_id": "Abdul Malik bin Muhammad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Az Zurqa'",
+  "parents": "Ash Shan'aniy Al Barsamiy",
+  "nasab": "Ash Shan'aniy Al Barsamiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 5,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

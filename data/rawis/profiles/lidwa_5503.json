@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5503",
+  "name_en": "Utsman bin Jabalah bin Abi Rawwad",
+  "name_id": "Utsman bin Jabalah bin Abi Rawwad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "200 H",
+  "city_of_death": "Kufah",
+  "residence": "Himsh",
+  "kunyah": "-",
+  "parents": "Al 'Atakiy Al Marwaziy",
+  "nasab": "Al 'Atakiy Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "22",
+  "book_counts": {
+    "bukhari": 20,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

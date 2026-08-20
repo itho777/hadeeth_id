@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6525",
+  "name_en": "Qais bin Sa'ad bin 'Ubadah",
+  "name_id": "Qais bin Sa'ad bin 'Ubadah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdul Malik",
+  "parents": "Al Khazrajiy Al Anshariy",
+  "nasab": "Al Khazrajiy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "27",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 3,
+    "ibnumajah": 4,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 1
+  }
+}

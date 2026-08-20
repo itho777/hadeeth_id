@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7643",
+  "name_en": "Ma'an bin 'Isa bin Yahya bin Dinar",
+  "name_id": "Ma'an bin 'Isa bin Yahya bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "198 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Yahya",
+  "parents": "Al Qazzaz Al Asyja'iy",
+  "nasab": "Al Qazzaz Al Asyja'iy",
+  "laqob": "-",
+  "hadith_count": "163",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 18,
+    "abudaud": 3,
+    "tirmidzi": 87,
+    "nasai": 28,
+    "ibnumajah": 6,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 7
+  }
+}

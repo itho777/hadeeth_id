@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6433",
+  "name_en": "Fithr bin Khalifah",
+  "name_id": "Fithr bin Khalifah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "5",
+  "died_ah": "155 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Qurasyiy",
+  "nasab": "Al Qurasyiy",
+  "laqob": "Al Hannath",
+  "hadith_count": "50",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 0,
+    "abudaud": 9,
+    "tirmidzi": 2,
+    "nasai": 5,
+    "ibnumajah": 1,
+    "ahmad": 25,
+    "malik": 0,
+    "darimi": 7
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3257",
+  "name_en": "Sa'ad bin 'Utsman",
+  "name_id": "Sa'ad bin 'Utsman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Rayi",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ar Raziy Ad Dasytakiy",
+  "nasab": "Ar Raziy Ad Dasytakiy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2758",
+  "name_en": "Khaitsamah bin Abi Khaitsamah",
+  "name_id": "Khaitsamah bin Abi Khaitsamah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Nashr",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "16",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 0
+  }
+}

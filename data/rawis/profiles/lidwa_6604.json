@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6604",
+  "name_en": "Ka'ab bin Murrah",
+  "name_id": "Ka'ab bin Murrah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "57 H",
+  "city_of_death": "Urdun/Jordania",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Bahziy As Sulamiy",
+  "nasab": "Al Bahziy As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "20",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 14,
+    "malik": 0,
+    "darimi": 0
+  }
+}

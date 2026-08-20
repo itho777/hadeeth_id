@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3805",
+  "name_en": "Syu'aib bin Al Laits bin Sa'ad",
+  "name_id": "Syu'aib bin Al Laits bin Sa'ad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "199 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu 'Abdulk Malik ",
+  "parents": "Al Fahmiy",
+  "nasab": "Al Fahmiy",
+  "laqob": "-",
+  "hadith_count": "110",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 48,
+    "abudaud": 7,
+    "tirmidzi": 0,
+    "nasai": 55,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

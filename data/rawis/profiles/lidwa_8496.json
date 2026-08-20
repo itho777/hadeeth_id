@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8496",
+  "name_en": "\"Yazid, maula 'Aqil\"",
+  "name_id": "\"Yazid, maula 'Aqil\"",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Murrah",
+  "parents": "Al Hasyimiy",
+  "nasab": "Al Hasyimiy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 6,
+    "muslim": 6,
+    "abudaud": 1,
+    "tirmidzi": 3,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 12,
+    "malik": 5,
+    "darimi": 3
+  }
+}

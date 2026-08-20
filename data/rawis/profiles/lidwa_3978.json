@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3978",
+  "name_en": "Dlamrah bin Habib bin Shuhaib",
+  "name_id": "Dlamrah bin Habib bin Shuhaib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Utbah",
+  "parents": "Az Zubaidiy Al Himshiy",
+  "nasab": "Az Zubaidiy Al Himshiy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 2,
+    "ahmad": 13,
+    "malik": 0,
+    "darimi": 4
+  }
+}

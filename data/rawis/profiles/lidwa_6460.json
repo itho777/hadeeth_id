@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6460",
+  "name_en": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+  "name_id": "Qutaibah bin Sa'id bin Jamil bin Tharif bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "240 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "Abu Raja'",
+  "parents": "Ats Tsaqafiy Al Baghlaniy",
+  "nasab": "Ats Tsaqafiy Al Baghlaniy",
+  "laqob": "-",
+  "hadith_count": "2680",
+  "book_counts": {
+    "bukhari": 324,
+    "muslim": 666,
+    "abudaud": 191,
+    "tirmidzi": 601,
+    "nasai": 682,
+    "ibnumajah": 4,
+    "ahmad": 212,
+    "malik": 0,
+    "darimi": 0
+  }
+}

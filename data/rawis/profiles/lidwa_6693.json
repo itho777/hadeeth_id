@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6693",
+  "name_en": "Malik bin Mighwal bin 'Ashim",
+  "name_id": "Malik bin Mighwal bin 'Ashim",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "159 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Bajaliy",
+  "nasab": "Al Bajaliy",
+  "laqob": "-",
+  "hadith_count": "95",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 14,
+    "abudaud": 5,
+    "tirmidzi": 8,
+    "nasai": 10,
+    "ibnumajah": 6,
+    "ahmad": 37,
+    "malik": 0,
+    "darimi": 8
+  }
+}

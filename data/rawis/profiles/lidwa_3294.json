@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3294",
+  "name_en": "Sa'id bin Ar Rabi'",
+  "name_id": "Sa'id bin Ar Rabi'",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "211 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Zaid",
+  "parents": "Al 'Amiriy Al Hawariy",
+  "nasab": "Al 'Amiriy Al Hawariy",
+  "laqob": "-",
+  "hadith_count": "46",
+  "book_counts": {
+    "bukhari": 9,
+    "muslim": 2,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 3,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 30
+  }
+}

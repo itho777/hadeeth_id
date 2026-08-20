@@ -1,0 +1,18 @@
+{
+  "hadithnumber": 2157,
+  "arabicnumber": 2157,
+  "text": "Telah menceritakan kepada kami ['Ali bin 'Abdullah] telah menceritakan kepada kami [Sufyan] dari [Isma'il] dari [Qais] aku mendengar [Jarir radliallahu 'anhu] berkata: \"Aku berbai'at kepada Rasulullah shallallahu 'alaihi wasallam untuk bersyahadah Laa ilaaha illallah wa anna Muhammadar rasulullah, menegakkan shalat, menunaikan zakat, mendengar dan tho'at serta setia kepada setiap muslim",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Muhammad bin Ismail al-Bukhari",
+      "name_ar": "محمد بن إسماعيل البخاري",
+      "rawi_id": "rawi_al_bukhari"
+    },
+    {
+      "name_id": "Sufyan bin Sa'id ats-Tsauri al-Kufi",
+      "name_ar": "سفيان بن سعيد الثوري الكوفي",
+      "rawi_id": "rawi_sufyan_al_thawri"
+    }
+  ]
+}

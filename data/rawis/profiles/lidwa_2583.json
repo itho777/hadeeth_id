@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2583",
+  "name_en": "Hayya bin Abu 'Umar",
+  "name_id": "Hayya bin Abu 'Umar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Ubaid",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Hajib Sulaiman bin 'Abdul Malik",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 3,
+    "darimi": 0
+  }
+}

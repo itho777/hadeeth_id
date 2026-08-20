@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6847",
+  "name_en": "Muhammad bin Ash Shabbah bin Sufyan",
+  "name_id": "Muhammad bin Ash Shabbah bin Sufyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "240 H",
+  "city_of_death": "Jurjan",
+  "residence": "Jarjara",
+  "kunyah": "Abu Ja'far",
+  "parents": "Aal Jarjara'iy At Tajir",
+  "nasab": "Aal Jarjara'iy At Tajir",
+  "laqob": "-",
+  "hadith_count": "160",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 14,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 146,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

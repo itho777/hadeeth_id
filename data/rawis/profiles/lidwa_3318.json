@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3318",
+  "name_en": "Sa'id bin Khalid bin 'Amru bin 'Utsman bin 'Affan",
+  "name_id": "Sa'id bin Khalid bin 'Amru bin 'Utsman bin 'Affan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Dujail",
+  "kunyah": "Abu Khalid",
+  "parents": "Al Umawiy Al Madaniy ",
+  "nasab": "Al Umawiy Al Madaniy ",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

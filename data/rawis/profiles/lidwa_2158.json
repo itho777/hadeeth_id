@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2158",
+  "name_en": "Ja'far bin 'Aun bin Ja'far bin 'Amru bin Huraits",
+  "name_id": "Ja'far bin 'Aun bin Ja'far bin 'Amru bin Huraits",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "206 H",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Aun",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "107",
+  "book_counts": {
+    "bukhari": 7,
+    "muslim": 10,
+    "abudaud": 2,
+    "tirmidzi": 5,
+    "nasai": 8,
+    "ibnumajah": 9,
+    "ahmad": 9,
+    "malik": 0,
+    "darimi": 57
+  }
+}

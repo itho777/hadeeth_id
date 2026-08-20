@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7289",
+  "name_en": "Muhammad bin Manshur bin Tsabit",
+  "name_id": "Muhammad bin Manshur bin Tsabit",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "6",
+  "died_ah": "252 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Khuza'iy Al Jawaz",
+  "nasab": "Al Khuza'iy Al Jawaz",
+  "laqob": "-",
+  "hadith_count": "110",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 110,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

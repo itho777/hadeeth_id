@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8469",
+  "name_en": "Yazid bin 'Iyadl bin Ja'dabah",
+  "name_id": "Yazid bin 'Iyadl bin Ja'dabah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "12",
+  "died_ah": "-",
+  "city_of_death": "Bashrah ",
+  "residence": "Madinah",
+  "kunyah": "Abu Al Hakam",
+  "parents": "Al Laitsiy",
+  "nasab": "Al Laitsiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

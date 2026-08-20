@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_366",
+  "name_en": "Abu Hasyim bin 'Utbah",
+  "name_id": "Abu Hasyim bin 'Utbah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu Hasyim",
+  "parents": "Al 'Absyamiy",
+  "nasab": "Al 'Absyamiy",
+  "laqob": "-",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

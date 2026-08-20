@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7284",
+  "name_en": "Muhammad bin Ma'mar bin Rib'iy",
+  "name_id": "Muhammad bin Ma'mar bin Rib'iy",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Qaisiy",
+  "nasab": "Al Qaisiy",
+  "laqob": "Al Bahraniy",
+  "hadith_count": "42",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 4,
+    "abudaud": 5,
+    "tirmidzi": 1,
+    "nasai": 20,
+    "ibnumajah": 9,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

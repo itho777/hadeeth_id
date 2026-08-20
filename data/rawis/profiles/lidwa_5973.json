@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5973",
+  "name_en": "Umar bin 'Abdur Rahman bin Muhaishin",
+  "name_id": "Umar bin 'Abdur Rahman bin Muhaishin",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan biasa",
+  "grade": "6",
+  "died_ah": "123 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Hafsh",
+  "parents": "As Sahmiy",
+  "nasab": "As Sahmiy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 0
+  }
+}

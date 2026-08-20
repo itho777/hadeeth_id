@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1039",
+  "name_en": "Isma'il bin 'Abdullah bin Sama'ah",
+  "name_id": "Isma'il bin 'Abdullah bin Sama'ah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al 'Adawiy Ar Ramliy",
+  "nasab": "Al 'Adawiy Ar Ramliy",
+  "laqob": "-",
+  "hadith_count": "12",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 2,
+    "tirmidzi": 1,
+    "nasai": 9,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

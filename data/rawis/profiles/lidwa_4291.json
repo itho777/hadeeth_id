@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4291",
+  "name_en": "Abdur Rahman bin Umayyah",
+  "name_id": "Abdur Rahman bin Umayyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hijaz",
+  "kunyah": "-",
+  "parents": "At Tamimiy Ats Tsaqaoofiy",
+  "nasab": "At Tamimiy Ats Tsaqaoofiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

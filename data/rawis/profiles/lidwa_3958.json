@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3958",
+  "name_en": "Shilah bin Zufar",
+  "name_id": "Shilah bin Zufar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "Kufah",
+  "residence": "Kufah",
+  "kunyah": "Abu Al 'Alaa'",
+  "parents": "Al 'Abasiy",
+  "nasab": "Al 'Abasiy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 2,
+    "abudaud": 2,
+    "tirmidzi": 3,
+    "nasai": 7,
+    "ibnumajah": 6,
+    "ahmad": 12,
+    "malik": 0,
+    "darimi": 2
+  }
+}

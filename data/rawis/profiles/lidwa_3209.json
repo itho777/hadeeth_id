@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3209",
+  "name_en": "Sabrah bin Ma'bad bin 'Awsajah",
+  "name_id": "Sabrah bin Ma'bad bin 'Awsajah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "Dzimar ada yang bila",
+  "residence": "Madinah",
+  "kunyah": "AbuTsariyah",
+  "parents": "Al Juhaniy",
+  "nasab": "Al Juhaniy",
+  "laqob": "-",
+  "hadith_count": "38",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 10,
+    "abudaud": 4,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 2,
+    "ahmad": 16,
+    "malik": 0,
+    "darimi": 4
+  }
+}

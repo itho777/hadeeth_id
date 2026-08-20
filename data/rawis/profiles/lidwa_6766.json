@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6766",
+  "name_en": "Muhammad bin Abi Humaid bin Ibrahim ",
+  "name_id": "Muhammad bin Abi Humaid bin Ibrahim ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "8",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "Abu Ibrahim",
+  "parents": "Al Anshariy Az Zurqiy",
+  "nasab": "Al Anshariy Az Zurqiy",
+  "laqob": "Hammad",
+  "hadith_count": "14",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 5,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 7,
+    "malik": 0,
+    "darimi": 0
+  }
+}

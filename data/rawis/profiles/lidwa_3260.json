@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3260",
+  "name_en": "Sa'ad bin Malik bin Sinan bin 'Ubaid",
+  "name_id": "Sa'ad bin Malik bin Sinan bin 'Ubaid",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "74 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Khudriy Al Anshariy",
+  "nasab": "Al Khudriy Al Anshariy",
+  "laqob": "-",
+  "hadith_count": "2066",
+  "book_counts": {
+    "bukhari": 196,
+    "muslim": 208,
+    "abudaud": 128,
+    "tirmidzi": 154,
+    "nasai": 143,
+    "ibnumajah": 158,
+    "ahmad": 986,
+    "malik": 24,
+    "darimi": 69
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2097",
+  "name_en": "Jubair bin Nufair bin Malik",
+  "name_id": "Jubair bin Nufair bin Malik",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "80 H",
+  "city_of_death": "Syam",
+  "residence": "Syam",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "165",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 16,
+    "abudaud": 25,
+    "tirmidzi": 14,
+    "nasai": 22,
+    "ibnumajah": 7,
+    "ahmad": 71,
+    "malik": 0,
+    "darimi": 10
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7715",
+  "name_en": "Musa bin A'yan",
+  "name_id": "Musa bin A'yan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "6",
+  "died_ah": "177 H",
+  "city_of_death": "Harran",
+  "residence": "Jazirah",
+  "kunyah": "Abu Sa'id",
+  "parents": "Al Jazariy",
+  "nasab": "Al Jazariy",
+  "laqob": "-",
+  "hadith_count": "25",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 15,
+    "ibnumajah": 2,
+    "ahmad": 3,
+    "malik": 0,
+    "darimi": 1
+  }
+}

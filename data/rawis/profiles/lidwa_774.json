@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_774",
+  "name_en": "Ayyub bin Musa bin 'Amru bin Sa'id bin Al 'Ash",
+  "name_id": "Ayyub bin Musa bin 'Amru bin Sa'id bin Al 'Ash",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "132 H",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "-",
+  "parents": "Al Umawiy",
+  "nasab": "Al Umawiy",
+  "laqob": "-",
+  "hadith_count": "78",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 13,
+    "abudaud": 5,
+    "tirmidzi": 6,
+    "nasai": 19,
+    "ibnumajah": 6,
+    "ahmad": 21,
+    "malik": 3,
+    "darimi": 3
+  }
+}

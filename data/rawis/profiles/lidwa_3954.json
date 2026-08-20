@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3954",
+  "name_en": "Shafiyah binti Syaibah bin 'Utsman bin Abi Thalhah",
+  "name_id": "Shafiyah binti Syaibah bin 'Utsman bin Abi Thalhah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Shahabiyah",
+  "grade": "1",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Marur Rawdz",
+  "kunyah": "Ummu Hujair",
+  "parents": "Al 'Abdariyyah",
+  "nasab": "Al 'Abdariyyah",
+  "laqob": "-",
+  "hadith_count": "116",
+  "book_counts": {
+    "bukhari": 13,
+    "muslim": 14,
+    "abudaud": 14,
+    "tirmidzi": 2,
+    "nasai": 12,
+    "ibnumajah": 10,
+    "ahmad": 48,
+    "malik": 1,
+    "darimi": 2
+  }
+}

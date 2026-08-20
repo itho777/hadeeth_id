@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_1575",
+  "name_en": "Al Qasim bin Zakariya' bin Dinar",
+  "name_id": "Al Qasim bin Zakariya' bin Dinar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "250 H",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Muhammad",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "66",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 26,
+    "abudaud": 0,
+    "tirmidzi": 14,
+    "nasai": 23,
+    "ibnumajah": 2,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

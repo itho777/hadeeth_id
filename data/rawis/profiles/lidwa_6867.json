@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6867",
+  "name_en": "Muhammad bin An Nadlor bin Musawir",
+  "name_id": "Muhammad bin An Nadlor bin Musawir",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "239 H",
+  "city_of_death": "-",
+  "residence": "Himsh",
+  "kunyah": "-",
+  "parents": "Al Marwaziy",
+  "nasab": "Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "6",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 5,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

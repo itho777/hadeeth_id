@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6058",
+  "name_en": "Amrah binti 'Abdur Rahman bin Sa'ad bin Zurarah",
+  "name_id": "Amrah binti 'Abdur Rahman bin Sa'ad bin Zurarah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "103 H",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al nshariyyah",
+  "nasab": "Al nshariyyah",
+  "laqob": "-",
+  "hadith_count": "333",
+  "book_counts": {
+    "bukhari": 41,
+    "muslim": 36,
+    "abudaud": 28,
+    "tirmidzi": 12,
+    "nasai": 52,
+    "ibnumajah": 25,
+    "ahmad": 94,
+    "malik": 30,
+    "darimi": 15
+  }
+}

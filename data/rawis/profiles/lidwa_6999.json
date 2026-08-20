@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6999",
+  "name_en": "Muhammad bin Sulaim ",
+  "name_id": "Muhammad bin Sulaim ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "167 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hilal",
+  "parents": "Ar Rasibiy",
+  "nasab": "Ar Rasibiy",
+  "laqob": "-",
+  "hadith_count": "50",
+  "book_counts": {
+    "bukhari": 3,
+    "muslim": 0,
+    "abudaud": 3,
+    "tirmidzi": 2,
+    "nasai": 1,
+    "ibnumajah": 4,
+    "ahmad": 32,
+    "malik": 0,
+    "darimi": 5
+  }
+}

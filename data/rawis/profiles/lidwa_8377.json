@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8377",
+  "name_en": "Yazid bin Abi Kabsyah",
+  "name_id": "Yazid bin Abi Kabsyah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "-",
+  "parents": "Asy Syamiy Ad Damasyqiy",
+  "nasab": "Asy Syamiy Ad Damasyqiy",
+  "laqob": "As Saksakiy",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

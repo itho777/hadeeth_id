@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2069",
+  "name_en": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+  "name_id": "Jabir bin 'Abdullah bin 'Amru bin Haram",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "78 H",
+  "city_of_death": "Madinah",
+  "residence": "Madinah",
+  "kunyah": "Abu 'Abdullah",
+  "parents": "Al Anshari As Sulamiy",
+  "nasab": "Al Anshari As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "3026",
+  "book_counts": {
+    "bukhari": 306,
+    "muslim": 414,
+    "abudaud": 242,
+    "tirmidzi": 185,
+    "nasai": 286,
+    "ibnumajah": 231,
+    "ahmad": 1242,
+    "malik": 16,
+    "darimi": 104
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4426",
+  "name_en": "Abdur Rahman bin 'Abdullah bin 'Umar",
+  "name_id": "Abdur Rahman bin 'Abdullah bin 'Umar",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "10",
+  "died_ah": "186 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu Al Qasim",
+  "parents": "Al 'Umariy Al Madaniy",
+  "nasab": "Al 'Umariy Al Madaniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

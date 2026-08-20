@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4548",
+  "name_en": "Abdush Shamad bin 'Abdul Warits bin Sa'id bin Dzakwan",
+  "name_id": "Abdush Shamad bin 'Abdul Warits bin Sa'id bin Dzakwan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "207 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Sahal",
+  "parents": "Al 'Anbariy At Tanawwuriy",
+  "nasab": "Al 'Anbariy At Tanawwuriy",
+  "laqob": "Abdaus",
+  "hadith_count": "804",
+  "book_counts": {
+    "bukhari": 33,
+    "muslim": 65,
+    "abudaud": 19,
+    "tirmidzi": 31,
+    "nasai": 18,
+    "ibnumajah": 15,
+    "ahmad": 614,
+    "malik": 0,
+    "darimi": 9
+  }
+}

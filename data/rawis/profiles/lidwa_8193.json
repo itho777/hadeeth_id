@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8193",
+  "name_en": "Yahya bin Abi Unaisah",
+  "name_id": "Yahya bin Abi Unaisah",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "8",
+  "died_ah": "146 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu Zaid",
+  "parents": "Al Ghanawiy",
+  "nasab": "Al Ghanawiy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

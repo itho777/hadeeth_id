@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8473",
+  "name_en": "Yazid bin Kaisan",
+  "name_id": "Yazid bin Kaisan",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "5",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "Abu Isma'il",
+  "parents": "Al Yasykuriy",
+  "nasab": "Al Yasykuriy",
+  "laqob": "-",
+  "hadith_count": "61",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 24,
+    "abudaud": 2,
+    "tirmidzi": 4,
+    "nasai": 8,
+    "ibnumajah": 8,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 0
+  }
+}

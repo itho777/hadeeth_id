@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_452",
+  "name_en": "Ahmad bin Shalih",
+  "name_id": "Ahmad bin Shalih",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "2",
+  "died_ah": "248 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Mishriy",
+  "nasab": "Al Mishriy",
+  "laqob": "Ibnu Ath Thabariy",
+  "hadith_count": "181",
+  "book_counts": {
+    "bukhari": 32,
+    "muslim": 0,
+    "abudaud": 148,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 1,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_818",
+  "name_en": "Ibrahim bin Khalid bin 'Ubaid ",
+  "name_id": "Ibrahim bin Khalid bin 'Ubaid ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "200 H",
+  "city_of_death": "-",
+  "residence": "Yaman",
+  "kunyah": "Abu Muhammad",
+  "parents": "Al Qurasyiy Ash Shan'aniy",
+  "nasab": "Al Qurasyiy Ash Shan'aniy",
+  "laqob": "-",
+  "hadith_count": "64",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 4,
+    "tirmidzi": 0,
+    "nasai": 2,
+    "ibnumajah": 0,
+    "ahmad": 58,
+    "malik": 0,
+    "darimi": 0
+  }
+}

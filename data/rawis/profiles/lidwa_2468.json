@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2468",
+  "name_en": "Hakim bin Hizam bin Khuwailid ",
+  "name_id": "Hakim bin Hizam bin Khuwailid ",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Shahabat",
+  "grade": "1",
+  "died_ah": "54 H",
+  "city_of_death": "Madinah",
+  "residence": "Marur Rawdz",
+  "kunyah": "Abu Khalid",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "-",
+  "hadith_count": "75",
+  "book_counts": {
+    "bukhari": 14,
+    "muslim": 6,
+    "abudaud": 4,
+    "tirmidzi": 7,
+    "nasai": 11,
+    "ibnumajah": 1,
+    "ahmad": 27,
+    "malik": 0,
+    "darimi": 5
+  }
+}

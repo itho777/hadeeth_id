@@ -1,0 +1,14 @@
+{
+  "title_en_source": "MJNA.or.id",
+  "title_id_source": "MJNA.or.id",
+  "chapters": [
+    {
+      "chapter_id": "1",
+      "title_en": "Shahih Ibnu Hibban",
+      "title_id": "Shahih Ibnu Hibban",
+      "title_ar": "صحيح ابن حبان",
+      "hadith_range": "1-2769",
+      "count": 2769
+    }
+  ]
+}

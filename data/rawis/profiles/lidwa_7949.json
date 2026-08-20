@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7949",
+  "name_en": "Nuh bin Ja'wanah",
+  "name_id": "Nuh bin Ja'wanah",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "9",
+  "died_ah": "153 H",
+  "city_of_death": "-",
+  "residence": "Hijaz",
+  "kunyah": "-",
+  "parents": "As Sulamiy Al Khurasaniy",
+  "nasab": "As Sulamiy Al Khurasaniy",
+  "laqob": "-",
+  "hadith_count": "1",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5231",
+  "name_en": "Abdul Malik bin 'Amru",
+  "name_id": "Abdul Malik bin 'Amru",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "3",
+  "died_ah": "204 H",
+  "city_of_death": "Bashrah ",
+  "residence": "Bashrah",
+  "kunyah": "Abu 'Amir",
+  "parents": "Al 'Aqadiy Al Qaisiy",
+  "nasab": "Al 'Aqadiy Al Qaisiy",
+  "laqob": "-",
+  "hadith_count": "449",
+  "book_counts": {
+    "bukhari": 26,
+    "muslim": 32,
+    "abudaud": 28,
+    "tirmidzi": 37,
+    "nasai": 16,
+    "ibnumajah": 22,
+    "ahmad": 282,
+    "malik": 0,
+    "darimi": 6
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7654",
+  "name_en": "Muqaddam bin Muhammad bin Yahya",
+  "name_id": "Muqaddam bin Muhammad bin Yahya",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "-",
+  "parents": "Al Muqaddamiy Al Hilaliy",
+  "nasab": "Al Muqaddamiy Al Hilaliy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

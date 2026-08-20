@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5135",
+  "name_en": "Abdullah bin Hubairah bin As'ad",
+  "name_id": "Abdullah bin Hubairah bin As'ad",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "3",
+  "died_ah": "126 H",
+  "city_of_death": "-",
+  "residence": "Maru",
+  "kunyah": "Abu Hubairah",
+  "parents": "As Saba'iy Asy Syaibaniy",
+  "nasab": "As Saba'iy Asy Syaibaniy",
+  "laqob": "-",
+  "hadith_count": "49",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 1,
+    "ibnumajah": 1,
+    "ahmad": 44,
+    "malik": 0,
+    "darimi": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7634",
+  "name_en": "Mu'ammar bin Sulaiman",
+  "name_id": "Mu'ammar bin Sulaiman",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "191 H",
+  "city_of_death": "-",
+  "residence": "Jazirah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Ar Raqqiy An Nakha'iy",
+  "nasab": "Ar Raqqiy An Nakha'iy",
+  "laqob": "-",
+  "hadith_count": "24",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 2,
+    "ibnumajah": 5,
+    "ahmad": 15,
+    "malik": 0,
+    "darimi": 0
+  }
+}

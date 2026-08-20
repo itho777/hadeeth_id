@@ -1,0 +1,28 @@
+{
+  "hadithnumber": 4752,
+  "arabicnumber": 4752,
+  "text": "Telah menceritakan kepada kami [Ibrahim bin Musa] Telah menceritakan kepada kami [Hisyam bin Yusuf] bahwa [Ibnu Juraij] Telah mengabarkan kepada mereka. [Ibnu Abu Mulaikah] dia berkata; Aku mendengar [Aisyah] membaca ayat: Ingatlah, di waktu kamu menerima berita bohong itu dari mulut ke mulut. (An Nuur:)",
+  "grades": [],
+  "sanad": [
+    {
+      "name_id": "Ibrahim bin Musa",
+      "name_ar": "Ibrahim bin Musa"
+    },
+    {
+      "name_id": "Hisyam bin Yusuf",
+      "name_ar": "هشام"
+    },
+    {
+      "name_id": "Ibnu Juraij",
+      "name_ar": "Ibnu Juraij"
+    },
+    {
+      "name_id": "Ibnu Abu Mulaikah",
+      "name_ar": "Ibnu Abu Mulaikah"
+    },
+    {
+      "name_id": "Aisyah",
+      "name_ar": "عائشة"
+    }
+  ]
+}

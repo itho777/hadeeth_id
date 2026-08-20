@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_2962",
+  "name_en": "Rauh bin Aslam",
+  "name_id": "Rauh bin Aslam",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "8",
+  "died_ah": "200 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Hatim",
+  "parents": "-",
+  "nasab": "-",
+  "laqob": "Al Bahili Al Bashri",
+  "hadith_count": "5",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 2,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 3
+  }
+}

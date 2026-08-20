@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_3384",
+  "name_en": "Sa'id bin 'Amru bin Syurahbil bin Sa'id",
+  "name_id": "Sa'id bin 'Amru bin Syurahbil bin Sa'id",
+  "name_ar": "",
+  "is_sahabi": "true",
+  "generation": "Tabi'in (tidak jumpa Shahabat)",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Madinah",
+  "kunyah": "-",
+  "parents": "Al Anshariy Al Khazrajiy",
+  "nasab": "Al Anshariy Al Khazrajiy",
+  "laqob": "-",
+  "hadith_count": "3",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 1,
+    "darimi": 0
+  }
+}

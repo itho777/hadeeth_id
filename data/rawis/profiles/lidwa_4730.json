@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4730",
+  "name_en": "Abdullah bin Al Walid bin 'Abdullah ",
+  "name_id": "Abdullah bin Al Walid bin 'Abdullah ",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Kufah",
+  "kunyah": "-",
+  "parents": "Al Muzaniy Al 'Ajaliy",
+  "nasab": "Al Muzaniy Al 'Ajaliy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 1,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 1,
+    "malik": 0,
+    "darimi": 2
+  }
+}

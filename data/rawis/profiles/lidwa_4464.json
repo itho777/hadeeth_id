@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_4464",
+  "name_en": "Abdur Rahman bin Ghanmi",
+  "name_id": "Abdur Rahman bin Ghanmi",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan tua",
+  "grade": "3",
+  "died_ah": "78 H",
+  "city_of_death": "-",
+  "residence": "Syam",
+  "kunyah": "-",
+  "parents": "Al Asy'ariy",
+  "nasab": "Al Asy'ariy",
+  "laqob": "-",
+  "hadith_count": "67",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 5,
+    "tirmidzi": 6,
+    "nasai": 3,
+    "ibnumajah": 7,
+    "ahmad": 43,
+    "malik": 0,
+    "darimi": 3
+  }
+}

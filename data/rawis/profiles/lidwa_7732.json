@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7732",
+  "name_en": "Musa bin Daud",
+  "name_id": "Musa bin Daud",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "5",
+  "died_ah": "217 H",
+  "city_of_death": "Thabariyah",
+  "residence": "Thabariyah",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Adl Dlabbiy Al Khalqaniy",
+  "nasab": "Adl Dlabbiy Al Khalqaniy",
+  "laqob": "-",
+  "hadith_count": "201",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 1,
+    "abudaud": 1,
+    "tirmidzi": 1,
+    "nasai": 4,
+    "ibnumajah": 3,
+    "ahmad": 191,
+    "malik": 0,
+    "darimi": 0
+  }
+}

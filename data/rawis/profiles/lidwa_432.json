@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_432",
+  "name_en": "Ahmad bin Jamil",
+  "name_id": "Ahmad bin Jamil",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan biasa",
+  "grade": "4",
+  "died_ah": "230 H",
+  "city_of_death": "-",
+  "residence": "-",
+  "kunyah": "Abu Yusuf",
+  "parents": "Al Marwaziy",
+  "nasab": "Al Marwaziy",
+  "laqob": "-",
+  "hadith_count": "2",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 0,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 2,
+    "malik": 0,
+    "darimi": 0
+  }
+}

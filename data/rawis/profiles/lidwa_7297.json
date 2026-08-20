@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_7297",
+  "name_en": "Muhammad bin Musa bin 'Imran",
+  "name_id": "Muhammad bin Musa bin 'Imran",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "4",
+  "died_ah": "-",
+  "city_of_death": "-",
+  "residence": "Hait",
+  "kunyah": "Abu Ja'far",
+  "parents": "Al Qaththan Al Wasithiy",
+  "nasab": "Al Qaththan Al Wasithiy",
+  "laqob": "-",
+  "hadith_count": "4",
+  "book_counts": {
+    "bukhari": 1,
+    "muslim": 1,
+    "abudaud": 0,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 2,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 0
+  }
+}

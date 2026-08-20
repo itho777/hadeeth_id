@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6782",
+  "name_en": "Muhammad bin Ahmad bin Abi Khalaf",
+  "name_id": "Muhammad bin Ahmad bin Abi Khalaf",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ul Atba' kalangan tua",
+  "grade": "3",
+  "died_ah": "236 H",
+  "city_of_death": "-",
+  "residence": "Baghdad",
+  "kunyah": "Abu 'Abdullah ",
+  "parents": "Al Qathi'iy As Sulamiy",
+  "nasab": "Al Qathi'iy As Sulamiy",
+  "laqob": "-",
+  "hadith_count": "82",
+  "book_counts": {
+    "bukhari": 0,
+    "muslim": 29,
+    "abudaud": 16,
+    "tirmidzi": 0,
+    "nasai": 0,
+    "ibnumajah": 0,
+    "ahmad": 0,
+    "malik": 0,
+    "darimi": 37
+  }
+}

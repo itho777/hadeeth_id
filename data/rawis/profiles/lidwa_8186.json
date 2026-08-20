@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_8186",
+  "name_en": "Wuhaib bin Khalid bin 'Ajlan",
+  "name_id": "Wuhaib bin Khalid bin 'Ajlan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan tua",
+  "grade": "2",
+  "died_ah": "165 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abu Bakar",
+  "parents": "Al Bahiliy",
+  "nasab": "Al Bahiliy",
+  "laqob": "Shahibu Al Karabis",
+  "hadith_count": "497",
+  "book_counts": {
+    "bukhari": 108,
+    "muslim": 59,
+    "abudaud": 40,
+    "tirmidzi": 5,
+    "nasai": 28,
+    "ibnumajah": 9,
+    "ahmad": 210,
+    "malik": 0,
+    "darimi": 38
+  }
+}

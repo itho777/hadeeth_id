@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_5445",
+  "name_en": "Ubaidah bin Humaid bin Shuhaib",
+  "name_id": "Ubaidah bin Humaid bin Shuhaib",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'ut Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "190 H",
+  "city_of_death": "Baghdad",
+  "residence": "Kufah",
+  "kunyah": "Abu 'Abdur Rahman",
+  "parents": "At Taymiy Al Laitsiy",
+  "nasab": "At Taymiy Al Laitsiy",
+  "laqob": "Al Hadza'",
+  "hadith_count": "95",
+  "book_counts": {
+    "bukhari": 4,
+    "muslim": 0,
+    "abudaud": 6,
+    "tirmidzi": 9,
+    "nasai": 11,
+    "ibnumajah": 4,
+    "ahmad": 61,
+    "malik": 0,
+    "darimi": 0
+  }
+}

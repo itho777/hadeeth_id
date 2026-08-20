@@ -1,0 +1,28 @@
+{
+  "id": "lidwa_6037",
+  "name_en": "Imran bin Hiththan bin Zhabyan",
+  "name_id": "Imran bin Hiththan bin Zhabyan",
+  "name_ar": "",
+  "is_sahabi": "false",
+  "generation": "Tabi'in kalangan pertengahan",
+  "grade": "5",
+  "died_ah": "84 H",
+  "city_of_death": "-",
+  "residence": "Bashrah",
+  "kunyah": "Abi Simak",
+  "parents": "As Sadusiy",
+  "nasab": "As Sadusiy",
+  "laqob": "-",
+  "hadith_count": "10",
+  "book_counts": {
+    "bukhari": 2,
+    "muslim": 0,
+    "abudaud": 1,
+    "tirmidzi": 0,
+    "nasai": 1,
+    "ibnumajah": 0,
+    "ahmad": 6,
+    "malik": 0,
+    "darimi": 0
+  }
+}
