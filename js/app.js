@@ -3892,23 +3892,79 @@ async function loadTopicHadiths() {
   document.querySelector('[data-list-chapter-title-id]').innerText = topicNameId;
   document.querySelector('[data-list-chapter-title-ar]').innerText = '';
 
+
   let allHadiths = [];
   let filteredHadiths = [];
   let currentPage = 1;
   let pageSize = parseInt(pageSizeSelect ? pageSizeSelect.value : '10') || 10;
   let currentLang = langSelect ? langSelect.value : 'id';
-  
+
   try {
-      const fullNdjson = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
-      allHadiths = fullNdjson.filter(h => h.tags && h.tags.includes(topicNameEn));
-      filteredHadiths = [...allHadiths];
+    const fullNdjson = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
+    allHadiths = fullNdjson.filter(h => h.tags && h.tags.includes(topicNameEn));
+    filteredHadiths = [...allHadiths];
   } catch (e) {
-      container.innerHTML = `<div class="p-6 text-red-500">Error loading topic data. Please build NDJSON database first.</div>`;
-      return;
+    container.innerHTML = '<div class="p-6 text-red-500">Error loading topic data. Please build NDJSON database first.</div>';
+    return;
   }
 
-  if (countMetaEn) countMetaEn.innerText = `${filteredHadiths.length} Hadiths found in ${bookName} for topic ${topicNameEn}`;
-  if (countMetaId) countMetaId.innerText = `${filteredHadiths.length} Hadits ditemukan dalam ${bookName} untuk topik ${topicNameId}`;
+  if (countMetaEn) countMetaEn.innerText = filteredHadiths.length + ' Hadiths found in ' + bookName + ' for topic ' + topicNameEn;
+  if (countMetaId) countMetaId.innerText = filteredHadiths.length + ' Hadits ditemukan dalam ' + bookName + ' untuk topik ' + topicNameId;
+
+  function buildTopicCard(item) {
+    const num = item.id || item.hadith_number;
+    let arText = item.text_ar || '';
+    if (!arText && item.translations && item.translations.ar && item.translations.ar.length > 0) arText = item.translations.ar[0].text;
+    let enText = item.text_en || '';
+    if (!enText && item.translations && item.translations.en && item.translations.en.length > 0) enText = item.translations.en[0].text;
+    let idText = item.text_id || '';
+    if (!idText && item.translations && item.translations.id && item.translations.id.length > 0) idText = item.translations.id[0].text;
+
+    let gradeEn = item.grade || item.grade_en || '';
+    if (!gradeEn && item.gradings && item.gradings.length > 0) gradeEn = item.gradings[0].grade;
+    const gradeId = item.grade_id || gradeEn;
+    const detailLink = 'hadith.html?book=' + bookId + '&id=' + num;
+
+    const idUnavailable = '<em class="text-outline dark:text-gray-500">Terjemahan Indonesia tidak tersedia.</em>';
+    const enUnavailable = '<em class="text-outline dark:text-gray-500">English translation unavailable.</em>';
+
+    let displayText = '';
+    if (currentLang === 'id') {
+      displayText = '<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">'
+        + '<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>' + (idText || idUnavailable) + '</p>'
+        + '<p class="text-[11px] text-blue-500/70 mt-1 italic">Source: unified NDJSON engine</p></div>';
+    } else if (currentLang === 'en') {
+      displayText = '<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">'
+        + '<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>' + (enText || enUnavailable) + '</p>'
+        + '<p class="text-[11px] text-blue-500/70 mt-1 italic">Source: unified NDJSON engine</p></div>';
+    } else {
+      displayText = '<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">'
+        + '<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>' + (idText || idUnavailable) + '</p>'
+        + '<p class="text-xs text-outline dark:text-gray-400 leading-relaxed"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>' + (enText || enUnavailable) + '</p>'
+        + '<p class="text-[11px] text-blue-500/70 mt-1 italic">Source: unified NDJSON engine</p></div>';
+    }
+
+    return '<div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4 shadow-sm hover:border-secondary/40 transition-all">'
+      + '<div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-3">'
+      + '<div class="flex items-center gap-2">'
+      + '<span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded uppercase">' + escapeHtml(bookName) + ' #' + num + '</span>'
+      + '<span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2.5 py-0.5 rounded"><span data-lang-en>' + escapeHtml(gradeEn) + '</span><span data-lang-id style="display:none">' + escapeHtml(gradeId) + '</span></span>'
+      + '</div>'
+      + '<button data-copy-hadith data-copy-share-btn data-hadith-title="' + escapeHtml(bookName) + ' #' + num + '" data-copy-hadith-ar="' + escapeHtml(arText) + '" data-copy-hadith-text-id="' + escapeHtml(idText) + '" data-copy-hadith-text-en="' + escapeHtml(enText) + '" class="btn-copy-share text-xs font-semibold px-2.5 py-1 rounded border border-outline-variant/40 dark:border-[#334155] text-primary dark:text-white hover:bg-surface-container-low dark:hover:bg-[#334155] transition-all flex items-center gap-1.5 cursor-pointer"><span class="material-symbols-outlined text-[14px]">share</span><span data-lang-en>Copy / Share</span><span data-lang-id>Salin / Bagikan</span></button>'
+      + '</div>'
+      + '<div class="hadith-text-container relative">'
+      + '<div class="hadith-text-inner transition-all duration-300 overflow-hidden" style="max-height: 380px;">'
+      + (arText ? '<p class="font-arabic-body text-2xl text-primary dark:text-white text-right leading-loose" dir="rtl">' + escapeHtml(arText) + '</p>' : '')
+      + displayText
+      + '</div>'
+      + '<div class="read-more-overlay absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-surface dark:from-[#1e293b] to-transparent pointer-events-none hidden"></div>'
+      + '<button class="read-more-btn hidden text-secondary dark:text-[#10b981] font-semibold text-xs mt-2 hover:underline flex items-center gap-1 cursor-pointer"><span data-lang-en>Read more</span><span data-lang-id>Selengkapnya</span> <span class="material-symbols-outlined text-[14px]">expand_more</span></button>'
+      + '</div>'
+      + '<div class="flex justify-between items-center pt-3 border-t border-outline-variant/10 dark:border-[#334155] text-xs">'
+      + '<a href="sanad.html?book=' + bookId + '&id=' + num + '" class="text-secondary dark:text-[#10b981] font-semibold hover:underline flex items-center gap-1"><span class="material-symbols-outlined text-sm">account_tree</span><span data-lang-en>Inspect Sanad Chain</span><span data-lang-id>Telusuri Sanad</span></a>'
+      + '<a href="' + detailLink + '" class="text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors"><span data-lang-en>Full Hadith &amp; Commentary &rarr;</span><span data-lang-id>Hadits Selengkapnya &amp; Pensyarahan &rarr;</span></a>'
+      + '</div></div>';
+  }
 
   function updateTopicPaginationUI() {
     const totalPages = Math.ceil(filteredHadiths.length / pageSize) || 1;
@@ -3919,83 +3975,10 @@ async function loadTopicHadiths() {
 
     let html = '';
     if (pageData.length === 0) {
-      html = `<div class="bg-surface dark:bg-[#1e293b] p-8 text-center rounded-xl border border-outline-variant/30 text-on-surface-variant dark:text-gray-400"><span class="material-symbols-outlined text-4xl mb-3 opacity-50 block">search_off</span>No ahadith found for this topic.</div>`;
+      html = '<div class="bg-surface dark:bg-[#1e293b] p-8 text-center rounded-xl border border-outline-variant/30 text-on-surface-variant dark:text-gray-400"><span class="material-symbols-outlined text-4xl mb-3 opacity-50 block">search_off</span>No ahadith found for this topic.</div>';
+    } else {
+      pageData.forEach(item => { html += buildTopicCard(item); });
     }
-
-    pageData.forEach(item => {
-      const num = item.id || item.hadith_number;
-      const displayNum = (localStorage.getItem('numbering_system') === 'lidwa' && item.lidwa_id) ? item.lidwa_id : num;
-      
-      let arText = item.text_ar || '';
-      if (!arText && item.translations && item.translations.ar && item.translations.ar.length > 0) {
-          arText = item.translations.ar[0].text;
-      }
-      
-      let enText = item.text_en;
-      if (!enText && item.translations && item.translations.en && item.translations.en.length > 0) {
-          enText = item.translations.en[0].text;
-      }
-      
-      let idText = item.text_id;
-      if (!idText && item.translations && item.translations.id && item.translations.id.length > 0) {
-          idText = item.translations.id[0].text;
-      }
-
-      let gradeEn = item.grade || item.grade_en || '';
-      if (!gradeEn && item.gradings && item.gradings.length > 0) {
-          gradeEn = item.gradings[0].grade;
-      }
-      const gradeId = item.grade_id || gradeEn;
-
-      const detailLink = `hadith.html?book=${bookId}&id=${num}`;
-      
-      let displayText = `
-          <div class="flex flex-col gap-3 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
-            <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${idText ? idText : '<span class="text-outline italic">Tidak tersedia terjemahan bahasa Indonesia untuk hadits ini.</span>'}</p>
-            <p class="text-xs text-outline dark:text-gray-400 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${enText ? enText : '<span class="text-outline italic">English translation unavailable.</span>'}</p>
-            <p class="text-[11px] text-blue-500/70 mt-1 italic">Source: unified NDJSON engine</p>
-          </div>
-      `;
-
-      html += `
-        <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4 shadow-sm hover:border-secondary/40 transition-all">
-          <div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-3">
-            <div class="flex items-center gap-2">
-              <span class="bg-primary dark:bg-[#10b981] text-white dark:text-black text-xs font-bold px-2.5 py-0.5 rounded uppercase">${bookName} #${num}</span>
-              <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-semibold px-2.5 py-0.5 rounded">
-                <span data-lang-en>${gradeEn}</span>
-                <span data-lang-id style="display:none">${gradeId}</span>
-              </span>
-            </div>
-            <button data-copy-hadith data-copy-share-btn data-hadith-title="${bookName} #${num}" data-copy-hadith-ar="${arText}" data-copy-hadith-text-id="${idText}" data-copy-hadith-text-en="${enText}" data-share-url="${window.location.origin + window.location.pathname.replace('topic-hadiths.html', '')}${detailLink}" class="btn-copy-share text-xs font-semibold px-2.5 py-1 rounded border border-outline-variant/40 dark:border-[#334155] text-primary dark:text-white hover:bg-surface-container-low dark:hover:bg-[#334155] transition-all flex items-center gap-1.5 cursor-pointer">
-              <span class="material-symbols-outlined text-[14px]">share</span>
-              <span data-lang-en>Copy / Share</span><span data-lang-id>Salin / Bagikan</span>
-            </button>
-          </div>
-          <div class="hadith-text-container relative">
-            <div class="hadith-text-inner transition-all duration-300 overflow-hidden" style="max-height: 380px;">
-              ${arText ? `<p class="font-arabic-body text-2xl text-primary dark:text-white text-right leading-loose" dir="rtl">${arText}</p>` : ''}
-              ${displayText}
-            </div>
-            <div class="read-more-overlay absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-surface dark:from-[#1e293b] to-transparent pointer-events-none hidden"></div>
-            <button class="read-more-btn hidden text-secondary dark:text-[#10b981] font-semibold text-xs mt-2 hover:underline flex items-center gap-1 cursor-pointer">
-              <span data-lang-en>Read more</span><span data-lang-id>Selengkapnya</span> <span class="material-symbols-outlined text-[14px]">expand_more</span>
-            </button>
-          </div>
-          <div class="flex justify-between items-center pt-3 border-t border-outline-variant/10 dark:border-[#334155] text-xs">
-            <a href="sanad.html?book=${bookId}&id=${num}" class="text-secondary dark:text-[#10b981] font-semibold hover:underline flex items-center gap-1">
-              <span class="material-symbols-outlined text-sm">account_tree</span>
-              <span data-lang-en>Inspect Sanad Chain</span><span data-lang-id>Telusuri Sanad</span>
-            </a>
-            <div class="flex items-center gap-2">
-              <a href="${detailLink}" class="text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors">
-                <span data-lang-en>Full Hadith & Commentary &rarr;</span><span data-lang-id>Hadits Selengkapnya & Pensyarahan &rarr;</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      `;
-    });
 
     container.innerHTML = html;
     if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
@@ -4004,77 +3987,70 @@ async function loadTopicHadiths() {
     if (pageIndicator) {
       const isId = (window.LangSystem && window.LangSystem.isIdMode());
       pageIndicator.innerText = isId
-        ? `Menampilkan ${startIdx + 1}-${endIdx} dari ${filteredHadiths.length} Hadits (Hal ${currentPage} dari ${totalPages})`
-        : `Showing ${startIdx + 1}-${endIdx} of ${filteredHadiths.length} Ahadith (Page ${currentPage} of ${totalPages})`;
+        ? 'Menampilkan ' + (startIdx + 1) + '-' + endIdx + ' dari ' + filteredHadiths.length + ' Hadits (Hal ' + currentPage + ' dari ' + totalPages + ')'
+        : 'Showing ' + (startIdx + 1) + '-' + endIdx + ' of ' + filteredHadiths.length + ' Ahadith (Page ' + currentPage + ' of ' + totalPages + ')';
     }
     if (prevBtn) prevBtn.disabled = (currentPage <= 1);
     if (nextBtn) nextBtn.disabled = (currentPage >= totalPages);
-
     const jumpInput = document.getElementById('jump-page-input');
-    if (jumpInput) {
-      jumpInput.min = 1;
-      jumpInput.max = totalPages;
-      jumpInput.value = currentPage;
-      jumpInput.placeholder = currentPage;
-    }
+    if (jumpInput) { jumpInput.min = 1; jumpInput.max = totalPages; jumpInput.value = currentPage; jumpInput.placeholder = currentPage; }
   }
 
-  if (pageSizeSelect) {
-    pageSizeSelect.addEventListener('change', (e) => {
-      pageSize = parseInt(e.target.value) || 10;
+  // Sync with Translation dropdown
+  if (langSelect) {
+    langSelect.addEventListener('change', function(e) {
+      currentLang = e.target.value;
       currentPage = 1;
       updateTopicPaginationUI();
     });
   }
 
+  // Sync with global EN/ID header toggle
+  if (!window._topicHadithLangListenerAttached) {
+    window._topicHadithLangListenerAttached = true;
+    window.addEventListener('hadeeth_lang_change', function() {
+      var sel = document.getElementById('default-lang-select');
+      if (sel) {
+        var newLang = (window.LangSystem && window.LangSystem.get() === 'id') ? 'id' : 'en';
+        sel.value = newLang;
+        currentLang = newLang;
+        currentPage = 1;
+        updateTopicPaginationUI();
+      }
+    });
+  }
+
+  if (pageSizeSelect) {
+    pageSizeSelect.addEventListener('change', function(e) { pageSize = parseInt(e.target.value) || 10; currentPage = 1; updateTopicPaginationUI(); });
+  }
   if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
-      if (currentPage > 1) {
-        currentPage--;
-        updateTopicPaginationUI();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    });
+    prevBtn.addEventListener('click', function() { if (currentPage > 1) { currentPage--; updateTopicPaginationUI(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
   }
-
   if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-      const totalPages = Math.ceil(filteredHadiths.length / pageSize) || 1;
-      if (currentPage < totalPages) {
-        currentPage++;
-        updateTopicPaginationUI();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+    nextBtn.addEventListener('click', function() { var tot = Math.ceil(filteredHadiths.length / pageSize) || 1; if (currentPage < tot) { currentPage++; updateTopicPaginationUI(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
+  }
+  var jumpBtn = document.getElementById('jump-page-btn');
+  if (jumpBtn) {
+    jumpBtn.addEventListener('click', function() {
+      var val = parseInt(document.getElementById('jump-page-input') && document.getElementById('jump-page-input').value);
+      var tot = Math.ceil(filteredHadiths.length / pageSize) || 1;
+      if (val >= 1 && val <= tot) { currentPage = val; updateTopicPaginationUI(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
     });
   }
 
-  document.getElementById('jump-page-btn')?.addEventListener('click', () => {
-    const val = parseInt(document.getElementById('jump-page-input')?.value);
-    const totalPages = Math.ceil(filteredHadiths.length / pageSize) || 1;
-    if (val >= 1 && val <= totalPages) {
-      currentPage = val;
-      updateTopicPaginationUI();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  });
-
-  const searchInput = document.getElementById('topic-search-input');
+  var searchInput = document.getElementById('topic-search-input');
   if (searchInput) {
-      searchInput.addEventListener('input', () => {
-          const q = searchInput.value.toLowerCase();
-          if (!q) {
-              filteredHadiths = [...allHadiths];
-          } else {
-              filteredHadiths = allHadiths.filter(h => {
-                  return (h.text_en && h.text_en.toLowerCase().includes(q)) ||
-                         (h.text_id && h.text_id.toLowerCase().includes(q)) ||
-                         (h.text_ar && h.text_ar.includes(q)) ||
-                         (String(h.hadith_number).includes(q));
-              });
-          }
-          currentPage = 1;
-          updateTopicPaginationUI();
+    searchInput.addEventListener('input', function() {
+      var q = searchInput.value.toLowerCase();
+      filteredHadiths = !q ? [...allHadiths] : allHadiths.filter(function(h) {
+        return (h.text_en && h.text_en.toLowerCase().indexOf(q) >= 0) ||
+               (h.text_id && h.text_id.toLowerCase().indexOf(q) >= 0) ||
+               (h.text_ar && h.text_ar.indexOf(q) >= 0) ||
+               (String(h.hadith_number).indexOf(q) >= 0);
       });
+      currentPage = 1;
+      updateTopicPaginationUI();
+    });
   }
 
   updateTopicPaginationUI();
