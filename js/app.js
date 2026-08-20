@@ -1074,9 +1074,11 @@ async function loadHadithDetail() {
   // Also check direct text_id on native_lidwa dataset
   const hasLidwaId2 = !!(activeDataset === 'native_lidwa' && data && data.text_id);
   const hasLidwaEn2 = !!(activeDataset === 'native_lidwa' && data && data.text_en);
+  // Also check text_id directly available from NDJSON (even without a fawaz→lidwa link mapping)
+  const hasNdjsonId = !!(data && data.text_id);
 
-  if ((lidwaId || activeDataset === 'native_lidwa') && hasLidwaSource) {
-      if (hasLidwaIdText || hasLidwaId2 || lidwaId) {
+  if ((lidwaId || activeDataset === 'native_lidwa' || hasNdjsonId) && hasLidwaSource) {
+      if (hasLidwaIdText || hasLidwaId2 || lidwaId || hasNdjsonId) {
           translationOptions.push({
               id: 'lidwa-id',
               label: `ID - Lidwa`,
