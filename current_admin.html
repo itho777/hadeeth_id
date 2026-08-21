@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="HADEETH.ID ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Administration Console & Sync Management."/>
+  <title>Admin Console - HADEETH.ID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_85"/>
+  <script src="js/theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "ink-black":"#0D0D10","secondary":"#7b5810","surface":"#fcf9f5","outline-variant":"#c3c6cf",
+            "primary":"#001932","manuscript-paper":"#FDFBF7","on-primary":"#ffffff","surface-container-low":"#f6f3ef",
+            "on-surface":"#1c1c1a"
+          },
+          fontFamily: { "body-md":["Plus Jakarta Sans"] },
+          spacing: { "stack-sm":"0.5rem","content-width-max":"800px","margin-main":"2rem","stack-lg":"2rem" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-family:'Material Symbols Outlined'; font-weight:normal; font-style:normal; font-size:24px; line-height:1; display:inline-block; }
+  </style>
+</head>
+<body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
+
+<!-- TOP APP BAR -->
+<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
+  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-[#0a1120] border border-outline-variant/30"><img src="assets/logo_light.jpg" alt="hadeeth.id logo" class="logo-light w-full h-full object-cover rounded-lg scale-125"/><img src="assets/logo_dark.jpg" alt="hadeeth.id logo" class="logo-dark w-full h-full object-cover rounded-lg scale-125"/></div>
+      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="books.html"   data-nav-page="books.html" data-i18n="nav_books" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Books</a>
+      <a href="topics.html"   data-nav-page="topics.html" data-i18n="nav_topics" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Topics</a>
+      <a href="scholars.html" data-nav-page="scholars.html" data-i18n="nav_scholars" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Scholars</a>
+      <a href="glossary.html" data-nav-page="glossary.html" data-i18n="nav_glossary" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Glossary</a>
+      <a href="admin.html"   data-nav-page="admin.html" data-i18n="nav_admin" class="text-primary dark:text-white font-bold border-b-2 border-primary dark:border-[#10b981] py-1">Admin</a>
+    </nav>
+    <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
+      <!-- Language Switcher -->
+      <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
+        <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
+        <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
+      </div>
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Toggle theme">
+        <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
+      </button>
+      <button id="mobile-menu-btn" class="p-2 md:hidden hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors">
+        <span class="material-symbols-outlined" data-menu-icon>menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-manuscript-paper dark:bg-[#10141a] border-t border-outline-variant dark:border-[#1e293b]">
+    <div class="flex flex-col px-margin-main py-2 gap-1">
+      <a href="books.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_books">Books</a>
+      <a href="topics.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_topics">Topics</a>
+      <a href="scholars.html" class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_scholars">Scholars</a>
+      <a href="admin.html"   class="py-2 text-primary dark:text-white font-bold" data-i18n="nav_admin">Admin</a>
+    </div>
+  </div>
+</header>
+
+<main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8">
+
+  <!-- Header -->
+  <div class="flex flex-col gap-2 border-b border-outline-variant/30 dark:border-[#334155] pb-4">
+    <div class="flex items-center gap-2 text-secondary dark:text-[#10b981] font-semibold text-xs uppercase tracking-wider">
+      <span class="material-symbols-outlined text-[18px]">admin_panel_settings</span>
+      <span>System Portal</span>
+    </div>
+    <h1 class="text-2xl font-bold text-primary dark:text-white">HADEETH.ID Administration</h1>
+  </div>
+
+  <!-- Login Gate Card -->
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 md:p-8 max-w-md mx-auto w-full flex flex-col gap-6 shadow-md">
+    <div class="flex flex-col items-center text-center gap-2">
+      <div class="w-12 h-12 rounded-full bg-primary/10 dark:bg-[#10b981]/10 text-primary dark:text-[#10b981] flex items-center justify-center">
+        <span class="material-symbols-outlined text-2xl">lock</span>
+      </div>
+      <h2 class="font-bold text-lg text-primary dark:text-white">Admin Authentication</h2>
+      <p class="text-xs text-outline dark:text-gray-400">Sign in with Supabase Auth to manage search indexes and static content pipelines.</p>
+    </div>
+
+    <form class="flex flex-col gap-4" onsubmit="event.preventDefault(); alert('Demo mode: Supabase backend setup pending in next phase!');">
+      <div class="flex flex-col gap-1 text-xs">
+        <label class="font-semibold text-primary dark:text-white">Email Address</label>
+        <input type="email" placeholder="admin@hadeeth.id" class="w-full bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+      </div>
+      <div class="flex flex-col gap-1 text-xs">
+        <label class="font-semibold text-primary dark:text-white">Password</label>
+        <input type="password" placeholder="ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢" class="w-full bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+      </div>
+      <button type="submit" class="w-full bg-primary dark:bg-[#10b981] text-white dark:text-black font-semibold py-2.5 rounded-lg text-sm hover:opacity-90 transition-opacity">
+        Sign In to Portal
+      </button>
+    </form>
+
+    <div class="flex items-center justify-center gap-2 text-[11px] text-outline dark:text-gray-400 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">
+      <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+      <span>Connected to Supabase (idokyspokenbmzoegahq)</span>
+    </div>
+  </div>
+
+  <!-- Locked Preview Dashboard -->
+  <div class="flex flex-col gap-6 opacity-40 select-none pointer-events-none mt-8">
+    <h3 class="font-bold text-sm text-primary dark:text-white uppercase tracking-wider">Pipeline Management (Requires Login)</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-surface dark:bg-[#1e293b] p-4 rounded-lg border border-outline-variant/20 dark:border-[#334155]">
+        <span class="text-xs text-outline dark:text-gray-400">Total Hadiths</span>
+        <span class="text-xl font-bold text-primary dark:text-white block mt-1">50,884</span>
+      </div>
+      <div class="bg-surface dark:bg-[#1e293b] p-4 rounded-lg border border-outline-variant/20 dark:border-[#334155]">
+        <span class="text-xs text-outline dark:text-gray-400">Indexed Books</span>
+        <span class="text-xl font-bold text-primary dark:text-white block mt-1">17 Collections</span>
+      </div>
+      <div class="bg-surface dark:bg-[#1e293b] p-4 rounded-lg border border-outline-variant/20 dark:border-[#334155]">
+        <span class="text-xs text-outline dark:text-gray-400">Languages</span>
+        <span class="text-xl font-bold text-primary dark:text-white block mt-1">60+ CDN JSONs</span>
+      </div>
+      <div class="bg-surface dark:bg-[#1e293b] p-4 rounded-lg border border-outline-variant/20 dark:border-[#334155]">
+        <span class="text-xs text-outline dark:text-gray-400">Pages Status</span>
+        <span class="text-xl font-bold text-emerald-500 block mt-1">Online</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hadith of the Day Manager -->
+  <div class="flex flex-col gap-4 mt-4">
+    <h3 class="font-bold text-sm text-primary dark:text-white uppercase tracking-wider flex items-center gap-2">
+      <span class="material-symbols-outlined text-[18px] text-secondary dark:text-[#10b981]">auto_awesome</span>
+      Hadith of the Day
+    </h3>
+    <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4">
+      <p class="text-xs text-outline dark:text-gray-400">Set which hadith is featured on the homepage. This is saved to your browser's localStorage and will appear for anyone using this device.</p>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Kitab (Book)</label>
+          <select id="hotd-book-select" class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]">
+            <option value="bukhari">Sahih al-Bukhari</option>
+            <option value="muslim">Sahih Muslim</option>
+            <option value="abudawud">Sunan Abu Dawud</option>
+            <option value="tirmidhi">Jami' at-Tirmidhi</option>
+            <option value="nasai">Sunan an-Nasa'i</option>
+            <option value="ibnmajah">Sunan Ibn Majah</option>
+            <option value="malik">Muwatta Malik</option>
+            <option value="darimi">Sunan ad-Darimi</option>
+            <option value="ahmad">Musnad Ahmad</option>
+            <option value="nawawi">Forty Hadith an-Nawawi</option>
+            <option value="qudsi">40 Hadith Qudsi</option>
+            <option value="shah">Forty Hadith Shah Waliullah</option>
+            <option value="adab">Al-Adab Al-Mufrad</option>
+            <option value="bulugh">Bulugh al-Maram</option>
+            <option value="mishkat">Mishkat al-Masabih</option>
+            <option value="riyad">Riyad as-Salihin</option>
+            <option value="shamail">Shamail al-Muhammadiyah</option>
+          </select>
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Hadith Number</label>
+          <input type="number" id="hotd-hadith-input" min="1" value="1" placeholder="e.g. 1"
+            class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+        </div>
+      </div>
+
+      <div class="flex gap-3 items-center">
+        <button id="hotd-save-btn" onclick="saveHOTD()" class="bg-primary dark:bg-[#10b981] text-white dark:text-black font-semibold py-2 px-5 rounded-lg text-sm hover:opacity-90 transition-opacity">
+          Save as Hadith of the Day
+        </button>
+        <button onclick="clearHOTD()" class="border border-outline-variant dark:border-[#334155] text-on-surface-variant dark:text-gray-400 py-2 px-4 rounded-lg text-sm hover:bg-surface-container-low dark:hover:bg-[#334155] transition-colors">
+          Reset to Default
+        </button>
+        <span id="hotd-status" class="text-xs text-emerald-500 hidden">ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ Saved!</span>
+      </div>
+
+      <div id="hotd-current" class="text-xs text-outline dark:text-gray-400 bg-surface-container-low dark:bg-[#0f172a] rounded-lg p-3 border border-outline-variant/20 dark:border-[#334155]">
+        Current: <strong id="hotd-current-label">Loading...</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Glossary Manager -->
+  <div class="flex flex-col gap-4 mt-4 mb-8">
+    <h3 class="font-bold text-sm text-primary dark:text-white uppercase tracking-wider flex items-center gap-2">
+      <span class="material-symbols-outlined text-[18px] text-secondary dark:text-[#10b981]">library_books</span>
+      Glossary Management
+    </h3>
+    <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4">
+      <p class="text-xs text-outline dark:text-gray-400">Add or edit glossary terms. These are saved to your local drafts. Once you are done, export the JSON and update the <code>data/api/glossary.json</code> file in your repository.</p>
+
+      <form id="glossary-form" class="grid grid-cols-1 md:grid-cols-2 gap-4" onsubmit="saveGlossaryTerm(event)">
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Term ID (Unique, no spaces)</label>
+          <input type="text" id="glos-id" required pattern="[a-zA-Z0-9_-]+" placeholder="e.g. wudu" class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+        </div>
+        <div class="hidden md:block"></div> <!-- spacer -->
+
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Term (English)</label>
+          <input type="text" id="glos-term-en" required placeholder="e.g. Wudu" class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Term (Indonesian)</label>
+          <input type="text" id="glos-term-id" required placeholder="e.g. Wudhu" class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Definition (English)</label>
+          <textarea id="glos-def-en" required rows="3" class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"></textarea>
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Definition (Indonesian)</label>
+          <textarea id="glos-def-id" required rows="3" class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"></textarea>
+        </div>
+
+        <div class="col-span-full flex gap-3 items-center mt-2">
+          <button type="submit" class="bg-primary dark:bg-[#10b981] text-white dark:text-black font-semibold py-2 px-5 rounded-lg text-sm hover:opacity-90 transition-opacity">
+            Save Draft Term
+          </button>
+          <button type="button" onclick="exportGlossaryJSON()" class="border border-outline-variant dark:border-[#334155] text-on-surface-variant dark:text-gray-400 py-2 px-4 rounded-lg text-sm hover:bg-surface-container-low dark:hover:bg-[#334155] transition-colors">
+            Copy JSON Export
+          </button>
+          <span id="glos-status" class="text-xs text-emerald-500 hidden">âœ“ Action successful!</span>
+        </div>
+      </form>
+
+      <div class="mt-4">
+        <h4 class="text-xs font-bold text-on-surface-variant dark:text-gray-400 uppercase tracking-wider mb-2">Local Drafts</h4>
+        <ul id="glos-draft-list" class="text-sm flex flex-col gap-2">
+           <li class="text-xs text-outline italic">No local drafts yet.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  // Load current HOTD setting on page load
+  (function() {
+    try {
+      const raw = localStorage.getItem('hadeeth_hotd');
+      const config = raw ? JSON.parse(raw) : null;
+      const label = document.getElementById('hotd-current-label');
+      if (config && label) {
+        label.textContent = `${config.bookId} #${config.hadithId} (set ${new Date(config.dateSet).toLocaleDateString()})`;
+        const sel = document.getElementById('hotd-book-select');
+        const inp = document.getElementById('hotd-hadith-input');
+        if (sel) sel.value = config.bookId;
+        if (inp) inp.value = config.hadithId;
+      } else if (label) {
+        label.textContent = 'Default (Bukhari #1)';
+      }
+    } catch(e) {}
+  })();
+
+  function saveHOTD() {
+    const bookId = document.getElementById('hotd-book-select').value;
+    const hadithId = document.getElementById('hotd-hadith-input').value;
+    if (!bookId || !hadithId) return;
+    localStorage.setItem('hadeeth_hotd', JSON.stringify({ bookId, hadithId, dateSet: Date.now() }));
+    const status = document.getElementById('hotd-status');
+    const label = document.getElementById('hotd-current-label');
+    if (label) label.textContent = `${bookId} #${hadithId} (just set)`;
+    if (status) { status.classList.remove('hidden'); setTimeout(() => status.classList.add('hidden'), 2500); }
+  }
+
+  function clearHOTD() {
+    localStorage.removeItem('hadeeth_hotd');
+    const label = document.getElementById('hotd-current-label');
+    if (label) label.textContent = 'Default (Bukhari #1)';
+    document.getElementById('hotd-book-select').value = 'bukhari';
+    document.getElementById('hotd-hadith-input').value = '1';
+  }
+
+  // --- Glossary Manager Logic ---
+  let glossaryDrafts = [];
+
+  function loadGlossaryDrafts() {
+    try {
+      const raw = localStorage.getItem('hadeeth_glossary_drafts');
+      if (raw) glossaryDrafts = JSON.parse(raw);
+    } catch(e) {}
+    renderGlossaryDrafts();
+  }
+
+  function renderGlossaryDrafts() {
+    const list = document.getElementById('glos-draft-list');
+    if (!list) return;
+    if (glossaryDrafts.length === 0) {
+      list.innerHTML = '<li class="text-xs text-outline dark:text-gray-500 italic">No local drafts yet.</li>';
+      return;
+    }
+    list.innerHTML = '';
+    glossaryDrafts.forEach((d, index) => {
+      const li = document.createElement('li');
+      li.className = 'flex justify-between items-center bg-surface-container-low dark:bg-[#0f172a] p-2 rounded border border-outline-variant/20 dark:border-[#334155]';
+      li.innerHTML = `
+        <span><strong>${d.id}</strong>: ${d.term_en} / ${d.term_id}</span>
+        <div class="flex gap-2">
+          <button type="button" onclick="editGlossaryDraft(${index})" class="text-secondary dark:text-[#10b981] hover:underline text-xs">Edit</button>
+          <button type="button" onclick="deleteGlossaryDraft(${index})" class="text-red-500 hover:underline text-xs">Delete</button>
+        </div>
+      `;
+      list.appendChild(li);
+    });
+  }
+
+  function saveGlossaryTerm(e) {
+    e.preventDefault();
+    const id = document.getElementById('glos-id').value.trim();
+    const term_en = document.getElementById('glos-term-en').value.trim();
+    const term_id = document.getElementById('glos-term-id').value.trim();
+    const def_en = document.getElementById('glos-def-en').value.trim();
+    const def_id = document.getElementById('glos-def-id').value.trim();
+
+    if (!id || !term_en || !term_id || !def_en || !def_id) return;
+
+    const term = { id, term_en, term_id, def_en, def_id };
+    
+    const existingIndex = glossaryDrafts.findIndex(d => d.id === id);
+    if (existingIndex >= 0) {
+      glossaryDrafts[existingIndex] = term;
+    } else {
+      glossaryDrafts.push(term);
+    }
+
+    localStorage.setItem('hadeeth_glossary_drafts', JSON.stringify(glossaryDrafts));
+    renderGlossaryDrafts();
+    document.getElementById('glossary-form').reset();
+    showGlosStatus('âœ“ Draft saved!');
+  }
+
+  function editGlossaryDraft(index) {
+    const d = glossaryDrafts[index];
+    if (!d) return;
+    document.getElementById('glos-id').value = d.id;
+    document.getElementById('glos-term-en').value = d.term_en;
+    document.getElementById('glos-term-id').value = d.term_id;
+    document.getElementById('glos-def-en').value = d.def_en;
+    document.getElementById('glos-def-id').value = d.def_id;
+  }
+
+  function deleteGlossaryDraft(index) {
+    if (confirm('Delete this draft?')) {
+      glossaryDrafts.splice(index, 1);
+      localStorage.setItem('hadeeth_glossary_drafts', JSON.stringify(glossaryDrafts));
+      renderGlossaryDrafts();
+    }
+  }
+
+  async function exportGlossaryJSON() {
+    try {
+      // Fetch existing if available to merge
+      let existing = [];
+      try {
+        const res = await fetch('data/api/glossary.json');
+        if (res.ok) existing = await res.json();
+      } catch(e) {}
+
+      // Merge (prefer drafts over existing)
+      const draftIds = new Set(glossaryDrafts.map(d => d.id));
+      const merged = existing.filter(t => !draftIds.has(t.id)).concat(glossaryDrafts);
+
+      const jsonStr = JSON.stringify(merged, null, 2);
+      await navigator.clipboard.writeText(jsonStr);
+      showGlosStatus('âœ“ JSON Copied to Clipboard!');
+    } catch (err) {
+      alert('Failed to copy: ' + err.message);
+    }
+  }
+
+  function showGlosStatus(msg) {
+    const status = document.getElementById('glos-status');
+    if (status) {
+      status.textContent = msg;
+      status.classList.remove('hidden');
+      setTimeout(() => status.classList.add('hidden'), 3000);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', loadGlossaryDrafts);
+</script>
+
+
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
+    <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2026 hadeeth.id - Digital Hadith Manuscript Preservation</span></div>
+    <div class="flex flex-wrap gap-4 items-center justify-center">
+      <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
+      <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
+      <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
+      <a href="glossary.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Glossary</a>
+    </div>
+  </footer>
+
+<script src="js/app.js?v=2026082009"></script>
+</body>
+</html>
+
+
+
+
