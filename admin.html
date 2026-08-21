@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="HADEETH.ID Ã¢â‚¬â€ Administration Console & Sync Management."/>
+  <meta name="description" content="HADEETH.ID ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Administration Console & Sync Management."/>
   <title>Admin Console - HADEETH.ID</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -100,7 +100,7 @@
       </div>
       <div class="flex flex-col gap-1 text-xs">
         <label class="font-semibold text-primary dark:text-white">Password</label>
-        <input type="password" placeholder="Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢Ã¢â‚¬Â¢" class="w-full bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+        <input type="password" placeholder="ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢" class="w-full bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
       </div>
       <button type="submit" class="w-full bg-primary dark:bg-[#10b981] text-white dark:text-black font-semibold py-2.5 rounded-lg text-sm hover:opacity-90 transition-opacity">
         Sign In to Portal
@@ -182,11 +182,65 @@
         <button onclick="clearHOTD()" class="border border-outline-variant dark:border-[#334155] text-on-surface-variant dark:text-gray-400 py-2 px-4 rounded-lg text-sm hover:bg-surface-container-low dark:hover:bg-[#334155] transition-colors">
           Reset to Default
         </button>
-        <span id="hotd-status" class="text-xs text-emerald-500 hidden">Ã¢Å“â€œ Saved!</span>
+        <span id="hotd-status" class="text-xs text-emerald-500 hidden">ÃƒÂ¢Ã…â€œÃ¢â‚¬Å“ Saved!</span>
       </div>
 
       <div id="hotd-current" class="text-xs text-outline dark:text-gray-400 bg-surface-container-low dark:bg-[#0f172a] rounded-lg p-3 border border-outline-variant/20 dark:border-[#334155]">
         Current: <strong id="hotd-current-label">Loading...</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- Glossary Manager -->
+  <div class="flex flex-col gap-4 mt-4 mb-8">
+    <h3 class="font-bold text-sm text-primary dark:text-white uppercase tracking-wider flex items-center gap-2">
+      <span class="material-symbols-outlined text-[18px] text-secondary dark:text-[#10b981]">library_books</span>
+      Glossary Management
+    </h3>
+    <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4">
+      <p class="text-xs text-outline dark:text-gray-400">Add or edit glossary terms. These are saved to your local drafts. Once you are done, export the JSON and update the <code>data/api/glossary.json</code> file in your repository.</p>
+
+      <form id="glossary-form" class="grid grid-cols-1 md:grid-cols-2 gap-4" onsubmit="saveGlossaryTerm(event)">
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Term ID (Unique, no spaces)</label>
+          <input type="text" id="glos-id" required pattern="[a-zA-Z0-9_-]+" placeholder="e.g. wudu" class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+        </div>
+        <div class="hidden md:block"></div> <!-- spacer -->
+
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Term (English)</label>
+          <input type="text" id="glos-term-en" required placeholder="e.g. Wudu" class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Term (Indonesian)</label>
+          <input type="text" id="glos-term-id" required placeholder="e.g. Wudhu" class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"/>
+        </div>
+
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Definition (English)</label>
+          <textarea id="glos-def-en" required rows="3" class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"></textarea>
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-xs font-semibold text-primary dark:text-white">Definition (Indonesian)</label>
+          <textarea id="glos-def-id" required rows="3" class="bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant dark:border-[#334155] rounded-lg p-2.5 text-sm text-primary dark:text-white outline-none focus:border-primary dark:focus:border-[#10b981]"></textarea>
+        </div>
+
+        <div class="col-span-full flex gap-3 items-center mt-2">
+          <button type="submit" class="bg-primary dark:bg-[#10b981] text-white dark:text-black font-semibold py-2 px-5 rounded-lg text-sm hover:opacity-90 transition-opacity">
+            Save Draft Term
+          </button>
+          <button type="button" onclick="exportGlossaryJSON()" class="border border-outline-variant dark:border-[#334155] text-on-surface-variant dark:text-gray-400 py-2 px-4 rounded-lg text-sm hover:bg-surface-container-low dark:hover:bg-[#334155] transition-colors">
+            Copy JSON Export
+          </button>
+          <span id="glos-status" class="text-xs text-emerald-500 hidden">âœ“ Action successful!</span>
+        </div>
+      </form>
+
+      <div class="mt-4">
+        <h4 class="text-xs font-bold text-on-surface-variant dark:text-gray-400 uppercase tracking-wider mb-2">Local Drafts</h4>
+        <ul id="glos-draft-list" class="text-sm flex flex-col gap-2">
+           <li class="text-xs text-outline italic">No local drafts yet.</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -230,21 +284,131 @@
     document.getElementById('hotd-book-select').value = 'bukhari';
     document.getElementById('hotd-hadith-input').value = '1';
   }
+
+  // --- Glossary Manager Logic ---
+  let glossaryDrafts = [];
+
+  function loadGlossaryDrafts() {
+    try {
+      const raw = localStorage.getItem('hadeeth_glossary_drafts');
+      if (raw) glossaryDrafts = JSON.parse(raw);
+    } catch(e) {}
+    renderGlossaryDrafts();
+  }
+
+  function renderGlossaryDrafts() {
+    const list = document.getElementById('glos-draft-list');
+    if (!list) return;
+    if (glossaryDrafts.length === 0) {
+      list.innerHTML = '<li class="text-xs text-outline dark:text-gray-500 italic">No local drafts yet.</li>';
+      return;
+    }
+    list.innerHTML = '';
+    glossaryDrafts.forEach((d, index) => {
+      const li = document.createElement('li');
+      li.className = 'flex justify-between items-center bg-surface-container-low dark:bg-[#0f172a] p-2 rounded border border-outline-variant/20 dark:border-[#334155]';
+      li.innerHTML = `
+        <span><strong>${d.id}</strong>: ${d.term_en} / ${d.term_id}</span>
+        <div class="flex gap-2">
+          <button type="button" onclick="editGlossaryDraft(${index})" class="text-secondary dark:text-[#10b981] hover:underline text-xs">Edit</button>
+          <button type="button" onclick="deleteGlossaryDraft(${index})" class="text-red-500 hover:underline text-xs">Delete</button>
+        </div>
+      `;
+      list.appendChild(li);
+    });
+  }
+
+  function saveGlossaryTerm(e) {
+    e.preventDefault();
+    const id = document.getElementById('glos-id').value.trim();
+    const term_en = document.getElementById('glos-term-en').value.trim();
+    const term_id = document.getElementById('glos-term-id').value.trim();
+    const def_en = document.getElementById('glos-def-en').value.trim();
+    const def_id = document.getElementById('glos-def-id').value.trim();
+
+    if (!id || !term_en || !term_id || !def_en || !def_id) return;
+
+    const term = { id, term_en, term_id, def_en, def_id };
+    
+    const existingIndex = glossaryDrafts.findIndex(d => d.id === id);
+    if (existingIndex >= 0) {
+      glossaryDrafts[existingIndex] = term;
+    } else {
+      glossaryDrafts.push(term);
+    }
+
+    localStorage.setItem('hadeeth_glossary_drafts', JSON.stringify(glossaryDrafts));
+    renderGlossaryDrafts();
+    document.getElementById('glossary-form').reset();
+    showGlosStatus('âœ“ Draft saved!');
+  }
+
+  function editGlossaryDraft(index) {
+    const d = glossaryDrafts[index];
+    if (!d) return;
+    document.getElementById('glos-id').value = d.id;
+    document.getElementById('glos-term-en').value = d.term_en;
+    document.getElementById('glos-term-id').value = d.term_id;
+    document.getElementById('glos-def-en').value = d.def_en;
+    document.getElementById('glos-def-id').value = d.def_id;
+  }
+
+  function deleteGlossaryDraft(index) {
+    if (confirm('Delete this draft?')) {
+      glossaryDrafts.splice(index, 1);
+      localStorage.setItem('hadeeth_glossary_drafts', JSON.stringify(glossaryDrafts));
+      renderGlossaryDrafts();
+    }
+  }
+
+  async function exportGlossaryJSON() {
+    try {
+      // Fetch existing if available to merge
+      let existing = [];
+      try {
+        const res = await fetch('data/api/glossary.json');
+        if (res.ok) existing = await res.json();
+      } catch(e) {}
+
+      // Merge (prefer drafts over existing)
+      const draftIds = new Set(glossaryDrafts.map(d => d.id));
+      const merged = existing.filter(t => !draftIds.has(t.id)).concat(glossaryDrafts);
+
+      const jsonStr = JSON.stringify(merged, null, 2);
+      await navigator.clipboard.writeText(jsonStr);
+      showGlosStatus('âœ“ JSON Copied to Clipboard!');
+    } catch (err) {
+      alert('Failed to copy: ' + err.message);
+    }
+  }
+
+  function showGlosStatus(msg) {
+    const status = document.getElementById('glos-status');
+    if (status) {
+      status.textContent = msg;
+      status.classList.remove('hidden');
+      setTimeout(() => status.classList.add('hidden'), 3000);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', loadGlossaryDrafts);
 </script>
 
 
 <footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
-  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2026 hadeeth.id - Digital Hadith Manuscript Preservation</span></div>
+  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">Â© 2026 hadeeth.id - Digital Hadith Manuscript Preservation</span></div>
   <div class="flex flex-wrap gap-4 items-center justify-center">
     <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
     <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
     <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
+    <a href="glossary.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Glossary</a>
   </div>
 </footer>
 
 <script src="js/app.js?v=2026082009"></script>
 </body>
 </html>
+
 
 
 

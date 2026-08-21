@@ -1,0 +1,74 @@
+
+import json
+
+glossary = [
+  {"id": "hadith", "term_en": "Hadith", "term_id": "Hadits", "def_en": "A collection of traditions containing sayings of the prophet Muhammad which, with accounts of his daily practice (the Sunna), constitute the major source of guidance for Muslims apart from the Quran.", "def_id": "Catatan tertulis tentang perkataan, perbuatan, persetujuan, atau sifat Nabi Muhammad SAW."},
+  {"id": "sanad", "term_en": "Sanad (Isnad)", "term_id": "Sanad (Isnad)", "def_en": "The chain of narrators of a hadith, linking the collector of the hadith to the person who originated it.", "def_id": "Rantai atau silsilah para perawi hadits yang menyambungkan matan (isi) hadits kepada sumber asalnya (Nabi Muhammad SAW)."},
+  {"id": "matn", "term_en": "Matn", "term_id": "Matan", "def_en": "The actual text or content of the hadith.", "def_id": "Isi, redaksi, atau teks dari sebuah hadits yang disebutkan setelah sanad."},
+  
+  # Hadith Statuses (Grades)
+  {"id": "sahih", "term_en": "Sahih", "term_id": "Sahih", "def_en": "Authentic or sound hadith. A hadith whose chain of narrators is continuous, narrated by trustworthy people with precise memories, free from hidden defects.", "def_id": "Hadits yang otentik. Hadits yang sanadnya bersambung, diriwayatkan oleh perawi yang adil dan dhabit (kuat hafalannya), serta terhindar dari kejanggalan dan cacat."},
+  {"id": "hasan", "term_en": "Hasan", "term_id": "Hasan", "def_en": "Good hadith. A hadith that is authentic but falls slightly short of the conditions of Sahih.", "def_id": "Hadits baik. Hadits yang memenuhi syarat sahih tetapi hafalan sebagian perawinya kurang sempurna dibandingkan perawi hadits sahih."},
+  {"id": "daif", "term_en": "Da'if", "term_id": "Dha'if", "def_en": "Weak hadith. A hadith that does not meet the requirements of a Sahih or Hasan hadith.", "def_id": "Hadits lemah. Hadits yang tidak memenuhi syarat hadits Sahih maupun Hasan karena terputusnya sanad atau adanya perawi yang bermasalah."},
+  {"id": "mawdu", "term_en": "Mawdu'", "term_id": "Mawdhu'", "def_en": "Fabricated hadith. A forged statement falsely attributed to the Prophet Muhammad.", "def_id": "Hadits palsu. Pernyataan rekaan atau bohong yang secara salah disandarkan kepada Nabi Muhammad SAW."},
+  
+  # Categories by number of narrators
+  {"id": "mutawatir", "term_en": "Mutawatir", "term_id": "Mutawatir", "def_en": "A hadith narrated by a large number of people at every stage of the chain, such that it is impossible for them to have conspired upon a lie.", "def_id": "Hadits yang diriwayatkan oleh orang banyak pada setiap tingkatan sanad, yang secara rasional mustahil mereka bersepakat untuk berdusta."},
+  {"id": "ahad", "term_en": "Ahad", "term_id": "Ahad", "def_en": "A hadith narrated by an individual or small group, not reaching the level of Mutawatir.", "def_id": "Hadits yang diriwayatkan oleh satu atau beberapa orang, yang jumlahnya tidak mencapai derajat Mutawatir."},
+  {"id": "mashhur", "term_en": "Mashhur", "term_id": "Masyhur", "def_en": "A well-known hadith, narrated by three or more narrators at every level, but not reaching Mutawatir.", "def_id": "Hadits yang diriwayatkan oleh tiga orang perawi atau lebih pada setiap tingkatan sanad, tetapi tidak mencapai derajat Mutawatir."},
+  {"id": "aziz", "term_en": "Aziz", "term_id": "Aziz", "def_en": "A hadith narrated by at least two narrators at every level of the chain.", "def_id": "Hadits yang diriwayatkan oleh setidaknya dua orang perawi pada setiap tingkatan sanadnya."},
+  {"id": "gharib", "term_en": "Gharib", "term_id": "Gharib", "def_en": "A hadith narrated by only one narrator at some level in its chain.", "def_id": "Hadits yang hanya diriwayatkan oleh satu orang perawi pada suatu tingkatan dalam sanadnya."},
+
+  # Sanad Statuses
+  {"id": "muttasil", "term_en": "Muttasil", "term_id": "Muttashil", "def_en": "A hadith with a continuous and uninterrupted chain of narrators.", "def_id": "Hadits yang memiliki sanad bersambung tanpa terputus dari awal hingga akhir."},
+  {"id": "munqati", "term_en": "Munqati'", "term_id": "Munqathi'", "def_en": "A hadith with an interrupted chain where a narrator is missing at one or more places.", "def_id": "Hadits yang sanadnya terputus, dimana ada satu atau lebih perawi yang hilang di tengah sanad."},
+  {"id": "mursal", "term_en": "Mursal", "term_id": "Mursal", "def_en": "A hadith where a Successor (Tabi'i) directly quotes the Prophet, missing the Companion (Sahabi) in the chain.", "def_id": "Hadits yang diriwayatkan langsung oleh Tabi'in dari Nabi Muhammad SAW tanpa menyebutkan nama Sahabat."},
+  {"id": "mudal", "term_en": "Mu'dal", "term_id": "Mu'dhal", "def_en": "A hadith where two or more consecutive narrators are missing from the chain.", "def_id": "Hadits yang dua orang perawinya atau lebih gugur (hilang) secara berturut-turut dalam sanadnya."},
+  {"id": "muallaq", "term_en": "Mu'allaq", "term_id": "Mu'allaq", "def_en": "A hadith where one or more narrators are omitted from the beginning of the chain.", "def_id": "Hadits yang satu atau beberapa perawinya dibuang dari awal sanad."},
+  {"id": "mudallas", "term_en": "Mudallas", "term_id": "Mudallas", "def_en": "A hadith where a narrator conceals a defect or an omitted narrator in the chain.", "def_id": "Hadits yang perawinya menyembunyikan cacat atau perawi yang dihilangkan dalam sanad untuk memberi kesan sanad tersebut bersambung."},
+  {"id": "shadh", "term_en": "Shadh", "term_id": "Syadz", "def_en": "An anomalous hadith narrated by a reliable narrator that contradicts what is narrated by more reliable narrators.", "def_id": "Hadits ganjil yang diriwayatkan oleh perawi maqbul (bisa diterima) namun bertentangan dengan riwayat perawi yang lebih terpercaya darinya."},
+  {"id": "munkar", "term_en": "Munkar", "term_id": "Munkar", "def_en": "A rejected hadith narrated by a weak narrator that contradicts a reliable narrator.", "def_id": "Hadits yang ditolak, diriwayatkan oleh perawi yang lemah dan bertentangan dengan riwayat perawi yang dapat dipercaya."},
+
+  # Book Classifications
+  {"id": "jami", "term_en": "Jami'", "term_id": "Jami'", "def_en": "A comprehensive hadith collection covering all major topics of religion (beliefs, laws, piety, etiquette, etc.).", "def_id": "Kitab koleksi hadits yang komprehensif, mencakup seluruh topik utama agama (akidah, hukum, adab, tafsir, sejarah, dll)."},
+  {"id": "sunan_book", "term_en": "Sunan", "term_id": "Sunan", "def_en": "A collection of hadiths organized by Islamic jurisprudential (fiqh) topics, containing mostly legal hadiths.", "def_id": "Kitab koleksi hadits yang disusun berdasarkan bab-bab fikih (hukum Islam)."},
+  {"id": "musnad", "term_en": "Musnad", "term_id": "Musnad", "def_en": "A hadith collection organized by the name of the Companion (Sahabi) who narrated it.", "def_id": "Kitab hadits yang disusun berdasarkan nama Sahabat yang meriwayatkannya, bukan berdasarkan bab fikih."},
+  {"id": "muwatta_book", "term_en": "Muwatta", "term_id": "Muwaththa", "def_en": "A foundational hadith and fiqh book typically containing hadiths, rulings of companions, and scholarly opinions. Literally means \"the approved path\".", "def_id": "Buku dasar hadits dan fikih yang biasanya berisi hadits, fatwa sahabat, dan pendapat ulama. Secara harfiah berarti \"jalan yang disepakati/dimudahkan\"."},
+  {"id": "mustadrak", "term_en": "Mustadrak", "term_id": "Mustadrak", "def_en": "A collection that gathers hadiths meeting the criteria of a previous author but missed by them.", "def_id": "Kitab yang mengumpulkan hadits-hadits yang memenuhi syarat penulis sebelumnya namun terlewatkan oleh mereka."},
+  {"id": "arbain", "term_en": "Arba'in", "term_id": "Arba'in", "def_en": "A collection of forty carefully selected hadiths summarizing core Islamic teachings.", "def_id": "Koleksi empat puluh hadits pilihan yang merangkum ajaran-ajaran inti agama Islam."},
+  {"id": "juz", "term_en": "Juz", "term_id": "Juz", "def_en": "A small collection of hadiths compiled by a single narrator or concerning a single specific topic.", "def_id": "Kumpulan kecil hadits yang dikumpulkan oleh satu perawi atau membahas satu topik khusus saja."},
+
+  # Major Books
+  {"id": "sahih_bukhari", "term_en": "Sahih al-Bukhari", "term_id": "Sahih al-Bukhari", "def_en": "The most authentic book of hadith, compiled by Imam al-Bukhari. Contains over 7,000 hadiths.", "def_id": "Kitab hadits paling sahih yang disusun oleh Imam al-Bukhari. Berisi lebih dari 7.000 hadits."},
+  {"id": "sahih_muslim", "term_en": "Sahih Muslim", "term_id": "Sahih Muslim", "def_en": "The second most authentic book of hadith, compiled by Imam Muslim.", "def_id": "Kitab hadits tersahih kedua setelah Shahih al-Bukhari, disusun oleh Imam Muslim."},
+  {"id": "sunan_abudawud", "term_en": "Sunan Abu Dawud", "term_id": "Sunan Abu Dawud", "def_en": "One of the six major hadith collections, primarily focusing on legal (fiqh) hadiths, compiled by Abu Dawud.", "def_id": "Salah satu dari enam kitab hadits utama (Kutub al-Sittah), berfokus pada hadits-hadits hukum (fikih), disusun oleh Abu Dawud."},
+  {"id": "jami_tirmidhi", "term_en": "Jami' at-Tirmidhi", "term_id": "Jami' at-Tirmidhi", "def_en": "A major collection known for providing the legal grades of the hadiths and opinions of scholars, compiled by at-Tirmidhi.", "def_id": "Koleksi utama yang dikenal karena memberikan derajat hadits dan pandangan para ulama, disusun oleh Imam at-Tirmidhi."},
+  {"id": "sunan_nasai", "term_en": "Sunan an-Nasa'i", "term_id": "Sunan an-Nasa'i", "def_en": "One of the six major collections, known for its strict criteria in narrator evaluation, compiled by an-Nasa'i.", "def_id": "Salah satu dari enam kitab utama, dikenal karena kriteria ketatnya dalam menilai perawi, disusun oleh an-Nasa'i."},
+  {"id": "sunan_ibnmajah", "term_en": "Sunan Ibn Majah", "term_id": "Sunan Ibnu Majah", "def_en": "The sixth of the major collections, compiled by Ibn Majah. Includes many unique hadiths not found in the other five.", "def_id": "Kitab keenam dari Kutub al-Sittah, disusun oleh Ibnu Majah. Memuat banyak hadits unik yang tidak ditemukan pada lima kitab lainnya."},
+  {"id": "muwatta_malik", "term_en": "Muwatta Malik", "term_id": "Muwaththa Malik", "def_en": "The earliest major collection of hadith and Islamic law, compiled by Imam Malik in Madinah.", "def_id": "Koleksi hadits dan hukum Islam terawal yang sistematis, disusun oleh Imam Malik bin Anas di Madinah."},
+  {"id": "musnad_ahmad", "term_en": "Musnad Ahmad", "term_id": "Musnad Ahmad", "def_en": "The largest of the major hadith collections, containing roughly 27,000 hadiths organized by Companion, compiled by Imam Ahmad.", "def_id": "Kitab hadits terbesar dari koleksi utama, memuat sekitar 27.000 hadits yang disusun berdasarkan nama Sahabat, disusun oleh Imam Ahmad bin Hanbal."},
+  {"id": "sunan_darimi", "term_en": "Sunan ad-Darimi", "term_id": "Sunan Ad-Darimi", "def_en": "A highly respected hadith collection compiled by Imam ad-Darimi. Some scholars consider it the sixth book instead of Ibn Majah.", "def_id": "Kitab hadits yang sangat dihormati susunan Imam Ad-Darimi. Sebagian ulama menganggapnya sebagai kitab keenam Kutub al-Sittah menggantikan Ibnu Majah."},
+
+  # Narrators & Figures
+  {"id": "rawi", "term_en": "Rawi", "term_id": "Rawi / Perawi", "def_en": "A narrator or transmitter of a hadith.", "def_id": "Orang yang meriwayatkan atau menyampaikan hadits."},
+  {"id": "sahabi", "term_en": "Sahabi (Companion)", "term_id": "Sahabat", "def_en": "A person who met the Prophet Muhammad, believed in him, and died as a Muslim.", "def_id": "Orang yang pernah bertemu dengan Nabi Muhammad SAW, beriman kepadanya, dan meninggal dalam keadaan Islam."},
+  {"id": "tabii", "term_en": "Tabi'i (Successor)", "term_id": "Tabi'in", "def_en": "A generation of Muslims who met the Companions of the Prophet but not the Prophet himself.", "def_id": "Generasi umat Islam yang pernah bertemu dengan para Sahabat Nabi, tetapi tidak bertemu langsung dengan Nabi SAW."},
+  {"id": "tabi_altabiin", "term_en": "Tabi' al-Tabi'in", "term_id": "Tabi'ut Tabi'in", "def_en": "The generation that followed the Tabi'in, meeting them but not the Companions.", "def_id": "Generasi pengikut Tabi'in, yang bertemu dengan Tabi'in tetapi tidak bertemu dengan Sahabat."},
+  {"id": "mukhadhram", "term_en": "Mukhadhram", "term_id": "Mukhadhram", "def_en": "A person who lived during both the pre-Islamic period (Jahiliyyah) and the time of the Prophet, but never met the Prophet.", "def_id": "Orang yang hidup pada masa Jahiliyah dan masa hidup Nabi SAW serta masuk Islam, tetapi tidak pernah bertemu langsung dengan Nabi SAW."},
+  
+  # Structural Terms
+  {"id": "kitab", "term_en": "Kitab (Book)", "term_id": "Kitab (Buku)", "def_en": "A major section within a hadith collection, typically categorizing a broad subject like 'Prayer' or 'Fasting'.", "def_id": "Bagian besar dalam sebuah koleksi hadits yang mengkategorikan subjek yang luas, seperti 'Kitab Shalat' atau 'Kitab Puasa'."},
+  {"id": "bab", "term_en": "Bab (Chapter)", "term_id": "Bab (Pasal)", "def_en": "A chapter within a Kitab, addressing a specific sub-topic or legal ruling.", "def_id": "Pasal atau bab di dalam sebuah Kitab, yang membahas sub-topik atau hukum spesifik."},
+  {"id": "takhrij", "term_en": "Takhrij", "term_id": "Takhrij", "def_en": "The science of extracting hadiths from their original sources and analyzing their chains of transmission to determine authenticity.", "def_id": "Ilmu yang menelusuri hadits ke sumber aslinya dan menganalisis sanadnya untuk menentukan derajat keabsahannya."},
+  {"id": "ilmul_rijal", "term_en": "Ilm al-Rijal", "term_id": "Ilmu Rijalul Hadits", "def_en": "The science of biography and evaluation of the narrators of hadith.", "def_id": "Ilmu yang mempelajari biografi dan penilaian terhadap para perawi hadits (kritik perawi)."},
+
+  # General Terms
+  {"id": "wudu", "term_en": "Wudu", "term_id": "Wudhu", "def_en": "Ablution, the Islamic procedure for washing parts of the body using water, typically in preparation for formal prayers (salat).", "def_id": "Cara bersuci (menghilangkan hadas kecil) dengan menggunakan air pada anggota badan tertentu sebelum melaksanakan shalat."},
+  {"id": "salat", "term_en": "Salat", "term_id": "Shalat", "def_en": "The formal prayer in Islam, performed five times a day.", "def_id": "Ibadah wajib umat Islam berupa doa dan gerakan tertentu yang dilakukan lima waktu sehari."},
+  {"id": "zakat", "term_en": "Zakat", "term_id": "Zakat", "def_en": "Obligatory almsgiving and religious tax in Islam.", "def_id": "Harta tertentu yang wajib dikeluarkan oleh umat Islam untuk diberikan kepada golongan yang berhak menerimanya."}
+]
+
+with open("../data/api/glossary.json", "w", encoding="utf-8") as f:
+    json.dump(glossary, f, indent=2, ensure_ascii=False)
+
+print(f"Glossary successfully generated with {len(glossary)} terms!")

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
@@ -204,9 +204,9 @@
             <span data-lang-id style="display:none">Bahasa:</span>
           </span>
           <select id="syarah-lang-select" onchange="window.switchSyarahLang(this.value)" class="text-xs bg-surface dark:bg-[#1e293b] border border-outline-variant dark:border-[#334155] rounded-lg px-3 py-1.5 text-primary dark:text-white font-bold cursor-pointer focus:ring-2 focus:ring-sunan-emerald shadow-sm">
-            <option value="id">🇮🇩 Bahasa Indonesia</option>
-            <option value="en">🇬🇧 English</option>
-            <option value="ar">🇸🇦 العربية</option>
+            <option value="id">ðŸ‡®ðŸ‡© Bahasa Indonesia</option>
+            <option value="en">ðŸ‡¬ðŸ‡§ English</option>
+            <option value="ar">ðŸ‡¸ðŸ‡¦ Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©</option>
           </select>
         </div>
       </div>
@@ -240,11 +240,12 @@
 </main>
 
 <footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
-  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2026 hadeeth.id - Digital Hadith Manuscript Preservation</span></div>
+  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">Â© 2026 hadeeth.id - Digital Hadith Manuscript Preservation</span></div>
   <div class="flex flex-wrap gap-4 items-center justify-center">
     <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
     <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
     <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
+    <a href="glossary.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Glossary</a>
   </div>
 </footer>
 
@@ -256,7 +257,7 @@
 
 <script>
 (function() {
-  // Ã¢â€â‚¬Ã¢â€â‚¬ Copy / Share button Ã¢â€â‚¬Ã¢â€â‚¬
+  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Copy / Share button ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
   const copyBtn = document.querySelector('[data-copy-hadith]');
   if (copyBtn) {
     copyBtn.addEventListener('click', async () => {
@@ -309,7 +310,7 @@
     });
   }
 
-  // Ã¢â€â‚¬Ã¢â€â‚¬ Re-apply lang on language change Ã¢â€â‚¬Ã¢â€â‚¬
+  // ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Re-apply lang on language change ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
   window.addEventListener('hadeeth_lang_change', () => {
     if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
   });
@@ -327,6 +328,7 @@ window.onunhandledrejection = function(e) {
 </script>
 </body>
 </html>
+
 
 
 

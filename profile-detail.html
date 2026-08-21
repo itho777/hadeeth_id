@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="HADEETH.ID — Scholar & Rawi Detailed Biography, Transmission Statistics, and Jarh wa Ta'dil evaluations."/>
-  <title>Narrator Profile — HADEETH.ID</title>
+  <meta name="description" content="HADEETH.ID â€” Scholar & Rawi Detailed Biography, Transmission Statistics, and Jarh wa Ta'dil evaluations."/>
+  <title>Narrator Profile â€” HADEETH.ID</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
@@ -112,15 +112,15 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs">
       <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
         <span class="text-outline dark:text-gray-400 font-semibold block mb-1">
-          <span data-lang-en>Kunyah / Kuniyah (أبو/أم)</span>
-          <span data-lang-id>Kuniyah / Gelar (أبو/أم)</span>
+          <span data-lang-en>Kunyah / Kuniyah (Ø£Ø¨Ùˆ/Ø£Ù…)</span>
+          <span data-lang-id>Kuniyah / Gelar (Ø£Ø¨Ùˆ/Ø£Ù…)</span>
         </span>
         <span id="profile-kunyah" class="font-bold text-primary dark:text-white text-sm">Loading...</span>
       </div>
       <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
         <span class="text-outline dark:text-gray-400 font-semibold block mb-1">
-          <span data-lang-en>Settled In (بلد الإقامة)</span>
-          <span data-lang-id>Tempat Tinggal / Wafat (بلد الإقامة)</span>
+          <span data-lang-en>Settled In (Ø¨Ù„Ø¯ Ø§Ù„Ø¥Ù‚Ø§Ù…Ø©)</span>
+          <span data-lang-id>Tempat Tinggal / Wafat (Ø¨Ù„Ø¯ Ø§Ù„Ø¥Ù‚Ø§Ù…Ø©)</span>
         </span>
         <span id="profile-settled" class="font-bold text-primary dark:text-white text-sm">Loading...</span>
       </div>
@@ -359,7 +359,7 @@
     <div id="bio-source-attribution" class="mt-2 pt-3 border-t border-outline-variant/10 dark:border-[#334155]/60 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-[11px] text-outline dark:text-gray-400">
       <span class="flex items-center gap-1.5">
         <span class="material-symbols-outlined text-sm text-[#10b981]">verified</span>
-        <span id="bio-provenance-text">Source: Taqrib al-Tahdhib (تقريب التهذيب) — Hafiz Ibn Hajar al-'Asqalani</span>
+        <span id="bio-provenance-text">Source: Taqrib al-Tahdhib (ØªÙ‚Ø±ÙŠØ¨ Ø§Ù„ØªÙ‡Ø°ÙŠØ¨) â€” Hafiz Ibn Hajar al-'Asqalani</span>
       </span>
       <span class="bg-surface-container-high dark:bg-[#0f172a] px-2.5 py-0.5 rounded text-[10px] font-mono">Academic Provenance Verified</span>
     </div>
@@ -415,11 +415,12 @@
 </main>
 
 <footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
-  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2026 hadeeth.id - Digital Hadith Manuscript Preservation</span></div>
+  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">Â© 2026 hadeeth.id - Digital Hadith Manuscript Preservation</span></div>
   <div class="flex flex-wrap gap-4 items-center justify-center">
     <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
     <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
     <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
+    <a href="glossary.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Glossary</a>
   </div>
 </footer>
 
@@ -498,7 +499,7 @@
           if(document.getElementById('profile-dates')) document.getElementById('profile-dates').innerText = dates || 'N/A';
           if(document.getElementById('profile-parents')) document.getElementById('profile-parents').innerText = rawi.parents || 'N/A';
 
-          // ── NARRATIONS BREAKDOWN: proportional estimates from real total ──────
+          // â”€â”€ NARRATIONS BREAKDOWN: proportional estimates from real total â”€â”€â”€â”€â”€â”€
           const totalNarrations = parseInt(rawi.hadith_count) || 0;
           if (totalNarrations > 0) {
             let counts = {};
@@ -559,12 +560,12 @@
           const txBadge = document.getElementById('transmitted-count-badge');
           if (txBadge) txBadge.textContent = `${totalNarrations.toLocaleString()} Total`;
 
-          // ── HADITH LIST: fetch from pre-computed index or scan ────────────
+          // â”€â”€ HADITH LIST: fetch from pre-computed index or scan â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
           await loadNarratorHadiths(nameEn, totalNarrations, rawiId);
       }
   }
 
-  // ── Fetch hadiths by narrator name from NDJSON (all books) ────────
+  // â”€â”€ Fetch hadiths by narrator name from NDJSON (all books) â”€â”€â”€â”€â”€â”€â”€â”€
   let _hadithPage = 1;
   let _hadithLimit = 10;
   let _allHadiths  = [];
@@ -581,7 +582,7 @@
     const clean = nameEn.toLowerCase()
       .replace(/\b(ibn|bin|bint|abu|umm|al-|al|imam|ibnu|radliallahu|'anhu|'anha|ash-shiddiq|ra|ra\.)\b/gi, ' ')
       .replace(/\s+/g, ' ').trim();
-    // Split to tokens, keep ones ≥4 chars
+    // Split to tokens, keep ones â‰¥4 chars
     const tokens = clean.split(' ').filter(t => t.length >= 4);
     return tokens;
   }
@@ -610,7 +611,7 @@
     const pagination = document.getElementById('hadith-pagination');
     if (!grid) return;
 
-    grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">Loading hadiths for ${nameEn}…</div>`;
+    grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">Loading hadiths for ${nameEn}â€¦</div>`;
 
     const tokens = buildNameTokens(nameEn);
     const rawisDict = await window.HadeethAPI.getActiveRawis().catch(() => ({}));
@@ -663,7 +664,7 @@
           if (hadithRefs && hadithRefs.length > 0) {
             // Group by book to fetch in bulk if possible, or fetch individual hadiths
             grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
-              Found ${hadithRefs.length} hadiths in index. Fetching details…
+              Found ${hadithRefs.length} hadiths in index. Fetching detailsâ€¦
             </div>`;
             
             // For now, load books that have matches so we can display full data
@@ -678,7 +679,7 @@
                  allFound = allFound.concat(matches);
                  booksScanned++;
                  grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
-                   Loading details from ${booksScanned}/${booksToLoad.length} books…
+                   Loading details from ${booksScanned}/${booksToLoad.length} booksâ€¦
                  </div>`;
                } catch(e) {}
             }
@@ -702,7 +703,7 @@
           }
           booksScanned++;
           grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
-            Scanning for fallback: Found <strong class="text-primary dark:text-white">${allFound.length}</strong> hadiths in ${booksScanned}/${ALL_BOOKS.length} books…
+            Scanning for fallback: Found <strong class="text-primary dark:text-white">${allFound.length}</strong> hadiths in ${booksScanned}/${ALL_BOOKS.length} booksâ€¦
           </div>`;
         } catch (e) {}
       }
@@ -767,9 +768,9 @@
             ${grade ? `<span class="text-[10px] text-outline dark:text-gray-400 font-mono shrink-0">${grade}</span>` : ''}
           </div>
           ${ar ? `<p class="text-sm text-right leading-relaxed font-arabic-body text-primary dark:text-white mb-2" dir="rtl">${ar}</p>` : ''}
-          <p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed line-clamp-3" data-lang-en>${en || '<em class="opacity-60">Translation loading…</em>'}</p>
+          <p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed line-clamp-3" data-lang-en>${en || '<em class="opacity-60">Translation loadingâ€¦</em>'}</p>
           ${idText ? `<p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed line-clamp-3" data-lang-id style="display:none">${idText}</p>` : ''}
-          <span class="text-[10px] text-secondary dark:text-[#10b981] group-hover:underline mt-2 block">View full hadith →</span>
+          <span class="text-[10px] text-secondary dark:text-[#10b981] group-hover:underline mt-2 block">View full hadith â†’</span>
         </a>`;
     }).join('');
 
@@ -805,12 +806,12 @@
   });
   
 
-  // ── Bio Source Tab Switcher ──────────────────────────────────
+  // â”€â”€ Bio Source Tab Switcher â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const BIO_TABS = {
     taqrib: {
       label_en: 'Taqrib al-Tahdhib',
       label_id: 'Taqrib at-Tahdzib',
-      provenance: 'Source: Taqrib al-Tahdhib (تقريب التهذيب) — Hafiz Ibn Hajar al-Asqalani'
+      provenance: 'Source: Taqrib al-Tahdhib (ØªÙ‚Ø±ÙŠØ¨ Ø§Ù„ØªÙ‡Ø°ÙŠØ¨) â€” Hafiz Ibn Hajar al-Asqalani'
     },
     wiki: {
       label_en: 'Wikipedia / Wikidata',
@@ -820,7 +821,7 @@
     siyar: {
       label_en: "Siyar A\'lam al-Nubala",
       label_id: "Siyar A\'lam an-Nubala",
-      provenance: "Source: Siyar A\'lam al-Nubala (سير أعلام النبلاء) — Imam al-Dhahabi"
+      provenance: "Source: Siyar A\'lam al-Nubala (Ø³ÙŠØ± Ø£Ø¹Ù„Ø§Ù… Ø§Ù„Ù†Ø¨Ù„Ø§Ø¡) â€” Imam al-Dhahabi"
     }
   };
 
@@ -861,7 +862,7 @@
     }
   }
 
-  // ── Eval Critic Tab Switcher ──────────────────────────────────
+  // â”€â”€ Eval Critic Tab Switcher â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   let _activeEvalTab = 'all';
 
   function filterEvalTab(tabId) {
@@ -889,6 +890,7 @@
 </script>
 </body>
 </html>
+
 
 
 

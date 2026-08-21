@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glossary - HADEETH.ID</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'primary': '#0f172a',
+            'secondary': '#0284c7',
+            'sunan-emerald': '#059669',
+            'musnad-indigo': '#4f46e5',
+            'surface': '#ffffff',
+            'surface-container-lowest': '#f8fafc',
+            'surface-container-low': '#f1f5f9',
+            'surface-container-high': '#e2e8f0',
+            'outline': '#64748b',
+            'outline-variant': '#cbd5e1',
+            'on-primary': '#ffffff',
+            'on-surface-variant': '#475569',
+            'manuscript-paper': '#fcfbf7',
+            'ink-black': '#0a0e14'
+          },
+          maxWidth: {
+            'content-width-max': '1280px'
+          },
+          padding: {
+            'margin-main': '1.5rem',
+            'stack-lg': '3rem'
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/app.css?v=20260808_85" />
+</head>
+<body class="bg-surface-container-lowest dark:bg-[#0a0e14] text-primary dark:text-white font-sans min-h-screen flex flex-col justify-between">
+
+<!-- Header -->
+<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
+  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-[#0a1120] border border-outline-variant/30"><img src="assets/logo_light.jpg" alt="hadeeth.id logo" class="logo-light w-full h-full object-cover rounded-lg scale-125"/><img src="assets/logo_dark.jpg" alt="hadeeth.id logo" class="logo-dark w-full h-full object-cover rounded-lg scale-125"/></div>
+      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-stack-lg">
+      <a href="books.html"   data-nav-page="books.html" data-i18n="nav_books" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Books</a>
+      <a href="topics.html"   data-nav-page="topics.html" data-i18n="nav_topics" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Topics</a>
+      <a href="scholars.html" data-nav-page="scholars.html" data-i18n="nav_scholars" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Scholars</a>
+      <a href="admin.html"   data-nav-page="admin.html" data-i18n="nav_admin" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Admin</a>
+    </nav>
+    <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
+      <!-- Language Switcher -->
+      <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
+        <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
+        <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
+      </div>
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Toggle theme">
+        <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
+      </button>
+      <button id="mobile-menu-btn" class="p-2 md:hidden hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors">
+        <span class="material-symbols-outlined" data-menu-icon>menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-manuscript-paper dark:bg-[#10141a] border-t border-outline-variant dark:border-[#1e293b]">
+    <div class="flex flex-col px-margin-main py-2 gap-1">
+      <a href="books.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_books">Books</a>
+      <a href="topics.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_topics">Topics</a>
+      <a href="scholars.html" class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_scholars">Scholars</a>
+      <a href="admin.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_admin">Admin</a>
+    </div>
+  </div>
+</header>
+
+<main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8 flex-grow">
+    
+    <div class="flex flex-col gap-2 border-b border-outline-variant/30 dark:border-[#334155] pb-6">
+        <div class="flex items-center gap-2 text-secondary dark:text-[#10b981] font-semibold text-sm">
+            <span class="material-symbols-outlined text-[18px]">menu_book</span>
+            <span data-lang-en>Islamic Terminology</span>
+            <span data-lang-id style="display:none">Terminologi Islam</span>
+        </div>
+        <h1 class="text-3xl font-bold text-primary dark:text-white">
+            <span data-lang-en>Glossary</span>
+            <span data-lang-id style="display:none">Glosarium</span>
+        </h1>
+        <p class="text-on-surface-variant dark:text-gray-400 text-sm max-w-xl">
+            <span data-lang-en>A comprehensive dictionary of Hadith and Islamic terminologies used throughout the database.</span>
+            <span data-lang-id style="display:none">Kamus komprehensif tentang Hadits dan terminologi Islam yang digunakan di seluruh basis data.</span>
+        </p>
+    </div>
+
+    <!-- Search and Filter -->
+    <div class="flex flex-col md:flex-row gap-4 items-center justify-between">
+        <div class="relative w-full md:w-96">
+            <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+            <input type="text" id="glossary-search" placeholder="Search terms..." class="w-full pl-10 pr-4 py-2 bg-surface dark:bg-[#1e293b] border border-outline-variant dark:border-[#334155] rounded-xl text-primary dark:text-white outline-none focus:border-secondary focus:ring-1 focus:ring-secondary transition-all" />
+        </div>
+        <div id="alpha-nav" class="flex flex-wrap justify-center gap-1">
+            <!-- A-Z Nav will be injected here -->
+        </div>
+    </div>
+
+    <!-- Glossary List -->
+    <div class="flex flex-col gap-8" id="glossary-container">
+        <div class="col-span-full text-center py-12 text-gray-500" id="loading-indicator">
+            <span data-lang-en>Loading terms...</span>
+            <span data-lang-id style="display:none">Memuat istilah...</span>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
+  <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">Â© 2026 hadeeth.id - Digital Hadith Manuscript Preservation</span></div>
+  <div class="flex flex-wrap gap-4 items-center justify-center">
+    <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
+    <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
+    <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
+    <a href="glossary.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Glossary</a>
+  </div>
+</footer>
+
+<script src="js/theme.js"></script>
+<script src="js/api.js?v=2026081411"></script>
+<script src="js/app.js?v=2026082009"></script>
+<script>
+    let allTerms = [];
+    
+    async function loadGlossary() {
+        try {
+            const response = await fetch('data/api/glossary.json');
+            if (!response.ok) {
+                // If the file doesn't exist yet, we will just use an empty array.
+                allTerms = [];
+            } else {
+                allTerms = await response.json();
+            }
+            
+            // Check for drafts in localStorage (from admin)
+            const draftRaw = localStorage.getItem('hadeeth_glossary_drafts');
+            if (draftRaw) {
+                try {
+                    const drafts = JSON.parse(draftRaw);
+                    if (Array.isArray(drafts)) {
+                        // Merge drafts, preferring drafts over existing ids, and appending new ones
+                        const draftIds = new Set(drafts.map(d => d.id));
+                        allTerms = allTerms.filter(t => !draftIds.has(t.id)).concat(drafts);
+                    }
+                } catch(e) {}
+            }
+
+            renderGlossary();
+            setupSearchAndNav();
+            
+        } catch (error) {
+            console.error(error);
+            document.getElementById('loading-indicator').innerHTML = `
+                <div class="text-red-500 flex flex-col items-center gap-2">
+                    <span class="material-symbols-outlined text-4xl">error</span>
+                    <span data-lang-en>Failed to load glossary.</span>
+                    <span data-lang-id style="display:none">Gagal memuat glosarium.</span>
+                </div>
+            `;
+            if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+        }
+    }
+    
+    function renderGlossary(filterText = '', filterLetter = '') {
+        const container = document.getElementById('glossary-container');
+        document.getElementById('loading-indicator').style.display = 'none';
+        container.innerHTML = '';
+        
+        let filtered = allTerms;
+        const currentLang = window.LangSystem ? window.LangSystem.get() : 'en';
+
+        // Sort terms alphabetically based on current language
+        filtered.sort((a, b) => {
+            const termA = currentLang === 'id' ? a.term_id : a.term_en;
+            const termB = currentLang === 'id' ? b.term_id : b.term_en;
+            return termA.localeCompare(termB);
+        });
+
+        if (filterText) {
+            const low = filterText.toLowerCase();
+            filtered = filtered.filter(t => 
+                t.term_en.toLowerCase().includes(low) || 
+                t.term_id.toLowerCase().includes(low) || 
+                t.def_en.toLowerCase().includes(low) ||
+                t.def_id.toLowerCase().includes(low)
+            );
+        }
+        
+        if (filterLetter) {
+            filtered = filtered.filter(t => {
+                const term = currentLang === 'id' ? t.term_id : t.term_en;
+                return term.charAt(0).toUpperCase() === filterLetter;
+            });
+        }
+        
+        if (filtered.length === 0) {
+            container.innerHTML = `
+                <div class="text-center py-12 text-on-surface-variant dark:text-gray-400">
+                    No terms found matching your search.
+                </div>
+            `;
+            return;
+        }
+
+        // Group by first letter
+        const groups = {};
+        filtered.forEach(t => {
+            const term = currentLang === 'id' ? t.term_id : t.term_en;
+            let firstLetter = term.charAt(0).toUpperCase();
+            if (!/[A-Z]/.test(firstLetter)) firstLetter = '#';
+            if (!groups[firstLetter]) groups[firstLetter] = [];
+            groups[firstLetter].push(t);
+        });
+        
+        for (const [letter, terms] of Object.entries(groups)) {
+            const groupDiv = document.createElement('div');
+            groupDiv.className = 'flex flex-col md:flex-row gap-4 border-b border-outline-variant/20 pb-8';
+            
+            const letterCol = document.createElement('div');
+            letterCol.className = 'md:w-32 flex-shrink-0';
+            letterCol.innerHTML = `<h2 class="text-5xl font-bold text-outline-variant/30 dark:text-[#334155] sticky top-20">${letter}</h2>`;
+            groupDiv.appendChild(letterCol);
+            
+            const termsCol = document.createElement('dl');
+            termsCol.className = 'flex-grow flex flex-col gap-6';
+            
+            terms.forEach(t => {
+                const termItem = document.createElement('div');
+                termItem.id = `term-${t.id}`;
+                termItem.className = 'bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-5 hover:border-secondary transition-colors';
+                
+                termItem.innerHTML = `
+                    <dt class="text-xl font-bold text-primary dark:text-white mb-2">
+                        <span data-lang-en>${t.term_en}</span>
+                        <span data-lang-id style="display:none">${t.term_id}</span>
+                    </dt>
+                    <dd class="text-on-surface-variant dark:text-gray-300 leading-relaxed">
+                        <span data-lang-en>${t.def_en}</span>
+                        <span data-lang-id style="display:none">${t.def_id}</span>
+                    </dd>
+                `;
+                termsCol.appendChild(termItem);
+            });
+            
+            groupDiv.appendChild(termsCol);
+            container.appendChild(groupDiv);
+        }
+        
+        if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+    }
+
+    function setupSearchAndNav() {
+        const searchInput = document.getElementById('glossary-search');
+        let currentLetter = '';
+        
+        searchInput.addEventListener('input', (e) => {
+            currentLetter = ''; // Clear letter filter on search
+            updateAlphaNavUI('');
+            renderGlossary(e.target.value, currentLetter);
+        });
+        
+        const alphaNav = document.getElementById('alpha-nav');
+        const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+        
+        const allBtn = document.createElement('button');
+        allBtn.textContent = 'All';
+        allBtn.className = 'px-3 py-1 rounded-md text-sm font-medium bg-secondary text-white alpha-btn transition-colors';
+        allBtn.onclick = () => {
+            currentLetter = '';
+            searchInput.value = '';
+            updateAlphaNavUI('');
+            renderGlossary('', '');
+        };
+        alphaNav.appendChild(allBtn);
+        
+        alphabet.forEach(letter => {
+            const btn = document.createElement('button');
+            btn.textContent = letter;
+            btn.className = 'px-3 py-1 rounded-md text-sm font-medium text-on-surface-variant dark:text-gray-400 hover:bg-surface-container-high dark:hover:bg-[#334155] alpha-btn transition-colors';
+            btn.onclick = () => {
+                currentLetter = letter;
+                searchInput.value = '';
+                updateAlphaNavUI(letter);
+                renderGlossary('', letter);
+            };
+            alphaNav.appendChild(btn);
+        });
+
+        function updateAlphaNavUI(activeLetter) {
+            const btns = alphaNav.querySelectorAll('.alpha-btn');
+            btns.forEach(b => {
+                if ((activeLetter === '' && b.textContent === 'All') || b.textContent === activeLetter) {
+                    b.classList.remove('text-on-surface-variant', 'dark:text-gray-400', 'hover:bg-surface-container-high', 'dark:hover:bg-[#334155]');
+                    b.classList.add('bg-secondary', 'text-white');
+                } else {
+                    b.classList.add('text-on-surface-variant', 'dark:text-gray-400', 'hover:bg-surface-container-high', 'dark:hover:bg-[#334155]');
+                    b.classList.remove('bg-secondary', 'text-white');
+                }
+            });
+        }
+    }
+    
+    // Listen for language changes to re-sort
+    document.addEventListener('language-changed', () => {
+        const searchVal = document.getElementById('glossary-search').value;
+        // Keep active letter filter or clear it? Re-render will apply current filter to new language terms.
+        // E.g. 'S' might match 'Salat' in EN and 'Shalat' in ID.
+        // We'll just re-render.
+        renderGlossary(searchVal, ''); 
+        // Note: we're resetting the letter filter to '' because alphabet navigation is language dependent in its sorting.
+        const allBtn = document.querySelector('#alpha-nav .alpha-btn');
+        if (allBtn) allBtn.click();
+    });
+
+    document.addEventListener('DOMContentLoaded', loadGlossary);
+</script>
+</body>
+</html>
+
