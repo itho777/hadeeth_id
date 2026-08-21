@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="HADEETH.ID Ã¢â‚¬â€ Scholar & Rawi Detailed Biography, Transmission Statistics, and Jarh wa Ta'dil evaluations."/>
-  <title>Narrator Profile: 'Umar bin Al-Khattab Ã¢â‚¬â€ HADEETH.ID</title>
+  <meta name="description" content="HADEETH.ID — Scholar & Rawi Detailed Biography, Transmission Statistics, and Jarh wa Ta'dil evaluations."/>
+  <title>Narrator Profile — HADEETH.ID</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
@@ -564,11 +564,45 @@
       }
   }
 
-  // ── Fetch hadiths by narrator name from Supabase REST ─────────────
+  // ── Fetch hadiths by narrator name from NDJSON (all books) ────────
   let _hadithPage = 1;
   let _hadithLimit = 10;
   let _allHadiths  = [];
   let _narratorName = '';
+
+  // All book IDs to scan
+  const ALL_BOOKS = ['bukhari','muslim','abudawud','tirmidhi','nasai','ibnmajah','ahmad','malik','nawawi','darimi'];
+
+  /**
+   * Build a set of name fragments to match against sanad narrator names.
+   * Uses the full name and the most distinctive single word (e.g. "Hurairah", "Aisha").
+   */
+  function buildNameTokens(nameEn) {
+    const clean = nameEn.toLowerCase()
+      .replace(/\b(ibn|bin|bint|abu|umm|al-|al|imam|ibnu|radliallahu|'anhu|'anha|ash-shiddiq|ra|ra\.)\b/gi, ' ')
+      .replace(/\s+/g, ' ').trim();
+    // Split to tokens, keep ones ≥4 chars
+    const tokens = clean.split(' ').filter(t => t.length >= 4);
+    return tokens;
+  }
+
+  /**
+   * Check if a hadith's sanad contains the narrator.
+   * Matches by sanad[].name (case-insensitive) or sanad[].id.
+   */
+  function hadithHasNarrator(h, tokens, rawiId) {
+    const sanad = h.sanad || h.rawis || [];
+    if (!sanad.length) return false;
+    for (const entry of sanad) {
+      const entryName = (entry.name || entry.name_en || '').toLowerCase();
+      const entryId = String(entry.id || entry.rawi_id || '');
+      // Match by numeric rawi ID if available
+      if (rawiId && entryId && entryId === String(rawiId)) return true;
+      // Match by name tokens: ALL tokens must appear in the narrator name
+      if (tokens.length > 0 && tokens.every(t => entryName.includes(t))) return true;
+    }
+    return false;
+  }
 
   async function loadNarratorHadiths(nameEn, totalCount) {
     _narratorName = nameEn;
@@ -576,40 +610,52 @@
     const pagination = document.getElementById('hadith-pagination');
     if (!grid) return;
 
-    grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">Loading hadiths from Supabase…</div>`;
+    grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">Scanning hadith books for ${nameEn}…</div>`;
 
-    const SUPABASE_URL = 'https://idokyspokenbmzoegahq.supabase.co';
-    const ANON_KEY = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
+    const tokens = buildNameTokens(nameEn);
+    // Try to get numeric rawi ID from rawis dict
+    const rawisDict = await window.HadeethAPI.getActiveRawis().catch(() => ({}));
+    let rawiNumId = null;
+    for (const [k, v] of Object.entries(rawisDict)) {
+      if ((v.en || '').toLowerCase() === nameEn.toLowerCase() ||
+          (v.name_en || '').toLowerCase() === nameEn.toLowerCase()) {
+        rawiNumId = k;
+        break;
+      }
+    }
 
-    // Try Supabase narrator search via narrator_chain field or sanad text
-    const shortName = nameEn.replace(/^(Ibnu?|Imam|Abu)\s+/i, '').split(' ')[0]; // e.g. "Umar", "Hurairah"
-    const searchTerms = [nameEn, shortName].filter(Boolean);
+    let allFound = [];
+    let booksScanned = 0;
+    const txBadge = document.getElementById('transmitted-count-badge');
 
-    let hadiths = [];
-    for (const term of searchTerms) {
+    for (const bookId of ALL_BOOKS) {
       try {
-        const url = `${SUPABASE_URL}/rest/v1/hadiths?or=(narrator_en.ilike.*${encodeURIComponent(term)}*,sanad_en.ilike.*${encodeURIComponent(term)}*)&limit=50&order=book_id,hadith_number`;
-        const res = await fetch(url, {
-          headers: { 'apikey': ANON_KEY, 'Authorization': `Bearer ${ANON_KEY}` }
-        });
-        if (res.ok) {
-          const data = await res.json();
-          if (data && data.length > 0) { hadiths = data; break; }
+        const bookHadiths = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
+        const matches = bookHadiths.filter(h => hadithHasNarrator(h, tokens, rawiNumId));
+        if (matches.length > 0) {
+          matches.forEach(h => {
+            h._book_id = bookId;
+          });
+          allFound = allFound.concat(matches);
         }
-      } catch (e) {}
+        booksScanned++;
+        // Update progress
+        if (grid) {
+          grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
+            Found <strong class="text-primary dark:text-white">${allFound.length}</strong> hadiths in ${booksScanned}/${ALL_BOOKS.length} books…
+          </div>`;
+        }
+      } catch (e) {
+        // Book not found or network error — skip
+      }
     }
 
-    // If Supabase had nothing, try a broader text search
-    if (hadiths.length === 0 && searchTerms[0]) {
-      hadiths = await window.HadeethAPI.search(searchTerms[0], 'all', 25)
-        .then(r => r.map(h => ({
-          id: h.id, book_id: h.book_slug, hadith_number: h.hadith_number,
-          text_ar: h.arabic_text, text_en: h.english_text, text_id: h.indonesian_text, grade: h.grade
-        })));
-    }
-
-    _allHadiths = hadiths;
+    _allHadiths = allFound;
     _hadithPage  = 1;
+
+    // Update count badge with accurate count
+    if (txBadge) txBadge.textContent = `${allFound.length.toLocaleString()} Found`;
+
     renderHadithPage();
 
     if (_allHadiths.length > 0 && pagination) {
@@ -641,14 +687,20 @@
     };
 
     grid.innerHTML = slice.map(h => {
-      const bookName = BOOK_NAMES[h.book_id] || (h.book_id || '').toUpperCase();
-      const num = h.hadith_number || h.id || '';
-      const ar = h.text_ar || '';
-      const en = h.text_en || h.primary_translation || '';
-      const id = h.text_id || '';
-      const grade = h.grade || '';
+      const bookId = h._book_id || h.book_id || 'bukhari';
+      const bookName = BOOK_NAMES[bookId] || bookId.toUpperCase();
+      const num = h.id || h.hadith_number || '';
+      // Extract text from NDJSON translations format or flat fields
+      let ar = h.text_ar || '';
+      if (!ar && h.translations && h.translations.ar && h.translations.ar.length > 0) ar = h.translations.ar[0].text || '';
+      let en = h.text_en || h.primary_translation || '';
+      if (!en && h.translations && h.translations.en && h.translations.en.length > 0) en = h.translations.en[0].text || '';
+      let idText = h.text_id || '';
+      if (!idText && h.translations && h.translations.id && h.translations.id.length > 0) idText = h.translations.id[0].text || '';
+      let grade = h.grade || h.grade_en || '';
+      if (!grade && h.gradings && h.gradings.length > 0) grade = h.gradings[0].grade || '';
       return `
-        <a href="hadith.html?book=${h.book_id}&hadith=${num}"
+        <a href="hadith.html?book=${bookId}&id=${num}"
            class="block p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10
                   dark:border-[#334155] hover:border-secondary/40 dark:hover:border-[#10b981]/40 transition-all group cursor-pointer">
           <div class="flex justify-between items-start mb-2 gap-2">
@@ -656,8 +708,8 @@
             ${grade ? `<span class="text-[10px] text-outline dark:text-gray-400 font-mono shrink-0">${grade}</span>` : ''}
           </div>
           ${ar ? `<p class="text-sm text-right leading-relaxed font-arabic-body text-primary dark:text-white mb-2" dir="rtl">${ar}</p>` : ''}
-          <p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed line-clamp-3" data-lang-en>${en}</p>
-          ${id ? `<p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed line-clamp-3" data-lang-id style="display:none">${id}</p>` : ''}
+          <p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed line-clamp-3" data-lang-en>${en || '<em class="opacity-60">Translation loading…</em>'}</p>
+          ${idText ? `<p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed line-clamp-3" data-lang-id style="display:none">${idText}</p>` : ''}
           <span class="text-[10px] text-secondary dark:text-[#10b981] group-hover:underline mt-2 block">View full hadith →</span>
         </a>`;
     }).join('');
