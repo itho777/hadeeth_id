@@ -845,24 +845,84 @@ function renderSearchResults(results, query, container) {
  */
 const TafseerLinker = {
   surahMap: {
-    'al-fatihah': 1, 'fatihah': 1, 'al-baqarah': 2, 'baqarah': 2, 'ali imran': 3, 'an-nisa': 4, 'al-maidah': 5,
-    'al-anam': 6, 'al-araf': 7, 'al-anfal': 8, 'at-tawbah': 9, 'yunus': 10, 'hud': 11, 'yusuf': 12, 'ar-rad': 13,
-    'ibrahim': 14, 'al-hijr': 15, 'an-nahl': 16, 'al-isra': 17, 'al-kahf': 18, 'maryam': 19, 'taha': 20
+    "fatihah": 1, "al-fatihah": 1, "baqarah": 2, "al-baqarah": 2, "ali imran": 3, "ali 'imran": 3, "ali `imran": 3, "lmraan": 3,
+    "nisa": 4, "an-nisa": 4, "nisaa": 4, "an-nisaa": 4, "maidah": 5, "al-maidah": 5, "ma'idah": 5, "maa'idah": 5,
+    "anam": 6, "al-anam": 6, "an'am": 6, "an'aam": 6, "araf": 7, "al-araf": 7, "a'raf": 7,
+    "anfal": 8, "al-anfal": 8, "anfaal": 8, "nafaal": 8, "tawbah": 9, "at-tawbah": 9, "taubah": 9,
+    "yunus": 10, "hud": 11, "huud": 11, "yusuf": 12, "rad": 13, "ar-rad": 13, "ra'd": 13, "ibrahim": 14,
+    "hijr": 15, "al-hijr": 15, "15": 15, "nahl": 16, "an-nahl": 16, "isra": 17, "al-isra": 17, "israa": 17,
+    "kahf": 18, "al-kahf": 18, "kahfi": 18, "maryam": 19, "taha": 20, "thaahaa": 20,
+    "anbiya": 21, "al-anbiya": 21, "anbiyaa": 21, "hajj": 22, "al-hajj": 22, "mukminuun": 23,
+    "nur": 24, "an-nur": 24, "nuur": 24, "furqan": 25, "al-furqan": 25,
+    "syu'ara": 26, "syu'araa": 26, "naml": 27, "an-naml": 27, "qasas": 28, "qashash": 28, "ankabut": 29, "ankabuut": 29,
+    "rum": 30, "ar-rum": 30, "ruum": 30, "luqman": 31, "luqmaan": 31, "sajdah": 32, "as-sajdah": 32, "sajadah": 32,
+    "ahzab": 33, "al-ahzab": 33, "ahzaab": 33, "saba": 34, "fatir": 35, "yasin": 36, "yaasiin": 36,
+    "saffat": 37, "shaffaat": 37, "shaaffaat": 37, "sad": 38, "shaad": 38, "zumar": 39, "az-zumar": 39,
+    "ghafir": 40, "fussilat": 41, "fushilat": 41, "shura": 42, "syura": 42, "zukhruf": 43, "dukhan": 44, "dukhaan": 44,
+    "jathiyah": 45, "ahqaf": 46, "muhammad": 47, "fath": 48, "al-fath": 48, "hujurat": 49, "al-hujurat": 49,
+    "qaf": 50, "qaaf": 50, "dhariyat": 51, "tur": 52, "najm": 53, "an-najm": 53, "qamar": 54, "rahman": 55, "ar-rahman": 55,
+    "waqiah": 56, "hadid": 57, "mujadilah": 58, "hasyr": 59, "al-hasyr": 59, "mumtahanah": 60,
+    "saff": 61, "jumuah": 62, "munafiqun": 63, "munaafiquun": 63, "taghabun": 64, "talaq": 65, "thalaq": 65,
+    "tahrim": 66, "at-tahrim": 66, "tahriim": 66, "mulk": 67, "qalam": 68, "haqqah": 69, "maarij": 70, "nuh": 71,
+    "jinn": 72, "jin": 72, "72": 72, "muzzammil": 73, "muddaththir": 74, "mudatstsir": 74, "qiyamah": 75, "insan": 76,
+    "mursalat": 77, "naba": 78, "naziat": 79, "abasa": 80, "takwir": 81, "infitar": 82, "mutaffifin": 83, "insyiqaaq": 84,
+    "buruj": 85, "tariq": 86, "ala": 87, "ghashiyah": 88, "fajr": 89, "balad": 90, "shams": 91, "lail": 92, "a1-laii": 92,
+    "duha": 93, "sharh": 94, "tin": 95, "alaq": 96, "qadr": 97, "bayyinah": 98, "zalzalah": 99, "adiyat": 100,
+    "qariah": 101, "takathur": 102, "takaatsur": 102, "asr": 103, "humazah": 104, "fil": 105, "quraish": 106,
+    "maun": 107, "kawthar": 108, "kafirun": 109, "nasr": 110, "masad": 111, "ikhlas": 112, "ikhlash": 112,
+    "falaq": 113, "nas": 114
   },
   parse(text) {
     if (!text) return '';
-    let out = text.replace(/\[Qur['’]an\s+(\d+):(\d+)\]/gi, (match, s, a) => {
-      return `<a href="https://tafseer.id/surah/${s}/${a}" target="_blank" rel="noopener" class="text-sunan-emerald dark:text-[#10b981] underline font-semibold hover:opacity-80">${match} ↗</a>`;
+    let out = text;
+    
+    const renderLink = (s, a, originalMatch) => {
+        return `<a href="https://tafseer.id/#sura/${s}/verse/${a}" target="_blank" rel="noopener" class="text-secondary dark:text-[#10b981] underline font-semibold hover:opacity-80">${originalMatch}</a>`;
+    };
+
+    // 1. [Qur'an 75:16]
+    out = out.replace(/\[Qur['’]an\s+(\d+):(\d+)(?:-\d+)?\]/gi, (match, s, a) => {
+      return renderLink(s, a, match);
     });
-    out = out.replace(/(?:QS\.?|Surah)\s+([A-Za-z\-'\s]+|\d+)[:\s]+(\d+)/gi, (match, surah, ayah) => {
+
+    // 2. (QS. Al Baqarah: 159-160) or Surah 2:159
+    out = out.replace(/(?:QS\.?|Qs\.?|qs\.?|Surah|Surat)\s+([A-Za-z\-'`\s]+|\d+)[:\s]+(\d+)(?:-\d+)?[a-z]?/gi, (match, surah, ayah) => {
       let sNum = parseInt(surah);
       if (isNaN(sNum)) {
-        const norm = surah.toLowerCase().trim();
-        sNum = this.surahMap[norm] || 2;
+        let norm = surah.toLowerCase().trim().replace(/^al-/, "").replace(/^al /, "").replace(/^as-/, "").replace(/^as /, "");
+        // Direct map lookup
+        sNum = this.surahMap[norm];
+        
+        // If not found, try to find a key that is a substring
+        if (!sNum) {
+            for (const key in this.surahMap) {
+                if (norm.indexOf(key) !== -1 || key.indexOf(norm) !== -1) {
+                    sNum = this.surahMap[key];
+                    break;
+                }
+            }
+        }
+        if (!sNum) sNum = 2; // fallback
       }
-      return `<a href="https://tafseer.id/surah/${sNum}/${ayah}" target="_blank" rel="noopener" class="text-sunan-emerald dark:text-[#10b981] underline font-semibold hover:opacity-80">${match} ↗</a>`;
+      return renderLink(sNum, ayah, match);
     });
     
+    // 3. (V. 3:144) or (V.3:144)
+    out = out.replace(/\(V\.\s*(\d+)\s*:\s*(\d+)(?:-\d+)?\)/gi, (match, s, a) => {
+        return renderLink(s, a, match);
+    });
+    
+    // 4. (75.16) or (75.16-17) 
+    // We only want to link if it's enclosed in parentheses or quotes, and looks like a sura.verse format.
+    out = out.replace(/\((\d+)\.(\d+)(?:-\d+)?\)/gi, (match, s, a) => {
+        let sNum = parseInt(s);
+        let aNum = parseInt(a);
+        if (sNum >= 1 && sNum <= 114 && aNum >= 1 && aNum <= 286) {
+            return renderLink(sNum, aNum, match);
+        }
+        return match;
+    });
+
     // Process Scholar/Narrator Links
     // Exclude strings that already look like HTML (to avoid messing up the Qur'an links)
     const tempTokens = [];
