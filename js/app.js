@@ -461,7 +461,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (sittahGrid) renderBookCards(books.slice(0, 6), sittahGrid);
       if (tisahGridBooks) renderBookCards(books.slice(6, 9), tisahGridBooks);
       if (secondaryGrid) renderBookCards(books.slice(9), secondaryGrid);
-    });
+    }).catch(e => console.warn("Failed to load books", e));
   }
 
   function renderBookCards(books, container) {
@@ -673,7 +673,7 @@ async function loadHOTD() {
   try {
     // Fetch with timeout to avoid indefinite skeleton on local dev
     const h = await Promise.race([
-      window.HadeethAPI.getHadith(bookId, hadithId),
+      window.HadeethAPI.getHadith(bookId, hadithId).catch(() => null),
       new Promise((_, reject) => setTimeout(() => reject(new Error('HOTD timeout')), 8000))
     ]).catch(() => null);
     if (!h) {
