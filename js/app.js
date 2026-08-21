@@ -606,7 +606,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProfileDetail();
   }
   if (document.getElementById('sanad-nodes-container')) {
-    loadSanadChain();
+    loadSanadChain().catch(err => console.warn('Sanad chain load failed:', err));
   }
 
 });

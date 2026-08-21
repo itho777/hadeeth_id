@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="HADEETH.ID â€” Biographies & Transmission profiles of Hadith Scholars, Sahabah, and Narrators."/>
+  <meta name="description" content="HADEETH.ID — Biographies & Transmission profiles of Hadith Scholars, Sahabah, and Narrators."/>
   <title>Perawi & Ulama Hadits - HADEETH.ID</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -159,7 +159,7 @@
 
   <!-- Pagination Bar -->
   <div class="flex flex-col sm:flex-row justify-between items-center gap-4 bg-surface dark:bg-[#1e293b] p-4 rounded-xl border border-outline-variant/30 dark:border-[#334155]">
-    <span id="scholars-page-indicator" class="text-xs text-outline dark:text-gray-400 font-medium">Menampilkan 1â€“9 Perawi</span>
+    <span id="scholars-page-indicator" class="text-xs text-outline dark:text-gray-400 font-medium">Menampilkan 1–9 Perawi</span>
     <div class="flex flex-wrap items-center gap-3 text-xs">
       <button id="scholars-prev-btn" class="px-3 py-1.5 bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-outline-variant/10 cursor-pointer">
         &larr; Prev
@@ -292,7 +292,7 @@
     return '';
   }
 
-  // Indonesian name map â€” covers common Supabase rows that lack name_id
+  // Indonesian name map — covers common Supabase rows that lack name_id
   const idNameMap = [
     { test: n => n.includes('abu hurairah'),                          id: "Abu Hurairah radliallahu 'anhu" },
     { test: n => n.includes("'aisha") || n.includes('aisha bint'),    id: 'Aisyah binti Abu Bakar ash-Shiddiq' },
@@ -425,7 +425,7 @@
     const n = (r.hadith_count || 0).toLocaleString('id');
 
     if (key.includes('abu_hurairah') || key.includes('abu hurairah'))
-      return `Abu Hurairah (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah sahabat yang paling banyak meriwayatkan hadits â€” tercatat ${n} riwayat. Selama tiga tahun beliau mendedikasikan dirinya sepenuhnya untuk menghafal sabda Nabi \ufe70.`;
+      return `Abu Hurairah (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647) adalah sahabat yang paling banyak meriwayatkan hadits — tercatat ${n} riwayat. Selama tiga tahun beliau mendedikasikan dirinya sepenuhnya untuk menghafal sabda Nabi \ufe70.`;
     if (key.includes('aisha') || key.includes('aisy'))
       return `Aisyah (\u0631\u0636\u064a \u0627\u0644\u0644\u0647 \u0639\u0646\u0647\u0627), putri Abu Bakar ash-Shiddiq dan istri Nabi \ufe70, meriwayatkan ${n} hadits. Beliau adalah rujukan utama fikih ibadah, pernikahan, dan kehidupan rumah tangga Nabi \ufe70.`;
     if (key.includes('ibn_umar') || key.includes('ibn umar') || (key.includes('umar') && key.includes('khattab') && key.includes('abdullah')))
@@ -594,8 +594,8 @@
 
     // Update Pagination Controls
     if (pageIndicator) pageIndicator.innerText = isId
-      ? `Menampilkan ${startIdx + 1}â€“${endIdx} dari ${allScholars.length} Perawi`
-      : `Showing ${startIdx + 1}â€“${endIdx} of ${allScholars.length} Narrators`;
+      ? `Menampilkan ${startIdx + 1}–${endIdx} dari ${allScholars.length} Perawi`
+      : `Showing ${startIdx + 1}–${endIdx} of ${allScholars.length} Narrators`;
 
     if (pageNumber) pageNumber.innerText = isId
       ? `Halaman ${currentPage} dari ${totalPages}`

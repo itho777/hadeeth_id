@@ -4,6 +4,18 @@
  * Provides fallback and instant retrieval for offline-first and online web app.
  */
 
+/**
+ * fetch() with an AbortController timeout to prevent hanging requests.
+ * Default timeout is 15 seconds.
+ */
+function fetchWithTimeout(url, options = {}, timeoutMs = 15000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  return fetch(url, { ...options, signal: controller.signal })
+    .then(res => { clearTimeout(timer); return res; })
+    .catch(err => { clearTimeout(timer); throw err; });
+}
+
 const HadeethAPI = {
   // Resolve base URL robustly across GitHub Pages (sub-path) and Cloudflare Pages (root).
   // Strategy: find the <script src="js/api.js"> tag and go up one level to get the site root.
@@ -36,7 +48,7 @@ const HadeethAPI = {
     if (this.ndjsonIndexes[key]) return this.ndjsonIndexes[key];
     
     const url = `${this.dataUrl}/${prefix}/${bookId}_ndjson_index.json`;
-    const res = await fetch(url).catch(() => null);
+    const res = await fetchWithTimeout(url).catch(() => null);
     if (res && res.ok) {
         this.ndjsonIndexes[key] = await res.json();
         return this.ndjsonIndexes[key];
@@ -49,7 +61,7 @@ const HadeethAPI = {
    */
   async fetchNdjsonRange(prefix, bookId, startByte, endByte) {
     const url = `${this.dataUrl}/${prefix}/${bookId}.ndjson`;
-    const res = await fetch(url, {
+    const res = await fetchWithTimeout(url, {
         headers: { 'Range': `bytes=${startByte}-${endByte}` }
     });
     if (!res.ok && res.status !== 206) throw new Error(`HTTP ${res.status}`);
@@ -79,7 +91,7 @@ const HadeethAPI = {
    */
   async fetchNdjsonFull(prefix, bookId) {
     const url = `${this.dataUrl}/${prefix}/${bookId}.ndjson`;
-    const res = await fetch(url).catch(() => null);
+    const res = await fetchWithTimeout(url, {}, 20000).catch(() => null);
     if (!res || !res.ok) throw new Error(`HTTP ${res ? res.status : 'Network Error'}`);
     const text = await res.text();
     const lines = text.split('\n').filter(l => l.trim().length > 0);
@@ -108,8 +120,8 @@ const HadeethAPI = {
     if (this.rawisCache) return this.rawisCache;
     try {
       const cacheBuster = Date.now();
-      const res = await fetch(`${this.baseUrl}/rawis/active_rawis.min.json?v=${cacheBuster}`);
-      if (res.ok) {
+      const res = await fetchWithTimeout(`${this.baseUrl}/rawis/active_rawis.min.json?v=${cacheBuster}`).catch(() => null);
+      if (res && res.ok) {
         this.rawisCache = await res.json();
       } else {
         this.rawisCache = {};
