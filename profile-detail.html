@@ -559,8 +559,8 @@
           const txBadge = document.getElementById('transmitted-count-badge');
           if (txBadge) txBadge.textContent = `${totalNarrations.toLocaleString()} Total`;
 
-          // ── HADITH LIST: fetch from Supabase by narrator name ────────────
-          await loadNarratorHadiths(nameEn, totalNarrations);
+          // ── HADITH LIST: fetch from pre-computed index or scan ────────────
+          await loadNarratorHadiths(nameEn, totalNarrations, rawiId);
       }
   }
 
@@ -604,51 +604,87 @@
     return false;
   }
 
-  async function loadNarratorHadiths(nameEn, totalCount) {
+  async function loadNarratorHadiths(nameEn, totalCount, rawiId = null) {
     _narratorName = nameEn;
     const grid = document.getElementById('transmitted-hadiths-grid');
     const pagination = document.getElementById('hadith-pagination');
     if (!grid) return;
 
-    grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">Scanning hadith books for ${nameEn}…</div>`;
+    grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">Loading hadiths for ${nameEn}…</div>`;
 
     const tokens = buildNameTokens(nameEn);
-    // Try to get numeric rawi ID from rawis dict
     const rawisDict = await window.HadeethAPI.getActiveRawis().catch(() => ({}));
-    let rawiNumId = null;
-    for (const [k, v] of Object.entries(rawisDict)) {
-      if ((v.en || '').toLowerCase() === nameEn.toLowerCase() ||
-          (v.name_en || '').toLowerCase() === nameEn.toLowerCase()) {
-        rawiNumId = k;
-        break;
+    let rawiNumId = rawiId;
+
+    if (!rawiNumId) {
+      for (const [k, v] of Object.entries(rawisDict)) {
+        if ((v.en || '').toLowerCase() === nameEn.toLowerCase() ||
+            (v.name_en || '').toLowerCase() === nameEn.toLowerCase()) {
+          rawiNumId = k;
+          break;
+        }
       }
     }
 
     let allFound = [];
-    let booksScanned = 0;
     const txBadge = document.getElementById('transmitted-count-badge');
 
-    for (const bookId of ALL_BOOKS) {
+    // 1. Try to fetch from the pre-computed narrator index
+    if (rawiNumId) {
+      const lastChar = String(rawiNumId).slice(-1);
       try {
-        const bookHadiths = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
-        const matches = bookHadiths.filter(h => hadithHasNarrator(h, tokens, rawiNumId));
-        if (matches.length > 0) {
-          matches.forEach(h => {
-            h._book_id = bookId;
-          });
-          allFound = allFound.concat(matches);
-        }
-        booksScanned++;
-        // Update progress
-        if (grid) {
-          grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
-            Found <strong class="text-primary dark:text-white">${allFound.length}</strong> hadiths in ${booksScanned}/${ALL_BOOKS.length} books…
-          </div>`;
+        const idxRes = await fetch(`data/rawis/indexes/idx_${lastChar}.json`);
+        if (idxRes.ok) {
+          const indexData = await idxRes.json();
+          const hadithRefs = indexData[rawiNumId];
+          if (hadithRefs && hadithRefs.length > 0) {
+            // Group by book to fetch in bulk if possible, or fetch individual hadiths
+            grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
+              Found ${hadithRefs.length} hadiths in index. Fetching details…
+            </div>`;
+            
+            // For now, load books that have matches so we can display full data
+            const booksToLoad = [...new Set(hadithRefs.map(ref => ref.b))];
+            let booksScanned = 0;
+            for (const bookId of booksToLoad) {
+               try {
+                 const bookHadiths = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
+                 const bookRefs = hadithRefs.filter(r => r.b === bookId).map(r => String(r.i));
+                 const matches = bookHadiths.filter(h => bookRefs.includes(String(h.id || h.hadith_number)));
+                 matches.forEach(h => h._book_id = bookId);
+                 allFound = allFound.concat(matches);
+                 booksScanned++;
+                 grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
+                   Loading details from ${booksScanned}/${booksToLoad.length} books…
+                 </div>`;
+               } catch(e) {}
+            }
+          }
         }
       } catch (e) {
-        // Book not found or network error — skip
+        console.warn('Could not load narrator index, falling back to scan', e);
       }
     }
+
+    // 2. Fallback to scanning all books if index yielded nothing
+    if (allFound.length === 0) {
+      let booksScanned = 0;
+      for (const bookId of ALL_BOOKS) {
+        try {
+          const bookHadiths = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
+          const matches = bookHadiths.filter(h => hadithHasNarrator(h, tokens, rawiNumId));
+          if (matches.length > 0) {
+            matches.forEach(h => h._book_id = bookId);
+            allFound = allFound.concat(matches);
+          }
+          booksScanned++;
+          grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
+            Scanning for fallback: Found <strong class="text-primary dark:text-white">${allFound.length}</strong> hadiths in ${booksScanned}/${ALL_BOOKS.length} books…
+          </div>`;
+        } catch (e) {}
+      }
+    }
+
 
     _allHadiths = allFound;
     _hadithPage  = 1;
