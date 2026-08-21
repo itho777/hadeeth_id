@@ -627,12 +627,22 @@
         }
       }
       if (!bestMatch && tokens.length > 0) {
-        const sortedKeys = Object.keys(rawisDict).sort((a,b) => parseInt(rawisDict[b].counts||0) - parseInt(rawisDict[a].counts||0));
-        for (const k of sortedKeys) {
-          const targetName = (rawisDict[k].en || rawisDict[k].name_en || rawisDict[k].id || '').toLowerCase();
-          if (targetName && tokens.every(t => targetName.includes(t))) {
-            bestMatch = k;
-            break;
+        let maxScore = 0;
+        for (const [k, v] of Object.entries(rawisDict)) {
+          const targetName = (v.en || v.name_en || v.id || '').toLowerCase();
+          if (!targetName) continue;
+          let score = 0;
+          for (const t of tokens) {
+            if (targetName.includes(t)) score++;
+          }
+          
+          const requiredMatches = tokens.length === 1 ? 1 : Math.max(2, Math.floor(tokens.length / 2));
+          if (score >= requiredMatches) {
+            const finalScore = score * 100000 + parseInt(v.counts || 0);
+            if (finalScore > maxScore) {
+              maxScore = finalScore;
+              bestMatch = k;
+            }
           }
         }
       }
