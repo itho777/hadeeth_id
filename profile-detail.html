@@ -616,14 +616,27 @@
     const rawisDict = await window.HadeethAPI.getActiveRawis().catch(() => ({}));
     let rawiNumId = rawiId;
 
-    if (!rawiNumId) {
+    if (!rawisDict[rawiNumId]) {
+      let bestMatch = null;
       for (const [k, v] of Object.entries(rawisDict)) {
         if ((v.en || '').toLowerCase() === nameEn.toLowerCase() ||
-            (v.name_en || '').toLowerCase() === nameEn.toLowerCase()) {
-          rawiNumId = k;
+            (v.name_en || '').toLowerCase() === nameEn.toLowerCase() ||
+            (v.id || '').toLowerCase() === nameEn.toLowerCase()) {
+          bestMatch = k;
           break;
         }
       }
+      if (!bestMatch && tokens.length > 0) {
+        const sortedKeys = Object.keys(rawisDict).sort((a,b) => parseInt(rawisDict[b].counts||0) - parseInt(rawisDict[a].counts||0));
+        for (const k of sortedKeys) {
+          const targetName = (rawisDict[k].en || rawisDict[k].name_en || rawisDict[k].id || '').toLowerCase();
+          if (targetName && tokens.every(t => targetName.includes(t))) {
+            bestMatch = k;
+            break;
+          }
+        }
+      }
+      if (bestMatch) rawiNumId = bestMatch;
     }
 
     let allFound = [];
