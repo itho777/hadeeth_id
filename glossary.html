@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id" class="dark">
 <head>
   <meta charset="UTF-8"/>
@@ -175,7 +175,8 @@
     
     function renderGlossary(filterText = '', filterLetter = '') {
         const container = document.getElementById('glossary-container');
-        document.getElementById('loading-indicator').style.display = 'none';
+        const indicator = document.getElementById('loading-indicator');
+        if (indicator) indicator.style.display = 'none';
         container.innerHTML = '';
         
         let filtered = allTerms;
