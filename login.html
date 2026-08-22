@@ -115,29 +115,115 @@
                 <p class="text-sm text-on-surface-variant dark:text-gray-400">Log in to sync your bookmarks and reading history across devices.</p>
             </div>
             
+            <form id="email-auth-form" class="flex flex-col gap-4" onsubmit="handleEmailAuth(event)">
+                <div>
+                    <label for="email" class="block text-sm font-medium text-on-surface dark:text-gray-300 mb-1">Email</label>
+                    <input type="email" id="email" required class="w-full px-4 py-2 border border-outline-variant dark:border-[#334155] rounded-lg bg-surface dark:bg-[#0a0e14] text-on-surface dark:text-white focus:outline-none focus:border-primary">
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-on-surface dark:text-gray-300 mb-1">Password</label>
+                    <input type="password" id="password" required class="w-full px-4 py-2 border border-outline-variant dark:border-[#334155] rounded-lg bg-surface dark:bg-[#0a0e14] text-on-surface dark:text-white focus:outline-none focus:border-primary">
+                </div>
+                <button type="submit" id="auth-submit-btn" class="w-full bg-primary text-on-primary font-bold py-2.5 rounded-lg hover:bg-primary/90 transition-colors">Sign In</button>
+                <div class="text-center text-sm text-on-surface-variant dark:text-gray-400">
+                    <span id="auth-toggle-text">Don't have an account?</span> 
+                    <button type="button" onclick="toggleAuthMode()" class="text-primary font-bold hover:hover:underline">Sign Up</button>
+                </div>
+            </form>
+            
+            <div class="flex items-center gap-4 my-2">
+                <div class="h-px bg-outline-variant dark:bg-[#334155] flex-grow"></div>
+                <span class="text-xs text-on-surface-variant dark:text-gray-500 uppercase tracking-widest font-semibold">Or</span>
+                <div class="h-px bg-outline-variant dark:bg-[#334155] flex-grow"></div>
+            </div>
+            
             <div class="flex flex-col gap-3">
-                <button onclick="signInWithProvider('google')" class="provider-btn bg-white text-gray-800 hover:bg-gray-50 border-gray-300 dark:bg-[#1e293b] dark:text-white dark:border-[#334155] dark:hover:bg-[#334155]">
+                <button type="button" onclick="signInWithProvider('google')" class="provider-btn bg-white text-gray-800 hover:bg-gray-50 border-gray-300 dark:bg-[#1e293b] dark:text-white dark:border-[#334155] dark:hover:bg-[#334155]">
                     <img src="https://authjs.dev/img/providers/google.svg" alt="Google">
                     Continue with Google
                 </button>
-                <button onclick="signInWithProvider('apple')" class="provider-btn bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 border-transparent">
+                <button type="button" onclick="signInWithProvider('apple')" class="provider-btn bg-black text-white hover:bg-gray-800 dark:bg-white dark:text-black dark:hover:bg-gray-200 border-transparent">
                     <img src="https://authjs.dev/img/providers/apple.svg" alt="Apple" style="filter: invert(1);" class="dark:invert-0">
                     Continue with Apple
                 </button>
-                <button onclick="signInWithProvider('facebook')" class="provider-btn bg-[#1877f2] text-white hover:bg-[#166fe5] border-transparent">
+                <button type="button" onclick="signInWithProvider('facebook')" class="provider-btn bg-[#1877f2] text-white hover:bg-[#166fe5] border-transparent">
                     <img src="https://authjs.dev/img/providers/facebook.svg" alt="Facebook">
                     Continue with Facebook
                 </button>
             </div>
             
             <div id="login-error" class="hidden text-sm text-red-500 text-center bg-red-50 dark:bg-red-900/20 p-3 rounded-lg"></div>
+            <div id="login-success" class="hidden text-sm text-green-600 text-center bg-green-50 dark:bg-green-900/20 p-3 rounded-lg"></div>
         </div>
     </main>
     <script>
+        let isSignUp = false;
+        
+        function toggleAuthMode() {
+            isSignUp = !isSignUp;
+            document.getElementById("auth-submit-btn").innerText = isSignUp ? "Sign Up" : "Sign In";
+            document.getElementById("auth-toggle-text").innerText = isSignUp ? "Already have an account?" : "Don't have an account?";
+            document.querySelector("button[onclick='toggleAuthMode()']").innerText = isSignUp ? "Sign In" : "Sign Up";
+            document.getElementById("login-error").classList.add("hidden");
+            document.getElementById("login-success").classList.add("hidden");
+        }
+        
+        async function handleEmailAuth(e) {
+            e.preventDefault();
+            
+            if (!window.supabaseClient) {
+                showError("Authentication is not configured properly.");
+                return;
+            }
+            
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const btn = document.getElementById("auth-submit-btn");
+            
+            btn.disabled = true;
+            btn.innerText = "Please wait...";
+            document.getElementById("login-error").classList.add("hidden");
+            document.getElementById("login-success").classList.add("hidden");
+            
+            try {
+                if (isSignUp) {
+                    const { data, error } = await window.supabaseClient.auth.signUp({
+                        email: email,
+                        password: password,
+                    });
+                    if (error) throw error;
+                    
+                    if (data.user && data.user.identities && data.user.identities.length === 0) {
+                        showError("This email is already registered. Please sign in instead.");
+                    } else {
+                        document.getElementById("login-success").innerText = "Success! Please check your email for a confirmation link.";
+                        document.getElementById("login-success").classList.remove("hidden");
+                    }
+                } else {
+                    const { data, error } = await window.supabaseClient.auth.signInWithPassword({
+                        email: email,
+                        password: password,
+                    });
+                    if (error) throw error;
+                    
+                    window.location.href = "profile.html";
+                }
+            } catch (error) {
+                showError(error.message || "An error occurred.");
+            } finally {
+                btn.disabled = false;
+                btn.innerText = isSignUp ? "Sign Up" : "Sign In";
+            }
+        }
+        
+        function showError(msg) {
+            document.getElementById("login-error").innerText = msg;
+            document.getElementById("login-error").classList.remove("hidden");
+        }
+        
         async function signInWithProvider(provider) {
             if (!window.supabaseClient) {
-                document.getElementById("login-error").innerText = "Authentication is not configured properly.";
-                document.getElementById("login-error").classList.remove("hidden");
+                showError("Authentication is not configured properly.");
                 return;
             }
             
@@ -151,8 +237,7 @@
                 
                 if (error) throw error;
             } catch (error) {
-                document.getElementById("login-error").innerText = error.message || "An error occurred during login.";
-                document.getElementById("login-error").classList.remove("hidden");
+                showError(error.message || "An error occurred during login.");
             }
         }
         
