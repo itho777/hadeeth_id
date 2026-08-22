@@ -2105,13 +2105,16 @@ async function loadHadithList() {
         }
 
         let idText = lidwaIdMap[targetLidwaId] || '';
+        let idLinkText = '';
         if (idText && targetLidwaId !== num) {
-            idText = `<div class="mb-2 text-xs text-blue-500 font-semibold">[Linked from Lidwa #${targetLidwaId}]</div>` + idText;
+            idLinkText = `[Linked from Lidwa #${targetLidwaId}]`;
         }
 
         let finalEnText = engMap[num] !== undefined ? engMap[num] : '';
+        let enLinkText = '';
         if (!finalEnText && abEngMap[targetAbId]) {
-            finalEnText = `<div class="mb-2 text-xs text-amber-500 font-semibold">[Linked from AhmedBaset #${targetAbId}]</div>` + abEngMap[targetAbId];
+            finalEnText = abEngMap[targetAbId];
+            enLinkText = `[Linked from AhmedBaset #${targetAbId}]`;
         }
 
         return {
@@ -2120,6 +2123,8 @@ async function loadHadithList() {
           text_ar: araMap[num] !== undefined ? araMap[num] : '',
           // Indonesian linked dynamically from Lidwa/Irsyad via graph
           text_id: idText,
+          id_link_text: idLinkText,
+          en_link_text: enLinkText,
           grade: 'Sahih',
           book_id: bookId,
           _source: 'primary'  // marks this for the blue attribution note in renderList
@@ -2177,7 +2182,25 @@ async function loadHadithList() {
       const enText = item.text_en || '';
       const arText = item.text_ar || '';
       const hasId = !!item.text_id;
-      const idText = item.text_id || enText;
+      
+      const enLinkText = item.en_link_text || '';
+      let idLinkText = item.id_link_text || '';
+      let idText = item.text_id || enText;
+      
+      if (typeof idText === 'string' && idText.startsWith('[IDLINKED:')) {
+          const m = idText.match(/^\[IDLINKED:([^\]]+)\](.*)$/s);
+          if (m) {
+              idLinkText = `[Linked from Lidwa #${m[1]}]`;
+              idText = m[2];
+          }
+      }
+      if (typeof enText === 'string' && enText.startsWith('[Linked from AhmedBaset')) {
+          const m = enText.match(/^\[Linked from AhmedBaset #([^\]]+)\](.*)$/s);
+          if (m) {
+              // already handled or just scrub it
+          }
+      }
+
       const gradeEn = item.grade_en || item.grade || 'Sahih';
       const gradeId = item.grade_id || 'Shahih';
 
@@ -2218,21 +2241,21 @@ async function loadHadithList() {
       const enUnavailableNote = '<em class="text-outline dark:text-gray-500">(English translation not available in this dataset)</em>';
 
       if (currentLang === 'id') {
-        const content = hasId ? escapeHtml(item.text_id) : idUnavailableNote;
+        const content = hasId ? (idLinkText ? `<div class='mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</div>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailableNote;
         displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${content}</p>`;
         if (isPrimary) displayText += primaryIdSourceNote;
         if (isAhmedBaset) displayText += abIdSourceNote;
         if (isLidwa) displayText += gradeByHtml(item.grade_by);
       } else if (currentLang === 'en') {
-        const enContent = enText ? escapeHtml(enText) : enUnavailableNote;
+        const enContent = enText ? (enLinkText ? `<div class='mb-2 text-xs text-amber-500 font-semibold'>${escapeHtml(enLinkText)}</div>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(enText)) : escapeHtml(enText)) : enUnavailableNote;
         displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${enContent}</p>`;
         if (isPrimary) displayText += `<p class="text-[11px] text-blue-500/70 dark:text-blue-400/70 mt-1 italic">Switch to <strong>Dual Language</strong> or <strong>Bahasa Indonesia</strong> to view Indonesian — sourced from Lidwa/Irsyad (fawazahmed0 has no ind edition)</p>`;
         if (isAhmedBaset) displayText += `<p class="text-[11px] text-amber-600/80 dark:text-amber-400/70 mt-1 italic">Source: AhmedBaset · Switch to <strong>Dual Language</strong> or <strong>Bahasa Indonesia</strong> to see the Lidwa-sourced Indonesian translation (matched by number — not from AhmedBaset)</p>`;
         if (isLidwa) displayText += gradeByHtml(item.grade_by);
       } else {
-        const idContent = hasId ? escapeHtml(item.text_id) : idUnavailableNote;
+        const idContent = hasId ? (idLinkText ? `<div class='mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</div>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailableNote;
         const idHtml = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${idContent}</p>`;
-        const enContent = enText ? escapeHtml(enText) : enUnavailableNote;
+        const enContent = enText ? (enLinkText ? `<div class='mb-2 text-xs text-amber-500 font-semibold'>${escapeHtml(enLinkText)}</div>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(enText)) : escapeHtml(enText)) : enUnavailableNote;
         const enHtml = `<p class="text-xs text-outline dark:text-gray-400 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${enContent}</p>`;
         const gradeNote = isLidwa ? gradeByHtml(item.grade_by) : '';
         const sourceNote = isPrimary ? primaryIdSourceNote : (isAhmedBaset ? abIdSourceNote : '');
@@ -3117,12 +3140,12 @@ async function loadHadithCardsList() {
                   targetLidwaId = linkGraph.fawaz_to_lidwa[fawazId];
               }
               if (lidwaById[targetLidwaId]) {
-                  let textId = lidwaById[targetLidwaId];
-                  if (targetLidwaId !== fawazId) {
-                      textId = `<div class="mb-2 text-xs text-blue-500 font-semibold">[Linked from Lidwa #${targetLidwaId}]</div>` + textId;
-                  }
-                  indMap[fawazId] = textId;
-              }
+                    let textId = lidwaById[targetLidwaId];
+                    if (targetLidwaId !== fawazId) {
+                        textId = `[IDLINKED:${targetLidwaId}]` + textId;
+                    }
+                    indMap[fawazId] = textId;
+                }
           });
       }
     }
@@ -4035,7 +4058,17 @@ async function loadTopicHadiths() {
     if (!arText && item.translations && item.translations.ar && item.translations.ar.length > 0) arText = item.translations.ar[0].text;
     let enText = item.text_en || '';
     if (!enText && item.translations && item.translations.en && item.translations.en.length > 0) enText = item.translations.en[0].text;
-    let idText = item.text_id || '';
+    let idTextRaw = item.text_id || '';
+    let idLinkText = item.id_link_text || '';
+    let enLinkText = item.en_link_text || '';
+    let idText = idTextRaw;
+    if (typeof idText === 'string' && idText.startsWith('[IDLINKED:')) {
+        const m = idText.match(/^\[IDLINKED:([^\]]+)\](.*)$/s);
+        if (m) {
+            idLinkText = `[Linked from Lidwa #${m[1]}]`;
+            idText = m[2];
+        }
+    }
     if (!idText && item.translations && item.translations.id && item.translations.id.length > 0) idText = item.translations.id[0].text;
 
     let gradeEn = item.grade || item.grade_en || '';
@@ -4049,7 +4082,7 @@ async function loadTopicHadiths() {
     let displayText = '';
     if (currentLang === 'id') {
       displayText = '<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">'
-        + '<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>' + (idText || idUnavailable) + '</p>'
+        + '<p class=\"text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed\"><strong class=\"text-xs text-secondary dark:text-[#10b981] block mb-1\">Terjemahan Indonesia:</strong>' + (idLinkText ? `<div class='mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</div>` : '') + (idText ? (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailable) + '</p>'
         + '<p class="text-[11px] text-blue-500/70 mt-1 italic">Source: unified NDJSON engine</p></div>';
     } else if (currentLang === 'en') {
       displayText = '<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">'
@@ -4057,8 +4090,8 @@ async function loadTopicHadiths() {
         + '<p class="text-[11px] text-blue-500/70 mt-1 italic">Source: unified NDJSON engine</p></div>';
     } else {
       displayText = '<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">'
-        + '<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>' + (idText || idUnavailable) + '</p>'
-        + '<p class="text-xs text-outline dark:text-gray-400 leading-relaxed"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>' + (enText || enUnavailable) + '</p>'
+        + '<p class=\"text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed\"><strong class=\"text-xs text-secondary dark:text-[#10b981] block mb-1\">Terjemahan Indonesia:</strong>' + (idLinkText ? `<div class='mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</div>` : '') + (idText ? (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailable) + '</p>'
+        + '<p class=\"text-xs text-outline dark:text-gray-400 leading-relaxed\"><strong class=\"text-xs text-sunan-emerald dark:text-[#10b981] block mb-1\">English Translation:</strong>' + (enLinkText ? `<div class='mb-2 text-xs text-amber-500 font-semibold'>${escapeHtml(enLinkText)}</div>` : '') + (enText ? (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(enText)) : escapeHtml(enText)) : enUnavailable) + '</p>'
         + '<p class="text-[11px] text-blue-500/70 mt-1 italic">Source: unified NDJSON engine</p></div>';
     }
 
