@@ -1157,8 +1157,8 @@ async function loadHadithDetail() {
   if (editionsResp && editionsResp.ok) fawazEditions = await editionsResp.json();
 
   const fawazId = activeDataset === 'fawazahmed' ? hadithId : (Object.keys(linkGraph.fawaz_to_lidwa || {}).find(k => linkGraph.fawaz_to_lidwa[k] == hadithId) || hadithId);
-  const lidwaId = activeDataset === 'native_lidwa' ? hadithId : (linkGraph.fawaz_to_lidwa ? (linkGraph.fawaz_to_lidwa[fawazId] || null) : null);
-  const abId = activeDataset === 'native_ahmedbaset' ? hadithId : (linkGraph.fawaz_to_ab ? linkGraph.fawaz_to_ab[fawazId] : (linkGraph[fawazId] ? linkGraph[fawazId].ahmedbaset_id : null));
+  const lidwaId = activeDataset === 'native_lidwa' ? hadithId : (data.lidwa_id || (linkGraph.fawaz_to_lidwa ? (linkGraph.fawaz_to_lidwa[fawazId] || null) : null));
+  const abId = activeDataset === 'native_ahmedbaset' ? hadithId : (data.ab_id || (linkGraph.fawaz_to_ab ? linkGraph.fawaz_to_ab[fawazId] : (linkGraph[fawazId] ? linkGraph[fawazId].ahmedbaset_id : null)));
 
   const translationOptions = [];
   

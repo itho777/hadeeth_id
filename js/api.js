@@ -190,18 +190,26 @@ const HadeethAPI = {
   /**
    * Fetch full unified record for a single Hadith using HTTP Range Requests
    */
-  async getHadith(bookId, hadithNumber) {
+  async getHadith(bookId, hadithNumber, dsPrefix = 'fawaz') {
     try {
       let h = null;
       const idx = await this.fetchNdjsonIndex('api', bookId);
       if (idx && Array.isArray(idx)) {
-          const entry = idx.find(e => String(e.id) === String(hadithNumber) || String(e.lidwa_id) === String(hadithNumber));
+          const entry = idx.find(e => {
+              if (dsPrefix === 'lidwa') return String(e.lidwa_id) === String(hadithNumber);
+              if (dsPrefix === 'ab') return String(e.idInBook) === String(hadithNumber) || String(e.ab_id) === String(hadithNumber);
+              return String(e.id) === String(hadithNumber);
+          });
           if (entry) {
               const hadiths = await this.fetchNdjsonRange('api', bookId, entry.start, entry.end);
               h = hadiths[0] || null;
           } else {
               const allHadiths = await this.fetchNdjsonFull('api', bookId);
-              h = allHadiths.find(item => String(item.hadith_number) === String(hadithNumber) || String(item.id) === String(hadithNumber)) || null;
+              h = allHadiths.find(item => {
+                  if (dsPrefix === 'lidwa') return String(item.lidwa_id) === String(hadithNumber);
+                  if (dsPrefix === 'ab') return String(item.idInBook) === String(hadithNumber) || String(item.ab_id) === String(hadithNumber);
+                  return String(item.id) === String(hadithNumber) || String(item.hadith_number) === String(hadithNumber);
+              }) || null;
           }
       } else if (idx && idx.hadiths && idx.hadiths[hadithNumber]) {
           const range = idx.hadiths[hadithNumber];
@@ -209,7 +217,11 @@ const HadeethAPI = {
           h = hadiths[0] || null;
       } else {
           const allHadiths = await this.fetchNdjsonFull('api', bookId);
-          h = allHadiths.find(item => String(item.hadith_number) === String(hadithNumber) || String(item.id) === String(hadithNumber)) || null;
+          h = allHadiths.find(item => {
+                  if (dsPrefix === 'lidwa') return String(item.lidwa_id) === String(hadithNumber);
+                  if (dsPrefix === 'ab') return String(item.idInBook) === String(hadithNumber) || String(item.ab_id) === String(hadithNumber);
+                  return String(item.id) === String(hadithNumber) || String(item.hadith_number) === String(hadithNumber);
+              }) || null;
       }
       
       // Backward compatibility wrapper for old hadith.html
