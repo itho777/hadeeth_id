@@ -1041,8 +1041,64 @@ async function loadHadithDetail() {
 
   const chapterMetaEn = document.querySelector('[data-hadith-chapter-en]');
   const chapterMetaId = document.querySelector('[data-hadith-chapter-id]');
-  if (chapterMetaEn) chapterMetaEn.innerText = `Chapter ${data.chapter_id}`;
-  if (chapterMetaId) chapterMetaId.innerText = `Bab ${data.chapter_id}`;
+
+  let chId = data.chapter_id;
+
+  let chTitleId = "";
+
+  let chTitleEn = "";
+
+  try {
+
+      const chapters = await window.HadeethAPI.getChapters(bookId);
+
+      if (chapters && chapters.length > 0) {
+
+          const hNum = parseInt(displayNum);
+
+          const foundCh = chapters.find(c => hNum >= parseInt(c.hadith_start) && hNum <= parseInt(c.hadith_end));
+
+          if (foundCh) {
+
+              chId = foundCh.chapter_number || foundCh.id || chId;
+
+              chTitleId = foundCh.title_id || "";
+
+              chTitleEn = foundCh.title_en || "";
+
+              
+
+              // Clean up titles (e.g. "bukhari_c1" -> 1 if id is used)
+
+              if (typeof chId === "string" && chId.includes("_c")) {
+
+                  chId = chId.split("_c")[1];
+
+              }
+
+          }
+
+      }
+
+  } catch(e) {}
+
+  
+
+  if (chId === undefined || chId === null || chId === "") chId = "?";
+
+  
+
+  if (chapterMetaEn) {
+
+      chapterMetaEn.innerText = chTitleEn ? `Chapter ${chId}: ${chTitleEn}` : `Chapter ${chId}`;
+
+  }
+
+  if (chapterMetaId) {
+
+      chapterMetaId.innerText = chTitleId ? `Bab ${chId}: ${chTitleId}` : `Bab ${chId}`;
+
+  }
 
   // Next / Prev buttons
   const prevBtn = document.getElementById('prev-hadith-btn');
