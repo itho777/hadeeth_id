@@ -908,13 +908,13 @@ const TafseerLinker = {
     });
     
     // 3. (V. 3:144) or (V.3:144)
-    out = out.replace(/\(V\.\s*(\d+)\s*:\s*(\d+)(?:-\d+)?\)/gi, (match, s, a) => {
+    out = out.replace(/\(\s*V\.\s*(\d+)\s*:\s*(\d+)(?:\s*-\s*\d+)?\s*\)/gi, (match, s, a) => {
         return renderLink(s, a, match);
     });
     
     // 4. (75.16) or (75.16-17) 
     // We only want to link if it's enclosed in parentheses or quotes, and looks like a sura.verse format.
-    out = out.replace(/\((\d+)\.(\d+)(?:-\d+)?\)/gi, (match, s, a) => {
+    out = out.replace(/\(\s*(\d+)\s*\.\s*(\d+)(?:\s*-\s*\d+)?\s*\)/gi, (match, s, a) => {
         let sNum = parseInt(s);
         let aNum = parseInt(a);
         if (sNum >= 1 && sNum <= 114 && aNum >= 1 && aNum <= 286) {
