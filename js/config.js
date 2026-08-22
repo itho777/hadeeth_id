@@ -10,4 +10,5 @@ window.SUPABASE_CONFIG = {
 
 window.ADMIN_EMAILS = [
     "admin@hadeeth.id", 
+    "info@hadeeth.id"
 ];
