@@ -1,17 +1,15 @@
+// Initialize Supabase Client immediately
+if (typeof supabase !== "undefined" && window.SUPABASE_CONFIG && window.SUPABASE_CONFIG.URL !== "YOUR_SUPABASE_PROJECT_URL_HERE") {
+    window.supabaseClient = supabase.createClient(
+        window.SUPABASE_CONFIG.URL, 
+        window.SUPABASE_CONFIG.ANON_KEY
+    );
+} else {
+    console.warn("Supabase Config not set or supabase script not loaded! Auth functions will fail.");
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Initialize Supabase Client
-    if (!window.SUPABASE_CONFIG || window.SUPABASE_CONFIG.URL === "YOUR_SUPABASE_PROJECT_URL_HERE") {
-        console.warn("Supabase Config not set! Auth functions will fail.");
-    }
-    
-    // Only initialize if supabase client is available
-    if (typeof supabase !== "undefined") {
-        window.supabaseClient = supabase.createClient(
-            window.SUPABASE_CONFIG.URL, 
-            window.SUPABASE_CONFIG.ANON_KEY
-        );
-        
+    if (window.supabaseClient) {
         // Listen to auth state changes
         window.supabaseClient.auth.onAuthStateChange((event, session) => {
             updateAuthUI(session);
@@ -50,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (session && session.user) {
             const user = session.user;
             // Get best display name
-            let displayName = user.user_metadata?.full_name || user.email.split("@")[0];
+            let displayName = (user.user_metadata && user.user_metadata.full_name) ? user.user_metadata.full_name : user.email.split("@")[0];
             
             if (loginBtn) loginBtn.classList.add("hidden");
             if (profileBtn) profileBtn.classList.remove("hidden");
