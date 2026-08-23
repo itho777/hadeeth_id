@@ -1022,13 +1022,13 @@ async function loadHadithDetail() {
 
   // Extract variables
   const bookName = (bookId === 'nawawi' ? 'Forty Nawawi' : bookId.toUpperCase());
-  const displayNum = (localStorage.getItem('numbering_system') === 'lidwa' && data.lidwa_id) ? data.lidwa_id : data.hadith_number;
+  const displayNum = (activeDataset === 'native_lidwa' && data.lidwa_id) ? data.lidwa_id : ((activeDataset === 'native_ahmedbaset' && data.ab_id) ? data.ab_id : (data.hadith_number || data.id));
   const titleTextEn = `Hadith #${displayNum}`;
   const titleTextId = `Hadits #${displayNum}`;
   
   document.title = `${bookName} Hadith #${displayNum} - HADEETH.ID`;
   
-  if (window.LastReadTracker) window.LastReadTracker.save(bookId, data.hadith_number, bookName, `${bookName} Hadith #${data.hadith_number}`);
+  if (window.LastReadTracker) window.LastReadTracker.save(bookId, displayNum, bookName, `${bookName} Hadith #${displayNum}`);
 
   // Update Breadcrumbs & Meta
   const bcBook = document.querySelector('[data-breadcrumb-book]');
