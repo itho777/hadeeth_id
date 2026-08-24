@@ -2532,6 +2532,118 @@ async function loadChaptersList() {
   const bookId = (params.get('book') || 'bukhari').toLowerCase();
 
   const bookMasterDict = {
+    riyad: {
+      name: 'Riyadhus Shalihin',
+      ar: 'رياض الصالحين',
+      author: 'Imam an-Nawawi',
+      authorId: 'rawi_bukhari',
+      type: 'Jawami',
+      badgeClass: 'bg-teal-600 text-white',
+      desc: 'The Gardens of the Righteous, a popular and highly authenticated collection of hadiths by Imam an-Nawawi.',
+      desc_id: 'Taman Orang-Orang Shalih, koleksi hadits populer dan sangat otentik karya Imam an-Nawawi.',
+      kitabCount: '📚 19 Kitab',
+      hadithCount: '📖 1.896 Hadits',
+      authenticity: '⭐️ Shahih/Hasan',
+      datasetInfo: {
+        native_ahmedbaset: { kitab: '📚 19 Kitab', hadith: '📖 1.896 Hadits', numbering: 'Penomoran: AhmedBaset (1-1896)' }
+      }
+    },
+    shamail: {
+      name: "Shama'il Muhammadiyah",
+      ar: 'الشمائل المحمدية',
+      author: 'Imam al-Tirmidhi',
+      authorId: 'rawi_al_tirmidhi',
+      type: 'Shamail',
+      badgeClass: 'bg-blue-600 text-white',
+      desc: 'A collection of hadiths detailing the moral and physical characteristics of the Prophet Muhammad.',
+      desc_id: 'Koleksi hadits yang merinci ciri-ciri fisik dan moral Nabi Muhammad.',
+      kitabCount: '📚 56 Kitab',
+      hadithCount: '📖 415 Hadits',
+      authenticity: '⭐️ Shamail',
+      datasetInfo: {
+        native_ahmedbaset: { kitab: '📚 56 Kitab', hadith: '📖 415 Hadits', numbering: 'Penomoran: AhmedBaset (1-415)' }
+      }
+    },
+    bulugh: {
+      name: 'Bulugh al-Maram',
+      ar: 'بلوغ المرام',
+      author: 'Ibn Hajar al-Asqalani',
+      authorId: 'rawi_bukhari',
+      type: 'Ahkam',
+      badgeClass: 'bg-indigo-600 text-white',
+      desc: 'A comprehensive collection of hadiths pertaining to Islamic jurisprudence (Ahkam).',
+      desc_id: 'Koleksi komprehensif hadits-hadits yang berkaitan dengan fikih Islam (Ahkam).',
+      kitabCount: '📚 16 Kitab',
+      hadithCount: '📖 1.568 Hadits',
+      authenticity: '⭐️ Ahkam',
+      datasetInfo: {
+        native_ahmedbaset: { kitab: '📚 16 Kitab', hadith: '📖 1.568 Hadits', numbering: 'Penomoran: AhmedBaset (1-1568)' }
+      }
+    },
+    adab: {
+      name: 'Al-Adab Al-Mufrad',
+      ar: 'الأدب المفرد',
+      author: 'Imam al-Bukhari',
+      authorId: 'rawi_bukhari',
+      type: 'Adab',
+      badgeClass: 'bg-rose-600 text-white',
+      desc: 'A topical book of hadiths collected by Imam al-Bukhari focusing on Islamic morals and manners.',
+      desc_id: 'Buku topikal hadits yang dikumpulkan oleh Imam al-Bukhari dengan fokus pada moral dan adab Islam.',
+      kitabCount: '📚 1 Kitab',
+      hadithCount: '📖 1.322 Hadits',
+      authenticity: '⭐️ Adab',
+      datasetInfo: {
+        native_ahmedbaset: { kitab: '📚 1 Kitab', hadith: '📖 1.322 Hadits', numbering: 'Penomoran: AhmedBaset (1-1322)' }
+      }
+    },
+    mishkat: {
+      name: 'Mishkat al-Masabih',
+      ar: 'مشكاة المصابيح',
+      author: 'Al-Tabrizi',
+      authorId: 'rawi_bukhari',
+      type: 'Jawami',
+      badgeClass: 'bg-teal-700 text-white',
+      desc: 'An expanded version of Al-Baghawi\'s Masabih al-Sunnah by Al-Tabrizi.',
+      desc_id: 'Versi perluasan dari Masabih al-Sunnah karya Al-Baghawi oleh Al-Tabrizi.',
+      kitabCount: '📚 29 Kitab',
+      hadithCount: '📖 6.294 Hadits',
+      authenticity: '⭐️ Jawami',
+      datasetInfo: {
+        native_ahmedbaset: { kitab: '📚 29 Kitab', hadith: '📖 6.294 Hadits', numbering: 'Penomoran: AhmedBaset (1-6294)' }
+      }
+    },
+    qudsi: {
+      name: '40 Hadith Qudsi',
+      ar: 'الأحاديث القدسية',
+      author: 'Multiple',
+      authorId: 'rawi_bukhari',
+      type: 'Qudsi',
+      badgeClass: 'bg-amber-600 text-white',
+      desc: 'A collection of 40 Hadith Qudsi (sacred narrations where the Prophet relays the words of Allah).',
+      desc_id: 'Koleksi 40 Hadits Qudsi (riwayat suci di mana Nabi menyampaikan firman Allah).',
+      kitabCount: '📚 1 Kitab',
+      hadithCount: '📖 40 Hadits',
+      authenticity: '⭐️ Qudsi',
+      datasetInfo: {
+        native_ahmedbaset: { kitab: '📚 1 Kitab', hadith: '📖 40 Hadits', numbering: 'Penomoran: AhmedBaset (1-40)' }
+      }
+    },
+    dehlawi: {
+      name: 'Shah Waliullah 40 Hadith',
+      ar: 'أربعون حديثا لولي الله الدهلوي',
+      author: 'Shah Waliullah Dehlawi',
+      authorId: 'rawi_bukhari',
+      type: 'Arbaeen',
+      badgeClass: 'bg-amber-700 text-white',
+      desc: 'A collection of 40 comprehensive hadiths compiled by Shah Waliullah Dehlawi.',
+      desc_id: 'Koleksi 40 hadits komprehensif yang disusun oleh Shah Waliullah Dehlawi.',
+      kitabCount: '📚 1 Kitab',
+      hadithCount: '📖 40 Hadits',
+      authenticity: '⭐️ Arbaeen',
+      datasetInfo: {
+        native_ahmedbaset: { kitab: '📚 1 Kitab', hadith: '📖 40 Hadits', numbering: 'Penomoran: AhmedBaset (1-40)' }
+      }
+    },
     tabarani: {
       name: 'Al-Mujam al-Kabir',
       ar: 'المعجم الكبير',
