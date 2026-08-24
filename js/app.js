@@ -2703,7 +2703,7 @@ async function loadChaptersList() {
       desc_id: "Diakui oleh seluruh ulama Islam sebagai koleksi Jami' tertinggi dari Hadits, disusun dengan kriteria otentikasi yang tak tertandingi.",
       kitabCount: '📚 97 Kitab',
       hadithCount: '📖 7.563 Hadits',
-      authenticity: 'â­ï¸ 100% Sahih',
+      authenticity: 'â­ï¸ ⭐️ 100% Sahih',
       datasetInfo: {
         primary:           { kitab: '📚 97 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
         native_lidwa:      { kitab: '📚 77 Kitab', hadith: '📖 7.008 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–7008)' }
@@ -2720,7 +2720,7 @@ async function loadChaptersList() {
       desc_id: "Koleksi Jami' terbaik yang terkenal dengan organisasi tematik yang ketat dan rantai periwayatan paralel (turuq) yang komprehensif.",
       kitabCount: '📚 57 Kitab',
       hadithCount: '📖 7.563 Hadits',
-      authenticity: 'â­ï¸ 100% Sahih',
+      authenticity: 'â­ï¸ ⭐️ 100% Sahih',
       datasetInfo: {
         primary:           { kitab: '📚 57 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
         native_lidwa:      { kitab: '📚 —', hadith: '📖 5.362 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa (1–5362) · tidak ada pembagian kitab dari sumber Lidwa' }
@@ -2737,7 +2737,7 @@ async function loadChaptersList() {
       desc_id: "Koleksi Jami' yang terkenal dengan penilaian hadits secara eksplisit (Sahih, Hasan, Gharib) dan pendapat hukum ulama awal.",
       kitabCount: '📚 49 Kitab',
       hadithCount: '📖 3.956 Hadits',
-      authenticity: "â­ï¸ Jami' Tergrading",
+      authenticity: "â­ï¸ ⭐️ Jami' Tergrading",
       datasetInfo: {
         primary:           { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–3956)' },
         native_lidwa:      { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–3956)' }
@@ -3107,7 +3107,7 @@ async function loadChaptersList() {
       const chNum = ch.chapter_number !== undefined && ch.chapter_number !== null && ch.chapter_number !== '' ? ch.chapter_number : (idx + 1);
       const titleEn = ch.title_en || ch.name_en || ch.title || `Chapter ${chNum}`;
       const titleId = ch.title_id || ch.name_id || titleEn;
-      const titleAr = ch.title_ar || ch.name_ar || ch.arabic || '';
+      const titleAr = ch.title_ar || ch.name_ar || (ch.arabic || ch.title_ar) || '';
       const hadithRange = ch.hadith_range
         || (ch.hadith_start != null ? `Hadith ${ch.hadith_start} – ${ch.hadith_end}` : `Chapter ${chNum}`);
       const hadithCount = ch.hadith_count != null ? ch.hadith_count
@@ -3178,8 +3178,8 @@ async function loadChaptersList() {
       let html = '';
       abData.chapters.forEach((ch, idx) => {
         const chNum = ch.id;
-        const titleEn = ch.english || `Chapter ${chNum}`;
-        const titleAr = ch.arabic || '';
+        const titleEn = (ch.english || ch.title_en) || `Chapter ${chNum}`;
+        const titleAr = (ch.arabic || ch.title_ar) || '';
         const count = chCounts[chNum] || 0;
 
         html += `
