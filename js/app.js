@@ -2363,7 +2363,7 @@ async function loadHadithList() {
         'ibnukhuzaimah': 'Shahih Ibnu Khuzaimah (1808)',
         'ibnuhibban': 'Shahih Ibnu Hibban (2769)',
         'mustadrak': 'Mustadrak Al-Hakim (673)',
-        'daruquthni': 'Sunan Daruquthni (4790)'
+        'daruquthni': 'Sunan Daruquthni (236)'
       };
       const bookNamesId = {
         'bukhari': 'Shahih Bukhari (7.589 hadits)',
@@ -2372,7 +2372,7 @@ async function loadHadithList() {
         'ibnukhuzaimah': 'Shahih Ibnu Khuzaimah (1808)',
         'ibnuhibban': 'Shahih Ibnu Hibban (2769)',
         'mustadrak': 'Mustadrak Al-Hakim (673)',
-        'daruquthni': 'Sunan Daruquthni (4790)'
+        'daruquthni': 'Sunan Daruquthni (236)'
       };
       
       transparencyFooter = `
@@ -2942,9 +2942,9 @@ async function loadChaptersList() {
       desc: 'A collection focusing on legal hadiths and detailing hidden defects (ilal) in chains.',
       desc_id: 'Koleksi yang berfokus pada hadits fiqih dan merinci cacat tersembunyi (ilal) dalam sanad.',
       kitabCount: '📚 1 Kitab',
-      hadithCount: '📖 239 Hadits',
+      hadithCount: '📖 236 Hadits',
       authenticity: '⭐️ Sunan',
-      datasetInfo: { native_mjna: { kitab: '📚 1 Kitab', hadith: '📖 239 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–239)' } }
+      datasetInfo: { native_mjna: { kitab: '📚 1 Kitab', hadith: '📖 236 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–239)' } }
     }
   };
     const meta = bookMasterDict[bookId] || {
