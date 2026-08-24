@@ -2754,7 +2754,7 @@ async function loadChaptersList() {
       desc_id: 'Terutama berfokus pada hukum fiqih (Ahkam) yang digunakan sebagai dalil pokok oleh para ulama Fiqih Sunni.',
       kitabCount: '📚 43 Kitab',
       hadithCount: '📖 5.274 Hadits',
-      authenticity: 'â­ï¸ Korpus Sunan',
+      authenticity: '⭐️ Korpus Sunan',
       datasetInfo: {
         primary:           { kitab: '📚 43 Kitab', hadith: '📖 5.274 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–5274)' },
         native_lidwa:      { kitab: '📚 43 Kitab', hadith: '📖 5.274 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5274)' }
@@ -2788,7 +2788,7 @@ async function loadChaptersList() {
       desc_id: "Terkenal dengan susunan sistematis dan periwayatan unik (zawa'id) yang memperluas khazanah fiqih Islam.",
       kitabCount: '📚 37 Kitab',
       hadithCount: '📖 4.341 Hadits',
-      authenticity: 'â­ï¸ Korpus Sunan',
+      authenticity: '⭐️ Korpus Sunan',
       datasetInfo: {
         primary:           { kitab: '📚 37 Kitab', hadith: '📖 4.341 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–4341)' },
         native_lidwa:      { kitab: '📚 37 Kitab', hadith: '📖 4.341 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–4341)' }
@@ -2839,7 +2839,7 @@ async function loadChaptersList() {
       desc_id: 'Koleksi Hadits yang sangat dihormati dengan standar ketat, sering dianggap setara dengan Kutub al-Sittah.',
       kitabCount: '📚 24 Kitab',
       hadithCount: '📖 3.367 Hadits',
-      authenticity: 'â­ï¸ Korpus Sunan',
+      authenticity: '⭐️ Korpus Sunan',
       datasetInfo: {
         primary:           { kitab: '📚 24 Kitab', hadith: '📖 3.367 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–3367)' },
         native_lidwa:      { kitab: '📚 24 Kitab', hadith: '📖 3.367 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–3367)' }
