@@ -25,7 +25,8 @@
       "urd-bukhari"
     ],
     "total_hadiths_lidwa": 7008,
-    "book_type_ar": "الجامع"
+    "book_type_ar": "الجامع",
+    "hadiths_count": 6999
   },
   {
     "id": "muslim",
@@ -53,7 +54,8 @@
       "urd-muslim"
     ],
     "total_hadiths_lidwa": 5362,
-    "book_type_ar": "الجامع"
+    "book_type_ar": "الجامع",
+    "hadiths_count": 2995
   },
   {
     "id": "abudawud",
@@ -80,7 +82,8 @@
       "urd-abudawud"
     ],
     "total_hadiths_lidwa": 5274,
-    "book_type_ar": "السنن"
+    "book_type_ar": "السنن",
+    "hadiths_count": 4585
   },
   {
     "id": "tirmidhi",
@@ -105,7 +108,8 @@
       "urd-tirmidhi"
     ],
     "total_hadiths_lidwa": 3956,
-    "book_type_ar": "الجامع"
+    "book_type_ar": "الجامع",
+    "hadiths_count": 3841
   },
   {
     "id": "nasai",
@@ -131,7 +135,8 @@
       "urd-nasai"
     ],
     "total_hadiths_lidwa": 5662,
-    "book_type_ar": "السنن"
+    "book_type_ar": "السنن",
+    "hadiths_count": 5655
   },
   {
     "id": "ibnmajah",
@@ -157,7 +162,8 @@
       "urd-ibnmajah"
     ],
     "total_hadiths_lidwa": 4341,
-    "book_type_ar": "السنن"
+    "book_type_ar": "السنن",
+    "hadiths_count": 4327
   },
   {
     "id": "malik",
@@ -183,7 +189,8 @@
       "urd-malik"
     ],
     "total_hadiths_lidwa": 1594,
-    "book_type_ar": "الموطأ"
+    "book_type_ar": "الموطأ",
+    "hadiths_count": 1592
   },
   {
     "id": "darimi",
@@ -200,7 +207,8 @@
     "order_index": 8,
     "editions": [],
     "total_hadiths_lidwa": 3367,
-    "book_type_ar": "السنن"
+    "book_type_ar": "السنن",
+    "hadiths_count": 3546
   },
   {
     "id": "ahmad",
@@ -217,7 +225,8 @@
     "order_index": 9,
     "editions": [],
     "total_hadiths_lidwa": 26363,
-    "book_type_ar": "المسند"
+    "book_type_ar": "المسند",
+    "hadiths_count": 26363
   },
   {
     "id": "nawawi",
@@ -240,7 +249,8 @@
       "fra-nawawi",
       "tur-nawawi"
     ],
-    "book_type_ar": "جوامع الكلم"
+    "book_type_ar": "جوامع الكلم",
+    "hadiths_count": 42
   },
   {
     "id": "qudsi",
@@ -261,7 +271,8 @@
       "eng-qudsi",
       "fra-qudsi"
     ],
-    "book_type_ar": "جوامع الكلم"
+    "book_type_ar": "جوامع الكلم",
+    "hadiths_count": 40
   },
   {
     "id": "shah",
@@ -277,7 +288,8 @@
     "grade_summary": "Varies",
     "order_index": 12,
     "editions": [],
-    "book_type_ar": "جوامع الكلم"
+    "book_type_ar": "جوامع الكلم",
+    "hadiths_count": 40
   },
   {
     "id": "adab",
@@ -293,7 +305,8 @@
     "grade_summary": "Varies",
     "order_index": 13,
     "editions": [],
-    "book_type_ar": "متنوع"
+    "book_type_ar": "متنوع",
+    "hadiths_count": 1326
   },
   {
     "id": "bulugh",
@@ -309,7 +322,8 @@
     "grade_summary": "Varies",
     "order_index": 14,
     "editions": [],
-    "book_type_ar": "أحكام"
+    "book_type_ar": "أحكام",
+    "hadiths_count": 1767
   },
   {
     "id": "mishkat",
@@ -325,7 +339,8 @@
     "grade_summary": "Varies",
     "order_index": 15,
     "editions": [],
-    "book_type_ar": "متنوع"
+    "book_type_ar": "متنوع",
+    "hadiths_count": 4428
   },
   {
     "id": "riyad",
@@ -341,7 +356,8 @@
     "grade_summary": "صحيح (Sahih)",
     "order_index": 16,
     "editions": [],
-    "book_type_ar": "متنوع"
+    "book_type_ar": "متنوع",
+    "hadiths_count": 1896
   },
   {
     "id": "shamail",
@@ -357,7 +373,8 @@
     "grade_summary": "Varies",
     "order_index": 17,
     "editions": [],
-    "book_type_ar": "متنوع"
+    "book_type_ar": "متنوع",
+    "hadiths_count": 402
   },
   {
     "id": "tabarani",
@@ -390,7 +407,8 @@
     "order_index": 19,
     "editions": [],
     "total_hadiths_lidwa": 1800,
-    "book_type_ar": "المسند"
+    "book_type_ar": "المسند",
+    "hadiths_count": 1800
   },
   {
     "id": "riyad_arab",

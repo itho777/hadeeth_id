@@ -7,7 +7,7 @@
     "title_ar": "كتاب الطهارة عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bersuci",
     "hadith_start": 1,
-    "hadith_end": 148,
+    "hadith_end": 160,
     "hadith_count": 148
   },
   {
@@ -17,8 +17,8 @@
     "title_en": "The Book on Salat (Prayer)",
     "title_ar": "كتاب الصلاة",
     "title_id": "Shalat",
-    "hadith_start": 149,
-    "hadith_end": 451,
+    "hadith_start": 163,
+    "hadith_end": 489,
     "hadith_count": 304
   },
   {
@@ -28,8 +28,8 @@
     "title_en": "The Book on Al-Witr",
     "title_ar": "أَبْوَابُ الْوِتْرِ",
     "title_id": "Kitab Witir",
-    "hadith_start": 452,
-    "hadith_end": 487,
+    "hadith_start": 490,
+    "hadith_end": 530,
     "hadith_count": 35
   },
   {
@@ -39,8 +39,8 @@
     "title_en": "The Book on the Day of Friday",
     "title_ar": "كِتَاب الْجُمُعَةِ عَنْ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ",
     "title_id": "Shalat Jumat",
-    "hadith_start": 488,
-    "hadith_end": 529,
+    "hadith_start": 531,
+    "hadith_end": 580,
     "hadith_count": 42
   },
   {
@@ -50,8 +50,8 @@
     "title_en": "The Book on the Two Eids",
     "title_ar": "أَبْوَابُ الْعِيدَيْنِ عَنْ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ",
     "title_id": "Dua Hari Raya",
-    "hadith_start": 530,
-    "hadith_end": 543,
+    "hadith_start": 581,
+    "hadith_end": 597,
     "hadith_count": 14
   },
   {
@@ -61,8 +61,8 @@
     "title_en": "The Book on Traveling",
     "title_ar": "أَبْوَابُ السَّفَرِ",
     "title_id": "Kitab Safar (Perjalanan)",
-    "hadith_start": 544,
-    "hadith_end": 616,
+    "hadith_start": 599,
+    "hadith_end": 680,
     "hadith_count": 73
   },
   {
@@ -72,8 +72,8 @@
     "title_en": "The Book on Zakat",
     "title_ar": "كتاب الزكاة عن رسول الله صلى الله عليه وسلم",
     "title_id": "Zakat",
-    "hadith_start": 617,
-    "hadith_end": 681,
+    "hadith_start": 681,
+    "hadith_end": 750,
     "hadith_count": 65
   },
   {
@@ -83,8 +83,8 @@
     "title_en": "The Book on Fasting",
     "title_ar": "كتاب الصوم عن رسول الله صلى الله عليه وسلم",
     "title_id": "Puasa",
-    "hadith_start": 682,
-    "hadith_end": 808,
+    "hadith_start": 751,
+    "hadith_end": 882,
     "hadith_count": 127
   },
   {
@@ -94,8 +94,8 @@
     "title_en": "The Book on Hajj",
     "title_ar": "كتاب الحج عن رسول الله صلى الله عليه وسلم",
     "title_id": "Haji",
-    "hadith_start": 809,
-    "hadith_end": 964,
+    "hadith_start": 883,
+    "hadith_end": 1043,
     "hadith_count": 158
   },
   {
@@ -105,8 +105,8 @@
     "title_en": "The Book on Jana''iz (Funerals)",
     "title_ar": "كتاب الجنائز عن رسول الله صلى الله عليه وسلم",
     "title_id": "Jenazah",
-    "hadith_start": 965,
-    "hadith_end": 1079,
+    "hadith_start": 1044,
+    "hadith_end": 1159,
     "hadith_count": 115
   },
   {
@@ -116,8 +116,8 @@
     "title_en": "The Book on Marriage",
     "title_ar": "كتاب النكاح عن رسول الله صلى الله عليه وسلم",
     "title_id": "Pernikahan",
-    "hadith_start": 1080,
-    "hadith_end": 1145,
+    "hadith_start": 1160,
+    "hadith_end": 1224,
     "hadith_count": 67
   },
   {
@@ -127,8 +127,8 @@
     "title_en": "The Book on Suckling",
     "title_ar": "كتاب الرضاع",
     "title_id": "Kitab Menyusui",
-    "hadith_start": 1146,
-    "hadith_end": 1174,
+    "hadith_start": 1225,
+    "hadith_end": 1253,
     "hadith_count": 29
   },
   {
@@ -138,8 +138,8 @@
     "title_en": "The Book on Divorce and Li'an",
     "title_ar": "كتاب الطلاق واللعان عن رسول الله صلى الله عليه وسلم",
     "title_id": "Kitab Talak dan Li'an",
-    "hadith_start": 1175,
-    "hadith_end": 1204,
+    "hadith_start": 1254,
+    "hadith_end": 1283,
     "hadith_count": 31
   },
   {
@@ -149,8 +149,8 @@
     "title_en": "The Book on Business",
     "title_ar": "كتاب البيوع عن رسول الله صلى الله عليه وسلم",
     "title_id": "Jual Beli",
-    "hadith_start": 1205,
-    "hadith_end": 1321,
+    "hadith_start": 1284,
+    "hadith_end": 1401,
     "hadith_count": 125
   },
   {
@@ -160,8 +160,8 @@
     "title_en": "The Chapters On Judgements From The Messenger of Allah",
     "title_ar": "كتاب الأحكام عن رسول الله صلى الله عليه وسلم",
     "title_id": "Peradilan",
-    "hadith_start": 1322,
-    "hadith_end": 1385,
+    "hadith_start": 1402,
+    "hadith_end": 1465,
     "hadith_count": 66
   },
   {
@@ -171,8 +171,8 @@
     "title_en": "The Book on Blood Money",
     "title_ar": "كتاب الديات عن رسول الله صلى الله عليه وسلم",
     "title_id": "Kitab Diyat",
-    "hadith_start": 1386,
-    "hadith_end": 1422,
+    "hadith_start": 1466,
+    "hadith_end": 1502,
     "hadith_count": 39
   },
   {
@@ -182,8 +182,8 @@
     "title_en": "The Book on Legal Punishments (Al-Hudud)",
     "title_ar": "كتاب الحدود عن رسول الله صلى الله عليه وسلم",
     "title_id": "Hudud",
-    "hadith_start": 1423,
-    "hadith_end": 1463,
+    "hadith_start": 1503,
+    "hadith_end": 1543,
     "hadith_count": 47
   },
   {
@@ -193,8 +193,8 @@
     "title_en": "The Book on Hunting",
     "title_ar": "كتاب الصيد والذبائح عن رسول الله صلى الله عليه وسلم",
     "title_id": "Kitab Berburu",
-    "hadith_start": 1464,
-    "hadith_end": 1492,
+    "hadith_start": 1544,
+    "hadith_end": 1567,
     "hadith_count": 36
   },
   {
@@ -204,8 +204,8 @@
     "title_en": "The Book on Sacrifices",
     "title_ar": "كتاب الأضاحى عن رسول الله صلى الله عليه وسلم",
     "title_id": "Kitab Kurban",
-    "hadith_start": 1493,
-    "hadith_end": 1523,
+    "hadith_start": 1568,
+    "hadith_end": 1597,
     "hadith_count": 36
   },
   {
@@ -215,8 +215,8 @@
     "title_en": "The Book on Vows and Oaths",
     "title_ar": "كتاب النذور والأيمان عن رسول الله صلى الله عليه وسلم",
     "title_id": "Kitab Nazar dan Sumpah",
-    "hadith_start": 1524,
-    "hadith_end": 1547,
+    "hadith_start": 1598,
+    "hadith_end": 1622,
     "hadith_count": 26
   },
   {
@@ -226,8 +226,8 @@
     "title_en": "The Book on Military Expeditions",
     "title_ar": "كتاب السير عن رسول الله صلى الله عليه وسلم",
     "title_id": "Kitab Ekspedisi Militer",
-    "hadith_start": 1548,
-    "hadith_end": 1618,
+    "hadith_start": 1623,
+    "hadith_end": 1695,
     "hadith_count": 83
   },
   {
@@ -237,8 +237,8 @@
     "title_en": "The Book on Virtues of Jihad",
     "title_ar": "كتاب فضائل الجهاد عن رسول الله صلى الله عليه وسلم",
     "title_id": "Jihad",
-    "hadith_start": 1619,
-    "hadith_end": 1669,
+    "hadith_start": 1697,
+    "hadith_end": 1747,
     "hadith_count": 52
   },
   {
@@ -248,8 +248,8 @@
     "title_en": "The Book on Jihad",
     "title_ar": "كتاب الجهاد عن رسول الله صلى الله عليه وسلم",
     "title_id": "Kitab Jihad",
-    "hadith_start": 1670,
-    "hadith_end": 1719,
+    "hadith_start": 1748,
+    "hadith_end": 1797,
     "hadith_count": 53
   },
   {
@@ -259,8 +259,8 @@
     "title_en": "The Book on Clothing",
     "title_ar": "كتاب اللباس",
     "title_id": "Kitab Pakaian",
-    "hadith_start": 1720,
-    "hadith_end": 1787,
+    "hadith_start": 1798,
+    "hadith_end": 1864,
     "hadith_count": 76
   },
   {
@@ -270,8 +270,8 @@
     "title_en": "The Book on Food",
     "title_ar": "كتاب الأطعمة عن رسول الله صلى الله عليه وسلم",
     "title_id": "Kitab Makanan",
-    "hadith_start": 1788,
-    "hadith_end": 1860,
+    "hadith_start": 1865,
+    "hadith_end": 1937,
     "hadith_count": 78
   },
   {
@@ -281,8 +281,8 @@
     "title_en": "The Book on Drinks",
     "title_ar": "كتاب الأشربة عن رسول الله صلى الله عليه وسلم",
     "title_id": "Kitab Minuman",
-    "hadith_start": 1861,
-    "hadith_end": 1896,
+    "hadith_start": 1938,
+    "hadith_end": 1973,
     "hadith_count": 37
   },
   {
@@ -292,8 +292,8 @@
     "title_en": "Chapters on Righteousness And Maintaining Good Relations With Relatives",
     "title_ar": "كتاب البر والصلة عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Kebaikan dan Silaturahmi",
-    "hadith_start": 1897,
-    "hadith_end": 2035,
+    "hadith_start": 1974,
+    "hadith_end": 2109,
     "hadith_count": 141
   },
   {
@@ -303,8 +303,8 @@
     "title_en": "Chapters on Medicine",
     "title_ar": "كتاب الطب عن رسول اللَّهِ صلى الله عليه وسلم",
     "title_id": "Pengobatan",
-    "hadith_start": 2036,
-    "hadith_end": 2088,
+    "hadith_start": 2110,
+    "hadith_end": 2162,
     "hadith_count": 53
   },
   {
@@ -314,8 +314,8 @@
     "title_en": "Chapters On Inheritance",
     "title_ar": "كتاب الفرائض عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Warisan",
-    "hadith_start": 2090,
-    "hadith_end": 2115,
+    "hadith_start": 2164,
+    "hadith_end": 2189,
     "hadith_count": 26
   },
   {
@@ -325,8 +325,8 @@
     "title_en": "Chapters On Wasaya (Wills and Testament)",
     "title_ar": "كتاب الوصايا عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Wasiat",
-    "hadith_start": 2116,
-    "hadith_end": 2124,
+    "hadith_start": 2190,
+    "hadith_end": 2198,
     "hadith_count": 9
   },
   {
@@ -336,8 +336,8 @@
     "title_en": "Chapters On Wala' And Gifts",
     "title_ar": "كتاب الولاء والهبة عن رسول الله صلى الله عليه وسلم",
     "title_id": "Hadiah dan Hibah",
-    "hadith_start": 2125,
-    "hadith_end": 2132,
+    "hadith_start": 2199,
+    "hadith_end": 2206,
     "hadith_count": 9
   },
   {
@@ -347,8 +347,8 @@
     "title_en": "Chapters On Al-Qadar",
     "title_ar": "كتاب القدر عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Takdir (Al-Qadar)",
-    "hadith_start": 2133,
-    "hadith_end": 2157,
+    "hadith_start": 2207,
+    "hadith_end": 2231,
     "hadith_count": 25
   },
   {
@@ -358,8 +358,8 @@
     "title_en": "Chapters On Al-Fitan",
     "title_ar": "كتاب الفتن عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Fitnah",
-    "hadith_start": 2158,
-    "hadith_end": 2269,
+    "hadith_start": 2232,
+    "hadith_end": 2347,
     "hadith_count": 112
   },
   {
@@ -369,8 +369,8 @@
     "title_en": "Chapters On Dreams",
     "title_ar": "كتاب الرؤيا عن رسول الله صلى الله عليه وسلم",
     "title_id": "Mimpi",
-    "hadith_start": 2270,
-    "hadith_end": 2294,
+    "hadith_start": 2347,
+    "hadith_end": 2372,
     "hadith_count": 25
   },
   {
@@ -380,8 +380,8 @@
     "title_en": "Chapters On Witnesses",
     "title_ar": "كتاب الشهادات عن رسول الله صلى الله عليه وسلم",
     "title_id": "Persaksian",
-    "hadith_start": 2295,
-    "hadith_end": 2303,
+    "hadith_start": 2373,
+    "hadith_end": 2381,
     "hadith_count": 10
   },
   {
@@ -391,8 +391,8 @@
     "title_en": "Chapters On Zuhd",
     "title_ar": "كتاب الزهد عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Zuhud",
-    "hadith_start": 2304,
-    "hadith_end": 2414,
+    "hadith_start": 2382,
+    "hadith_end": 2490,
     "hadith_count": 112
   },
   {
@@ -402,8 +402,8 @@
     "title_en": "Chapters on the description of the Day of Judgement, Ar-Riqaq, and Al-Wara'",
     "title_ar": "كتاب صفة القيامة والرقائق والورع عن رسول الله صلى الله",
     "title_id": "Bab Gambaran Kiamat, Ar-Riqaq, dan Al-Wara'",
-    "hadith_start": 2415,
-    "hadith_end": 2522,
+    "hadith_start": 2491,
+    "hadith_end": 2597,
     "hadith_count": 108
   },
   {
@@ -413,8 +413,8 @@
     "title_en": "Chapters on the description of Paradise",
     "title_ar": "كتاب صفة الجنة عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Gambaran Surga",
-    "hadith_start": 2523,
-    "hadith_end": 2735,
+    "hadith_start": 2598,
+    "hadith_end": 2811,
     "hadith_count": 50
   },
   {
@@ -424,8 +424,8 @@
     "title_en": "The Book on the Description of Hellfire",
     "title_ar": "كتاب صفة جهنم عن رسول الله صلى الله عليه وسلم",
     "title_id": "Kitab Gambaran Neraka",
-    "hadith_start": 2573,
-    "hadith_end": 2605,
+    "hadith_start": 2649,
+    "hadith_end": 2681,
     "hadith_count": 33
   },
   {
@@ -435,8 +435,8 @@
     "title_en": "The Book on Faith",
     "title_ar": "كتاب الإيمان عن رسول الله صلى الله عليه وسلم",
     "title_id": "Kitab Iman",
-    "hadith_start": 2606,
-    "hadith_end": 2644,
+    "hadith_start": 2682,
+    "hadith_end": 2720,
     "hadith_count": 39
   },
   {
@@ -446,8 +446,8 @@
     "title_en": "Chapters on Knowledge",
     "title_ar": "كتاب العلم عن رسول الله صلى الله عليه وسلم",
     "title_id": "Ilmu",
-    "hadith_start": 2645,
-    "hadith_end": 2687,
+    "hadith_start": 2721,
+    "hadith_end": 2763,
     "hadith_count": 43
   },
   {
@@ -457,8 +457,8 @@
     "title_en": "Chapters on Seeking Permission",
     "title_ar": "كتاب الاستئذان والآداب عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Meminta Izin",
-    "hadith_start": 2688,
-    "hadith_end": 2735,
+    "hadith_start": 2764,
+    "hadith_end": 2811,
     "hadith_count": 48
   },
   {
@@ -468,8 +468,8 @@
     "title_en": "Chapters on Manners",
     "title_ar": "كتاب الأدب عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Adab",
-    "hadith_start": 2736,
-    "hadith_end": 3093,
+    "hadith_start": 2811,
+    "hadith_end": 3169,
     "hadith_count": 135
   },
   {
@@ -479,8 +479,8 @@
     "title_en": "Chapters on Parables",
     "title_ar": "كتاب الأمثال عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Perumpamaan",
-    "hadith_start": 2859,
-    "hadith_end": 2874,
+    "hadith_start": 2935,
+    "hadith_end": 2950,
     "hadith_count": 17
   },
   {
@@ -490,8 +490,8 @@
     "title_en": "Chapters on The Virtues of the Qur'an",
     "title_ar": "كتاب ثواب القرآن عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Keutamaan Al-Qur'an",
-    "hadith_start": 2875,
-    "hadith_end": 2926,
+    "hadith_start": 2951,
+    "hadith_end": 3000,
     "hadith_count": 52
   },
   {
@@ -501,8 +501,8 @@
     "title_en": "Chapters on Recitation",
     "title_ar": "كتاب القراءات عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Bacaan Al-Qur'an",
-    "hadith_start": 2927,
-    "hadith_end": 2949,
+    "hadith_start": 3001,
+    "hadith_end": 3023,
     "hadith_count": 23
   },
   {
@@ -512,8 +512,8 @@
     "title_en": "Chapters on Tafsir",
     "title_ar": "كتاب تفسير القرآن عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Tafsir",
-    "hadith_start": 2950,
-    "hadith_end": 3369,
+    "hadith_start": 3024,
+    "hadith_end": 3447,
     "hadith_count": 421
   },
   {
@@ -523,8 +523,8 @@
     "title_en": "Chapters on Supplication",
     "title_ar": "كتاب الدعوات عن رسول الله صلى الله عليه وسلم",
     "title_id": "Doa",
-    "hadith_start": 3370,
-    "hadith_end": 3604,
+    "hadith_start": 3448,
+    "hadith_end": 3671,
     "hadith_count": 244
   },
   {
@@ -534,7 +534,7 @@
     "title_en": "Chapters on Virtues",
     "title_ar": "كتاب المناقب عن رسول الله صلى الله عليه وسلم",
     "title_id": "Bab Keutamaan",
-    "hadith_start": 3605,
+    "hadith_start": 3672,
     "hadith_end": 3956,
     "hadith_count": 356
   }

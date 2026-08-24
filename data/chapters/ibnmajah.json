@@ -6,8 +6,8 @@
     "title_en": "The Book of Purification and its Sunnah",
     "title_ar": "كتاب الطهارة وسننها",
     "title_id": "Bersuci",
-    "hadith_start": 267,
-    "hadith_end": 666,
+    "hadith_start": 271,
+    "hadith_end": 674,
     "hadith_count": 400
   },
   {
@@ -18,7 +18,7 @@
     "title_ar": "كتاب المقدمة",
     "title_id": "Sunnah",
     "hadith_start": 1,
-    "hadith_end": 266,
+    "hadith_end": 270,
     "hadith_count": 266
   },
   {
@@ -28,8 +28,8 @@
     "title_en": "The Book of the Prayer",
     "title_ar": "كتاب الصلاة",
     "title_id": "Shalat",
-    "hadith_start": 667,
-    "hadith_end": 705,
+    "hadith_start": 675,
+    "hadith_end": 713,
     "hadith_count": 39
   },
   {
@@ -39,8 +39,8 @@
     "title_en": "The Book of the Adhan and the Sunnah Regarding It",
     "title_ar": "كتاب الأذان والسنة فيها",
     "title_id": "Adzan",
-    "hadith_start": 706,
-    "hadith_end": 734,
+    "hadith_start": 714,
+    "hadith_end": 742,
     "hadith_count": 29
   },
   {
@@ -50,8 +50,8 @@
     "title_en": "The Book On The Mosques And The Congregations",
     "title_ar": "كتاب المساجد والجماعات",
     "title_id": "Masjid",
-    "hadith_start": 735,
-    "hadith_end": 802,
+    "hadith_start": 743,
+    "hadith_end": 810,
     "hadith_count": 68
   },
   {
@@ -61,8 +61,8 @@
     "title_en": "Establishing the Prayer and the Sunnah Regarding Them",
     "title_ar": "كتاب إقامة الصلاة والسنة فيها",
     "title_id": "Shalat",
-    "hadith_start": 803,
-    "hadith_end": 1432,
+    "hadith_start": 811,
+    "hadith_end": 1442,
     "hadith_count": 630
   },
   {
@@ -72,8 +72,8 @@
     "title_en": "Chapters Regarding Funerals",
     "title_ar": "كتاب الجنائز",
     "title_id": "Jenazah",
-    "hadith_start": 1433,
-    "hadith_end": 1637,
+    "hadith_start": 1443,
+    "hadith_end": 1647,
     "hadith_count": 205
   },
   {
@@ -83,8 +83,8 @@
     "title_en": "Fasting",
     "title_ar": "كتاب الصيام",
     "title_id": "Puasa",
-    "hadith_start": 1638,
-    "hadith_end": 1782,
+    "hadith_start": 1648,
+    "hadith_end": 1792,
     "hadith_count": 145
   },
   {
@@ -94,8 +94,8 @@
     "title_en": "The Chapters Regarding Zakat",
     "title_ar": "كتاب الزكاة",
     "title_id": "Zakat",
-    "hadith_start": 1783,
-    "hadith_end": 1844,
+    "hadith_start": 1793,
+    "hadith_end": 1854,
     "hadith_count": 62
   },
   {
@@ -105,8 +105,8 @@
     "title_en": "The Chapters on Marriage",
     "title_ar": "كتاب النكاح",
     "title_id": "Pernikahan",
-    "hadith_start": 1845,
-    "hadith_end": 2015,
+    "hadith_start": 1855,
+    "hadith_end": 2025,
     "hadith_count": 171
   },
   {
@@ -116,8 +116,8 @@
     "title_en": "The Chapters on Divorce",
     "title_ar": "كتاب الطلاق",
     "title_id": "Talak",
-    "hadith_start": 2016,
-    "hadith_end": 2477,
+    "hadith_start": 2026,
+    "hadith_end": 2486,
     "hadith_count": 74
   },
   {
@@ -127,8 +127,8 @@
     "title_en": "The Chapters on Expiation",
     "title_ar": "كتاب الكفارات",
     "title_id": "Kafarat",
-    "hadith_start": 2090,
-    "hadith_end": 2136,
+    "hadith_start": 2099,
+    "hadith_end": 2145,
     "hadith_count": 47
   },
   {
@@ -138,8 +138,8 @@
     "title_en": "The Chapters on Business Transactions",
     "title_ar": "كتاب التجارات",
     "title_id": "Muamalah",
-    "hadith_start": 2137,
-    "hadith_end": 2307,
+    "hadith_start": 2146,
+    "hadith_end": 2316,
     "hadith_count": 171
   },
   {
@@ -149,8 +149,8 @@
     "title_en": "The Chapters on Rulings",
     "title_ar": "كتاب الأحكام",
     "title_id": "Hukum-hukum",
-    "hadith_start": 2308,
-    "hadith_end": 2374,
+    "hadith_start": 2317,
+    "hadith_end": 2383,
     "hadith_count": 67
   },
   {
@@ -160,8 +160,8 @@
     "title_en": "The Chapters on Gifts",
     "title_ar": "كتاب الهبات",
     "title_id": "Hadiah dan Hibah",
-    "hadith_start": 2375,
-    "hadith_end": 2389,
+    "hadith_start": 2384,
+    "hadith_end": 2398,
     "hadith_count": 15
   },
   {
@@ -171,8 +171,8 @@
     "title_en": "The Chapters on Charity",
     "title_ar": "كتاب الصدقات",
     "title_id": "Sedekah",
-    "hadith_start": 2390,
-    "hadith_end": 2528,
+    "hadith_start": 2399,
+    "hadith_end": 2537,
     "hadith_count": 46
   },
   {
@@ -182,8 +182,8 @@
     "title_en": "The Chapters on Pawning",
     "title_ar": "كتاب الرهون",
     "title_id": "Gadai (Rahn)",
-    "hadith_start": 2436,
-    "hadith_end": 2491,
+    "hadith_start": 2445,
+    "hadith_end": 2500,
     "hadith_count": 57
   },
   {
@@ -193,8 +193,8 @@
     "title_en": "The Chapters on Pre-emption",
     "title_ar": "كتاب الشفعة",
     "title_id": "Hak Syuf'ah",
-    "hadith_start": 2492,
-    "hadith_end": 2501,
+    "hadith_start": 2501,
+    "hadith_end": 2510,
     "hadith_count": 11
   },
   {
@@ -204,8 +204,8 @@
     "title_en": "The Chapters on Lost Property",
     "title_ar": "كتاب اللقطة",
     "title_id": "Barang Temuan",
-    "hadith_start": 2502,
-    "hadith_end": 2511,
+    "hadith_start": 2511,
+    "hadith_end": 2520,
     "hadith_count": 10
   },
   {
@@ -215,8 +215,8 @@
     "title_en": "The Chapters on Manumission (of Slaves)",
     "title_ar": "كتاب العتق",
     "title_id": "Pembebasan Budak",
-    "hadith_start": 2512,
-    "hadith_end": 2532,
+    "hadith_start": 2521,
+    "hadith_end": 2542,
     "hadith_count": 21
   },
   {
@@ -226,8 +226,8 @@
     "title_en": "The Chapters on Legal Punishments",
     "title_ar": "كتاب الحدود",
     "title_id": "Hudud",
-    "hadith_start": 2533,
-    "hadith_end": 2614,
+    "hadith_start": 2543,
+    "hadith_end": 2624,
     "hadith_count": 82
   },
   {
@@ -237,8 +237,8 @@
     "title_en": "The Chapters on Blood Money",
     "title_ar": "كتاب الديات",
     "title_id": "Diyat",
-    "hadith_start": 2615,
-    "hadith_end": 2694,
+    "hadith_start": 2625,
+    "hadith_end": 2703,
     "hadith_count": 80
   },
   {
@@ -248,8 +248,8 @@
     "title_en": "The Chapters on Wills",
     "title_ar": "كتاب الوصايا",
     "title_id": "Wasiat",
-    "hadith_start": 2695,
-    "hadith_end": 2718,
+    "hadith_start": 2704,
+    "hadith_end": 2728,
     "hadith_count": 24
   },
   {
@@ -259,8 +259,8 @@
     "title_en": "Chapters on Shares of Inheritance",
     "title_ar": "كتاب الفرائض",
     "title_id": "Pembagian Warisan",
-    "hadith_start": 2719,
-    "hadith_end": 2752,
+    "hadith_start": 2729,
+    "hadith_end": 2762,
     "hadith_count": 34
   },
   {
@@ -270,8 +270,8 @@
     "title_en": "The Chapters on Jihad",
     "title_ar": "كتاب الجهاد",
     "title_id": "Jihad",
-    "hadith_start": 2753,
-    "hadith_end": 2881,
+    "hadith_start": 2763,
+    "hadith_end": 2890,
     "hadith_count": 129
   },
   {
@@ -281,8 +281,8 @@
     "title_en": "Chapters on <i>Hajj</i> Rituals",
     "title_ar": "كتاب المناسك",
     "title_id": "Haji",
-    "hadith_start": 2882,
-    "hadith_end": 3119,
+    "hadith_start": 2891,
+    "hadith_end": 3128,
     "hadith_count": 238
   },
   {
@@ -292,8 +292,8 @@
     "title_en": "Chapters on Sacrifices",
     "title_ar": "كتاب الأضاحي",
     "title_id": "Kurban",
-    "hadith_start": 3120,
-    "hadith_end": 3161,
+    "hadith_start": 3129,
+    "hadith_end": 3170,
     "hadith_count": 42
   },
   {
@@ -303,8 +303,8 @@
     "title_en": "Chapters on Slaughtering",
     "title_ar": "كتاب الذبائح",
     "title_id": "Penyembelihan",
-    "hadith_start": 3162,
-    "hadith_end": 3199,
+    "hadith_start": 3171,
+    "hadith_end": 3208,
     "hadith_count": 38
   },
   {
@@ -314,8 +314,8 @@
     "title_en": "Chapters on Hunting",
     "title_ar": "كتاب الصيد",
     "title_id": "Berburu",
-    "hadith_start": 3200,
-    "hadith_end": 3250,
+    "hadith_start": 3209,
+    "hadith_end": 3259,
     "hadith_count": 51
   },
   {
@@ -325,8 +325,8 @@
     "title_en": "Chapters on Food",
     "title_ar": "كتاب الأطعمة",
     "title_id": "Makanan",
-    "hadith_start": 3251,
-    "hadith_end": 3370,
+    "hadith_start": 3260,
+    "hadith_end": 3379,
     "hadith_count": 120
   },
   {
@@ -336,8 +336,8 @@
     "title_en": "Chapters on Drinks",
     "title_ar": "كتاب الأشربة",
     "title_id": "Minuman",
-    "hadith_start": 3371,
-    "hadith_end": 3435,
+    "hadith_start": 3380,
+    "hadith_end": 3444,
     "hadith_count": 65
   },
   {
@@ -347,8 +347,8 @@
     "title_en": "Chapters on Medicine",
     "title_ar": "كتاب الطب",
     "title_id": "Pengobatan",
-    "hadith_start": 3436,
-    "hadith_end": 3549,
+    "hadith_start": 3445,
+    "hadith_end": 3559,
     "hadith_count": 114
   },
   {
@@ -358,8 +358,8 @@
     "title_en": "Chapters on Dress",
     "title_ar": "كتاب اللباس",
     "title_id": "Pakaian",
-    "hadith_start": 3550,
-    "hadith_end": 3656,
+    "hadith_start": 3560,
+    "hadith_end": 3666,
     "hadith_count": 107
   },
   {
@@ -369,8 +369,8 @@
     "title_en": "Etiquette",
     "title_ar": "كتاب الأدب",
     "title_id": "Adab",
-    "hadith_start": 3657,
-    "hadith_end": 3826,
+    "hadith_start": 3667,
+    "hadith_end": 3836,
     "hadith_count": 170
   },
   {
@@ -380,8 +380,8 @@
     "title_en": "Supplication",
     "title_ar": "كتاب الدعاء",
     "title_id": "Doa",
-    "hadith_start": 3827,
-    "hadith_end": 3892,
+    "hadith_start": 3837,
+    "hadith_end": 3902,
     "hadith_count": 66
   },
   {
@@ -391,8 +391,8 @@
     "title_en": "Interpretation of Dreams",
     "title_ar": "كتاب تعبير الرؤيا",
     "title_id": "Tafsir Mimpi",
-    "hadith_start": 3893,
-    "hadith_end": 3926,
+    "hadith_start": 3903,
+    "hadith_end": 3936,
     "hadith_count": 34
   },
   {
@@ -402,8 +402,8 @@
     "title_en": "Tribulations",
     "title_ar": "كتاب الفتن",
     "title_id": "Fitnah",
-    "hadith_start": 3927,
-    "hadith_end": 4099,
+    "hadith_start": 3937,
+    "hadith_end": 4109,
     "hadith_count": 175
   },
   {
@@ -413,7 +413,7 @@
     "title_en": "Zuhd",
     "title_ar": "كتاب الزهد",
     "title_id": "Zuhud",
-    "hadith_start": 4100,
+    "hadith_start": 4110,
     "hadith_end": 4341,
     "hadith_count": 242
   }

@@ -196,7 +196,7 @@ const HadeethAPI = {
       const idx = await this.fetchNdjsonIndex('api', bookId);
       if (idx && Array.isArray(idx)) {
           const entry = idx.find(e => {
-              if (dsPrefix === 'lidwa') return String(e.lidwa_id) === String(hadithNumber);
+              if (dsPrefix === 'lidwa') { if (Array.isArray(e.lidwa_id)) return e.lidwa_id.some(id => String(id) === String(hadithNumber)); return String(e.lidwa_id) === String(hadithNumber); }
               if (dsPrefix === 'ab') return String(e.idInBook) === String(hadithNumber) || String(e.ab_id) === String(hadithNumber);
               return String(e.id) === String(hadithNumber);
           });
@@ -206,7 +206,7 @@ const HadeethAPI = {
           } else {
               const allHadiths = await this.fetchNdjsonFull('api', bookId);
               h = allHadiths.find(item => {
-                  if (dsPrefix === 'lidwa') return String(item.lidwa_id) === String(hadithNumber);
+                  if (dsPrefix === 'lidwa') { if (Array.isArray(item.lidwa_id)) return item.lidwa_id.some(id => String(id) === String(hadithNumber)); return String(item.lidwa_id) === String(hadithNumber); }
                   if (dsPrefix === 'ab') return String(item.idInBook) === String(hadithNumber) || String(item.ab_id) === String(hadithNumber);
                   return String(item.id) === String(hadithNumber) || String(item.hadith_number) === String(hadithNumber);
               }) || null;
@@ -218,7 +218,7 @@ const HadeethAPI = {
       } else {
           const allHadiths = await this.fetchNdjsonFull('api', bookId);
           h = allHadiths.find(item => {
-                  if (dsPrefix === 'lidwa') return String(item.lidwa_id) === String(hadithNumber);
+                  if (dsPrefix === 'lidwa') { if (Array.isArray(item.lidwa_id)) return item.lidwa_id.some(id => String(id) === String(hadithNumber)); return String(item.lidwa_id) === String(hadithNumber); }
                   if (dsPrefix === 'ab') return String(item.idInBook) === String(hadithNumber) || String(item.ab_id) === String(hadithNumber);
                   return String(item.id) === String(hadithNumber) || String(item.hadith_number) === String(hadithNumber);
               }) || null;
