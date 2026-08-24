@@ -8,7 +8,9 @@
       "title_id": "Sunan Daruquthni",
       "title_ar": "سنن الدارقطني",
       "hadith_range": "1-4790",
-      "count": 4790
+      "count": 4790,
+      "hadith_start": 1,
+      "hadith_end": 4790
     }
   ]
 }

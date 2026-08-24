@@ -8,7 +8,9 @@
       "title_id": "Shahih Ibnu Hibban",
       "title_ar": "صحيح ابن حبان",
       "hadith_range": "1-2769",
-      "count": 2769
+      "count": 2769,
+      "hadith_start": 1,
+      "hadith_end": 2769
     }
   ]
 }

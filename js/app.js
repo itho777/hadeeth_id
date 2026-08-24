@@ -3071,7 +3071,7 @@ async function loadChaptersList() {
         const hadithRange = ch.hadith_start != null
           ? `Hadits ${ch.hadith_start} – ${ch.hadith_end}`
           : `Kitab ${chNum}`;
-        const hadithCount = ch.hadith_count || (ch.hadith_end && ch.hadith_start ? ch.hadith_end - ch.hadith_start + 1 : '');
+        const hadithCount = ch.hadith_count || ch.count || (ch.hadith_end && ch.hadith_start ? ch.hadith_end - ch.hadith_start + 1 : '');
 
         html += `
           <a href="hadith-list.html?book=${bookId}&chapter=${chNum}&dataset=native_lidwa" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">

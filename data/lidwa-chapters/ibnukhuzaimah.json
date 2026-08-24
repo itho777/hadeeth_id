@@ -8,7 +8,9 @@
       "title_id": "Shahih Ibnu Khuzaimah",
       "title_ar": "صحيح ابن خزيمة",
       "hadith_range": "1-1808",
-      "count": 1808
+      "count": 1808,
+      "hadith_start": 1,
+      "hadith_end": 1808
     }
   ]
 }

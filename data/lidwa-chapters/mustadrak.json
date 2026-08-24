@@ -8,7 +8,9 @@
       "title_id": "Mustadrak Al-Hakim",
       "title_ar": "المستدرك على الصحيحين",
       "hadith_range": "1-673",
-      "count": 673
+      "count": 673,
+      "hadith_start": 1,
+      "hadith_end": 673
     }
   ]
 }
