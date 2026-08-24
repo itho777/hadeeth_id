@@ -2814,9 +2814,9 @@ async function loadChaptersList() {
       desc: 'A collection focusing on legal hadiths and detailing hidden defects (ilal) in chains.',
       desc_id: 'Koleksi yang berfokus pada hadits fiqih dan merinci cacat tersembunyi (ilal) dalam sanad.',
       kitabCount: '📚 1 Kitab',
-      hadithCount: '📖 4.790 Hadits',
+      hadithCount: '📖 239 Hadits',
       authenticity: '⭐️ Sunan',
-      datasetInfo: { native_mjna: { kitab: '📚 1 Kitab', hadith: '📖 4.790 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–4790)' } }
+      datasetInfo: { native_mjna: { kitab: '📚 1 Kitab', hadith: '📖 239 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–239)' } }
     }
   };
     const meta = bookMasterDict[bookId] || {
