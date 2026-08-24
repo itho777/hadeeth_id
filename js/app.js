@@ -2741,10 +2741,10 @@ async function loadChaptersList() {
       badgeClass: 'bg-emerald-600 text-white',
       desc: 'One of the highly regarded authentic hadith collections by Imam Ibnu Khuzaimah.',
       desc_id: 'Salah satu kitab hadits shahih yang sangat dihargai karya Imam Ibnu Khuzaimah.',
-      kitabCount: '📚 0 Kitab',
+      kitabCount: '📚 1 Kitab',
       hadithCount: '📖 1.808 Hadits',
       authenticity: '⭐️ Shahih',
-      datasetInfo: { native_mjna: { kitab: '📚 0 Kitab', hadith: '📖 1.808 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–1808)' } }
+      datasetInfo: { native_mjna: { kitab: '📚 1 Kitab', hadith: '📖 1.808 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–1808)' } }
     },
     ibnuhibban: {
       name: 'Shahih Ibnu Hibban',
@@ -2755,10 +2755,10 @@ async function loadChaptersList() {
       badgeClass: 'bg-emerald-600 text-white',
       desc: 'An authentic collection organized by a unique method (Taqasim wa al-Anwa').',
       desc_id: 'Koleksi shahih yang disusun dengan metode unik (Taqasim wa al-Anwa').',
-      kitabCount: '📚 0 Kitab',
+      kitabCount: '📚 1 Kitab',
       hadithCount: '📖 2.769 Hadits',
       authenticity: '⭐️ Shahih',
-      datasetInfo: { native_mjna: { kitab: '📚 0 Kitab', hadith: '📖 2.769 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–2769)' } }
+      datasetInfo: { native_mjna: { kitab: '📚 1 Kitab', hadith: '📖 2.769 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–2769)' } }
     },
     mustadrak: {
       name: 'Mustadrak Al-Hakim',
@@ -2783,10 +2783,10 @@ async function loadChaptersList() {
       badgeClass: 'bg-indigo-600 text-white',
       desc: 'A collection focusing on legal hadiths and detailing hidden defects (ilal) in chains.',
       desc_id: 'Koleksi yang berfokus pada hadits fiqih dan merinci cacat tersembunyi (ilal) dalam sanad.',
-      kitabCount: '📚 0 Kitab',
+      kitabCount: '📚 1 Kitab',
       hadithCount: '📖 4.790 Hadits',
       authenticity: '⭐️ Sunan',
-      datasetInfo: { native_mjna: { kitab: '📚 0 Kitab', hadith: '📖 4.790 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–4790)' } }
+      datasetInfo: { native_mjna: { kitab: '📚 1 Kitab', hadith: '📖 4.790 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–4790)' } }
     }
     const meta = bookMasterDict[bookId] || {
     name: bookId.toUpperCase(),
