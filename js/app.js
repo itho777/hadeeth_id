@@ -2532,6 +2532,38 @@ async function loadChaptersList() {
   const bookId = (params.get('book') || 'bukhari').toLowerCase();
 
   const bookMasterDict = {
+    syafii: {
+      name: "Musnad Syafi'i",
+      ar: 'مسند الشافعي',
+      author: "Imam al-Shafi'i",
+      authorId: 'rawi_bukhari',
+      type: 'Musnad',
+      badgeClass: 'bg-purple-600 text-white',
+      desc: "An essential compilation of hadiths transmitted through the great jurist Imam al-Shafi'i.",
+      desc_id: "Kompilasi hadits penting yang diriwayatkan melalui ahli fiqih besar Imam Syafi'i.",
+      kitabCount: '📚 1 Kitab',
+      hadithCount: '📖 1.800 Hadits',
+      authenticity: '⭐️ Musnad',
+      datasetInfo: {
+        native_lidwa: { kitab: '📚 1 Kitab', hadith: '📖 1.800 Hadits (Lidwa)', numbering: 'Penomoran: IrsyadulIbad (1–1800)' }
+      }
+    },
+    riyad_arab: {
+      name: "Riyadhus Shalihin (Arab)",
+      ar: 'رياض الصالحين (عربي)',
+      author: 'Imam an-Nawawi',
+      authorId: 'rawi_bukhari',
+      type: 'Jawami',
+      badgeClass: 'bg-teal-600 text-white',
+      desc: 'An Arabic-only collection from Riyad as-Salihin.',
+      desc_id: 'Koleksi berbahasa Arab dari Riyadhus Shalihin.',
+      kitabCount: '📚 1 Kitab',
+      hadithCount: '📖 850 Hadits',
+      authenticity: '⭐️ Shahih/Hasan',
+      datasetInfo: {
+        native_lidwa: { kitab: '📚 1 Kitab', hadith: '📖 850 Hadits (Lidwa)', numbering: 'Penomoran: IrsyadulIbad (1–850)' }
+      }
+    },
     bukhari: {
       name: 'Sahih al-Bukhari',
       ar: 'صحيح البخاري',
