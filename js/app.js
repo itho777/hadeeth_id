@@ -2729,9 +2729,7 @@ async function loadChaptersList() {
       hadithCount: '📖 37.000+ Hadits',
       authenticity: 'â­ï¸ Kerangka',
       datasetInfo: { fawazahmed: { kitab: '📚 37 Kitab', hadith: '📖 37.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
-    }
-  };
-
+    },
     ibnukhuzaimah: {
       name: 'Shahih Ibnu Khuzaimah',
       ar: 'صحيح ابن خزيمة',
@@ -2753,8 +2751,8 @@ async function loadChaptersList() {
       authorId: 'rawi_bukhari', // fallback
       type: "Shahih",
       badgeClass: 'bg-emerald-600 text-white',
-      desc: 'An authentic collection organized by a unique method (Taqasim wa al-Anwa').',
-      desc_id: 'Koleksi shahih yang disusun dengan metode unik (Taqasim wa al-Anwa').',
+      desc: "An authentic collection organized by a unique method (Taqasim wa al-Anwa').",
+      desc_id: "Koleksi shahih yang disusun dengan metode unik (Taqasim wa al-Anwa').",
       kitabCount: '📚 1 Kitab',
       hadithCount: '📖 2.769 Hadits',
       authenticity: '⭐️ Shahih',
@@ -2788,6 +2786,7 @@ async function loadChaptersList() {
       authenticity: '⭐️ Sunan',
       datasetInfo: { native_mjna: { kitab: '📚 1 Kitab', hadith: '📖 4.790 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–4790)' } }
     }
+  };
     const meta = bookMasterDict[bookId] || {
     name: bookId.toUpperCase(),
     ar: bookId,
