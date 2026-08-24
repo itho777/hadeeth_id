@@ -1748,8 +1748,8 @@ async function loadHadithList() {
           chapterTitleNameId = chapterTitleNameEn;
         }
         chapterTitleNameAr = chInfo.title_ar || chInfo.name_ar || chInfo.arabic || `باب رقم ${chapterId}`;
-        startHadithNum = chInfo.hadith_start != null ? chInfo.hadith_start : null;
-        endHadithNum = chInfo.hadith_end != null ? chInfo.hadith_end : null;
+        startHadithNum = chInfo.hadith_start != null ? chInfo.hadith_start : (chInfo.first_hadith != null ? parseInt(chInfo.first_hadith) : null);
+        endHadithNum = chInfo.hadith_end != null ? chInfo.hadith_end : (chInfo.last_hadith != null ? parseInt(chInfo.last_hadith) : null);
         chapterHadithCount = chInfo.hadith_count || (endHadithNum && startHadithNum ? (endHadithNum - startHadithNum + 1) : null);
       }
     }
@@ -2907,7 +2907,7 @@ async function loadChaptersList() {
   // Reads from data/chapters/<book>.json (pre-indexed)
   // ================================================================
   if (resolvedDataset === 'fawazahmed') {
-    let chapters = await window.HadeethAPI.getChapters(bookId);
+    let chapters = await window.HadeethAPI.getChapters(bookId, resolvedDataset);
 
     // Default Chapter Skeletons for Books without pre-generated JSON files
     if (!chapters || chapters.length === 0) {

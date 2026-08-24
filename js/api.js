@@ -132,9 +132,9 @@ const HadeethAPI = {
     return this.rawisCache;
   },
 
-  async getChapters(bookId) {
-    const activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
-    const isLidwa = activeDataset === 'native_lidwa';
+  async getChapters(bookId, datasetId) {
+    const activeDataset = datasetId || localStorage.getItem('dataset_version') || 'fawazahmed';
+    const isLidwa = activeDataset === 'native_lidwa' || activeDataset === 'native_mjna' || activeDataset === 'native_irsyad';
     const folder = isLidwa ? 'lidwa-chapters' : 'chapters';
     const cacheKey = `${folder}_${bookId}`;
 
@@ -145,7 +145,11 @@ const HadeethAPI = {
       const data = await res.json();
       
       this.chaptersCache = this.chaptersCache || {};
-      this.chaptersCache[cacheKey] = data.chapters || data; // handle both formats
+      let chaps = data.chapters || data; // handle both formats
+      if (chaps && typeof chaps === 'object' && !Array.isArray(chaps)) {
+          chaps = Object.values(chaps);
+      }
+      this.chaptersCache[cacheKey] = chaps;
       return this.chaptersCache[cacheKey];
     } catch (err) {
       console.error(`Failed to load ${folder} for ${bookId}:`, err);
