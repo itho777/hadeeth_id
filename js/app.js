@@ -79,10 +79,10 @@ const UI_I18N = {
     search_btn: "Search",
     continue_reading: "CONTINUE READING",
     kutub_tisah_title: "Kutubut Tis'ah",
-    view_all_collections: "View All Collections â†’",
+    view_all_collections: "View All Collections →",
     hadith_of_day_title: "Hadith of the Day",
-    read_hadith: "Read Hadith â†’",
-    inspect_chain: "Inspect Chain â†’",
+    read_hadith: "Read Hadith →",
+    inspect_chain: "Inspect Chain →",
     digital_library: "Digital Library",
     major_collections_title: "Major Hadith Collections",
     major_collections_sub: "Browse the nine canonical collections (Kutubut Tis'ah) of Hadith literature.",
@@ -100,9 +100,9 @@ const UI_I18N = {
     next: "Next",
     scholarly_commentary: "Scholarly Commentary (Sharh)",
     chain_of_narrators: "Chain of Narration (Sanad)",
-    full_sanad_graph: "View Full Interactive Sanad Graph â†’",
+    full_sanad_graph: "View Full Interactive Sanad Graph →",
     role_sahabi: "Sahabi (Companion)",
-    footer_text: "Â© 2026 hadeeth.id - Digital Hadith Manuscript Preservation"
+    footer_text: "© 2026 hadeeth.id - Digital Hadith Manuscript Preservation"
   },
   id: {
     nav_books: "Kitab",
@@ -118,10 +118,10 @@ const UI_I18N = {
     search_btn: "Cari",
     continue_reading: "LANJUTKAN MEMBACA",
     kutub_tisah_title: "Kutubut Tis'ah (9 Kitab Utama)",
-    view_all_collections: "Lihat Semua Kitab â†’",
+    view_all_collections: "Lihat Semua Kitab →",
     hadith_of_day_title: "Hadits Hari Ini",
-    read_hadith: "Baca Hadits â†’",
-    inspect_chain: "Lihat Sanad â†’",
+    read_hadith: "Baca Hadits →",
+    inspect_chain: "Lihat Sanad →",
     digital_library: "Perpustakaan Digital",
     major_collections_title: "Koleksi Kitab Hadits Utama",
     major_collections_sub: "Jelajahi sembilan kitab utama (Kutubut Tis'ah) dalam literatur hadits.",
@@ -139,9 +139,9 @@ const UI_I18N = {
     next: "Selanjutnya",
     scholarly_commentary: "Syarah Hadits",
     chain_of_narrators: "Rantai Perawi (Sanad)",
-    full_sanad_graph: "Lihat Grafik Interaktif Sanad Lengkap â†’",
+    full_sanad_graph: "Lihat Grafik Interaktif Sanad Lengkap →",
     role_sahabi: "Sahabat",
-    footer_text: "Â© 2026 hadeeth.id - Pelestarian Manuskrip Hadits Digital"
+    footer_text: "© 2026 hadeeth.id - Pelestarian Manuskrip Hadits Digital"
   }
 };
 
@@ -504,7 +504,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="mt-3 flex items-center justify-between text-label-sm font-label-sm text-outline dark:text-gray-500 border-t border-outline-variant/10 dark:border-[#334155] pt-2 mt-auto">
               <span data-lang-en>${book.total_hadiths.toLocaleString()} Ahadith</span>
               <span data-lang-id style="display:none">${book.total_hadiths.toLocaleString()} Hadits</span>
-              <span class="text-secondary dark:text-[#10b981] group-hover:underline cursor-pointer">Explore â†’</span>
+              <span class="text-secondary dark:text-[#10b981] group-hover:underline cursor-pointer">Explore →</span>
             </div>
           </div>
         </a>
@@ -754,7 +754,7 @@ function initSearch() {
       <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
         <span class="material-symbols-outlined animate-spin text-secondary dark:text-[#10b981] text-3xl">progress_activity</span>
         <p class="mt-2 text-sm font-semibold text-primary dark:text-white">Searching authentic sources...</p>
-        <p class="text-xs text-outline dark:text-gray-400 mt-1">Query: "${escapeHtml(query)}" â€¢ Filter: ${escapeHtml(bookFilter)}</p>
+        <p class="text-xs text-outline dark:text-gray-400 mt-1">Query: "${escapeHtml(query)}" • Filter: ${escapeHtml(bookFilter)}</p>
       </div>
     `;
 
@@ -1195,7 +1195,7 @@ async function loadHadithDetail() {
   // Also check direct text_id on native_lidwa dataset
   const hasLidwaId2 = !!(activeDataset === 'native_lidwa' && data && data.text_id);
   const hasLidwaEn2 = !!(activeDataset === 'native_lidwa' && data && data.text_en);
-  // Also check text_id directly available from NDJSON (even without a fawazâ†’lidwa link mapping)
+  // Also check text_id directly available from NDJSON (even without a fawaz→lidwa link mapping)
   const hasNdjsonId = !!(data && data.text_id);
 
   if ((lidwaId || activeDataset === 'native_lidwa' || hasNdjsonId) && hasLidwaSource) {
@@ -1527,8 +1527,8 @@ async function loadHadithDetail() {
   const rawiId = document.querySelector('[data-hadith-rawi-id]');
   
   if (sanadPreviewEn || sanadPreviewId) {
-      let previewStrEn = `Inspect Chain for ${bookName} #${hadithId} â†’ Prophet ï·º`;
-      let previewStrId = `Periksa Silsilah untuk ${bookName} #${hadithId} â†’ Rasulullah ï·º`;
+      let previewStrEn = `Inspect Chain for ${bookName} #${hadithId} → Prophet ﷺ`;
+      let previewStrId = `Periksa Silsilah untuk ${bookName} #${hadithId} → Rasulullah ﷺ`;
       let narratorEn = "Unknown";
       let narratorId = "Tidak diketahui";
       
@@ -1540,8 +1540,8 @@ async function loadHadithDetail() {
           const namesEn = reversedRawis.map(r => r.name_en || r.name || r.ar || r.id);
           const namesId = reversedRawis.map(r => r.name_id || r.name || r.ar || r.id);
           
-          previewStrEn = namesEn.join(' â†’ ') + ' â†’ Prophet ï·º';
-          previewStrId = namesId.join(' â†’ ') + ' â†’ Rasulullah ï·º';
+          previewStrEn = namesEn.join(' → ') + ' → Prophet ﷺ';
+          previewStrId = namesId.join(' → ') + ' → Rasulullah ﷺ';
           
           // The narrator closest to the Prophet (Sahabi) is the first element in Lidwa's rawis array
           narratorEn = data.rawis[0].name_en || data.rawis[0].name || data.rawis[0].ar || "Unknown Transmitter";
@@ -2037,8 +2037,8 @@ async function loadHadithList() {
         const countEl2 = document.querySelector('[data-list-count-meta-en]');
         const countIdEl2 = document.querySelector('[data-list-count-meta-id]');
         const countFallback2 = document.querySelector('[data-list-count-meta]');
-        if (countEl2) countEl2.innerText = `${nativeSourceLabel} Hadith ${rangeStr} â€¢ ${total} Hadiths in ${bookName} Kitab ${chapterId}`;
-        if (countIdEl2) countIdEl2.innerText = `${nativeSourceLabel} Hadits ${rangeStr} â€¢ ${total} Hadits dalam ${bookName} Kitab ${chapterId}`;
+        if (countEl2) countEl2.innerText = `${nativeSourceLabel} Hadith ${rangeStr} • ${total} Hadiths in ${bookName} Kitab ${chapterId}`;
+        if (countIdEl2) countIdEl2.innerText = `${nativeSourceLabel} Hadits ${rangeStr} • ${total} Hadits dalam ${bookName} Kitab ${chapterId}`;
         if (countFallback2 && !countEl2) countFallback2.innerText = `${total} Hadits — ${nativeSourceLabel} Kitab ${chapterId}`;
       }
     } catch(e) {
@@ -2178,8 +2178,8 @@ async function loadHadithList() {
   if (activeDataset === 'fawazahmed') {
     if (startHadithNum != null && endHadithNum != null) {
       const count = chapterHadithCount || (endHadithNum - startHadithNum + 1);
-      const enText = `Hadith ${startHadithNum} – ${endHadithNum} â€¢ ${count} Hadiths in ${bookName} Chapter ${chapterId}`;
-      const idText = `Hadits ${startHadithNum} – ${endHadithNum} â€¢ ${count} Hadits dalam ${bookName} ${chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`}`;
+      const enText = `Hadith ${startHadithNum} – ${endHadithNum} • ${count} Hadiths in ${bookName} Chapter ${chapterId}`;
+      const idText = `Hadits ${startHadithNum} – ${endHadithNum} • ${count} Hadits dalam ${bookName} ${chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`}`;
       if (countMetaEn) countMetaEn.innerText = enText;
       if (countMetaId) countMetaId.innerText = idText;
       if (countMeta && !countMetaEn) countMeta.innerText = isIdLang ? idText : enText;
@@ -2258,8 +2258,11 @@ async function loadHadithList() {
       // fawazahmed0 has NO ind edition — our local ind-*.json files are built from Lidwa data.
 
       // Primary/fawazahmed: subtle blue attribution (ID exists but comes from Lidwa)
+      const mjnaBooksList = ['ibnukhuzaimah', 'ibnuhibban', 'mustadrak', 'daruquthni'];
+      const sourceNameStr = mjnaBooksList.includes(bookId) ? 'Teks terjemahan Indonesia ini asli (native) dari dataset MJNA.or.id.' : 'Teks terjemahan Indonesia ini diintegrasikan dari <strong>Lidwa / Irsyad</strong> (dicocokkan berdasarkan tabel relasi/mapping metadata).';
+      
       const primaryIdSourceNote = `<div class="mt-2 px-3 py-2 rounded-lg border border-blue-500/20 bg-blue-500/5 text-[11px] text-blue-600 dark:text-blue-400 leading-snug">
-        <strong class="font-semibold">Info Sumber:</strong> Teks terjemahan Indonesia ini diintegrasikan dari <strong>Lidwa / Irsyad</strong> (dicocokkan berdasarkan tabel relasi/mapping metadata).
+        <strong class="font-semibold">Info Sumber:</strong> ${sourceNameStr}
       </div>`;
 
       // AhmedBaset: amber warning (may not align to AhmedBaset narration variant)
@@ -2760,7 +2763,7 @@ async function loadChaptersList() {
   }
   if (authorLink) {
     authorLink.href = `profile-detail.html?id=${meta.authorId}`;
-    authorLink.innerText = `By ${meta.author} â†’`;
+    authorLink.innerText = `By ${meta.author} →`;
   }
   if (titleElem) titleElem.innerText = meta.name;
 
@@ -3121,8 +3124,8 @@ async function loadHadithCardsList() {
 
     if (countMeta) {
       countMeta.innerText = isIdLang
-        ? `Hadits ${startNum} - ${endNum} â€¢ ${hCount} Hadits dalam ${bookName} ${chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`}`
-        : `Hadith ${startNum} - ${endNum} â€¢ ${hCount} Hadiths in ${bookName} Chapter ${chapterId}`;
+        ? `Hadits ${startNum} - ${endNum} • ${hCount} Hadits dalam ${bookName} ${chapterId === '0' ? 'Muqaddimah' : `Kitab ${chapterId}`}`
+        : `Hadith ${startNum} - ${endNum} • ${hCount} Hadiths in ${bookName} Chapter ${chapterId}`;
     }
   }
 
@@ -3377,8 +3380,8 @@ async function loadSanadChain() {
 
   if (titleEn) titleEn.innerText = `Sanad: ${bookName} ${hadithNum}`;
   if (titleId) titleId.innerText = `Sanad: ${bookName} Hadits #${hadithNum}`;
-  if (subEn) subEn.innerText = `Chain of narrators (Ø§Ù„Ø¥Ø³Ù†Ø§Ø¯) for ${bookName} Hadith #${hadithNum} tracing back to the Messenger of Allah ï·º.`;
-  if (subId) subId.innerText = `Silsilah perawi (Ø§Ù„Ø¥Ø³Ù†Ø§Ø¯) untuk ${bookName} Hadits #${hadithNum} yang bersambung sampai ke Rasulullah ï·º.`;
+  if (subEn) subEn.innerText = `Chain of narrators (Ø§Ù„Ø¥Ø³Ù†Ø§Ø¯) for ${bookName} Hadith #${hadithNum} tracing back to the Messenger of Allah ﷺ.`;
+  if (subId) subId.innerText = `Silsilah perawi (Ø§Ù„Ø¥Ø³Ù†Ø§Ø¯) untuk ${bookName} Hadits #${hadithNum} yang bersambung sampai ke Rasulullah ﷺ.`;
 
   const activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
   let dsPrefix = 'fawaz';
@@ -3535,8 +3538,8 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
       rawi_id: rId,
       name: enName + (isFirst && !enName.includes('Ø±Ø¶ÙŠ Ø§Ù„Ù„Ù‡ Ø¹Ù†Ù‡') ? ' (Ø±Ø¶ÙŠ Ø§Ù„Ù„Ù‡ Ø¹Ù†Ù‡)' : ''),
       name_id: idName,
-      roleEn: rawiData.role || (isFirst ? 'SAHABI (COMPANION) â€¢ GRADE: THIQAH' : 'TRANSMITTER (RAWI) â€¢ GRADE: ' + (rawiData.grade || 'THIQAH')),
-      roleId: rawiData.roleId || (isFirst ? 'SAHABAT NABI â€¢ DERAJAT: TSIQAH' : 'PERAWI (RAWI) â€¢ DERAJAT: ' + (rawiData.grade || 'TSIQAH')),
+      roleEn: rawiData.role || (isFirst ? 'SAHABI (COMPANION) • GRADE: THIQAH' : 'TRANSMITTER (RAWI) • GRADE: ' + (rawiData.grade || 'THIQAH')),
+      roleId: rawiData.roleId || (isFirst ? 'SAHABAT NABI • DERAJAT: TSIQAH' : 'PERAWI (RAWI) • DERAJAT: ' + (rawiData.grade || 'TSIQAH')),
       ar: arName,
       kunyah: rawiData.kunyah || (isFirst ? 'Abu Abdillah' : '-'),
       residence: rawiData.residence || (isFirst ? 'Madinah' : '-'),
@@ -3565,7 +3568,7 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
 
     <!-- Source: Prophet Muhammad -->
     <div class="sanad-node relative z-10 bg-gradient-to-r from-sunan-emerald to-emerald-800 text-white rounded-xl p-5 shadow-sm border border-emerald-600">
-      <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-sunan-emerald border-2 border-white dark:border-ink-black flex items-center justify-center text-white text-[10px]">ï·º</div>
+      <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-sunan-emerald border-2 border-white dark:border-ink-black flex items-center justify-center text-white text-[10px]">ﷺ</div>
       <div class="flex justify-between items-center">
         <div>
           <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-200">
@@ -3573,11 +3576,11 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
             <span data-lang-id style="display:none">SUMBER WAHYU</span>
           </span>
           <h3 class="font-bold text-lg">
-            <span data-lang-en>The Prophet Muhammad ï·º</span>
-            <span data-lang-id style="display:none">Nabi Muhammad ï·º</span>
+            <span data-lang-en>The Prophet Muhammad ﷺ</span>
+            <span data-lang-id style="display:none">Nabi Muhammad ﷺ</span>
           </h3>
         </div>
-        <span class="font-arabic-body text-xl" dir="rtl">Ù…Ø­Ù…Ø¯ Ø±Ø³ÙˆÙ„ Ø§Ù„Ù„Ù‡ ï·º</span>
+        <span class="font-arabic-body text-xl" dir="rtl">Ù…Ø­Ù…Ø¯ Ø±Ø³ÙˆÙ„ Ø§Ù„Ù„Ù‡ ﷺ</span>
       </div>
     </div>
   `;
