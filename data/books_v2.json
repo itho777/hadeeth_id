@@ -390,7 +390,8 @@
     "grade_summary": "Mixed",
     "order_index": 18,
     "editions": [],
-    "book_type_ar": "المعجم"
+    "book_type_ar": "المعجم",
+    "hadiths_count": 13555
   },
   {
     "id": "syafii",
@@ -425,7 +426,8 @@
     "order_index": 20,
     "editions": [],
     "total_hadiths_lidwa": 850,
-    "book_type_ar": "متنوع"
+    "book_type_ar": "متنوع",
+    "hadiths_count": 850
   },
   {
     "id": "ibnukhuzaimah",
@@ -448,7 +450,8 @@
     "source": "mjna",
     "authorId": "mjna_001",
     "editions": [],
-    "book_type_ar": "الصحيح"
+    "book_type_ar": "الصحيح",
+    "hadiths_count": 1808
   },
   {
     "id": "ibnuhibban",
@@ -471,7 +474,8 @@
     "source": "mjna",
     "authorId": "mjna_002",
     "editions": [],
-    "book_type_ar": "الصحيح"
+    "book_type_ar": "الصحيح",
+    "hadiths_count": 2769
   },
   {
     "id": "mustadrak",
@@ -494,7 +498,8 @@
     "source": "mjna",
     "authorId": "mjna_003",
     "editions": [],
-    "book_type_ar": "المستدرك"
+    "book_type_ar": "المستدرك",
+    "hadiths_count": 673
   },
   {
     "id": "daruquthni",
@@ -517,6 +522,7 @@
     "source": "mjna",
     "authorId": "mjna_004",
     "editions": [],
-    "book_type_ar": "السنن"
+    "book_type_ar": "السنن",
+    "hadiths_count": 236
   }
 ]
