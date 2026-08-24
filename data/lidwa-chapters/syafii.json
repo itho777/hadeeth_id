@@ -6,9 +6,11 @@
       "chapter_id": "1",
       "title_en": "Musnad Syafi'i",
       "title_id": "Musnad Syafi'i",
-      "title_ar": "???? ???????",
+      "title_ar": "مسند الشافعي",
       "hadith_range": "1-1800",
-      "count": 1800
+      "count": 1800,
+      "hadith_start": 1,
+      "hadith_end": 1800
     }
   ]
 }

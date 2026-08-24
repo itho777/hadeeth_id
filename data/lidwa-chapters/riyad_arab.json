@@ -8,7 +8,9 @@
       "title_id": "Riyadhus Shalihin",
       "title_ar": "رياض الصالحين",
       "hadith_range": "1-850",
-      "count": 850
+      "count": 850,
+      "hadith_start": 1,
+      "hadith_end": 850
     }
   ]
 }
