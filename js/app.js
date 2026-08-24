@@ -365,7 +365,7 @@ function renderDatasetBanner(bookId, containerId, forceDataset) {
         </div>
         <div class="text-[11px] text-outline dark:text-gray-500 leading-snug">
           <span class="font-semibold text-on-surface-variant dark:text-gray-400"><span data-lang-en>${escapeHtml(activeDs.sources)}</span><span data-lang-id style="display:none">${escapeHtml(activeDs.sourcesId)}</span></span>
-          ${activeNote ? `<span class="block mt-0.5 text-secondary/80 dark:text-[#10b981]/70">âš  <span data-lang-en>${escapeHtml(activeDs.note)}</span><span data-lang-id style="display:none">${escapeHtml(activeDs.noteId)}</span></span>` : ''}
+          ${activeNote ? `<span class="block mt-0.5 text-secondary/80 dark:text-[#10b981]/70">⚠️ <span data-lang-en>${escapeHtml(activeDs.note)}</span><span data-lang-id style="display:none">${escapeHtml(activeDs.noteId)}</span></span>` : ''}
         </div>
       </div>
     </div>
@@ -881,7 +881,7 @@ const TafseerLinker = {
     };
 
     // 1. [Qur'an 75:16]
-    out = out.replace(/\[Qur['â€™]an\s+(\d+):(\d+)(?:-\d+)?\]/gi, (match, s, a) => {
+    out = out.replace(/\[Qur['’]an\s+(\d+):(\d+)(?:-\d+)?\]/gi, (match, s, a) => {
       return renderLink(s, a, match);
     });
 
@@ -2541,12 +2541,12 @@ async function loadChaptersList() {
       badgeClass: 'bg-blue-700 text-white',
       desc: 'Recognized across Islamic scholarship as the supreme Jami collection of Hadith, compiled with unmatched authentication criteria.',
       desc_id: "Diakui oleh seluruh ulama Islam sebagai koleksi Jami' tertinggi dari Hadits, disusun dengan kriteria otentikasi yang tak tertandingi.",
-      kitabCount: 'ðŸ“š 97 Kitab',
-      hadithCount: 'ðŸ“– 7.563 Hadits',
+      kitabCount: '📚 97 Kitab',
+      hadithCount: '📖 7.563 Hadits',
       authenticity: 'â­ï¸ 100% Sahih',
       datasetInfo: {
-        primary:           { kitab: 'ðŸ“š 97 Kitab', hadith: 'ðŸ“– 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
-        native_lidwa:      { kitab: 'ðŸ“š 77 Kitab', hadith: 'ðŸ“– 7.008 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–7008)' }
+        primary:           { kitab: '📚 97 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
+        native_lidwa:      { kitab: '📚 77 Kitab', hadith: '📖 7.008 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–7008)' }
       }
     },
     muslim: {
@@ -2558,12 +2558,12 @@ async function loadChaptersList() {
       badgeClass: 'bg-blue-700 text-white',
       desc: 'Masterpiece Jami collection renowned for strict thematic organization and comprehensive parallel chains of narration (turuq).',
       desc_id: "Koleksi Jami' terbaik yang terkenal dengan organisasi tematik yang ketat dan rantai periwayatan paralel (turuq) yang komprehensif.",
-      kitabCount: 'ðŸ“š 57 Kitab',
-      hadithCount: 'ðŸ“– 7.563 Hadits',
+      kitabCount: '📚 57 Kitab',
+      hadithCount: '📖 7.563 Hadits',
       authenticity: 'â­ï¸ 100% Sahih',
       datasetInfo: {
-        primary:           { kitab: 'ðŸ“š 57 Kitab', hadith: 'ðŸ“– 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
-        native_lidwa:      { kitab: 'ðŸ“š —', hadith: 'ðŸ“– 5.362 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa (1–5362) · tidak ada pembagian kitab dari sumber Lidwa' }
+        primary:           { kitab: '📚 57 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
+        native_lidwa:      { kitab: '📚 —', hadith: '📖 5.362 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa (1–5362) · tidak ada pembagian kitab dari sumber Lidwa' }
       }
     },
     tirmidhi: {
@@ -2575,12 +2575,12 @@ async function loadChaptersList() {
       badgeClass: 'bg-blue-700 text-white',
       desc: 'Famous Jami collection featuring explicit grading of narrations (Sahih, Hasan, Gharib) and legal opinions of early jurists.',
       desc_id: "Koleksi Jami' yang terkenal dengan penilaian hadits secara eksplisit (Sahih, Hasan, Gharib) dan pendapat hukum ulama awal.",
-      kitabCount: 'ðŸ“š 49 Kitab',
-      hadithCount: 'ðŸ“– 3.956 Hadits',
+      kitabCount: '📚 49 Kitab',
+      hadithCount: '📖 3.956 Hadits',
       authenticity: "â­ï¸ Jami' Tergrading",
       datasetInfo: {
-        primary:           { kitab: 'ðŸ“š 49 Kitab', hadith: 'ðŸ“– 3.956 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–3956)' },
-        native_lidwa:      { kitab: 'ðŸ“š 49 Kitab', hadith: 'ðŸ“– 3.956 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–3956)' }
+        primary:           { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–3956)' },
+        native_lidwa:      { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–3956)' }
       }
     },
     abudawud: {
@@ -2592,12 +2592,12 @@ async function loadChaptersList() {
       badgeClass: 'bg-indigo-600 text-white',
       desc: 'Primarily focuses on legal rulings (Ahkam) used as foundational evidence by jurists across Sunni Fiqh schools.',
       desc_id: 'Terutama berfokus pada hukum fiqih (Ahkam) yang digunakan sebagai dalil pokok oleh para ulama Fiqih Sunni.',
-      kitabCount: 'ðŸ“š 43 Kitab',
-      hadithCount: 'ðŸ“– 5.274 Hadits',
+      kitabCount: '📚 43 Kitab',
+      hadithCount: '📖 5.274 Hadits',
       authenticity: 'â­ï¸ Korpus Sunan',
       datasetInfo: {
-        primary:           { kitab: 'ðŸ“š 43 Kitab', hadith: 'ðŸ“– 5.274 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–5274)' },
-        native_lidwa:      { kitab: 'ðŸ“š 43 Kitab', hadith: 'ðŸ“– 5.274 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5274)' }
+        primary:           { kitab: '📚 43 Kitab', hadith: '📖 5.274 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–5274)' },
+        native_lidwa:      { kitab: '📚 43 Kitab', hadith: '📖 5.274 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5274)' }
       }
     },
     nasai: {
@@ -2609,12 +2609,12 @@ async function loadChaptersList() {
       badgeClass: 'bg-indigo-600 text-white',
       desc: 'Possesses the strictest authentication criteria among the Sunan books, second only to the Sahihain.',
       desc_id: 'Memiliki kriteria otentikasi paling ketat di antara kitab Sunan, hanya di bawah dua kitab Shahih.',
-      kitabCount: 'ðŸ“š 52 Kitab',
-      hadithCount: 'ðŸ“– 5.758 Hadits',
+      kitabCount: '📚 52 Kitab',
+      hadithCount: '📖 5.758 Hadits',
       authenticity: 'â­ï¸ Otentisitas Tinggi',
       datasetInfo: {
-        primary:           { kitab: 'ðŸ“š 52 Kitab', hadith: 'ðŸ“– 5.758 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–5758)' },
-        native_lidwa:      { kitab: 'ðŸ“š 51 Kitab', hadith: 'ðŸ“– 5.662 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5662)' }
+        primary:           { kitab: '📚 52 Kitab', hadith: '📖 5.758 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–5758)' },
+        native_lidwa:      { kitab: '📚 51 Kitab', hadith: '📖 5.662 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5662)' }
       }
     },
     ibnmajah: {
@@ -2626,12 +2626,12 @@ async function loadChaptersList() {
       badgeClass: 'bg-indigo-600 text-white',
       desc: "Renowned for systematic arrangement and unique narrations (zawa'id) expanding Islamic jurisprudence.",
       desc_id: "Terkenal dengan susunan sistematis dan periwayatan unik (zawa'id) yang memperluas khazanah fiqih Islam.",
-      kitabCount: 'ðŸ“š 37 Kitab',
-      hadithCount: 'ðŸ“– 4.341 Hadits',
+      kitabCount: '📚 37 Kitab',
+      hadithCount: '📖 4.341 Hadits',
       authenticity: 'â­ï¸ Korpus Sunan',
       datasetInfo: {
-        primary:           { kitab: 'ðŸ“š 37 Kitab', hadith: 'ðŸ“– 4.341 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–4341)' },
-        native_lidwa:      { kitab: 'ðŸ“š 37 Kitab', hadith: 'ðŸ“– 4.341 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–4341)' }
+        primary:           { kitab: '📚 37 Kitab', hadith: '📖 4.341 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–4341)' },
+        native_lidwa:      { kitab: '📚 37 Kitab', hadith: '📖 4.341 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–4341)' }
       }
     },
     malik: {
@@ -2643,12 +2643,12 @@ async function loadChaptersList() {
       badgeClass: 'bg-amber-600 text-white',
       desc: 'The earliest surviving legal Mushannaf text of Islam, combining prophetic Hadiths with judicial rulings of Madinah.',
       desc_id: 'Teks Mushannaf fiqih tertua yang masih ada dalam Islam, menggabungkan Hadits Nabi dengan keputusan hukum ulama Madinah.',
-      kitabCount: 'ðŸ“š 56 Kitab',
-      hadithCount: 'ðŸ“– 1.720 Hadits',
+      kitabCount: '📚 56 Kitab',
+      hadithCount: '📖 1.720 Hadits',
       authenticity: 'â­ï¸ Imam Hijaz',
       datasetInfo: {
-        primary:           { kitab: 'ðŸ“š 56 Kitab', hadith: 'ðŸ“– 1.858 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–1858)' },
-        native_lidwa:      { kitab: 'ðŸ“š 56 Kitab', hadith: 'ðŸ“– 1.594 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–1594) · beberapa hadits dikelompokkan' }
+        primary:           { kitab: '📚 56 Kitab', hadith: '📖 1.858 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–1858)' },
+        native_lidwa:      { kitab: '📚 56 Kitab', hadith: '📖 1.594 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–1594) · beberapa hadits dikelompokkan' }
       }
     },
     ahmad: {
@@ -2660,12 +2660,12 @@ async function loadChaptersList() {
       badgeClass: 'bg-purple-700 text-white',
       desc: 'The massive encyclopedic Musnad arranged companion by companion (Sahabi), containing over 27,000 narrations.',
       desc_id: 'Musnad ensiklopedis yang sangat besar, disusun berdasarkan sahabat per sahabat (Sahabi), berisi lebih dari 27.000 riwayat.',
-      kitabCount: 'ðŸ“š Sistem Musnad',
-      hadithCount: 'ðŸ“– 27.647 Hadits',
+      kitabCount: '📚 Sistem Musnad',
+      hadithCount: '📖 27.647 Hadits',
       authenticity: 'â­ï¸ Korpus Ensiklopedis',
       datasetInfo: {
-        primary:           { kitab: 'ðŸ“š 7 Bagian Musnad', hadith: 'ðŸ“– 27.647 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–27647)' },
-        native_lidwa:      { kitab: 'ðŸ“š Susunan Musnad', hadith: 'ðŸ“– 26.363 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–26363) · susunan musnad' }
+        primary:           { kitab: '📚 7 Bagian Musnad', hadith: '📖 27.647 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–27647)' },
+        native_lidwa:      { kitab: '📚 Susunan Musnad', hadith: '📖 26.363 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–26363) · susunan musnad' }
       }
     },
     darimi: {
@@ -2677,12 +2677,12 @@ async function loadChaptersList() {
       badgeClass: 'bg-indigo-600 text-white',
       desc: 'Highly respected Hadith collection with rigorous standards, frequently considered alongside the Kutub al-Sittah.',
       desc_id: 'Koleksi Hadits yang sangat dihormati dengan standar ketat, sering dianggap setara dengan Kutub al-Sittah.',
-      kitabCount: 'ðŸ“š 24 Kitab',
-      hadithCount: 'ðŸ“– 3.367 Hadits',
+      kitabCount: '📚 24 Kitab',
+      hadithCount: '📖 3.367 Hadits',
       authenticity: 'â­ï¸ Korpus Sunan',
       datasetInfo: {
-        primary:           { kitab: 'ðŸ“š 24 Kitab', hadith: 'ðŸ“– 3.367 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–3367)' },
-        native_lidwa:      { kitab: 'ðŸ“š 24 Kitab', hadith: 'ðŸ“– 3.367 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–3367)' }
+        primary:           { kitab: '📚 24 Kitab', hadith: '📖 3.367 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–3367)' },
+        native_lidwa:      { kitab: '📚 24 Kitab', hadith: '📖 3.367 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–3367)' }
       }
     },
     nawawi: {
@@ -2694,12 +2694,12 @@ async function loadChaptersList() {
       badgeClass: 'bg-emerald-700 text-white',
       desc: "Essential collection of 42 foundational narrations encapsulating Jawami' al-Kalim (concise comprehensive prophetic guidance).",
       desc_id: "Koleksi esensial 42 riwayat fondasi yang mencakup Jawami' al-Kalim (bimbingan Nabi yang ringkas dan menyeluruh).",
-      kitabCount: 'ðŸ“š 1 Jilid',
-      hadithCount: 'ðŸ“– 42 Hadits',
+      kitabCount: '📚 1 Jilid',
+      hadithCount: '📖 42 Hadits',
       authenticity: "â­ï¸ Jawami' al-Kalim",
       datasetInfo: {
-        primary:      { kitab: 'ðŸ“š 1 Jilid', hadith: 'ðŸ“– 42 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–42)' },
-        native_lidwa: { kitab: 'ðŸ“š 1 Jilid', hadith: 'ðŸ“– 42 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–42)' }
+        primary:      { kitab: '📚 1 Jilid', hadith: '📖 42 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–42)' },
+        native_lidwa: { kitab: '📚 1 Jilid', hadith: '📖 42 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–42)' }
       }
     },
     tabarani_kabir: {
@@ -2711,26 +2711,83 @@ async function loadChaptersList() {
       badgeClass: 'bg-blue-700 text-white',
       desc: "Monumental Mu'jam collection arranged according to the names of Companion narrators in alphabetical order.",
       desc_id: "Koleksi Mu'jam monumental yang disusun berdasarkan nama perawi Sahabat secara alfabetis.",
-      kitabCount: 'ðŸ“š 25 Jilid',
-      hadithCount: 'ðŸ“– 20.000+ Hadits',
+      kitabCount: '📚 25 Jilid',
+      hadithCount: '📖 20.000+ Hadits',
       authenticity: 'â­ï¸ Kerangka',
-      datasetInfo: { fawazahmed: { kitab: 'ðŸ“š 25 Jilid', hadith: 'ðŸ“– 20.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
+      datasetInfo: { fawazahmed: { kitab: '📚 25 Jilid', hadith: '📖 20.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
     },
     ibn_abi_shaybah: {
       name: 'Musannaf Ibn Abi Shaybah',
-      ar: 'Ù…ØµÙ†Ù Ø§Ø¨Ù† Ø£Ø¨ÙŠ Ø´ÙŠØ¨Ø©',
+      ar: 'Ù…ØµÙ†Ù ابن أبي شيبة',
       author: 'Imam Ibn Abi Shaybah',
       authorId: 'rawi_ibn_abi_shaybah',
       type: 'Mushannaf',
       badgeClass: 'bg-amber-600 text-white',
       desc: "Encyclopedic Mushannaf collection preserving Marfu', Mauquf, and Maqtu' traditions ordered by Fiqh topics.",
       desc_id: "Koleksi Mushannaf ensiklopedis yang melestarikan tradisi Marfu', Mauquf, dan Maqtu' berdasarkan topik Fiqih.",
-      kitabCount: 'ðŸ“š 37 Kitab',
-      hadithCount: 'ðŸ“– 37.000+ Hadits',
+      kitabCount: '📚 37 Kitab',
+      hadithCount: '📖 37.000+ Hadits',
       authenticity: 'â­ï¸ Kerangka',
-      datasetInfo: { fawazahmed: { kitab: 'ðŸ“š 37 Kitab', hadith: 'ðŸ“– 37.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
+      datasetInfo: { fawazahmed: { kitab: '📚 37 Kitab', hadith: '📖 37.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
     }
   };
+
+    ibnukhuzaimah: {
+      name: 'Shahih Ibnu Khuzaimah',
+      ar: 'صحيح ابن خزيمة',
+      author: 'Imam Ibnu Khuzaimah',
+      authorId: 'rawi_bukhari', // fallback
+      type: "Shahih",
+      badgeClass: 'bg-emerald-600 text-white',
+      desc: 'One of the highly regarded authentic hadith collections by Imam Ibnu Khuzaimah.',
+      desc_id: 'Salah satu kitab hadits shahih yang sangat dihargai karya Imam Ibnu Khuzaimah.',
+      kitabCount: '📚 0 Kitab',
+      hadithCount: '📖 1.808 Hadits',
+      authenticity: '⭐️ Shahih',
+      datasetInfo: { native_mjna: { kitab: '📚 0 Kitab', hadith: '📖 1.808 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–1808)' } }
+    },
+    ibnuhibban: {
+      name: 'Shahih Ibnu Hibban',
+      ar: 'صحيح ابن حبان',
+      author: 'Imam Ibnu Hibban',
+      authorId: 'rawi_bukhari', // fallback
+      type: "Shahih",
+      badgeClass: 'bg-emerald-600 text-white',
+      desc: 'An authentic collection organized by a unique method (Taqasim wa al-Anwa').',
+      desc_id: 'Koleksi shahih yang disusun dengan metode unik (Taqasim wa al-Anwa').',
+      kitabCount: '📚 0 Kitab',
+      hadithCount: '📖 2.769 Hadits',
+      authenticity: '⭐️ Shahih',
+      datasetInfo: { native_mjna: { kitab: '📚 0 Kitab', hadith: '📖 2.769 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–2769)' } }
+    },
+    mustadrak: {
+      name: 'Mustadrak Al-Hakim',
+      ar: 'المستدرك على الصحيحين',
+      author: 'Imam Al-Hakim al-Nishapuri',
+      authorId: 'rawi_bukhari', // fallback
+      type: "Mustadrak",
+      badgeClass: 'bg-amber-600 text-white',
+      desc: 'A supplementary collection aiming to compile authentic hadiths missing from Bukhari and Muslim.',
+      desc_id: 'Koleksi pelengkap yang bertujuan mengumpulkan hadits shahih yang tidak ada dalam Bukhari dan Muslim.',
+      kitabCount: '📚 45 Kitab',
+      hadithCount: '📖 673 Hadits',
+      authenticity: '⭐️ Mustadrak',
+      datasetInfo: { native_mjna: { kitab: '📚 45 Kitab', hadith: '📖 673 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–673)' } }
+    },
+    daruquthni: {
+      name: 'Sunan Daruquthni',
+      ar: 'سنن الدارقطني',
+      author: 'Imam Ad-Daruquthni',
+      authorId: 'rawi_bukhari', // fallback
+      type: "Sunan",
+      badgeClass: 'bg-indigo-600 text-white',
+      desc: 'A collection focusing on legal hadiths and detailing hidden defects (ilal) in chains.',
+      desc_id: 'Koleksi yang berfokus pada hadits fiqih dan merinci cacat tersembunyi (ilal) dalam sanad.',
+      kitabCount: '📚 0 Kitab',
+      hadithCount: '📖 4.790 Hadits',
+      authenticity: '⭐️ Sunan',
+      datasetInfo: { native_mjna: { kitab: '📚 0 Kitab', hadith: '📖 4.790 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–4790)' } }
+    }
     const meta = bookMasterDict[bookId] || {
     name: bookId.toUpperCase(),
     ar: bookId,
@@ -2739,8 +2796,8 @@ async function loadChaptersList() {
     type: 'Hadith Book',
     badgeClass: 'bg-primary text-white',
     desc: 'Authentic Hadith collection preserved in canonical digital manuscripts.',
-    kitabCount: 'ðŸ“š Index',
-    hadithCount: 'ðŸ“– Canonical Corpus',
+    kitabCount: '📚 Index',
+    hadithCount: '📖 Canonical Corpus',
     authenticity: 'â­ï¸ Verified'
   };
 
@@ -2870,9 +2927,9 @@ async function loadChaptersList() {
           { chapter_number: 19, name_en: "Trade (Buyu')", name_ar: 'كتاب البيوع', hadith_range: 'Hadith 2451 – 2547' },
           { chapter_number: 20, name_en: "Permission (Isti'dhan)", name_ar: 'كتاب الاستئذان', hadith_range: 'Hadith 2548 – 2622' },
           { chapter_number: 21, name_en: 'Heart-Melting Traditions (Riqaq)', name_ar: 'كتاب الرقاق', hadith_range: 'Hadith 2623 – 2759' },
-          { chapter_number: 22, name_en: "Inheritance (Fara'id)", name_ar: 'ÙƒØªØ§Ø¨ Ø§Ù„ÙØ±Ø§Ø¦Ø¶', hadith_range: 'Hadith 2760 – 3084' },
+          { chapter_number: 22, name_en: "Inheritance (Fara'id)", name_ar: 'كتاب Ø§Ù„ÙØ±Ø§Ø¦Ø¶', hadith_range: 'Hadith 2760 – 3084' },
           { chapter_number: 23, name_en: 'Wills (Wasiyyah)', name_ar: 'كتاب الوصايا', hadith_range: 'Hadith 3085 – 3210' },
-          { chapter_number: 24, name_en: "Virtues of Qur'an (Fada'il al-Qur'an)", name_ar: 'ÙƒØªØ§Ø¨ ÙØ¶Ø§Ø¦Ù„ Ø§Ù„Ù‚Ø±Ø¢Ù†', hadith_range: 'Hadith 3211 – 3367' }
+          { chapter_number: 24, name_en: "Virtues of Qur'an (Fada'il al-Qur'an)", name_ar: 'كتاب ÙØ¶Ø§Ø¦Ù„ القرآن', hadith_range: 'Hadith 3211 – 3367' }
         ];
       } else if (bookId === 'ahmad') {
         chapters = [
@@ -2881,7 +2938,7 @@ async function loadChaptersList() {
         ];
       } else {
         chapters = [
-          { chapter_number: 1, name_en: `${meta.name} - Chapter 1`, name_ar: 'Ø§Ù„ÙØµÙ„ Ø§Ù„Ø£ÙˆÙ„', hadith_range: 'Chapter Index' }
+          { chapter_number: 1, name_en: `${meta.name} - Chapter 1`, name_ar: 'Ø§Ù„ÙØµÙ„ الأول', hadith_range: 'Chapter Index' }
         ];
       }
     }
@@ -3325,18 +3382,18 @@ function transliterateArabicName(ar) {
   const clean = ar.replace(/[\u064B-\u0652]/g, '').trim();
 
   const dict = {
-    'Ø¹Ø¨Ø¯ Ø§Ù„Ù„Ù‡': 'Abdullah', 'Ø¹Ø¨Ø¯ Ø§Ù„Ø±Ø­Ù…Ù†': 'Abdurrahman', 'Ø¹Ø¨Ø¯ Ø§Ù„Ø¹Ø²ÙŠØ²': 'Abdul Aziz',
-    'Ø¹Ø¨Ø¯ Ø§Ù„Ù…Ø¬ÙŠØ¯': 'Abdul Majid', 'Ø¹Ø¨Ø¯ Ø§Ù„Ù…Ù„Ùƒ': 'Abdul Malik', 'Ø¹Ø¨Ø¯ Ø§Ù„Ø±Ø²Ø§Ù‚': 'Abdul Razzaq',
-    'Ø£Ø¨Ùˆ': 'Abu', 'Ø£Ø¨ÙŠ': 'Abu', 'Ø£Ø¨Ø§': 'Abu', 'Ø£Ù…': 'Umm', 'Ø§Ø¨Ù†': 'ibn', 'Ø¨Ù†': 'bin', 'Ø¨Ù†Øª': 'bint',
-    'ØµØ§Ù„Ø­': 'Salih', 'Ø¯ÙŠÙ†Ø§Ø±': 'Dinar', 'Ø¨Ù„Ø§Ù„': 'Bilal', 'Ø³Ù„ÙŠÙ…Ø§Ù†': 'Sulaiman',
-    'Ø§Ù„Ø¹Ù‚Ø¯ÙŠ': 'al-Aqadi', 'Ø¹Ø§Ù…Ø±': 'Amir', 'Ù…Ø­Ù…Ø¯': 'Muhammad', 'Ø£Ø­Ù…Ø¯': 'Ahmad',
-    'Ø¹Ù„ÙŠ': 'Ali', 'Ø­Ø³ÙŠÙ†': 'Husayn', 'Ø­Ø³Ù†': 'Hasan', 'Ø¹Ø«Ù…Ø§Ù†': 'Uthman',
-    'Ø³Ø¹ÙŠØ¯': 'Sa\'id', 'Ù…Ø³Ù„Ù…': 'Muslim', 'Ø¥Ø¨Ø±Ø§Ù‡ÙŠÙ…': 'Ibrahim', 'ÙŠØ­ÙŠÙ‰': 'Yahya',
-    'Ø´Ø¹ÙŠØ¨': 'Shu\'ayb', 'Ù…Ø§Ù„Ùƒ': 'Malik', 'Ø­Ù…ÙŠØ¯': 'Humayd', 'Ø«Ø§Ø¨Øª': 'Thabit',
-    'Ù‚ØªØ§Ø¯Ø©': 'Qatadah', 'Ø£ÙŠÙˆØ¨': 'Ayyub', 'Ù†Ø§ÙØ¹': 'Nafi\'', 'Ù…Ø³Ø¯Ø¯': 'Musaddad',
-    'ÙŠØ²ÙŠØ¯': 'Yazid', 'Ø¹Ø¨ÙŠØ¯ Ø§Ù„Ù„Ù‡': 'Ubaydullah', 'Ù‡Ø´Ø§Ù…': 'Hisham', 'Ù…ÙˆØ³Ù‰': 'Musa',
-    'Ø¬Ø¨ÙŠØ±': 'Jubair', 'Ø¹ÙˆØ§Ù†Ø©': 'Awanah', 'Ø¥Ø³Ù…Ø§Ø¹ÙŠÙ„': 'Ismail', 'Ø¹Ø¨Ø§Ø³': 'Abbas',
-    'Ø¹Ø§Ø¦Ø´Ø©': 'Aisha', 'Ø¹Ø·Ø§Ø¡': 'Ata\'', 'Ù…Ø¬Ø§Ù‡Ø¯': 'Mujahid', 'Ø§Ù„Ø²Ù‡Ø±ÙŠ': 'al-Zuhri'
+    'عبد الله': 'Abdullah', 'عبد الرحمن': 'Abdurrahman', 'عبد العزيز': 'Abdul Aziz',
+    'عبد المجيد': 'Abdul Majid', 'عبد الملك': 'Abdul Malik', 'عبد الرزاق': 'Abdul Razzaq',
+    'أبو': 'Abu', 'أبي': 'Abu', 'أبا': 'Abu', 'أم': 'Umm', 'ابن': 'ibn', 'بن': 'bin', 'بنØª': 'bint',
+    'صالح': 'Salih', 'دينار': 'Dinar', 'بلال': 'Bilal', 'سليمان': 'Sulaiman',
+    'العقدي': 'al-Aqadi', 'عامر': 'Amir', 'محمد': 'Muhammad', 'أحمد': 'Ahmad',
+    'علي': 'Ali', 'حسين': 'Husayn', 'حسن': 'Hasan', 'عثمان': 'Uthman',
+    'سعيد': 'Sa\'id', 'مسلم': 'Muslim', 'إبراهيم': 'Ibrahim', 'يحيى': 'Yahya',
+    'شعيب': 'Shu\'ayb', 'مالك': 'Malik', 'حميد': 'Humayd', 'ثابت': 'Thabit',
+    'قتادة': 'Qatadah', 'أيوب': 'Ayyub', 'Ù†Ø§ÙØ¹': 'Nafi\'', 'مسدد': 'Musaddad',
+    'يزيد': 'Yazid', 'عبيد الله': 'Ubaydullah', 'هشام': 'Hisham', 'موسى': 'Musa',
+    'جبير': 'Jubair', 'عوانة': 'Awanah', 'إسماعيل': 'Ismail', 'عباس': 'Abbas',
+    'عائشة': 'Aisha', 'عطاء': 'Ata\'', 'مجاهد': 'Mujahid', 'الزهري': 'al-Zuhri'
   };
 
   const words = clean.split(/\s+/);
@@ -3380,8 +3437,8 @@ async function loadSanadChain() {
 
   if (titleEn) titleEn.innerText = `Sanad: ${bookName} ${hadithNum}`;
   if (titleId) titleId.innerText = `Sanad: ${bookName} Hadits #${hadithNum}`;
-  if (subEn) subEn.innerText = `Chain of narrators (Ø§Ù„Ø¥Ø³Ù†Ø§Ø¯) for ${bookName} Hadith #${hadithNum} tracing back to the Messenger of Allah ﷺ.`;
-  if (subId) subId.innerText = `Silsilah perawi (Ø§Ù„Ø¥Ø³Ù†Ø§Ø¯) untuk ${bookName} Hadits #${hadithNum} yang bersambung sampai ke Rasulullah ﷺ.`;
+  if (subEn) subEn.innerText = `Chain of narrators (الإسناد) for ${bookName} Hadith #${hadithNum} tracing back to the Messenger of Allah ﷺ.`;
+  if (subId) subId.innerText = `Silsilah perawi (الإسناد) untuk ${bookName} Hadits #${hadithNum} yang bersambung sampai ke Rasulullah ﷺ.`;
 
   const activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
   let dsPrefix = 'fawaz';
@@ -3536,7 +3593,7 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
     
     return {
       rawi_id: rId,
-      name: enName + (isFirst && !enName.includes('Ø±Ø¶ÙŠ Ø§Ù„Ù„Ù‡ Ø¹Ù†Ù‡') ? ' (Ø±Ø¶ÙŠ Ø§Ù„Ù„Ù‡ Ø¹Ù†Ù‡)' : ''),
+      name: enName + (isFirst && !enName.includes('رضي الله عنه') ? ' (رضي الله عنه)' : ''),
       name_id: idName,
       roleEn: rawiData.role || (isFirst ? 'SAHABI (COMPANION) • GRADE: THIQAH' : 'TRANSMITTER (RAWI) • GRADE: ' + (rawiData.grade || 'THIQAH')),
       roleId: rawiData.roleId || (isFirst ? 'SAHABAT NABI • DERAJAT: TSIQAH' : 'PERAWI (RAWI) • DERAJAT: ' + (rawiData.grade || 'TSIQAH')),
@@ -3551,7 +3608,7 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
 
   if (narrators.length === 0) {
     narrators = [
-      { rawi_id: null, name: "Sanad tidak terdeteksi", name_id: "Sanad tidak terdeteksi", roleEn: "UNKNOWN", roleId: "TIDAK DIKETAHUI", ar: "ØºÙŠØ± Ù…Ø¹Ø±ÙˆÙ", kunyah: "-", residence: "-", death_ah: "-", counts: "-", remarks: "Sistem belum mendeteksi teks sanad" }
+      { rawi_id: null, name: "Sanad tidak terdeteksi", name_id: "Sanad tidak terdeteksi", roleEn: "UNKNOWN", roleId: "TIDAK DIKETAHUI", ar: "غير Ù…Ø¹Ø±ÙˆÙ", kunyah: "-", residence: "-", death_ah: "-", counts: "-", remarks: "Sistem belum mendeteksi teks sanad" }
     ];
   }
 
@@ -3580,7 +3637,7 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
             <span data-lang-id style="display:none">Nabi Muhammad ﷺ</span>
           </h3>
         </div>
-        <span class="font-arabic-body text-xl" dir="rtl">Ù…Ø­Ù…Ø¯ Ø±Ø³ÙˆÙ„ Ø§Ù„Ù„Ù‡ ﷺ</span>
+        <span class="font-arabic-body text-xl" dir="rtl">محمد رسول الله ﷺ</span>
       </div>
     </div>
   `;
@@ -3672,7 +3729,7 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
 
   html += `
     <div class="sanad-node relative z-10 bg-primary text-white dark:bg-[#0f172a] border border-primary dark:border-[#334155] rounded-xl p-5 shadow-sm">
-      <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-primary border-2 border-white dark:border-ink-black flex items-center justify-center text-[10px]">ðŸ“š</div>
+      <div class="absolute -left-11 top-6 w-6 h-6 rounded-full bg-primary border-2 border-white dark:border-ink-black flex items-center justify-center text-[10px]">📚</div>
       <div class="flex justify-between items-center">
         <div>
           <span class="text-[10px] uppercase font-bold tracking-widest text-[#10b981]">
@@ -3737,7 +3794,7 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
 function normalizeRawiNameKey(str) {
   return (str || '')
     .toLowerCase()
-    .replace(/['`â€™\u2019]/g, '')
+    .replace(/['`’\u2019]/g, '')
     .replace(/[-_]/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
@@ -3793,8 +3850,8 @@ function getIndonesianRawiName(name, rawiId, arName) {
     .replace(/al-ansari/gi, 'al-Anshari')
     .replace(/al-laythi/gi, 'al-Laitsi')
     .replace(/al-humaydi/gi, 'al-Humaidi')
-    .replace(/\(Ø±Ø¶ÙŠ Ø§Ù„Ù„Ù‡ Ø¹Ù†Ù‡Ø§\)/gi, '')
-    .replace(/\(Ø±Ø¶ÙŠ Ø§Ù„Ù„Ù‡ Ø¹Ù†Ù‡\)/gi, '')
+    .replace(/\(رضي الله عنهØ§\)/gi, '')
+    .replace(/\(رضي الله عنه\)/gi, '')
     .trim();
 }
 
@@ -3831,7 +3888,7 @@ function escapeHtml(str) {
     .replace(/'/g, '&#039;');
 }
 
-// â”€â”€ Multi-Source & Multi-Language Syarah Engine â”€â”€
+// ── Multi-Source & Multi-Language Syarah Engine ──
 window.activeSyarahData = null;
 window.activeSyarahSource = 'enc';
 window.activeSyarahLang = 'id';
