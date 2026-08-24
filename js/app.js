@@ -2117,7 +2117,7 @@ async function loadHadithList() {
       console.warn('Fallback sources or links not available for', bookId, e);
     }
 
-    const mainEd = engEd;
+    const mainEd = (engEd && engEd.hadiths) ? engEd : araEd;
     if (mainEd && mainEd.hadiths) {
       const araMap = {};
       const engMap = {};
@@ -2532,6 +2532,22 @@ async function loadChaptersList() {
   const bookId = (params.get('book') || 'bukhari').toLowerCase();
 
   const bookMasterDict = {
+    tabarani: {
+      name: 'Al-Mujam al-Kabir',
+      ar: 'المعجم الكبير',
+      author: 'Imam At-Tabarani',
+      authorId: 'rawi_bukhari', // fallback
+      type: 'Mujam',
+      badgeClass: 'bg-blue-600 text-white',
+      desc: 'One of the largest hadith collections compiled by Imam At-Tabarani.',
+      desc_id: 'Salah satu koleksi hadits terbesar yang disusun oleh Imam At-Tabarani.',
+      kitabCount: '📚 1 Kitab',
+      hadithCount: '📖 21.850 Hadits',
+      authenticity: '⭐️ Mujam',
+      datasetInfo: {
+        native_fawaz: { kitab: '📚 1 Kitab', hadith: '📖 21.850 Hadits', numbering: 'Penomoran: Fawaz' }
+      }
+    },
     syafii: {
       name: "Musnad Syafi'i",
       ar: 'مسند الشافعي',
