@@ -1,0 +1,15 @@
+0 | Introduction | count=92
+1 | The Book of Faith | count=441
+2 | The Book of Purification | count=145
+3 | The Book of Menstruation | count=158
+4 | The Book of Prayers | count=324
+5 | The Book of Mosques and Places of Prayer | count=409
+6 | The Book of Prayer - Travellers | count=381
+7 | The Book of Prayer - Friday | count=93
+8 | The Book of Prayer - Two Eids | count=26
+9 | The Book of Prayer - Rain | count=19
+10 | The Book of Prayer - Eclipses | count=34
+11 | The Book of Prayer - Funerals | count=140
+12 | The Book of Zakat | count=232
+13 | The Book of Fasting | count=285
+14 | The Book of I'tikaf | count=11

@@ -1,0 +1,15 @@
+{"length": 7459, "id": 2, "arabic": {"introduction": "", "author": "\u0627\u0644\u0625\u0645\u0627\u0645 \u0645\u0633\u0644\u0645 \u0628\u0646 \u0627\u0644\u062d\u062c\u0627\u062c \u0627\u0644\u0642\u0634\u064a\u0631\u064a \u0627\u0644\u0646\u064a\u0633\u0627\u0628\u0648\u0631\u064a", "title": "\u0635\u062d\u064a\u062d \u0645\u0633\u0644\u0645"}, "english": {"introduction": "", "author": "Imam Muslim ibn al-Hajjaj al-Naysaburi", "title": "Sahih Muslim"}}
+{
+  "idInBook": 1, 
+  "bookId": 2, 
+  "english": {
+    "text": "Should it so happen that we come into contact with one of the Companions of the Messenger of Allah (peace be upon him) we shall ask him about what is talked about taqdir (Divine Decree). Accidentally we came across Abdullah ibn Umar ibn al-Khattab, while he was entering the mosque. My companion and I surrounded him. One of us (stood) on his right and the other stood on his left. I expected that my companion would authorize me to spe
+{
+  "idInBook": 2, 
+  "bookId": 2, 
+  "english": {
+    "text": "I and Humaid b. Abdur-Rahman Himyari argued. And they carried on the conversation about the purport of the hadith related by Kahmas and its chain of transmission too, and there is some variation of words.", 
+    "narrator": "It is narrated on the authority of Yahya b. Ya'mur that when Ma'bad discussed the problem pertaining to Divine Decree, we refuted that. He (the narrator) said:"
+  }, 
+  "chapterId": 1, 
+  "arabic": "\u062d\u064e

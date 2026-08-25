@@ -1,0 +1,23 @@
+--- LIDWA CHAPTERS ---
+1 | Mukadimah | Count=8 (Start: 1)
+2 | Iman | Count=319 (Start: 9)
+3 | Thaharah | Count=112 (Start: 328)
+4 | Haid | Count=128 (Start: 440)
+5 | Salat | Count=240 (Start: 568)
+6 | Masjid dan tempat-tempat salat | Count=311 (Start: 808)
+7 | Salatnya musafir dan penjelasan tentang qashar | Count=274 (Start: 1119)
+8 | Jumat | Count=71 (Start: 1393)
+9 | Salat dua hari raya | Count=22 (Start: 1464)
+10 | Salat Istisqa` | Count=13 (Start: 1486)
+
+--- INTERNATIONAL (Fawazahmed/API) CHAPTERS ---
+0 | Introduction | Count=92 (Start: 1)
+1 | The Book of Faith | Count=441 (Start: 93)
+2 | The Book of Purification | Count=145 (Start: 534)
+3 | The Book of Menstruation | Count=158 (Start: 679)
+4 | The Book of Prayers | Count=324 (Start: 837)
+5 | The Book of Mosques and Places of Prayer | Count=409 (Start: 1161)
+6 | The Book of Prayer - Travellers | Count=381 (Start: 1570)
+7 | The Book of Prayer - Friday | Count=93 (Start: 1951)
+8 | The Book of Prayer - Two Eids | Count=26 (Start: 2044)
+9 | The Book of Prayer - Rain | Count=19 (Start: 2070)
