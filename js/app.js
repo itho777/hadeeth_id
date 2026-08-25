@@ -4305,11 +4305,16 @@ async function loadTopicHadiths() {
   let currentLang = langSelect ? langSelect.value : 'id';
 
   try {
-    const fullNdjson = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
-    allHadiths = fullNdjson.filter(h => h.tags && h.tags.includes(topicNameEn));
+    const topicSliceRes = await fetch(`data/topics/${topicId}_${bookId.toLowerCase()}.json?v=20260825_1`);
+    if (topicSliceRes.ok) {
+      allHadiths = await topicSliceRes.json();
+    } else {
+      const fullNdjson = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
+      allHadiths = fullNdjson.filter(h => h.tags && h.tags.includes(topicNameEn));
+    }
     filteredHadiths = [...allHadiths];
   } catch (e) {
-    container.innerHTML = '<div class="p-6 text-red-500">Error loading topic data. Please build NDJSON database first.</div>';
+    container.innerHTML = '<div class="p-6 text-red-500">Error loading topic data.</div>';
     return;
   }
 
