@@ -60,25 +60,35 @@ const HadeethAPI = {
    * Fetch a specific byte range from an NDJSON file
    */
   async fetchNdjsonRange(prefix, bookId, startByte, endByte) {
-    let url = `${this.dataUrl}/${prefix}/${bookId}.ndjson`;
-    let res = await fetchWithTimeout(url, {
-        headers: { 'Range': `bytes=${startByte}-${endByte}` }
-    }).catch(() => null);
-    if (!res || (!res.ok && res.status !== 206)) {
-        res = await fetchWithTimeout(`https://raw.githubusercontent.com/itho777/hadeeth_id/main/data/${prefix}/${bookId}.ndjson`, {
+    this.fullTextCache = this.fullTextCache || {};
+    let text = "";
+
+    if (this.fullTextCache[bookId]) {
+        text = this.fullTextCache[bookId].substring(startByte, endByte + 1);
+    } else {
+        let url = `${this.dataUrl}/${prefix}/${bookId}.ndjson`;
+        let res = await fetchWithTimeout(url, {
             headers: { 'Range': `bytes=${startByte}-${endByte}` }
         }).catch(() => null);
+        if (!res || (!res.ok && res.status !== 206)) {
+            res = await fetchWithTimeout(`https://raw.githubusercontent.com/itho777/hadeeth_id/main/data/${prefix}/${bookId}.ndjson`, {
+                headers: { 'Range': `bytes=${startByte}-${endByte}` }
+            }).catch(() => null);
+        }
+        if (!res || (!res.ok && res.status !== 206)) throw new Error(`HTTP ${res ? res.status : 'Range Failed'}`);
+        
+        let buffer = await res.arrayBuffer();
+        
+        if (res.status === 200) {
+            // Server ignored Range, cache the full text for future use
+            const fullText = new TextDecoder('utf-8').decode(buffer);
+            this.fullTextCache[bookId] = fullText;
+            text = fullText.substring(startByte, endByte + 1);
+        } else {
+            text = new TextDecoder('utf-8').decode(buffer);
+        }
     }
-    if (!res || (!res.ok && res.status !== 206)) throw new Error(`HTTP ${res ? res.status : 'Range Failed'}`);
     
-    let buffer = await res.arrayBuffer();
-    
-    // If the server ignored our Range request and sent the full file (status 200), slice it manually.
-    if (res.status === 200) {
-        buffer = buffer.slice(startByte, endByte + 1);
-    }
-    
-    const text = new TextDecoder('utf-8').decode(buffer);
     const lines = text.split('\n').filter(l => l.trim().length > 0);
     const results = [];
     for (const line of lines) {
@@ -203,8 +213,9 @@ const HadeethAPI = {
     try {
       let h = null;
       const idx = await this.fetchNdjsonIndex('api', bookId);
-      if (idx && Array.isArray(idx)) {
-          const entry = idx.find(e => {
+      const indexArray = Array.isArray(idx) ? idx : (idx && idx.hadiths ? idx.hadiths : []);
+      if (indexArray && indexArray.length > 0) {
+          const entry = indexArray.find(e => {
               if (dsPrefix === 'lidwa') { if (Array.isArray(e.lidwa_id)) return e.lidwa_id.some(id => String(id) === String(hadithNumber)); return String(e.lidwa_id) === String(hadithNumber); }
               if (dsPrefix === 'ab') return String(e.idInBook) === String(hadithNumber) || String(e.ab_id) === String(hadithNumber);
               return String(e.id) === String(hadithNumber);
@@ -297,8 +308,10 @@ const HadeethAPI = {
    */
   async getHadithsBatch(bookId, hadithNumbers) {
     if (!hadithNumbers || hadithNumbers.length === 0) return [];
-    const promises = hadithNumbers.map(num => this.getHadith(bookId, num));
-    const results = await Promise.all(promises);
+    const results = [];
+    for (const num of hadithNumbers) {
+       results.push(await this.getHadith(bookId, num));
+    }
     return results.filter(h => h !== null);
   },
 
