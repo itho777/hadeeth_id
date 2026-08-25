@@ -33,10 +33,7 @@ const HadeethAPI = {
   },
 
   get dataUrl() {
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-        return this.baseUrl;
-    }
-    return 'https://raw.githubusercontent.com/itho777/hadeeth_id/main/data';
+    return this.baseUrl;
   },
 
   /**
@@ -47,8 +44,11 @@ const HadeethAPI = {
     const key = `${prefix}_${bookId}`;
     if (this.ndjsonIndexes[key]) return this.ndjsonIndexes[key];
     
-    const url = `${this.dataUrl}/${prefix}/${bookId}_ndjson_index.json`;
-    const res = await fetchWithTimeout(url).catch(() => null);
+    let url = `${this.dataUrl}/${prefix}/${bookId}_ndjson_index.json`;
+    let res = await fetchWithTimeout(url).catch(() => null);
+    if (!res || !res.ok) {
+        res = await fetchWithTimeout(`https://raw.githubusercontent.com/itho777/hadeeth_id/main/data/${prefix}/${bookId}_ndjson_index.json`).catch(() => null);
+    }
     if (res && res.ok) {
         this.ndjsonIndexes[key] = await res.json();
         return this.ndjsonIndexes[key];
@@ -60,11 +60,16 @@ const HadeethAPI = {
    * Fetch a specific byte range from an NDJSON file
    */
   async fetchNdjsonRange(prefix, bookId, startByte, endByte) {
-    const url = `${this.dataUrl}/${prefix}/${bookId}.ndjson`;
-    const res = await fetchWithTimeout(url, {
+    let url = `${this.dataUrl}/${prefix}/${bookId}.ndjson`;
+    let res = await fetchWithTimeout(url, {
         headers: { 'Range': `bytes=${startByte}-${endByte}` }
-    });
-    if (!res.ok && res.status !== 206) throw new Error(`HTTP ${res.status}`);
+    }).catch(() => null);
+    if (!res || (!res.ok && res.status !== 206)) {
+        res = await fetchWithTimeout(`https://raw.githubusercontent.com/itho777/hadeeth_id/main/data/${prefix}/${bookId}.ndjson`, {
+            headers: { 'Range': `bytes=${startByte}-${endByte}` }
+        }).catch(() => null);
+    }
+    if (!res || (!res.ok && res.status !== 206)) throw new Error(`HTTP ${res ? res.status : 'Range Failed'}`);
     
     let buffer = await res.arrayBuffer();
     
@@ -250,6 +255,51 @@ const HadeethAPI = {
       console.error(`Failed to load Hadith ${bookId}:${hadithNumber}:`, err);
       return null;
     }
+  },
+
+  /**
+   * Fetch topic index mapping
+   */
+  async getTopicIndex() {
+    if (this.topicIndexCache) return this.topicIndexCache;
+    try {
+      let url = `${this.dataUrl}/api/topics_index.json?v=20260825_3`;
+      let res = await fetchWithTimeout(url).catch(() => null);
+      if (!res || !res.ok) {
+        res = await fetchWithTimeout(`https://raw.githubusercontent.com/itho777/hadeeth_id/main/data/api/topics_index.json?v=20260825_3`).catch(() => null);
+      }
+      if (res && res.ok) {
+        this.topicIndexCache = await res.json();
+        return this.topicIndexCache;
+      }
+    } catch (e) {
+      console.warn('Failed to load topics_index.json:', e);
+    }
+    return null;
+  },
+
+  /**
+   * Get list of hadith numbers for a specific topic and book
+   */
+  async getTopicHadithIds(topicId, bookId) {
+    const idx = await this.getTopicIndex();
+    if (idx && idx.topics && idx.topics[String(topicId)]) {
+      const t = idx.topics[String(topicId)];
+      if (t.books && t.books[bookId.toLowerCase()]) {
+        return t.books[bookId.toLowerCase()];
+      }
+    }
+    return [];
+  },
+
+  /**
+   * Fetch a batch of hadiths concurrently using HTTP Range Requests directly from master NDJSON
+   */
+  async getHadithsBatch(bookId, hadithNumbers) {
+    if (!hadithNumbers || hadithNumbers.length === 0) return [];
+    const promises = hadithNumbers.map(num => this.getHadith(bookId, num));
+    const results = await Promise.all(promises);
+    return results.filter(h => h !== null);
   },
 
   /**

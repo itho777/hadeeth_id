@@ -4298,28 +4298,30 @@ async function loadTopicHadiths() {
   document.querySelector('[data-list-chapter-title-ar]').innerText = '';
 
 
-  let allHadiths = [];
-  let filteredHadiths = [];
+  let allHadithIds = [];
+  let filteredHadithIds = [];
+  let searchResultItems = null;
   let currentPage = 1;
   let pageSize = parseInt(pageSizeSelect ? pageSizeSelect.value : '10') || 10;
   let currentLang = langSelect ? langSelect.value : 'id';
 
   try {
-    const topicSliceRes = await fetch(`data/topics/${topicId}_${bookId.toLowerCase()}.json?v=20260825_1`);
-    if (topicSliceRes.ok) {
-      allHadiths = await topicSliceRes.json();
+    if (window.HadeethAPI && typeof window.HadeethAPI.getTopicHadithIds === 'function') {
+      allHadithIds = await window.HadeethAPI.getTopicHadithIds(topicId, bookId);
     } else {
-      const fullNdjson = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
-      allHadiths = fullNdjson.filter(h => h.tags && h.tags.includes(topicNameEn));
+      const idxRes = await fetch('data/api/topics_index.json?v=20260825_3');
+      const idxData = await idxRes.json();
+      allHadithIds = (idxData.topics && idxData.topics[String(topicId)] && idxData.topics[String(topicId)].books && idxData.topics[String(topicId)].books[bookId.toLowerCase()]) || [];
     }
-    filteredHadiths = [...allHadiths];
+    filteredHadithIds = [...allHadithIds];
   } catch (e) {
-    container.innerHTML = '<div class="p-6 text-red-500">Error loading topic data.</div>';
+    console.error('Failed to load topic data:', e);
+    container.innerHTML = '<div class="p-6 text-red-500">Error loading topic data. Please refresh.</div>';
     return;
   }
 
-  if (countMetaEn) countMetaEn.innerText = filteredHadiths.length + ' Hadiths found in ' + bookName + ' for topic ' + topicNameEn;
-  if (countMetaId) countMetaId.innerText = filteredHadiths.length + ' Hadits ditemukan dalam ' + bookName + ' untuk topik ' + topicNameId;
+  if (countMetaEn) countMetaEn.innerText = filteredHadithIds.length + ' Hadiths found in ' + bookName + ' for topic ' + topicNameEn;
+  if (countMetaId) countMetaId.innerText = filteredHadithIds.length + ' Hadits ditemukan dalam ' + bookName + ' untuk topik ' + topicNameId;
 
   function buildTopicCard(item) {
     const num = item.id || item.hadith_number;
@@ -4386,12 +4388,23 @@ async function loadTopicHadiths() {
       + '</div></div>';
   }
 
-  function updateTopicPaginationUI() {
-    const totalPages = Math.ceil(filteredHadiths.length / pageSize) || 1;
+  async function updateTopicPaginationUI() {
+    let totalItems = searchResultItems !== null ? searchResultItems.length : filteredHadithIds.length;
+    const totalPages = Math.ceil(totalItems / pageSize) || 1;
     if (currentPage > totalPages) currentPage = totalPages;
     const startIdx = (currentPage - 1) * pageSize;
-    const endIdx = Math.min(startIdx + pageSize, filteredHadiths.length);
-    const pageData = filteredHadiths.slice(startIdx, endIdx);
+    const endIdx = Math.min(startIdx + pageSize, totalItems);
+
+    let pageData = [];
+    if (searchResultItems !== null) {
+      pageData = searchResultItems.slice(startIdx, endIdx);
+    } else {
+      const pageIds = filteredHadithIds.slice(startIdx, endIdx);
+      if (pageIds.length > 0) {
+        container.innerHTML = '<div class="flex items-center justify-center py-12 text-outline"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mr-3"></div><span>Loading hadiths from NDJSON...</span></div>';
+        pageData = await window.HadeethAPI.getHadithsBatch(bookId, pageIds);
+      }
+    }
 
     let html = '';
     if (pageData.length === 0) {
@@ -4407,8 +4420,8 @@ async function loadTopicHadiths() {
     if (pageIndicator) {
       const isId = (window.LangSystem && window.LangSystem.isIdMode());
       pageIndicator.innerText = isId
-        ? 'Menampilkan ' + (startIdx + 1) + '-' + endIdx + ' dari ' + filteredHadiths.length + ' Hadits (Hal ' + currentPage + ' dari ' + totalPages + ')'
-        : 'Showing ' + (startIdx + 1) + '-' + endIdx + ' of ' + filteredHadiths.length + ' Ahadith (Page ' + currentPage + ' of ' + totalPages + ')';
+        ? 'Menampilkan ' + (startIdx + (totalItems > 0 ? 1 : 0)) + '-' + endIdx + ' dari ' + totalItems + ' Hadits (Hal ' + currentPage + ' dari ' + totalPages + ')'
+        : 'Showing ' + (startIdx + (totalItems > 0 ? 1 : 0)) + '-' + endIdx + ' of ' + totalItems + ' Ahadith (Page ' + currentPage + ' of ' + totalPages + ')';
     }
     if (prevBtn) prevBtn.disabled = (currentPage <= 1);
     if (nextBtn) nextBtn.disabled = (currentPage >= totalPages);
@@ -4461,20 +4474,28 @@ async function loadTopicHadiths() {
     var searchInput = document.getElementById('topic-search-input');
   var searchBtn = document.getElementById('topic-search-btn');
   
-  function executeTopicSearch() {
-      var q = searchInput ? searchInput.value.toLowerCase() : '';
-      filteredHadiths = !q ? [...allHadiths] : allHadiths.filter(function(h) {
-          let en = h.text_en || (h.translations && h.translations.en && h.translations.en[0] && h.translations.en[0].text) || '';
-          let id = h.text_id || (h.translations && h.translations.id && h.translations.id[0] && h.translations.id[0].text) || '';
-          let ar = h.text_ar || (h.translations && h.translations.ar && h.translations.ar[0] && h.translations.ar[0].text) || '';
-          let num = String(h.id || h.hadith_number || '');
-          return (en.toLowerCase().indexOf(q) >= 0) ||
-                 (id.toLowerCase().indexOf(q) >= 0) ||
-                 (ar.indexOf(q) >= 0) ||
-                 (num.indexOf(q) >= 0);
-      });
-      currentPage = 1;
-      updateTopicPaginationUI();
+  async function executeTopicSearch() {
+    const q = searchInput ? searchInput.value.trim().toLowerCase() : '';
+    if (!q) {
+      searchResultItems = null;
+      filteredHadithIds = [...allHadithIds];
+    } else {
+      const num = parseInt(q);
+      if (!isNaN(num) && String(num) === q) {
+        searchResultItems = null;
+        filteredHadithIds = allHadithIds.filter(id => String(id) === q || String(id).includes(q));
+      } else {
+        container.innerHTML = '<div class="flex items-center justify-center py-12 text-outline"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mr-3"></div><span>Searching topic ahadith...</span></div>';
+        const rawResults = await window.HadeethAPI.search(q, bookId, 50);
+        const topicSet = new Set(allHadithIds.map(id => String(id)));
+        searchResultItems = rawResults.filter(r => {
+          const rId = String(r.id || r.hadith_number || '');
+          return topicSet.has(rId);
+        });
+      }
+    }
+    currentPage = 1;
+    await updateTopicPaginationUI();
   }
 
   if (searchBtn) {
