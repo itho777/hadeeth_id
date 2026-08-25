@@ -4309,7 +4309,7 @@ async function loadTopicHadiths() {
     if (window.HadeethAPI && typeof window.HadeethAPI.getTopicHadithIds === 'function') {
       allHadithIds = await window.HadeethAPI.getTopicHadithIds(topicId, bookId);
     } else {
-      const idxRes = await fetch('data/api/topics_index.json?v=20260825_3');
+      const idxRes = await fetch('data/api/topics_index.json?v=20260826_1');
       const idxData = await idxRes.json();
       allHadithIds = (idxData.topics && idxData.topics[String(topicId)] && idxData.topics[String(topicId)].books && idxData.topics[String(topicId)].books[bookId.toLowerCase()]) || [];
     }

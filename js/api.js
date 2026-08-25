@@ -274,10 +274,10 @@ const HadeethAPI = {
   async getTopicIndex() {
     if (this.topicIndexCache) return this.topicIndexCache;
     try {
-      let url = `${this.dataUrl}/api/topics_index.json?v=20260825_3`;
+      let url = `${this.dataUrl}/api/topics_index.json?v=20260826_1`;
       let res = await fetchWithTimeout(url).catch(() => null);
       if (!res || !res.ok) {
-        res = await fetchWithTimeout(`https://raw.githubusercontent.com/itho777/hadeeth_id/main/data/api/topics_index.json?v=20260825_3`).catch(() => null);
+        res = await fetchWithTimeout(`https://raw.githubusercontent.com/itho777/hadeeth_id/main/data/api/topics_index.json?v=20260826_1`).catch(() => null);
       }
       if (res && res.ok) {
         this.topicIndexCache = await res.json();
