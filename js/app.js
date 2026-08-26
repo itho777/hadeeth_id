@@ -1540,6 +1540,17 @@ async function loadHadithDetail() {
       let narratorEn = "Unknown";
       let narratorId = "Tidak diketahui";
       
+      // If primary dataset lacks sanad, try to borrow from Lidwa if mapping exists
+      if ((!data.rawis || data.rawis.length === 0) && data.lidwa_id) {
+          try {
+              const l_id = Array.isArray(data.lidwa_id) ? data.lidwa_id[0] : data.lidwa_id;
+              const lidwaH = await window.HadeethAPI.getHadith(bookId, l_id, 'lidwa');
+              if (lidwaH && lidwaH.rawis && lidwaH.rawis.length > 0) {
+                  data.rawis = lidwaH.rawis;
+              }
+          } catch(e) {}
+      }
+
       if (data.rawis && data.rawis.length > 0) {
           // Lidwa rawis array is ordered from Highest (Sahabi) to Lowest (Mukharrij).
           // We display from Lowest to Highest -> Prophet.
@@ -3623,6 +3634,16 @@ async function loadSanadChain() {
     data = await window.HadeethAPI.getHadith(bookId, hadithNum, dsPrefix);
 
     if (data) {
+      if ((!data.rawis || data.rawis.length === 0) && data.lidwa_id) {
+        try {
+            const l_id = Array.isArray(data.lidwa_id) ? data.lidwa_id[0] : data.lidwa_id;
+            const lidwaH = await window.HadeethAPI.getHadith(bookId, l_id, 'lidwa');
+            if (lidwaH && lidwaH.rawis && lidwaH.rawis.length > 0) {
+                data.rawis = lidwaH.rawis;
+            }
+        } catch(e) {}
+      }
+
       let gradeEn = data.grade_en || data.grade || '';
       let gradeId = data.grade_id || '';
       let elevation = data.elevation || '';
