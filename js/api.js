@@ -91,7 +91,7 @@ const HadeethAPI = {
     }
     
     const lines = text.split('\n').filter(l => l.trim().length > 0);
-    const results = [];
+    let results = [];
     for (const line of lines) {
       try {
         results.push(JSON.parse(line));
@@ -99,6 +99,31 @@ const HadeethAPI = {
         // Truncated boundary fragment — skip it (expected when range cuts mid-line)
       }
     }
+    
+    // If we got zero results and we didn't fetch from GitHub raw, it means we probably received
+    // compressed binary gibberish (Cloudflare/GitHub Pages compresses responses and breaks Range requests).
+    if (results.length === 0) {
+      const ghUrl = `https://raw.githubusercontent.com/itho777/hadeeth_id/main/data/${prefix}/${bookId}.ndjson`;
+      const fallbackRes = await fetchWithTimeout(ghUrl, {
+          headers: { 'Range': `bytes=${startByte}-${endByte}` }
+      }).catch(() => null);
+      
+      if (fallbackRes && (fallbackRes.status === 200 || fallbackRes.status === 206)) {
+          let fbBuffer = await fallbackRes.arrayBuffer();
+          let fbText = "";
+          if (fallbackRes.status === 200) {
+              this.fullTextCache[bookId] = fbBuffer;
+              fbText = new TextDecoder('utf-8').decode(fbBuffer.slice(startByte, endByte + 1));
+          } else {
+              fbText = new TextDecoder('utf-8').decode(fbBuffer);
+          }
+          const fbLines = fbText.split('\n').filter(l => l.trim().length > 0);
+          for (const line of fbLines) {
+            try { results.push(JSON.parse(line)); } catch(e) {}
+          }
+      }
+    }
+
     return results;
   },
   
