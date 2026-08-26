@@ -4460,13 +4460,13 @@ async function loadTopicHadiths() {
     prevBtn.addEventListener('click', function() { if (currentPage > 1) { currentPage--; updateTopicPaginationUI(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
   }
   if (nextBtn) {
-    nextBtn.addEventListener('click', function() { var tot = Math.ceil(filteredHadiths.length / pageSize) || 1; if (currentPage < tot) { currentPage++; updateTopicPaginationUI(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
+    nextBtn.addEventListener('click', function() { var tot = Math.ceil((searchResultItems !== null ? searchResultItems.length : filteredHadithIds.length) / pageSize) || 1; if (currentPage < tot) { currentPage++; updateTopicPaginationUI(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
   }
   var jumpBtn = document.getElementById('jump-page-btn');
   if (jumpBtn) {
     jumpBtn.addEventListener('click', function() {
       var val = parseInt(document.getElementById('jump-page-input') && document.getElementById('jump-page-input').value);
-      var tot = Math.ceil(filteredHadiths.length / pageSize) || 1;
+      var tot = Math.ceil((searchResultItems !== null ? searchResultItems.length : filteredHadithIds.length) / pageSize) || 1;
       if (val >= 1 && val <= tot) { currentPage = val; updateTopicPaginationUI(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
     });
   }
