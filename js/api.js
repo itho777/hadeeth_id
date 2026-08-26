@@ -64,7 +64,8 @@ const HadeethAPI = {
     let text = "";
 
     if (this.fullTextCache[bookId]) {
-        text = this.fullTextCache[bookId].substring(startByte, endByte + 1);
+        const slice = this.fullTextCache[bookId].slice(startByte, endByte + 1);
+        text = new TextDecoder('utf-8').decode(slice);
     } else {
         let url = `${this.dataUrl}/${prefix}/${bookId}.ndjson`;
         let res = await fetchWithTimeout(url, {
@@ -80,10 +81,10 @@ const HadeethAPI = {
         let buffer = await res.arrayBuffer();
         
         if (res.status === 200) {
-            // Server ignored Range, cache the full text for future use
-            const fullText = new TextDecoder('utf-8').decode(buffer);
-            this.fullTextCache[bookId] = fullText;
-            text = fullText.substring(startByte, endByte + 1);
+            // Server ignored Range, cache the full ArrayBuffer for future use
+            this.fullTextCache[bookId] = buffer;
+            const slice = buffer.slice(startByte, endByte + 1);
+            text = new TextDecoder('utf-8').decode(slice);
         } else {
             text = new TextDecoder('utf-8').decode(buffer);
         }
