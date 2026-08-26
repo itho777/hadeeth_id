@@ -525,11 +525,19 @@ document.addEventListener('DOMContentLoaded', () => {
     let shareText = '';
     let targetUrl = copyBtn.dataset.shareUrl || window.location.href;
 
-    const cardBox = copyBtn.closest('.bg-surface, .p-6, .p-5, div');
-    const title = copyBtn.dataset.hadithTitle || document.querySelector('[data-hadith-title]')?.innerText || cardBox?.querySelector('h3, span.bg-primary')?.innerText || 'hadeeth.id';
-    const ar = copyBtn.dataset.copyHadithAr || document.querySelector('[data-arabic-text]')?.innerText || cardBox?.querySelector('p[dir="rtl"]')?.innerText || '';
-    const idBody = copyBtn.dataset.copyHadithTextId || document.querySelector('[data-indonesian-text]')?.innerText || cardBox?.querySelector('p.text-sm')?.innerText || '';
-    const enBody = copyBtn.dataset.copyHadithTextEn || document.querySelector('[data-english-text]')?.innerText || cardBox?.querySelector('p.text-sm')?.innerText || idBody;
+    const getCleanText = (elem) => {
+      if (!elem) return '';
+      const clone = elem.cloneNode(true);
+      const ignored = clone.querySelectorAll('[data-ignore-copy]');
+      ignored.forEach(el => el.remove());
+      return clone.innerText.trim();
+    };
+
+    const cardBox = copyBtn.closest('.bg-surface, .hadith-card, article') || document.body;
+    const title = copyBtn.dataset.hadithTitle || getCleanText(document.querySelector('[data-hadith-title]')) || getCleanText(cardBox.querySelector('h3, span.bg-primary')) || 'hadeeth.id';
+    const ar = copyBtn.dataset.copyHadithAr || getCleanText(document.querySelector('[data-arabic-text]')) || getCleanText(cardBox.querySelector('p[dir="rtl"]')) || '';
+    const idBody = copyBtn.dataset.copyHadithTextId || getCleanText(document.querySelector('[data-indonesian-text]')) || getCleanText(cardBox.querySelector('p.text-sm')) || '';
+    const enBody = copyBtn.dataset.copyHadithTextEn || getCleanText(document.querySelector('[data-english-text]')) || getCleanText(cardBox.querySelector('p.text-sm')) || idBody;
     
     const body = isIdMode ? (idBody || enBody) : (enBody || idBody);
     const transLabel = isIdMode ? 'Terjemahan Indonesia:' : 'English Translation:';
@@ -1402,7 +1410,7 @@ async function loadHadithDetail() {
             if (opt.source !== 'lidwa_id' && opt.source !== 'lidwa_en' && opt.source !== 'ab' && opt.source !== 'ara-' + bookId && opt.source !== 'fawaz') isMismatchRisk = true;
             
             if (isMismatchRisk) {
-                const warnHtml = `<div class="mb-4 text-xs flex flex-col sm:flex-row sm:items-center gap-2 bg-yellow-500/10 text-yellow-700 dark:text-yellow-500 p-2.5 rounded border border-yellow-500/30">
+                const warnHtml = `<div data-ignore-copy="true" class="mb-4 text-xs flex flex-col sm:flex-row sm:items-center gap-2 bg-yellow-500/10 text-yellow-700 dark:text-yellow-500 p-2.5 rounded border border-yellow-500/30">
                     <div class="flex items-center gap-2">
                         <span class="material-symbols-outlined text-[16px]">warning</span>
                         <span><b>Alignment Notice:</b> Translation dynamically linked from <b>${opt.label}</b> (ID #${opt.hid}).</span>
@@ -1414,7 +1422,7 @@ async function loadHadithDetail() {
                 </div>`;
                 output = warnHtml + output;
             } else if (opt.source !== 'fawaz' && activeDataset === 'fawazahmed') {
-                output = `<div class="mb-2 text-xs text-blue-500 font-semibold">[Linked via Arabic matching -> ${opt.source.toUpperCase()} #${opt.hid}]</div>` + output;
+                output = `<div data-ignore-copy="true" class="mb-2 text-xs text-blue-500 font-semibold">[Linked via Arabic matching -> ${opt.source.toUpperCase()} #${opt.hid}]</div>` + output;
             }
             
             targetBox.innerHTML = output;
