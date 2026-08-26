@@ -1411,10 +1411,14 @@ async function loadHadithDetail() {
             let isMismatchRisk = false;
             // Cross-dataset links are always a risk
             if (activeDataset === 'native_lidwa' && opt.source !== 'lidwa_id' && opt.source !== 'lidwa_en') isMismatchRisk = true;
-            if (activeDataset === 'fawazahmed' && (opt.source === 'lidwa_id' || opt.source === 'lidwa_en' || opt.source === 'ab')) isMismatchRisk = true;
+            if (activeDataset === 'fawazahmed') {
+                if (opt.source === 'ab') isMismatchRisk = true;
+                if (!data.text_id && (opt.source === 'lidwa_id' || opt.source === 'lidwa_en')) isMismatchRisk = true;
+            }
             if (activeDataset === 'native_ahmedbaset' && opt.source !== 'ab') isMismatchRisk = true;
             // Fawazahmed English translations are known to be padded/desynced for Muslim/Bukhari
-            if (opt.source !== 'lidwa_id' && opt.source !== 'lidwa_en' && opt.source !== 'ab' && opt.source !== 'ara-' + bookId && opt.source !== 'fawaz') isMismatchRisk = true;
+            if (activeDataset === 'fawazahmed' && data.text_id && opt.source === 'fawaz') isMismatchRisk = true;
+            else if (opt.source !== 'lidwa_id' && opt.source !== 'lidwa_en' && opt.source !== 'ab' && opt.source !== 'ara-' + bookId && opt.source !== 'fawaz') isMismatchRisk = true;
             
             if (isMismatchRisk) {
                 const warnHtml = `<div data-ignore-copy="true" class="mb-4 text-xs flex flex-col sm:flex-row sm:items-center gap-2 bg-yellow-500/10 text-yellow-700 dark:text-yellow-500 p-2.5 rounded border border-yellow-500/30">
@@ -1428,7 +1432,7 @@ async function loadHadithDetail() {
                     </button>
                 </div>`;
                 output = warnHtml + output;
-            } else if (opt.source !== 'fawaz' && activeDataset === 'fawazahmed') {
+            } else if (opt.source !== 'fawaz' && activeDataset === 'fawazahmed' && !data.text_id) {
                 output = `<div data-ignore-copy="true" class="mb-2 text-xs text-blue-500 font-semibold">[Linked via Arabic matching -> ${opt.source.toUpperCase()} #${opt.hid}]</div>` + output;
             }
             
