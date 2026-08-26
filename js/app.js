@@ -530,7 +530,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const clone = elem.cloneNode(true);
       const ignored = clone.querySelectorAll('[data-ignore-copy]');
       ignored.forEach(el => el.remove());
-      return clone.innerText.trim();
+      
+      // Temporarily append to body to read innerText accurately
+      clone.style.position = 'absolute';
+      clone.style.left = '-9999px';
+      document.body.appendChild(clone);
+      const text = clone.innerText.trim();
+      document.body.removeChild(clone);
+      return text;
     };
 
     const cardBox = copyBtn.closest('.bg-surface, .hadith-card, article') || document.body;
