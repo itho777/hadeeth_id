@@ -576,7 +576,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const body = isIdMode ? (idBody || enBody) : (enBody || idBody);
 
     // Simplified template based on user feedback
-    const shareText = `${title}\\n\\n${ar ? ar + '\\n\\n' : ''}${body}\\n\\n${targetUrl}`;
+    const shareText = `${title}\n\n${ar ? ar + '\n\n' : ''}${body}\n\n${targetUrl}`;
 
     const copyToClipboard = async (text) => {
       try {
