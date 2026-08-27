@@ -522,75 +522,105 @@ document.addEventListener('DOMContentLoaded', () => {
     e.stopPropagation();
 
     const isIdMode = (window.LangSystem && window.LangSystem.isIdMode());
-    let shareText = '';
     let targetUrl = copyBtn.dataset.shareUrl || window.location.href;
 
     const getCleanText = (elem) => {
       if (!elem) return '';
-      const clone = elem.cloneNode(true);
-      const ignored = clone.querySelectorAll('[data-ignore-copy]');
-      ignored.forEach(el => el.remove());
-      
-      // Temporarily append to body to read innerText accurately
-      clone.style.position = 'absolute';
-      clone.style.left = '-9999px';
-      document.body.appendChild(clone);
-      const text = clone.innerText.trim();
-      document.body.removeChild(clone);
-      return text;
+      let text = elem.innerText || elem.textContent || '';
+      elem.querySelectorAll('[data-ignore-copy]').forEach(el => {
+        const ignoreText = el.innerText || el.textContent || '';
+        if (ignoreText) {
+            text = text.replace(ignoreText, '');
+        }
+      });
+      return text.trim();
     };
 
     const cardBox = copyBtn.closest('.bg-surface, .hadith-card, article') || document.body;
     const title = copyBtn.dataset.hadithTitle || getCleanText(document.querySelector('[data-hadith-title]')) || getCleanText(cardBox.querySelector('h3, span.bg-primary')) || 'hadeeth.id';
-    const ar = copyBtn.dataset.copyHadithAr || getCleanText(document.querySelector('[data-arabic-text]')) || getCleanText(cardBox.querySelector('p[dir="rtl"]')) || '';
-    const idBody = copyBtn.dataset.copyHadithTextId || getCleanText(document.querySelector('[data-indonesian-text]')) || getCleanText(cardBox.querySelector('p.text-sm')) || '';
-    const enBody = copyBtn.dataset.copyHadithTextEn || getCleanText(document.querySelector('[data-english-text]')) || getCleanText(cardBox.querySelector('p.text-sm')) || idBody;
+    
+    // Some buttons already have the exact text in datasets
+    let ar = copyBtn.dataset.copyHadithAr;
+    if (!ar) {
+        const arElem = document.querySelector('[data-arabic-text]') || cardBox.querySelector('p[dir="rtl"]');
+        ar = getCleanText(arElem);
+    }
+    
+    let idBody = copyBtn.dataset.copyHadithTextId;
+    if (!idBody) {
+        const idElem = document.querySelector('[data-indonesian-text]') || cardBox.querySelector('p.text-sm:not([dir="rtl"])');
+        idBody = getCleanText(idElem);
+    }
+    
+    let enBody = copyBtn.dataset.copyHadithTextEn;
+    if (!enBody) {
+        const enElem = document.querySelector('[data-english-text]') || cardBox.querySelector('p.text-sm:not([dir="rtl"])');
+        enBody = getCleanText(enElem);
+        if (!enBody) enBody = idBody;
+    }
     
     const body = isIdMode ? (idBody || enBody) : (enBody || idBody);
     const transLabel = isIdMode ? 'Terjemahan Indonesia:' : 'English Translation:';
+    
     const rawiElem = document.querySelector('[data-hadith-rawi]');
-    const rawi = rawiElem ? rawiElem.innerText.replace(/^(Narrator|Perawi):\s*/i, '') : '';
+    const rawi = rawiElem ? getCleanText(rawiElem).replace(/^(Narrator|Perawi):\\s*/i, '') : '';
     const rawiLabel = isIdMode ? 'Perawi:' : 'Narrator:';
+    
     const linkTagline = isIdMode ? 'Baca & Telusuri Sanad Selengkapnya di hadeeth.id:' : 'Read & Inspect Sanad Chain on hadeeth.id:';
 
-    shareText = `[${title}]\n\n${ar ? ar + '\n\n' : ''}${transLabel}\n"${body}"\n\n${rawi ? `${rawiLabel} ${rawi}\n\n` : ''}${linkTagline}\n${targetUrl}`;
+    const shareText = `[${title}]\\n\\n${ar ? ar + '\\n\\n' : ''}${transLabel}\\n"${body}"\\n\\n${rawi ? `${rawiLabel} ${rawi}\\n\\n` : ''}${linkTagline}\\n${targetUrl}`;
 
-    let success = false;
+    const copyToClipboard = async (text) => {
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText(text);
+          return true;
+        }
+      } catch (err) {
+        console.warn('Clipboard API failed', err);
+      }
+      
+      try {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.left = '-9999px';
+        textarea.style.top = '-9999px';
+        document.body.appendChild(textarea);
+        textarea.focus();
+        textarea.select();
+        const res = document.execCommand('copy');
+        document.body.removeChild(textarea);
+        return res;
+      } catch (err) {
+        console.warn('execCommand failed', err);
+        return false;
+      }
+    };
 
-    if (navigator.share) {
+    let shared = false;
+    if (navigator.share && /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
       try {
         await navigator.share({
           title: 'hadeeth.id',
           text: shareText,
           url: targetUrl
         });
-        success = true;
+        shared = true;
       } catch (err) {
-        // Fallback to clipboard if native share sheet dismissed/unsupported
+        console.log('Share cancelled or failed', err);
+        return;
       }
     }
 
-    if (!success) {
-      try {
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          await navigator.clipboard.writeText(shareText);
-        } else {
-          const textarea = document.createElement('textarea');
-          textarea.value = shareText;
-          textarea.style.position = 'fixed';
-          textarea.style.opacity = '0';
-          document.body.appendChild(textarea);
-          textarea.focus();
-          textarea.select();
-          document.execCommand('copy');
-          document.body.removeChild(textarea);
-        }
-        
+    if (!shared) {
+      const success = await copyToClipboard(shareText);
+      if (success) {
         const originalHtml = copyBtn.innerHTML;
         copyBtn.innerHTML = `<span class="material-symbols-outlined text-[14px]">check</span> ${isIdMode ? 'Tersalin!' : 'Copied!'}`;
         setTimeout(() => copyBtn.innerHTML = originalHtml, 2200);
-      } catch (err) {
-        console.warn('Clipboard write error:', err);
+      } else {
+        alert(isIdMode ? "Gagal menyalin teks. Browser anda tidak mendukung." : "Failed to copy. Browser not supported.");
       }
     }
   });
