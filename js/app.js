@@ -537,21 +537,35 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const cardBox = copyBtn.closest('.bg-surface, .hadith-card, article') || document.body;
-    const title = copyBtn.dataset.hadithTitle || getCleanText(document.querySelector('[data-hadith-title]')) || getCleanText(cardBox.querySelector('h3, span.bg-primary')) || 'hadeeth.id';
     
-    // Some buttons already have the exact text in datasets
+    // Title
+    let title = copyBtn.dataset.hadithTitle;
+    if (!title) {
+        // Fallback for hadith.html
+        const bcBook = document.querySelector('[data-breadcrumb-book]');
+        const bcId = document.querySelector('[data-breadcrumb-current-en]');
+        if (bcBook && bcId) {
+            title = `${bcBook.innerText.trim()} - ${bcId.innerText.trim()}`;
+        } else {
+            title = getCleanText(document.querySelector('[data-hadith-title]')) || getCleanText(cardBox.querySelector('h3, span.bg-primary')) || 'hadeeth.id';
+        }
+    }
+    
+    // Arabic
     let ar = copyBtn.dataset.copyHadithAr;
     if (!ar) {
         const arElem = document.querySelector('[data-arabic-text]') || cardBox.querySelector('p[dir="rtl"]');
         ar = getCleanText(arElem);
     }
     
+    // Indonesian
     let idBody = copyBtn.dataset.copyHadithTextId;
     if (!idBody) {
         const idElem = document.querySelector('[data-indonesian-text]') || cardBox.querySelector('p.text-sm:not([dir="rtl"])');
         idBody = getCleanText(idElem);
     }
     
+    // English
     let enBody = copyBtn.dataset.copyHadithTextEn;
     if (!enBody) {
         const enElem = document.querySelector('[data-english-text]') || cardBox.querySelector('p.text-sm:not([dir="rtl"])');
@@ -560,15 +574,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     const body = isIdMode ? (idBody || enBody) : (enBody || idBody);
-    const transLabel = isIdMode ? 'Terjemahan Indonesia:' : 'English Translation:';
-    
-    const rawiElem = document.querySelector('[data-hadith-rawi]');
-    const rawi = rawiElem ? getCleanText(rawiElem).replace(/^(Narrator|Perawi):\\s*/i, '') : '';
-    const rawiLabel = isIdMode ? 'Perawi:' : 'Narrator:';
-    
-    const linkTagline = isIdMode ? 'Baca & Telusuri Sanad Selengkapnya di hadeeth.id:' : 'Read & Inspect Sanad Chain on hadeeth.id:';
 
-    const shareText = `[${title}]\\n\\n${ar ? ar + '\\n\\n' : ''}${transLabel}\\n"${body}"\\n\\n${rawi ? `${rawiLabel} ${rawi}\\n\\n` : ''}${linkTagline}\\n${targetUrl}`;
+    // Simplified template based on user feedback
+    const shareText = `${title}\\n\\n${ar ? ar + '\\n\\n' : ''}${body}\\n\\n${targetUrl}`;
 
     const copyToClipboard = async (text) => {
       try {
@@ -602,9 +610,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (navigator.share && /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
       try {
         await navigator.share({
-          title: 'hadeeth.id',
           text: shareText,
-          url: targetUrl
         });
         shared = true;
       } catch (err) {
