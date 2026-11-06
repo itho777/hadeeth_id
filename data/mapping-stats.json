@@ -1,0 +1,294 @@
+{
+ "generated_by": "scripts/build_mapping_stats.py",
+ "verified_on": "2026-11-05",
+ "method": "Arabic-text matching (never hadith numbering)",
+ "totals": {
+  "collections": 13,
+  "hadiths": 17227,
+  "linked": 15411,
+  "unmapped": 1816,
+  "pct": 89.5,
+  "source_links": 45703,
+  "confirmed": 10559,
+  "probable": 4724,
+  "conf_pct": 68.5
+ },
+ "collections": [
+  {
+   "id": "riyad",
+   "name": "Riyad as-Salihin",
+   "name_ar": "رياض الصالحين",
+   "author": "Imam an-Nawawi",
+   "anchor": "AhmedBaset `/other_books/riyad_assalihin.json`",
+   "total": 1896,
+   "linked": 1828,
+   "unmapped": 68,
+   "pct": 96.4,
+   "links": 5046,
+   "confirmed": 1459,
+   "probable": 369,
+   "review_links": 0,
+   "conf_pct": 79.8,
+   "methods": {
+    "fingerprint": 1821,
+    "phrase_anchor": 7
+   },
+   "citation_unverified": 0
+  },
+  {
+   "id": "nawawi",
+   "name": "Nawawi 40",
+   "name_ar": "الأربعون النووية",
+   "author": "Imam an-Nawawi",
+   "anchor": "Lidwa `nawawi.ndjson`",
+   "total": 42,
+   "linked": 41,
+   "unmapped": 1,
+   "pct": 97.6,
+   "links": 144,
+   "confirmed": 34,
+   "probable": 7,
+   "review_links": 0,
+   "conf_pct": 82.9,
+   "methods": {
+    "fingerprint": 40,
+    "phrase_anchor": 1
+   },
+   "citation_unverified": 0
+  },
+  {
+   "id": "bulugh",
+   "name": "Bulugh al-Maram",
+   "name_ar": "بلوغ المرام",
+   "author": "al-Hafiz Ibn Hajar",
+   "anchor": "AhmedBaset `/other_books/bulugh_almaram.json`",
+   "total": 1767,
+   "linked": 1395,
+   "unmapped": 372,
+   "pct": 78.9,
+   "links": 3989,
+   "confirmed": 917,
+   "probable": 478,
+   "review_links": 0,
+   "conf_pct": 65.7,
+   "methods": {
+    "fingerprint": 1325,
+    "citation": 69,
+    "phrase_anchor": 1
+   },
+   "citation_unverified": 261
+  },
+  {
+   "id": "mishkat",
+   "name": "Mishkat al-Masabih",
+   "name_ar": "مشكاة المصابيح",
+   "author": "al-Khatib at-Tibrizi",
+   "anchor": "AhmedBaset `/other_books/mishkat_almasabih.json`",
+   "total": 4428,
+   "linked": 4024,
+   "unmapped": 404,
+   "pct": 90.9,
+   "links": 9118,
+   "confirmed": 3168,
+   "probable": 856,
+   "review_links": 0,
+   "conf_pct": 78.7,
+   "methods": {
+    "fingerprint": 4020,
+    "phrase_anchor": 4
+   },
+   "citation_unverified": 0
+  },
+  {
+   "id": "shamail",
+   "name": "Shamail Muhammadiyah",
+   "name_ar": "الشمائل المحمدية",
+   "author": "Imam at-Tirmidhi",
+   "anchor": "AhmedBaset `/other_books/shamail_muhammadiyah.json`",
+   "total": 402,
+   "linked": 382,
+   "unmapped": 20,
+   "pct": 95.0,
+   "links": 1103,
+   "confirmed": 283,
+   "probable": 95,
+   "review_links": 4,
+   "conf_pct": 74.1,
+   "methods": {
+    "fingerprint": 382
+   },
+   "citation_unverified": 0
+  },
+  {
+   "id": "aladab",
+   "name": "Al-Adab al-Mufrad",
+   "name_ar": "الأدب المفرد",
+   "author": "Imam al-Bukhari",
+   "anchor": "AhmedBaset `/other_books/aladab_almufrad.json`",
+   "total": 1326,
+   "linked": 1104,
+   "unmapped": 222,
+   "pct": 83.3,
+   "links": 3498,
+   "confirmed": 583,
+   "probable": 496,
+   "review_links": 24,
+   "conf_pct": 52.8,
+   "methods": {
+    "fingerprint": 1104
+   },
+   "citation_unverified": 0
+  },
+  {
+   "id": "qudsi",
+   "name": "Hadith Qudsi 40",
+   "name_ar": "الأربعون القدسية",
+   "author": "—",
+   "anchor": "Fawaz `ara-qudsi`",
+   "total": 40,
+   "linked": 40,
+   "unmapped": 0,
+   "pct": 100.0,
+   "links": 76,
+   "confirmed": 40,
+   "probable": 0,
+   "review_links": 0,
+   "conf_pct": 100.0,
+   "methods": {
+    "fingerprint": 40
+   },
+   "citation_unverified": 0
+  },
+  {
+   "id": "dehlawi",
+   "name": "Dehlawi 40 (Shah Waliullah)",
+   "name_ar": "أربعون الدهلوي",
+   "author": "Shah Waliullah al-Dehlawi",
+   "anchor": "Fawaz `ara-dehlawi`",
+   "total": 40,
+   "linked": 23,
+   "unmapped": 17,
+   "pct": 57.5,
+   "links": 95,
+   "confirmed": 16,
+   "probable": 7,
+   "review_links": 0,
+   "conf_pct": 69.6,
+   "methods": {
+    "phrase_anchor": 23
+   },
+   "citation_unverified": 0
+  },
+  {
+   "id": "ibnuhibban",
+   "name": "Sahih Ibn Hibban",
+   "name_ar": "صحيح ابن حبان",
+   "author": "Ibn Hibban",
+   "anchor": "MJNA `ibnuhibban.ndjson`",
+   "total": 2769,
+   "linked": 2709,
+   "unmapped": 60,
+   "pct": 97.8,
+   "links": 9287,
+   "confirmed": 1756,
+   "probable": 899,
+   "review_links": 52,
+   "conf_pct": 64.8,
+   "methods": {
+    "fingerprint": 2709
+   },
+   "citation_unverified": 0
+  },
+  {
+   "id": "ibnukhuzaimah",
+   "name": "Sahih Ibn Khuzaimah",
+   "name_ar": "صحيح ابن خزيمة",
+   "author": "Ibn Khuzaimah",
+   "anchor": "MJNA `ibnukhuzaimah.ndjson`",
+   "total": 1808,
+   "linked": 1649,
+   "unmapped": 159,
+   "pct": 91.2,
+   "links": 5544,
+   "confirmed": 1115,
+   "probable": 507,
+   "review_links": 22,
+   "conf_pct": 67.6,
+   "methods": {
+    "fingerprint": 1633,
+    "phrase_anchor": 16
+   },
+   "citation_unverified": 0
+  },
+  {
+   "id": "mustadrak",
+   "name": "Mustadrak al-Hakim",
+   "name_ar": "المستدرك على الصحيحين",
+   "author": "al-Hakim an-Naysaburi",
+   "anchor": "MJNA `mustadrak.ndjson`",
+   "total": 673,
+   "linked": 585,
+   "unmapped": 88,
+   "pct": 86.9,
+   "links": 1848,
+   "confirmed": 315,
+   "probable": 262,
+   "review_links": 8,
+   "conf_pct": 53.8,
+   "methods": {
+    "fingerprint": 578,
+    "phrase_anchor": 7
+   },
+   "citation_unverified": 0
+  },
+  {
+   "id": "daruquthni",
+   "name": "Sunan Daruquthni",
+   "name_ar": "سنن الدارقطني",
+   "author": "al-Daraqutni",
+   "anchor": "MJNA `daruquthni.ndjson`",
+   "total": 236,
+   "linked": 187,
+   "unmapped": 49,
+   "pct": 79.2,
+   "links": 648,
+   "confirmed": 100,
+   "probable": 86,
+   "review_links": 1,
+   "conf_pct": 53.5,
+   "methods": {
+    "fingerprint": 178,
+    "phrase_anchor": 9
+   },
+   "citation_unverified": 0
+  },
+  {
+   "id": "syafii",
+   "name": "Musnad Syafii",
+   "name_ar": "مسند الشافعي",
+   "author": "Imam asy-Syafii",
+   "anchor": "Irsyadulibad `syafii.ndjson`",
+   "total": 1800,
+   "linked": 1444,
+   "unmapped": 356,
+   "pct": 80.2,
+   "links": 5307,
+   "confirmed": 773,
+   "probable": 662,
+   "review_links": 9,
+   "conf_pct": 53.5,
+   "methods": {
+    "fingerprint": 1379,
+    "phrase_anchor": 65
+   },
+   "citation_unverified": 0
+  }
+ ],
+ "duplicates": [
+  {
+   "a": "Dehlawi 40 (Fawaz `ara-dehlawi`)",
+   "b": "Shah Waliullah 40 (AhmedBaset `forties/shahwaliullah40`)",
+   "finding": "Identical Arabic in all 40/40 rows; metadata author is “الشاه ولي الدين الدهلوي”. Same book, two files. Counted once."
+  }
+ ]
+}
