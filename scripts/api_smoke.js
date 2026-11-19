@@ -165,9 +165,20 @@ function check(name, ok, detail) {
   const withText = catalog.filter(r => r.matched > 0).length;
   check(`${withText} books serve commentary by Range`, commOk === withText, `${commOk}/${withText}, ${commRows} records sample`);
 
-  const none = await api.getCommentaries('nasai', '1');
-  check('book without commentary returns empty, not an error', Array.isArray(none) && none.length === 0,
-    `${none.length} records`);
+  const bare = catalog.find(r => !r.matched);
+  if (bare) {
+    const none = await api.getCommentaries(bare.book_id, '1');
+    check('book without commentary returns empty, not an error', Array.isArray(none) && none.length === 0,
+      `${bare.book_id}: ${none.length} records`);
+  }
+
+  const muse = await api.getCommentaries('bukhari', '1');
+  const fath = muse.find(r => r.origin === 'muse' && r.syarah_edition === 'bukhari');
+  check('classical sharh arrives with citation fields', !!fath
+    && !!fath.explanation_ar && !!fath.source_name_en && !!fath.syarah_page
+    && !!fath.source_title_full,
+    fath ? `${muse.length} sources, ${fath.source_name_en}, p.${fath.syarah_page}, ${fath.explanation_ar.length} chars` : 'missing');
+  check('one Range yields every source for a hadith', muse.length >= 3, `${muse.length} sources`);
 
   const catalogRow = catalog.find(r => r.book_id === 'abudawud');
   check('abudawud commentary covers the numbering offset', catalogRow && catalogRow.matched > 1700,

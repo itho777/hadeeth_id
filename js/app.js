@@ -4233,7 +4233,24 @@ function renderSyarahUI() {
   if (unavailableNotice) {
     textExp = `<div data-ignore-copy="true" class="mb-3 text-xs flex items-center gap-2 bg-yellow-500/10 text-yellow-700 dark:text-yellow-500 p-2.5 rounded border border-yellow-500/30"><span class="material-symbols-outlined text-[16px]">info</span><span>${escapeHtml(unavailableNotice)}</span></div>` + textExp;
   }
-  if (expText) expText.innerHTML = textExp;
+  // A sharh passage without its volume and page is not a citation. The Muse
+  // editions carry both; print them under the text.
+  let citationHtml = '';
+  if (data.origin === 'muse') {
+    const title = data.source_title_full || data.source_name_en || '';
+    const bits = [];
+    if (title) bits.push(title);
+    if (data.syarah_vol) bits.push((lang === 'id' ? 'jil. ' : 'vol. ') + data.syarah_vol);
+    if (data.syarah_page) bits.push((lang === 'id' ? 'hlm. ' : 'p. ') + data.syarah_page);
+    const label = escapeHtml(bits.filter(Boolean).join(' · '));
+    const link = data.syarah_url
+      ? ` · <a href="${escapeHtml(String(data.syarah_url))}" target="_blank" rel="noopener" class="underline">turath.io</a>`
+      : '';
+    if (label) {
+      citationHtml = `<div data-ignore-copy="true" class="mt-3 text-xs text-outline dark:text-gray-400">${label}${link}</div>`;
+    }
+  }
+  if (expText) expText.innerHTML = textExp + citationHtml;
 
   if (benefitsList) {
     if (benefits && benefits.length > 0) {

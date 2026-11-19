@@ -257,3 +257,38 @@ hadiths; the international file retains all 3,546 rows.
 Verification: `api_smoke.js` 17/17 (including a separate check of all nine
 international datasets), `link_audit.js` no dead links, `site_r2.py verify`
 PASS, 126 objects present in R2.
+
+
+## 8. Classical sharh from "Syarah From Muse" (19 Nov 2026)
+
+Source: `H:\Itho\2026\Project\Hadeeth\data source\Syarah From Muse` (override with
+`SYARAH_MUSE_DIR`). Each directory holds one sharh as a SQLite DB with
+`syarah_links` (hadith number -> page), `syarah_passages` (verbatim page text)
+and `syarah_sources` (edition title, provider, licence).
+
+Builder: `scripts/syarah_muse.py`, called by `syarah_build.build()`. It merges
+rows into the SAME `commentaries/matched/<book>.ndjson` buckets as the Dorar
+data, so one Range request returns every source for a hadith and the existing
+tab engine in `js/app.js` renders one tab per edition. No new client route.
+
+Numbering: a link attaches only when its `source_native_number` exists in the
+shipped `api/<book>_index.ndjson`. `fawaz` and `hadeeth_id` link datasets both
+resolve by number; nothing is guessed or coerced. 60,416 links attached across
+41,998 hadiths; 17,107 links whose number has no row in our anchor were
+dropped (bukhari 555, muslim 2,183, abudawud 674, etc.).
+
+Inline text is the page on which the commentary starts, plus `syarah_pages_index`
+(the full page span), `syarah_vol`, printed `syarah_page`, `syarah_url`,
+`link_confidence` and `link_method`. The UI prints the citation under the text.
+Full page text stays in the source DBs; it is not duplicated per hadith.
+
+Deliberately not shipped:
+- `maani`, `muntaqa`, `masabih`, `umdat` — commentaries on matns this site does
+  not carry, so there is no hadith page to attach them to.
+- `ahmad` (`'Uqd al-Zabarjad`) — no links table; an i'rab (grammar) work whose
+  inclusion in the syarah layer is still an open product decision.
+- The `syarah.db` / `dump/*.sql` files — those are build inputs for D1, not
+  site data, and are not NDJSON.
+
+Result: 14 books with commentary, 44,406 hadiths, 62,829 rows, 455.6 MB in
+`commentaries/`. Keep every object `.ndjson`.

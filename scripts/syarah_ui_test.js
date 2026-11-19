@@ -103,5 +103,21 @@ check('EN selection kept', expText.innerHTML.includes('TEXT-EN') && ctx.window.a
 check('EN option enabled', langOpts[1].disabled === false);
 check('AR option disabled', langOpts[2].disabled === true);
 
+// 5. Muse sharh: Arabic-only row renders with its citation and a tab-sized name
+ctx.window.activeSyarahData = [
+  {
+    origin: 'muse', source_name_en: 'Fath al-Bari', syarah_ar: 'الشرح',
+    explanation_ar: 'الشرح', source_title_full: 'Fath al-Bari bi-Sharh Sahih al-Bukhari',
+    syarah_vol: '1', syarah_page: '9', syarah_url: 'https://app.turath.io/book/1673',
+  },
+];
+ctx.window.activeSyarahIndex = 0;
+ctx.window.activeSyarahLang = 'id';
+ctx.render();
+check('Arabic sharh renders under ID mode', expText.innerHTML.includes('الشرح'));
+check('citation shows volume and page', expText.innerHTML.includes('jil. 1') && expText.innerHTML.includes('hlm. 9'));
+check('citation links the edition', expText.innerHTML.includes('app.turath.io/book/1673'));
+check('tab uses the short name', tabs.innerHTML.includes('Fath al-Bari') && !tabs.innerHTML.includes('bi-Sharh'));
+
 console.log(`\nRESULT: ${pass} pass, ${fail} fail`);
 process.exit(fail ? 1 : 0);

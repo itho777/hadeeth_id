@@ -277,17 +277,51 @@ def build(out_dir):
             bucket.append(target)
             matched_rows += 1
 
+    # Classical sharh from the Muse corpus: links already carry a number, so
+    # these attach without text matching. Merged into the same buckets so one
+    # Range still returns every source for a hadith, one tab per edition.
+    muse_rows = 0
+    muse_report = []
+    try:
+        import syarah_muse
+        muse, muse_report = syarah_muse.build()
+    except Exception as exc:                       # never lose the Dorar tree
+        muse = {}
+        print(f"  ! muse import skipped: {exc}")
+    for (book, number), rows in muse.items():
+        bucket = matched.setdefault((book, number), [])
+        seen = {dedupe_key(r) for r in bucket}
+        for row in rows:
+            key = dedupe_key(row)
+            if key in seen:
+                duplicates += 1
+                continue
+            seen.add(key)
+            bucket.append(row)
+            matched_rows += 1
+            muse_rows += 1
+
     m_manifest, m_report = write_tree("commentaries/matched", matched, out_dir, "hadiths")
     manifest += m_manifest
     report += m_report
 
     catalog = []
-    for book in sorted({b for b, _ in by_anchor}):
-        rows = [r for (b, _), bucket in by_anchor.items() if b == book for r in bucket]
-        langs = {l: sum(1 for r in rows if r.get(f"explanation_{l}")) for l in ("ar", "en", "id")}
-        catalog.append({"book_id": book, "anchors": len({a for (b, a) in by_anchor if b == book}),
-                        "rows": len(rows), "langs": langs,
-                        "matched": len({n for (b, n) in matched if b == book})})
+    books = sorted({b for (b, _) in matched} | {b for b, _ in by_anchor})
+    for book in books:
+        shipped = [r for (b, _), bucket in matched.items() if b == book for r in bucket]
+        anchors = [r for (b, _), bucket in by_anchor.items() if b == book for r in bucket]
+        langs = {l: sum(1 for r in anchors if r.get(f"explanation_{l}")) for l in ("ar", "en", "id")}
+        editions = {}
+        for r in shipped:
+            name = r.get("source_name_en") or "Commentary"
+            editions[name] = editions.get(name, 0) + 1
+        catalog.append({"book_id": book,
+                        "anchors": len({a for (b, a) in by_anchor if b == book}),
+                        "rows": len(anchors), "langs": langs,
+                        "matched": len({n for (b, n) in matched if b == book}),
+                        "commentaries": len(shipped),
+                        "editions": [{"name": n, "rows": c} for n, c in
+                                     sorted(editions.items(), key=lambda kv: -kv[1])]})
     cat_path = out_dir / "commentaries" / "_catalog.ndjson"
     with cat_path.open("w", encoding="utf-8", newline="\n") as f:
         for row in catalog:
