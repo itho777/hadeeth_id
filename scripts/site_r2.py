@@ -12,6 +12,7 @@ must NOT be gzipped). Every JSON sidecar is converted: one row per line.
 """
 
 import argparse
+import ast
 import glob
 import hashlib
 import json
@@ -72,6 +73,54 @@ def convert(src, dst, key_name):
     return write_ndjson(Path(dst), rows(doc, key_name))
 
 
+def normalize_tabarani(src, dst):
+    """Rebuild tabarani from the complete fawaz edition into the site row shape.
+
+    The file currently served is a 13,555-row Shamela extract using
+    `hadithnumber` / `text_ara`. The registry declares 21,850, and
+    `data/editions/ara-tabarani.ndjson` has exactly that many rows.
+    Returns (row_count, [[start,len], ...]) so the byte index matches the bytes
+    actually written.
+    """
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    idx, n, pos = [], 0, 0
+    with Path(src).open(encoding="utf-8") as f, dst.open("wb") as out:
+        for line in f:
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            num = r.get("hadithnumber", r.get("arabicnumber"))
+            grades = r.get("grades")
+            if isinstance(grades, str):
+                try:
+                    grades = json.loads(grades)
+                except ValueError:
+                    grades = []
+            ref = r.get("reference")
+            if isinstance(ref, str):
+                try:
+                    ref = ast.literal_eval(ref)
+                except (ValueError, SyntaxError):
+                    ref = None
+            text = r.get("text") or ""
+            row = {
+                "id": n + 1,
+                "book": "tabarani",
+                "hadith_number": None if num is None else str(num),
+                "arabic_number": None if num is None else str(num),
+                "text_ar": text,
+                "grades": grades or [],
+                "reference": ref,
+                "translations": {"ar": [{"source": "fawaz", "text": text}]},
+            }
+            blob = (json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n").encode("utf-8")
+            out.write(blob)
+            idx.append([pos, len(blob)])
+            pos += len(blob)
+            n += 1
+    return n, idx
+
+
 def build():
     if OUT.exists():
         for p in OUT.rglob("*"):
@@ -91,24 +140,49 @@ def build():
 
     report = []
 
-    # 1. master hadith NDJSON — already NDJSON, uploaded byte-identical
+    # 1. master hadith NDJSON — already NDJSON, uploaded byte-identical.
+    #    tabarani is the exception: rebuilt in 1b from the complete edition.
+    counts = {}
     for p in sorted(glob.glob(str(DATA / "api" / "*.ndjson"))):
         name = Path(p).name
+        book = name[: -len(".ndjson")]
+        if book == "tabarani":
+            continue
         key = f"api/{name}"
         add(p, key)
-        report.append((key, "-", sum(1 for _ in open(p, "rb"))))
+        n = sum(1 for _ in open(p, "rb"))
+        counts[book] = n
+        report.append((key, "-", n))
+
+    # 1b. tabarani rebuilt from the complete fawaz edition (21,850 rows)
+    dst = OUT / "api" / "tabarani.ndjson"
+    n_tab, tab_idx = normalize_tabarani(DATA / "editions" / "ara-tabarani.ndjson", dst)
+    add(dst, "api/tabarani.ndjson")
+    counts["tabarani"] = n_tab
+    report.append(("api/tabarani.ndjson", n_tab, "-"))
+    dsti = OUT / "api" / "tabarani_index.ndjson"
+    write_ndjson(dsti, tab_idx)
+    add(dsti, "api/tabarani_index.ndjson")
+    report.append(("api/tabarani_index.ndjson", len(tab_idx), "-"))
 
     # 2. byte-offset indexes -> one [start,len] pair per line
     for p in sorted(glob.glob(str(DATA / "api" / "*_ndjson_index.json"))):
         book = Path(p).name[: -len("_ndjson_index.json")]
+        if book == "tabarani":
+            continue
         arr = json.loads(Path(p).read_text(encoding="utf-8"))
         dst = OUT / "api" / f"{book}_index.ndjson"
         n = write_ndjson(dst, ([s, ln] for s, ln in arr))
         add(dst, f"api/{book}_index.ndjson")
         report.append((f"api/{book}_index.ndjson", n, "-"))
 
-    # 3. book registry
+    # 3. book registry — hadiths_count is set from the rows actually shipped,
+    #    so the registry can never advertise a different number again
     books = json.loads((DATA / "books_v2.json").read_text(encoding="utf-8"))
+    for b in books:
+        actual = counts.get(b.get("id"))
+        if actual is not None:
+            b["hadiths_count"] = actual
     dst = OUT / "books.ndjson"
     write_ndjson(dst, books)
     add(dst, "books.ndjson")
@@ -221,14 +295,45 @@ def put(item, auth):
     raise RuntimeError(f"failed {item['key']}: {last}")
 
 
+def remote_map():
+    """key -> (size, etag) for everything currently in the bucket."""
+    auth = {"Authorization": f"Bearer {token()}"}
+    base = f"https://api.cloudflare.com/client/v4/accounts/{ACCOUNT}/r2/buckets/{BUCKET}/objects"
+    out, cur = {}, None
+    while True:
+        p = {"per_page": 1000}
+        if cur:
+            p["cursor"] = cur
+        r = requests.get(base, headers=auth, params=p, timeout=120).json()
+        for o in r.get("result", []):
+            out[o["key"]] = (int(o["size"]), (o.get("etag") or "").strip('"'))
+        cur = (r.get("result_info") or {}).get("cursor")
+        if not cur:
+            break
+    return out
+
+
+def md5_of(path):
+    h = hashlib.md5()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
 def upload():
     items = load_manifest()
     items.sort(key=lambda m: (m["bytes"] > 5_000_000, m["key"]))  # small files first
+    remote = remote_map()
     auth = f"Bearer {token()}"
-    ok = bad = 0
+    ok = bad = skip = 0
     sent = 0
     t0 = time.time()
     for i, item in enumerate(items, 1):
+        rmt = remote.get(item["key"])
+        if rmt and rmt[0] == item["bytes"] and rmt[1] == md5_of(ROOT / item["path"]):
+            skip += 1
+            continue
         try:
             put(item, auth)
             ok += 1
@@ -240,7 +345,8 @@ def upload():
             el = time.time() - t0
             print(f"  [{i}/{len(items)}] {sent/1e6:.1f} MB  {sent/el/1e6:.1f} MB/s  "
                   f"{ok} ok  {bad} failed", flush=True)
-    print(f"upload: {ok}/{len(items)} ok, {sent/1e6:.2f} MB, {time.time()-t0:.1f}s")
+    print(f"upload: {ok}/{len(items)} uploaded, {skip} unchanged/skipped, "
+          f"{sent/1e6:.2f} MB, {time.time()-t0:.1f}s, {bad} failed")
     if bad:
         raise SystemExit(1)
 

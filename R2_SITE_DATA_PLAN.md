@@ -139,21 +139,36 @@ RESULT: PASS
 
 ## 5. Open items
 
-1. **Stale gz tree.** The bucket still holds the earlier 110 objects
-   (`book/<book>/*.ndjson.gz`, `<source>/*.ndjson.gz`, `global/*.ndjson.gz`,
-   `catalog.json`, `index.json`) built from D1 under a different schema. Nothing
-   reads them. They should be deleted once this batch is accepted.
-2. **`tabarani` is incomplete on the live site.** `books_v2.json` declares
-   `total_hadiths: 21850`, but `api/tabarani.ndjson` ships **13,555**, and its
-   records use non-standard keys (`text_ara`, `hadithnumber`, `grades`,
-   `reference`) instead of the `text_ar` / `hadith_number` shape every other book
-   uses. The complete source is on disk: `data/editions/ara-tabarani.ndjson`
-   (21,850 lines) and `data/raw_baseline/ara-tabarani.json` (21,850). Not
-   converted here — the Shamela/Muse import is still running.
-3. **Syarah not in this batch.** `data/commentaries/` holds 28,123 per-hadith
-   files with `syarah_ar` / `syarah_en`; eight books already carry syarah inline
-   (`adab`, `bulugh`, `mishkat`, `nawawi`, `qudsi`, `riyad`, `shah`, `shamail`).
-   The rest is being imported from Muse's work; upload planned separately.
-4. **UI not touched.** `js/api.js` still points at `/data`. Switching `baseUrl`
-   to the R2 public URL and reading `.ndjson` sidecars instead of `.json` is the
-   next task.
+1. **Resolved — stale gz tree deleted.** 108 objects (185.41 MB) from the earlier
+   D1-derived attempt removed; bucket now holds only the 94 NDJSON objects.
+   Regenerable at any time with `scripts/load_d1_dump.py` (`.dump/hadeeth.sqlite`
+   is still on disk).
+2. **Resolved — `tabarani` rebuilt from the complete source.**
+   `api/tabarani.ndjson` now comes from `data/editions/ara-tabarani.ndjson`:
+   **21,850 rows**, matching `total_hadiths` in the registry. Keys normalised to
+   the site shape (`text_ar`, `hadith_number`, `id`, `translations.ar`), and
+   `grades` / `reference` parsed from their embedded string form. The index is
+   regenerated from the bytes actually written and sums exactly to the file size
+   (29,521,363). Range requests verified on first, middle and last records.
+
+   Caveat worth knowing: the source reuses numbers — 21,850 rows but only 13,555
+   distinct `hadith_number` values, with up to 10 hadiths sharing one number.
+   Records are addressable because each carries a unique sequential `id`, and
+   `getHadith` matches on `id`. The previously served 13,555-row file was a
+   different Shamela extraction, not a strict subset: its text for number 1 does
+   not match the fawaz text for number 1.
+3. **Syarah deferred.** `data/commentaries/` holds per-hadith files with
+   `syarah_ar` / `syarah_en`; eight books already carry syarah inline (`adab`,
+   `bulugh`, `mishkat`, `nawawi`, `qudsi`, `riyad`, `shah`, `shamail`). Waiting
+   for the Muse import to finish before its own batch.
+4. **UI not touched.** `js/api.js` still points at `/data`, and fetches the index
+   as `<book>_ndjson_index.json` while R2 now serves `<book>_index.ndjson`.
+   Both change in the same UI pass. Note `getHadith` expects index entries to be
+   objects with `id` / `start` / `end`, but every index on disk is an array of
+   `[start, len]` pairs — so today it silently falls through to
+   `fetchNdjsonFull`. Fixing that is the biggest single win in the UI pass.
+5. **Registry `total_hadiths` vs `hadiths_count`.** Thirteen books still differ
+   (e.g. `bukhari` 7,563 declared vs 6,999 shipped). `hadiths_count` is now
+   written from the rows actually uploaded, so it can no longer drift; the two
+   numbers differing means the served edition is an abridgement of the declared
+   collection, which predates this batch.
