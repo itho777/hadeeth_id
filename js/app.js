@@ -4176,6 +4176,11 @@ function renderSyarahUI() {
     availableLang = 'en';
   }
 
+  if (hasSyarahText(data, lang)) {
+    availableLang = lang;
+    textExp = data[`explanation_${lang}`] || data[`syarah_${lang}`] || textExp;
+    benefits = data[`benefits_${lang}`] || benefits;
+  }
   let unavailableNotice = '';
   if (langSelect) {
     for (const opt of langSelect.options) {

@@ -92,5 +92,16 @@ ctx.render();
 check('explicit no-commentary notice', expText.innerHTML.includes('Syarah tidak tersedia untuk hadits ini'), expText.innerHTML.slice(0, 160));
 check('all languages disabled', langOpts.every(o => o.disabled));
 
+// 4. bilingual source: explicit EN selection stays EN
+ctx.window.activeSyarahData = [
+  { source_name_en: 'Bilingual', explanation_id: 'TEKS-ID', explanation_en: 'TEXT-EN', explanation_ar: '' },
+];
+ctx.window.activeSyarahIndex = 0;
+ctx.window.activeSyarahLang = 'en';
+ctx.render();
+check('EN selection kept', expText.innerHTML.includes('TEXT-EN') && ctx.window.activeSyarahLang === 'en');
+check('EN option enabled', langOpts[1].disabled === false);
+check('AR option disabled', langOpts[2].disabled === true);
+
 console.log(`\nRESULT: ${pass} pass, ${fail} fail`);
 process.exit(fail ? 1 : 0);
