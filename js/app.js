@@ -1078,7 +1078,7 @@ async function loadHadithDetail() {
 
   // Extract variables
   const bookName = (bookId === 'nawawi' ? 'Forty Nawawi' : bookId.toUpperCase());
-  let displayNum = data.id || data.hadith_number; if (data.lidwa_id && Array.isArray(data.lidwa_id) && data.lidwa_id.length > 0) { displayNum += ' (Lidwa: ' + data.lidwa_id.join(', ') + ')'; } else if (data.lidwa_id) { displayNum += ' (Lidwa: ' + data.lidwa_id + ')'; }
+  let displayNum = data.hadith_number !== undefined ? data.hadith_number : data.id; if (data.lidwa_id && Array.isArray(data.lidwa_id) && data.lidwa_id.length > 0) { displayNum += ' (Lidwa: ' + data.lidwa_id.join(', ') + ')'; } else if (data.lidwa_id) { displayNum += ' (Lidwa: ' + data.lidwa_id + ')'; }
   const titleTextEn = `Hadith #${displayNum}`;
   const titleTextId = `Hadits #${displayNum}`;
   
@@ -2285,7 +2285,7 @@ async function loadHadithList() {
     let html = '';
     pageItems.forEach((item, idx) => {
       const num = item.id || item.hadith_number || (startIdx + idx + 1);
-      let displayNum = item.id || num; if (item.lidwa_id && Array.isArray(item.lidwa_id) && item.lidwa_id.length > 0) { displayNum += ' (Lidwa: ' + item.lidwa_id.join(', ') + ')'; } else if (item.lidwa_id) { displayNum += ' (Lidwa: ' + item.lidwa_id + ')'; }
+      let displayNum = item.hadith_number !== undefined ? item.hadith_number : (item.id || num); if (item.lidwa_id && Array.isArray(item.lidwa_id) && item.lidwa_id.length > 0) { displayNum += ' (Lidwa: ' + item.lidwa_id.join(', ') + ')'; } else if (item.lidwa_id) { displayNum += ' (Lidwa: ' + item.lidwa_id + ')'; }
       const enText = item.text_en || '';
       const arText = item.text_ar || '';
       const hasId = !!item.text_id;
@@ -3078,6 +3078,14 @@ async function loadChaptersList() {
   const dsInfo = (meta.datasetInfo || {})[resolvedDataset] || (meta.datasetInfo || {}).fawazahmed || {};
   if (kitabCountElem) kitabCountElem.innerText = dsInfo.kitab || meta.kitabCount;
   if (hadithCountElem) hadithCountElem.innerText = dsInfo.hadith || meta.hadithCount;
+  // The literals above drift from the data; prefer the count the registry actually ships.
+  if (hadithCountElem && window.HadeethAPI) {
+    window.HadeethAPI.getBooks().then(list => {
+      const b = (list || []).find(x => x.id === bookId);
+      const n = b && (b.total_hadiths || b.hadiths_count);
+      if (n) hadithCountElem.innerText = `📖 ${Number(n).toLocaleString('id-ID')} Hadits`;
+    }).catch(() => {});
+  }
   const datasetInfoElem = document.querySelector('[data-book-dataset-info]');
   if (datasetInfoElem && dsInfo.numbering) {
     datasetInfoElem.innerText = dsInfo.numbering;

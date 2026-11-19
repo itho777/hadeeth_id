@@ -206,13 +206,14 @@ def build():
         add(dst, f"api/{book}_index.ndjson")
         report.append((f"api/{book}_index.ndjson", n, "-"))
 
-    # 3. book registry — hadiths_count is set from the rows actually shipped,
-    #    so the registry can never advertise a different number again
+    # 3. book registry — both counts are set from the rows actually shipped, so
+    #    the registry can never advertise a number the file does not contain
     books = json.loads((DATA / "books_v2.json").read_text(encoding="utf-8"))
     for b in books:
         actual = counts.get(b.get("id"))
         if actual is not None:
             b["hadiths_count"] = actual
+            b["total_hadiths"] = actual
     dst = OUT / "books.ndjson"
     write_ndjson(dst, books)
     add(dst, "books.ndjson")
