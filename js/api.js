@@ -73,6 +73,12 @@ const HadeethAPI = {
     return this.baseUrl;
   },
 
+  datasetPrefix(datasetId) {
+    if (datasetId === 'native_lidwa' || datasetId === 'native_mjna' || datasetId === 'native_irsyad') return 'lidwa';
+    if (datasetId === 'native_ahmedbaset') return 'ab';
+    return 'fawaz';
+  },
+
   /**
    * Try R2 first, then the same key under the site's own /data.
    * Returns the Response, or null.
@@ -120,18 +126,50 @@ const HadeethAPI = {
   findIndexEntry(index, hadithNumber, dsPrefix = 'fawaz') {
     if (!Array.isArray(index) || !index.length) return null;
     const want = String(hadithNumber);
-    if (dsPrefix === 'lidwa') {
-      return index.find(e => Array.isArray(e.l)
-        ? e.l.some(id => String(id) === want)
-        : String(e.l) === want) || null;
-    }
-    if (dsPrefix === 'ab') {
-      return index.find(e => String(e.id) === want || String(e.n) === want) || null;
-    }
+    const byLidwa = () => index.find(e => Array.isArray(e.l)
+      ? e.l.some(id => String(id) === want)
+      : String(e.l) === want) || null;
+    const byNumber = () => index.find(e => String(e.n) === want) || null;
+    const byId = () => index.find(e => String(e.id) === want) || null;
+    // Every form falls back to the others: a link must never dead-end just
+    // because it was built against another dataset's numbering.
+    if (dsPrefix === 'lidwa') return byLidwa() || byNumber() || byId();
+    if (dsPrefix === 'ab') return byId() || byNumber() || byLidwa();
     // hadith number first: `id` and `n` diverge (bukhari #5 has id 6, #6999 has id 7554)
-    return index.find(e => String(e.n) === want)
-        || index.find(e => String(e.id) === want)
-        || null;
+    return byNumber() || byId() || byLidwa();
+  },
+
+  /** Addressable number for a record under the active dataset. */
+  hadithNumberOf(item, dsPrefix = 'fawaz') {
+    if (!item) return null;
+    if (dsPrefix === 'lidwa') {
+      const l = Array.isArray(item.lidwa_id) ? item.lidwa_id[0] : item.lidwa_id;
+      if (l !== undefined && l !== null && l !== '') return l;
+    }
+    return item.hadith_number !== undefined && item.hadith_number !== null
+      ? item.hadith_number : item.id;
+  },
+
+  /** Previous / next hadith that actually exists in this book's index. */
+  async getHadithNeighbours(bookId, hadithNumber, dsPrefix = 'fawaz') {
+    const idx = await this.fetchNdjsonIndex('api', bookId);
+    if (!Array.isArray(idx) || !idx.length) return null;
+    const entry = this.findIndexEntry(idx, hadithNumber, dsPrefix);
+    if (!entry) return null;
+    const pos = idx.indexOf(entry);
+    const numOf = e => {
+      if (!e) return null;
+      if (dsPrefix === 'lidwa' && e.l !== undefined && e.l !== null) {
+        return Array.isArray(e.l) ? e.l[0] : e.l;
+      }
+      return e.n !== undefined ? e.n : e.id;
+    };
+    return {
+      prev: pos > 0 ? numOf(idx[pos - 1]) : null,
+      next: pos < idx.length - 1 ? numOf(idx[pos + 1]) : null,
+      position: pos + 1,
+      total: idx.length
+    };
   },
 
   /**
@@ -226,10 +264,11 @@ const HadeethAPI = {
   },
 
   async getChapters(bookId, datasetId) {
-    const activeDataset = datasetId || localStorage.getItem('dataset_version') || 'fawazahmed';
-    const isLidwa = activeDataset === 'native_lidwa' || activeDataset === 'native_mjna' || activeDataset === 'native_irsyad';
-    const folder = isLidwa ? 'lidwa-chapters' : 'chapters';
-    const cacheKey = `${folder}_${bookId}`;
+    // Chapters are built from the shipped rows, whose numbering is the lidwa
+    // numbering for the nine core books. The old lidwa-chapters files carry the
+    // known 2..97 range corruption, so `chapters/` is the only source used here.
+    const folder = 'chapters';
+    const cacheKey = folder + '_' + bookId;
 
     if (this.chaptersCache && this.chaptersCache[cacheKey]) return this.chaptersCache[cacheKey];
     try {
@@ -261,7 +300,8 @@ const HadeethAPI = {
    * Entries carrying the same chapter id are contiguous in practice, so they
    * collapse into one request per contiguous run.
    */
-  async getChapterHadiths(bookId, chapterId) {
+  async getChapterHadiths(bookId, chapterId, datasetId = 'fawazahmed') {
+    const dsPrefix = this.datasetPrefix(datasetId);
     try {
       const idx = await this.fetchNdjsonIndex('api', bookId);
       let chapterHadiths = [];
@@ -278,10 +318,12 @@ const HadeethAPI = {
             }
           }
         } else if (!idx.some(e => e.c !== undefined)) {
-          // This book carries no chapter column in its records. Scanning the whole
-          // file would download the entire book to filter on a field that is not
-          // there, so say so instead of paying for it.
-          console.warn(`[hadeeth] ${bookId} has no chapter_id field; chapter listing cannot be filtered client-side`);
+          // No chapter column in the records: the book has a single pseudo-chapter,
+          // so serving the whole file (these books are small) is the honest listing.
+          const firstChapter = String(chapterId) === '1' || String(chapterId) === '0';
+          if (!firstChapter) return [];
+          chapterHadiths = await this.fetchNdjsonFull('api', bookId);
+        } else {
           return [];
         }
       } else {
@@ -291,8 +333,10 @@ const HadeethAPI = {
 
       return chapterHadiths.map(h => ({
         id: h.id,
-        hadithnumber: h.hadith_number !== undefined ? h.hadith_number : h.id,
+        hadithnumber: this.hadithNumberOf(h, dsPrefix),
+        hadith_number: this.hadithNumberOf(h, dsPrefix),
         lidwa_id: h.lidwa_id || null,
+        chapter_id: h.chapter_id,
         data: {
           text_ar: h.text_ar || '',
           text_en: h.text_en || '',
@@ -465,7 +509,12 @@ const HadeethAPI = {
           return this.normalizeEdition({ metadata: idx.metadata || {}, [idx.array_key]: raw });
       } else {
           raw = await this.fetchNdjsonFull(prefix, fileId);
-          return this.normalizeEdition({ metadata: {}, hadiths: raw });
+          if (Array.isArray(raw) && raw.length) {
+            return this.normalizeEdition({ metadata: {}, hadiths: raw });
+          }
+          const legacy = await fetchWithTimeout(`${this.localDataUrl}/${prefix}/${fileId}.json`).catch(() => null);
+          if (legacy && legacy.ok) return this.normalizeEdition(await legacy.json());
+          return null;
       }
     } catch (err) {
       console.error(`Failed to load edition ${langCode}-${bookId}:`, err);

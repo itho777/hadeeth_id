@@ -198,6 +198,11 @@ def add_chapter_ids(src, dst, num_map):
                 if s.lstrip("-").isdigit() and int(s) in num_map:
                     kitab = num_map[int(s)]
                     break
+            if kitab is None:
+                try:
+                    kitab = num_map.get(int(str(r.get("hadith_number", "")).strip()))
+                except (TypeError, ValueError):
+                    kitab = None
             if kitab is not None:
                 r["chapter_id"] = str(kitab)
                 try:
@@ -214,25 +219,88 @@ def add_chapter_ids(src, dst, num_map):
     return n, stats
 
 
+def convert_chapter_ranges(src, dst):
+    """Convert a chapter table, accepting first_hadith/last_hadith as well as
+    hadith_start/hadith_end, and deriving the count from the range."""
+    doc = json.loads(Path(src).read_text(encoding="utf-8"))
+    meta = {k: v for k, v in doc.items() if k != "chapters"} if isinstance(doc, dict) and "chapters" in doc else {}
+    out = []
+    for i, c in enumerate(rows(doc, "chapter_number"), 1):
+        if not isinstance(c, dict):
+            continue
+        row = dict(c)
+        try:
+            lo = int(str(row.get("hadith_start", row.get("first_hadith"))).strip())
+            hi = int(str(row.get("hadith_end", row.get("last_hadith"))).strip())
+        except (TypeError, ValueError):
+            lo = hi = None
+        if lo is not None:
+            row.setdefault("book_id", meta.get("book_id"))
+            row["hadith_start"] = lo
+            row["hadith_end"] = hi
+            row.setdefault("hadith_count", max(0, hi - lo + 1))
+            if row.get("chapter_number") is None:
+                row["chapter_number"] = row.get("id", i)
+            row.setdefault("title_en", row.get("title") or "")
+            row.setdefault("title_id", row.get("title") or "")
+        for k in ("first_hadith", "last_hadith", "title"):
+            if k in row and k not in ("title_en", "title_id"):
+                row.pop(k, None)
+        out.append(row)
+    write_ndjson(dst, out)
+    return len(out)
+
+
+def scan_row_chapters(src):
+    """Chapter stats from the rows themselves, for books whose source file has
+    no kitab table: {chapter_id: [min_number, max_number, count]}."""
+    stats = {}
+    if not Path(src).exists():
+        return stats
+    with open(src, encoding="utf-8") as f:
+        for line in f:
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            cid = r.get("chapter_id")
+            if cid is None or str(cid).strip() == "":
+                continue
+            try:
+                num = int(str(r.get("hadith_number", "")).strip())
+            except (TypeError, ValueError):
+                num = None
+            st = stats.setdefault(str(cid), [None, None, 0])
+            if num is not None:
+                st[0] = num if st[0] is None else min(st[0], num)
+                st[1] = num if st[1] is None else max(st[1], num)
+            st[2] += 1
+    return stats
+
+
 def build_chapters(book, stats, names, existing, dst):
     """One row per kitab, with ranges and counts taken from the shipped rows."""
     old = {}
     if existing.exists():
-        for e in json.loads(existing.read_text(encoding="utf-8")):
+        for e in rows(json.loads(existing.read_text(encoding="utf-8")), "chapter_number"):
             try:
                 old[int(e.get("chapter_number"))] = e
             except (TypeError, ValueError):
                 pass
     out = []
-    for kitab in sorted(stats):
+    stats = {k: v for k, v in stats.items() if v[2] > 0}
+    single = len(stats) == 1
+    for kitab in sorted(stats, key=lambda k: int(k) if str(k).lstrip("-").isdigit() else 0):
         start, end, count = stats[kitab]
-        prev = old.get(kitab, {})
+        key = int(kitab) if str(kitab).lstrip("-").isdigit() else kitab
+        prev = old.get(key, {})
+        fallback_id = "Semua Hadits" if single else f"Kitab {kitab}"
+        fallback_en = "All Hadiths" if single else f"Chapter {kitab}"
         out.append({
             "book_id": book,
             "id": f"{book}_c{kitab}",
-            "chapter_number": kitab,
-            "title_id": names.get(kitab) or prev.get("title_id") or f"Kitab {kitab}",
-            "title_en": prev.get("title_en") or "",
+            "chapter_number": key,
+            "title_id": names.get(key) or prev.get("title_id") or fallback_id,
+            "title_en": prev.get("title_en") or ("All Hadiths" if single else ""),
             "title_ar": prev.get("title_ar") or "",
             "hadith_start": start,
             "hadith_end": end,
@@ -283,12 +351,46 @@ def build():
             counts[book] = sum(1 for _ in open(p, "rb"))
             report.append((f"api/{name}", "-", counts[book]))
 
-    # 1b. tabarani rebuilt from the complete fawaz edition (21,850 rows)
+    # 1b. tabarani rebuilt from the complete fawaz edition (21,850 rows).
+    #     Its chapter table is expressed as first_hadith/last_hadith, so the
+    #     number->chapter map is built from those ranges and injected here.
     dst = OUT / "api" / "tabarani.ndjson"
     n_tab, _ = normalize_tabarani(DATA / "editions" / "ara-tabarani.ndjson", dst)
+    tab_ranges = {}
+    tab_src = DATA / "chapters" / "tabarani.json"
+    if tab_src.exists():
+        tdoc = json.loads(tab_src.read_text(encoding="utf-8"))
+        for c in rows(tdoc, "chapter_number"):
+            if not isinstance(c, dict):
+                continue
+            try:
+                cid = str(c.get("chapter_number", c.get("id")))
+                lo = int(str(c.get("first_hadith", c.get("hadith_start"))).strip())
+                hi = int(str(c.get("last_hadith", c.get("hadith_end"))).strip())
+            except (TypeError, ValueError):
+                continue
+            for nn in range(lo, hi + 1):
+                tab_ranges[nn] = cid
+    if tab_ranges:
+        rewritten = []
+        with open(dst, encoding="utf-8") as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                r = json.loads(line)
+                try:
+                    cid = tab_ranges.get(int(str(r.get("hadith_number", "")).strip()))
+                except (TypeError, ValueError):
+                    cid = None
+                if cid is not None:
+                    r["chapter_id"] = cid
+                rewritten.append(r)
+        with open(dst, "w", encoding="utf-8", newline="\n") as out:
+            for r in rewritten:
+                out.write(json.dumps(r, ensure_ascii=False, separators=(",", ":")) + "\n")
     add(dst, "api/tabarani.ndjson")
     counts["tabarani"] = n_tab
-    report.append(("api/tabarani.ndjson", n_tab, "-"))
+    report.append(("api/tabarani.ndjson", n_tab, f"chapters {len(set(tab_ranges.values())) if tab_ranges else 0}"))
 
     # 2. content-keyed map, one row per hadith: ordinal, id, number, byte range.
     #    Replaces the bare [start,len] pair lists, which were position-only and
@@ -325,15 +427,46 @@ def build():
     add(dst, "catalog.ndjson")
     report.append(("catalog.ndjson", len(boot), "-"))
 
-    # 4. chapters — rebuilt from the shipped rows wherever D1 has a kitab map,
-    #    otherwise converted from the (unreliable) source file.
-    for p in sorted(glob.glob(str(DATA / "chapters" / "*.json"))):
-        book = Path(p).stem
+    # 4. chapters — rebuilt from the shipped rows so ranges and counts can never
+    #    disagree with the file they point at. Priority: D1 kitab map (canonical),
+    #    then the book's own chapter_id column, then the legacy source file, then
+    #    a single "all hadiths" chapter for books that carry no chapter data.
+    def shipped_path(book):
+        rewritten = OUT / "api" / f"{book}.ndjson"
+        return rewritten if rewritten.exists() else DATA / "api" / f"{book}.ndjson"
+
+    def number_span(src):
+        lo = hi = None
+        count = 0
+        if not Path(src).exists():
+            return None
+        with open(src, encoding="utf-8") as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                r = json.loads(line)
+                count += 1
+                try:
+                    num = int(str(r.get("hadith_number", "")).strip())
+                except (TypeError, ValueError):
+                    continue
+                lo = num if lo is None else min(lo, num)
+                hi = num if hi is None else max(hi, num)
+        return [lo, hi, count]
+
+    for book in sorted(counts):
+        src_chapters = DATA / "chapters" / f"{book}.json"
         dst = OUT / "chapters" / f"{book}.ndjson"
-        if book in chap_stats:
-            n = build_chapters(book, chap_stats[book], kitab_names.get(book, {}), Path(p), dst)
+        row_stats = scan_row_chapters(shipped_path(book))
+        if book in chap_stats and chap_stats[book]:
+            n = build_chapters(book, chap_stats[book], kitab_names.get(book, {}), src_chapters, dst)
+        elif row_stats:
+            n = build_chapters(book, row_stats, kitab_names.get(book, {}), src_chapters, dst)
+        elif src_chapters.exists():
+            n = convert_chapter_ranges(src_chapters, dst)
         else:
-            n = convert(p, dst, "chapter_number")
+            span = number_span(shipped_path(book)) or [None, None, 0]
+            n = build_chapters(book, {"1": span}, {}, src_chapters, dst)
         add(dst, f"chapters/{book}.ndjson")
         report.append((f"chapters/{book}.ndjson", n, "-"))
 
