@@ -195,18 +195,13 @@ number, real Arabic text.
    `syarah_ar` / `syarah_en`; eight books already carry syarah inline (`adab`,
    `bulugh`, `mishkat`, `nawawi`, `qudsi`, `riyad`, `shah`, `shamail`). Waiting
    for the Muse import to finish before its own batch.
-4. **UI not touched.** `js/api.js` still points at `/data`, and fetches the index
-   as `<book>_ndjson_index.json` while R2 now serves `<book>_index.ndjson`. Both
-   change in the same UI pass.
-
-   The index now carries `i` / `id` / `n`, so the three lookups can finally be
-   made correct instead of conflated: `getHadith` currently matches
-   `String(e.id) === String(hadithNumber)`, but `id` and `hadith_number` are
-   different numbers (Bukhari hadith 5 has `id` 6; hadith 6999 has `id` 7554), so
-   that comparison returns the wrong record whenever the two diverge. Number
-   lookups should use `n`, source-id lookups `id`, positional access `i`.
-   `getChapterHadiths` still reads `idx.chapters[chapterId]`, which an array
-   index never provides — it needs a `c` filter or a chapter rollup.
+4. **Resolved — UI wired to R2.** `js/api.js` now uses R2 for the migrated set:
+   `getBooks` (`books.ndjson`), `getChapters` (`chapters/` and
+   `lidwa-chapters/` `.ndjson`), `getActiveRawis` (`rawis/rawis.ndjson`),
+   `getHadith` and `getChapterHadiths` (content map + `Range`). Legacy files
+   (`commentaries/`, editions, topics index) still resolve from the site's own
+   `/data` via `localDataUrl`. `app.js` builds its own base URL and was not
+   changed, so its `sources/`, `links/` and `meta/` reads are unaffected.
 5. **Registry `total_hadiths` vs `hadiths_count`.** Thirteen books still differ
    (e.g. `bukhari` 7,563 declared vs 6,999 shipped). `hadiths_count` is now
    written from the rows actually uploaded, so it can no longer drift; the two

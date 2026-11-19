@@ -248,9 +248,22 @@ def build():
         add(dst, f"lidwa-chapters/{book}.ndjson")
         report.append((f"lidwa-chapters/{book}.ndjson", n, "-"))
 
-    # 6. narrators
+    # 6. narrators — the outer key of the source dict IS the narrator id; the
+    #    inner "id" field is usually an empty string, so carry the key explicitly
+    src = DATA / "rawis" / "active_rawis.min.json"
     dst = OUT / "rawis" / "rawis.ndjson"
-    n = convert(DATA / "rawis" / "active_rawis.min.json", dst, "id")
+    doc = json.loads(src.read_text(encoding="utf-8"))
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    with dst.open("w", encoding="utf-8", newline="\n") as out:
+        n = 0
+        for k, v in doc.items():
+            row = {"rawi_id": k}
+            if isinstance(v, dict):
+                row.update(v)
+            else:
+                row["value"] = v
+            out.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
+            n += 1
     add(dst, "rawis/rawis.ndjson")
     report.append(("rawis/rawis.ndjson", n, "-"))
 
