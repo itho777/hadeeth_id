@@ -2773,7 +2773,7 @@ async function loadChaptersList() {
       desc_id: "Diakui oleh seluruh ulama Islam sebagai koleksi Jami' tertinggi dari Hadits, disusun dengan kriteria otentikasi yang tak tertandingi.",
       kitabCount: '📚 97 Kitab',
       hadithCount: '📖 7.563 Hadits',
-      authenticity: 'â­ï¸ ⭐️ 100% Sahih',
+      authenticity: ' ⭐️ 100% Sahih',
       datasetInfo: {
         primary:           { kitab: '📚 97 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
         native_lidwa:      { kitab: '📚 77 Kitab', hadith: '📖 7.008 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–7008)' }
@@ -2790,7 +2790,7 @@ async function loadChaptersList() {
       desc_id: "Koleksi Jami' terbaik yang terkenal dengan organisasi tematik yang ketat dan rantai periwayatan paralel (turuq) yang komprehensif.",
       kitabCount: '📚 57 Kitab',
       hadithCount: '📖 7.563 Hadits',
-      authenticity: 'â­ï¸ ⭐️ 100% Sahih',
+      authenticity: ' ⭐️ 100% Sahih',
       datasetInfo: {
         primary:           { kitab: '📚 57 Kitab', hadith: '📖 7.563 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–7563)' },
         native_lidwa:      { kitab: '📚 —', hadith: '📖 5.362 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa (1–5362) · tidak ada pembagian kitab dari sumber Lidwa' }
@@ -2807,7 +2807,7 @@ async function loadChaptersList() {
       desc_id: "Koleksi Jami' yang terkenal dengan penilaian hadits secara eksplisit (Sahih, Hasan, Gharib) dan pendapat hukum ulama awal.",
       kitabCount: '📚 49 Kitab',
       hadithCount: '📖 3.956 Hadits',
-      authenticity: "â­ï¸ ⭐️ Jami' Tergrading",
+      authenticity: " ⭐️ Jami' Tergrading",
       datasetInfo: {
         primary:           { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–3956)' },
         native_lidwa:      { kitab: '📚 49 Kitab', hadith: '📖 3.956 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–3956)' }
@@ -2841,7 +2841,7 @@ async function loadChaptersList() {
       desc_id: 'Memiliki kriteria otentikasi paling ketat di antara kitab Sunan, hanya di bawah dua kitab Shahih.',
       kitabCount: '📚 52 Kitab',
       hadithCount: '📖 5.758 Hadits',
-      authenticity: 'â­ï¸ Otentisitas Tinggi',
+      authenticity: ' Otentisitas Tinggi',
       datasetInfo: {
         primary:           { kitab: '📚 52 Kitab', hadith: '📖 5.758 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–5758)' },
         native_lidwa:      { kitab: '📚 51 Kitab', hadith: '📖 5.662 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–5662)' }
@@ -2875,7 +2875,7 @@ async function loadChaptersList() {
       desc_id: 'Teks Mushannaf fiqih tertua yang masih ada dalam Islam, menggabungkan Hadits Nabi dengan keputusan hukum ulama Madinah.',
       kitabCount: '📚 56 Kitab',
       hadithCount: '📖 1.720 Hadits',
-      authenticity: 'â­ï¸ Imam Hijaz',
+      authenticity: ' Imam Hijaz',
       datasetInfo: {
         primary:           { kitab: '📚 56 Kitab', hadith: '📖 1.858 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–1858)' },
         native_lidwa:      { kitab: '📚 56 Kitab', hadith: '📖 1.594 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–1594) · beberapa hadits dikelompokkan' }
@@ -2892,7 +2892,7 @@ async function loadChaptersList() {
       desc_id: 'Musnad ensiklopedis yang sangat besar, disusun berdasarkan sahabat per sahabat (Sahabi), berisi lebih dari 27.000 riwayat.',
       kitabCount: '📚 Sistem Musnad',
       hadithCount: '📖 27.647 Hadits',
-      authenticity: 'â­ï¸ Korpus Ensiklopedis',
+      authenticity: ' Korpus Ensiklopedis',
       datasetInfo: {
         primary:           { kitab: '📚 7 Bagian Musnad', hadith: '📖 27.647 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–27647)' },
         native_lidwa:      { kitab: '📚 Susunan Musnad', hadith: '📖 26.363 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–26363) · susunan musnad' }
@@ -2926,7 +2926,7 @@ async function loadChaptersList() {
       desc_id: "Koleksi esensial 42 riwayat fondasi yang mencakup Jawami' al-Kalim (bimbingan Nabi yang ringkas dan menyeluruh).",
       kitabCount: '📚 1 Jilid',
       hadithCount: '📖 42 Hadits',
-      authenticity: "â­ï¸ Jawami' al-Kalim",
+      authenticity: " Jawami' al-Kalim",
       datasetInfo: {
         primary:      { kitab: '📚 1 Jilid', hadith: '📖 42 Hadits (Darussalam)', numbering: 'Penomoran: Darussalam (1–42)' },
         native_lidwa: { kitab: '📚 1 Jilid', hadith: '📖 42 Hadits (Lidwa)', numbering: 'Penomoran: Lidwa / Irsyad (1–42)' }
@@ -2943,7 +2943,7 @@ async function loadChaptersList() {
       desc_id: "Koleksi Mu'jam monumental yang disusun berdasarkan nama perawi Sahabat secara alfabetis.",
       kitabCount: '📚 25 Jilid',
       hadithCount: '📖 20.000+ Hadits',
-      authenticity: 'â­ï¸ Kerangka',
+      authenticity: ' Kerangka',
       datasetInfo: { fawazahmed: { kitab: '📚 25 Jilid', hadith: '📖 20.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
     },
     ibn_abi_shaybah: {
@@ -2957,7 +2957,7 @@ async function loadChaptersList() {
       desc_id: "Koleksi Mushannaf ensiklopedis yang melestarikan tradisi Marfu', Mauquf, dan Maqtu' berdasarkan topik Fiqih.",
       kitabCount: '📚 37 Kitab',
       hadithCount: '📖 37.000+ Hadits',
-      authenticity: 'â­ï¸ Kerangka',
+      authenticity: ' Kerangka',
       datasetInfo: { fawazahmed: { kitab: '📚 37 Kitab', hadith: '📖 37.000+ Hadits', numbering: 'Dataset dalam pengembangan' } }
     },
     ibnukhuzaimah: {
@@ -3027,7 +3027,7 @@ async function loadChaptersList() {
     desc: 'Authentic Hadith collection preserved in canonical digital manuscripts.',
     kitabCount: '📚 Index',
     hadithCount: '📖 Canonical Corpus',
-    authenticity: 'â­ï¸ Verified'
+    authenticity: ' Verified'
   };
 
   // Update DOM Elements
@@ -4350,9 +4350,10 @@ async function loadTopicHadiths() {
   let topicNameEn = '';
   let topicNameId = '';
   try {
-      const topicRes = await fetch('data/api/topics_metadata.ndjson');
-      const topicText = await topicRes.text();
-      const topics = topicText.trim().split('\n').filter(l => l.trim()).map(line => JSON.parse(line));
+      const topics = await (window.HadeethAPI && window.HadeethAPI.getTopics
+        ? window.HadeethAPI.getTopics()
+        : fetch('data/api/topics_metadata.ndjson').then(r => r.text())
+            .then(t => t.trim().split('\n').filter(l => l.trim()).map(line => JSON.parse(line))));
       const topic = topics.find(t => t.id == topicId);
       if (topic) {
           topicNameEn = topic.name_en;

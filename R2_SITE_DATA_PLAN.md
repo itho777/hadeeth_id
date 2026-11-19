@@ -195,14 +195,24 @@ number, real Arabic text.
    `syarah_ar` / `syarah_en`; eight books already carry syarah inline (`adab`,
    `bulugh`, `mishkat`, `nawawi`, `qudsi`, `riyad`, `shah`, `shamail`). Waiting
    for the Muse import to finish before its own batch.
-4. **Resolved — UI wired to R2.** `js/api.js` now uses R2 for the migrated set:
-   `getBooks` (`books.ndjson`), `getChapters` (`chapters/` and
-   `lidwa-chapters/` `.ndjson`), `getActiveRawis` (`rawis/rawis.ndjson`),
-   `getHadith` and `getChapterHadiths` (content map + `Range`). Legacy files
-   (`commentaries/`, editions, topics index) still resolve from the site's own
-   `/data` via `localDataUrl`. `app.js` builds its own base URL and was not
-   changed, so its `sources/`, `links/` and `meta/` reads are unaffected.
-5. **Registry `total_hadiths` vs `hadiths_count`.** Thirteen books still differ
+4. **Resolved — UI wired to R2.** `js/api.js` uses R2 for the whole serving
+   set: registry, chapters, narrators, hadith lookup, chapter runs, topics.
+   Only `commentaries/` and the edition indexes still resolve from the site's
+   own `/data` via `localDataUrl`.
+5. **Resolved — chapter mapping.** `data/chapters/*.json` was generated wrong
+   (every entry claimed `hadith_start: 2`, `hadith_end: 97`). D1's
+   `hadith_bab` (62,169 rows) joins shipped rows through `lidwa_id`, so
+   `chapter_id` is now injected at build time for the nine books D1 covers
+   and both starts/ends and counts are recomputed from the rows actually
+   shipped. Bukhari went from "Hadith 2 – 99 · 237 hadiths" to
+   "Hadith 1 – 6 · 6 hadiths", 97 chapters covering exactly 6,999 rows.
+6. **Resolved — topics.** `topics_index.json` (790 KB, local only) is now
+   `topics_index.ndjson`, one row per (topic, book), so a topic page fetches
+   one small object instead of the whole tree. `topics.ndjson` carries the
+   14 topic labels.
+7. **Resolved — double-encoded star.** `âï¸` prefix removed from 10 hardcoded
+   labels in `app.js` (mojibake of the star emoji, then duplicated).
+8. **Registry `total_hadiths` vs `hadiths_count`.** Thirteen books still differ
    (e.g. `bukhari` 7,563 declared vs 6,999 shipped). `hadiths_count` is now
    written from the rows actually uploaded, so it can no longer drift; the two
    numbers differing means the served edition is an abridgement of the declared

@@ -17,6 +17,7 @@ import glob
 import hashlib
 import json
 import os
+import sqlite3
 import sys
 import time
 from pathlib import Path
@@ -154,6 +155,93 @@ def normalize_tabarani(src, dst):
     return n, idx
 
 
+DB = ROOT / ".dump" / "hadeeth.sqlite"
+
+
+def load_bab_maps():
+    """book -> {lidwa hadith number: kitab number}, book -> {kitab: name}.
+
+    The shipped rows carry ``lidwa_id`` and nothing chapter-shaped. D1's
+    ``hadith_bab`` is the only real chapter mapping in the project; the
+    ``data/chapters/*.json`` files were generated wrong (every entry claimed
+    hadith_start 2 / hadith_end 97), so ranges are recomputed from the rows.
+    """
+    if not DB.exists():
+        return {}, {}
+    conn = sqlite3.connect(str(DB))
+    num_map, names = {}, {}
+    for book, num, kitab in conn.execute(
+            "select book_id, hadith_number, kitab_number from hadith_bab"):
+        num_map.setdefault(book, {})[int(num)] = int(kitab)
+    for book, kitab, name in conn.execute(
+            "select book_id, kitab_number, kitab_name from kitab"):
+        names.setdefault(book, {})[int(kitab)] = name
+    conn.close()
+    return num_map, names
+
+
+def add_chapter_ids(src, dst, num_map):
+    """Rewrite a master file with chapter_id set, and return per-chapter stats."""
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    stats = {}
+    n = 0
+    with open(src, encoding="utf-8") as f, dst.open("wb") as out:
+        for line in f:
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            lid = r.get("lidwa_id")
+            ids = lid if isinstance(lid, list) else ([lid] if lid not in (None, "") else [])
+            kitab = None
+            for i in ids:
+                s = str(i).strip()
+                if s.lstrip("-").isdigit() and int(s) in num_map:
+                    kitab = num_map[int(s)]
+                    break
+            if kitab is not None:
+                r["chapter_id"] = str(kitab)
+                try:
+                    num = int(r.get("hadith_number"))
+                except (TypeError, ValueError):
+                    num = None
+                st = stats.setdefault(kitab, [None, None, 0])
+                if num is not None:
+                    st[0] = num if st[0] is None else min(st[0], num)
+                    st[1] = num if st[1] is None else max(st[1], num)
+                st[2] += 1
+            out.write((json.dumps(r, ensure_ascii=False, separators=(",", ":")) + "\n").encode("utf-8"))
+            n += 1
+    return n, stats
+
+
+def build_chapters(book, stats, names, existing, dst):
+    """One row per kitab, with ranges and counts taken from the shipped rows."""
+    old = {}
+    if existing.exists():
+        for e in json.loads(existing.read_text(encoding="utf-8")):
+            try:
+                old[int(e.get("chapter_number"))] = e
+            except (TypeError, ValueError):
+                pass
+    out = []
+    for kitab in sorted(stats):
+        start, end, count = stats[kitab]
+        prev = old.get(kitab, {})
+        out.append({
+            "book_id": book,
+            "id": f"{book}_c{kitab}",
+            "chapter_number": kitab,
+            "title_id": names.get(kitab) or prev.get("title_id") or f"Kitab {kitab}",
+            "title_en": prev.get("title_en") or "",
+            "title_ar": prev.get("title_ar") or "",
+            "hadith_start": start,
+            "hadith_end": end,
+            "hadith_count": count,
+        })
+    write_ndjson(dst, out)
+    return len(out)
+
+
 def build():
     if OUT.exists():
         for p in OUT.rglob("*"):
@@ -173,19 +261,27 @@ def build():
 
     report = []
 
-    # 1. master hadith NDJSON — already NDJSON, uploaded byte-identical.
-    #    tabarani is the exception: rebuilt in 1b from the complete edition.
+    # 1. master hadith NDJSON. Books with a D1 chapter map get chapter_id
+    #    injected (rewritten); the rest stay byte-identical.
+    num_map, kitab_names = load_bab_maps()
     counts = {}
+    chap_stats = {}
     for p in sorted(glob.glob(str(DATA / "api" / "*.ndjson"))):
         name = Path(p).name
         book = name[: -len(".ndjson")]
-        if book == "tabarani":
+        if book == "tabarani" or book.startswith("topics"):
             continue
-        key = f"api/{name}"
-        add(p, key)
-        n = sum(1 for _ in open(p, "rb"))
-        counts[book] = n
-        report.append((key, "-", n))
+        if book in num_map and num_map[book]:
+            dst = OUT / "api" / name
+            n, stats = add_chapter_ids(p, dst, num_map[book])
+            chap_stats[book] = stats
+            add(dst, f"api/{name}")
+            counts[book] = n
+            report.append((f"api/{name}", n, f"chapters {len(stats)}"))
+        else:
+            add(p, f"api/{name}")
+            counts[book] = sum(1 for _ in open(p, "rb"))
+            report.append((f"api/{name}", "-", counts[book]))
 
     # 1b. tabarani rebuilt from the complete fawaz edition (21,850 rows)
     dst = OUT / "api" / "tabarani.ndjson"
@@ -229,11 +325,15 @@ def build():
     add(dst, "catalog.ndjson")
     report.append(("catalog.ndjson", len(boot), "-"))
 
-    # 4. chapters
+    # 4. chapters — rebuilt from the shipped rows wherever D1 has a kitab map,
+    #    otherwise converted from the (unreliable) source file.
     for p in sorted(glob.glob(str(DATA / "chapters" / "*.json"))):
         book = Path(p).stem
         dst = OUT / "chapters" / f"{book}.ndjson"
-        n = convert(p, dst, "chapter_number")
+        if book in chap_stats:
+            n = build_chapters(book, chap_stats[book], kitab_names.get(book, {}), Path(p), dst)
+        else:
+            n = convert(p, dst, "chapter_number")
         add(dst, f"chapters/{book}.ndjson")
         report.append((f"chapters/{book}.ndjson", n, "-"))
 
@@ -297,6 +397,20 @@ def build():
         dst.write_bytes(p.read_bytes())
         add(dst, "topics.ndjson")
         report.append(("topics.ndjson", sum(1 for _ in open(p, "rb")), "-"))
+
+    # 10. topic index — one row per (topic, book), so a topic page reads one
+    #     small object instead of the whole 790 KB tree
+    tsrc = DATA / "api" / "topics_index.json"
+    if tsrc.exists():
+        doc = json.loads(tsrc.read_text(encoding="utf-8"))
+        out_rows = []
+        for tid, t in (doc.get("topics") or {}).items():
+            for book, nums in (t.get("books") or {}).items():
+                out_rows.append({"t": int(tid), "b": book, "n": nums})
+        dst = OUT / "topics_index.ndjson"
+        write_ndjson(dst, out_rows)
+        add(dst, "topics_index.ndjson")
+        report.append(("topics_index.ndjson", len(out_rows), "-"))
 
     write_ndjson(MANIFEST, manifest)
     total = sum(m["bytes"] for m in manifest)
@@ -394,6 +508,22 @@ def upload():
     if bad:
         raise SystemExit(1)
 
+    # prune: anything in the bucket that the manifest no longer produces
+    wanted = {i["key"] for i in items}
+    stale = sorted(set(remote) - wanted)
+    if stale:
+        base = f"https://api.cloudflare.com/client/v4/accounts/{ACCOUNT}/r2/buckets/{BUCKET}/objects"
+        killed = 0
+        for key in stale:
+            r = requests.delete(f"{base}/{key}", headers={"Authorization": auth}, timeout=120)
+            if r.status_code in (200, 204):
+                killed += 1
+            else:
+                print(f"  prune FAIL {key}: HTTP {r.status_code}")
+        print(f"prune: {killed}/{len(stale)} stale objects deleted")
+        for key in stale:
+            print(f"  removed {key}")
+
 
 # ------------------------------------------------------------------- verify
 
@@ -437,7 +567,7 @@ def verify():
 
     # THE load-bearing check: HTTP Range on a master NDJSON
     print("\nrange check (api/bukhari.ndjson):")
-    src = DATA / "api" / "bukhari.ndjson"
+    src = OUT / "api" / "bukhari.ndjson"
     with src.open("rb") as f:
         head = f.read(401)
     r = requests.get(f"{PUBLIC}/api/bukhari.ndjson",
@@ -445,15 +575,19 @@ def verify():
     print(f"  status={r.status_code}  bytes={len(r.content)}  identical={r.content == head}")
     ok_range = r.status_code == 206 and r.content == head
 
-    # index alignment: first pair must address the same first record
+    # index alignment: three map entries must reconstruct their records
     print("\nindex alignment (api/bukhari_index.ndjson):")
-    idx = json.loads((OUT / "api" / "bukhari_index.ndjson").read_text().splitlines()[0])
-    start, length = idx
-    r = requests.get(f"{PUBLIC}/api/bukhari.ndjson",
-                     headers={"Range": f"bytes={start}-{start+length-1}"}, timeout=120)
-    first_local = Path(DATA / "api" / "bukhari.ndjson").read_bytes()[start:start + length]
-    print(f"  first pair={idx}  status={r.status_code}  matches local slice={r.content == first_local}")
-    ok_idx = r.status_code == 206 and r.content == first_local
+    lines = (OUT / "api" / "bukhari_index.ndjson").read_text().splitlines()
+    picks = [json.loads(lines[0]), json.loads(lines[len(lines) // 2]), json.loads(lines[-1])]
+    ok_idx = True
+    for e in picks:
+        start, end = e["s"], e["e"]
+        r = requests.get(f"{PUBLIC}/api/bukhari.ndjson",
+                         headers={"Range": f"bytes={start}-{end}"}, timeout=120)
+        rec = json.loads(r.content)
+        same = rec.get("hadith_number") == e["n"] and str(rec.get("id")) == str(e["id"])
+        ok_idx = ok_idx and r.status_code == 206 and same
+        print(f"  n={e['n']:<6} id={e['id']:<6} [{start},{end}] status={r.status_code} record matches={same}")
 
     print("\nRESULT:", "PASS" if not missing and not wrong and ok_range and ok_idx else "FAIL")
     return not missing and not wrong and ok_range and ok_idx

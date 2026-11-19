@@ -360,20 +360,51 @@ const HadeethAPI = {
    */
   async getTopicIndex() {
     if (this.topicIndexCache) return this.topicIndexCache;
-    try {
-      let url = `${this.dataUrl}/api/topics_index.json?v=20260826_1`;
-      let res = await fetchWithTimeout(url).catch(() => null);
-      if (!res || !res.ok) {
-        res = await fetchWithTimeout(`https://raw.githubusercontent.com/itho777/hadeeth_id/main/data/api/topics_index.json?v=20260826_1`).catch(() => null);
+    // Rows are {t: topic, b: book, n: [hadith numbers]}; reshape into the
+    // {topics: {id: {books: {...}}}} object the callers already expect.
+    const res = await this._get('topics_index.ndjson', {}, 20000);
+    if (res) {
+      const topics = {};
+      for (const r of parseNdjson(await res.text())) {
+        const t = (topics[String(r.t)] = topics[String(r.t)] || { id: r.t, books: {} });
+        t.books[r.b] = r.n;
       }
-      if (res && res.ok) {
-        this.topicIndexCache = await res.json();
+      this.topicIndexCache = { topics };
+      return this.topicIndexCache;
+    }
+    try {
+      let res2 = await fetchWithTimeout(`${this.localDataUrl}/api/topics_index.json?v=20260826_1`).catch(() => null);
+      if (!res2 || !res2.ok) {
+        res2 = await fetchWithTimeout(`https://raw.githubusercontent.com/itho777/hadeeth_id/main/data/api/topics_index.json?v=20260826_1`).catch(() => null);
+      }
+      if (res2 && res2.ok) {
+        this.topicIndexCache = await res2.json();
         return this.topicIndexCache;
       }
     } catch (e) {
-      console.warn('Failed to load topics_index.json:', e);
+      console.warn('Failed to load topics_index:', e);
     }
     return null;
+  },
+
+  /**
+   * Topic metadata (14 rows: id, name_en, name_id, hadith_count)
+   */
+  async getTopics() {
+    if (this.topicsCache) return this.topicsCache;
+    const res = await this._get('topics.ndjson', {}, 15000);
+    if (res) {
+      this.topicsCache = parseNdjson(await res.text());
+      return this.topicsCache;
+    }
+    try {
+      const r2 = await fetchWithTimeout(`${this.localDataUrl}/api/topics_metadata.ndjson`).catch(() => null);
+      if (r2 && r2.ok) {
+        this.topicsCache = parseNdjson(await r2.text());
+        return this.topicsCache;
+      }
+    } catch (e) {}
+    return [];
   },
 
   /**

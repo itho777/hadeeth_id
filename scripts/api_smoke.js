@@ -70,7 +70,20 @@ function check(name, ok, detail) {
   check('adab chapter 1', ch.length > 0, `${ch.length} hadiths, ${calls} reqs, ${(bytes / 1024).toFixed(1)} KB`);
   reset();
   const chb = await api.getChapterHadiths('bukhari', 1);
-  check('bukhari refuses full-file scan', chb.length === 0 && bytes < 2_000_000, `${chb.length} hadiths, ${(bytes / 1024).toFixed(1)} KB`);
+  check('bukhari chapter 1 (from D1 kitab map)', chb.length === 6 && bytes < 1_000_000,
+    `${chb.length} hadiths, ${calls} reqs, ${(bytes / 1024).toFixed(1)} KB`);
+  reset();
+  const chm = await api.getChapterHadiths('muslim', 3);
+  check('muslim chapter 3', chm.length > 0 && bytes < 3_000_000, `${chm.length} hadiths, ${(bytes / 1024).toFixed(1)} KB`);
+
+  console.log('\n== topics ==');
+  reset();
+  const topics = await api.getTopics();
+  check('14 topics', topics.length === 14, `got ${topics.length}`);
+  const tids = await api.getTopicHadithIds(1, 'bukhari');
+  check('topic 1 / bukhari numbers', tids.length > 1000, `${tids.length} numbers`);
+  const th = await api.getHadith('bukhari', tids[0]);
+  check('topic number resolves', th && String(th.hadith_number) === String(tids[0]), `#${th && th.hadith_number}`);
 
   console.log('\n== narrators ==');
   reset();
