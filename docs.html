@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="HADEETH.ID Data Sources — Complete documentation of all 24 hadith collections, their origins, databases, and validation methodology."/>
+  <meta name="description" content="HADEETH.ID Data Sources — all 24 hadith collections, 9 translation languages, 20 classical commentaries, and how each is sourced and validated."/>
   <title>Data Sources & Documentation - HADEETH.ID</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -80,7 +80,9 @@
     <h1 class="text-3xl font-bold text-primary dark:text-white">Data Sources & Credits</h1>
     <p class="text-sm text-on-surface-variant dark:text-gray-400 max-w-xl">
       HADEETH.ID aggregates hadith text from multiple authoritative open-source databases and contributors.
-      This page documents every collection available on the platform, its origin, and our validation approach.
+      This page documents every collection available on the platform, its origin, and our validation approach —
+      current as of November 2026: 24 collections, 102,097 hadiths, 54 translation editions in 9 languages,
+      and 20 classical commentaries.
     </p>
     <div class="flex items-start gap-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/40 rounded-lg p-4 mt-2">
       <span class="material-symbols-outlined text-amber-600 dark:text-amber-400 text-[20px] mt-0.5">verified_user</span>
@@ -106,7 +108,9 @@
         </div>
         <h3 class="font-bold text-primary dark:text-white">Fawazahmed0 DB</h3>
         <p class="text-xs text-on-surface-variant dark:text-gray-400">
-          Used as the universal text anchor. Supplies multilingual support for 11+ languages (Arabic, English, Indonesian, Bengali, French, Russian, Tamil, Turkish, Urdu, etc) across Kutubus Sittah, Malik, Tabarani, and 40-Hadith collections.
+          Supplies the translations. Nine languages (Arabic, English, Indonesian, Bengali, French, Russian, Tamil,
+          Turkish, Urdu) across eight collections — 54 language–collection editions, 285,647 translated hadiths.
+          Rows from this source also carry the numbering that links each translation back to its collection.
         </p>
         <p class="text-xs text-outline dark:text-gray-500 mt-1">Source: <a href="https://github.com/fawazahmed0" target="_blank" class="hover:underline">fawazahmed0.github.io</a></p>
       </div>
@@ -173,9 +177,25 @@
         </div>
         <h3 class="font-bold text-primary dark:text-white">meeAtif & Dorar</h3>
         <p class="text-xs text-on-surface-variant dark:text-gray-400">
-          <strong>meeAtif</strong> provides JSON alignments for Kutub al-Sittah (AR, EN, Grading EN, and sunnah.com references). <strong>Dorar</strong> provides detailed Arabic Syarah (commentaries).
+          <strong>meeAtif</strong> provides JSON alignments for Kutub al-Sittah (AR, EN, Grading EN, and sunnah.com
+          references). <strong>Dorar</strong> supplies Arabic commentary fragments, kept alongside the classical
+          commentaries below and shown under their own tab.
         </p>
         <p class="text-xs text-outline dark:text-gray-500 mt-1">Sources: meeAtif, Dorar</p>
+      </div>
+
+      <!-- SYARAH CORPUS -->
+      <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 flex flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <span class="bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-[10px] font-bold uppercase px-2 py-0.5 rounded">Commentary</span>
+        </div>
+        <h3 class="font-bold text-primary dark:text-white">Syarah corpus (turath.io)</h3>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">
+          Twenty classical commentaries in Arabic — Fath al-Bari, Sharh al-Nawawi, Awn al-Ma'bud, Tuhfat al-Ahwadhi,
+          Mirqat al-Mafatih, Sharh al-Zurqani and others — with the page of each commentary on each hadith.
+          62,829 passages across 42,071 hadiths, each with its volume, page and a link to the digitised page.
+        </p>
+        <p class="text-xs text-outline dark:text-gray-500 mt-1">Texts: public domain. Digitisation: <a href="https://turath.io" target="_blank" class="hover:underline">turath.io</a></p>
       </div>
 
       <!-- KAGGLE / RIJAL -->
@@ -200,7 +220,6 @@
       All 24 Collections
     </h2>
 
-    <!-- Kutubus Sittah -->
     <div class="flex flex-col gap-2">
       <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">
         <span class="w-2 h-2 rounded-full bg-secondary dark:bg-[#10b981]"></span>
@@ -220,29 +239,28 @@
           </thead>
           <tbody class="text-on-surface dark:text-gray-200">
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">1</td><td class="p-3 font-semibold">Sahih al-Bukhari</td><td class="p-3 font-arabic" dir="rtl">صحيح البخاري</td><td class="p-3">7,563</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID</td>
+              <td class="p-3 text-outline dark:text-gray-500">1</td><td class="p-3 font-semibold">Sahih al-Bukhari</td><td class="p-3 font-arabic" dir="rtl">صحيح البخاري</td><td class="p-3">7,008</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID, BN, FR, RU, TA, TR, UR</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">2</td><td class="p-3 font-semibold">Sahih Muslim</td><td class="p-3 font-arabic" dir="rtl">صحيح مسلم</td><td class="p-3">3,033</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID</td>
+              <td class="p-3 text-outline dark:text-gray-500">2</td><td class="p-3 font-semibold">Sahih Muslim</td><td class="p-3 font-arabic" dir="rtl">صحيح مسلم</td><td class="p-3">5,362</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID, BN, FR, RU, TA, TR, UR</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">3</td><td class="p-3 font-semibold">Sunan Abi Dawud</td><td class="p-3 font-arabic" dir="rtl">سنن أبي داود</td><td class="p-3">5,274</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID</td>
+              <td class="p-3 text-outline dark:text-gray-500">3</td><td class="p-3 font-semibold">Sunan Abi Dawud</td><td class="p-3 font-arabic" dir="rtl">سنن أبي داود</td><td class="p-3">4,590</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID, BN, FR, RU, TR, UR</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">4</td><td class="p-3 font-semibold">Jami' at-Tirmidhi</td><td class="p-3 font-arabic" dir="rtl">جامع الترمذي</td><td class="p-3">3,956</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID</td>
+              <td class="p-3 text-outline dark:text-gray-500">4</td><td class="p-3 font-semibold">Jami' at-Tirmidhi</td><td class="p-3 font-arabic" dir="rtl">جامع الترمذي</td><td class="p-3">3,891</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID, BN, TR, UR</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">5</td><td class="p-3 font-semibold">Sunan an-Nasa'i</td><td class="p-3 font-arabic" dir="rtl">سنن النسائي</td><td class="p-3">5,758</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID</td>
+              <td class="p-3 text-outline dark:text-gray-500">5</td><td class="p-3 font-semibold">Sunan an-Nasa'i</td><td class="p-3 font-arabic" dir="rtl">سنن النسائي</td><td class="p-3">5,662</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID, BN, FR, TR, UR</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">6</td><td class="p-3 font-semibold">Sunan Ibn Majah</td><td class="p-3 font-arabic" dir="rtl">سنن ابن ماجه</td><td class="p-3">4,341</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID</td>
+              <td class="p-3 text-outline dark:text-gray-500">6</td><td class="p-3 font-semibold">Sunan Ibn Majah</td><td class="p-3 font-arabic" dir="rtl">سنن ابن ماجه</td><td class="p-3">4,332</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz + meeAtif</span></td><td class="p-3 font-semibold">AR, EN, ID, BN, FR, TR, UR</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- Additional 3 (Kutubut Tis'ah) -->
     <div class="flex flex-col gap-2 mt-4">
       <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
         <span class="w-2 h-2 rounded-full bg-amber-500"></span>
@@ -262,23 +280,22 @@
           </thead>
           <tbody class="text-on-surface dark:text-gray-200">
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">7</td><td class="p-3 font-semibold">Muwatta Malik</td><td class="p-3 font-arabic" dir="rtl">موطأ مالك</td><td class="p-3">1,858</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz</span></td><td class="p-3 font-semibold">AR, EN, ID</td>
+              <td class="p-3 text-outline dark:text-gray-500">7</td><td class="p-3 font-semibold">Muwatta Malik</td><td class="p-3 font-arabic" dir="rtl">موطأ مالك</td><td class="p-3">1,595</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz</span></td><td class="p-3 font-semibold">AR, EN, ID, BN, FR, TR, UR</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">8</td><td class="p-3 font-semibold">Sunan ad-Darimi</td><td class="p-3 font-arabic" dir="rtl">سنن الدارمي</td><td class="p-3">3,367</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz</span></td><td class="p-3 font-semibold">AR, EN, ID</td>
+              <td class="p-3 text-outline dark:text-gray-500">8</td><td class="p-3 font-semibold">Sunan ad-Darimi</td><td class="p-3 font-arabic" dir="rtl">سنن الدارمي</td><td class="p-3">3,367</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">9</td><td class="p-3 font-semibold">Musnad Ahmad</td><td class="p-3 font-arabic" dir="rtl">مسند أحمد</td><td class="p-3">27,519</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz</span></td><td class="p-3 font-semibold">AR, EN, ID</td>
+              <td class="p-3 text-outline dark:text-gray-500">9</td><td class="p-3 font-semibold">Musnad Ahmad</td><td class="p-3 font-arabic" dir="rtl">مسند أحمد</td><td class="p-3">26,363</td><td class="p-3"><span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Lidwa + Fawaz</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <!-- Secondary Collections -->
     <div class="flex flex-col gap-2 mt-4">
-      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-purple-600 dark:text-purple-400">
-        <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+        <span class="w-2 h-2 rounded-full bg-blue-500"></span>
         Secondary Collections (Indices 10—24)
       </div>
       <div class="overflow-x-auto">
@@ -295,28 +312,28 @@
           </thead>
           <tbody class="text-on-surface dark:text-gray-200">
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">10</td><td class="p-3 font-semibold">Forty Hadith of an-Nawawi</td><td class="p-3 font-arabic" dir="rtl">الأربعون النووية</td><td class="p-3">42</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, EN, ID</td>
+              <td class="p-3 text-outline dark:text-gray-500">10</td><td class="p-3 font-semibold">Forty Hadith of an-Nawawi</td><td class="p-3 font-arabic" dir="rtl">الأربعون النووية</td><td class="p-3">42</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">11</td><td class="p-3 font-semibold">40 Hadith Qudsi</td><td class="p-3 font-arabic" dir="rtl">الأربعون القدسية</td><td class="p-3">40</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, EN</td>
+              <td class="p-3 text-outline dark:text-gray-500">11</td><td class="p-3 font-semibold">40 Hadith Qudsi</td><td class="p-3 font-arabic" dir="rtl">الأربعون القدسية</td><td class="p-3">40</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">12</td><td class="p-3 font-semibold">Forty Hadith of Shah Waliullah</td><td class="p-3 font-arabic" dir="rtl">أربعون الشاه ولي الله</td><td class="p-3">40</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, EN</td>
+              <td class="p-3 text-outline dark:text-gray-500">12</td><td class="p-3 font-semibold">Forty Hadith of Shah Waliullah</td><td class="p-3 font-arabic" dir="rtl">أربعون الشاه ولي الله</td><td class="p-3">40</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">13</td><td class="p-3 font-semibold">Al-Adab Al-Mufrad</td><td class="p-3 font-arabic" dir="rtl">الأدب المفرد</td><td class="p-3">1,322</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, EN</td>
+              <td class="p-3 text-outline dark:text-gray-500">13</td><td class="p-3 font-semibold">Al-Adab Al-Mufrad</td><td class="p-3 font-arabic" dir="rtl">الأدب المفرد</td><td class="p-3">1,326</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">14</td><td class="p-3 font-semibold">Bulugh al-Maram</td><td class="p-3 font-arabic" dir="rtl">بلوغ المرام</td><td class="p-3">1,596</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, EN</td>
+              <td class="p-3 text-outline dark:text-gray-500">14</td><td class="p-3 font-semibold">Bulugh al-Maram</td><td class="p-3 font-arabic" dir="rtl">بلوغ المرام</td><td class="p-3">1,767</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">15</td><td class="p-3 font-semibold">Mishkat al-Masabih</td><td class="p-3 font-arabic" dir="rtl">مشكاة المصابيح</td><td class="p-3">5,945</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, EN</td>
+              <td class="p-3 text-outline dark:text-gray-500">15</td><td class="p-3 font-semibold">Mishkat al-Masabih</td><td class="p-3 font-arabic" dir="rtl">مشكاة المصابيح</td><td class="p-3">4,428</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">16</td><td class="p-3 font-semibold">Riyad as-Salihin</td><td class="p-3 font-arabic" dir="rtl">رياض الصالحين</td><td class="p-3">1,896</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, EN</td>
+              <td class="p-3 text-outline dark:text-gray-500">16</td><td class="p-3 font-semibold">Riyad as-Salihin</td><td class="p-3 font-arabic" dir="rtl">رياض الصالحين</td><td class="p-3">1,896</td><td class="p-3"><span class="bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">AhmedBaset + Fawaz</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">17</td><td class="p-3 font-semibold">Shamail al-Muhammadiyah</td><td class="p-3 font-arabic" dir="rtl">الشمائل المحمدية</td><td class="p-3">399</td><td class="p-3"><span class="bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Fawazahmed0</span></td><td class="p-3 font-semibold">AR, EN</td>
+              <td class="p-3 text-outline dark:text-gray-500">17</td><td class="p-3 font-semibold">Shamail al-Muhammadiyah</td><td class="p-3 font-arabic" dir="rtl">الشمائل المحمدية</td><td class="p-3">402</td><td class="p-3"><span class="bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Fawazahmed0</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
               <td class="p-3 text-outline dark:text-gray-500">18</td><td class="p-3 font-semibold">Al-Mujam al-Kabir</td><td class="p-3 font-arabic" dir="rtl">المعجم الكبير</td><td class="p-3">21,850</td><td class="p-3"><span class="bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">Fawazahmed0</span></td><td class="p-3 font-semibold">AR</td>
@@ -337,12 +354,141 @@
               <td class="p-3 text-outline dark:text-gray-500">23</td><td class="p-3 font-semibold">Al-Mustadrak ala as-Sahihayn</td><td class="p-3 font-arabic" dir="rtl">المستدرك على الصحيحين</td><td class="p-3">673</td><td class="p-3"><span class="bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">MJNA</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
             <tr class="border-b border-outline-variant/10 dark:border-[#1e293b] hover:bg-surface-container-low dark:hover:bg-[#1e293b]">
-              <td class="p-3 text-outline dark:text-gray-500">24</td><td class="p-3 font-semibold">Sunan ad-Daruquthni</td><td class="p-3 font-arabic" dir="rtl">سنن الدارقطني</td><td class="p-3">4,790</td><td class="p-3"><span class="bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">MJNA</span></td><td class="p-3 font-semibold">AR, ID</td>
+              <td class="p-3 text-outline dark:text-gray-500">24</td><td class="p-3 font-semibold">Sunan ad-Daruquthni</td><td class="p-3 font-arabic" dir="rtl">سنن الدارقطني</td><td class="p-3">236</td><td class="p-3"><span class="bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 px-2 py-0.5 rounded text-[10px] font-bold uppercase">MJNA</span></td><td class="p-3 font-semibold">AR, ID</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
+
+    <p class="text-xs text-on-surface-variant dark:text-gray-400">
+      Counts are the rows actually served today: <strong>102,097 hadiths</strong> across 24 collections.
+      <strong>AR</strong> Arabic · <strong>EN</strong> English · <strong>ID</strong> Indonesian ·
+      <strong>BN</strong> Bengali · <strong>FR</strong> French · <strong>RU</strong> Russian ·
+      <strong>TA</strong> Tamil · <strong>TR</strong> Turkish · <strong>UR</strong> Urdu.
+      A language is listed for a collection only where at least one edition of that collection is published.
+      Where the source we hold is an extract rather than a complete work, the count is the extract, and the gap is
+      stated below rather than extrapolated.
+    </p>
+  </section>
+
+  <!-- Translations -->
+  <section class="flex flex-col gap-4">
+    <h2 class="text-lg font-bold text-primary dark:text-white flex items-center gap-2">
+      <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">translate</span>
+      Translation Editions — 9 Languages
+    </h2>
+    <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-3 text-sm text-on-surface-variant dark:text-gray-300">
+      <p>Every translation we hold is published as its own file, per collection:
+      <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded text-xs">editions/&lt;lang&gt;-&lt;book&gt;.ndjson</code>
+      with a companion index. <strong>54 language–collection pairs</strong> are live, holding
+      <strong>285,647 translated hadiths</strong>.</p>
+      <p class="text-xs">▪ <strong>Arabic</strong> 8 collections · <strong>English</strong> 7 · <strong>Indonesian</strong> 7 ·
+      <strong>Bengali</strong> 7 · <strong>Turkish</strong> 7 · <strong>Urdu</strong> 7 · <strong>French</strong> 6 ·
+      <strong>Russian</strong> 3 · <strong>Tamil</strong> 2.</p>
+      <p class="text-xs">▪ Editions are selected on the hadith page. A reader can change language without leaving the
+      hadith: the translation is read by its number — one index read plus one row read — not by loading the whole
+      language file.</p>
+      <p class="text-xs">▪ <strong>Coverage is uneven, and that is the source, not a defect.</strong> A language edition
+      holds only the hadiths its translator rendered: the Turkish Sahih Muslim, for instance, has no entry at numbers 2
+      and 5. Absent entries are shown as absent; nothing is substituted from another language.</p>
+      <p class="text-xs">▪ The English text for Sahih al-Bukhari and Sahih Muslim is also carried in the collection rows
+      themselves; for the other five collections English is served from the editions above.</p>
+    </div>
+  </section>
+
+  <!-- Commentaries -->
+  <section class="flex flex-col gap-4">
+    <h2 class="text-lg font-bold text-primary dark:text-white flex items-center gap-2">
+      <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">menu_book</span>
+      Commentaries (Syarah) — 20 Classical Works
+    </h2>
+    <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-3 text-sm text-on-surface-variant dark:text-gray-300">
+      <p>Where a classical commentary exists for a hadith it is shown beside the text under its own tab.
+      <strong>42,071 hadiths</strong> carry commentary, in <strong>62,829 passages</strong> drawn from 20 works.
+      Several commentaries on the same hadith appear as separate tabs, and every passage names the work, volume and
+      page it came from, with a link to the digitised page.</p>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-xs border-collapse">
+        <thead>
+          <tr class="bg-surface-container-low dark:bg-[#0f172a] text-on-surface-variant dark:text-gray-400">
+            <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Commentary</th>
+            <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">On</th>
+            <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Passages</th>
+          </tr>
+        </thead>
+        <tbody class="text-on-surface dark:text-gray-200">
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Fath al-Bari (Ibn Hajar)</td><td class="p-3">Sahih al-Bukhari</td><td class="p-3">7,008</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Sharh Ibn Battal</td><td class="p-3">Sahih al-Bukhari</td><td class="p-3">3,967</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">A'lam al-Hadith (al-Khattabi)</td><td class="p-3">Sahih al-Bukhari</td><td class="p-3">1,209</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Sharh al-Nawawi (al-Minhaj)</td><td class="p-3">Sahih Muslim</td><td class="p-3">5,362</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Awn al-Ma'bud (al-Azimabadi)</td><td class="p-3">Sunan Abi Dawud</td><td class="p-3">4,409</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Tuhfat al-Ahwadhi</td><td class="p-3">Jami' at-Tirmidhi</td><td class="p-3">3,694</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Hashiyat al-Sindi (Tirmidhi)</td><td class="p-3">Jami' at-Tirmidhi</td><td class="p-3">1,926</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Hashiyat al-Sindi (Nasa'i)</td><td class="p-3">Sunan an-Nasa'i</td><td class="p-3">5,657</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Hashiyat al-Suyuti (Nasa'i)</td><td class="p-3">Sunan an-Nasa'i</td><td class="p-3">5,635</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Hashiyat al-Sindi (Ibn Majah)</td><td class="p-3">Sunan Ibn Majah</td><td class="p-3">4,332</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">al-I'lam bi-Sunnatihi (Mughultay)</td><td class="p-3">Sunan Ibn Majah</td><td class="p-3">718</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Mirqat al-Mafatih (Mulla Ali al-Qari)</td><td class="p-3">Mishkat al-Masabih</td><td class="p-3">4,425</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">al-Kashif (al-Tibi)</td><td class="p-3">Mishkat al-Masabih</td><td class="p-3">4,426</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Sharh al-Zurqani</td><td class="p-3">Muwatta Malik</td><td class="p-3">1,595</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">al-Tamhid (Ibn Abd al-Barr)</td><td class="p-3">Muwatta Malik</td><td class="p-3">595</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Subul al-Salam</td><td class="p-3">Bulugh al-Maram</td><td class="p-3">1,747</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Dalil al-Falihin (Ibn Allan)</td><td class="p-3">Riyad as-Salihin</td><td class="p-3">1,821</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">al-Shafi (Ibn al-Athir)</td><td class="p-3">Musnad al-Shafi'i</td><td class="p-3">1,446</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Jam' al-Wasa'il (Mulla Ali al-Qari)</td><td class="p-3">Shamail al-Muhammadiyah</td><td class="p-3">402</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Jami' al-Ulum wa al-Hikam (Ibn Rajab)</td><td class="p-3">Forty Hadith of an-Nawawi</td><td class="p-3">42</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-3 text-sm text-on-surface-variant dark:text-gray-300">
+      <h3 class="font-bold text-primary dark:text-white">How a commentary is attached</h3>
+      <p class="text-xs">▪ Each work keeps its own numbering. Where that numbering already matches the collection as we
+      publish it, the passage is attached by number. Where it differs, the work's own markers and page alignment are used
+      to locate the hadith, and a passage is attached only when that target resolves — never on a guess.</p>
+      <p class="text-xs">▪ <strong>Unattached passages stay unpublished rather than mis-filed.</strong> 17,107 of the
+      77,523 passages indexed in this corpus point at a hadith number outside the collections as we hold them; they are
+      excluded, and the figures below are what is actually reachable from a hadith page.</p>
+      <p class="text-xs">▪ <strong>Provenance is shown, not implied.</strong> Every passage records its work, volume,
+      printed page, the page span of the discussion, and a link to the digitised page it was read from.</p>
+      <p class="text-xs">▪ Shorter than the printed book by design: what is displayed is the page on which the
+      commentary on that hadith begins. The page span points the reader to the rest.</p>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-xs border-collapse">
+        <thead>
+          <tr class="bg-surface-container-low dark:bg-[#0f172a] text-on-surface-variant dark:text-gray-400">
+            <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Collection</th>
+            <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Hadiths with commentary</th>
+            <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Works</th>
+            <th class="text-left p-3 border-b border-outline-variant/20 dark:border-[#334155]">Passages</th>
+          </tr>
+        </thead>
+        <tbody class="text-on-surface dark:text-gray-200">
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Sahih al-Bukhari</td><td class="p-3">7,008 / 7,008</td><td class="p-3">3</td><td class="p-3">12,475</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Sunan an-Nasa'i</td><td class="p-3">5,662 / 5,662</td><td class="p-3">2</td><td class="p-3">11,292</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Sahih Muslim</td><td class="p-3">5,362 / 5,362</td><td class="p-3">1</td><td class="p-3">5,610</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Mishkat al-Masabih</td><td class="p-3">4,428 / 4,428</td><td class="p-3">2</td><td class="p-3">8,929</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Sunan Abi Dawud</td><td class="p-3">4,480 / 4,590</td><td class="p-3">1</td><td class="p-3">6,192</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Sunan Ibn Majah</td><td class="p-3">4,332 / 4,332</td><td class="p-3">2</td><td class="p-3">5,050</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Jami' at-Tirmidhi</td><td class="p-3">3,744 / 3,891</td><td class="p-3">2</td><td class="p-3">5,620</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Riyad as-Salihin</td><td class="p-3">1,822 / 1,896</td><td class="p-3">1</td><td class="p-3">1,825</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Bulugh al-Maram</td><td class="p-3">1,747 / 1,767</td><td class="p-3">1</td><td class="p-3">1,755</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Muwatta Malik</td><td class="p-3">1,595 / 1,595</td><td class="p-3">2</td><td class="p-3">2,190</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Musnad al-Shafi'i</td><td class="p-3">1,446 / 1,800</td><td class="p-3">1</td><td class="p-3">1,446</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Shamail al-Muhammadiyah</td><td class="p-3">402 / 402</td><td class="p-3">1</td><td class="p-3">402</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Forty Hadith of an-Nawawi</td><td class="p-3">42 / 42</td><td class="p-3">1</td><td class="p-3">42</td></tr>
+          <tr class="border-b border-outline-variant/10 dark:border-[#1e293b]"><td class="p-3 font-semibold">Al-Adab Al-Mufrad</td><td class="p-3">1 / 1,326</td><td class="p-3">1</td><td class="p-3">1</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-xs text-on-surface-variant dark:text-gray-400">
+      Collections with no commentary published yet — Musnad Ahmad, Sunan ad-Darimi, Al-Mujam al-Kabir, Shahih Ibn
+      Khuzaimah, Shahih Ibn Hibban, Al-Mustadrak, Sunan ad-Daruquthni, 40 Hadith Qudsi, Forty Hadith of Shah
+      Waliullah, Riyad as-Salihin (Arabic) — show no commentary tab. Nothing is filled in from another work.
+      Commentary is Arabic; where a site language has no rendering, the Arabic passage is shown and labelled as such.
+    </p>
   </section>
 
   <!-- Architecture -->
@@ -351,18 +497,32 @@
       <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">architecture</span>
       Technical Architecture
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5">
-        <h3 class="font-bold text-sm text-primary dark:text-white mb-2">Static JSON CDN</h3>
-        <p class="text-xs text-on-surface-variant dark:text-gray-400">All hadith data is served as pre-built JSON files via Cloudflare Pages CDN. No database queries on the client — data is fetched once per session.</p>
+        <h3 class="font-bold text-sm text-primary dark:text-white mb-2">NDJSON on R2, read by range</h3>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">Every collection, translation and commentary is a
+        newline-delimited JSON file on Cloudflare R2, with a companion index recording the byte range of each hadith.
+        Opening a hadith costs two reads — the index, then the row — not a download of the collection. No database query
+        runs at page level.</p>
       </div>
       <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5">
-        <h3 class="font-bold text-sm text-primary dark:text-white mb-2">Edition System</h3>
-        <p class="text-xs text-on-surface-variant dark:text-gray-400">Each kitab has multiple editions identified by prefix: <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded">ara-bukhari</code>, <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded">eng-bukhari</code>, <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded">ind-bukhari</code>. Each edition is a separate JSON file.</p>
+        <h3 class="font-bold text-sm text-primary dark:text-white mb-2">Edition system</h3>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">Translations are separate files per language and
+        collection: <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded">editions/tur-bukhari</code>,
+        <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded">editions/ben-muslim</code>. Nine languages,
+        54 language–collection pairs, each indexed separately — editions are not number-aligned with one another.</p>
       </div>
       <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5">
-        <h3 class="font-bold text-sm text-primary dark:text-white mb-2">Narrator Data</h3>
-        <p class="text-xs text-on-surface-variant dark:text-gray-400">Narrator (rawi) profiles and isnad chains sourced from the Lidwa narrator database, supplemented by scholarly commentary (syarah) from linked data pipelines.</p>
+        <h3 class="font-bold text-sm text-primary dark:text-white mb-2">Commentary layer</h3>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">Twenty classical commentaries are stored per
+        collection, keyed to the hadith they explain, so one range read returns every commentary on that hadith and the
+        page can present them as separate tabs.</p>
+      </div>
+      <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5">
+        <h3 class="font-bold text-sm text-primary dark:text-white mb-2">Narrator data</h3>
+        <p class="text-xs text-on-surface-variant dark:text-gray-400">Narrator (rawi) profiles and isnad chains come from
+        the Lidwa narrator database, supplemented by scholarly assessment (jarh wa ta'dil) and cross-collection
+        appearance counts.</p>
       </div>
     </div>
   </section>
@@ -375,10 +535,12 @@
     </h2>
     <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-3 text-sm text-on-surface-variant dark:text-gray-300">
       <p>▪ <strong>Verbatim preservation</strong> — Hadith text is stored exactly as received from the source database. No paraphrasing, summarising, or reformatting of the original Arabic or translation.</p>
-      <p>▪ <strong>Non-destructive versioning</strong> — Original source files are archived in <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded text-xs">data/raw_baseline/</code>. Any processing scripts produce new files, never mutating the originals.</p>
+      <p>▪ <strong>Non-destructive versioning</strong> — Original source files are archived unchanged under <code class="bg-surface-container-low dark:bg-[#0f172a] px-1 rounded text-xs">data/</code>; the files actually served from R2 are generated into a separate tree by the import scripts. No processing step edits an original in place.</p>
       <p>▪ <strong>Open-source pipeline</strong> — All import and processing scripts are available in the project repository for independent audit.</p>
       <p>▪ <strong>Grade transparency</strong> — Hadith grading (Sahih, Hasan, Da'if) is displayed exactly as provided by the source database. No editorial grading is applied.</p>
       <p>▪ <strong>Translation disclaimer</strong> — English and Indonesian translations are those provided by the source databases. For scholarly use, always verify against authoritative printed editions.</p>
+      <p>▪ <strong>Partial coverage is published, not hidden</strong> — Where a collection, a translation or a commentary is incomplete, the part we hold is served as it is and the gap is stated on this page. We do not pad a collection to look complete, and we do not withdraw data because it is imperfect.</p>
+      <p>▪ <strong>Commentary is credited and locatable</strong> — Every commentary passage names its work, volume and page, and links to the digitised page it was read from. The commentaries are public-domain texts digitised by turath.io, credited as the digitisation source.</p>
     </div>
   </section>
 
