@@ -691,6 +691,47 @@ def build():
         add(dst, "topics_index.ndjson")
         report.append(("topics_index.ndjson", len(out_rows), "-"))
 
+    # 11. syarah — commentary corpus keyed by Dorar anchor, plus the subset
+    #     that a confident text match ties to a shipped hadith number
+    import syarah_build
+    s_manifest, s_report = syarah_build.build(OUT)
+    manifest += s_manifest
+    report += s_report
+
+    # 12. links + edition metadata — the detail page reads these to resolve a
+    #     record across editions. Small enough to ship whole, one object each.
+    links_dir = DATA / "links"
+    if links_dir.is_dir():
+        for path in sorted(links_dir.glob("*.json")):
+            doc = json.loads(path.read_text(encoding="utf-8"))
+            if isinstance(doc, dict):
+                out = [{"k": k, "v": v} for k, v in doc.items()]
+            elif isinstance(doc, list):
+                out = doc
+            else:
+                continue
+            dst = OUT / "links" / f"{path.stem}.ndjson"
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            write_ndjson(dst, out)
+            add(dst, f"links/{path.stem}.ndjson")
+            report.append((f"links/{path.stem}.ndjson", len(out), "-"))
+
+    meta_src = DATA / "meta" / "fawaz_editions.json"
+    if meta_src.exists():
+        doc = json.loads(meta_src.read_text(encoding="utf-8"))
+        if isinstance(doc, list):
+            out = doc
+        else:
+            # keyed by book, each holding a `collection` of editions: flatten so
+            # one NDJSON row is one edition, which is what the reader iterates
+            out = [dict(e, book_id=book) for book, payload in doc.items()
+                   for e in (payload.get("collection") or [])]
+        dst = OUT / "meta" / "fawaz_editions.ndjson"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        write_ndjson(dst, out)
+        add(dst, "meta/fawaz_editions.ndjson")
+        report.append(("meta/fawaz_editions.ndjson", len(out), "-"))
+
     write_ndjson(MANIFEST, manifest)
     total = sum(m["bytes"] for m in manifest)
     print(f"build: {len(manifest)} objects, {total/1e6:.2f} MB -> export_site/")

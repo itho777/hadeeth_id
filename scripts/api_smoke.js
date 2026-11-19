@@ -122,6 +122,36 @@ function check(name, ok, detail) {
   }
   check('9 international datasets', fawazOk === 9, `${fawazOk}/9`);
 
+  console.log('\n== syarah (commentary) ==');
+  reset();
+  const catalog = await api.getCommentaryCatalog();
+  check('catalog lists books carrying commentary', Array.isArray(catalog) && catalog.length > 0,
+    `${catalog.length} books`);
+
+  let commOk = 0, commRows = 0;
+  for (const row of catalog.filter(r => r.matched > 0)) {
+    const idx = await api.fetchCommentaryIndex(row.book_id);
+    if (!Array.isArray(idx) || !idx.length) { console.log(`  MISSING ${row.book_id}`); continue; }
+    // the catalogue is built from the shipped file, so its counts must agree
+    if (idx.length !== row.matched) { console.log(`  DRIFT ${row.book_id} idx=${idx.length} catalog=${row.matched}`); continue; }
+    const pick = idx[Math.floor(idx.length / 2)];
+    const c = await api.getCommentaries(row.book_id, String(pick.n));
+    const real = c.filter(x => x.explanation_ar || x.explanation_en || x.explanation_id);
+    if (real.length === pick.k) commOk++;
+    else console.log(`  BAD   ${row.book_id} #${pick.n} got ${real.length}/${pick.k}`);
+    commRows += real.length;
+  }
+  const withText = catalog.filter(r => r.matched > 0).length;
+  check(`${withText} books serve commentary by Range`, commOk === withText, `${commOk}/${withText}, ${commRows} records sample`);
+
+  const none = await api.getCommentaries('nasai', '1');
+  check('book without commentary returns empty, not an error', Array.isArray(none) && none.length === 0,
+    `${none.length} records`);
+
+  const catalogRow = catalog.find(r => r.book_id === 'abudawud');
+  check('abudawud commentary covers the numbering offset', catalogRow && catalogRow.matched > 1700,
+    `${catalogRow && catalogRow.matched} hadiths`);
+
   console.log(`\nRESULT: ${pass} pass, ${fail} fail`);
   process.exit(fail ? 1 : 0);
 })();

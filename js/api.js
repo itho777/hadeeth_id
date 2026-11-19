@@ -702,25 +702,61 @@ const HadeethAPI = {
   },
 
   /**
-   * Fetch commentary & sharh explanation (supports multiple)
+   * Fetch commentary & sharh explanation for one hadith (supports multiple
+   * sources). Served from commentaries/<book>.ndjson through its
+   * content-keyed index: one Range request returns every source for that
+   * number. The old per-hadith JSON files (30,080 separate objects) are gone.
    */
   async getCommentaries(bookId, hadithNumber) {
-    // Not served from R2 yet — the syarah import is still running.
-    const commentaries = [];
     try {
-      const res = await fetch(`${this.localDataUrl}/commentaries/${bookId}_${hadithNumber}.json`);
-      if (res.ok) commentaries.push(await res.json());
-      
-      // Probe for alternative/multiple commentaries (e.g. bukhari_1_2.json)
-      for (let i = 2; i <= 5; i++) {
-        const altRes = await fetch(`${this.localDataUrl}/commentaries/${bookId}_${hadithNumber}_${i}.json`);
-        if (altRes.ok) commentaries.push(await altRes.json());
-        else break;
+      const index = await this.fetchCommentaryIndex(bookId);
+      if (!Array.isArray(index) || !index.length) return [];
+      const want = String(hadithNumber);
+      const entry = index.find(e => String(e.n) === want);
+      if (!entry) return [];
+      const path = `commentaries/matched/${bookId}.ndjson`;
+      let res = null;
+      for (const url of [`${this.baseUrl}/${path}`, `${this.localDataUrl}/${path}`]) {
+        res = await fetchWithTimeout(url, {
+          headers: { 'Range': `bytes=${entry.s}-${entry.e}` }
+        }).catch(() => null);
+        if (res && (res.ok || res.status === 206)) break;
+        res = null;
       }
+      if (!res) return [];
+      return parseNdjson(await res.text());
     } catch (err) {
       console.warn(`Commentary fetch error for ${bookId}_${hadithNumber}:`, err);
+      return [];
     }
-    return commentaries;
+  },
+
+  /**
+   * Content-keyed commentary index for one book (number -> byte range).
+   * Cached per book: the file is small and every hadith in the book needs it.
+   */
+  async fetchCommentaryIndex(bookId) {
+    if (!this.commentaryIndexes) this.commentaryIndexes = {};
+    if (bookId in this.commentaryIndexes) return this.commentaryIndexes[bookId];
+    const res = await this._get(`commentaries/matched/${bookId}_index.ndjson`, {}, 20000);
+    let index = null;
+    if (res) {
+      const rows = parseNdjson(await res.text());
+      if (rows.length) index = rows;
+    }
+    this.commentaryIndexes[bookId] = index;
+    return index;
+  },
+
+  /**
+   * Which books carry commentary, and in which languages. Drives the
+   * disabled source/language options instead of an empty panel.
+   */
+  async getCommentaryCatalog() {
+    if (this.commentaryCatalog !== undefined) return this.commentaryCatalog;
+    const res = await this._get('commentaries/_catalog.ndjson', {}, 20000);
+    this.commentaryCatalog = res ? parseNdjson(await res.text()) : [];
+    return this.commentaryCatalog;
   },
 
   /**
