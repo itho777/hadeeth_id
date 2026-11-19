@@ -217,3 +217,43 @@ number, real Arabic text.
    written from the rows actually uploaded, so it can no longer drift; the two
    numbers differing means the served edition is an abridgement of the declared
    collection, which predates this batch.
+
+## 7. One dataset, one row set, one chapter list
+
+The old default mixed three sources: rows from one edition, chapter names from
+`data/chapters/*.json`, and chapter ids from D1 keyed by lidwa number. That is
+why `malik` advertised 60 kitabs while its rows covered only 32, and why
+`abudawud` had fewer chapters in the list than in the file.
+
+Rebuilt so each dataset is internally consistent:
+
+- `api/<book>.ndjson` for the nine core books is now built from
+  `data/sources/lidwa/<book>.ndjson` — the lidwa anchor. Number, Arabic text,
+  Indonesian text and `lidwa_id` all come from that file; chapter id comes from
+  D1 `hadith_bab` keyed by the **same lidwa number**. Existing rows contribute
+  only grade/sanad metadata matched on the identical number.
+- `api/fawaz/<book>.ndjson` holds the previous international rows. Its chapter
+  ids come from `reference.book` in that edition, never from lidwa chapter
+  numbers.
+- `chapters/<book>.ndjson` and `chapters/fawaz/<book>.ndjson` are each generated
+  from the row file they describe, with ranges and counts taken from those
+  exact rows. A chapter title with no rows is dropped, not rendered as a dead
+  link.
+
+`js/api.js` routes `fawaz` lookups for the nine books into `api/fawaz/` and
+`chapters/fawaz/`; `lidwa` and all other books keep the canonical paths.
+Topic ids, hadith-of-the-day and batch loads are explicitly `lidwa`, because
+the topic index is lidwa-numbered.
+
+Counts after the split (lidwa / international rows):
+```
+bukhari 7008 / 6999   muslim 5362 / 2995   abudawud 4590 / 4585
+tirmidhi 3891 / 3841  nasai 5662 / 5655    ibnmajah 4332 / 4327
+malik 1595 / 1592     ahmad 26363 / 26363  darimi 3367 / 3546
+```
+`darimi` shrinks on lidwa because the lidwa edition genuinely has 3,367
+hadiths; the international file retains all 3,546 rows.
+
+Verification: `api_smoke.js` 17/17 (including a separate check of all nine
+international datasets), `link_audit.js` no dead links, `site_r2.py verify`
+PASS, 126 objects present in R2.

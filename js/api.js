@@ -22,6 +22,20 @@ function fetchWithTimeout(url, options = {}, timeoutMs = 15000) {
  */
 const R2_DATA_URL = 'https://pub-075ac3f4a31e4e85a876c26c815ae93d.r2.dev';
 
+const CORE9 = new Set(['bukhari', 'muslim', 'abudawud', 'tirmidhi', 'nasai',
+  'ibnmajah', 'malik', 'ahmad', 'darimi']);
+
+// Each dataset is a complete row set with its own numbering and chapters.
+// Canonical api/ and chapters/ are lidwa for the nine core books; the
+// international edition lives under api/fawaz/ and chapters/fawaz/.
+function apiFolder(bookId, dsPrefix) {
+  return (dsPrefix === 'fawaz' && CORE9.has(bookId)) ? 'api/fawaz' : 'api';
+}
+
+function chapterFolder(bookId, dsPrefix) {
+  return (dsPrefix === 'fawaz' && CORE9.has(bookId)) ? 'chapters/fawaz' : 'chapters';
+}
+
 /** Parse an NDJSON payload into an array of objects. */
 function parseNdjson(text) {
   const out = [];
@@ -97,13 +111,14 @@ const HadeethAPI = {
    * api/<book>_index.ndjson: one row per hadith carrying i/id/n/s/e (+c/l).
    * Other prefixes (editions) still use the legacy JSON index.
    */
-  async fetchNdjsonIndex(prefix, bookId) {
+  async fetchNdjsonIndex(prefix, bookId, dsPrefix = 'lidwa') {
     if (!this.ndjsonIndexes) this.ndjsonIndexes = {};
-    const key = `${prefix}_${bookId}`;
+    const folder = prefix === 'api' ? apiFolder(bookId, dsPrefix) : prefix;
+    const key = `${folder}_${bookId}`;
     if (this.ndjsonIndexes[key]) return this.ndjsonIndexes[key];
 
-    if (prefix === 'api') {
-      const res = await this._get(`api/${bookId}_index.ndjson`, {}, 20000);
+    if (folder.startsWith('api')) {
+      const res = await this._get(`${folder}/${bookId}_index.ndjson`, {}, 20000);
       if (res) {
         const rows = parseNdjson(await res.text());
         if (rows.length) {
@@ -152,7 +167,7 @@ const HadeethAPI = {
 
   /** Previous / next hadith that actually exists in this book's index. */
   async getHadithNeighbours(bookId, hadithNumber, dsPrefix = 'fawaz') {
-    const idx = await this.fetchNdjsonIndex('api', bookId);
+    const idx = await this.fetchNdjsonIndex('api', bookId, dsPrefix);
     if (!Array.isArray(idx) || !idx.length) return null;
     const entry = this.findIndexEntry(idx, hadithNumber, dsPrefix);
     if (!entry) return null;
@@ -175,15 +190,17 @@ const HadeethAPI = {
   /**
    * Fetch a specific byte range from an NDJSON file.
    */
-  async fetchNdjsonRange(prefix, bookId, startByte, endByte) {
+  async fetchNdjsonRange(prefix, bookId, startByte, endByte, dsPrefix = 'lidwa') {
     this.fullTextCache = this.fullTextCache || {};
+    const folder = prefix === 'api' ? apiFolder(bookId, dsPrefix) : prefix;
+    const cacheKey = `${folder}/${bookId}`;
     let text = "";
 
-    if (this.fullTextCache[bookId]) {
-        const slice = this.fullTextCache[bookId].slice(startByte, endByte + 1);
+    if (this.fullTextCache[cacheKey]) {
+        const slice = this.fullTextCache[cacheKey].slice(startByte, endByte + 1);
         text = new TextDecoder('utf-8').decode(slice);
     } else {
-        const path = `${prefix}/${bookId}.ndjson`;
+        const path = `${folder}/${bookId}.ndjson`;
         let res = null;
         for (const url of [`${this.baseUrl}/${path}`, `${this.localDataUrl}/${path}`]) {
             res = await fetchWithTimeout(url, {
@@ -198,7 +215,7 @@ const HadeethAPI = {
 
         if (res.status === 200) {
             // Server ignored Range: cache the whole file and slice locally
-            this.fullTextCache[bookId] = buffer;
+            this.fullTextCache[cacheKey] = buffer;
             text = new TextDecoder('utf-8').decode(buffer.slice(startByte, endByte + 1));
         } else {
             text = new TextDecoder('utf-8').decode(buffer);
@@ -211,8 +228,9 @@ const HadeethAPI = {
   /**
    * Fallback to fetch the entire NDJSON file
    */
-  async fetchNdjsonFull(prefix, bookId) {
-    const res = await this._get(`${prefix}/${bookId}.ndjson`, {}, 30000);
+  async fetchNdjsonFull(prefix, bookId, dsPrefix = 'lidwa') {
+    const folder = prefix === 'api' ? apiFolder(bookId, dsPrefix) : prefix;
+    const res = await this._get(`${folder}/${bookId}.ndjson`, {}, 30000);
     if (!res) throw new Error('Network Error');
     return parseNdjson(await res.text());
   },
@@ -267,7 +285,8 @@ const HadeethAPI = {
     // Chapters are built from the shipped rows, whose numbering is the lidwa
     // numbering for the nine core books. The old lidwa-chapters files carry the
     // known 2..97 range corruption, so `chapters/` is the only source used here.
-    const folder = 'chapters';
+    const dsPrefix = this.datasetPrefix(datasetId);
+    const folder = chapterFolder(bookId, dsPrefix);
     const cacheKey = folder + '_' + bookId;
 
     if (this.chaptersCache && this.chaptersCache[cacheKey]) return this.chaptersCache[cacheKey];
@@ -303,14 +322,14 @@ const HadeethAPI = {
   async getChapterHadiths(bookId, chapterId, datasetId = 'fawazahmed') {
     const dsPrefix = this.datasetPrefix(datasetId);
     try {
-      const idx = await this.fetchNdjsonIndex('api', bookId);
+      const idx = await this.fetchNdjsonIndex('api', bookId, dsPrefix);
       let chapterHadiths = [];
 
       if (Array.isArray(idx) && idx.length) {
         const entries = idx.filter(e => e.c !== undefined && String(e.c) === String(chapterId));
         if (entries.length) {
           for (const run of coalesceRuns(entries)) {
-            const rows = await this.fetchNdjsonRange('api', bookId, run.start, run.end);
+            const rows = await this.fetchNdjsonRange('api', bookId, run.start, run.end, dsPrefix);
             for (const r of rows) {
               if (r.chapter_id === undefined || String(r.chapter_id) === String(chapterId)) {
                 chapterHadiths.push(r);
@@ -322,12 +341,12 @@ const HadeethAPI = {
           // so serving the whole file (these books are small) is the honest listing.
           const firstChapter = String(chapterId) === '1' || String(chapterId) === '0';
           if (!firstChapter) return [];
-          chapterHadiths = await this.fetchNdjsonFull('api', bookId);
+          chapterHadiths = await this.fetchNdjsonFull('api', bookId, dsPrefix);
         } else {
           return [];
         }
       } else {
-        const allHadiths = await this.fetchNdjsonFull('api', bookId);
+        const allHadiths = await this.fetchNdjsonFull('api', bookId, dsPrefix);
         chapterHadiths = allHadiths.filter(h => String(h.chapter_id) === String(chapterId));
       }
 
@@ -358,14 +377,14 @@ const HadeethAPI = {
   async getHadith(bookId, hadithNumber, dsPrefix = 'fawaz') {
     try {
       let h = null;
-      const idx = await this.fetchNdjsonIndex('api', bookId);
+      const idx = await this.fetchNdjsonIndex('api', bookId, dsPrefix);
       const entry = this.findIndexEntry(idx, hadithNumber, dsPrefix);
 
       if (entry) {
-        const hadiths = await this.fetchNdjsonRange('api', bookId, entry.s, entry.e);
+        const hadiths = await this.fetchNdjsonRange('api', bookId, entry.s, entry.e, dsPrefix);
         h = hadiths[0] || null;
       } else {
-        const allHadiths = await this.fetchNdjsonFull('api', bookId);
+        const allHadiths = await this.fetchNdjsonFull('api', bookId, dsPrefix);
         const want = String(hadithNumber);
         h = allHadiths.find(item => {
           if (dsPrefix === 'lidwa') return Array.isArray(item.lidwa_id)
@@ -468,11 +487,11 @@ const HadeethAPI = {
   /**
    * Fetch a batch of hadiths concurrently using HTTP Range Requests directly from master NDJSON
    */
-  async getHadithsBatch(bookId, hadithNumbers) {
+  async getHadithsBatch(bookId, hadithNumbers, dsPrefix = 'lidwa') {
     if (!hadithNumbers || hadithNumbers.length === 0) return [];
     const results = [];
     for (const num of hadithNumbers) {
-       results.push(await this.getHadith(bookId, num));
+       results.push(await this.getHadith(bookId, num, dsPrefix));
     }
     return results.filter(h => h !== null);
   },

@@ -155,6 +155,129 @@ def normalize_tabarani(src, dst):
     return n, idx
 
 
+CORE9 = ["bukhari", "muslim", "abudawud", "tirmidhi", "nasai",
+         "ibnmajah", "malik", "ahmad", "darimi"]
+
+
+def lidwa_master(book, old_path, num_map, dst):
+    """Canonical default rows built from the lidwa source itself.
+
+    Every field that defines numbering and chapter comes from this file or from
+    the D1 map keyed by the same lidwa number. No international numbering is
+    involved. Existing master rows are used only for richer metadata (grade,
+    sanad, etc.) matched on the identical number.
+    """
+    src = DATA / "sources" / "lidwa" / f"{book}.ndjson"
+    if not src.exists():
+        return None
+    old = {}
+    if Path(old_path).exists():
+        with open(old_path, encoding="utf-8") as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                r = json.loads(line)
+                try:
+                    old[str(int(r["hadith_number"]))] = r
+                except (KeyError, TypeError, ValueError):
+                    pass
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    stats = {}
+    n = 0
+    with open(src, encoding="utf-8") as f, dst.open("w", encoding="utf-8", newline="\n") as out:
+        for line in f:
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            try:
+                num = int(str(r.get("hadith_number", "")).strip())
+            except (TypeError, ValueError):
+                continue
+            prior = old.get(str(num), {})
+            rawis = r.get("rawis") or []
+            if isinstance(rawis, str):
+                try:
+                    rawis = ast.literal_eval(rawis)
+                except (ValueError, SyntaxError):
+                    rawis = []
+            text_ar = r.get("text_ar") or prior.get("text_ar") or ""
+            text_id = r.get("text_id") or prior.get("text_id") or ""
+            text_en = r.get("text_en") or prior.get("text_en") or ""
+            row = {
+                "id": num,
+                "book": book,
+                "hadith_number": str(num),
+                "lidwa_id": [str(num)],
+                "text_ar": text_ar,
+                "text_id": text_id,
+                "text_en": text_en,
+                "rawis": rawis,
+                "translations": {"ar": [{"source": "lidwa", "text": text_ar}],
+                                 "id": [{"source": "lidwa", "text": text_id}]},
+            }
+            if text_en:
+                row["translations"]["en"] = [{"source": "fawaz", "text": text_en}]
+            for key in ("grade", "grade_id", "gradings", "status", "elevation", "source"):
+                if key in prior:
+                    row[key] = prior[key]
+            kitab = num_map.get(num)
+            if kitab is not None:
+                row["chapter_id"] = str(kitab)
+                st = stats.setdefault(str(kitab), [None, None, 0])
+                st[0] = num if st[0] is None else min(st[0], num)
+                st[1] = num if st[1] is None else max(st[1], num)
+                st[2] += 1
+            out.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
+            n += 1
+    return n, stats
+
+
+def edition_reference_map(book):
+    """hadith number -> kitab/book number from the international edition."""
+    p = DATA / "editions" / f"ara-{book}.ndjson"
+    edition_rows = None
+    if p.exists():
+        edition_rows = (json.loads(line) for line in open(p, encoding="utf-8") if line.strip())
+    else:
+        p = DATA / "editions" / f"ara-{book}.json"
+        if p.exists():
+            doc = json.loads(p.read_text(encoding="utf-8"))
+            edition_rows = doc.get("hadiths", []) if isinstance(doc, dict) else doc
+    refs = {}
+    for r in (edition_rows or []):
+        num = r.get("hadithnumber", r.get("hadith_number"))
+        if num is None:
+            continue
+        ref = r.get("reference")
+        if isinstance(ref, str):
+            try:
+                ref = ast.literal_eval(ref)
+            except (ValueError, SyntaxError):
+                ref = None
+        if isinstance(ref, dict) and ref.get("book") is not None:
+            refs[str(num)] = str(ref["book"])
+    return refs
+
+
+def international_master(book, src, dst):
+    """Second dataset: existing international rows, chapter from its own edition."""
+    refs = edition_reference_map(book)
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    n = 0
+    with open(src, encoding="utf-8") as f, dst.open("w", encoding="utf-8", newline="\n") as out:
+        for line in f:
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            r.pop("chapter_id", None)
+            num = str(r.get("hadith_number", "")).strip()
+            if num in refs:
+                r["chapter_id"] = refs[num]
+            out.write(json.dumps(r, ensure_ascii=False, separators=(",", ":")) + "\n")
+            n += 1
+    return n, refs
+
+
 DB = ROOT / ".dump" / "hadeeth.sqlite"
 
 
@@ -339,6 +462,17 @@ def build():
         book = name[: -len(".ndjson")]
         if book == "tabarani" or book.startswith("topics"):
             continue
+        if book in CORE9:
+            built = lidwa_master(book, p, num_map.get(book, {}), OUT / "api" / name)
+            if built:
+                counts[book], chap_stats[book] = built
+                add(OUT / "api" / name, f"api/{name}")
+                report.append((f"api/{name}", counts[book], f"lidwa, chapters {len(chap_stats[book])}"))
+                fz_dst = OUT / "api" / "fawaz" / name
+                fz_n, fz_refs = international_master(book, p, fz_dst)
+                add(fz_dst, f"api/fawaz/{name}")
+                report.append((f"api/fawaz/{name}", fz_n, f"international, refs {len(fz_refs)}"))
+                continue
         if book in num_map and num_map[book]:
             dst = OUT / "api" / name
             n, stats = add_chapter_ids(p, dst, num_map[book])
@@ -399,10 +533,11 @@ def build():
                        if m["key"].startswith("api/") and m["key"].endswith(".ndjson")
                        and not m["key"].endswith("_index.ndjson")]:
         book = Path(key).stem
-        dst = OUT / "api" / f"{book}_index.ndjson"
+        folder = key.rsplit("/", 1)[0] if key.count("/") > 1 else "api"
+        dst = OUT / folder / f"{book}_index.ndjson"
         n = build_index_map(ROOT / local, dst)
-        add(dst, f"api/{book}_index.ndjson")
-        report.append((f"api/{book}_index.ndjson", n, "-"))
+        add(dst, f"{folder}/{book}_index.ndjson")
+        report.append((f"{folder}/{book}_index.ndjson", n, "-"))
 
     # 3. book registry — both counts are set from the rows actually shipped, so
     #    the registry can never advertise a number the file does not contain
@@ -469,6 +604,17 @@ def build():
             n = build_chapters(book, {"1": span}, {}, src_chapters, dst)
         add(dst, f"chapters/{book}.ndjson")
         report.append((f"chapters/{book}.ndjson", n, "-"))
+        if book in CORE9:
+            fz_src = OUT / "api" / "fawaz" / f"{book}.ndjson"
+            if fz_src.exists():
+                fz_stats = scan_row_chapters(fz_src)
+                if not fz_stats:
+                    span = number_span(fz_src) or [None, None, 0]
+                    fz_stats = {"1": span}
+                fz_dst = OUT / "chapters" / "fawaz" / f"{book}.ndjson"
+                n_fz = build_chapters(book, fz_stats, kitab_names.get(book, {}), src_chapters, fz_dst)
+                add(fz_dst, f"chapters/fawaz/{book}.ndjson")
+                report.append((f"chapters/fawaz/{book}.ndjson", n_fz, "-"))
 
     # 5. lidwa chapters
     for p in sorted(glob.glob(str(DATA / "lidwa-chapters" / "*.json"))):

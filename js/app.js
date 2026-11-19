@@ -700,7 +700,7 @@ async function loadHOTD() {
   try {
     // Fetch with timeout to avoid indefinite skeleton on local dev
     const h = await Promise.race([
-      window.HadeethAPI.getHadith(bookId, hadithId).catch(() => null),
+      window.HadeethAPI.getHadith(bookId, hadithId, 'lidwa').catch(() => null),
       new Promise((_, reject) => setTimeout(() => reject(new Error('HOTD timeout')), 8000))
     ]).catch(() => null);
     if (!h) {
@@ -4480,7 +4480,7 @@ async function loadTopicHadiths() {
       const pageIds = filteredHadithIds.slice(startIdx, endIdx);
       if (pageIds.length > 0) {
         container.innerHTML = '<div class="flex items-center justify-center py-12 text-outline"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mr-3"></div><span>Loading hadiths from NDJSON...</span></div>';
-        pageData = await window.HadeethAPI.getHadithsBatch(bookId, pageIds);
+        pageData = await window.HadeethAPI.getHadithsBatch(bookId, pageIds, 'lidwa');
       }
     }
 

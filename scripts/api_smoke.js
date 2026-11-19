@@ -69,9 +69,11 @@ function check(name, ok, detail) {
   const ch = await api.getChapterHadiths('adab', 1);
   check('adab chapter 1', ch.length > 0, `${ch.length} hadiths, ${calls} reqs, ${(bytes / 1024).toFixed(1)} KB`);
   reset();
-  const chb = await api.getChapterHadiths('bukhari', 1);
-  check('bukhari chapter 1 (from D1 kitab map)', chb.length === 6 && bytes < 1_000_000,
+  const chb = await api.getChapterHadiths('bukhari', 1, 'fawazahmed');
+  check('bukhari chapter 1 (international)', chb.length === 7 && bytes < 1_000_000,
     `${chb.length} hadiths, ${calls} reqs, ${(bytes / 1024).toFixed(1)} KB`);
+  const chl = await api.getChapterHadiths('bukhari', 1, 'native_lidwa');
+  check('bukhari chapter 1 (lidwa)', chl.length === 6, `${chl.length} hadiths`);
   reset();
   const chm = await api.getChapterHadiths('muslim', 3);
   check('muslim chapter 3', chm.length > 0 && bytes < 3_000_000, `${chm.length} hadiths, ${(bytes / 1024).toFixed(1)} KB`);
@@ -99,13 +101,26 @@ function check(name, ok, detail) {
     const picks = [idx[0], idx[Math.floor(idx.length / 2)], idx[idx.length - 1]];
     let good = 0;
     for (const e of picks) {
-      const h = await api.getHadith(b.id, String(e.n));
+      const h = await api.getHadith(b.id, String(e.n), 'lidwa');
       if (h && String(h.hadith_number) === String(e.n)) good++;
     }
     if (good === picks.length) bookOk++;
     else console.log(`  BAD   ${b.id}  ${good}/${picks.length}`);
   }
   check(`${books.length} books`, bookOk === books.length, `${bookOk}/${books.length} resolved, ${entries} index entries`);
+
+  console.log('\n== nine books: separate international dataset ==');
+  const core9 = ['bukhari', 'muslim', 'abudawud', 'tirmidhi', 'nasai', 'ibnmajah', 'malik', 'ahmad', 'darimi'];
+  let fawazOk = 0;
+  for (const b of core9) {
+    const idx = await api.fetchNdjsonIndex('api', b, 'fawaz');
+    const e = idx && idx[Math.floor(idx.length / 2)];
+    const h = e && await api.getHadith(b, String(e.n), 'fawaz');
+    const ch = await api.getChapters(b, 'fawazahmed');
+    if (h && String(h.hadith_number) === String(e.n) && ch.length > 0) fawazOk++;
+    else console.log(`  BAD   ${b}  h=${!!h} chapters=${ch.length}`);
+  }
+  check('9 international datasets', fawazOk === 9, `${fawazOk}/9`);
 
   console.log(`\nRESULT: ${pass} pass, ${fail} fail`);
   process.exit(fail ? 1 : 0);
