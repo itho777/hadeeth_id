@@ -1218,11 +1218,24 @@ async function loadHadithDetail() {
   const abId = activeDataset === 'native_ahmedbaset' ? hadithId : (data.ab_id || (linkGraph.fawaz_to_ab ? linkGraph.fawaz_to_ab[fawazId] : (linkGraph[fawazId] ? linkGraph[fawazId].ahmedbaset_id : null)));
 
   const translationOptions = [];
-  
+
+  // The catalogue lists the editions R2 actually carries; anything else in the
+  // metadata would be an option that cannot resolve.
+  let editionCatalog = null;
+  try { editionCatalog = await window.HadeethAPI.getEditionCatalog(); } catch (e) { editionCatalog = null; }
+  const hasEdition = (name) => {
+      if (!Array.isArray(editionCatalog) || !editionCatalog.length) return false;
+      const dash = name.indexOf('-');
+      if (dash < 0) return false;
+      const lang = name.slice(0, dash), book = name.slice(dash + 1);
+      return editionCatalog.some(e => e.lang === lang && e.book === book);
+  };
+
   // Even if we are on Lidwa or Ahmedbaset, we want to allow users to switch languages!
   if (fawazEditions[bookId]) {
       const editions = fawazEditions[bookId].collection || [];
       editions.forEach(ed => {
+          if (!hasEdition(ed.name)) return; // not shipped: do not offer an option that dead-ends
           if (ed.name.startsWith('ara-')) return; 
           const core9 = ['bukhari', 'muslim', 'abudawud', 'tirmidhi', 'nasai', 'ibnmajah', 'malik', 'ahmad', 'darimi'];
           if (core9.includes(bookId) && ed.name.startsWith('ind-')) return; // We use Lidwa for ID for 9 core books
@@ -1372,10 +1385,15 @@ async function loadHadithDetail() {
           if (opt.source === 'fawaz') {
               const langCode = opt.file.split('/').pop().split('-')[0]; // extract fra, ind, etc from fra-bukhari.json
               const bookCode = opt.file.split('-')[1].split('.')[0];
-              const edition = await window.HadeethAPI.getEdition(langCode, bookCode).catch(()=>null);
-              if (edition) {
-                  const found = edition.hadiths.find(h => (h.hadithnumber ?? h.id) == opt.hid);
-                  if (found) text = found.text;
+              const direct = await window.HadeethAPI.getEditionText(langCode, bookCode, opt.hid).catch(()=>null);
+              if (direct) {
+                  text = direct;
+              } else {
+                  const edition = await window.HadeethAPI.getEdition(langCode, bookCode).catch(()=>null);
+                  if (edition) {
+                      const found = edition.hadiths.find(h => (h.hadithnumber ?? h.id) == opt.hid);
+                      if (found) text = found.text;
+                  }
               }
           } else if (opt.source.startsWith('lidwa')) {
               const bookCode = opt.file.split('/').pop().split('.')[0];

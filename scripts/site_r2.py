@@ -732,6 +732,63 @@ def build():
         add(dst, "meta/fawaz_editions.ndjson")
         report.append(("meta/fawaz_editions.ndjson", len(out), "-"))
 
+    # 13. translation editions — every language fawaz ships for a book, one
+    # NDJSON object per (language, book) with a content-keyed index so the
+    # detail page can pull a single translation by Range instead of the whole
+    # file. Imperfect coverage ships as-is: whatever exists, exists.
+    raw_dir = DATA / "raw_baseline"
+    ed_rows = 0
+    ed_objs = 0
+    carried = []
+    if raw_dir.is_dir():
+        for src in sorted(raw_dir.glob("*.json")):
+            lang, _, book = src.stem.partition("-")
+            if not lang or not book:
+                continue
+            try:
+                doc = json.loads(src.read_text(encoding="utf-8"))
+            except Exception as exc:
+                print(f"  ! skip {src.name}: {exc}")
+                continue
+            hadiths = doc.get("hadiths") if isinstance(doc, dict) else doc
+            if not isinstance(hadiths, list):
+                continue
+            out, index = [], []
+            off = 0
+            for h in hadiths:
+                if not isinstance(h, dict):
+                    continue
+                num = h.get("hadithnumber", h.get("id"))
+                text = h.get("text")
+                if num is None or not text:
+                    continue
+                # fawaz sub-numbers like "1132.2" are real keys, not junk: keep
+                # them, or the row becomes unreachable
+                if isinstance(num, str) and num.isdigit():
+                    num = int(num)
+                body = json.dumps({"n": num, "t": text},
+                                  ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+                index.append({"n": num, "s": off, "e": off + len(body) - 1})
+                out.append(body + b"\n")
+                off += len(body) + 1
+            if not out:
+                continue
+            dst = OUT / "editions" / f"{lang}-{book}.ndjson"
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            dst.write_bytes(b"".join(out))
+            add(dst, f"editions/{lang}-{book}.ndjson")
+            dstx = OUT / "editions" / f"{lang}-{book}_index.ndjson"
+            write_ndjson(dstx, index)
+            add(dstx, f"editions/{lang}-{book}_index.ndjson")
+            ed_rows += len(out)
+            ed_objs += 2
+            carried.append({"lang": lang, "book": book, "rows": len(out)})
+        cat = OUT / "editions" / "_catalog.ndjson"
+        cat.parent.mkdir(parents=True, exist_ok=True)
+        write_ndjson(cat, carried)
+        add(cat, "editions/_catalog.ndjson")
+        report.append((f"editions/ ({ed_objs} objects)", ed_rows, "-"))
+
     write_ndjson(MANIFEST, manifest)
     total = sum(m["bytes"] for m in manifest)
     print(f"build: {len(manifest)} objects, {total/1e6:.2f} MB -> export_site/")
@@ -782,8 +839,20 @@ def remote_map():
         p = {"per_page": 1000}
         if cur:
             p["cursor"] = cur
-        r = requests.get(base, headers=auth, params=p, timeout=120).json()
-        for o in r.get("result", []):
+        r = None
+        for attempt in range(1, 6):
+            try:
+                body = requests.get(base, headers=auth, params=p, timeout=120).json()
+            except Exception as exc:
+                body = {"success": False, "errors": [str(exc)]}
+            if body.get("success") and isinstance(body.get("result"), list):
+                r = body
+                break
+            print(f"  ! list objects retry {attempt}: {body.get('errors')}")
+            time.sleep(2 * attempt)
+        if r is None:
+            raise SystemExit("cannot list bucket — aborting rather than pruning blind")
+        for o in r["result"]:
             out[o["key"]] = (int(o["size"]), (o.get("etag") or "").strip('"'))
         cur = (r.get("result_info") or {}).get("cursor")
         if not cur:

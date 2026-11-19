@@ -117,7 +117,7 @@ const HadeethAPI = {
     const key = `${folder}_${bookId}`;
     if (this.ndjsonIndexes[key]) return this.ndjsonIndexes[key];
 
-    if (folder.startsWith('api')) {
+    if (folder.startsWith('api') || folder === 'editions') {
       const res = await this._get(`${folder}/${bookId}_index.ndjson`, {}, 20000);
       if (res) {
         const rows = parseNdjson(await res.text());
@@ -538,6 +538,49 @@ const HadeethAPI = {
     } catch (err) {
       console.error(`Failed to load edition ${langCode}-${bookId}:`, err);
       return null;
+    }
+  },
+
+  /**
+   * One translation, one Range request. Editions are indexed by hadith number
+   * so the dropdown never has to pull a whole language file for one hadith.
+   */
+  async getEditionText(langCode, bookId, hadithNumber) {
+    try {
+      const fileId = `${langCode}-${bookId}`;
+      const idx = await this.fetchNdjsonIndex('editions', fileId);
+      const entry = this.findIndexEntry(idx, hadithNumber, 'fawaz');
+      if (entry) {
+        let rows;
+        try {
+          rows = await this.fetchNdjsonRange('editions', fileId, entry.s, entry.e);
+        } catch (e) {
+          rows = null;
+        }
+        if (Array.isArray(rows) && rows.length) {
+          const hit = rows.find(r => String(r.n) === String(hadithNumber)) || rows[0];
+          if (hit && hit.t) return hit.t;
+        }
+      }
+      const whole = await this.getEdition(langCode, bookId);
+      const found = whole && whole.hadiths
+        ? whole.hadiths.find(h => String(h.hadithnumber ?? h.n ?? h.id) === String(hadithNumber))
+        : null;
+      return found ? (found.text ?? found.t ?? null) : null;
+    } catch (err) {
+      console.warn(`edition ${langCode}-${bookId} #${hadithNumber} unavailable`, err);
+      return null;
+    }
+  },
+
+  /** Which (language, book) translation files actually exist on R2. */
+  async getEditionCatalog() {
+    try {
+      const res = await this._get('editions/_catalog.ndjson', {}, 15000);
+      if (!res) return [];
+      return parseNdjson(await res.text());
+    } catch (e) {
+      return [];
     }
   },
 

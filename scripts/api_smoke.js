@@ -122,6 +122,27 @@ function check(name, ok, detail) {
   }
   check('9 international datasets', fawazOk === 9, `${fawazOk}/9`);
 
+  console.log('\n== translation editions ==');
+  const edCat = await api.getEditionCatalog();
+  check('edition catalogue', Array.isArray(edCat) && edCat.length === 54, `${edCat && edCat.length} pairs`);
+  const langs = [...new Set((edCat || []).map(e => e.lang))].sort();
+  check('languages carried', langs.length === 9, langs.join(','));
+
+  for (const [lang, book, num] of [['ben', 'bukhari', 1], ['fra', 'nasai', 100],
+                                   ['urd', 'tirmidhi', 42], ['eng', 'bukhari', 1]]) {
+    reset();
+    const t = await api.getEditionText(lang, book, num);
+    check(`${lang}-${book} #${num}`, typeof t === 'string' && t.length > 20,
+      t ? `${t.length} chars, ${calls} reqs, ${(bytes / 1024).toFixed(1)} KB` : 'null');
+    // one index fetch + one row: ~4% of the whole edition file, never the file
+    check(`${lang}-${book} #${num} costs one index + one row`, calls === 2 && bytes < 400_000,
+      `${calls} reqs, ${(bytes / 1024).toFixed(1)} KB`);
+  }
+
+  reset();
+  const nut = await api.getEditionText('tur', 'muslim', 5);
+  check('missing number returns null, not an exception', nut === null, `got ${nut}`);
+
   console.log('\n== syarah (commentary) ==');
   reset();
   const catalog = await api.getCommentaryCatalog();
