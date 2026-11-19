@@ -99,7 +99,7 @@ address uncompressed bytes and are read with HTTP `Range`.
 catalog.ndjson                 24 rows   bootstrap registry
 books.ndjson                   24 rows   full book metadata
 api/<book>.ndjson              25 files  master hadith rows  (NO gzip, Range-read)
-api/<book>_index.ndjson        25 files  one [start,len] pair per line
+api/<book>_index.ndjson        25 files  content map, one row per hadith
 chapters/<book>.ndjson         18 files
 lidwa-chapters/<book>.ndjson   19 files
 rawis/rawis.ndjson             14,298 rows
@@ -137,7 +137,41 @@ bad                           : 0
 RESULT: PASS
 ```
 
-## 5. Open items
+## 5. The index
+
+NDJSON has no index of any kind — it is lines of JSON, so reading row N means
+scanning N lines. Everything that makes random access possible is a sidecar.
+
+The 25 files previously served (`<book>_ndjson_index.json`) were bare
+`[start, len]` pairs in file order: position only, no identity. That is not just
+slow, it is **wrong** — for 11 of the 25 books the row ordinal does not equal the
+hadith number (Bukhari's hadith 5 sits at row 6; its last hadith 6999 is row
+6999 but carries `id` 7554), so `ranges[n-1]` returns a different hadith than the
+one requested.
+
+`api/<book>_index.ndjson` replaces them. One row per hadith, content-keyed:
+
+```json
+{"i":6,"id":6,"n":5,"s":120082,"e":131957}
+```
+
+| field | meaning |
+|---|---|
+| `i` | 1-based row ordinal in the master file |
+| `id` | the record's own `id` |
+| `n` | `hadith_number` as a string, the number a reader asks for |
+| `s`,`e` | inclusive byte range in the master file, newline included |
+| `c` | `chapter_id`, only where the record has one |
+| `l` | `lidwa_id`, only where the record has one |
+
+99,844 rows across 25 books, 6.36 MB total. Because it is NDJSON it can itself be
+fetched with Range. Verified on all 25 books: byte ranges contiguous, last entry
+ends exactly at file size − 1, three records per book reconstructed and matched
+by `id`. Verified through the public R2 URL with real lookups — index fetch 200,
+`Range` on the master file 206, returned `hadith_number` equal to the requested
+number, real Arabic text.
+
+## 6. Open items
 
 1. **Resolved — stale gz tree deleted.** 108 objects (185.41 MB) from the earlier
    D1-derived attempt removed; bucket now holds only the 94 NDJSON objects.
@@ -162,11 +196,17 @@ RESULT: PASS
    `bulugh`, `mishkat`, `nawawi`, `qudsi`, `riyad`, `shah`, `shamail`). Waiting
    for the Muse import to finish before its own batch.
 4. **UI not touched.** `js/api.js` still points at `/data`, and fetches the index
-   as `<book>_ndjson_index.json` while R2 now serves `<book>_index.ndjson`.
-   Both change in the same UI pass. Note `getHadith` expects index entries to be
-   objects with `id` / `start` / `end`, but every index on disk is an array of
-   `[start, len]` pairs — so today it silently falls through to
-   `fetchNdjsonFull`. Fixing that is the biggest single win in the UI pass.
+   as `<book>_ndjson_index.json` while R2 now serves `<book>_index.ndjson`. Both
+   change in the same UI pass.
+
+   The index now carries `i` / `id` / `n`, so the three lookups can finally be
+   made correct instead of conflated: `getHadith` currently matches
+   `String(e.id) === String(hadithNumber)`, but `id` and `hadith_number` are
+   different numbers (Bukhari hadith 5 has `id` 6; hadith 6999 has `id` 7554), so
+   that comparison returns the wrong record whenever the two diverge. Number
+   lookups should use `n`, source-id lookups `id`, positional access `i`.
+   `getChapterHadiths` still reads `idx.chapters[chapterId]`, which an array
+   index never provides — it needs a `c` filter or a chapter rollup.
 5. **Registry `total_hadiths` vs `hadiths_count`.** Thirteen books still differ
    (e.g. `bukhari` 7,563 declared vs 6,999 shipped). `hadiths_count` is now
    written from the rows actually uploaded, so it can no longer drift; the two

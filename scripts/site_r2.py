@@ -73,6 +73,39 @@ def convert(src, dst, key_name):
     return write_ndjson(Path(dst), rows(doc, key_name))
 
 
+def build_index_map(src, dst):
+    """One row per hadith: {"i","id","n","s","e"} plus optional "c","l".
+
+    The pair lists that shipped before carried position only, so any lookup by
+    hadith number, lidwa id or chapter meant scanning the whole file — no
+    advantage over plain JSON. This map is content-keyed, and being NDJSON it can
+    itself be fetched with Range.
+    """
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    n = pos = 0
+    with Path(src).open("rb") as f, dst.open("w", encoding="utf-8", newline="\n") as out:
+        for line in f:
+            if not line.strip():
+                continue
+            length = len(line)              # raw bytes, newline included
+            row = json.loads(line)
+            entry = {
+                "i": n + 1,                 # 1-based row ordinal
+                "id": row.get("id", n + 1),
+                "n": row.get("hadith_number"),
+                "s": pos,
+                "e": pos + length - 1,      # inclusive, newline included
+            }
+            if row.get("chapter_id") is not None:
+                entry["c"] = row["chapter_id"]
+            if row.get("lidwa_id"):
+                entry["l"] = row["lidwa_id"]
+            out.write(json.dumps(entry, ensure_ascii=False, separators=(",", ":")) + "\n")
+            pos += length
+            n += 1
+    return n
+
+
 def normalize_tabarani(src, dst):
     """Rebuild tabarani from the complete fawaz edition into the site row shape.
 
@@ -156,23 +189,20 @@ def build():
 
     # 1b. tabarani rebuilt from the complete fawaz edition (21,850 rows)
     dst = OUT / "api" / "tabarani.ndjson"
-    n_tab, tab_idx = normalize_tabarani(DATA / "editions" / "ara-tabarani.ndjson", dst)
+    n_tab, _ = normalize_tabarani(DATA / "editions" / "ara-tabarani.ndjson", dst)
     add(dst, "api/tabarani.ndjson")
     counts["tabarani"] = n_tab
     report.append(("api/tabarani.ndjson", n_tab, "-"))
-    dsti = OUT / "api" / "tabarani_index.ndjson"
-    write_ndjson(dsti, tab_idx)
-    add(dsti, "api/tabarani_index.ndjson")
-    report.append(("api/tabarani_index.ndjson", len(tab_idx), "-"))
 
-    # 2. byte-offset indexes -> one [start,len] pair per line
-    for p in sorted(glob.glob(str(DATA / "api" / "*_ndjson_index.json"))):
-        book = Path(p).name[: -len("_ndjson_index.json")]
-        if book == "tabarani":
-            continue
-        arr = json.loads(Path(p).read_text(encoding="utf-8"))
+    # 2. content-keyed map, one row per hadith: ordinal, id, number, byte range.
+    #    Replaces the bare [start,len] pair lists, which were position-only and
+    #    satisfied none of the lookup paths (number, lidwa id, chapter).
+    for local, key in [(m["path"], m["key"]) for m in manifest
+                       if m["key"].startswith("api/") and m["key"].endswith(".ndjson")
+                       and not m["key"].endswith("_index.ndjson")]:
+        book = Path(key).stem
         dst = OUT / "api" / f"{book}_index.ndjson"
-        n = write_ndjson(dst, ([s, ln] for s, ln in arr))
+        n = build_index_map(ROOT / local, dst)
         add(dst, f"api/{book}_index.ndjson")
         report.append((f"api/{book}_index.ndjson", n, "-"))
 
