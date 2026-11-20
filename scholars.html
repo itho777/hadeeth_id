@@ -209,36 +209,36 @@
 <script src="js/config.js"></script>
 <script src="js/auth.js"></script>
 <script src="js/api.js?v=20261120_sharh"></script>
-<script src="js/app.js?v=20261120_sharh"></script>
+<script src="js/app.js?v=20261120_fix2"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
 
   // Canonical Arabic names mapping for Rijal IDs & names
   const arNameDict = {
-    'abu_darda': 'أبو Ø§Ù„Ø¯Ø±Ø¯Ø§Ø¡',
-    'abu darda': 'أبو Ø§Ù„Ø¯Ø±Ø¯Ø§Ø¡',
-    'zayd_ibn_thabit': 'Ø²ÙŠØ¯ بن ثابت',
-    'zayd ibn thabit': 'Ø²ÙŠØ¯ بن ثابت',
-    'uqbah_ibn_amir': 'Ø¹Ù‚Ø¨Ø© بن عامر',
-    'uqbah ibn amir': 'Ø¹Ù‚Ø¨Ø© بن عامر',
+    'abu_darda': 'أبو الدرداء',
+    'abu darda': 'أبو الدرداء',
+    'zayd_ibn_thabit': 'زيد بن ثابت',
+    'zayd ibn thabit': 'زيد بن ثابت',
+    'uqbah_ibn_amir': 'عقبة بن عامر',
+    'uqbah ibn amir': 'عقبة بن عامر',
     'abd_allah_ibn_abbas': 'عبد الله بن عباس',
     'abdullah_bin_abbas': 'عبد الله بن عباس',
     'abdullah bin abbas': 'عبد الله بن عباس',
-    'umar_ibn_abi_salama': 'Ø¹Ù…Ø± بن أبي Ø³Ù„Ù…Ø©',
-    'umar ibn abi salama': 'Ø¹Ù…Ø± بن أبي Ø³Ù„Ù…Ø©',
-    'q6732822': 'Ø£Ù†Ø³ بن مالك',
-    'abu_hurairah': 'أبو Ù‡Ø±ÙŠØ±Ø©',
-    'aisha_bint_abi_bakr': 'عائشة بنØª أبي Ø¨ÙƒØ±',
-    'umar_ibn_al_khattab': 'Ø¹Ù…Ø± بن Ø§Ù„Ø®Ø·Ø§Ø¨',
-    'anas_bin_malik': 'Ø£Ù†Ø³ بن مالك',
-    'malik_bin_anas': 'مالك بن Ø£Ù†Ø³',
-    'al_bukhari': 'محمد بن إسماعيل Ø§Ù„Ø¨Ø®Ø§Ø±ÙŠ',
-    'muslim_ibn_hajjaj': 'مسلم بن Ø§Ù„Ø­Ø¬Ø§Ø¬',
-    'abu_dawud': 'أبو Ø¯Ø§ÙˆØ¯ Ø§Ù„Ø³Ø¬Ø³ØªØ§Ù†ÙŠ',
-    'al_tirmidhi': 'أبو Ø¹ÙŠØ³Ù‰ Ø§Ù„ØªØ±Ù…Ø°ÙŠ',
-    'al_nasai': 'أحمد بن شعيب Ø§Ù„Ù†Ø³Ø§Ø¦ÙŠ',
-    'ibn_majah': 'ابن Ù…Ø§Ø¬Ù‡ Ø§Ù„Ù‚Ø²ÙˆÙŠÙ†ÙŠ'
+    'umar_ibn_abi_salama': 'عمر بن أبي سلمة',
+    'umar ibn abi salama': 'عمر بن أبي سلمة',
+    'q6732822': 'أنس بن مالك',
+    'abu_hurairah': 'أبو هريرة',
+    'aisha_bint_abi_bakr': 'عائشة بنت أبي بكر',
+    'umar_ibn_al_khattab': 'عمر بن الخطاب',
+    'anas_bin_malik': 'أنس بن مالك',
+    'malik_bin_anas': 'مالك بن أنس',
+    'al_bukhari': 'محمد بن إسماعيل البخاري',
+    'muslim_ibn_hajjaj': 'مسلم بن الحجاج',
+    'abu_dawud': 'أبو داود السجستاني',
+    'al_tirmidhi': 'أبو عيسى الترمذي',
+    'al_nasai': 'أحمد بن شعيب النسائي',
+    'ibn_majah': 'ابن ماجه القزويني'
   };
 
   const fallbackScholars = [
@@ -460,7 +460,7 @@
       return `Musaddad bin Musarhad al-Basri adalah perawi Tsiqah Thabt dan syaikh langsung Imam al-Bukhari dan Abu Dawood. Terdaftar dalam ${n} tautan hadits.`;
 
     if (r.bio_id && r.bio_id.trim().length > 10 && !/was|the|his|her|and|with|son of/i.test(r.bio_id)) return r.bio_id;
-    return `Perawi tsiqah yang tercatat meriwayatkan ${n} hadits dalam koleksi kitab hadits kanonik Islam.`;
+    return `Terdaftar dalam ${n} tautan hadits pada data perawi yang tersedia.`;
   }
 
   let allScholars = [];
@@ -497,27 +497,67 @@
     const grid = document.getElementById('scholars-grid');
     if (!grid) return;
     try {
-      let url = `${supabaseUrl}/rest/v1/rijal?select=*&hadith_count=gt.0&order=hadith_count.desc,died_ah.asc&limit=100`;
-      if (activeGen === 'sahabah') url += '&is_sahabi=eq.true';
-      else if (activeGen === 'tabiun') url += '&generation=eq.Tabi\'i';
-      else if (activeGen === 'collectors') url += '&generation=eq.Collector';
-      if (searchQuery) url += `&or=(name_en.ilike.*${encodeURIComponent(searchQuery)}*,name_id.ilike.*${encodeURIComponent(searchQuery)}*)`;
-      const res = await fetch(url, { headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` } });
+      // The old Supabase `rijal` host no longer resolves. The rawis roster
+      // shipped with the site is the live source; never fabricate biographies.
+      const res = await fetch('data/rawis/active_rawis.min.json');
       if (res.ok) {
-        const data = await res.json();
-        const validNarrators = (data || []).filter(r => (r.hadith_count > 0 || r.is_sahabi) && r.name_en && !r.name_en.includes('Kampung'));
-        // Merge Supabase validNarrators with fallbackScholars to ensure offline/local kitabs are included
-          const localScholars = filterFallbackScholars(gen, role, query);
-          const merged = [...validNarrators];
-          localScholars.forEach(local => {
-             if (!merged.find(m => m.name_en === local.name_en || m.id === local.id)) {
-                 merged.push(local);
-             }
-          });
-          allScholars = merged;
+        const rawDict = await res.json();
+        const fromRawiData = Object.keys(rawDict || {}).map(id => normalizeRawiRecord(id, rawDict[id]))
+          .filter(r => r && r.hadith_count > 0 && r.name_en && !r.name_en.includes('Kampung') && matchesScholarGen(r, gen) && matchesScholarQuery(r, query));
+        fromRawiData.sort((a, b) => b.hadith_count - a.hadith_count || String(a.name_en).localeCompare(String(b.name_en)));
+        const localScholars = filterFallbackScholars(gen, role, query);
+        const merged = [...fromRawiData];
+        localScholars.forEach(local => {
+          if (!merged.find(m => m.name_en === local.name_en || m.id === local.id)) merged.push(local);
+        });
+        allScholars = merged;
       } else { allScholars = filterFallbackScholars(gen, role, query); }
     } catch (err) { allScholars = filterFallbackScholars(gen, role, query); }
     renderScholarsPage();
+  }
+
+  function matchesScholarGen(r, gen) {
+    if (gen === 'sahabah') return !!r.is_sahabi;
+    if (gen === 'tabiun') return r.generation === "Tabi'i" || r.generation === "Taba' Tabi'i";
+    if (gen === 'collectors') return r.generation === 'Collector';
+    return true;
+  }
+
+  function matchesScholarQuery(r, query) {
+    if (!query) return true;
+    const q = query.toLowerCase();
+    return (r.name_en || '').toLowerCase().includes(q) || (r.name_id || '').toLowerCase().includes(q);
+  }
+
+  function normalizeRawiRecord(rawId, v) {
+    if (!v) return null;
+    const en = String(v.en || '');
+    const m = en.match(/^([\s\S]*?)([\u0600-\u06FF][\s\S]*)$/);
+    const nameEn = (m ? m[1] : en).replace(/\s*\(\s*$/, '').trim();
+    const arMatch = String(v.ar || '').match(/[\u0600-\u06FF][\u0600-\u06FF\u064B-\u065F\uFDFA\s]*/);
+    const nameAr = arMatch ? arMatch[0].replace(/\s*\(?\s*$/, '').trim() : '';
+    const grade = String(v.grade || '');
+    let generation = 'Rawi';
+    let isSahabi = false;
+    if (grade.includes('Comp.(RA)')) { generation = 'Sahabi (Companion)'; isSahabi = true; }
+    else if (grade.includes("Follower(Tabi')")) generation = "Tabi'i";
+    else if (grade.includes("Succ. (Taba' Tabi')")) generation = "Taba' Tabi'i";
+    else if (grade.includes("Prophet's Relative")) { generation = 'Ahl al-Bayt'; isSahabi = true; }
+    else if (grade.includes('Century AH')) generation = grade.split('[')[0].trim();
+    const death = String(v.death_ah || '').trim();
+    return {
+      id: 'rawi_' + rawId,
+      name_en: nameEn,
+      name_id: String(v.id || '').trim() || nameEn,
+      name_ar: nameAr,
+      is_sahabi: isSahabi,
+      generation,
+      grade: grade.split('[')[0].trim() || (isSahabi ? 'Sahabi Adl' : 'Thiqah'),
+      died_ah: death && death !== '-' ? death : '',
+      city_of_death: String(v.residence || '').trim(),
+      hadith_count: parseInt(String(v.counts || '').replace(/[^0-9]/g, ''), 10) || 0,
+      books: []
+    };
   }
 
   function filterFallbackScholars(gen, role, query) {
@@ -570,7 +610,7 @@
       if (r.city_of_death || r.region) {
         let cityStr = r.city_of_death || r.region;
         if (isId) cityStr = cityStr.replace(/Mecca/ig, 'Makkah').replace(/Medina/ig, 'Madinah').replace(/Ta'if/ig, 'Tha\'if');
-        dateStr += ` &bull; ${cityStr}`;
+        dateStr += ` • ${cityStr}`;
       }
       let rawGrade = r.grade || (isSahabi ? 'Sahabi Adl' : 'Thiqah');
       let gradeStr = isId ? `Derajat: ${translateGradeToId(rawGrade)}` : `Grade: ${rawGrade}`;

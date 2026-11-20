@@ -172,8 +172,9 @@
             <option value="">Loading...</option>
           </select>
         </div>
-        <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed" data-english-text>
-        </p>
+        <div class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed" data-english-text>
+          <span class="text-xs text-outline dark:text-gray-500 italic">English translation not available for this hadith.</span>
+        </div>
       </div>
 
       <!-- Indonesian Translation -->
@@ -184,8 +185,9 @@
             <option value="">Loading...</option>
           </select>
         </div>
-        <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed" data-indonesian-text>
-        </p>
+        <div class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed" data-indonesian-text>
+          <span class="text-xs text-outline dark:text-gray-500 italic">Terjemahan Indonesia tidak tersedia untuk hadits ini.</span>
+        </div>
       </div>
 
     </div>
@@ -261,14 +263,14 @@
 <script src="js/config.js"></script>
 <script src="js/auth.js"></script>
 <script src="js/api.js?v=20261120_sharh"></script>
-<script src="js/app.js?v=20261120_sharh"></script>
+<script src="js/app.js?v=20261120_fix2"></script>
 
 <!-- Toast notification for Copy/Share -->
 <div id="share-toast" style="display:none;position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1B5E20;color:#fff;font-size:12px;font-weight:700;padding:10px 22px;border-radius:999px;z-index:9999;box-shadow:0 4px 24px rgba(0,0,0,.25);transition:opacity .3s"></div>
 
 <script>
 (function() {
-  // Ã¢â€ â‚¬Ã¢â€ â‚¬ Re-apply lang on language change Ã¢â€ â‚¬Ã¢â€ â‚¬
+  // Re-apply lang on language change
   window.addEventListener('hadeeth_lang_change', () => {
     if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
   });

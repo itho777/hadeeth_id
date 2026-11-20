@@ -972,12 +972,7 @@ const TafseerLinker = {
       cleanName = cleanName.replace(/\s*radliallahu\s+'?anh[ua]m?a?/gi, '').trim();
       
       const urlParams = new URLSearchParams({ name: cleanName });
-      return `[<a href="profile-detail.html?${urlParams.toString()}" class="font-semibold text-primary-600 dark:text-primary-400 hover:underline inline-flex items-center gap-0.5" title="View Scholar Profile">
-                <span class="inline-block translate-y-[2px] opacity-70">
-                   <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                </span>
-                ${displayName}
-              </a>]`;
+      return `[<a href="profile-detail.html?${urlParams.toString()}" class="font-semibold text-primary-600 dark:text-primary-400 hover:underline" title="View Scholar Profile">${displayName}</a>]`;
     });
     
     out = out.replace(/__HTML_TOKEN_(\d+)__/g, (m, idx) => tempTokens[parseInt(idx)]);
@@ -2302,21 +2297,21 @@ async function loadHadithList() {
       const enUnavailableNote = '<em class="text-outline dark:text-gray-500">(English translation not available in this dataset)</em>';
 
       if (currentLang === 'id') {
-        const content = hasId ? (idLinkText ? `<div class='mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</div>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailableNote;
+        const content = hasId ? (idLinkText ? `<span class='block mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</span>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailableNote;
         displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${content}</p>`;
         if (isPrimary) displayText += primaryIdSourceNote;
         if (isAhmedBaset) displayText += abIdSourceNote;
         if (isLidwa) displayText += gradeByHtml(item.grade_by);
       } else if (currentLang === 'en') {
-        const enContent = enText ? (enLinkText ? `<div class='mb-2 text-xs text-amber-500 font-semibold'>${escapeHtml(enLinkText)}</div>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(enText)) : escapeHtml(enText)) : enUnavailableNote;
+        const enContent = enText ? (enLinkText ? `<span class='block mb-2 text-xs text-amber-500 font-semibold'>${escapeHtml(enLinkText)}</span>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(enText)) : escapeHtml(enText)) : enUnavailableNote;
         displayText = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${enContent}</p>`;
         if (isPrimary) displayText += `<p class="text-[11px] text-blue-500/70 dark:text-blue-400/70 mt-1 italic">Switch to <strong>Dual Language</strong> or <strong>Bahasa Indonesia</strong> to view Indonesian — sourced from Lidwa/Irsyad (fawazahmed0 has no ind edition)</p>`;
         if (isAhmedBaset) displayText += `<p class="text-[11px] text-amber-600/80 dark:text-amber-400/70 mt-1 italic">Source: AhmedBaset · Switch to <strong>Dual Language</strong> or <strong>Bahasa Indonesia</strong> to see the Lidwa-sourced Indonesian translation (matched by number — not from AhmedBaset)</p>`;
         if (isLidwa) displayText += gradeByHtml(item.grade_by);
       } else {
-        const idContent = hasId ? (idLinkText ? `<div class='mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</div>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailableNote;
+        const idContent = hasId ? (idLinkText ? `<span class='block mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</span>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailableNote;
         const idHtml = `<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed font-body-md"><strong class="text-xs text-secondary dark:text-[#10b981] block mb-1">Terjemahan Indonesia:</strong>${idContent}</p>`;
-        const enContent = enText ? (enLinkText ? `<div class='mb-2 text-xs text-amber-500 font-semibold'>${escapeHtml(enLinkText)}</div>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(enText)) : escapeHtml(enText)) : enUnavailableNote;
+        const enContent = enText ? (enLinkText ? `<span class='block mb-2 text-xs text-amber-500 font-semibold'>${escapeHtml(enLinkText)}</span>` : '') + (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(enText)) : escapeHtml(enText)) : enUnavailableNote;
         const enHtml = `<p class="text-xs text-outline dark:text-gray-400 leading-relaxed font-body-md"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>${enContent}</p>`;
         const gradeNote = isLidwa ? gradeByHtml(item.grade_by) : '';
         const sourceNote = isPrimary ? primaryIdSourceNote : (isAhmedBaset ? abIdSourceNote : '');
@@ -2899,7 +2894,7 @@ async function loadChaptersList() {
     },
     ibn_abi_shaybah: {
       name: 'Musannaf Ibn Abi Shaybah',
-      ar: 'Ù…ØµÙ†Ù ابن أبي شيبة',
+      ar: 'مصنف ابن أبي شيبة',
       author: 'Imam Ibn Abi Shaybah',
       authorId: 'rawi_ibn_abi_shaybah',
       type: 'Mushannaf',
@@ -2966,6 +2961,76 @@ async function loadChaptersList() {
       hadithCount: '📖 236 Hadits',
       authenticity: '⭐️ Sunan',
       datasetInfo: { native_mjna: { kitab: '📚 1 Kitab', hadith: '📖 236 Hadits (MJNA)', numbering: 'Penomoran: MJNA (1–239)' } }
+    },
+    muntaqa: {
+      name: 'Muntaqa al-Akhbar',
+      ar: 'منتقى الأخبار',
+      author: 'Imam Majd al-Din Ibn Taymiyya',
+      authorId: '',
+      type: 'Musnad',
+      badgeClass: 'bg-teal-700 text-white',
+      desc: 'A collection of legal hadiths compiled by Imam Majd al-Din Ibn Taymiyya.',
+      desc_id: 'Koleksi hadits hukum yang disusun oleh Imam Majd ad-Din Ibnu Taimiyyah.',
+      kitabCount: '📚 1.109 Kitab',
+      hadithCount: '📖 3.944 Hadits',
+      authenticity: '⭐️ Musnad',
+      datasetInfo: { native_turath: { kitab: '📚 1.109 Kitab', hadith: '📖 3.944 Hadits', numbering: 'Penomoran: Turath (1–3944)' } }
+    },
+    maani: {
+      name: "Ma'ani al-Athar",
+      ar: 'معاني الآثار',
+      author: "Imam Abu Ja'far al-Tahawi",
+      authorId: '',
+      type: 'Sunan',
+      badgeClass: 'bg-indigo-600 text-white',
+      desc: 'A comparative collection of legal traditions by Imam al-Tahawi.',
+      desc_id: 'Koleksi hadits hukum komparatif karya Imam ath-Thahawi.',
+      kitabCount: '📚 1 Kitab',
+      hadithCount: '📖 7.013 Hadits',
+      authenticity: '⭐️ Sunan',
+      datasetInfo: { native_turath: { kitab: '📚 1 Kitab', hadith: '📖 7.013 Hadits', numbering: 'Penomoran: Turath (1–7013)' } }
+    },
+    masabih: {
+      name: 'Masabih al-Sunna',
+      ar: 'مصابيح السنة',
+      author: 'Imam Abu Muhammad al-Baghawi',
+      authorId: '',
+      type: 'Sunan',
+      badgeClass: 'bg-amber-600 text-white',
+      desc: 'The original collection later expanded into Mishkat al-Masabih.',
+      desc_id: 'Koleksi asal yang kemudian diperluas menjadi Misykah al-Mashabih.',
+      kitabCount: '📚 1 Kitab',
+      hadithCount: '📖 4.929 Hadits',
+      authenticity: '⭐️ Sunan',
+      datasetInfo: { native_turath: { kitab: '📚 1 Kitab', hadith: '📖 4.929 Hadits', numbering: 'Penomoran: Turath (1–4929)' } }
+    },
+    umdat: {
+      name: 'Umdat al-Ahkam',
+      ar: 'عمدة الأحكام',
+      author: "Imam Ibn Daqiq al-'Id",
+      authorId: '',
+      type: "Jawami'",
+      badgeClass: 'bg-teal-600 text-white',
+      desc: 'A concise selection of legal hadiths agreed upon by Bukhari and Muslim.',
+      desc_id: 'Pilihan ringkas hadits hukum yang disepakati Bukhari dan Muslim.',
+      kitabCount: '📚 1 Kitab',
+      hadithCount: '📖 414 Hadits',
+      authenticity: '⭐️ Jawami',
+      datasetInfo: { native_turath: { kitab: '📚 1 Kitab', hadith: '📖 414 Hadits', numbering: 'Penomoran: Turath (1–414)' } }
+    },
+    shah: {
+      name: "Shah Waliullah's Arba'in",
+      ar: 'أربعون الشاه ولي الله',
+      author: 'Shah Waliullah Dehlawi',
+      authorId: '',
+      type: "Arba'un",
+      badgeClass: 'bg-emerald-700 text-white',
+      desc: 'Forty selected hadiths by Shah Waliullah Dehlawi.',
+      desc_id: 'Empat puluh hadits pilihan Shah Waliullah ad-Dahlawi.',
+      kitabCount: '📚 1 Kitab',
+      hadithCount: '📖 40 Hadits',
+      authenticity: '⭐️ Arbaun',
+      datasetInfo: { native_turath: { kitab: '📚 1 Kitab', hadith: '📖 40 Hadits', numbering: 'Penomoran: Turath (1–40)' } }
     }
   };
     const meta = bookMasterDict[bookId] || {
@@ -3115,9 +3180,9 @@ async function loadChaptersList() {
           { chapter_number: 19, name_en: "Trade (Buyu')", name_ar: 'كتاب البيوع', hadith_range: 'Hadith 2451 – 2547' },
           { chapter_number: 20, name_en: "Permission (Isti'dhan)", name_ar: 'كتاب الاستئذان', hadith_range: 'Hadith 2548 – 2622' },
           { chapter_number: 21, name_en: 'Heart-Melting Traditions (Riqaq)', name_ar: 'كتاب الرقاق', hadith_range: 'Hadith 2623 – 2759' },
-          { chapter_number: 22, name_en: "Inheritance (Fara'id)", name_ar: 'كتاب Ø§Ù„ÙØ±Ø§Ø¦Ø¶', hadith_range: 'Hadith 2760 – 3084' },
+          { chapter_number: 22, name_en: "Inheritance (Fara'id)", name_ar: 'كتاب الفرائض', hadith_range: 'Hadith 2760 – 3084' },
           { chapter_number: 23, name_en: 'Wills (Wasiyyah)', name_ar: 'كتاب الوصايا', hadith_range: 'Hadith 3085 – 3210' },
-          { chapter_number: 24, name_en: "Virtues of Qur'an (Fada'il al-Qur'an)", name_ar: 'كتاب ÙØ¶Ø§Ø¦Ù„ القرآن', hadith_range: 'Hadith 3211 – 3367' }
+          { chapter_number: 24, name_en: "Virtues of Qur'an (Fada'il al-Qur'an)", name_ar: 'كتاب فضائل القرآن', hadith_range: 'Hadith 3211 – 3367' }
         ];
       } else if (bookId === 'ahmad') {
         chapters = [
@@ -3126,7 +3191,7 @@ async function loadChaptersList() {
         ];
       } else {
         chapters = [
-          { chapter_number: 1, name_en: `${meta.name} - Chapter 1`, name_ar: 'Ø§Ù„ÙØµÙ„ الأول', hadith_range: 'Chapter Index' }
+          { chapter_number: 1, name_en: `${meta.name} - Chapter 1`, name_ar: 'الفصل الأول', hadith_range: 'Chapter Index' }
         ];
       }
     }
@@ -3134,23 +3199,25 @@ async function loadChaptersList() {
     let html = '';
     chapters.forEach((ch, idx) => {
       const chNum = ch.chapter_number !== undefined && ch.chapter_number !== null && ch.chapter_number !== '' ? ch.chapter_number : (idx + 1);
-      const titleEn = ch.title_en || ch.name_en || ch.title || `Chapter ${chNum}`;
-      const titleId = ch.title_id || ch.name_id || titleEn;
+      const titleEn = ch.title_en || ch.name_en || ch.title || ch.title_ar || `Chapter ${chNum}`;
+      const titleId = ch.title_id || ch.name_id || ch.title_ar || titleEn;
       const titleAr = ch.title_ar || ch.name_ar || (ch.arabic || ch.title_ar) || '';
       const hadithRange = ch.hadith_range
         || (ch.hadith_start != null ? `Hadith ${ch.hadith_start} – ${ch.hadith_end}` : `Chapter ${chNum}`);
       const hadithCount = ch.hadith_count != null ? ch.hadith_count
         : (ch.hadith_end && ch.hadith_start ? (ch.hadith_end - ch.hadith_start + 1) : '');
+      const displayNum = ch.display_number || chNum;
+      const rowCountNote = (ch.row_count && hadithCount && Number(ch.row_count) !== Number(hadithCount)) ? ` (${ch.row_count} riwayat)` : '';
 
       html += `
         <a href="hadith-list.html?book=${bookId}&chapter=${chNum}" class="group bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] hover:border-secondary dark:hover:border-[#10b981] rounded-xl p-5 transition-all flex justify-between items-center card-lift">
           <div class="flex gap-4 items-center">
-            <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center flex-shrink-0">${chNum === 0 || chNum === '0' ? 'M' : chNum}</div>
+            <div class="w-10 h-10 rounded-full bg-secondary/10 dark:bg-[#10b981]/10 text-secondary dark:text-[#10b981] font-bold text-sm flex items-center justify-center flex-shrink-0">${displayNum === 0 || displayNum === '0' ? 'M' : displayNum}</div>
             <div class="flex flex-col gap-0.5">
-              <span class="text-xs text-outline dark:text-gray-400 font-semibold">${escapeHtml(hadithRange)}${hadithCount ? ` &bull; ${hadithCount} hadiths` : ''}</span>
+              <span class="text-xs text-outline dark:text-gray-400 font-semibold">${escapeHtml(hadithRange)}${hadithCount ? ` &bull; ${hadithCount} hadiths` : ''}${rowCountNote}</span>
               <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]" data-lang-en>${escapeHtml(titleEn)}</h3>
               <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]" data-lang-id style="display:none">${escapeHtml(titleId)}</h3>
-              ${titleAr ? `<span class="text-xs text-on-surface-variant dark:text-gray-400 font-arabic-body" dir="rtl">${escapeHtml(titleAr)}</span>` : ''}
+              ${titleAr && titleAr !== titleId ? `<span class="text-xs text-on-surface-variant dark:text-gray-400 font-arabic-body" dir="rtl">${escapeHtml(titleAr)}</span>` : ''}
             </div>
           </div>
           <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
@@ -3218,7 +3285,7 @@ async function loadChaptersList() {
               <div class="flex flex-col gap-0.5">
                 <span class="text-xs text-outline dark:text-gray-400 font-semibold">AhmedBaset Kitab ${chNum}${count ? ` &bull; ${count} hadiths` : ''}</span>
                 <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">${escapeHtml(titleEn)}</h3>
-                ${titleAr ? `<span class="text-xs text-on-surface-variant dark:text-gray-400 font-arabic-body" dir="rtl">${escapeHtml(titleAr)}</span>` : ''}
+                ${titleAr && titleAr !== titleId ? `<span class="text-xs text-on-surface-variant dark:text-gray-400 font-arabic-body" dir="rtl">${escapeHtml(titleAr)}</span>` : ''}
               </div>
             </div>
             <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
@@ -3253,7 +3320,7 @@ async function loadChaptersList() {
       let html = '';
       lidwaIndex.chapters.forEach((ch, idx) => {
         const chNum = ch.chapter_number !== undefined ? ch.chapter_number : (idx + 1);
-        const titleId = ch.title_id || `Kitab ${chNum}`;
+        const titleId = ch.title_id || ch.title_ar || `Kitab ${chNum}`;
         const titleEn = ch.title_en || titleId;
         const titleAr = ch.title_ar || '';
         const hadithRange = ch.hadith_start != null
@@ -3269,7 +3336,7 @@ async function loadChaptersList() {
                 <span class="text-xs text-outline dark:text-gray-400 font-semibold">${idSource} ${hadithRange}${hadithCount ? ` &bull; ${hadithCount} hadits` : ''}</span>
                 <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]" data-lang-en>${escapeHtml(titleEn)}</h3>
                 <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]" data-lang-id style="display:none">${escapeHtml(titleId)}</h3>
-                ${titleAr ? `<span class="text-xs text-on-surface-variant dark:text-gray-400 font-arabic-body" dir="rtl">${escapeHtml(titleAr)}</span>` : ''}
+                ${titleAr && titleAr !== titleId ? `<span class="text-xs text-on-surface-variant dark:text-gray-400 font-arabic-body" dir="rtl">${escapeHtml(titleAr)}</span>` : ''}
                 ${showEnNote ? `<span class="text-[10px] text-outline/60 dark:text-gray-600 italic">EN/AR title from ${escapeHtml(enSource)}</span>` : ''}
               </div>
             </div>
@@ -3572,13 +3639,13 @@ function transliterateArabicName(ar) {
   const dict = {
     'عبد الله': 'Abdullah', 'عبد الرحمن': 'Abdurrahman', 'عبد العزيز': 'Abdul Aziz',
     'عبد المجيد': 'Abdul Majid', 'عبد الملك': 'Abdul Malik', 'عبد الرزاق': 'Abdul Razzaq',
-    'أبو': 'Abu', 'أبي': 'Abu', 'أبا': 'Abu', 'أم': 'Umm', 'ابن': 'ibn', 'بن': 'bin', 'بنØª': 'bint',
+    'أبو': 'Abu', 'أبي': 'Abu', 'أبا': 'Abu', 'أم': 'Umm', 'ابن': 'ibn', 'بن': 'bin', 'بنت': 'bint',
     'صالح': 'Salih', 'دينار': 'Dinar', 'بلال': 'Bilal', 'سليمان': 'Sulaiman',
     'العقدي': 'al-Aqadi', 'عامر': 'Amir', 'محمد': 'Muhammad', 'أحمد': 'Ahmad',
     'علي': 'Ali', 'حسين': 'Husayn', 'حسن': 'Hasan', 'عثمان': 'Uthman',
     'سعيد': 'Sa\'id', 'مسلم': 'Muslim', 'إبراهيم': 'Ibrahim', 'يحيى': 'Yahya',
     'شعيب': 'Shu\'ayb', 'مالك': 'Malik', 'حميد': 'Humayd', 'ثابت': 'Thabit',
-    'قتادة': 'Qatadah', 'أيوب': 'Ayyub', 'Ù†Ø§ÙØ¹': 'Nafi\'', 'مسدد': 'Musaddad',
+    'قتادة': 'Qatadah', 'أيوب': 'Ayyub', 'نافع': 'Nafi\'', 'مسدد': 'Musaddad',
     'يزيد': 'Yazid', 'عبيد الله': 'Ubaydullah', 'هشام': 'Hisham', 'موسى': 'Musa',
     'جبير': 'Jubair', 'عوانة': 'Awanah', 'إسماعيل': 'Ismail', 'عباس': 'Abbas',
     'عائشة': 'Aisha', 'عطاء': 'Ata\'', 'مجاهد': 'Mujahid', 'الزهري': 'al-Zuhri'
@@ -3687,17 +3754,31 @@ async function loadSanadChain() {
     const authorNamesEn = {
       bukhari: 'Imam al-Bukhari', muslim: 'Imam Muslim', abudawud: 'Imam Abu Dawood',
       tirmidhi: 'Imam at-Tirmidhi', nasai: 'Imam an-Nasa\'i', ibnmajah: 'Imam Ibn Majah',
-      malik: 'Imam Malik bin Anas', ahmad: 'Imam Ahmad bin Hanbal', darimi: 'Imam Abdullah bin Abdul Rahman ad-Darimi'
+      malik: 'Imam Malik bin Anas', ahmad: 'Imam Ahmad bin Hanbal', darimi: 'Imam Abdullah bin Abdul Rahman ad-Darimi',
+      muntaqa: 'Imam Majd al-Din Ibn Taymiyya', maani: 'Imam Abu Ja\'far al-Tahawi', masabih: 'Imam Abu Muhammad al-Baghawi',
+      umdat: 'Imam Ibn Daqiq al-\'Id', shah: 'Shah Waliullah Dehlawi', nawawi: 'Imam an-Nawawi',
+      riyad: 'Imam an-Nawawi', riyad_arab: 'Imam an-Nawawi', shamail: 'Imam at-Tirmidhi', bulugh: 'Ibn Hajar al-Asqalani',
+      adab: 'Imam al-Bukhari', mishkat: 'Al-Tabrizi', qudsi: 'Multiple', dehlawi: 'Shah Waliullah Dehlawi',
+      tabarani: 'Imam at-Tabarani', tabarani_kabir: 'Imam at-Tabarani', syafii: 'Imam as-Syafi\'i',
+      ibn_abi_shaybah: 'Imam Ibn Abi Shaybah', ibnukhuzaimah: 'Imam Ibn Khuzaimah', ibnuhibban: 'Imam Ibn Hibban',
+      mustadrak: 'Imam al-Hakim al-Nishapuri', daruquthni: 'Imam ad-Daruquthni'
     };
     const authorNamesId = {
       bukhari: 'Imam al-Bukhari', muslim: 'Imam Muslim', abudawud: 'Imam Abu Daud',
       tirmidhi: 'Imam at-Tirmidzi', nasai: 'Imam an-Nasa\'i', ibnmajah: 'Imam Ibn Majah',
-      malik: 'Imam Malik bin Anas', ahmad: 'Imam Ahmad bin Hanbal', darimi: 'Imam Abdullah bin Abdul Rahman ad-Darimi'
+      malik: 'Imam Malik bin Anas', ahmad: 'Imam Ahmad bin Hanbal', darimi: 'Imam Abdullah bin Abdul Rahman ad-Darimi',
+      muntaqa: 'Imam Majd ad-Din Ibnu Taimiyyah', maani: 'Imam Abu Ja\'far ath-Thahawi', masabih: 'Imam Abu Muhammad al-Baghawi',
+      umdat: 'Imam Ibnu Daqiq al-\'Id', shah: 'Shah Waliullah ad-Dahlawi', nawawi: 'Imam an-Nawawi',
+      riyad: 'Imam an-Nawawi', riyad_arab: 'Imam an-Nawawi', shamail: 'Imam at-Tirmidzi', bulugh: 'Ibnu Hajar al-Asqalani',
+      adab: 'Imam al-Bukhari', mishkat: 'Al-Tabrizi', qudsi: 'Beragam', dehlawi: 'Shah Waliullah ad-Dahlawi',
+      tabarani: 'Imam ath-Thabarani', tabarani_kabir: 'Imam ath-Thabarani', syafii: 'Imam asy-Syafi\'i',
+      ibn_abi_shaybah: 'Imam Ibnu Abi Syaibah', ibnukhuzaimah: 'Imam Ibnu Khuzaimah', ibnuhibban: 'Imam Ibnu Hibban',
+      mustadrak: 'Imam al-Hakim an-Naisaburi', daruquthni: 'Imam ad-Daruquthni'
     };
-    const authorNameEn = authorNamesEn[bookId.toLowerCase()] || 'Imam al-Bukhari';
-    const authorNameId = authorNamesId[bookId.toLowerCase()] || 'Imam al-Bukhari';
+    const authorNameEn = authorNamesEn[bookId.toLowerCase()] || 'Unknown Author';
+    const authorNameId = authorNamesId[bookId.toLowerCase()] || 'Penulis tidak diketahui';
     const authorIdMap = { 'bukhari': 'rawi_al_bukhari', 'muslim': 'rawi_muslim_ibn_hajjaj', 'abudawud': 'rawi_abu_dawud', 'tirmidhi': 'rawi_al_tirmidhi', 'nasai': 'rawi_al_nasai', 'ibnmajah': 'rawi_ibn_majah', 'malik': 'rawi_malik_bin_anas', 'ahmad': 'rawi_ahmad', 'darimi': 'rawi_darimi' };
-    const authorProfileUrl = authorIdMap[bookId] ? `profile-detail.html?id=${authorIdMap[bookId]}` : `profile-detail.html?id=rawi_al_bukhari`;
+    const authorProfileUrl = authorIdMap[bookId] ? `profile-detail.html?id=${authorIdMap[bookId]}` : '';
 
     if (data && data.rawis && data.rawis.length > 0) {
       let paths = data.paths || [];
@@ -3800,14 +3881,34 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
       residence: rawiData.residence || (isFirst ? 'Madinah' : '-'),
       death_ah: rawiData.death_ah || (isFirst ? 'Early Era' : '-'),
       counts: rawiData.counts || '-',
-      remarks: rawiData.grade ? 'Grade: ' + rawiData.grade : 'No remarks'
+      remarks: rawiData.grade ? 'Grade: ' + rawiData.grade : ''
     };
   });
 
   if (narrators.length === 0) {
-    narrators = [
-      { rawi_id: null, name: "Sanad tidak terdeteksi", name_id: "Sanad tidak terdeteksi", roleEn: "UNKNOWN", roleId: "TIDAK DIKETAHUI", ar: "غير Ù…Ø¹Ø±ÙˆÙ", kunyah: "-", residence: "-", death_ah: "-", counts: "-", remarks: "Sistem belum mendeteksi teks sanad" }
-    ];
+    const countTextEmpty = document.getElementById('sanad-count-text');
+    if (countTextEmpty) {
+      countTextEmpty.innerHTML = '<span data-lang-en>0 Narrators</span><span data-lang-id style="display:none">0 Perawi</span>';
+    }
+    const emptyContainer = document.getElementById('sanad-nodes-container');
+    if (emptyContainer) {
+      emptyContainer.innerHTML = `
+        <div class="sanad-node relative z-10 bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 shadow-sm flex items-start gap-3">
+          <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">info</span>
+          <div>
+            <h3 class="font-bold text-base text-primary dark:text-white">
+              <span data-lang-en>Chain of narration not available</span>
+              <span data-lang-id style="display:none">Rantai sanad belum tersedia</span>
+            </h3>
+            <p class="text-sm text-on-surface-variant dark:text-gray-300 mt-1">
+              <span data-lang-en>The digital source for this collection does not include narrator metadata. The Arabic matn is still complete.</span>
+              <span data-lang-id style="display:none">Sumber digital kitab ini tidak menyertakan metadata perawi. Teks matan Arab tetap lengkap.</span>
+            </p>
+          </div>
+        </div>`;
+    }
+    if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+    return;
   }
 
   const countText = document.getElementById('sanad-count-text');
@@ -3934,11 +4035,11 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
             <span data-lang-en>COLLECTOR & AUTHOR</span>
             <span data-lang-id style="display:none">KOLEKTOR & PENULIS</span>
           </span>
-          <a href="${authorProfileUrl}" class="font-bold text-lg hover:underline flex items-center gap-1 text-white">
+          ${authorProfileUrl ? `<a href="${authorProfileUrl}" class="font-bold text-lg hover:underline flex items-center gap-1 text-white">` : '<span class="font-bold text-lg flex items-center gap-1 text-white">'}
             <span data-lang-en>${escapeHtml(authorNameEn)}</span>
             <span data-lang-id style="display:none">${escapeHtml(authorNameId)}</span>
-            <span class="material-symbols-outlined text-xs">open_in_new</span>
-          </a>
+            ${authorProfileUrl ? '<span class="material-symbols-outlined text-xs">open_in_new</span>' : ''}
+          ${authorProfileUrl ? '</a>' : '</span>'}
           <p class="text-xs text-gray-300">
             <span data-lang-en>Preserved in Authentic Canonical Corpus</span>
             <span data-lang-id style="display:none">Tercatat dalam Koleksi Kitab Shahih Utama</span>
@@ -4048,7 +4149,7 @@ function getIndonesianRawiName(name, rawiId, arName) {
     .replace(/al-ansari/gi, 'al-Anshari')
     .replace(/al-laythi/gi, 'al-Laitsi')
     .replace(/al-humaydi/gi, 'al-Humaidi')
-    .replace(/\(رضي الله عنهØ§\)/gi, '')
+    .replace(/\(رضي الله عنه\)/gi, '')
     .replace(/\(رضي الله عنه\)/gi, '')
     .trim();
 }
@@ -4532,17 +4633,17 @@ async function loadTopicHadiths() {
     let displayText = '';
     if (currentLang === 'id') {
       displayText = '<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">'
-        + '<p class=\"text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed\"><strong class=\"text-xs text-secondary dark:text-[#10b981] block mb-1\">Terjemahan Indonesia:</strong>' + (idLinkText ? `<div class='mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</div>` : '') + (idText ? (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailable) + '</p>'
-        + '<p class="text-[11px] text-blue-500/70 mt-1 italic">Source: unified NDJSON engine</p></div>';
+        + '<p class=\"text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed\"><strong class=\"text-xs text-secondary dark:text-[#10b981] block mb-1\">Terjemahan Indonesia:</strong>' + (idLinkText ? `<span class='block mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</span>` : '') + (idText ? (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailable) + '</p>'
+        + '</div>';
     } else if (currentLang === 'en') {
       displayText = '<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">'
-        + '<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>' + (enText || enUnavailable) + '</p>'
-        + '<p class="text-[11px] text-blue-500/70 mt-1 italic">Source: unified NDJSON engine</p></div>';
+        + '<p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed"><strong class="text-xs text-sunan-emerald dark:text-[#10b981] block mb-1">English Translation:</strong>' + (enLinkText ? `<span class='block mb-2 text-xs text-amber-500 font-semibold'>${escapeHtml(enLinkText)}</span>` : '') + (enText || enUnavailable) + '</p>'
+        + '</div>';
     } else {
       displayText = '<div class="flex flex-col gap-2 pt-2 border-t border-outline-variant/10 dark:border-[#334155]">'
-        + '<p class=\"text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed\"><strong class=\"text-xs text-secondary dark:text-[#10b981] block mb-1\">Terjemahan Indonesia:</strong>' + (idLinkText ? `<div class='mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</div>` : '') + (idText ? (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailable) + '</p>'
-        + '<p class=\"text-xs text-outline dark:text-gray-400 leading-relaxed\"><strong class=\"text-xs text-sunan-emerald dark:text-[#10b981] block mb-1\">English Translation:</strong>' + (enLinkText ? `<div class='mb-2 text-xs text-amber-500 font-semibold'>${escapeHtml(enLinkText)}</div>` : '') + (enText ? (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(enText)) : escapeHtml(enText)) : enUnavailable) + '</p>'
-        + '<p class="text-[11px] text-blue-500/70 mt-1 italic">Source: unified NDJSON engine</p></div>';
+        + '<p class=\"text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed\"><strong class=\"text-xs text-secondary dark:text-[#10b981] block mb-1\">Terjemahan Indonesia:</strong>' + (idLinkText ? `<span class='block mb-2 text-xs text-blue-500 font-semibold'>${escapeHtml(idLinkText)}</span>` : '') + (idText ? (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(idText)) : escapeHtml(idText)) : idUnavailable) + '</p>'
+        + '<p class=\"text-xs text-outline dark:text-gray-400 leading-relaxed\"><strong class=\"text-xs text-sunan-emerald dark:text-[#10b981] block mb-1\">English Translation:</strong>' + (enLinkText ? `<span class='block mb-2 text-xs text-amber-500 font-semibold'>${escapeHtml(enLinkText)}</span>` : '') + (enText ? (typeof TafseerLinker !== 'undefined' ? TafseerLinker.parse(escapeHtml(enText)) : escapeHtml(enText)) : enUnavailable) + '</p>'
+        + '</div>';
     }
 
     return '<div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 flex flex-col gap-4 shadow-sm hover:border-secondary/40 transition-all">'
@@ -4567,6 +4668,50 @@ async function loadTopicHadiths() {
       + '</div></div>';
   }
 
+  async function enrichTopicEnglish(items) {
+    if (!Array.isArray(items) || items.length === 0 || !window.HadeethAPI) return;
+    const need = items.filter(x => !x.text_en && !(x.translations && x.translations.en && x.translations.en.length));
+    if (need.length === 0) return;
+    // ahmad and darimi have no eng-<book> edition in the R2 catalogue.
+    if (bookId === 'ahmad' || bookId === 'darimi') return;
+
+    const baseUrl = window.__HADEETH_BASE__ ? window.__HADEETH_BASE__ + '/data' : window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
+    const cacheKey = '__topicLinkGraph_' + bookId;
+    if (window[cacheKey] === undefined) {
+      window[cacheKey] = null;
+      try {
+        const resp = await fetch(`${baseUrl}/links/${bookId}.json`);
+        if (resp.ok) window[cacheKey] = await resp.json();
+      } catch (e) { window[cacheKey] = null; }
+    }
+    const graph = window[cacheKey];
+    if (!graph || !graph.fawaz_to_lidwa) return;
+
+    const lidwaToFawaz = {};
+    Object.keys(graph.fawaz_to_lidwa).forEach(f => {
+      const lidwa = String(graph.fawaz_to_lidwa[f]);
+      if (!(lidwa in lidwaToFawaz)) lidwaToFawaz[lidwa] = f;
+    });
+
+    const enCache = window.__topicEnCache || (window.__topicEnCache = new Map());
+    await Promise.all(need.map(async item => {
+      const lidwaNum = String(window.HadeethAPI.hadithNumberOf(item, 'lidwa'));
+      const fawazNum = lidwaToFawaz[lidwaNum];
+      if (!fawazNum) return;
+      const key = bookId + ':' + fawazNum;
+      let txt = enCache.get(key);
+      if (txt === undefined) {
+        try { txt = await window.HadeethAPI.getEditionText('eng', bookId, fawazNum); }
+        catch (e) { txt = null; }
+        enCache.set(key, txt || '');
+      }
+      if (txt) {
+        item.text_en = txt;
+        item.en_link_text = '[Terjemahan EN: Fawazahmed #' + fawazNum + ']';
+      }
+    }));
+  }
+
   async function updateTopicPaginationUI() {
     let totalItems = searchResultItems !== null ? searchResultItems.length : filteredHadithIds.length;
     const totalPages = Math.ceil(totalItems / pageSize) || 1;
@@ -4582,6 +4727,7 @@ async function loadTopicHadiths() {
       if (pageIds.length > 0) {
         container.innerHTML = '<div class="flex items-center justify-center py-12 text-outline"><div class="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mr-3"></div><span>Loading hadiths from NDJSON...</span></div>';
         pageData = await window.HadeethAPI.getHadithsBatch(bookId, pageIds, 'lidwa');
+        await enrichTopicEnglish(pageData);
       }
     }
 

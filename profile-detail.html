@@ -436,7 +436,7 @@
 <script src="js/config.js"></script>
 <script src="js/auth.js"></script>
 <script src="js/api.js?v=20261120_sharh"></script>
-<script src="js/app.js?v=20261120_sharh"></script>
+<script src="js/app.js?v=20261120_fix2"></script>
 
 
 <script>
@@ -641,43 +641,8 @@
     let allFound = [];
     const txBadge = document.getElementById('transmitted-count-badge');
 
-    // 1. Try to fetch from the pre-computed narrator index
-    if (rawiNumId) {
-      const lastChar = String(rawiNumId).slice(-1);
-      try {
-        const idxRes = await fetch(`data/rawis/indexes/idx_${lastChar}.json`);
-        if (idxRes.ok) {
-          const indexData = await idxRes.json();
-          const hadithRefs = indexData[rawiNumId];
-          if (hadithRefs && hadithRefs.length > 0) {
-            // Group by book to fetch in bulk if possible, or fetch individual hadiths
-            grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
-              Found ${hadithRefs.length} hadiths in index. Fetching details…
-            </div>`;
-            
-            // For now, load books that have matches so we can display full data
-            const booksToLoad = [...new Set(hadithRefs.map(ref => ref.b))];
-            let booksScanned = 0;
-            for (const bookId of booksToLoad) {
-               try {
-                 const bookHadiths = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
-                 const bookRefs = hadithRefs.filter(r => r.b === bookId).map(r => String(r.i));
-                 const matches = bookHadiths.filter(h => bookRefs.includes(String(h.id || h.hadith_number)));
-                 matches.forEach(h => h._book_id = bookId);
-                 allFound = allFound.concat(matches);
-                 booksScanned++;
-                 grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
-                   Loading details from ${booksScanned}/${booksToLoad.length} books…
-                 </div>`;
-               } catch(e) {}
-            }
-          }
-        }
-      } catch (e) {
-        console.warn('Could not load narrator index, falling back to scan', e);
-      }
-    }
-
+    // The pre-computed narrator index (data/rawis/indexes/idx_*.json) is not
+    // published; skip the dead fetch and use the token scan below.
     // 2. Fallback to scanning all books if index yielded nothing
     if (allFound.length === 0) {
       let booksScanned = 0;
