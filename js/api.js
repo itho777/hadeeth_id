@@ -803,6 +803,63 @@ const HadeethAPI = {
   },
 
   /**
+   * The classical sharh corpus on R2: one package per printed edition, each
+   * holding every page of that commentary. A matched row in commentaries/
+   * carries only the first page of its span (syarah_pages_index = "494-502"),
+   * so the rest of the span is read from here. syarah/editions.ndjson indexes
+   * all 25 packages and maps each directory to its turath book id.
+   */
+  async getSyarahEditions() {
+    if (this.syarahEditions) return this.syarahEditions;
+    const res = await this._get('syarah/editions.ndjson', {}, 20000);
+    this.syarahEditions = res ? parseNdjson(await res.text()) : [];
+    return this.syarahEditions;
+  },
+
+  /** Passage-id -> byte range for one sharh package. Cached per package. */
+  async getSyarahPassageIndex(edition) {
+    if (!this.syarahPassageIndexes) this.syarahPassageIndexes = {};
+    if (edition in this.syarahPassageIndexes) return this.syarahPassageIndexes[edition];
+    const res = await this._get(`syarah/${edition}/syarah_passages_index.ndjson`, {}, 25000);
+    const rows = res ? parseNdjson(await res.text()) : [];
+    this.syarahPassageIndexes[edition] = rows;
+    return rows;
+  },
+
+  /**
+   * Every page of one commentary span, in one Range request. Page numbers are
+   * the package's own page indexes: sequential by construction, so the run is
+   * contiguous and a single read covers the pages the matched row omitted.
+   */
+  async getSyarahPages(edition, fromPage, toPage) {
+    const from = parseInt(fromPage, 10);
+    let to = parseInt(toPage, 10);
+    if (!isFinite(from) || !isFinite(to) || to < from) return [];
+    if (to - from > 30) to = from + 30;
+    const editions = await this.getSyarahEditions();
+    const pkg = editions.find(e => e.package_dir === edition || e.package_id === edition);
+    if (!pkg) return [];
+    const index = await this.getSyarahPassageIndex(pkg.package_dir);
+    if (!index.length) return [];
+    const byId = {};
+    for (const e of index) byId[e.id] = e;
+    const wanted = [];
+    for (let p = from; p <= to; p++) {
+      const e = byId[`turath:${pkg.turath_id}:page:${p}`];
+      if (e) wanted.push(e);
+    }
+    if (!wanted.length) return [];
+    const out = [];
+    for (const run of coalesceRuns(wanted)) {
+      const res = await this._get(`syarah/${pkg.package_dir}/syarah_passages.ndjson`, {
+        headers: { 'Range': `bytes=${run.start}-${run.end}` }
+      }, 30000);
+      if (res) out.push(...parseNdjson(await res.text()));
+    }
+    return out;
+  },
+
+  /**
    * Fetch individual rawi (narrator) profile. Profile files are not in R2 yet;
    * fall back to the narrator registry that is.
    */

@@ -119,5 +119,47 @@ check('citation shows volume and page', expText.innerHTML.includes('jil. 1') && 
 check('citation links the edition', expText.innerHTML.includes('app.turath.io/book/1673'));
 check('tab uses the short name', tabs.innerHTML.includes('Fath al-Bari') && !tabs.innerHTML.includes('bi-Sharh'));
 
+// 6. A passage that runs past its first page offers the rest of the span
+ctx.window.activeSyarahData = [
+  {
+    origin: 'muse', source_name_en: 'Fath al-Bari', syarah_ar: 'الشرح',
+    explanation_ar: 'الشرح', source_title_full: 'Fath al-Bari',
+    syarah_vol: '1', syarah_page: '9', syarah_pages_index: '494-502',
+    syarah_edition: 'bukhari', syarah_url: 'https://app.turath.io/book/1673',
+  },
+];
+ctx.window.activeSyarahIndex = 0;
+ctx.window.activeSyarahLang = 'id';
+ctx.window._syarahFullPages = {};
+ctx.render();
+check('multi-page passage offers the rest', expText.innerHTML.includes('expandSyarahPages()')
+  && expText.innerHTML.includes('8 halaman berikutnya'), expText.innerHTML.slice(-260));
+
+// 7. A single-page passage offers nothing to expand
+ctx.window.activeSyarahData = [
+  {
+    origin: 'muse', source_name_en: 'al-Khattabi', explanation_ar: 'شرح',
+    syarah_page: '108', syarah_pages_index: '11-11', syarah_edition: 'bukhari_khattabi',
+  },
+];
+ctx.window.activeSyarahIndex = 0;
+ctx.render();
+check('single-page passage shows no expander', !expText.innerHTML.includes('expandSyarahPages()'));
+
+// 8. Once read, the extra pages render in place of the control
+ctx.window.activeSyarahData = [
+  {
+    origin: 'muse', source_name_en: 'Fath al-Bari', explanation_ar: 'الشرح',
+    syarah_page: '9', syarah_pages_index: '494-502', syarah_edition: 'bukhari',
+  },
+];
+ctx.window.activeSyarahIndex = 0;
+ctx.window._syarahFullPages = {
+  'bukhari:494-502': '<div class="mt-4">PAGE-TWO-TEXT</div>',
+};
+ctx.render();
+check('expanded pages replace the control',
+  expText.innerHTML.includes('PAGE-TWO-TEXT') && !expText.innerHTML.includes('expandSyarahPages()'));
+
 console.log(`\nRESULT: ${pass} pass, ${fail} fail`);
 process.exit(fail ? 1 : 0);

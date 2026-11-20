@@ -4249,6 +4249,10 @@ function renderSyarahUI() {
     if (label) {
       citationHtml = `<div data-ignore-copy="true" class="mt-3 text-xs text-outline dark:text-gray-400">${label}${link}</div>`;
     }
+    // The matched row holds the first page of the passage. syarah_pages_index
+    // gives the whole span; the remaining pages are one Range read from
+    // syarah/<edition>/syarah_passages.ndjson.
+    if (data.syarah_edition) citationHtml += syarahFullBlock(data, lang);
   }
   if (expText) expText.innerHTML = textExp + citationHtml;
 
@@ -4268,6 +4272,68 @@ window.switchSyarahSource = function(idx) {
   const next = (window.activeSyarahData || [])[parseInt(idx) || 0];
   if (!next || !hasAnySyarahText(next)) return;
   window.activeSyarahIndex = parseInt(idx) || 0;
+  renderSyarahUI();
+};
+
+/** Cache key for one expanded commentary span. */
+function syarahFullKey(data) {
+  return `${data.syarah_edition}:${data.syarah_pages_index}`;
+}
+
+/**
+ * Expander for a commentary that runs past its first page. Returns the cached
+ * pages when they have been read, otherwise the control that reads them.
+ */
+function syarahFullBlock(data, lang) {
+  if (!data || !data.syarah_edition) return '';
+  const m = String(data.syarah_pages_index || '').match(/^(\d+)\s*-\s*(\d+)$/);
+  if (!m) return '';
+  const remaining = parseInt(m[2], 10) - parseInt(m[1], 10);
+  if (remaining < 1) return '';
+  const key = syarahFullKey(data);
+  const cache = window._syarahFullPages || {};
+  if (cache[key]) return cache[key];
+  const busy = window._syarahFullBusy === key;
+  const label = busy
+    ? (lang === 'id' ? 'Memuat halaman berikutnya…' : 'Loading the next pages…')
+    : (lang === 'id'
+      ? (remaining === 1 ? 'Baca halaman berikutnya' : `Baca ${remaining} halaman berikutnya`)
+      : (remaining === 1 ? 'Read the next page' : `Read the next ${remaining} pages`));
+  return `<div data-ignore-copy="true" class="mt-2"><button type="button"${busy ? ' disabled' : ''} onclick="window.expandSyarahPages()" class="text-xs font-semibold text-primary dark:text-[#10b981] underline disabled:opacity-50">${escapeHtml(label)}</button></div>`;
+}
+
+window.expandSyarahPages = async function () {
+  const data = (window.activeSyarahData || [])[window.activeSyarahIndex || 0];
+  if (!data || !data.syarah_edition) return;
+  const key = syarahFullKey(data);
+  window._syarahFullPages = window._syarahFullPages || {};
+  if (window._syarahFullPages[key]) return;
+  const m = String(data.syarah_pages_index || '').match(/^(\d+)\s*-\s*(\d+)$/);
+  if (!m) return;
+  window._syarahFullBusy = key;
+  renderSyarahUI();
+  const from = parseInt(m[1], 10) + 1;
+  const to = parseInt(m[2], 10);
+  let pages = [];
+  try {
+    pages = await window.HadeethAPI.getSyarahPages(data.syarah_edition, from, to);
+  } catch (e) { pages = []; }
+  window._syarahFullBusy = null;
+  const lang = window.activeSyarahLang || 'en';
+  if (!pages.length) {
+    window._syarahFullPages[key] = `<div data-ignore-copy="true" class="mt-2 text-xs italic text-outline dark:text-gray-400">${escapeHtml(lang === 'id' ? 'Halaman berikutnya tidak dapat dimuat.' : 'The next pages could not be loaded.')}</div>`;
+  } else {
+    const body = pages.map(p => {
+      const bits = [];
+      if (p.vol_label) bits.push((lang === 'id' ? 'jil. ' : 'vol. ') + p.vol_label);
+      if (p.page_printed) bits.push((lang === 'id' ? 'hlm. ' : 'p. ') + p.page_printed);
+      const head = bits.length
+        ? `<div data-ignore-copy="true" class="mb-1 text-[11px] text-outline dark:text-gray-500">${escapeHtml(bits.join(' · '))}</div>`
+        : '';
+      return `<div class="mt-3">${head}<div dir="rtl" class="whitespace-pre-line text-right leading-relaxed">${escapeHtml(String(p.text_ar || ''))}</div></div>`;
+    }).join('');
+    window._syarahFullPages[key] = `<div class="mt-4 border-t border-outline/20 pt-3 dark:border-gray-700/60">${body}</div>`;
+  }
   renderSyarahUI();
 };
 

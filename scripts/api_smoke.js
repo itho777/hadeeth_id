@@ -184,6 +184,30 @@ function check(name, ok, detail) {
   check('abudawud commentary covers the numbering offset', catalogRow && catalogRow.matched > 1700,
     `${catalogRow && catalogRow.matched} hadiths`);
 
+  console.log('\n== full sharh passages (syarah/) ==');
+  reset();
+  const eds = await api.getSyarahEditions();
+  check('package catalogue indexes every sharh edition', Array.isArray(eds) && eds.length === 25,
+    `${eds.length} packages`);
+  const bks = eds.filter(e => e.book_id === 'bukhari').map(e => e.package_id);
+  check('bukhari carries three commentaries', bks.length === 3, bks.join(', '));
+
+  reset();
+  const pages = await api.getSyarahPages('bukhari', 495, 502);
+  check('span past page one returns every page',
+    pages.length === 8 && pages.every(p => p.text_ar && p.text_ar.length > 100),
+    `${pages.length} pages, ${pages.reduce((n, p) => n + String(p.text_ar).length, 0)} chars`);
+  check('index + one Range covers the span', calls === 2, `${calls} requests, ${(bytes / 1024).toFixed(0)} KB`);
+  check('pages come from the requested package',
+    pages.every(p => String(p.passage_id).startsWith('turath:1673:page:')),
+    pages.length ? pages[0].passage_id : 'none');
+  check('span read stays small', bytes < 1_200_000, `${(bytes / 1024).toFixed(0)} KB`);
+
+  reset();
+  const noPkg = await api.getSyarahPages('nope', 1, 2);
+  check('unknown package returns empty, not an exception',
+    Array.isArray(noPkg) && noPkg.length === 0, `${noPkg.length} rows`);
+
   console.log(`\nRESULT: ${pass} pass, ${fail} fail`);
   process.exit(fail ? 1 : 0);
 })();
