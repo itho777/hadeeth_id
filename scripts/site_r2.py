@@ -435,19 +435,24 @@ def build_chapters(book, stats, names, existing, dst):
 
 def build():
     if OUT.exists():
+        # The Muse syarah tree is owned by scripts/build_syarah_static.py, not by
+        # this builder. Deleting it here silently lost syarah/books.ndjson,
+        # editions.ndjson and every package copy on each regeneration.
+        syarah_root = (OUT / "syarah").resolve()
         for p in OUT.rglob("*"):
-            if p.is_file():
-                p.unlink()
+            if not p.is_file() or syarah_root in p.resolve().parents:
+                continue
+            p.unlink()
     OUT.mkdir(parents=True, exist_ok=True)
 
     manifest = []
 
-    def add(path, key):
+    def add(path, key, ct=CT):
         manifest.append({
             "path": Path(path).relative_to(ROOT).as_posix(),
             "key": key,
             "bytes": os.path.getsize(path),
-            "ct": CT,
+            "ct": ct,
         })
 
     report = []
@@ -460,7 +465,7 @@ def build():
     for p in sorted(glob.glob(str(DATA / "api" / "*.ndjson"))):
         name = Path(p).name
         book = name[: -len(".ndjson")]
-        if book == "tabarani" or book.startswith("topics"):
+        if book == "tabarani" or book.startswith("topics") or book.endswith("_index"):
             continue
         if book in CORE9:
             built = lidwa_master(book, p, num_map.get(book, {}), OUT / "api" / name)
@@ -788,6 +793,81 @@ def build():
         write_ndjson(cat, carried)
         add(cat, "editions/_catalog.ndjson")
         report.append((f"editions/ ({ed_objs} objects)", ed_rows, "-"))
+
+    # 14. remaining data the client used to read from the same-origin CDN.
+    #     Rawi profiles are one row each + a byte-offset index; the rest are
+    #     small row sets. AhmedBaset files are envelope objects (metadata +
+    #     chapters + hadiths), not row sets, so they are copied byte-identical.
+    prof_dir = DATA / "rawis" / "profiles"
+    if prof_dir.is_dir():
+        dst = OUT / "rawis" / "profiles.ndjson"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        index, off, n = [], 0, 0
+        with dst.open("wb") as fh:
+            for src in sorted(prof_dir.glob("*.json")):
+                obj = json.loads(src.read_text(encoding="utf-8"))
+                body = json.dumps({"_key": src.stem, "data": obj},
+                                  ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+                index.append({"id": src.stem, "s": off, "e": off + len(body) - 1})
+                fh.write(body + b"\n")
+                off += len(body) + 1
+                n += 1
+        add(dst, "rawis/profiles.ndjson")
+        dstx = OUT / "rawis" / "profiles_index.ndjson"
+        write_ndjson(dstx, index)
+        add(dstx, "rawis/profiles_index.ndjson")
+        report.append(("rawis/profiles.ndjson", n, f"index {len(index)}"))
+
+    for src, key in [
+        (DATA / "api" / "glossary.json", "api/glossary.ndjson"),
+    ]:
+        if not src.exists():
+            continue
+        dst = OUT / key
+        n = convert(src, dst, "id")
+        add(dst, key)
+        report.append((key, n, "-"))
+
+    tc_src = DATA / "api" / "topics_counts.json"
+    if tc_src.exists():
+        doc = json.loads(tc_src.read_text(encoding="utf-8"))
+        out = [{"book": k, "counts": v} for k, v in doc.items()]
+        dst = OUT / "api" / "topics_counts.ndjson"
+        write_ndjson(dst, out)
+        add(dst, "api/topics_counts.ndjson")
+        report.append(("api/topics_counts.ndjson", len(out), "-"))
+
+    ab = 0
+    for sub in ("by_book", "by_chapter"):
+        base = DATA / "sources" / "ahmedbaset" / sub
+        if not base.is_dir():
+            continue
+        for src in sorted(base.rglob("*.json")):
+            rel = src.relative_to(DATA).as_posix()
+            dst = OUT / rel
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            dst.write_bytes(src.read_bytes())
+            add(dst, rel, "application/json")
+            ab += 1
+    if ab:
+        report.append(("sources/ahmedbaset/", ab, "json envelopes"))
+
+    lc_dir = DATA / "lidwa-chapters"
+    if lc_dir.is_dir():
+        n_lc = 0
+        for src in sorted(lc_dir.glob("*.json")):
+            doc = json.loads(src.read_text(encoding="utf-8"))
+            if isinstance(doc, dict) and isinstance(doc.get("chapters"), list):
+                rows = [{"_meta": {k: v for k, v in doc.items() if k != "chapters"}}] + doc["chapters"]
+            elif isinstance(doc, list):
+                rows = doc
+            else:
+                rows = [{"_meta": doc}]
+            dst = OUT / "lidwa-chapters" / f"{src.stem}.ndjson"
+            write_ndjson(dst, rows)
+            add(dst, f"lidwa-chapters/{src.stem}.ndjson")
+            n_lc += 1
+        report.append(("lidwa-chapters/", n_lc, "ndjson"))
 
     write_ndjson(MANIFEST, manifest)
     total = sum(m["bytes"] for m in manifest)

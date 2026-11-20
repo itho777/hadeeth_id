@@ -124,8 +124,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/config.js"></script>
 <script src="js/auth.js"></script>
-<script src="js/api.js?v=20261120_sharh"></script>
-<script src="js/app.js?v=20261120_fix2"></script>
+<script src="js/api.js?v=20261120_r2"></script>
+<script src="js/app.js?v=20261120_r2"></script>
 <script>
     const BG = "https://lh3.googleusercontent.com/aida-public/AB6AXuBzqnq_A--Wp1V13r_f7R92bOejF-hct-hQfLCt4I-ftXrUjutMDxGksjJBngltuV29M_PS6AvdazjuLJlDmOd7Nc0ym-BdVhIEfg1h3CN3e8NDd2QVp_B8_BNT7AxfGGUpKlbIo9jptiJBClLqpzNbUikCMt5UMZV8IDKrIv4aNVNiQZzmN3Udc92x21MwHEjAngKlR9CIPHct5ipG9Yv4oAGsvvTUSVRu9IgTeTZEreNg2ilBcz2ztw";
     
@@ -148,9 +148,7 @@
 
         try {
             // Load topic info
-            const topicRes = await fetch('data/api/topics_metadata.ndjson');
-            const topicText = await topicRes.text();
-            const topics = topicText.trim().split('\n').filter(l => l.trim()).map(line => JSON.parse(line));
+            const topics = await window.HadeethAPI.getTopics();
             const topic = topics.find(t => t.id == topicId);
             
             if (topic) {
@@ -165,15 +163,13 @@
             }
 
 // Load books
-            const booksRes = await fetch('data/books_v2.json?v=' + Date.now());
-            const books = await booksRes.json();
+            const books = await window.HadeethAPI.getBooks();
             const nineBooks = books.slice(0, 9); // Kutubut Tis'ah
             
             // Load counts
             let counts = {};
             try {
-                const countsRes = await fetch('data/api/topics_counts.json');
-                counts = await countsRes.json();
+                counts = await window.HadeethAPI.getTopicsCounts();
             } catch(e) { console.error('Counts not found'); }
 
             const grid = document.getElementById('books-grid');

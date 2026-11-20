@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/app.css?v=20260808_85"/>
+  <script src="js/api.js?v=20261120_r2"></script>
   <script src="js/theme.js">// --- Glossary Manager Logic ---
 
   let glossaryDrafts = [];
@@ -172,9 +173,7 @@
 
       try {
 
-        const res = await fetch('data/api/glossary.json');
-
-        if (res.ok) existing = await res.json();
+        existing = await window.HadeethAPI.getGlossary();
 
       } catch(e) {}
 
@@ -387,9 +386,7 @@
 
       try {
 
-        const res = await fetch('data/api/glossary.json');
-
-        if (res.ok) existing = await res.json();
+        existing = await window.HadeethAPI.getGlossary();
 
       } catch(e) {}
 
@@ -603,9 +600,7 @@
 
       try {
 
-        const res = await fetch('data/api/glossary.json');
-
-        if (res.ok) existing = await res.json();
+        existing = await window.HadeethAPI.getGlossary();
 
       } catch(e) {}
 
@@ -818,9 +813,7 @@
 
       try {
 
-        const res = await fetch('data/api/glossary.json');
-
-        if (res.ok) existing = await res.json();
+        existing = await window.HadeethAPI.getGlossary();
 
       } catch(e) {}
 
@@ -1049,9 +1042,7 @@
 
       try {
 
-        const res = await fetch('data/api/glossary.json');
-
-        if (res.ok) existing = await res.json();
+        existing = await window.HadeethAPI.getGlossary();
 
       } catch(e) {}
 
@@ -1264,9 +1255,7 @@
 
       try {
 
-        const res = await fetch('data/api/glossary.json');
-
-        if (res.ok) existing = await res.json();
+        existing = await window.HadeethAPI.getGlossary();
 
       } catch(e) {}
 
@@ -1690,9 +1679,7 @@
 
       try {
 
-        const res = await fetch('data/api/glossary.json');
-
-        if (res.ok) existing = await res.json();
+        existing = await window.HadeethAPI.getGlossary();
 
       } catch(e) {}
 
@@ -1905,9 +1892,7 @@
 
       try {
 
-        const res = await fetch('data/api/glossary.json');
-
-        if (res.ok) existing = await res.json();
+        existing = await window.HadeethAPI.getGlossary();
 
       } catch(e) {}
 
@@ -1971,7 +1956,7 @@
     </div>
   </footer>
 
-<script src="js/app.js?v=20261120_fix2">// --- Glossary Manager Logic ---
+<script src="js/app.js?v=20261120_r2">// --- Glossary Manager Logic ---
 
   let glossaryDrafts = [];
 
@@ -2133,9 +2118,7 @@
 
       try {
 
-        const res = await fetch('data/api/glossary.json');
-
-        if (res.ok) existing = await res.json();
+        existing = await window.HadeethAPI.getGlossary();
 
       } catch(e) {}
 
@@ -2348,9 +2331,7 @@
 
       try {
 
-        const res = await fetch('data/api/glossary.json');
-
-        if (res.ok) existing = await res.json();
+        existing = await window.HadeethAPI.getGlossary();
 
       } catch(e) {}
 

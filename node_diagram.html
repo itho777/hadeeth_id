@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HADEETH.ID - Multidimensional Linking Visualization</title>
+  <script src="js/api.js?v=20261120_r2"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0e14; color: #fff; margin: 0; overflow: hidden; }
@@ -53,8 +54,7 @@
 
     async function loadData() {
       try {
-        const response = await fetch('data/links/bukhari.json');
-        const data = await response.json();
+        const data = await window.HadeethAPI.getLinks('bukhari') || {};
         
         let nodes = [];
         let links = [];

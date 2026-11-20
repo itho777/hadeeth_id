@@ -129,15 +129,13 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/config.js"></script>
 <script src="js/auth.js"></script>
-<script src="js/api.js?v=20261120_sharh"></script>
-<script src="js/app.js?v=20261120_fix2"></script>
+<script src="js/api.js?v=20261120_r2"></script>
+<script src="js/app.js?v=20261120_r2"></script>
 <script>
     async function loadTopics() {
         try {
-            const response = await fetch('data/api/topics_metadata.ndjson');
-            if (!response.ok) throw new Error('Failed to load topics');
-            const text = await response.text();
-            const topics = text.trim().split('\n').filter(l => l.trim()).map(line => JSON.parse(line));
+            const topics = await window.HadeethAPI.getTopics();
+            if (!topics.length) throw new Error('Failed to load topics');
             
             const grid = document.getElementById('topics-grid');
             document.getElementById('loading-indicator').style.display = 'none';

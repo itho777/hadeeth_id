@@ -140,20 +140,14 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/config.js"></script>
 <script src="js/auth.js"></script>
-<script src="js/api.js?v=20261120_sharh"></script>
-<script src="js/app.js?v=20261120_fix2"></script>
+<script src="js/api.js?v=20261120_r2"></script>
+<script src="js/app.js?v=20261120_r2"></script>
 <script>
     let allTerms = [];
     
     async function loadGlossary() {
         try {
-            const response = await fetch('data/api/glossary.json');
-            if (!response.ok) {
-                // If the file doesn't exist yet, we will just use an empty array.
-                allTerms = [];
-            } else {
-                allTerms = await response.json();
-            }
+            allTerms = await window.HadeethAPI.getGlossary();
             
             // Check for drafts in localStorage (from admin)
             const draftRaw = localStorage.getItem('hadeeth_glossary_drafts');

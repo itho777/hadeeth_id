@@ -208,8 +208,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/config.js"></script>
 <script src="js/auth.js"></script>
-<script src="js/api.js?v=20261120_sharh"></script>
-<script src="js/app.js?v=20261120_fix2"></script>
+<script src="js/api.js?v=20261120_r2"></script>
+<script src="js/app.js?v=20261120_r2"></script>
 <script>
   const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
   const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
@@ -499,9 +499,8 @@
     try {
       // The old Supabase `rijal` host no longer resolves. The rawis roster
       // shipped with the site is the live source; never fabricate biographies.
-      const res = await fetch('data/rawis/active_rawis.min.json');
-      if (res.ok) {
-        const rawDict = await res.json();
+      const rawDict = await window.HadeethAPI.getActiveRawis();
+      if (rawDict && Object.keys(rawDict).length) {
         const fromRawiData = Object.keys(rawDict || {}).map(id => normalizeRawiRecord(id, rawDict[id]))
           .filter(r => r && r.hadith_count > 0 && r.name_en && !r.name_en.includes('Kampung') && matchesScholarGen(r, gen) && matchesScholarQuery(r, query));
         fromRawiData.sort((a, b) => b.hadith_count - a.hadith_count || String(a.name_en).localeCompare(String(b.name_en)));

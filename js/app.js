@@ -1197,16 +1197,14 @@ async function loadHadithDetail() {
   }
   
   // Restore dynamic translation options
-  const baseUrl = window.__HADEETH_BASE__ ? window.__HADEETH_BASE__ + '/data' : window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
-  const [linkResp, editionsResp] = await Promise.all([
-    fetch(`${baseUrl}/links/${bookId}.json`).catch(() => null),
-    fetch(`${baseUrl}/meta/fawaz_editions.json`).catch(() => null)
+  const baseUrl = window.HadeethAPI.dataUrl;
+  const [linkGraphData, fawazEditionsData] = await Promise.all([
+    window.HadeethAPI.getLinks(bookId).catch(() => null),
+    window.HadeethAPI.getFawazEditions().catch(() => null)
   ]);
 
-  let linkGraph = {};
-  if (linkResp && linkResp.ok) linkGraph = await linkResp.json();
-  let fawazEditions = {};
-  if (editionsResp && editionsResp.ok) fawazEditions = await editionsResp.json();
+  let linkGraph = linkGraphData || {};
+  let fawazEditions = fawazEditionsData || {};
 
   const fawazId = activeDataset === 'fawazahmed' ? hadithId : (Object.keys(linkGraph.fawaz_to_lidwa || {}).find(k => linkGraph.fawaz_to_lidwa[k] == hadithId) || hadithId);
   const lidwaId = activeDataset === 'native_lidwa' ? hadithId : (data.lidwa_id || (linkGraph.fawaz_to_lidwa ? (linkGraph.fawaz_to_lidwa[fawazId] || null) : null));
@@ -1242,7 +1240,7 @@ async function loadHadithDetail() {
               lang: ed.language,
               source: 'fawaz',
               hid: fawazId,
-              file: `${baseUrl}/raw_baseline/${ed.name}.json`
+              file: `${baseUrl}/editions/${ed.name}.ndjson`
           });
       });
   }
@@ -1266,7 +1264,7 @@ async function loadHadithDetail() {
               lang: 'Indonesian',
               source: 'lidwa_id',
               hid: lidwaId || hadithId,
-              file: `${baseUrl}/sources/lidwa/${bookId}.json`
+              file: `${baseUrl}/sources/lidwa/${bookId}.ndjson`
           });
       }
       if (hasLidwaEnText || hasLidwaEn2) {
@@ -1276,7 +1274,7 @@ async function loadHadithDetail() {
               lang: 'English',
               source: 'lidwa_en',
               hid: lidwaId || hadithId,
-              file: `${baseUrl}/sources/lidwa/${bookId}.json`
+              file: `${baseUrl}/sources/lidwa/${bookId}.ndjson`
           });
       }
   }
@@ -1916,7 +1914,7 @@ async function loadHadithList() {
     };
     const abBook = abBookMap[bookId] || bookId;
     try {
-      const resp = await fetch(`data/sources/ahmedbaset/by_chapter/${abBook}/${chapterId}.json`);
+      const resp = await fetch(`${window.HadeethAPI.dataUrl}/sources/ahmedbaset/by_chapter/${abBook}/${chapterId}.json`);
       if (resp.ok) {
         const abChapter = await resp.json();
         const chapTitleEn = abChapter.chapter?.english || `Chapter ${chapterId}`;
@@ -1937,15 +1935,15 @@ async function loadHadithList() {
         let abToLidwaMap = {};
         let lidwaIdMap = {};
         try {
-          const baseUrl = window.__HADEETH_BASE__ ? window.__HADEETH_BASE__ + '/data' : window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
+          const baseUrl = window.HadeethAPI.dataUrl;
           
-          const [linkResp, lidwaData] = await Promise.all([
-            fetch(`${baseUrl}/links/${bookId}.json`).catch(() => null),
+          const [linkGraphData, lidwaData] = await Promise.all([
+            window.HadeethAPI.getLinks(bookId).catch(() => null),
             window.HadeethAPI.fetchNdjsonFull('sources/lidwa', bookId).catch(() => null)
           ]);
 
-          if (linkResp && linkResp.ok) {
-            const linkData = await linkResp.json();
+          if (linkGraphData) {
+            const linkData = linkGraphData;
             const fawazToLidwa = linkData.fawaz_to_lidwa || {};
             const abToFawaz = linkData.ab_to_fawaz || {};
             for (const [abId, fawazId] of Object.entries(abToFawaz)) {
@@ -2058,13 +2056,7 @@ async function loadHadithList() {
     let abEngMap = {};
     let linkGraph = {};
     try {
-      const baseUrl = window.__HADEETH_BASE__
-        ? window.__HADEETH_BASE__ + '/data'
-        : (() => {
-            const s = document.querySelector('script[src*="js/api.js"]');
-            if (s) return new URL(s.src, window.location.href).href.replace(/js\/api\.js.*$/, 'data');
-            return window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
-          })();
+      const baseUrl = window.HadeethAPI.dataUrl;
       
       const abBookMap = { 
       ahmad: 'the_9_books/ahmed',
@@ -2087,13 +2079,13 @@ async function loadHadithList() {
     };
       const abBook = abBookMap[bookId] || bookId;
 
-      const [lidwaData, linkResp, abResp] = await Promise.all([
+      const [lidwaData, linkGraphData, abData] = await Promise.all([
           window.HadeethAPI.fetchNdjsonFull('sources/lidwa', bookId).catch(() => null),
-          fetch(`${baseUrl}/links/${bookId}.json`).catch(() => null),
-          fetch(`${baseUrl}/sources/ahmedbaset/by_book/${abBook}.json`).catch(() => null)
+          window.HadeethAPI.getLinks(bookId).catch(() => null),
+          fetch(`${window.HadeethAPI.dataUrl}/sources/ahmedbaset/by_book/${abBook}.json`).catch(() => null)
       ]);
 
-      if (linkResp && linkResp.ok) linkGraph = await linkResp.json();
+      if (linkGraphData) linkGraph = linkGraphData;
 
       if (lidwaData) {
         // Build map: hadith_number  text_id
@@ -2103,8 +2095,7 @@ async function loadHadithList() {
         });
       }
 
-      if (abResp && abResp.ok) {
-        const abData = await abResp.json();
+      if (abData) {
         (abData.hadiths || []).forEach(h => {
           if (h.english && h.english.text) {
              const txt = h.english.narrator ? `${h.english.narrator} ${h.english.text}` : h.english.text;
@@ -3255,7 +3246,7 @@ async function loadChaptersList() {
     const abBook = abBookMap[bookId] || bookId;
     let abData = null;
     try {
-      const resp = await fetch(`data/sources/ahmedbaset/by_book/${abBook}.json`);
+      const resp = await fetch(`${window.HadeethAPI.dataUrl}/sources/ahmedbaset/by_book/${abBook}.json`);
       if (resp.ok) abData = await resp.json();
     } catch(e) { console.warn('AhmedBaset fetch error:', e); }
 
@@ -3303,8 +3294,7 @@ async function loadChaptersList() {
   } else if (resolvedDataset === 'native_lidwa' || resolvedDataset === 'native_mjna' || resolvedDataset === 'native_irsyad') {
     let lidwaIndex = null;
     try {
-      const resp = await fetch(`data/lidwa-chapters/${bookId}.json`);
-      if (resp.ok) lidwaIndex = await resp.json();
+      lidwaIndex = await window.HadeethAPI.getLidwaChapters(bookId);
     } catch(e) { console.warn('Chapter index fetch error:', e); }
 
     if (!lidwaIndex || !lidwaIndex.chapters || lidwaIndex.chapters.length === 0) {
@@ -3457,24 +3447,15 @@ async function loadHadithCardsList() {
   const langSelectVal = document.getElementById('default-lang-select')?.value || (isIdLang ? 'id' : 'en');
 
   // Fetch English + Arabic from fawazahmed0 CDN; Indonesian from source data (Lidwa / IrsyadulIbad / MJNA.or.id)
-  const baseUrl = window.__HADEETH_BASE__
-    ? window.__HADEETH_BASE__ + '/data'
-    : (() => {
-        const s = document.querySelector('script[src*="js/api.js"]');
-        if (s) return new URL(s.src, window.location.href).href.replace(/js\/api\.js.*$/, 'data');
-        return window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
-      })();
+  const baseUrl = window.HadeethAPI.dataUrl;
 
-  const [engEdition, araEdition, linkResp] = await Promise.all([
+  const [engEdition, araEdition, linkGraphData] = await Promise.all([
     window.HadeethAPI.getEdition('eng', bookId).catch(() => null),
     window.HadeethAPI.getEdition('ara', bookId).catch(() => null),
-    fetch(`${baseUrl}/links/${bookId}.json`).catch(() => null)
+    window.HadeethAPI.getLinks(bookId).catch(() => null)
   ]);
 
-  let linkGraph = {};
-  if (linkResp && linkResp.ok) {
-    linkGraph = await linkResp.json();
-  }
+  let linkGraph = linkGraphData || {};
 
   // Load Indonesian from native source data (Lidwa / IrsyadulIbad / MJNA.or.id / etc.)
   let indMap = {};
@@ -4545,10 +4526,7 @@ async function loadTopicHadiths() {
   let topicNameEn = '';
   let topicNameId = '';
   try {
-      const topics = await (window.HadeethAPI && window.HadeethAPI.getTopics
-        ? window.HadeethAPI.getTopics()
-        : fetch('data/api/topics_metadata.ndjson').then(r => r.text())
-            .then(t => t.trim().split('\n').filter(l => l.trim()).map(line => JSON.parse(line))));
+      const topics = await window.HadeethAPI.getTopics();
       const topic = topics.find(t => t.id == topicId);
       if (topic) {
           topicNameEn = topic.name_en;
@@ -4589,8 +4567,7 @@ async function loadTopicHadiths() {
     if (window.HadeethAPI && typeof window.HadeethAPI.getTopicHadithIds === 'function') {
       allHadithIds = await window.HadeethAPI.getTopicHadithIds(topicId, bookId);
     } else {
-      const idxRes = await fetch('data/api/topics_index.json?v=20260826_1');
-      const idxData = await idxRes.json();
+      const idxData = await window.HadeethAPI.getTopicIndex();
       allHadithIds = (idxData.topics && idxData.topics[String(topicId)] && idxData.topics[String(topicId)].books && idxData.topics[String(topicId)].books[bookId.toLowerCase()]) || [];
     }
     filteredHadithIds = [...allHadithIds];
@@ -4675,13 +4652,13 @@ async function loadTopicHadiths() {
     // ahmad and darimi have no eng-<book> edition in the R2 catalogue.
     if (bookId === 'ahmad' || bookId === 'darimi') return;
 
-    const baseUrl = window.__HADEETH_BASE__ ? window.__HADEETH_BASE__ + '/data' : window.location.origin + window.location.pathname.replace(/\/[^/]*$/, '') + '/data';
+    const baseUrl = window.HadeethAPI.dataUrl;
     const cacheKey = '__topicLinkGraph_' + bookId;
     if (window[cacheKey] === undefined) {
       window[cacheKey] = null;
       try {
-        const resp = await fetch(`${baseUrl}/links/${bookId}.json`);
-        if (resp.ok) window[cacheKey] = await resp.json();
+        const graph = await window.HadeethAPI.getLinks(bookId);
+        if (graph) window[cacheKey] = graph;
       } catch (e) { window[cacheKey] = null; }
     }
     const graph = window[cacheKey];

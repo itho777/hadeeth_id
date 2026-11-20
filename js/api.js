@@ -71,16 +71,8 @@ const HadeethAPI = {
   },
 
   get localDataUrl() {
-    if (window.__HADEETH_BASE__) return window.__HADEETH_BASE__ + '/data';
-    const scriptEl = document.querySelector('script[src*="api.js"]');
-    if (scriptEl) {
-      const src = scriptEl.getAttribute('src');
-      const srcUrl = new URL(src, window.location.href);
-      const rootPath = srcUrl.pathname.replace(/\/js\/api\.js.*$/, '');
-      return srcUrl.origin + rootPath + '/data';
-    }
-    const base = window.location.pathname.replace(/\/[^/]*$/, '');
-    return window.location.origin + base + '/data';
+    // Kept as an alias: all site data lives on R2 now.
+    return this.baseUrl;
   },
 
   get dataUrl() {
@@ -98,7 +90,8 @@ const HadeethAPI = {
    * Returns the Response, or null.
    */
   async _get(path, options = {}, timeoutMs = 15000) {
-    const urls = [`${this.baseUrl}/${path}`, `${this.localDataUrl}/${path}`];
+    const urls = [`${this.baseUrl}/${path}`];
+    if (this.localDataUrl !== this.baseUrl) urls.push(`${this.localDataUrl}/${path}`);
     for (const url of urls) {
       const res = await fetchWithTimeout(url, options, timeoutMs).catch(() => null);
       if (res && (res.ok || res.status === 206)) return res;
@@ -245,9 +238,6 @@ const HadeethAPI = {
         const rows = parseNdjson(await res.text());
         if (rows.length) return rows;
       }
-      // legacy JSON shape, from the site's own /data
-      const legacy = await fetchWithTimeout(`${this.localDataUrl}/books_v2.json?cb=${Date.now()}`).catch(() => null);
-      if (legacy && legacy.ok) return await legacy.json();
       throw new Error('no book registry');
     } catch (err) {
       console.error('Failed to load book registry:', err);
@@ -272,8 +262,7 @@ const HadeethAPI = {
         }
         this.rawisCache = map;
       } else {
-        const legacy = await fetchWithTimeout(`${this.localDataUrl}/rawis/active_rawis.min.json?v=${Date.now()}`).catch(() => null);
-        this.rawisCache = (legacy && legacy.ok) ? await legacy.json() : {};
+        this.rawisCache = {};
       }
     } catch (e) {
       this.rawisCache = {};
@@ -300,14 +289,7 @@ const HadeethAPI = {
           return rows;
         }
       }
-      // legacy JSON shape, from the site's own /data
-      const legacy = await fetchWithTimeout(`${this.localDataUrl}/${folder}/${bookId}.json`).catch(() => null);
-      if (!legacy || !legacy.ok) throw new Error('chapters unavailable');
-      const data = await legacy.json();
-      let chaps = data.chapters || data;
-      if (chaps && typeof chaps === 'object' && !Array.isArray(chaps)) chaps = Object.values(chaps);
-      this.chaptersCache[cacheKey] = chaps;
-      return chaps;
+      throw new Error('chapters unavailable');
     } catch (err) {
       console.error(`Failed to load ${folder} for ${bookId}:`, err);
       return [];
@@ -435,18 +417,6 @@ const HadeethAPI = {
       this.topicIndexCache = { topics };
       return this.topicIndexCache;
     }
-    try {
-      let res2 = await fetchWithTimeout(`${this.localDataUrl}/api/topics_index.json?v=20260826_1`).catch(() => null);
-      if (!res2 || !res2.ok) {
-        res2 = await fetchWithTimeout(`https://raw.githubusercontent.com/itho777/hadeeth_id/main/data/api/topics_index.json?v=20260826_1`).catch(() => null);
-      }
-      if (res2 && res2.ok) {
-        this.topicIndexCache = await res2.json();
-        return this.topicIndexCache;
-      }
-    } catch (e) {
-      console.warn('Failed to load topics_index:', e);
-    }
     return null;
   },
 
@@ -460,13 +430,6 @@ const HadeethAPI = {
       this.topicsCache = parseNdjson(await res.text());
       return this.topicsCache;
     }
-    try {
-      const r2 = await fetchWithTimeout(`${this.localDataUrl}/api/topics_metadata.ndjson`).catch(() => null);
-      if (r2 && r2.ok) {
-        this.topicsCache = parseNdjson(await r2.text());
-        return this.topicsCache;
-      }
-    } catch (e) {}
     return [];
   },
 
@@ -531,8 +494,6 @@ const HadeethAPI = {
           if (Array.isArray(raw) && raw.length) {
             return this.normalizeEdition({ metadata: {}, hadiths: raw });
           }
-          const legacy = await fetchWithTimeout(`${this.localDataUrl}/${prefix}/${fileId}.json`).catch(() => null);
-          if (legacy && legacy.ok) return this.normalizeEdition(await legacy.json());
           return null;
       }
     } catch (err) {
@@ -859,20 +820,98 @@ const HadeethAPI = {
     return out;
   },
 
-  /**
-   * Fetch individual rawi (narrator) profile. Profile files are not in R2 yet;
-   * fall back to the narrator registry that is.
-   */
+  /** Fetch a link map for one book from links/<book>.ndjson on R2. */
+  async getLinks(bookId) {
+    if (!this.linksCache) this.linksCache = {};
+    if (this.linksCache[bookId]) return this.linksCache[bookId];
+    const res = await this._get(`links/${bookId}.ndjson`, {}, 20000);
+    if (!res) return null;
+    const map = {};
+    for (const row of parseNdjson(await res.text())) {
+      if (row && row.k !== undefined) map[String(row.k)] = row.v;
+      else if (row && row.id !== undefined) {
+        const { id, ...rest } = row;
+        map[String(id)] = rest;
+      }
+    }
+    this.linksCache[bookId] = map;
+    return map;
+  },
+
+  /** Fawaz edition metadata, regrouped to { book: { collection: [...] } }. */
+  async getFawazEditions() {
+    if (this.fawazEditionsCache) return this.fawazEditionsCache;
+    const res = await this._get('meta/fawaz_editions.ndjson', {}, 20000);
+    const map = {};
+    if (res) {
+      for (const row of parseNdjson(await res.text())) {
+        const book = row.book_id || row.book;
+        if (!book) continue;
+        if (!map[book]) map[book] = { collection: [] };
+        map[book].collection.push(row);
+      }
+    }
+    this.fawazEditionsCache = map;
+    return map;
+  },
+
+  async getGlossary() {
+    if (this.glossaryCache) return this.glossaryCache;
+    const res = await this._get('api/glossary.ndjson', {}, 20000);
+    this.glossaryCache = res ? parseNdjson(await res.text()) : [];
+    return this.glossaryCache;
+  },
+
+  async getTopicsCounts() {
+    if (this.topicsCountsCache) return this.topicsCountsCache;
+    const res = await this._get('api/topics_counts.ndjson', {}, 20000);
+    const map = {};
+    if (res) {
+      for (const row of parseNdjson(await res.text())) {
+        if (row && row.book) map[row.book] = row.counts || {};
+      }
+    }
+    this.topicsCountsCache = map;
+    return map;
+  },
+
+  /** Lidwa/MJNA chapter index, stored as {_meta, ...chapter rows} NDJSON. */
+  async getLidwaChapters(bookId) {
+    if (!this.lidwaChapterCache) this.lidwaChapterCache = {};
+    if (this.lidwaChapterCache[bookId]) return this.lidwaChapterCache[bookId];
+    const res = await this._get(`lidwa-chapters/${bookId}.ndjson`, {}, 20000);
+    if (!res) return null;
+    const rows = parseNdjson(await res.text());
+    const meta = (rows[0] && rows[0]._meta) || {};
+    const out = Object.assign({}, meta, { chapters: rows.slice(1) });
+    this.lidwaChapterCache[bookId] = out;
+    return out;
+  },
+
+  /** Fetch one narrator profile by byte range from rawis/profiles.ndjson. */
   async getRawiProfile(rawiId) {
-    try {
-      const res = await fetch(`${this.localDataUrl}/rawis/profiles/${rawiId}.json`);
-      if (res.ok) return await res.json();
-    } catch (err) {
-      // fall through to the registry
+    const key = String(rawiId);
+    if (this.rawiProfileCache && this.rawiProfileCache[key]) return this.rawiProfileCache[key];
+    const idxRes = await this._get('rawis/profiles_index.ndjson', {}, 20000);
+    if (idxRes) {
+      const wanted = [key, key.replace(/^rawi_/, '')];
+      const hit = parseNdjson(await idxRes.text()).find(r => wanted.includes(String(r.id)));
+      if (hit) {
+        const res = await this._get('rawis/profiles.ndjson',
+          { headers: { 'Range': `bytes=${hit.s}-${hit.e}` } }, 20000);
+        if (res) {
+          const row = parseNdjson(await res.text())[0];
+          if (row && row.data) {
+            this.rawiProfileCache = this.rawiProfileCache || {};
+            this.rawiProfileCache[key] = Object.assign({}, row.data, { _key: row._key });
+            return this.rawiProfileCache[key];
+          }
+        }
+      }
     }
     try {
       const rawis = await this.getActiveRawis();
-      return rawis[String(rawiId)] || null;
+      return rawis[key] || null;
     } catch (err) {
       return null;
     }

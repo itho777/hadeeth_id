@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Master Link Database Viewer</title>
+  <script src="js/api.js?v=20261120_r2"></script>
   <!-- Tailwind CSS via CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -148,8 +149,7 @@
       $('#loading-indicator').removeClass('hidden');
 
       try {
-        const response = await fetch('data/links/master_link.json');
-        masterData = await response.json();
+        masterData = await window.HadeethAPI.getLinks('master_link') || {};
         
         // Populate select
         const bookSelect = $('#book-select');
@@ -168,7 +168,7 @@
         }
         
       } catch (err) {
-        console.error("Failed to load master_link.json", err);
+        console.error("Failed to load master_link from R2", err);
         $('#loading-indicator').text('Error loading data').addClass('text-red-500');
       }
 
