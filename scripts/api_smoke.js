@@ -51,7 +51,7 @@ function check(name, ok, detail) {
   console.log('== registry ==');
   reset();
   const books = await api.getBooks();
-  check('24 books', books.length === 24, `got ${books.length}`);
+  check('28 books', books.length === 28, `got ${books.length}`);
   const tab = books.find(b => b.id === 'tabarani');
   check('tabarani ships its full 21,850', tab && tab.hadiths_count === 21850, `got ${tab && tab.hadiths_count}`);
   check('one request for the registry', calls === 1, `${calls} requests, ${(bytes / 1024).toFixed(1)} KB`);
