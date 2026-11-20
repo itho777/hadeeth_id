@@ -4022,8 +4022,8 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
             ${authorProfileUrl ? '<span class="material-symbols-outlined text-xs">open_in_new</span>' : ''}
           ${authorProfileUrl ? '</a>' : '</span>'}
           <p class="text-xs text-gray-300">
-            <span data-lang-en>Preserved in Authentic Canonical Corpus</span>
-            <span data-lang-id style="display:none">Tercatat dalam Koleksi Kitab Shahih Utama</span>
+            <span data-lang-en>Recorded in this site's hadith corpus</span>
+            <span data-lang-id style="display:none">Tercatat dalam korpus hadits situs ini</span>
           </p>
         </div>
       </div>
@@ -4044,8 +4044,8 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
 }
   
   if (data) {
-    let gradeEn = data.grade_en || data.grade || 'Sahih';
-    let gradeId = data.grade_id || 'Shahih';
+    let gradeEn = data.grade_en || data.grade || '';
+    let gradeId = data.grade_id || '';
     let elevation = data.elevation || '-';
 
     const gradeEl = document.getElementById('sanad-grade-text');
@@ -4059,8 +4059,8 @@ function renderSanadPath(rawiList, rawisDict, data, bookId, authorProfileUrl, au
     if (gradeEl) {
       let extEn = data._hasGradeFallback ? ' <em class="text-[10px] font-normal opacity-75">(from linked hadith)</em>' : '';
       let extId = data._hasGradeFallback ? ' <em class="text-[10px] font-normal opacity-75">(dari hadits terkait)</em>' : '';
-      const enText = gradeEn || gradeId;
-      const idText = gradeId || gradeEn;
+      const enText = gradeEn || gradeId || 'Not recorded in source';
+      const idText = gradeId || gradeEn || 'Tidak tercatat di sumber';
       
       gradeEl.innerHTML = `<span data-lang-en>${escapeHtml(enText)}${extEn}</span><span data-lang-id style="display:none">${escapeHtml(idText)}${extId}</span>`;
     }
