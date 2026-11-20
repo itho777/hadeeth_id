@@ -109,7 +109,7 @@
     <!-- Category Filter Chips -->
     <div class="flex items-center gap-2 mt-4 overflow-x-auto pb-2" id="filter-chips">
         <button class="chip-btn active px-4 py-1.5 rounded-full text-xs font-semibold bg-primary dark:bg-[#10b981] text-white dark:text-black" data-filter="all">
-          <span data-lang-en>All Collections (24)</span><span data-lang-id>Semua Kitab (24)</span>
+          <span data-lang-en>All Collections (28)</span><span data-lang-id>Semua Kitab (28)</span>
         </button>
         <button class="chip-btn px-4 py-1.5 rounded-full text-xs font-semibold bg-surface-container-high dark:bg-[#1e293b] text-on-surface-variant dark:text-gray-300 hover:bg-outline-variant/30" data-filter="jami">
           <span>Jami' (الجامع)</span>
@@ -189,12 +189,12 @@
 
   function getType(id) {
     if (['bukhari','muslim','tirmidhi','ibnukhuzaimah','ibnuhibban'].includes(id)) return 'jami';
-    if (['abudawud','nasai','ibnmajah','darimi','daruquthni'].includes(id)) return 'sunan';
-    if (['ahmad','syafii'].includes(id)) return 'musnad';
+    if (['abudawud','nasai','ibnmajah','darimi','daruquthni','maani','masabih'].includes(id)) return 'sunan';
+    if (['ahmad','syafii','muntaqa'].includes(id)) return 'musnad';
     if (id === 'malik') return 'mushannaf';
     if (id === 'tabarani') return 'mujam';
     if (id === 'mustadrak') return 'mustadrak';
-    if (['nawawi','qudsi','shah','adab','bulugh','mishkat','riyad','riyad_arab','shamail'].includes(id)) return 'jawami';
+    if (['nawawi','qudsi','shah','adab','bulugh','mishkat','riyad','riyad_arab','shamail','umdat'].includes(id)) return 'jawami';
     return 'other';
   }
 
@@ -257,7 +257,7 @@
   // Inject skeletons initially
   sittahGrid.innerHTML = Array(6).fill('').map(makeSkeletonCard).join('');
   tisahGrid.innerHTML = Array(3).fill('').map(makeSkeletonCard).join('');
-  secondaryGrid.innerHTML = Array(15).fill('').map(makeSkeletonCard).join('');
+  secondaryGrid.innerHTML = Array(19).fill('').map(makeSkeletonCard).join('');
 
   async function loadBooks() {
     try {

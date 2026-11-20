@@ -545,7 +545,7 @@
     "source": "matn_rebuild",
     "authorId": "",
     "editions": [],
-    "book_type_ar": "",
+    "book_type_ar": "المسند",
     "hadiths_count": 3944,
     "total_chapters": 1109
   },
@@ -569,7 +569,7 @@
     "source": "matn_rebuild",
     "authorId": "",
     "editions": [],
-    "book_type_ar": "",
+    "book_type_ar": "السنن",
     "hadiths_count": 7013,
     "total_chapters": 0
   },
@@ -593,7 +593,7 @@
     "source": "matn_rebuild",
     "authorId": "",
     "editions": [],
-    "book_type_ar": "",
+    "book_type_ar": "السنن",
     "hadiths_count": 4929,
     "total_chapters": 0
   },
@@ -617,7 +617,7 @@
     "source": "matn_rebuild",
     "authorId": "",
     "editions": [],
-    "book_type_ar": "",
+    "book_type_ar": "أحكام",
     "hadiths_count": 414,
     "total_chapters": 0
   }
