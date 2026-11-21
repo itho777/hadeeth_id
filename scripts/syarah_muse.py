@@ -57,7 +57,16 @@ SHORT = {
     "shamail": "Jam' al-Wasa'il",
     "syafii": "al-Shafi",
     "nawawi": "Jami' al-Ulum",
+    "ahmad": "'Uqud al-Zabarjad",
 }
+
+# Packages whose `syarah_links` were derived after the fact, because the Muse
+# dump shipped none for them. Ahmad's entry numbers are the sharh's own
+# sequence, so numbering across would have produced 1,730 wrong pointers; the
+# links in these files come from a verbatim-quote match instead (see
+# scripts/build_ahmad_links.py). Read as a link table so the package still
+# reaches `commentaries/matched/ahmad.ndjson` instead of being skipped.
+DERIVED = {"ahmad": ROOT / "data" / "syarah_ahmad_links.ndjson"}
 
 
 def canonical_numbers():
@@ -111,37 +120,60 @@ def import_dir(path, canon):
     tables = {r[0] for r in con.execute(
         "select name from sqlite_master where type='table'")}
     link_table = next((t for t in ("syarah_links", "links") if t in tables), None)
-    if not link_table:
+    derived = DERIVED.get(path.name)
+    if link_table:
+        books = sorted({r[0] for r in con.execute(
+            f"select distinct source_book_id from {link_table}")})
+        if len(books) != 1 or books[0] not in canon:
+            con.close()
+            return {}, {"dir": path.name, "skip": f"no site page for {books}"}
+        book = books[0]
+        cols = [c[1] for c in con.execute(f"pragma table_info({link_table})")]
+        has_span = "commentary_start_page_index" in cols
+        has_conf = "confidence" in cols
+
+        def link_rows():
+            # (native, target, start, end, confidence, method)
+            for link in con.execute(
+                    f"select source_native_number, target_page_index"
+                    + (", commentary_start_page_index, commentary_end_page_index"
+                       if has_span else "")
+                    + (", confidence, method" if has_conf else "")
+                    + f" from {link_table}"):
+                yield (link[0], link[1],
+                       link[2] if has_span else None,
+                       link[3] if has_span else None,
+                       link[-2] if has_conf else None,
+                       link[-1] if has_conf else None)
+    elif derived and derived.is_file():
+        book = path.name
+        if book not in canon:
+            con.close()
+            return {}, {"dir": path.name, "skip": f"no site page for {[book]}"}
+
+        def link_rows():
+            with derived.open(encoding="utf-8") as f:
+                for line in f:
+                    if not line.strip():
+                        continue
+                    row = json.loads(line)
+                    yield (row.get("source_native_number"),
+                           row.get("target_page_index"),
+                           row.get("commentary_start_page_index"),
+                           row.get("commentary_end_page_index"),
+                           row.get("confidence"), row.get("method"))
+    else:
         con.close()
         return {}, {"dir": path.name, "skip": "no links table"}
 
-    books = sorted({r[0] for r in con.execute(
-        f"select distinct source_book_id from {link_table}")})
-    if len(books) != 1 or books[0] not in canon:
-        con.close()
-        return {}, {"dir": path.name, "skip": f"no site page for {books}"}
-
-    book = books[0]
     name_ar, name_en, url, licence = edition_names(con)
     texts, meta = page_texts(con)
-    cols = [c[1] for c in con.execute(f"pragma table_info({link_table})")]
-    has_span = "commentary_start_page_index" in cols
 
     slug = path.name
     rows = {}
     links = dropped = 0
     seen = set()
-    for link in con.execute(
-            f"select source_native_number, target_page_index"
-            + (", commentary_start_page_index, commentary_end_page_index" if has_span else "")
-            + (", confidence, method" if "confidence" in cols else "")
-            + f" from {link_table}"):
-        native, target = link[0], link[1]
-        start = end = None
-        if has_span and len(link) > 3:
-            start, end = link[2], link[3]
-        confidence = link[-2] if "confidence" in cols else None
-        method = link[-1] if "confidence" in cols else None
+    for native, target, start, end, confidence, method in link_rows():
         links += 1
         number = str(native)
         if number not in canon[book]:
