@@ -31,6 +31,85 @@ function escapeHtml(str) {
     .replace(/'/g, '&#039;');
 }
 
+
+// ============================================================
+// GRADING PROVENANCE
+// Every label is reproduced from a named dataset. Missing data stays missing:
+// never render a computed score or a silent 'Sahih' default.
+// ============================================================
+const GRADE_SOURCE_SHORT = {
+  lidwa: 'Lidwa / Irsyad',
+  fawaz: 'Fawaz Ahmed (sunnah.com)',
+  atif_hf: 'Atif HF (sunnah.com)',
+  ahmedbaset: 'AhmedBaset (Darussalam)',
+  usm: 'USM (daftar Munkar)'
+};
+
+function gradeSourceGroups(gradings) {
+  const groups = new Map();
+  (Array.isArray(gradings) ? gradings : []).forEach(g => {
+    if (!g || !g.grade) return;
+    const label = g.src_label || GRADE_SOURCE_SHORT[g.src] || g.src || 'dataset';
+    if (!groups.has(label)) groups.set(label, []);
+    groups.get(label).push(g);
+  });
+  return groups;
+}
+
+function gradeSourcesHtml(gradings) {
+  const groups = gradeSourceGroups(gradings);
+  if (!groups.size) return '';
+  let bodies = '';
+  groups.forEach((items, label) => {
+    const seen = new Set();
+    let values = '';
+    items.forEach(g => {
+      const by = String(g.by || '').trim();
+      const key = by + '\u0000' + String(g.grade);
+      if (seen.has(key)) return;
+      seen.add(key);
+      values += '<li class="leading-snug">' +
+        (by ? '<span class="font-semibold">' + escapeHtml(by) + '</span> \u2014 ' : '') +
+        escapeHtml(g.grade) + '</li>';
+    });
+    if (!values) return;
+    bodies += '<div class="rounded-lg border border-outline-variant/20 dark:border-[#334155] p-3 bg-surface-container-low/40 dark:bg-[#0f172a]">' +
+      '<div class="text-[11px] font-bold text-secondary dark:text-[#10b981] mb-1 break-words">' + escapeHtml(label) + '</div>' +
+      '<ul class="list-disc list-inside text-xs text-on-surface-variant dark:text-gray-300 space-y-0.5">' + values + '</ul>' +
+      '</div>';
+  });
+  if (!bodies) return '';
+  const n = groups.size;
+  return '<div class="rounded-xl border border-outline-variant/30 dark:border-[#334155] bg-surface dark:bg-[#1e293b] p-4 flex flex-col gap-3">' +
+    '<div class="flex items-center justify-between gap-3 border-b border-outline-variant/20 dark:border-[#334155] pb-2">' +
+      '<h4 class="font-bold text-xs text-primary dark:text-white">' +
+        '<span data-lang-en>Grading sources</span><span data-lang-id style="display:none">Sumber penilaian</span>' +
+      '</h4>' +
+      '<span class="text-[10px] font-semibold text-outline dark:text-gray-400">' +
+        '<span data-lang-en>' + n + ' sources</span><span data-lang-id style="display:none">' + n + ' sumber</span>' +
+      '</span>' +
+    '</div>' +
+    '<div class="grid grid-cols-1 md:grid-cols-2 gap-2">' + bodies + '</div>' +
+    '<p class="text-[10px] text-outline dark:text-gray-400 leading-snug">' +
+      '<span data-lang-en>Labels are quoted from the named datasets; this site issues no independent ruling.</span>' +
+      '<span data-lang-id style="display:none">Label dikutip dari dataset yang disebut; situs ini tidak menetapkan hukum sendiri.</span>' +
+    '</p>' +
+  '</div>';
+}
+
+function renderGradeSources(host, gradings) {
+  if (!host) return;
+  const html = gradeSourcesHtml(gradings);
+  if (!html) {
+    host.innerHTML = '';
+    host.style.display = 'none';
+    return;
+  }
+  host.innerHTML = html;
+  host.style.display = 'block';
+  if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+}
+
 // ============================================================
 // LANGUAGE SYSTEM
 // ============================================================
@@ -838,8 +917,8 @@ function renderSearchResults(results, query, container) {
     const englishText = res.primary_translation || res.english_text || '';
     const bookName = res.book_name || (res.book_slug === 'nawawi' ? 'Forty Nawawi' : 'Sahih al-Bukhari');
     const hadithNum = res.hadith_number || res.id;
-    const gradeEn = res.grade_en || res.grade || 'Sahih';
-    const gradeId = res.grade_id || 'Shahih';
+    const gradeEn = res.grade_en || res.grade || 'Not recorded';
+    const gradeId = res.grade_id || 'Tidak tercatat';
 
     html += `
       <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/20 dark:border-[#334155] rounded-xl p-5 hover:border-secondary/50 dark:hover:border-[#10b981]/50 transition-all shadow-sm flex flex-col gap-3">
@@ -1047,6 +1126,8 @@ async function loadHadithDetail() {
     return;
   }
 
+  renderGradeSources(document.querySelector('[data-grade-sources]'), data.gradings || []);
+
   // Extract variables
   const bookName = (bookId === 'nawawi' ? 'Forty Nawawi' : bookId.toUpperCase());
   const lidwaNum = Array.isArray(data.lidwa_id) ? data.lidwa_id[0] : data.lidwa_id;
@@ -1171,7 +1252,7 @@ async function loadHadithDetail() {
   }
   if (isnadBtn) {
     if (data.rawis && data.rawis.length > 0) {
-      isnadBtn.href = `sanad.html?book=${bookId}&id=${hadithId}`;
+      isnadBtn.href = `sanad.html?book=${bookId}&id=${hadithId}&dataset=${activeDataset}`;
       isnadBtn.style.display = 'flex';
     } else {
       isnadBtn.style.display = 'none';
@@ -2245,8 +2326,8 @@ async function loadHadithList() {
           }
       }
 
-      const gradeEn = item.grade_en || item.grade || 'Sahih';
-      const gradeId = item.grade_id || 'Shahih';
+      const gradeEn = item.grade_en || item.grade || 'Not recorded';
+      const gradeId = item.grade_id || 'Tidak tercatat';
 
       const isnadLink = `sanad.html?book=${bookId}&id=${num}`;
       const detailLink = `hadith.html?book=${bookId}&id=${num}`;
@@ -3676,7 +3757,8 @@ async function loadSanadChain() {
   if (subEn) subEn.innerText = `Chain of narrators (الإسناد) for ${bookName} Hadith #${hadithNum} tracing back to the Messenger of Allah ﷺ.`;
   if (subId) subId.innerText = `Silsilah perawi (الإسناد) untuk ${bookName} Hadits #${hadithNum} yang bersambung sampai ke Rasulullah ﷺ.`;
 
-  const activeDataset = resolveDataset(bookId, localStorage.getItem('dataset_version'));
+  const urlDatasetParam = new URLSearchParams(location.search).get('dataset');
+  const activeDataset = resolveDataset(bookId, urlDatasetParam || localStorage.getItem('dataset_version'));
   let dsPrefix = 'fawaz';
   if (activeDataset === 'native_lidwa') dsPrefix = 'lidwa';
   else if (activeDataset === 'native_ahmedbaset') dsPrefix = 'ab';
@@ -3730,7 +3812,9 @@ async function loadSanadChain() {
         }
       }
     }
-    
+
+    renderGradeSources(document.getElementById('sanad-grade-sources'), data && data.gradings);
+
     // Final Node: Collector & Author metadata
     const authorNamesEn = {
       bukhari: 'Imam al-Bukhari', muslim: 'Imam Muslim', abudawud: 'Imam Abu Dawood',

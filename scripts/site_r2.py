@@ -17,6 +17,7 @@ import glob
 import hashlib
 import json
 import os
+import re
 import sqlite3
 import sys
 import time
@@ -159,7 +160,210 @@ CORE9 = ["bukhari", "muslim", "abudawud", "tirmidhi", "nasai",
          "ibnmajah", "malik", "ahmad", "darimi"]
 
 
-def lidwa_master(book, old_path, num_map, dst):
+
+AR_DIA = re.compile(r"[\u0617-\u061A\u064B-\u0652\u0670\u06D6-\u06ED\u0640]")
+
+GRADE_LABELS = {
+    "lidwa": "Lidwa / Irsyad",
+    "fawaz": "Fawaz Ahmed (sunnah.com)",
+    "atif_hf": "Atif HF (sunnah.com)",
+    "ahmedbaset": "AhmedBaset (Darussalam)",
+    "usm": "USM (daftar Munkar)",
+}
+
+ATIF_FILES = {
+    "bukhari": "Sahih al-Bukhari",
+    "muslim": "Sahih Muslim",
+    "abudawud": "Sunan Abi Dawud",
+    "tirmidhi": "Jami` at-Tirmidhi",
+    "nasai": "Sunan an-Nasa'i",
+    "ibnmajah": "Sunan Ibn Majah",
+}
+USM_FILES = {"abudawud": "abudaud", "nasai": "nasai"}
+
+
+def load_crosswalk():
+    """book -> {fawaz number: lidwa number}, the real cross-reference.
+
+    ``data/links/fawaz_<book>.json`` is an identity file and must never be used
+    as a join. ``link_graph.json`` is the authoritative mapping.
+    """
+    p = DATA / "link_graph.json"
+    if not p.exists():
+        return {}
+    doc = json.loads(p.read_text(encoding="utf-8"))
+    edges = doc.get("fawaz_to_lidwa", doc)
+    out = {}
+    for key, value in edges.items():
+        book, sep, num = str(key).partition("_")
+        if not sep:
+            continue
+        out.setdefault(book, {})[num] = str(value)
+    return out
+
+
+def _ar_key(value):
+    """Diacritic- and punctuation-insensitive Arabic key for cross-source joins."""
+    s = AR_DIA.sub("", value or "")
+    s = re.sub(r"[^\u0600-\u06FF]+", " ", s)
+    return " ".join(s.split())[:2000]
+
+
+def _grader(label, fallback):
+    m = re.search(r"\(([^)]+)\)", label or "")
+    if m and not m.group(1).strip().isdigit():
+        return m.group(1).strip()
+    return fallback
+
+
+def _add_grade(store, key, entry):
+    store.setdefault(str(key), []).append(entry)
+
+
+def load_grade_sources(book, crosswalk):
+    """Every grading source, indexed by lidwa id and by fawaz id.
+
+    Sources: Lidwa's own grade column, Fawaz's multi-scholar list, Atif HF and
+    AhmedBaset's Darussalam/Al-Albani labels (joined by Arabic text, because
+    their numbering diverges), and the USM Munkar list where it is in range.
+    """
+    by_lidwa, by_fawaz = {}, {}
+    cw = crosswalk.get(book, {})
+    reverse = {}
+    for fnum, lid in cw.items():
+        reverse.setdefault(str(lid), str(fnum))
+
+    fawaz_path = DATA / "sources" / "fawaz_combined_v2" / f"{book}.json"
+    fawaz_rows = json.loads(fawaz_path.read_text(encoding="utf-8")) if fawaz_path.exists() else []
+    fawaz_by_num = {}
+    for row in fawaz_rows:
+        num = str(row.get("hadithnumber") or "").strip()
+        if not num:
+            continue
+        fawaz_by_num[num] = row
+        for g in row.get("grades") or []:
+            grade = str(g.get("grade") or "").strip()
+            if not grade:
+                continue
+            entry = {
+                "src": "fawaz",
+                "src_label": GRADE_LABELS["fawaz"],
+                "by": str(g.get("name") or "").strip() or "sunnah.com",
+                "grade": grade,
+            }
+            _add_grade(by_fawaz, num, entry)
+            lid = cw.get(num)
+            if lid:
+                _add_grade(by_lidwa, lid, entry)
+
+    # The lidwa source NDJSON itself has no grade column; the merged master in
+    # data/api/<book>.ndjson is where lidwa_master has always read it from.
+    lidwa_path = DATA / "api" / f"{book}.ndjson"
+    if lidwa_path.exists():
+        with open(lidwa_path, encoding="utf-8") as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                row = json.loads(line)
+                num = str(row.get("hadith_number") or "").strip()
+                grade = str(row.get("grade") or row.get("grade_id") or "").strip()
+                if not num or not grade:
+                    continue
+                entry = {
+                    "src": "lidwa",
+                    "src_label": GRADE_LABELS["lidwa"],
+                    "by": "Lidwa / Irsyad",
+                    "grade": grade,
+                }
+                _add_grade(by_lidwa, num, entry)
+                fnum = reverse.get(num)
+                if fnum:
+                    _add_grade(by_fawaz, fnum, entry)
+
+    # Atif and AhmedBaset use sunnah.com numbering, which diverges from Fawaz
+    # for many books (Muslim uses 8a/8b suffixes). Join on the Arabic text.
+    text_index = {}
+    for num, row in fawaz_by_num.items():
+        key = _ar_key(row.get("text_ara"))
+        if key:
+            text_index.setdefault(key, num)
+
+    atif_name = ATIF_FILES.get(book)
+    if atif_name:
+        p = DATA / "sources" / "atif_hf" / f"{atif_name}.json"
+        if p.exists():
+            for row in json.loads(p.read_text(encoding="utf-8")):
+                grade = str(row.get("Grade") or "").strip()
+                if not grade:
+                    continue
+                num = text_index.get(_ar_key(row.get("Arabic_Text")))
+                if not num:
+                    continue
+                entry = {
+                    "src": "atif_hf",
+                    "src_label": GRADE_LABELS["atif_hf"],
+                    "by": _grader(grade, "sunnah.com"),
+                    "grade": grade,
+                }
+                _add_grade(by_fawaz, num, entry)
+                lid = cw.get(num)
+                if lid:
+                    _add_grade(by_lidwa, lid, entry)
+
+    ab_path = DATA / "sources" / "ahmedbaset_graded" / "by_book" / "the_9_books" / f"{book}.json"
+    if ab_path.exists():
+        doc = json.loads(ab_path.read_text(encoding="utf-8"))
+        for row in doc.get("hadiths") or []:
+            grade = str(row.get("grade_en") or "").strip()
+            if not grade:
+                continue
+            num = text_index.get(_ar_key(row.get("arabic")))
+            if not num:
+                continue
+            entry = {
+                "src": "ahmedbaset",
+                "src_label": GRADE_LABELS["ahmedbaset"],
+                "by": _grader(grade, "Darussalam"),
+                "grade": grade,
+            }
+            _add_grade(by_fawaz, num, entry)
+            lid = cw.get(num)
+            if lid:
+                _add_grade(by_lidwa, lid, entry)
+
+    usm_name = USM_FILES.get(book)
+    if usm_name:
+        p = DATA / "sources" / "usm_parsed" / f"{usm_name}.json"
+        if p.exists():
+            for num, grade in json.loads(p.read_text(encoding="utf-8")).items():
+                num = str(num)
+                if num not in fawaz_by_num or not str(grade).strip():
+                    continue
+                entry = {
+                    "src": "usm",
+                    "src_label": GRADE_LABELS["usm"],
+                    "by": "USM",
+                    "grade": str(grade).strip(),
+                }
+                _add_grade(by_fawaz, num, entry)
+                lid = cw.get(num)
+                if lid:
+                    _add_grade(by_lidwa, lid, entry)
+
+    for store in (by_lidwa, by_fawaz):
+        for key, items in list(store.items()):
+            seen, out = set(), []
+            for entry in items:
+                sig = (entry.get("src"), entry.get("by", ""), entry.get("grade"))
+                if sig in seen:
+                    continue
+                seen.add(sig)
+                out.append(entry)
+            store[key] = out
+    return {"by_lidwa": by_lidwa, "by_fawaz": by_fawaz}
+
+
+def lidwa_master(book, old_path, num_map, dst, gradings_by_id=None):
     """Canonical default rows built from the lidwa source itself.
 
     Every field that defines numbering and chapter comes from this file or from
@@ -217,9 +421,13 @@ def lidwa_master(book, old_path, num_map, dst):
             }
             if text_en:
                 row["translations"]["en"] = [{"source": "fawaz", "text": text_en}]
-            for key in ("grade", "grade_id", "gradings", "status", "elevation", "source"):
+            for key in ("grade", "grade_id", "status", "elevation", "source"):
                 if key in prior:
                     row[key] = prior[key]
+            if gradings_by_id:
+                graded = gradings_by_id.get(str(num))
+                if graded:
+                    row["gradings"] = graded
             kitab = num_map.get(num)
             if kitab is not None:
                 row["chapter_id"] = str(kitab)
@@ -259,21 +467,95 @@ def edition_reference_map(book):
     return refs
 
 
-def international_master(book, src, dst):
-    """Second dataset: existing international rows, chapter from its own edition."""
+def international_master(book, lidwa_path, dst, crosswalk, gradings_by_id=None):
+    """Genuine international rows, built from the Fawaz source itself.
+
+    The previous version copied the Lidwa master and only swapped chapter_id,
+    which made ``api/fawaz`` a second copy of Lidwa under a false name. This
+    reads ``data/sources/fawaz_combined_v2/<book>.json``: Fawaz numbering,
+    Fawaz Arabic/translation text and Fawaz's own scholar grades. The mapped
+    Lidwa row contributes only the sanad fields (rawis/status/elevation) and a
+    cross-referenced fallback text; ``lidwa_id`` comes from link_graph.json.
+    """
+    src = DATA / "sources" / "fawaz_combined_v2" / f"{book}.json"
+    if not src.exists():
+        return None
+    fawaz_rows = json.loads(src.read_text(encoding="utf-8"))
+    if not fawaz_rows:
+        return None
     refs = edition_reference_map(book)
+    cw = crosswalk.get(book, {})
+    ab_map = {}
+    ab_path = DATA / "links" / f"{book}.json"
+    if ab_path.exists():
+        for fnum, meta in json.loads(ab_path.read_text(encoding="utf-8")).items():
+            if isinstance(meta, dict) and meta.get("ahmedbaset_id"):
+                ab_map[str(fnum)] = str(meta["ahmedbaset_id"])
+
+    lidwa = {}
+    if Path(lidwa_path).exists():
+        with open(lidwa_path, encoding="utf-8") as f:
+            for line in f:
+                if not line.strip():
+                    continue
+                row = json.loads(line)
+                lidwa[str(row.get("hadith_number"))] = row
+
     dst.parent.mkdir(parents=True, exist_ok=True)
     n = 0
-    with open(src, encoding="utf-8") as f, dst.open("w", encoding="utf-8", newline="\n") as out:
-        for line in f:
-            if not line.strip():
+    with dst.open("w", encoding="utf-8", newline="\n") as out:
+        for r in fawaz_rows:
+            num = str(r.get("hadithnumber") or "").strip()
+            if not num:
                 continue
-            r = json.loads(line)
-            r.pop("chapter_id", None)
-            num = str(r.get("hadith_number", "")).strip()
+            lid = cw.get(num)
+            lrow = lidwa.get(str(lid)) if lid else None
+            text_ar = str(r.get("text_ara") or "").strip()
+            text_en = str(r.get("text_eng") or "").strip()
+            text_id = str(r.get("text_ind") or "").strip()
+            ar_src = "fawazahmed" if text_ar else "lidwa"
+            en_src = "fawazahmed" if text_en else "lidwa"
+            id_src = "fawazahmed" if text_id else "lidwa"
+            if lrow:
+                text_ar = text_ar or str(lrow.get("text_ar") or "")
+                text_en = text_en or str(lrow.get("text_en") or "")
+                text_id = text_id or str(lrow.get("text_id") or "")
+            translations = {}
+            if text_ar:
+                translations["ar"] = [{"source": ar_src, "text": text_ar}]
+            if text_en:
+                translations["en"] = [{"source": en_src, "text": text_en}]
+            if text_id:
+                translations["id"] = [{"source": id_src, "text": text_id}]
+            for key, code in (("text_urd", "ur"), ("text_ben", "bn"), ("text_fra", "fr")):
+                value = str(r.get(key) or "").strip()
+                if value:
+                    translations[code] = [{"source": "fawazahmed", "text": value}]
+
+            row = {
+                "id": int(num) if num.isdigit() else num,
+                "book": book,
+                "hadith_number": num,
+                "lidwa_id": [str(lid)] if lid and lrow else [],
+                "text_ar": text_ar,
+                "text_id": text_id,
+                "text_en": text_en,
+                "rawis": (lrow or {}).get("rawis") or [],
+                "translations": translations,
+            }
+            if lrow:
+                for key in ("status", "elevation", "grade", "grade_id"):
+                    if lrow.get(key):
+                        row[key] = lrow[key]
+            if num in ab_map:
+                row["ab_id"] = ab_map[num]
+            if gradings_by_id:
+                graded = gradings_by_id.get(num)
+                if graded:
+                    row["gradings"] = graded
             if num in refs:
-                r["chapter_id"] = refs[num]
-            out.write(json.dumps(r, ensure_ascii=False, separators=(",", ":")) + "\n")
+                row["chapter_id"] = refs[num]
+            out.write(json.dumps(row, ensure_ascii=False, separators=(",", ":")) + "\n")
             n += 1
     return n, refs
 
@@ -460,6 +742,7 @@ def build():
     # 1. master hadith NDJSON. Books with a D1 chapter map get chapter_id
     #    injected (rewritten); the rest stay byte-identical.
     num_map, kitab_names = load_bab_maps()
+    crosswalk = load_crosswalk()
     counts = {}
     chap_stats = {}
     for p in sorted(glob.glob(str(DATA / "api" / "*.ndjson"))):
@@ -468,15 +751,20 @@ def build():
         if book == "tabarani" or book.startswith("topics") or book.endswith("_index"):
             continue
         if book in CORE9:
-            built = lidwa_master(book, p, num_map.get(book, {}), OUT / "api" / name)
+            grade_sets = load_grade_sources(book, crosswalk)
+            built = lidwa_master(book, p, num_map.get(book, {}), OUT / "api" / name,
+                                 grade_sets["by_lidwa"])
             if built:
                 counts[book], chap_stats[book] = built
                 add(OUT / "api" / name, f"api/{name}")
                 report.append((f"api/{name}", counts[book], f"lidwa, chapters {len(chap_stats[book])}"))
                 fz_dst = OUT / "api" / "fawaz" / name
-                fz_n, fz_refs = international_master(book, p, fz_dst)
-                add(fz_dst, f"api/fawaz/{name}")
-                report.append((f"api/fawaz/{name}", fz_n, f"international, refs {len(fz_refs)}"))
+                fz = international_master(book, OUT / "api" / name, fz_dst, crosswalk,
+                                          grade_sets["by_fawaz"])
+                if fz:
+                    fz_n, fz_refs = fz
+                    add(fz_dst, f"api/fawaz/{name}")
+                    report.append((f"api/fawaz/{name}", fz_n, f"fawaz, refs {len(fz_refs)}"))
                 continue
         if book in num_map and num_map[book]:
             dst = OUT / "api" / name
@@ -621,17 +909,9 @@ def build():
                 add(fz_dst, f"chapters/fawaz/{book}.ndjson")
                 report.append((f"chapters/fawaz/{book}.ndjson", n_fz, "-"))
 
-    # 5. lidwa chapters
-    for p in sorted(glob.glob(str(DATA / "lidwa-chapters" / "*.json"))):
-        book = Path(p).stem
-        doc = json.loads(Path(p).read_text(encoding="utf-8"))
-        inner = doc.get("chapters", doc) if isinstance(doc, dict) else doc
-        meta = {k: v for k, v in doc.items() if k != "chapters"} if isinstance(doc, dict) else {}
-        dst = OUT / "lidwa-chapters" / f"{book}.ndjson"
-        write_ndjson(dst, ({**meta, **r} if meta else r for r in rows(inner, "chapter_number")))
-        n = sum(1 for _ in dst.open("rb"))
-        add(dst, f"lidwa-chapters/{book}.ndjson")
-        report.append((f"lidwa-chapters/{book}.ndjson", n, "-"))
+    # 5. lidwa chapters — written once, below, as {_meta, ...chapter rows}; the
+    #    client reads rows[0]._meta and rows.slice(1) (js/api.js:getLidwaChapters).
+    #    Do not add a second writer here: it produces duplicate manifest keys.
 
     # 6. narrators — the outer key of the source dict IS the narrator id; the
     #    inner "id" field is usually an empty string, so carry the key explicitly
@@ -708,6 +988,9 @@ def build():
     links_dir = DATA / "links"
     if links_dir.is_dir():
         for path in sorted(links_dir.glob("*.json")):
+            # fawaz_*.json are identity maps; the real edge lists are added below.
+            if path.stem.startswith("fawaz_"):
+                continue
             doc = json.loads(path.read_text(encoding="utf-8"))
             if isinstance(doc, dict):
                 out = [{"k": k, "v": v} for k, v in doc.items()]
@@ -720,6 +1003,13 @@ def build():
             write_ndjson(dst, out)
             add(dst, f"links/{path.stem}.ndjson")
             report.append((f"links/{path.stem}.ndjson", len(out), "-"))
+
+        # 12b. Per-book Fawaz->Lidwa edge lists, built from the real mapping.
+        for book, edges in sorted(load_crosswalk().items()):
+            dst = OUT / "links" / f"fawaz_{book}.ndjson"
+            write_ndjson(dst, ({"k": k, "v": v} for k, v in edges.items()))
+            add(dst, f"links/fawaz_{book}.ndjson")
+            report.append((f"links/fawaz_{book}.ndjson", len(edges), "-"))
 
     meta_src = DATA / "meta" / "fawaz_editions.json"
     if meta_src.exists():
@@ -858,13 +1148,13 @@ def build():
         for src in sorted(lc_dir.glob("*.json")):
             doc = json.loads(src.read_text(encoding="utf-8"))
             if isinstance(doc, dict) and isinstance(doc.get("chapters"), list):
-                rows = [{"_meta": {k: v for k, v in doc.items() if k != "chapters"}}] + doc["chapters"]
+                chapter_rows = [{"_meta": {k: v for k, v in doc.items() if k != "chapters"}}] + doc["chapters"]
             elif isinstance(doc, list):
-                rows = doc
+                chapter_rows = doc
             else:
-                rows = [{"_meta": doc}]
+                chapter_rows = [{"_meta": doc}]
             dst = OUT / "lidwa-chapters" / f"{src.stem}.ndjson"
-            write_ndjson(dst, rows)
+            write_ndjson(dst, chapter_rows)
             add(dst, f"lidwa-chapters/{src.stem}.ndjson")
             n_lc += 1
         report.append(("lidwa-chapters/", n_lc, "ndjson"))
