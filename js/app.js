@@ -1097,8 +1097,10 @@ async function loadHadithDetail() {
     });
   }
 
-  // Active dataset mapping
-  let activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
+  // Active dataset mapping — the URL wins so Lidwa-numbered cards keep their numbering.
+  const detailDatasetParam = new URLSearchParams(location.search).get('dataset');
+  if (detailDatasetParam) localStorage.setItem('dataset_version', detailDatasetParam);
+  let activeDataset = detailDatasetParam || localStorage.getItem('dataset_version') || 'fawazahmed';
   if (typeof BOOK_DATASETS !== 'undefined') {
     const dsConfig = BOOK_DATASETS[bookId] || [];
     const validDs = dsConfig.find(d => d.id === activeDataset);
@@ -1234,7 +1236,7 @@ async function loadHadithDetail() {
   const nav = await window.HadeethAPI.getHadithNeighbours(bookId, hadithId, dsPrefix);
   if (prevBtn) {
     if (nav && nav.prev !== null && nav.prev !== undefined) {
-      prevBtn.href = `hadith.html?book=${bookId}&id=${nav.prev}`;
+      prevBtn.href = `hadith.html?book=${bookId}&id=${nav.prev}&dataset=${activeDataset}`;
       prevBtn.classList.remove('opacity-50', 'pointer-events-none');
     } else {
       prevBtn.href = '#';
@@ -1243,7 +1245,7 @@ async function loadHadithDetail() {
   }
   if (nextBtn) {
     if (nav && nav.next !== null && nav.next !== undefined) {
-      nextBtn.href = `hadith.html?book=${bookId}&id=${nav.next}`;
+      nextBtn.href = `hadith.html?book=${bookId}&id=${nav.next}&dataset=${activeDataset}`;
       nextBtn.classList.remove('opacity-50', 'pointer-events-none');
     } else {
       nextBtn.href = '#';
@@ -2329,8 +2331,8 @@ async function loadHadithList() {
       const gradeEn = item.grade_en || item.grade || 'Not recorded';
       const gradeId = item.grade_id || 'Tidak tercatat';
 
-      const isnadLink = `sanad.html?book=${bookId}&id=${num}`;
-      const detailLink = `hadith.html?book=${bookId}&id=${num}`;
+      const isnadLink = `sanad.html?book=${bookId}&id=${num}&dataset=${activeDataset}`;
+      const detailLink = `hadith.html?book=${bookId}&id=${num}&dataset=${activeDataset}`;
 
       let displayText = '';
       const isAhmedBaset = item._source === 'ahmedbaset';
