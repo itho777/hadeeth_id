@@ -40,4 +40,6 @@
 - Live R2 `links/fawaz_abudawud.ndjson` contains `{"k":"1183","v":"999"}`.
 - Live `https://hadeeth.id/hadith.html?book=abudawud&id=1183&dataset=fawazahmed`: 5 sources, 441 chars, 0 page errors, 0 bad responses.
 - Live `https://hadeeth.id/sanad.html?book=abudawud&id=1183&dataset=fawazahmed`: same 5 sources, 0 errors.
-- Live `js/app.js?v=20261121_grades` 200, 246,703 B. Commit `0a32197d53`; Pages run `44863238589` green.
+- Live `js/app.js?v=20261121_grades2` 200. Final commit `0d116d4e9d`; Pages run `44863962153` green.
+- Hadith-list → detail and detail → prev/next/inspect-sanad links now carry `dataset`, so genuine Fawaz and Lidwa numbers stay in their own numbering. Live: first Abu Dawud card links to `id=1&dataset=fawazahmed`; detail opens the matching hadith with 4 grading sources.
+- Pre-existing, non-blocking: `hadith-list.html` requests `/sources/lidwa/<book>.ndjson` (404) as an optional Indonesian-text enrichment. The list renders from `api/` regardless.
