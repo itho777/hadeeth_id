@@ -38,3 +38,6 @@
 - `site_r2.py verify`: 944/944 present, 0 missing, 0 size mismatch, content SHA-256 match, Range + index PASS.
 - Live R2 `api/fawaz/abudawud_index.ndjson` entry 1183 → `l` = `["999"]`; Range read returns 8 grade entries including `usm`.
 - Live R2 `links/fawaz_abudawud.ndjson` contains `{"k":"1183","v":"999"}`.
+- Live `https://hadeeth.id/hadith.html?book=abudawud&id=1183&dataset=fawazahmed`: 5 sources, 441 chars, 0 page errors, 0 bad responses.
+- Live `https://hadeeth.id/sanad.html?book=abudawud&id=1183&dataset=fawazahmed`: same 5 sources, 0 errors.
+- Live `js/app.js?v=20261121_grades` 200, 246,703 B. Commit `0a32197d53`; Pages run `44863238589` green.
