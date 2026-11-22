@@ -81,6 +81,10 @@ def sql_quote(value):
     return "'" + str(value).replace("'", "''") + "'"
 
 
+class QuotaExceeded(Exception):
+    """D1's free daily row-write limit (code 7500) is spent for today."""
+
+
 class D1:
     def __init__(self):
         self.auth = {"Authorization": f"Bearer {cf_env.token()}"}
@@ -109,7 +113,11 @@ class D1:
             out = r.json()
             if out.get("success"):
                 return out.get("result")
-            print(f"  ! d1 retry {attempt}: {str(out.get('errors'))[:200]}")
+            errors = out.get("errors") or []
+            if any(e.get("code") == 7500 for e in errors):
+                # Retrying cannot help: the cap resets at 00:00 UTC.
+                raise QuotaExceeded(str(errors[0].get("message"))[:200])
+            print(f"  ! d1 retry {attempt}: {str(errors)[:200]}")
             time.sleep(2 * attempt)
         raise SystemExit(f"d1 query failed: {sql[:80]}")
 
@@ -127,15 +135,35 @@ def load_registry(db, rows):
     print(f"d1 registry: {len(rows)} shard rows")
 
 
-def load_docs(db, rows, chunk=40):
-    """Insert documents in multi-row chunks; returns (docs, statements)."""
+def loaded_counts(db):
+    """(dataset, book) -> rows already in D1. One query for the whole table."""
+    res = db.query("SELECT dataset, book, count(*) AS n FROM preindex_docs "
+                   "GROUP BY dataset, book")[0]["results"]
+    return {(r["dataset"], r["book"]): r["n"] for r in res}
+
+
+def load_docs(db, rows, chunk=40, resume=False):
+    """Insert documents in multi-row chunks; returns (docs, statements).
+
+    With `resume`, shards already complete in D1 are skipped and a partially
+    loaded shard restarts after the rows it already holds — the shards are
+    written in file order, so the first N rows of a file are the N rows D1 has.
+    Raises QuotaExceeded when the daily write cap is reached; every completed
+    chunk is already committed, so the next run continues from there.
+    """
+    have = loaded_counts(db) if resume else {}
     docs = statements = 0
     for shard in rows:
+        done = have.get((shard["dataset"], shard["book"]), 0)
+        if resume and done >= shard["docs"]:
+            print(f"  {shard['key']:34} {shard['docs']:>7,} docs  already loaded")
+            continue
         path = ROOT / "export_site" / shard["key"]
         buf = []
+        skip = done if resume else 0
         with path.open(encoding="utf-8") as f:
-            for line in f:
-                if not line.strip():
+            for i, line in enumerate(f):
+                if i < skip or not line.strip():
                     continue
                 d = json.loads(line)
                 d["text_norm"] = d.pop("text_ar_norm", "")
@@ -147,7 +175,8 @@ def load_docs(db, rows, chunk=40):
         if buf:
             docs += push(db, buf)
             statements += 1
-        print(f"  {shard['key']:34} {shard['docs']:>7,} docs", flush=True)
+        print(f"  {shard['key']:34} {shard['docs']:>7,} docs"
+              f"{f'  (+{skip:,} already)' if skip else ''}", flush=True)
     print(f"d1 docs: {docs:,} rows in {statements:,} statements "
           f"(~{docs * 2:,} billed writes)")
     return docs
@@ -238,16 +267,21 @@ def main():
 
     if args.d1 or args.d1_all:
         db = D1()
-        for stmt in SCHEMA:
-            db.query(stmt)
-        load_registry(db, rows)
-        small = [r for r in rows if r["docs"] <= 1000]
-        target = rows if args.d1_all else small
-        print(f"d1 docs: loading {len(target)} shard(s) "
-              f"({sum(r['docs'] for r in target):,} docs)")
-        load_docs(db, target)
-        got = db.query("SELECT count(*) AS n FROM preindex_docs")[0]["results"]
-        print("d1 verify:", got)
+        try:
+            for stmt in SCHEMA:
+                db.query(stmt)
+            load_registry(db, rows)
+            small = [r for r in rows if r["docs"] <= 1000]
+            target = rows if args.d1_all else small
+            print(f"d1 docs: loading {len(target)} shard(s) "
+                  f"({sum(r['docs'] for r in target):,} docs)", flush=True)
+            load_docs(db, target, resume=args.d1_all)
+        except QuotaExceeded as exc:
+            print(f"d1 STOP: daily row-write limit reached ({exc})")
+            print("d1 STOP: nothing lost — re-run after 00:00 UTC to continue.")
+        else:
+            got = db.query("SELECT count(*) AS n FROM preindex_docs")[0]["results"]
+            print("d1 verify:", got)
 
     if args.meili:
         base = os.environ.get("MEILI_URL", "http://127.0.0.1:7700").rstrip("/")

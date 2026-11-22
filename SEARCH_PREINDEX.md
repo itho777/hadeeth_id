@@ -66,11 +66,14 @@ collection is silently skipped.
   (`197cb8fb-dd1b-4e58-904a-985d56285d4e`) created. `preindex_shards` exists;
   `preindex_docs` and its indexes are still pending. The account hit D1's free
   daily row-write limit mid-schema (`code 7500`, resets 00:00 UTC). No document
-  writes were attempted. Resume after reset:
-  `python scripts/preindex_mirror.py --d1`
-  Full corpus adds ~307,840 billed writes — 3+ days at 100k/day. The default
-  `--d1` loads the 37-row registry plus the eight shards under 1,000 docs;
-  `--d1-all` opts into everything.
+  writes were attempted.
+  Cron job `888a636ea082` ("D1 pre-index load") runs daily at 08:00 WIB from
+  2026-11-23, six times, via
+  `~/AppData/Local/hermes/scripts/d1_preindex_load.py`. It resumes: a shard
+  already complete in D1 is skipped, a half-loaded shard restarts after the rows
+  it already holds, and `QuotaExceeded` (code 7500) stops the run cleanly with
+  every finished chunk committed. Full corpus is ~307,840 billed writes, 3.1
+  runs. Manual equivalent: `python scripts/preindex_mirror.py --d1-all`.
 - **Meilisearch**: no instance, binary, container, URL or key for Meilisearch
   existed anywhere in the repo, `.env`, or locally. To prove the feed, v1.57.0
   was run locally against `127.0.0.1:7700`; all 153,920 documents indexed,
