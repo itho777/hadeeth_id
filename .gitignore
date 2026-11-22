@@ -90,3 +90,7 @@ export/
 # Cloudflare token dropped by wrangler / manual login
 .cf_token
 .wrangler/
+
+# Search pre-index shards (391 MB of regenerable NDJSON; source of truth is R2)
+# scripts/build_preindex.py rebuilds them from export_site/api and the bucket.
+export_site/search/
