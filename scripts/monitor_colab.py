@@ -61,6 +61,7 @@ def unzip_and_verify(zpath):
 
 last_state = None
 last_size = 0
+terminal_notified = False
 while time.time() < DEADLINE:
     kst = kaggle_status()
     zpath, zsize = find_zip()
@@ -87,8 +88,9 @@ while time.time() < DEADLINE:
         print("Kaggle kernel COMPLETE - pulling via pull_vectors_if_ready.py", flush=True)
         sys.exit(subprocess.run([sys.executable, r"G:\hadeeth_id\scripts\pull_vectors_if_ready.py"]).returncode)
 
-    if kst in ("ERROR", "CANCELED") and not zpath:
+    if kst in ("ERROR", "CANCELED") and not zpath and not terminal_notified:
         print(f"Kaggle kernel ended {kst}; waiting on Colab only", flush=True)
+        terminal_notified = True
 
     time.sleep(45)
 

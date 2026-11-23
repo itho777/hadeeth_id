@@ -22,6 +22,7 @@ import json
 import os
 import re
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.request
@@ -40,6 +41,12 @@ LOCAL_ROOT = os.environ.get("HADEETH_LOCAL_ROOT") or (
     "/kaggle/input/hadeeth-corpus" if os.path.isdir("/kaggle/input/hadeeth-corpus") else ""
 )
 UA = "hadeeth-indexer/1.0 (+https://hadeeth.id)"
+# Every corpus file is fetched to disk once, atomically, with retries; the two
+# passes (count, then embed) then read local files. A dropped connection
+# mid-download retries the file instead of killing a 50-minute GPU run.
+CACHE_DIR = os.environ.get("HADEETH_CACHE_DIR") or os.path.join(
+    tempfile.gettempdir(), "hadeeth_corpus_cache"
+)
 HEADERS = {"User-Agent": UA, "Accept": "application/json, application/x-ndjson, */*"}
 NOT_HADITH = {"glossary", "topics_counts"}
 SAFE_RE = re.compile(r"[^A-Za-z0-9_-]")
@@ -65,29 +72,65 @@ OUT_META = "meta.json"
 
 # ---------------------------------------------------------------- corpus walk
 
-def open_remote(path, attempts=4, timeout=120):
-    """urlopen with the indexer UA and a short backoff on transient edge failures.
+def _cache_path(path):
+    return os.path.join(CACHE_DIR, path.lstrip("/").replace("/", "__"))
 
-    With LOCAL_ROOT set, reads the mirrored file straight off disk instead.
+
+def fetch_to_cache(path, attempts=6, timeout=180):
+    """Download one corpus file to CACHE_DIR, atomically, with backoff.
+
+    Writes ``.part`` and renames on success, so a truncated transfer can never
+    be mistaken for a complete file on the next pass.
     """
-    if LOCAL_ROOT:
-        return open(os.path.join(LOCAL_ROOT, "corpus", path.lstrip("/")), "rb")
+    dst = _cache_path(path)
+    if os.path.isfile(dst) and os.path.getsize(dst) > 0:
+        return dst
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    part = dst + ".part"
     last = None
     for i in range(attempts):
         try:
-            return urllib.request.urlopen(
-                urllib.request.Request(BASE + path, headers=HEADERS), timeout=timeout
-            )
+            req = urllib.request.Request(BASE + path, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=timeout) as r, open(part, "wb") as fh:
+                expected = r.headers.get("Content-Length")
+                got = 0
+                while True:
+                    chunk = r.read(1 << 20)
+                    if not chunk:
+                        break
+                    fh.write(chunk)
+                    got += len(chunk)
+            if expected and got != int(expected):
+                raise IOError(f"short read {got}/{expected} bytes")
+            if got == 0:
+                raise IOError("empty body")
+            os.replace(part, dst)
+            return dst
         except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 502, 503, 504):
-                last = e
-                time.sleep(3 * (i + 1))
-                continue
-            raise
-        except (urllib.error.URLError, TimeoutError) as e:
             last = e
-            time.sleep(3 * (i + 1))
-    raise last
+            if e.code not in (429, 500, 502, 503, 504):
+                raise
+        except Exception as e:
+            last = e
+        try:
+            if os.path.exists(part):
+                os.remove(part)
+        except OSError:
+            pass
+        time.sleep(min(2 ** i, 20))
+    raise RuntimeError(f"failed to fetch {path} after {attempts} attempts: {last}")
+
+
+def open_remote(path, attempts=4, timeout=120):
+    """A binary handle on one corpus file, from the local mirror or the cache.
+
+    With LOCAL_ROOT set (Kaggle dataset) it reads straight off disk. Otherwise it
+    downloads once into CACHE_DIR and reads that, so neither pass touches the
+    network more than once per file.
+    """
+    if LOCAL_ROOT:
+        return open(os.path.join(LOCAL_ROOT, "corpus", path.lstrip("/")), "rb")
+    return open(fetch_to_cache(path, attempts=attempts, timeout=timeout), "rb")
 
 
 def stream(path):
@@ -208,55 +251,75 @@ def main():
     started = time.time()
     per_shard = {}
     done = False
+    buf_text, buf_id = [], []
+
+    def flush():
+        nonlocal row
+        if not buf_text:
+            return
+        with torch.inference_mode():
+            emb = model.encode(
+                buf_text,
+                batch_size=GPU_BATCH,
+                normalize_embeddings=True,
+                show_progress_bar=False,
+                convert_to_numpy=True,
+            )
+        emb = np.asarray(emb, dtype=np.float32)
+        if not np.isfinite(emb).all():
+            sys.exit(f"non-finite embedding at row {row} (fp16 overflow) — rerun with --fp32")
+        n = emb.shape[0]
+        mm[row:row + n] = emb.astype(np.float16)
+        for i in buf_id:
+            ids_fh.write(json.dumps(i, ensure_ascii=False) + "\n")
+        row += n
+        buf_text.clear()
+        buf_id.clear()
 
     for name, source, path in objs:
         if done:
             break
         shard_start = row
-        buf_text, buf_id = [], []
-
-        def flush():
-            nonlocal row
-            if not buf_text:
-                return
-            with torch.inference_mode():
-                emb = model.encode(
-                    buf_text,
-                    batch_size=GPU_BATCH,
-                    normalize_embeddings=True,
-                    show_progress_bar=False,
-                    convert_to_numpy=True,
-                )
-            emb = np.asarray(emb, dtype=np.float32)
-            if not np.isfinite(emb).all():
-                sys.exit(f"non-finite embedding at row {row} (fp16 overflow) — rerun with --fp32")
-            n = emb.shape[0]
-            mm[row:row + n] = emb.astype(np.float16)
-            for i in buf_id:
-                ids_fh.write(json.dumps(i, ensure_ascii=False) + "\n")
-            row += n
-            buf_text.clear()
-            buf_id.clear()
-
-        for rec in stream(path):
-            rid = rec.get("id")
-            if rid is None:
-                continue
-            text = embed_text(rec)
-            if not text:
-                continue
-            buf_text.append(text)
-            buf_id.append(safe_id(source, name, rid))
-            if len(buf_text) >= GPU_BATCH * 4:
+        ids_offset = ids_fh.tell()
+        # Retry the shard itself rather than aborting the run: rewind the memmap
+        # cursor and cut the ids file back to its byte offset before trying again.
+        for attempt in range(1, 4):
+            try:
+                for rec in stream(path):
+                    rid = rec.get("id")
+                    if rid is None:
+                        continue
+                    text = embed_text(rec)
+                    if not text:
+                        continue
+                    buf_text.append(text)
+                    buf_id.append(safe_id(source, name, rid))
+                    if len(buf_text) >= GPU_BATCH * 4:
+                        flush()
+                        if row and row % 5000 < GPU_BATCH * 4:
+                            el = time.time() - started
+                            rate = row / max(el, 1)
+                            eta = (total_docs - row) / max(rate, 1e-9)
+                            print(f"  {row:>7,}/{total_docs:,}  {rate:5.1f} docs/s  ETA {eta/60:5.1f} min", flush=True)
+                    if args.limit and row + len(buf_text) >= args.limit:
+                        break
                 flush()
-                if row and row % 5000 < GPU_BATCH * 4:
-                    el = time.time() - started
-                    rate = row / max(el, 1)
-                    eta = (total_docs - row) / max(rate, 1e-9)
-                    print(f"  {row:>7,}/{total_docs:,}  {rate:5.1f} docs/s  ETA {eta/60:5.1f} min", flush=True)
-            if args.limit and row + len(buf_text) >= args.limit:
                 break
-        flush()
+            except Exception as e:
+                buf_text.clear()
+                buf_id.clear()
+                row = shard_start
+                ids_fh.flush()
+                ids_fh.seek(ids_offset)
+                ids_fh.truncate()
+                if attempt == 3:
+                    raise
+                print(
+                    f"  shard {source}/{name} failed (attempt {attempt}/3): "
+                    f"{type(e).__name__}: {e} — retrying",
+                    flush=True,
+                )
+                time.sleep(5 * attempt)
         per_shard[f"{source}/{name}"] = row - shard_start
         print(f"  shard {source}/{name}: {row - shard_start} rows (total {row:,})", flush=True)
         if args.limit and row >= args.limit:

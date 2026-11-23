@@ -1,0 +1,15 @@
+{
+  "id": "ithosuryoputro/hadeeth-vectorize",
+  "title": "hadeeth-vectorize",
+  "code_file": "vectorize_hadeeth.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": true,
+  "machine_shape": "",
+  "dataset_sources": ["ithosuryoputro/hadeeth-corpus"],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}
