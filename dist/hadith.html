@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="HADEETH.ID - View detailed Hadith with Arabic text, translations and narration chain."/>
+  <title>Hadith - HADEETH.ID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/app.css?v=1786671525"/>
+  <script src="js/theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "sunan-emerald":"#1B5E20","ink-black":"#0D0D10","secondary":"#7b5810",
+            "surface":"#fcf9f5","outline-variant":"#c3c6cf","primary":"#001932",
+            "manuscript-paper":"#FDFBF7","on-primary":"#ffffff","surface-container-low":"#f6f3ef",
+            "on-surface":"#1c1c1a"
+          },
+          fontFamily: { "body-md":["Plus Jakarta Sans"],"arabic-display":["Amiri"] },
+          spacing: { "stack-sm":"0.5rem","content-width-max":"1200px","margin-main":"2rem","stack-lg":"2rem" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-family:'Material Symbols Outlined'; font-weight:normal; font-style:normal; font-size:24px; line-height:1; display:inline-block; }
+  </style>
+</head>
+<body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
+
+<!-- TOP APP BAR -->
+<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
+  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-[#0a1120] border border-outline-variant/30"><img src="assets/logo_light.jpg" alt="hadeeth.id logo" class="logo-light w-full h-full object-cover rounded-lg scale-125"/><img src="assets/logo_dark.jpg" alt="hadeeth.id logo" class="logo-dark w-full h-full object-cover rounded-lg scale-125"/></div>
+      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+        <a href="books.html"   data-nav-page="books.html" data-i18n="nav_books" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Books</a>
+        <a href="topics.html"   data-nav-page="topics.html" data-i18n="nav_topics" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Topics</a>
+        <a href="scholars.html" data-nav-page="scholars.html" data-i18n="nav_scholars" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Scholars</a>
+      </nav>
+    <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
+      <!-- Auth Container -->
+        <div id="auth-container" class="hidden md:flex items-center mr-1">
+            <a href="login.html" id="auth-login-btn" class="text-xs font-bold bg-primary text-on-primary px-4 py-1.5 rounded-full transition-all hover:opacity-90 shadow-sm flex items-center gap-1">Login</a>
+            <a href="profile.html" id="auth-profile-btn" class="hidden text-xs font-bold border border-outline-variant dark:border-gray-600 px-3 py-1 rounded-full transition-all hover:bg-surface-container flex items-center gap-1">
+                <span class="material-symbols-outlined text-[18px]">account_circle</span>
+                <span id="auth-username" class="max-w-[70px] truncate">...</span>
+            </a>
+        </div>
+        <!-- Language Switcher -->
+      <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
+        <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
+        <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
+      </div>
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Toggle theme">
+        <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
+      </button>
+      <button id="mobile-menu-btn" class="p-2 md:hidden hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors">
+        <span class="material-symbols-outlined" data-menu-icon>menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-manuscript-paper dark:bg-[#10141a] border-t border-outline-variant dark:border-[#1e293b]">
+      <div class="flex flex-col px-margin-main py-2 gap-1">
+        <a href="books.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_books">Books</a>
+        <a href="topics.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_topics">Topics</a>
+        <a href="scholars.html" class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_scholars">Scholars</a>
+        <a href="login.html" id="mobile-auth-login-btn" class="py-2 text-primary font-bold hover:text-primary/80">Login</a>
+        <a href="profile.html" id="mobile-auth-profile-btn" class="hidden py-2 text-secondary font-bold hover:text-secondary/80 flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">account_circle</span> <span id="mobile-auth-username">Profile</span></a>
+      </div>
+    </div>
+</header>
+
+<main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8">
+
+  <!-- Breadcrumbs & Navigation Bar -->
+  <div class="flex items-center justify-between text-xs text-outline dark:text-gray-400">
+    <div class="flex items-center gap-2" id="hadith-breadcrumb">
+      <a href="index.html" class="hover:underline">Home</a>
+      <span>/</span>
+      <a href="kitab.html" class="hover:underline" data-breadcrumb-book></a>
+      <span>/</span>
+      <span class="text-primary dark:text-white font-semibold" data-breadcrumb-current>
+        <span data-breadcrumb-current-en data-lang-en></span>
+        <span data-breadcrumb-current-id data-lang-id style="display:none"></span>
+      </span>
+    </div>
+    <div class="flex gap-2">
+      <a id="prev-hadith-btn" href="#" class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80 flex items-center">&larr; Prev</a>
+      <a id="next-hadith-btn" href="#" class="px-3 py-1 bg-surface-container-high dark:bg-[#1e293b] rounded text-primary dark:text-white hover:opacity-80 flex items-center">Next &rarr;</a>
+    </div>
+  </div>
+
+
+
+
+  <!-- Hadith Core Card -->
+  <div id="hadith-detail-container" class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 md:p-8 flex flex-col gap-8 shadow-sm">
+    
+    <!-- Meta Bar -->
+    <div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-4">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="text-xs font-semibold text-secondary dark:text-[#10b981]" data-hadith-chapter>
+            <span data-hadith-chapter-en data-lang-en>&nbsp;</span>
+            <span data-hadith-chapter-id data-lang-id style="display:none">&nbsp;</span>
+          </span>
+          <span>&bull;</span>
+          <span class="text-xs font-semibold text-primary dark:text-white" data-hadith-rawi>
+            <span data-hadith-rawi-en data-lang-en>&nbsp;</span>
+            <span data-hadith-rawi-id data-lang-id style="display:none">&nbsp;</span>
+          </span>
+        </div>
+        <h1 class="text-xl font-bold text-primary dark:text-white mt-1" data-hadith-title>
+          <span data-hadith-title-en data-lang-en>&nbsp;</span>
+          <span data-hadith-title-id data-lang-id style="display:none">&nbsp;</span>
+        </h1>
+      </div>
+      <div class="flex items-center gap-2">
+        <span data-hadith-grade class="bg-sunan-emerald text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider" style="display: none;"></span>
+        <button data-copy-hadith class="px-3 py-1.5 border border-outline-variant dark:border-[#334155] rounded-lg text-xs font-semibold flex items-center gap-1.5 hover:bg-surface-container-low dark:hover:bg-[#334155] transition-all">
+          <span class="material-symbols-outlined text-[16px]">share</span>
+          <span data-lang-en>Copy / Share</span><span data-lang-id style="display:none">Salin / Bagikan</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Full Arabic Text -->
+    <div class="w-full bg-surface-container-low/60 dark:bg-[#0f172a] p-6 md:p-8 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
+      <p class="font-arabic-display text-2xl md:text-3xl text-primary dark:text-white text-right leading-loose" dir="rtl" data-arabic-text>
+        <span class="animate-pulse bg-surface-container-high dark:bg-[#1e293b] text-transparent rounded inline-block w-full h-8 mb-2"></span>
+        <span class="animate-pulse bg-surface-container-high dark:bg-[#1e293b] text-transparent rounded inline-block w-3/4 h-8"></span>
+      </p>
+    </div>
+
+    <!-- Narration Chain Button -->
+    <a data-sanad-link href="#" class="flex items-center justify-between p-4 bg-secondary/5 dark:bg-[#10b981]/10 border border-secondary/20 dark:border-[#10b981]/20 rounded-lg hover:bg-secondary/10 transition-colors">
+      <div class="flex items-center gap-3">
+        <span class="material-symbols-outlined text-secondary dark:text-[#10b981]">account_tree</span>
+        <div>
+          <span class="font-semibold text-sm text-primary dark:text-white block" data-i18n="chain_of_narrators">Chain of Narration (Sanad)</span>
+          <span data-sanad-preview>
+            <span data-sanad-preview-en data-lang-en></span>
+            <span data-sanad-preview-id data-lang-id style="display:none"></span>
+          </span>
+        </div>
+      </div>
+      <span class="text-xs font-bold text-secondary dark:text-[#10b981]">
+        <span data-lang-en>Inspect Sanad &rarr;</span>
+        <span data-lang-id style="display:none">Periksa Sanad &rarr;</span>
+      </span>
+    </a>
+
+    <!-- Translation Panels (Bilingual / CDN Fetcher ready) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- English Translation -->
+      <div class="flex flex-col gap-3 p-5 bg-surface-container-low/40 dark:bg-[#0a0e14] rounded-lg border border-outline-variant/10 dark:border-[#334155]">
+        <div class="flex justify-between items-center border-b border-outline-variant/10 dark:border-[#334155] pb-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">English Translation</span>
+          <select id="lang-select-1" data-lang-select class="text-xs bg-surface dark:bg-[#1e293b] border border-outline-variant dark:border-[#334155] rounded px-2 py-1 text-primary dark:text-white cursor-pointer font-medium focus:ring-1 focus:ring-sunan-emerald w-48 max-w-full">
+            <option value="">Loading...</option>
+          </select>
+        </div>
+        <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed" data-english-text>
+        </p>
+      </div>
+
+      <!-- Indonesian Translation -->
+      <div class="flex flex-col gap-3 p-5 bg-surface-container-low/40 dark:bg-[#0a0e14] rounded-lg border border-outline-variant/10 dark:border-[#334155]">
+        <div class="flex justify-between items-center border-b border-outline-variant/10 dark:border-[#334155] pb-2">
+          <span class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">Bahasa Indonesia</span>
+          <select id="lang-select-2" data-lang-select class="text-xs bg-surface dark:bg-[#1e293b] border border-outline-variant dark:border-[#334155] rounded px-2 py-1 text-primary dark:text-white cursor-pointer font-medium focus:ring-1 focus:ring-sunan-emerald w-48 max-w-full">
+            <option value="">Loading...</option>
+          </select>
+        </div>
+        <p class="text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed" data-indonesian-text>
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Sharh / Multi-Source Commentary Section -->
+    <div class="bg-surface-container-low dark:bg-[#0f172a] p-6 rounded-xl border border-outline-variant/20 dark:border-[#334155] flex flex-col gap-5" id="syarah-main-card">
+      <div class="flex justify-between items-center flex-wrap gap-4 border-b border-outline-variant/20 dark:border-[#334155] pb-4">
+        <div>
+          <div class="flex items-center gap-2 text-secondary dark:text-[#10b981] font-semibold text-xs uppercase tracking-wider mb-1">
+            <span class="material-symbols-outlined text-[18px]">auto_stories</span>
+            <span data-lang-en>Verified Scholarly Commentary</span>
+            <span data-lang-id style="display:none">Syarah & Penjelasan Hadits</span>
+          </div>
+          <h3 class="font-bold text-base md:text-lg text-primary dark:text-white" id="syarah-title-text">
+            <span data-lang-en>Scholarly Commentary (Sharh)</span>
+            <span data-lang-id style="display:none">Syarah & Penjelasan Hadits</span>
+          </h3>
+        </div>
+
+        <!-- Interchangeable Multi-Language Selector for Syarah -->
+        <div class="flex items-center gap-2">
+          <span class="text-xs text-outline dark:text-gray-400 font-bold hidden sm:inline">
+            <span data-lang-en>Language:</span>
+            <span data-lang-id style="display:none">Bahasa:</span>
+          </span>
+          <select id="syarah-lang-select" onchange="window.switchSyarahLang(this.value)" class="text-xs bg-surface dark:bg-[#1e293b] border border-outline-variant dark:border-[#334155] rounded-lg px-3 py-1.5 text-primary dark:text-white font-bold cursor-pointer focus:ring-2 focus:ring-sunan-emerald shadow-sm">
+            <option value="id">🇮🇩 Bahasa Indonesia</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="ar">🇸🇦 العربية</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Multi-Source Reference Tabs -->
+      <div class="flex gap-2 border-b border-outline-variant/10 dark:border-[#334155]/60 pb-3 overflow-x-auto" id="syarah-source-tabs">
+        <!-- Tabs will be dynamically generated here -->
+      </div>
+
+      <!-- Syarah Content Container -->
+      <div id="syarah-content-container" class="flex flex-col gap-4">
+        <!-- Explanation Paragraphs -->
+        <div id="syarah-explanation-box" class="text-xs md:text-sm text-on-surface-variant dark:text-gray-300 leading-relaxed">
+          <p id="syarah-explanation-text">Loading verified commentary...</p>
+        </div>
+
+        <!-- Fawaid / Lessons & Benefits Box -->
+        <div id="syarah-benefits-box" class="bg-surface-container-high/40 dark:bg-[#1e293b]/60 p-4 rounded-lg border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-2">
+          <h4 class="font-bold text-xs text-sunan-emerald dark:text-[#10b981] uppercase tracking-wider flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-base">verified</span>
+            <span data-lang-en>Key Lessons & Benefits (Fawaid)</span>
+            <span data-lang-id style="display:none">Faedah & Pelajaran Hadits</span>
+          </h4>
+          <ul id="syarah-benefits-list" class="list-disc list-inside text-xs text-on-surface-variant dark:text-gray-300 flex flex-col gap-1.5">
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
+    <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2026 hadeeth.id - Digital Hadith Manuscript Preservation</span></div>
+    <div class="flex flex-wrap gap-4 items-center justify-center">
+      <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
+      <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
+      <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
+      <a href="glossary.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Glossary</a>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/api.js?v=20260827_v2"></script>
+<script src="js/app.js?v=20260827_v2"></script>
+
+<!-- Toast notification for Copy/Share -->
+<div id="share-toast" style="display:none;position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#1B5E20;color:#fff;font-size:12px;font-weight:700;padding:10px 22px;border-radius:999px;z-index:9999;box-shadow:0 4px 24px rgba(0,0,0,.25);transition:opacity .3s"></div>
+
+<script>
+(function() {
+  // Ã¢â€ â‚¬Ã¢â€ â‚¬ Re-apply lang on language change Ã¢â€ â‚¬Ã¢â€ â‚¬
+  window.addEventListener('hadeeth_lang_change', () => {
+    if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
+  });
+})();
+</script>
+
+<div id="debug-log" style="position:fixed;bottom:0;left:0;right:0;height:200px;background:rgba(0,0,0,0.8);color:#0f0;overflow:auto;z-index:9999;font-family:monospace;padding:10px;">Debug Log:</div>
+<script>
+window.onerror = function(msg, url, line) {
+    document.getElementById("debug-log").innerHTML += "<br><span style=\"color:red\">ERR: " + msg + " at " + line + "</span>";
+};
+window.onunhandledrejection = function(e) {
+    document.getElementById("debug-log").innerHTML += "<br><span style=\"color:red\">REJ: " + (e.reason && e.reason.message ? e.reason.message : e.reason) + "</span>";
+};
+</script>
+</body>
+</html>
+
+
+

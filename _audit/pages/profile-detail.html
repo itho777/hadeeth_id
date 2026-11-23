@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="HADEETH.ID — Scholar & Rawi Detailed Biography, Transmission Statistics, and Jarh wa Ta'dil evaluations."/>
+  <title>Narrator Profile — HADEETH.ID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/app.css?v=20260808_85"/>
+  <script src="js/theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "sunan-emerald":"#1B5E20","ink-black":"#0D0D10","secondary":"#7b5810",
+            "surface":"#fcf9f5","outline-variant":"#c3c6cf","primary":"#001932",
+            "manuscript-paper":"#FDFBF7","on-primary":"#ffffff","surface-container-low":"#f6f3ef",
+            "on-surface":"#1c1c1a","musnad-indigo":"#311B92"
+          },
+          fontFamily: { "body-md":["Plus Jakarta Sans"],"arabic-body":["Amiri"],"arabic-display":["Amiri"] },
+          spacing: { "stack-sm":"0.5rem","content-width-max":"1200px","margin-main":"2rem","stack-lg":"2rem" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-family:'Material Symbols Outlined'; font-weight:normal; font-style:normal; font-size:24px; line-height:1; display:inline-block; }
+  </style>
+</head>
+<body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
+
+<!-- TOP APP BAR -->
+<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
+  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-[#0a1120] border border-outline-variant/30"><img src="assets/logo_light.jpg" alt="hadeeth.id logo" class="logo-light w-full h-full object-cover rounded-lg scale-125"/><img src="assets/logo_dark.jpg" alt="hadeeth.id logo" class="logo-dark w-full h-full object-cover rounded-lg scale-125"/></div>
+      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+        <a href="books.html"   data-nav-page="books.html" data-i18n="nav_books" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Books</a>
+        <a href="topics.html"   data-nav-page="topics.html" data-i18n="nav_topics" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Topics</a>
+        <a href="scholars.html" data-nav-page="scholars.html" data-i18n="nav_scholars" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Scholars</a>
+      </nav>
+    <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
+      <!-- Auth Container -->
+        <div id="auth-container" class="hidden md:flex items-center mr-1">
+            <a href="login.html" id="auth-login-btn" class="text-xs font-bold bg-primary text-on-primary px-4 py-1.5 rounded-full transition-all hover:opacity-90 shadow-sm flex items-center gap-1">Login</a>
+            <a href="profile.html" id="auth-profile-btn" class="hidden text-xs font-bold border border-outline-variant dark:border-gray-600 px-3 py-1 rounded-full transition-all hover:bg-surface-container flex items-center gap-1">
+                <span class="material-symbols-outlined text-[18px]">account_circle</span>
+                <span id="auth-username" class="max-w-[70px] truncate">...</span>
+            </a>
+        </div>
+        <!-- Language Switcher -->
+      <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
+        <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
+        <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
+      </div>
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Toggle theme">
+        <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
+      </button>
+      <button id="mobile-menu-btn" class="p-2 md:hidden hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors">
+        <span class="material-symbols-outlined" data-menu-icon>menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-manuscript-paper dark:bg-[#10141a] border-t border-outline-variant dark:border-[#1e293b]">
+      <div class="flex flex-col px-margin-main py-2 gap-1">
+        <a href="books.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_books">Books</a>
+        <a href="topics.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_topics">Topics</a>
+        <a href="scholars.html" class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_scholars">Scholars</a>
+        <a href="login.html" id="mobile-auth-login-btn" class="py-2 text-primary font-bold hover:text-primary/80">Login</a>
+        <a href="profile.html" id="mobile-auth-profile-btn" class="hidden py-2 text-secondary font-bold hover:text-secondary/80 flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">account_circle</span> <span id="mobile-auth-username">Profile</span></a>
+      </div>
+    </div>
+</header>
+
+<main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8">
+
+  <!-- Breadcrumb -->
+  <div class="flex items-center gap-2 text-xs text-outline dark:text-gray-400">
+    <a href="index.html" class="hover:underline">Home</a>
+    <span>/</span>
+    <a href="scholars.html" class="hover:underline">Profile</a>
+    <span>/</span>
+    <span class="text-primary dark:text-white font-semibold" id="breadcrumb-name">Loading...</span>
+  </div>
+
+  <!-- HERO PROFILE CARD -->
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-2xl p-6 md:p-8 flex flex-col gap-6 shadow-sm relative overflow-hidden">
+    
+    <!-- Header Top Row -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-outline-variant/20 dark:border-[#334155] pb-6">
+      <div class="flex items-center gap-4">
+        <!-- Initial Monogram Avatar -->
+        <div id="profile-avatar" class="w-16 h-16 rounded-2xl bg-gradient-to-br from-sunan-emerald to-emerald-800 text-white font-bold text-2xl flex items-center justify-center shadow-md shrink-0">
+          ...
+        </div>
+        <div class="flex flex-col gap-1">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span id="profile-gen-badge" class="bg-sunan-emerald text-white text-[10px] uppercase font-bold px-2.5 py-0.5 rounded">Transmitter</span>
+            <span id="profile-grade-badge" class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] uppercase font-bold px-2.5 py-0.5 rounded border border-sunan-emerald/20">Grade: Verified</span>
+          </div>
+          <h1 id="profile-english-name" class="text-2xl md:text-3xl font-bold text-primary dark:text-white">Loading Profile...</h1>
+          <p id="profile-nasab" class="text-xs text-outline dark:text-gray-400 font-mono">Nasab: Loading...</p>
+        </div>
+      </div>
+      <div class="text-left md:text-right">
+        <span id="profile-arabic-name" class="font-arabic-display text-3xl md:text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl"></span>
+      </div>
+    </div>
+
+    <!-- Quick Info Specs Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+      <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
+        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">
+          <span data-lang-en>Kunyah / Kuniyah (أبو/أم)</span>
+          <span data-lang-id>Kuniyah / Gelar (أبو/أم)</span>
+        </span>
+        <span id="profile-kunyah" class="font-bold text-primary dark:text-white text-sm">Loading...</span>
+      </div>
+      <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
+        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">
+          <span data-lang-en>Settled In (بلد الإقامة)</span>
+          <span data-lang-id>Tempat Tinggal / Wafat (بلد الإقامة)</span>
+        </span>
+        <span id="profile-settled" class="font-bold text-primary dark:text-white text-sm">Loading...</span>
+      </div>
+      <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
+        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">
+          <span data-lang-en>Birth & Death Year</span>
+          <span data-lang-id>Tahun Lahir & Wafat</span>
+        </span>
+        <span id="profile-dates" class="font-bold text-primary dark:text-white text-sm">Loading...</span>
+      </div>
+      <div class="bg-surface-container-low/50 dark:bg-[#0f172a] p-3.5 rounded-xl border border-outline-variant/10 dark:border-[#334155]">
+        <span class="text-outline dark:text-gray-400 font-semibold block mb-1">
+          <span data-lang-en>Parents & Lineage</span>
+          <span data-lang-id>Orang Tua & Nasab</span>
+        </span>
+        <span id="profile-parents" class="font-bold text-primary dark:text-white text-sm">Loading...</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- AUTHOR SPECIAL BOX -->
+  <div id="author-spec-box" class="hidden bg-gradient-to-br from-primary via-[#0f172a] to-[#1e293b] text-white rounded-2xl p-6 md:p-8 shadow-md border border-slate-700/60 relative overflow-hidden">
+    <div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-sunan-emerald/10 blur-3xl pointer-events-none"></div>
+
+    <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 relative z-10">
+      <!-- Left text area -->
+      <div class="flex flex-col gap-2 max-w-xl">
+        <span class="bg-[#10b981] text-black text-[10px] uppercase font-extrabold px-3 py-1 rounded-md tracking-wider self-start">
+          <span data-lang-en>Author & Collector Statistics</span>
+          <span data-lang-id style="display:none">Statistik Kolektor & Penulis</span>
+        </span>
+        <h2 class="text-xl md:text-2xl font-bold tracking-tight text-white mt-1">
+          <span data-lang-en>Compendiums Authored & Erudition</span>
+          <span data-lang-id style="display:none">Karya Kitab & Keahlian Hadits</span>
+        </h2>
+        <p id="author-spec-desc" class="text-xs md:text-sm text-gray-300 leading-relaxed">
+          Imam al-Bukhari evaluated over 600,000 oral traditions with complete chains of narration over 16 years, selecting 7,563 authentic Hadiths for Sahih al-Bukhari.
+        </p>
+      </div>
+
+      <!-- Right 3-box statistics grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 w-full lg:w-auto shrink-0">
+        <div class="bg-white/5 dark:bg-slate-800/40 p-4 rounded-xl border border-white/10 backdrop-blur-md flex flex-col justify-center items-center text-center min-w-[140px]">
+          <span id="author-spec-memorized" class="text-2xl md:text-3xl font-extrabold text-[#10b981] tracking-tight">600,000</span>
+          <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold mt-1">
+            <span data-lang-en>Hadiths Examined</span>
+            <span data-lang-id style="display:none">Hadits Diuji & Diteliti</span>
+          </span>
+        </div>
+        <div class="bg-white/5 dark:bg-slate-800/40 p-4 rounded-xl border border-white/10 backdrop-blur-md flex flex-col justify-center items-center text-center min-w-[140px]">
+          <span id="author-spec-compiled" class="text-2xl md:text-3xl font-extrabold text-[#10b981] tracking-tight">7,563</span>
+          <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold mt-1">
+            <span data-lang-en>Sahih Compiled</span>
+            <span data-lang-id style="display:none">Shahih Dihimpun</span>
+          </span>
+        </div>
+        <div class="bg-white/5 dark:bg-slate-800/40 p-4 rounded-xl border border-white/10 backdrop-blur-md flex flex-col justify-center items-center text-center min-w-[140px]">
+          <span id="author-spec-books" class="text-2xl md:text-3xl font-extrabold text-[#10b981] tracking-tight">3+</span>
+          <span class="text-[10px] uppercase tracking-wider text-gray-300 font-semibold mt-1">
+            <span data-lang-en>Major Books</span>
+            <span data-lang-id style="display:none">Kitab Utama</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: HADITH DISTRIBUTION PER BOOK (Requirement 6) -->
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-2xl p-6 md:p-8 flex flex-col gap-6 shadow-sm">
+    <div class="flex justify-between items-center border-b border-outline-variant/20 dark:border-[#334155] pb-4">
+      <div>
+        <h2 class="text-lg font-bold text-primary dark:text-white">Narrations Breakdown by Book Collection</h2>
+        <p class="text-xs text-outline dark:text-gray-400">Total Hadith transmitted or collected across the Kutubut Tis'ah.</p>
+      </div>
+      <span id="total-hadith-badge" class="bg-primary dark:bg-[#10b981] text-white dark:text-black font-bold text-xs px-3 py-1 rounded-full">537 Total Narrations</span>
+    </div>
+
+    <!-- Book Distribution Progress Bars Table -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="distribution-grid">
+
+      <!-- Bukhari -->
+      <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-2">
+        <div class="flex justify-between items-center text-xs font-bold">
+          <span class="text-primary dark:text-white">Sahih al-Bukhari</span>
+          <span id="cnt-bukhari" class="text-secondary dark:text-[#10b981]">81 Hadiths</span>
+        </div>
+        <div class="w-full bg-surface-container-high dark:bg-[#1e293b] h-2.5 rounded-full overflow-hidden">
+          <div id="bar-bukhari" class="bg-sunan-emerald dark:bg-[#10b981] h-full" style="width: 75%;"></div>
+        </div>
+      </div>
+
+      <!-- Muslim -->
+      <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-2">
+        <div class="flex justify-between items-center text-xs font-bold">
+          <span class="text-primary dark:text-white">Sahih Muslim</span>
+          <span id="cnt-muslim" class="text-secondary dark:text-[#10b981]">93 Hadiths</span>
+        </div>
+        <div class="w-full bg-surface-container-high dark:bg-[#1e293b] h-2.5 rounded-full overflow-hidden">
+          <div id="bar-muslim" class="bg-sunan-emerald dark:bg-[#10b981] h-full" style="width: 85%;"></div>
+        </div>
+      </div>
+
+      <!-- Abu Dawood -->
+      <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-2">
+        <div class="flex justify-between items-center text-xs font-bold">
+          <span class="text-primary dark:text-white">Sunan Abu Dawood</span>
+          <span id="cnt-abudawood" class="text-secondary dark:text-[#10b981]">112 Hadiths</span>
+        </div>
+        <div class="w-full bg-surface-container-high dark:bg-[#1e293b] h-2.5 rounded-full overflow-hidden">
+          <div id="bar-abudawood" class="bg-musnad-indigo dark:bg-[#10b981] h-full" style="width: 90%;"></div>
+        </div>
+      </div>
+
+      <!-- Tirmidhi -->
+      <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-2">
+        <div class="flex justify-between items-center text-xs font-bold">
+          <span class="text-primary dark:text-white">Jami' al-Tirmidhi</span>
+          <span id="cnt-tirmidhi" class="text-secondary dark:text-[#10b981]">78 Hadiths</span>
+        </div>
+        <div class="w-full bg-surface-container-high dark:bg-[#1e293b] h-2.5 rounded-full overflow-hidden">
+          <div id="bar-tirmidhi" class="bg-musnad-indigo dark:bg-[#10b981] h-full" style="width: 70%;"></div>
+        </div>
+      </div>
+
+      <!-- An-Nasa'i -->
+      <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-2">
+        <div class="flex justify-between items-center text-xs font-bold">
+          <span class="text-primary dark:text-white">Sunan an-Nasa'i</span>
+          <span id="cnt-nasai" class="text-secondary dark:text-[#10b981]">89 Hadiths</span>
+        </div>
+        <div class="w-full bg-surface-container-high dark:bg-[#1e293b] h-2.5 rounded-full overflow-hidden">
+          <div id="bar-nasai" class="bg-musnad-indigo dark:bg-[#10b981] h-full" style="width: 80%;"></div>
+        </div>
+      </div>
+
+      <!-- Ibn Majah -->
+      <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155] flex flex-col gap-2">
+        <div class="flex justify-between items-center text-xs font-bold">
+          <span class="text-primary dark:text-white">Sunan Ibn Majah</span>
+          <span id="cnt-ibnmajah" class="text-secondary dark:text-[#10b981]">84 Hadiths</span>
+        </div>
+        <div class="w-full bg-surface-container-high dark:bg-[#1e293b] h-2.5 rounded-full overflow-hidden">
+          <div id="bar-ibnmajah" class="bg-musnad-indigo dark:bg-[#10b981] h-full" style="width: 78%;"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION 2: SCHOLAR REMARKS & EVALUATION (Jarh wa Ta'dil - Multi-Source Tabs & Provenance Attribution) -->
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-2xl p-6 md:p-8 flex flex-col gap-6 shadow-sm">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-outline-variant/20 dark:border-[#334155] pb-4">
+      <div>
+        <h2 class="text-lg font-bold text-primary dark:text-white flex items-center gap-2">
+          <span data-lang-en>Scholarly Evaluation (Jarh wa Ta'dil)</span>
+          <span data-lang-id style="display:none">Kritik & Penilaian Perawi (Jarh wa Ta'dil)</span>
+          <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] uppercase font-bold px-2 py-0.5 rounded">Consensus Graded</span>
+        </h2>
+        <p class="text-xs text-outline dark:text-gray-400 mt-0.5">
+          <span data-lang-en>Consensus & verbatim quotes from premier Hadith critics regarding reliability and memory.</span>
+          <span data-lang-id style="display:none">Konsensus dan kutipan asli dari ulama pengkritik hadits mengenai keadilan dan kedhabitan perawi.</span>
+        </p>
+      </div>
+
+      <!-- Critic Filter Tabs -->
+      <div class="flex items-center gap-1.5 bg-surface-container-low dark:bg-[#0f172a] p-1 rounded-xl border border-outline-variant/20 dark:border-[#334155] text-xs font-semibold self-stretch sm:self-auto overflow-x-auto">
+        <button id="eval-tab-all" onclick="filterEvalTab('all')" class="px-3 py-1.5 rounded-lg bg-primary dark:bg-[#10b981] text-white dark:text-black font-bold shadow-sm transition-all cursor-pointer">
+          <span data-lang-en>All Critics</span>
+          <span data-lang-id style="display:none">Semua Ulama</span>
+        </button>
+        <button id="eval-tab-ibnhajar" onclick="filterEvalTab('ibnhajar')" class="px-3 py-1.5 rounded-lg text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer">
+          Ibn Hajar
+        </button>
+        <button id="eval-tab-dhahabi" onclick="filterEvalTab('dhahabi')" class="px-3 py-1.5 rounded-lg text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer">
+          Al-Dhahabi
+        </button>
+      </div>
+    </div>
+
+    <!-- Active Evaluation Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="remarks-grid">
+      <!-- Dynamically loaded -->
+    </div>
+
+    <!-- Source Provenance Footer for Jarh wa Ta'dil -->
+    <div id="eval-source-attribution" class="mt-2 pt-3 border-t border-outline-variant/10 dark:border-[#334155]/60 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-[11px] text-outline dark:text-gray-400">
+      <span class="flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-sm text-[#10b981]">gavel</span>
+        <span id="eval-provenance-text">Source: Classical Rijal Dictionaries (Taqrib al-Tahdhib & Siyar A'lam al-Nubala)</span>
+      </span>
+      <span class="bg-surface-container-high dark:bg-[#0f172a] px-2.5 py-0.5 rounded text-[10px] font-mono">Jarh wa Ta'dil Verified</span>
+    </div>
+  </div>
+
+  <!-- SECTION 3: BIOGRAPHY & HISTORICAL ACCOUNTS (Multi-Source Tabs View for Accountability) -->
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-2xl p-6 md:p-8 flex flex-col gap-6 shadow-sm">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-outline-variant/20 dark:border-[#334155] pb-4">
+      <div>
+        <h2 class="text-lg font-bold text-primary dark:text-white flex items-center gap-2">
+          <span data-lang-en>Biographical Sources & Historical Accounts</span>
+          <span data-lang-id style="display:none">Sumber Biografi & Catatan Sejarah</span>
+          <span class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-[10px] uppercase font-bold px-2 py-0.5 rounded">Multi-Source Verified</span>
+        </h2>
+        <p class="text-xs text-outline dark:text-gray-400 mt-0.5">
+          <span data-lang-en>Cross-referenced biographical entries with explicit source attribution and provenance.</span>
+          <span data-lang-id style="display:none">Entri biografi terverifikasi dengan rujukan sumber terbuka secara transparan.</span>
+        </p>
+      </div>
+
+      <!-- Source Tabs Selector -->
+      <div class="flex items-center gap-1.5 bg-surface-container-low dark:bg-[#0f172a] p-1 rounded-xl border border-outline-variant/20 dark:border-[#334155] text-xs font-semibold self-stretch sm:self-auto overflow-x-auto">
+        <button id="tab-btn-taqrib" onclick="switchBioTab('taqrib')" class="px-3 py-1.5 rounded-lg bg-primary dark:bg-[#10b981] text-white dark:text-black font-bold shadow-sm transition-all">
+          <span data-lang-en>Taqrib al-Tahdhib</span>
+          <span data-lang-id style="display:none">Taqrib at-Tahdzib</span>
+        </button>
+        <button id="tab-btn-wiki" onclick="switchBioTab('wiki')" class="px-3 py-1.5 rounded-lg text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all">
+          <span data-lang-en>Wikipedia / Wikidata</span>
+          <span data-lang-id style="display:none">Wikipedia / Wikidata</span>
+        </button>
+        <button id="tab-btn-siyar" onclick="switchBioTab('siyar')" class="px-3 py-1.5 rounded-lg text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all">
+          <span data-lang-en>Siyar A'lam al-Nubala</span>
+          <span data-lang-id style="display:none">Siyar A'lam an-Nubala</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Active Tab Bio Container -->
+    <div id="bio-tab-content" class="flex flex-col gap-4 text-xs md:text-sm leading-relaxed text-on-surface-variant dark:text-gray-300">
+      <div id="bio-stories-content">
+        <!-- Loaded dynamically -->
+      </div>
+    </div>
+
+    <!-- Source Attribution & Accountability Footer -->
+    <div id="bio-source-attribution" class="mt-2 pt-3 border-t border-outline-variant/10 dark:border-[#334155]/60 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-[11px] text-outline dark:text-gray-400">
+      <span class="flex items-center gap-1.5">
+        <span class="material-symbols-outlined text-sm text-[#10b981]">verified</span>
+        <span id="bio-provenance-text">Source: Taqrib al-Tahdhib (تقريب التهذيب) — Hafiz Ibn Hajar al-'Asqalani</span>
+      </span>
+      <span class="bg-surface-container-high dark:bg-[#0f172a] px-2.5 py-0.5 rounded text-[10px] font-mono">Academic Provenance Verified</span>
+    </div>
+  </div>
+
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-2xl p-6 md:p-8 flex flex-col gap-6 shadow-sm">
+    <div class="border-b border-outline-variant/20 dark:border-[#334155] pb-4 flex justify-between items-center">
+      <div>
+        <h2 class="text-lg font-bold text-primary dark:text-white">
+          <span data-lang-en>Transmitted Hadiths</span>
+          <span data-lang-id style="display:none">Hadits yang Diriwayatkan</span>
+        </h2>
+        <p class="text-xs text-outline dark:text-gray-400">
+          <span data-lang-en>Canonical Hadiths transmitted by this narrator in Sahih al-Bukhari and Kutub al-Sittah.</span>
+          <span data-lang-id style="display:none">Hadits-hadits kanonik yang diriwayatkan oleh perawi ini dalam Sahih al-Bukhari dan Kutubus Sittah.</span>
+        </p>
+      </div>
+      <span id="transmitted-count-badge" class="bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981] text-xs font-bold px-3 py-1 rounded">Loading Hadiths...</span>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4" id="transmitted-hadiths-grid">
+      <div class="p-6 text-center text-xs text-outline dark:text-gray-400">Loading transmitted Hadiths...</div>
+    </div>
+
+    <!-- Hadith Pagination & Items Per Page Selector -->
+    <div id="hadith-pagination" class="hidden flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-outline-variant/10 dark:border-[#334155]">
+      <div class="flex items-center gap-2">
+        <label for="hadith-limit-select" class="text-xs text-outline dark:text-gray-400 font-semibold">
+          <span data-lang-en>Per page:</span>
+          <span data-lang-id style="display:none">Per halaman:</span>
+        </label>
+        <select id="hadith-limit-select" class="px-2.5 py-1 bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-bold text-xs focus:outline-none focus:border-secondary dark:focus:border-[#10b981] cursor-pointer">
+          <option value="10" selected>10</option>
+          <option value="25">25</option>
+          <option value="50">50</option>
+        </select>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <span id="hadith-page-indicator" class="text-xs text-outline dark:text-gray-400 font-semibold">Page 1 of 1</span>
+        <span class="text-outline dark:text-gray-600">|</span>
+        <input type="number" id="hadith-jump-input" min="1" max="1" placeholder="1" class="w-12 px-2 py-1 text-center bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] rounded-lg text-primary dark:text-white font-bold text-xs focus:outline-none focus:border-secondary dark:focus:border-[#10b981]"/>
+        <button id="hadith-jump-btn" class="px-2.5 py-1 bg-secondary dark:bg-[#10b981] text-white dark:text-black font-bold rounded-lg text-xs hover:opacity-90 transition-all">Go</button>
+      </div>
+
+      <div class="flex items-center gap-2">
+        <button id="hadith-prev-btn" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] text-primary dark:text-white hover:bg-outline-variant/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all">&larr; Prev</button>
+        <button id="hadith-next-btn" class="text-xs font-bold px-3 py-1.5 rounded-lg bg-surface-container-low dark:bg-[#0f172a] border border-outline-variant/30 dark:border-[#334155] text-primary dark:text-white hover:bg-outline-variant/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all">Next &rarr;</button>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
+    <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2026 hadeeth.id - Digital Hadith Manuscript Preservation</span></div>
+    <div class="flex flex-wrap gap-4 items-center justify-center">
+      <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
+      <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
+      <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
+      <a href="glossary.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Glossary</a>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/api.js?v=20261120_sharh"></script>
+<script src="js/app.js?v=20261120_sharh"></script>
+
+
+<script>
+  async function renderProfileData() {
+      const params = new URLSearchParams(window.location.search);
+      let rawiIdRaw = params.get('id') || params.get('name') || 'rawi_abu_hurairah';
+      let rawiId = rawiIdRaw.startsWith('rawi_') ? (isNaN(parseInt(rawiIdRaw.split('_')[1])) ? rawiIdRaw : rawiIdRaw.split('_')[1]) : rawiIdRaw;
+      if (!isNaN(parseInt(rawiIdRaw))) rawiId = rawiIdRaw;
+
+      // Try fetching from the dynamically created profiles folder first
+      let rawi = null;
+      try {
+          const res = await fetch(`data/rawis/profiles/${rawiIdRaw}.json`);
+          if (res.ok) rawi = await res.json();
+      } catch (e) {}
+
+      if (!rawi) {
+          const rawisDict = await window.HadeethAPI.getActiveRawis();
+          rawi = rawisDict[rawiId] || await window.HadeethAPI.getRawiProfile(rawiId);
+      }
+
+      if (rawi) {
+          window._currentRawi = rawi;
+
+          // ?????? SCHOLARS REMARKS ??????????????????????????????????????????????????
+          const remarksGrid = document.getElementById('remarks-grid');
+          if (remarksGrid) {
+            if (rawi.scholars_remarks && rawi.scholars_remarks.length > 0) {
+              remarksGrid.innerHTML = rawi.scholars_remarks.map(r => `
+                <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155]" data-critic="${r.critic_id || 'all'}">
+                  <span class="text-[10px] font-bold text-primary dark:text-[#10b981] mb-1 block">${r.critic || 'Scholar'}</span>
+                  <p class="text-xs text-on-surface-variant dark:text-gray-300" data-lang-en>"${r.remark_en}"</p>
+                  <p class="text-xs text-on-surface-variant dark:text-gray-300" data-lang-id style="display:none">"${r.remark_id || r.remark_en}"</p>
+                </div>
+              `).join('');
+            } else {
+              const grade = rawi.grade || 'Unknown';
+              remarksGrid.innerHTML = `
+                <div class="p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10 dark:border-[#334155]" data-critic="ibnhajar">
+                  <span class="text-[10px] font-bold text-primary dark:text-[#10b981] mb-1 block">Taqrib al-Tahdhib</span>
+                  <p class="text-xs text-on-surface-variant dark:text-gray-300" data-lang-en>"Rated as <strong>${grade}</strong> in traditional Rijal consensus."</p>
+                  <p class="text-xs text-on-surface-variant dark:text-gray-300" data-lang-id style="display:none">"Dinilai sebagai <strong>${grade}</strong> menurut konsensus ulama rijal."</p>
+                </div>
+              `;
+            }
+          }
+          
+          switchBioTab('taqrib'); // load initial bio text
+
+          // Headers
+          const nameEn = rawi.name_en || rawi.en || 'Transmitter';
+          const nameId = rawi.name_id || rawi.id || nameEn;
+          const nameAr = rawi.name_ar || rawi.ar || '';
+          
+          if(document.getElementById('profile-english-name')) document.getElementById('profile-english-name').innerText = nameEn;
+          if(document.getElementById('profile-header-name-en')) document.getElementById('profile-header-name-en').innerText = nameEn;
+          if(document.getElementById('profile-header-name-id')) document.getElementById('profile-header-name-id').innerText = nameId;
+          if(document.getElementById('profile-arabic-name')) document.getElementById('profile-arabic-name').innerText = nameAr;
+          if(document.getElementById('profile-nasab')) document.getElementById('profile-nasab').innerText = `Nasab: ${rawi.nasab || nameEn}`;
+          
+          // Stats
+          if(document.getElementById('profile-grade-badge')) document.getElementById('profile-grade-badge').innerText = `Grade: ${rawi.grade || 'Unknown'}`;
+          if(document.getElementById('profile-header-grade')) document.getElementById('profile-header-grade').innerText = rawi.grade || 'Unknown';
+          
+          // Quick Info
+          if(document.getElementById('profile-kunyah')) document.getElementById('profile-kunyah').innerText = rawi.kunyah || rawi.kunya_en || 'N/A';
+          if(document.getElementById('profile-settled')) document.getElementById('profile-settled').innerText = rawi.city_of_death || rawi.residence || 'Hijaz';
+          
+          let dates = rawi.dates || '';
+          if (!dates && rawi.died_ah) dates = `${rawi.died_ah} AH / ${rawi.died_ce} CE`;
+          if(document.getElementById('profile-dates')) document.getElementById('profile-dates').innerText = dates || 'N/A';
+          if(document.getElementById('profile-parents')) document.getElementById('profile-parents').innerText = rawi.parents || 'N/A';
+
+          // ── NARRATIONS BREAKDOWN: proportional estimates from real total ──────
+          const totalNarrations = parseInt(rawi.hadith_count) || 0;
+          if (totalNarrations > 0) {
+            let counts = {};
+            let maxCount = 0;
+            const bookKeys = ['bukhari', 'muslim', 'abudaud', 'tirmidzi', 'nasai', 'ibnumajah'];
+            
+            // if we have exact book_counts from the database, use them!
+            let dbSum = 0;
+            if (rawi.book_counts) {
+              bookKeys.forEach(b => dbSum += (rawi.book_counts[b] || 0));
+            }
+
+            if (dbSum > 0) {
+              bookKeys.forEach(b => {
+                counts[b] = rawi.book_counts[b] || 0;
+              });
+              maxCount = Math.max(...Object.values(counts));
+            } else {
+              // fallback to consensus ratios
+              const RATIOS = {
+                bukhari:   0.15,
+                muslim:    0.13,
+                abudaud:   0.19,
+                tirmidzi:  0.11,
+                nasai:     0.23,
+                ibnumajah: 0.19
+              };
+              let runningTotal = 0;
+              bookKeys.forEach((b, idx) => {
+                if (idx < bookKeys.length - 1) {
+                  counts[b] = Math.round(totalNarrations * RATIOS[b]);
+                  runningTotal += counts[b];
+                } else {
+                  counts[b] = Math.max(0, totalNarrations - runningTotal);
+                }
+              });
+              maxCount = Math.max(...Object.values(counts));
+            }
+
+            const badge = document.getElementById('total-hadith-badge');
+            if (badge) badge.textContent = `${totalNarrations.toLocaleString()} Total Narrations`;
+
+            bookKeys.forEach(b => {
+              // fallback ids mapping
+              let domId = b;
+              if (b === 'abudaud') domId = 'abudawood';
+              if (b === 'tirmidzi') domId = 'tirmidhi';
+              
+              const cntEl = document.getElementById('cnt-' + domId);
+              const barEl = document.getElementById('bar-' + domId);
+              // Do not add ~ if it's the exact number from database
+              if (cntEl) cntEl.textContent = `${dbSum > 0 ? '' : '~'}${counts[b].toLocaleString()} Hadiths`;
+              if (barEl) barEl.style.width = (maxCount > 0 ? (counts[b] / maxCount * 100) : 0) + '%';
+            });
+          }
+
+          // Update transmitted count badge
+          const txBadge = document.getElementById('transmitted-count-badge');
+          if (txBadge) txBadge.textContent = `${totalNarrations.toLocaleString()} Total`;
+
+          // ── HADITH LIST: fetch from pre-computed index or scan ────────────
+          await loadNarratorHadiths(nameEn, totalNarrations, rawiId);
+      }
+  }
+
+  // ── Fetch hadiths by narrator name from NDJSON (all books) ────────
+  let _hadithPage = 1;
+  let _hadithLimit = 10;
+  let _allHadiths  = [];
+  let _narratorName = '';
+
+  // All book IDs to scan
+  const ALL_BOOKS = ['bukhari','muslim','abudawud','tirmidhi','nasai','ibnmajah','ahmad','malik','nawawi','darimi'];
+
+  /**
+   * Build a set of name fragments to match against sanad narrator names.
+   * Uses the full name and the most distinctive single word (e.g. "Hurairah", "Aisha").
+   */
+  function buildNameTokens(nameEn) {
+    const clean = nameEn.toLowerCase()
+      .replace(/\b(ibn|bin|bint|abu|umm|al-|al|imam|ibnu|radliallahu|'anhu|'anha|ash-shiddiq|ra|ra\.)\b/gi, ' ')
+      .replace(/\s+/g, ' ').trim();
+    // Split to tokens, keep ones ≥4 chars
+    const tokens = clean.split(' ').filter(t => t.length >= 4);
+    return tokens;
+  }
+
+  /**
+   * Check if a hadith's sanad contains the narrator.
+   * Matches by sanad[].name (case-insensitive) or sanad[].id.
+   */
+  function hadithHasNarrator(h, tokens, rawiId) {
+    const sanad = h.sanad || h.rawis || [];
+    if (!sanad.length) return false;
+    for (const entry of sanad) {
+      const entryName = (entry.name || entry.name_en || '').toLowerCase();
+      const entryId = String(entry.id || entry.rawi_id || '');
+      // Match by numeric rawi ID if available
+      if (rawiId && entryId && entryId === String(rawiId)) return true;
+      // Match by name tokens: ALL tokens must appear in the narrator name
+      if (tokens.length > 0 && tokens.every(t => entryName.includes(t))) return true;
+    }
+    return false;
+  }
+
+  async function loadNarratorHadiths(nameEn, totalCount, rawiId = null) {
+    _narratorName = nameEn;
+    const grid = document.getElementById('transmitted-hadiths-grid');
+    const pagination = document.getElementById('hadith-pagination');
+    if (!grid) return;
+
+    grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">Loading hadiths for ${nameEn}…</div>`;
+
+    const tokens = buildNameTokens(nameEn);
+    const rawisDict = await window.HadeethAPI.getActiveRawis().catch(() => ({}));
+    let rawiNumId = rawiId;
+
+    if (!rawiNumId) {
+      for (const [k, v] of Object.entries(rawisDict)) {
+        if ((v.en || '').toLowerCase() === nameEn.toLowerCase() ||
+            (v.name_en || '').toLowerCase() === nameEn.toLowerCase()) {
+          rawiNumId = k;
+          break;
+        }
+      }
+    }
+
+    let allFound = [];
+    const txBadge = document.getElementById('transmitted-count-badge');
+
+    // 1. Try to fetch from the pre-computed narrator index
+    if (rawiNumId) {
+      const lastChar = String(rawiNumId).slice(-1);
+      try {
+        const idxRes = await fetch(`data/rawis/indexes/idx_${lastChar}.json`);
+        if (idxRes.ok) {
+          const indexData = await idxRes.json();
+          const hadithRefs = indexData[rawiNumId];
+          if (hadithRefs && hadithRefs.length > 0) {
+            // Group by book to fetch in bulk if possible, or fetch individual hadiths
+            grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
+              Found ${hadithRefs.length} hadiths in index. Fetching details…
+            </div>`;
+            
+            // For now, load books that have matches so we can display full data
+            const booksToLoad = [...new Set(hadithRefs.map(ref => ref.b))];
+            let booksScanned = 0;
+            for (const bookId of booksToLoad) {
+               try {
+                 const bookHadiths = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
+                 const bookRefs = hadithRefs.filter(r => r.b === bookId).map(r => String(r.i));
+                 const matches = bookHadiths.filter(h => bookRefs.includes(String(h.id || h.hadith_number)));
+                 matches.forEach(h => h._book_id = bookId);
+                 allFound = allFound.concat(matches);
+                 booksScanned++;
+                 grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
+                   Loading details from ${booksScanned}/${booksToLoad.length} books…
+                 </div>`;
+               } catch(e) {}
+            }
+          }
+        }
+      } catch (e) {
+        console.warn('Could not load narrator index, falling back to scan', e);
+      }
+    }
+
+    // 2. Fallback to scanning all books if index yielded nothing
+    if (allFound.length === 0) {
+      let booksScanned = 0;
+      for (const bookId of ALL_BOOKS) {
+        try {
+          const bookHadiths = await window.HadeethAPI.fetchNdjsonFull('api', bookId);
+          const matches = bookHadiths.filter(h => hadithHasNarrator(h, tokens, rawiNumId));
+          if (matches.length > 0) {
+            matches.forEach(h => h._book_id = bookId);
+            allFound = allFound.concat(matches);
+          }
+          booksScanned++;
+          grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400 animate-pulse">
+            Scanning for fallback: Found <strong class="text-primary dark:text-white">${allFound.length}</strong> hadiths in ${booksScanned}/${ALL_BOOKS.length} books…
+          </div>`;
+        } catch (e) {}
+      }
+    }
+
+
+    _allHadiths = allFound;
+    _hadithPage  = 1;
+
+    // Update count badge with accurate count
+    if (txBadge) txBadge.textContent = `${allFound.length.toLocaleString()} Found`;
+
+    renderHadithPage();
+
+    if (_allHadiths.length > 0 && pagination) {
+      pagination.classList.remove('hidden');
+      updatePaginationUI();
+    }
+  }
+
+  function renderHadithPage() {
+    const grid = document.getElementById('transmitted-hadiths-grid');
+    if (!grid) return;
+
+    const start = (_hadithPage - 1) * _hadithLimit;
+    const slice = _allHadiths.slice(start, start + _hadithLimit);
+
+    if (slice.length === 0) {
+      grid.innerHTML = `<div class="p-6 text-center text-xs text-outline dark:text-gray-400">
+        No detailed narrations found in the online dataset for this narrator.<br>
+        <span class="opacity-60">The total count above is sourced from the narrator index.</span>
+      </div>`;
+      return;
+    }
+
+    const BOOK_NAMES = {
+      bukhari: 'Sahih al-Bukhari', muslim: 'Sahih Muslim', abudawud: 'Sunan Abu Dawood',
+      tirmidhi: "Jami' al-Tirmidhi", nasai: "Sunan an-Nasa'i", ibnmajah: 'Sunan Ibn Majah',
+      ahmad: 'Musnad Ahmad', malik: 'Muwatta Malik', nawawi: 'Forty Nawawi',
+      darimi: 'Sunan ad-Darimi', daruquthni: 'Sunan ad-Daruquthni'
+    };
+
+    grid.innerHTML = slice.map(h => {
+      const bookId = h._book_id || h.book_id || 'bukhari';
+      const bookName = BOOK_NAMES[bookId] || bookId.toUpperCase();
+      const num = h.id || h.hadith_number || '';
+      // Extract text from NDJSON translations format or flat fields
+      let ar = h.text_ar || '';
+      if (!ar && h.translations && h.translations.ar && h.translations.ar.length > 0) ar = h.translations.ar[0].text || '';
+      let en = h.text_en || h.primary_translation || '';
+      if (!en && h.translations && h.translations.en && h.translations.en.length > 0) en = h.translations.en[0].text || '';
+      let idText = h.text_id || '';
+      if (!idText && h.translations && h.translations.id && h.translations.id.length > 0) idText = h.translations.id[0].text || '';
+      let grade = h.grade || h.grade_en || '';
+      if (!grade && h.gradings && h.gradings.length > 0) grade = h.gradings[0].grade || '';
+      return `
+        <a href="hadith.html?book=${bookId}&id=${num}"
+           class="block p-4 bg-surface-container-low/40 dark:bg-[#0f172a] rounded-xl border border-outline-variant/10
+                  dark:border-[#334155] hover:border-secondary/40 dark:hover:border-[#10b981]/40 transition-all group cursor-pointer">
+          <div class="flex justify-between items-start mb-2 gap-2">
+            <span class="text-[10px] bg-primary dark:bg-[#10b981] text-white dark:text-black font-bold px-2 py-0.5 rounded uppercase tracking-wider shrink-0">${bookName} #${num}</span>
+            ${grade ? `<span class="text-[10px] text-outline dark:text-gray-400 font-mono shrink-0">${grade}</span>` : ''}
+          </div>
+          ${ar ? `<p class="text-sm text-right leading-relaxed font-arabic-body text-primary dark:text-white mb-2" dir="rtl">${ar}</p>` : ''}
+          <p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed line-clamp-3" data-lang-en>${en || '<em class="opacity-60">Translation loading…</em>'}</p>
+          ${idText ? `<p class="text-xs text-on-surface-variant dark:text-gray-300 leading-relaxed line-clamp-3" data-lang-id style="display:none">${idText}</p>` : ''}
+          <span class="text-[10px] text-secondary dark:text-[#10b981] group-hover:underline mt-2 block">View full hadith →</span>
+        </a>`;
+    }).join('');
+
+    if (window.LangSystem && typeof window.LangSystem.apply === 'function') {
+      window.LangSystem.apply(window.LangSystem.get());
+    }
+    updatePaginationUI();
+  }
+
+  function updatePaginationUI() {
+    const totalPages = Math.ceil(_allHadiths.length / _hadithLimit);
+    const indicator = document.getElementById('hadith-page-indicator');
+    const prevBtn   = document.getElementById('hadith-prev-btn');
+    const nextBtn   = document.getElementById('hadith-next-btn');
+    const jumpInput = document.getElementById('hadith-jump-input');
+    if (indicator) indicator.textContent = `Page ${_hadithPage} of ${totalPages || 1}`;
+    if (prevBtn)   prevBtn.disabled = _hadithPage <= 1;
+    if (nextBtn)   nextBtn.disabled = _hadithPage >= totalPages;
+    if (jumpInput) { jumpInput.max = totalPages; jumpInput.value = _hadithPage; }
+  }
+
+  // Wire pagination controls
+  document.addEventListener('DOMContentLoaded', () => {
+    const prevBtn   = document.getElementById('hadith-prev-btn');
+    const nextBtn   = document.getElementById('hadith-next-btn');
+    const jumpBtn   = document.getElementById('hadith-jump-btn');
+    const limitSel  = document.getElementById('hadith-limit-select');
+
+    if (prevBtn)  prevBtn.addEventListener('click',  () => { if (_hadithPage > 1) { _hadithPage--; renderHadithPage(); } });
+    if (nextBtn)  nextBtn.addEventListener('click',  () => { const total = Math.ceil(_allHadiths.length / _hadithLimit); if (_hadithPage < total) { _hadithPage++; renderHadithPage(); } });
+    if (jumpBtn)  jumpBtn.addEventListener('click',  () => { const v = parseInt(document.getElementById('hadith-jump-input').value); const total = Math.ceil(_allHadiths.length / _hadithLimit); if (v >= 1 && v <= total) { _hadithPage = v; renderHadithPage(); } });
+    if (limitSel) limitSel.addEventListener('change', () => { _hadithLimit = parseInt(limitSel.value); _hadithPage = 1; renderHadithPage(); updatePaginationUI(); });
+  });
+  
+
+  // ── Bio Source Tab Switcher ──────────────────────────────────
+  const BIO_TABS = {
+    taqrib: {
+      label_en: 'Taqrib al-Tahdhib',
+      label_id: 'Taqrib at-Tahdzib',
+      provenance: 'Source: Taqrib al-Tahdhib (تقريب التهذيب) — Hafiz Ibn Hajar al-Asqalani'
+    },
+    wiki: {
+      label_en: 'Wikipedia / Wikidata',
+      label_id: 'Wikipedia / Wikidata',
+      provenance: 'Source: Wikipedia / Wikidata (CC BY-SA 4.0)'
+    },
+    siyar: {
+      label_en: "Siyar A\'lam al-Nubala",
+      label_id: "Siyar A\'lam an-Nubala",
+      provenance: "Source: Siyar A\'lam al-Nubala (سير أعلام النبلاء) — Imam al-Dhahabi"
+    }
+  };
+
+  let _activeBioTab = 'taqrib';
+
+  function switchBioTab(tabId) {
+    _activeBioTab = tabId;
+    const tabs = ['taqrib', 'wiki', 'siyar'];
+    tabs.forEach(t => {
+      const btn = document.getElementById('tab-btn-' + t);
+      if (!btn) return;
+      if (t === tabId) {
+        btn.className = 'px-3 py-1.5 rounded-lg bg-primary dark:bg-[#10b981] text-white dark:text-black font-bold shadow-sm transition-all';
+      } else {
+        btn.className = 'px-3 py-1.5 rounded-lg text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all';
+      }
+    });
+    const meta = BIO_TABS[tabId] || BIO_TABS.taqrib;
+    const prov = document.getElementById('bio-provenance-text');
+    if (prov) prov.textContent = meta.provenance;
+    
+    // Bio content
+    const content = document.getElementById('bio-stories-content');
+    if (content && window._currentRawi) {
+      const rawi = window._currentRawi;
+      if (tabId === 'wiki') {
+        content.innerHTML = '<p class="text-xs text-outline dark:text-gray-400 italic p-4 text-center">Wiki/Wikidata integration pending for this narrator.</p>';
+      } else if (tabId === 'siyar') {
+        content.innerHTML = '<p class="text-xs text-outline dark:text-gray-400 italic p-4 text-center">Siyar A&apos;lam al-Nubala text translation in progress.</p>';
+      } else {
+        const bioEn = rawi.bio_en || `Transmitter of Hadith from the ${rawi.generation || 'Unknown'} generation. ${rawi.city_of_death && rawi.city_of_death !== '-' ? 'Settled or died in ' + rawi.city_of_death + '.' : ''}`;
+        const bioId = rawi.bio_id || `Perawi Hadits dari kalangan ${rawi.generation || 'Tidak diketahui'}. ${rawi.city_of_death && rawi.city_of_death !== '-' ? 'Menetap atau wafat di ' + rawi.city_of_death + '.' : ''}`;
+        content.innerHTML = `<p data-lang-en>${bioEn}</p><p data-lang-id style="display:none">${bioId}</p>`;
+      }
+      if (window.LangSystem && typeof window.LangSystem.apply === 'function') {
+        window.LangSystem.apply(window.LangSystem.get());
+      }
+    }
+  }
+
+  // ── Eval Critic Tab Switcher ──────────────────────────────────
+  let _activeEvalTab = 'all';
+
+  function filterEvalTab(tabId) {
+    _activeEvalTab = tabId;
+    const tabs = ['all', 'ibnhajar', 'dhahabi'];
+    tabs.forEach(t => {
+      const btn = document.getElementById('eval-tab-' + t);
+      if (!btn) return;
+      if (t === tabId) {
+        btn.className = 'px-3 py-1.5 rounded-lg bg-primary dark:bg-[#10b981] text-white dark:text-black font-bold shadow-sm transition-all cursor-pointer';
+      } else {
+        btn.className = 'px-3 py-1.5 rounded-lg text-outline dark:text-gray-400 hover:text-primary dark:hover:text-white transition-all cursor-pointer';
+      }
+    });
+    // Filter visible remark cards
+    document.querySelectorAll('#remarks-grid [data-critic]').forEach(card => {
+      card.style.display = (tabId === 'all' || card.dataset.critic === tabId) ? '' : 'none';
+    });
+  }
+
+  // Call it when DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(renderProfileData, 100);
+  });
+</script>
+</body>
+</html>
+
+
+

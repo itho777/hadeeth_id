@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Browse books (Kitab) and chapters."/>
+  <title>Kitab - HADEETH.ID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/app.css?v=1786671525_85"/>
+  <script src="js/theme.js"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "sunan-emerald":"#1B5E20","ink-black":"#0D0D10","secondary":"#7b5810",
+            "surface":"#fcf9f5","outline-variant":"#c3c6cf","primary":"#001932",
+            "manuscript-paper":"#FDFBF7","on-primary":"#ffffff","surface-container-low":"#f6f3ef",
+            "on-surface":"#1c1c1a"
+          },
+          fontFamily: { "body-md":["Plus Jakarta Sans"],"arabic-body":["Amiri"],"arabic-display":["Amiri"] },
+          spacing: { "stack-sm":"0.5rem","content-width-max":"1200px","margin-main":"2rem","stack-lg":"2rem" }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-family:'Material Symbols Outlined'; font-weight:normal; font-style:normal; font-size:24px; line-height:1; display:inline-block; }
+  </style>
+</head>
+<body class="bg-manuscript-paper dark:bg-ink-black text-on-surface dark:text-gray-100 font-body-md antialiased">
+
+<!-- TOP APP BAR -->
+<header class="bg-manuscript-paper dark:bg-[#10141a] border-b border-outline-variant dark:border-[#1e293b] sticky top-0 z-50">
+  <div class="flex justify-between items-center w-full px-margin-main max-w-content-width-max mx-auto h-16">
+    <a href="index.html" class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center bg-[#0a1120] border border-outline-variant/30"><img src="assets/logo_light.jpg" alt="hadeeth.id logo" class="logo-light w-full h-full object-cover rounded-lg scale-125"/><img src="assets/logo_dark.jpg" alt="hadeeth.id logo" class="logo-dark w-full h-full object-cover rounded-lg scale-125"/></div>
+      <span class="font-bold text-xl text-primary dark:text-white tracking-tight">hadeeth.id</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+        <a href="books.html"   data-nav-page="books.html" data-i18n="nav_books" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Books</a>
+        <a href="topics.html"   data-nav-page="topics.html" data-i18n="nav_topics" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Topics</a>
+        <a href="scholars.html" data-nav-page="scholars.html" data-i18n="nav_scholars" class="text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white py-1 transition-colors">Scholars</a>
+      </nav>
+    <div class="flex items-center gap-2 text-on-surface-variant dark:text-gray-400">
+      <!-- Auth Container -->
+        <div id="auth-container" class="hidden md:flex items-center mr-1">
+            <a href="login.html" id="auth-login-btn" class="text-xs font-bold bg-primary text-on-primary px-4 py-1.5 rounded-full transition-all hover:opacity-90 shadow-sm flex items-center gap-1">Login</a>
+            <a href="profile.html" id="auth-profile-btn" class="hidden text-xs font-bold border border-outline-variant dark:border-gray-600 px-3 py-1 rounded-full transition-all hover:bg-surface-container flex items-center gap-1">
+                <span class="material-symbols-outlined text-[18px]">account_circle</span>
+                <span id="auth-username" class="max-w-[70px] truncate">...</span>
+            </a>
+        </div>
+        <!-- Language Switcher -->
+      <div class="flex items-center gap-1 bg-surface dark:bg-[#1e293b] border border-outline-variant/40 dark:border-[#334155] rounded-full px-1 py-1">
+        <button data-lang-btn="en" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="English">EN</button>
+        <button data-lang-btn="id" class="lang-btn text-xs font-bold px-2.5 py-1 rounded-full transition-all" title="Indonesian">ID</button>
+      </div>
+      <button data-toggle-theme class="p-2 hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors" aria-label="Toggle theme">
+        <span class="material-symbols-outlined" data-theme-icon>dark_mode</span>
+      </button>
+      <button id="mobile-menu-btn" class="p-2 md:hidden hover:bg-surface-container-low dark:hover:bg-[#1e293b] rounded-full transition-colors">
+        <span class="material-symbols-outlined" data-menu-icon>menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-manuscript-paper dark:bg-[#10141a] border-t border-outline-variant dark:border-[#1e293b]">
+      <div class="flex flex-col px-margin-main py-2 gap-1">
+        <a href="books.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_books">Books</a>
+        <a href="topics.html"   class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_topics">Topics</a>
+        <a href="scholars.html" class="py-2 text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white" data-i18n="nav_scholars">Scholars</a>
+        <a href="login.html" id="mobile-auth-login-btn" class="py-2 text-primary font-bold hover:text-primary/80">Login</a>
+        <a href="profile.html" id="mobile-auth-profile-btn" class="hidden py-2 text-secondary font-bold hover:text-secondary/80 flex items-center gap-2"><span class="material-symbols-outlined text-[16px]">account_circle</span> <span id="mobile-auth-username">Profile</span></a>
+      </div>
+    </div>
+</header>
+
+<main class="w-full max-w-content-width-max mx-auto px-margin-main py-stack-lg flex flex-col gap-8">
+
+  <!-- Breadcrumbs -->
+  <div class="flex items-center gap-2 text-xs text-outline dark:text-gray-400">
+    <a href="index.html" class="hover:underline">Home</a>
+    <span>/</span>
+    <a href="books.html" class="hover:underline" data-i18n="nav_books">Books</a>
+    <span>/</span>
+    <span class="text-primary dark:text-white font-semibold" data-breadcrumb-book>
+      <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-32">&nbsp;</span>
+    </span>
+  </div>
+
+  <!-- Book Header -->
+  <div class="bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start justify-between shadow-sm relative overflow-hidden">
+    <div class="flex flex-col gap-3 max-w-xl">
+      <div class="flex items-center gap-3">
+        <span class="bg-sunan-emerald text-white px-2.5 py-0.5 rounded text-xs font-bold uppercase tracking-wider" data-book-badge>&nbsp;&nbsp;&nbsp;</span>
+        <a href="#" data-author-profile-link class="text-xs text-secondary dark:text-[#10b981] font-semibold hover:underline">
+          <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-32">&nbsp;</span>
+        </a>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-bold text-primary dark:text-white" data-book-title>
+        <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-64">&nbsp;</span>
+      </h1>
+      <p class="text-sm text-on-surface-variant dark:text-gray-300">
+        <span data-lang-en data-book-desc-en></span>
+        <span data-lang-id data-book-desc-id style="display:none"></span>
+      </p>
+      <div class="flex flex-wrap gap-x-5 gap-y-1 mt-2 text-xs font-semibold text-outline dark:text-gray-400">
+        <span data-book-kitab-count><span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-24">&nbsp;</span></span>
+        <span data-book-hadith-count><span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-24">&nbsp;</span></span>
+        <span data-book-authenticity><span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-24">&nbsp;</span></span>
+      </div>
+      <div class="mt-1.5 text-[11px] text-outline/70 dark:text-gray-500 italic" data-book-dataset-info style="display:none"></div>
+    </div>
+    <div class="text-right self-end md:self-center">
+      <span class="font-arabic-display text-4xl text-secondary dark:text-[#10b981] leading-relaxed" dir="rtl" data-book-arabic-title>
+        <span class="animate-pulse bg-surface-container-high dark:bg-[#334155] text-transparent rounded inline-block w-48 h-8">&nbsp;</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Dataset Banner (populated by JS) -->
+  <div id="dataset-banner"></div>
+
+  <!-- Search Filter within Book -->
+  <div class="w-full bg-surface dark:bg-[#1e293b] border border-outline-variant/30 dark:border-[#334155] rounded-lg p-3 flex items-center gap-3">
+    <span class="material-symbols-outlined text-outline dark:text-gray-400">search</span>
+    <input type="text" id="chapter-filter-input" placeholder="Filter Kitab by title or topic..." data-i18n="filter_kitab_placeholder" class="w-full bg-transparent border-none focus:ring-0 text-sm text-primary dark:text-white outline-none"/>
+  </div>
+
+  <!-- Kitabs Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="chapters-list-container">
+    <div class="col-span-2 p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
+      <span class="material-symbols-outlined animate-spin text-secondary dark:text-[#10b981] text-3xl">progress_activity</span>
+      <p class="mt-2 text-sm text-outline dark:text-gray-400">Loading Kitab index...</p>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
+    <div class="text-primary dark:text-white font-bold mb-4 md:mb-0 opacity-90"><span data-i18n="footer_text">© 2026 hadeeth.id - Digital Hadith Manuscript Preservation</span></div>
+    <div class="flex flex-wrap gap-4 items-center justify-center">
+      <a href="https://tafseer.id" target="_blank" rel="noopener" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">tafseer.id</a>
+      <a href="docs.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Data Sources</a>
+      <a href="privacy.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Privacy Policy</a>
+      <a href="glossary.html" class="hover:text-secondary dark:hover:text-[#10b981] transition-colors">Glossary</a>
+    </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/config.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/api.js?v=20261120_sharh"></script>
+<script src="js/app.js?v=20261120_sharh"></script>
+</body>
+</html>
