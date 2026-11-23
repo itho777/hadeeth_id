@@ -22,6 +22,19 @@ function fetchWithTimeout(url, options = {}, timeoutMs = 15000) {
  */
 const R2_DATA_URL = 'https://pub-075ac3f4a31e4e85a876c26c815ae93d.r2.dev';
 
+/**
+ * Meilisearch keyword engine — index `hadiths` behind the meili-handoff-router
+ * Worker, which follows whichever InstaBox currently holds the active copy.
+ * The key is search-only: it grants nothing beyond `search` on any index.
+ */
+const MEILI_CONFIG = {
+  host: 'https://meili-handoff-router.irianto-suryoputro.workers.dev',
+  searchKey: '5097f0a23f1728b653e9f31a8cefba073f47ab04e47fd3ed75348a46c8182a4e',
+  index: 'hadiths',
+  timeoutMs: 4500,
+  maxHits: 50,
+};
+
 const CORE9 = new Set(['bukhari', 'muslim', 'abudawud', 'tirmidhi', 'nasai',
   'ibnmajah', 'malik', 'ahmad', 'darimi']);
 
@@ -546,13 +559,86 @@ const HadeethAPI = {
   },
 
   /**
-   * Multilingual Hadith Search (Supabase REST + RPC + Lightweight Local Fallback)
+   * Keyword search against the `hadiths` Meilisearch index.
+   * Returns rows in the shape renderSearchResults() already consumes.
+   */
+  async meiliSearch(query, bookFilter = 'all', limit = 20) {
+    const buildBody = (matchingStrategy) => {
+      const body = {
+        q: query,
+        limit: Math.max(1, Math.min(limit || 20, MEILI_CONFIG.maxHits)),
+        // Mandatory for Arabic: the tokenizer splits off the definite article
+        // `ال`, and the default `last` strategy matches almost every hadith as
+        // soon as that token hits.
+        matchingStrategy,
+        attributesToHighlight: ['text_ar', 'text_id', 'text_en'],
+      };
+      if (bookFilter && bookFilter !== 'all') {
+        body.filter = `collection = "${bookFilter}"`;
+      }
+      return body;
+    };
+
+    const request = async (matchingStrategy) => {
+      const res = await fetchWithTimeout(
+        `${MEILI_CONFIG.host}/indexes/${MEILI_CONFIG.index}/search`,
+        {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${MEILI_CONFIG.searchKey}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(buildBody(matchingStrategy)),
+        },
+        MEILI_CONFIG.timeoutMs
+      );
+      if (!res.ok) throw new Error(`Meilisearch HTTP ${res.status}`);
+      return (await res.json()).hits || [];
+    };
+
+    let hits = await request('all');
+    // `all` is precise but unforgiving on a long query; `frequency` drops the
+    // fewest words instead of falling back to `last`, which matches everything.
+    if (hits.length === 0 && String(query).trim().split(/\s+/).length > 1) {
+      hits = await request('frequency');
+    }
+
+    return hits.map(hit => ({
+      id: hit.id,
+      book_slug: hit.collection,
+      book_name: hit.book_title_en || hit.book_title_id || hit.collection,
+      hadith_number: hit.hadith_number,
+      reference: `#${hit.hadith_number}`,
+      arabic_text: hit.text_ar || '',
+      primary_translation: hit.text_id || hit.text_en || '',
+      english_text: hit.text_en || '',
+      indonesian_text: hit.text_id || '',
+      grade: hit.grade || '',
+      grade_en: hit.grade || '',
+      grade_id: hit.grade || '',
+      source: hit.source,
+      source_label: hit.source_label,
+      collection: hit.collection,
+    }));
+  },
+
+  /**
+   * Multilingual Hadith Search (Meilisearch -> Supabase REST -> RPC -> local)
    */
   async search(query, bookFilter = 'all', limit = 20) {
     if (!query || !query.trim()) return [];
     const q = query.trim();
     const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
     const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
+
+    // 0. Meilisearch — primary keyword engine. Everything below stays as the
+    //    in-house fallback for when the index is unreachable or has no match.
+    try {
+      const meiliHits = await this.meiliSearch(q, bookFilter, limit);
+      if (meiliHits.length > 0) return meiliHits;
+    } catch (err) {
+      console.warn('Meilisearch unavailable, using in-house keyword search:', err);
+    }
 
     // 1. Direct Supabase REST Full-Text / Keyword Query (Fastest & most reliable)
     try {

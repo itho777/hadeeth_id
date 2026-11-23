@@ -124,7 +124,7 @@ const UI_I18N = {
     search_placeholder: "Scholarly Search (e.g., 'Intention', 'Sahih Bukhari 1')",
     search_scope_all: "All Books",
     search_mode_semantic: "Semantic (Cloudflare AI)",
-    search_mode_keyword: "Keyword (Algolia)",
+    search_mode_keyword: "Keyword (Meilisearch)",
     search_btn: "Search",
     continue_reading: "CONTINUE READING",
     kutub_tisah_title: "Kutubut Tis'ah",
@@ -163,7 +163,7 @@ const UI_I18N = {
     search_placeholder: "Cari Hadits (contoh: 'Niat', 'Shahih Bukhari 1')",
     search_scope_all: "Semua Kitab",
     search_mode_semantic: "Semantik (Cloudflare AI)",
-    search_mode_keyword: "Kata Kunci (Algolia)",
+    search_mode_keyword: "Kata Kunci (Meilisearch)",
     search_btn: "Cari",
     continue_reading: "LANJUTKAN MEMBACA",
     kutub_tisah_title: "Kutubut Tis'ah (9 Kitab Utama)",
@@ -907,7 +907,7 @@ function renderSearchResults(results, query, container) {
   let html = `
     <div class="flex items-center justify-between px-2 mb-1">
       <span class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">Found ${results.length} authentic matches</span>
-      <span class="text-xs text-outline dark:text-gray-500">Multilingual FTS</span>
+      <span class="text-xs text-outline dark:text-gray-500">Meilisearch</span>
     </div>
     <div class="flex flex-col gap-4">
   `;
@@ -4318,7 +4318,9 @@ function renderSyarahUI() {
   }
 
   const data = dataArray[activeIndex];
-  const srcNameEn = data.source_name_en || (data.book_id === 'bukhari' ? 'Fath al-Bari' : 'Commentary');
+  // A row without a label is an unlabelled source, never the book's primary
+  // sharh. Naming one here used to turn unlabelled Dorar rows into "Fath al-Bari".
+  const srcNameEn = data.source_name_en || data.source_name_ar || 'Commentary';
   const srcNameId = data.source_name_id || srcNameEn;
 
   // Dynamically generate tabs
