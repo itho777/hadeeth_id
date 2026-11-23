@@ -7,7 +7,7 @@ document ids produced here are byte-identical to the ids already in the
 ``hadiths`` index. Nothing is written to any remote store: the run ends with two
 files in the working directory.
 
-    hadeeth_vectors_f16.npy   (N, 1024) float16, L2-normalised, row order = ids file
+    hadeeth_vectors_f16.bin   (N, 1024) raw float16, L2-normalised, row order = ids file
     hadeeth_ids.ndjson        one JSON string per line, same order
     meta.json                 counts, model, dims, per-shard breakdown
 
@@ -28,13 +28,32 @@ import urllib.request
 
 import numpy as np
 
+try:
+    import sentence_transformers  # noqa: F401
+except ImportError:
+    import subprocess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "sentence-transformers"])
+
 BASE = os.environ.get("HADEETH_DATA_URL", "https://data.hadeeth.id")
+# Offline mode: a Kaggle dataset mirror of the corpus (corpus/ + model/bge-m3/).
+LOCAL_ROOT = os.environ.get("HADEETH_LOCAL_ROOT") or (
+    "/kaggle/input/hadeeth-corpus" if os.path.isdir("/kaggle/input/hadeeth-corpus") else ""
+)
 UA = "hadeeth-indexer/1.0 (+https://hadeeth.id)"
 HEADERS = {"User-Agent": UA, "Accept": "application/json, application/x-ndjson, */*"}
 NOT_HADITH = {"glossary", "topics_counts"}
 SAFE_RE = re.compile(r"[^A-Za-z0-9_-]")
 
 MODEL_NAME = "BAAI/bge-m3"
+def _local_model_dir():
+    """The dataset copy of bge-m3, but only if it really holds a loadable model."""
+    if not LOCAL_ROOT:
+        return ""
+    cand = os.path.join(LOCAL_ROOT, "model", "bge-m3")
+    return cand if os.path.isfile(os.path.join(cand, "config.json")) else ""
+
+
+MODEL_SRC = os.environ.get("HADEETH_MODEL_PATH") or _local_model_dir() or MODEL_NAME
 DIMS = 1024
 MAX_SEQ = 512
 MAX_CHARS = 2000          # ~500 tokens of mixed Arabic/Latin; the tokenizer truncates anyway
@@ -47,7 +66,12 @@ OUT_META = "meta.json"
 # ---------------------------------------------------------------- corpus walk
 
 def open_remote(path, attempts=4, timeout=120):
-    """urlopen with the indexer UA and a short backoff on transient edge failures."""
+    """urlopen with the indexer UA and a short backoff on transient edge failures.
+
+    With LOCAL_ROOT set, reads the mirrored file straight off disk instead.
+    """
+    if LOCAL_ROOT:
+        return open(os.path.join(LOCAL_ROOT, "corpus", path.lstrip("/")), "rb")
     last = None
     for i in range(attempts):
         try:
@@ -136,6 +160,8 @@ def main():
     args = ap.parse_args()
 
     objs, listing = hadith_objects()
+    print(f"corpus source: {LOCAL_ROOT or BASE}", flush=True)
+    print(f"model source: {MODEL_SRC}", flush=True)
     print(f"corpus: {listing['count']} objects, {listing['bytes']/1e9:.2f} GB", flush=True)
     print(f"hadith row files: {len(objs)}", flush=True)
     if args.dry_run:
@@ -156,7 +182,7 @@ def main():
     print(f"device: {torch.cuda.get_device_name(0)}  fp16", flush=True)
 
     model = SentenceTransformer(
-        MODEL_NAME, device=device, model_kwargs={"torch_dtype": torch.float16}
+        MODEL_SRC, device=device, model_kwargs={"torch_dtype": torch.float16}
     )
     model.max_seq_length = MAX_SEQ
     model.eval()
