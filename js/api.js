@@ -84,7 +84,9 @@ const HadeethAPI = {
   },
 
   get localDataUrl() {
-    // Kept as an alias: all site data lives on R2 now.
+    // Kept as an alias: all site data lives on R2 now. The /data tree in this
+    // repo is a different build (fawaz numbering), so retrying there would
+    // return mismatched rows instead of the requested hadith.
     return this.baseUrl;
   },
 
@@ -378,7 +380,8 @@ const HadeethAPI = {
       if (entry) {
         const hadiths = await this.fetchNdjsonRange('api', bookId, entry.s, entry.e, dsPrefix);
         h = hadiths[0] || null;
-      } else {
+      } else if (!idx) {
+        // No index at all (both origins): only then pay for the full file.
         const allHadiths = await this.fetchNdjsonFull('api', bookId, dsPrefix);
         const want = String(hadithNumber);
         h = allHadiths.find(item => {
@@ -388,6 +391,8 @@ const HadeethAPI = {
           return String(item.hadith_number) === want || String(item.id) === want;
         }) || null;
       }
+      // Index loaded but the number is absent: report "not found" instead of
+      // pulling a 40–96 MB file over mobile data.
       
       // Backward compatibility wrapper for old hadith.html
       if (h) {

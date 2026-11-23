@@ -778,17 +778,24 @@ async function loadHOTD() {
 
   try {
     // Fetch with timeout to avoid indefinite skeleton on local dev
-    const h = await Promise.race([
-      window.HadeethAPI.getHadith(bookId, hadithId, 'lidwa').catch(() => null),
-      new Promise((_, reject) => setTimeout(() => reject(new Error('HOTD timeout')), 8000))
+    const loadOnce = (bk, hid) => Promise.race([
+      window.HadeethAPI.getHadith(bk, hid, 'lidwa').catch(() => null),
+      new Promise((_, reject) => setTimeout(() => reject(new Error('HOTD timeout')), 12000))
     ]).catch(() => null);
+
+    let h = await loadOnce(bookId, hadithId);
+    // A stale admin config in localStorage can point at a number this dataset
+    // no longer has; retry once with the built-in default before giving up.
+    if (!h && (bookId !== 'bukhari' || hadithId !== '1')) {
+      h = await loadOnce('bukhari', '1');
+    }
     if (!h) {
       // Show friendly fallback message instead of skeleton
       const hotdBookLabel = document.getElementById('hotd-book-label');
-      if (hotdBookLabel) hotdBookLabel.textContent = 'Hadith of the Day';
+      if (hotdBookLabel) hotdBookLabel.textContent = bookName;
       const hotdArabic = document.getElementById('hotd-arabic');
       if (hotdArabic) {
-        hotdArabic.textContent = 'Loading requires server Range support. Deploy to GitHub Pages to view Hadith of the Day.';
+        hotdArabic.textContent = 'Hadis hari ini belum dapat dimuat. Muat ulang halaman untuk mencoba lagi.';
         hotdArabic.classList.remove('animate-pulse', 'text-transparent', 'bg-surface-container-high');
       }
       return;
