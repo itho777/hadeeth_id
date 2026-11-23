@@ -169,6 +169,32 @@ def load():
                     h = json.loads(line)
                     push("irsyad", b, h.get("hadith_number"), h.get("text_ar"))
 
+    # The hadeeth_id family was never in this corpus, which is the whole reason
+    # hadith_map carried zero edges for it while the 8,493 rows sat in D1.
+    for b in ("bulugh", "mishkat", "riyad", "shamail"):
+        p = f"{SRC}/hadeeth_id/{b}.ndjson"
+        if not os.path.exists(p):
+            continue
+        with open(p, encoding="utf-8") as fh:
+            for line in fh:
+                if line.strip():
+                    h = json.loads(line)
+                    push("hadeeth_id", b, h.get("hadith_number"),
+                         h.get("text_ar"), h.get("text_ar_plain"))
+
+    # Masabih al-Sunna (Shamela 5049) and 'Umdat al-Ahkam (Shamela 519) are the
+    # matn editions the masabih/umdat syarah packages already point at with
+    # source_dataset='shamela'. Their units live in data/api/, not data/sources/.
+    for b in ("masabih", "umdat"):
+        p = f"{ROOT}/data/api/{b}.ndjson"
+        if not os.path.exists(p):
+            continue
+        with open(p, encoding="utf-8") as fh:
+            for line in fh:
+                if line.strip():
+                    h = json.loads(line)
+                    push("shamela", b, h.get("hadith_number"), h.get("text_ar"))
+
     return rows, counts
 
 

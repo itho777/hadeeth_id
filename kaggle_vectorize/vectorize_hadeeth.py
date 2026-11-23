@@ -329,6 +329,20 @@ def main():
     mm.flush()
     del mm
 
+    # The memmap is sized from the counting pass, but a record with no usable
+    # text is skipped while embedding, which leaves zero padding at the tail.
+    # Trim the file to what was actually written so rows == ids exactly.
+    written_bytes = row * DIMS * 2
+    allocated_bytes = os.path.getsize(vec_path)
+    if allocated_bytes != written_bytes:
+        with open(vec_path, "r+b") as fh:
+            fh.truncate(written_bytes)
+        print(
+            f"trimmed {allocated_bytes - written_bytes} bytes of zero padding "
+            f"({total_docs - row} unembeddable records)",
+            flush=True,
+        )
+
     elapsed = time.time() - started
     meta = {
         "model": MODEL_NAME,

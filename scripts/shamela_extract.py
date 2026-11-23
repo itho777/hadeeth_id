@@ -62,7 +62,8 @@ def build_stream(rows, parts=None):
     """One string, with (start, end, page_num, part, sequence_num) per source row."""
     chunks, marks, pos = [], [], 0
     for r in rows:
-        p = int(r["part"]) if r.get("part") not in (None, "") else None
+        raw_part = r.get("part")
+        p = int(raw_part) if raw_part not in (None, "") and str(raw_part).isdigit() else None
         if parts is not None and p is not None and p not in parts:
             continue
         body = re.sub(r"\r\n?", "\n", r["body"] or "")

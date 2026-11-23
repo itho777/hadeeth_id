@@ -74,6 +74,37 @@ def parse_name(path):
     return (m.group(1), m.group(2), m.group(3) or "1") if m else None
 
 
+DORAR_MARKERS = ("الدرر السنية", "الدرر السنيّة")
+DORAR_EN = "Dorar (al-Durar al-Saniyyah)"
+DORAR_ID = "Dorar (ad-Durar as-Saniyyah)"
+# Labels that name a language, not a source. The en/ branch sets
+# "English commentary" for any doc carrying `syarah_en`, which is wrong for a
+# Dorar row that already has its own Arabic source label.
+LANGUAGE_LABELS = {"english commentary", "syarah bahasa inggris", "شرح بالإنجليزية"}
+
+
+def is_dorar(row):
+    ar = (row.get("source_name_ar") or "").strip()
+    return ar.lower() == "dorar" or any(m in ar for m in DORAR_MARKERS)
+
+
+def repair_source_label(row):
+    """A Dorar row must name Dorar, never a language or the book's own sharh.
+
+    The scraper stored only `source_name_ar` ("موقع الدرر السنية") and left
+    `source_name_en` / `source_name_id` null, so the tab rendered the UI's
+    last-resort fallback; rows that also carry an English translation rendered
+    as "English commentary". Both name a language, not the source. Fill the
+    missing labels from the Arabic one that is actually present.
+    """
+    if not is_dorar(row):
+        return
+    for lang, label in (("en", DORAR_EN), ("id", DORAR_ID)):
+        current = (row.get(f"source_name_{lang}") or "").strip()
+        if not current or current.lower() in LANGUAGE_LABELS:
+            row[f"source_name_{lang}"] = label
+
+
 def norm_row(doc, book, anchor, alt, origin):
     row = {"book_id": book, "anchor_id": anchor, "source_key": alt}
     texts = {}
@@ -124,6 +155,7 @@ def norm_row(doc, book, anchor, alt, origin):
         val = row.get(f"explanation_{lang}")
         if val:
             row[f"syarah_{lang}"] = val
+    repair_source_label(row)
     row["langs"] = sorted(texts)
     row["origin"] = origin
     return row

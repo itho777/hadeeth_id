@@ -15,6 +15,16 @@ Meilisearch (--meili)
     One index (`hadeeth`) fed shard by shard, with the searchable/filterable
     settings the documents were shaped for.
 
+    Every query MUST send `matchingStrategy: "all"`. The Arabic tokenizer splits
+    the definite article `ال` into its own token, and it appears in 153,347 of
+    the 153,920 documents; Meilisearch's default strategy then anchors on that
+    token and returns the whole corpus for any Arabic query that starts with
+    `ال` (measured: `الصلاة` → 153,345 hits, and even the nonsense `الززززز` →
+    153,345). With `matchingStrategy: "all"` the same queries return 13,513 and
+    0. Do not use `stopWords: ["ال"]` as a workaround: it also strips the
+    article out of `الله`, so `الله` starts matching documents that only
+    contain `له`.
+
 Both are idempotent: shards and documents are written with INSERT OR REPLACE /
 a stable primary key, so a re-run corrects rather than duplicates.
 """
@@ -191,15 +201,20 @@ def push(db, buf):
 
 
 MEILI_SETTINGS = {
-    "searchableAttributes": ["text_norm", "text_ar", "text_id", "text_en",
+    # `text_ar_norm` is the only field that can match Arabic reliably: it is the
+    # harakat-stripped, alef/ya/ta-marbuta-unified form. The raw `text_ar` keeps
+    # the harakat, so a query typed without them cannot match it. Never list
+    # `text_norm` here — that name exists only in the D1 schema (see load_docs,
+    # which renames the field), not in any Meilisearch document.
+    "searchableAttributes": ["text_ar_norm", "text_ar", "text_id", "text_en",
                              "chapter", "rawis", "book_en", "number"],
     "filterableAttributes": ["book", "dataset", "grade", "langs", "chapter",
                              "num"],
     "sortableAttributes": ["num", "number"],
     "displayedAttributes": ["id", "book", "book_en", "book_ar", "dataset",
                             "number", "num", "chapter", "chapter_ar", "text_ar",
-                            "text_id", "text_en", "grade", "rawis", "langs",
-                            "url"],
+                            "text_ar_norm", "text_id", "text_en", "grade", "rawis",
+                            "langs", "url"],
     "rankingRules": ["words", "typo", "proximity", "attribute", "sort",
                      "exactness"],
 }

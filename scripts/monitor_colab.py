@@ -17,7 +17,7 @@ FINAL = r"G:\hadeeth_id\vectors"
 VEC = os.path.join(FINAL, "hadeeth_vectors_f16.bin")
 IDS = os.path.join(FINAL, "hadeeth_ids.ndjson")
 SLUG = "ithosuryoputro/hadeeth-vectorize"
-DEADLINE = time.time() + 95 * 60
+DEADLINE = time.time() + float(os.environ.get("MONITOR_MINUTES", "95")) * 60
 
 
 def kaggle_status():

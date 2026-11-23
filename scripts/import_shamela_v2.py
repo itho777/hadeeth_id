@@ -42,6 +42,11 @@ BOOKS = ("adab", "mustadrak", "daruquthni", "tabarani")
 PART_BOOKS = {"tabarani"}
 STATE = ROOT / "scripts" / "import_shamela_v2_state.json"
 MAP_OUT = ROOT / "data" / "shamela_map.ndjson"
+# Full matcher record per probed row: carries via (jaccard|containment), ambiguity,
+# contain/inter/rare_inter and the chargram verdict. hadith_map needs those fields to
+# fill method/score/confidence/evidence honestly; the narrow MAP_OUT above keeps only
+# what text_link was able to hold.
+RAW_OUT = ROOT / "data" / "map_raw.ndjson"
 
 
 def load_etl(db_id=SHAMELA_ID):
@@ -134,11 +139,21 @@ def build_map():
     res = R.match_rows(mats, meta, inv, keys, range(len(mats)), df=df,
                        cand_cap=R.CAP, skip=skip)
     n = 0
-    with open(MAP_OUT, "w", encoding="utf-8") as f:
+    with open(MAP_OUT, "w", encoding="utf-8") as f, open(RAW_OUT, "w", encoding="utf-8") as raw:
         for i, x in res.items():
+            ds, book, num = meta[i]
+            raw.write(json.dumps({
+                "source_id": ds, "book_id": book, "number": str(num),
+                "state": x["state"], "via": x.get("via"),
+                "score": x.get("score"), "contain": x.get("contain"),
+                "inter": x.get("inter"), "rare_inter": x.get("rare_inter"),
+                "ambiguous": x.get("ambiguous"), "verdict": x.get("verdict"),
+                "chargram": x.get("chargram"),
+                "target_dataset": x.get("target_dataset"),
+                "target": None if x.get("target") is None else str(x.get("target")),
+            }, ensure_ascii=False) + "\n")
             if x["state"] != "matched":
                 continue
-            ds, book, num = meta[i]
             tgt_ds, tgt_book = x["target_dataset"].rsplit(":", 1)
             f.write(json.dumps({
                 "source_id": ds, "book_id": book, "number": str(num),
