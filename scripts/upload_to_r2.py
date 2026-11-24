@@ -110,7 +110,7 @@ def main():
         sys.exit(1)
 
     # verify a sample over the public URL
-    r = requests.get("https://pub-075ac3f4a31e4e85a876c26c815ae93d.r2.dev/index.json",
+    r = requests.get("https://cdn.hadeeth.id/index.json",
                      timeout=30)
     print(f"public index.json: HTTP {r.status_code}, "
           f"{len(r.content)} bytes, usable={r.ok}")

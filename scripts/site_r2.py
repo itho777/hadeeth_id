@@ -33,7 +33,7 @@ DATA = ROOT / "data"
 OUT = ROOT / "export_site"
 MANIFEST = OUT / "_manifest.ndjson"
 API = f"https://api.cloudflare.com/client/v4/accounts/{ACCOUNT}/r2/buckets/{BUCKET}/objects"
-PUBLIC = "https://pub-075ac3f4a31e4e85a876c26c815ae93d.r2.dev"
+PUBLIC = "https://cdn.hadeeth.id"  # was r2.dev; custom domain is the serving origin
 CT = "application/x-ndjson"
 
 

@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 ROOT = Path(__file__).resolve().parent.parent
 WORK = ROOT / "export"
 
-BASE_URL = "https://pub-075ac3f4a31e4e85a876c26c815ae93d.r2.dev"
+BASE_URL = "https://cdn.hadeeth.id"  # was r2.dev; custom domain is the serving origin
 
 # display order for the site; anything not listed sorts after, alphabetically
 CANON = ["bukhari", "muslim", "abudawud", "tirmidhi", "nasai", "ibnmajah",

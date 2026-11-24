@@ -36,7 +36,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "export_site"
 SEARCH = OUT / "search"
 CACHE = ROOT / ".dump" / "preindex_src"
-R2 = "https://pub-075ac3f4a31e4e85a876c26c815ae93d.r2.dev"
+R2 = "https://cdn.hadeeth.id"  # was r2.dev; custom domain is the serving origin
 
 # Not hadith rows.
 SKIP = {"glossary.ndjson", "topics_counts.ndjson"}
