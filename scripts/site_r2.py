@@ -658,7 +658,12 @@ def convert_chapter_ranges(src, dst):
 
 def scan_row_chapters(src):
     """Chapter stats from the rows themselves, for books whose source file has
-    no kitab table: {chapter_id: [min_number, max_number, count]}."""
+    no kitab table: {chapter_id: [min_number, max_number, row_count, distinct]}.
+
+    `distinct` counts different hadith numbers, which is what a chapter holds;
+    `row_count` counts shipped rows, which can repeat a number across editions.
+    Reporting the row count as the chapter size is the defect this guards.
+    """
     stats = {}
     if not Path(src).exists():
         return stats
@@ -674,43 +679,123 @@ def scan_row_chapters(src):
                 num = int(str(r.get("hadith_number", "")).strip())
             except (TypeError, ValueError):
                 num = None
-            st = stats.setdefault(str(cid), [None, None, 0])
+            st = stats.setdefault(str(cid), [None, None, 0, set()])
             if num is not None:
                 st[0] = num if st[0] is None else min(st[0], num)
                 st[1] = num if st[1] is None else max(st[1], num)
+                st[3].add(num)
             st[2] += 1
+    for st in stats.values():
+        st[3] = len(st[3])
     return stats
 
 
-def build_chapters(book, stats, names, existing, dst):
-    """One row per kitab, with ranges and counts taken from the shipped rows."""
+def build_chapters(book, stats, names, existing, dst, book_title_ar=""):
+    """One row per kitab, with ranges and counts taken from the shipped rows.
+
+    `old` is keyed by the raw chapter number as a string: id-keyed books carry
+    ids like ``turath:1218:heading:0073`` and an int() cast silently dropped
+    every title they had. `hadith_count` is the number of distinct hadith the
+    chapter contains; the shipped row count rides alongside as `row_count`.
+    """
     old = {}
     if existing.exists():
         for e in rows(json.loads(existing.read_text(encoding="utf-8")), "chapter_number"):
-            try:
-                old[int(e.get("chapter_number"))] = e
-            except (TypeError, ValueError):
-                pass
+            cid = e.get("chapter_number")
+            if cid is None:
+                continue
+            old[str(cid)] = e
     out = []
     stats = {k: v for k, v in stats.items() if v[2] > 0}
     single = len(stats) == 1
-    for kitab in sorted(stats, key=lambda k: int(k) if str(k).lstrip("-").isdigit() else 0):
-        start, end, count = stats[kitab]
+
+    def sort_key(k):
+        prev = old.get(str(k), {})
+        d = prev.get("display_number")
+        if isinstance(d, (int, float)) or str(d).isdigit():
+            return (0, float(d))
+        return (1, int(k) if str(k).lstrip("-").isdigit() else 0)
+
+    for kitab in sorted(stats, key=sort_key):
+        st = stats[kitab]
+        start, end, count = st[0], st[1], st[2]
+        distinct = st[3] if len(st) > 3 else count
         key = int(kitab) if str(kitab).lstrip("-").isdigit() else kitab
-        prev = old.get(key, {})
-        fallback_id = "Semua Hadits" if single else f"Kitab {kitab}"
-        fallback_en = "All Hadiths" if single else f"Chapter {kitab}"
-        out.append({
+        prev = old.get(str(kitab), {})
+        title_ar = prev.get("title_ar") or (book_title_ar if single else "")
+        # Never fall back to the raw id when an Arabic title exists: that is how
+        # "Kitab turath:1218:heading:0073" reached the chapter cards.
+        fallback_id = "Semua Hadits" if single else ("" if title_ar else f"Kitab {kitab}")
+        row = {
             "book_id": book,
             "id": f"{book}_c{kitab}",
             "chapter_number": key,
             "title_id": names.get(key) or prev.get("title_id") or fallback_id,
             "title_en": prev.get("title_en") or ("All Hadiths" if single else ""),
-            "title_ar": prev.get("title_ar") or "",
+            "title_ar": title_ar,
             "hadith_start": start,
             "hadith_end": end,
-            "hadith_count": count,
+            "hadith_count": distinct,
+        }
+        if count != distinct:
+            row["row_count"] = count
+        if "display_number" in prev:
+            row["display_number"] = prev["display_number"]
+        elif single:
+            row["display_number"] = "M"
+        if book == "shah" and single:
+            row["title_id"] = "Empat Puluh Hadits"
+            row["title_en"] = "Forty Hadiths"
+        out.append(row)
+    write_ndjson(dst, out)
+    return len(out)
+
+
+def build_from_source(book, stats, source_path, dst):
+    """Chapter sidecar where the source file owns the titles and the shipped
+    rows own the ranges, for books whose chapter ids are strings.
+
+    Source shape: ``{chapter_id: {"title_ar": ..., "display_number": ...}}``.
+    A chapter in the source with no shipped row is skipped rather than shipped
+    as an empty card.
+    """
+    doc = json.loads(Path(source_path).read_text(encoding="utf-8"))
+    if not isinstance(doc, dict):
+        raise SystemExit(f"{source_path}: expected an id-keyed object")
+    out = []
+    for cid, meta in doc.items():
+        st = stats.get(str(cid))
+        if not st or not st[2]:
+            continue
+        meta = meta if isinstance(meta, dict) else {}
+        out.append({
+            "book_id": book,
+            "id": f"{book}_c{cid}",
+            "chapter_number": cid,
+            "title_id": "",
+            "title_en": "",
+            "title_ar": meta.get("title_ar") or "",
+            "hadith_start": st[0],
+            "hadith_end": st[1],
+            "hadith_count": st[3] if len(st) > 3 else st[2],
+            "row_count": st[2],
+            "_display": meta.get("display_number"),
         })
+    numeric = all(str(r["chapter_number"]).lstrip("-").isdigit() for r in out)
+    if numeric:
+        out.sort(key=lambda r: int(r["chapter_number"]))
+        for i, r in enumerate(out, 1):
+            r["display_number"] = i
+    else:
+        out.sort(key=lambda r: (0, r["_display"]) if isinstance(r["_display"], (int, float))
+                 else (1, 10 ** 9))
+        # Renumber 1..N over the chapters that are actually shipped: the source
+        # order reserves numbers for headings that carry no hadith, and a badge
+        # reading 73 on the first card looks like missing data.
+        for i, r in enumerate(out, 1):
+            r["display_number"] = i
+    for r in out:
+        r.pop("_display", None)
     write_ndjson(dst, out)
     return len(out)
 
@@ -882,19 +967,27 @@ def build():
                 hi = num if hi is None else max(hi, num)
         return [lo, hi, count]
 
+    titles_ar = {b.get("id"): (b.get("title_ar") or "") for b in books}
+    # These two carry string chapter ids and a title table of their own; the
+    # id-keyed builder would drop the titles, so their source file drives.
+    ID_KEYED = ("tabarani", "muntaqa")
     for book in sorted(counts):
         src_chapters = DATA / "chapters" / f"{book}.json"
         dst = OUT / "chapters" / f"{book}.ndjson"
         row_stats = scan_row_chapters(shipped_path(book))
-        if book in chap_stats and chap_stats[book]:
-            n = build_chapters(book, chap_stats[book], kitab_names.get(book, {}), src_chapters, dst)
+        if book in ID_KEYED and src_chapters.exists() and row_stats:
+            n = build_from_source(book, row_stats, src_chapters, dst)
+        elif book in chap_stats and chap_stats[book]:
+            n = build_chapters(book, chap_stats[book], kitab_names.get(book, {}), src_chapters, dst,
+                               titles_ar.get(book, ""))
         elif row_stats:
-            n = build_chapters(book, row_stats, kitab_names.get(book, {}), src_chapters, dst)
+            n = build_chapters(book, row_stats, kitab_names.get(book, {}), src_chapters, dst,
+                               titles_ar.get(book, ""))
         elif src_chapters.exists():
             n = convert_chapter_ranges(src_chapters, dst)
         else:
             span = number_span(shipped_path(book)) or [None, None, 0]
-            n = build_chapters(book, {"1": span}, {}, src_chapters, dst)
+            n = build_chapters(book, {"1": span}, {}, src_chapters, dst, titles_ar.get(book, ""))
         add(dst, f"chapters/{book}.ndjson")
         report.append((f"chapters/{book}.ndjson", n, "-"))
         if book in CORE9:
@@ -905,7 +998,8 @@ def build():
                     span = number_span(fz_src) or [None, None, 0]
                     fz_stats = {"1": span}
                 fz_dst = OUT / "chapters" / "fawaz" / f"{book}.ndjson"
-                n_fz = build_chapters(book, fz_stats, kitab_names.get(book, {}), src_chapters, fz_dst)
+                n_fz = build_chapters(book, fz_stats, kitab_names.get(book, {}), src_chapters, fz_dst,
+                                      titles_ar.get(book, ""))
                 add(fz_dst, f"chapters/fawaz/{book}.ndjson")
                 report.append((f"chapters/fawaz/{book}.ndjson", n_fz, "-"))
 
@@ -1247,8 +1341,16 @@ def upload():
     sent = 0
     t0 = time.time()
     for i, item in enumerate(items, 1):
+        local = ROOT / item["path"]
+        if not local.exists():
+            # Remote-only key: another builder owns the source and this tree has
+            # no copy of it (map/, search/). Keep it, never prune it, never
+            # report it as uploaded. Counting it as a failure would abort the
+            # batch over a file this build was never meant to produce.
+            skip += 1
+            continue
         rmt = remote.get(item["key"])
-        if rmt and rmt[0] == item["bytes"] and rmt[1] == md5_of(ROOT / item["path"]):
+        if rmt and rmt[0] == item["bytes"] and rmt[1] == md5_of(local):
             skip += 1
             continue
         try:
