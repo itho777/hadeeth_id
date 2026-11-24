@@ -1,8 +1,6 @@
-name = "hadeeth-ai-search"
+name = "hadeeth-semantic"
 main = "src/index.js"
-compatibility_date = "2024-05-01"
-
-assets = { directory = "../../" }
+compatibility_date = "2026-11-24"
 
 [ai]
 binding = "AI"
@@ -10,4 +8,3 @@ binding = "AI"
 [vars]
 SUPABASE_URL = "https://idokyspokenbmzoegahq.supabase.co"
 SUPABASE_ANON_KEY = "sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR"
-

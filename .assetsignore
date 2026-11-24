@@ -78,3 +78,51 @@ data/sources/
 
 # Project-internal docs, not site pages
 SCHEME_DISPLAY.md
+
+# ---------------------------------------------------------------------------
+# Project-internal material that must never be served. Added with the semantic
+# search build: the repo root accumulated agent briefs, probes and working
+# directories that a root-level asset walk would otherwise publish.
+# ---------------------------------------------------------------------------
+_audit/
+workers/
+worker/
+colab/
+export_site/
+vectors/
+.kaggle*/
+.kinit/
+.klog*
+.vectorize*
+.vq.ndjson
+*.md
+scripts_lib/
+test_*.js
+
+# Root-level working artifacts found by the asset walk (Workers caps a single
+# asset at 25 MiB, and none of these are fetched by a browser).
+*.pkl
+*.db
+temp_old.json
+old_*.ndjson
+backup_grades_v1.json
+derajat_map.json
+sanad_map.json
+map_recall_diag.json
+logs_*.txt
+
+# Working trees and large payloads that are R2-served, never Worker assets.
+# `data/api/` holds the master NDJSON (ahmad alone is 92.7 MiB, over the 25 MiB
+# per-asset cap); js/api.js reads those from R2 first, so the origin copy is
+# redundant. `.dump/` is 4+ GiB of Meilisearch and Postgres dumps.
+.dump/
+.venv-embed/
+_backup/
+_probe/
+kaggle_dataset/
+kaggle_out/
+export/
+dist/
+data/api/
+data/fawaz_combined/
+data/map_raw.ndjson

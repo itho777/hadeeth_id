@@ -123,7 +123,7 @@ const UI_I18N = {
     hero_subtitle: "Search through thousands of authenticated Ahadith from the major collections, with detailed chains of narration and scholarly grading.",
     search_placeholder: "Scholarly Search (e.g., 'Intention', 'Sahih Bukhari 1')",
     search_scope_all: "All Books",
-    search_mode_semantic: "Semantic (Cloudflare AI)",
+    search_mode_semantic: "Semantic",
     search_mode_keyword: "Keyword (Meilisearch)",
     search_btn: "Search",
     continue_reading: "CONTINUE READING",
@@ -162,7 +162,7 @@ const UI_I18N = {
     hero_subtitle: "Cari ribuan hadits shahih dari kitab-kitab utama, lengkap dengan silsilah sanad dan derajat keabsahan ulama.",
     search_placeholder: "Cari Hadits (contoh: 'Niat', 'Shahih Bukhari 1')",
     search_scope_all: "Semua Kitab",
-    search_mode_semantic: "Semantik (Cloudflare AI)",
+    search_mode_semantic: "Semantik",
     search_mode_keyword: "Kata Kunci (Meilisearch)",
     search_btn: "Cari",
     continue_reading: "LANJUTKAN MEMBACA",
@@ -861,20 +861,22 @@ function initSearch() {
     }
 
     const bookFilter = document.getElementById('search-kitab-filter')?.value || 'all';
+    const preferred = document.querySelector('input[name="search_type"]:checked')?.value || 'semantic';
+    const preferredLabel = (preferred === 'keyword' || preferred === 'exact') ? 'Keyword' : 'Semantic';
 
     resultsDiv.classList.remove('hidden');
     resultsDiv.innerHTML = `
       <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
         <span class="material-symbols-outlined animate-spin text-secondary dark:text-[#10b981] text-3xl">progress_activity</span>
         <p class="mt-2 text-sm font-semibold text-primary dark:text-white">Searching authentic sources...</p>
-        <p class="text-xs text-outline dark:text-gray-400 mt-1">Query: "${escapeHtml(query)}" • Filter: ${escapeHtml(bookFilter)}</p>
+        <p class="text-xs text-outline dark:text-gray-400 mt-1">Query: "${escapeHtml(query)}" • Filter: ${escapeHtml(bookFilter)} • ${preferredLabel} first</p>
       </div>
     `;
 
     resultsDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
     if (window.HadeethAPI) {
-      const results = await window.HadeethAPI.search(query, bookFilter, 20);
+      const results = await window.HadeethAPI.search(query, bookFilter, 20, preferred);
       renderSearchResults(results, query, resultsDiv);
     }
   };
@@ -900,22 +902,44 @@ function initSearch() {
  * Render Search Results Cards
  */
 function renderSearchResults(results, query, container) {
+  const meta = (results && results.searchMeta) || null;
   if (!results || results.length === 0) {
+    const tried = meta && meta.attempts && meta.attempts.length
+      ? meta.attempts.map(t => `${t.tier}${t.ok ? ' ✓' : ' ✗'}`).join(' → ')
+      : '';
     container.innerHTML = `
       <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
         <span class="material-symbols-outlined text-outline dark:text-gray-500 text-4xl">search_off</span>
         <h3 class="mt-2 font-bold text-primary dark:text-white">No results found for "${escapeHtml(query)}"</h3>
         <p class="text-xs text-outline dark:text-gray-400 mt-1">Try searching by keyword like 'niat', 'intention', 'revelation', or Hadith number like '1'</p>
+        ${tried ? `<p class="text-[11px] text-outline/80 dark:text-gray-500 mt-2">Methods tried: ${escapeHtml(tried)}</p>` : ''}
       </div>
     `;
     return;
   }
 
+  // Which engine actually answered. Never label results with a method that did not run.
+  const badge = (() => {
+    if (!meta) return { text: 'Method not reported', cls: 'bg-outline/10 text-outline' };
+    const base = 'text-xs font-semibold px-2 py-0.5 rounded';
+    const generic = meta.method === 'semantic' ? 'Semantic'
+                  : meta.method === 'basic'    ? 'Basic keyword'
+                  : 'Keyword';
+    const tone = meta.method === 'semantic' ? ' bg-sunan-emerald/10 text-sunan-emerald dark:text-[#10b981]'
+               : meta.method === 'basic'    ? ' bg-amber-500/10 text-amber-600 dark:text-amber-400'
+               : ' bg-blue-500/10 text-blue-600 dark:text-blue-400';
+    return { text: generic + (meta.fellBack ? ' (fallback)' : ''), cls: base + tone };
+  })();
+  const engineNote = meta
+    ? `${meta.label} via ${meta.engine}${meta.fellBack ? ' — selected method unavailable' : ''}`
+    : '';
+
   let html = `
-    <div class="flex items-center justify-between px-2 mb-1">
+    <div class="flex items-center justify-between px-2 mb-1 gap-3">
       <span class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">Found ${results.length} authentic matches</span>
-      <span class="text-xs text-outline dark:text-gray-500">Meilisearch</span>
+      <span class="${badge.cls}" title="${escapeHtml(engineNote)}">${escapeHtml(badge.text)}</span>
     </div>
+    ${meta ? `<p class="px-2 mb-2 text-[11px] text-outline dark:text-gray-500">${escapeHtml(engineNote)}</p>` : ''}
     <div class="flex flex-col gap-4">
   `;
 

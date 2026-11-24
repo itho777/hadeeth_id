@@ -23,16 +23,55 @@ function fetchWithTimeout(url, options = {}, timeoutMs = 15000) {
 const R2_DATA_URL = 'https://pub-075ac3f4a31e4e85a876c26c815ae93d.r2.dev';
 
 /**
+ * Display names for the nine lidwa books held in the semantic index.
+ * Anything else falls back to the uppercased book id.
+ */
+const BOOK_NAMES = {
+  bukhari:  'Sahih al-Bukhari',
+  muslim:   'Sahih Muslim',
+  abudawud: 'Sunan Abu Dawood',
+  tirmidhi: "Jami' at-Tirmidhi",
+  nasai:    "Sunan an-Nasa'i",
+  ibnmajah: 'Sunan Ibn Majah',
+  malik:    'Muwatta Malik',
+  darimi:   'Sunan ad-Darimi',
+  ahmad:    'Musnad Ahmad',
+  nawawi:   'Forty Nawawi',
+};
+
+
+/**
  * Meilisearch keyword engine — index `hadiths` behind the meili-handoff-router
  * Worker, which follows whichever InstaBox currently holds the active copy.
  * The key is search-only: it grants nothing beyond `search` on any index.
  */
+/**
+ * Algolia keyword engine — hosted fallback that sits between Meilisearch and the
+ * local keyword scan. Left blank until credentials are supplied; while appId or
+ * searchKey are empty this tier reports "not configured" and is skipped, so the
+ * results page never claims Algolia ran when it did not.
+ */
+const ALGOLIA_CONFIG = {
+  appId: '',
+  searchKey: '',
+  index: 'hadiths',
+  timeoutMs: 4000,
+};
+
 const MEILI_CONFIG = {
   host: 'https://meili-handoff-router.irianto-suryoputro.workers.dev',
   searchKey: '5097f0a23f1728b653e9f31a8cefba073f47ab04e47fd3ed75348a46c8182a4e',
   index: 'hadiths',
   timeoutMs: 4500,
   maxHits: 50,
+  // Query embedding runs on Workers AI behind data.hadeeth.id, so no key is
+  // needed here. Keyword-only search remains the fallback if it times out.
+  embedUrl: 'https://data.hadeeth.id/_embed',
+  embedTimeoutMs: 2500,
+  semanticRatio: 0.6,
+  // Flipped off for the rest of the session the first time the index
+  // rejects a hybrid query (embedder not built yet, or mid-rebuild).
+  semanticEnabled: true,
 };
 
 const CORE9 = new Set(['bukhari', 'muslim', 'abudawud', 'tirmidhi', 'nasai',
@@ -564,10 +603,39 @@ const HadeethAPI = {
   },
 
   /**
-   * Keyword search against the `hadiths` Meilisearch index.
+   * Embed a query with the same bge-m3 model the hadiths vectors were built
+   * with. Failure is non-fatal: meiliSearch then ranks by keyword only.
+   */
+  async embedQuery(query) {
+    const res = await fetchWithTimeout(
+      MEILI_CONFIG.embedUrl,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text: String(query).slice(0, 2000) }),
+      },
+      MEILI_CONFIG.embedTimeoutMs
+    );
+    if (!res.ok) throw new Error(`Embed HTTP ${res.status}`);
+    const data = (await res.json()).data;
+    if (!data || !data[0] || data[0].length !== 1024) throw new Error('bad embedding shape');
+    return data[0];
+  },
+
+  /**
+   * Hybrid keyword + vector search against the `hadiths` Meilisearch index.
    * Returns rows in the shape renderSearchResults() already consumes.
    */
   async meiliSearch(query, bookFilter = 'all', limit = 20) {
+    let vector = null;
+    if (MEILI_CONFIG.semanticEnabled) {
+      try {
+        vector = await this.embedQuery(query);
+      } catch (e) {
+        console.warn('Semantic embedding unavailable, keyword-only search:', e);
+      }
+    }
+
     const buildBody = (matchingStrategy) => {
       const body = {
         q: query,
@@ -577,6 +645,12 @@ const HadeethAPI = {
         // soon as that token hits.
         matchingStrategy,
         attributesToHighlight: ['text_ar', 'text_id', 'text_en'],
+        // Hybrid fuses keyword ranking with bge-m3 cosine ranking. Leave
+        // these out when the embedder is down: Meili then does plain search.
+        ...(vector ? {
+          vector,
+          hybrid: { embedder: 'default', semanticRatio: MEILI_CONFIG.semanticRatio },
+        } : {}),
       };
       if (bookFilter && bookFilter !== 'all') {
         body.filter = `collection = "${bookFilter}"`;
@@ -601,7 +675,18 @@ const HadeethAPI = {
       return (await res.json()).hits || [];
     };
 
-    let hits = await request('all');
+    let hits;
+    try {
+      hits = await request('all');
+    } catch (e) {
+      if (!vector) throw e;
+      // No embedder on the index yet: drop to keyword search and stop
+      // paying for a hybrid request that will keep failing.
+      MEILI_CONFIG.semanticEnabled = false;
+      vector = null;
+      console.warn('Hybrid search unavailable, using keyword search:', e);
+      hits = await request('all');
+    }
     // `all` is precise but unforgiving on a long query; `frequency` drops the
     // fewest words instead of falling back to `last`, which matches everything.
     if (hits.length === 0 && String(query).trim().split(/\s+/).length > 1) {
@@ -628,101 +713,175 @@ const HadeethAPI = {
   },
 
   /**
-   * Multilingual Hadith Search (Meilisearch -> Supabase REST -> RPC -> local)
+   * Semantic engine: Cloudflare AI embeds the query, Supabase pgvector ranks.
+   * The Worker returns ids only; text is hydrated from R2 through getHadith().
+   * Throws on any failure so search() can fall through to the other engine.
    */
-  async search(query, bookFilter = 'all', limit = 20) {
-    if (!query || !query.trim()) return [];
-    const q = query.trim();
-    const supabaseUrl = 'https://idokyspokenbmzoegahq.supabase.co';
-    const anonKey = 'sb_publishable_Hz6k4Jp7rdSxwXCk1AO-sQ_r93N88QR';
-
-    // 0. Meilisearch — primary keyword engine. Everything below stays as the
-    //    in-house fallback for when the index is unreachable or has no match.
-    try {
-      const meiliHits = await this.meiliSearch(q, bookFilter, limit);
-      if (meiliHits.length > 0) return meiliHits;
-    } catch (err) {
-      console.warn('Meilisearch unavailable, using in-house keyword search:', err);
+  async semanticSearch(query, bookFilter = 'all', limit = 20) {
+    const res = await fetchWithTimeout(
+      '/api/search',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          q: String(query).slice(0, 500),
+          book: bookFilter,
+          limit: Math.max(1, Math.min(limit, 20)),
+        }),
+      },
+      18000
+    );
+    if (!res.ok) throw new Error(`Semantic API HTTP ${res.status}`);
+    const data = await res.json();
+    if (!data || data.mode !== 'semantic' || !data.vectorGenerated ||
+        !Array.isArray(data.results) || data.results.length === 0) {
+      throw new Error(data?.aiError || data?.rpcError || 'semantic engine returned no results');
     }
 
-    // 1. Direct Supabase REST Full-Text / Keyword Query (Fastest & most reliable)
-    try {
-      const num = parseInt(q);
-      let filter = `or=(text_en.ilike.*${encodeURIComponent(q)}*,text_id.ilike.*${encodeURIComponent(q)}*,text_ar.ilike.*${encodeURIComponent(q)}*)`;
-      if (!isNaN(num)) {
-        filter = `or=(hadith_number.eq.${num},text_en.ilike.*${encodeURIComponent(q)}*,text_id.ilike.*${encodeURIComponent(q)}*)`;
-      }
+    // Hydrate ranked ids with text. Parallel: sequential costs ~10s for 20 rows.
+    const rows = await Promise.all(data.results.map(async (r) => {
+      const h = await this.getHadith(r.book_id, r.hadith_number, 'lidwa');
+      if (!h) return null;
+      const name = BOOK_NAMES[r.book_id] || String(r.book_id || '').toUpperCase();
+      return {
+        id: r.id,
+        book_slug: r.book_id,
+        book_name: name,
+        hadith_number: h.hadith_number ?? r.hadith_number,
+        reference: `#${h.hadith_number ?? r.hadith_number}`,
+        arabic_text: h.text_ar || '',
+        primary_translation: h.text_id || h.text_en || '',
+        english_text: h.text_en || '',
+        indonesian_text: h.text_id || '',
+        grade: h.grade || h.gradings?.[0]?.grade || '',
+        grade_en: h.grade_en || h.grade || '',
+        grade_id: h.grade_id || h.grade || '',
+        source: h.source || 'lidwa',
+        collection: r.book_id,
+        similarity: Number(r.similarity),
+      };
+    }));
+    const hits = rows.filter(Boolean);
+    if (!hits.length) throw new Error('semantic matches could not be hydrated');
+    return hits;
+  },
 
-      let url = `${supabaseUrl}/rest/v1/hadiths?${filter}&limit=${limit}`;
-      if (bookFilter && bookFilter !== 'all') {
-        url += `&book_id=eq.${encodeURIComponent(bookFilter)}`;
-      }
-
-      const res = await fetch(url, {
-        headers: { 'apikey': anonKey, 'Authorization': `Bearer ${anonKey}` }
-      });
-
-      if (res.ok) {
-        const data = await res.json();
-        if (data && data.length > 0) {
-          return data.map(item => ({
-            id: item.id,
-            book_slug: item.book_id,
-            book_name: item.book_id === 'nawawi' ? 'Forty Nawawi' : (item.book_id === 'bukhari' ? 'Sahih al-Bukhari' : item.book_id.toUpperCase()),
-            hadith_number: item.hadith_number,
-            reference: `#${item.hadith_number}`,
-            arabic_text: item.text_ar || '',
-            primary_translation: item.text_id || item.text_en || '',
-            english_text: item.text_en || '',
-            indonesian_text: item.text_id || '',
-            grade: item.grade || 'Sahih'
-          }));
-        }
-      }
-    } catch (err) {
-      console.warn('Supabase REST search failed, trying RPC:', err);
+  /**
+   * Algolia keyword engine. Throws when unconfigured so search() records the tier
+   * as unavailable rather than silently pretending it was tried.
+   */
+  async algoliaSearch(query, bookFilter = 'all', limit = 20) {
+    if (!ALGOLIA_CONFIG.appId || !ALGOLIA_CONFIG.searchKey) {
+      throw new Error('not configured');
     }
-
-    // 2. RPC search_hadiths fallback
-    try {
-      const response = await fetch(`${supabaseUrl}/rest/v1/rpc/search_hadiths`, {
+    const res = await fetchWithTimeout(
+      `https://${ALGOLIA_CONFIG.appId}-dsn.algolia.net/1/indexes/${ALGOLIA_CONFIG.index}/query`,
+      {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'apikey': anonKey,
-          'Authorization': `Bearer ${anonKey}`
+          'X-Algolia-Application-Id': ALGOLIA_CONFIG.appId,
+          'X-Algolia-API-Key': ALGOLIA_CONFIG.searchKey,
         },
-        body: JSON.stringify({ query_text: q, match_limit: limit })
-      });
+        body: JSON.stringify({
+          query: String(query),
+          hitsPerPage: Math.max(1, Math.min(limit, 50)),
+          filters: bookFilter && bookFilter !== 'all' ? `book_slug:"${bookFilter}"` : undefined,
+        }),
+      },
+      ALGOLIA_CONFIG.timeoutMs
+    );
+    if (!res.ok) throw new Error(`Algolia HTTP ${res.status}`);
+    const data = await res.json();
+    const hits = (data.hits || []).map(h => ({
+      id: h.objectID || h.id,
+      book_slug: h.book_slug || h.book_id,
+      book_name: BOOK_NAMES[h.book_slug || h.book_id] || String(h.book_slug || h.book_id || '').toUpperCase(),
+      hadith_number: h.hadith_number,
+      reference: `#${h.hadith_number}`,
+      arabic_text: h.arabic_text || h.text_ar || '',
+      primary_translation: h.text_id || h.text_en || h.indonesian_text || '',
+      english_text: h.text_en || '',
+      indonesian_text: h.text_id || '',
+      grade: h.grade || '',
+      grade_en: h.grade_en || h.grade || '',
+      grade_id: h.grade_id || h.grade || '',
+    })).filter(h => h.id);
+    if (!hits.length) throw new Error('algolia returned no results');
+    return hits;
+  },
 
-      if (response.ok) {
-        const rawResults = await response.json();
-        if (rawResults && rawResults.length > 0) {
-          let mapped = rawResults.map(item => ({
-            id: item.id,
-            book_slug: item.book_id,
-            book_name: item.book_id === 'nawawi' ? 'Forty Nawawi' : 'Sahih al-Bukhari',
-            hadith_number: item.hadith_number,
-            reference: `#${item.hadith_number}`,
-            arabic_text: item.text_ar || '',
-            primary_translation: item.text_id || item.text_en || '',
-            english_text: item.text_en || '',
-            indonesian_text: item.text_id || '',
-            grade: item.grade || 'Sahih'
-          }));
+  /**
+   * Hadith search — one chain shared by both modes.
+   *
+   *   1. the mode the user selected        ('semantic' | 'keyword')
+   *   2. the other mode                    (cross-fallback)
+   *   3. Algolia                           (hosted keyword, when configured)
+   *   4. basic keyword scan                (client-side, last resort)
+   *
+   * The tier that actually answered is reported on `results.searchMeta`; the UI
+   * prints its generic label plus the engine behind it. A tier that could not run
+   * is recorded as unavailable — never dressed up as a result.
+   *
+   * @param {string} preferred 'semantic' | 'keyword' (legacy value 'exact' accepted)
+   */
+  async search(query, bookFilter = 'all', limit = 20, preferred = 'semantic') {
+    if (!query || !query.trim()) return [];
+    const q = query.trim();
+    const want = preferred === 'keyword' || preferred === 'exact' ? 'keyword' : 'semantic';
 
-          if (bookFilter && bookFilter !== 'all') {
-            mapped = mapped.filter(m => m.book_slug.toLowerCase() === bookFilter.toLowerCase());
-          }
-          if (mapped.length > 0) return mapped;
+    const engines = {
+      semantic: () => this.semanticSearch(q, bookFilter, limit),
+      keyword: async () => {
+        const hits = await this.meiliSearch(q, bookFilter, limit);
+        if (!hits || !hits.length) throw new Error('keyword engine returned no results');
+        return hits;
+      },
+      algolia: () => this.algoliaSearch(q, bookFilter, limit),
+    };
+    const META = {
+      semantic: { label: 'Semantic', engine: 'Cloudflare AI + Supabase pgvector' },
+      keyword: { label: 'Keyword', engine: 'Meilisearch' },
+      algolia: { label: 'Keyword', engine: 'Algolia' },
+      basic: { label: 'Keyword', engine: 'basic keyword · local index' },
+    };
+
+    const order = [want, want === 'semantic' ? 'keyword' : 'semantic', 'algolia'];
+    const attempts = [];
+
+    for (const tier of order) {
+      try {
+        const hits = await engines[tier]();
+        if (hits && hits.length) {
+          attempts.push({ tier, ok: true, count: hits.length });
+          hits.searchMeta = {
+            method: tier,
+            label: META[tier].label,
+            engine: META[tier].engine,
+            primary: want,
+            fellBack: tier !== want,
+            attempts,
+          };
+          return hits;
         }
+        attempts.push({ tier, ok: false, note: 'no results' });
+      } catch (err) {
+        attempts.push({ tier, ok: false, note: String((err && err.message) || err) });
       }
-    } catch (err) {
-      console.warn('Supabase RPC search failed:', err);
     }
 
-    // 3. Lightweight Client-side Fallback
-    return await this.fallbackLocalSearch(q, bookFilter);
+    // Last resort: basic keyword scan over the local index.
+    const local = (await this.fallbackLocalSearch(q, bookFilter)) || [];
+    attempts.push({ tier: 'basic', ok: local.length > 0, count: local.length });
+    local.searchMeta = {
+      method: 'basic',
+      label: META.basic.label,
+      engine: META.basic.engine,
+      primary: want,
+      fellBack: true,
+      attempts,
+    };
+    return local;
   },
 
   /**
