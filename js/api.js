@@ -20,7 +20,15 @@ function fetchWithTimeout(url, options = {}, timeoutMs = 15000) {
  * Data lives in Cloudflare R2. The bucket serves HTTP Range correctly (206), which
  * is what every lookup in this file depends on. Override with window.__HADEETH_DATA__.
  */
-const R2_DATA_URL = 'https://pub-075ac3f4a31e4e85a876c26c815ae93d.r2.dev';
+const R2_DATA_URL = 'https://cdn.hadeeth.id';
+
+/**
+ * The bucket's r2.dev development endpoint is kept only as a last-resort
+ * mirror. Cloudflare rate-limits r2.dev and explicitly restricts it to
+ * non-production traffic, and no cache rules can be attached to it, so the
+ * custom domain above is the serving origin.
+ */
+const R2_DEV_FALLBACK = 'https://pub-075ac3f4a31e4e85a876c26c815ae93d.r2.dev';
 
 /**
  * Display names for the nine lidwa books held in the semantic index.
@@ -146,6 +154,10 @@ const HadeethAPI = {
   async _get(path, options = {}, timeoutMs = 15000) {
     const urls = [`${this.baseUrl}/${path}`];
     if (this.localDataUrl !== this.baseUrl) urls.push(`${this.localDataUrl}/${path}`);
+    // Last resort only: the custom domain is the serving origin, but a bucket
+    // misconfiguration or an edge fault should degrade to r2.dev rather than
+    // break the page outright.
+    if (this.baseUrl !== R2_DEV_FALLBACK) urls.push(`${R2_DEV_FALLBACK}/${path}`);
     for (const url of urls) {
       const res = await fetchWithTimeout(url, options, timeoutMs).catch(() => null);
       if (res && (res.ok || res.status === 206)) return res;
