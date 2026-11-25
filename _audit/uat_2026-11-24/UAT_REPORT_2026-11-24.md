@@ -874,17 +874,20 @@ state and editorial pins; the corpus stays on R2, as instructed.
 | Live unauthenticated pages | `admin.html` shows the auth gate; `profile.html` redirects to `login.html`; no page errors. |
 | Syntax | `node --check` on `app.js`, `admin.js`, `user-sync.js`, `auth.js`; `py_compile` on `apply_supabase_migration.py` → `ALL_OK`. |
 
-**Schema not applied — blocker.** Project `idokyspokenbmzoegahq` currently has only the
-vector table `hadiths`; `profiles`, `bookmarks`, `reading_progress`,
-`hotd_overrides`, and `hotd_settings` return 404. The supplied personal access
-token belongs to a different Supabase account (it can list only project
-`zgey…`), so `POST /v1/projects/idokys…/database/query` returns 403. The
-migration parses under `pglast` and executes under PGlite; it needs the project
-owner to run it once in Dashboard → SQL Editor:
+**Schema applied and verified (2026-11-25).** The project owner ran
+`supabase/migrations/20261125000000_mobile_sync_and_hotd.sql` in the SQL editor.
+Production checks:
 
-```text
-G:/hadeeth_id/supabase/migrations/20261125000000_mobile_sync_and_hotd.sql
-```
+| Check | Result |
+|---|---|
+| `profiles`, `bookmarks`, `reading_progress`, `hotd_overrides` via anon REST | HTTP 200, empty as expected |
+| `hotd_settings` | `[{singleton:true, auto_rotate:true}]` |
+| anon `is_hadeeth_admin()` | `false` |
+| anon insert into `hotd_overrides` | 401 `42501` (RLS blocks) |
+| temporary confirmed user + `admin_users` grant | sign-in 200, `is_hadeeth_admin()` → `true`, insert 201, anon read 200, delete 204 |
+| cleanup | temp user sign-in → 400; `admin_users` back to the two bootstrap emails; no test overrides left |
+| live pin end-to-end | inserted `2026-11-25 → muslim #1`; `https://hadeeth.id/index.html` rendered `Sahih Muslim 1`; after delete, rendered `Shahih Ibn Hibban 1169` again |
 
-Until then the UI degrades safely: HOTD uses deterministic rotation, the admin
-page shows its schema warning, and profile sync stays local.
+No content copy exists in Supabase. `hotd_overrides` + `hotd_settings` are editor
+state; `profiles`, `bookmarks`, and `reading_progress` are user state. The
+hadith corpus remains on the CDN.
