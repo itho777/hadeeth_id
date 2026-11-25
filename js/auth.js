@@ -16,18 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         
         // Initial check
-        window.supabaseClient.auth.getSession().then(({ data: { session } }) => {
+        window.supabaseClient.auth.getSession().then(async ({ data: { session } }) => {
             updateAuthUI(session);
             
-            // If we are on admin page, enforce auth and admin rights
+            // Admin gate is advisory here; the real gate is RLS and the
+            // admin.html console checks is_hadeeth_admin() itself.
             const path = window.location.pathname;
             if (path.includes("admin.html")) {
                 if (!session) {
                     window.location.href = "login.html?redirect=admin";
                 } else {
-                    const email = session.user.email;
-                    const isAdmin = window.ADMIN_EMAILS && window.ADMIN_EMAILS.includes(email);
-                    if (!isAdmin) {
+                    const { data, error } = await window.supabaseClient.rpc("is_hadeeth_admin");
+                    const fallback = (window.ADMIN_EMAILS || []).includes(session.user.email);
+                    const allowed = data === true || (error && fallback);
+                    if (!allowed) {
                         alert("Access Denied: You do not have administrator privileges.");
                         window.location.href = "profile.html";
                     }

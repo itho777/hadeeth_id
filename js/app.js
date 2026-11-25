@@ -744,33 +744,125 @@ function loadHomeLastRead() {
 }
 
 /**
- * loadHOTD — Load Hadith of the Day from localStorage (set via admin panel)
+ * Resolve the shared Hadith of the Day.
+ *
+ * Order matters: a Supabase override (or its deterministic sahih pick) wins;
+ * then the one-line CDN pin the mobile app already reads; then the legacy
+ * per-browser key; then Bukhari 1. The old implementation only read
+ * localStorage, so an admin change never left the operator's browser.
  */
+function wibDateString() {
+  return new Date(Date.now() + 7 * 3600 * 1000).toISOString().slice(0, 10);
+}
+
+function hotdFetch(bookId, hadithId) {
+  return Promise.race([
+    window.HadeethAPI.getHadith(bookId, hadithId, 'lidwa').catch(() => null),
+    new Promise((_, reject) => setTimeout(() => reject(new Error('HOTD timeout')), 12000))
+  ]).catch(() => null);
+}
+
+/**
+ * Deterministic sahih rotation, identical in spirit to the mobile client.
+ * Books with a mixed grade summary are excluded. The day number is WIB and the
+ * stride is fixed, so every device lands on the same narration and it rolls
+ * at midnight without a cron or a copied corpus in Supabase.
+ */
+async function pickAutoHotd(skipAuto) {
+  if (skipAuto) return null;
+  try {
+    const books = await window.HadeethAPI.getBooks();
+    const pool = (books || []).filter((b) => {
+      const g = String(b.grade_summary || '');
+      return g.includes('صحيح') && !g.includes('Varies') && Number(b.total_hadiths) > 0;
+    });
+    if (!pool.length) return null;
+    const wib = new Date(Date.now() + 7 * 3600 * 1000);
+    const day = Math.floor(Date.UTC(wib.getUTCFullYear(), wib.getUTCMonth(), wib.getUTCDate()) / 86400000);
+    const book = pool[day % pool.length];
+    const start = ((day * 2654435761) % Number(book.total_hadiths)) + 1;
+    for (let step = 0; step < 8; step++) {
+      const h = await hotdFetch(book.id, String(start + step));
+      if (!h) break;
+      const grade = String(h.grade || '');
+      const rowHasWeakGrade = /dha|mauquf|maqtu|syadz|munkar|maudhu/i.test(grade);
+      const rowIsSahih = /shahih|sahih|صحيح/i.test(grade) && !rowHasWeakGrade;
+      // Collections selected here are graded sahih end to end. Rows from the
+      // non-core books have no per-hadith grade at all; accepting them is
+      // correct, whereas accepting a weak grade from a core book is not.
+      if (rowIsSahih || (!grade && !rowHasWeakGrade)) {
+        return { bookId: book.id, hadithId: String(h.hadith_number || h.id) };
+      }
+    }
+  } catch (e) {
+    console.warn('HOTD auto rotation failed:', e);
+  }
+  return null;
+}
+
+/**
+ * Order: Supabase manual pin -> deterministic sahih rotation -> legacy CDN pin
+ * -> per-browser key -> Bukhari 1. Supabase holds only account state and pins;
+ * never a copy of the hadith corpus.
+ */
+async function resolveHotd() {
+  let skipAuto = false;
+  if (window.supabaseClient) {
+    try {
+      const { data: rows, error } = await window.supabaseClient.rpc('get_hotd_override', { p_day: wibDateString() });
+      const row = !error && Array.isArray(rows) ? rows[0] : null;
+      if (row && row.book_id && row.hadith_number) {
+        return { bookId: row.book_id, hadithId: String(row.hadith_number) };
+      }
+    } catch (e) {}
+    try {
+      const { data: settings } = await window.supabaseClient
+        .from('hotd_settings').select('auto_rotate').eq('singleton', true).maybeSingle();
+      if (settings && settings.auto_rotate === false) skipAuto = true;
+    } catch (e) {}
+  }
+  const auto = await pickAutoHotd(skipAuto);
+  if (auto) return auto;
+
+  try {
+    const res = await fetch('https://cdn.hadeeth.id/hotd.ndjson?nc=' + Date.now(), { cache: 'no-store' });
+    if (res.ok) {
+      const row = (await res.text()).trim().split('\n').map((line) => {
+        try { return JSON.parse(line); } catch (e) { return null; }
+      }).find((r) => r && r.book && (r.id || r.hadith));
+      if (row) return { bookId: row.book, hadithId: String(row.id ?? row.hadith) };
+    }
+  } catch (e) {}
+  try {
+    const legacy = JSON.parse(localStorage.getItem('hadeeth_hotd') || 'null');
+    if (legacy && legacy.bookId && legacy.hadithId) {
+      return { bookId: legacy.bookId, hadithId: legacy.hadithId };
+    }
+  } catch (e) {}
+  return { bookId: 'bukhari', hadithId: '1' };
+}
+
 async function loadHOTD() {
   const container = document.getElementById('hotd-container');
   if (!container) return;
 
-  // Load config from localStorage (set by admin panel)
-  let hotdConfig = null;
-  try {
-    const raw = localStorage.getItem('hadeeth_hotd');
-    if (raw) hotdConfig = JSON.parse(raw);
-  } catch (e) {}
-
-  // Default HOTD: Bukhari #1 (Umar narration on intentions)
-  const bookId = (hotdConfig && hotdConfig.bookId) || 'bukhari';
-  const hadithId = (hotdConfig && hotdConfig.hadithId) || '1';
+  const { bookId, hadithId } = await resolveHotd();
 
   const bookNames = {
     bukhari: 'Sahih al-Bukhari', muslim: 'Sahih Muslim',
-    abudawud: 'Sunan Abu Dawud', tirmidhi: "Jami' at-Tirmidhi",
+    abudawud: 'Sunan Abi Dawud', tirmidhi: "Jami' at-Tirmidhi",
     nasai: "Sunan an-Nasa'i", ibnmajah: 'Sunan Ibn Majah',
     malik: 'Muwatta Malik', darimi: 'Sunan ad-Darimi',
-    ahmad: 'Musnad Ahmad', nawawi: 'Forty Hadith an-Nawawi',
-    qudsi: '40 Hadith Qudsi', shah: 'Forty Hadith Shah Waliullah',
+    ahmad: 'Musnad Ahmad', nawawi: 'Forty Hadith of an-Nawawi',
+    qudsi: '40 Hadith Qudsi', shah: 'Forty Hadith of Shah Waliullah',
     adab: 'Al-Adab Al-Mufrad', bulugh: 'Bulugh al-Maram',
     mishkat: 'Mishkat al-Masabih', riyad: 'Riyad as-Salihin',
-    shamail: 'Shamail al-Muhammadiyah'
+    shamail: 'Shamail al-Muhammadiyah', tabarani: 'Al-Mujam al-Kabir',
+    syafii: "Musnad al-Shafi'i", riyad_arab: 'Riyad as-Salihin (Arabic)',
+    ibnukhuzaimah: 'Shahih Ibn Khuzaimah', ibnuhibban: 'Shahih Ibn Hibban',
+    mustadrak: 'Al-Mustadrak ala as-Sahihayn', daruquthni: 'Sunan ad-Daruquthni',
+    muntaqa: 'Muntaqa al-Akhbar', maani: "Ma'ani al-Athar",
+    masabih: 'Masabih al-Sunna', umdat: 'Umdat al-Ahkam'
   };
   const bookName = bookNames[bookId] || bookId;
 
@@ -782,16 +874,11 @@ async function loadHOTD() {
 
   try {
     // Fetch with timeout to avoid indefinite skeleton on local dev
-    const loadOnce = (bk, hid) => Promise.race([
-      window.HadeethAPI.getHadith(bk, hid, 'lidwa').catch(() => null),
-      new Promise((_, reject) => setTimeout(() => reject(new Error('HOTD timeout')), 12000))
-    ]).catch(() => null);
-
-    let h = await loadOnce(bookId, hadithId);
+    let h = await hotdFetch(bookId, hadithId);
     // A stale admin config in localStorage can point at a number this dataset
     // no longer has; retry once with the built-in default before giving up.
     if (!h && (bookId !== 'bukhari' || hadithId !== '1')) {
-      h = await loadOnce('bukhari', '1');
+      h = await hotdFetch('bukhari', '1');
     }
     if (!h) {
       // Show friendly fallback message instead of skeleton
@@ -1102,6 +1189,9 @@ const LastReadTracker = {
   save(bookId, hadithId, bookName, hadithTitle) {
     const data = { bookId, hadithId, bookName, hadithTitle, timestamp: Date.now() };
     localStorage.setItem('hadeeth_last_read', JSON.stringify(data));
+    if (window.HadeethUserSync) {
+      window.HadeethUserSync.trackProgress(bookId, hadithId, bookName, hadithTitle);
+    }
   },
   get() {
     try {

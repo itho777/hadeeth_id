@@ -203,7 +203,7 @@
                     });
                     if (error) throw error;
                     
-                    window.location.href = "profile.html";
+                    window.location.href = nextPage();
                 }
             } catch (error) {
                 showError(error.message || "An error occurred.");
@@ -213,6 +213,17 @@
             }
         }
         
+        function nextPage() {
+            const redirect = new URLSearchParams(window.location.search).get("redirect");
+            return redirect === "admin" ? "admin.html" : "profile.html";
+        }
+
+        function oauthRedirect() {
+            return window.location.origin + (new URLSearchParams(window.location.search).get("redirect") === "admin"
+                ? "/login.html?redirect=admin"
+                : "/profile.html");
+        }
+
         function showError(msg) {
             document.getElementById("login-error").innerText = msg;
             document.getElementById("login-error").classList.remove("hidden");
@@ -228,7 +239,7 @@
                 const { data, error } = await window.supabaseClient.auth.signInWithOAuth({
                     provider: provider,
                     options: {
-                        redirectTo: window.location.origin + "/profile.html"
+                        redirectTo: oauthRedirect()
                     }
                 });
                 
@@ -243,7 +254,7 @@
             if (window.supabaseClient) {
                 window.supabaseClient.auth.getSession().then(({ data: { session } }) => {
                     if (session) {
-                        window.location.href = "profile.html";
+                        window.location.href = nextPage();
                     }
                 });
             }
@@ -262,8 +273,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/config.js"></script>
 <script src="js/auth.js"></script>
-<script src="js/api.js?v=20261125_fix"></script>
-<script src="js/app.js?v=20261125_fix"></script>
+<script src="js/api.js?v=20261125_backend"></script>
+<script src="js/app.js?v=20261125_backend"></script>
   <script src="https://razi.hadeeth.id/razi-chat.js" defer data-avatar="assets/razi-avatar.jpg"></script>
 </body>
 </html>

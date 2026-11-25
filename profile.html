@@ -138,6 +138,44 @@
                     </div>
                 </div>
             </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-surface dark:bg-[#10141a] border border-outline-variant dark:border-[#1e293b] rounded-2xl shadow-sm p-6">
+                    <h3 class="text-xl font-bold text-on-surface dark:text-white border-b border-outline-variant dark:border-[#1e293b] pb-4 mb-4">Preferences</h3>
+                    <form id="profile-form" class="flex flex-col gap-3">
+                        <label class="text-sm text-on-surface-variant dark:text-gray-400">Display name
+                            <input id="pref-name" type="text" maxlength="80" class="mt-1 w-full rounded-lg border border-outline-variant dark:border-[#334155] bg-transparent px-3 py-2 text-on-surface dark:text-gray-100"/>
+                        </label>
+                        <label class="text-sm text-on-surface-variant dark:text-gray-400">Preferred language
+                            <select id="pref-language" class="mt-1 w-full rounded-lg border border-outline-variant dark:border-[#334155] bg-transparent px-3 py-2 text-on-surface dark:text-gray-100">
+                                <option value="id">Bahasa Indonesia</option>
+                                <option value="en">English</option>
+                            </select>
+                        </label>
+                        <button type="submit" class="mt-1 bg-primary text-on-primary font-bold px-5 py-2.5 rounded-full self-start">Save preferences</button>
+                        <p id="pref-msg" class="text-sm min-h-[1.25rem] text-on-surface-variant dark:text-gray-400"></p>
+                    </form>
+                </div>
+
+                <div class="bg-surface dark:bg-[#10141a] border border-outline-variant dark:border-[#1e293b] rounded-2xl shadow-sm p-6">
+                    <h3 class="text-xl font-bold text-on-surface dark:text-white border-b border-outline-variant dark:border-[#1e293b] pb-4 mb-4">Cloud sync</h3>
+                    <p id="sync-status" class="text-sm text-on-surface-variant dark:text-gray-400">Checking…</p>
+                    <div class="grid grid-cols-2 gap-3 mt-4">
+                        <div class="rounded-lg bg-surface-container-low dark:bg-[#0a0e14] p-3">
+                            <div class="text-xs uppercase tracking-wide text-on-surface-variant dark:text-gray-400">Bookmarks</div>
+                            <div id="sync-bookmarks" class="text-xl font-bold text-on-surface dark:text-white">—</div>
+                        </div>
+                        <div class="rounded-lg bg-surface-container-low dark:bg-[#0a0e14] p-3">
+                            <div class="text-xs uppercase tracking-wide text-on-surface-variant dark:text-gray-400">Progress</div>
+                            <div id="sync-progress" class="text-xl font-bold text-on-surface dark:text-white">—</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-3 mt-4">
+                        <button id="sync-now" type="button" class="border border-outline-variant dark:border-[#334155] font-bold px-4 py-2 rounded-full">Sync now</button>
+                        <a id="admin-link" href="admin.html" class="hidden text-sm font-bold text-primary dark:text-[#acc9f0] hover:underline">Open admin console</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script>
@@ -147,34 +185,99 @@
                 window.location.href = "index.html";
             }
         }
-        
-        document.addEventListener("DOMContentLoaded", () => {
-            if (window.supabaseClient) {
-                window.supabaseClient.auth.getSession().then(({ data: { session } }) => {
-                    if (!session) {
-                        window.location.href = "login.html";
-                        return;
-                    }
-                    
-                    const user = session.user;
-                    const meta = user.user_metadata || {};
-                    
-                    document.getElementById("profile-name").innerText = meta.full_name || meta.name || user.email.split("@")[0];
-                    document.getElementById("profile-email").innerText = user.email || "";
-                    document.getElementById("profile-id").innerText = user.id;
-                    
-                    if (user.last_sign_in_at) {
-                        const date = new Date(user.last_sign_in_at);
-                        document.getElementById("profile-last-login").innerText = date.toLocaleString();
-                    }
-                    
-                    if (meta.avatar_url || meta.picture) {
-                        document.getElementById("profile-avatar").innerHTML = `<img src="${meta.avatar_url || meta.picture}" alt="Avatar" class="w-full h-full object-cover">`;
-                    }
-                });
-            } else {
-                window.location.href = "login.html";
+
+        function renderCloud(result) {
+            const status = document.getElementById("sync-status");
+            const bookmarks = document.getElementById("sync-bookmarks");
+            const progress = document.getElementById("sync-progress");
+            if (!result.ok) {
+                status.textContent = result.error === "not signed in"
+                    ? "Sign in to sync bookmarks and reading progress."
+                    : "Cloud sync is not enabled yet. Your data stays on this device.";
+                bookmarks.textContent = "—";
+                progress.textContent = "—";
+                return false;
             }
+            status.textContent = "Connected. Changes sync with the mobile app on this account.";
+            return true;
+        }
+
+        async function refreshCounts() {
+            if (!window.HadeethUserSync) return;
+            const c = await window.HadeethUserSync.counts();
+            if (!c) return;
+            document.getElementById("sync-bookmarks").textContent = c.bookmarks == null ? "—" : c.bookmarks;
+            document.getElementById("sync-progress").textContent = c.progress == null ? "—" : c.progress;
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("profile-form");
+            const msg = document.getElementById("pref-msg");
+
+            form.addEventListener("submit", async (ev) => {
+                ev.preventDefault();
+                const patch = {
+                    display_name: document.getElementById("pref-name").value.trim(),
+                    preferred_language: document.getElementById("pref-language").value
+                };
+                localStorage.setItem("hadeeth_lang", patch.preferred_language);
+                if (!window.HadeethUserSync) return;
+                const res = await window.HadeethUserSync.saveProfile(patch);
+                msg.textContent = res.ok ? "Saved." : "Saved on this device; cloud sync is not enabled yet.";
+                if (res.ok) document.getElementById("profile-name").textContent = patch.display_name || "Your Profile";
+            });
+
+            document.getElementById("sync-now").addEventListener("click", async () => {
+                if (!window.HadeethUserSync) return;
+                document.getElementById("sync-status").textContent = "Syncing…";
+                const res = await window.HadeethUserSync.sync();
+                renderCloud(res);
+                await refreshCounts();
+            });
+
+            if (!window.supabaseClient) {
+                window.location.href = "login.html";
+                return;
+            }
+            window.supabaseClient.auth.getSession().then(async ({ data: { session } }) => {
+                if (!session) {
+                    window.location.href = "login.html";
+                    return;
+                }
+                const user = session.user;
+                const meta = user.user_metadata || {};
+
+                document.getElementById("profile-name").innerText = meta.full_name || meta.name || user.email.split("@")[0];
+                document.getElementById("profile-email").innerText = user.email || "";
+                document.getElementById("profile-id").innerText = user.id;
+
+                if (user.last_sign_in_at) {
+                    document.getElementById("profile-last-login").innerText = new Date(user.last_sign_in_at).toLocaleString();
+                }
+                const avatar = meta.avatar_url || meta.picture;
+                if (avatar) {
+                    document.getElementById("profile-avatar").innerHTML = `<img src="${avatar}" alt="Avatar" class="w-full h-full object-cover">`;
+                }
+
+                if (window.HadeethUserSync) {
+                    const res = await window.HadeethUserSync.sync();
+                    const ok = renderCloud(res);
+                    if (ok) {
+                        await refreshCounts();
+                        const cached = JSON.parse(localStorage.getItem("hadeeth_profile_cache") || "{}");
+                        if (cached.display_name) document.getElementById("profile-name").textContent = cached.display_name;
+                        if (cached.display_name) document.getElementById("pref-name").value = cached.display_name;
+                        if (cached.preferred_language) document.getElementById("pref-language").value = cached.preferred_language;
+                    } else {
+                        document.getElementById("pref-name").value = meta.full_name || meta.name || "";
+                    }
+                    if (await window.HadeethUserSync.isAdmin()) {
+                        document.getElementById("admin-link").classList.remove("hidden");
+                    }
+                } else {
+                    document.getElementById("sync-status").textContent = "Sync module failed to load.";
+                }
+            });
         });
     </script>
     <footer class="bg-surface-container-low dark:bg-[#10141a] text-on-surface-variant dark:text-gray-400 font-label-sm text-label-sm w-full py-stack-lg px-margin-main flex flex-col md:flex-row justify-between items-center max-w-content-width-max mx-auto border-t border-outline-variant dark:border-[#1e293b] mt-12">
@@ -190,8 +293,9 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script src="js/config.js"></script>
 <script src="js/auth.js"></script>
-<script src="js/api.js?v=20261125_fix"></script>
-<script src="js/app.js?v=20261125_fix"></script>
+<script src="js/user-sync.js?v=20261125_backend"></script>
+<script src="js/api.js?v=20261125_backend"></script>
+<script src="js/app.js?v=20261125_backend"></script>
   <script src="https://razi.hadeeth.id/razi-chat.js" defer data-avatar="assets/razi-avatar.jpg"></script>
 </body>
 </html>
