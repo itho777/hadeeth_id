@@ -869,8 +869,8 @@ state and editorial pins; the corpus stays on R2, as instructed.
 | HOTD auto rotation | Deterministic WIB-day selection across the seven sahih-pure collections in `books.ndjson` (bukhari, muslim, malik, nawawi, riyad, ibnukhuzaimah, ibnuhibban). No cron, no corpus copy. Manual pins in `hotd_overrides` win over rotation. |
 | Non-core grade gap | Non-core rows carry no per-hadith grade (ibnuhibban #1169 → `grade: null`). The first implementation skipped them and silently fell back to bukhari 1. Fixed in both web and Flutter: a row with no grade is accepted inside a sahih-pure collection; a recorded weak grade is not. |
 | Live check | `https://hadeeth.id/index.html` → `Shahih Ibn Hibban 1169`, 401 Arabic chars, no page errors. |
-| Admin UI (mocked Supabase) | Gate hidden, dashboard visible, `7` rotation books, auto `On`, resolution “auto rotation across 7 sahih-pure collections on CDN”, preview `bukhari #8 · Shahih`, no JS errors. |
-| Profile UI (mocked session) | Name `Admin`, preference `id`, counts `3` bookmarks / `1` reading-progress, status “Connected. Changes sync with the mobile app on this account.”, admin link visible, no JS errors. |
+| Admin UI (production, temporary admin JWT) | Gate hidden, dashboard visible, schema warning hidden, `7` rotation books, `0` pins, resolution “auto rotation across 7 sahih-pure collections on CDN”, no JS errors. |
+| Profile UI (production, temporary user JWT) | Loaded with the account name, status “Connected. Changes sync with the mobile app on this account.”; saving `QA User` / `en` returned `Saved.` and the database row read back `{display_name: "QA User", preferred_language: "en"}`. No JS errors. |
 | Live unauthenticated pages | `admin.html` shows the auth gate; `profile.html` redirects to `login.html`; no page errors. |
 | Syntax | `node --check` on `app.js`, `admin.js`, `user-sync.js`, `auth.js`; `py_compile` on `apply_supabase_migration.py` → `ALL_OK`. |
 
