@@ -604,7 +604,11 @@
         else genLabel = 'Perawi (Rawi)';
       }
       let dateStr = '';
-      if (r.died_ah) dateStr += isId ? `Wafat: ${r.died_ah} H` : `Died: ${r.died_ah} AH`;
+      if (r.died_ah) {
+        // died_ah sometimes arrives with the era already attached ("91 H").
+        const ah = String(r.died_ah).replace(/\s*A\.?H\.?$|\s*H$/i, '');
+        dateStr += isId ? `Wafat: ${ah} H` : `Died: ${ah} AH`;
+      }
       if (r.died_ce) dateStr += ` (${r.died_ce} M)`;
       if (r.city_of_death || r.region) {
         let cityStr = r.city_of_death || r.region;

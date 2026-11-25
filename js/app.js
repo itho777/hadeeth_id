@@ -224,6 +224,10 @@ const LangSystem = {
   apply(lang) {
     const current = this.SUPPORTED.includes(lang) ? lang : 'id';
     document.documentElement.setAttribute('data-lang', current);
+    // The static `lang` attribute in each page was set by hand and disagrees
+    // between pages (index.html said "en", books.html "id"). Keep it truthful
+    // for screen readers, spellcheck and font selection.
+    document.documentElement.setAttribute('lang', current);
     // Show/hide translation containers
     document.querySelectorAll('[data-lang-en]').forEach(el => {
       el.style.display = (current === 'en') ? '' : 'none';
@@ -384,7 +388,7 @@ function renderDatasetBanner(bookId, containerId, forceDataset) {
     return;
   }
 
-  const currentDs = forceDataset || localStorage.getItem('dataset_version') || 'fawazahmed';
+  const currentDs = resolveDataset(bookId, forceDataset || localStorage.getItem('dataset_version'));
   const isId = window.LangSystem && window.LangSystem.isIdMode();
 
   // Validate: if the selected dataset doesn't exist for this book, fall back to primary
@@ -936,7 +940,7 @@ function renderSearchResults(results, query, container) {
 
   let html = `
     <div class="flex items-center justify-between px-2 mb-1 gap-3">
-      <span class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">Found ${results.length} authentic matches</span>
+      <span class="text-xs font-bold uppercase tracking-wider text-secondary dark:text-[#10b981]">Found ${results.length} match${results.length === 1 ? '' : 'es'}</span>
       <span class="${badge.cls}" title="${escapeHtml(engineNote)}">${escapeHtml(badge.text)}</span>
     </div>
     ${meta ? `<p class="px-2 mb-2 text-[11px] text-outline dark:text-gray-500">${escapeHtml(engineNote)}</p>` : ''}
@@ -1131,12 +1135,9 @@ async function loadHadithDetail() {
   // Active dataset mapping — the URL wins so Lidwa-numbered cards keep their numbering.
   const detailDatasetParam = new URLSearchParams(location.search).get('dataset');
   if (detailDatasetParam) localStorage.setItem('dataset_version', detailDatasetParam);
-  let activeDataset = detailDatasetParam || localStorage.getItem('dataset_version') || 'fawazahmed';
-  if (typeof BOOK_DATASETS !== 'undefined') {
-    const dsConfig = BOOK_DATASETS[bookId] || [];
-    const validDs = dsConfig.find(d => d.id === activeDataset);
-    activeDataset = validDs ? activeDataset : (dsConfig.length > 0 ? dsConfig[0].id : 'fawazahmed');
-  }
+  // No stored choice means the book's main dataset (Lidwa for the nine core
+  // books, per BOOK_DATASETS[bookId][0]); see resolveDataset.
+  let activeDataset = resolveDataset(bookId, detailDatasetParam || localStorage.getItem('dataset_version'));
   let dsPrefix = 'fawaz';
   let activeDsLabel = 'International Numbering';
   let activeDsLabelId = 'Penomoran Internasional';
@@ -1155,7 +1156,35 @@ async function loadHadithDetail() {
   const data = await window.HadeethAPI.getHadith(bookId, hadithId, dsPrefix);
   
   if (!data) {
-    container.innerHTML = `<div class="p-8 text-center text-red-500">Failed to load Hadith ${bookId}:${hadithId} from ${activeDsLabel}</div>`;
+    // A missing hadith is a normal outcome, not a crash: name the book, say what
+    // numbers it actually ships, and give the reader a way back.
+    const range = (window.HadeethAPI.getHadithRange
+      ? await window.HadeethAPI.getHadithRange(bookId, dsPrefix).catch(() => null)
+      : null);
+    const bookLabel = bookId === 'nawawi' ? 'Forty Nawawi' : bookId.toUpperCase();
+    const asked = escapeHtml(String(hadithId));
+    const rangeEn = range ? `This book ships hadith ${range.min.toLocaleString('en-US')}–${range.max.toLocaleString('en-US')}.` : '';
+    const rangeId = range ? `Kitab ini memuat hadis ${range.min.toLocaleString('id-ID')}–${range.max.toLocaleString('id-ID')}.` : '';
+    container.innerHTML = `
+      <div class="p-8 text-center bg-surface dark:bg-[#1e293b] rounded-xl border border-outline-variant/20 dark:border-[#334155]">
+        <span class="material-symbols-outlined text-outline dark:text-gray-500 text-4xl">search_off</span>
+        <h3 class="mt-2 font-bold text-primary dark:text-white">
+          <span data-lang-en>Hadith #${asked} not found in ${escapeHtml(bookLabel)}</span>
+          <span data-lang-id style="display:none">Hadis #${asked} tidak ditemukan di ${escapeHtml(bookLabel)}</span>
+        </h3>
+        <p class="text-sm text-outline dark:text-gray-400 mt-2" data-lang-en>${escapeHtml(rangeEn)} Check the number, or browse the book's chapters.</p>
+        <p class="text-sm text-outline dark:text-gray-400 mt-2" data-lang-id style="display:none">${escapeHtml(rangeId)} Periksa nomornya, atau telusuri bab kitab ini.</p>
+        <p class="text-[11px] text-outline/70 dark:text-gray-500 mt-2">${escapeHtml(activeDsLabel)}</p>
+        <div class="mt-4 flex items-center justify-center gap-3">
+          <a href="kitab.html?book=${encodeURIComponent(bookId)}" class="px-4 py-2 rounded-lg bg-primary dark:bg-[#10b981] text-white dark:text-black text-sm font-semibold">
+            <span data-lang-en>Browse chapters</span><span data-lang-id style="display:none">Telusuri bab</span>
+          </a>
+          <a href="hadith-list.html?book=${encodeURIComponent(bookId)}" class="px-4 py-2 rounded-lg border border-outline-variant/30 dark:border-[#334155] text-sm font-semibold text-primary dark:text-white">
+            <span data-lang-en>List hadiths</span><span data-lang-id style="display:none">Daftar hadis</span>
+          </a>
+        </div>
+      </div>`;
+    if (window.LangSystem) window.LangSystem.apply(window.LangSystem.get());
     return;
   }
 
@@ -1770,12 +1799,7 @@ async function loadHadithList() {
   // then localStorage. Sync localStorage so the banner reflects the URL param.
   const datasetParam = params.get('dataset');
   if (datasetParam) localStorage.setItem('dataset_version', datasetParam);
-  let activeDataset = datasetParam || localStorage.getItem('dataset_version') || 'fawazahmed';
-  if (typeof BOOK_DATASETS !== 'undefined') {
-    const dsConfig = BOOK_DATASETS[bookId] || [];
-    const validDs = dsConfig.find(d => d.id === activeDataset);
-    activeDataset = validDs ? activeDataset : (dsConfig.length > 0 ? dsConfig[0].id : 'fawazahmed');
-  }
+  let activeDataset = resolveDataset(bookId, datasetParam || localStorage.getItem('dataset_version'));
 
   const bookNames = {
     bukhari: 'Sahih al-Bukhari',
@@ -2193,10 +2217,14 @@ async function loadHadithList() {
     };
       const abBook = abBookMap[bookId] || bookId;
 
+      // Only books with an AhmedBaset mapping have a by_book file; asking for
+      // an unmapped book (muntaqa, etc.) is a guaranteed 404.
       const [lidwaData, linkGraphData, abData] = await Promise.all([
           window.HadeethAPI.fetchNdjsonFull('sources/lidwa', bookId).catch(() => null),
           window.HadeethAPI.getLinks(bookId).catch(() => null),
-          fetch(`${window.HadeethAPI.dataUrl}/sources/ahmedbaset/by_book/${abBook}.json`).catch(() => null)
+          abBookMap[bookId]
+            ? fetch(`${window.HadeethAPI.dataUrl}/sources/ahmedbaset/by_book/${abBook}.json`).catch(() => null)
+            : Promise.resolve(null)
       ]);
 
       if (linkGraphData) linkGraph = linkGraphData;
@@ -3188,7 +3216,7 @@ async function loadChaptersList() {
   // Render dataset banner BEFORE chapter listing
   renderDatasetBanner(bookId, 'dataset-banner');
 
-  const activeDataset = localStorage.getItem('dataset_version') || 'fawazahmed';
+  const activeDataset = resolveDataset(bookId, localStorage.getItem('dataset_version'));
 
   // Validate dataset availability for this book
   const dsConfig = BOOK_DATASETS[bookId] || [];
@@ -3390,7 +3418,7 @@ async function loadChaptersList() {
               <div class="flex flex-col gap-0.5">
                 <span class="text-xs text-outline dark:text-gray-400 font-semibold">AhmedBaset Kitab ${chNum}${count ? ` &bull; ${count} hadiths` : ''}</span>
                 <h3 class="font-bold text-base text-primary dark:text-white group-hover:text-secondary dark:group-hover:text-[#10b981]">${escapeHtml(titleEn)}</h3>
-                ${titleAr && titleAr !== titleId ? `<span class="text-xs text-on-surface-variant dark:text-gray-400 font-arabic-body" dir="rtl">${escapeHtml(titleAr)}</span>` : ''}
+                ${titleAr && titleAr !== titleEn ? `<span class="text-xs text-on-surface-variant dark:text-gray-400 font-arabic-body" dir="rtl">${escapeHtml(titleAr)}</span>` : ''}
               </div>
             </div>
             <span class="material-symbols-outlined text-outline dark:text-gray-400 group-hover:text-primary dark:group-hover:text-white">arrow_forward</span>
@@ -3453,6 +3481,14 @@ async function loadChaptersList() {
     LangSystem.apply(LangSystem.get());
   }
 
+
+  // Chapter count is a derived fact: count the cards just rendered instead of
+  // trusting the hand-maintained literal, which drifts from the shipped sidecars
+  // (mishkat claimed 29 Kitab while listing 25).
+  if (kitabCountElem) {
+    const rendered = container.querySelectorAll('a[href*="hadith-list.html"]').length;
+    if (rendered) kitabCountElem.innerText = `📚 ${rendered} Kitab`;
+  }
 
   // Chapter filter input listener — live search
   const filterInput = document.getElementById('chapter-filter-input');

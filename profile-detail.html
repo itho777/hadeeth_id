@@ -493,6 +493,8 @@
           if(document.getElementById('profile-english-name')) document.getElementById('profile-english-name').innerText = nameEn;
           if(document.getElementById('profile-header-name-en')) document.getElementById('profile-header-name-en').innerText = nameEn;
           if(document.getElementById('profile-header-name-id')) document.getElementById('profile-header-name-id').innerText = nameId;
+          // The breadcrumb shipped a hard-coded "Loading..." that nothing ever replaced.
+          if(document.getElementById('breadcrumb-name')) document.getElementById('breadcrumb-name').innerText = (window.LangSystem && window.LangSystem.get() === 'id') ? nameId : nameEn;
           if(document.getElementById('profile-arabic-name')) document.getElementById('profile-arabic-name').innerText = nameAr;
           if(document.getElementById('profile-nasab')) document.getElementById('profile-nasab').innerText = `Nasab: ${rawi.nasab || nameEn}`;
           
@@ -505,7 +507,11 @@
           if(document.getElementById('profile-settled')) document.getElementById('profile-settled').innerText = rawi.city_of_death || rawi.residence || 'Hijaz';
           
           let dates = rawi.dates || '';
-          if (!dates && rawi.died_ah) dates = `${rawi.died_ah} AH / ${rawi.died_ce} CE`;
+          // Some rawis carry the era suffix inside died_ah ("91 H"), which rendered "91 H AH".
+          if (!dates && rawi.died_ah) {
+            const ah = String(rawi.died_ah).replace(/\s*A\.?H\.?$/i, '');
+            dates = `${ah} AH / ${rawi.died_ce} CE`;
+          }
           if(document.getElementById('profile-dates')) document.getElementById('profile-dates').innerText = dates || 'N/A';
           if(document.getElementById('profile-parents')) document.getElementById('profile-parents').innerText = rawi.parents || 'N/A';
 

@@ -195,12 +195,17 @@
         });
 
         if (filterText) {
-            const low = filterText.toLowerCase();
-            filtered = filtered.filter(t => 
-                t.term_en.toLowerCase().includes(low) || 
-                t.term_id.toLowerCase().includes(low) || 
-                t.def_en.toLowerCase().includes(low) ||
-                t.def_id.toLowerCase().includes(low)
+            // Indonesian spellings differ from the glossary's own wording — it writes
+            // "Hadits", a reader types "hadis" — so fold the common variants on both
+            // sides instead of leaving the Indonesian search dead.
+            const norm = s => String(s || '').toLowerCase()
+                .replace(/\b(hadis|hadist|haditz)\b/g, 'hadits')
+                .replace(/\bsunnah\b/g, 'sunna')
+                .replace(/\browi\b/g, 'rawi')
+                .replace(/\bperowi\b/g, 'perawi');
+            const low = norm(filterText);
+            filtered = filtered.filter(t =>
+                norm([t.term_en, t.term_id, t.def_en, t.def_id].join(' ')).includes(low)
             );
         }
         

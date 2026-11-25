@@ -20,7 +20,7 @@ function fetchWithTimeout(url, options = {}, timeoutMs = 15000) {
  * Data lives in Cloudflare R2. The bucket serves HTTP Range correctly (206), which
  * is what every lookup in this file depends on. Override with window.__HADEETH_DATA__.
  */
-const R2_DATA_URL = 'https://cdn.hadeeth.id';
+const R2_DATA_URL = window.__HADEETH_DATA__ || 'https://cdn.hadeeth.id';
 
 /**
  * The bucket's r2.dev development endpoint is kept only as a last-resort
@@ -148,6 +148,16 @@ const HadeethAPI = {
   },
 
   /**
+   * The dataset a book falls back to when the caller expressed no preference.
+   * Canonical api/ and chapters/ are Lidwa for the nine core books; asking for
+   * 'fawazahmed' here made the International edition the silent default and put
+   * chapter contents in a different numbering than the chapter list.
+   */
+  defaultDataset(bookId) {
+    return CORE9.has(bookId) ? 'native_lidwa' : 'fawazahmed';
+  },
+
+  /**
    * Try R2 first, then the same key under the site's own /data.
    * Returns the Response, or null.
    */
@@ -211,6 +221,43 @@ const HadeethAPI = {
     if (dsPrefix === 'ab') return byId() || byNumber() || byLidwa();
     // hadith number first: `id` and `n` diverge (bukhari #5 has id 6, #6999 has id 7554)
     return byNumber() || byId() || byLidwa();
+  },
+
+  /**
+   * True when a purely numeric request falls outside the numbers this book
+   * actually ships. Cross-numbering fallback is only safe inside the range:
+   * outside it, `findIndexEntry` would answer with a different hadith.
+   */
+  isOutOfRange(index, hadithNumber, dsPrefix = 'fawaz') {
+    if (!Array.isArray(index) || !index.length) return false;
+    const want = String(hadithNumber).trim();
+    if (!/^\d+$/.test(want)) return false;
+    const n = Number(want);
+    let min = Infinity, max = -Infinity;
+    for (const e of index) {
+      const raw = dsPrefix === 'lidwa'
+        ? (Array.isArray(e.l) ? e.l[0] : e.l)
+        : (e.n !== undefined ? e.n : e.id);
+      const v = Number(raw);
+      if (Number.isFinite(v)) { if (v < min) min = v; if (v > max) max = v; }
+    }
+    if (!Number.isFinite(min)) return false;
+    return n < min || n > max;
+  },
+
+  /** Shipped number range for a book, for an honest "not found" message. */
+  async getHadithRange(bookId, dsPrefix = 'fawaz') {
+    const idx = await this.fetchNdjsonIndex('api', bookId, dsPrefix);
+    if (!Array.isArray(idx) || !idx.length) return null;
+    let min = Infinity, max = -Infinity;
+    for (const e of idx) {
+      const raw = dsPrefix === 'lidwa'
+        ? (Array.isArray(e.l) ? e.l[0] : e.l)
+        : (e.n !== undefined ? e.n : e.id);
+      const v = Number(raw);
+      if (Number.isFinite(v)) { if (v < min) min = v; if (v > max) max = v; }
+    }
+    return Number.isFinite(min) ? { min, max, count: idx.length } : null;
   },
 
   /** Addressable number for a record under the active dataset. */
@@ -288,6 +335,9 @@ const HadeethAPI = {
    * Fallback to fetch the entire NDJSON file
    */
   async fetchNdjsonFull(prefix, bookId, dsPrefix = 'lidwa') {
+    // sources/lidwa was never shipped — Indonesian text rides on api/<book>.ndjson
+    // as text_id. Probing it costs two 404s (CDN + R2) on every page.
+    if (prefix === 'sources/lidwa') return null;
     const folder = prefix === 'api' ? apiFolder(bookId, dsPrefix) : prefix;
     const res = await this._get(`${folder}/${bookId}.ndjson`, {}, 30000);
     if (!res) throw new Error('Network Error');
@@ -340,6 +390,7 @@ const HadeethAPI = {
     // Chapters are built from the shipped rows, whose numbering is the lidwa
     // numbering for the nine core books. The old lidwa-chapters files carry the
     // known 2..97 range corruption, so `chapters/` is the only source used here.
+    if (!datasetId) datasetId = this.defaultDataset(bookId);
     const dsPrefix = this.datasetPrefix(datasetId);
     const folder = chapterFolder(bookId, dsPrefix);
     const cacheKey = folder + '_' + bookId;
@@ -367,7 +418,8 @@ const HadeethAPI = {
    * Entries carrying the same chapter id are contiguous in practice, so they
    * collapse into one request per contiguous run.
    */
-  async getChapterHadiths(bookId, chapterId, datasetId = 'fawazahmed') {
+  async getChapterHadiths(bookId, chapterId, datasetId) {
+    if (!datasetId) datasetId = this.defaultDataset(bookId);
     const dsPrefix = this.datasetPrefix(datasetId);
     try {
       const idx = await this.fetchNdjsonIndex('api', bookId, dsPrefix);
@@ -426,6 +478,10 @@ const HadeethAPI = {
     try {
       let h = null;
       const idx = await this.fetchNdjsonIndex('api', bookId, dsPrefix);
+      // A number outside the shipped range must not fall through to another
+      // numbering scheme: the fallbacks in findIndexEntry exist for the same
+      // hadith addressed differently, not for a hadith that does not exist.
+      if (idx && this.isOutOfRange(idx, hadithNumber, dsPrefix)) return null;
       const entry = this.findIndexEntry(idx, hadithNumber, dsPrefix);
 
       if (entry) {
@@ -439,7 +495,10 @@ const HadeethAPI = {
           if (dsPrefix === 'lidwa') return Array.isArray(item.lidwa_id)
             ? item.lidwa_id.some(id => String(id) === want)
             : String(item.lidwa_id) === want;
-          return String(item.hadith_number) === want || String(item.id) === want;
+          // A numeric request addresses the hadith number; the internal record
+          // id is only an address for composite ids like "bukhari_5".
+          if (String(item.hadith_number) === want) return true;
+          return !/^\d+$/.test(want) && String(item.id) === want;
         }) || null;
       }
       // Index loaded but the number is absent: report "not found" instead of
@@ -551,6 +610,9 @@ const HadeethAPI = {
    */
   async getEdition(langCode, bookId) {
     try {
+      // Never probe a file the catalogue says is not shipped: each miss costs two
+      // round trips (CDN, then the R2 origin) on every list and detail page.
+      if (!(await this.editionExists(langCode, bookId))) return null;
       let raw = [];
       const prefix = 'editions';
       const fileId = `${langCode}-${bookId}`;
@@ -578,6 +640,7 @@ const HadeethAPI = {
   async getEditionText(langCode, bookId, hadithNumber) {
     try {
       const fileId = `${langCode}-${bookId}`;
+      if (!(await this.editionExists(langCode, bookId))) return null;
       const idx = await this.fetchNdjsonIndex('editions', fileId);
       const entry = this.findIndexEntry(idx, hadithNumber, 'fawaz');
       if (entry) {
@@ -605,13 +668,25 @@ const HadeethAPI = {
 
   /** Which (language, book) translation files actually exist on R2. */
   async getEditionCatalog() {
+    if (this.editionCatalogCache) return this.editionCatalogCache;
     try {
       const res = await this._get('editions/_catalog.ndjson', {}, 15000);
       if (!res) return [];
-      return parseNdjson(await res.text());
+      this.editionCatalogCache = parseNdjson(await res.text());
+      return this.editionCatalogCache;
     } catch (e) {
       return [];
     }
+  },
+
+  /**
+   * True when the catalogue says this edition is shipped. An unknown catalogue
+   * (fetch failed) reports true so the caller behaves as before.
+   */
+  async editionExists(langCode, bookId) {
+    const catalog = await this.getEditionCatalog();
+    if (!Array.isArray(catalog) || !catalog.length) return true;
+    return catalog.some(e => e.lang === langCode && e.book === bookId);
   },
 
   /**
@@ -861,7 +936,28 @@ const HadeethAPI = {
     const order = [want, want === 'semantic' ? 'keyword' : 'semantic', 'algolia'];
     const attempts = [];
 
+    // The semantic tier alone cannot tell a hit from a miss: on this corpus real
+    // Indonesian queries score 0.39–0.62 and gibberish 0.33–0.49, so `niat` (0.489)
+    // ranks below `zzzzqqqxxx` (0.486). Any similarity floor either drops real
+    // queries or keeps noise. Meilisearch does separate them cleanly (gibberish → 0
+    // hits, real → 2–20), so it gates the semantic tier: embeddings re-rank lexical
+    // candidates, and with no candidates there is nothing to report.
+    let lexicalCandidates = null;
+    if (want === 'semantic') {
+      try {
+        lexicalCandidates = ((await this.meiliSearch(q, bookFilter, limit)) || []).length;
+      } catch (err) {
+        // Keyword tier unreachable: fail open rather than blank the page on a
+        // Meilisearch outage. The gate is a quality filter, not a dependency.
+        lexicalCandidates = null;
+      }
+    }
+
     for (const tier of order) {
+      if (tier === 'semantic' && lexicalCandidates === 0) {
+        attempts.push({ tier, ok: false, note: 'no lexical candidates' });
+        continue;
+      }
       try {
         const hits = await engines[tier]();
         if (hits && hits.length) {
@@ -872,6 +968,7 @@ const HadeethAPI = {
             engine: META[tier].engine,
             primary: want,
             fellBack: tier !== want,
+            lexicalCandidates,
             attempts,
           };
           return hits;
@@ -1137,15 +1234,23 @@ const HadeethAPI = {
     return map;
   },
 
-  /** Lidwa/MJNA chapter index, stored as {_meta, ...chapter rows} NDJSON. */
+  /**
+   * Lidwa chapter index for a book: {chapters, title_en_source, title_id_source}.
+   * Reads the canonical `chapters/` sidecar — the one `getChapters` returns and the
+   * one whose hadith_count agrees with the `c` column of api/<book>_index.ndjson.
+   * The legacy `lidwa-chapters/` files disagree with that index (bukhari ch1 237 vs
+   * 6, abudawud 390 vs 330, tirmidhi 148 vs 137) and are no longer read.
+   */
   async getLidwaChapters(bookId) {
     if (!this.lidwaChapterCache) this.lidwaChapterCache = {};
     if (this.lidwaChapterCache[bookId]) return this.lidwaChapterCache[bookId];
-    const res = await this._get(`lidwa-chapters/${bookId}.ndjson`, {}, 20000);
-    if (!res) return null;
-    const rows = parseNdjson(await res.text());
-    const meta = (rows[0] && rows[0]._meta) || {};
-    const out = Object.assign({}, meta, { chapters: rows.slice(1) });
+    const chapters = await this.getChapters(bookId, 'native_lidwa');
+    if (!chapters || !chapters.length) return null;
+    const out = {
+      title_en_source: 'AhmedBaset',
+      title_id_source: 'Lidwa / Irsyad',
+      chapters,
+    };
     this.lidwaChapterCache[bookId] = out;
     return out;
   },

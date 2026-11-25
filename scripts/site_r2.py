@@ -141,7 +141,7 @@ def normalize_tabarani(src, dst):
             row = {
                 "id": n + 1,
                 "book": "tabarani",
-                "hadith_number": None if num is None else str(num),
+                "hadith_number": str(n + 1),
                 "arabic_number": None if num is None else str(num),
                 "text_ar": text,
                 "grades": grades or [],
@@ -891,7 +891,9 @@ def build():
                     continue
                 r = json.loads(line)
                 try:
-                    cid = tab_ranges.get(int(str(r.get("hadith_number", "")).strip()))
+                    # hadith_number is now the shipped ordinal; the source range
+                    # table is keyed by the fawaz number kept in arabic_number.
+                    cid = tab_ranges.get(int(str(r.get("arabic_number", "")).strip()))
                 except (TypeError, ValueError):
                     cid = None
                 if cid is not None:
