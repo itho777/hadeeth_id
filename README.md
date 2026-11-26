@@ -108,6 +108,18 @@ flutter test --update-goldens test/golden_test.dart     # regenerate test/golden
 flutter test --dart-define=LIVE=true test/live_services_test.dart   # hits production
 ```
 
+## CI
+
+`.github/workflows/build-apk.yml` builds the release APK on every push to `mobile` and on
+manual dispatch, then uploads `hadeeth-id-mobile-apk` (90-day retention) with the APK's
+SHA-256 in the job summary. The anon key comes from the `SUPABASE_ANON_KEY` repository secret
+when one is set, otherwise from the live `https://hadeeth.id/js/config.js`; it is masked in
+the log and passed only as `--dart-define`. Without either, the APK builds local-only.
+CI runs `flutter analyze` and `flutter test test/app_test.dart`; the golden suite is
+excluded because its reference images are rendered on Windows.
+
+## Test files
+
 - `test/app_test.dart` — repository parsing, chapter scoping, ids-only search hydration,
   Meilisearch tier, fallback chain, and every screen rendered against captured CDN files
   (`test/fixtures/`), plus a palette assertion that pins the dark tokens.
