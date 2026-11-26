@@ -1,0 +1,35 @@
+{
+    "name": "hadeeth.id — Digital Hadith Archive",
+    "short_name": "hadeeth.id",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FDFBF7",
+    "theme_color": "#001932",
+    "description": "Search, read and cite the authenticated hadith collections with full isnad, scholarly grading and the Razi AI scholar.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
