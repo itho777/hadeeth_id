@@ -110,13 +110,18 @@ flutter test --dart-define=LIVE=true test/live_services_test.dart   # hits produ
 
 ## CI
 
-`.github/workflows/build-apk.yml` builds the release APK on every push to `mobile` and on
-manual dispatch, then uploads `hadeeth-id-mobile-apk` (90-day retention) with the APK's
-SHA-256 in the job summary. The anon key comes from the `SUPABASE_ANON_KEY` repository secret
-when one is set, otherwise from the live `https://hadeeth.id/js/config.js`; it is masked in
-the log and passed only as `--dart-define`. Without either, the APK builds local-only.
+`.github/workflows/build-release.yml` builds the **Android App Bundle (AAB)** on every push to `mobile` and on
+manual dispatch, then uploads `hadeeth-id-android-aab` (90-day retention) with the AAB's
+SHA-256 in the job summary. The same workflow also builds an **iOS IPA** on macOS runners
+when `build_ipa: true` is passed (manual dispatch) or when a tag `v*` is pushed; it
+uploads `hadeeth-id-ios-ipa`. Both builds take the Supabase anon key from the
+`SUPABASE_ANON_KEY` repository secret when one is set, otherwise from the live
+`https://hadeeth.id/js/config.js`; it is masked in the log and passed only as
+`--dart-define`. Without either, the builds are local-only.
 CI runs `flutter analyze` and `flutter test test/app_test.dart`; the golden suite is
 excluded because its reference images are rendered on Windows.
+
+The legacy `.github/workflows/build-apk.yml` is kept for reference.
 
 ## Test files
 
