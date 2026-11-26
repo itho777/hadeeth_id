@@ -891,3 +891,38 @@ Production checks:
 No content copy exists in Supabase. `hotd_overrides` + `hotd_settings` are editor
 state; `profiles`, `bookmarks`, and `reading_progress` are user state. The
 hadith corpus remains on the CDN.
+
+---
+
+## §8.8 Literal `rnrn` in riyad and syafii text (2026-11-26)
+
+**Symptom.** Mobile screenshot showed `shalih.rnrnAmma ba'du, rnrnAllah berfirman...`
+inside Riyad as-Salihin's introduction. Cause: an earlier import dropped the
+backslashes from `\r\n` while keeping the letters, so the shipped NDJSON carried
+the literal string `rnrn` for a paragraph break and `rn` for a single break. In
+riyad a second variant, ` rn` + lowercase, had swallowed an `m` (`rnenjadi`,
+`rnengendalikannya`, `mentasymitkan`).
+
+**Scope measured.** `data/api/riyad.ndjson` 56 × `rnrn` + 14 swallowed `m` +
+2 broken words; `data/api/syafii.ndjson` 248 × `rnrn`. No other shipped book
+carried the pattern; a Turkish edition has one genuine `Ürnrnü` and was left
+alone.
+
+**Repair.** `_audit/fix_rn_artifacts.py` walks every string (including nested
+`translations`) and applies: `rnrn` → blank line, ` rn[a-z]` → ` m`,
+`[a-z]rn[A-Z]` → line break. `_audit/rewrite_rn_crlf.py` re-applies it from the
+backup and preserves CRLF: the first rewrite used LF and shifted one byte on
+1,889 untouched rows. Final byte deltas: riyad −14 bytes on 8 rows, syafii 0
+bytes on 106 rows; Arabic and hadith numbers identical; 0 `rnrn` left.
+
+**Publish.** `_audit/publish_rn_fix.py --write` backed up and PUT exactly three
+keys — `api/riyad.ndjson`, `api/syafii.ndjson`, `api/riyad_index.ndjson` — each
+re-fetched and MD5-verified. `api/syafii_index.ndjson` was byte-identical and
+untouched. Indexes regenerated with the builder's own `build_index_map`;
+1,896 + 1,800 byte slices parsed back to the matching hadith number (0 bad).
+
+**Verified.** Live `https://cdn.hadeeth.id/api/riyad.ndjson?nc=1` → 0 `rnrn`.
+`https://hadeeth.id/hadith.html?book=riyad&id=1229` → 35,577 chars of Indonesian
+text, 0 `rnrn`, no page errors. `hadith.html` translation boxes now carry
+`whitespace-pre-line`, so the recovered paragraph breaks render as breaks
+instead of collapsing to spaces (pending the Worker rebuild for the HTML).
