@@ -15,22 +15,21 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.hadeeth.id"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
 
-    signingConfigs {
-        create("release") {
-            val keyPropsFile = file("../key.properties")
-            if (keyPropsFile.exists()) {
-                val keyProps = java.util.Properties()
-                keyPropsFile.inputStream().use { keyProps.load(it) }
+    // Only create the release signing config when key.properties exists.
+    // Without it, the 'release' build type falls back to debug signing.
+    val keyPropsFile = file("../key.properties")
+    if (keyPropsFile.exists()) {
+        val keyProps = java.util.Properties()
+        keyPropsFile.inputStream().use { keyProps.load(it) }
+        signingConfigs {
+            create("release") {
                 storeFile = file(keyProps["storeFile"] as String)
                 storePassword = keyProps["storePassword"] as String
                 keyAlias = keyProps["keyAlias"] as String
@@ -41,7 +40,8 @@ android {
 
     buildTypes {
         release {
-            signingConfig = signingConfigs.getByName("release")
+            // Use release signing config if present, otherwise debug (local builds).
+            signingConfig = signingConfigs.getByName(if (keyPropsFile.exists()) "release" else "debug")
         }
     }
 }
