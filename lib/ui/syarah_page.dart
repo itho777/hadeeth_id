@@ -64,7 +64,6 @@ class _SyarahPageState extends State<SyarahPage> {
   Widget build(BuildContext context) {
     final state = context.watch<AppState>();
     final lang = state.lang;
-    final p = context.p;
 
     return Scaffold(
       body: SafeArea(
