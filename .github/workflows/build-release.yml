@@ -82,7 +82,22 @@ jobs:
         run: flutter test test/app_test.dart
 
       - name: Build release AAB
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: |
+          set -euo pipefail
+          if [ -n "$ANDROID_KEYSTORE_BASE64" ] && [ -n "$ANDROID_KEYSTORE_PASSWORD" ] && [ -n "$ANDROID_KEY_PASSWORD" ]; then
+            echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > android/app/hadeeth-release.jks
+            echo "storeFile=../app/hadeeth-release.jks" > android/key.properties
+            echo "storePassword=$ANDROID_KEYSTORE_PASSWORD" >> android/key.properties
+            echo "keyAlias=release" >> android/key.properties
+            echo "keyPassword=$ANDROID_KEY_PASSWORD" >> android/key.properties
+            echo "Keystore configured for release signing."
+          else
+            echo "::warning::Keystore secrets not set; build will use debug signing (not Play-store valid)."
+          fi
           flutter build appbundle --release \
             --dart-define=SUPABASE_ANON_KEY='${{ steps.key.outputs.key }}'
 
