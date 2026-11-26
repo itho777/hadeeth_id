@@ -101,13 +101,41 @@ jobs:
           flutter build appbundle --release \
             --dart-define=SUPABASE_ANON_KEY='${{ steps.key.outputs.key }}'
 
+      - name: Build release APK
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          set -euo pipefail
+          if [ -n "$ANDROID_KEYSTORE_BASE64" ] && [ -n "$ANDROID_KEYSTORE_PASSWORD" ] && [ -n "$ANDROID_KEY_PASSWORD" ]; then
+            echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > android/app/hadeeth-release.jks
+            echo "storeFile=../app/hadeeth-release.jks" > android/key.properties
+            echo "storePassword=$ANDROID_KEYSTORE_PASSWORD" >> android/key.properties
+            echo "keyAlias=release" >> android/key.properties
+            echo "keyPassword=$ANDROID_KEY_PASSWORD" >> android/key.properties
+            echo "Keystore configured for release signing."
+          else
+            echo "::warning::Keystore secrets not set; build will use debug signing (not Play-store valid)."
+          fi
+          flutter build apk --release \
+            --dart-define=SUPABASE_ANON_KEY='${{ steps.key.outputs.key }}'
+
       - name: Report artifact
         run: |
           ls -l build/app/outputs/bundle/release/app-release.aab
+          ls -l build/app/outputs/flutter-apk/app-release.apk 2>/dev/null || true
           echo "### Android App Bundle" >> "$GITHUB_STEP_SUMMARY"
           echo "\`app-release.aab\` — $(du -h build/app/outputs/bundle/release/app-release.aab | cut -f1)" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "SHA-256: \`$(sha256sum build/app/outputs/bundle/release/app-release.aab | cut -d' ' -f1)\`" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f build/app/outputs/flutter-apk/app-release.apk ]; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "### Android APK" >> "$GITHUB_STEP_SUMMARY"
+            echo "\`app-release.apk\` — $(du -h build/app/outputs/flutter-apk/app-release.apk | cut -f1)" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "SHA-256: \`$(sha256sum build/app/outputs/flutter-apk/app-release.apk | cut -d' ' -f1)\`" >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Upload AAB
         uses: actions/upload-artifact@v7
@@ -115,6 +143,14 @@ jobs:
           name: hadeeth-id-android-aab
           path: build/app/outputs/bundle/release/app-release.aab
           if-no-files-found: error
+          retention-days: 90
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v7
+        with:
+          name: hadeeth-id-android-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
+          if-no-files-found: warn
           retention-days: 90
 
   ios:
