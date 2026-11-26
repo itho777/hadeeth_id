@@ -10,6 +10,7 @@ import '../state/app_state.dart';
 import '../theme.dart';
 import 'export_page.dart';
 import 'sanad_page.dart';
+import 'syarah_page.dart';
 import 'widgets.dart';
 
 class HadithDetailPage extends StatefulWidget {
@@ -78,9 +79,11 @@ class _HadithDetailPageState extends State<HadithDetailPage> {
         }
       }
       final neighbours = await repo.neighbours(widget.bookId, h.number);
+      // Fetch syarah if available
+      final syarah = await repo.getSyarah(widget.bookId, h.number);
       if (!mounted) return;
       setState(() {
-        _hadith = h;
+        _hadith = syarah != null ? h.copyWith(syarah: syarah) : h;
         _bookTitle = widget.bookTitle ?? book?.title(state.lang) ?? widget.bookId;
         _chapterTitle = chapterTitle;
         _prev = neighbours.isNotEmpty ? neighbours.first.n : '';
@@ -206,6 +209,14 @@ class _HadithDetailPageState extends State<HadithDetailPage> {
     final showBoth = state.translationMode == 'both';
     final active = translations.containsKey(_transTab) ? _transTab : (translations.isEmpty ? 'id' : translations.keys.first);
     final editions = editionOptions(h);
+    
+    // Get all available translation languages from the full dataset
+    final availableLangs = h.availableLanguages;
+    final primaryLangs = <String>[];
+    for (final l in availableLangs) {
+      final t = h.primaryTranslation(l);
+      if (t != null && t.isNotEmpty) primaryLangs.add(l);
+    }
 
     return CardSurface(
       padding: const EdgeInsets.fromLTRB(18, 16, 18, 16),
@@ -233,33 +244,141 @@ class _HadithDetailPageState extends State<HadithDetailPage> {
           const SizedBox(height: 18),
           Container(height: 1, color: p.divider),
           const SizedBox(height: 14),
-          if (showBoth || translations.length > 1)
-            Row(
+          
+          // Language selector for all available translations
+          if (primaryLangs.length > 1)
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                for (final entry in translations.entries)
-                  Padding(
-                    padding: const EdgeInsets.only(right: 8),
-                    child: ChipButton(
-                      label: entry.key == 'id' ? 'INDONESIA' : 'ENGLISH',
-                      selected: active == entry.key,
-                      onTap: () => setState(() => _transTab = entry.key),
-                    ),
-                  ),
+                Text(t('TRANSLATIONS', 'TERJEMAHAN'), style: HText.labelSm.copyWith(color: p.gold, fontSize: 9)),
+                const SizedBox(height: 8),
+                Wrap(
+                  spacing: 6,
+                  runSpacing: 6,
+                  children: [
+                    for (final l in primaryLangs)
+                      _LanguageChip(
+                        label: _langLabel(l),
+                        selected: _transTab == l,
+                        onTap: () => setState(() => _transTab = l),
+                      ),
+                  ],
+                ),
+                const SizedBox(height: 12),
               ],
             ),
-          if (showBoth || translations.length > 1) const SizedBox(height: 12),
-          if (translations.isEmpty)
+          
+          if (translations.isEmpty && primaryLangs.isEmpty)
             Text(t('Translation not available for this narration.', 'Terjemahan belum tersedia untuk riwayat ini.', lang), style: HText.bodySm.copyWith(color: p.textMuted))
           else
             Text(
-              showBoth ? translations.values.join('\n\n') : (translations[active] ?? ''),
+              showBoth ? translations.values.join('\n\n') : (translations[active] ?? h.primaryTranslation(_transTab) ?? ''),
               style: HText.body.copyWith(color: p.textSecondary, height: 1.65),
             ),
+          
+          // Show all translations for the selected language if multiple sources
+          if (primaryLangs.contains(_transTab) && h.translationsFor(_transTab).length > 1) ...[
+            const SizedBox(height: 14),
+            _translationSourcesCard(context, h, _transTab, lang),
+          ],
+          
           if (editions.isNotEmpty) ...[
             const SizedBox(height: 14),
             _otherEditions(context, h, lang, editions),
           ],
         ],
+      ),
+    );
+  }
+
+  Widget _translationSourcesCard(BuildContext context, Hadith h, String langCode, String uiLang) {
+    final p = context.p;
+    final sources = h.translationsFor(langCode);
+    
+    return CardSurface(
+      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(Icons.source_outlined, size: 13, color: p.textMuted),
+              const SizedBox(width: 6),
+              Text('${_langLabel(langCode)} (${sources.length} sources)', style: HText.labelSm.copyWith(color: p.textMuted, fontSize: 9)),
+            ],
+          ),
+          const SizedBox(height: 8),
+          for (var i = 0; i < sources.length; i++) ...[
+            if (i > 0) Container(height: 1, color: p.divider, margin: const EdgeInsets.symmetric(vertical: 8)),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 4),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                        decoration: BoxDecoration(
+                          color: p.dark ? Brand.emeraldBright.withValues(alpha: 0.14) : Brand.emerald.withValues(alpha: 0.09),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: Text(sources[i]['source']?.toUpperCase() ?? 'UNKNOWN', style: HText.labelSm.copyWith(fontSize: 8, color: p.emerald)),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    sources[i]['text'] ?? '',
+                    style: HText.bodySm.copyWith(color: p.textSecondary, height: 1.55),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+
+  String _langLabel(String code) {
+    const labels = {
+      'ar': 'ARABIC',
+      'id': 'INDONESIA',
+      'en': 'ENGLISH',
+      'urd': 'URDU',
+      'rus': 'RUSSIAN',
+      'fra': 'FRENCH',
+      'tur': 'TURKISH',
+      'ben': 'BENGALI',
+      'tam': 'TAMIL',
+    };
+    return labels[code] ?? code.toUpperCase();
+  }
+
+  Widget _LanguageChip({
+    required String label,
+    required bool selected,
+    required VoidCallback onTap,
+  }) {
+    final p = context.p;
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+        decoration: BoxDecoration(
+          color: selected ? (p.dark ? Brand.emeraldBright.withValues(alpha: 0.18) : Brand.emerald.withValues(alpha: 0.12)) : p.surfaceLow,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: selected ? (p.dark ? Brand.emeraldBright : Brand.emerald) : p.border),
+        ),
+        child: Text(
+          label,
+          style: HText.labelSm.copyWith(
+            fontSize: 9.5,
+            color: selected ? p.emerald : p.textSecondary,
+            fontWeight: selected ? FontWeight.w600 : FontWeight.normal,
+          ),
+        ),
       ),
     );
   }
@@ -507,6 +626,7 @@ class _HadithDetailPageState extends State<HadithDetailPage> {
   Widget _actionsCard(BuildContext context, Hadith h, String lang) {
     final state = context.read<AppState>();
     final saved = state.isBookmarked(h.bookId, h.number);
+    final hasSyarah = h.syarah != null;
     return Row(
       children: [
         Expanded(
@@ -522,6 +642,16 @@ class _HadithDetailPageState extends State<HadithDetailPage> {
         Expanded(child: _actionTile(context, icon: Icons.copy_all_outlined, label: t('Copy', 'Salin', lang), onTap: () => _copy(h, lang))),
         const SizedBox(width: 9),
         Expanded(child: _actionTile(context, icon: Icons.share_outlined, label: t('Share', 'Bagikan', lang), onTap: () => _share(h, lang))),
+        const SizedBox(width: 9),
+        if (hasSyarah)
+          Expanded(
+            child: _actionTile(
+              context,
+              icon: Icons.menu_book_outlined,
+              label: t('Syarah', 'Syarah', lang),
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => SyarahPage(bookId: h.bookId, number: h.number, bookTitle: _bookTitle, syarah: h.syarah))),
+            ),
+          ),
         const SizedBox(width: 9),
         Expanded(
           child: _actionTile(

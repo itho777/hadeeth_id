@@ -263,6 +263,7 @@ class Hadith {
     required this.gradings,
     required this.chapterId,
     required this.otherTexts,
+    this.syarah,
   });
 
   final String id;
@@ -280,6 +281,7 @@ class Hadith {
   final List<Grading> gradings;
   final String chapterId;
   final Map<String, List<Map<String, String>>> otherTexts;
+  final Syarah? syarah;
 
   String get key => '$bookId:$number';
 
@@ -291,6 +293,26 @@ class Hadith {
   bool get hasArabic => textAr.trim().isNotEmpty;
 
   String get translationEnOrId => textEn.isNotEmpty ? textEn : textId;
+
+  /// Get all translations for a specific language code
+  List<Map<String, String>> translationsFor(String lang) => allTranslations[lang] ?? const [];
+
+  /// All available translations keyed by language code (ar, id, en, urd, rus, fra, tur, ben, tam, etc.)
+  /// Each language can have multiple sources (lidwa, fawazahmed, mjna, ab, etc.)
+  Map<String, List<Map<String, String>>> get allTranslations => otherTexts;
+
+  /// Get the primary translation for a language (first source)
+  String? primaryTranslation(String lang) {
+    final list = translationsFor(lang);
+    if (list.isEmpty) return null;
+    return list.first['text'];
+  }
+
+  /// Check if a language has any translations
+  bool hasTranslation(String lang) => translationsFor(lang).isNotEmpty;
+
+  /// Get all available language codes
+  List<String> get availableLanguages => allTranslations.keys.toList()..sort();
 
   /// Grade tier used for the badge colour.
   String get tier {
@@ -320,6 +342,13 @@ class Hadith {
     }
     final lidwa = j['lidwa_id'];
     final lidwaIds = lidwa is List ? lidwa.map((e) => e.toString()).toList() : (lidwa == null || lidwa.toString().isEmpty ? <String>[] : [lidwa.toString()]);
+    
+    // Parse syarah if available
+    Syarah? syarah;
+    if (j['syarah'] is Map) {
+      syarah = Syarah.fromJson((j['syarah'] as Map).cast<String, dynamic>());
+    }
+    
     return Hadith(
       id: _asString(j['id']),
       bookId: _asString(j['book'], bookIdFallback ?? ''),
@@ -336,25 +365,47 @@ class Hadith {
       gradings: (j['gradings'] as List?)?.whereType<Map>().map((e) => Grading.fromJson(e.cast<String, dynamic>())).toList() ?? const [],
       chapterId: _asString(j['chapter_id']),
       otherTexts: other,
+      syarah: syarah,
     );
   }
 
-  Map<String, dynamic> toJson() => {
-        'id': id,
-        'book': bookId,
-        'hadith_number': number,
-        'lidwa_id': lidwaIds,
-        'text_ar': textAr,
-        'text_id': textId,
-        'text_en': textEn,
-        'rawis': rawis.map((r) => {'name': r.name, 'id': r.id}).toList(),
-        'grade': grade,
-        'grade_id': gradeId,
-        'status': status,
-        'elevation': elevation,
-        'gradings': gradings.map((g) => {'src': g.source, 'src_label': g.sourceLabel, 'by': g.by, 'grade': g.grade}).toList(),
-        'chapter_id': chapterId,
-      };
+  Hadith copyWith({
+    String? id,
+    String? bookId,
+    String? number,
+    List<String>? lidwaIds,
+    String? textAr,
+    String? textId,
+    String? textEn,
+    List<RawiRef>? rawis,
+    String? grade,
+    String? gradeId,
+    String? status,
+    String? elevation,
+    List<Grading>? gradings,
+    String? chapterId,
+    Map<String, List<Map<String, String>>>? otherTexts,
+    Syarah? syarah,
+  }) {
+    return Hadith(
+      id: id ?? this.id,
+      bookId: bookId ?? this.bookId,
+      number: number ?? this.number,
+      lidwaIds: lidwaIds ?? this.lidwaIds,
+      textAr: textAr ?? this.textAr,
+      textId: textId ?? this.textId,
+      textEn: textEn ?? this.textEn,
+      rawis: rawis ?? this.rawis,
+      grade: grade ?? this.grade,
+      gradeId: gradeId ?? this.gradeId,
+      status: status ?? this.status,
+      elevation: elevation ?? this.elevation,
+      gradings: gradings ?? this.gradings,
+      chapterId: chapterId ?? this.chapterId,
+      otherTexts: otherTexts ?? this.otherTexts,
+      syarah: syarah ?? this.syarah,
+    );
+  }
 }
 
 class Rawi {
@@ -490,6 +541,46 @@ class TopicEntry {
         topicId: _asInt(j['t']),
         bookId: _asString(j['b']),
         numbers: (j['n'] as List?)?.map((e) => e.toString()).toList() ?? const [],
+      );
+}
+
+/// Syarah/Commentary for a hadith
+class Syarah {
+  Syarah({
+    required this.bookId,
+    required this.anchorId,
+    required this.source,
+    required this.hadithAr,
+    required this.rawi,
+    required this.muhaddith,
+    required this.masdar,
+    required this.grade,
+    required this.takhrij,
+    required this.syarahAr,
+  });
+
+  final String bookId;
+  final String anchorId;
+  final String source;
+  final String hadithAr;
+  final String rawi;
+  final String muhaddith;
+  final String masdar;
+  final String grade;
+  final String takhrij;
+  final String syarahAr;
+
+  factory Syarah.fromJson(Map<String, dynamic> j) => Syarah(
+        bookId: _asString(j['book_id']),
+        anchorId: _asString(j['anchor_id']),
+        source: _asString(j['source']),
+        hadithAr: _asString(j['hadith_ar']),
+        rawi: _asString(j['rawi']),
+        muhaddith: _asString(j['muhaddith']),
+        masdar: _asString(j['masdar']),
+        grade: _asString(j['grade']),
+        takhrij: _asString(j['takhrij']),
+        syarahAr: _asString(j['syarah_ar']),
       );
 }
 

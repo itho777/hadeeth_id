@@ -350,4 +350,13 @@ class HadeethRepository {
     }
     return getHadith('bukhari', '1');
   }
+
+  /// Fetch syarah/commentary for a hadith from R2.
+  /// Path: data/commentaries/{book}_{number}.json
+  Future<Syarah?> getSyarah(String bookId, String number) async {
+    final path = 'data/commentaries/${bookId}_${number}.json';
+    final res = await remote.searchText(path);
+    if (res == null) return null;
+    return Syarah.fromJson(res);
+  }
 }
