@@ -41,7 +41,8 @@ android {
     buildTypes {
         release {
             // Use release signing config if present, otherwise debug (local builds).
-            signingConfig = signingConfigs.getByName(if (keyPropsFile.exists()) "release" else "debug")
+            val useRelease = keyPropsFile.exists()
+            signingConfig = signingConfigs.getByName(if (useRelease) "release" else "debug")
         }
     }
 }
