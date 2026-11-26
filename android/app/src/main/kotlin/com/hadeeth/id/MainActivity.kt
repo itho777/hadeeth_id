@@ -1,4 +1,4 @@
-package com.hadeeth.id.hadeeth_id_mobile
+package com.hadeeth.id
 
 import io.flutter.embedding.android.FlutterActivity
 
